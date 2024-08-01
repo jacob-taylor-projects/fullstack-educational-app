@@ -30,9 +30,13 @@ public class Seeder implements CommandLineRunner {
         lemonade.setIceCubes(5);
         lemonade.setPrice(4.5);
 
+        LemonadeStand lemonadeStand=new LemonadeStand();
+        lemonadeStand.setName("Bobs Lemonade Stand");
+
 
 
         lemonadeRepo.saveAndFlush(lemonade);
+        lemonadeStandRepo.saveAndFlush(lemonadeStand);
 
 
         System.out.println(lemonadeRepo.findAll());
