@@ -6,24 +6,28 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.springframework.data.annotation.CreatedDate;
 
+import java.sql.Timestamp;
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Entity
 @NoArgsConstructor
 @Data
-public class Attendance {
+public class Comment {
     @Id
     @GeneratedValue
     private Long id;
 
-    private Date attendanceDate;
+    private String content;
 
-    private boolean present;
+    @CreatedDate
+    private Timestamp date=Timestamp.valueOf(LocalDateTime.now());
+
+    @ManyToOne
+    private Post post;
 
     @ManyToOne
     private Student student;
-
-    @ManyToOne
-    private Course course;
 }
