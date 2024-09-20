@@ -33,4 +33,7 @@ public class Grade {
 
     @OneToOne
     private Submission submission;
+
+    @ManyToOne
+    private CourseGrade courseGrade;
 }

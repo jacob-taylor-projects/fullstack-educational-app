@@ -21,12 +21,6 @@ public class Project {
     @OneToOne(mappedBy = "project")
     private Problem problem;
 
-    @OneToOne(mappedBy = "project")
-    private Answer answer;
-
-    @OneToMany(mappedBy = "project")
-    private List<Submission> submissions=new ArrayList<>();
-
     @ManyToOne
     private Faculty teacher;
 

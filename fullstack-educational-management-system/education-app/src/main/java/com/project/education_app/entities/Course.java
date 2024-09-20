@@ -49,6 +49,10 @@ public class Course {
 
     @OneToMany(mappedBy = "course",cascade = CascadeType.ALL)
     @EqualsAndHashCode.Exclude
+    private Set<CourseGrade> courseGrades=new HashSet<>();
+
+    @OneToMany(mappedBy = "course",cascade = CascadeType.ALL)
+    @EqualsAndHashCode.Exclude
     private Set<Resource> resources=new HashSet<>();
 
     @OneToMany(mappedBy = "course",cascade = CascadeType.ALL)

@@ -21,11 +21,6 @@ public class Assignment {
     @OneToMany(mappedBy = "assignment",cascade = CascadeType.ALL)
     private List<Problem> problems=new ArrayList<>();
 
-    @OneToMany(mappedBy = "assignment",cascade = CascadeType.ALL)
-    private List<Answer> answers=new ArrayList<>();
-
-    @OneToMany(mappedBy = "assignment",cascade = CascadeType.ALL)
-    private List<Submission> submissions=new ArrayList<>();
 
     @ManyToOne
     private Faculty teacher;

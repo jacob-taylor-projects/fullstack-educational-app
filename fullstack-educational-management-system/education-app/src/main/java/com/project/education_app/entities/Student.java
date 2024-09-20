@@ -52,6 +52,9 @@ public class Student {
     private List<Grade> grades=new ArrayList<>();
 
     @OneToMany(mappedBy = "student",cascade = CascadeType.ALL)
+    private List<CourseGrade> courseGrades=new ArrayList<>();
+
+    @OneToMany(mappedBy = "student",cascade = CascadeType.ALL)
     private List<Post> posts=new ArrayList<>();
 
     @OneToMany(mappedBy = "student",cascade = CascadeType.ALL)

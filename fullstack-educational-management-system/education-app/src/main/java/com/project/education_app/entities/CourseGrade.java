@@ -9,16 +9,19 @@ import java.util.List;
 @Entity
 @NoArgsConstructor
 @Data
-public class Answer {
+public class CourseGrade {
     @Id
     @GeneratedValue
     private Long id;
 
-    private String content;
+    private double overallGrade;
 
-    @OneToOne
-    private Problem problem;
+    @ManyToOne
+    private Student student;
 
-    @OneToMany(mappedBy = "answer")
-    private List<Submission> submissions;
+    @ManyToOne
+    private Course course;
+
+    @OneToMany(mappedBy = "courseGrade")
+    private List<Grade> grades;
 }

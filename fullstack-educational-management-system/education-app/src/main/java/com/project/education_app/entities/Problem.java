@@ -16,6 +16,9 @@ public class Problem {
 
     private String description;
 
+    @OneToOne(mappedBy = "problem")
+    private Answer answer;
+
     @OneToOne
     private Project project;
 

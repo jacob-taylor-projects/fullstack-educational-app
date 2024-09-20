@@ -19,17 +19,11 @@ public class Submission {
 
     private String content;
 
+    @ManyToOne
+    private Answer answer;
+
     @OneToOne(mappedBy = "submission")
     private Grade grade;
-
-    @ManyToOne
-    private Project project;
-
-    @ManyToOne
-    private Assignment assignment;
-
-    @ManyToOne
-    private Test test;
 
     @ManyToOne
     private Student student;

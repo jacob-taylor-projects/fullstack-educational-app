@@ -21,11 +21,6 @@ public class Test {
     @OneToMany(mappedBy = "test",cascade = CascadeType.ALL)
     private List<Problem> problems=new ArrayList<>();
 
-    @OneToMany(mappedBy = "test",cascade = CascadeType.ALL)
-    private List<Answer> answers=new ArrayList<>();
-
-    @OneToMany(mappedBy = "test",cascade = CascadeType.ALL)
-    private List<Submission> submissions=new ArrayList<>();
 
     @ManyToOne
     private Faculty teacher;
