@@ -37,11 +37,6 @@ public class Guardian {
             inverseJoinColumns = @JoinColumn(name = "student_id"))
     private Set<Student> students=new HashSet<>();
 
-    @ManyToMany
-    @JoinTable(name = "announcement_guardian",
-            joinColumns = @JoinColumn(name = "guardian_id"),
-            inverseJoinColumns = @JoinColumn(name = "announcement_id"))
-    private Set<Announcement> announcements=new HashSet<>();
 
     public List<Grade> getStudentsGrades(){
         List<Grade> grades=new ArrayList<>();

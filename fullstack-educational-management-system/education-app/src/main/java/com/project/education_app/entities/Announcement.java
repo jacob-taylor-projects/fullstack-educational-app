@@ -36,16 +36,12 @@ public class Announcement {
     @ManyToOne
     private Course course;
 
-    @ManyToMany
-    @JoinTable(name = "announcement_guardian",
-            joinColumns = @JoinColumn(name = "announcement_id"),
-            inverseJoinColumns = @JoinColumn(name = "guardian_id"))
-    private Set<Guardian> guardians=new HashSet<>();
-
     public enum AudienceType{
         ALL_STUDENTS,
         ALL_FACULTY,
+        ALL_GUARDIANS,
         COURSE_STUDENTS,
-        COURSE_FACULTY
+        COURSE_FACULTY,
+        COURSE_GUARDIANS
     }
 }
