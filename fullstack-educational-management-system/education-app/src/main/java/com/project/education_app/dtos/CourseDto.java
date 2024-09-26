@@ -37,5 +37,5 @@ public class CourseDto {
 
     private List<SemesterDto> semesters;
 
-    private Set<CourseGrade> courseGrades=new HashSet<>();
+    private Set<CourseGrade> courseGrades;
 }

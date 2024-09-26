@@ -22,4 +22,6 @@ public class AssignmentDto {
     private Date dueDate;
 
     private boolean completed;
+
+    private SyllabusDto syllabusDto;
 }
