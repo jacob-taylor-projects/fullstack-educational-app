@@ -26,10 +26,6 @@ public class Course {
 
     private int credits;
 
-    @OneToMany(mappedBy = "course",cascade = CascadeType.ALL)
-    @EqualsAndHashCode.Exclude
-    private Set<Announcement> announcements=new HashSet<>();
-
     @OneToOne
     private Syllabus syllabus;
 

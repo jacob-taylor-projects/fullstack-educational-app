@@ -13,7 +13,7 @@ public class AssignmentDto {
 
     private String title;
 
-    private List<ProblemDto> problems;
+    private List<ProblemAnswerDto> problemAnswer;
 
     private BasicFacultyDto teacher;
 

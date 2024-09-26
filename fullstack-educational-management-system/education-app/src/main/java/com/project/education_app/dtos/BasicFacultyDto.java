@@ -1,6 +1,5 @@
 package com.project.education_app.dtos;
 
-import com.project.education_app.entities.Problem;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 

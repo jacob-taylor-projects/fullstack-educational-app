@@ -20,7 +20,7 @@ public class Submission {
     private String content;
 
     @ManyToOne
-    private Answer answer;
+    private ProblemAnswer problemAnswer;
 
     @OneToOne(mappedBy = "submission")
     private Grade grade;

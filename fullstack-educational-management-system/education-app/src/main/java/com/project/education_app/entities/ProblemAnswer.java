@@ -9,16 +9,24 @@ import java.util.List;
 @Entity
 @NoArgsConstructor
 @Data
-public class Answer {
+public class ProblemAnswer {
     @Id
     @GeneratedValue
     private Long id;
 
-    private String content;
+    private String problemContent;
+
+    private String answerContent;
 
     @OneToOne
-    private Problem problem;
+    private Project project;
 
-    @OneToMany(mappedBy = "answer")
+    @ManyToOne
+    private Assignment assignment;
+
+    @ManyToOne
+    private Test test;
+
+    @OneToMany(mappedBy = "problemAnswer")
     private List<Submission> submissions;
 }

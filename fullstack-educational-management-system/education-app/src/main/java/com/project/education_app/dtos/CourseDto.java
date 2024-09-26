@@ -1,8 +1,10 @@
 package com.project.education_app.dtos;
 
+import com.project.education_app.entities.CourseGrade;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -19,8 +21,6 @@ public class CourseDto {
 
     private int credits;
 
-    private Set<AnnouncementDto> announcements;
-
     private SyllabusDto syllabus;
 
     private Set<AttendanceDto> attendances;
@@ -36,4 +36,6 @@ public class CourseDto {
     private List<ScheduleDto> schedules;
 
     private List<SemesterDto> semesters;
+
+    private Set<CourseGrade> courseGrades=new HashSet<>();
 }

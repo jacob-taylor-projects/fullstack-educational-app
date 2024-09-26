@@ -26,6 +26,5 @@ public class ScheduleDto {
 
     private List<CourseDto> courses;
 
-    @ManyToOne
     private SemesterDto semester;
 }

@@ -19,7 +19,7 @@ public class Assignment {
     private String title;
 
     @OneToMany(mappedBy = "assignment",cascade = CascadeType.ALL)
-    private List<Problem> problems=new ArrayList<>();
+    private List<ProblemAnswer> problemAnswers=new ArrayList<>();
 
 
     @ManyToOne

@@ -20,20 +20,7 @@ public class AnnouncementDto {
 
     private boolean deleted;
 
-    private AudienceType audienceType;
 
     private BasicFacultyDto author;
 
-    private CourseDto course;
-
-
-
-    public enum AudienceType{
-        ALL_STUDENTS,
-        ALL_FACULTY,
-        ALL_GUARDIANS,
-        COURSE_STUDENTS,
-        COURSE_FACULTY,
-        COURSE_GUARDIANS
-    }
 }

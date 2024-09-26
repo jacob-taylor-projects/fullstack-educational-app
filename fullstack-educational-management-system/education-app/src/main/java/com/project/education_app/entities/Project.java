@@ -19,7 +19,7 @@ public class Project {
     private String name;
 
     @OneToOne(mappedBy = "project")
-    private Problem problem;
+    private ProblemAnswer problemAnswer;
 
     @ManyToOne
     private Faculty teacher;

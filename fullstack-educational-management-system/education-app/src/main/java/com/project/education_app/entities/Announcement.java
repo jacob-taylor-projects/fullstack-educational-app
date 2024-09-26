@@ -27,21 +27,8 @@ public class Announcement {
 
     private boolean deleted;
 
-    @Enumerated(EnumType.STRING)
-    private AudienceType audienceType;
-
     @ManyToOne
     private Faculty author;
 
-    @ManyToOne
-    private Course course;
 
-    public enum AudienceType{
-        ALL_STUDENTS,
-        ALL_FACULTY,
-        ALL_GUARDIANS,
-        COURSE_STUDENTS,
-        COURSE_FACULTY,
-        COURSE_GUARDIANS
-    }
 }
