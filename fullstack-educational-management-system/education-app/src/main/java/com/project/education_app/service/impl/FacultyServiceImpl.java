@@ -7,5 +7,5 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class FacultyServiceImpl implements FacultyService {
-    private final FacultyService facultyService;
+
 }
