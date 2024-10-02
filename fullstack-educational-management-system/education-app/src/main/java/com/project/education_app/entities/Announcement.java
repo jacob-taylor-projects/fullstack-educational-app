@@ -25,7 +25,6 @@ public class Announcement {
 
     private String message;
 
-    private boolean deleted;
 
     @ManyToOne
     private Faculty author;

@@ -18,8 +18,6 @@ public class AnnouncementDto {
 
     private String message;
 
-    private boolean deleted;
-
 
     private BasicFacultyDto author;
 
