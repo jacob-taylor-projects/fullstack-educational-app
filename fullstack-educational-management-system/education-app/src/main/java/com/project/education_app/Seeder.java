@@ -631,125 +631,251 @@ public class Seeder implements CommandLineRunner {
         announcement8.setAuthor(faculty1);
 
 
+        // Computer Science Courses
+
+        Syllabus syllabus1 = new Syllabus();
+        syllabus1.setObjectives("Introduce students to programming fundamentals using Python.");
+        syllabus1.setTopics("Variables, Data Types, Control Structures, Functions, Modules, and Libraries.");
+        syllabus1.setEvaluationCriteria("Assignments (40%), Projects (30%), Tests (30%)");
+
         Course course1 = new Course();
         course1.setName("Introduction to Programming");
         course1.setDescription("Learn the basics of programming using Python.");
         course1.setSubject("Computer Science");
         course1.setCredits(4);
+        course1.setSyllabus(syllabus1);
+
+        Syllabus syllabus2 = new Syllabus();
+        syllabus2.setObjectives("Understand and implement various data structures.");
+        syllabus2.setTopics("Arrays, Linked Lists, Stacks, Queues, Trees, Graphs.");
+        syllabus2.setEvaluationCriteria("Assignments (50%), Projects (20%), Tests (30%)");
 
         Course course2 = new Course();
         course2.setName("Data Structures");
         course2.setDescription("An in-depth study of data structures such as arrays, linked lists, stacks, queues, and trees.");
         course2.setSubject("Computer Science");
         course2.setCredits(3);
+        course2.setSyllabus(syllabus2);
+
+        Syllabus syllabus3 = new Syllabus();
+        syllabus3.setObjectives("Explore the design and analysis of algorithms.");
+        syllabus3.setTopics("Sorting, Searching, Graph Algorithms, Dynamic Programming.");
+        syllabus3.setEvaluationCriteria("Assignments (40%), Projects (30%), Tests (30%)");
 
         Course course3 = new Course();
         course3.setName("Algorithms");
         course3.setDescription("Explore the design and analysis of algorithms, including sorting and searching algorithms.");
         course3.setSubject("Computer Science");
         course3.setCredits(3);
+        course3.setSyllabus(syllabus3);
+
+        Syllabus syllabus4 = new Syllabus();
+        syllabus4.setObjectives("Introduction to database concepts, SQL, and database design.");
+        syllabus4.setTopics("Relational Databases, SQL, Transactions, Database Design.");
+        syllabus4.setEvaluationCriteria("Assignments (40%), Projects (30%), Tests (30%)");
 
         Course course4 = new Course();
         course4.setName("Database Management Systems");
         course4.setDescription("Introduction to database concepts, SQL, and database design.");
         course4.setSubject("Computer Science");
         course4.setCredits(3);
+        course4.setSyllabus(syllabus4);
+
+        Syllabus syllabus5 = new Syllabus();
+        syllabus5.setObjectives("Study the fundamental concepts of operating systems.");
+        syllabus5.setTopics("Processes, Memory Management, File Systems, Scheduling.");
+        syllabus5.setEvaluationCriteria("Assignments (40%), Projects (30%), Tests (30%)");
 
         Course course5 = new Course();
         course5.setName("Operating Systems");
         course5.setDescription("Study the fundamental concepts of operating systems, including processes, memory management, and file systems.");
         course5.setSubject("Computer Science");
         course5.setCredits(3);
+        course5.setSyllabus(syllabus5);
+
+        Syllabus syllabus6 = new Syllabus();
+        syllabus6.setObjectives("Learn about the principles of computer networking.");
+        syllabus6.setTopics("OSI Model, TCP/IP, Network Protocols, Routing, Switching.");
+        syllabus6.setEvaluationCriteria("Assignments (40%), Projects (30%), Tests (30%)");
 
         Course course6 = new Course();
         course6.setName("Computer Networks");
         course6.setDescription("Learn about the principles of computer networking, including the OSI model, TCP/IP, and network protocols.");
         course6.setSubject("Computer Science");
         course6.setCredits(3);
+        course6.setSyllabus(syllabus6);
+
+        Syllabus syllabus7 = new Syllabus();
+        syllabus7.setObjectives("Introduction to software development methodologies.");
+        syllabus7.setTopics("Software Development Life Cycle, Agile, Waterfall, Project Management.");
+        syllabus7.setEvaluationCriteria("Assignments (40%), Projects (30%), Tests (30%)");
 
         Course course7 = new Course();
         course7.setName("Software Engineering");
         course7.setDescription("Introduction to software development methodologies, project management, and software life cycle.");
         course7.setSubject("Computer Science");
         course7.setCredits(4);
+        course7.setSyllabus(syllabus7);
+
+        Syllabus syllabus8 = new Syllabus();
+        syllabus8.setObjectives("Learn to create dynamic websites.");
+        syllabus8.setTopics("HTML, CSS, JavaScript, React, Backend Integration.");
+        syllabus8.setEvaluationCriteria("Assignments (40%), Projects (30%), Tests (30%)");
 
         Course course8 = new Course();
         course8.setName("Web Development");
         course8.setDescription("Learn to create dynamic websites using HTML, CSS, JavaScript, and frameworks such as React.");
         course8.setSubject("Computer Science");
         course8.setCredits(3);
+        course8.setSyllabus(syllabus8);
+
+        Syllabus syllabus9 = new Syllabus();
+        syllabus9.setObjectives("Explore the basics of artificial intelligence.");
+        syllabus9.setTopics("Machine Learning, Neural Networks, Natural Language Processing.");
+        syllabus9.setEvaluationCriteria("Assignments (40%), Projects (30%), Tests (30%)");
 
         Course course9 = new Course();
         course9.setName("Artificial Intelligence");
         course9.setDescription("Explore the basics of artificial intelligence, including machine learning, neural networks, and natural language processing.");
         course9.setSubject("Computer Science");
         course9.setCredits(4);
+        course9.setSyllabus(syllabus9);
+
+        Syllabus syllabus10 = new Syllabus();
+        syllabus10.setObjectives("Introduction to the principles of cybersecurity.");
+        syllabus10.setTopics("Threat Analysis, Encryption, Network Security, Secure Coding.");
+        syllabus10.setEvaluationCriteria("Assignments (40%), Projects (30%), Tests (30%)");
 
         Course course10 = new Course();
         course10.setName("Cybersecurity");
         course10.setDescription("Introduction to the principles of cybersecurity, including threat analysis, encryption, and network security.");
         course10.setSubject("Computer Science");
         course10.setCredits(3);
+        course10.setSyllabus(syllabus10);
+
+// Mathematics Courses
+
+        Syllabus syllabus11 = new Syllabus();
+        syllabus11.setObjectives("Introduce students to differential and integral calculus.");
+        syllabus11.setTopics("Limits, Derivatives, Integrals, Applications of Calculus.");
+        syllabus11.setEvaluationCriteria("Assignments (40%), Projects (30%), Tests (30%)");
 
         Course course11 = new Course();
         course11.setName("Calculus I");
         course11.setDescription("Introduction to differential and integral calculus.");
         course11.setSubject("Mathematics");
         course11.setCredits(4);
+        course11.setSyllabus(syllabus11);
+
+        Syllabus syllabus12 = new Syllabus();
+        syllabus12.setObjectives("Study of vector spaces, matrices, and linear transformations.");
+        syllabus12.setTopics("Vectors, Matrices, Determinants, Eigenvalues, Eigenvectors.");
+        syllabus12.setEvaluationCriteria("Assignments (40%), Projects (30%), Tests (30%)");
 
         Course course12 = new Course();
         course12.setName("Linear Algebra");
         course12.setDescription("Study of vector spaces, matrices, and linear transformations.");
         course12.setSubject("Mathematics");
         course12.setCredits(3);
+        course12.setSyllabus(syllabus12);
+
+        Syllabus syllabus13 = new Syllabus();
+        syllabus13.setObjectives("Introduction to statistical methods and their applications.");
+        syllabus13.setTopics("Probability, Descriptive Statistics, Inferential Statistics.");
+        syllabus13.setEvaluationCriteria("Assignments (40%), Projects (30%), Tests (30%)");
 
         Course course13 = new Course();
         course13.setName("Statistics");
         course13.setDescription("Introduction to statistical methods and their applications.");
         course13.setSubject("Mathematics");
         course13.setCredits(3);
+        course13.setSyllabus(syllabus13);
+
+        Syllabus syllabus14 = new Syllabus();
+        syllabus14.setObjectives("Study of mathematical structures that are fundamentally discrete.");
+        syllabus14.setTopics("Logic, Set Theory, Graph Theory, Combinatorics.");
+        syllabus14.setEvaluationCriteria("Assignments (40%), Projects (30%), Tests (30%)");
 
         Course course14 = new Course();
         course14.setName("Discrete Mathematics");
         course14.setDescription("Study of mathematical structures that are fundamentally discrete rather than continuous.");
         course14.setSubject("Mathematics");
         course14.setCredits(3);
+        course14.setSyllabus(syllabus14);
+
+// Science Courses
+
+        Syllabus syllabus15 = new Syllabus();
+        syllabus15.setObjectives("Introduction to classical mechanics.");
+        syllabus15.setTopics("Newton's Laws, Energy Principles, Motion.");
+        syllabus15.setEvaluationCriteria("Assignments (40%), Projects (30%), Tests (30%)");
 
         Course course15 = new Course();
         course15.setName("Physics I");
         course15.setDescription("Introduction to classical mechanics, including Newton's laws and energy principles.");
         course15.setSubject("Physics");
         course15.setCredits(4);
+        course15.setSyllabus(syllabus15);
+
+        Syllabus syllabus16 = new Syllabus();
+        syllabus16.setObjectives("Introduction to chemical principles.");
+        syllabus16.setTopics("Atomic Structure, Chemical Bonding, Reactions.");
+        syllabus16.setEvaluationCriteria("Assignments (40%), Projects (30%), Tests (30%)");
 
         Course course16 = new Course();
         course16.setName("Chemistry I");
         course16.setDescription("Introduction to chemical principles, including atomic structure and chemical bonding.");
         course16.setSubject("Chemistry");
         course16.setCredits(4);
+        course16.setSyllabus(syllabus16);
+
+        Syllabus syllabus17 = new Syllabus();
+        syllabus17.setObjectives("Introduction to cellular biology, genetics, and evolution.");
+        syllabus17.setTopics("Cell Structure, Genetics, Evolution, Ecology.");
+        syllabus17.setEvaluationCriteria("Assignments (40%), Projects (30%), Tests (30%)");
 
         Course course17 = new Course();
         course17.setName("Biology I");
         course17.setDescription("Introduction to cellular biology, genetics, and evolution.");
         course17.setSubject("Biology");
         course17.setCredits(4);
+        course17.setSyllabus(syllabus17);
+
+        Syllabus syllabus18 = new Syllabus();
+        syllabus18.setObjectives("Overview of engineering disciplines and problem-solving techniques.");
+        syllabus18.setTopics("Engineering Disciplines, Problem-Solving, Design Process.");
+        syllabus18.setEvaluationCriteria("Assignments (40%), Projects (30%), Tests (30%)");
 
         Course course18 = new Course();
         course18.setName("Introduction to Engineering");
         course18.setDescription("Overview of engineering disciplines and problem-solving techniques.");
         course18.setSubject("Engineering");
         course18.setCredits(3);
+        course18.setSyllabus(syllabus18);
+
+        Syllabus syllabus19 = new Syllabus();
+        syllabus19.setObjectives("Fundamentals of electrical circuits, signals, and systems.");
+        syllabus19.setTopics("Circuit Analysis, Signal Processing, Systems Theory.");
+        syllabus19.setEvaluationCriteria("Assignments (40%), Projects (30%), Tests (30%)");
 
         Course course19 = new Course();
         course19.setName("Electrical Engineering Basics");
         course19.setDescription("Fundamentals of electrical circuits, signals, and systems.");
         course19.setSubject("Engineering");
         course19.setCredits(4);
+        course19.setSyllabus(syllabus19);
+
+        Syllabus syllabus20 = new Syllabus();
+        syllabus20.setObjectives("Introduction to the principles of mechanics and thermodynamics.");
+        syllabus20.setTopics("Statics, Dynamics, Thermodynamics, Material Science.");
+        syllabus20.setEvaluationCriteria("Assignments (40%), Projects (30%), Tests (30%)");
 
         Course course20 = new Course();
         course20.setName("Mechanical Engineering Principles");
         course20.setDescription("Introduction to the principles of mechanics and thermodynamics.");
         course20.setSubject("Engineering");
         course20.setCredits(4);
+        course20.setSyllabus(syllabus20);
 
     }
 }
