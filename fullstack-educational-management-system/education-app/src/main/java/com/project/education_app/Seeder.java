@@ -9,7 +9,9 @@ import lombok.Data;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 @Component
 @Data
@@ -645,6 +647,49 @@ public class Seeder implements CommandLineRunner {
         course1.setCredits(4);
         course1.setSyllabus(syllabus1);
 
+        // Create the units
+        Unit unit1_1 = new Unit();
+        unit1_1.setName("Variables");
+        unit1_1.setDescription("In this unit, students will be introduced to the concept of variables and their importance in programming. "
+                + "They will learn how to create and use variables to store and manipulate data. " +
+                "By the end of this unit, students will be able to declare variables and assign values to them, understand the concept of variable naming conventions, and demonstrate the use of variables in simple Python programs.");
+
+        Unit unit1_2 = new Unit();
+        unit1_2.setName("Data Types");
+        unit1_2.setDescription("This unit will cover the different data types available in Python, such as integers, floats, strings, and booleans. " +
+                "Students will learn how to identify and use these data types effectively. By the end of this unit, students will be able to perform operations on different data types, convert between data types, and apply data types appropriately in their programs.");
+
+        Unit unit1_3 = new Unit();
+        unit1_3.setName("Control Structures");
+        unit1_3.setDescription("In this unit, students will explore control structures, including loops (for and while) and conditional statements (if, elif, else). "
+                + "They will learn how to control the flow of their programs and make decisions based on conditions. By the end of this unit, students will be able to write programs that use loops to repeat actions and conditionals to execute code based on specific criteria.");
+
+        Unit unit1_4 = new Unit();
+        unit1_4.setName("Functions");
+        unit1_4.setDescription("This unit will focus on the creation and use of functions in Python." +
+                " Students will learn how to define functions, pass parameters, and return values. By the end of this unit, students will be able to write reusable functions, understand the importance of functions in organizing code, and apply functions to solve problems effectively.");
+
+        Unit unit1_5 = new Unit();
+        unit1_5.setName("Modules");
+        unit1_5.setDescription("In this unit, students will be introduced to the concept of modules and how to import and use them in their Python programs. " +
+                "They will learn how to break down large programs into smaller, manageable pieces using modules." +
+                " By the end of this unit, students will be able to create and import their own modules, use built-in Python modules, and understand the benefits of modular programming.");
+
+        Unit unit1_6 = new Unit();
+        unit1_6.setName("Libraries");
+        unit1_6.setDescription("This unit will cover the use of libraries in Python programming. Students will learn how to find, install, and use libraries to extend the functionality of their programs. " +
+                "By the end of this unit, students will be familiar with popular Python libraries, understand how to read library documentation, and integrate libraries into their own projects to simplify complex tasks.");
+        // Add units to a list
+        List<Unit> units1 = new ArrayList<>();
+        units1.add(unit1_1);
+        units1.add(unit1_2);
+        units1.add(unit1_3);
+        units1.add(unit1_4);
+        units1.add(unit1_5);
+        units1.add(unit1_6);
+        // Set the units in the course
+        course1.setUnits(units1);
+
         Syllabus syllabus2 = new Syllabus();
         syllabus2.setObjectives("Understand and implement various data structures.");
         syllabus2.setTopics("Arrays, Linked Lists, Stacks, Queues, Trees, Graphs.");
@@ -656,6 +701,47 @@ public class Seeder implements CommandLineRunner {
         course2.setSubject("Computer Science");
         course2.setCredits(3);
         course2.setSyllabus(syllabus2);
+
+        // Create the units
+        Unit unit2_1 = new Unit();
+        unit2_1.setName("Arrays");
+        unit2_1.setDescription("In this unit, students will learn about arrays, a fundamental data structure...");
+
+        Unit unit2_2 = new Unit();
+        unit2_2.setName("Linked Lists");
+        unit2_2.setDescription("This unit covers linked lists, a data structure consisting of nodes...");
+
+        Unit unit2_3 = new Unit();
+        unit2_3.setName("Stacks");
+        unit2_3.setDescription("In this unit, students will explore stacks, a last-in, first-out (LIFO) data structure...");
+
+        Unit unit2_4 = new Unit();
+        unit2_4.setName("Queues");
+        unit2_4.setDescription("This unit focuses on queues, a first-in, first-out (FIFO) data structure...");
+
+        Unit unit2_5 = new Unit();
+        unit2_5.setName("Trees");
+        unit2_5.setDescription("In this unit, students will study trees, a hierarchical data structure...");
+
+        Unit unit2_6 = new Unit();
+        unit2_6.setName("Graphs");
+        unit2_6.setDescription("This unit covers graphs, a versatile data structure used to represent relationships...");
+
+// Add units to a list
+        List<Unit> units2 = new ArrayList<>();
+        units2.add(unit2_1);
+        units2.add(unit2_2);
+        units2.add(unit2_3);
+        units2.add(unit2_4);
+        units2.add(unit2_5);
+        units2.add(unit2_6);
+
+// Create the course and set the units
+
+        course2.setUnits(units2);
+
+// Now, the course has the list of units associated with it
+
 
         Syllabus syllabus3 = new Syllabus();
         syllabus3.setObjectives("Explore the design and analysis of algorithms.");
@@ -669,6 +755,34 @@ public class Seeder implements CommandLineRunner {
         course3.setCredits(3);
         course3.setSyllabus(syllabus3);
 
+// Create the units
+        Unit unit3_1 = new Unit();
+        unit3_1.setName("Sorting");
+        unit3_1.setDescription("In this unit, students will learn about various sorting algorithms, including bubble sort, merge sort, and quicksort. They will understand the principles behind each sorting method, analyze their efficiency, and implement these algorithms in Python.");
+
+        Unit unit3_2 = new Unit();
+        unit3_2.setName("Searching");
+        unit3_2.setDescription("This unit covers different searching algorithms such as linear search and binary search. Students will learn how to implement these algorithms, analyze their time complexity, and apply them to solve real-world problems.");
+
+        Unit unit3_3 = new Unit();
+        unit3_3.setName("Graph Algorithms");
+        unit3_3.setDescription("In this unit, students will explore algorithms used to traverse and manipulate graphs, including depth-first search (DFS) and breadth-first search (BFS). They will learn how to implement these algorithms and understand their applications in network analysis and other fields.");
+
+        Unit unit3_4 = new Unit();
+        unit3_4.setName("Dynamic Programming");
+        unit3_4.setDescription("This unit focuses on dynamic programming, a method for solving complex problems by breaking them down into simpler subproblems. Students will learn the fundamentals of dynamic programming, implement classic algorithms such as the Fibonacci sequence and knapsack problem, and understand how to optimize their solutions.");
+
+// Add units to a list
+        List<Unit> units3 = new ArrayList<>();
+        units3.add(unit3_1);
+        units3.add(unit3_2);
+        units3.add(unit3_3);
+        units3.add(unit3_4);
+
+// Set the units in the course
+        course3.setUnits(units3);
+
+
         Syllabus syllabus4 = new Syllabus();
         syllabus4.setObjectives("Introduction to database concepts, SQL, and database design.");
         syllabus4.setTopics("Relational Databases, SQL, Transactions, Database Design.");
@@ -680,6 +794,34 @@ public class Seeder implements CommandLineRunner {
         course4.setSubject("Computer Science");
         course4.setCredits(3);
         course4.setSyllabus(syllabus4);
+
+// Create the units
+        Unit unit4_1 = new Unit();
+        unit4_1.setName("Relational Databases");
+        unit4_1.setDescription("In this unit, students will learn about the foundational concepts of relational databases, including tables, keys, and relationships. Students will understand how relational databases organize data and how to design efficient database schemas.");
+
+        Unit unit4_2 = new Unit();
+        unit4_2.setName("SQL");
+        unit4_2.setDescription("This unit covers the basics of Structured Query Language (SQL), the standard language for querying and manipulating databases. Students will learn how to write SQL queries to create, read, update, and delete data, as well as perform complex data operations.");
+
+        Unit unit4_3 = new Unit();
+        unit4_3.setName("Transactions");
+        unit4_3.setDescription("In this unit, students will explore the concept of transactions, which ensure data integrity and consistency in databases. They will learn about ACID properties (Atomicity, Consistency, Isolation, Durability) and how to implement transactions in SQL.");
+
+        Unit unit4_4 = new Unit();
+        unit4_4.setName("Database Design");
+        unit4_4.setDescription("This unit focuses on the principles and best practices of database design. Students will learn how to create normalized database schemas, design efficient database structures, and apply data modeling techniques to meet specific application requirements.");
+
+// Add units to a list
+        List<Unit> units4 = new ArrayList<>();
+        units4.add(unit4_1);
+        units4.add(unit4_2);
+        units4.add(unit4_3);
+        units4.add(unit4_4);
+
+// Set the units in the course
+        course4.setUnits(units4);
+
 
         Syllabus syllabus5 = new Syllabus();
         syllabus5.setObjectives("Study the fundamental concepts of operating systems.");
@@ -693,6 +835,34 @@ public class Seeder implements CommandLineRunner {
         course5.setCredits(3);
         course5.setSyllabus(syllabus5);
 
+// Create the units
+        Unit unit5_1 = new Unit();
+        unit5_1.setName("Processes");
+        unit5_1.setDescription("In this unit, students will learn about processes and process management in operating systems. They will understand how the OS handles process creation, scheduling, and termination, and explore inter-process communication and synchronization.");
+
+        Unit unit5_2 = new Unit();
+        unit5_2.setName("Memory Management");
+        unit5_2.setDescription("This unit covers memory management techniques used by operating systems to allocate and manage memory resources. Students will learn about paging, segmentation, virtual memory, and memory allocation algorithms.");
+
+        Unit unit5_3 = new Unit();
+        unit5_3.setName("File Systems");
+        unit5_3.setDescription("In this unit, students will explore file systems and how they are managed by the OS. They will learn about file organization, storage allocation, directory structures, and file access methods.");
+
+        Unit unit5_4 = new Unit();
+        unit5_4.setName("Scheduling");
+        unit5_4.setDescription("This unit focuses on CPU scheduling algorithms and their role in managing process execution. Students will learn about different scheduling techniques, such as round-robin, priority scheduling, and multi-level queues, and analyze their performance and efficiency.");
+
+// Add units to a list
+        List<Unit> units5 = new ArrayList<>();
+        units5.add(unit5_1);
+        units5.add(unit5_2);
+        units5.add(unit5_3);
+        units5.add(unit5_4);
+
+// Set the units in the course
+        course5.setUnits(units5);
+
+
         Syllabus syllabus6 = new Syllabus();
         syllabus6.setObjectives("Learn about the principles of computer networking.");
         syllabus6.setTopics("OSI Model, TCP/IP, Network Protocols, Routing, Switching.");
@@ -704,6 +874,39 @@ public class Seeder implements CommandLineRunner {
         course6.setSubject("Computer Science");
         course6.setCredits(3);
         course6.setSyllabus(syllabus6);
+
+// Create the units
+        Unit unit6_1 = new Unit();
+        unit6_1.setName("OSI Model");
+        unit6_1.setDescription("In this unit, students will learn about the OSI (Open Systems Interconnection) model, which standardizes the functions of a telecommunication or computing system irrespective of its underlying structure and technology. They will understand the seven layers of the OSI model and how data is transmitted across each layer.");
+
+        Unit unit6_2 = new Unit();
+        unit6_2.setName("TCP/IP");
+        unit6_2.setDescription("This unit covers the TCP/IP (Transmission Control Protocol/Internet Protocol) model, the foundational protocol suite for the internet. Students will learn about its four layers, key protocols, and how TCP/IP enables reliable communication between networked devices.");
+
+        Unit unit6_3 = new Unit();
+        unit6_3.setName("Network Protocols");
+        unit6_3.setDescription("In this unit, students will explore various network protocols that govern data exchange over networks. They will understand the roles of protocols such as HTTP, FTP, DNS, and DHCP, and how these protocols ensure secure and efficient communication.");
+
+        Unit unit6_4 = new Unit();
+        unit6_4.setName("Routing");
+        unit6_4.setDescription("This unit focuses on routing, the process of selecting paths in a network along which to send data packets. Students will learn about different routing algorithms, protocols (e.g., OSPF, BGP), and the concepts of static and dynamic routing.");
+
+        Unit unit6_5 = new Unit();
+        unit6_5.setName("Switching");
+        unit6_5.setDescription("In this unit, students will learn about switching, a technique used to forward data packets from one device to another within a network. They will explore different types of switches, switching methods (e.g., packet switching, circuit switching), and the role of switches in network design.");
+
+// Add units to a list
+        List<Unit> units6 = new ArrayList<>();
+        units6.add(unit6_1);
+        units6.add(unit6_2);
+        units6.add(unit6_3);
+        units6.add(unit6_4);
+        units6.add(unit6_5);
+
+// Set the units in the course
+        course6.setUnits(units6);
+
 
         Syllabus syllabus7 = new Syllabus();
         syllabus7.setObjectives("Introduction to software development methodologies.");
@@ -717,6 +920,34 @@ public class Seeder implements CommandLineRunner {
         course7.setCredits(4);
         course7.setSyllabus(syllabus7);
 
+// Create the units
+        Unit unit7_1 = new Unit();
+        unit7_1.setName("Software Development Life Cycle");
+        unit7_1.setDescription("In this unit, students will learn about the Software Development Life Cycle (SDLC), a process for planning, creating, testing, and deploying an information system. They will explore different SDLC models, including iterative, incremental, and spiral models.");
+
+        Unit unit7_2 = new Unit();
+        unit7_2.setName("Agile");
+        unit7_2.setDescription("This unit covers the Agile methodology, an iterative approach to software development that emphasizes flexibility and customer feedback. Students will learn about Agile principles, practices (e.g., Scrum, Kanban), and how to apply Agile techniques in software projects.");
+
+        Unit unit7_3 = new Unit();
+        unit7_3.setName("Waterfall");
+        unit7_3.setDescription("In this unit, students will explore the Waterfall model, a linear and sequential approach to software development. They will understand the phases of the Waterfall model, including requirements analysis, system design, implementation, testing, deployment, and maintenance.");
+
+        Unit unit7_4 = new Unit();
+        unit7_4.setName("Project Management");
+        unit7_4.setDescription("This unit focuses on project management techniques and tools used in software development. Students will learn about project planning, scheduling, resource management, risk management, and quality assurance, and how to manage a software project from inception to completion.");
+
+// Add units to a list
+        List<Unit> units7 = new ArrayList<>();
+        units7.add(unit7_1);
+        units7.add(unit7_2);
+        units7.add(unit7_3);
+        units7.add(unit7_4);
+
+// Set the units in the course
+        course7.setUnits(units7);
+
+
         Syllabus syllabus8 = new Syllabus();
         syllabus8.setObjectives("Learn to create dynamic websites.");
         syllabus8.setTopics("HTML, CSS, JavaScript, React, Backend Integration.");
@@ -728,6 +959,39 @@ public class Seeder implements CommandLineRunner {
         course8.setSubject("Computer Science");
         course8.setCredits(3);
         course8.setSyllabus(syllabus8);
+
+// Create the units
+        Unit unit8_1 = new Unit();
+        unit8_1.setName("HTML");
+        unit8_1.setDescription("In this unit, students will learn the basics of HTML (HyperText Markup Language), the standard language for creating web pages. They will understand how to structure content using HTML tags and attributes, and build simple web pages.");
+
+        Unit unit8_2 = new Unit();
+        unit8_2.setName("CSS");
+        unit8_2.setDescription("This unit covers CSS (Cascading Style Sheets), a language used to style HTML documents. Students will learn how to apply styles to web pages, including layout, colors, fonts, and responsiveness, to enhance the visual presentation of their web pages.");
+
+        Unit unit8_3 = new Unit();
+        unit8_3.setName("JavaScript");
+        unit8_3.setDescription("In this unit, students will explore JavaScript, a programming language that allows them to create interactive and dynamic web content. They will learn how to write JavaScript code to manipulate the DOM (Document Object Model), handle events, and perform animations.");
+
+        Unit unit8_4 = new Unit();
+        unit8_4.setName("React");
+        unit8_4.setDescription("This unit focuses on React, a popular JavaScript library for building user interfaces. Students will learn the core concepts of React, including components, state, and props, and how to create single-page applications with React.");
+
+        Unit unit8_5 = new Unit();
+        unit8_5.setName("Backend Integration");
+        unit8_5.setDescription("In this unit, students will learn how to integrate front-end web applications with backend services. They will explore RESTful APIs, data fetching, and server-side rendering, and understand how to build full-stack web applications.");
+
+// Add units to a list
+        List<Unit> units8 = new ArrayList<>();
+        units8.add(unit8_1);
+        units8.add(unit8_2);
+        units8.add(unit8_3);
+        units8.add(unit8_4);
+        units8.add(unit8_5);
+
+// Set the units in the course
+        course8.setUnits(units8);
+
 
         Syllabus syllabus9 = new Syllabus();
         syllabus9.setObjectives("Explore the basics of artificial intelligence.");
@@ -741,6 +1005,29 @@ public class Seeder implements CommandLineRunner {
         course9.setCredits(4);
         course9.setSyllabus(syllabus9);
 
+// Create the units
+        Unit unit9_1 = new Unit();
+        unit9_1.setName("Machine Learning");
+        unit9_1.setDescription("In this unit, students will learn about machine learning, a subset of AI that focuses on developing algorithms that enable computers to learn from and make predictions based on data. They will explore various machine learning techniques and tools.");
+
+        Unit unit9_2 = new Unit();
+        unit9_2.setName("Neural Networks");
+        unit9_2.setDescription("This unit covers neural networks, a set of algorithms modeled after the human brain. Students will understand the basics of neural network architecture, backpropagation, and how to build and train neural networks for different tasks.");
+
+        Unit unit9_3 = new Unit();
+        unit9_3.setName("Natural Language Processing");
+        unit9_3.setDescription("In this unit, students will explore natural language processing (NLP), a field of AI that enables computers to understand and generate human language. They will learn about text processing, sentiment analysis, and how to build NLP models using machine learning techniques.");
+
+// Add units to a list
+        List<Unit> units9 = new ArrayList<>();
+        units9.add(unit9_1);
+        units9.add(unit9_2);
+        units9.add(unit9_3);
+
+// Set the units in the course
+        course9.setUnits(units9);
+
+
         Syllabus syllabus10 = new Syllabus();
         syllabus10.setObjectives("Introduction to the principles of cybersecurity.");
         syllabus10.setTopics("Threat Analysis, Encryption, Network Security, Secure Coding.");
@@ -752,6 +1039,34 @@ public class Seeder implements CommandLineRunner {
         course10.setSubject("Computer Science");
         course10.setCredits(3);
         course10.setSyllabus(syllabus10);
+
+// Create the units
+        Unit unit10_1 = new Unit();
+        unit10_1.setName("Threat Analysis");
+        unit10_1.setDescription("In this unit, students will learn about threat analysis, identifying potential security threats and vulnerabilities. They will understand how to assess risks and implement strategies to mitigate these threats.");
+
+        Unit unit10_2 = new Unit();
+        unit10_2.setName("Encryption");
+        unit10_2.setDescription("This unit covers encryption, the process of converting information into a secure format. Students will learn about different encryption techniques, algorithms, and the importance of encryption in protecting sensitive data.");
+
+        Unit unit10_3 = new Unit();
+        unit10_3.setName("Network Security");
+        unit10_3.setDescription("In this unit, students will explore network security, including measures to protect data during transmission across networks. They will understand firewalls, intrusion detection systems, and other tools used to safeguard networks.");
+
+        Unit unit10_4 = new Unit();
+        unit10_4.setName("Secure Coding");
+        unit10_4.setDescription("This unit focuses on secure coding practices to prevent vulnerabilities in software. Students will learn about common security flaws, how to write secure code, and best practices for maintaining software security.");
+
+// Add units to a list
+        List<Unit> units10 = new ArrayList<>();
+        units10.add(unit10_1);
+        units10.add(unit10_2);
+        units10.add(unit10_3);
+        units10.add(unit10_4);
+
+// Set the units in the course
+        course10.setUnits(units10);
+
 
 // Mathematics Courses
 
@@ -767,6 +1082,34 @@ public class Seeder implements CommandLineRunner {
         course11.setCredits(4);
         course11.setSyllabus(syllabus11);
 
+// Create the units
+        Unit unit11_1 = new Unit();
+        unit11_1.setName("Limits");
+        unit11_1.setDescription("In this unit, students will learn about limits, the foundational concept of calculus. They will understand how to calculate limits and their importance in defining continuity and the behavior of functions.");
+
+        Unit unit11_2 = new Unit();
+        unit11_2.setName("Derivatives");
+        unit11_2.setDescription("This unit covers derivatives, the measure of how a function changes as its input changes. Students will learn techniques of differentiation, applications of derivatives, and how to solve real-world problems using derivatives.");
+
+        Unit unit11_3 = new Unit();
+        unit11_3.setName("Integrals");
+        unit11_3.setDescription("In this unit, students will explore integrals, the concept of accumulation of quantities. They will learn about techniques of integration, the Fundamental Theorem of Calculus, and applications of integrals in various fields.");
+
+        Unit unit11_4 = new Unit();
+        unit11_4.setName("Applications of Calculus");
+        unit11_4.setDescription("This unit focuses on the practical applications of calculus in science, engineering, and economics. Students will understand how to apply calculus concepts to model and solve real-world problems.");
+
+// Add units to a list
+        List<Unit> units11 = new ArrayList<>();
+        units11.add(unit11_1);
+        units11.add(unit11_2);
+        units11.add(unit11_3);
+        units11.add(unit11_4);
+
+// Set the units in the course
+        course11.setUnits(units11);
+
+
         Syllabus syllabus12 = new Syllabus();
         syllabus12.setObjectives("Study of vector spaces, matrices, and linear transformations.");
         syllabus12.setTopics("Vectors, Matrices, Determinants, Eigenvalues, Eigenvectors.");
@@ -778,6 +1121,39 @@ public class Seeder implements CommandLineRunner {
         course12.setSubject("Mathematics");
         course12.setCredits(3);
         course12.setSyllabus(syllabus12);
+
+// Create the units
+        Unit unit12_1 = new Unit();
+        unit12_1.setName("Vectors");
+        unit12_1.setDescription("In this unit, students will learn about vectors, their properties, and operations. They will explore vector addition, scalar multiplication, dot product, and cross product, and understand their applications in various fields.");
+
+        Unit unit12_2 = new Unit();
+        unit12_2.setName("Matrices");
+        unit12_2.setDescription("This unit covers matrices and their operations. Students will learn about matrix addition, multiplication, and inversion, as well as applications of matrices in solving linear equations and transformations.");
+
+        Unit unit12_3 = new Unit();
+        unit12_3.setName("Determinants");
+        unit12_3.setDescription("In this unit, students will explore determinants, a scalar value that can be computed from the elements of a square matrix. They will understand the properties of determinants, how to calculate them, and their role in solving linear systems and finding matrix inverses.");
+
+        Unit unit12_4 = new Unit();
+        unit12_4.setName("Eigenvalues");
+        unit12_4.setDescription("This unit focuses on eigenvalues, which are special numbers associated with a matrix. Students will learn how to calculate eigenvalues, understand their significance, and explore their applications in various mathematical and engineering problems.");
+
+        Unit unit12_5 = new Unit();
+        unit12_5.setName("Eigenvectors");
+        unit12_5.setDescription("In this unit, students will study eigenvectors, which are vectors associated with eigenvalues that remain in the same direction under a linear transformation. They will learn how to find eigenvectors and understand their importance in matrix diagonalization and systems of linear equations.");
+
+// Add units to a list
+        List<Unit> units12 = new ArrayList<>();
+        units12.add(unit12_1);
+        units12.add(unit12_2);
+        units12.add(unit12_3);
+        units12.add(unit12_4);
+        units12.add(unit12_5);
+
+// Set the units in the course
+        course12.setUnits(units12);
+
 
         Syllabus syllabus13 = new Syllabus();
         syllabus13.setObjectives("Introduction to statistical methods and their applications.");
@@ -791,6 +1167,29 @@ public class Seeder implements CommandLineRunner {
         course13.setCredits(3);
         course13.setSyllabus(syllabus13);
 
+// Create the units
+        Unit unit13_1 = new Unit();
+        unit13_1.setName("Probability");
+        unit13_1.setDescription("In this unit, students will learn about probability theory, including the concepts of random variables, probability distributions, and expected value. They will explore different probability models and their applications in real-world scenarios.");
+
+        Unit unit13_2 = new Unit();
+        unit13_2.setName("Descriptive Statistics");
+        unit13_2.setDescription("This unit covers descriptive statistics, which summarize and describe the main features of a dataset. Students will learn how to calculate and interpret measures of central tendency (mean, median, mode) and measures of variability (range, variance, standard deviation).");
+
+        Unit unit13_3 = new Unit();
+        unit13_3.setName("Inferential Statistics");
+        unit13_3.setDescription("In this unit, students will explore inferential statistics, which allow them to make inferences and predictions about a population based on a sample of data. They will learn about hypothesis testing, confidence intervals, and regression analysis.");
+
+// Add units to a list
+        List<Unit> units13 = new ArrayList<>();
+        units13.add(unit13_1);
+        units13.add(unit13_2);
+        units13.add(unit13_3);
+
+// Set the units in the course
+        course13.setUnits(units13);
+
+
         Syllabus syllabus14 = new Syllabus();
         syllabus14.setObjectives("Study of mathematical structures that are fundamentally discrete.");
         syllabus14.setTopics("Logic, Set Theory, Graph Theory, Combinatorics.");
@@ -802,6 +1201,34 @@ public class Seeder implements CommandLineRunner {
         course14.setSubject("Mathematics");
         course14.setCredits(3);
         course14.setSyllabus(syllabus14);
+
+// Create the units
+        Unit unit14_1 = new Unit();
+        unit14_1.setName("Logic");
+        unit14_1.setDescription("In this unit, students will learn about the fundamentals of logic, including propositional and predicate logic. They will understand how to form logical statements, use logical connectives, and apply logical reasoning in problem-solving.");
+
+        Unit unit14_2 = new Unit();
+        unit14_2.setName("Set Theory");
+        unit14_2.setDescription("This unit covers set theory, the study of sets, which are collections of objects. Students will explore the concepts of subsets, unions, intersections, and Cartesian products, and apply these concepts to solve problems involving sets.");
+
+        Unit unit14_3 = new Unit();
+        unit14_3.setName("Graph Theory");
+        unit14_3.setDescription("In this unit, students will explore graph theory, the study of graphs as mathematical structures used to model pairwise relations between objects. They will learn about different types of graphs, such as directed and undirected graphs, and apply algorithms for traversing and analyzing graphs.");
+
+        Unit unit14_4 = new Unit();
+        unit14_4.setName("Combinatorics");
+        unit14_4.setDescription("This unit focuses on combinatorics, the study of counting, arrangement, and combination of objects. Students will learn about permutations, combinations, and the principles of counting, and apply these techniques to solve combinatorial problems.");
+
+// Add units to a list
+        List<Unit> units14 = new ArrayList<>();
+        units14.add(unit14_1);
+        units14.add(unit14_2);
+        units14.add(unit14_3);
+        units14.add(unit14_4);
+
+// Set the units in the course
+        course14.setUnits(units14);
+
 
 // Science Courses
 
@@ -817,6 +1244,29 @@ public class Seeder implements CommandLineRunner {
         course15.setCredits(4);
         course15.setSyllabus(syllabus15);
 
+// Create the units
+        Unit unit15_1 = new Unit();
+        unit15_1.setName("Newton's Laws");
+        unit15_1.setDescription("In this unit, students will learn about Newton's laws of motion, which describe the relationship between the motion of an object and the forces acting on it. They will understand and apply these laws to solve problems in mechanics.");
+
+        Unit unit15_2 = new Unit();
+        unit15_2.setName("Energy Principles");
+        unit15_2.setDescription("This unit covers the principles of energy, including kinetic and potential energy, work, and the conservation of energy. Students will learn how to calculate energy and work, and understand the concepts of power and efficiency.");
+
+        Unit unit15_3 = new Unit();
+        unit15_3.setName("Motion");
+        unit15_3.setDescription("In this unit, students will explore the concepts of motion, including linear motion, projectile motion, and circular motion. They will learn about velocity, acceleration, and the equations of motion, and apply these concepts to analyze different types of motion.");
+
+// Add units to a list
+        List<Unit> units15 = new ArrayList<>();
+        units15.add(unit15_1);
+        units15.add(unit15_2);
+        units15.add(unit15_3);
+
+// Set the units in the course
+        course15.setUnits(units15);
+
+
         Syllabus syllabus16 = new Syllabus();
         syllabus16.setObjectives("Introduction to chemical principles.");
         syllabus16.setTopics("Atomic Structure, Chemical Bonding, Reactions.");
@@ -828,6 +1278,29 @@ public class Seeder implements CommandLineRunner {
         course16.setSubject("Chemistry");
         course16.setCredits(4);
         course16.setSyllabus(syllabus16);
+
+// Create the units
+        Unit unit16_1 = new Unit();
+        unit16_1.setName("Atomic Structure");
+        unit16_1.setDescription("In this unit, students will learn about the structure of atoms, including subatomic particles (protons, neutrons, electrons), atomic number, mass number, and isotopes. They will understand how these components define elements and their properties.");
+
+        Unit unit16_2 = new Unit();
+        unit16_2.setName("Chemical Bonding");
+        unit16_2.setDescription("This unit covers chemical bonding, the process by which atoms combine to form molecules and compounds. Students will explore different types of bonds, including ionic, covalent, and metallic bonds, and understand the principles that govern bond formation.");
+
+        Unit unit16_3 = new Unit();
+        unit16_3.setName("Reactions");
+        unit16_3.setDescription("In this unit, students will study chemical reactions, including the reactants, products, and types of chemical reactions. They will learn about reaction rates, equilibrium, and the factors that influence chemical reactions.");
+
+// Add units to a list
+        List<Unit> units16 = new ArrayList<>();
+        units16.add(unit16_1);
+        units16.add(unit16_2);
+        units16.add(unit16_3);
+
+// Set the units in the course
+        course16.setUnits(units16);
+
 
         Syllabus syllabus17 = new Syllabus();
         syllabus17.setObjectives("Introduction to cellular biology, genetics, and evolution.");
@@ -841,6 +1314,34 @@ public class Seeder implements CommandLineRunner {
         course17.setCredits(4);
         course17.setSyllabus(syllabus17);
 
+// Create the units
+        Unit unit17_1 = new Unit();
+        unit17_1.setName("Cell Structure");
+        unit17_1.setDescription("In this unit, students will learn about the structure and function of cells, including the cell membrane, nucleus, organelles, and the differences between prokaryotic and eukaryotic cells.");
+
+        Unit unit17_2 = new Unit();
+        unit17_2.setName("Genetics");
+        unit17_2.setDescription("This unit covers genetics, the study of heredity and the variation of inherited characteristics. Students will explore the principles of Mendelian genetics, the structure and function of DNA, and the processes of replication, transcription, and translation.");
+
+        Unit unit17_3 = new Unit();
+        unit17_3.setName("Evolution");
+        unit17_3.setDescription("In this unit, students will explore the theory of evolution, natural selection, and the evidence supporting evolutionary change. They will understand how genetic variation and environmental factors contribute to the evolution of species.");
+
+        Unit unit17_4 = new Unit();
+        unit17_4.setName("Ecology");
+        unit17_4.setDescription("This unit focuses on ecology, the study of interactions between organisms and their environment. Students will learn about ecosystems, food webs, energy flow, and the impact of human activities on the environment.");
+
+// Add units to a list
+        List<Unit> units17 = new ArrayList<>();
+        units17.add(unit17_1);
+        units17.add(unit17_2);
+        units17.add(unit17_3);
+        units17.add(unit17_4);
+
+// Set the units in the course
+        course17.setUnits(units17);
+
+
         Syllabus syllabus18 = new Syllabus();
         syllabus18.setObjectives("Overview of engineering disciplines and problem-solving techniques.");
         syllabus18.setTopics("Engineering Disciplines, Problem-Solving, Design Process.");
@@ -852,6 +1353,29 @@ public class Seeder implements CommandLineRunner {
         course18.setSubject("Engineering");
         course18.setCredits(3);
         course18.setSyllabus(syllabus18);
+
+// Create the units
+        Unit unit18_1 = new Unit();
+        unit18_1.setName("Engineering Disciplines");
+        unit18_1.setDescription("In this unit, students will learn about the various engineering disciplines, including civil, mechanical, electrical, and chemical engineering. They will explore the roles and responsibilities of engineers in each field and understand the diverse applications of engineering.");
+
+        Unit unit18_2 = new Unit();
+        unit18_2.setName("Problem-Solving");
+        unit18_2.setDescription("This unit covers problem-solving techniques used in engineering. Students will learn about the engineering problem-solving process, including identifying problems, generating solutions, and selecting the best solution. They will apply these techniques to real-world engineering challenges.");
+
+        Unit unit18_3 = new Unit();
+        unit18_3.setName("Design Process");
+        unit18_3.setDescription("In this unit, students will explore the engineering design process, a systematic approach to solving engineering problems. They will learn about the stages of the design process, including defining requirements, brainstorming, prototyping, testing, and iteration.");
+
+// Add units to a list
+        List<Unit> units18 = new ArrayList<>();
+        units18.add(unit18_1);
+        units18.add(unit18_2);
+        units18.add(unit18_3);
+
+// Set the units in the course
+        course18.setUnits(units18);
+
 
         Syllabus syllabus19 = new Syllabus();
         syllabus19.setObjectives("Fundamentals of electrical circuits, signals, and systems.");
@@ -865,6 +1389,29 @@ public class Seeder implements CommandLineRunner {
         course19.setCredits(4);
         course19.setSyllabus(syllabus19);
 
+// Create the units
+        Unit unit19_1 = new Unit();
+        unit19_1.setName("Circuit Analysis");
+        unit19_1.setDescription("In this unit, students will learn about the principles of circuit analysis, including Ohm's law, Kirchhoff's laws, and techniques for analyzing DC and AC circuits. They will understand how to calculate voltage, current, and resistance in electrical circuits.");
+
+        Unit unit19_2 = new Unit();
+        unit19_2.setName("Signal Processing");
+        unit19_2.setDescription("This unit covers the fundamentals of signal processing, including the analysis and manipulation of signals. Students will learn about Fourier transforms, filtering, and the applications of signal processing in communication systems and digital signal processing (DSP).");
+
+        Unit unit19_3 = new Unit();
+        unit19_3.setName("Systems Theory");
+        unit19_3.setDescription("In this unit, students will explore systems theory, the study of systems and their behavior. They will learn about system modeling, feedback, and control systems, and understand how to apply these concepts to analyze and design electrical systems.");
+
+// Add units to a list
+        List<Unit> units19 = new ArrayList<>();
+        units19.add(unit19_1);
+        units19.add(unit19_2);
+        units19.add(unit19_3);
+
+// Set the units in the course
+        course19.setUnits(units19);
+
+
         Syllabus syllabus20 = new Syllabus();
         syllabus20.setObjectives("Introduction to the principles of mechanics and thermodynamics.");
         syllabus20.setTopics("Statics, Dynamics, Thermodynamics, Material Science.");
@@ -876,6 +1423,34 @@ public class Seeder implements CommandLineRunner {
         course20.setSubject("Engineering");
         course20.setCredits(4);
         course20.setSyllabus(syllabus20);
+
+// Create the units
+        Unit unit20_1 = new Unit();
+        unit20_1.setName("Statics");
+        unit20_1.setDescription("In this unit, students will learn about statics, the branch of mechanics that deals with bodies at rest and forces in equilibrium. They will understand how to analyze force systems, calculate moments, and solve problems related to static equilibrium.");
+
+        Unit unit20_2 = new Unit();
+        unit20_2.setName("Dynamics");
+        unit20_2.setDescription("This unit covers dynamics, the study of bodies in motion. Students will explore kinematics and kinetics, understand the principles of Newton's laws of motion, and learn how to analyze the motion of particles and rigid bodies.");
+
+        Unit unit20_3 = new Unit();
+        unit20_3.setName("Thermodynamics");
+        unit20_3.setDescription("In this unit, students will explore the principles of thermodynamics, including the laws of thermodynamics, energy transfer, and the behavior of gases and liquids. They will understand how to apply these principles to solve engineering problems involving heat and work.");
+
+        Unit unit20_4 = new Unit();
+        unit20_4.setName("Material Science");
+        unit20_4.setDescription("This unit focuses on material science, the study of the properties and behavior of materials. Students will learn about different types of materials, including metals, ceramics, polymers, and composites, and understand how to select materials for specific engineering applications.");
+
+// Add units to a list
+        List<Unit> units20 = new ArrayList<>();
+        units20.add(unit20_1);
+        units20.add(unit20_2);
+        units20.add(unit20_3);
+        units20.add(unit20_4);
+
+// Set the units in the course
+        course20.setUnits(units20);
+
 
     }
 }
