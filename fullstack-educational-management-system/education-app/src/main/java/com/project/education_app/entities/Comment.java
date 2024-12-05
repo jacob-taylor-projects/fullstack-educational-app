@@ -22,9 +22,6 @@ public class Comment {
 
     private String content;
 
-    @CreatedDate
-    private Timestamp date=Timestamp.valueOf(LocalDateTime.now());
-
     @ManyToOne
     private Post post;
 

@@ -24,7 +24,8 @@ public class Seeder implements CommandLineRunner {
     private final AttendanceRepo attendanceRepo;
     private final ResourceRepo resourceRepo;
     private final DiscussionRepo discussionRepo;
-
+    private final PostRepo postRepo;
+    private final CommentRepo commentRepo;
 
 
 
@@ -626,20 +627,455 @@ public class Seeder implements CommandLineRunner {
         Discussion discussion20c = createDiscussion("Thermodynamics Discussion", "How do the laws of thermodynamics and principles of energy transfer apply to the behavior of gases and liquids, and how can these principles be used to solve engineering problems involving heat and work?", faculty5);
         Discussion discussion20d = createDiscussion("Material Science Discussion", "How do the properties and behaviors of different materials (such as metals, ceramics, polymers, and composites) influence their selection for specific engineering applications, and what are some examples of these applications?", faculty5);
 
+        // Create Posts for Discussion 1a
+        Post post1a1 = createPost("Variables are used to store data that can be manipulated throughout a program. For example, a variable can store a user’s input, which can then be processed and used to generate an output.", discussion1a, student1);
+        Post post1a2 = createPost("In my project, I used variables to keep track of player scores in a game, which allowed me to update and display scores dynamically.", discussion1a, student2);
+
+// Create Posts for Discussion 1b
+        Post post1b1 = createPost("Type conversion allows for changing a variable from one data type to another, such as converting a string to an integer for mathematical operations.", discussion1b, student1);
+        Post post1b2 = createPost("Casting is crucial in data type management, enabling smooth data manipulation and preventing errors in operations that require specific types.", discussion1b, student2);
+
+// Create Posts for Discussion 1c
+        Post post1c1 = createPost("In a traffic light control system, conditional statements were used to decide which light should be on based on the current state and time elapsed.", discussion1c, student1);
+        Post post1c2 = createPost("I used if-else conditions to validate user inputs in a form submission, ensuring the required fields were correctly filled before processing the data.", discussion1c, student2);
+
+// Create Posts for Discussion 1d
+        Post post1d1 = createPost("Functions help in organizing code by encapsulating repetitive tasks, making the code modular and easier to understand.", discussion1d, student1);
+        Post post1d2 = createPost("Best practices for defining functions include using descriptive names, keeping them short, and ensuring they perform a single task.", discussion1d, student2);
+
+// Create Posts for Discussion 1e
+        Post post1e1 = createPost("Modular programming divides a program into independent modules, improving maintainability and making the codebase easier to manage and understand.", discussion1e, student1);
+        Post post1e2 = createPost("I applied modular principles by separating the authentication and user management systems in my application, which simplified debugging and feature additions.", discussion1e, student2);
+
+// Create Posts for Discussion 1f
+        Post post1f1 = createPost("Libraries like NumPy in Python simplify complex mathematical computations, saving time and effort in writing custom functions.", discussion1f, student1);
+        Post post1f2 = createPost("I found the React library extremely useful for building interactive user interfaces efficiently with reusable components.", discussion1f, student2);
+
+// Create Posts for Discussion 2a
+        Post post2a1 = createPost("Arrays provide a way to efficiently manage and access large amounts of data by using indices, which allow constant time access.", discussion2a, student1);
+        Post post2a2 = createPost("A common pitfall when using arrays is going out of bounds, which can cause runtime errors. Proper bounds checking is essential.", discussion2a, student2);
+
+// Create Posts for Discussion 2b
+        Post post2b1 = createPost("Linked lists offer dynamic memory allocation and efficient insertions and deletions, making them preferable in scenarios where data size changes frequently.", discussion2b, student1);
+        Post post2b2 = createPost("While arrays provide fast access to elements, linked lists excel in operations like insertion and deletion, especially when the data is constantly changing.", discussion2b, student2);
+
+// Create Posts for Discussion 2c
+        Post post2c1 = createPost("Stacks are used in many real-world applications such as undo mechanisms in text editors, where the most recent action is undone first (LIFO).", discussion2c, student1);
+        Post post2c2 = createPost("The LIFO nature of stacks is beneficial in function call management in programming languages, where the most recent function call is completed first.", discussion2c, student2);
+
+// Create Posts for Discussion 2d
+        Post post2d1 = createPost("Queues are used in scheduling tasks in operating systems, where tasks are handled in the order they arrive, ensuring fair processing.", discussion2d, student1);
+        Post post2d2 = createPost("A practical application of queues is in print spoolers, where print jobs are handled on a first-come, first-served basis.", discussion2d, student2);
+
+// Create Posts for Discussion 2e
+        Post post2e1 = createPost("Trees represent hierarchical data efficiently, such as file systems. They allow for fast searching, insertion, and deletion operations.", discussion2e, student1);
+        Post post2e2 = createPost("Balanced trees, like AVL trees, support efficient searching and sorting operations by maintaining a balanced height, reducing complexity.", discussion2e, student2);
+
+// Create Posts for Discussion 2f
+        Post post2f1 = createPost("Graphs are used to model relationships in social networks, where nodes represent individuals and edges represent relationships.", discussion2f, student1);
+        Post post2f2 = createPost("Common algorithms for traversing graphs include Depth-First Search (DFS) and Breadth-First Search (BFS), which are used in various applications like finding shortest paths.", discussion2f, student2);
+
+        // Create Posts for Discussion 3a
+        Post post3a1 = createPost("Bubble sort is simple but inefficient for large datasets. Merge sort is more efficient with a time complexity of O(n log n), making it suitable for larger datasets.", discussion3a, student1);
+        Post post3a2 = createPost("Quicksort is often faster in practice due to its in-place sorting, but it can be less efficient than merge sort in the worst-case scenario (O(n^2)).", discussion3a, student2);
+
+// Create Posts for Discussion 3b
+        Post post3b1 = createPost("Linear search is straightforward and works well for small datasets or unsorted data, while binary search is faster (O(log n)) but requires sorted data.", discussion3b, student1);
+        Post post3b2 = createPost("In real-world applications, linear search might be used for small lists or real-time searching, whereas binary search is preferred for sorted large datasets.", discussion3b, student2);
+
+// Create Posts for Discussion 3c
+        Post post3c1 = createPost("DFS is useful for exploring all possible paths in applications like maze solving, while BFS is advantageous for finding the shortest path in unweighted graphs.", discussion3c, student1);
+        Post post3c2 = createPost("I used BFS to determine the shortest route in a delivery network, where the shortest path is crucial for efficiency.", discussion3c, student2);
+
+// Create Posts for Discussion 3d
+        Post post3d1 = createPost("Dynamic programming solves complex problems by breaking them down into simpler subproblems, storing the results to avoid redundant calculations.", discussion3d, student1);
+        Post post3d2 = createPost("For example, in the knapsack problem, dynamic programming helps optimize the selection of items to maximize value without exceeding weight capacity.", discussion3d, student2);
+
+// Create Posts for Discussion 4a
+        Post post4a1 = createPost("Relational databases use tables, keys, and relationships to organize data efficiently, ensuring data integrity and reducing redundancy.", discussion4a, student1);
+        Post post4a2 = createPost("The use of primary and foreign keys in relational databases helps in maintaining referential integrity and simplifies complex queries.", discussion4a, student2);
+
+// Create Posts for Discussion 4b
+        Post post4b1 = createPost("Common SQL queries include SELECT for data retrieval, INSERT for adding data, UPDATE for modifying data, and DELETE for removing data.", discussion4b, student1);
+        Post post4b2 = createPost("Efficient SQL queries optimize database performance and ensure that data operations are performed accurately and quickly.", discussion4b, student2);
+
+// Create Posts for Discussion 4c
+        Post post4c1 = createPost("The ACID properties are crucial for ensuring reliable transactions in databases, preventing issues like data corruption and inconsistencies.", discussion4c, student1);
+        Post post4c2 = createPost("In financial systems, ACID properties ensure that transactions are processed accurately, maintaining data integrity even during failures.", discussion4c, student2);
+
+// Create Posts for Discussion 4d
+        Post post4d1 = createPost("Designing normalized database schemas involves organizing data to reduce redundancy and improve data integrity, typically using techniques like 1NF, 2NF, and 3NF.", discussion4d, student1);
+        Post post4d2 = createPost("Normalized schemas make databases more efficient by ensuring that data is stored logically and consistently, simplifying maintenance and queries.", discussion4d, student2);
+
+        // Create Posts for Discussion 5a
+        Post post5a1 = createPost("Operating systems manage processes by creating, scheduling, and terminating them. Inter-process communication and synchronization are crucial to avoid conflicts and ensure data consistency.", discussion5a, student3);
+        Post post5a2 = createPost("In a multi-threaded environment, synchronization mechanisms like semaphores help manage the access of multiple processes to shared resources efficiently.", discussion5a, student4);
+
+// Create Posts for Discussion 5b
+        Post post5b1 = createPost("Paging, segmentation, and virtual memory are techniques that optimize memory management. Paging divides memory into fixed-sized pages, segmentation uses variable-sized segments, and virtual memory extends physical memory using disk storage.", discussion5b, student3);
+        Post post5b2 = createPost("Virtual memory allows running large applications by using disk space as additional RAM, while paging helps in efficient memory allocation without fragmentation.", discussion5b, student4);
+
+// Create Posts for Discussion 5c
+        Post post5c1 = createPost("File systems organize and manage data through structures like directories and file access methods. Different methods, such as sequential and random access, provide various advantages and challenges.", discussion5c, student3);
+        Post post5c2 = createPost("Hierarchical directory structures in file systems help in organizing data logically, but they can become complex and difficult to manage in large systems.", discussion5c, student4);
+
+// Create Posts for Discussion 5d
+        Post post5d1 = createPost("CPU scheduling algorithms like round-robin, priority scheduling, and multi-level queues impact process execution efficiency by determining the order and time allocation for process execution.", discussion5d, student3);
+        Post post5d2 = createPost("Round-robin scheduling provides fair time allocation, while priority scheduling focuses on processes with higher priority. Multi-level queues categorize processes for more efficient handling.", discussion5d, student4);
+
+// Create Posts for Discussion 6a
+        Post post6a1 = createPost("The OSI model's seven layers facilitate standardized telecommunication by defining specific functions for each layer, ensuring data is transmitted accurately and efficiently across networks.", discussion6a, student3);
+        Post post6a2 = createPost("Understanding the OSI model helps in troubleshooting network issues and designing networks by providing a clear framework for how data moves through different layers.", discussion6a, student4);
+
+// Create Posts for Discussion 6b
+        Post post6b1 = createPost("The TCP/IP model is more practical and widely used compared to the OSI model. TCP/IP ensures reliable communication over the internet through protocols like TCP and IP.", discussion6b, student3);
+        Post post6b2 = createPost("While the OSI model is theoretical and divides networking tasks into seven layers, the TCP/IP model's four layers focus on real-world implementations of internet protocols.", discussion6b, student4);
+
+// Create Posts for Discussion 6c
+        Post post6c1 = createPost("Protocols such as HTTP, FTP, DNS, and DHCP ensure secure and efficient communication by defining rules for data exchange, but challenges include security vulnerabilities and interoperability issues.", discussion6c, student3);
+        Post post6c2 = createPost("Implementing protocols like HTTP and DNS requires addressing challenges such as data security and ensuring reliable communication across different network architectures.", discussion6c, student4);
+
+// Create Posts for Discussion 6d
+        Post post6d1 = createPost("Routing algorithms like OSPF and BGP determine the best paths for data packets. OSPF is used within large networks for efficient route calculation, while BGP manages routing between different networks.", discussion6d, student3);
+        Post post6d2 = createPost("Static routing uses predefined paths, while dynamic routing like OSPF adapts to network changes, providing flexibility and resilience in data packet routing.", discussion6d, student4);
+
+// Create Posts for Discussion 6e
+        Post post6e1 = createPost("Packet switching and circuit switching differ in how data packets are forwarded. Packet switching is more efficient for internet traffic, while circuit switching is used in traditional telephony.", discussion6e, student3);
+        Post post6e2 = createPost("Switches play a crucial role in network design by directing data packets to their destinations efficiently, enhancing network performance and reducing congestion.", discussion6e, student4);
+
+        // Create Posts for Discussion 7a
+        Post post7a1 = createPost("Iterative, incremental, and spiral approaches in SDLC allow for flexible adaptation to changes. Iterative focuses on repeating phases, incremental adds functionality in increments, and spiral combines iterative with risk analysis.", discussion7a, student3);
+        Post post7a2 = createPost("I prefer the spiral model for high-risk projects as it incorporates risk assessment, while the iterative model suits projects needing frequent refinements.", discussion7a, student4);
+
+// Create Posts for Discussion 7b
+        Post post7b1 = createPost("Agile methodology emphasizes flexibility and responsiveness through principles like customer collaboration and adaptive planning. Techniques like Scrum and Kanban help in breaking down tasks and managing workflow.", discussion7b, student3);
+        Post post7b2 = createPost("Using Agile techniques in my project improved team collaboration and allowed us to quickly adapt to changes, ensuring timely delivery of features.", discussion7b, student4);
+
+// Create Posts for Discussion 7c
+        Post post7c1 = createPost("The Waterfall model’s linear and sequential approach makes planning straightforward but less flexible. It's suitable for projects with well-defined requirements, unlike Agile, which is adaptable to changes.", discussion7c, student3);
+        Post post7c2 = createPost("While the Waterfall model is great for clear-cut projects, Agile’s iterative cycles make it better for projects requiring continuous feedback and adaptability.", discussion7c, student4);
+
+// Create Posts for Discussion 7d
+        Post post7d1 = createPost("Effective project management in software development involves techniques like risk management, resource allocation, and quality control. Tools like Gantt charts and project management software aid in tracking progress.", discussion7d, student3);
+        Post post7d2 = createPost("I manage project risk by identifying potential issues early and allocating resources efficiently to ensure quality outcomes, using tools like Trello and JIRA for tracking.", discussion7d, student4);
+
+// Create Posts for Discussion 8a
+        Post post8a1 = createPost("HTML tags and attributes structure web content by defining elements like headings, paragraphs, and links. Best practices include using semantic tags and ensuring accessibility with alt text for images.", discussion8a, student3);
+        Post post8a2 = createPost("Creating accessible HTML involves using semantic elements and ARIA attributes to make web content usable for all users, including those with disabilities.", discussion8a, student4);
+
+// Create Posts for Discussion 8b
+        Post post8b1 = createPost("CSS enhances web presentation by controlling layout, colors, and fonts. Techniques like Flexbox and Grid are used to create responsive designs that adapt to different screen sizes.", discussion8b, student3);
+        Post post8b2 = createPost("Using CSS Grid in my project enabled me to design a responsive layout that provided a consistent user experience across various devices.", discussion8b, student4);
+
+// Create Posts for Discussion 8c
+        Post post8c1 = createPost("JavaScript adds interactivity to web content through DOM manipulation and event handling. Common methods include using getElementById and addEventListener to create dynamic interfaces.", discussion8c, student3);
+        Post post8c2 = createPost("I used JavaScript to create interactive forms that validate user input in real-time, enhancing the usability of the web application.", discussion8c, student4);
+
+// Create Posts for Discussion 8d
+        Post post8d1 = createPost("React’s core concepts, like components, state, and props, allow for building efficient single-page applications by creating reusable and interactive UI elements.", discussion8d, student3);
+        Post post8d2 = createPost("In my project, using React components simplified the development process and improved the maintainability of the application’s UI.", discussion8d, student4);
+
+// Create Posts for Discussion 8e
+        Post post8e1 = createPost("Integrating front-end applications with backend services using RESTful APIs enables dynamic content. Server-side rendering enhances performance by pre-rendering pages on the server.", discussion8e, student3);
+        Post post8e2 = createPost("In my project, using RESTful APIs for backend integration allowed for real-time data updates, improving user experience.", discussion8e, student4);
+
+// Create Posts for Discussion 9a
+        Post post9a1 = createPost("Machine learning techniques like supervised learning, unsupervised learning, and reinforcement learning enable computers to learn from data and make predictions. Real-world applications include recommendation systems, fraud detection, and autonomous driving.", discussion9a, student5);
+        Post post9a2 = createPost("Tools like Python libraries (e.g., scikit-learn) simplify the implementation of machine learning models, enabling effective data analysis and predictive modeling in various domains.", discussion9a, student6);
+
+// Create Posts for Discussion 9b
+        Post post9b1 = createPost("Neural networks consist of layers of interconnected nodes (neurons). Backpropagation helps in training by adjusting weights based on the error rate, allowing the network to learn from data.", discussion9b, student5);
+        Post post9b2 = createPost("In a project, I used backpropagation to train a neural network for image classification, achieving high accuracy in recognizing different objects.", discussion9b, student6);
+
+// Create Posts for Discussion 9c
+        Post post9c1 = createPost("Natural language processing (NLP) enables computers to understand and generate human language. Common applications include text processing, sentiment analysis, and chatbots.", discussion9c, student5);
+        Post post9c2 = createPost("I implemented an NLP model for sentiment analysis to gauge customer feedback, providing insights into customer satisfaction and areas for improvement.", discussion9c, student6);
+
+// Create Posts for Discussion 10a
+        Post post10a1 = createPost("Identifying potential security threats and vulnerabilities helps in assessing risks and implementing strategies like regular updates, firewalls, and intrusion detection systems to mitigate these threats.", discussion10a, student5);
+        Post post10a2 = createPost("In my project, I conducted a threat analysis to identify vulnerabilities in the network, implementing measures to prevent cyber attacks and data breaches.", discussion10a, student6);
+
+// Create Posts for Discussion 10b
+        Post post10b1 = createPost("Encryption techniques like symmetric and asymmetric encryption protect sensitive data by converting it into secure formats. Encryption is crucial for ensuring data confidentiality and integrity.", discussion10b, student5);
+        Post post10b2 = createPost("I used AES encryption in a project to secure data transmission, ensuring that sensitive information remained confidential and protected from unauthorized access.", discussion10b, student6);
+
+// Create Posts for Discussion 10c
+        Post post10c1 = createPost("Network security measures, such as firewalls and intrusion detection systems, protect data during transmission by monitoring and controlling incoming and outgoing network traffic.", discussion10c, student5);
+        Post post10c2 = createPost("In a project, I implemented network security protocols to secure communication between devices, preventing unauthorized access and ensuring data integrity.", discussion10c, student6);
+
+// Create Posts for Discussion 10d
+        Post post10d1 = createPost("Common security flaws in software development include SQL injection, cross-site scripting (XSS), and buffer overflows. Secure coding practices help prevent these vulnerabilities and maintain software security.", discussion10d, student5);
+        Post post10d2 = createPost("I followed secure coding guidelines to prevent SQL injection attacks, enhancing the security of the web application and protecting user data.", discussion10d, student6);
+
+        // Create Posts for Discussion 11a
+        Post post11a1 = createPost("Limits help in defining continuity and understanding the behavior of functions near a particular point. They are foundational in calculus because they provide a rigorous way to define derivatives and integrals.", discussion11a, student5);
+        Post post11a2 = createPost("In my experience, limits are crucial for understanding how functions behave as they approach specific values, which is essential in both pure and applied mathematics.", discussion11a, student6);
+
+// Create Posts for Discussion 11b
+        Post post11b1 = createPost("Differentiation techniques include the power rule, product rule, quotient rule, and chain rule. Derivatives are used to find rates of change and can solve real-world problems like optimizing profit or minimizing costs.", discussion11b, student5);
+        Post post11b2 = createPost("I used derivatives to analyze the rate of change in stock prices, helping to make informed investment decisions.", discussion11b, student6);
+
+// Create Posts for Discussion 11c
+        Post post11c1 = createPost("Integrals represent the accumulation of quantities, such as area under a curve. Key techniques include definite and indefinite integration, and their applications span fields like physics, engineering, and economics.", discussion11c, student5);
+        Post post11c2 = createPost("I applied integration to calculate the total displacement of an object given its velocity function over time.", discussion11c, student6);
+
+// Create Posts for Discussion 11d
+        Post post11d1 = createPost("Calculus can be applied in various fields to model and solve real-world problems. Examples include predicting population growth, optimizing engineering designs, and analyzing economic trends.", discussion11d, student5);
+        Post post11d2 = createPost("In engineering, I used calculus to model the stress and strain on materials, ensuring the structural integrity of designs.", discussion11d, student6);
+
+// Create Posts for Discussion 12a
+        Post post12a1 = createPost("Vector operations like addition, scalar multiplication, dot product, and cross product are used in physics for force analysis, in computer graphics for transformations, and in engineering for structural analysis.", discussion12a, student5);
+        Post post12a2 = createPost("I used vector operations in a project to calculate the resultant force acting on a bridge, ensuring it could withstand various loads.", discussion12a, student6);
+
+// Create Posts for Discussion 12b
+        Post post12b1 = createPost("Matrices and their operations, such as addition, multiplication, and inversion, help in solving linear equations and performing transformations. They have practical applications in computer graphics, economics, and engineering.", discussion12b, student5);
+        Post post12b2 = createPost("In my project, I used matrix multiplication to perform transformations in 3D space, enhancing the visual effects in a computer graphics application.", discussion12b, student6);
+
+// Create Posts for Discussion 12c
+        Post post12c1 = createPost("Determinants are used in solving linear systems and finding matrix inverses. They are calculated using techniques like cofactor expansion and row reduction.", discussion12c, student5);
+        Post post12c2 = createPost("I used determinants to solve a system of linear equations in a circuit analysis problem, ensuring accurate voltage and current calculations.", discussion12c, student6);
+
+// Create Posts for Discussion 12d
+        Post post12d1 = createPost("Eigenvalues help in understanding the properties of a matrix, such as stability and resonance in engineering systems. They are calculated by solving characteristic equations.", discussion12d, student5);
+        Post post12d2 = createPost("In my project, I used eigenvalues to analyze the stability of a mechanical system, identifying potential issues before implementation.", discussion12d, student6);
+
+// Create Posts for Discussion 12e
+        Post post12e1 = createPost("Eigenvectors are important in matrix diagonalization and solving systems of linear equations. They play a significant role in linear transformations and simplifying complex problems.", discussion12e, student5);
+        Post post12e2 = createPost("I used eigenvectors in a project to perform principal component analysis, reducing the dimensionality of data for easier analysis and visualization.", discussion12e, student6);
+
+        // Create Posts for Discussion 13a
+        Post post13a1 = createPost("Convergence tests help determine whether a series converges or diverges. Power series and Taylor series have applications in approximating functions and solving differential equations.", discussion13a, student7);
+        Post post13a2 = createPost("In my experience, using Taylor series to approximate functions can simplify complex calculations, making it easier to solve real-world problems.", discussion13a, student8);
+
+// Create Posts for Discussion 13b
+        Post post13b1 = createPost("Key integration techniques include integration by parts, partial fractions, and trigonometric integrals. These methods are used to solve complex integrals in various fields like physics and engineering.", discussion13b, student7);
+        Post post13b2 = createPost("I used integration by parts to solve an integral in a physics problem, helping to understand the motion of an object under varying forces.", discussion13b, student8);
+
+// Create Posts for Discussion 13c
+        Post post13c1 = createPost("Partial derivatives, multiple integrals, and gradient vectors are crucial in analyzing multivariable functions. Applications include optimizing functions and visualizing data in multiple dimensions.", discussion13c, student7);
+        Post post13c2 = createPost("In my project, I used gradient vectors to find the direction of maximum increase in a multivariable function, aiding in optimization tasks.", discussion13c, student8);
+
+// Create Posts for Discussion 13d
+        Post post13d1 = createPost("Theorems of vector calculus like Green's, Stokes', and the Divergence Theorem help analyze vector fields, with applications in electromagnetism and fluid dynamics.", discussion13d, student7);
+        Post post13d2 = createPost("I applied Stokes' Theorem to calculate the circulation of a vector field in a fluid dynamics problem, enhancing my understanding of flow patterns.", discussion13d, student8);
+
+// Create Posts for Discussion 14a
+        Post post14a1 = createPost("Propositional and predicate logic are used to form logical statements and reason about problems. They are fundamental in computer science, mathematics, and philosophy.", discussion14a, student7);
+        Post post14a2 = createPost("In my experience, using predicate logic has been essential in verifying the correctness of algorithms in computer science projects.", discussion14a, student8);
+
+// Create Posts for Discussion 14b
+        Post post14b1 = createPost("Set theory concepts like subsets, unions, intersections, and Cartesian products have practical applications in database theory, probability, and computer science.", discussion14b, student7);
+        Post post14b2 = createPost("I used set theory in a project to manage data relationships in a database, ensuring efficient querying and data integrity.", discussion14b, student8);
+
+// Create Posts for Discussion 14c
+        Post post14c1 = createPost("Graph theory facilitates modeling relationships between objects using graphs and algorithms. Applications include social network analysis, routing algorithms, and bioinformatics.", discussion14c, student7);
+        Post post14c2 = createPost("In my project, I used graph algorithms to optimize delivery routes, reducing transportation costs and improving efficiency.", discussion14c, student8);
+
+// Create Posts for Discussion 14d
+        Post post14d1 = createPost("Permutations, combinations, and the principles of counting are used to solve combinatorial problems. Applications include probability, statistics, and operations research.", discussion14d, student7);
+        Post post14d2 = createPost("I applied combinatorial principles to calculate the probability of specific outcomes in a game theory problem, providing strategic insights.", discussion14d, student8);
+
+        // Create Posts for Discussion 15a
+        Post post15a1 = createPost("Newton's laws of motion describe how forces affect the motion of objects. These laws can be applied to solve problems in mechanics by analyzing forces, accelerations, and resulting movements.", discussion15a, student7);
+        Post post15a2 = createPost("In my project, I used Newton's second law to calculate the acceleration of a car given its mass and the applied force, which helped in designing a more efficient engine.", discussion15a, student8);
+
+// Create Posts for Discussion 15b
+        Post post15b1 = createPost("Kinetic and potential energy principles help in understanding how energy is conserved and transferred. Concepts like work, power, and efficiency are crucial for analyzing energy systems.", discussion15b, student7);
+        Post post15b2 = createPost("I applied these principles to calculate the efficiency of a solar panel system, optimizing its energy output and cost-effectiveness.", discussion15b, student8);
+
+// Create Posts for Discussion 15c
+        Post post15c1 = createPost("Velocity, acceleration, and the equations of motion are used to analyze various types of motion, such as linear, projectile, and circular motion, providing insights into the dynamics of moving objects.", discussion15c, student7);
+        Post post15c2 = createPost("In my project, I used the equations of motion to predict the trajectory of a projectile, which was essential for targeting in a physics simulation.", discussion15c, student8);
+
+// Create Posts for Discussion 16a
+        Post post16a1 = createPost("Subatomic particles like protons, neutrons, and electrons define the properties of elements. The atomic number and mass number determine the behavior of atoms and their chemical properties.", discussion16a, student7);
+        Post post16a2 = createPost("Understanding atomic structure helped me predict the reactivity of elements, which was useful in designing chemical experiments.", discussion16a, student8);
+
+// Create Posts for Discussion 16b
+        Post post16b1 = createPost("Ionic, covalent, and metallic bonds differ in their formation and properties. These bonds influence the stability and properties of molecules and compounds.", discussion16b, student7);
+        Post post16b2 = createPost("I used knowledge of chemical bonding to explain why certain materials have high melting points and conductivity, which was crucial in material science projects.", discussion16b, student8);
+
+// Create Posts for Discussion 16c
+        Post post16c1 = createPost("Factors like reaction rates, equilibrium, and the nature of reactants and products influence chemical reactions. Understanding these principles helps in controlling and optimizing reactions.", discussion16c, student7);
+        Post post16c2 = createPost("I applied these concepts to design a reaction process for synthesizing a compound efficiently, which was essential in a pharmaceutical project.", discussion16c, student8);
+
+        // Create Posts for Discussion 17a
+        Post post17a1 = createPost("Prokaryotic cells lack a defined nucleus and organelles, while eukaryotic cells have a nucleus and complex organelles. These differences are significant as they influence the complexity and functionality of the cells.", discussion17a, student9);
+        Post post17a2 = createPost("In my research, I found that the compartmentalization in eukaryotic cells allows for more specialized functions, leading to greater cellular efficiency.", discussion17a, student10);
+
+// Create Posts for Discussion 17b
+        Post post17b1 = createPost("Mendelian genetics explains how traits are inherited through dominant and recessive alleles. DNA replication, transcription, and translation are key processes in genetic inheritance and variation.", discussion17b, student9);
+        Post post17b2 = createPost("I studied how genetic variations arise from mutations during DNA replication, which contributes to diversity within populations.", discussion17b, student10);
+
+// Create Posts for Discussion 17c
+        Post post17c1 = createPost("Genetic variation and environmental factors drive natural selection, leading to the evolution of species. Evidence for evolutionary change includes fossil records and genetic similarities among species.", discussion17c, student9);
+        Post post17c2 = createPost("I explored how environmental pressures can lead to adaptations in species, supporting the theory of evolution through natural selection.", discussion17c, student10);
+
+// Create Posts for Discussion 17d
+        Post post17d1 = createPost("Interactions between organisms and their environment shape ecosystems by influencing food webs and energy flow. Human activities like deforestation and pollution have significant impacts on these systems.", discussion17d, student9);
+        Post post17d2 = createPost("In my study, I analyzed how urbanization disrupts natural food webs, leading to a decline in biodiversity and ecosystem health.", discussion17d, student10);
+
+// Create Posts for Discussion 18a
+        Post post18a1 = createPost("Civil, mechanical, electrical, and chemical engineers have distinct roles and responsibilities, each contributing to different applications such as infrastructure, machinery, electronics, and chemical processes.", discussion18a, student9);
+        Post post18a2 = createPost("In my experience, working on a multidisciplinary project highlighted the diverse applications and collaborative nature of different engineering disciplines.", discussion18a, student10);
+
+// Create Posts for Discussion 18b
+        Post post18b1 = createPost("The engineering problem-solving process involves defining the problem, brainstorming solutions, prototyping, testing, and iterating. These steps are crucial for tackling real-world engineering challenges effectively.", discussion18b, student9);
+        Post post18b2 = createPost("I applied these techniques to solve a mechanical failure in a prototype, improving the design and functionality of the final product.", discussion18b, student10);
+
+// Create Posts for Discussion 18c
+        Post post18c1 = createPost("The engineering design process facilitates the development of effective solutions by moving through stages like defining requirements, brainstorming, prototyping, testing, and iterating.", discussion18c, student9);
+        Post post18c2 = createPost("In my project, following the design process helped ensure all requirements were met and allowed for continuous improvement through testing and iteration.", discussion18c, student10);
+
+        // Create Posts for Discussion 19a
+        Post post19a1 = createPost("Ohm's law and Kirchhoff's laws are essential for analyzing electrical circuits by calculating voltage, current, and resistance. These laws are applied in both DC and AC circuits to ensure accurate circuit analysis.", discussion19a, student9);
+        Post post19a2 = createPost("In my project, I used Kirchhoff's laws to solve complex circuit networks, ensuring proper current distribution and voltage levels.", discussion19a, student10);
+
+// Create Posts for Discussion 19b
+        Post post19b1 = createPost("Fourier transforms and filtering are key concepts in signal processing. They are used in communication systems and digital signal processing (DSP) to analyze and modify signals for better transmission and clarity.", discussion19b, student9);
+        Post post19b2 = createPost("I applied Fourier transforms in a project to analyze frequency components of a signal, which improved the efficiency of data transmission.", discussion19b, student10);
+
+// Create Posts for Discussion 19c
+        Post post19c1 = createPost("System modeling, feedback, and control systems are crucial for designing electrical systems. These concepts help in maintaining desired system behavior and stability, with applications in various engineering fields.", discussion19c, student9);
+        Post post19c2 = createPost("In my project, I used feedback control to maintain the temperature in a heating system, ensuring consistent performance and energy efficiency.", discussion19c, student10);
+
+// Create Posts for Discussion 20a
+        Post post20a1 = createPost("The principles of statics help in analyzing force systems and calculating moments in bodies at rest. Practical applications include structural analysis in buildings and bridges to ensure stability and safety.", discussion20a, student9);
+        Post post20a2 = createPost("In my project, I applied static equilibrium principles to design a stable support structure for a bridge, ensuring it could withstand various loads.", discussion20a, student10);
+
+// Create Posts for Discussion 20b
+        Post post20b1 = createPost("Kinematics and kinetics are essential for understanding the motion of particles and rigid bodies. Newton's laws of motion are applied to analyze dynamics and predict the behavior of moving objects.", discussion20b, student9);
+        Post post20b2 = createPost("I used Newton's laws to calculate the forces acting on a moving vehicle, optimizing its design for better performance and safety.", discussion20b, student10);
+
+// Create Posts for Discussion 20c
+        Post post20c1 = createPost("The laws of thermodynamics and principles of energy transfer apply to the behavior of gases and liquids. These principles are used to solve engineering problems involving heat and work, such as in engines and refrigeration systems.", discussion20c, student9);
+        Post post20c2 = createPost("I applied thermodynamic principles to design an efficient cooling system, improving energy efficiency and performance.", discussion20c, student10);
+
+// Create Posts for Discussion 20d
+        Post post20d1 = createPost("The properties and behaviors of different materials influence their selection for specific engineering applications. Examples include using metals for strength, polymers for flexibility, and composites for lightweight structures.", discussion20d, student9);
+        Post post20d2 = createPost("In my project, I selected materials based on their properties to design a durable and lightweight drone, enhancing its performance and longevity.", discussion20d, student10);
+
+
+        Comment comment1a1 = createComment("This is a great explanation of how variables can be used in programming. I like the example you provided about keeping track of player scores.", post1a1, student2);
+        Comment comment1b1 = createComment("Your insights on type conversion and its importance in data manipulation are very helpful.", post1b1, student2);
+        Comment comment1c1 = createComment("The traffic light control system example really clarifies how conditional statements work. Nice job!", post1c1, student2);
+        Comment comment1d1 = createComment("I appreciate your explanation of functions and their role in code organization. Very clear and concise.", post1d1, student2);
+        Comment comment1e1 = createComment("Great insights on modular programming and its benefits for code maintainability.", post1e1, student2);
+        Comment comment1f1 = createComment("Libraries like NumPy are indeed powerful tools. Your explanation is very informative.", post1f1, student2);
+
+        Comment comment2a1 = createComment("Your explanation of arrays and their efficiency in data management is well-articulated.", post2a1, student2);
+        Comment comment2b1 = createComment("Great insights on linked lists and their advantages over arrays. Very informative.", post2b1, student2);
+        Comment comment2c1 = createComment("I like the example of using stacks in undo mechanisms. It makes the concept very relatable.", post2c1, student2);
+        Comment comment2d1 = createComment("Your explanation of queues in operating systems is very clear. Thanks for sharing.", post2d1, student2);
+        Comment comment2e1 = createComment("Excellent summary of tree data structures and their applications. Well done!", post2e1, student2);
+        Comment comment2f1 = createComment("Great overview of graph algorithms and their real-world applications. Very useful.", post2f1, student2);
+
+        Comment comment3a1 = createComment("Your explanation of sorting algorithms is very clear. I appreciate the detailed comparison between bubble sort, merge sort, and quicksort.", post3a1, student2);
+        Comment comment3b1 = createComment("Great insights on linear and binary search! Your explanation of their differences and use cases is very helpful.", post3b1, student2);
+        Comment comment3c1 = createComment("I like how you explained the applications of DFS and BFS. The examples you provided make the concepts easy to understand.", post3c1, student2);
+        Comment comment3d1 = createComment("Dynamic programming can be tricky, but you broke it down really well. The knapsack problem example was particularly useful.", post3d1, student2);
+
+        Comment comment4a1 = createComment("Your explanation of relational databases and the use of tables, keys, and relationships is very clear. It highlights the importance of data integrity and reducing redundancy.", post4a1, student2);
+        Comment comment4b1 = createComment("Great overview of common SQL queries! Your explanation of their roles in database management is very helpful.", post4b1, student2);
+        Comment comment4c1 = createComment("Your discussion of ACID properties and their importance in ensuring reliable transactions is very well explained.", post4c1, student2);
+        Comment comment4d1 = createComment("Excellent explanation of normalized database schemas and their benefits for data integrity and efficiency.", post4d1, student2);
+
+        Comment comment5a1 = createComment("Great explanation of process management in operating systems. Your insights on inter-process communication are very helpful.", post5a1, student4);
+        Comment comment5b1 = createComment("Your discussion on memory management techniques is very clear. I appreciate the detailed comparison of paging, segmentation, and virtual memory.", post5b1, student4);
+        Comment comment5c1 = createComment("I like your explanation of file systems and their organization. The examples you provided make the concepts easy to understand.", post5c1, student4);
+        Comment comment5d1 = createComment("Excellent overview of CPU scheduling algorithms. Your explanation of their impact on process execution efficiency is very informative.", post5d1, student4);
+
+        Comment comment6a1 = createComment("Your explanation of the OSI model and its seven layers is very clear. It highlights the importance of standardized telecommunication systems.", post6a1, student4);
+        Comment comment6b1 = createComment("Great comparison between the OSI model and the TCP/IP model! Your explanation of their differences and applications is very helpful.", post6b1, student4);
+        Comment comment6c1 = createComment("Your discussion of network protocols like HTTP and FTP is very well explained. I appreciate the practical examples.", post6c1, student4);
+        Comment comment6d1 = createComment("Excellent explanation of routing algorithms and protocols. Your insights on OSPF and BGP are very clear.", post6d1, student4);
+        Comment comment6e1 = createComment("Your explanation of switching methods and their roles in network design is very informative. Great job!", post6e1, student4);
+
+        Comment comment7a1 = createComment("Great discussion on different SDLC models. Your comparison of iterative, incremental, and spiral approaches is very useful.", post7a1, student4);
+        Comment comment7b1 = createComment("Your insights on Agile methodology and its practices are very clear. I appreciate the detailed explanation of Scrum and Kanban.", post7b1, student4);
+        Comment comment7c1 = createComment("I like your explanation of the Waterfall model and its advantages and disadvantages. The comparison with Agile is very informative.", post7c1, student4);
+        Comment comment7d1 = createComment("Excellent overview of project management techniques. Your discussion on risk management and resource allocation is very helpful.", post7d1, student4);
+
+        // Create Comments for the first post in each discussion by student4
+        Comment comment8a1 = createComment("Your explanation of HTML tags and their role in structuring web content is very clear. Great insights on accessibility and semantics.", post8a1, student4);
+        Comment comment8b1 = createComment("Great discussion on CSS and its role in enhancing web presentation. Your explanation of responsive design techniques is very helpful.", post8b1, student4);
+        Comment comment8c1 = createComment("Your insights on JavaScript and its role in creating dynamic web content are very clear. I appreciate the practical examples.", post8c1, student4);
+        Comment comment8d1 = createComment("Excellent explanation of React's core concepts. Your discussion on components, state, and props is very informative.", post8d1, student4);
+        Comment comment8e1 = createComment("Your explanation of integrating front-end applications with backend services using RESTful APIs is very clear. Great job on explaining server-side rendering.", post8e1, student4);
+
+        Comment comment9a1 = createComment("Your explanation of machine learning techniques and their real-world applications is very informative. I appreciate the practical examples.", post9a1, student6);
+        Comment comment9b1 = createComment("Great breakdown of neural networks and backpropagation! Your explanation of their functions and applications is very clear.", post9b1, student6);
+        Comment comment9c1 = createComment("Your insights on natural language processing and its applications are very helpful. The examples you provided make the concepts easy to understand.", post9c1, student6);
+
+
+        Comment comment10a1 = createComment("Your explanation of identifying security threats and implementing mitigation strategies is very clear. The practical examples you provided are very helpful.", post10a1, student6);
+        Comment comment10b1 = createComment("Great insights on encryption techniques! Your explanation of their importance in data protection is very informative.", post10b1, student6);
+        Comment comment10c1 = createComment("Your discussion on network security measures is very well explained. I appreciate the practical examples you provided.", post10c1, student6);
+        Comment comment10d1 = createComment("Excellent explanation of common security flaws in software development and the importance of secure coding practices.", post10d1, student6);
+
+        Comment comment11a1 = createComment("Your explanation of limits and their importance in defining continuity and understanding functions is very clear. The practical examples you provided are very helpful.", post11a1, student6);
+        Comment comment11b1 = createComment("Great insights on differentiation techniques! Your explanation of their applications in real-world problems is very informative.", post11b1, student6);
+        Comment comment11c1 = createComment("Your discussion on integrals and their applications in various fields is very well explained. I appreciate the practical examples.", post11c1, student6);
+        Comment comment11d1 = createComment("Excellent explanation of how calculus can be applied to solve real-world problems. Your discussion on different fields is very informative.", post11d1, student6);
+
+        Comment comment12a1 = createComment("Your explanation of vector operations and their applications in various fields is very clear. The practical examples you provided are very helpful.", post12a1, student6);
+        Comment comment12b1 = createComment("Great insights on matrix operations! Your explanation of their practical applications in computer graphics and engineering is very informative.", post12b1, student6);
+        Comment comment12c1 = createComment("Your discussion on determinants and their role in solving linear systems is very well explained. I appreciate the practical examples.", post12c1, student6);
+        Comment comment12d1 = createComment("Excellent explanation of eigenvalues and their significance in understanding matrix properties. Your discussion on their applications is very helpful.", post12d1, student6);
+        Comment comment12e1 = createComment("Your explanation of eigenvectors and their importance in linear transformations is very clear. The practical examples you provided are very informative.", post12e1, student6);
+
+        Comment comment13a1 = createComment("Your explanation of convergence tests and their applications in solving mathematical problems is very clear. The practical examples you provided are very helpful.", post13a1, student8);
+        Comment comment13b1 = createComment("Great insights on key integration techniques! Your explanation of their applications in physics and engineering is very informative.", post13b1, student8);
+        Comment comment13c1 = createComment("Your discussion on partial derivatives, multiple integrals, and gradient vectors is very well explained. I appreciate the practical examples.", post13c1, student8);
+        Comment comment13d1 = createComment("Excellent explanation of theorems of vector calculus and their applications. Your discussion on electromagnetism and fluid dynamics is very helpful.", post13d1, student8);
+
+        Comment comment14a1 = createComment("Your explanation of propositional and predicate logic is very clear. The practical examples you provided are very helpful.", post14a1, student8);
+        Comment comment14b1 = createComment("Great insights on set theory concepts! Your explanation of their practical applications in database theory and probability is very informative.", post14b1, student8);
+        Comment comment14c1 = createComment("Your discussion on graph theory and its applications is very well explained. I appreciate the practical examples.", post14c1, student8);
+        Comment comment14d1 = createComment("Excellent explanation of permutations, combinations, and the principles of counting. Your discussion on their applications in various fields is very helpful.", post14d1, student8);
+
+        Comment comment15a1 = createComment("Great explanation of Newton's laws of motion! Your practical example of calculating acceleration is very informative.", post15a1, student8);
+        Comment comment15b1 = createComment("Your insights on kinetic and potential energy principles are very clear. The example of optimizing a solar panel system is very helpful.", post15b1, student8);
+        Comment comment15c1 = createComment("Excellent discussion on velocity, acceleration, and the equations of motion. The projectile prediction example is very well explained.", post15c1, student8);
+
+        Comment comment16a1 = createComment("Your explanation of subatomic particles and their properties is very clear. The practical example you provided is very helpful.", post16a1, student8);
+        Comment comment16b1 = createComment("Great insights on different types of chemical bonds! Your explanation of their properties and stability is very informative.", post16b1, student8);
+        Comment comment16c1 = createComment("Your discussion on factors influencing chemical reactions is very well explained. The example of designing a reaction process is very useful.", post16c1, student8);
+
+        Comment comment17a1 = createComment("Your explanation of the differences between prokaryotic and eukaryotic cells is very clear. I appreciate the detailed comparison.", post17a1, student10);
+        Comment comment17b1 = createComment("Great insights on Mendelian genetics! Your explanation of genetic inheritance and variation is very informative.", post17b1, student10);
+        Comment comment17c1 = createComment("Your discussion on genetic variation and natural selection is very well explained. I appreciate the practical examples you provided.", post17c1, student10);
+        Comment comment17d1 = createComment("Excellent explanation of ecosystem interactions and human impacts. Your insights on food webs and energy flow are very clear.", post17d1, student10);
+
+        Comment comment18a1 = createComment("Your explanation of the different engineering disciplines is very clear. The practical examples you provided are very helpful.", post18a1, student10);
+        Comment comment18b1 = createComment("Great discussion on the engineering problem-solving process! Your explanation of its importance in real-world challenges is very informative.", post18b1, student10);
+        Comment comment18c1 = createComment("Your discussion on the engineering design process is very well explained. I appreciate the practical examples you provided.", post18c1, student10);
+
+        Comment comment19a1 = createComment("Your explanation of Ohm's law and Kirchhoff's laws is very clear. The practical examples you provided are very helpful.", post19a1, student10);
+        Comment comment19b1 = createComment("Great insights on Fourier transforms and filtering! Your explanation of their applications in signal processing is very informative.", post19b1, student10);
+        Comment comment19c1 = createComment("Your discussion on system modeling, feedback, and control systems is very well explained. I appreciate the practical examples you provided.", post19c1, student10);
+
+        Comment comment20a1 = createComment("Excellent explanation of the principles of statics! Your practical example of applying static equilibrium principles is very informative.", post20a1, student10);
+        Comment comment20b1 = createComment("Your insights on kinematics and kinetics are very clear. The practical example you provided is very helpful.", post20b1, student10);
+        Comment comment20c1 = createComment("Great discussion on the laws of thermodynamics and energy transfer principles! Your explanation of their applications in engineering problems is very informative.", post20c1, student10);
+        Comment comment20d1 = createComment("Your explanation of the properties and behaviors of different materials is very clear. The practical example you provided is very helpful.", post20d1, student10);
+
         attendanceRepo.saveAllAndFlush(Arrays.asList(attendance1, attendance2, attendance3, attendance4, attendance5, attendance6, attendance7, attendance8, attendance9, attendance10, attendance11, attendance12, attendance13, attendance14, attendance15, attendance16, attendance17, attendance18, attendance19, attendance20));
         resourceRepo.saveAllAndFlush(Arrays.asList(resource1a, resource1b, resource2a, resource2b, resource3a, resource3b, resource4a, resource4b, resource5a, resource5b, resource6a, resource6b, resource7a, resource7b, resource8a, resource8b, resource9a, resource9b, resource10a, resource10b, resource11a, resource11b, resource12a, resource12b, resource13a, resource13b, resource14a, resource14b, resource15a, resource15b, resource16a, resource16b, resource17a, resource17b, resource18a, resource18b, resource19a, resource19b, resource20a, resource20b));
-        discussionRepo.saveAllAndFlush(Arrays.asList(
-                discussion1a, discussion1b, discussion1c, discussion1d, discussion1e, discussion1f, discussion2a, discussion2b, discussion2c, discussion2d, discussion2e,
-                discussion3a, discussion3b, discussion3c, discussion3d, discussion4a, discussion4b, discussion4c, discussion4d,
-                discussion5a, discussion5b, discussion5c, discussion5d, discussion6a, discussion6b, discussion6c, discussion6d, discussion6e,
-                discussion7a, discussion7b, discussion7c, discussion7d, discussion8a, discussion8b, discussion8c, discussion8d, discussion8e,
-                discussion9a, discussion9b, discussion9c, discussion10a, discussion10b, discussion10c, discussion10d,
-                discussion11a, discussion11b, discussion11c, discussion11d, discussion12a, discussion12b, discussion12c, discussion12d, discussion12e,
-                discussion13a, discussion13b, discussion13c, discussion13d, discussion14a, discussion14b, discussion14c, discussion14d,
-                discussion15a, discussion15b, discussion15c, discussion16a, discussion16b, discussion16c,
-                discussion17a, discussion17b, discussion17c, discussion17d, discussion18a, discussion18b, discussion18c,
+        discussionRepo.saveAllAndFlush(Arrays.asList(discussion1a, discussion1b, discussion1c, discussion1d, discussion1e, discussion1f, discussion2a, discussion2b, discussion2c, discussion2d, discussion2e, discussion2f, discussion3a, discussion3b, discussion3c, discussion3d, discussion4a, discussion4b, discussion4c, discussion4d, discussion5a, discussion5b, discussion5c, discussion5d, discussion6a, discussion6b, discussion6c, discussion6d, discussion6e, discussion7a, discussion7b, discussion7c, discussion7d, discussion8a, discussion8b, discussion8c, discussion8d, discussion8e, discussion9a, discussion9b, discussion9c, discussion10a, discussion10b, discussion10c, discussion10d, discussion11a, discussion11b, discussion11c, discussion11d, discussion12a, discussion12b, discussion12c, discussion12d, discussion12e, discussion13a, discussion13b, discussion13c, discussion13d, discussion14a, discussion14b, discussion14c, discussion14d, discussion15a, discussion15b, discussion15c, discussion16a, discussion16b, discussion16c, discussion17a, discussion17b, discussion17c, discussion17d, discussion18a, discussion18b, discussion18c,
                 discussion19a, discussion19b, discussion19c, discussion20a, discussion20b, discussion20c, discussion20d
         ));
+        postRepo.saveAllAndFlush(Arrays.asList(
+                post1a1, post1a2, post1b1, post1b2, post1c1, post1c2, post1d1, post1d2, post1e1, post1e2, post1f1, post1f2, post2a1, post2a2, post2b1, post2b2, post2c1, post2c2, post2d1, post2d2, post2e1, post2e2, post2f1, post2f2, post3a1, post3a2, post3b1, post3b2, post3c1, post3c2, post3d1, post3d2, post4a1, post4a2, post4b1, post4b2, post4c1, post4c2, post4d1, post4d2, post5a1, post5a2, post5b1, post5b2, post5c1, post5c2, post5d1, post5d2,
+                post6a1, post6a2, post6b1, post6b2, post6c1, post6c2, post6d1, post6d2, post6e1, post6e2, post7a1, post7a2, post7b1, post7b2, post7c1, post7c2, post7d1, post7d2, post8a1, post8a2, post8b1, post8b2, post8c1, post8c2, post8d1, post8d2, post8e1, post8e2, post9a1, post9a2, post9b1, post9b2, post9c1, post9c2, post10a1, post10a2, post10b1, post10b2, post10c1, post10c2, post10d1, post10d2, post11a1, post11a2, post11b1, post11b2, post11c1, post11c2, post11d1, post11d2,
+                post12a1, post12a2, post12b1, post12b2, post12c1, post12c2, post12d1, post12d2, post12e1, post12e2, post13a1, post13a2, post13b1, post13b2, post13c1, post13c2, post13d1, post13d2, post14a1, post14a2, post14b1, post14b2, post14c1, post14c2, post14d1, post14d2, post15a1, post15a2, post15b1, post15b2, post15c1, post15c2, post16a1, post16a2, post16b1, post16b2, post16c1, post16c2, post17a1, post17a2, post17b1, post17b2, post17c1, post17c2, post17d1, post17d2, post18a1, post18a2, post18b1, post18b2, post18c1, post18c2, post19a1, post19a2, post19b1, post19b2, post19c1, post19c2, post20a1, post20a2, post20b1, post20b2, post20c1, post20c2, post20d1, post20d2
+        ));
+        commentRepo.saveAllAndFlush(Arrays.asList(
+                comment1a1, comment1b1, comment1c1, comment1d1, comment1e1, comment1f1, comment2a1, comment2b1, comment2c1, comment2d1, comment2e1, comment2f1, comment3a1, comment3b1, comment3c1, comment3d1, comment4a1, comment4b1, comment4c1, comment4d1, comment5a1, comment5b1, comment5c1, comment5d1, comment6a1, comment6b1, comment6c1, comment6d1, comment6e1, comment7a1, comment7b1, comment7c1, comment7d1, comment8a1, comment8b1, comment8c1, comment8d1, comment8e1, comment9a1, comment9b1, comment9c1, comment10a1, comment10b1, comment10c1, comment10d1,
+                comment11a1, comment11b1, comment11c1, comment11d1, comment12a1, comment12b1, comment12c1, comment12d1, comment12e1, comment13a1, comment13b1, comment13c1, comment13d1, comment14a1, comment14b1, comment14c1, comment14d1, comment15a1, comment15b1, comment15c1, comment16a1, comment16b1, comment16c1, comment17a1, comment17b1, comment17c1, comment17d1, comment18a1, comment18b1, comment18c1, comment19a1, comment19b1, comment19c1, comment20a1, comment20b1, comment20c1, comment20d1
+        ));
+
+
 
     }
 
@@ -785,4 +1221,22 @@ public class Seeder implements CommandLineRunner {
         discussion.setPosts(new ArrayList<>());
         return discussion;
     }
+
+    public static Post createPost(String content, Discussion discussion, Student student) {
+        Post post = new Post();
+        post.setContent(content);
+        post.setDiscussion(discussion);
+        post.setStudent(student);
+        post.setComments(new ArrayList<>());
+        return post;
+    }
+
+    public static Comment createComment(String content, Post post, Student student) {
+        Comment comment = new Comment();
+        comment.setContent(content);
+        comment.setPost(post);
+        comment.setStudent(student);
+        return comment;
+    }
+
 }

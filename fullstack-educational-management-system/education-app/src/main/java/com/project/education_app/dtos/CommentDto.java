@@ -12,8 +12,6 @@ public class CommentDto {
 
     private String content;
 
-    private Timestamp date;
-
     private PostDto post;
 
     private BasicStudentDto student;
