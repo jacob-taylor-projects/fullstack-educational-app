@@ -1,10 +1,7 @@
 package com.project.education_app;
 
 import com.project.education_app.entities.*;
-import com.project.education_app.repos.AnnouncementRepo;
-import com.project.education_app.repos.FacultyRepo;
-import com.project.education_app.repos.GuardianRepo;
-import com.project.education_app.repos.StudentRepo;
+import com.project.education_app.repos.*;
 import lombok.Data;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
@@ -24,6 +21,9 @@ public class Seeder implements CommandLineRunner {
     private final FacultyRepo facultyRepo;
     private final StudentRepo studentRepo;
     private final GuardianRepo guardianRepo;
+    private final AttendanceRepo attendanceRepo;
+    private final ResourceRepo resourceRepo;
+    private final DiscussionRepo discussionRepo;
 
 
 
@@ -139,6 +139,7 @@ public class Seeder implements CommandLineRunner {
                 unit2d.setLessons(List.of(lesson2d));
                 unit2e.setLessons(List.of(lesson2e));
                 unit2f.setLessons(List.of(lesson2f));
+
 // Course 3: Algorithms
         Syllabus syllabus3 = createSyllabus("Explore the design and analysis of algorithms.", "Sorting, Searching, Graph Algorithms, Dynamic Programming.", "Assignments (40%), Projects (30%), Tests (30%)");
 
@@ -499,6 +500,7 @@ public class Seeder implements CommandLineRunner {
         Semester fall2024 = createSemester("Fall", "2024");
         Semester spring2024 = createSemester("Spring", "2024");
 
+        //Attendance
         LocalDate attendanceLocalDate1=LocalDate.of(2024,12,4);
         Attendance attendance1=createAttendance(attendanceLocalDate1,true,student1,course1);
         Attendance attendance2=createAttendance(attendanceLocalDate1,true,student1,course2);
@@ -521,6 +523,123 @@ public class Seeder implements CommandLineRunner {
         Attendance attendance19=createAttendance(attendanceLocalDate1,true,student10,course19);
         Attendance attendance20=createAttendance(attendanceLocalDate1,true,student10,course20);
 
+        //Discussions
+        Discussion discussion1a = createDiscussion("The Importance of variables in Programming Discussion", "Discuss how variables are used to store and manipulate data in programs and share examples.", faculty1);
+        Discussion discussion1b = createDiscussion("Type Conversion and Casting Discussion", "Explain the different data types are what are they used for?", faculty1);
+        Discussion discussion1c = createDiscussion("Control Structures Discussion", "Can you provide an example of how conditional statements(if,elif,else) have been used in a real-world project you know about or have worked on?", faculty1);
+        Discussion discussion1d = createDiscussion("Functions Discussion", "How do functions improve code organization, and what are some best practices for defining and using functions effectively?", faculty1);
+        Discussion discussion1e = createDiscussion("Modules Discussion", "In what ways can modular programming improve the maintainability and readability of your code, and how have you applied modular principles in your projects?", faculty1);
+        Discussion discussion1f = createDiscussion("Libraries Discussion", "How have libraries simplified complex tasks in your programming projects, and which libraries have you found particularly useful?", faculty1);
+
+        Discussion discussion2a = createDiscussion("Arrays Discussion", "How do arrays enhance the efficiency of data management in programming, and what are some common pitfalls to avoid when using them?", faculty2);
+        Discussion discussion2b = createDiscussion("Linked Lists Discussion", "What are the advantages of using linked lists over arrays, and in what scenarios would you prefer one over the other?", faculty2);
+        Discussion discussion2c = createDiscussion("Stacks Discussion", "Can you provide an example of how stacks are used in real-world applications, and why their LIFO (Last In, First Out) nature is beneficial?", faculty2);
+        Discussion discussion2d = createDiscussion("Queues Discussion", "How do queues support the handling of tasks in a first-come, first-served manner, and what are some practical applications of queues?", faculty2);
+        Discussion discussion2e = createDiscussion("Trees Discussion", "Why are trees considered a powerful data structure for hierarchical data representation, and how do they support efficient searching and sorting?", faculty2);
+        Discussion discussion2f = createDiscussion("Graphs Discussion", "How are graphs used to represent relationships in various fields, and what are some common algorithms for traversing and analyzing graphs?", faculty2);
+
+        Discussion discussion3a = createDiscussion("Sorting Discussion", "How do different sorting algorithms like bubble sort, merge sort, and quicksort compare in terms of efficiency, and when would you choose one over the others?", faculty3);
+        Discussion discussion3b = createDiscussion("Searching Discussion", "How do linear search and binary search differ in their approach and efficiency, and what are some real-world examples where each would be most effective?", faculty3);
+        Discussion discussion3c = createDiscussion("Graph Algorithms Discussion", "How are depth-first search (DFS) and breadth-first search (BFS) algorithms applied in real-world scenarios, and what are the advantages of each method in graph traversal?", faculty3);
+        Discussion discussion3d = createDiscussion("Dynamic Programming Discussion", "How does dynamic programming help in solving complex problems like the Fibonacci sequence and the knapsack problem, and what strategies can you use to identify subproblems and optimize solutions?", faculty3);
+
+        Discussion discussion4a = createDiscussion("Relational Databases Discussion", "How do relational databases organize data using tables, keys, and relationships, and what are the advantages of using a relational database for data management?", faculty4);
+        Discussion discussion4b = createDiscussion("SQL Discussion", "What are some common SQL queries used for creating, reading, updating, and deleting data, and how do these queries help in managing databases efficiently?", faculty4);
+        Discussion discussion4c = createDiscussion("Transactions Discussion", "How do the ACID properties (Atomicity, Consistency, Isolation, Durability) ensure data integrity and consistency in databases, and why are they important in transaction management?", faculty4);
+        Discussion discussion4d = createDiscussion("Database Design Discussion", "What are the key principles and best practices for designing normalized database schemas, and how do these practices contribute to creating efficient database structures?", faculty4);
+
+        Discussion discussion5a = createDiscussion("Processes Discussion", "How do operating systems manage processes, including creation, scheduling, and termination, and why is inter-process communication and synchronization important?", faculty5);
+        Discussion discussion5b = createDiscussion("Memory Management Discussion", "What are the differences between paging, segmentation, and virtual memory, and how do these techniques optimize memory management in operating systems?", faculty5);
+        Discussion discussion5c = createDiscussion("File Systems Discussion", "How do file systems organize and manage data, and what are the advantages and challenges of different file access methods and directory structures?", faculty5);
+        Discussion discussion5d = createDiscussion("Scheduling Discussion", "What are the key differences between CPU scheduling algorithms like round-robin, priority scheduling, and multi-level queues, and how do these techniques impact process execution efficiency?", faculty5);
+
+        Discussion discussion6a = createDiscussion("OSI Model Discussion", "How do the seven layers of the OSI model facilitate the standardized functioning of telecommunication systems, and why is it important to understand how data is transmitted across each layer?", faculty1);
+        Discussion discussion6b = createDiscussion("TCP/IP Discussion", "What are the key differences between the OSI model and the TCP/IP model, and how does the TCP/IP protocol suite enable reliable communication over the internet?", faculty1);
+        Discussion discussion6c = createDiscussion("Network Protocols Discussion", "How do protocols such as HTTP, FTP, DNS, and DHCP ensure secure and efficient communication over networks, and what are some common challenges in implementing these protocols?", faculty1);
+        Discussion discussion6d = createDiscussion("Routing Discussion", "How do different routing algorithms and protocols like OSPF and BGP determine the best paths for data packets, and what are the differences between static and dynamic routing?", faculty1);
+        Discussion discussion6e = createDiscussion("Switching Discussion", "How do switching methods like packet switching and circuit switching differ in their approach to forwarding data packets, and what role do switches play in network design?", faculty1);
+
+        Discussion discussion7a = createDiscussion("Software Development Life Cycle Discussion", "How do different SDLC models like iterative, incremental, and spiral approaches compare, and in what scenarios would you choose one model over the others?", faculty2);
+        Discussion discussion7b = createDiscussion("Agile Discussion", "What are the core principles and practices of Agile methodology, and how can Agile techniques like Scrum and Kanban improve the flexibility and responsiveness of a software project?", faculty2);
+        Discussion discussion7c = createDiscussion("Waterfall Discussion", "How does the Waterfall model's linear and sequential approach impact the planning and execution of software development projects, and what are the advantages and disadvantages compared to Agile?", faculty2);
+        Discussion discussion7d = createDiscussion("Project Management Discussion", "What are the key techniques and tools for effective project management in software development, and how do you manage risk, resources, and quality throughout a project's lifecycle?", faculty2);
+
+        Discussion discussion8a = createDiscussion("HTML Discussion", "How do HTML tags and attributes help structure web content, and what are some best practices for creating accessible and semantic HTML documents?", faculty3);
+        Discussion discussion8b = createDiscussion("CSS Discussion", "How does CSS enhance the visual presentation of web pages, and what techniques can be used to create responsive and visually appealing designs?", faculty3);
+        Discussion discussion8c = createDiscussion("JavaScript Discussion", "How can JavaScript be used to create interactive and dynamic web content, and what are some common methods for manipulating the DOM and handling events?", faculty3);
+        Discussion discussion8d = createDiscussion("React Discussion", "What are the core concepts of React, such as components, state, and props, and how do they contribute to building efficient single-page applications?", faculty3);
+        Discussion discussion8e = createDiscussion("Backend Integration Discussion", "How can front-end web applications be integrated with backend services using RESTful APIs, and what are the benefits and challenges of server-side rendering?", faculty3);
+
+        Discussion discussion9a = createDiscussion("Machine Learning Discussion", "How do different machine learning techniques and tools enable computers to learn from data and make predictions, and what are some real-world applications of these techniques?", faculty4);
+        Discussion discussion9b = createDiscussion("Neural Networks Discussion", "What are the key components of neural network architecture, and how does backpropagation help in training neural networks for various tasks?", faculty4);
+        Discussion discussion9c = createDiscussion("Natural Language Processing Discussion", "How does natural language processing enable computers to understand and generate human language, and what are some common applications of NLP techniques like text processing and sentiment analysis?", faculty4);
+
+        Discussion discussion10a = createDiscussion("Threat Analysis Discussion", "How can identifying potential security threats and vulnerabilities help in assessing risks, and what strategies can be implemented to mitigate these threats effectively?", faculty5);
+        Discussion discussion10b = createDiscussion("Encryption Discussion", "What are the different encryption techniques and algorithms, and why is encryption crucial in protecting sensitive data?", faculty5);
+        Discussion discussion10c = createDiscussion("Network Security Discussion", "How do firewalls, intrusion detection systems, and other network security measures protect data during transmission, and what are some common challenges in safeguarding networks?", faculty5);
+        Discussion discussion10d = createDiscussion("Secure Coding Discussion", "What are common security flaws in software development, and how can secure coding practices prevent these vulnerabilities to maintain software security?", faculty5);
+
+        Discussion discussion11a = createDiscussion("Limits Discussion", "How do limits help in defining continuity and understanding the behavior of functions, and why are they considered a foundational concept in calculus?", faculty1);
+        Discussion discussion11b = createDiscussion("Derivatives Discussion", "What techniques are used in differentiation, and how can derivatives be applied to solve real-world problems effectively?", faculty1);
+        Discussion discussion11c = createDiscussion("Integrals Discussion", "How do integrals represent the accumulation of quantities, and what are the key techniques of integration and their applications in various fields?", faculty1);
+        Discussion discussion11d = createDiscussion("Applications of Calculus Discussion", "How can calculus be applied in fields such as science, engineering, and economics to model and solve real-world problems, and what are some notable examples?", faculty1);
+
+        Discussion discussion12a = createDiscussion("Vectors Discussion", "How do vector operations such as addition, scalar multiplication, dot product, and cross product apply to real-world problems in various fields?", faculty2);
+        Discussion discussion12b = createDiscussion("Matrices Discussion", "How do matrices and their operations (addition, multiplication, inversion) help in solving linear equations and performing transformations, and what are their practical applications?", faculty2);
+        Discussion discussion12c = createDiscussion("Determinants Discussion", "What is the role of determinants in solving linear systems and finding matrix inverses, and how do you calculate them?", faculty2);
+        Discussion discussion12d = createDiscussion("Eigenvalues Discussion", "How do eigenvalues help in understanding the properties of a matrix, and what are their applications in mathematical and engineering problems?", faculty2);
+        Discussion discussion12e = createDiscussion("Eigenvectors Discussion", "How are eigenvectors important in matrix diagonalization and solving systems of linear equations, and what is their significance in linear transformations?", faculty2);
+
+        Discussion discussion13a = createDiscussion("Sequences and Series Discussion", "How do convergence tests help in determining the behavior of sequences and series, and what are some applications of power series and Taylor series in solving mathematical problems?", faculty3);
+        Discussion discussion13b = createDiscussion("Techniques of Integration Discussion", "What are the key techniques of integration, such as integration by parts, partial fractions, and trigonometric integrals, and how can these techniques be applied to solve complex integrals and real-world problems?", faculty3);
+        Discussion discussion13c = createDiscussion("Multivariable Functions Discussion", "How do partial derivatives, multiple integrals, and gradient vectors contribute to the analysis and visualization of multivariable functions, and what are some practical applications of these concepts?", faculty3);
+        Discussion discussion13d = createDiscussion("Vector Calculus Discussion", "How do the theorems of vector calculus, such as Green's Theorem, Stokes' Theorem, and the Divergence Theorem, help in analyzing and solving problems involving vector fields?", faculty3);
+
+        Discussion discussion14a = createDiscussion("Logic Discussion", "How do propositional and predicate logic help in forming logical statements and applying logical reasoning in problem-solving?", faculty4);
+        Discussion discussion14b = createDiscussion("Set Theory Discussion", "How do concepts such as subsets, unions, intersections, and Cartesian products apply to real-world problems, and what are the practical applications of set theory?", faculty4);
+        Discussion discussion14c = createDiscussion("Graph Theory Discussion", "How do different types of graphs and graph algorithms facilitate the modeling of pairwise relations between objects, and what are some real-world applications of graph theory?", faculty4);
+        Discussion discussion14d = createDiscussion("Combinatorics Discussion", "How do permutations, combinations, and the principles of counting help in solving combinatorial problems, and what are their applications in various fields?", faculty4);
+
+        Discussion discussion15a = createDiscussion("Newton's Laws Discussion", "How do Newton's laws of motion describe the relationship between the motion of an object and the forces acting on it, and how can these laws be applied to solve problems in mechanics?", faculty5);
+        Discussion discussion15b = createDiscussion("Energy Principles Discussion", "What are the key principles of kinetic and potential energy, and how do concepts such as work, power, and efficiency play a role in understanding energy conservation?", faculty5);
+        Discussion discussion15c = createDiscussion("Motion Discussion", "How do the concepts of velocity, acceleration, and the equations of motion help in analyzing different types of motion, such as linear, projectile, and circular motion?", faculty5);
+
+        Discussion discussion16a = createDiscussion("Atomic Structure Discussion", "How do the subatomic particles (protons, neutrons, electrons) define the properties of elements, and what is the significance of atomic number and mass number in determining the behavior of atoms?", faculty1);
+        Discussion discussion16b = createDiscussion("Chemical Bonding Discussion", "What are the differences between ionic, covalent, and metallic bonds, and how do these types of bonds influence the properties and stability of molecules and compounds?", faculty1);
+        Discussion discussion16c = createDiscussion("Reactions Discussion", "How do factors like reaction rates, equilibrium, and the nature of reactants and products influence the progress of chemical reactions, and what are some examples of these principles in real-world applications?", faculty1);
+
+        Discussion discussion17a = createDiscussion("Cell Structure Discussion", "How do the structure and functions of cell components (like the cell membrane, nucleus, and organelles) differ between prokaryotic and eukaryotic cells, and why are these differences significant?", faculty2);
+        Discussion discussion17b = createDiscussion("Genetics Discussion", "What are the principles of Mendelian genetics, and how do the processes of DNA replication, transcription, and translation contribute to genetic inheritance and variation?", faculty2);
+        Discussion discussion17c = createDiscussion("Evolution Discussion", "How do genetic variation and environmental factors drive the process of natural selection and contribute to the evolution of species, and what evidence supports evolutionary change?", faculty2);
+        Discussion discussion17d = createDiscussion("Ecology Discussion", "How do interactions between organisms and their environment shape ecosystems, and what are the impacts of human activities on food webs and energy flow within these systems?", faculty2);
+
+        Discussion discussion18a = createDiscussion("Engineering Disciplines Discussion", "How do the roles and responsibilities of engineers in civil, mechanical, electrical, and chemical engineering differ, and what are the diverse applications of each engineering discipline?", faculty3);
+        Discussion discussion18b = createDiscussion("Problem-Solving Discussion", "What are the key steps in the engineering problem-solving process, and how can these techniques be applied to tackle real-world engineering challenges?", faculty3);
+        Discussion discussion18c = createDiscussion("Design Process Discussion", "How does the engineering design process facilitate the development of effective solutions, and what are the critical stages from defining requirements to testing and iteration?", faculty3);
+
+        Discussion discussion19a = createDiscussion("Circuit Analysis Discussion", "How do Ohm's law and Kirchhoff's laws help in analyzing electrical circuits, and what techniques can be used to calculate voltage, current, and resistance in both DC and AC circuits?", faculty4);
+        Discussion discussion19b = createDiscussion("Signal Processing Discussion", "What are the key concepts of Fourier transforms and filtering in signal processing, and how are these techniques applied in communication systems and digital signal processing (DSP)?", faculty4);
+        Discussion discussion19c = createDiscussion("Systems Theory Discussion", "How do system modeling, feedback, and control systems contribute to understanding and designing electrical systems, and what are some practical applications of these concepts?", faculty4);
+
+        Discussion discussion20a = createDiscussion("Statics Discussion", "How do the principles of statics help in analyzing force systems and calculating moments in bodies at rest, and what are some practical applications of static equilibrium?", faculty5);
+        Discussion discussion20b = createDiscussion("Dynamics Discussion", "How do kinematics and kinetics help in understanding the motion of particles and rigid bodies, and what are the key applications of Newton's laws of motion in analyzing dynamics?", faculty5);
+        Discussion discussion20c = createDiscussion("Thermodynamics Discussion", "How do the laws of thermodynamics and principles of energy transfer apply to the behavior of gases and liquids, and how can these principles be used to solve engineering problems involving heat and work?", faculty5);
+        Discussion discussion20d = createDiscussion("Material Science Discussion", "How do the properties and behaviors of different materials (such as metals, ceramics, polymers, and composites) influence their selection for specific engineering applications, and what are some examples of these applications?", faculty5);
+
+        attendanceRepo.saveAllAndFlush(Arrays.asList(attendance1, attendance2, attendance3, attendance4, attendance5, attendance6, attendance7, attendance8, attendance9, attendance10, attendance11, attendance12, attendance13, attendance14, attendance15, attendance16, attendance17, attendance18, attendance19, attendance20));
+        resourceRepo.saveAllAndFlush(Arrays.asList(resource1a, resource1b, resource2a, resource2b, resource3a, resource3b, resource4a, resource4b, resource5a, resource5b, resource6a, resource6b, resource7a, resource7b, resource8a, resource8b, resource9a, resource9b, resource10a, resource10b, resource11a, resource11b, resource12a, resource12b, resource13a, resource13b, resource14a, resource14b, resource15a, resource15b, resource16a, resource16b, resource17a, resource17b, resource18a, resource18b, resource19a, resource19b, resource20a, resource20b));
+        discussionRepo.saveAllAndFlush(Arrays.asList(
+                discussion1a, discussion1b, discussion1c, discussion1d, discussion1e, discussion1f, discussion2a, discussion2b, discussion2c, discussion2d, discussion2e,
+                discussion3a, discussion3b, discussion3c, discussion3d, discussion4a, discussion4b, discussion4c, discussion4d,
+                discussion5a, discussion5b, discussion5c, discussion5d, discussion6a, discussion6b, discussion6c, discussion6d, discussion6e,
+                discussion7a, discussion7b, discussion7c, discussion7d, discussion8a, discussion8b, discussion8c, discussion8d, discussion8e,
+                discussion9a, discussion9b, discussion9c, discussion10a, discussion10b, discussion10c, discussion10d,
+                discussion11a, discussion11b, discussion11c, discussion11d, discussion12a, discussion12b, discussion12c, discussion12d, discussion12e,
+                discussion13a, discussion13b, discussion13c, discussion13d, discussion14a, discussion14b, discussion14c, discussion14d,
+                discussion15a, discussion15b, discussion15c, discussion16a, discussion16b, discussion16c,
+                discussion17a, discussion17b, discussion17c, discussion17d, discussion18a, discussion18b, discussion18c,
+                discussion19a, discussion19b, discussion19c, discussion20a, discussion20b, discussion20c, discussion20d
+        ));
 
     }
 
@@ -657,4 +776,13 @@ public class Seeder implements CommandLineRunner {
             attendance.setCourse(course);
             return attendance;
         }
+
+    public static Discussion createDiscussion(String title, String description, Faculty teacher) {
+        Discussion discussion = new Discussion();
+        discussion.setTitle(title);
+        discussion.setDescription(description);
+        discussion.setTeacher(teacher);
+        discussion.setPosts(new ArrayList<>());
+        return discussion;
+    }
 }
