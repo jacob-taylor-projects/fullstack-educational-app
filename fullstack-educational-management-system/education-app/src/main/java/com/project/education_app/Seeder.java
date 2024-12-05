@@ -9,8 +9,11 @@ import lombok.Data;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDate;
+import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.List;
 
 @Component
@@ -496,6 +499,29 @@ public class Seeder implements CommandLineRunner {
         Semester fall2024 = createSemester("Fall", "2024");
         Semester spring2024 = createSemester("Spring", "2024");
 
+        LocalDate attendanceLocalDate1=LocalDate.of(2024,12,4);
+        Attendance attendance1=createAttendance(attendanceLocalDate1,true,student1,course1);
+        Attendance attendance2=createAttendance(attendanceLocalDate1,true,student1,course2);
+        Attendance attendance3=createAttendance(attendanceLocalDate1,true,student2,course3);
+        Attendance attendance4=createAttendance(attendanceLocalDate1,true,student2,course4);
+        Attendance attendance5=createAttendance(attendanceLocalDate1,true,student3,course5);
+        Attendance attendance6=createAttendance(attendanceLocalDate1,true,student3,course6);
+        Attendance attendance7=createAttendance(attendanceLocalDate1,true,student4,course7);
+        Attendance attendance8=createAttendance(attendanceLocalDate1,true,student4,course8);
+        Attendance attendance9=createAttendance(attendanceLocalDate1,true,student5,course9);
+        Attendance attendance10=createAttendance(attendanceLocalDate1,true,student5,course10);
+        Attendance attendance11=createAttendance(attendanceLocalDate1,true,student6,course11);
+        Attendance attendance12=createAttendance(attendanceLocalDate1,true,student6,course12);
+        Attendance attendance13=createAttendance(attendanceLocalDate1,true,student7,course13);
+        Attendance attendance14=createAttendance(attendanceLocalDate1,true,student7,course14);
+        Attendance attendance15=createAttendance(attendanceLocalDate1,true,student8,course15);
+        Attendance attendance16=createAttendance(attendanceLocalDate1,true,student8,course16);
+        Attendance attendance17=createAttendance(attendanceLocalDate1,true,student9,course17);
+        Attendance attendance18=createAttendance(attendanceLocalDate1,true,student9,course18);
+        Attendance attendance19=createAttendance(attendanceLocalDate1,true,student10,course19);
+        Attendance attendance20=createAttendance(attendanceLocalDate1,true,student10,course20);
+
+
     }
 
     public static Faculty createFaculty(String username, String password, String firstName, String lastName, String email, String phoneNumber, int age, String gender, String address, boolean isAdmin, boolean isTeacher, double salary) {
@@ -622,4 +648,13 @@ public class Seeder implements CommandLineRunner {
         return lesson;
         }
 
+        public static Attendance createAttendance(LocalDate attendanceLocalDate, boolean present, Student student, Course course){
+          Date attendanceDate=Date.from(attendanceLocalDate.atStartOfDay(ZoneId.systemDefault()).toInstant());
+            Attendance attendance=new Attendance();
+            attendance.setAttendanceDate(attendanceDate);
+            attendance.setPresent(present);
+            attendance.setStudent(student);
+            attendance.setCourse(course);
+            return attendance;
+        }
 }
