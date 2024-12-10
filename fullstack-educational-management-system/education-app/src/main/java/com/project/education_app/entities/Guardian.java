@@ -35,7 +35,7 @@ public class Guardian {
     @JoinTable(name = "student_guardian",
             joinColumns = @JoinColumn(name = "guardian_id"),
             inverseJoinColumns = @JoinColumn(name = "student_id"))
-    private Set<Student> students=new HashSet<>();
+    private List<Student> students = new ArrayList<>();
 
 
     public List<Grade> getStudentsGrades(){

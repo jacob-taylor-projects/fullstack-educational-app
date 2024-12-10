@@ -34,19 +34,19 @@ public class Student {
 
     @OneToMany(mappedBy = "student",cascade = CascadeType.ALL)
     @EqualsAndHashCode.Exclude
-    private Set<Attendance> attendances=new HashSet<>();
+    private List<Attendance> attendances = new ArrayList<>();
 
     @ManyToMany
     @JoinTable(name = "student_guardian",
     joinColumns = @JoinColumn(name = "student_id"),
     inverseJoinColumns = @JoinColumn(name = "guardian_id"))
-    private Set<Guardian> guardians=new HashSet<>();
+    private List<Guardian> guardians = new ArrayList<>();
 
     @ManyToMany
     @JoinTable(name = "student_course",
             joinColumns = @JoinColumn(name = "student_id"),
             inverseJoinColumns = @JoinColumn(name = "course_id"))
-    private Set<Course> courses=new HashSet<>();
+    private List<Course> courses = new ArrayList<>();
 
     @OneToMany(mappedBy = "student",cascade = CascadeType.ALL)
     private List<Grade> grades=new ArrayList<>();

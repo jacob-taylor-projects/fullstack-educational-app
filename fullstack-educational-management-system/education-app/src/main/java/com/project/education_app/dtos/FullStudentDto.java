@@ -26,11 +26,11 @@ public class FullStudentDto {
 
     private String address;
 
-    private Set<AttendanceDto> attendances;
+    private List<AttendanceDto> attendances;
 
-    private Set<BasicGuardianDto> guardians;
+    private List<BasicGuardianDto> guardians;
 
-    private Set<CourseDto> courses;
+    private List<CourseDto> courses;
 
     private List<GradeDto> grades;
 

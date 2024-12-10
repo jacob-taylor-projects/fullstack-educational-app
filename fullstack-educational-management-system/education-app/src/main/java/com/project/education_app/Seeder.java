@@ -6,7 +6,9 @@ import lombok.Data;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
+import java.sql.Timestamp;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.ZoneId;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -1072,6 +1074,289 @@ public class Seeder implements CommandLineRunner {
         Schedule scheduleStudent9 = createSchedule("Student 9's Fall Schedule", "List of courses for Student 9 in Fall 2024", student9, fall2024, course17, course18, course19, course20);
         Schedule scheduleStudent10 = createSchedule("Student 10's Fall Schedule", "List of courses for Student 10 in Fall 2024", student10, fall2024, course17, course18, course19, course20);
 
+        //Course 1 Unit 1 Assignment
+        // Creating the assignment
+        Assignment assignment = createAssignment("Variables Assignment", faculty1, Date.from(LocalDate.of(2024, 12, 31).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa1_1_1 = createProblemAnswer("What is a variable in programming?", "A variable in programming is a storage location identified by a name that holds data which can be changed during the program's execution.");
+        addAssignmentToProblemAnswer(pa1_1_1, assignment);
+        addProblemAnswerToAssignment(assignment, pa1_1_1);
+
+        ProblemAnswer pa1_1_2 = createProblemAnswer("How do you declare a variable in Python?", "To declare a variable in Python, you simply write the variable name followed by an equal sign and the value you want to assign. For example: `x = 5`.");
+        addAssignmentToProblemAnswer(pa1_1_2, assignment);
+        addProblemAnswerToAssignment(assignment, pa1_1_2);
+
+        ProblemAnswer pa1_1_3 = createProblemAnswer("What is the importance of variables in programming?", "Variables are essential in programming because they allow developers to store, retrieve, and manipulate data, making the code more dynamic and flexible.");
+        addAssignmentToProblemAnswer(pa1_1_3, assignment);
+        addProblemAnswerToAssignment(assignment, pa1_1_3);
+
+        ProblemAnswer pa1_1_4 = createProblemAnswer("How can you change the value of a variable once it has been assigned?", "You can change the value of a variable by reassigning it with a new value. For example: `x = 5` can be changed to `x = 10`.");
+        addAssignmentToProblemAnswer(pa1_1_4, assignment);
+        addProblemAnswerToAssignment(assignment, pa1_1_4);
+
+        ProblemAnswer pa1_1_5 = createProblemAnswer("What are the rules for naming variables in Python?", "Variable names in Python must start with a letter (a-z, A-Z) or an underscore (_), followed by letters, digits (0-9), or underscores. They cannot start with a digit and are case-sensitive.");
+        addAssignmentToProblemAnswer(pa1_1_5, assignment);
+        addProblemAnswerToAssignment(assignment, pa1_1_5);
+
+        ProblemAnswer pa1_1_6 = createProblemAnswer("Why is it important to use meaningful variable names?", "Using meaningful variable names makes the code more readable and maintainable, as it helps others (and yourself) understand the purpose of the variables without needing additional comments.");
+        addAssignmentToProblemAnswer(pa1_1_6, assignment);
+        addProblemAnswerToAssignment(assignment, pa1_1_6);
+
+        ProblemAnswer pa1_1_7 = createProblemAnswer("What is the difference between a variable and a constant?", "A variable can change its value during the execution of a program, while a constant holds a fixed value that does not change.");
+        addAssignmentToProblemAnswer(pa1_1_7, assignment);
+        addProblemAnswerToAssignment(assignment, pa1_1_7);
+
+        ProblemAnswer pa1_1_8 = createProblemAnswer("Can a variable hold different data types in Python?", "Yes, a variable in Python can hold different data types such as integers, floats, strings, and booleans. Python is dynamically typed, meaning the type of a variable can change during runtime.");
+        addAssignmentToProblemAnswer(pa1_1_8, assignment);
+        addProblemAnswerToAssignment(assignment, pa1_1_8);
+
+        ProblemAnswer pa1_1_9 = createProblemAnswer("How do you delete a variable in Python?", "You can delete a variable in Python using the `del` statement. For example, `del x` will delete the variable `x`.");
+        addAssignmentToProblemAnswer(pa1_1_9, assignment);
+        addProblemAnswerToAssignment(assignment, pa1_1_9);
+
+        ProblemAnswer pa1_1_10 = createProblemAnswer("What is variable scope, and why is it important?", "Variable scope refers to the context in which a variable is accessible. It is important because it prevents variable name conflicts and helps in organizing the code by limiting the variable's visibility.");
+        addAssignmentToProblemAnswer(pa1_1_10, assignment);
+        addProblemAnswerToAssignment(assignment, pa1_1_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Variables' unit created with 10 problem answers.");
+
+        //Course 1 Unit 2 Assignment
+
+        // Creating the assignment with the due date specified inline
+        Assignment assignment2 = createAssignment("Data Types Assignment", faculty1, Date.from(LocalDate.of(2025, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_1_2_1 = createProblemAnswer("What are the primary data types in Python?", "The primary data types in Python are integers, floats, strings, and booleans.");
+        addAssignmentToProblemAnswer(pa_1_2_1, assignment2);
+        addProblemAnswerToAssignment(assignment2, pa_1_2_1);
+
+        ProblemAnswer pa_1_2_2 = createProblemAnswer("How do you define an integer in Python?", "An integer in Python is defined by assigning a whole number to a variable, such as `x = 10`.");
+        addAssignmentToProblemAnswer(pa_1_2_2, assignment2);
+        addProblemAnswerToAssignment(assignment2, pa_1_2_2);
+
+        ProblemAnswer pa_1_2_3 = createProblemAnswer("What is the difference between an integer and a float?", "An integer is a whole number without a decimal point, while a float is a number that includes a decimal point, such as `3.14`.");
+        addAssignmentToProblemAnswer(pa_1_2_3, assignment2);
+        addProblemAnswerToAssignment(assignment2, pa_1_2_3);
+
+        ProblemAnswer pa_1_2_4 = createProblemAnswer("How can you convert a string to an integer in Python?", "You can convert a string to an integer using the `int()` function, for example, `int(\"10\")` will convert the string `\"10\"` to the integer `10`.");
+        addAssignmentToProblemAnswer(pa_1_2_4, assignment2);
+        addProblemAnswerToAssignment(assignment2, pa_1_2_4);
+
+        ProblemAnswer pa_1_2_5 = createProblemAnswer("What is a boolean data type and how is it used in Python?", "A boolean data type represents one of two values: `True` or `False`. It is often used in conditional statements to control the flow of a program.");
+        addAssignmentToProblemAnswer(pa_1_2_5, assignment2);
+        addProblemAnswerToAssignment(assignment2, pa_1_2_5);
+
+        ProblemAnswer pa_1_2_6 = createProblemAnswer("How can you check the data type of a variable in Python?", "You can check the data type of a variable using the `type()` function. For example, `type(x)` will return the data type of the variable `x`.");
+        addAssignmentToProblemAnswer(pa_1_2_6, assignment2);
+        addProblemAnswerToAssignment(assignment2, pa_1_2_6);
+
+        ProblemAnswer pa_1_2_7 = createProblemAnswer("What is type casting and why is it useful in Python?", "Type casting is the process of converting a variable from one data type to another. It is useful for operations that require a specific data type, such as mathematical calculations or string manipulations.");
+        addAssignmentToProblemAnswer(pa_1_2_7, assignment2);
+        addProblemAnswerToAssignment(assignment2, pa_1_2_7);
+
+        ProblemAnswer pa_1_2_8 = createProblemAnswer("How do you define a string in Python?", "A string in Python is defined by enclosing text in quotes, such as `name = \"Alice\"`.");
+        addAssignmentToProblemAnswer(pa_1_2_8, assignment2);
+        addProblemAnswerToAssignment(assignment2, pa_1_2_8);
+
+        ProblemAnswer pa_1_2_9 = createProblemAnswer("How can you convert a float to a string in Python?", "You can convert a float to a string using the `str()` function. For example, `str(3.14)` will convert the float `3.14` to the string `\"3.14\"`.");
+        addAssignmentToProblemAnswer(pa_1_2_9, assignment2);
+        addProblemAnswerToAssignment(assignment2, pa_1_2_9);
+
+        ProblemAnswer pa_1_2_10 = createProblemAnswer("What is the difference between mutable and immutable data types in Python?", "Mutable data types can be changed after their creation (e.g., lists, dictionaries), while immutable data types cannot be changed once they are created (e.g., strings, tuples).");
+        addAssignmentToProblemAnswer(pa_1_2_10, assignment2);
+        addProblemAnswerToAssignment(assignment2, pa_1_2_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Data Types' unit created with 10 problem answers and due date " + Date.from(LocalDate.of(2025, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()));
+
+        // Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment3 = createAssignment("Control Structures Assignment", faculty1, Date.from(LocalDate.of(2025, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_1_3_1 = createProblemAnswer("What are control structures in programming?", "Control structures are constructs that control the flow of execution in a program. They include loops and conditional statements, allowing for repeated execution of code and decision-making.");
+        addAssignmentToProblemAnswer(pa_1_3_1, assignment3);
+        addProblemAnswerToAssignment(assignment3, pa_1_3_1);
+
+        ProblemAnswer pa_1_3_2 = createProblemAnswer("How do you write a `for` loop in Python?", "A `for` loop in Python is written using the `for` keyword followed by a variable, the `in` keyword, and a sequence. For example:\n```python\nfor i in range(5):\n    print(i)\n```");
+        addAssignmentToProblemAnswer(pa_1_3_2, assignment3);
+        addProblemAnswerToAssignment(assignment3, pa_1_3_2);
+
+        ProblemAnswer pa_1_3_3 = createProblemAnswer("What is the difference between a `for` loop and a `while` loop?", "A `for` loop iterates over a sequence of elements, such as a list or range, whereas a `while` loop continues executing as long as a specified condition is true.");
+        addAssignmentToProblemAnswer(pa_1_3_3, assignment3);
+        addProblemAnswerToAssignment(assignment3, pa_1_3_3);
+
+        ProblemAnswer pa_1_3_4 = createProblemAnswer("How do you write a `while` loop in Python?", "A `while` loop in Python is written using the `while` keyword followed by a condition. For example:\n```python\nx = 0\nwhile x < 5:\n    print(x)\n    x += 1\n```");
+        addAssignmentToProblemAnswer(pa_1_3_4, assignment3);
+        addProblemAnswerToAssignment(assignment3, pa_1_3_4);
+
+        ProblemAnswer pa_1_3_5 = createProblemAnswer("What are conditional statements in Python?", "Conditional statements allow a program to execute certain pieces of code based on whether a condition is true or false. They include `if`, `elif`, and `else`.");
+        addAssignmentToProblemAnswer(pa_1_3_5, assignment3);
+        addProblemAnswerToAssignment(assignment3, pa_1_3_5);
+
+        ProblemAnswer pa_1_3_6 = createProblemAnswer("How do you write an `if` statement in Python?", "An `if` statement in Python is written using the `if` keyword followed by a condition and a colon. The indented code block below it will execute if the condition is true. For example:\n```python\nif x > 0:\n    print(\"x is positive\")\n```");
+        addAssignmentToProblemAnswer(pa_1_3_6, assignment3);
+        addProblemAnswerToAssignment(assignment3, pa_1_3_6);
+
+        ProblemAnswer pa_1_3_7 = createProblemAnswer("What is the purpose of the `elif` keyword in Python?", "The `elif` keyword, short for \"else if,\" allows for multiple conditions to be checked in sequence after an initial `if` condition. If the initial `if` condition is false, the `elif` condition will be checked next.");
+        addAssignmentToProblemAnswer(pa_1_3_7, assignment3);
+        addProblemAnswerToAssignment(assignment3, pa_1_3_7);
+
+        ProblemAnswer pa_1_3_8 = createProblemAnswer("How do you write an `else` statement in Python?", "An `else` statement in Python follows an `if` or `elif` statement and executes if all previous conditions are false. For example:\n```python\nif x > 0:\n    print(\"x is positive\")\nelif x == 0:\n    print(\"x is zero\")\nelse:\n    print(\"x is negative\")\n```");
+        addAssignmentToProblemAnswer(pa_1_3_8, assignment3);
+        addProblemAnswerToAssignment(assignment3, pa_1_3_8);
+
+        ProblemAnswer pa_1_3_9 = createProblemAnswer("Can you nest control structures within each other? Provide an example.", "Yes, control structures can be nested within each other. For example, a `for` loop can contain an `if` statement:\n```python\nfor i in range(10):\n    if i % 2 == 0:\n        print(i, \"is even\")\n    else:\n        print(i, \"is odd\")\n```");
+        addAssignmentToProblemAnswer(pa_1_3_9, assignment3);
+        addProblemAnswerToAssignment(assignment3, pa_1_3_9);
+
+        ProblemAnswer pa_1_3_10 = createProblemAnswer("What are the benefits of using control structures in programming?", "Control structures enhance the flexibility and efficiency of code by enabling decision-making, iteration, and the organization of complex logic into manageable parts.");
+        addAssignmentToProblemAnswer(pa_1_3_10, assignment3);
+        addProblemAnswerToAssignment(assignment3, pa_1_3_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Control Structures' unit created with 10 problem answers, due date, faculty, and syllabus.");
+        // Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment4 = createAssignment("Functions Assignment", faculty1, Date.from(LocalDate.of(2025, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_1_4_1 = createProblemAnswer("What is a function in programming?", "A function in programming is a block of code that performs a specific task. It can take inputs, process them, and return an output.");
+        addAssignmentToProblemAnswer(pa_1_4_1, assignment4);
+        addProblemAnswerToAssignment(assignment4, pa_1_4_1);
+
+        ProblemAnswer pa_1_4_2 = createProblemAnswer("How do you define a function in Python?", "You define a function in Python using the `def` keyword followed by the function name and parentheses. For example:\n```python\ndef greet():\n    print(\"Hello, world!\")\n```");
+        addAssignmentToProblemAnswer(pa_1_4_2, assignment4);
+        addProblemAnswerToAssignment(assignment4, pa_1_4_2);
+
+        ProblemAnswer pa_1_4_3 = createProblemAnswer("What are parameters in a function?", "Parameters are variables listed inside the parentheses in the function definition. They act as placeholders for the values that are passed to the function when it is called.");
+        addAssignmentToProblemAnswer(pa_1_4_3, assignment4);
+        addProblemAnswerToAssignment(assignment4, pa_1_4_3);
+
+        ProblemAnswer pa_1_4_4 = createProblemAnswer("How do you call a function in Python?", "You call a function by using its name followed by parentheses. If the function has parameters, you pass arguments inside the parentheses. For example:\n```python\ngreet()\n```");
+        addAssignmentToProblemAnswer(pa_1_4_4, assignment4);
+        addProblemAnswerToAssignment(assignment4, pa_1_4_4);
+
+        ProblemAnswer pa_1_4_5 = createProblemAnswer("What is the difference between a parameter and an argument?", "A parameter is a variable in the function definition, whereas an argument is the actual value passed to the function when it is called.");
+        addAssignmentToProblemAnswer(pa_1_4_5, assignment4);
+        addProblemAnswerToAssignment(assignment4, pa_1_4_5);
+
+        ProblemAnswer pa_1_4_6 = createProblemAnswer("How do you return a value from a function in Python?", "You return a value from a function using the `return` keyword. For example:\n```python\ndef add(a, b):\n    return a + b\n```");
+        addAssignmentToProblemAnswer(pa_1_4_6, assignment4);
+        addProblemAnswerToAssignment(assignment4, pa_1_4_6);
+
+        ProblemAnswer pa_1_4_7 = createProblemAnswer("What is a recursive function?", "A recursive function is a function that calls itself in order to solve a problem. It typically has a base case to prevent infinite recursion.");
+        addAssignmentToProblemAnswer(pa_1_4_7, assignment4);
+        addProblemAnswerToAssignment(assignment4, pa_1_4_7);
+
+        ProblemAnswer pa_1_4_8 = createProblemAnswer("How do you define a function with default parameters in Python?", "You define a function with default parameters by assigning values to the parameters in the function definition. For example:\n```python\ndef greet(name=\"world\"):\n    print(\"Hello, \" + name)\n```");
+        addAssignmentToProblemAnswer(pa_1_4_8, assignment4);
+        addProblemAnswerToAssignment(assignment4, pa_1_4_8);
+
+        ProblemAnswer pa_1_4_9 = createProblemAnswer("What are the advantages of using functions in programming?", "Functions help in organizing and modularizing code, making it easier to read, maintain, and reuse. They also allow for code abstraction and simplify complex tasks.");
+        addAssignmentToProblemAnswer(pa_1_4_9, assignment4);
+        addProblemAnswerToAssignment(assignment4, pa_1_4_9);
+
+        ProblemAnswer pa_1_4_10 = createProblemAnswer("Can you have a function within a function in Python? Provide an example.", "Yes, you can define a function within a function in Python. This is called a nested function. For example:\n```python\ndef outer_function():\n    def inner_function():\n        print(\"Hello from the inner function!\")\n    inner_function()\n```");
+        addAssignmentToProblemAnswer(pa_1_4_10, assignment4);
+        addProblemAnswerToAssignment(assignment4, pa_1_4_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Functions' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment5 = createAssignment("Modules Assignment", faculty1, Date.from(LocalDate.of(2025, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_1_5_1 = createProblemAnswer("What is a module in Python?", "A module in Python is a file containing Python code that defines functions, classes, and variables. It allows for organizing and reusing code across different programs.");
+        addAssignmentToProblemAnswer(pa_1_5_1, assignment5);
+        addProblemAnswerToAssignment(assignment5, pa_1_5_1);
+
+        ProblemAnswer pa_1_5_2 = createProblemAnswer("How do you import a module in Python?", "You import a module in Python using the `import` keyword followed by the module name. For example:\n```python\nimport math\n```");
+        addAssignmentToProblemAnswer(pa_1_5_2, assignment5);
+        addProblemAnswerToAssignment(assignment5, pa_1_5_2);
+
+        ProblemAnswer pa_1_5_3 = createProblemAnswer("What is the purpose of using modules in Python?", "Modules allow for better organization of code, code reuse, and separation of concerns. They make the code more maintainable and scalable.");
+        addAssignmentToProblemAnswer(pa_1_5_3, assignment5);
+        addProblemAnswerToAssignment(assignment5, pa_1_5_3);
+
+        ProblemAnswer pa_1_5_4 = createProblemAnswer("How do you access functions and variables from an imported module?", "You can access functions and variables from an imported module using the dot notation. For example:\n```python\nimport math\nprint(math.sqrt(16))\n```");
+        addAssignmentToProblemAnswer(pa_1_5_4, assignment5);
+        addProblemAnswerToAssignment(assignment5, pa_1_5_4);
+
+        ProblemAnswer pa_1_5_5 = createProblemAnswer("How can you import specific functions or variables from a module?", "You can import specific functions or variables from a module using the `from` keyword. For example:\n```python\nfrom math import sqrt\nprint(sqrt(16))\n```");
+        addAssignmentToProblemAnswer(pa_1_5_5, assignment5);
+        addProblemAnswerToAssignment(assignment5, pa_1_5_5);
+
+        ProblemAnswer pa_1_5_6 = createProblemAnswer("What is a built-in module in Python? Give an example.", "A built-in module in Python is a module that comes pre-installed with Python. An example is the `os` module, which provides functions for interacting with the operating system.");
+        addAssignmentToProblemAnswer(pa_1_5_6, assignment5);
+        addProblemAnswerToAssignment(assignment5, pa_1_5_6);
+
+        ProblemAnswer pa_1_5_7 = createProblemAnswer("How do you create your own module in Python?", "You create your own module in Python by writing Python code in a file and saving it with a `.py` extension. For example, creating a file named `mymodule.py` with functions and variables.");
+        addAssignmentToProblemAnswer(pa_1_5_7, assignment5);
+        addProblemAnswerToAssignment(assignment5, pa_1_5_7);
+
+        ProblemAnswer pa_1_5_8 = createProblemAnswer("How do you reload a module after it has been modified?", "You can reload a module after it has been modified using the `importlib.reload()` function from the `importlib` module. For example:\n```python\nimport importlib\nimport mymodule\nimportlib.reload(mymodule)\n```");
+        addAssignmentToProblemAnswer(pa_1_5_8, assignment5);
+        addProblemAnswerToAssignment(assignment5, pa_1_5_8);
+
+        ProblemAnswer pa_1_5_9 = createProblemAnswer("What is the `__name__` variable in a Python module?", "The `__name__` variable in a Python module is a special built-in variable that evaluates to `'__main__'` if the module is run as the main program, or to the module's name if it is imported.");
+        addAssignmentToProblemAnswer(pa_1_5_9, assignment5);
+        addProblemAnswerToAssignment(assignment5, pa_1_5_9);
+
+        ProblemAnswer pa_1_5_10 = createProblemAnswer("What are the benefits of using modules in Python?", "The benefits of using modules in Python include code reusability, better organization, easier maintenance, and the ability to use external libraries and frameworks to extend the functionality of programs.");
+        addAssignmentToProblemAnswer(pa_1_5_10, assignment5);
+        addProblemAnswerToAssignment(assignment5, pa_1_5_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Modules' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment6 = createAssignment("Libraries Assignment", faculty1, Date.from(LocalDate.of(2025, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_1_6_1 = createProblemAnswer("What is a library in Python?", "A library in Python is a collection of pre-written code that provides useful functionalities for various tasks. Libraries help in extending the capabilities of Python programs without writing code from scratch.");
+        addAssignmentToProblemAnswer(pa_1_6_1, assignment6);
+        addProblemAnswerToAssignment(assignment6, pa_1_6_1);
+
+        ProblemAnswer pa_1_6_2 = createProblemAnswer("How do you install a library in Python?", "You can install a library in Python using the `pip` package manager. For example, to install the `requests` library, you use the command:\n```bash\npip install requests\n```");
+        addAssignmentToProblemAnswer(pa_1_6_2, assignment6);
+        addProblemAnswerToAssignment(assignment6, pa_1_6_2);
+
+        ProblemAnswer pa_1_6_3 = createProblemAnswer("What is the difference between a library and a module in Python?", "A module is a single file containing Python code, while a library is a collection of modules organized to provide specific functionalities. Libraries often include multiple modules and packages.");
+        addAssignmentToProblemAnswer(pa_1_6_3, assignment6);
+        addProblemAnswerToAssignment(assignment6, pa_1_6_3);
+
+        ProblemAnswer pa_1_6_4 = createProblemAnswer("How do you import a library in Python?", "You import a library in Python using the `import` keyword followed by the library name. For example:\n```python\nimport requests\n```");
+        addAssignmentToProblemAnswer(pa_1_6_4, assignment6);
+        addProblemAnswerToAssignment(assignment6, pa_1_6_4);
+
+        ProblemAnswer pa_1_6_5 = createProblemAnswer("What are some popular Python libraries, and what are they used for?", "Some popular Python libraries include:\n- `NumPy`: Used for numerical computations.\n- `Pandas`: Used for data manipulation and analysis.\n- `Matplotlib`: Used for data visualization.\n- `requests`: Used for making HTTP requests.");
+        addAssignmentToProblemAnswer(pa_1_6_5, assignment6);
+        addProblemAnswerToAssignment(assignment6, pa_1_6_5);
+
+        ProblemAnswer pa_1_6_6 = createProblemAnswer("How do you read the documentation for a Python library?", "You can read the documentation for a Python library by visiting its official website or documentation page. For example, the documentation for the `requests` library is available at [https://docs.python-requests.org/](https://docs.python-requests.org/).");
+        addAssignmentToProblemAnswer(pa_1_6_6, assignment6);
+        addProblemAnswerToAssignment(assignment6, pa_1_6_6);
+
+        ProblemAnswer pa_1_6_7 = createProblemAnswer("How do you update a library in Python?", "You can update a library in Python using the `pip` package manager with the `--upgrade` option. For example, to update the `requests` library, you use the command:\n```bash\npip install --upgrade requests\n```");
+        addAssignmentToProblemAnswer(pa_1_6_7, assignment6);
+        addProblemAnswerToAssignment(assignment6, pa_1_6_7);
+
+        ProblemAnswer pa_1_6_8 = createProblemAnswer("How can you uninstall a library in Python?", "You can uninstall a library in Python using the `pip` package manager with the `uninstall` option. For example, to uninstall the `requests` library, you use the command:\n```bash\npip uninstall requests\n```");
+        addAssignmentToProblemAnswer(pa_1_6_8, assignment6);
+        addProblemAnswerToAssignment(assignment6, pa_1_6_8);
+
+        ProblemAnswer pa_1_6_9 = createProblemAnswer("What is a virtual environment, and why is it useful when working with libraries?", "A virtual environment is an isolated environment for Python projects that allows you to manage dependencies separately for each project. It is useful because it prevents conflicts between library versions and ensures that each project has the required libraries without affecting other projects.");
+        addAssignmentToProblemAnswer(pa_1_6_9, assignment6);
+        addProblemAnswerToAssignment(assignment6, pa_1_6_9);
+
+        ProblemAnswer pa_1_6_10 = createProblemAnswer("How do you create and activate a virtual environment in Python?", "You can create a virtual environment in Python using the `venv` module and activate it using the appropriate command for your operating system. For example, on Windows:\n```bash\npython -m venv myenv\nmyenv\\Scripts\\activate\n```\nOn Unix or MacOS:\n```bash\npython3 -m venv myenv\nsource myenv/bin/activate\n```");
+        addAssignmentToProblemAnswer(pa_1_6_10, assignment6);
+        addProblemAnswerToAssignment(assignment6, pa_1_6_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Libraries' unit created with 10 problem answers, due date, faculty, and syllabus.");
+
+
 
         attendanceRepo.saveAllAndFlush(Arrays.asList(attendance1, attendance2, attendance3, attendance4, attendance5, attendance6, attendance7, attendance8, attendance9, attendance10, attendance11, attendance12, attendance13, attendance14, attendance15, attendance16, attendance17, attendance18, attendance19, attendance20));
         resourceRepo.saveAllAndFlush(Arrays.asList(resource1a, resource1b, resource2a, resource2b, resource3a, resource3b, resource4a, resource4b, resource5a, resource5b, resource6a, resource6b, resource7a, resource7b, resource8a, resource8b, resource9a, resource9b, resource10a, resource10b, resource11a, resource11b, resource12a, resource12b, resource13a, resource13b, resource14a, resource14b, resource15a, resource15b, resource16a, resource16b, resource17a, resource17b, resource18a, resource18b, resource19a, resource19b, resource20a, resource20b));
@@ -1264,5 +1549,189 @@ public class Seeder implements CommandLineRunner {
         return schedule;
     }
 
+    public static ProblemAnswer createProblemAnswer(String problemContent, String answerContent) {
+        ProblemAnswer problemAnswer = new ProblemAnswer();
+        problemAnswer.setProblemContent(problemContent);
+        problemAnswer.setAnswerContent(answerContent);
+        return problemAnswer;
+    }
+
+    public static void addAssignmentToProblemAnswer(ProblemAnswer problemAnswer, Assignment assignment) {
+        problemAnswer.setAssignment(assignment);
+    }
+
+    public static void addProjectToProblemAnswer(ProblemAnswer problemAnswer, Project project) {
+        problemAnswer.setProject(project);
+    }
+
+    public static void addTestToProblemAnswer(ProblemAnswer problemAnswer, Test test) {
+        problemAnswer.setTest(test);
+    }
+
+    public static void addStudentAnswerToProblemAnswer(ProblemAnswer problemAnswer, StudentAnswer studentAnswer) {
+        problemAnswer.setStudentAnswer(studentAnswer);
+    }
+
+    public static Assignment createAssignment(String title, Faculty teacher, Date dueDate, Syllabus syllabus, boolean completed) {
+        Assignment assignment = new Assignment();
+        assignment.setTitle(title);
+        assignment.setTeacher(teacher);
+        assignment.setDueDate(dueDate);
+        assignment.setSyllabus(syllabus);
+        assignment.setCompleted(completed);
+        return assignment;
+    }
+
+    public static void addProblemAnswerToAssignment(Assignment assignment, ProblemAnswer problemAnswer) {
+        assignment.getProblemAnswers().add(problemAnswer);
+        problemAnswer.setAssignment(assignment);
+    }
+
+    public static void addStudentToAssignment(Assignment assignment, Student student) {
+        assignment.getStudents().add(student);
+    }
+
+    public static Test createTest(String title, Faculty teacher, Date dueDate, Syllabus syllabus, boolean completed) {
+        Test test = new Test();
+        test.setTitle(title);
+        test.setTeacher(teacher);
+        test.setDueDate(dueDate);
+        test.setSyllabus(syllabus);
+        test.setCompleted(completed);
+        return test;
+    }
+
+    public static void addProblemAnswerToTest(Test test, ProblemAnswer problemAnswer) {
+        test.getProblemAnswers().add(problemAnswer);
+        problemAnswer.setTest(test);
+    }
+
+    public static void addStudentToTest(Test test, Student student) {
+        test.getStudents().add(student);
+    }
+
+    public static Project createProject(String name, Faculty teacher, Date dueDate, Syllabus syllabus, boolean completed, ProblemAnswer problemAnswer) {
+        Project project = new Project();
+        project.setName(name);
+        project.setTeacher(teacher);
+        project.setDueDate(dueDate);
+        project.setSyllabus(syllabus);
+        project.setCompleted(completed);
+        project.setProblemAnswer(problemAnswer);
+        problemAnswer.setProject(project);
+        return project;
+    }
+
+    public static void addStudentToProject(Project project, Student student) {
+        project.getStudents().add(student);
+    }
+
+    public static StudentAnswer createStudentAnswer(Student student, ProblemAnswer problemAnswer, String answerContent) {
+        StudentAnswer studentAnswer = new StudentAnswer();
+        studentAnswer.setStudent(student);
+        studentAnswer.setProblemAnswer(problemAnswer);
+        studentAnswer.setAnswerContent(answerContent);
+        studentAnswer.setSubmissionDate(Timestamp.valueOf(LocalDateTime.now()));
+        return studentAnswer;
+    }
+
+    public static void addSubmissionToStudentAnswer(StudentAnswer studentAnswer, Submission submission) {
+        studentAnswer.setSubmission(submission);
+    }
+
+    public static Submission createSubmission(String content, Student student, List<StudentAnswer> studentAnswers) {
+        Submission submission = new Submission();
+        submission.setContent(content);
+        submission.setStudent(student);
+        submission.setSubmissionDate(Timestamp.valueOf(LocalDateTime.now()));
+        for (StudentAnswer studentAnswer : studentAnswers) {
+            studentAnswer.setSubmission(submission);
+            submission.getStudentAnswers().add(studentAnswer);
+        }
+        return submission;
+    }
+
+    public static void addGradeToSubmission(Submission submission, Grade grade) {
+        submission.setGrade(grade);
+        grade.setSubmission(submission); // Ensures the relationship is bidirectional
+    }
+
+    public static void addFeedbackToSubmission(Submission submission, Feedback feedback) {
+        submission.setFeedback(feedback);
+        feedback.setSubmission(submission); // Ensures the relationship is bidirectional
+    }
+
+    public static CourseGrade createCourseGrade(Course course, Student student) {
+        CourseGrade courseGrade = new CourseGrade();
+        courseGrade.setCourse(course);
+        courseGrade.setStudent(student);
+        // Add to the collection of course grades
+        course.getCourseGrades().add(courseGrade);
+        student.getCourseGrades().add(courseGrade); // Ensure bidirectional relationship
+        return courseGrade;
+    }
+
+    public static void updateCourseGrade(Course course, CourseGrade courseGrade, int assignmentPercent, int testPercent, int projectPercent) {
+        List<Grade> grades = course.getGrades();
+        double totalWeightedGrade = 0;
+        double totalWeight = 0;
+
+        // Convert percentages to decimals
+        double assignmentWeight = assignmentPercent / 100.0;
+        double testWeight = testPercent / 100.0;
+        double projectWeight = projectPercent / 100.0;
+
+        for (Grade grade : grades) {
+            Submission submission = grade.getSubmission();
+            for (StudentAnswer studentAnswer : submission.getStudentAnswers()) {
+                ProblemAnswer problemAnswer = studentAnswer.getProblemAnswer();
+
+                if (problemAnswer.getAssignment() != null) {
+                    totalWeightedGrade += grade.getGrade() * assignmentWeight;
+                    totalWeight += assignmentWeight;
+                } else if (problemAnswer.getTest() != null) {
+                    totalWeightedGrade += grade.getGrade() * testWeight;
+                    totalWeight += testWeight;
+                } else if (problemAnswer.getProject() != null) {
+                    totalWeightedGrade += grade.getGrade() * projectWeight;
+                    totalWeight += projectWeight;
+                }
+            }
+        }
+
+        double averageGrade = totalWeight > 0 ? totalWeightedGrade / totalWeight : 0;
+        courseGrade.setOverallGrade(averageGrade);
+    }
+
+
+    public static Grade createGrade(double gradeValue, Student student, Faculty teacher, Course course, Submission submission, int assignmentPercent, int testPercent, int projectPercent) {
+        Grade grade = new Grade();
+        grade.setGrade(gradeValue);
+        grade.setStudent(student);
+        grade.setTeacher(teacher);
+        grade.setCourse(course);
+        grade.setSubmission(submission);
+        grade.setDateGraded(Timestamp.valueOf(LocalDateTime.now()));
+
+        // Add the new grade to the course's grades
+        course.getGrades().add(grade);
+
+        // Update the CourseGrade
+        CourseGrade courseGrade = course.getCourseGrades().stream()
+                .filter(cg -> cg.getStudent().equals(student))
+                .findFirst()
+                .orElseGet(() -> createCourseGrade(course, student));
+        updateCourseGrade(course, courseGrade, assignmentPercent, testPercent, projectPercent);
+
+        return grade;
+    }
+
+    public static Feedback createFeedback(String feedbackText, Submission submission) {
+        Feedback feedback = new Feedback();
+        feedback.setFeedbackText(feedbackText);
+        feedback.setSubmission(submission);
+        feedback.setFeedbackDate(Timestamp.valueOf(LocalDateTime.now()));
+        return feedback;
+    }
 
 }

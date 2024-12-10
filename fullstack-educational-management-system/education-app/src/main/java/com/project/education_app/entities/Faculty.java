@@ -40,14 +40,14 @@ public class Faculty {
 
     @OneToMany(mappedBy = "author",cascade = CascadeType.ALL)
     @EqualsAndHashCode.Exclude
-    private Set<Announcement> announcements=new HashSet<Announcement>() ;
+    private List<Announcement> announcements = new ArrayList<>();
 
     @OneToMany(mappedBy = "teacher",cascade = CascadeType.ALL)
     private List<Grade> grades=new ArrayList<>();
 
     @OneToMany(mappedBy = "author",cascade = CascadeType.ALL)
     @EqualsAndHashCode.Exclude
-    private Set<Lesson> lessons=new HashSet<Lesson>() ;
+    private List<Lesson> lessons = new ArrayList<>();
 
     @OneToMany(mappedBy = "teacher",cascade = CascadeType.ALL)
     private List<Discussion> discussions=new ArrayList<>();

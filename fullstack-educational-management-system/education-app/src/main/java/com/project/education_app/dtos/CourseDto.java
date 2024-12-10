@@ -23,13 +23,13 @@ public class CourseDto {
 
     private SyllabusDto syllabus;
 
-    private Set<AttendanceDto> attendances;
+    private List<AttendanceDto> attendances;
 
-    private Set<BasicStudentDto> students;
+    private List<BasicStudentDto> students;
 
-    private Set<GradeDto> grades;
+    private List<GradeDto> grades;
 
-    private Set<ResourceDto> resources;
+    private List<ResourceDto> resources;
 
     private List<UnitDto> units;
 
@@ -37,5 +37,5 @@ public class CourseDto {
 
     private List<SemesterDto> semesters;
 
-    private Set<CourseGrade> courseGrades;
+    private List<CourseGrade> courseGrades;
 }

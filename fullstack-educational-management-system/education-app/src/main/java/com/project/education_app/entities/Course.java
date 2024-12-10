@@ -31,25 +31,25 @@ public class Course {
 
     @OneToMany(mappedBy = "course",cascade = CascadeType.ALL)
     @EqualsAndHashCode.Exclude
-    private Set<Attendance> attendances=new HashSet<>();
+    private List<Attendance> attendances = new ArrayList<>();
 
     @ManyToMany
     @JoinTable(name = "student_course",
             joinColumns = @JoinColumn(name = "course_id"),
             inverseJoinColumns = @JoinColumn(name = "student_id"))
-    private Set<Student> students=new HashSet<>();
+    private List<Student> students = new ArrayList<>();
 
     @OneToMany(mappedBy = "course",cascade = CascadeType.ALL)
     @EqualsAndHashCode.Exclude
-    private Set<Grade> grades=new HashSet<>();
+    private List<Grade> grades = new ArrayList<>();
 
     @OneToMany(mappedBy = "course",cascade = CascadeType.ALL)
     @EqualsAndHashCode.Exclude
-    private Set<CourseGrade> courseGrades=new HashSet<>();
+    private List<CourseGrade> courseGrades = new ArrayList<>();
 
     @OneToMany(mappedBy = "course",cascade = CascadeType.ALL)
     @EqualsAndHashCode.Exclude
-    private Set<Resource> resources=new HashSet<>();
+    private List<Resource> resources = new ArrayList<>();
 
     @OneToMany(mappedBy = "course",cascade = CascadeType.ALL)
     @EqualsAndHashCode.Exclude

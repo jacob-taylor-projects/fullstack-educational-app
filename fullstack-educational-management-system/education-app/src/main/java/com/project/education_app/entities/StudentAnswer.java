@@ -30,6 +30,5 @@ public class StudentAnswer {
     @CreatedDate
     private Timestamp submissionDate = Timestamp.valueOf(LocalDateTime.now());
 
-    // Constructors, getters, and setters
 }
 

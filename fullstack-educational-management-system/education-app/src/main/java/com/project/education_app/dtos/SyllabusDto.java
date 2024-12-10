@@ -9,6 +9,7 @@ import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @NoArgsConstructor
@@ -22,13 +23,13 @@ public class SyllabusDto {
 
     private String topics;
 
-    private Set<AssignmentDto> assignments;
+    private List<AssignmentDto> assignments;
 
-    private Set<ProjectDto> projects;
+    private List<ProjectDto> projects;
 
-    private Set<TestDto> tests;
+    private List<TestDto> tests;
 
     private String evaluationCriteria;
 
-    private Set<ResourceDto> resources;
+    private List<ResourceDto> resources;
 }

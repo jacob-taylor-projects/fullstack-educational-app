@@ -5,7 +5,9 @@ import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -25,19 +27,19 @@ public class Syllabus {
 
     @OneToMany(mappedBy = "syllabus",cascade = CascadeType.ALL)
     @EqualsAndHashCode.Exclude
-    private Set<Assignment> assignments=new HashSet<>();
+    private List<Assignment> assignments = new ArrayList<>();
 
     @OneToMany(mappedBy = "syllabus",cascade = CascadeType.ALL)
     @EqualsAndHashCode.Exclude
-    private Set<Project> projects=new HashSet<>();
+    private List<Project> projects = new ArrayList<>();
 
     @OneToMany(mappedBy = "syllabus",cascade = CascadeType.ALL)
     @EqualsAndHashCode.Exclude
-    private Set<Test> tests=new HashSet<>();
+    private List<Test> tests = new ArrayList<>();
 
     private String evaluationCriteria;
 
     @OneToMany(mappedBy = "syllabus",cascade = CascadeType.ALL)
     @EqualsAndHashCode.Exclude
-    private Set<Resource> resources=new HashSet<>();
+    private List<Resource> resources = new ArrayList<>();
 }

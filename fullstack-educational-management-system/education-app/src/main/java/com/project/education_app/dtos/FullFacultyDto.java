@@ -27,7 +27,7 @@ public class FullFacultyDto {
 
     private boolean teacher;
 
-    private Set<AnnouncementDto> announcements;
+    private List<AnnouncementDto> announcements;
 
     private List<GradeDto> grades;
 

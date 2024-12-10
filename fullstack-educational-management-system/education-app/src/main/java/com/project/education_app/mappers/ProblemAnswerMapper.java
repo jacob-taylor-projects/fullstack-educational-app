@@ -1,8 +1,6 @@
 package com.project.education_app.mappers;
 
-import com.project.education_app.dtos.AttendanceItemDto;
 import com.project.education_app.dtos.ProblemAnswerDto;
-import com.project.education_app.entities.Attendance;
 import com.project.education_app.entities.ProblemAnswer;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
