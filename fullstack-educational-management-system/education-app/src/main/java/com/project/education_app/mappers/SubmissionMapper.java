@@ -9,12 +9,14 @@ import org.mapstruct.factory.Mappers;
 
 import java.util.List;
 
-@Mapper(componentModel = "spring",uses = { BasicStudentMapper.class})
+@Mapper(componentModel = "spring", uses = {BasicStudentMapper.class})
 public interface SubmissionMapper {
-    SubmissionMapper INSTANCE= Mappers.getMapper(SubmissionMapper.class);
+    SubmissionMapper INSTANCE = Mappers.getMapper(SubmissionMapper.class);
+
     SubmissionDto entityToDto(Submission submission);
 
     List<SubmissionDto> entitiesToDtos(List<Submission> submissions);
 
     Submission dtoToEntity(SubmissionDto submissionDto);
 }
+

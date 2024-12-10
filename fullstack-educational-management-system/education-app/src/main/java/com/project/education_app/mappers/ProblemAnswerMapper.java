@@ -9,12 +9,14 @@ import org.mapstruct.factory.Mappers;
 
 import java.util.List;
 
-@Mapper(componentModel = "spring", uses = { AssignmentMapper.class,ProjectMapper.class,TestMapper.class, SubmissionMapper.class})
+@Mapper(componentModel = "spring", uses = {AssignmentMapper.class, ProjectMapper.class, TestMapper.class, StudentAnswerMapper.class})
 public interface ProblemAnswerMapper {
-    ProblemAnswerMapper INSTANCE= Mappers.getMapper(ProblemAnswerMapper.class);
+    ProblemAnswerMapper INSTANCE = Mappers.getMapper(ProblemAnswerMapper.class);
+
     ProblemAnswerDto entityToDto(ProblemAnswer problemAnswer);
 
     List<ProblemAnswerDto> entitiesToDtos(List<ProblemAnswer> problemAnswers);
 
-    ProblemAnswer dtoToEntity(ProblemAnswer problemAnswer);
+    ProblemAnswer dtoToEntity(ProblemAnswerDto problemAnswerDto);
 }
+

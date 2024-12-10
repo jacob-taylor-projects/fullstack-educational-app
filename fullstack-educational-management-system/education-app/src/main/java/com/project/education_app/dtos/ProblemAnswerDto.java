@@ -16,16 +16,13 @@ import java.util.List;
 @Data
 public class ProblemAnswerDto {
     private Long id;
-
     private String problemContent;
-
     private String answerContent;
-
     private ProjectDto project;
-
     private AssignmentDto assignment;
-
     private TestDto test;
+    private StudentAnswerDto studentAnswer; // Updated to match the new structure
 
-    private List<SubmissionDto> submissions;
+    // Constructors, getters, and setters
 }
+

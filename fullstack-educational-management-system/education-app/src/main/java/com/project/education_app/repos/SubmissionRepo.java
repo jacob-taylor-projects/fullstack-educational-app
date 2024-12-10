@@ -7,10 +7,11 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface SubmissionRepo extends JpaRepository<Submission,Long> {
+public interface SubmissionRepo extends JpaRepository<Submission, Long> {
     List<Submission> findByContentContaining(String content);
 
-    List<Submission> findByProblemAnswerId(Long problemAnswerId);
+    List<Submission> findByStudentAnswers_ProblemAnswer_Id(Long problemAnswerId);
 
     List<Submission> findByStudentId(Long studentId);
 }
+

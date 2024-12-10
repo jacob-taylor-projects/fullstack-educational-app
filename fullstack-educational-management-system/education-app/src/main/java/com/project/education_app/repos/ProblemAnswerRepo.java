@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 
 @Repository
-public interface ProblemAnswerRepo extends JpaRepository<ProblemAnswer,Long> {
+public interface ProblemAnswerRepo extends JpaRepository<ProblemAnswer, Long> {
     List<ProblemAnswer> findByProblemContentContaining(String problemContent);
 
     List<ProblemAnswer> findByAnswerContentContaining(String answerContent);
@@ -17,6 +17,5 @@ public interface ProblemAnswerRepo extends JpaRepository<ProblemAnswer,Long> {
     List<ProblemAnswer> findByAssignmentId(Long assignmentId);
 
     List<ProblemAnswer> findByTestId(Long testId);
-
-    List<ProblemAnswer> findBySubmissionsId(Long submissionId);
 }
+

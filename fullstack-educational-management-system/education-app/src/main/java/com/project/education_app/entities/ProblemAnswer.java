@@ -18,6 +18,9 @@ public class ProblemAnswer {
 
     private String answerContent;
 
+    @OneToOne(mappedBy = "problemAnswer")
+    private StudentAnswer studentAnswer;
+
     @OneToOne
     private Project project;
 
@@ -27,6 +30,5 @@ public class ProblemAnswer {
     @ManyToOne
     private Test test;
 
-    @OneToMany(mappedBy = "problemAnswer")
-    private List<Submission> submissions;
+    // Constructors, getters, and setters
 }

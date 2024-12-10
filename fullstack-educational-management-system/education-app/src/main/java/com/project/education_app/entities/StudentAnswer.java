@@ -7,36 +7,29 @@ import org.springframework.data.annotation.CreatedDate;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
 @Entity
 @NoArgsConstructor
 @Data
-public class Submission {
+public class StudentAnswer {
     @Id
     @GeneratedValue
     private Long id;
 
-    private String content;
-
-    @OneToMany(mappedBy = "submission", cascade = CascadeType.ALL)
-    private List<StudentAnswer> studentAnswers = new ArrayList<>();
-
-    @OneToOne(mappedBy = "submission")
-    private Grade grade;
-
     @ManyToOne
     private Student student;
 
-    @OneToOne(mappedBy = "submission")
-    private Feedback feedback;
+    @OneToOne
+    private ProblemAnswer problemAnswer;
+
+    private String answerContent;
+
+    @ManyToOne
+    private Submission submission; // Reference to Submission
 
     @CreatedDate
     private Timestamp submissionDate = Timestamp.valueOf(LocalDateTime.now());
 
     // Constructors, getters, and setters
 }
-
 

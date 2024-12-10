@@ -26,7 +26,7 @@ public class Seeder implements CommandLineRunner {
     private final DiscussionRepo discussionRepo;
     private final PostRepo postRepo;
     private final CommentRepo commentRepo;
-
+    private final ScheduleRepo scheduleRepo;
 
 
     @Override
@@ -1060,6 +1060,19 @@ public class Seeder implements CommandLineRunner {
         Comment comment20c1 = createComment("Great discussion on the laws of thermodynamics and energy transfer principles! Your explanation of their applications in engineering problems is very informative.", post20c1, student10);
         Comment comment20d1 = createComment("Your explanation of the properties and behaviors of different materials is very clear. The practical example you provided is very helpful.", post20d1, student10);
 
+        //Schedules
+        Schedule scheduleStudent1 = createSchedule("Student 1's Fall Schedule", "List of courses for student 1 in fall 2024", student1, fall2024, course1, course2, course3, course4);
+        Schedule scheduleStudent2 = createSchedule("Student 2's Fall Schedule", "List of courses for student 2 in fall 2024", student2, fall2024, course1, course2, course3, course4);
+        Schedule scheduleStudent3 = createSchedule("Student 3's Fall Schedule", "List of courses for Student 3 in Fall 2024", student3, fall2024, course5, course6, course7, course8);
+        Schedule scheduleStudent4 = createSchedule("Student 4's Fall Schedule", "List of courses for Student 4 in Fall 2024", student4, fall2024, course5, course6, course7, course8);
+        Schedule scheduleStudent5 = createSchedule("Student 5's Fall Schedule", "List of courses for Student 5 in Fall 2024", student5, fall2024, course9, course10, course11, course12);
+        Schedule scheduleStudent6 = createSchedule("Student 6's Fall Schedule", "List of courses for Student 6 in Fall 2024", student6, fall2024, course9, course10, course11, course12);
+        Schedule scheduleStudent7 = createSchedule("Student 7's Fall Schedule", "List of courses for Student 7 in Fall 2024", student7, fall2024, course13, course14, course15, course16);
+        Schedule scheduleStudent8 = createSchedule("Student 8's Fall Schedule", "List of courses for Student 8 in Fall 2024", student8, fall2024, course13, course14, course15, course16);
+        Schedule scheduleStudent9 = createSchedule("Student 9's Fall Schedule", "List of courses for Student 9 in Fall 2024", student9, fall2024, course17, course18, course19, course20);
+        Schedule scheduleStudent10 = createSchedule("Student 10's Fall Schedule", "List of courses for Student 10 in Fall 2024", student10, fall2024, course17, course18, course19, course20);
+
+
         attendanceRepo.saveAllAndFlush(Arrays.asList(attendance1, attendance2, attendance3, attendance4, attendance5, attendance6, attendance7, attendance8, attendance9, attendance10, attendance11, attendance12, attendance13, attendance14, attendance15, attendance16, attendance17, attendance18, attendance19, attendance20));
         resourceRepo.saveAllAndFlush(Arrays.asList(resource1a, resource1b, resource2a, resource2b, resource3a, resource3b, resource4a, resource4b, resource5a, resource5b, resource6a, resource6b, resource7a, resource7b, resource8a, resource8b, resource9a, resource9b, resource10a, resource10b, resource11a, resource11b, resource12a, resource12b, resource13a, resource13b, resource14a, resource14b, resource15a, resource15b, resource16a, resource16b, resource17a, resource17b, resource18a, resource18b, resource19a, resource19b, resource20a, resource20b));
         discussionRepo.saveAllAndFlush(Arrays.asList(discussion1a, discussion1b, discussion1c, discussion1d, discussion1e, discussion1f, discussion2a, discussion2b, discussion2c, discussion2d, discussion2e, discussion2f, discussion3a, discussion3b, discussion3c, discussion3d, discussion4a, discussion4b, discussion4c, discussion4d, discussion5a, discussion5b, discussion5c, discussion5d, discussion6a, discussion6b, discussion6c, discussion6d, discussion6e, discussion7a, discussion7b, discussion7c, discussion7d, discussion8a, discussion8b, discussion8c, discussion8d, discussion8e, discussion9a, discussion9b, discussion9c, discussion10a, discussion10b, discussion10c, discussion10d, discussion11a, discussion11b, discussion11c, discussion11d, discussion12a, discussion12b, discussion12c, discussion12d, discussion12e, discussion13a, discussion13b, discussion13c, discussion13d, discussion14a, discussion14b, discussion14c, discussion14d, discussion15a, discussion15b, discussion15c, discussion16a, discussion16b, discussion16c, discussion17a, discussion17b, discussion17c, discussion17d, discussion18a, discussion18b, discussion18c,
@@ -1074,7 +1087,7 @@ public class Seeder implements CommandLineRunner {
                 comment1a1, comment1b1, comment1c1, comment1d1, comment1e1, comment1f1, comment2a1, comment2b1, comment2c1, comment2d1, comment2e1, comment2f1, comment3a1, comment3b1, comment3c1, comment3d1, comment4a1, comment4b1, comment4c1, comment4d1, comment5a1, comment5b1, comment5c1, comment5d1, comment6a1, comment6b1, comment6c1, comment6d1, comment6e1, comment7a1, comment7b1, comment7c1, comment7d1, comment8a1, comment8b1, comment8c1, comment8d1, comment8e1, comment9a1, comment9b1, comment9c1, comment10a1, comment10b1, comment10c1, comment10d1,
                 comment11a1, comment11b1, comment11c1, comment11d1, comment12a1, comment12b1, comment12c1, comment12d1, comment12e1, comment13a1, comment13b1, comment13c1, comment13d1, comment14a1, comment14b1, comment14c1, comment14d1, comment15a1, comment15b1, comment15c1, comment16a1, comment16b1, comment16c1, comment17a1, comment17b1, comment17c1, comment17d1, comment18a1, comment18b1, comment18c1, comment19a1, comment19b1, comment19c1, comment20a1, comment20b1, comment20c1, comment20d1
         ));
-
+        scheduleRepo.saveAllAndFlush(Arrays.asList(scheduleStudent1, scheduleStudent2, scheduleStudent3, scheduleStudent4, scheduleStudent5, scheduleStudent6, scheduleStudent7, scheduleStudent8, scheduleStudent9, scheduleStudent10));
 
 
     }
@@ -1238,5 +1251,18 @@ public class Seeder implements CommandLineRunner {
         comment.setStudent(student);
         return comment;
     }
+
+    public static Schedule createSchedule(String name, String description, Student student, Semester semester, Course... courses) {
+        Schedule schedule = new Schedule();
+        schedule.setName(name);
+        schedule.setDescription(description);
+        schedule.setStudent(student);
+        schedule.setSemester(semester);
+        if (courses != null) {
+            schedule.setCourses(Arrays.asList(courses));
+        }
+        return schedule;
+    }
+
 
 }
