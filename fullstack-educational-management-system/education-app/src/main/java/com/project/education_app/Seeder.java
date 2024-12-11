@@ -1356,6 +1356,1800 @@ public class Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Libraries' unit created with 10 problem answers, due date, faculty, and syllabus.");
 
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment2_1 = createAssignment("Arrays Assignment", faculty2, Date.from(LocalDate.of(2025, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_2_1_1 = createProblemAnswer("What is an array in programming?", "An array is a collection of elements, typically of the same data type, stored in contiguous memory locations.");
+        addAssignmentToProblemAnswer(pa_2_1_1, assignment2_1);
+        addProblemAnswerToAssignment(assignment2_1, pa_2_1_1);
+
+        ProblemAnswer pa_2_1_2 = createProblemAnswer("How do you declare an array in Python?", "In Python, arrays are not a built-in type. However, you can use lists or the `array` module. For example:\n```python\nimport array as arr\nmy_array = arr.array('i', [1, 2, 3, 4, 5])\n```");
+        addAssignmentToProblemAnswer(pa_2_1_2, assignment2_1);
+        addProblemAnswerToAssignment(assignment2_1, pa_2_1_2);
+
+        ProblemAnswer pa_2_1_3 = createProblemAnswer("What are the advantages of using arrays?", "Arrays allow for efficient data storage and retrieval. They provide quick access to elements using indices and have a fixed size, which can help optimize memory usage.");
+        addAssignmentToProblemAnswer(pa_2_1_3, assignment2_1);
+        addProblemAnswerToAssignment(assignment2_1, pa_2_1_3);
+
+        ProblemAnswer pa_2_1_4 = createProblemAnswer("How do you access an element in an array?", "You access an element in an array using its index. For example, `my_array[0]` would return the first element of the array `my_array`.");
+        addAssignmentToProblemAnswer(pa_2_1_4, assignment2_1);
+        addProblemAnswerToAssignment(assignment2_1, pa_2_1_4);
+
+        ProblemAnswer pa_2_1_5 = createProblemAnswer("How do you update an element in an array?", "You update an element in an array by assigning a new value to the desired index. For example, `my_array[0] = 10` would change the first element to `10`.");
+        addAssignmentToProblemAnswer(pa_2_1_5, assignment2_1);
+        addProblemAnswerToAssignment(assignment2_1, pa_2_1_5);
+
+        ProblemAnswer pa_2_1_6 = createProblemAnswer("What is the difference between a 1-dimensional array and a 2-dimensional array?", "A 1-dimensional array is a single list of elements, while a 2-dimensional array (or matrix) is a list of lists, where each inner list represents a row of elements.");
+        addAssignmentToProblemAnswer(pa_2_1_6, assignment2_1);
+        addProblemAnswerToAssignment(assignment2_1, pa_2_1_6);
+
+        ProblemAnswer pa_2_1_7 = createProblemAnswer("How do you iterate through an array in Python?", "You can iterate through an array using a `for` loop. For example:\n```python\nfor element in my_array:\n    print(element)\n```");
+        addAssignmentToProblemAnswer(pa_2_1_7, assignment2_1);
+        addProblemAnswerToAssignment(assignment2_1, pa_2_1_7);
+
+        ProblemAnswer pa_2_1_8 = createProblemAnswer("What is an array's index, and why is it important?", "An array's index is the position of an element within the array, starting from 0. It is important because it allows for direct access and manipulation of specific elements.");
+        addAssignmentToProblemAnswer(pa_2_1_8, assignment2_1);
+        addProblemAnswerToAssignment(assignment2_1, pa_2_1_8);
+
+        ProblemAnswer pa_2_1_9 = createProblemAnswer("How do you find the length of an array in Python?", "You can find the length of an array using the `len()` function. For example, `len(my_array)` returns the number of elements in the array.");
+        addAssignmentToProblemAnswer(pa_2_1_9, assignment2_1);
+        addProblemAnswerToAssignment(assignment2_1, pa_2_1_9);
+
+        ProblemAnswer pa_2_1_10 = createProblemAnswer("What are some common operations performed on arrays?", "Common operations on arrays include searching, sorting, inserting, deleting elements, and iterating through the array.");
+        addAssignmentToProblemAnswer(pa_2_1_10, assignment2_1);
+        addProblemAnswerToAssignment(assignment2_1, pa_2_1_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Arrays' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment2_2 = createAssignment("Linked Lists Assignment", faculty2, Date.from(LocalDate.of(2025, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_2_2_1 = createProblemAnswer("What is a linked list in programming?", "A linked list is a data structure consisting of nodes, where each node contains a data value and a reference (or link) to the next node in the sequence.");
+        addAssignmentToProblemAnswer(pa_2_2_1, assignment2_2);
+        addProblemAnswerToAssignment(assignment2_2, pa_2_2_1);
+
+        ProblemAnswer pa_2_2_2 = createProblemAnswer("How do you define a node in a linked list?", "A node in a linked list is an element that contains a data value and a reference to the next node. In Python, you can define a node using a class:\n```python\nclass Node:\n    def __init__(self, data):\n        self.data = data\n        self.next = None\n```");
+        addAssignmentToProblemAnswer(pa_2_2_2, assignment2_2);
+        addProblemAnswerToAssignment(assignment2_2, pa_2_2_2);
+
+        ProblemAnswer pa_2_2_3 = createProblemAnswer("What are the advantages of using linked lists?", "Linked lists allow for efficient insertion and deletion of elements, especially when dealing with dynamic data structures where the size can change frequently. They also use memory efficiently for large datasets.");
+        addAssignmentToProblemAnswer(pa_2_2_3, assignment2_2);
+        addProblemAnswerToAssignment(assignment2_2, pa_2_2_3);
+
+        ProblemAnswer pa_2_2_4 = createProblemAnswer("How do you insert an element at the beginning of a linked list?", "To insert an element at the beginning of a linked list, create a new node and set its reference to the current head of the list, then update the head to this new node:\n```python\nnew_node = Node(data)\nnew_node.next = head\nhead = new_node\n```");
+        addAssignmentToProblemAnswer(pa_2_2_4, assignment2_2);
+        addProblemAnswerToAssignment(assignment2_2, pa_2_2_4);
+
+        ProblemAnswer pa_2_2_5 = createProblemAnswer("What is the difference between a singly linked list and a doubly linked list?", "A singly linked list contains nodes with a reference to the next node only, while a doubly linked list contains nodes with references to both the next and previous nodes, allowing traversal in both directions.");
+        addAssignmentToProblemAnswer(pa_2_2_5, assignment2_2);
+        addProblemAnswerToAssignment(assignment2_2, pa_2_2_5);
+
+        ProblemAnswer pa_2_2_6 = createProblemAnswer("How do you traverse a linked list?", "You traverse a linked list by starting at the head node and following the references to each subsequent node until you reach the end of the list:\n```python\ncurrent = head\nwhile current:\n    print(current.data)\n    current = current.next\n```");
+        addAssignmentToProblemAnswer(pa_2_2_6, assignment2_2);
+        addProblemAnswerToAssignment(assignment2_2, pa_2_2_6);
+
+        ProblemAnswer pa_2_2_7 = createProblemAnswer("How do you delete an element from a linked list?", "To delete an element from a linked list, update the reference of the previous node to skip the node to be deleted:\n```python\nif head.data == key:\n    head = head.next\nelse:\n    current = head\n    while current.next and current.next.data != key:\n        current = current.next\n    if current.next:\n        current.next = current.next.next\n```");
+        addAssignmentToProblemAnswer(pa_2_2_7, assignment2_2);
+        addProblemAnswerToAssignment(assignment2_2, pa_2_2_7);
+
+        ProblemAnswer pa_2_2_8 = createProblemAnswer("What is the role of the head node in a linked list?", "The head node is the first node in a linked list. It serves as the entry point for any operations performed on the list, such as traversal, insertion, and deletion.");
+        addAssignmentToProblemAnswer(pa_2_2_8, assignment2_2);
+        addProblemAnswerToAssignment(assignment2_2, pa_2_2_8);
+
+        ProblemAnswer pa_2_2_9 = createProblemAnswer("How do you reverse a linked list?", "To reverse a linked list, change the direction of the links between nodes. Here’s an example:\n```python\nprev = None\ncurrent = head\nwhile current:\n    next_node = current.next\n    current.next = prev\n    prev = current\n    current = next_node\nhead = prev\n```");
+        addAssignmentToProblemAnswer(pa_2_2_9, assignment2_2);
+        addProblemAnswerToAssignment(assignment2_2, pa_2_2_9);
+
+        ProblemAnswer pa_2_2_10 = createProblemAnswer("What are some common operations performed on linked lists?", "Common operations on linked lists include insertion, deletion, traversal, searching, and reversing the list.");
+        addAssignmentToProblemAnswer(pa_2_2_10, assignment2_2);
+        addProblemAnswerToAssignment(assignment2_2, pa_2_2_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Linked Lists' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment2_3 = createAssignment("Stacks Assignment", faculty2, Date.from(LocalDate.of(2025, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_2_3_1 = createProblemAnswer("What is a stack in programming?", "A stack is a linear data structure that follows the Last-In, First-Out (LIFO) principle, where the last element added is the first one to be removed.");
+        addAssignmentToProblemAnswer(pa_2_3_1, assignment2_3);
+        addProblemAnswerToAssignment(assignment2_3, pa_2_3_1);
+
+        ProblemAnswer pa_2_3_2 = createProblemAnswer("How do you implement a stack in Python?", "You can implement a stack in Python using a list. For example:\n```python\nstack = []\nstack.append(1)\nstack.append(2)\nstack.pop()\n```");
+        addAssignmentToProblemAnswer(pa_2_3_2, assignment2_3);
+        addProblemAnswerToAssignment(assignment2_3, pa_2_3_2);
+
+        ProblemAnswer pa_2_3_3 = createProblemAnswer("What are the main operations of a stack?", "The main operations of a stack are `push` (adding an element to the top), `pop` (removing the top element), and `peek` (viewing the top element without removing it).");
+        addAssignmentToProblemAnswer(pa_2_3_3, assignment2_3);
+        addProblemAnswerToAssignment(assignment2_3, pa_2_3_3);
+
+        ProblemAnswer pa_2_3_4 = createProblemAnswer("How do you check if a stack is empty in Python?", "You can check if a stack is empty by verifying if its length is zero. For example:\n```python\nif len(stack) == 0:\n    print(\"Stack is empty\")\n```");
+        addAssignmentToProblemAnswer(pa_2_3_4, assignment2_3);
+        addProblemAnswerToAssignment(assignment2_3, pa_2_3_4);
+
+        ProblemAnswer pa_2_3_5 = createProblemAnswer("What is the `peek` operation in a stack?", "The `peek` operation returns the top element of the stack without removing it, allowing you to inspect the top element.");
+        addAssignmentToProblemAnswer(pa_2_3_5, assignment2_3);
+        addProblemAnswerToAssignment(assignment2_3, pa_2_3_5);
+
+        ProblemAnswer pa_2_3_6 = createProblemAnswer("How do you implement the `push` operation in a stack using a class in Python?", "You can implement the `push` operation by defining a method in a stack class. For example:\n```python\nclass Stack {\n  public Stack() {\n    this.items = new LinkedList<>();\n  }\n  public void push(Object item) {\n    this.items.addFirst(item);\n  }\n}\n```");
+        addAssignmentToProblemAnswer(pa_2_3_6, assignment2_3);
+        addProblemAnswerToAssignment(assignment2_3, pa_2_3_6);
+
+        ProblemAnswer pa_2_3_7 = createProblemAnswer("How do you implement the `pop` operation in a stack using a class in Python?", "You can implement the `pop` operation by defining a method in a stack class. For example:\n```python\nclass Stack {\n  public Stack() {\n    this.items = new LinkedList<>();\n  }\n  public void push(Object item) {\n    this.items.addFirst(item);\n  }\n  public Object pop() {\n    if (!this.items.isEmpty()) {\n      return this.items.removeFirst();\n    }\n    return null;\n  }\n}\n```");
+        addAssignmentToProblemAnswer(pa_2_3_7, assignment2_3);
+        addProblemAnswerToAssignment(assignment2_3, pa_2_3_7);
+
+        ProblemAnswer pa_2_3_8 = createProblemAnswer("What are some common applications of stacks in programming?", "Common applications of stacks include expression evaluation, syntax parsing, function call management, undo mechanisms in software, and backtracking algorithms.");
+        addAssignmentToProblemAnswer(pa_2_3_8, assignment2_3);
+        addProblemAnswerToAssignment(assignment2_3, pa_2_3_8);
+
+        ProblemAnswer pa_2_3_9 = createProblemAnswer("How does the LIFO principle work in a stack?", "The LIFO principle means that the last element added to the stack will be the first one to be removed. This allows for operations such as reversing a sequence or tracking nested structures.");
+        addAssignmentToProblemAnswer(pa_2_3_9, assignment2_3);
+        addProblemAnswerToAssignment(assignment2_3, pa_2_3_9);
+
+        ProblemAnswer pa_2_3_10 = createProblemAnswer("How do you implement the `peek` operation in a stack using a class in Python?", "You can implement the `peek` operation by defining a method in a stack class. For example:\n```python\nclass Stack {\n  public Stack() {\n    this.items = new LinkedList<>();\n  }\n  public void push(Object item) {\n    this.items.addFirst(item);\n  }\n  public Object pop() {\n    if (!this.items.isEmpty()) {\n      return this.items.removeFirst();\n    }\n    return null;\n  }\n  public Object peek() {\n    if (!this.items.isEmpty()) {\n      return this.items.getFirst();\n    }\n    return null;\n  }\n}\n```");
+        addAssignmentToProblemAnswer(pa_2_3_10, assignment2_3);
+        addProblemAnswerToAssignment(assignment2_3, pa_2_3_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Stacks' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment2_4 = createAssignment("Queues Assignment", faculty2, Date.from(LocalDate.of(2025, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_2_4_1 = createProblemAnswer("What is a queue in programming?", "A queue is a linear data structure that follows the First-In, First-Out (FIFO) principle, where the first element added is the first one to be removed.");
+        addAssignmentToProblemAnswer(pa_2_4_1, assignment2_4);
+        addProblemAnswerToAssignment(assignment2_4, pa_2_4_1);
+
+        ProblemAnswer pa_2_4_2 = createProblemAnswer("How do you implement a queue in Python?", "You can implement a queue in Python using a list or `collections.deque`. For example, using `collections.deque`:\n```python\nfrom collections import deque\nqueue = deque()\nqueue.append(1)\nqueue.append(2)\nqueue.popleft()\n```");
+        addAssignmentToProblemAnswer(pa_2_4_2, assignment2_4);
+        addProblemAnswerToAssignment(assignment2_4, pa_2_4_2);
+
+        ProblemAnswer pa_2_4_3 = createProblemAnswer("What are the main operations of a queue?", "The main operations of a queue are `enqueue` (adding an element to the rear), `dequeue` (removing the front element), and `peek` (viewing the front element without removing it).");
+        addAssignmentToProblemAnswer(pa_2_4_3, assignment2_4);
+        addProblemAnswerToAssignment(assignment2_4, pa_2_4_3);
+
+        ProblemAnswer pa_2_4_4 = createProblemAnswer("How do you check if a queue is empty in Python?", "You can check if a queue is empty by verifying if its length is zero. For example:\n```python\nif len(queue) == 0:\n    print(\"Queue is empty\")\n```");
+        addAssignmentToProblemAnswer(pa_2_4_4, assignment2_4);
+        addProblemAnswerToAssignment(assignment2_4, pa_2_4_4);
+
+        ProblemAnswer pa_2_4_5 = createProblemAnswer("What is the `peek` operation in a queue?", "The `peek` operation returns the front element of the queue without removing it, allowing you to inspect the front element.");
+        addAssignmentToProblemAnswer(pa_2_4_5, assignment2_4);
+        addProblemAnswerToAssignment(assignment2_4, pa_2_4_5);
+
+        ProblemAnswer pa_2_4_6 = createProblemAnswer("How do you implement the `enqueue` operation in a queue using a class in Python?", "You can implement the `enqueue` operation by defining a method in a queue class. For example:\n```python\nclass Queue:\n    def __init__(self):\n        self.items = deque()\n\n    def enqueue(self, item):\n        self.items.append(item)\n```");
+        addAssignmentToProblemAnswer(pa_2_4_6, assignment2_4);
+        addProblemAnswerToAssignment(assignment2_4, pa_2_4_6);
+
+        ProblemAnswer pa_2_4_7 = createProblemAnswer("How do you implement the `dequeue` operation in a queue using a class in Python?", "You can implement the `dequeue` operation by defining a method in a queue class. For example:\n```python\nclass Queue:\n    def __init__(self):\n        self.items = deque()\n\n    def enqueue(self, item):\n        self.items.append(item)\n\n    def dequeue(self):\n        if not self.is_empty():\n            return self.items.popleft()\n        return None\n\n    def is_empty(self):\n        return len(self.items) == 0\n```");
+        addAssignmentToProblemAnswer(pa_2_4_7, assignment2_4);
+        addProblemAnswerToAssignment(assignment2_4, pa_2_4_7);
+
+        ProblemAnswer pa_2_4_8 = createProblemAnswer("What are some common applications of queues in programming?", "Common applications of queues include task scheduling, managing print jobs, handling requests in web servers, breadth-first search algorithms, and implementing cache mechanisms.");
+        addAssignmentToProblemAnswer(pa_2_4_8, assignment2_4);
+        addProblemAnswerToAssignment(assignment2_4, pa_2_4_8);
+
+        ProblemAnswer pa_2_4_9 = createProblemAnswer("How does the FIFO principle work in a queue?", "The FIFO principle means that the first element added to the queue will be the first one to be removed. This is useful for scenarios where order needs to be maintained, such as processing tasks in the order they arrive.");
+        addAssignmentToProblemAnswer(pa_2_4_9, assignment2_4);
+        addProblemAnswerToAssignment(assignment2_4, pa_2_4_9);
+
+        ProblemAnswer pa_2_4_10 = createProblemAnswer("How do you implement the `peek` operation in a queue using a class in Python?", "You can implement the `peek` operation by defining a method in a queue class. For example:\n```python\nclass Queue:\n    def __init__(self):\n        self.items = deque()\n\n    def enqueue(self, item):\n        self.items.append(item)\n\n    def dequeue(self):\n        if not self.is_empty():\n            return self.items.popleft()\n        return None\n\n    def peek(self):\n        if not self.is_empty():\n            return self.items[0]\n        return None\n\n    def is_empty(self):\n        return len(self.items) == 0\n```");
+        addAssignmentToProblemAnswer(pa_2_4_10, assignment2_4);
+        addProblemAnswerToAssignment(assignment2_4, pa_2_4_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Queues' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment2_5 = createAssignment("Trees Assignment", faculty2, Date.from(LocalDate.of(2025, 9, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_2_5_1 = createProblemAnswer("What is a tree in programming?", "A tree is a hierarchical data structure that consists of nodes connected by edges. Each node has a value and a list of references to its child nodes, with a single node called the root.");
+        addAssignmentToProblemAnswer(pa_2_5_1, assignment2_5);
+        addProblemAnswerToAssignment(assignment2_5, pa_2_5_1);
+
+        ProblemAnswer pa_2_5_2 = createProblemAnswer("How do you define a node in a tree?", "A node in a tree is an element that contains a value and a list of references to its child nodes. In Python, you can define a node using a class:\n```python\nclass TreeNode {\n    public TreeNode(Object data) {\n        this.data = data;\n        this.children = new ArrayList<>();\n    }\n}\n```");
+        addAssignmentToProblemAnswer(pa_2_5_2, assignment2_5);
+        addProblemAnswerToAssignment(assignment2_5, pa_2_5_2);
+
+        ProblemAnswer pa_2_5_3 = createProblemAnswer("What are the advantages of using trees?", "Trees allow for efficient data organization and manipulation, making operations such as searching, insertion, and deletion faster compared to other data structures. They also represent hierarchical relationships naturally.");
+        addAssignmentToProblemAnswer(pa_2_5_3, assignment2_5);
+        addProblemAnswerToAssignment(assignment2_5, pa_2_5_3);
+
+        ProblemAnswer pa_2_5_4 = createProblemAnswer("How do you perform a depth-first search (DFS) on a tree?", "To perform a depth-first search (DFS) on a tree, start at the root node and explore as far as possible along each branch before backtracking. Here's an example in Python:\n```python\ndef dfs(node):\n    if not node:\n        return\n    print(node.data)\n    for child in node.children:\n        dfs(child)\n```");
+        addAssignmentToProblemAnswer(pa_2_5_4, assignment2_5);
+        addProblemAnswerToAssignment(assignment2_5, pa_2_5_4);
+
+        ProblemAnswer pa_2_5_5 = createProblemAnswer("What is a binary tree?", "A binary tree is a type of tree in which each node has at most two child nodes, referred to as the left child and the right child.");
+        addAssignmentToProblemAnswer(pa_2_5_5, assignment2_5);
+        addProblemAnswerToAssignment(assignment2_5, pa_2_5_5);
+
+        ProblemAnswer pa_2_5_6 = createProblemAnswer("How do you perform a breadth-first search (BFS) on a tree?", "To perform a breadth-first search (BFS) on a tree, start at the root node and explore all nodes at the present depth level before moving on to nodes at the next depth level. Here's an example in Python:\n```python\nfrom collections import deque\n\ndef bfs(root):\n    queue = deque([root])\n    while queue:\n        node = queue.popleft()\n        print(node.data)\n        for child in node.children:\n            queue.append(child)\n```");
+        addAssignmentToProblemAnswer(pa_2_5_6, assignment2_5);
+        addProblemAnswerToAssignment(assignment2_5, pa_2_5_6);
+
+        ProblemAnswer pa_2_5_7 = createProblemAnswer("What is a binary search tree (BST)?", "A binary search tree (BST) is a type of binary tree in which the left child of a node contains a value less than the node's value, and the right child contains a value greater than the node's value.");
+        addAssignmentToProblemAnswer(pa_2_5_7, assignment2_5);
+        addProblemAnswerToAssignment(assignment2_5, pa_2_5_7);
+
+        ProblemAnswer pa_2_5_8 = createProblemAnswer("How do you insert a node into a binary search tree?", "To insert a node into a binary search tree, start at the root and compare the new node's value to the current node's value. If the new value is less, move to the left child; if greater, move to the right child. Repeat this process until you find an empty spot. Here's an example in Python:\n```python\nclass BSTNode {\n    public BSTNode(int data) {\n        this.data = data;\n        this.left = null;\n        this.right = null;\n    }\n}\n\nclass BST {\n    public BST() {\n        this.root = null;\n    }\n\n    public void insert(int data) {\n        this.root = this.insertRec(this.root, data);\n    }\n\n    private BSTNode insertRec(BSTNode root, int data) {\n        if (root == null) {\n            root = new BSTNode(data);\n            return root;\n        }\n\n        if (data < root.data) {\n            root.left = this.insertRec(root.left, data);\n        } else if (data > root.data) {\n            root.right = this.insertRec(root.right, data);\n        }\n\n        return root;\n    }\n}\n```");
+        addAssignmentToProblemAnswer(pa_2_5_8, assignment2_5);
+        addProblemAnswerToAssignment(assignment2_5, pa_2_5_8);
+
+        ProblemAnswer pa_2_5_9 = createProblemAnswer("What is the height of a tree?", "The height of a tree is the length of the longest path from the root node to a leaf node. It represents the maximum depth of the tree.");
+        addAssignmentToProblemAnswer(pa_2_5_9, assignment2_5);
+        addProblemAnswerToAssignment(assignment2_5, pa_2_5_9);
+
+        ProblemAnswer pa_2_5_10 = createProblemAnswer("What are some common operations performed on trees?", "Common operations on trees include traversal (in-order, pre-order, post-order), insertion, deletion, searching, and calculating the height or depth of the tree.");
+        addAssignmentToProblemAnswer(pa_2_5_10, assignment2_5);
+        addProblemAnswerToAssignment(assignment2_5, pa_2_5_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Trees' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment2_6 = createAssignment("Graphs Assignment", faculty2, Date.from(LocalDate.of(2025, 10, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_2_6_1 = createProblemAnswer("What is a graph in programming?", "A graph is a data structure consisting of nodes (vertices) and edges that connect pairs of nodes. It is used to represent relationships between elements.");
+        addAssignmentToProblemAnswer(pa_2_6_1, assignment2_6);
+        addProblemAnswerToAssignment(assignment2_6, pa_2_6_1);
+
+        ProblemAnswer pa_2_6_2 = createProblemAnswer("How do you represent a graph using an adjacency list?", "A graph can be represented using an adjacency list, where each node has a list of its adjacent nodes. For example:\n```python\nclass Graph {\n  public Graph() {\n    this.adj_list = new HashMap<>();\n  }\n}\n```");
+        addAssignmentToProblemAnswer(pa_2_6_2, assignment2_6);
+        addProblemAnswerToAssignment(assignment2_6, pa_2_6_2);
+
+        ProblemAnswer pa_2_6_3 = createProblemAnswer("What are the advantages of using graphs?", "Graphs are versatile and can model various real-world problems such as social networks, transportation networks, and dependency relationships. They provide efficient ways to find shortest paths, detect cycles, and traverse nodes.");
+        addAssignmentToProblemAnswer(pa_2_6_3, assignment2_6);
+        addProblemAnswerToAssignment(assignment2_6, pa_2_6_3);
+
+        ProblemAnswer pa_2_6_4 = createProblemAnswer("How do you perform a depth-first search (DFS) on a graph?", "To perform a depth-first search (DFS) on a graph, start at a chosen node and explore as far as possible along each branch before backtracking. Here's an example in Python:\n```python\ndef dfs(graph, start, visited=None):\n    if visited is None:\n        visited = set()\n    visited.add(start)\n    print(start)\n    for next in graph[start] - visited:\n        dfs(graph, next, visited)\n```");
+        addAssignmentToProblemAnswer(pa_2_6_4, assignment2_6);
+        addProblemAnswerToAssignment(assignment2_6, pa_2_6_4);
+
+        ProblemAnswer pa_2_6_5 = createProblemAnswer("What is a directed graph?", "A directed graph (digraph) is a graph in which the edges have a direction, meaning they go from one node to another and not necessarily the other way around.");
+        addAssignmentToProblemAnswer(pa_2_6_5, assignment2_6);
+        addProblemAnswerToAssignment(assignment2_6, pa_2_6_5);
+
+        ProblemAnswer pa_2_6_6 = createProblemAnswer("How do you perform a breadth-first search (BFS) on a graph?", "To perform a breadth-first search (BFS) on a graph, start at a chosen node and explore all adjacent nodes at the present depth level before moving on to nodes at the next depth level. Here's an example in Python:\n```python\nfrom collections import deque\n\ndef bfs(graph, start):\n    visited = set()\n    queue = deque([start])\n    while queue:\n        node = queue.popleft()\n        if node not in visited:\n            visited.add(node)\n            print(node)\n            queue.extend(graph[node] - visited)\n```");
+        addAssignmentToProblemAnswer(pa_2_6_6, assignment2_6);
+        addProblemAnswerToAssignment(assignment2_6, pa_2_6_6);
+
+        ProblemAnswer pa_2_6_7 = createProblemAnswer("What is a weighted graph?", "A weighted graph is a graph in which each edge has an associated numerical value (weight), representing the cost or distance between the nodes it connects.");
+        addAssignmentToProblemAnswer(pa_2_6_7, assignment2_6);
+        addProblemAnswerToAssignment(assignment2_6, pa_2_6_7);
+
+        ProblemAnswer pa_2_6_8 = createProblemAnswer("How do you find the shortest path in a graph using Dijkstra's algorithm?", "To find the shortest path in a graph using Dijkstra's algorithm, start at the source node, initialize distances to all other nodes as infinity, and update distances based on edge weights while visiting the nearest unvisited node. Here's an example in Python:\n```python\nimport heapq\n\ndef dijkstra(graph, start):\n    queue = []\n    heapq.heappush(queue, (0, start))\n    distances = {vertex: float('infinity') for vertex in graph}\n    distances[start] = 0\n\n    while queue:\n        current_distance, current_vertex = heapq.heappop(queue)\n\n        if current_distance > distances[current_vertex]:\n            continue\n\n        for neighbor, weight in graph[current_vertex].items():\n            distance = current_distance + weight\n            if distance < distances[neighbor]:\n                distances[neighbor] = distance\n                heapq.heappush(queue, (distance, neighbor))\n\n    return distances\n```");
+        addAssignmentToProblemAnswer(pa_2_6_8, assignment2_6);
+        addProblemAnswerToAssignment(assignment2_6, pa_2_6_8);
+
+        ProblemAnswer pa_2_6_9 = createProblemAnswer("What is a cycle in a graph?", "A cycle in a graph is a path that starts and ends at the same node, forming a loop. It involves traversing at least one edge more than once.");
+        addAssignmentToProblemAnswer(pa_2_6_9, assignment2_6);
+        addProblemAnswerToAssignment(assignment2_6, pa_2_6_9);
+
+        ProblemAnswer pa_2_6_10 = createProblemAnswer("What are some common operations performed on graphs?", "Common operations on graphs include traversal (DFS, BFS), finding shortest paths (Dijkstra's, Bellman-Ford), detecting cycles, and finding connected components.");
+        addAssignmentToProblemAnswer(pa_2_6_10, assignment2_6);
+        addProblemAnswerToAssignment(assignment2_6, pa_2_6_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Graphs' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment3_1 = createAssignment("Sorting Assignment", faculty3, Date.from(LocalDate.of(2025, 11, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus3, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_3_1_1 = createProblemAnswer("What is sorting in programming?", "Sorting is the process of arranging data in a particular order, typically ascending or descending.");
+        addAssignmentToProblemAnswer(pa_3_1_1, assignment3_1);
+        addProblemAnswerToAssignment(assignment3_1, pa_3_1_1);
+
+        ProblemAnswer pa_3_1_2 = createProblemAnswer("How does bubble sort work?", "Bubble sort repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. This process is repeated until the list is sorted.");
+        addAssignmentToProblemAnswer(pa_3_1_2, assignment3_1);
+        addProblemAnswerToAssignment(assignment3_1, pa_3_1_2);
+
+        ProblemAnswer pa_3_1_3 = createProblemAnswer("What is the time complexity of bubble sort?", "The time complexity of bubble sort is O(n^2) in the worst and average cases, where n is the number of elements in the list.");
+        addAssignmentToProblemAnswer(pa_3_1_3, assignment3_1);
+        addProblemAnswerToAssignment(assignment3_1, pa_3_1_3);
+
+        ProblemAnswer pa_3_1_4 = createProblemAnswer("How does merge sort work?", "Merge sort divides the list into two halves, recursively sorts each half, and then merges the sorted halves to produce a sorted list.");
+        addAssignmentToProblemAnswer(pa_3_1_4, assignment3_1);
+        addProblemAnswerToAssignment(assignment3_1, pa_3_1_4);
+
+        ProblemAnswer pa_3_1_5 = createProblemAnswer("What is the time complexity of merge sort?", "The time complexity of merge sort is O(n log n) in all cases, where n is the number of elements in the list.");
+        addAssignmentToProblemAnswer(pa_3_1_5, assignment3_1);
+        addProblemAnswerToAssignment(assignment3_1, pa_3_1_5);
+
+        ProblemAnswer pa_3_1_6 = createProblemAnswer("How does quicksort work?", "Quicksort selects a pivot element, partitions the list into two sublists (elements less than the pivot and elements greater than the pivot), and recursively sorts the sublists.");
+        addAssignmentToProblemAnswer(pa_3_1_6, assignment3_1);
+        addProblemAnswerToAssignment(assignment3_1, pa_3_1_6);
+
+        ProblemAnswer pa_3_1_7 = createProblemAnswer("What is the time complexity of quicksort?", "The time complexity of quicksort is O(n log n) on average, but it can degrade to O(n^2) in the worst case, where n is the number of elements in the list.");
+        addAssignmentToProblemAnswer(pa_3_1_7, assignment3_1);
+        addProblemAnswerToAssignment(assignment3_1, pa_3_1_7);
+
+        ProblemAnswer pa_3_1_8 = createProblemAnswer("What is the difference between stable and unstable sorting algorithms?", "A stable sorting algorithm maintains the relative order of equal elements, while an unstable sorting algorithm does not.");
+        addAssignmentToProblemAnswer(pa_3_1_8, assignment3_1);
+        addProblemAnswerToAssignment(assignment3_1, pa_3_1_8);
+
+        ProblemAnswer pa_3_1_9 = createProblemAnswer("Is bubble sort a stable sorting algorithm?", "Yes, bubble sort is a stable sorting algorithm because it maintains the relative order of equal elements.");
+        addAssignmentToProblemAnswer(pa_3_1_9, assignment3_1);
+        addProblemAnswerToAssignment(assignment3_1, pa_3_1_9);
+
+        ProblemAnswer pa_3_1_10 = createProblemAnswer("Why is quicksort generally preferred over bubble sort?", "Quicksort is generally preferred over bubble sort because it has a better average-case time complexity (O(n log n) compared to O(n^2)), making it more efficient for larger datasets.");
+        addAssignmentToProblemAnswer(pa_3_1_10, assignment3_1);
+        addProblemAnswerToAssignment(assignment3_1, pa_3_1_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Sorting' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment3_2 = createAssignment("Searching Assignment", faculty3, Date.from(LocalDate.of(2025, 12, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus3, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_3_2_1 = createProblemAnswer("What is searching in programming?", "Searching is the process of finding a specific element or value within a data structure, such as an array, list, or database.");
+        addAssignmentToProblemAnswer(pa_3_2_1, assignment3_2);
+        addProblemAnswerToAssignment(assignment3_2, pa_3_2_1);
+
+        ProblemAnswer pa_3_2_2 = createProblemAnswer("How does linear search work?", "Linear search sequentially checks each element in a list until the desired element is found or the list ends.");
+        addAssignmentToProblemAnswer(pa_3_2_2, assignment3_2);
+        addProblemAnswerToAssignment(assignment3_2, pa_3_2_2);
+
+        ProblemAnswer pa_3_2_3 = createProblemAnswer("What is the time complexity of linear search?", "The time complexity of linear search is O(n), where n is the number of elements in the list.");
+        addAssignmentToProblemAnswer(pa_3_2_3, assignment3_2);
+        addProblemAnswerToAssignment(assignment3_2, pa_3_2_3);
+
+        ProblemAnswer pa_3_2_4 = createProblemAnswer("How does binary search work?", "Binary search works by repeatedly dividing the sorted list in half, comparing the target value to the middle element, and narrowing the search to the appropriate half until the target value is found or the search interval is empty.");
+        addAssignmentToProblemAnswer(pa_3_2_4, assignment3_2);
+        addProblemAnswerToAssignment(assignment3_2, pa_3_2_4);
+
+        ProblemAnswer pa_3_2_5 = createProblemAnswer("What is the time complexity of binary search?", "The time complexity of binary search is O(log n), where n is the number of elements in the sorted list.");
+        addAssignmentToProblemAnswer(pa_3_2_5, assignment3_2);
+        addProblemAnswerToAssignment(assignment3_2, pa_3_2_5);
+
+        ProblemAnswer pa_3_2_6 = createProblemAnswer("What is the difference between linear search and binary search?", "Linear search checks each element sequentially, while binary search divides the sorted list in half and eliminates half the search space in each step. Binary search is faster but requires the list to be sorted.");
+        addAssignmentToProblemAnswer(pa_3_2_6, assignment3_2);
+        addProblemAnswerToAssignment(assignment3_2, pa_3_2_6);
+
+        ProblemAnswer pa_3_2_7 = createProblemAnswer("Can binary search be used on unsorted lists?", "No, binary search requires the list to be sorted in order to work correctly. Using it on an unsorted list will not yield accurate results.");
+        addAssignmentToProblemAnswer(pa_3_2_7, assignment3_2);
+        addProblemAnswerToAssignment(assignment3_2, pa_3_2_7);
+
+        ProblemAnswer pa_3_2_8 = createProblemAnswer("What is the purpose of a search algorithm?", "The purpose of a search algorithm is to efficiently locate a specific element or value within a data structure, minimizing the number of comparisons and operations needed.");
+        addAssignmentToProblemAnswer(pa_3_2_8, assignment3_2);
+        addProblemAnswerToAssignment(assignment3_2, pa_3_2_8);
+
+        ProblemAnswer pa_3_2_9 = createProblemAnswer("What is the time complexity of searching in a hash table?", "The average time complexity of searching in a hash table is O(1) due to direct indexing, but it can degrade to O(n) in the worst case if many collisions occur.");
+        addAssignmentToProblemAnswer(pa_3_2_9, assignment3_2);
+        addProblemAnswerToAssignment(assignment3_2, pa_3_2_9);
+
+        ProblemAnswer pa_3_2_10 = createProblemAnswer("Why is binary search more efficient than linear search for large datasets?", "Binary search is more efficient for large datasets because it reduces the search space by half with each step, resulting in a logarithmic time complexity, compared to the linear time complexity of linear search.");
+        addAssignmentToProblemAnswer(pa_3_2_10, assignment3_2);
+        addProblemAnswerToAssignment(assignment3_2, pa_3_2_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Searching' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment3_3 = createAssignment("Graph Algorithms Assignment", faculty3, Date.from(LocalDate.of(2026, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus3, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_3_3_1 = createProblemAnswer("What is a graph algorithm?", "A graph algorithm is a procedure or formula used to solve problems related to graph theory, such as traversal, searching, and finding shortest paths.");
+        addAssignmentToProblemAnswer(pa_3_3_1, assignment3_3);
+        addProblemAnswerToAssignment(assignment3_3, pa_3_3_1);
+
+        ProblemAnswer pa_3_3_2 = createProblemAnswer("How does depth-first search (DFS) work?", "Depth-first search (DFS) explores a graph by going as deep as possible along each branch before backtracking. It uses a stack to keep track of the nodes to be visited.");
+        addAssignmentToProblemAnswer(pa_3_3_2, assignment3_3);
+        addProblemAnswerToAssignment(assignment3_3, pa_3_3_2);
+
+        ProblemAnswer pa_3_3_3 = createProblemAnswer("How does breadth-first search (BFS) work?", "Breadth-first search (BFS) explores a graph by visiting all the neighbors of a node before moving on to the next level of neighbors. It uses a queue to keep track of the nodes to be visited.");
+        addAssignmentToProblemAnswer(pa_3_3_3, assignment3_3);
+        addProblemAnswerToAssignment(assignment3_3, pa_3_3_3);
+
+        ProblemAnswer pa_3_3_4 = createProblemAnswer("What is the time complexity of DFS and BFS?", "The time complexity of both DFS and BFS is O(V + E), where V is the number of vertices and E is the number of edges in the graph.");
+        addAssignmentToProblemAnswer(pa_3_3_4, assignment3_3);
+        addProblemAnswerToAssignment(assignment3_3, pa_3_3_4);
+
+        ProblemAnswer pa_3_3_5 = createProblemAnswer("How do you implement DFS in Python?", "Here is a Python implementation of DFS:\n```python\ndef dfs(graph, start, visited=None):\n    if visited is None:\n        visited = set()\n    visited.add(start)\n    print(start)\n    for next in graph[start] - visited:\n        dfs(graph, next, visited)\n    return visited\n```");
+        addAssignmentToProblemAnswer(pa_3_3_5, assignment3_3);
+        addProblemAnswerToAssignment(assignment3_3, pa_3_3_5);
+
+        ProblemAnswer pa_3_3_6 = createProblemAnswer("How do you implement BFS in Python?", "Here is a Python implementation of BFS:\n```python\nfrom collections import deque\n\ndef bfs(graph, start):\n    visited = set()\n    queue = deque([start])\n    while queue:\n        vertex = queue.popleft()\n        if vertex not in visited:\n            visited.add(vertex)\n            print(vertex)\n            queue.extend(graph[vertex] - visited)\n    return visited\n```");
+        addAssignmentToProblemAnswer(pa_3_3_6, assignment3_3);
+        addProblemAnswerToAssignment(assignment3_3, pa_3_3_6);
+
+        ProblemAnswer pa_3_3_7 = createProblemAnswer("What is the difference between DFS and BFS?", "The main difference between DFS and BFS is the order in which nodes are visited. DFS goes as deep as possible before backtracking, while BFS visits all the neighbors of a node before moving on to the next level of neighbors.");
+        addAssignmentToProblemAnswer(pa_3_3_7, assignment3_3);
+        addProblemAnswerToAssignment(assignment3_3, pa_3_3_7);
+
+        ProblemAnswer pa_3_3_8 = createProblemAnswer("What are some applications of DFS and BFS?", "Applications of DFS include topological sorting, finding strongly connected components, and solving puzzles. Applications of BFS include finding the shortest path in an unweighted graph, web crawling, and social network analysis.");
+        addAssignmentToProblemAnswer(pa_3_3_8, assignment3_3);
+        addProblemAnswerToAssignment(assignment3_3, pa_3_3_8);
+
+        ProblemAnswer pa_3_3_9 = createProblemAnswer("How does Dijkstra's algorithm work?", "Dijkstra's algorithm finds the shortest path from a source node to all other nodes in a weighted graph. It uses a priority queue to greedily select the nearest unvisited node and update the distances to its neighbors.");
+        addAssignmentToProblemAnswer(pa_3_3_9, assignment3_3);
+        addProblemAnswerToAssignment(assignment3_3, pa_3_3_9);
+
+        ProblemAnswer pa_3_3_10 = createProblemAnswer("What is the time complexity of Dijkstra's algorithm?", "The time complexity of Dijkstra's algorithm is O(V^2) for a simple implementation and O(V + E log V) for an implementation using a priority queue, where V is the number of vertices and E is the number of edges in the graph.");
+        addAssignmentToProblemAnswer(pa_3_3_10, assignment3_3);
+        addProblemAnswerToAssignment(assignment3_3, pa_3_3_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Graph Algorithms' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment3_4 = createAssignment("Dynamic Programming Assignment", faculty3, Date.from(LocalDate.of(2026, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus3, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_3_4_1 = createProblemAnswer("What is dynamic programming?", "Dynamic programming is a method for solving complex problems by breaking them down into simpler subproblems and storing the results of these subproblems to avoid redundant calculations.");
+        addAssignmentToProblemAnswer(pa_3_4_1, assignment3_4);
+        addProblemAnswerToAssignment(assignment3_4, pa_3_4_1);
+
+        ProblemAnswer pa_3_4_2 = createProblemAnswer("What is the principle of optimality in dynamic programming?", "The principle of optimality states that an optimal solution to a problem contains optimal solutions to its subproblems, meaning solving subproblems optimally leads to an optimal solution for the entire problem.");
+        addAssignmentToProblemAnswer(pa_3_4_2, assignment3_4);
+        addProblemAnswerToAssignment(assignment3_4, pa_3_4_2);
+
+        ProblemAnswer pa_3_4_3 = createProblemAnswer("How does memoization work in dynamic programming?", "Memoization is a technique in dynamic programming where the results of expensive function calls are stored and reused, avoiding redundant calculations and improving efficiency.");
+        addAssignmentToProblemAnswer(pa_3_4_3, assignment3_4);
+        addProblemAnswerToAssignment(assignment3_4, pa_3_4_3);
+
+        ProblemAnswer pa_3_4_4 = createProblemAnswer("What is the difference between top-down and bottom-up dynamic programming?", "Top-down dynamic programming uses recursion and memoization to solve problems by breaking them down into subproblems. Bottom-up dynamic programming uses an iterative approach to solve subproblems first and build up to the final solution.");
+        addAssignmentToProblemAnswer(pa_3_4_4, assignment3_4);
+        addProblemAnswerToAssignment(assignment3_4, pa_3_4_4);
+
+        ProblemAnswer pa_3_4_5 = createProblemAnswer("How do you implement dynamic programming for the Fibonacci sequence?", "Here is a Python implementation of dynamic programming for the Fibonacci sequence:\n```python\ndef fibonacci(n, memo={}):\n    if n in memo:\n        return memo[n]\n    if n <= 1:\n        return n\n    memo[n] = fibonacci(n-1, memo) + fibonacci(n-2, memo)\n    return memo[n]\n```");
+        addAssignmentToProblemAnswer(pa_3_4_5, assignment3_4);
+        addProblemAnswerToAssignment(assignment3_4, pa_3_4_5);
+
+        ProblemAnswer pa_3_4_6 = createProblemAnswer("What is the knapsack problem, and how is dynamic programming used to solve it?", "The knapsack problem involves selecting a subset of items with given weights and values to maximize the total value without exceeding a weight limit. Dynamic programming solves it by breaking the problem into subproblems and building up to the optimal solution.");
+        addAssignmentToProblemAnswer(pa_3_4_6, assignment3_4);
+        addProblemAnswerToAssignment(assignment3_4, pa_3_4_6);
+
+        ProblemAnswer pa_3_4_7 = createProblemAnswer("How do you solve the knapsack problem using dynamic programming?", "Here is a Python implementation of dynamic programming for the knapsack problem:\n```python\ndef knapsack(W, wt, val, n):\n    dp = [[0 for x in range(W + 1)] for x in range(n + 1)]\n    for i in range(n + 1):\n        for w in range(W + 1):\n            if i == 0 or w == 0:\n                dp[i][w] = 0\n            elif wt[i-1] <= w:\n                dp[i][w] = max(val[i-1] + dp[i-1][w-wt[i-1]], dp[i-1][w])\n            else:\n                dp[i][w] = dp[i-1][w]\n    return dp[n][W]\n```");
+        addAssignmentToProblemAnswer(pa_3_4_7, assignment3_4);
+        addProblemAnswerToAssignment(assignment3_4, pa_3_4_7);
+
+        ProblemAnswer pa_3_4_8 = createProblemAnswer("What is the longest common subsequence problem, and how is dynamic programming used to solve it?", "The longest common subsequence problem involves finding the longest subsequence that is common to two sequences. Dynamic programming solves it by breaking the problem into subproblems and building up to the optimal solution.");
+        addAssignmentToProblemAnswer(pa_3_4_8, assignment3_4);
+        addProblemAnswerToAssignment(assignment3_4, pa_3_4_8);
+
+        ProblemAnswer pa_3_4_9 = createProblemAnswer("How do you solve the longest common subsequence problem using dynamic programming?", "Here is a Python implementation of dynamic programming for the longest common subsequence problem:\n```python\ndef lcs(X, Y):\n    m = len(X)\n    n = len(Y)\n    dp = [[None]*(n+1) for i in range(m+1)]\n    for i in range(m+1):\n        for j in range(n+1):\n            if i == 0 or j == 0:\n                dp[i][j] = 0\n            elif X[i-1] == Y[j-1]:\n                dp[i][j] = dp[i-1][j-1]+1\n            else:\n                dp[i][j] = max(dp[i-1][j], dp[i][j-1])\n    return dp[m][n]\n```");
+        addAssignmentToProblemAnswer(pa_3_4_9, assignment3_4);
+        addProblemAnswerToAssignment(assignment3_4, pa_3_4_9);
+
+        ProblemAnswer pa_3_4_10 = createProblemAnswer("What are some common applications of dynamic programming?", "Common applications of dynamic programming include solving optimization problems, such as the knapsack problem, shortest path problems, sequence alignment in bioinformatics, and finding the longest common subsequence.");
+        addAssignmentToProblemAnswer(pa_3_4_10, assignment3_4);
+        addProblemAnswerToAssignment(assignment3_4, pa_3_4_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Dynamic Programming' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment4_1 = createAssignment("Relational Databases Assignment", faculty4, Date.from(LocalDate.of(2026, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus4, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_4_1_1 = createProblemAnswer("What is a relational database?", "A relational database is a type of database that organizes data into tables, which consist of rows and columns. Relationships between tables are defined using keys.");
+        addAssignmentToProblemAnswer(pa_4_1_1, assignment4_1);
+        addProblemAnswerToAssignment(assignment4_1, pa_4_1_1);
+
+        ProblemAnswer pa_4_1_2 = createProblemAnswer("What is a primary key?", "A primary key is a unique identifier for a row in a table. It ensures that each row can be uniquely identified and retrieved.");
+        addAssignmentToProblemAnswer(pa_4_1_2, assignment4_1);
+        addProblemAnswerToAssignment(assignment4_1, pa_4_1_2);
+
+        ProblemAnswer pa_4_1_3 = createProblemAnswer("What is a foreign key?", "A foreign key is a column or set of columns in one table that references the primary key in another table. It establishes a relationship between the two tables.");
+        addAssignmentToProblemAnswer(pa_4_1_3, assignment4_1);
+        addProblemAnswerToAssignment(assignment4_1, pa_4_1_3);
+
+        ProblemAnswer pa_4_1_4 = createProblemAnswer("What is normalization in database design?", "Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity. It involves dividing tables into smaller, related tables and defining relationships between them.");
+        addAssignmentToProblemAnswer(pa_4_1_4, assignment4_1);
+        addProblemAnswerToAssignment(assignment4_1, pa_4_1_4);
+
+        ProblemAnswer pa_4_1_5 = createProblemAnswer("What is a relationship in a relational database?", "A relationship in a relational database is an association between tables. It is established using keys, such as primary and foreign keys, to ensure data integrity and consistency.");
+        addAssignmentToProblemAnswer(pa_4_1_5, assignment4_1);
+        addProblemAnswerToAssignment(assignment4_1, pa_4_1_5);
+
+        ProblemAnswer pa_4_1_6 = createProblemAnswer("What is an entity-relationship (ER) diagram?", "An entity-relationship (ER) diagram is a visual representation of the entities (tables) in a database and the relationships between them. It is used in database design to illustrate the structure and relationships of the database.");
+        addAssignmentToProblemAnswer(pa_4_1_6, assignment4_1);
+        addProblemAnswerToAssignment(assignment4_1, pa_4_1_6);
+
+        ProblemAnswer pa_4_1_7 = createProblemAnswer("What is a table in a relational database?", "A table in a relational database is a collection of related data organized into rows and columns. Each row represents a record, and each column represents a field or attribute.");
+        addAssignmentToProblemAnswer(pa_4_1_7, assignment4_1);
+        addProblemAnswerToAssignment(assignment4_1, pa_4_1_7);
+
+        ProblemAnswer pa_4_1_8 = createProblemAnswer("What is a schema in a relational database?", "A schema in a relational database defines the structure of the database, including the tables, columns, data types, and relationships between tables. It serves as a blueprint for organizing and storing data.");
+        addAssignmentToProblemAnswer(pa_4_1_8, assignment4_1);
+        addProblemAnswerToAssignment(assignment4_1, pa_4_1_8);
+
+        ProblemAnswer pa_4_1_9 = createProblemAnswer("What is the role of SQL in relational databases?", "SQL (Structured Query Language) is used to query and manipulate data in relational databases. It allows users to create, read, update, and delete data, as well as perform complex data operations and manage database schemas.");
+        addAssignmentToProblemAnswer(pa_4_1_9, assignment4_1);
+        addProblemAnswerToAssignment(assignment4_1, pa_4_1_9);
+
+        ProblemAnswer pa_4_1_10 = createProblemAnswer("What are the advantages of using relational databases?", "Relational databases offer several advantages, including data integrity, flexibility, scalability, and support for complex queries and transactions. They provide a structured way to organize and manage data, making it easier to retrieve and analyze information.");
+        addAssignmentToProblemAnswer(pa_4_1_10, assignment4_1);
+        addProblemAnswerToAssignment(assignment4_1, pa_4_1_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Relational Databases' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment4_2 = createAssignment("SQL Assignment", faculty4, Date.from(LocalDate.of(2026, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus4, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_4_2_1 = createProblemAnswer("What is SQL?", "SQL (Structured Query Language) is the standard language for querying and manipulating databases. It allows users to create, read, update, and delete data, as well as perform complex data operations.");
+        addAssignmentToProblemAnswer(pa_4_2_1, assignment4_2);
+        addProblemAnswerToAssignment(assignment4_2, pa_4_2_1);
+
+        ProblemAnswer pa_4_2_2 = createProblemAnswer("How do you write a basic SQL query to select all records from a table?", "Here is a basic SQL query to select all records from a table:\n```sql\nSELECT * FROM table_name;\n```");
+        addAssignmentToProblemAnswer(pa_4_2_2, assignment4_2);
+        addProblemAnswerToAssignment(assignment4_2, pa_4_2_2);
+
+        ProblemAnswer pa_4_2_3 = createProblemAnswer("What is the purpose of the WHERE clause in SQL?", "The WHERE clause is used to filter records based on specified conditions. It allows users to retrieve only the records that meet the given criteria.");
+        addAssignmentToProblemAnswer(pa_4_2_3, assignment4_2);
+        addProblemAnswerToAssignment(assignment4_2, pa_4_2_3);
+
+        ProblemAnswer pa_4_2_4 = createProblemAnswer("How do you write an SQL query to update a record in a table?", "Here is an SQL query to update a record in a table:\n```sql\nUPDATE table_name\nSET column1 = value1, column2 = value2\nWHERE condition;\n```");
+        addAssignmentToProblemAnswer(pa_4_2_4, assignment4_2);
+        addProblemAnswerToAssignment(assignment4_2, pa_4_2_4);
+
+        ProblemAnswer pa_4_2_5 = createProblemAnswer("What is the purpose of the INSERT INTO statement in SQL?", "The INSERT INTO statement is used to add new records to a table. It allows users to insert data into specific columns of a table.");
+        addAssignmentToProblemAnswer(pa_4_2_5, assignment4_2);
+        addProblemAnswerToAssignment(assignment4_2, pa_4_2_5);
+
+        ProblemAnswer pa_4_2_6 = createProblemAnswer("How do you write an SQL query to delete a record from a table?", "Here is an SQL query to delete a record from a table:\n```sql\nDELETE FROM table_name\nWHERE condition;\n```");
+        addAssignmentToProblemAnswer(pa_4_2_6, assignment4_2);
+        addProblemAnswerToAssignment(assignment4_2, pa_4_2_6);
+
+        ProblemAnswer pa_4_2_7 = createProblemAnswer("What is the purpose of the JOIN clause in SQL?", "The JOIN clause is used to combine records from two or more tables based on a related column. It allows users to retrieve data from multiple tables in a single query.");
+        addAssignmentToProblemAnswer(pa_4_2_7, assignment4_2);
+        addProblemAnswerToAssignment(assignment4_2, pa_4_2_7);
+
+        ProblemAnswer pa_4_2_8 = createProblemAnswer("How do you write an SQL query to perform an INNER JOIN?", "Here is an SQL query to perform an INNER JOIN:\n```sql\nSELECT table1.column1, table2.column2\nFROM table1\nINNER JOIN table2\nON table1.common_column = table2.common_column;\n```");
+        addAssignmentToProblemAnswer(pa_4_2_8, assignment4_2);
+        addProblemAnswerToAssignment(assignment4_2, pa_4_2_8);
+
+        ProblemAnswer pa_4_2_9 = createProblemAnswer("What is the purpose of the GROUP BY clause in SQL?", "The GROUP BY clause is used to group records that have the same values in specified columns. It is often used with aggregate functions, such as COUNT, SUM, AVG, MAX, and MIN, to perform calculations on each group.");
+        addAssignmentToProblemAnswer(pa_4_2_9, assignment4_2);
+        addProblemAnswerToAssignment(assignment4_2, pa_4_2_9);
+
+        ProblemAnswer pa_4_2_10 = createProblemAnswer("How do you write an SQL query to find the average value of a column?", "Here is an SQL query to find the average value of a column:\n```sql\nSELECT AVG(column_name)\nFROM table_name;\n```");
+        addAssignmentToProblemAnswer(pa_4_2_10, assignment4_2);
+        addProblemAnswerToAssignment(assignment4_2, pa_4_2_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'SQL' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment4_3 = createAssignment("Transactions Assignment", faculty4, Date.from(LocalDate.of(2026, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus4, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_4_3_1 = createProblemAnswer("What is a database transaction?", "A database transaction is a sequence of one or more SQL operations executed as a single unit of work, ensuring data integrity and consistency.");
+        addAssignmentToProblemAnswer(pa_4_3_1, assignment4_3);
+        addProblemAnswerToAssignment(assignment4_3, pa_4_3_1);
+
+        ProblemAnswer pa_4_3_2 = createProblemAnswer("What are the ACID properties of a transaction?", "The ACID properties of a transaction are Atomicity, Consistency, Isolation, and Durability. These properties ensure that transactions are processed reliably.");
+        addAssignmentToProblemAnswer(pa_4_3_2, assignment4_3);
+        addProblemAnswerToAssignment(assignment4_3, pa_4_3_2);
+
+        ProblemAnswer pa_4_3_3 = createProblemAnswer("What is atomicity in the context of transactions?", "Atomicity ensures that all operations within a transaction are completed successfully or none of them are. If any operation fails, the entire transaction is rolled back.");
+        addAssignmentToProblemAnswer(pa_4_3_3, assignment4_3);
+        addProblemAnswerToAssignment(assignment4_3, pa_4_3_3);
+
+        ProblemAnswer pa_4_3_4 = createProblemAnswer("What is consistency in the context of transactions?", "Consistency ensures that a transaction brings the database from one valid state to another, maintaining all predefined rules and constraints.");
+        addAssignmentToProblemAnswer(pa_4_3_4, assignment4_3);
+        addProblemAnswerToAssignment(assignment4_3, pa_4_3_4);
+
+        ProblemAnswer pa_4_3_5 = createProblemAnswer("What is isolation in the context of transactions?", "Isolation ensures that the operations of one transaction are isolated from those of other transactions, preventing conflicts and ensuring data integrity.");
+        addAssignmentToProblemAnswer(pa_4_3_5, assignment4_3);
+        addProblemAnswerToAssignment(assignment4_3, pa_4_3_5);
+
+        ProblemAnswer pa_4_3_6 = createProblemAnswer("What is durability in the context of transactions?", "Durability ensures that once a transaction is committed, its results are permanent and will survive any subsequent system failures.");
+        addAssignmentToProblemAnswer(pa_4_3_6, assignment4_3);
+        addProblemAnswerToAssignment(assignment4_3, pa_4_3_6);
+
+        ProblemAnswer pa_4_3_7 = createProblemAnswer("How do you start a transaction in SQL?", "You start a transaction in SQL using the `BEGIN TRANSACTION` statement. For example:\n```sql\nBEGIN TRANSACTION;\n```");
+        addAssignmentToProblemAnswer(pa_4_3_7, assignment4_3);
+        addProblemAnswerToAssignment(assignment4_3, pa_4_3_7);
+
+        ProblemAnswer pa_4_3_8 = createProblemAnswer("How do you commit a transaction in SQL?", "You commit a transaction in SQL using the `COMMIT` statement. For example:\n```sql\nCOMMIT;\n```");
+        addAssignmentToProblemAnswer(pa_4_3_8, assignment4_3);
+        addProblemAnswerToAssignment(assignment4_3, pa_4_3_8);
+
+        ProblemAnswer pa_4_3_9 = createProblemAnswer("How do you roll back a transaction in SQL?", "You roll back a transaction in SQL using the `ROLLBACK` statement. For example:\n```sql\nROLLBACK;\n```");
+        addAssignmentToProblemAnswer(pa_4_3_9, assignment4_3);
+        addProblemAnswerToAssignment(assignment4_3, pa_4_3_9);
+
+        ProblemAnswer pa_4_3_10 = createProblemAnswer("What is the purpose of using transactions in SQL?", "The purpose of using transactions in SQL is to ensure data integrity and consistency, especially in scenarios involving multiple operations or concurrent access to the database. Transactions allow for safe and reliable data management.");
+        addAssignmentToProblemAnswer(pa_4_3_10, assignment4_3);
+        addProblemAnswerToAssignment(assignment4_3, pa_4_3_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Transactions' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment4_4 = createAssignment("Database Design Assignment", faculty4, Date.from(LocalDate.of(2026, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus4, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_4_4_1 = createProblemAnswer("What is database design?", "Database design is the process of defining the structure, organization, and relationships of data within a database. It involves creating schemas, tables, and relationships to store and manage data efficiently.");
+        addAssignmentToProblemAnswer(pa_4_4_1, assignment4_4);
+        addProblemAnswerToAssignment(assignment4_4, pa_4_4_1);
+
+        ProblemAnswer pa_4_4_2 = createProblemAnswer("What is normalization in database design?", "Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity. It involves dividing tables into smaller, related tables and defining relationships between them.");
+        addAssignmentToProblemAnswer(pa_4_4_2, assignment4_4);
+        addProblemAnswerToAssignment(assignment4_4, pa_4_4_2);
+
+        ProblemAnswer pa_4_4_3 = createProblemAnswer("What are the normal forms in database normalization?", "The normal forms in database normalization are: 1NF (First Normal Form), 2NF (Second Normal Form), 3NF (Third Normal Form), BCNF (Boyce-Codd Normal Form), and higher normal forms. Each normal form has specific rules to reduce redundancy and dependency.");
+        addAssignmentToProblemAnswer(pa_4_4_3, assignment4_4);
+        addProblemAnswerToAssignment(assignment4_4, pa_4_4_3);
+
+        ProblemAnswer pa_4_4_4 = createProblemAnswer("What is denormalization in database design?", "Denormalization is the process of combining normalized tables to reduce the complexity of queries and improve performance. It involves adding redundancy back into the database for optimization purposes.");
+        addAssignmentToProblemAnswer(pa_4_4_4, assignment4_4);
+        addProblemAnswerToAssignment(assignment4_4, pa_4_4_4);
+
+        ProblemAnswer pa_4_4_5 = createProblemAnswer("What is an entity-relationship (ER) diagram?", "An entity-relationship (ER) diagram is a visual representation of the entities (tables) in a database and the relationships between them. It is used in database design to illustrate the structure and relationships of the database.");
+        addAssignmentToProblemAnswer(pa_4_4_5, assignment4_4);
+        addProblemAnswerToAssignment(assignment4_4, pa_4_4_5);
+
+        ProblemAnswer pa_4_4_6 = createProblemAnswer("What is a primary key in database design?", "A primary key is a unique identifier for a row in a table. It ensures that each row can be uniquely identified and retrieved.");
+        addAssignmentToProblemAnswer(pa_4_4_6, assignment4_4);
+        addProblemAnswerToAssignment(assignment4_4, pa_4_4_6);
+
+        ProblemAnswer pa_4_4_7 = createProblemAnswer("What is a foreign key in database design?", "A foreign key is a column or set of columns in one table that references the primary key in another table. It establishes a relationship between the two tables.");
+        addAssignmentToProblemAnswer(pa_4_4_7, assignment4_4);
+        addProblemAnswerToAssignment(assignment4_4, pa_4_4_7);
+
+        ProblemAnswer pa_4_4_8 = createProblemAnswer("What is data modeling?", "Data modeling is the process of creating a visual representation of the data and its relationships within a database. It involves defining entities, attributes, and relationships to capture the structure and constraints of the data.");
+        addAssignmentToProblemAnswer(pa_4_4_8, assignment4_4);
+        addProblemAnswerToAssignment(assignment4_4, pa_4_4_8);
+
+        ProblemAnswer pa_4_4_9 = createProblemAnswer("What is a schema in database design?", "A schema in database design defines the structure of the database, including the tables, columns, data types, and relationships between tables. It serves as a blueprint for organizing and storing data.");
+        addAssignmentToProblemAnswer(pa_4_4_9, assignment4_4);
+        addProblemAnswerToAssignment(assignment4_4, pa_4_4_9);
+
+        ProblemAnswer pa_4_4_10 = createProblemAnswer("What are the best practices for database design?", "Best practices for database design include: (1) Normalizing data to reduce redundancy, (2) Choosing appropriate data types, (3) Defining primary and foreign keys, (4) Creating indexes to improve query performance, (5) Ensuring data integrity and consistency, and (6) Designing for scalability and maintainability.");
+        addAssignmentToProblemAnswer(pa_4_4_10, assignment4_4);
+        addProblemAnswerToAssignment(assignment4_4, pa_4_4_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Database Design' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment5_1 = createAssignment("Processes Assignment", faculty5, Date.from(LocalDate.of(2026, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus5, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_5_1_1 = createProblemAnswer("What is a process in operating systems?", "A process is an instance of a program that is being executed. It includes the program code, data, and other resources required for execution.");
+        addAssignmentToProblemAnswer(pa_5_1_1, assignment5_1);
+        addProblemAnswerToAssignment(assignment5_1, pa_5_1_1);
+
+        ProblemAnswer pa_5_1_2 = createProblemAnswer("How does the OS handle process creation?", "The OS handles process creation by assigning a unique process identifier (PID), allocating memory, and setting up necessary resources for the new process.");
+        addAssignmentToProblemAnswer(pa_5_1_2, assignment5_1);
+        addProblemAnswerToAssignment(assignment5_1, pa_5_1_2);
+
+        ProblemAnswer pa_5_1_3 = createProblemAnswer("What is process scheduling?", "Process scheduling is the method used by the OS to allocate CPU time to processes. It determines the order in which processes are executed and how long they run.");
+        addAssignmentToProblemAnswer(pa_5_1_3, assignment5_1);
+        addProblemAnswerToAssignment(assignment5_1, pa_5_1_3);
+
+        ProblemAnswer pa_5_1_4 = createProblemAnswer("What is process termination?", "Process termination is the act of ending a process's execution. It occurs when a process completes its task or is terminated by the OS for various reasons, such as errors or resource constraints.");
+        addAssignmentToProblemAnswer(pa_5_1_4, assignment5_1);
+        addProblemAnswerToAssignment(assignment5_1, pa_5_1_4);
+
+        ProblemAnswer pa_5_1_5 = createProblemAnswer("What is inter-process communication (IPC)?", "Inter-process communication (IPC) is a mechanism that allows processes to communicate and synchronize their actions. It can be achieved through methods such as message passing, shared memory, and semaphores.");
+        addAssignmentToProblemAnswer(pa_5_1_5, assignment5_1);
+        addProblemAnswerToAssignment(assignment5_1, pa_5_1_5);
+
+        ProblemAnswer pa_5_1_6 = createProblemAnswer("What is a process control block (PCB)?", "A process control block (PCB) is a data structure used by the OS to store information about a process, including its state, PID, program counter, registers, and memory allocation.");
+        addAssignmentToProblemAnswer(pa_5_1_6, assignment5_1);
+        addProblemAnswerToAssignment(assignment5_1, pa_5_1_6);
+
+        ProblemAnswer pa_5_1_7 = createProblemAnswer("What is context switching?", "Context switching is the process of saving the state of a currently running process and loading the state of another process. It allows the OS to switch between processes efficiently.");
+        addAssignmentToProblemAnswer(pa_5_1_7, assignment5_1);
+        addProblemAnswerToAssignment(assignment5_1, pa_5_1_7);
+
+        ProblemAnswer pa_5_1_8 = createProblemAnswer("What is a process state?", "A process state represents the current status of a process. Common states include new, ready, running, waiting, and terminated.");
+        addAssignmentToProblemAnswer(pa_5_1_8, assignment5_1);
+        addProblemAnswerToAssignment(assignment5_1, pa_5_1_8);
+
+        ProblemAnswer pa_5_1_9 = createProblemAnswer("What is a fork in process management?", "A fork is an operation that creates a new process by duplicating an existing process. The new process, called the child process, runs concurrently with the original process, called the parent process.");
+        addAssignmentToProblemAnswer(pa_5_1_9, assignment5_1);
+        addProblemAnswerToAssignment(assignment5_1, pa_5_1_9);
+
+        ProblemAnswer pa_5_1_10 = createProblemAnswer("What is a thread in process management?", "A thread is the smallest unit of execution within a process. Multiple threads can exist within a single process, sharing the same memory and resources, but executing independently.");
+        addAssignmentToProblemAnswer(pa_5_1_10, assignment5_1);
+        addProblemAnswerToAssignment(assignment5_1, pa_5_1_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Processes' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment5_2 = createAssignment("Memory Management Assignment", faculty5, Date.from(LocalDate.of(2026, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus5, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_5_2_1 = createProblemAnswer("What is memory management in operating systems?", "Memory management is the process by which an operating system allocates, tracks, and manages the computer's memory resources.");
+        addAssignmentToProblemAnswer(pa_5_2_1, assignment5_2);
+        addProblemAnswerToAssignment(assignment5_2, pa_5_2_1);
+
+        ProblemAnswer pa_5_2_2 = createProblemAnswer("What is paging in memory management?", "Paging is a memory management technique that divides the physical memory into fixed-sized blocks called pages. The operating system uses pages to manage memory more efficiently.");
+        addAssignmentToProblemAnswer(pa_5_2_2, assignment5_2);
+        addProblemAnswerToAssignment(assignment5_2, pa_5_2_2);
+
+        ProblemAnswer pa_5_2_3 = createProblemAnswer("What is segmentation in memory management?", "Segmentation is a memory management technique that divides the memory into variable-sized segments based on the logical divisions of a program, such as functions, data, and stack.");
+        addAssignmentToProblemAnswer(pa_5_2_3, assignment5_2);
+        addProblemAnswerToAssignment(assignment5_2, pa_5_2_3);
+
+        ProblemAnswer pa_5_2_4 = createProblemAnswer("What is virtual memory?", "Virtual memory is a memory management technique that allows the execution of processes that may not be entirely in the physical memory. It uses disk space to extend the available memory, enabling larger programs to run on systems with limited physical memory.");
+        addAssignmentToProblemAnswer(pa_5_2_4, assignment5_2);
+        addProblemAnswerToAssignment(assignment5_2, pa_5_2_4);
+
+        ProblemAnswer pa_5_2_5 = createProblemAnswer("How does the OS handle memory allocation?", "The OS handles memory allocation using algorithms such as first-fit, best-fit, and worst-fit to assign memory blocks to processes. These algorithms determine how memory is allocated and deallocated efficiently.");
+        addAssignmentToProblemAnswer(pa_5_2_5, assignment5_2);
+        addProblemAnswerToAssignment(assignment5_2, pa_5_2_5);
+
+        ProblemAnswer pa_5_2_6 = createProblemAnswer("What is a page table?", "A page table is a data structure used in paging to map virtual addresses to physical addresses. It stores the mapping information and helps the OS translate virtual addresses to corresponding physical addresses.");
+        addAssignmentToProblemAnswer(pa_5_2_6, assignment5_2);
+        addProblemAnswerToAssignment(assignment5_2, pa_5_2_6);
+
+        ProblemAnswer pa_5_2_7 = createProblemAnswer("What is a memory leak?", "A memory leak occurs when a program fails to release memory that is no longer needed, causing the available memory to decrease over time. It can lead to performance degradation and system crashes.");
+        addAssignmentToProblemAnswer(pa_5_2_7, assignment5_2);
+        addProblemAnswerToAssignment(assignment5_2, pa_5_2_7);
+
+        ProblemAnswer pa_5_2_8 = createProblemAnswer("What is a frame in memory management?", "A frame is a fixed-sized block of physical memory used in paging. Each frame can hold a single page from the virtual memory, and the OS manages the allocation of frames to pages.");
+        addAssignmentToProblemAnswer(pa_5_2_8, assignment5_2);
+        addProblemAnswerToAssignment(assignment5_2, pa_5_2_8);
+
+        ProblemAnswer pa_5_2_9 = createProblemAnswer("What is demand paging?", "Demand paging is a memory management technique where pages are loaded into memory only when they are needed, rather than loading the entire program into memory at once. It helps reduce memory usage and improve system performance.");
+        addAssignmentToProblemAnswer(pa_5_2_9, assignment5_2);
+        addProblemAnswerToAssignment(assignment5_2, pa_5_2_9);
+
+        ProblemAnswer pa_5_2_10 = createProblemAnswer("What is thrashing in memory management?", "Thrashing occurs when a system spends more time swapping pages in and out of memory than executing processes, due to excessive paging. It leads to severe performance degradation and can be mitigated by optimizing memory allocation and managing workloads.");
+        addAssignmentToProblemAnswer(pa_5_2_10, assignment5_2);
+        addProblemAnswerToAssignment(assignment5_2, pa_5_2_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Memory Management' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment5_3 = createAssignment("File Systems Assignment", faculty5, Date.from(LocalDate.of(2026, 9, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus5, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_5_3_1 = createProblemAnswer("What is a file system in operating systems?", "A file system is a method used by operating systems to store, organize, and manage files on storage devices. It defines how data is stored and accessed.");
+        addAssignmentToProblemAnswer(pa_5_3_1, assignment5_3);
+        addProblemAnswerToAssignment(assignment5_3, pa_5_3_1);
+
+        ProblemAnswer pa_5_3_2 = createProblemAnswer("What is file organization?", "File organization refers to the way files are logically arranged and stored on a storage device. It includes the structure and methods used to store and access data efficiently.");
+        addAssignmentToProblemAnswer(pa_5_3_2, assignment5_3);
+        addProblemAnswerToAssignment(assignment5_3, pa_5_3_2);
+
+        ProblemAnswer pa_5_3_3 = createProblemAnswer("What is storage allocation in file systems?", "Storage allocation is the process of assigning storage space to files and directories on a storage device. It includes techniques such as contiguous allocation, linked allocation, and indexed allocation.");
+        addAssignmentToProblemAnswer(pa_5_3_3, assignment5_3);
+        addProblemAnswerToAssignment(assignment5_3, pa_5_3_3);
+
+        ProblemAnswer pa_5_3_4 = createProblemAnswer("What is a directory structure?", "A directory structure is a hierarchical organization of files and directories on a storage device. It helps users and the operating system manage and navigate the file system efficiently.");
+        addAssignmentToProblemAnswer(pa_5_3_4, assignment5_3);
+        addProblemAnswerToAssignment(assignment5_3, pa_5_3_4);
+
+        ProblemAnswer pa_5_3_5 = createProblemAnswer("What are file access methods?", "File access methods define how data within a file is accessed. Common methods include sequential access, direct access, and indexed access.");
+        addAssignmentToProblemAnswer(pa_5_3_5, assignment5_3);
+        addProblemAnswerToAssignment(assignment5_3, pa_5_3_5);
+
+        ProblemAnswer pa_5_3_6 = createProblemAnswer("What is file allocation table (FAT)?", "A file allocation table (FAT) is a data structure used by some file systems to keep track of the blocks of data that make up a file. It helps manage the allocation and retrieval of files on the storage device.");
+        addAssignmentToProblemAnswer(pa_5_3_6, assignment5_3);
+        addProblemAnswerToAssignment(assignment5_3, pa_5_3_6);
+
+        ProblemAnswer pa_5_3_7 = createProblemAnswer("What is a journaling file system?", "A journaling file system is a type of file system that keeps a log (journal) of changes being made, which helps in recovering the file system in case of a crash or power failure.");
+        addAssignmentToProblemAnswer(pa_5_3_7, assignment5_3);
+        addProblemAnswerToAssignment(assignment5_3, pa_5_3_7);
+
+        ProblemAnswer pa_5_3_8 = createProblemAnswer("What is the purpose of file permissions?", "File permissions are used to control access to files and directories. They define what actions (read, write, execute) can be performed by different users or groups.");
+        addAssignmentToProblemAnswer(pa_5_3_8, assignment5_3);
+        addProblemAnswerToAssignment(assignment5_3, pa_5_3_8);
+
+        ProblemAnswer pa_5_3_9 = createProblemAnswer("What is the difference between a file system and a database?", "A file system is used to manage files on storage devices, while a database is used to manage structured data. File systems are optimized for storing and retrieving files, while databases provide advanced querying and data manipulation capabilities.");
+        addAssignmentToProblemAnswer(pa_5_3_9, assignment5_3);
+        addProblemAnswerToAssignment(assignment5_3, pa_5_3_9);
+
+        ProblemAnswer pa_5_3_10 = createProblemAnswer("What is disk fragmentation?", "Disk fragmentation occurs when files are divided into scattered pieces across the storage device, leading to slower read/write performance. Defragmentation is the process of reorganizing fragmented data to improve efficiency.");
+        addAssignmentToProblemAnswer(pa_5_3_10, assignment5_3);
+        addProblemAnswerToAssignment(assignment5_3, pa_5_3_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'File Systems' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment5_4 = createAssignment("Scheduling Assignment", faculty5, Date.from(LocalDate.of(2026, 10, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus5, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_5_4_1 = createProblemAnswer("What is CPU scheduling?", "CPU scheduling is the process used by the operating system to manage the execution of processes by allocating CPU time to them.");
+        addAssignmentToProblemAnswer(pa_5_4_1, assignment5_4);
+        addProblemAnswerToAssignment(assignment5_4, pa_5_4_1);
+
+        ProblemAnswer pa_5_4_2 = createProblemAnswer("What is the purpose of scheduling algorithms?", "The purpose of scheduling algorithms is to optimize the use of CPU resources, improve system performance, and ensure fairness among processes.");
+        addAssignmentToProblemAnswer(pa_5_4_2, assignment5_4);
+        addProblemAnswerToAssignment(assignment5_4, pa_5_4_2);
+
+        ProblemAnswer pa_5_4_3 = createProblemAnswer("What is round-robin scheduling?", "Round-robin scheduling is a CPU scheduling algorithm that assigns a fixed time slice (quantum) to each process in a circular order, ensuring fair allocation of CPU time.");
+        addAssignmentToProblemAnswer(pa_5_4_3, assignment5_4);
+        addProblemAnswerToAssignment(assignment5_4, pa_5_4_3);
+
+        ProblemAnswer pa_5_4_4 = createProblemAnswer("What is priority scheduling?", "Priority scheduling is a CPU scheduling algorithm that selects the process with the highest priority for execution. Processes with higher priorities are given preference over those with lower priorities.");
+        addAssignmentToProblemAnswer(pa_5_4_4, assignment5_4);
+        addProblemAnswerToAssignment(assignment5_4, pa_5_4_4);
+
+        ProblemAnswer pa_5_4_5 = createProblemAnswer("What is a multi-level queue in CPU scheduling?", "A multi-level queue is a scheduling technique that divides processes into multiple queues based on their priority or type. Each queue may use a different scheduling algorithm.");
+        addAssignmentToProblemAnswer(pa_5_4_5, assignment5_4);
+        addProblemAnswerToAssignment(assignment5_4, pa_5_4_5);
+
+        ProblemAnswer pa_5_4_6 = createProblemAnswer("What is a multi-level feedback queue?", "A multi-level feedback queue is a scheduling algorithm that allows processes to move between queues based on their behavior and execution history. It adapts to the needs of processes by adjusting their priority dynamically.");
+        addAssignmentToProblemAnswer(pa_5_4_6, assignment5_4);
+        addProblemAnswerToAssignment(assignment5_4, pa_5_4_6);
+
+        ProblemAnswer pa_5_4_7 = createProblemAnswer("What is the time quantum in round-robin scheduling?", "The time quantum in round-robin scheduling is the fixed time slice assigned to each process. It determines how long a process can run before being preempted and moved to the end of the queue.");
+        addAssignmentToProblemAnswer(pa_5_4_7, assignment5_4);
+        addProblemAnswerToAssignment(assignment5_4, pa_5_4_7);
+
+        ProblemAnswer pa_5_4_8 = createProblemAnswer("What is the difference between preemptive and non-preemptive scheduling?", "Preemptive scheduling allows the operating system to interrupt and switch processes before they complete their execution, while non-preemptive scheduling requires a process to run until it finishes or blocks itself.");
+        addAssignmentToProblemAnswer(pa_5_4_8, assignment5_4);
+        addProblemAnswerToAssignment(assignment5_4, pa_5_4_8);
+
+        ProblemAnswer pa_5_4_9 = createProblemAnswer("What is the shortest job next (SJN) scheduling algorithm?", "The shortest job next (SJN) scheduling algorithm selects the process with the shortest expected processing time for execution. It aims to minimize the average waiting time for processes.");
+        addAssignmentToProblemAnswer(pa_5_4_9, assignment5_4);
+        addProblemAnswerToAssignment(assignment5_4, pa_5_4_9);
+
+        ProblemAnswer pa_5_4_10 = createProblemAnswer("What is the role of the dispatcher in CPU scheduling?", "The dispatcher is a component of the operating system responsible for switching the CPU from one process to another. It loads the context of the selected process, allocates CPU time, and manages context switching.");
+        addAssignmentToProblemAnswer(pa_5_4_10, assignment5_4);
+        addProblemAnswerToAssignment(assignment5_4, pa_5_4_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Scheduling' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment6_1 = createAssignment("OSI Model Assignment", faculty1, Date.from(LocalDate.of(2026, 11, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus6, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_6_1_1 = createProblemAnswer("What is the OSI model?", "The OSI (Open Systems Interconnection) model standardizes the functions of a telecommunication or computing system irrespective of its underlying structure and technology. It consists of seven layers that describe how data is transmitted across a network.");
+        addAssignmentToProblemAnswer(pa_6_1_1, assignment6_1);
+        addProblemAnswerToAssignment(assignment6_1, pa_6_1_1);
+
+        ProblemAnswer pa_6_1_2 = createProblemAnswer("What are the seven layers of the OSI model?", "The seven layers of the OSI model are: Physical, Data Link, Network, Transport, Session, Presentation, and Application.");
+        addAssignmentToProblemAnswer(pa_6_1_2, assignment6_1);
+        addProblemAnswerToAssignment(assignment6_1, pa_6_1_2);
+
+        ProblemAnswer pa_6_1_3 = createProblemAnswer("What is the role of the Physical layer in the OSI model?", "The Physical layer is responsible for the physical connection between devices. It deals with the transmission and reception of raw bitstreams over a physical medium, such as cables or wireless signals.");
+        addAssignmentToProblemAnswer(pa_6_1_3, assignment6_1);
+        addProblemAnswerToAssignment(assignment6_1, pa_6_1_3);
+
+        ProblemAnswer pa_6_1_4 = createProblemAnswer("What is the role of the Data Link layer in the OSI model?", "The Data Link layer is responsible for node-to-node data transfer and error detection and correction. It ensures that data is transmitted accurately between devices on the same network.");
+        addAssignmentToProblemAnswer(pa_6_1_4, assignment6_1);
+        addProblemAnswerToAssignment(assignment6_1, pa_6_1_4);
+
+        ProblemAnswer pa_6_1_5 = createProblemAnswer("What is the role of the Network layer in the OSI model?", "The Network layer is responsible for routing and forwarding data packets across different networks. It determines the best path for data to travel from the source to the destination.");
+        addAssignmentToProblemAnswer(pa_6_1_5, assignment6_1);
+        addProblemAnswerToAssignment(assignment6_1, pa_6_1_5);
+
+        ProblemAnswer pa_6_1_6 = createProblemAnswer("What is the role of the Transport layer in the OSI model?", "The Transport layer is responsible for end-to-end communication and data transfer between devices. It ensures reliable and error-free transmission of data by managing flow control and retransmission of lost packets.");
+        addAssignmentToProblemAnswer(pa_6_1_6, assignment6_1);
+        addProblemAnswerToAssignment(assignment6_1, pa_6_1_6);
+
+        ProblemAnswer pa_6_1_7 = createProblemAnswer("What is the role of the Session layer in the OSI model?", "The Session layer is responsible for establishing, managing, and terminating communication sessions between devices. It handles session management and synchronization of data exchanges.");
+        addAssignmentToProblemAnswer(pa_6_1_7, assignment6_1);
+        addProblemAnswerToAssignment(assignment6_1, pa_6_1_7);
+
+        ProblemAnswer pa_6_1_8 = createProblemAnswer("What is the role of the Presentation layer in the OSI model?", "The Presentation layer is responsible for data translation, encryption, and compression. It ensures that data is in a usable format and can be interpreted correctly by the Application layer.");
+        addAssignmentToProblemAnswer(pa_6_1_8, assignment6_1);
+        addProblemAnswerToAssignment(assignment6_1, pa_6_1_8);
+
+        ProblemAnswer pa_6_1_9 = createProblemAnswer("What is the role of the Application layer in the OSI model?", "The Application layer is responsible for providing network services to end-users. It supports application services such as email, file transfer, and web browsing, allowing users to interact with the network.");
+        addAssignmentToProblemAnswer(pa_6_1_9, assignment6_1);
+        addProblemAnswerToAssignment(assignment6_1, pa_6_1_9);
+
+        ProblemAnswer pa_6_1_10 = createProblemAnswer("How does data transmission occur across the OSI model layers?", "Data transmission across the OSI model layers involves encapsulation and decapsulation. Data is encapsulated with protocol headers at each layer as it moves down the stack and transmitted over the network. At the receiving end, the data is decapsulated, removing the headers at each layer as it moves up the stack until it reaches the Application layer.");
+        addAssignmentToProblemAnswer(pa_6_1_10, assignment6_1);
+        addProblemAnswerToAssignment(assignment6_1, pa_6_1_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'OSI Model' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment6_2 = createAssignment("TCP/IP Assignment", faculty1, Date.from(LocalDate.of(2026, 12, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus6, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_6_2_1 = createProblemAnswer("What is the TCP/IP model?", "The TCP/IP (Transmission Control Protocol/Internet Protocol) model is the foundational protocol suite for the internet. It standardizes communication functions across networked devices.");
+        addAssignmentToProblemAnswer(pa_6_2_1, assignment6_2);
+        addProblemAnswerToAssignment(assignment6_2, pa_6_2_1);
+
+        ProblemAnswer pa_6_2_2 = createProblemAnswer("What are the four layers of the TCP/IP model?", "The four layers of the TCP/IP model are: Network Interface, Internet, Transport, and Application.");
+        addAssignmentToProblemAnswer(pa_6_2_2, assignment6_2);
+        addProblemAnswerToAssignment(assignment6_2, pa_6_2_2);
+
+        ProblemAnswer pa_6_2_3 = createProblemAnswer("What is the role of the Network Interface layer in the TCP/IP model?", "The Network Interface layer is responsible for the physical transmission of data between devices. It includes protocols for data link and hardware addressing.");
+        addAssignmentToProblemAnswer(pa_6_2_3, assignment6_2);
+        addProblemAnswerToAssignment(assignment6_2, pa_6_2_3);
+
+        ProblemAnswer pa_6_2_4 = createProblemAnswer("What is the role of the Internet layer in the TCP/IP model?", "The Internet layer is responsible for routing and forwarding data packets across networks. It includes protocols such as IP (Internet Protocol) that determine the best path for data to travel.");
+        addAssignmentToProblemAnswer(pa_6_2_4, assignment6_2);
+        addProblemAnswerToAssignment(assignment6_2, pa_6_2_4);
+
+        ProblemAnswer pa_6_2_5 = createProblemAnswer("What is the role of the Transport layer in the TCP/IP model?", "The Transport layer is responsible for end-to-end communication and data transfer between devices. It includes protocols such as TCP (Transmission Control Protocol) and UDP (User Datagram Protocol) that ensure reliable and error-free transmission.");
+        addAssignmentToProblemAnswer(pa_6_2_5, assignment6_2);
+        addProblemAnswerToAssignment(assignment6_2, pa_6_2_5);
+
+        ProblemAnswer pa_6_2_6 = createProblemAnswer("What is the role of the Application layer in the TCP/IP model?", "The Application layer is responsible for providing network services to end-users. It includes protocols such as HTTP, FTP, and SMTP that support application-specific functions.");
+        addAssignmentToProblemAnswer(pa_6_2_6, assignment6_2);
+        addProblemAnswerToAssignment(assignment6_2, pa_6_2_6);
+
+        ProblemAnswer pa_6_2_7 = createProblemAnswer("What is the difference between TCP and UDP?", "TCP (Transmission Control Protocol) is a connection-oriented protocol that ensures reliable data transmission through error checking and retransmission. UDP (User Datagram Protocol) is a connectionless protocol that provides faster, but less reliable, data transmission without error checking.");
+        addAssignmentToProblemAnswer(pa_6_2_7, assignment6_2);
+        addProblemAnswerToAssignment(assignment6_2, pa_6_2_7);
+
+        ProblemAnswer pa_6_2_8 = createProblemAnswer("What is the role of IP (Internet Protocol) in the TCP/IP model?", "IP (Internet Protocol) is responsible for addressing and routing data packets to their destination across interconnected networks. It ensures that data is sent from the source to the correct destination.");
+        addAssignmentToProblemAnswer(pa_6_2_8, assignment6_2);
+        addProblemAnswerToAssignment(assignment6_2, pa_6_2_8);
+
+        ProblemAnswer pa_6_2_9 = createProblemAnswer("How does TCP ensure reliable data transmission?", "TCP ensures reliable data transmission through mechanisms such as error checking, flow control, and retransmission of lost packets. It establishes a connection between devices and maintains data integrity.");
+        addAssignmentToProblemAnswer(pa_6_2_9, assignment6_2);
+        addProblemAnswerToAssignment(assignment6_2, pa_6_2_9);
+
+        ProblemAnswer pa_6_2_10 = createProblemAnswer("What is the significance of the TCP/IP model for the internet?", "The TCP/IP model is significant for the internet as it provides a standardized framework for communication between networked devices. It enables interoperability, scalability, and reliable data exchange, forming the backbone of modern internet infrastructure.");
+        addAssignmentToProblemAnswer(pa_6_2_10, assignment6_2);
+        addProblemAnswerToAssignment(assignment6_2, pa_6_2_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'TCP/IP' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment6_3 = createAssignment("Network Protocols Assignment", faculty1, Date.from(LocalDate.of(2027, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus6, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_6_3_1 = createProblemAnswer("What are network protocols?", "Network protocols are rules and standards that govern data exchange over networks. They define how data is formatted, transmitted, and received.");
+        addAssignmentToProblemAnswer(pa_6_3_1, assignment6_3);
+        addProblemAnswerToAssignment(assignment6_3, pa_6_3_1);
+
+        ProblemAnswer pa_6_3_2 = createProblemAnswer("What is HTTP?", "HTTP (Hypertext Transfer Protocol) is a protocol used for transferring web pages and other resources over the internet. It defines how clients and servers communicate to request and deliver web content.");
+        addAssignmentToProblemAnswer(pa_6_3_2, assignment6_3);
+        addProblemAnswerToAssignment(assignment6_3, pa_6_3_2);
+
+        ProblemAnswer pa_6_3_3 = createProblemAnswer("What is FTP?", "FTP (File Transfer Protocol) is a protocol used for transferring files between clients and servers over a network. It allows users to upload, download, and manage files on remote servers.");
+        addAssignmentToProblemAnswer(pa_6_3_3, assignment6_3);
+        addProblemAnswerToAssignment(assignment6_3, pa_6_3_3);
+
+        ProblemAnswer pa_6_3_4 = createProblemAnswer("What is DNS?", "DNS (Domain Name System) is a protocol that translates human-readable domain names into IP addresses. It allows users to access websites using domain names instead of numerical IP addresses.");
+        addAssignmentToProblemAnswer(pa_6_3_4, assignment6_3);
+        addProblemAnswerToAssignment(assignment6_3, pa_6_3_4);
+
+        ProblemAnswer pa_6_3_5 = createProblemAnswer("What is DHCP?", "DHCP (Dynamic Host Configuration Protocol) is a protocol used to automatically assign IP addresses and other network configuration parameters to devices on a network. It simplifies the process of configuring network settings for devices.");
+        addAssignmentToProblemAnswer(pa_6_3_5, assignment6_3);
+        addProblemAnswerToAssignment(assignment6_3, pa_6_3_5);
+
+        ProblemAnswer pa_6_3_6 = createProblemAnswer("How does HTTP ensure secure communication?", "HTTP ensures secure communication using HTTPS (HTTP Secure), which encrypts data using SSL/TLS protocols. This protects data integrity and confidentiality during transmission.");
+        addAssignmentToProblemAnswer(pa_6_3_6, assignment6_3);
+        addProblemAnswerToAssignment(assignment6_3, pa_6_3_6);
+
+        ProblemAnswer pa_6_3_7 = createProblemAnswer("What is the role of the SMTP protocol?", "SMTP (Simple Mail Transfer Protocol) is a protocol used for sending and receiving email messages. It defines the rules for transferring emails between mail servers and from clients to servers.");
+        addAssignmentToProblemAnswer(pa_6_3_7, assignment6_3);
+        addProblemAnswerToAssignment(assignment6_3, pa_6_3_7);
+
+        ProblemAnswer pa_6_3_8 = createProblemAnswer("What is the purpose of the SNMP protocol?", "SNMP (Simple Network Management Protocol) is a protocol used for network management and monitoring. It allows administrators to collect and manage information about network devices and performance.");
+        addAssignmentToProblemAnswer(pa_6_3_8, assignment6_3);
+        addProblemAnswerToAssignment(assignment6_3, pa_6_3_8);
+
+        ProblemAnswer pa_6_3_9 = createProblemAnswer("What is the difference between HTTP and HTTPS?", "HTTP is a protocol used for transferring web pages, while HTTPS is a secure version of HTTP that encrypts data using SSL/TLS. HTTPS ensures data integrity and confidentiality during transmission.");
+        addAssignmentToProblemAnswer(pa_6_3_9, assignment6_3);
+        addProblemAnswerToAssignment(assignment6_3, pa_6_3_9);
+
+        ProblemAnswer pa_6_3_10 = createProblemAnswer("How does DNS work?", "DNS works by translating domain names into IP addresses. When a user enters a domain name in a web browser, a DNS server queries its database to find the corresponding IP address and returns it to the browser, allowing the user to access the website.");
+        addAssignmentToProblemAnswer(pa_6_3_10, assignment6_3);
+        addProblemAnswerToAssignment(assignment6_3, pa_6_3_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Network Protocols' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment6_4 = createAssignment("Routing Assignment", faculty1, Date.from(LocalDate.of(2027, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus6, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_6_4_1 = createProblemAnswer("What is routing in networking?", "Routing is the process of selecting paths in a network along which to send data packets. It determines the best route for data to travel from the source to the destination.");
+        addAssignmentToProblemAnswer(pa_6_4_1, assignment6_4);
+        addProblemAnswerToAssignment(assignment6_4, pa_6_4_1);
+
+        ProblemAnswer pa_6_4_2 = createProblemAnswer("What are routing algorithms?", "Routing algorithms are algorithms used by routers to determine the best path for data to travel across a network. They include methods such as shortest path, distance vector, and link state algorithms.");
+        addAssignmentToProblemAnswer(pa_6_4_2, assignment6_4);
+        addProblemAnswerToAssignment(assignment6_4, pa_6_4_2);
+
+        ProblemAnswer pa_6_4_3 = createProblemAnswer("What is OSPF?", "OSPF (Open Shortest Path First) is a link-state routing protocol used in IP networks to determine the best path for data packets. It uses Dijkstra's algorithm to compute the shortest path.");
+        addAssignmentToProblemAnswer(pa_6_4_3, assignment6_4);
+        addProblemAnswerToAssignment(assignment6_4, pa_6_4_3);
+
+        ProblemAnswer pa_6_4_4 = createProblemAnswer("What is BGP?", "BGP (Border Gateway Protocol) is a path vector routing protocol used to exchange routing information between different autonomous systems on the internet. It is the protocol that makes the internet work by enabling data routing between networks.");
+        addAssignmentToProblemAnswer(pa_6_4_4, assignment6_4);
+        addProblemAnswerToAssignment(assignment6_4, pa_6_4_4);
+
+        ProblemAnswer pa_6_4_5 = createProblemAnswer("What is the difference between static and dynamic routing?", "Static routing involves manually configuring fixed routes in the routing table, while dynamic routing uses routing protocols to automatically adjust routes based on network conditions.");
+        addAssignmentToProblemAnswer(pa_6_4_5, assignment6_4);
+        addProblemAnswerToAssignment(assignment6_4, pa_6_4_5);
+
+        ProblemAnswer pa_6_4_6 = createProblemAnswer("How does RIP work?", "RIP (Routing Information Protocol) is a distance vector routing protocol that uses hop count as a metric to determine the best path for data packets. It periodically updates routing tables by exchanging information with neighboring routers.");
+        addAssignmentToProblemAnswer(pa_6_4_6, assignment6_4);
+        addProblemAnswerToAssignment(assignment6_4, pa_6_4_6);
+
+        ProblemAnswer pa_6_4_7 = createProblemAnswer("What is the role of a router in routing?", "A router is a network device that forwards data packets between different networks. It uses routing tables and algorithms to determine the best path for data to travel from the source to the destination.");
+        addAssignmentToProblemAnswer(pa_6_4_7, assignment6_4);
+        addProblemAnswerToAssignment(assignment6_4, pa_6_4_7);
+
+        ProblemAnswer pa_6_4_8 = createProblemAnswer("What is a routing table?", "A routing table is a data structure used by routers to store information about the paths to different network destinations. It includes details such as destination IP addresses, next-hop addresses, and metrics for each route.");
+        addAssignmentToProblemAnswer(pa_6_4_8, assignment6_4);
+        addProblemAnswerToAssignment(assignment6_4, pa_6_4_8);
+
+        ProblemAnswer pa_6_4_9 = createProblemAnswer("What is the purpose of the default route in routing?", "The default route is a route used by a router when no specific path to a destination is found in the routing table. It directs data packets to a default gateway, which handles their further routing.");
+        addAssignmentToProblemAnswer(pa_6_4_9, assignment6_4);
+        addProblemAnswerToAssignment(assignment6_4, pa_6_4_9);
+
+        ProblemAnswer pa_6_4_10 = createProblemAnswer("What is the significance of convergence in routing?", "Convergence in routing refers to the process by which all routers in a network update their routing tables and reach a consistent state after a change in the network topology. It ensures that data packets are routed correctly and efficiently.");
+        addAssignmentToProblemAnswer(pa_6_4_10, assignment6_4);
+        addProblemAnswerToAssignment(assignment6_4, pa_6_4_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Routing' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment6_5 = createAssignment("Switching Assignment", faculty1, Date.from(LocalDate.of(2027, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus6, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_6_5_1 = createProblemAnswer("What is switching in networking?", "Switching is a technique used to forward data packets from one device to another within a network. It ensures that data is transmitted efficiently between devices.");
+        addAssignmentToProblemAnswer(pa_6_5_1, assignment6_5);
+        addProblemAnswerToAssignment(assignment6_5, pa_6_5_1);
+
+        ProblemAnswer pa_6_5_2 = createProblemAnswer("What are the types of switches used in networking?", "The types of switches used in networking include unmanaged switches, managed switches, and smart switches. Each type offers different levels of control and configuration.");
+        addAssignmentToProblemAnswer(pa_6_5_2, assignment6_5);
+        addProblemAnswerToAssignment(assignment6_5, pa_6_5_2);
+
+        ProblemAnswer pa_6_5_3 = createProblemAnswer("What is packet switching?", "Packet switching is a method of data transmission where data is broken into smaller packets, which are transmitted independently over the network. It allows for efficient use of network resources.");
+        addAssignmentToProblemAnswer(pa_6_5_3, assignment6_5);
+        addProblemAnswerToAssignment(assignment6_5, pa_6_5_3);
+
+        ProblemAnswer pa_6_5_4 = createProblemAnswer("What is circuit switching?", "Circuit switching is a method of data transmission where a dedicated communication path is established between devices for the duration of the transmission. It is commonly used in traditional telephone networks.");
+        addAssignmentToProblemAnswer(pa_6_5_4, assignment6_5);
+        addProblemAnswerToAssignment(assignment6_5, pa_6_5_4);
+
+        ProblemAnswer pa_6_5_5 = createProblemAnswer("What is a VLAN?", "A VLAN (Virtual Local Area Network) is a logical grouping of devices on different physical LANs that can communicate as if they were on the same physical LAN. It enhances network segmentation and security.");
+        addAssignmentToProblemAnswer(pa_6_5_5, assignment6_5);
+        addProblemAnswerToAssignment(assignment6_5, pa_6_5_5);
+
+        ProblemAnswer pa_6_5_6 = createProblemAnswer("How does a layer 2 switch differ from a layer 3 switch?", "A layer 2 switch operates at the Data Link layer and uses MAC addresses to forward data, while a layer 3 switch operates at the Network layer and uses IP addresses to perform routing functions in addition to switching.");
+        addAssignmentToProblemAnswer(pa_6_5_6, assignment6_5);
+        addProblemAnswerToAssignment(assignment6_5, pa_6_5_6);
+
+        ProblemAnswer pa_6_5_7 = createProblemAnswer("What is the purpose of a MAC address in switching?", "A MAC address (Media Access Control address) is a unique identifier assigned to network interfaces for communication on the physical network. Switches use MAC addresses to forward data packets to the correct destination.");
+        addAssignmentToProblemAnswer(pa_6_5_7, assignment6_5);
+        addProblemAnswerToAssignment(assignment6_5, pa_6_5_7);
+
+        ProblemAnswer pa_6_5_8 = createProblemAnswer("What is a switch fabric?", "A switch fabric is the internal architecture of a switch that determines how data packets are transmitted between input and output ports. It plays a crucial role in the performance and efficiency of the switch.");
+        addAssignmentToProblemAnswer(pa_6_5_8, assignment6_5);
+        addProblemAnswerToAssignment(assignment6_5, pa_6_5_8);
+
+        ProblemAnswer pa_6_5_9 = createProblemAnswer("What is store-and-forward switching?", "Store-and-forward switching is a method where the switch stores the entire data packet before forwarding it to the destination. It ensures error checking and reliability but can introduce latency.");
+        addAssignmentToProblemAnswer(pa_6_5_9, assignment6_5);
+        addProblemAnswerToAssignment(assignment6_5, pa_6_5_9);
+
+        ProblemAnswer pa_6_5_10 = createProblemAnswer("What is cut-through switching?", "Cut-through switching is a method where the switch starts forwarding the data packet as soon as it reads the destination address, without waiting for the entire packet to be received. It reduces latency but may not perform error checking.");
+        addAssignmentToProblemAnswer(pa_6_5_10, assignment6_5);
+        addProblemAnswerToAssignment(assignment6_5, pa_6_5_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Switching' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment7_1 = createAssignment("Software Development Life Cycle Assignment", faculty2, Date.from(LocalDate.of(2027, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus7, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_7_1_1 = createProblemAnswer("What is the Software Development Life Cycle (SDLC)?", "The Software Development Life Cycle (SDLC) is a process for planning, creating, testing, and deploying an information system. It consists of several phases that guide the development of software.");
+        addAssignmentToProblemAnswer(pa_7_1_1, assignment7_1);
+        addProblemAnswerToAssignment(assignment7_1, pa_7_1_1);
+
+        ProblemAnswer pa_7_1_2 = createProblemAnswer("What are the common phases of the SDLC?", "The common phases of the SDLC include: requirements analysis, system design, implementation, testing, deployment, and maintenance.");
+        addAssignmentToProblemAnswer(pa_7_1_2, assignment7_1);
+        addProblemAnswerToAssignment(assignment7_1, pa_7_1_2);
+
+        ProblemAnswer pa_7_1_3 = createProblemAnswer("What is the iterative model in the SDLC?", "The iterative model is an SDLC approach where the development process is divided into small, repeating cycles. Each iteration produces a working version of the software, which is refined and improved in subsequent iterations.");
+        addAssignmentToProblemAnswer(pa_7_1_3, assignment7_1);
+        addProblemAnswerToAssignment(assignment7_1, pa_7_1_3);
+
+        ProblemAnswer pa_7_1_4 = createProblemAnswer("What is the incremental model in the SDLC?", "The incremental model is an SDLC approach where the software is developed and delivered in small, manageable increments. Each increment adds new functionality, allowing for gradual development and early user feedback.");
+        addAssignmentToProblemAnswer(pa_7_1_4, assignment7_1);
+        addProblemAnswerToAssignment(assignment7_1, pa_7_1_4);
+
+        ProblemAnswer pa_7_1_5 = createProblemAnswer("What is the spiral model in the SDLC?", "The spiral model is an SDLC approach that combines iterative development with risk assessment. It involves repeated cycles of planning, risk analysis, development, and testing, allowing for continuous refinement and risk mitigation.");
+        addAssignmentToProblemAnswer(pa_7_1_5, assignment7_1);
+        addProblemAnswerToAssignment(assignment7_1, pa_7_1_5);
+
+        ProblemAnswer pa_7_1_6 = createProblemAnswer("What is the purpose of the requirements analysis phase in the SDLC?", "The purpose of the requirements analysis phase is to gather and define the functional and non-functional requirements of the software. It involves identifying the needs and expectations of stakeholders and documenting them in a requirements specification.");
+        addAssignmentToProblemAnswer(pa_7_1_6, assignment7_1);
+        addProblemAnswerToAssignment(assignment7_1, pa_7_1_6);
+
+        ProblemAnswer pa_7_1_7 = createProblemAnswer("What is the purpose of the system design phase in the SDLC?", "The purpose of the system design phase is to create a detailed design of the software based on the requirements specification. It involves defining the architecture, components, interfaces, and data structures of the system.");
+        addAssignmentToProblemAnswer(pa_7_1_7, assignment7_1);
+        addProblemAnswerToAssignment(assignment7_1, pa_7_1_7);
+
+        ProblemAnswer pa_7_1_8 = createProblemAnswer("What is the purpose of the implementation phase in the SDLC?", "The purpose of the implementation phase is to develop the actual code for the software based on the design specifications. It involves programming, coding, and integrating the various components of the system.");
+        addAssignmentToProblemAnswer(pa_7_1_8, assignment7_1);
+        addProblemAnswerToAssignment(assignment7_1, pa_7_1_8);
+
+        ProblemAnswer pa_7_1_9 = createProblemAnswer("What is the purpose of the testing phase in the SDLC?", "The purpose of the testing phase is to verify and validate that the software meets the requirements and functions as expected. It involves identifying and fixing defects, ensuring quality, and performing various tests such as unit, integration, and system testing.");
+        addAssignmentToProblemAnswer(pa_7_1_9, assignment7_1);
+        addProblemAnswerToAssignment(assignment7_1, pa_7_1_9);
+
+        ProblemAnswer pa_7_1_10 = createProblemAnswer("What is the purpose of the maintenance phase in the SDLC?", "The purpose of the maintenance phase is to provide ongoing support and updates for the software after deployment. It involves fixing bugs, making enhancements, and ensuring the software continues to meet user needs.");
+        addAssignmentToProblemAnswer(pa_7_1_10, assignment7_1);
+        addProblemAnswerToAssignment(assignment7_1, pa_7_1_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Software Development Life Cycle' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment7_2 = createAssignment("Agile Assignment", faculty2, Date.from(LocalDate.of(2027, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus7, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_7_2_1 = createProblemAnswer("What is Agile methodology?", "Agile methodology is an iterative approach to software development that emphasizes flexibility, collaboration, and customer feedback. It focuses on delivering small, incremental improvements to the software.");
+        addAssignmentToProblemAnswer(pa_7_2_1, assignment7_2);
+        addProblemAnswerToAssignment(assignment7_2, pa_7_2_1);
+
+        ProblemAnswer pa_7_2_2 = createProblemAnswer("What are the core principles of Agile?", "The core principles of Agile include: (1) Customer satisfaction through continuous delivery of valuable software, (2) Welcoming changing requirements, (3) Delivering working software frequently, (4) Collaboration between business and developers, (5) Building projects around motivated individuals, (6) Face-to-face communication, (7) Measuring progress through working software, (8) Sustainable development, (9) Technical excellence and good design, (10) Simplicity, (11) Self-organizing teams, and (12) Regular reflection and adjustment.");
+        addAssignmentToProblemAnswer(pa_7_2_2, assignment7_2);
+        addProblemAnswerToAssignment(assignment7_2, pa_7_2_2);
+
+        ProblemAnswer pa_7_2_3 = createProblemAnswer("What is Scrum?", "Scrum is an Agile framework that provides a structured approach to managing and completing complex projects. It involves roles such as Scrum Master, Product Owner, and Development Team, and ceremonies such as Sprint Planning, Daily Stand-ups, Sprint Reviews, and Retrospectives.");
+        addAssignmentToProblemAnswer(pa_7_2_3, assignment7_2);
+        addProblemAnswerToAssignment(assignment7_2, pa_7_2_3);
+
+        ProblemAnswer pa_7_2_4 = createProblemAnswer("What is Kanban?", "Kanban is an Agile methodology that focuses on visualizing work, limiting work in progress, and improving flow. It uses a Kanban board to track tasks and emphasizes continuous delivery and process improvement.");
+        addAssignmentToProblemAnswer(pa_7_2_4, assignment7_2);
+        addProblemAnswerToAssignment(assignment7_2, pa_7_2_4);
+
+        ProblemAnswer pa_7_2_5 = createProblemAnswer("How does Agile handle changing requirements?", "Agile handles changing requirements by welcoming and embracing change. It allows for flexibility and adaptability, enabling teams to respond to new information and customer feedback throughout the development process.");
+        addAssignmentToProblemAnswer(pa_7_2_5, assignment7_2);
+        addProblemAnswerToAssignment(assignment7_2, pa_7_2_5);
+
+        ProblemAnswer pa_7_2_6 = createProblemAnswer("What is a Sprint in Agile?", "A Sprint is a fixed-length time period, typically 1-4 weeks, during which a specific set of work items or tasks are completed. It is a core component of the Scrum framework and allows teams to deliver incremental improvements to the software.");
+        addAssignmentToProblemAnswer(pa_7_2_6, assignment7_2);
+        addProblemAnswerToAssignment(assignment7_2, pa_7_2_6);
+
+        ProblemAnswer pa_7_2_7 = createProblemAnswer("What is the role of the Scrum Master?", "The Scrum Master is responsible for facilitating the Scrum process, removing impediments, and ensuring that the team follows Agile principles and practices. They act as a coach and mentor to the development team.");
+        addAssignmentToProblemAnswer(pa_7_2_7, assignment7_2);
+        addProblemAnswerToAssignment(assignment7_2, pa_7_2_7);
+
+        ProblemAnswer pa_7_2_8 = createProblemAnswer("What is the role of the Product Owner?", "The Product Owner is responsible for defining and prioritizing the product backlog, ensuring that the development team works on the most valuable tasks. They act as a liaison between the stakeholders and the development team.");
+        addAssignmentToProblemAnswer(pa_7_2_8, assignment7_2);
+        addProblemAnswerToAssignment(assignment7_2, pa_7_2_8);
+
+        ProblemAnswer pa_7_2_9 = createProblemAnswer("What is a user story in Agile?", "A user story is a simple, concise description of a feature or functionality from the perspective of the end-user. It typically follows the format: 'As a user, I want to [goal] so that [reason].'");
+        addAssignmentToProblemAnswer(pa_7_2_9, assignment7_2);
+        addProblemAnswerToAssignment(assignment7_2, pa_7_2_9);
+
+        ProblemAnswer pa_7_2_10 = createProblemAnswer("How does Kanban differ from Scrum?", "Kanban differs from Scrum in that it is less structured and does not have fixed-length iterations (Sprints). Kanban focuses on continuous delivery and flow, while Scrum emphasizes iterative development through Sprints.");
+        addAssignmentToProblemAnswer(pa_7_2_10, assignment7_2);
+        addProblemAnswerToAssignment(assignment7_2, pa_7_2_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Agile' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment7_3 = createAssignment("Waterfall Assignment", faculty2, Date.from(LocalDate.of(2027, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus7, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_7_3_1 = createProblemAnswer("What is the Waterfall model?", "The Waterfall model is a linear and sequential approach to software development. It involves completing each phase of the development process before moving on to the next phase.");
+        addAssignmentToProblemAnswer(pa_7_3_1, assignment7_3);
+        addProblemAnswerToAssignment(assignment7_3, pa_7_3_1);
+
+        ProblemAnswer pa_7_3_2 = createProblemAnswer("What are the phases of the Waterfall model?", "The phases of the Waterfall model include: requirements analysis, system design, implementation, testing, deployment, and maintenance.");
+        addAssignmentToProblemAnswer(pa_7_3_2, assignment7_3);
+        addProblemAnswerToAssignment(assignment7_3, pa_7_3_2);
+
+        ProblemAnswer pa_7_3_3 = createProblemAnswer("What is the purpose of the requirements analysis phase in the Waterfall model?", "The purpose of the requirements analysis phase is to gather and define the functional and non-functional requirements of the software. It involves identifying the needs and expectations of stakeholders and documenting them in a requirements specification.");
+        addAssignmentToProblemAnswer(pa_7_3_3, assignment7_3);
+        addProblemAnswerToAssignment(assignment7_3, pa_7_3_3);
+
+        ProblemAnswer pa_7_3_4 = createProblemAnswer("What is the purpose of the system design phase in the Waterfall model?", "The purpose of the system design phase is to create a detailed design of the software based on the requirements specification. It involves defining the architecture, components, interfaces, and data structures of the system.");
+        addAssignmentToProblemAnswer(pa_7_3_4, assignment7_3);
+        addProblemAnswerToAssignment(assignment7_3, pa_7_3_4);
+
+        ProblemAnswer pa_7_3_5 = createProblemAnswer("What is the purpose of the implementation phase in the Waterfall model?", "The purpose of the implementation phase is to develop the actual code for the software based on the design specifications. It involves programming, coding, and integrating the various components of the system.");
+        addAssignmentToProblemAnswer(pa_7_3_5, assignment7_3);
+        addProblemAnswerToAssignment(assignment7_3, pa_7_3_5);
+
+        ProblemAnswer pa_7_3_6 = createProblemAnswer("What is the purpose of the testing phase in the Waterfall model?", "The purpose of the testing phase is to verify and validate that the software meets the requirements and functions as expected. It involves identifying and fixing defects, ensuring quality, and performing various tests such as unit, integration, and system testing.");
+        addAssignmentToProblemAnswer(pa_7_3_6, assignment7_3);
+        addProblemAnswerToAssignment(assignment7_3, pa_7_3_6);
+
+        ProblemAnswer pa_7_3_7 = createProblemAnswer("What is the purpose of the deployment phase in the Waterfall model?", "The purpose of the deployment phase is to release the software to the end-users and ensure it is properly installed and configured. It involves preparing the system for production and providing user training and support.");
+        addAssignmentToProblemAnswer(pa_7_3_7, assignment7_3);
+        addProblemAnswerToAssignment(assignment7_3, pa_7_3_7);
+
+        ProblemAnswer pa_7_3_8 = createProblemAnswer("What is the purpose of the maintenance phase in the Waterfall model?", "The purpose of the maintenance phase is to provide ongoing support and updates for the software after deployment. It involves fixing bugs, making enhancements, and ensuring the software continues to meet user needs.");
+        addAssignmentToProblemAnswer(pa_7_3_8, assignment7_3);
+        addProblemAnswerToAssignment(assignment7_3, pa_7_3_8);
+
+        ProblemAnswer pa_7_3_9 = createProblemAnswer("What are the advantages of the Waterfall model?", "Advantages of the Waterfall model include: (1) Clear and structured phases, (2) Easy to manage and track progress, (3) Well-documented requirements and design, (4) Suitable for projects with well-defined requirements.");
+        addAssignmentToProblemAnswer(pa_7_3_9, assignment7_3);
+        addProblemAnswerToAssignment(assignment7_3, pa_7_3_9);
+
+        ProblemAnswer pa_7_3_10 = createProblemAnswer("What are the disadvantages of the Waterfall model?", "Disadvantages of the Waterfall model include: (1) Inflexibility to changes, (2) Late testing and integration, (3) Limited customer feedback during development, (4) Not suitable for complex and dynamic projects.");
+        addAssignmentToProblemAnswer(pa_7_3_10, assignment7_3);
+        addProblemAnswerToAssignment(assignment7_3, pa_7_3_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Waterfall' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment7_4 = createAssignment("Project Management Assignment", faculty2, Date.from(LocalDate.of(2027, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus7, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_7_4_1 = createProblemAnswer("What is project management?", "Project management involves planning, organizing, and managing resources to achieve specific goals and complete projects efficiently. It encompasses processes, methods, skills, and knowledge required to deliver projects successfully.");
+        addAssignmentToProblemAnswer(pa_7_4_1, assignment7_4);
+        addProblemAnswerToAssignment(assignment7_4, pa_7_4_1);
+
+        ProblemAnswer pa_7_4_2 = createProblemAnswer("What are the key phases of project management?", "The key phases of project management include: (1) Initiation, (2) Planning, (3) Execution, (4) Monitoring and Controlling, and (5) Closure.");
+        addAssignmentToProblemAnswer(pa_7_4_2, assignment7_4);
+        addProblemAnswerToAssignment(assignment7_4, pa_7_4_2);
+
+        ProblemAnswer pa_7_4_3 = createProblemAnswer("What is project planning?", "Project planning involves defining the project scope, objectives, deliverables, timelines, and resource requirements. It includes creating a project plan that outlines the tasks, schedule, budget, and risk management strategies.");
+        addAssignmentToProblemAnswer(pa_7_4_3, assignment7_4);
+        addProblemAnswerToAssignment(assignment7_4, pa_7_4_3);
+
+        ProblemAnswer pa_7_4_4 = createProblemAnswer("What is project scheduling?", "Project scheduling involves creating a timeline for the project's tasks and activities. It includes determining the start and end dates, dependencies, milestones, and resource allocation to ensure timely project completion.");
+        addAssignmentToProblemAnswer(pa_7_4_4, assignment7_4);
+        addProblemAnswerToAssignment(assignment7_4, pa_7_4_4);
+
+        ProblemAnswer pa_7_4_5 = createProblemAnswer("What is resource management in project management?", "Resource management involves identifying, allocating, and managing the resources needed for a project. It includes managing human resources, materials, equipment, and finances to ensure optimal utilization and efficiency.");
+        addAssignmentToProblemAnswer(pa_7_4_5, assignment7_4);
+        addProblemAnswerToAssignment(assignment7_4, pa_7_4_5);
+
+        ProblemAnswer pa_7_4_6 = createProblemAnswer("What is risk management in project management?", "Risk management involves identifying, assessing, and mitigating potential risks that could impact the project's success. It includes developing risk management plans, monitoring risks, and implementing strategies to minimize their impact.");
+        addAssignmentToProblemAnswer(pa_7_4_6, assignment7_4);
+        addProblemAnswerToAssignment(assignment7_4, pa_7_4_6);
+
+        ProblemAnswer pa_7_4_7 = createProblemAnswer("What is quality assurance in project management?", "Quality assurance involves ensuring that the project's deliverables meet the required standards and specifications. It includes defining quality criteria, conducting quality audits, and implementing continuous improvement processes.");
+        addAssignmentToProblemAnswer(pa_7_4_7, assignment7_4);
+        addProblemAnswerToAssignment(assignment7_4, pa_7_4_7);
+
+        ProblemAnswer pa_7_4_8 = createProblemAnswer("What are some common project management tools?", "Common project management tools include Gantt charts, project management software (e.g., Microsoft Project, Trello, Asana), work breakdown structures (WBS), and critical path method (CPM) charts.");
+        addAssignmentToProblemAnswer(pa_7_4_8, assignment7_4);
+        addProblemAnswerToAssignment(assignment7_4, pa_7_4_8);
+
+        ProblemAnswer pa_7_4_9 = createProblemAnswer("What is the role of a project manager?", "The project manager is responsible for planning, executing, and closing projects. They manage the project team, resources, schedule, budget, and risks to ensure successful project completion.");
+        addAssignmentToProblemAnswer(pa_7_4_9, assignment7_4);
+        addProblemAnswerToAssignment(assignment7_4, pa_7_4_9);
+
+        ProblemAnswer pa_7_4_10 = createProblemAnswer("What is the importance of communication in project management?", "Communication is crucial in project management for ensuring that all stakeholders are informed and aligned. It involves sharing project updates, addressing issues, and facilitating collaboration among team members.");
+        addAssignmentToProblemAnswer(pa_7_4_10, assignment7_4);
+        addProblemAnswerToAssignment(assignment7_4, pa_7_4_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Project Management' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment8_1 = createAssignment("HTML Assignment", faculty3, Date.from(LocalDate.of(2027, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus8, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_8_1_1 = createProblemAnswer("What is HTML?", "HTML (HyperText Markup Language) is the standard language for creating web pages. It defines the structure and content of web pages using tags and attributes.");
+        addAssignmentToProblemAnswer(pa_8_1_1, assignment8_1);
+        addProblemAnswerToAssignment(assignment8_1, pa_8_1_1);
+
+        ProblemAnswer pa_8_1_2 = createProblemAnswer("What are HTML tags?", "HTML tags are the building blocks of HTML. They are used to define and structure the content of web pages. Tags are enclosed in angle brackets, such as <html>, <head>, <body>, etc.");
+        addAssignmentToProblemAnswer(pa_8_1_2, assignment8_1);
+        addProblemAnswerToAssignment(assignment8_1, pa_8_1_2);
+
+        ProblemAnswer pa_8_1_3 = createProblemAnswer("What is an HTML attribute?", "An HTML attribute provides additional information about an element. Attributes are specified within the opening tag and usually come in name/value pairs, such as class=\"classname\" or src=\"image.jpg\".");
+        addAssignmentToProblemAnswer(pa_8_1_3, assignment8_1);
+        addProblemAnswerToAssignment(assignment8_1, pa_8_1_3);
+
+        ProblemAnswer pa_8_1_4 = createProblemAnswer("What is the purpose of the <head> tag in HTML?", "The <head> tag contains meta-information about the document, such as its title, character set, and links to stylesheets or scripts. It does not contain any content that is directly displayed on the web page.");
+        addAssignmentToProblemAnswer(pa_8_1_4, assignment8_1);
+        addProblemAnswerToAssignment(assignment8_1, pa_8_1_4);
+
+        ProblemAnswer pa_8_1_5 = createProblemAnswer("What is the purpose of the <body> tag in HTML?", "The <body> tag contains the content of the web page, such as text, images, links, and other elements. It is the main part of the HTML document that is displayed in the browser.");
+        addAssignmentToProblemAnswer(pa_8_1_5, assignment8_1);
+        addProblemAnswerToAssignment(assignment8_1, pa_8_1_5);
+
+        ProblemAnswer pa_8_1_6 = createProblemAnswer("What is an HTML element?", "An HTML element is a piece of content defined by a start tag, its content, and an end tag. For example, <p>This is a paragraph.</p> is an HTML element.");
+        addAssignmentToProblemAnswer(pa_8_1_6, assignment8_1);
+        addProblemAnswerToAssignment(assignment8_1, pa_8_1_6);
+
+        ProblemAnswer pa_8_1_7 = createProblemAnswer("How do you create a hyperlink in HTML?", "To create a hyperlink in HTML, use the <a> (anchor) tag with the href attribute. For example: <a href=\"https://example.com\">Visit Example</a>");
+        addAssignmentToProblemAnswer(pa_8_1_7, assignment8_1);
+        addProblemAnswerToAssignment(assignment8_1, pa_8_1_7);
+
+        ProblemAnswer pa_8_1_8 = createProblemAnswer("How do you insert an image in HTML?", "To insert an image in HTML, use the <img> tag with the src attribute. For example: <img src=\"image.jpg\" alt=\"Description of the image\">");
+        addAssignmentToProblemAnswer(pa_8_1_8, assignment8_1);
+        addProblemAnswerToAssignment(assignment8_1, pa_8_1_8);
+
+        ProblemAnswer pa_8_1_9 = createProblemAnswer("What is an HTML list?", "An HTML list is a collection of related items. There are two main types of lists: ordered lists (<ol>) and unordered lists (<ul>). Each item in the list is defined by the <li> tag.");
+        addAssignmentToProblemAnswer(pa_8_1_9, assignment8_1);
+        addProblemAnswerToAssignment(assignment8_1, pa_8_1_9);
+
+        ProblemAnswer pa_8_1_10 = createProblemAnswer("What is the purpose of the <div> tag in HTML?", "The <div> tag is a container element used to group together other elements and apply styles or layout controls. It does not have any specific meaning or visual representation by itself.");
+        addAssignmentToProblemAnswer(pa_8_1_10, assignment8_1);
+        addProblemAnswerToAssignment(assignment8_1, pa_8_1_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'HTML' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment8_2 = createAssignment("CSS Assignment", faculty3, Date.from(LocalDate.of(2027, 9, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus8, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_8_2_1 = createProblemAnswer("What is CSS?", "CSS (Cascading Style Sheets) is a language used to style HTML documents. It controls the layout, colors, fonts, and overall visual presentation of web pages.");
+        addAssignmentToProblemAnswer(pa_8_2_1, assignment8_2);
+        addProblemAnswerToAssignment(assignment8_2, pa_8_2_1);
+
+        ProblemAnswer pa_8_2_2 = createProblemAnswer("How do you link a CSS file to an HTML document?", "To link a CSS file to an HTML document, use the <link> tag within the <head> section. For example: <link rel=\"stylesheet\" href=\"styles.css\">");
+        addAssignmentToProblemAnswer(pa_8_2_2, assignment8_2);
+        addProblemAnswerToAssignment(assignment8_2, pa_8_2_2);
+
+        ProblemAnswer pa_8_2_3 = createProblemAnswer("What is the CSS box model?", "The CSS box model describes the rectangular boxes generated for elements in the document tree. It includes the content, padding, border, and margin areas.");
+        addAssignmentToProblemAnswer(pa_8_2_3, assignment8_2);
+        addProblemAnswerToAssignment(assignment8_2, pa_8_2_3);
+
+        ProblemAnswer pa_8_2_4 = createProblemAnswer("How do you apply styles to HTML elements using CSS?", "Styles can be applied to HTML elements using selectors in a CSS file. For example, to style all <p> elements: \np {\n  color: blue;\n  font-size: 16px;\n}");
+        addAssignmentToProblemAnswer(pa_8_2_4, assignment8_2);
+        addProblemAnswerToAssignment(assignment8_2, pa_8_2_4);
+
+        ProblemAnswer pa_8_2_5 = createProblemAnswer("What are CSS selectors?", "CSS selectors are patterns used to select and style specific elements on a web page. Examples include element selectors, class selectors, ID selectors, and attribute selectors.");
+        addAssignmentToProblemAnswer(pa_8_2_5, assignment8_2);
+        addProblemAnswerToAssignment(assignment8_2, pa_8_2_5);
+
+        ProblemAnswer pa_8_2_6 = createProblemAnswer("How do you create a class in CSS?", "To create a class in CSS, use the class selector (.) followed by the class name. For example: \n.exampleClass {\n  color: red;\n  background-color: yellow;\n}");
+        addAssignmentToProblemAnswer(pa_8_2_6, assignment8_2);
+        addProblemAnswerToAssignment(assignment8_2, pa_8_2_6);
+
+        ProblemAnswer pa_8_2_7 = createProblemAnswer("What is a CSS ID selector?", "A CSS ID selector uses the ID attribute of an HTML element to select and style a specific element. It is denoted by the hash symbol (#) followed by the ID name. For example: \n#exampleID {\n  color: green;\n  font-weight: bold;\n}");
+        addAssignmentToProblemAnswer(pa_8_2_7, assignment8_2);
+        addProblemAnswerToAssignment(assignment8_2, pa_8_2_7);
+
+        ProblemAnswer pa_8_2_8 = createProblemAnswer("What is the difference between inline, internal, and external CSS?", "Inline CSS is applied directly within an HTML element using the style attribute. Internal CSS is defined within the <style> tag inside the <head> section of an HTML document. External CSS is defined in a separate .css file and linked to the HTML document using the <link> tag.");
+        addAssignmentToProblemAnswer(pa_8_2_8, assignment8_2);
+        addProblemAnswerToAssignment(assignment8_2, pa_8_2_8);
+
+        ProblemAnswer pa_8_2_9 = createProblemAnswer("How do you make a web page responsive using CSS?", "To make a web page responsive, use media queries in CSS to apply different styles based on the screen size and device type. For example: \n@media (max-width: 600px) {\n  body {\n    background-color: lightblue;\n  }\n}");
+        addAssignmentToProblemAnswer(pa_8_2_9, assignment8_2);
+        addProblemAnswerToAssignment(assignment8_2, pa_8_2_9);
+
+        ProblemAnswer pa_8_2_10 = createProblemAnswer("What are CSS frameworks?", "CSS frameworks are pre-prepared libraries that make it easier to create responsive and visually appealing web designs. Examples include Bootstrap, Foundation, and Bulma.");
+        addAssignmentToProblemAnswer(pa_8_2_10, assignment8_2);
+        addProblemAnswerToAssignment(assignment8_2, pa_8_2_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'CSS' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment8_3 = createAssignment("JavaScript Assignment", faculty3, Date.from(LocalDate.of(2027, 10, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus8, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_8_3_1 = createProblemAnswer("What is JavaScript?", "JavaScript is a programming language that allows you to create interactive and dynamic web content. It can manipulate the DOM (Document Object Model), handle events, and perform animations.");
+        addAssignmentToProblemAnswer(pa_8_3_1, assignment8_3);
+        addProblemAnswerToAssignment(assignment8_3, pa_8_3_1);
+
+        ProblemAnswer pa_8_3_2 = createProblemAnswer("How do you include JavaScript in an HTML document?", "To include JavaScript in an HTML document, use the <script> tag. For example: \n<script src=\"script.js\"></script> for an external script or <script>\n// JavaScript code here\n</script> for an internal script.");
+        addAssignmentToProblemAnswer(pa_8_3_2, assignment8_3);
+        addProblemAnswerToAssignment(assignment8_3, pa_8_3_2);
+
+        ProblemAnswer pa_8_3_3 = createProblemAnswer("What is the DOM in JavaScript?", "The DOM (Document Object Model) is a programming interface for HTML and XML documents. It represents the structure of a document as a tree of objects that can be manipulated with JavaScript.");
+        addAssignmentToProblemAnswer(pa_8_3_3, assignment8_3);
+        addProblemAnswerToAssignment(assignment8_3, pa_8_3_3);
+
+        ProblemAnswer pa_8_3_4 = createProblemAnswer("How do you select an HTML element using JavaScript?", "You can select an HTML element using JavaScript with methods like getElementById, getElementsByClassName, getElementsByTagName, querySelector, and querySelectorAll. For example: \ndocument.getElementById('elementID');");
+        addAssignmentToProblemAnswer(pa_8_3_4, assignment8_3);
+        addProblemAnswerToAssignment(assignment8_3, pa_8_3_4);
+
+        ProblemAnswer pa_8_3_5 = createProblemAnswer("How do you handle events in JavaScript?", "You can handle events in JavaScript by adding event listeners to elements. For example: \ndocument.getElementById('button').addEventListener('click', function() {\n  alert('Button clicked!');\n});");
+        addAssignmentToProblemAnswer(pa_8_3_5, assignment8_3);
+        addProblemAnswerToAssignment(assignment8_3, pa_8_3_5);
+
+        ProblemAnswer pa_8_3_6 = createProblemAnswer("What is an array in JavaScript?", "An array is a data structure that can hold multiple values. It is defined using square brackets. For example: \nlet fruits = ['apple', 'banana', 'orange'];");
+        addAssignmentToProblemAnswer(pa_8_3_6, assignment8_3);
+        addProblemAnswerToAssignment(assignment8_3, pa_8_3_6);
+
+        ProblemAnswer pa_8_3_7 = createProblemAnswer("How do you loop through an array in JavaScript?", "You can loop through an array using a for loop, forEach method, or other iteration methods. For example, using a for loop: \nfor (let i = 0; i < array.length; i++) {\n  console.log(array[i]);\n}");
+        addAssignmentToProblemAnswer(pa_8_3_7, assignment8_3);
+        addProblemAnswerToAssignment(assignment8_3, pa_8_3_7);
+
+        ProblemAnswer pa_8_3_8 = createProblemAnswer("How do you manipulate the DOM with JavaScript?", "You can manipulate the DOM by selecting elements and modifying their properties, attributes, or styles. For example: \ndocument.getElementById('elementID').style.color = 'red';");
+        addAssignmentToProblemAnswer(pa_8_3_8, assignment8_3);
+        addProblemAnswerToAssignment(assignment8_3, pa_8_3_8);
+
+        ProblemAnswer pa_8_3_9 = createProblemAnswer("What is a function in JavaScript?", "A function is a block of code designed to perform a particular task. It is defined using the function keyword. For example: \nfunction greet() {\n  console.log('Hello, World!');\n}");
+        addAssignmentToProblemAnswer(pa_8_3_9, assignment8_3);
+        addProblemAnswerToAssignment(assignment8_3, pa_8_3_9);
+
+        ProblemAnswer pa_8_3_10 = createProblemAnswer("What is the difference between let and var in JavaScript?", "The let keyword declares a block-scoped variable, while the var keyword declares a function-scoped variable. let is preferred in modern JavaScript because it prevents common issues related to variable hoisting.");
+        addAssignmentToProblemAnswer(pa_8_3_10, assignment8_3);
+        addProblemAnswerToAssignment(assignment8_3, pa_8_3_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'JavaScript' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment8_4 = createAssignment("React Assignment", faculty3, Date.from(LocalDate.of(2027, 11, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus8, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_8_4_1 = createProblemAnswer("What is React?", "React is a popular JavaScript library for building user interfaces. It allows developers to create reusable UI components and manage the state of applications efficiently.");
+        addAssignmentToProblemAnswer(pa_8_4_1, assignment8_4);
+        addProblemAnswerToAssignment(assignment8_4, pa_8_4_1);
+
+        ProblemAnswer pa_8_4_2 = createProblemAnswer("What are React components?", "React components are the building blocks of a React application. They are reusable pieces of UI that can be combined to create complex user interfaces. Components can be functional or class-based.");
+        addAssignmentToProblemAnswer(pa_8_4_2, assignment8_4);
+        addProblemAnswerToAssignment(assignment8_4, pa_8_4_2);
+
+        ProblemAnswer pa_8_4_3 = createProblemAnswer("What is JSX in React?", "JSX (JavaScript XML) is a syntax extension for JavaScript that allows developers to write HTML-like code within their JavaScript. It makes it easier to create React elements and components.");
+        addAssignmentToProblemAnswer(pa_8_4_3, assignment8_4);
+        addProblemAnswerToAssignment(assignment8_4, pa_8_4_3);
+
+        ProblemAnswer pa_8_4_4 = createProblemAnswer("What is state in React?", "State is an object that holds data that can change over time and affect the rendering of a component. State is managed within the component and can be updated using the setState method in class components or the useState hook in functional components.");
+        addAssignmentToProblemAnswer(pa_8_4_4, assignment8_4);
+        addProblemAnswerToAssignment(assignment8_4, pa_8_4_4);
+
+        ProblemAnswer pa_8_4_5 = createProblemAnswer("What are props in React?", "Props (short for properties) are a way of passing data from parent components to child components. They are read-only and used to customize the behavior and appearance of components.");
+        addAssignmentToProblemAnswer(pa_8_4_5, assignment8_4);
+        addProblemAnswerToAssignment(assignment8_4, pa_8_4_5);
+
+        ProblemAnswer pa_8_4_6 = createProblemAnswer("How do you create a React component?", "You can create a React component using a function or a class. For example, a functional component:\n```javascript\nfunction Welcome() {\n  return <h1>Hello, World!</h1>;\n}\n```");
+        addAssignmentToProblemAnswer(pa_8_4_6, assignment8_4);
+        addProblemAnswerToAssignment(assignment8_4, pa_8_4_6);
+
+        ProblemAnswer pa_8_4_7 = createProblemAnswer("What is the useEffect hook in React?", "The useEffect hook allows you to perform side effects in functional components, such as fetching data, subscribing to events, or updating the DOM. It runs after the component renders and can be configured to run conditionally.");
+        addAssignmentToProblemAnswer(pa_8_4_7, assignment8_4);
+        addProblemAnswerToAssignment(assignment8_4, pa_8_4_7);
+
+        ProblemAnswer pa_8_4_8 = createProblemAnswer("What is the virtual DOM in React?", "The virtual DOM is a lightweight representation of the real DOM used by React to optimize rendering. React updates the virtual DOM first and then efficiently updates the real DOM based on the changes.");
+        addAssignmentToProblemAnswer(pa_8_4_8, assignment8_4);
+        addProblemAnswerToAssignment(assignment8_4, pa_8_4_8);
+
+        ProblemAnswer pa_8_4_9 = createProblemAnswer("What is a single-page application (SPA)?", "A single-page application (SPA) is a web application that loads a single HTML page and dynamically updates the content as the user interacts with the app. React is commonly used to build SPAs due to its efficient rendering and state management.");
+        addAssignmentToProblemAnswer(pa_8_4_9, assignment8_4);
+        addProblemAnswerToAssignment(assignment8_4, pa_8_4_9);
+
+        ProblemAnswer pa_8_4_10 = createProblemAnswer("What are React hooks?", "React hooks are functions that allow you to use state and other React features in functional components. Common hooks include useState, useEffect, useContext, and useReducer.");
+        addAssignmentToProblemAnswer(pa_8_4_10, assignment8_4);
+        addProblemAnswerToAssignment(assignment8_4, pa_8_4_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'React' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment8_5 = createAssignment("Backend Integration Assignment", faculty3, Date.from(LocalDate.of(2027, 12, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus8, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_8_5_1 = createProblemAnswer("What is backend integration?", "Backend integration involves connecting front-end web applications with backend services. It allows the front end to communicate with the server, fetch data, and perform server-side operations.");
+        addAssignmentToProblemAnswer(pa_8_5_1, assignment8_5);
+        addProblemAnswerToAssignment(assignment8_5, pa_8_5_1);
+
+        ProblemAnswer pa_8_5_2 = createProblemAnswer("What is a RESTful API?", "A RESTful API (Representational State Transfer) is an architectural style for designing networked applications. It uses standard HTTP methods (GET, POST, PUT, DELETE) to interact with resources and perform CRUD (Create, Read, Update, Delete) operations.");
+        addAssignmentToProblemAnswer(pa_8_5_2, assignment8_5);
+        addProblemAnswerToAssignment(assignment8_5, pa_8_5_2);
+
+        ProblemAnswer pa_8_5_3 = createProblemAnswer("How do you fetch data from a RESTful API using JavaScript?", "You can fetch data from a RESTful API using JavaScript's Fetch API. For example: \nfetch('https://api.example.com/data')\n  .then(response => response.json())\n  .then(data => console.log(data));");
+        addAssignmentToProblemAnswer(pa_8_5_3, assignment8_5);
+        addProblemAnswerToAssignment(assignment8_5, pa_8_5_3);
+
+        ProblemAnswer pa_8_5_4 = createProblemAnswer("What is server-side rendering?", "Server-side rendering (SSR) is the process of rendering web pages on the server instead of the client. It improves the initial load time and SEO by delivering fully rendered HTML pages to the browser.");
+        addAssignmentToProblemAnswer(pa_8_5_4, assignment8_5);
+        addProblemAnswerToAssignment(assignment8_5, pa_8_5_4);
+
+        ProblemAnswer pa_8_5_5 = createProblemAnswer("What is the difference between client-side and server-side rendering?", "Client-side rendering (CSR) renders web pages in the browser using JavaScript, while server-side rendering (SSR) renders web pages on the server before sending them to the browser. CSR offers a more dynamic experience, while SSR provides faster initial load times.");
+        addAssignmentToProblemAnswer(pa_8_5_5, assignment8_5);
+        addProblemAnswerToAssignment(assignment8_5, pa_8_5_5);
+
+        ProblemAnswer pa_8_5_6 = createProblemAnswer("How do you handle authentication in backend integration?", "Authentication in backend integration involves verifying the identity of users and granting access to protected resources. Common methods include session-based authentication, token-based authentication (e.g., JWT), and OAuth.");
+        addAssignmentToProblemAnswer(pa_8_5_6, assignment8_5);
+        addProblemAnswerToAssignment(assignment8_5, pa_8_5_6);
+
+        ProblemAnswer pa_8_5_7 = createProblemAnswer("What is a database and how is it used in backend integration?", "A database is a structured collection of data that can be accessed and managed electronically. In backend integration, databases are used to store, retrieve, and manipulate data required by web applications.");
+        addAssignmentToProblemAnswer(pa_8_5_7, assignment8_5);
+        addProblemAnswerToAssignment(assignment8_5, pa_8_5_7);
+
+        ProblemAnswer pa_8_5_8 = createProblemAnswer("What are some common databases used in backend integration?", "Common databases used in backend integration include relational databases (e.g., MySQL, PostgreSQL), NoSQL databases (e.g., MongoDB, CouchDB), and in-memory databases (e.g., Redis).");
+        addAssignmentToProblemAnswer(pa_8_5_8, assignment8_5);
+        addProblemAnswerToAssignment(assignment8_5, pa_8_5_8);
+
+        ProblemAnswer pa_8_5_9 = createProblemAnswer("What is the role of middleware in backend integration?", "Middleware is software that acts as an intermediary between the front end and backend services. It handles tasks such as request and response processing, authentication, and routing.");
+        addAssignmentToProblemAnswer(pa_8_5_9, assignment8_5);
+        addProblemAnswerToAssignment(assignment8_5, pa_8_5_9);
+
+        ProblemAnswer pa_8_5_10 = createProblemAnswer("How do you test backend integration?", "Testing backend integration involves verifying that the front end correctly communicates with the backend services. It includes unit tests for individual functions, integration tests for combined components, and end-to-end tests for the entire application workflow.");
+        addAssignmentToProblemAnswer(pa_8_5_10, assignment8_5);
+        addProblemAnswerToAssignment(assignment8_5, pa_8_5_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Backend Integration' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment9_1 = createAssignment("Machine Learning Assignment", faculty4, Date.from(LocalDate.of(2028, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus9, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_9_1_1 = createProblemAnswer("What is machine learning?", "Machine learning is a subset of AI that focuses on developing algorithms that enable computers to learn from and make predictions based on data.");
+        addAssignmentToProblemAnswer(pa_9_1_1, assignment9_1);
+        addProblemAnswerToAssignment(assignment9_1, pa_9_1_1);
+
+        ProblemAnswer pa_9_1_2 = createProblemAnswer("What are some common machine learning techniques?", "Common machine learning techniques include supervised learning, unsupervised learning, reinforcement learning, and deep learning.");
+        addAssignmentToProblemAnswer(pa_9_1_2, assignment9_1);
+        addProblemAnswerToAssignment(assignment9_1, pa_9_1_2);
+
+        ProblemAnswer pa_9_1_3 = createProblemAnswer("What is supervised learning?", "Supervised learning is a machine learning technique where the model is trained on labeled data. The model learns to make predictions based on input-output pairs provided during training.");
+        addAssignmentToProblemAnswer(pa_9_1_3, assignment9_1);
+        addProblemAnswerToAssignment(assignment9_1, pa_9_1_3);
+
+        ProblemAnswer pa_9_1_4 = createProblemAnswer("What is unsupervised learning?", "Unsupervised learning is a machine learning technique where the model is trained on unlabeled data. The model learns to find patterns and relationships in the data without explicit input-output pairs.");
+        addAssignmentToProblemAnswer(pa_9_1_4, assignment9_1);
+        addProblemAnswerToAssignment(assignment9_1, pa_9_1_4);
+
+        ProblemAnswer pa_9_1_5 = createProblemAnswer("What is reinforcement learning?", "Reinforcement learning is a machine learning technique where the model learns to make decisions by interacting with an environment. The model receives rewards or penalties based on its actions and learns to maximize cumulative rewards.");
+        addAssignmentToProblemAnswer(pa_9_1_5, assignment9_1);
+        addProblemAnswerToAssignment(assignment9_1, pa_9_1_5);
+
+        ProblemAnswer pa_9_1_6 = createProblemAnswer("What is deep learning?", "Deep learning is a subset of machine learning that involves neural networks with many layers. These deep neural networks can learn complex patterns and representations from large amounts of data.");
+        addAssignmentToProblemAnswer(pa_9_1_6, assignment9_1);
+        addProblemAnswerToAssignment(assignment9_1, pa_9_1_6);
+
+        ProblemAnswer pa_9_1_7 = createProblemAnswer("What is a training dataset in machine learning?", "A training dataset is a collection of data used to train a machine learning model. It includes input features and corresponding labels or outcomes that the model learns to predict.");
+        addAssignmentToProblemAnswer(pa_9_1_7, assignment9_1);
+        addProblemAnswerToAssignment(assignment9_1, pa_9_1_7);
+
+        ProblemAnswer pa_9_1_8 = createProblemAnswer("What is a test dataset in machine learning?", "A test dataset is a collection of data used to evaluate the performance of a machine learning model. It includes input features and corresponding labels that the model has not seen during training.");
+        addAssignmentToProblemAnswer(pa_9_1_8, assignment9_1);
+        addProblemAnswerToAssignment(assignment9_1, pa_9_1_8);
+
+        ProblemAnswer pa_9_1_9 = createProblemAnswer("What is overfitting in machine learning?", "Overfitting occurs when a machine learning model learns the training data too well, including noise and outliers. As a result, the model performs poorly on new, unseen data.");
+        addAssignmentToProblemAnswer(pa_9_1_9, assignment9_1);
+        addProblemAnswerToAssignment(assignment9_1, pa_9_1_9);
+
+        ProblemAnswer pa_9_1_10 = createProblemAnswer("What is cross-validation in machine learning?", "Cross-validation is a technique used to evaluate the performance of a machine learning model by splitting the data into multiple subsets. The model is trained and tested on different subsets to ensure it generalizes well to new data.");
+        addAssignmentToProblemAnswer(pa_9_1_10, assignment9_1);
+        addProblemAnswerToAssignment(assignment9_1, pa_9_1_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Machine Learning' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment9_2 = createAssignment("Neural Networks Assignment", faculty4, Date.from(LocalDate.of(2028, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus9, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_9_2_1 = createProblemAnswer("What are neural networks?", "Neural networks are a set of algorithms modeled after the human brain. They are used to recognize patterns and make predictions based on data.");
+        addAssignmentToProblemAnswer(pa_9_2_1, assignment9_2);
+        addProblemAnswerToAssignment(assignment9_2, pa_9_2_1);
+
+        ProblemAnswer pa_9_2_2 = createProblemAnswer("What is the basic architecture of a neural network?", "The basic architecture of a neural network consists of an input layer, hidden layers, and an output layer. Each layer is made up of interconnected nodes (neurons) that process and transmit information.");
+        addAssignmentToProblemAnswer(pa_9_2_2, assignment9_2);
+        addProblemAnswerToAssignment(assignment9_2, pa_9_2_2);
+
+        ProblemAnswer pa_9_2_3 = createProblemAnswer("What is backpropagation in neural networks?", "Backpropagation is a training algorithm used in neural networks to minimize the error by adjusting the weights of the connections between neurons. It involves propagating the error backward through the network and updating the weights to improve the model's accuracy.");
+        addAssignmentToProblemAnswer(pa_9_2_3, assignment9_2);
+        addProblemAnswerToAssignment(assignment9_2, pa_9_2_3);
+
+        ProblemAnswer pa_9_2_4 = createProblemAnswer("What is an activation function in neural networks?", "An activation function is a mathematical function applied to the output of a neuron to introduce non-linearity into the model. Common activation functions include ReLU, sigmoid, and tanh.");
+        addAssignmentToProblemAnswer(pa_9_2_4, assignment9_2);
+        addProblemAnswerToAssignment(assignment9_2, pa_9_2_4);
+
+        ProblemAnswer pa_9_2_5 = createProblemAnswer("What is a feedforward neural network?", "A feedforward neural network is a type of neural network where connections between the nodes do not form cycles. The information moves in one direction, from the input layer to the output layer, without looping back.");
+        addAssignmentToProblemAnswer(pa_9_2_5, assignment9_2);
+        addProblemAnswerToAssignment(assignment9_2, pa_9_2_5);
+
+        ProblemAnswer pa_9_2_6 = createProblemAnswer("What is a convolutional neural network (CNN)?", "A convolutional neural network (CNN) is a type of neural network designed for processing structured grid data, such as images. It uses convolutional layers to automatically detect and learn features from the input data.");
+        addAssignmentToProblemAnswer(pa_9_2_6, assignment9_2);
+        addProblemAnswerToAssignment(assignment9_2, pa_9_2_6);
+
+        ProblemAnswer pa_9_2_7 = createProblemAnswer("What is a recurrent neural network (RNN)?", "A recurrent neural network (RNN) is a type of neural network designed for sequential data processing. It uses feedback connections to maintain a memory of previous inputs, making it suitable for tasks such as time series prediction and natural language processing.");
+        addAssignmentToProblemAnswer(pa_9_2_7, assignment9_2);
+        addProblemAnswerToAssignment(assignment9_2, pa_9_2_7);
+
+        ProblemAnswer pa_9_2_8 = createProblemAnswer("What is the role of weights in a neural network?", "Weights are parameters in a neural network that determine the strength of the connections between neurons. During training, the weights are adjusted to minimize the error and improve the model's accuracy.");
+        addAssignmentToProblemAnswer(pa_9_2_8, assignment9_2);
+        addProblemAnswerToAssignment(assignment9_2, pa_9_2_8);
+
+        ProblemAnswer pa_9_2_9 = createProblemAnswer("What is the difference between supervised and unsupervised learning in the context of neural networks?", "In supervised learning, neural networks are trained on labeled data, where the input-output pairs are provided. In unsupervised learning, neural networks are trained on unlabeled data, and the model learns to find patterns and relationships without explicit input-output pairs.");
+        addAssignmentToProblemAnswer(pa_9_2_9, assignment9_2);
+        addProblemAnswerToAssignment(assignment9_2, pa_9_2_9);
+
+        ProblemAnswer pa_9_2_10 = createProblemAnswer("What is overfitting in neural networks?", "Overfitting occurs when a neural network learns the training data too well, including noise and outliers. As a result, the model performs poorly on new, unseen data. Techniques such as regularization and dropout can help mitigate overfitting.");
+        addAssignmentToProblemAnswer(pa_9_2_10, assignment9_2);
+        addProblemAnswerToAssignment(assignment9_2, pa_9_2_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Neural Networks' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment9_3 = createAssignment("Natural Language Processing Assignment", faculty4, Date.from(LocalDate.of(2028, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus9, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_9_3_1 = createProblemAnswer("What is natural language processing (NLP)?", "Natural language processing (NLP) is a field of AI that enables computers to understand, interpret, and generate human language. It involves a combination of linguistics, computer science, and machine learning.");
+        addAssignmentToProblemAnswer(pa_9_3_1, assignment9_3);
+        addProblemAnswerToAssignment(assignment9_3, pa_9_3_1);
+
+        ProblemAnswer pa_9_3_2 = createProblemAnswer("What are some common applications of NLP?", "Common applications of NLP include language translation, sentiment analysis, chatbots, speech recognition, and text summarization.");
+        addAssignmentToProblemAnswer(pa_9_3_2, assignment9_3);
+        addProblemAnswerToAssignment(assignment9_3, pa_9_3_2);
+
+        ProblemAnswer pa_9_3_3 = createProblemAnswer("What is tokenization in NLP?", "Tokenization is the process of breaking down a text into smaller units called tokens. Tokens can be words, phrases, or sentences, and are the basic building blocks for NLP tasks.");
+        addAssignmentToProblemAnswer(pa_9_3_3, assignment9_3);
+        addProblemAnswerToAssignment(assignment9_3, pa_9_3_3);
+
+        ProblemAnswer pa_9_3_4 = createProblemAnswer("What is sentiment analysis?", "Sentiment analysis is an NLP technique used to determine the emotional tone of a piece of text. It classifies the text as positive, negative, or neutral based on the words and context.");
+        addAssignmentToProblemAnswer(pa_9_3_4, assignment9_3);
+        addProblemAnswerToAssignment(assignment9_3, pa_9_3_4);
+
+        ProblemAnswer pa_9_3_5 = createProblemAnswer("What is named entity recognition (NER)?", "Named entity recognition (NER) is an NLP technique used to identify and classify named entities in a text, such as names of people, organizations, locations, dates, and other proper nouns.");
+        addAssignmentToProblemAnswer(pa_9_3_5, assignment9_3);
+        addProblemAnswerToAssignment(assignment9_3, pa_9_3_5);
+
+        ProblemAnswer pa_9_3_6 = createProblemAnswer("What is the bag-of-words model?", "The bag-of-words model is an NLP technique used to represent text data as a collection of individual words, disregarding grammar and word order. It is used for text classification and information retrieval tasks.");
+        addAssignmentToProblemAnswer(pa_9_3_6, assignment9_3);
+        addProblemAnswerToAssignment(assignment9_3, pa_9_3_6);
+
+        ProblemAnswer pa_9_3_7 = createProblemAnswer("What is TF-IDF in NLP?", "TF-IDF (Term Frequency-Inverse Document Frequency) is a statistical measure used to evaluate the importance of a word in a document relative to a collection of documents. It is used for text mining and information retrieval tasks.");
+        addAssignmentToProblemAnswer(pa_9_3_7, assignment9_3);
+        addProblemAnswerToAssignment(assignment9_3, pa_9_3_7);
+
+        ProblemAnswer pa_9_3_8 = createProblemAnswer("What is a language model in NLP?", "A language model is a probabilistic model used to predict the likelihood of a sequence of words. It is used in various NLP tasks, such as text generation, machine translation, and speech recognition.");
+        addAssignmentToProblemAnswer(pa_9_3_8, assignment9_3);
+        addProblemAnswerToAssignment(assignment9_3, pa_9_3_8);
+
+        ProblemAnswer pa_9_3_9 = createProblemAnswer("How do you preprocess text data for NLP tasks?", "Preprocessing text data for NLP tasks involves steps such as tokenization, removing stop words, stemming, lemmatization, and converting text to lowercase. These steps help to normalize and clean the text data for analysis.");
+        addAssignmentToProblemAnswer(pa_9_3_9, assignment9_3);
+        addProblemAnswerToAssignment(assignment9_3, pa_9_3_9);
+
+        ProblemAnswer pa_9_3_10 = createProblemAnswer("What is word embedding in NLP?", "Word embedding is a technique used to represent words as dense vectors in a continuous vector space. It captures the semantic relationships between words based on their context. Common word embedding methods include Word2Vec, GloVe, and FastText.");
+        addAssignmentToProblemAnswer(pa_9_3_10, assignment9_3);
+        addProblemAnswerToAssignment(assignment9_3, pa_9_3_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Natural Language Processing' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment10_1 = createAssignment("Threat Analysis Assignment", faculty5, Date.from(LocalDate.of(2028, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_10_1_1 = createProblemAnswer("What is threat analysis?", "Threat analysis involves identifying potential security threats and vulnerabilities in a system. It is a critical process in ensuring the security and integrity of information and assets.");
+        addAssignmentToProblemAnswer(pa_10_1_1, assignment10_1);
+        addProblemAnswerToAssignment(assignment10_1, pa_10_1_1);
+
+        ProblemAnswer pa_10_1_2 = createProblemAnswer("What are the key steps in threat analysis?", "The key steps in threat analysis include: (1) Identifying assets and resources, (2) Identifying potential threats, (3) Assessing vulnerabilities, (4) Evaluating risks, and (5) Implementing mitigation strategies.");
+        addAssignmentToProblemAnswer(pa_10_1_2, assignment10_1);
+        addProblemAnswerToAssignment(assignment10_1, pa_10_1_2);
+
+        ProblemAnswer pa_10_1_3 = createProblemAnswer("What are some common types of security threats?", "Common types of security threats include malware, phishing attacks, denial-of-service (DoS) attacks, man-in-the-middle attacks, and insider threats.");
+        addAssignmentToProblemAnswer(pa_10_1_3, assignment10_1);
+        addProblemAnswerToAssignment(assignment10_1, pa_10_1_3);
+
+        ProblemAnswer pa_10_1_4 = createProblemAnswer("What is a vulnerability in the context of threat analysis?", "A vulnerability is a weakness or flaw in a system that can be exploited by a threat actor to gain unauthorized access or cause harm. Identifying and addressing vulnerabilities is essential for maintaining security.");
+        addAssignmentToProblemAnswer(pa_10_1_4, assignment10_1);
+        addProblemAnswerToAssignment(assignment10_1, pa_10_1_4);
+
+        ProblemAnswer pa_10_1_5 = createProblemAnswer("What is risk assessment in threat analysis?", "Risk assessment involves evaluating the potential impact and likelihood of identified threats exploiting vulnerabilities. It helps prioritize security efforts and allocate resources effectively.");
+        addAssignmentToProblemAnswer(pa_10_1_5, assignment10_1);
+        addProblemAnswerToAssignment(assignment10_1, pa_10_1_5);
+
+        ProblemAnswer pa_10_1_6 = createProblemAnswer("What are mitigation strategies in threat analysis?", "Mitigation strategies are actions taken to reduce or eliminate the risk of security threats. These can include implementing security controls, patching vulnerabilities, and conducting regular security audits.");
+        addAssignmentToProblemAnswer(pa_10_1_6, assignment10_1);
+        addProblemAnswerToAssignment(assignment10_1, pa_10_1_6);
+
+        ProblemAnswer pa_10_1_7 = createProblemAnswer("What is the role of threat intelligence in threat analysis?", "Threat intelligence involves collecting and analyzing information about potential threats to improve the effectiveness of threat analysis and mitigation efforts. It helps organizations stay informed about emerging threats and attack techniques.");
+        addAssignmentToProblemAnswer(pa_10_1_7, assignment10_1);
+        addProblemAnswerToAssignment(assignment10_1, pa_10_1_7);
+
+        ProblemAnswer pa_10_1_8 = createProblemAnswer("What is the importance of regular security audits in threat analysis?", "Regular security audits help identify and address vulnerabilities, ensure compliance with security policies, and improve overall security posture. They are essential for maintaining the effectiveness of threat analysis and mitigation strategies.");
+        addAssignmentToProblemAnswer(pa_10_1_8, assignment10_1);
+        addProblemAnswerToAssignment(assignment10_1, pa_10_1_8);
+
+        ProblemAnswer pa_10_1_9 = createProblemAnswer("How can organizations improve their threat analysis processes?", "Organizations can improve their threat analysis processes by adopting a proactive approach, leveraging threat intelligence, conducting regular security training, and continuously monitoring and updating security measures.");
+        addAssignmentToProblemAnswer(pa_10_1_9, assignment10_1);
+        addProblemAnswerToAssignment(assignment10_1, pa_10_1_9);
+
+        ProblemAnswer pa_10_1_10 = createProblemAnswer("What is the role of a security operations center (SOC) in threat analysis?", "A security operations center (SOC) is a centralized unit that monitors and analyzes security incidents in real-time. It plays a crucial role in threat analysis by providing continuous monitoring, incident response, and threat intelligence.");
+        addAssignmentToProblemAnswer(pa_10_1_10, assignment10_1);
+        addProblemAnswerToAssignment(assignment10_1, pa_10_1_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Threat Analysis' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment10_2 = createAssignment("Encryption Assignment", faculty5, Date.from(LocalDate.of(2028, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_10_2_1 = createProblemAnswer("What is encryption?", "Encryption is the process of converting information into a secure format to prevent unauthorized access. It ensures the confidentiality and integrity of data.");
+        addAssignmentToProblemAnswer(pa_10_2_1, assignment10_2);
+        addProblemAnswerToAssignment(assignment10_2, pa_10_2_1);
+
+        ProblemAnswer pa_10_2_2 = createProblemAnswer("What are the two main types of encryption?", "The two main types of encryption are symmetric encryption and asymmetric encryption. Symmetric encryption uses the same key for both encryption and decryption, while asymmetric encryption uses a pair of public and private keys.");
+        addAssignmentToProblemAnswer(pa_10_2_2, assignment10_2);
+        addProblemAnswerToAssignment(assignment10_2, pa_10_2_2);
+
+        ProblemAnswer pa_10_2_3 = createProblemAnswer("What is a cryptographic algorithm?", "A cryptographic algorithm is a mathematical formula used to encrypt and decrypt data. Examples include AES (Advanced Encryption Standard), RSA (Rivest-Shamir-Adleman), and DES (Data Encryption Standard).");
+        addAssignmentToProblemAnswer(pa_10_2_3, assignment10_2);
+        addProblemAnswerToAssignment(assignment10_2, pa_10_2_3);
+
+        ProblemAnswer pa_10_2_4 = createProblemAnswer("What is the importance of encryption in protecting sensitive data?", "Encryption is essential for protecting sensitive data from unauthorized access, ensuring data confidentiality, and maintaining privacy. It is used in various applications, such as secure communications, financial transactions, and data storage.");
+        addAssignmentToProblemAnswer(pa_10_2_4, assignment10_2);
+        addProblemAnswerToAssignment(assignment10_2, pa_10_2_4);
+
+        ProblemAnswer pa_10_2_5 = createProblemAnswer("What is an encryption key?", "An encryption key is a piece of information used by a cryptographic algorithm to transform plaintext into ciphertext and vice versa. The security of the encrypted data depends on the strength and secrecy of the key.");
+        addAssignmentToProblemAnswer(pa_10_2_5, assignment10_2);
+        addProblemAnswerToAssignment(assignment10_2, pa_10_2_5);
+
+        ProblemAnswer pa_10_2_6 = createProblemAnswer("What is symmetric encryption?", "Symmetric encryption is a type of encryption that uses the same key for both encryption and decryption. It is efficient and fast, making it suitable for encrypting large amounts of data.");
+        addAssignmentToProblemAnswer(pa_10_2_6, assignment10_2);
+        addProblemAnswerToAssignment(assignment10_2, pa_10_2_6);
+
+        ProblemAnswer pa_10_2_7 = createProblemAnswer("What is asymmetric encryption?", "Asymmetric encryption is a type of encryption that uses a pair of keys: a public key for encryption and a private key for decryption. It provides a higher level of security and is commonly used for secure communications and digital signatures.");
+        addAssignmentToProblemAnswer(pa_10_2_7, assignment10_2);
+        addProblemAnswerToAssignment(assignment10_2, pa_10_2_7);
+
+        ProblemAnswer pa_10_2_8 = createProblemAnswer("What is the difference between encryption and hashing?", "Encryption is the process of converting plaintext into ciphertext using a key, and it can be reversed with the correct key. Hashing is a one-way process that converts data into a fixed-length hash value, which cannot be easily reversed. Hashing is used for data integrity and password storage.");
+        addAssignmentToProblemAnswer(pa_10_2_8, assignment10_2);
+        addProblemAnswerToAssignment(assignment10_2, pa_10_2_8);
+
+        ProblemAnswer pa_10_2_9 = createProblemAnswer("What is end-to-end encryption?", "End-to-end encryption ensures that data is encrypted on the sender's device and decrypted only on the recipient's device. It prevents intermediaries, such as service providers, from accessing the data during transmission.");
+        addAssignmentToProblemAnswer(pa_10_2_9, assignment10_2);
+        addProblemAnswerToAssignment(assignment10_2, pa_10_2_9);
+
+        ProblemAnswer pa_10_2_10 = createProblemAnswer("What is a digital certificate?", "A digital certificate is an electronic document that verifies the identity of an entity and binds a public key to that entity. It is issued by a trusted certificate authority (CA) and is used to establish secure communications and authenticate users.");
+        addAssignmentToProblemAnswer(pa_10_2_10, assignment10_2);
+        addProblemAnswerToAssignment(assignment10_2, pa_10_2_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Encryption' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment10_3 = createAssignment("Network Security Assignment", faculty5, Date.from(LocalDate.of(2028, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_10_3_1 = createProblemAnswer("What is network security?", "Network security involves measures to protect data during transmission across networks. It ensures the confidentiality, integrity, and availability of data by preventing unauthorized access and attacks.");
+        addAssignmentToProblemAnswer(pa_10_3_1, assignment10_3);
+        addProblemAnswerToAssignment(assignment10_3, pa_10_3_1);
+
+        ProblemAnswer pa_10_3_2 = createProblemAnswer("What is a firewall?", "A firewall is a network security device that monitors and controls incoming and outgoing network traffic. It establishes a barrier between a trusted internal network and untrusted external networks to prevent unauthorized access.");
+        addAssignmentToProblemAnswer(pa_10_3_2, assignment10_3);
+        addProblemAnswerToAssignment(assignment10_3, pa_10_3_2);
+
+        ProblemAnswer pa_10_3_3 = createProblemAnswer("What is an intrusion detection system (IDS)?", "An intrusion detection system (IDS) is a security tool used to detect and respond to potential security breaches and attacks. It monitors network traffic for suspicious activity and alerts administrators to take action.");
+        addAssignmentToProblemAnswer(pa_10_3_3, assignment10_3);
+        addProblemAnswerToAssignment(assignment10_3, pa_10_3_3);
+
+        ProblemAnswer pa_10_3_4 = createProblemAnswer("What is the difference between an IDS and an IPS?", "An intrusion detection system (IDS) monitors network traffic and alerts administrators to potential security threats, while an intrusion prevention system (IPS) actively blocks and prevents malicious traffic from entering the network.");
+        addAssignmentToProblemAnswer(pa_10_3_4, assignment10_3);
+        addProblemAnswerToAssignment(assignment10_3, pa_10_3_4);
+
+        ProblemAnswer pa_10_3_5 = createProblemAnswer("What is network segmentation?", "Network segmentation involves dividing a network into smaller, isolated segments to enhance security and control traffic flow. It helps contain potential breaches and limits the spread of attacks.");
+        addAssignmentToProblemAnswer(pa_10_3_5, assignment10_3);
+        addProblemAnswerToAssignment(assignment10_3, pa_10_3_5);
+
+        ProblemAnswer pa_10_3_6 = createProblemAnswer("What is a virtual private network (VPN)?", "A virtual private network (VPN) is a secure connection between a user's device and a private network over the internet. It encrypts data transmission and provides anonymity by masking the user's IP address.");
+        addAssignmentToProblemAnswer(pa_10_3_6, assignment10_3);
+        addProblemAnswerToAssignment(assignment10_3, pa_10_3_6);
+
+        ProblemAnswer pa_10_3_7 = createProblemAnswer("What is the role of encryption in network security?", "Encryption plays a crucial role in network security by converting data into a secure format during transmission. It ensures that only authorized parties can access and interpret the data, protecting it from eavesdropping and tampering.");
+        addAssignmentToProblemAnswer(pa_10_3_7, assignment10_3);
+        addProblemAnswerToAssignment(assignment10_3, pa_10_3_7);
+
+        ProblemAnswer pa_10_3_8 = createProblemAnswer("What is a secure socket layer (SSL) and transport layer security (TLS)?", "Secure Socket Layer (SSL) and Transport Layer Security (TLS) are cryptographic protocols that provide secure communication over a computer network. They encrypt data transmitted between web servers and browsers, ensuring data privacy and integrity.");
+        addAssignmentToProblemAnswer(pa_10_3_8, assignment10_3);
+        addProblemAnswerToAssignment(assignment10_3, pa_10_3_8);
+
+        ProblemAnswer pa_10_3_9 = createProblemAnswer("What is a network access control (NAC)?", "Network access control (NAC) is a security solution that restricts unauthorized devices and users from accessing a network. It enforces policies, authenticates devices, and ensures compliance with security standards.");
+        addAssignmentToProblemAnswer(pa_10_3_9, assignment10_3);
+        addProblemAnswerToAssignment(assignment10_3, pa_10_3_9);
+
+        ProblemAnswer pa_10_3_10 = createProblemAnswer("What is the importance of network monitoring?", "Network monitoring involves continuously observing network activity to detect and respond to security threats, performance issues, and anomalies. It helps maintain network integrity, availability, and security by identifying and mitigating potential risks.");
+        addAssignmentToProblemAnswer(pa_10_3_10, assignment10_3);
+        addProblemAnswerToAssignment(assignment10_3, pa_10_3_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Network Security' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment10_4 = createAssignment("Secure Coding Assignment", faculty5, Date.from(LocalDate.of(2028, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_10_4_1 = createProblemAnswer("What is secure coding?", "Secure coding involves writing software in a way that minimizes vulnerabilities and prevents security breaches. It follows best practices and guidelines to ensure the security and integrity of the software.");
+        addAssignmentToProblemAnswer(pa_10_4_1, assignment10_4);
+        addProblemAnswerToAssignment(assignment10_4, pa_10_4_1);
+
+        ProblemAnswer pa_10_4_2 = createProblemAnswer("What are common security flaws in software development?", "Common security flaws include buffer overflows, SQL injection, cross-site scripting (XSS), cross-site request forgery (CSRF), and improper error handling.");
+        addAssignmentToProblemAnswer(pa_10_4_2, assignment10_4);
+        addProblemAnswerToAssignment(assignment10_4, pa_10_4_2);
+
+        ProblemAnswer pa_10_4_3 = createProblemAnswer("What is SQL injection?", "SQL injection is a type of attack where an attacker inserts malicious SQL code into a query, allowing them to manipulate the database. Proper input validation and parameterized queries can prevent SQL injection.");
+        addAssignmentToProblemAnswer(pa_10_4_3, assignment10_4);
+        addProblemAnswerToAssignment(assignment10_4, pa_10_4_3);
+
+        ProblemAnswer pa_10_4_4 = createProblemAnswer("What is cross-site scripting (XSS)?", "Cross-site scripting (XSS) is a security vulnerability where an attacker injects malicious scripts into web pages viewed by users. Proper input validation and output encoding can prevent XSS attacks.");
+        addAssignmentToProblemAnswer(pa_10_4_4, assignment10_4);
+        addProblemAnswerToAssignment(assignment10_4, pa_10_4_4);
+
+        ProblemAnswer pa_10_4_5 = createProblemAnswer("What is cross-site request forgery (CSRF)?", "Cross-site request forgery (CSRF) is a type of attack where an attacker tricks a user into performing actions on a web application without their consent. Using anti-CSRF tokens and validating user sessions can prevent CSRF attacks.");
+        addAssignmentToProblemAnswer(pa_10_4_5, assignment10_4);
+        addProblemAnswerToAssignment(assignment10_4, pa_10_4_5);
+
+        ProblemAnswer pa_10_4_6 = createProblemAnswer("How can you prevent buffer overflow vulnerabilities?", "Buffer overflow vulnerabilities can be prevented by using safe programming practices, such as bounds checking, input validation, and using functions that limit buffer size.");
+        addAssignmentToProblemAnswer(pa_10_4_6, assignment10_4);
+        addProblemAnswerToAssignment(assignment10_4, pa_10_4_6);
+
+        ProblemAnswer pa_10_4_7 = createProblemAnswer("What is input validation in secure coding?", "Input validation involves checking and sanitizing user inputs to ensure they meet the expected format and do not contain malicious data. It helps prevent security vulnerabilities like SQL injection and XSS.");
+        addAssignmentToProblemAnswer(pa_10_4_7, assignment10_4);
+        addProblemAnswerToAssignment(assignment10_4, pa_10_4_7);
+
+        ProblemAnswer pa_10_4_8 = createProblemAnswer("What is the principle of least privilege?", "The principle of least privilege involves granting users and systems the minimum level of access necessary to perform their tasks. It reduces the risk of unauthorized access and potential damage.");
+        addAssignmentToProblemAnswer(pa_10_4_8, assignment10_4);
+        addProblemAnswerToAssignment(assignment10_4, pa_10_4_8);
+
+        ProblemAnswer pa_10_4_9 = createProblemAnswer("Why is proper error handling important in secure coding?", "Proper error handling is important because it prevents revealing sensitive information to attackers. It ensures that errors are logged securely and that users receive generic error messages without exposing system details.");
+        addAssignmentToProblemAnswer(pa_10_4_9, assignment10_4);
+        addProblemAnswerToAssignment(assignment10_4, pa_10_4_9);
+
+        ProblemAnswer pa_10_4_10 = createProblemAnswer("What are best practices for maintaining software security?", "Best practices for maintaining software security include regular code reviews, using secure libraries and frameworks, conducting security testing, keeping software updated, and following secure coding guidelines.");
+        addAssignmentToProblemAnswer(pa_10_4_10, assignment10_4);
+        addProblemAnswerToAssignment(assignment10_4, pa_10_4_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Secure Coding' unit created with  problem answers, due date, faculty, and syllabus.");
 
 
         attendanceRepo.saveAllAndFlush(Arrays.asList(attendance1, attendance2, attendance3, attendance4, attendance5, attendance6, attendance7, attendance8, attendance9, attendance10, attendance11, attendance12, attendance13, attendance14, attendance15, attendance16, attendance17, attendance18, attendance19, attendance20));

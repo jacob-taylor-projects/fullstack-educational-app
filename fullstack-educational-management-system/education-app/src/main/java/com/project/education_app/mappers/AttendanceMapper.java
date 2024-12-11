@@ -9,7 +9,7 @@ import org.mapstruct.factory.Mappers;
 
 import java.util.List;
 
-@Mapper(componentModel = "spring", uses = { AttendanceItemMapper.class })
+@Mapper(componentModel = "spring", uses = {})
 public interface AttendanceMapper {
     AttendanceMapper INSTANCE= Mappers.getMapper(AttendanceMapper.class);
     AttendanceDto entityToDto(Attendance attendance);
