@@ -3150,6 +3150,1708 @@ public class Seeder implements CommandLineRunner {
 
 // Output for confirmation
         System.out.println("Assignment for 'Secure Coding' unit created with  problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment11_1 = createAssignment("Limits Assignment", faculty1, Date.from(LocalDate.of(2028, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_11_1_1 = createProblemAnswer("What is a limit in calculus?", "A limit is the value that a function approaches as the input approaches a certain value. It is a foundational concept in calculus used to define continuity, derivatives, and integrals.");
+        addAssignmentToProblemAnswer(pa_11_1_1, assignment11_1);
+        addProblemAnswerToAssignment(assignment11_1, pa_11_1_1);
+
+        ProblemAnswer pa_11_1_2 = createProblemAnswer("How do you calculate the limit of a function as x approaches a value?", "To calculate the limit of a function as x approaches a value, substitute the value into the function. If the function is not defined at that point, use algebraic manipulation or limit laws to simplify and find the limit.");
+        addAssignmentToProblemAnswer(pa_11_1_2, assignment11_1);
+        addProblemAnswerToAssignment(assignment11_1, pa_11_1_2);
+
+        ProblemAnswer pa_11_1_3 = createProblemAnswer("What are one-sided limits?", "One-sided limits are limits that approach a specific value from only one side—either from the left (left-hand limit) or the right (right-hand limit). They are used to understand the behavior of functions at points of discontinuity.");
+        addAssignmentToProblemAnswer(pa_11_1_3, assignment11_1);
+        addProblemAnswerToAssignment(assignment11_1, pa_11_1_3);
+
+        ProblemAnswer pa_11_1_4 = createProblemAnswer("What is the limit law of sums?", "The limit law of sums states that the limit of the sum of two functions is equal to the sum of their limits. Mathematically, if lim(x->c)f(x) = L and lim(x->c)g(x) = M, then lim(x->c)[f(x) + g(x)] = L + M.");
+        addAssignmentToProblemAnswer(pa_11_1_4, assignment11_1);
+        addProblemAnswerToAssignment(assignment11_1, pa_11_1_4);
+
+        ProblemAnswer pa_11_1_5 = createProblemAnswer("What is the epsilon-delta definition of a limit?", "The epsilon-delta definition of a limit formalizes the concept of a limit. It states that for every ε > 0, there exists a δ > 0 such that if 0 < |x - c| < δ, then |f(x) - L| < ε, where L is the limit as x approaches c.");
+        addAssignmentToProblemAnswer(pa_11_1_5, assignment11_1);
+        addProblemAnswerToAssignment(assignment11_1, pa_11_1_5);
+
+        ProblemAnswer pa_11_1_6 = createProblemAnswer("What is an infinite limit?", "An infinite limit occurs when the values of a function increase or decrease without bound as the input approaches a certain value. Mathematically, it is represented as lim(x->c)f(x) = ±∞.");
+        addAssignmentToProblemAnswer(pa_11_1_6, assignment11_1);
+        addProblemAnswerToAssignment(assignment11_1, pa_11_1_6);
+
+        ProblemAnswer pa_11_1_7 = createProblemAnswer("How do you evaluate a limit at infinity?", "To evaluate a limit at infinity, analyze the behavior of the function as the input grows larger without bound. Simplify the function if necessary and identify the dominant terms to determine the limit.");
+        addAssignmentToProblemAnswer(pa_11_1_7, assignment11_1);
+        addProblemAnswerToAssignment(assignment11_1, pa_11_1_7);
+
+        ProblemAnswer pa_11_1_8 = createProblemAnswer("What is a removable discontinuity?", "A removable discontinuity occurs when a function is not defined at a point, but the limit exists at that point. The discontinuity can be 'removed' by redefining the function value to match the limit.");
+        addAssignmentToProblemAnswer(pa_11_1_8, assignment11_1);
+        addProblemAnswerToAssignment(assignment11_1, pa_11_1_8);
+
+        ProblemAnswer pa_11_1_9 = createProblemAnswer("What is the Squeeze Theorem?", "The Squeeze Theorem states that if f(x) ≤ g(x) ≤ h(x) for all x in an interval around c (except possibly at c), and lim(x->c)f(x) = lim(x->c)h(x) = L, then lim(x->c)g(x) = L.");
+        addAssignmentToProblemAnswer(pa_11_1_9, assignment11_1);
+        addProblemAnswerToAssignment(assignment11_1, pa_11_1_9);
+
+        ProblemAnswer pa_11_1_10 = createProblemAnswer("What is the importance of limits in calculus?", "Limits are important in calculus as they provide a rigorous way to define continuity, derivatives, and integrals. They help understand the behavior of functions at points of interest and are foundational to many concepts in calculus.");
+        addAssignmentToProblemAnswer(pa_11_1_10, assignment11_1);
+        addProblemAnswerToAssignment(assignment11_1, pa_11_1_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Limits' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment11_2 = createAssignment("Derivatives Assignment", faculty1, Date.from(LocalDate.of(2028, 9, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_11_2_1 = createProblemAnswer("What is a derivative in calculus?", "A derivative represents the rate at which a function changes as its input changes. It is a fundamental concept in calculus used to determine the slope of a function at any given point.");
+        addAssignmentToProblemAnswer(pa_11_2_1, assignment11_2);
+        addProblemAnswerToAssignment(assignment11_2, pa_11_2_1);
+
+        ProblemAnswer pa_11_2_2 = createProblemAnswer("How do you calculate the derivative of a function?", "The derivative of a function is calculated using differentiation techniques. The most common method is the limit definition: f'(x) = lim(h->0)[f(x+h) - f(x)]/h.");
+        addAssignmentToProblemAnswer(pa_11_2_2, assignment11_2);
+        addProblemAnswerToAssignment(assignment11_2, pa_11_2_2);
+
+        ProblemAnswer pa_11_2_3 = createProblemAnswer("What are some common rules of differentiation?", "Common rules of differentiation include the power rule, product rule, quotient rule, and chain rule. These rules simplify the process of finding derivatives for various types of functions.");
+        addAssignmentToProblemAnswer(pa_11_2_3, assignment11_2);
+        addProblemAnswerToAssignment(assignment11_2, pa_11_2_3);
+
+        ProblemAnswer pa_11_2_4 = createProblemAnswer("What is the power rule in differentiation?", "The power rule states that the derivative of x^n (where n is a constant) is n*x^(n-1). For example, the derivative of x^3 is 3*x^2.");
+        addAssignmentToProblemAnswer(pa_11_2_4, assignment11_2);
+        addProblemAnswerToAssignment(assignment11_2, pa_11_2_4);
+
+        ProblemAnswer pa_11_2_5 = createProblemAnswer("What is the product rule in differentiation?", "The product rule is used to find the derivative of the product of two functions. It states that (uv)' = u'v + uv', where u and v are functions of x.");
+        addAssignmentToProblemAnswer(pa_11_2_5, assignment11_2);
+        addProblemAnswerToAssignment(assignment11_2, pa_11_2_5);
+
+        ProblemAnswer pa_11_2_6 = createProblemAnswer("What is the quotient rule in differentiation?", "The quotient rule is used to find the derivative of the quotient of two functions. It states that (u/v)' = (u'v - uv')/v^2, where u and v are functions of x.");
+        addAssignmentToProblemAnswer(pa_11_2_6, assignment11_2);
+        addProblemAnswerToAssignment(assignment11_2, pa_11_2_6);
+
+        ProblemAnswer pa_11_2_7 = createProblemAnswer("What is the chain rule in differentiation?", "The chain rule is used to find the derivative of a composite function. It states that if y = f(g(x)), then dy/dx = f'(g(x)) * g'(x).");
+        addAssignmentToProblemAnswer(pa_11_2_7, assignment11_2);
+        addProblemAnswerToAssignment(assignment11_2, pa_11_2_7);
+
+        ProblemAnswer pa_11_2_8 = createProblemAnswer("What are higher-order derivatives?", "Higher-order derivatives are derivatives of derivatives. The second derivative represents the rate of change of the first derivative, and so on. They provide information about the concavity and acceleration of a function.");
+        addAssignmentToProblemAnswer(pa_11_2_8, assignment11_2);
+        addProblemAnswerToAssignment(assignment11_2, pa_11_2_8);
+
+        ProblemAnswer pa_11_2_9 = createProblemAnswer("What is implicit differentiation?", "Implicit differentiation is used to find the derivative of functions defined implicitly, rather than explicitly. It involves differentiating both sides of an equation with respect to x and solving for dy/dx.");
+        addAssignmentToProblemAnswer(pa_11_2_9, assignment11_2);
+        addProblemAnswerToAssignment(assignment11_2, pa_11_2_9);
+
+        ProblemAnswer pa_11_2_10 = createProblemAnswer("What are some applications of derivatives?", "Derivatives have many applications in real-world problems, including finding the rate of change, optimizing functions, determining maximum and minimum values, and modeling motion and growth.");
+        addAssignmentToProblemAnswer(pa_11_2_10, assignment11_2);
+        addProblemAnswerToAssignment(assignment11_2, pa_11_2_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Derivatives' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment11_3 = createAssignment("Integrals Assignment", faculty1, Date.from(LocalDate.of(2028, 10, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_11_3_1 = createProblemAnswer("What is an integral in calculus?", "An integral represents the accumulation of quantities over a continuous interval. It is the inverse operation of differentiation and is used to calculate areas, volumes, and other related quantities.");
+        addAssignmentToProblemAnswer(pa_11_3_1, assignment11_3);
+        addProblemAnswerToAssignment(assignment11_3, pa_11_3_1);
+
+        ProblemAnswer pa_11_3_2 = createProblemAnswer("What is the Fundamental Theorem of Calculus?", "The Fundamental Theorem of Calculus links differentiation and integration. It states that if F is an antiderivative of f on an interval [a, b], then the integral of f from a to b is F(b) - F(a).");
+        addAssignmentToProblemAnswer(pa_11_3_2, assignment11_3);
+        addProblemAnswerToAssignment(assignment11_3, pa_11_3_2);
+
+        ProblemAnswer pa_11_3_3 = createProblemAnswer("How do you calculate a definite integral?", "To calculate a definite integral, find the antiderivative of the integrand and evaluate it at the upper and lower limits of integration. Subtract the value at the lower limit from the value at the upper limit.");
+        addAssignmentToProblemAnswer(pa_11_3_3, assignment11_3);
+        addProblemAnswerToAssignment(assignment11_3, pa_11_3_3);
+
+        ProblemAnswer pa_11_3_4 = createProblemAnswer("What is an indefinite integral?", "An indefinite integral represents the family of all antiderivatives of a function. It is expressed with the integral symbol and includes a constant of integration (C), written as ∫f(x)dx = F(x) + C.");
+        addAssignmentToProblemAnswer(pa_11_3_4, assignment11_3);
+        addProblemAnswerToAssignment(assignment11_3, pa_11_3_4);
+
+        ProblemAnswer pa_11_3_5 = createProblemAnswer("What is the method of integration by substitution?", "Integration by substitution is a method used to simplify the process of integration by changing the variable of integration. It involves substituting a new variable and its differential to rewrite the integral in a simpler form.");
+        addAssignmentToProblemAnswer(pa_11_3_5, assignment11_3);
+        addProblemAnswerToAssignment(assignment11_3, pa_11_3_5);
+
+        ProblemAnswer pa_11_3_6 = createProblemAnswer("What is integration by parts?", "Integration by parts is a method used to integrate the product of two functions. It is based on the formula ∫u dv = uv - ∫v du, where u and v are functions of x.");
+        addAssignmentToProblemAnswer(pa_11_3_6, assignment11_3);
+        addProblemAnswerToAssignment(assignment11_3, pa_11_3_6);
+
+        ProblemAnswer pa_11_3_7 = createProblemAnswer("What is the method of partial fractions?", "The method of partial fractions is used to integrate rational functions by expressing them as a sum of simpler fractions. It simplifies the integration process by breaking down complex fractions into more manageable parts.");
+        addAssignmentToProblemAnswer(pa_11_3_7, assignment11_3);
+        addProblemAnswerToAssignment(assignment11_3, pa_11_3_7);
+
+        ProblemAnswer pa_11_3_8 = createProblemAnswer("How do you find the area under a curve using integrals?", "The area under a curve can be found by calculating the definite integral of the function that represents the curve over the desired interval. The integral gives the accumulated area between the curve and the x-axis.");
+        addAssignmentToProblemAnswer(pa_11_3_8, assignment11_3);
+        addProblemAnswerToAssignment(assignment11_3, pa_11_3_8);
+
+        ProblemAnswer pa_11_3_9 = createProblemAnswer("What is the volume of a solid of revolution?", "The volume of a solid of revolution is found by rotating a region around an axis and calculating the integral of the resulting solid. It can be calculated using the disk method or the shell method.");
+        addAssignmentToProblemAnswer(pa_11_3_9, assignment11_3);
+        addProblemAnswerToAssignment(assignment11_3, pa_11_3_9);
+
+        ProblemAnswer pa_11_3_10 = createProblemAnswer("What are some applications of integrals?", "Integrals have many applications in various fields, including calculating areas and volumes, determining displacement and velocity, finding work done by a force, and modeling growth and decay processes.");
+        addAssignmentToProblemAnswer(pa_11_3_10, assignment11_3);
+        addProblemAnswerToAssignment(assignment11_3, pa_11_3_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Integrals' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment11_4 = createAssignment("Applications of Calculus Assignment", faculty1, Date.from(LocalDate.of(2028, 11, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_11_4_1 = createProblemAnswer("How is calculus used in physics?", "Calculus is used in physics to model and analyze the behavior of physical systems. It helps describe motion, forces, and energy through derivatives and integrals, such as in calculating velocity, acceleration, and work.");
+        addAssignmentToProblemAnswer(pa_11_4_1, assignment11_4);
+        addProblemAnswerToAssignment(assignment11_4, pa_11_4_1);
+
+        ProblemAnswer pa_11_4_2 = createProblemAnswer("What are some applications of calculus in engineering?", "Calculus is used in engineering for designing and analyzing systems, optimizing processes, and solving differential equations. It is essential in fields like civil engineering (structural analysis), mechanical engineering (thermodynamics), and electrical engineering (circuit analysis).");
+        addAssignmentToProblemAnswer(pa_11_4_2, assignment11_4);
+        addProblemAnswerToAssignment(assignment11_4, pa_11_4_2);
+
+        ProblemAnswer pa_11_4_3 = createProblemAnswer("How is calculus used in economics?", "In economics, calculus is used to model and analyze economic systems, optimize production and consumption, and study changes in variables over time. It helps in calculating marginal cost, revenue, and profit, and in solving differential equations in economic models.");
+        addAssignmentToProblemAnswer(pa_11_4_3, assignment11_4);
+        addProblemAnswerToAssignment(assignment11_4, pa_11_4_3);
+
+        ProblemAnswer pa_11_4_4 = createProblemAnswer("What is the role of calculus in biology?", "Calculus is used in biology to model population dynamics, spread of diseases, and changes in biological systems. It helps in understanding growth rates, decay processes, and interactions between species.");
+        addAssignmentToProblemAnswer(pa_11_4_4, assignment11_4);
+        addProblemAnswerToAssignment(assignment11_4, pa_11_4_4);
+
+        ProblemAnswer pa_11_4_5 = createProblemAnswer("How is calculus used in computer science?", "Calculus is used in computer science for algorithm analysis, computer graphics, machine learning, and simulations. It helps in optimizing algorithms, modeling continuous data, and solving differential equations in numerical methods.");
+        addAssignmentToProblemAnswer(pa_11_4_5, assignment11_4);
+        addProblemAnswerToAssignment(assignment11_4, pa_11_4_5);
+
+        ProblemAnswer pa_11_4_6 = createProblemAnswer("How does calculus help in environmental science?", "In environmental science, calculus is used to model and analyze environmental systems, such as population growth, pollution dispersion, and climate change. It helps in understanding the rates of change and accumulation in natural processes.");
+        addAssignmentToProblemAnswer(pa_11_4_6, assignment11_4);
+        addProblemAnswerToAssignment(assignment11_4, pa_11_4_6);
+
+        ProblemAnswer pa_11_4_7 = createProblemAnswer("What are some applications of calculus in medicine?", "Calculus is used in medicine for modeling the spread of diseases, analyzing medical imaging, and understanding physiological processes. It helps in calculating drug dosage, blood flow rates, and changes in biological systems.");
+        addAssignmentToProblemAnswer(pa_11_4_7, assignment11_4);
+        addProblemAnswerToAssignment(assignment11_4, pa_11_4_7);
+
+        ProblemAnswer pa_11_4_8 = createProblemAnswer("How is calculus used in business and finance?", "In business and finance, calculus is used to optimize investment strategies, model market trends, and analyze financial data. It helps in calculating interest rates, maximizing profit, and solving differential equations in economic models.");
+        addAssignmentToProblemAnswer(pa_11_4_8, assignment11_4);
+        addProblemAnswerToAssignment(assignment11_4, pa_11_4_8);
+
+        ProblemAnswer pa_11_4_9 = createProblemAnswer("How does calculus apply to astronomy?", "Calculus is used in astronomy to model and analyze the motion of celestial bodies, calculate orbits, and understand changes in the universe. It helps in solving differential equations that describe gravitational forces and celestial mechanics.");
+        addAssignmentToProblemAnswer(pa_11_4_9, assignment11_4);
+        addProblemAnswerToAssignment(assignment11_4, pa_11_4_9);
+
+        ProblemAnswer pa_11_4_10 = createProblemAnswer("What are the general benefits of using calculus in real-world problems?", "Calculus provides tools for modeling, analyzing, and solving real-world problems involving rates of change and accumulation. It helps in making accurate predictions, optimizing processes, and understanding complex systems in various fields.");
+        addAssignmentToProblemAnswer(pa_11_4_10, assignment11_4);
+        addProblemAnswerToAssignment(assignment11_4, pa_11_4_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Applications of Calculus' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment12_1 = createAssignment("Vectors Assignment", faculty2, Date.from(LocalDate.of(2028, 12, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_12_1_1 = createProblemAnswer("What is a vector?", "A vector is a quantity that has both magnitude and direction. It is represented by an arrow pointing from one point to another in space.");
+        addAssignmentToProblemAnswer(pa_12_1_1, assignment12_1);
+        addProblemAnswerToAssignment(assignment12_1, pa_12_1_1);
+
+        ProblemAnswer pa_12_1_2 = createProblemAnswer("What is vector addition?", "Vector addition is the process of adding two or more vectors together to get a resultant vector. It is done by adding the corresponding components of the vectors.");
+        addAssignmentToProblemAnswer(pa_12_1_2, assignment12_1);
+        addProblemAnswerToAssignment(assignment12_1, pa_12_1_2);
+
+        ProblemAnswer pa_12_1_3 = createProblemAnswer("What is scalar multiplication?", "Scalar multiplication involves multiplying a vector by a scalar (a real number). It changes the magnitude of the vector but not its direction.");
+        addAssignmentToProblemAnswer(pa_12_1_3, assignment12_1);
+        addProblemAnswerToAssignment(assignment12_1, pa_12_1_3);
+
+        ProblemAnswer pa_12_1_4 = createProblemAnswer("What is the dot product of two vectors?", "The dot product (or scalar product) of two vectors is a measure of their alignment. It is calculated as the product of their magnitudes and the cosine of the angle between them.");
+        addAssignmentToProblemAnswer(pa_12_1_4, assignment12_1);
+        addProblemAnswerToAssignment(assignment12_1, pa_12_1_4);
+
+        ProblemAnswer pa_12_1_5 = createProblemAnswer("What is the cross product of two vectors?", "The cross product (or vector product) of two vectors is a vector that is perpendicular to both of the original vectors. It is calculated as the product of their magnitudes and the sine of the angle between them.");
+        addAssignmentToProblemAnswer(pa_12_1_5, assignment12_1);
+        addProblemAnswerToAssignment(assignment12_1, pa_12_1_5);
+
+        ProblemAnswer pa_12_1_6 = createProblemAnswer("What are unit vectors?", "Unit vectors are vectors with a magnitude of 1. They are used to indicate direction and are often denoted with a hat symbol (e.g., î, ĵ, k̂).");
+        addAssignmentToProblemAnswer(pa_12_1_6, assignment12_1);
+        addProblemAnswerToAssignment(assignment12_1, pa_12_1_6);
+
+        ProblemAnswer pa_12_1_7 = createProblemAnswer("How do you find the magnitude of a vector?", "The magnitude of a vector is found using the Pythagorean theorem. For a vector (a, b), the magnitude is √(a^2 + b^2).");
+        addAssignmentToProblemAnswer(pa_12_1_7, assignment12_1);
+        addProblemAnswerToAssignment(assignment12_1, pa_12_1_7);
+
+        ProblemAnswer pa_12_1_8 = createProblemAnswer("What is a zero vector?", "A zero vector is a vector with a magnitude of 0 and no specific direction. It is represented by (0, 0) in two dimensions and (0, 0, 0) in three dimensions.");
+        addAssignmentToProblemAnswer(pa_12_1_8, assignment12_1);
+        addProblemAnswerToAssignment(assignment12_1, pa_12_1_8);
+
+        ProblemAnswer pa_12_1_9 = createProblemAnswer("How are vectors used in physics?", "Vectors are used in physics to represent quantities such as displacement, velocity, acceleration, and force. They help describe the direction and magnitude of these quantities.");
+        addAssignmentToProblemAnswer(pa_12_1_9, assignment12_1);
+        addProblemAnswerToAssignment(assignment12_1, pa_12_1_9);
+
+        ProblemAnswer pa_12_1_10 = createProblemAnswer("What is the difference between a vector and a scalar?", "A vector has both magnitude and direction, while a scalar has only magnitude. Examples of vectors include velocity and force, while examples of scalars include temperature and mass.");
+        addAssignmentToProblemAnswer(pa_12_1_10, assignment12_1);
+        addProblemAnswerToAssignment(assignment12_1, pa_12_1_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Vectors' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment12_2 = createAssignment("Matrices Assignment", faculty2, Date.from(LocalDate.of(2029, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_12_2_1 = createProblemAnswer("What is a matrix?", "A matrix is a rectangular array of numbers arranged in rows and columns. It is used to represent and solve systems of linear equations and perform various operations in mathematics.");
+        addAssignmentToProblemAnswer(pa_12_2_1, assignment12_2);
+        addProblemAnswerToAssignment(assignment12_2, pa_12_2_1);
+
+        ProblemAnswer pa_12_2_2 = createProblemAnswer("What is matrix addition?", "Matrix addition is the process of adding two matrices by adding their corresponding elements. The matrices must have the same dimensions for addition to be possible.");
+        addAssignmentToProblemAnswer(pa_12_2_2, assignment12_2);
+        addProblemAnswerToAssignment(assignment12_2, pa_12_2_2);
+
+        ProblemAnswer pa_12_2_3 = createProblemAnswer("What is matrix multiplication?", "Matrix multiplication is the process of multiplying two matrices by taking the dot product of rows and columns. The number of columns in the first matrix must equal the number of rows in the second matrix.");
+        addAssignmentToProblemAnswer(pa_12_2_3, assignment12_2);
+        addProblemAnswerToAssignment(assignment12_2, pa_12_2_3);
+
+        ProblemAnswer pa_12_2_4 = createProblemAnswer("What is the identity matrix?", "The identity matrix is a square matrix with ones on the diagonal and zeros elsewhere. It acts as the multiplicative identity in matrix multiplication, meaning any matrix multiplied by the identity matrix remains unchanged.");
+        addAssignmentToProblemAnswer(pa_12_2_4, assignment12_2);
+        addProblemAnswerToAssignment(assignment12_2, pa_12_2_4);
+
+        ProblemAnswer pa_12_2_5 = createProblemAnswer("What is the inverse of a matrix?", "The inverse of a matrix is a matrix that, when multiplied by the original matrix, yields the identity matrix. Not all matrices have inverses. A matrix must be square and have a non-zero determinant to have an inverse.");
+        addAssignmentToProblemAnswer(pa_12_2_5, assignment12_2);
+        addProblemAnswerToAssignment(assignment12_2, pa_12_2_5);
+
+        ProblemAnswer pa_12_2_6 = createProblemAnswer("What is the determinant of a matrix?", "The determinant is a scalar value that can be computed from the elements of a square matrix. It provides information about the matrix properties, such as invertibility, and is used in solving linear systems and finding matrix inverses.");
+        addAssignmentToProblemAnswer(pa_12_2_6, assignment12_2);
+        addProblemAnswerToAssignment(assignment12_2, pa_12_2_6);
+
+        ProblemAnswer pa_12_2_7 = createProblemAnswer("What is a transpose of a matrix?", "The transpose of a matrix is obtained by swapping its rows and columns. If A is an m×n matrix, its transpose, denoted A^T, is an n×m matrix with A^T(i, j) = A(j, i).");
+        addAssignmentToProblemAnswer(pa_12_2_7, assignment12_2);
+        addProblemAnswerToAssignment(assignment12_2, pa_12_2_7);
+
+        ProblemAnswer pa_12_2_8 = createProblemAnswer("What is a diagonal matrix?", "A diagonal matrix is a square matrix in which all the elements outside the main diagonal are zero. The main diagonal can contain non-zero elements.");
+        addAssignmentToProblemAnswer(pa_12_2_8, assignment12_2);
+        addProblemAnswerToAssignment(assignment12_2, pa_12_2_8);
+
+        ProblemAnswer pa_12_2_9 = createProblemAnswer("How are matrices used in solving linear equations?", "Matrices are used to represent and solve systems of linear equations. The system of equations can be written as a matrix equation, and various matrix operations, such as Gaussian elimination or matrix inversion, can be used to find the solution.");
+        addAssignmentToProblemAnswer(pa_12_2_9, assignment12_2);
+        addProblemAnswerToAssignment(assignment12_2, pa_12_2_9);
+
+        ProblemAnswer pa_12_2_10 = createProblemAnswer("What are some applications of matrices?", "Matrices have applications in various fields, including computer graphics, engineering, physics, economics, and statistics. They are used for transformations, modeling systems, data analysis, and solving differential equations.");
+        addAssignmentToProblemAnswer(pa_12_2_10, assignment12_2);
+        addProblemAnswerToAssignment(assignment12_2, pa_12_2_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Matrices' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment12_3 = createAssignment("Determinants Assignment", faculty2, Date.from(LocalDate.of(2029, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_12_3_1 = createProblemAnswer("What is a determinant?", "A determinant is a scalar value that can be computed from the elements of a square matrix. It provides important information about the matrix, such as whether it is invertible.");
+        addAssignmentToProblemAnswer(pa_12_3_1, assignment12_3);
+        addProblemAnswerToAssignment(assignment12_3, pa_12_3_1);
+
+        ProblemAnswer pa_12_3_2 = createProblemAnswer("How do you calculate the determinant of a 2x2 matrix?", "The determinant of a 2x2 matrix [a b; c d] is calculated as ad - bc.");
+        addAssignmentToProblemAnswer(pa_12_3_2, assignment12_3);
+        addProblemAnswerToAssignment(assignment12_3, pa_12_3_2);
+
+        ProblemAnswer pa_12_3_3 = createProblemAnswer("What is the importance of determinants in linear algebra?", "Determinants are important in linear algebra because they help determine the invertibility of a matrix, solve systems of linear equations, and find the area or volume of geometric shapes.");
+        addAssignmentToProblemAnswer(pa_12_3_3, assignment12_3);
+        addProblemAnswerToAssignment(assignment12_3, pa_12_3_3);
+
+        ProblemAnswer pa_12_3_4 = createProblemAnswer("How do you calculate the determinant of a 3x3 matrix?", "The determinant of a 3x3 matrix [a b c; d e f; g h i] is calculated using the formula: a(ei - fh) - b(di - fg) + c(dh - eg).");
+        addAssignmentToProblemAnswer(pa_12_3_4, assignment12_3);
+        addProblemAnswerToAssignment(assignment12_3, pa_12_3_4);
+
+        ProblemAnswer pa_12_3_5 = createProblemAnswer("What are some properties of determinants?", "Some properties of determinants include: (1) The determinant of the identity matrix is 1, (2) The determinant of a matrix product is the product of the determinants, (3) Swapping two rows or columns changes the sign of the determinant, (4) The determinant of a triangular matrix is the product of its diagonal elements.");
+        addAssignmentToProblemAnswer(pa_12_3_5, assignment12_3);
+        addProblemAnswerToAssignment(assignment12_3, pa_12_3_5);
+
+        ProblemAnswer pa_12_3_6 = createProblemAnswer("What is the role of determinants in solving linear systems?", "Determinants are used to solve linear systems through Cramer's rule, which provides a method for finding the solutions using the determinants of the coefficient matrix and its submatrices.");
+        addAssignmentToProblemAnswer(pa_12_3_6, assignment12_3);
+        addProblemAnswerToAssignment(assignment12_3, pa_12_3_6);
+
+        ProblemAnswer pa_12_3_7 = createProblemAnswer("How do you calculate the determinant of a triangular matrix?", "The determinant of a triangular matrix (upper or lower) is the product of its diagonal elements.");
+        addAssignmentToProblemAnswer(pa_12_3_7, assignment12_3);
+        addProblemAnswerToAssignment(assignment12_3, pa_12_3_7);
+
+        ProblemAnswer pa_12_3_8 = createProblemAnswer("What is the cofactor expansion method for finding determinants?", "The cofactor expansion method involves expressing the determinant of a matrix as a sum of the products of its elements and their cofactors. It is used to calculate determinants of larger matrices by breaking them down into smaller submatrices.");
+        addAssignmentToProblemAnswer(pa_12_3_8, assignment12_3);
+        addProblemAnswerToAssignment(assignment12_3, pa_12_3_8);
+
+        ProblemAnswer pa_12_3_9 = createProblemAnswer("How do determinants relate to eigenvalues?", "Determinants are related to eigenvalues through the characteristic polynomial of a matrix. The eigenvalues are the roots of this polynomial, and the determinant is the product of the eigenvalues.");
+        addAssignmentToProblemAnswer(pa_12_3_9, assignment12_3);
+        addProblemAnswerToAssignment(assignment12_3, pa_12_3_9);
+
+        ProblemAnswer pa_12_3_10 = createProblemAnswer("What is the significance of a zero determinant?", "A zero determinant indicates that a matrix is singular, meaning it is not invertible and its rows or columns are linearly dependent. This has implications for solving linear systems and transformations.");
+        addAssignmentToProblemAnswer(pa_12_3_10, assignment12_3);
+        addProblemAnswerToAssignment(assignment12_3, pa_12_3_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Determinants' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment12_4 = createAssignment("Eigenvalues Assignment", faculty2, Date.from(LocalDate.of(2029, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_12_4_1 = createProblemAnswer("What are eigenvalues?", "Eigenvalues are special numbers associated with a matrix that characterize the scaling factor by which the eigenvectors are stretched or compressed under a linear transformation.");
+        addAssignmentToProblemAnswer(pa_12_4_1, assignment12_4);
+        addProblemAnswerToAssignment(assignment12_4, pa_12_4_1);
+
+        ProblemAnswer pa_12_4_2 = createProblemAnswer("How do you calculate eigenvalues of a matrix?", "Eigenvalues are calculated by solving the characteristic equation, which is obtained by setting the determinant of (A - λI) equal to zero, where A is the matrix, λ is the eigenvalue, and I is the identity matrix.");
+        addAssignmentToProblemAnswer(pa_12_4_2, assignment12_4);
+        addProblemAnswerToAssignment(assignment12_4, pa_12_4_2);
+
+        ProblemAnswer pa_12_4_3 = createProblemAnswer("What is the characteristic equation of a matrix?", "The characteristic equation of a matrix A is given by det(A - λI) = 0, where det denotes the determinant, λ represents the eigenvalue, and I is the identity matrix.");
+        addAssignmentToProblemAnswer(pa_12_4_3, assignment12_4);
+        addProblemAnswerToAssignment(assignment12_4, pa_12_4_3);
+
+        ProblemAnswer pa_12_4_4 = createProblemAnswer("What is the significance of eigenvalues in linear algebra?", "Eigenvalues provide important information about the properties of a matrix, such as its invertibility, stability, and behavior under linear transformations. They are used in various applications, including differential equations and matrix diagonalization.");
+        addAssignmentToProblemAnswer(pa_12_4_4, assignment12_4);
+        addProblemAnswerToAssignment(assignment12_4, pa_12_4_4);
+
+        ProblemAnswer pa_12_4_5 = createProblemAnswer("What is the relationship between eigenvalues and the determinant of a matrix?", "The determinant of a matrix is equal to the product of its eigenvalues. This relationship provides a way to calculate the determinant using eigenvalues and helps in understanding the properties of the matrix.");
+        addAssignmentToProblemAnswer(pa_12_4_5, assignment12_4);
+        addProblemAnswerToAssignment(assignment12_4, pa_12_4_5);
+
+        ProblemAnswer pa_12_4_6 = createProblemAnswer("What are some applications of eigenvalues?", "Eigenvalues have applications in various fields, including vibration analysis, stability analysis, principal component analysis (PCA), quantum mechanics, and computer graphics.");
+        addAssignmentToProblemAnswer(pa_12_4_6, assignment12_4);
+        addProblemAnswerToAssignment(assignment12_4, pa_12_4_6);
+
+        ProblemAnswer pa_12_4_7 = createProblemAnswer("What is the difference between real and complex eigenvalues?", "Real eigenvalues are numbers on the real number line, while complex eigenvalues have both real and imaginary parts. The nature of the eigenvalues affects the behavior of the matrix under linear transformations.");
+        addAssignmentToProblemAnswer(pa_12_4_7, assignment12_4);
+        addProblemAnswerToAssignment(assignment12_4, pa_12_4_7);
+
+        ProblemAnswer pa_12_4_8 = createProblemAnswer("What is an eigenvalue decomposition?", "Eigenvalue decomposition is the process of decomposing a matrix into a product of its eigenvectors and eigenvalues. It is used to simplify matrix operations and solve systems of differential equations.");
+        addAssignmentToProblemAnswer(pa_12_4_8, assignment12_4);
+        addProblemAnswerToAssignment(assignment12_4, pa_12_4_8);
+
+        ProblemAnswer pa_12_4_9 = createProblemAnswer("How do you interpret the geometric meaning of eigenvalues?", "Eigenvalues represent the factor by which the corresponding eigenvectors are stretched or compressed under a linear transformation. They provide insights into the scaling and rotation properties of the transformation.");
+        addAssignmentToProblemAnswer(pa_12_4_9, assignment12_4);
+        addProblemAnswerToAssignment(assignment12_4, pa_12_4_9);
+
+        ProblemAnswer pa_12_4_10 = createProblemAnswer("What is the significance of the largest eigenvalue of a matrix?", "The largest eigenvalue of a matrix, known as the dominant eigenvalue, often provides important information about the behavior of the matrix under repeated applications. It is used in stability analysis and spectral graph theory.");
+        addAssignmentToProblemAnswer(pa_12_4_10, assignment12_4);
+        addProblemAnswerToAssignment(assignment12_4, pa_12_4_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Eigenvalues' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment12_5 = createAssignment("Eigenvectors Assignment", faculty2, Date.from(LocalDate.of(2029, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_12_5_1 = createProblemAnswer("What are eigenvectors?", "Eigenvectors are special vectors associated with a matrix that remain in the same direction under a linear transformation. They are scaled by their corresponding eigenvalues.");
+        addAssignmentToProblemAnswer(pa_12_5_1, assignment12_5);
+        addProblemAnswerToAssignment(assignment12_5, pa_12_5_1);
+
+        ProblemAnswer pa_12_5_2 = createProblemAnswer("How do you find eigenvectors of a matrix?", "Eigenvectors are found by solving the equation (A - λI)v = 0, where A is the matrix, λ is the eigenvalue, I is the identity matrix, and v is the eigenvector.");
+        addAssignmentToProblemAnswer(pa_12_5_2, assignment12_5);
+        addProblemAnswerToAssignment(assignment12_5, pa_12_5_2);
+
+        ProblemAnswer pa_12_5_3 = createProblemAnswer("What is the relationship between eigenvectors and eigenvalues?", "Eigenvectors are vectors that are scaled by a factor (the eigenvalue) when a linear transformation is applied. The eigenvalue determines the amount of scaling, while the eigenvector determines the direction.");
+        addAssignmentToProblemAnswer(pa_12_5_3, assignment12_5);
+        addProblemAnswerToAssignment(assignment12_5, pa_12_5_3);
+
+        ProblemAnswer pa_12_5_4 = createProblemAnswer("What is the significance of eigenvectors in linear transformations?", "Eigenvectors provide insight into the behavior of a linear transformation. They represent directions that remain unchanged by the transformation, helping to understand how the transformation affects different components of a system.");
+        addAssignmentToProblemAnswer(pa_12_5_4, assignment12_5);
+        addProblemAnswerToAssignment(assignment12_5, pa_12_5_4);
+
+        ProblemAnswer pa_12_5_5 = createProblemAnswer("How are eigenvectors used in matrix diagonalization?", "Matrix diagonalization involves expressing a matrix as a product of its eigenvectors and a diagonal matrix of its eigenvalues. It simplifies matrix operations and helps solve systems of differential equations.");
+        addAssignmentToProblemAnswer(pa_12_5_5, assignment12_5);
+        addProblemAnswerToAssignment(assignment12_5, pa_12_5_5);
+
+        ProblemAnswer pa_12_5_6 = createProblemAnswer("What is the geometric interpretation of eigenvectors?", "Geometrically, eigenvectors represent directions in which the linear transformation acts by stretching or compressing, without changing the direction. They help visualize how the transformation affects the space.");
+        addAssignmentToProblemAnswer(pa_12_5_6, assignment12_5);
+        addProblemAnswerToAssignment(assignment12_5, pa_12_5_6);
+
+        ProblemAnswer pa_12_5_7 = createProblemAnswer("How are eigenvectors used in principal component analysis (PCA)?", "In PCA, eigenvectors of the covariance matrix of the data represent the directions of maximum variance. They are used to project the data onto a lower-dimensional space, retaining the most important features.");
+        addAssignmentToProblemAnswer(pa_12_5_7, assignment12_5);
+        addProblemAnswerToAssignment(assignment12_5, pa_12_5_7);
+
+        ProblemAnswer pa_12_5_8 = createProblemAnswer("What is the role of eigenvectors in stability analysis?", "In stability analysis, eigenvectors help determine the behavior of dynamic systems. They indicate the directions of stable and unstable modes, providing insights into the system's response to perturbations.");
+        addAssignmentToProblemAnswer(pa_12_5_8, assignment12_5);
+        addProblemAnswerToAssignment(assignment12_5, pa_12_5_8);
+
+        ProblemAnswer pa_12_5_9 = createProblemAnswer("What are the properties of eigenvectors?", "Eigenvectors have properties such as linear independence, and their number is equal to the rank of the matrix. They form the basis of the eigenspace and are used to diagonalize the matrix.");
+        addAssignmentToProblemAnswer(pa_12_5_9, assignment12_5);
+        addProblemAnswerToAssignment(assignment12_5, pa_12_5_9);
+
+        ProblemAnswer pa_12_5_10 = createProblemAnswer("How do you normalize eigenvectors?", "Eigenvectors can be normalized by dividing them by their magnitude, resulting in a unit vector. Normalization is often done to simplify calculations and interpret the eigenvectors in standard form.");
+        addAssignmentToProblemAnswer(pa_12_5_10, assignment12_5);
+        addProblemAnswerToAssignment(assignment12_5, pa_12_5_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Eigenvectors' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment13_1 = createAssignment("Sequences and Series Assignment", faculty3, Date.from(LocalDate.of(2029, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_13_1_1 = createProblemAnswer("What is a sequence in mathematics?", "A sequence is an ordered list of numbers or terms that follow a specific pattern or rule. Each term in the sequence is identified by its position in the list.");
+        addAssignmentToProblemAnswer(pa_13_1_1, assignment13_1);
+        addProblemAnswerToAssignment(assignment13_1, pa_13_1_1);
+
+        ProblemAnswer pa_13_1_2 = createProblemAnswer("What is a series?", "A series is the sum of the terms of a sequence. It can be finite (with a fixed number of terms) or infinite (with an infinite number of terms).");
+        addAssignmentToProblemAnswer(pa_13_1_2, assignment13_1);
+        addProblemAnswerToAssignment(assignment13_1, pa_13_1_2);
+
+        ProblemAnswer pa_13_1_3 = createProblemAnswer("What is a convergent series?", "A convergent series is a series whose terms approach a specific value as the number of terms increases. In other words, the sum of the series approaches a finite limit.");
+        addAssignmentToProblemAnswer(pa_13_1_3, assignment13_1);
+        addProblemAnswerToAssignment(assignment13_1, pa_13_1_3);
+
+        ProblemAnswer pa_13_1_4 = createProblemAnswer("What is a divergent series?", "A divergent series is a series whose terms do not approach a specific value as the number of terms increases. The sum of the series does not converge to a finite limit.");
+        addAssignmentToProblemAnswer(pa_13_1_4, assignment13_1);
+        addProblemAnswerToAssignment(assignment13_1, pa_13_1_4);
+
+        ProblemAnswer pa_13_1_5 = createProblemAnswer("What is a power series?", "A power series is an infinite series of the form Σa_n(x-c)^n, where a_n are the coefficients, x is the variable, and c is the center of the series. Power series are used to represent functions in terms of their Taylor or Maclaurin series expansions.");
+        addAssignmentToProblemAnswer(pa_13_1_5, assignment13_1);
+        addProblemAnswerToAssignment(assignment13_1, pa_13_1_5);
+
+        ProblemAnswer pa_13_1_6 = createProblemAnswer("What is the ratio test for convergence?", "The ratio test is a method used to determine the convergence or divergence of an infinite series. It involves finding the limit of the ratio of consecutive terms. If the limit is less than 1, the series converges; if it is greater than 1, the series diverges.");
+        addAssignmentToProblemAnswer(pa_13_1_6, assignment13_1);
+        addProblemAnswerToAssignment(assignment13_1, pa_13_1_6);
+
+        ProblemAnswer pa_13_1_7 = createProblemAnswer("What is the root test for convergence?", "The root test is a method used to determine the convergence or divergence of an infinite series. It involves finding the limit of the nth root of the absolute value of the nth term. If the limit is less than 1, the series converges; if it is greater than 1, the series diverges.");
+        addAssignmentToProblemAnswer(pa_13_1_7, assignment13_1);
+        addProblemAnswerToAssignment(assignment13_1, pa_13_1_7);
+
+        ProblemAnswer pa_13_1_8 = createProblemAnswer("What is a Taylor series?", "A Taylor series is an infinite series that represents a function as a sum of its derivatives evaluated at a specific point. The Taylor series of a function f(x) at a point a is given by Σ[f^n(a)/n!]*(x-a)^n.");
+        addAssignmentToProblemAnswer(pa_13_1_8, assignment13_1);
+        addProblemAnswerToAssignment(assignment13_1, pa_13_1_8);
+
+        ProblemAnswer pa_13_1_9 = createProblemAnswer("What is the difference between a Taylor series and a Maclaurin series?", "A Maclaurin series is a special case of a Taylor series where the expansion is centered at zero (a=0). The Maclaurin series of a function f(x) is given by Σ[f^n(0)/n!]*x^n.");
+        addAssignmentToProblemAnswer(pa_13_1_9, assignment13_1);
+        addProblemAnswerToAssignment(assignment13_1, pa_13_1_9);
+
+        ProblemAnswer pa_13_1_10 = createProblemAnswer("How are sequences and series used in real-world applications?", "Sequences and series have various real-world applications, including in finance (calculating interest and annuities), engineering (signal processing and control systems), physics (modeling waveforms and quantum mechanics), and computer science (algorithm analysis and data structures).");
+        addAssignmentToProblemAnswer(pa_13_1_10, assignment13_1);
+        addProblemAnswerToAssignment(assignment13_1, pa_13_1_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Sequences and Series' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment13_2 = createAssignment("Techniques of Integration Assignment", faculty3, Date.from(LocalDate.of(2029, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_13_2_1 = createProblemAnswer("What is integration by parts?", "Integration by parts is a method used to integrate the product of two functions. It is based on the formula ∫u dv = uv - ∫v du, where u and v are functions of x.");
+        addAssignmentToProblemAnswer(pa_13_2_1, assignment13_2);
+        addProblemAnswerToAssignment(assignment13_2, pa_13_2_1);
+
+        ProblemAnswer pa_13_2_2 = createProblemAnswer("What is partial fraction decomposition?", "Partial fraction decomposition is a technique used to break down a complex rational function into simpler fractions that can be integrated individually. It is especially useful for integrating rational functions.");
+        addAssignmentToProblemAnswer(pa_13_2_2, assignment13_2);
+        addProblemAnswerToAssignment(assignment13_2, pa_13_2_2);
+
+        ProblemAnswer pa_13_2_3 = createProblemAnswer("What are trigonometric integrals?", "Trigonometric integrals involve integrals of functions that include trigonometric functions such as sine, cosine, and tangent. Techniques for evaluating these integrals include using trigonometric identities and substitution.");
+        addAssignmentToProblemAnswer(pa_13_2_3, assignment13_2);
+        addProblemAnswerToAssignment(assignment13_2, pa_13_2_3);
+
+        ProblemAnswer pa_13_2_4 = createProblemAnswer("What are improper integrals?", "Improper integrals are integrals with infinite limits of integration or integrands that approach infinity at some point within the interval of integration. They are evaluated by taking the limit of the integral as it approaches the problematic point.");
+        addAssignmentToProblemAnswer(pa_13_2_4, assignment13_2);
+        addProblemAnswerToAssignment(assignment13_2, pa_13_2_4);
+
+        ProblemAnswer pa_13_2_5 = createProblemAnswer("What is the method of trigonometric substitution?", "Trigonometric substitution is a technique used to simplify integrals by substituting trigonometric functions for expressions involving square roots. It is particularly useful for integrals involving radicals.");
+        addAssignmentToProblemAnswer(pa_13_2_5, assignment13_2);
+        addProblemAnswerToAssignment(assignment13_2, pa_13_2_5);
+
+        ProblemAnswer pa_13_2_6 = createProblemAnswer("What is the method of integration by partial fractions?", "Integration by partial fractions involves expressing a rational function as a sum of simpler fractions and integrating each fraction individually. It simplifies the integration process by breaking down complex fractions.");
+        addAssignmentToProblemAnswer(pa_13_2_6, assignment13_2);
+        addProblemAnswerToAssignment(assignment13_2, pa_13_2_6);
+
+        ProblemAnswer pa_13_2_7 = createProblemAnswer("How do you evaluate integrals using trigonometric identities?", "Integrals can be evaluated using trigonometric identities by transforming the integrand into a simpler form. Common identities used include Pythagorean identities, angle sum and difference identities, and double angle identities.");
+        addAssignmentToProblemAnswer(pa_13_2_7, assignment13_2);
+        addProblemAnswerToAssignment(assignment13_2, pa_13_2_7);
+
+        ProblemAnswer pa_13_2_8 = createProblemAnswer("What is the method of cylindrical shells?", "The method of cylindrical shells is used to find the volume of a solid of revolution. It involves integrating the circumference and height of cylindrical shells obtained by rotating a region around an axis.");
+        addAssignmentToProblemAnswer(pa_13_2_8, assignment13_2);
+        addProblemAnswerToAssignment(assignment13_2, pa_13_2_8);
+
+        ProblemAnswer pa_13_2_9 = createProblemAnswer("What is the method of disks and washers?", "The method of disks and washers is used to find the volume of a solid of revolution. It involves integrating the area of cross-sectional disks or washers perpendicular to the axis of rotation.");
+        addAssignmentToProblemAnswer(pa_13_2_9, assignment13_2);
+        addProblemAnswerToAssignment(assignment13_2, pa_13_2_9);
+
+        ProblemAnswer pa_13_2_10 = createProblemAnswer("What are some real-world applications of advanced integration techniques?", "Advanced integration techniques have various real-world applications, including calculating areas and volumes of complex shapes, solving differential equations, analyzing physical systems, and modeling economic and biological processes.");
+        addAssignmentToProblemAnswer(pa_13_2_10, assignment13_2);
+        addProblemAnswerToAssignment(assignment13_2, pa_13_2_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Techniques of Integration' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment13_3 = createAssignment("Multivariable Functions Assignment", faculty3, Date.from(LocalDate.of(2029, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_13_3_1 = createProblemAnswer("What are multivariable functions?", "Multivariable functions are functions that have more than one input variable. They are used to model relationships involving multiple quantities and are often represented as f(x, y, z), where x, y, and z are the variables.");
+        addAssignmentToProblemAnswer(pa_13_3_1, assignment13_3);
+        addProblemAnswerToAssignment(assignment13_3, pa_13_3_1);
+
+        ProblemAnswer pa_13_3_2 = createProblemAnswer("What is a partial derivative?", "A partial derivative is the derivative of a multivariable function with respect to one of its variables, while keeping the other variables constant. It measures how the function changes as that variable changes.");
+        addAssignmentToProblemAnswer(pa_13_3_2, assignment13_3);
+        addProblemAnswerToAssignment(assignment13_3, pa_13_3_2);
+
+        ProblemAnswer pa_13_3_3 = createProblemAnswer("How do you calculate the gradient of a multivariable function?", "The gradient of a multivariable function is a vector that points in the direction of the steepest ascent. It is calculated by taking the partial derivatives of the function with respect to each of its variables and combining them into a vector.");
+        addAssignmentToProblemAnswer(pa_13_3_3, assignment13_3);
+        addProblemAnswerToAssignment(assignment13_3, pa_13_3_3);
+
+        ProblemAnswer pa_13_3_4 = createProblemAnswer("What is a multiple integral?", "A multiple integral is an integral that involves more than one variable. It is used to calculate volumes, areas, and other quantities in higher dimensions. Examples include double integrals and triple integrals.");
+        addAssignmentToProblemAnswer(pa_13_3_4, assignment13_3);
+        addProblemAnswerToAssignment(assignment13_3, pa_13_3_4);
+
+        ProblemAnswer pa_13_3_5 = createProblemAnswer("What is the Jacobian matrix?", "The Jacobian matrix is a matrix of all the first-order partial derivatives of a multivariable function. It is used to analyze the behavior of the function and to perform coordinate transformations.");
+        addAssignmentToProblemAnswer(pa_13_3_5, assignment13_3);
+        addProblemAnswerToAssignment(assignment13_3, pa_13_3_5);
+
+        ProblemAnswer pa_13_3_6 = createProblemAnswer("What is the Hessian matrix?", "The Hessian matrix is a square matrix of second-order partial derivatives of a multivariable function. It provides information about the curvature of the function and is used in optimization problems.");
+        addAssignmentToProblemAnswer(pa_13_3_6, assignment13_3);
+        addProblemAnswerToAssignment(assignment13_3, pa_13_3_6);
+
+        ProblemAnswer pa_13_3_7 = createProblemAnswer("What is a level curve?", "A level curve is a curve along which a multivariable function has a constant value. It is used to visualize the behavior of the function in two dimensions and is often used in contour plots.");
+        addAssignmentToProblemAnswer(pa_13_3_7, assignment13_3);
+        addProblemAnswerToAssignment(assignment13_3, pa_13_3_7);
+
+        ProblemAnswer pa_13_3_8 = createProblemAnswer("How do you find the maximum and minimum values of a multivariable function?", "To find the maximum and minimum values of a multivariable function, you can use techniques such as setting the gradient equal to zero to find critical points and analyzing the behavior of the function at these points and along the boundaries.");
+        addAssignmentToProblemAnswer(pa_13_3_8, assignment13_3);
+        addProblemAnswerToAssignment(assignment13_3, pa_13_3_8);
+
+        ProblemAnswer pa_13_3_9 = createProblemAnswer("What is a Lagrange multiplier?", "A Lagrange multiplier is a method used to find the maximum and minimum values of a function subject to constraints. It involves adding the constraint to the function using a new variable (the Lagrange multiplier) and solving for the variables.");
+        addAssignmentToProblemAnswer(pa_13_3_9, assignment13_3);
+        addProblemAnswerToAssignment(assignment13_3, pa_13_3_9);
+
+        ProblemAnswer pa_13_3_10 = createProblemAnswer("What are some real-world applications of multivariable functions?", "Multivariable functions have various real-world applications, including in physics (modeling fluid dynamics and electromagnetic fields), engineering (analyzing stress and strain in materials), economics (optimizing production and consumption), and environmental science (modeling pollution dispersion).");
+        addAssignmentToProblemAnswer(pa_13_3_10, assignment13_3);
+        addProblemAnswerToAssignment(assignment13_3, pa_13_3_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Multivariable Functions' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment13_4 = createAssignment("Vector Calculus Assignment", faculty3, Date.from(LocalDate.of(2029, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_13_4_1 = createProblemAnswer("What is vector calculus?", "Vector calculus is the study of vector fields and their applications. It involves operations such as differentiation and integration of vector functions, and is used to analyze and solve problems involving vector fields.");
+        addAssignmentToProblemAnswer(pa_13_4_1, assignment13_4);
+        addProblemAnswerToAssignment(assignment13_4, pa_13_4_1);
+
+        ProblemAnswer pa_13_4_2 = createProblemAnswer("What is a line integral?", "A line integral is an integral that evaluates the sum of a function along a curve. It is used to calculate quantities such as work done by a force field along a path and circulation in fluid dynamics.");
+        addAssignmentToProblemAnswer(pa_13_4_2, assignment13_4);
+        addProblemAnswerToAssignment(assignment13_4, pa_13_4_2);
+
+        ProblemAnswer pa_13_4_3 = createProblemAnswer("What is a surface integral?", "A surface integral is an integral that evaluates the sum of a function over a surface. It is used to calculate quantities such as flux through a surface and surface area in three-dimensional space.");
+        addAssignmentToProblemAnswer(pa_13_4_3, assignment13_4);
+        addProblemAnswerToAssignment(assignment13_4, pa_13_4_3);
+
+        ProblemAnswer pa_13_4_4 = createProblemAnswer("What is Green's Theorem?", "Green's Theorem relates the line integral around a simple, closed curve to the double integral over the region enclosed by the curve. It is used to convert between line integrals and double integrals and to analyze two-dimensional vector fields.");
+        addAssignmentToProblemAnswer(pa_13_4_4, assignment13_4);
+        addProblemAnswerToAssignment(assignment13_4, pa_13_4_4);
+
+        ProblemAnswer pa_13_4_5 = createProblemAnswer("What is Stokes' Theorem?", "Stokes' Theorem relates the surface integral of the curl of a vector field over a surface to the line integral of the vector field around the boundary of the surface. It generalizes Green's Theorem to three dimensions and is used to analyze vector fields in three-dimensional space.");
+        addAssignmentToProblemAnswer(pa_13_4_5, assignment13_4);
+        addProblemAnswerToAssignment(assignment13_4, pa_13_4_5);
+
+        ProblemAnswer pa_13_4_6 = createProblemAnswer("What is the Divergence Theorem?", "The Divergence Theorem relates the surface integral of a vector field over a closed surface to the volume integral of the divergence of the vector field within the enclosed region. It is used to convert between surface integrals and volume integrals and to analyze three-dimensional vector fields.");
+        addAssignmentToProblemAnswer(pa_13_4_6, assignment13_4);
+        addProblemAnswerToAssignment(assignment13_4, pa_13_4_6);
+
+        ProblemAnswer pa_13_4_7 = createProblemAnswer("What is a gradient vector?", "A gradient vector is a vector that points in the direction of the greatest rate of increase of a scalar function. It is calculated by taking the partial derivatives of the function with respect to each of its variables and combining them into a vector.");
+        addAssignmentToProblemAnswer(pa_13_4_7, assignment13_4);
+        addProblemAnswerToAssignment(assignment13_4, pa_13_4_7);
+
+        ProblemAnswer pa_13_4_8 = createProblemAnswer("What is a curl of a vector field?", "The curl of a vector field measures the rotation or swirling strength of the field at a point. It is a vector that points in the direction of the axis of rotation and has a magnitude proportional to the strength of the rotation.");
+        addAssignmentToProblemAnswer(pa_13_4_8, assignment13_4);
+        addProblemAnswerToAssignment(assignment13_4, pa_13_4_8);
+
+        ProblemAnswer pa_13_4_9 = createProblemAnswer("What is divergence of a vector field?", "The divergence of a vector field measures the rate at which the field spreads out or converges at a point. It is a scalar quantity that represents the net flow of the field out of or into the point.");
+        addAssignmentToProblemAnswer(pa_13_4_9, assignment13_4);
+        addProblemAnswerToAssignment(assignment13_4, pa_13_4_9);
+
+        ProblemAnswer pa_13_4_10 = createProblemAnswer("What are some real-world applications of vector calculus?", "Vector calculus has various real-world applications, including in fluid dynamics (analyzing flow fields), electromagnetism (describing electric and magnetic fields), engineering (designing control systems and analyzing stress and strain), and physics (modeling gravitational and electromagnetic fields).");
+        addAssignmentToProblemAnswer(pa_13_4_10, assignment13_4);
+        addProblemAnswerToAssignment(assignment13_4, pa_13_4_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Vector Calculus' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment14_1 = createAssignment("Logic Assignment", faculty4, Date.from(LocalDate.of(2029, 9, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_14_1_1 = createProblemAnswer("What is propositional logic?", "Propositional logic is a branch of logic that deals with propositions, which are statements that can be either true or false. It uses logical connectives such as AND, OR, NOT, and IMPLIES to form complex logical statements.");
+        addAssignmentToProblemAnswer(pa_14_1_1, assignment14_1);
+        addProblemAnswerToAssignment(assignment14_1, pa_14_1_1);
+
+        ProblemAnswer pa_14_1_2 = createProblemAnswer("What is predicate logic?", "Predicate logic, also known as first-order logic, extends propositional logic by dealing with predicates, which are statements containing variables. It allows for more expressive logical statements by using quantifiers such as FOR ALL and THERE EXISTS.");
+        addAssignmentToProblemAnswer(pa_14_1_2, assignment14_1);
+        addProblemAnswerToAssignment(assignment14_1, pa_14_1_2);
+
+        ProblemAnswer pa_14_1_3 = createProblemAnswer("What are logical connectives?", "Logical connectives are symbols or words used to connect propositions and form complex logical statements. Common logical connectives include AND (∧), OR (∨), NOT (¬), IMPLIES (→), and IF AND ONLY IF (↔).");
+        addAssignmentToProblemAnswer(pa_14_1_3, assignment14_1);
+        addProblemAnswerToAssignment(assignment14_1, pa_14_1_3);
+
+        ProblemAnswer pa_14_1_4 = createProblemAnswer("What is a truth table?", "A truth table is a table used to determine the truth value of a logical expression based on all possible combinations of truth values for its components. It is a useful tool for analyzing and verifying logical statements.");
+        addAssignmentToProblemAnswer(pa_14_1_4, assignment14_1);
+        addProblemAnswerToAssignment(assignment14_1, pa_14_1_4);
+
+        ProblemAnswer pa_14_1_5 = createProblemAnswer("What is a logical argument?", "A logical argument is a sequence of propositions, called premises, that lead to a conclusion. An argument is valid if the conclusion logically follows from the premises, and it is sound if the premises are true.");
+        addAssignmentToProblemAnswer(pa_14_1_5, assignment14_1);
+        addProblemAnswerToAssignment(assignment14_1, pa_14_1_5);
+
+        ProblemAnswer pa_14_1_6 = createProblemAnswer("What is logical equivalence?", "Logical equivalence occurs when two logical statements have the same truth value in all possible scenarios. Two statements are logically equivalent if their truth tables are identical.");
+        addAssignmentToProblemAnswer(pa_14_1_6, assignment14_1);
+        addProblemAnswerToAssignment(assignment14_1, pa_14_1_6);
+
+        ProblemAnswer pa_14_1_7 = createProblemAnswer("What is a tautology in logic?", "A tautology is a logical statement that is always true, regardless of the truth values of its components. It is a statement that is true in all possible scenarios.");
+        addAssignmentToProblemAnswer(pa_14_1_7, assignment14_1);
+        addProblemAnswerToAssignment(assignment14_1, pa_14_1_7);
+
+        ProblemAnswer pa_14_1_8 = createProblemAnswer("What is a contradiction in logic?", "A contradiction is a logical statement that is always false, regardless of the truth values of its components. It is a statement that is false in all possible scenarios.");
+        addAssignmentToProblemAnswer(pa_14_1_8, assignment14_1);
+        addProblemAnswerToAssignment(assignment14_1, pa_14_1_8);
+
+        ProblemAnswer pa_14_1_9 = createProblemAnswer("What is modus ponens?", "Modus ponens is a rule of inference that states if 'P implies Q' (P → Q) and 'P' is true, then 'Q' must also be true. It is a fundamental rule of logical reasoning.");
+        addAssignmentToProblemAnswer(pa_14_1_9, assignment14_1);
+        addProblemAnswerToAssignment(assignment14_1, pa_14_1_9);
+
+        ProblemAnswer pa_14_1_10 = createProblemAnswer("How is logic used in problem-solving?", "Logic is used in problem-solving to analyze and structure arguments, identify valid conclusions, and ensure consistency in reasoning. It is a foundational tool in mathematics, computer science, and philosophy.");
+        addAssignmentToProblemAnswer(pa_14_1_10, assignment14_1);
+        addProblemAnswerToAssignment(assignment14_1, pa_14_1_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Logic' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment14_2 = createAssignment("Set Theory Assignment", faculty4, Date.from(LocalDate.of(2029, 10, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_14_2_1 = createProblemAnswer("What is a set?", "A set is a collection of distinct objects, considered as an object in its own right. Sets are fundamental objects in mathematics and are used to define various mathematical concepts.");
+        addAssignmentToProblemAnswer(pa_14_2_1, assignment14_2);
+        addProblemAnswerToAssignment(assignment14_2, pa_14_2_1);
+
+        ProblemAnswer pa_14_2_2 = createProblemAnswer("What is a subset?", "A subset is a set whose elements are all contained within another set. If A is a subset of B, then every element of A is also an element of B.");
+        addAssignmentToProblemAnswer(pa_14_2_2, assignment14_2);
+        addProblemAnswerToAssignment(assignment14_2, pa_14_2_2);
+
+        ProblemAnswer pa_14_2_3 = createProblemAnswer("What is the union of two sets?", "The union of two sets is a set containing all the elements of both sets. The union of sets A and B is denoted by A ∪ B and includes all elements that are in A, in B, or in both.");
+        addAssignmentToProblemAnswer(pa_14_2_3, assignment14_2);
+        addProblemAnswerToAssignment(assignment14_2, pa_14_2_3);
+
+        ProblemAnswer pa_14_2_4 = createProblemAnswer("What is the intersection of two sets?", "The intersection of two sets is a set containing only the elements that are common to both sets. The intersection of sets A and B is denoted by A ∩ B and includes all elements that are in both A and B.");
+        addAssignmentToProblemAnswer(pa_14_2_4, assignment14_2);
+        addProblemAnswerToAssignment(assignment14_2, pa_14_2_4);
+
+        ProblemAnswer pa_14_2_5 = createProblemAnswer("What is the difference between two sets?", "The difference between two sets is a set containing the elements of one set that are not in the other set. The difference of sets A and B is denoted by A - B and includes all elements that are in A but not in B.");
+        addAssignmentToProblemAnswer(pa_14_2_5, assignment14_2);
+        addProblemAnswerToAssignment(assignment14_2, pa_14_2_5);
+
+        ProblemAnswer pa_14_2_6 = createProblemAnswer("What is the Cartesian product of two sets?", "The Cartesian product of two sets is a set of ordered pairs, where the first element is from the first set and the second element is from the second set. The Cartesian product of sets A and B is denoted by A × B.");
+        addAssignmentToProblemAnswer(pa_14_2_6, assignment14_2);
+        addProblemAnswerToAssignment(assignment14_2, pa_14_2_6);
+
+        ProblemAnswer pa_14_2_7 = createProblemAnswer("What is a power set?", "The power set of a set is the set of all possible subsets of the original set. If the original set has n elements, its power set will have 2^n elements.");
+        addAssignmentToProblemAnswer(pa_14_2_7, assignment14_2);
+        addProblemAnswerToAssignment(assignment14_2, pa_14_2_7);
+
+        ProblemAnswer pa_14_2_8 = createProblemAnswer("What is a Venn diagram?", "A Venn diagram is a visual representation of sets and their relationships. It uses overlapping circles to show the union, intersection, and differences of sets.");
+        addAssignmentToProblemAnswer(pa_14_2_8, assignment14_2);
+        addProblemAnswerToAssignment(assignment14_2, pa_14_2_8);
+
+        ProblemAnswer pa_14_2_9 = createProblemAnswer("What is the principle of inclusion-exclusion?", "The principle of inclusion-exclusion is a formula used to calculate the number of elements in the union of multiple sets. It accounts for the overlapping elements by adding the sizes of individual sets and subtracting the sizes of their intersections.");
+        addAssignmentToProblemAnswer(pa_14_2_9, assignment14_2);
+        addProblemAnswerToAssignment(assignment14_2, pa_14_2_9);
+
+        ProblemAnswer pa_14_2_10 = createProblemAnswer("What are some real-world applications of set theory?", "Set theory has various real-world applications, including in computer science (database queries and algorithms), probability (defining events and outcomes), logic (formalizing reasoning), and data analysis (grouping and categorizing information).");
+        addAssignmentToProblemAnswer(pa_14_2_10, assignment14_2);
+        addProblemAnswerToAssignment(assignment14_2, pa_14_2_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Set Theory' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment14_3 = createAssignment("Graph Theory Assignment", faculty4, Date.from(LocalDate.of(2029, 11, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_14_3_1 = createProblemAnswer("What is graph theory?", "Graph theory is the study of graphs as mathematical structures used to model pairwise relations between objects. It involves the analysis of vertices (nodes) and edges (connections) that form graphs.");
+        addAssignmentToProblemAnswer(pa_14_3_1, assignment14_3);
+        addProblemAnswerToAssignment(assignment14_3, pa_14_3_1);
+
+        ProblemAnswer pa_14_3_2 = createProblemAnswer("What is a directed graph?", "A directed graph (or digraph) is a graph in which edges have a direction, indicated by arrows. The direction of an edge shows the relationship between two vertices, such as a one-way street or hierarchy.");
+        addAssignmentToProblemAnswer(pa_14_3_2, assignment14_3);
+        addProblemAnswerToAssignment(assignment14_3, pa_14_3_2);
+
+        ProblemAnswer pa_14_3_3 = createProblemAnswer("What is an undirected graph?", "An undirected graph is a graph in which edges do not have a direction. The connections between vertices are bidirectional, meaning there is no distinction between the two endpoints of an edge.");
+        addAssignmentToProblemAnswer(pa_14_3_3, assignment14_3);
+        addProblemAnswerToAssignment(assignment14_3, pa_14_3_3);
+
+        ProblemAnswer pa_14_3_4 = createProblemAnswer("What is a connected graph?", "A connected graph is a graph in which there is a path between any two vertices. In other words, all vertices in the graph are reachable from any other vertex.");
+        addAssignmentToProblemAnswer(pa_14_3_4, assignment14_3);
+        addProblemAnswerToAssignment(assignment14_3, pa_14_3_4);
+
+        ProblemAnswer pa_14_3_5 = createProblemAnswer("What is a cycle in a graph?", "A cycle in a graph is a path that starts and ends at the same vertex, with all edges and vertices being distinct, except for the starting and ending vertex. Cycles are important in analyzing the structure and properties of graphs.");
+        addAssignmentToProblemAnswer(pa_14_3_5, assignment14_3);
+        addProblemAnswerToAssignment(assignment14_3, pa_14_3_5);
+
+        ProblemAnswer pa_14_3_6 = createProblemAnswer("What is a tree in graph theory?", "A tree is a connected, acyclic graph, meaning it has no cycles. It is a hierarchical structure with a unique path between any two vertices. Trees are used to model various hierarchical relationships in computer science and other fields.");
+        addAssignmentToProblemAnswer(pa_14_3_6, assignment14_3);
+        addProblemAnswerToAssignment(assignment14_3, pa_14_3_6);
+
+        ProblemAnswer pa_14_3_7 = createProblemAnswer("What is a spanning tree?", "A spanning tree of a graph is a subgraph that includes all the vertices of the original graph and is a tree. It provides a way to connect all vertices with the minimum number of edges.");
+        addAssignmentToProblemAnswer(pa_14_3_7, assignment14_3);
+        addProblemAnswerToAssignment(assignment14_3, pa_14_3_7);
+
+        ProblemAnswer pa_14_3_8 = createProblemAnswer("What is a bipartite graph?", "A bipartite graph is a graph whose vertices can be divided into two disjoint sets such that no two vertices within the same set are adjacent. Bipartite graphs are used to model relationships between two distinct groups.");
+        addAssignmentToProblemAnswer(pa_14_3_8, assignment14_3);
+        addProblemAnswerToAssignment(assignment14_3, pa_14_3_8);
+
+        ProblemAnswer pa_14_3_9 = createProblemAnswer("What is the degree of a vertex?", "The degree of a vertex in a graph is the number of edges connected to it. In a directed graph, the in-degree is the number of incoming edges, and the out-degree is the number of outgoing edges.");
+        addAssignmentToProblemAnswer(pa_14_3_9, assignment14_3);
+        addProblemAnswerToAssignment(assignment14_3, pa_14_3_9);
+
+        ProblemAnswer pa_14_3_10 = createProblemAnswer("What are some common graph traversal algorithms?", "Common graph traversal algorithms include Depth-First Search (DFS) and Breadth-First Search (BFS). These algorithms are used to explore and analyze the structure of graphs by visiting vertices in a systematic manner.");
+        addAssignmentToProblemAnswer(pa_14_3_10, assignment14_3);
+        addProblemAnswerToAssignment(assignment14_3, pa_14_3_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Graph Theory' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment14_4 = createAssignment("Combinatorics Assignment", faculty4, Date.from(LocalDate.of(2029, 12, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_14_4_1 = createProblemAnswer("What is combinatorics?", "Combinatorics is the study of counting, arrangement, and combination of objects. It deals with problems related to the enumeration and combination of discrete structures.");
+        addAssignmentToProblemAnswer(pa_14_4_1, assignment14_4);
+        addProblemAnswerToAssignment(assignment14_4, pa_14_4_1);
+
+        ProblemAnswer pa_14_4_2 = createProblemAnswer("What are permutations?", "Permutations are arrangements of objects in a specific order. The number of permutations of n distinct objects is given by n! (n factorial), which is the product of all positive integers up to n.");
+        addAssignmentToProblemAnswer(pa_14_4_2, assignment14_4);
+        addProblemAnswerToAssignment(assignment14_4, pa_14_4_2);
+
+        ProblemAnswer pa_14_4_3 = createProblemAnswer("What are combinations?", "Combinations are selections of objects without regard to order. The number of combinations of n objects taken r at a time is given by C(n, r) = n! / [r!(n-r)!], also known as binomial coefficients.");
+        addAssignmentToProblemAnswer(pa_14_4_3, assignment14_4);
+        addProblemAnswerToAssignment(assignment14_4, pa_14_4_3);
+
+        ProblemAnswer pa_14_4_4 = createProblemAnswer("What is the principle of multiplication?", "The principle of multiplication states that if there are m ways to do one thing and n ways to do another, then there are m * n ways to do both. It is a fundamental rule in counting and combinatorics.");
+        addAssignmentToProblemAnswer(pa_14_4_4, assignment14_4);
+        addProblemAnswerToAssignment(assignment14_4, pa_14_4_4);
+
+        ProblemAnswer pa_14_4_5 = createProblemAnswer("What is the principle of addition?", "The principle of addition states that if there are m ways to do one thing and n ways to do another, and the two events are mutually exclusive, then there are m + n ways to do either. It is used to combine disjoint sets.");
+        addAssignmentToProblemAnswer(pa_14_4_5, assignment14_4);
+        addProblemAnswerToAssignment(assignment14_4, pa_14_4_5);
+
+        ProblemAnswer pa_14_4_6 = createProblemAnswer("What is the binomial theorem?", "The binomial theorem provides a way to expand expressions of the form (a + b)^n. It states that (a + b)^n = Σ[k=0 to n] C(n, k) * a^(n-k) * b^k, where C(n, k) are binomial coefficients.");
+        addAssignmentToProblemAnswer(pa_14_4_6, assignment14_4);
+        addProblemAnswerToAssignment(assignment14_4, pa_14_4_6);
+
+        ProblemAnswer pa_14_4_7 = createProblemAnswer("What is a combination with repetition?", "A combination with repetition allows for selecting objects where each object can be chosen more than once. The number of such combinations of n objects taken r at a time is given by C(n+r-1, r).");
+        addAssignmentToProblemAnswer(pa_14_4_7, assignment14_4);
+        addProblemAnswerToAssignment(assignment14_4, pa_14_4_7);
+
+        ProblemAnswer pa_14_4_8 = createProblemAnswer("What is the pigeonhole principle?", "The pigeonhole principle states that if more than n objects are placed into n containers, then at least one container must contain more than one object. It is used to prove the existence of certain properties in combinatorial problems.");
+        addAssignmentToProblemAnswer(pa_14_4_8, assignment14_4);
+        addProblemAnswerToAssignment(assignment14_4, pa_14_4_8);
+
+        ProblemAnswer pa_14_4_9 = createProblemAnswer("What are derangements?", "Derangements are permutations of a set of objects in which no object appears in its original position. The number of derangements of n objects is given by !n (subfactorial n) and can be calculated using a recursive formula.");
+        addAssignmentToProblemAnswer(pa_14_4_9, assignment14_4);
+        addProblemAnswerToAssignment(assignment14_4, pa_14_4_9);
+
+        ProblemAnswer pa_14_4_10 = createProblemAnswer("What are some real-world applications of combinatorics?", "Combinatorics has various real-world applications, including in computer science (algorithm analysis and cryptography), biology (genetic combinations and phylogenetics), statistics (probability and data analysis), and operations research (optimization and scheduling).");
+        addAssignmentToProblemAnswer(pa_14_4_10, assignment14_4);
+        addProblemAnswerToAssignment(assignment14_4, pa_14_4_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Combinatorics' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment15_1 = createAssignment("Newton's Laws Assignment", faculty5, Date.from(LocalDate.of(2029, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus15, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_15_1_1 = createProblemAnswer("What is Newton's First Law of Motion?", "Newton's First Law of Motion, also known as the law of inertia, states that an object will remain at rest or in uniform motion in a straight line unless acted upon by an external force.");
+        addAssignmentToProblemAnswer(pa_15_1_1, assignment15_1);
+        addProblemAnswerToAssignment(assignment15_1, pa_15_1_1);
+
+        ProblemAnswer pa_15_1_2 = createProblemAnswer("What is Newton's Second Law of Motion?", "Newton's Second Law of Motion states that the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass. The law is mathematically expressed as F = ma, where F is the net force, m is the mass, and a is the acceleration.");
+        addAssignmentToProblemAnswer(pa_15_1_2, assignment15_1);
+        addProblemAnswerToAssignment(assignment15_1, pa_15_1_2);
+
+        ProblemAnswer pa_15_1_3 = createProblemAnswer("What is Newton's Third Law of Motion?", "Newton's Third Law of Motion states that for every action, there is an equal and opposite reaction. This means that forces always occur in pairs; if one object exerts a force on another, the second object exerts an equal and opposite force on the first.");
+        addAssignmentToProblemAnswer(pa_15_1_3, assignment15_1);
+        addProblemAnswerToAssignment(assignment15_1, pa_15_1_3);
+
+        ProblemAnswer pa_15_1_4 = createProblemAnswer("What is inertia?", "Inertia is the property of an object that resists changes to its state of motion. An object with greater mass has greater inertia and requires more force to change its motion.");
+        addAssignmentToProblemAnswer(pa_15_1_4, assignment15_1);
+        addProblemAnswerToAssignment(assignment15_1, pa_15_1_4);
+
+        ProblemAnswer pa_15_1_5 = createProblemAnswer("What is the equation of motion for an object under constant acceleration?", "The equation of motion for an object under constant acceleration is given by the kinematic equations: \n1. v = u + at \n2. s = ut + 0.5at^2 \n3. v^2 = u^2 + 2as \nwhere u is the initial velocity, v is the final velocity, a is the acceleration, t is the time, and s is the displacement.");
+        addAssignmentToProblemAnswer(pa_15_1_5, assignment15_1);
+        addProblemAnswerToAssignment(assignment15_1, pa_15_1_5);
+
+        ProblemAnswer pa_15_1_6 = createProblemAnswer("What is the concept of equilibrium in mechanics?", "Equilibrium in mechanics refers to a state where the net force acting on an object is zero, resulting in no acceleration. An object in equilibrium can either be at rest or moving with constant velocity.");
+        addAssignmentToProblemAnswer(pa_15_1_6, assignment15_1);
+        addProblemAnswerToAssignment(assignment15_1, pa_15_1_6);
+
+        ProblemAnswer pa_15_1_7 = createProblemAnswer("What is a free-body diagram?", "A free-body diagram is a graphical representation used to visualize the forces acting on an object. It helps in analyzing the motion of the object by showing all external forces as vectors originating from the object.");
+        addAssignmentToProblemAnswer(pa_15_1_7, assignment15_1);
+        addProblemAnswerToAssignment(assignment15_1, pa_15_1_7);
+
+        ProblemAnswer pa_15_1_8 = createProblemAnswer("How do you calculate the net force acting on an object?", "The net force acting on an object is calculated by vectorially adding all the individual forces acting on the object. The net force determines the acceleration of the object according to Newton's Second Law of Motion.");
+        addAssignmentToProblemAnswer(pa_15_1_8, assignment15_1);
+        addProblemAnswerToAssignment(assignment15_1, pa_15_1_8);
+
+        ProblemAnswer pa_15_1_9 = createProblemAnswer("What is the difference between weight and mass?", "Mass is a measure of the amount of matter in an object, while weight is the force exerted by gravity on that object. Mass is measured in kilograms (kg), and weight is measured in newtons (N). Weight is calculated as W = mg, where m is the mass and g is the acceleration due to gravity.");
+        addAssignmentToProblemAnswer(pa_15_1_9, assignment15_1);
+        addProblemAnswerToAssignment(assignment15_1, pa_15_1_9);
+
+        ProblemAnswer pa_15_1_10 = createProblemAnswer("How are Newton's laws applied in real-world scenarios?", "Newton's laws are applied in various real-world scenarios, such as calculating the motion of vehicles, analyzing the stability of structures, understanding the behavior of fluids, and predicting the motion of celestial bodies. These laws provide a framework for solving problems in mechanics and engineering.");
+        addAssignmentToProblemAnswer(pa_15_1_10, assignment15_1);
+        addProblemAnswerToAssignment(assignment15_1, pa_15_1_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Newton's Laws' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment15_2 = createAssignment("Energy Principles Assignment", faculty5, Date.from(LocalDate.of(2029, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus15, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_15_2_1 = createProblemAnswer("What is kinetic energy?", "Kinetic energy is the energy possessed by an object due to its motion. It is calculated using the formula KE = 0.5 * m * v^2, where m is the mass of the object and v is its velocity.");
+        addAssignmentToProblemAnswer(pa_15_2_1, assignment15_2);
+        addProblemAnswerToAssignment(assignment15_2, pa_15_2_1);
+
+        ProblemAnswer pa_15_2_2 = createProblemAnswer("What is potential energy?", "Potential energy is the energy stored in an object due to its position or configuration. Gravitational potential energy, for example, is calculated using the formula PE = mgh, where m is the mass, g is the acceleration due to gravity, and h is the height above a reference level.");
+        addAssignmentToProblemAnswer(pa_15_2_2, assignment15_2);
+        addProblemAnswerToAssignment(assignment15_2, pa_15_2_2);
+
+        ProblemAnswer pa_15_2_3 = createProblemAnswer("What is the work-energy principle?", "The work-energy principle states that the work done on an object is equal to the change in its kinetic energy. It is mathematically expressed as W = ΔKE, where W is the work done and ΔKE is the change in kinetic energy.");
+        addAssignmentToProblemAnswer(pa_15_2_3, assignment15_2);
+        addProblemAnswerToAssignment(assignment15_2, pa_15_2_3);
+
+        ProblemAnswer pa_15_2_4 = createProblemAnswer("What is the conservation of energy?", "The conservation of energy principle states that energy cannot be created or destroyed, only transferred or transformed from one form to another. The total energy of an isolated system remains constant over time.");
+        addAssignmentToProblemAnswer(pa_15_2_4, assignment15_2);
+        addProblemAnswerToAssignment(assignment15_2, pa_15_2_4);
+
+        ProblemAnswer pa_15_2_5 = createProblemAnswer("What is mechanical energy?", "Mechanical energy is the sum of kinetic and potential energy in a system. It is the energy associated with the motion and position of an object. Mechanical energy can be conserved in the absence of non-conservative forces such as friction.");
+        addAssignmentToProblemAnswer(pa_15_2_5, assignment15_2);
+        addProblemAnswerToAssignment(assignment15_2, pa_15_2_5);
+
+        ProblemAnswer pa_15_2_6 = createProblemAnswer("What is power?", "Power is the rate at which work is done or energy is transferred. It is calculated using the formula P = W/t or P = ΔE/t, where P is the power, W is the work done, ΔE is the change in energy, and t is the time taken. Power is measured in watts (W).");
+        addAssignmentToProblemAnswer(pa_15_2_6, assignment15_2);
+        addProblemAnswerToAssignment(assignment15_2, pa_15_2_6);
+
+        ProblemAnswer pa_15_2_7 = createProblemAnswer("What is efficiency?", "Efficiency is a measure of how effectively energy is converted from one form to another in a system. It is calculated as the ratio of useful energy output to the total energy input, expressed as a percentage: Efficiency = (useful energy output / total energy input) * 100%.");
+        addAssignmentToProblemAnswer(pa_15_2_7, assignment15_2);
+        addProblemAnswerToAssignment(assignment15_2, pa_15_2_7);
+
+        ProblemAnswer pa_15_2_8 = createProblemAnswer("What is work in physics?", "Work is done when a force acts on an object to move it in the direction of the force. It is calculated using the formula W = F * d * cos(θ), where W is the work, F is the force, d is the displacement, and θ is the angle between the force and the direction of motion. Work is measured in joules (J).");
+        addAssignmentToProblemAnswer(pa_15_2_8, assignment15_2);
+        addProblemAnswerToAssignment(assignment15_2, pa_15_2_8);
+
+        ProblemAnswer pa_15_2_9 = createProblemAnswer("What is the difference between conservative and non-conservative forces?", "Conservative forces, such as gravity and spring force, do not dissipate energy and the work done by them depends only on the initial and final positions, not on the path taken. Non-conservative forces, such as friction and air resistance, dissipate energy as heat and the work done by them depends on the path taken.");
+        addAssignmentToProblemAnswer(pa_15_2_9, assignment15_2);
+        addProblemAnswerToAssignment(assignment15_2, pa_15_2_9);
+
+        ProblemAnswer pa_15_2_10 = createProblemAnswer("How are energy principles applied in real-world scenarios?", "Energy principles are applied in various real-world scenarios, such as calculating the efficiency of machines, analyzing the motion of objects, designing energy-efficient systems, and understanding the behavior of physical systems. These principles provide a framework for solving problems in engineering, physics, and other fields.");
+        addAssignmentToProblemAnswer(pa_15_2_10, assignment15_2);
+        addProblemAnswerToAssignment(assignment15_2, pa_15_2_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Energy Principles' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment15_3 = createAssignment("Motion Assignment", faculty5, Date.from(LocalDate.of(2029, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus15, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_15_3_1 = createProblemAnswer("What is linear motion?", "Linear motion is the movement of an object along a straight path. It is described by parameters such as displacement, velocity, and acceleration.");
+        addAssignmentToProblemAnswer(pa_15_3_1, assignment15_3);
+        addProblemAnswerToAssignment(assignment15_3, pa_15_3_1);
+
+        ProblemAnswer pa_15_3_2 = createProblemAnswer("What is projectile motion?", "Projectile motion is the curved path an object follows when it is thrown or projected near the Earth's surface. It is influenced by gravity and initial velocity, and its motion can be analyzed using the equations of motion.");
+        addAssignmentToProblemAnswer(pa_15_3_2, assignment15_3);
+        addProblemAnswerToAssignment(assignment15_3, pa_15_3_2);
+
+        ProblemAnswer pa_15_3_3 = createProblemAnswer("What is circular motion?", "Circular motion is the movement of an object along a circular path. It is characterized by parameters such as angular displacement, angular velocity, and centripetal acceleration.");
+        addAssignmentToProblemAnswer(pa_15_3_3, assignment15_3);
+        addProblemAnswerToAssignment(assignment15_3, pa_15_3_3);
+
+        ProblemAnswer pa_15_3_4 = createProblemAnswer("What is velocity?", "Velocity is a vector quantity that describes the rate of change of an object's displacement with respect to time. It has both magnitude and direction and is measured in meters per second (m/s).");
+        addAssignmentToProblemAnswer(pa_15_3_4, assignment15_3);
+        addProblemAnswerToAssignment(assignment15_3, pa_15_3_4);
+
+        ProblemAnswer pa_15_3_5 = createProblemAnswer("What is acceleration?", "Acceleration is a vector quantity that describes the rate of change of an object's velocity with respect to time. It is measured in meters per second squared (m/s^2).");
+        addAssignmentToProblemAnswer(pa_15_3_5, assignment15_3);
+        addProblemAnswerToAssignment(assignment15_3, pa_15_3_5);
+
+        ProblemAnswer pa_15_3_6 = createProblemAnswer("What are the equations of motion for constant acceleration?", "The equations of motion for constant acceleration are: \n1. v = u + at \n2. s = ut + 0.5at^2 \n3. v^2 = u^2 + 2as \nwhere u is the initial velocity, v is the final velocity, a is the acceleration, t is the time, and s is the displacement.");
+        addAssignmentToProblemAnswer(pa_15_3_6, assignment15_3);
+        addProblemAnswerToAssignment(assignment15_3, pa_15_3_6);
+
+        ProblemAnswer pa_15_3_7 = createProblemAnswer("What is the concept of free fall?", "Free fall is the motion of an object under the influence of gravity alone, without any other forces acting on it. The acceleration due to gravity is approximately 9.8 m/s^2 near the Earth's surface.");
+        addAssignmentToProblemAnswer(pa_15_3_7, assignment15_3);
+        addProblemAnswerToAssignment(assignment15_3, pa_15_3_7);
+
+        ProblemAnswer pa_15_3_8 = createProblemAnswer("What is centripetal acceleration?", "Centripetal acceleration is the acceleration experienced by an object moving in a circular path, directed towards the center of the circle. It is calculated using the formula a_c = v^2 / r, where v is the tangential velocity and r is the radius of the circular path.");
+        addAssignmentToProblemAnswer(pa_15_3_8, assignment15_3);
+        addProblemAnswerToAssignment(assignment15_3, pa_15_3_8);
+
+        ProblemAnswer pa_15_3_9 = createProblemAnswer("What is the difference between speed and velocity?", "Speed is a scalar quantity that represents the rate of motion, measured as the distance traveled per unit of time. Velocity is a vector quantity that includes both the speed and direction of motion.");
+        addAssignmentToProblemAnswer(pa_15_3_9, assignment15_3);
+        addProblemAnswerToAssignment(assignment15_3, pa_15_3_9);
+
+        ProblemAnswer pa_15_3_10 = createProblemAnswer("How are concepts of motion applied in real-world scenarios?", "Concepts of motion are applied in various real-world scenarios, such as analyzing the motion of vehicles, predicting the trajectory of projectiles, designing amusement park rides, and understanding the behavior of celestial bodies. These concepts provide a framework for solving problems in physics and engineering.");
+        addAssignmentToProblemAnswer(pa_15_3_10, assignment15_3);
+        addProblemAnswerToAssignment(assignment15_3, pa_15_3_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Motion' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment16_1 = createAssignment("Atomic Structure Assignment", faculty1, Date.from(LocalDate.of(2029, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus16, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_16_1_1 = createProblemAnswer("What are the main subatomic particles in an atom?", "The main subatomic particles in an atom are protons, neutrons, and electrons. Protons and neutrons are located in the nucleus, while electrons orbit the nucleus in electron shells.");
+        addAssignmentToProblemAnswer(pa_16_1_1, assignment16_1);
+        addProblemAnswerToAssignment(assignment16_1, pa_16_1_1);
+
+        ProblemAnswer pa_16_1_2 = createProblemAnswer("What is the atomic number?", "The atomic number is the number of protons in the nucleus of an atom. It defines the element and its position in the periodic table. For example, the atomic number of hydrogen is 1, and the atomic number of carbon is 6.");
+        addAssignmentToProblemAnswer(pa_16_1_2, assignment16_1);
+        addProblemAnswerToAssignment(assignment16_1, pa_16_1_2);
+
+        ProblemAnswer pa_16_1_3 = createProblemAnswer("What is the mass number?", "The mass number is the total number of protons and neutrons in the nucleus of an atom. It is used to distinguish between different isotopes of an element. For example, carbon-12 has a mass number of 12 (6 protons and 6 neutrons).");
+        addAssignmentToProblemAnswer(pa_16_1_3, assignment16_1);
+        addProblemAnswerToAssignment(assignment16_1, pa_16_1_3);
+
+        ProblemAnswer pa_16_1_4 = createProblemAnswer("What are isotopes?", "Isotopes are atoms of the same element that have different numbers of neutrons and, therefore, different mass numbers. For example, carbon-12 and carbon-14 are isotopes of carbon.");
+        addAssignmentToProblemAnswer(pa_16_1_4, assignment16_1);
+        addProblemAnswerToAssignment(assignment16_1, pa_16_1_4);
+
+        ProblemAnswer pa_16_1_5 = createProblemAnswer("What is the electron configuration?", "Electron configuration is the distribution of electrons in an atom's electron shells. It follows the Aufbau principle, Pauli exclusion principle, and Hund's rule. For example, the electron configuration of carbon is 1s^2 2s^2 2p^2.");
+        addAssignmentToProblemAnswer(pa_16_1_5, assignment16_1);
+        addProblemAnswerToAssignment(assignment16_1, pa_16_1_5);
+
+        ProblemAnswer pa_16_1_6 = createProblemAnswer("What is the periodic table?", "The periodic table is a tabular arrangement of elements based on their atomic number, electron configuration, and recurring chemical properties. Elements are organized into periods (rows) and groups (columns).");
+        addAssignmentToProblemAnswer(pa_16_1_6, assignment16_1);
+        addProblemAnswerToAssignment(assignment16_1, pa_16_1_6);
+
+        ProblemAnswer pa_16_1_7 = createProblemAnswer("What are valence electrons?", "Valence electrons are the electrons in the outermost electron shell of an atom. They are important in determining an element's chemical properties and reactivity. For example, carbon has 4 valence electrons.");
+        addAssignmentToProblemAnswer(pa_16_1_7, assignment16_1);
+        addProblemAnswerToAssignment(assignment16_1, pa_16_1_7);
+
+        ProblemAnswer pa_16_1_8 = createProblemAnswer("What is an atomic orbital?", "An atomic orbital is a region of space around the nucleus where an electron is likely to be found. Orbitals have different shapes and energy levels, such as s, p, d, and f orbitals.");
+        addAssignmentToProblemAnswer(pa_16_1_8, assignment16_1);
+        addProblemAnswerToAssignment(assignment16_1, pa_16_1_8);
+
+        ProblemAnswer pa_16_1_9 = createProblemAnswer("What is the significance of the Bohr model?", "The Bohr model of the atom describes electrons orbiting the nucleus in discrete energy levels. It explains the quantization of energy and the emission of light by atoms, leading to the development of quantum mechanics.");
+        addAssignmentToProblemAnswer(pa_16_1_9, assignment16_1);
+        addProblemAnswerToAssignment(assignment16_1, pa_16_1_9);
+
+        ProblemAnswer pa_16_1_10 = createProblemAnswer("How does atomic structure influence an element's properties?", "Atomic structure, including the arrangement of protons, neutrons, and electrons, determines an element's chemical and physical properties. These properties include atomic size, ionization energy, electronegativity, and reactivity.");
+        addAssignmentToProblemAnswer(pa_16_1_10, assignment16_1);
+        addProblemAnswerToAssignment(assignment16_1, pa_16_1_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Atomic Structure' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment16_2 = createAssignment("Chemical Bonding Assignment", faculty1, Date.from(LocalDate.of(2029, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus16, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_16_2_1 = createProblemAnswer("What is a chemical bond?", "A chemical bond is a force of attraction that holds atoms together in a molecule or compound. It is formed by the sharing or transfer of electrons between atoms.");
+        addAssignmentToProblemAnswer(pa_16_2_1, assignment16_2);
+        addProblemAnswerToAssignment(assignment16_2, pa_16_2_1);
+
+        ProblemAnswer pa_16_2_2 = createProblemAnswer("What is an ionic bond?", "An ionic bond is a type of chemical bond formed by the electrostatic attraction between oppositely charged ions. It occurs when one atom donates an electron to another, resulting in the formation of positive and negative ions.");
+        addAssignmentToProblemAnswer(pa_16_2_2, assignment16_2);
+        addProblemAnswerToAssignment(assignment16_2, pa_16_2_2);
+
+        ProblemAnswer pa_16_2_3 = createProblemAnswer("What is a covalent bond?", "A covalent bond is a type of chemical bond formed by the sharing of electron pairs between atoms. It occurs when atoms have similar electronegativities and share electrons to achieve a stable electron configuration.");
+        addAssignmentToProblemAnswer(pa_16_2_3, assignment16_2);
+        addProblemAnswerToAssignment(assignment16_2, pa_16_2_3);
+
+        ProblemAnswer pa_16_2_4 = createProblemAnswer("What is a metallic bond?", "A metallic bond is a type of chemical bond found in metals. It involves the attraction between positively charged metal ions and the sea of delocalized electrons that move freely throughout the metal lattice.");
+        addAssignmentToProblemAnswer(pa_16_2_4, assignment16_2);
+        addProblemAnswerToAssignment(assignment16_2, pa_16_2_4);
+
+        ProblemAnswer pa_16_2_5 = createProblemAnswer("What is electronegativity?", "Electronegativity is a measure of an atom's ability to attract and hold onto electrons in a chemical bond. It determines the type of bond formed between atoms. For example, fluorine has the highest electronegativity, while francium has the lowest.");
+        addAssignmentToProblemAnswer(pa_16_2_5, assignment16_2);
+        addProblemAnswerToAssignment(assignment16_2, pa_16_2_5);
+
+        ProblemAnswer pa_16_2_6 = createProblemAnswer("What is a polar covalent bond?", "A polar covalent bond is a type of covalent bond in which the electrons are shared unequally between atoms, resulting in a partial positive charge on one atom and a partial negative charge on the other. This occurs due to differences in electronegativity.");
+        addAssignmentToProblemAnswer(pa_16_2_6, assignment16_2);
+        addProblemAnswerToAssignment(assignment16_2, pa_16_2_6);
+
+        ProblemAnswer pa_16_2_7 = createProblemAnswer("What is a nonpolar covalent bond?", "A nonpolar covalent bond is a type of covalent bond in which the electrons are shared equally between atoms, resulting in no significant charge separation. This occurs when the atoms have similar electronegativities.");
+        addAssignmentToProblemAnswer(pa_16_2_7, assignment16_2);
+        addProblemAnswerToAssignment(assignment16_2, pa_16_2_7);
+
+        ProblemAnswer pa_16_2_8 = createProblemAnswer("What is bond energy?", "Bond energy is the amount of energy required to break a chemical bond and separate the atoms in a molecule. It is a measure of bond strength, with higher bond energy indicating a stronger bond.");
+        addAssignmentToProblemAnswer(pa_16_2_8, assignment16_2);
+        addProblemAnswerToAssignment(assignment16_2, pa_16_2_8);
+
+        ProblemAnswer pa_16_2_9 = createProblemAnswer("What is a Lewis structure?", "A Lewis structure is a diagram that represents the arrangement of electrons in a molecule. It shows the bonding between atoms and the lone pairs of electrons. Lewis structures help predict the shapes and reactivities of molecules.");
+        addAssignmentToProblemAnswer(pa_16_2_9, assignment16_2);
+        addProblemAnswerToAssignment(assignment16_2, pa_16_2_9);
+
+        ProblemAnswer pa_16_2_10 = createProblemAnswer("How do chemical bonds influence the properties of substances?", "Chemical bonds determine the physical and chemical properties of substances, such as melting point, boiling point, solubility, conductivity, and reactivity. The type and strength of bonds affect how substances interact with each other.");
+        addAssignmentToProblemAnswer(pa_16_2_10, assignment16_2);
+        addProblemAnswerToAssignment(assignment16_2, pa_16_2_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Chemical Bonding' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment16_3 = createAssignment("Reactions Assignment", faculty1, Date.from(LocalDate.of(2029, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus16, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_16_3_1 = createProblemAnswer("What is a chemical reaction?", "A chemical reaction is a process in which substances (reactants) are transformed into different substances (products) through the breaking and forming of chemical bonds.");
+        addAssignmentToProblemAnswer(pa_16_3_1, assignment16_3);
+        addProblemAnswerToAssignment(assignment16_3, pa_16_3_1);
+
+        ProblemAnswer pa_16_3_2 = createProblemAnswer("What are reactants and products?", "Reactants are the starting substances in a chemical reaction, while products are the substances formed as a result of the reaction. The reactants undergo chemical changes to form the products.");
+        addAssignmentToProblemAnswer(pa_16_3_2, assignment16_3);
+        addProblemAnswerToAssignment(assignment16_3, pa_16_3_2);
+
+        ProblemAnswer pa_16_3_3 = createProblemAnswer("What is the law of conservation of mass?", "The law of conservation of mass states that mass is neither created nor destroyed in a chemical reaction. The total mass of the reactants is equal to the total mass of the products.");
+        addAssignmentToProblemAnswer(pa_16_3_3, assignment16_3);
+        addProblemAnswerToAssignment(assignment16_3, pa_16_3_3);
+
+        ProblemAnswer pa_16_3_4 = createProblemAnswer("What are the different types of chemical reactions?", "Different types of chemical reactions include synthesis (combination), decomposition, single displacement, double displacement, combustion, and redox (oxidation-reduction) reactions.");
+        addAssignmentToProblemAnswer(pa_16_3_4, assignment16_3);
+        addProblemAnswerToAssignment(assignment16_3, pa_16_3_4);
+
+        ProblemAnswer pa_16_3_5 = createProblemAnswer("What is a synthesis reaction?", "A synthesis reaction, also known as a combination reaction, occurs when two or more reactants combine to form a single product. The general form is A + B → AB.");
+        addAssignmentToProblemAnswer(pa_16_3_5, assignment16_3);
+        addProblemAnswerToAssignment(assignment16_3, pa_16_3_5);
+
+        ProblemAnswer pa_16_3_6 = createProblemAnswer("What is a decomposition reaction?", "A decomposition reaction occurs when a single compound breaks down into two or more simpler substances. The general form is AB → A + B.");
+        addAssignmentToProblemAnswer(pa_16_3_6, assignment16_3);
+        addProblemAnswerToAssignment(assignment16_3, pa_16_3_6);
+
+        ProblemAnswer pa_16_3_7 = createProblemAnswer("What is a single displacement reaction?", "A single displacement reaction occurs when an element replaces another element in a compound. The general form is A + BC → AC + B.");
+        addAssignmentToProblemAnswer(pa_16_3_7, assignment16_3);
+        addProblemAnswerToAssignment(assignment16_3, pa_16_3_7);
+
+        ProblemAnswer pa_16_3_8 = createProblemAnswer("What is a double displacement reaction?", "A double displacement reaction occurs when the ions of two compounds exchange places to form two new compounds. The general form is AB + CD → AD + CB.");
+        addAssignmentToProblemAnswer(pa_16_3_8, assignment16_3);
+        addProblemAnswerToAssignment(assignment16_3, pa_16_3_8);
+
+        ProblemAnswer pa_16_3_9 = createProblemAnswer("What is a combustion reaction?", "A combustion reaction occurs when a substance reacts with oxygen to produce heat and light. It often involves hydrocarbons reacting with oxygen to produce carbon dioxide and water. The general form is CxHy + O2 → CO2 + H2O.");
+        addAssignmentToProblemAnswer(pa_16_3_9, assignment16_3);
+        addProblemAnswerToAssignment(assignment16_3, pa_16_3_9);
+
+        ProblemAnswer pa_16_3_10 = createProblemAnswer("What is chemical equilibrium?", "Chemical equilibrium is a state in which the forward and reverse reactions occur at the same rate, resulting in constant concentrations of reactants and products. It can be influenced by factors such as temperature, pressure, and concentration.");
+        addAssignmentToProblemAnswer(pa_16_3_10, assignment16_3);
+        addProblemAnswerToAssignment(assignment16_3, pa_16_3_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Reactions' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment17_1 = createAssignment("Cell Structure Assignment", faculty2, Date.from(LocalDate.of(2029, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_17_1_1 = createProblemAnswer("What is the cell membrane?", "The cell membrane is a thin, flexible barrier that surrounds the cell, regulating what enters and exits the cell. It is composed of a lipid bilayer with embedded proteins.");
+        addAssignmentToProblemAnswer(pa_17_1_1, assignment17_1);
+        addProblemAnswerToAssignment(assignment17_1, pa_17_1_1);
+
+        ProblemAnswer pa_17_1_2 = createProblemAnswer("What is the function of the nucleus?", "The nucleus is the control center of the cell, containing the cell's genetic material (DNA). It regulates gene expression and controls cellular activities such as growth, metabolism, and reproduction.");
+        addAssignmentToProblemAnswer(pa_17_1_2, assignment17_1);
+        addProblemAnswerToAssignment(assignment17_1, pa_17_1_2);
+
+        ProblemAnswer pa_17_1_3 = createProblemAnswer("What are organelles?", "Organelles are specialized structures within a cell that perform specific functions. Examples include the mitochondria (energy production), endoplasmic reticulum (protein and lipid synthesis), and Golgi apparatus (modifying, sorting, and packaging proteins).");
+        addAssignmentToProblemAnswer(pa_17_1_3, assignment17_1);
+        addProblemAnswerToAssignment(assignment17_1, pa_17_1_3);
+
+        ProblemAnswer pa_17_1_4 = createProblemAnswer("What are the differences between prokaryotic and eukaryotic cells?", "Prokaryotic cells lack a true nucleus and membrane-bound organelles, while eukaryotic cells have a defined nucleus and various membrane-bound organelles. Prokaryotes include bacteria and archaea, while eukaryotes include plants, animals, fungi, and protists.");
+        addAssignmentToProblemAnswer(pa_17_1_4, assignment17_1);
+        addProblemAnswerToAssignment(assignment17_1, pa_17_1_4);
+
+        ProblemAnswer pa_17_1_5 = createProblemAnswer("What is the role of mitochondria?", "Mitochondria are the powerhouse of the cell, responsible for producing energy through cellular respiration. They convert glucose and oxygen into ATP (adenosine triphosphate), the cell's main energy currency.");
+        addAssignmentToProblemAnswer(pa_17_1_5, assignment17_1);
+        addProblemAnswerToAssignment(assignment17_1, pa_17_1_5);
+
+        ProblemAnswer pa_17_1_6 = createProblemAnswer("What is the endoplasmic reticulum?", "The endoplasmic reticulum (ER) is a network of membranous tubules within the cell that plays a role in protein and lipid synthesis. The rough ER is studded with ribosomes, while the smooth ER lacks ribosomes.");
+        addAssignmentToProblemAnswer(pa_17_1_6, assignment17_1);
+        addProblemAnswerToAssignment(assignment17_1, pa_17_1_6);
+
+        ProblemAnswer pa_17_1_7 = createProblemAnswer("What is the function of ribosomes?", "Ribosomes are the molecular machines responsible for protein synthesis. They translate messenger RNA (mRNA) into polypeptide chains, which fold into functional proteins.");
+        addAssignmentToProblemAnswer(pa_17_1_7, assignment17_1);
+        addProblemAnswerToAssignment(assignment17_1, pa_17_1_7);
+
+        ProblemAnswer pa_17_1_8 = createProblemAnswer("What is the Golgi apparatus?", "The Golgi apparatus is an organelle that modifies, sorts, and packages proteins and lipids for transport to their final destinations. It is often likened to a cellular post office.");
+        addAssignmentToProblemAnswer(pa_17_1_8, assignment17_1);
+        addProblemAnswerToAssignment(assignment17_1, pa_17_1_8);
+
+        ProblemAnswer pa_17_1_9 = createProblemAnswer("What are lysosomes?", "Lysosomes are organelles that contain digestive enzymes to break down waste materials and cellular debris. They play a key role in recycling cellular components and defending against pathogens.");
+        addAssignmentToProblemAnswer(pa_17_1_9, assignment17_1);
+        addProblemAnswerToAssignment(assignment17_1, pa_17_1_9);
+
+        ProblemAnswer pa_17_1_10 = createProblemAnswer("How do cell structures contribute to their functions?", "Cell structures are specialized to perform specific functions that are crucial for the cell's survival and efficiency. Each organelle and component of the cell works together to maintain homeostasis, facilitate metabolism, and ensure proper growth and division.");
+        addAssignmentToProblemAnswer(pa_17_1_10, assignment17_1);
+        addProblemAnswerToAssignment(assignment17_1, pa_17_1_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Cell Structure' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment17_2 = createAssignment("Genetics Assignment", faculty2, Date.from(LocalDate.of(2029, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_17_2_1 = createProblemAnswer("What is genetics?", "Genetics is the study of heredity and the variation of inherited characteristics. It examines how traits are passed from one generation to the next through genes.");
+        addAssignmentToProblemAnswer(pa_17_2_1, assignment17_2);
+        addProblemAnswerToAssignment(assignment17_2, pa_17_2_1);
+
+        ProblemAnswer pa_17_2_2 = createProblemAnswer("What are Mendelian genetics?", "Mendelian genetics is the study of the principles of inheritance discovered by Gregor Mendel. It includes the laws of segregation and independent assortment, which explain how traits are inherited through dominant and recessive alleles.");
+        addAssignmentToProblemAnswer(pa_17_2_2, assignment17_2);
+        addProblemAnswerToAssignment(assignment17_2, pa_17_2_2);
+
+        ProblemAnswer pa_17_2_3 = createProblemAnswer("What is DNA?", "DNA (deoxyribonucleic acid) is the molecule that carries genetic information in living organisms. It is composed of two strands forming a double helix, with each strand made up of nucleotides containing a sugar, a phosphate group, and a nitrogenous base.");
+        addAssignmentToProblemAnswer(pa_17_2_3, assignment17_2);
+        addProblemAnswerToAssignment(assignment17_2, pa_17_2_3);
+
+        ProblemAnswer pa_17_2_4 = createProblemAnswer("What is the structure of a gene?", "A gene is a segment of DNA that contains the instructions for building a specific protein. It includes coding regions called exons and non-coding regions called introns, as well as regulatory sequences that control gene expression.");
+        addAssignmentToProblemAnswer(pa_17_2_4, assignment17_2);
+        addProblemAnswerToAssignment(assignment17_2, pa_17_2_4);
+
+        ProblemAnswer pa_17_2_5 = createProblemAnswer("What is DNA replication?", "DNA replication is the process by which a cell copies its DNA before cell division. It involves the unwinding of the double helix, the formation of a replication fork, and the synthesis of new DNA strands by DNA polymerase.");
+        addAssignmentToProblemAnswer(pa_17_2_5, assignment17_2);
+        addProblemAnswerToAssignment(assignment17_2, pa_17_2_5);
+
+        ProblemAnswer pa_17_2_6 = createProblemAnswer("What is transcription?", "Transcription is the process by which the genetic information in DNA is copied into messenger RNA (mRNA). It involves the binding of RNA polymerase to a promoter, the unwinding of the DNA, and the synthesis of a complementary RNA strand.");
+        addAssignmentToProblemAnswer(pa_17_2_6, assignment17_2);
+        addProblemAnswerToAssignment(assignment17_2, pa_17_2_6);
+
+        ProblemAnswer pa_17_2_7 = createProblemAnswer("What is translation?", "Translation is the process by which the genetic information in mRNA is used to synthesize a protein. It occurs at the ribosome, where transfer RNA (tRNA) molecules bring amino acids that are added to a growing polypeptide chain according to the codon sequence in the mRNA.");
+        addAssignmentToProblemAnswer(pa_17_2_7, assignment17_2);
+        addProblemAnswerToAssignment(assignment17_2, pa_17_2_7);
+
+        ProblemAnswer pa_17_2_8 = createProblemAnswer("What is a mutation?", "A mutation is a change in the DNA sequence that can result in an altered gene product or regulation. Mutations can be caused by errors during DNA replication, exposure to mutagens, or other factors, and they can have various effects on an organism's traits.");
+        addAssignmentToProblemAnswer(pa_17_2_8, assignment17_2);
+        addProblemAnswerToAssignment(assignment17_2, pa_17_2_8);
+
+        ProblemAnswer pa_17_2_9 = createProblemAnswer("What is genetic variation?", "Genetic variation refers to the diversity in gene frequencies within a population. It is the result of mutations, genetic recombination during sexual reproduction, and other mechanisms, and it is essential for evolution and adaptation.");
+        addAssignmentToProblemAnswer(pa_17_2_9, assignment17_2);
+        addProblemAnswerToAssignment(assignment17_2, pa_17_2_9);
+
+        ProblemAnswer pa_17_2_10 = createProblemAnswer("What are some applications of genetics?", "Applications of genetics include medical diagnostics and treatments, genetic engineering and biotechnology, forensic science, agriculture (crop and livestock breeding), and understanding evolutionary relationships among species.");
+        addAssignmentToProblemAnswer(pa_17_2_10, assignment17_2);
+        addProblemAnswerToAssignment(assignment17_2, pa_17_2_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Genetics' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment17_3 = createAssignment("Evolution Assignment", faculty2, Date.from(LocalDate.of(2029, 9, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_17_3_1 = createProblemAnswer("What is the theory of evolution?", "The theory of evolution is the scientific explanation for the diversity of life on Earth. It states that all species of organisms have descended from common ancestors through a process of gradual change and natural selection.");
+        addAssignmentToProblemAnswer(pa_17_3_1, assignment17_3);
+        addProblemAnswerToAssignment(assignment17_3, pa_17_3_1);
+
+        ProblemAnswer pa_17_3_2 = createProblemAnswer("What is natural selection?", "Natural selection is the process by which certain traits become more common in a population because they increase an organism's chances of survival and reproduction. It is a key mechanism of evolution.");
+        addAssignmentToProblemAnswer(pa_17_3_2, assignment17_3);
+        addProblemAnswerToAssignment(assignment17_3, pa_17_3_2);
+
+        ProblemAnswer pa_17_3_3 = createProblemAnswer("What is genetic variation?", "Genetic variation refers to the differences in DNA sequences among individuals within a population. It is the raw material for evolution, as it provides the genetic diversity on which natural selection acts.");
+        addAssignmentToProblemAnswer(pa_17_3_3, assignment17_3);
+        addProblemAnswerToAssignment(assignment17_3, pa_17_3_3);
+
+        ProblemAnswer pa_17_3_4 = createProblemAnswer("What is the evidence for evolution?", "Evidence for evolution comes from various fields, including paleontology (fossil record), comparative anatomy (homologous structures), molecular biology (DNA and protein similarities), biogeography (distribution of species), and embryology (developmental stages).");
+        addAssignmentToProblemAnswer(pa_17_3_4, assignment17_3);
+        addProblemAnswerToAssignment(assignment17_3, pa_17_3_4);
+
+        ProblemAnswer pa_17_3_5 = createProblemAnswer("What is a fossil record?", "The fossil record is the collection of fossils that provides evidence of the history of life on Earth. It shows the progression of life forms over time and supports the idea of common ancestry and evolutionary change.");
+        addAssignmentToProblemAnswer(pa_17_3_5, assignment17_3);
+        addProblemAnswerToAssignment(assignment17_3, pa_17_3_5);
+
+        ProblemAnswer pa_17_3_6 = createProblemAnswer("What are homologous structures?", "Homologous structures are anatomical features that are similar in different species because they share a common ancestor. Examples include the forelimbs of humans, whales, bats, and birds, which have different functions but similar bone structures.");
+        addAssignmentToProblemAnswer(pa_17_3_6, assignment17_3);
+        addProblemAnswerToAssignment(assignment17_3, pa_17_3_6);
+
+        ProblemAnswer pa_17_3_7 = createProblemAnswer("What is speciation?", "Speciation is the process by which new species arise from existing species. It occurs when populations of the same species become isolated and diverge due to genetic variation and natural selection, eventually becoming reproductively incompatible.");
+        addAssignmentToProblemAnswer(pa_17_3_7, assignment17_3);
+        addProblemAnswerToAssignment(assignment17_3, pa_17_3_7);
+
+        ProblemAnswer pa_17_3_8 = createProblemAnswer("What is adaptive radiation?", "Adaptive radiation is the rapid evolution of a single species into multiple species that occupy different ecological niches. It often occurs when a species colonizes a new environment with diverse habitats and limited competition.");
+        addAssignmentToProblemAnswer(pa_17_3_8, assignment17_3);
+        addProblemAnswerToAssignment(assignment17_3, pa_17_3_8);
+
+        ProblemAnswer pa_17_3_9 = createProblemAnswer("What is the role of genetic drift in evolution?", "Genetic drift is a random process that can cause changes in allele frequencies in a population. It is more pronounced in small populations and can lead to the fixation or loss of alleles, contributing to evolutionary change.");
+        addAssignmentToProblemAnswer(pa_17_3_9, assignment17_3);
+        addProblemAnswerToAssignment(assignment17_3, pa_17_3_9);
+
+        ProblemAnswer pa_17_3_10 = createProblemAnswer("How do environmental factors influence evolution?", "Environmental factors, such as climate, food availability, and predators, exert selective pressures on organisms. These pressures influence which traits are advantageous and contribute to the adaptation of species to their environment.");
+        addAssignmentToProblemAnswer(pa_17_3_10, assignment17_3);
+        addProblemAnswerToAssignment(assignment17_3, pa_17_3_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Evolution' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment17_4 = createAssignment("Ecology Assignment", faculty2, Date.from(LocalDate.of(2029, 10, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_17_4_1 = createProblemAnswer("What is ecology?", "Ecology is the study of interactions between organisms and their environment. It examines how organisms affect and are affected by their surroundings, including other organisms and physical factors.");
+        addAssignmentToProblemAnswer(pa_17_4_1, assignment17_4);
+        addProblemAnswerToAssignment(assignment17_4, pa_17_4_1);
+
+        ProblemAnswer pa_17_4_2 = createProblemAnswer("What is an ecosystem?", "An ecosystem is a community of living organisms (plants, animals, and microbes) interacting with their physical environment (air, water, and soil). It includes both biotic (living) and abiotic (non-living) components.");
+        addAssignmentToProblemAnswer(pa_17_4_2, assignment17_4);
+        addProblemAnswerToAssignment(assignment17_4, pa_17_4_2);
+
+        ProblemAnswer pa_17_4_3 = createProblemAnswer("What is a food web?", "A food web is a complex network of interconnected food chains that shows the feeding relationships between organisms in an ecosystem. It illustrates how energy and nutrients flow through different trophic levels.");
+        addAssignmentToProblemAnswer(pa_17_4_3, assignment17_4);
+        addProblemAnswerToAssignment(assignment17_4, pa_17_4_3);
+
+        ProblemAnswer pa_17_4_4 = createProblemAnswer("What is energy flow in an ecosystem?", "Energy flow in an ecosystem refers to the transfer of energy from one trophic level to another, beginning with primary producers (plants) and moving through herbivores, carnivores, and decomposers. Energy is lost at each level through metabolic processes and heat.");
+        addAssignmentToProblemAnswer(pa_17_4_4, assignment17_4);
+        addProblemAnswerToAssignment(assignment17_4, pa_17_4_4);
+
+        ProblemAnswer pa_17_4_5 = createProblemAnswer("What is the role of producers, consumers, and decomposers in an ecosystem?", "Producers (plants and algae) convert sunlight into chemical energy through photosynthesis. Consumers (herbivores, carnivores, and omnivores) obtain energy by eating other organisms. Decomposers (bacteria and fungi) break down dead organic matter, recycling nutrients back into the ecosystem.");
+        addAssignmentToProblemAnswer(pa_17_4_5, assignment17_4);
+        addProblemAnswerToAssignment(assignment17_4, pa_17_4_5);
+
+        ProblemAnswer pa_17_4_6 = createProblemAnswer("What is a biogeochemical cycle?", "A biogeochemical cycle is the movement of elements and compounds between living organisms and the physical environment. Examples include the carbon cycle, nitrogen cycle, and water cycle, which are essential for maintaining ecosystem health.");
+        addAssignmentToProblemAnswer(pa_17_4_6, assignment17_4);
+        addProblemAnswerToAssignment(assignment17_4, pa_17_4_6);
+
+        ProblemAnswer pa_17_4_7 = createProblemAnswer("What is biodiversity?", "Biodiversity refers to the variety of life forms within an ecosystem, including species diversity, genetic diversity, and ecosystem diversity. High biodiversity contributes to ecosystem stability, resilience, and productivity.");
+        addAssignmentToProblemAnswer(pa_17_4_7, assignment17_4);
+        addProblemAnswerToAssignment(assignment17_4, pa_17_4_7);
+
+        ProblemAnswer pa_17_4_8 = createProblemAnswer("What is the impact of human activities on ecosystems?", "Human activities, such as deforestation, pollution, urbanization, and climate change, can have significant impacts on ecosystems. These activities can lead to habitat destruction, loss of biodiversity, and alterations in nutrient cycles and energy flow.");
+        addAssignmentToProblemAnswer(pa_17_4_8, assignment17_4);
+        addProblemAnswerToAssignment(assignment17_4, pa_17_4_8);
+
+        ProblemAnswer pa_17_4_9 = createProblemAnswer("What is an ecological niche?", "An ecological niche is the role and position of an organism within an ecosystem, including its interactions with other organisms, its habitat, and its contributions to energy flow and nutrient cycling. Each species has a unique niche that helps maintain ecosystem balance.");
+        addAssignmentToProblemAnswer(pa_17_4_9, assignment17_4);
+        addProblemAnswerToAssignment(assignment17_4, pa_17_4_9);
+
+        ProblemAnswer pa_17_4_10 = createProblemAnswer("What is ecological succession?", "Ecological succession is the process by which ecosystems undergo gradual changes in species composition and structure over time. It can be primary (starting from a barren environment) or secondary (following a disturbance), leading to the establishment of a stable community.");
+        addAssignmentToProblemAnswer(pa_17_4_10, assignment17_4);
+        addProblemAnswerToAssignment(assignment17_4, pa_17_4_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Ecology' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment18_1 = createAssignment("Engineering Disciplines Assignment", faculty3, Date.from(LocalDate.of(2029, 11, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus18, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_18_1_1 = createProblemAnswer("What is civil engineering?", "Civil engineering is the discipline that deals with the design, construction, and maintenance of the built environment. This includes infrastructure such as roads, bridges, dams, and buildings.");
+        addAssignmentToProblemAnswer(pa_18_1_1, assignment18_1);
+        addProblemAnswerToAssignment(assignment18_1, pa_18_1_1);
+
+        ProblemAnswer pa_18_1_2 = createProblemAnswer("What is mechanical engineering?", "Mechanical engineering is the discipline that applies principles of physics and materials science for the design, analysis, manufacturing, and maintenance of mechanical systems. It involves the development of machines and tools.");
+        addAssignmentToProblemAnswer(pa_18_1_2, assignment18_1);
+        addProblemAnswerToAssignment(assignment18_1, pa_18_1_2);
+
+        ProblemAnswer pa_18_1_3 = createProblemAnswer("What is electrical engineering?", "Electrical engineering is the discipline that focuses on the study and application of electricity, electronics, and electromagnetism. It includes the design and development of electrical circuits, devices, and systems.");
+        addAssignmentToProblemAnswer(pa_18_1_3, assignment18_1);
+        addProblemAnswerToAssignment(assignment18_1, pa_18_1_3);
+
+        ProblemAnswer pa_18_1_4 = createProblemAnswer("What is chemical engineering?", "Chemical engineering is the discipline that combines principles of chemistry, physics, mathematics, and engineering to design and operate processes for producing, transforming, and using chemicals and materials.");
+        addAssignmentToProblemAnswer(pa_18_1_4, assignment18_1);
+        addProblemAnswerToAssignment(assignment18_1, pa_18_1_4);
+
+        ProblemAnswer pa_18_1_5 = createProblemAnswer("What are the roles and responsibilities of civil engineers?", "Civil engineers are responsible for planning, designing, and overseeing construction projects. They ensure the safety, sustainability, and efficiency of infrastructure, including roads, bridges, water supply systems, and buildings.");
+        addAssignmentToProblemAnswer(pa_18_1_5, assignment18_1);
+        addProblemAnswerToAssignment(assignment18_1, pa_18_1_5);
+
+        ProblemAnswer pa_18_1_6 = createProblemAnswer("What are the roles and responsibilities of mechanical engineers?", "Mechanical engineers design, develop, and test mechanical devices and systems. They work on a wide range of projects, from small components to large machinery, and ensure that these systems operate efficiently and safely.");
+        addAssignmentToProblemAnswer(pa_18_1_6, assignment18_1);
+        addProblemAnswerToAssignment(assignment18_1, pa_18_1_6);
+
+        ProblemAnswer pa_18_1_7 = createProblemAnswer("What are the roles and responsibilities of electrical engineers?", "Electrical engineers design and develop electrical equipment and systems, such as power generation and distribution networks, communication systems, and electronic devices. They also work on improving and maintaining these systems.");
+        addAssignmentToProblemAnswer(pa_18_1_7, assignment18_1);
+        addProblemAnswerToAssignment(assignment18_1, pa_18_1_7);
+
+        ProblemAnswer pa_18_1_8 = createProblemAnswer("What are the roles and responsibilities of chemical engineers?", "Chemical engineers are involved in designing and optimizing processes for producing chemicals, fuels, pharmaceuticals, and other products. They work on scaling up chemical reactions, managing production processes, and ensuring environmental and safety compliance.");
+        addAssignmentToProblemAnswer(pa_18_1_8, assignment18_1);
+        addProblemAnswerToAssignment(assignment18_1, pa_18_1_8);
+
+        ProblemAnswer pa_18_1_9 = createProblemAnswer("What are some applications of civil engineering?", "Applications of civil engineering include designing and constructing infrastructure such as highways, bridges, tunnels, airports, water treatment plants, and buildings. Civil engineers also work on environmental projects, urban planning, and disaster mitigation.");
+        addAssignmentToProblemAnswer(pa_18_1_9, assignment18_1);
+        addProblemAnswerToAssignment(assignment18_1, pa_18_1_9);
+
+        ProblemAnswer pa_18_1_10 = createProblemAnswer("What are some applications of mechanical engineering?", "Applications of mechanical engineering include developing automotive and aerospace systems, designing industrial machinery, creating energy systems, and working on robotics and automation. Mechanical engineers also contribute to manufacturing processes and product development.");
+        addAssignmentToProblemAnswer(pa_18_1_10, assignment18_1);
+        addProblemAnswerToAssignment(assignment18_1, pa_18_1_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Engineering Disciplines' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment18_2 = createAssignment("Problem-Solving Assignment", faculty3, Date.from(LocalDate.of(2029, 12, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus18, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_18_2_1 = createProblemAnswer("What is the engineering problem-solving process?", "The engineering problem-solving process involves identifying a problem, generating potential solutions, evaluating and selecting the best solution, and implementing and testing the solution. It is a systematic approach to addressing engineering challenges.");
+        addAssignmentToProblemAnswer(pa_18_2_1, assignment18_2);
+        addProblemAnswerToAssignment(assignment18_2, pa_18_2_1);
+
+        ProblemAnswer pa_18_2_2 = createProblemAnswer("What are the steps in the engineering problem-solving process?", "The steps in the engineering problem-solving process include: \n1. Identifying the problem \n2. Defining the problem clearly \n3. Generating possible solutions \n4. Evaluating and selecting the best solution \n5. Implementing the solution \n6. Testing and refining the solution");
+        addAssignmentToProblemAnswer(pa_18_2_2, assignment18_2);
+        addProblemAnswerToAssignment(assignment18_2, pa_18_2_2);
+
+        ProblemAnswer pa_18_2_3 = createProblemAnswer("What techniques are used for generating solutions?", "Techniques for generating solutions include brainstorming, using creativity tools such as mind maps and TRIZ (theory of inventive problem solving), and applying engineering principles and heuristics.");
+        addAssignmentToProblemAnswer(pa_18_2_3, assignment18_2);
+        addProblemAnswerToAssignment(assignment18_2, pa_18_2_3);
+
+        ProblemAnswer pa_18_2_4 = createProblemAnswer("What is brainstorming?", "Brainstorming is a technique used to generate a large number of ideas in a short amount of time. It encourages open and creative thinking, allowing participants to propose solutions without criticism or evaluation during the session.");
+        addAssignmentToProblemAnswer(pa_18_2_4, assignment18_2);
+        addProblemAnswerToAssignment(assignment18_2, pa_18_2_4);
+
+        ProblemAnswer pa_18_2_5 = createProblemAnswer("What is TRIZ (theory of inventive problem solving)?", "TRIZ is a problem-solving methodology based on the study of patterns in inventive solutions. It provides a systematic approach to identifying and overcoming contradictions in engineering problems and generating innovative solutions.");
+        addAssignmentToProblemAnswer(pa_18_2_5, assignment18_2);
+        addProblemAnswerToAssignment(assignment18_2, pa_18_2_5);
+
+        ProblemAnswer pa_18_2_6 = createProblemAnswer("How do engineers evaluate potential solutions?", "Engineers evaluate potential solutions by considering factors such as feasibility, cost, safety, reliability, and environmental impact. They use techniques such as decision matrices, cost-benefit analysis, and simulation to compare and select the best solution.");
+        addAssignmentToProblemAnswer(pa_18_2_6, assignment18_2);
+        addProblemAnswerToAssignment(assignment18_2, pa_18_2_6);
+
+        ProblemAnswer pa_18_2_7 = createProblemAnswer("What is a decision matrix?", "A decision matrix is a tool used to evaluate and compare different solutions based on specific criteria. Each solution is scored against the criteria, and the scores are weighted and summed to determine the best option.");
+        addAssignmentToProblemAnswer(pa_18_2_7, assignment18_2);
+        addProblemAnswerToAssignment(assignment18_2, pa_18_2_7);
+
+        ProblemAnswer pa_18_2_8 = createProblemAnswer("What is cost-benefit analysis?", "Cost-benefit analysis is a technique used to evaluate the economic feasibility of a solution by comparing its costs and benefits. It involves calculating the total costs and benefits, and determining whether the benefits outweigh the costs.");
+        addAssignmentToProblemAnswer(pa_18_2_8, assignment18_2);
+        addProblemAnswerToAssignment(assignment18_2, pa_18_2_8);
+
+        ProblemAnswer pa_18_2_9 = createProblemAnswer("How do engineers implement and test solutions?", "Engineers implement solutions by designing and constructing prototypes or systems. They test these solutions through experiments, simulations, and field trials to ensure they meet the specified requirements and perform as expected.");
+        addAssignmentToProblemAnswer(pa_18_2_9, assignment18_2);
+        addProblemAnswerToAssignment(assignment18_2, pa_18_2_9);
+
+        ProblemAnswer pa_18_2_10 = createProblemAnswer("What is the importance of iteration in problem-solving?", "Iteration is important in problem-solving because it allows engineers to refine and improve their solutions. By testing and evaluating prototypes, they can identify and address any issues, making incremental improvements until the final solution meets all requirements.");
+        addAssignmentToProblemAnswer(pa_18_2_10, assignment18_2);
+        addProblemAnswerToAssignment(assignment18_2, pa_18_2_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Problem-Solving' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment18_3 = createAssignment("Design Process Assignment", faculty3, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus18, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_18_3_1 = createProblemAnswer("What is the engineering design process?", "The engineering design process is a systematic approach to solving engineering problems. It involves defining the problem, generating ideas, developing solutions, testing and evaluating, and improving the design.");
+        addAssignmentToProblemAnswer(pa_18_3_1, assignment18_3);
+        addProblemAnswerToAssignment(assignment18_3, pa_18_3_1);
+
+        ProblemAnswer pa_18_3_2 = createProblemAnswer("What are the stages of the design process?", "The stages of the design process include: \n1. Defining the problem \n2. Researching and gathering information \n3. Brainstorming and generating ideas \n4. Developing and prototyping solutions \n5. Testing and evaluating prototypes \n6. Refining and improving the design \n7. Communicating the final solution");
+        addAssignmentToProblemAnswer(pa_18_3_2, assignment18_3);
+        addProblemAnswerToAssignment(assignment18_3, pa_18_3_2);
+
+        ProblemAnswer pa_18_3_3 = createProblemAnswer("How do engineers define requirements for a project?", "Engineers define requirements by identifying the needs and constraints of the project. This involves understanding the problem, considering the end-users, and establishing criteria for success. Requirements are often documented in a design brief or specification.");
+        addAssignmentToProblemAnswer(pa_18_3_3, assignment18_3);
+        addProblemAnswerToAssignment(assignment18_3, pa_18_3_3);
+
+        ProblemAnswer pa_18_3_4 = createProblemAnswer("What is brainstorming?", "Brainstorming is a creative technique used to generate a wide range of ideas and solutions. It encourages open and free-flowing thinking, allowing participants to build on each other's ideas without judgment or criticism.");
+        addAssignmentToProblemAnswer(pa_18_3_4, assignment18_3);
+        addProblemAnswerToAssignment(assignment18_3, pa_18_3_4);
+
+        ProblemAnswer pa_18_3_5 = createProblemAnswer("What is prototyping?", "Prototyping involves creating a physical or digital model of a solution to test and evaluate its functionality, design, and usability. Prototypes can range from simple sketches and mock-ups to fully functional models.");
+        addAssignmentToProblemAnswer(pa_18_3_5, assignment18_3);
+        addProblemAnswerToAssignment(assignment18_3, pa_18_3_5);
+
+        ProblemAnswer pa_18_3_6 = createProblemAnswer("How do engineers test and evaluate prototypes?", "Engineers test prototypes by conducting experiments, simulations, and user tests to gather data on performance, reliability, and user experience. This helps identify any issues or areas for improvement.");
+        addAssignmentToProblemAnswer(pa_18_3_6, assignment18_3);
+        addProblemAnswerToAssignment(assignment18_3, pa_18_3_6);
+
+        ProblemAnswer pa_18_3_7 = createProblemAnswer("What is iteration in the design process?", "Iteration is the process of refining and improving a design based on feedback and testing results. It involves making incremental changes, re-evaluating, and repeating the cycle until the final solution meets the desired criteria.");
+        addAssignmentToProblemAnswer(pa_18_3_7, assignment18_3);
+        addProblemAnswerToAssignment(assignment18_3, pa_18_3_7);
+
+        ProblemAnswer pa_18_3_8 = createProblemAnswer("What are the benefits of using the engineering design process?", "The engineering design process helps ensure that solutions are well thought out, feasible, and effective. It promotes creativity, collaboration, and systematic problem-solving, leading to innovative and optimized solutions.");
+        addAssignmentToProblemAnswer(pa_18_3_8, assignment18_3);
+        addProblemAnswerToAssignment(assignment18_3, pa_18_3_8);
+
+        ProblemAnswer pa_18_3_9 = createProblemAnswer("How do engineers communicate their design solutions?", "Engineers communicate their design solutions through technical reports, presentations, drawings, and models. Clear and effective communication is essential for conveying ideas, justifying decisions, and gaining approval from stakeholders.");
+        addAssignmentToProblemAnswer(pa_18_3_9, assignment18_3);
+        addProblemAnswerToAssignment(assignment18_3, pa_18_3_9);
+
+        ProblemAnswer pa_18_3_10 = createProblemAnswer("What are some real-world applications of the engineering design process?", "The engineering design process is used in various fields, including product development, architecture, software engineering, and industrial design. It helps create innovative solutions to complex problems, from designing consumer electronics to developing sustainable infrastructure.");
+        addAssignmentToProblemAnswer(pa_18_3_10, assignment18_3);
+        addProblemAnswerToAssignment(assignment18_3, pa_18_3_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Design Process' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment19_1 = createAssignment("Circuit Analysis Assignment", faculty4, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus19, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_19_1_1 = createProblemAnswer("What is Ohm's Law?", "Ohm's Law states that the current through a conductor between two points is directly proportional to the voltage across the two points and inversely proportional to the resistance between them. It is mathematically expressed as V = IR, where V is the voltage, I is the current, and R is the resistance.");
+        addAssignmentToProblemAnswer(pa_19_1_1, assignment19_1);
+        addProblemAnswerToAssignment(assignment19_1, pa_19_1_1);
+
+        ProblemAnswer pa_19_1_2 = createProblemAnswer("What is Kirchhoff's Current Law (KCL)?", "Kirchhoff's Current Law (KCL) states that the total current entering a junction in an electrical circuit is equal to the total current leaving the junction. This law is based on the principle of conservation of charge.");
+        addAssignmentToProblemAnswer(pa_19_1_2, assignment19_1);
+        addProblemAnswerToAssignment(assignment19_1, pa_19_1_2);
+
+        ProblemAnswer pa_19_1_3 = createProblemAnswer("What is Kirchhoff's Voltage Law (KVL)?", "Kirchhoff's Voltage Law (KVL) states that the sum of the electrical potential differences (voltages) around any closed loop or mesh in a circuit is equal to zero. This law is based on the principle of conservation of energy.");
+        addAssignmentToProblemAnswer(pa_19_1_3, assignment19_1);
+        addProblemAnswerToAssignment(assignment19_1, pa_19_1_3);
+
+        ProblemAnswer pa_19_1_4 = createProblemAnswer("How do you calculate total resistance in a series circuit?", "In a series circuit, the total resistance is the sum of the individual resistances. The formula is: R_total = R1 + R2 + R3 + ... + Rn, where R1, R2, R3, ..., Rn are the individual resistances.");
+        addAssignmentToProblemAnswer(pa_19_1_4, assignment19_1);
+        addProblemAnswerToAssignment(assignment19_1, pa_19_1_4);
+
+        ProblemAnswer pa_19_1_5 = createProblemAnswer("How do you calculate total resistance in a parallel circuit?", "In a parallel circuit, the total resistance is calculated using the formula: 1/R_total = 1/R1 + 1/R2 + 1/R3 + ... + 1/Rn. The reciprocal of the sum of the reciprocals of the individual resistances gives the total resistance.");
+        addAssignmentToProblemAnswer(pa_19_1_5, assignment19_1);
+        addProblemAnswerToAssignment(assignment19_1, pa_19_1_5);
+
+        ProblemAnswer pa_19_1_6 = createProblemAnswer("What is the difference between AC and DC circuits?", "AC (Alternating Current) circuits have current that changes direction periodically, while DC (Direct Current) circuits have current that flows in one direction. AC is commonly used for power distribution, while DC is used in batteries and electronic devices.");
+        addAssignmentToProblemAnswer(pa_19_1_6, assignment19_1);
+        addProblemAnswerToAssignment(assignment19_1, pa_19_1_6);
+
+        ProblemAnswer pa_19_1_7 = createProblemAnswer("What is a Thevenin equivalent circuit?", "A Thevenin equivalent circuit is a simplified representation of a complex circuit. It consists of a single voltage source (Thevenin voltage) in series with a single resistor (Thevenin resistance) that can replace a more complicated network to simplify analysis.");
+        addAssignmentToProblemAnswer(pa_19_1_7, assignment19_1);
+        addProblemAnswerToAssignment(assignment19_1, pa_19_1_7);
+
+        ProblemAnswer pa_19_1_8 = createProblemAnswer("What is a Norton equivalent circuit?", "A Norton equivalent circuit is another simplified representation of a complex circuit. It consists of a single current source (Norton current) in parallel with a single resistor (Norton resistance) that can replace a more complicated network to simplify analysis.");
+        addAssignmentToProblemAnswer(pa_19_1_8, assignment19_1);
+        addProblemAnswerToAssignment(assignment19_1, pa_19_1_8);
+
+        ProblemAnswer pa_19_1_9 = createProblemAnswer("What is the role of capacitors in a circuit?", "Capacitors store and release electrical energy in a circuit. They are used for filtering, energy storage, and signal coupling. Capacitors block DC while allowing AC to pass, making them important components in AC circuits.");
+        addAssignmentToProblemAnswer(pa_19_1_9, assignment19_1);
+        addProblemAnswerToAssignment(assignment19_1, pa_19_1_9);
+
+        ProblemAnswer pa_19_1_10 = createProblemAnswer("What is the role of inductors in a circuit?", "Inductors store energy in a magnetic field when current flows through them. They are used for filtering, energy storage, and inductive coupling. Inductors oppose changes in current, making them important components in AC circuits.");
+        addAssignmentToProblemAnswer(pa_19_1_10, assignment19_1);
+        addProblemAnswerToAssignment(assignment19_1, pa_19_1_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Circuit Analysis' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment19_2 = createAssignment("Signal Processing Assignment", faculty4, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus19, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_19_2_1 = createProblemAnswer("What is signal processing?", "Signal processing involves the analysis, manipulation, and interpretation of signals. It includes techniques for filtering, transforming, and extracting information from signals in various domains, such as time, frequency, and space.");
+        addAssignmentToProblemAnswer(pa_19_2_1, assignment19_2);
+        addProblemAnswerToAssignment(assignment19_2, pa_19_2_1);
+
+        ProblemAnswer pa_19_2_2 = createProblemAnswer("What is a Fourier transform?", "A Fourier transform is a mathematical technique used to transform a signal from the time domain to the frequency domain. It decomposes a signal into its constituent frequencies, providing insights into the signal's frequency content.");
+        addAssignmentToProblemAnswer(pa_19_2_2, assignment19_2);
+        addProblemAnswerToAssignment(assignment19_2, pa_19_2_2);
+
+        ProblemAnswer pa_19_2_3 = createProblemAnswer("What is filtering in signal processing?", "Filtering is the process of removing unwanted components from a signal or enhancing certain aspects of a signal. Filters can be designed to pass specific frequency ranges (passbands) while attenuating others (stopbands).");
+        addAssignmentToProblemAnswer(pa_19_2_3, assignment19_2);
+        addProblemAnswerToAssignment(assignment19_2, pa_19_2_3);
+
+        ProblemAnswer pa_19_2_4 = createProblemAnswer("What are the types of filters?", "Common types of filters include low-pass filters, high-pass filters, band-pass filters, and band-stop filters. Each type of filter allows or attenuates different frequency ranges of a signal.");
+        addAssignmentToProblemAnswer(pa_19_2_4, assignment19_2);
+        addProblemAnswerToAssignment(assignment19_2, pa_19_2_4);
+
+        ProblemAnswer pa_19_2_5 = createProblemAnswer("What is digital signal processing (DSP)?", "Digital signal processing (DSP) involves the use of digital techniques to analyze, modify, and synthesize signals. DSP techniques are widely used in communication systems, audio and video processing, radar, and control systems.");
+        addAssignmentToProblemAnswer(pa_19_2_5, assignment19_2);
+        addProblemAnswerToAssignment(assignment19_2, pa_19_2_5);
+
+        ProblemAnswer pa_19_2_6 = createProblemAnswer("What is the role of the Fast Fourier Transform (FFT)?", "The Fast Fourier Transform (FFT) is an algorithm used to efficiently compute the Fourier transform of a signal. It significantly reduces the computational complexity, making it practical for real-time signal processing applications.");
+        addAssignmentToProblemAnswer(pa_19_2_6, assignment19_2);
+        addProblemAnswerToAssignment(assignment19_2, pa_19_2_6);
+
+        ProblemAnswer pa_19_2_7 = createProblemAnswer("What is modulation?", "Modulation is the process of varying a carrier signal's properties (amplitude, frequency, or phase) to encode information. It is used in communication systems to transmit signals over long distances and through various media.");
+        addAssignmentToProblemAnswer(pa_19_2_7, assignment19_2);
+        addProblemAnswerToAssignment(assignment19_2, pa_19_2_7);
+
+        ProblemAnswer pa_19_2_8 = createProblemAnswer("What is demodulation?", "Demodulation is the process of extracting the original information-bearing signal from a modulated carrier signal. It is the reverse operation of modulation and is essential in communication receivers.");
+        addAssignmentToProblemAnswer(pa_19_2_8, assignment19_2);
+        addProblemAnswerToAssignment(assignment19_2, pa_19_2_8);
+
+        ProblemAnswer pa_19_2_9 = createProblemAnswer("What is the Nyquist-Shannon sampling theorem?", "The Nyquist-Shannon sampling theorem states that a continuous signal can be accurately reconstructed from its samples if the sampling rate is at least twice the highest frequency present in the signal (Nyquist rate).");
+        addAssignmentToProblemAnswer(pa_19_2_9, assignment19_2);
+        addProblemAnswerToAssignment(assignment19_2, pa_19_2_9);
+
+        ProblemAnswer pa_19_2_10 = createProblemAnswer("What are some applications of signal processing?", "Signal processing has numerous applications, including audio and speech processing, image and video processing, biomedical signal analysis (e.g., ECG, EEG), telecommunications, radar and sonar systems, and control systems.");
+        addAssignmentToProblemAnswer(pa_19_2_10, assignment19_2);
+        addProblemAnswerToAssignment(assignment19_2, pa_19_2_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Signal Processing' unit created with  problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment19_3 = createAssignment("Systems Theory Assignment", faculty4, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus19, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_19_3_1 = createProblemAnswer("What is systems theory?", "Systems theory is the study of systems and their behavior, including how components of a system interact and how systems function as a whole. It is used to analyze and design complex systems across various disciplines.");
+        addAssignmentToProblemAnswer(pa_19_3_1, assignment19_3);
+        addProblemAnswerToAssignment(assignment19_3, pa_19_3_1);
+
+        ProblemAnswer pa_19_3_2 = createProblemAnswer("What is system modeling?", "System modeling involves creating abstract representations of systems to understand, analyze, and predict their behavior. Models can be mathematical, graphical, or computational, and they help in designing and optimizing systems.");
+        addAssignmentToProblemAnswer(pa_19_3_2, assignment19_3);
+        addProblemAnswerToAssignment(assignment19_3, pa_19_3_2);
+
+        ProblemAnswer pa_19_3_3 = createProblemAnswer("What is feedback in a system?", "Feedback is the process by which a system's output is returned as input to influence its behavior. Positive feedback amplifies changes, while negative feedback stabilizes a system by counteracting changes.");
+        addAssignmentToProblemAnswer(pa_19_3_3, assignment19_3);
+        addProblemAnswerToAssignment(assignment19_3, pa_19_3_3);
+
+        ProblemAnswer pa_19_3_4 = createProblemAnswer("What are control systems?", "Control systems are systems designed to regulate and control processes or outputs. They use feedback mechanisms to maintain desired performance, such as temperature control in heating systems or speed control in vehicles.");
+        addAssignmentToProblemAnswer(pa_19_3_4, assignment19_3);
+        addProblemAnswerToAssignment(assignment19_3, pa_19_3_4);
+
+        ProblemAnswer pa_19_3_5 = createProblemAnswer("What is open-loop control?", "Open-loop control is a type of control system that operates without feedback. It follows a predetermined set of instructions, regardless of the output, such as a washing machine's fixed cycle times.");
+        addAssignmentToProblemAnswer(pa_19_3_5, assignment19_3);
+        addProblemAnswerToAssignment(assignment19_3, pa_19_3_5);
+
+        ProblemAnswer pa_19_3_6 = createProblemAnswer("What is closed-loop control?", "Closed-loop control, also known as feedback control, is a type of control system that adjusts its actions based on feedback from the output. Examples include thermostats that adjust heating based on room temperature.");
+        addAssignmentToProblemAnswer(pa_19_3_6, assignment19_3);
+        addProblemAnswerToAssignment(assignment19_3, pa_19_3_6);
+
+        ProblemAnswer pa_19_3_7 = createProblemAnswer("What is a transfer function?", "A transfer function is a mathematical representation of the relationship between the input and output of a linear time-invariant system. It is used to analyze and design control systems by describing system dynamics in the frequency domain.");
+        addAssignmentToProblemAnswer(pa_19_3_7, assignment19_3);
+        addProblemAnswerToAssignment(assignment19_3, pa_19_3_7);
+
+        ProblemAnswer pa_19_3_8 = createProblemAnswer("What is state-space representation?", "State-space representation is a mathematical model of a system that uses state variables to describe the system's behavior. It provides a framework for analyzing and designing complex systems, particularly in control engineering.");
+        addAssignmentToProblemAnswer(pa_19_3_8, assignment19_3);
+        addProblemAnswerToAssignment(assignment19_3, pa_19_3_8);
+
+        ProblemAnswer pa_19_3_9 = createProblemAnswer("What is stability in a system?", "Stability in a system refers to its ability to return to equilibrium after a disturbance. A stable system can recover from perturbations and maintain consistent performance over time.");
+        addAssignmentToProblemAnswer(pa_19_3_9, assignment19_3);
+        addProblemAnswerToAssignment(assignment19_3, pa_19_3_9);
+
+        ProblemAnswer pa_19_3_10 = createProblemAnswer("What are some applications of systems theory?", "Systems theory has diverse applications, including in engineering (control systems and automation), biology (ecosystems and cellular processes), economics (market dynamics), and social sciences (organizational behavior and public policy).");
+        addAssignmentToProblemAnswer(pa_19_3_10, assignment19_3);
+        addProblemAnswerToAssignment(assignment19_3, pa_19_3_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Systems Theory' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment20_1 = createAssignment("Statics Assignment", faculty5, Date.from(LocalDate.of(2030, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_20_1_1 = createProblemAnswer("What is statics?", "Statics is the branch of mechanics that deals with bodies at rest and forces in equilibrium. It involves analyzing force systems, calculating moments, and solving problems related to static equilibrium.");
+        addAssignmentToProblemAnswer(pa_20_1_1, assignment20_1);
+        addProblemAnswerToAssignment(assignment20_1, pa_20_1_1);
+
+        ProblemAnswer pa_20_1_2 = createProblemAnswer("What is static equilibrium?", "Static equilibrium occurs when the sum of all forces and the sum of all moments acting on a body are zero, resulting in no motion. It is a state where the body is at rest or moving with constant velocity.");
+        addAssignmentToProblemAnswer(pa_20_1_2, assignment20_1);
+        addProblemAnswerToAssignment(assignment20_1, pa_20_1_2);
+
+        ProblemAnswer pa_20_1_3 = createProblemAnswer("What is a force system?", "A force system is a collection of forces acting on a body. It includes concurrent, parallel, and non-concurrent force systems. Analyzing these systems helps determine the resultant force and its effect on the body.");
+        addAssignmentToProblemAnswer(pa_20_1_3, assignment20_1);
+        addProblemAnswerToAssignment(assignment20_1, pa_20_1_3);
+
+        ProblemAnswer pa_20_1_4 = createProblemAnswer("What is a moment in statics?", "A moment is the measure of the tendency of a force to rotate an object about a point or axis. It is calculated as the product of the force and the perpendicular distance from the point or axis to the line of action of the force.");
+        addAssignmentToProblemAnswer(pa_20_1_4, assignment20_1);
+        addProblemAnswerToAssignment(assignment20_1, pa_20_1_4);
+
+        ProblemAnswer pa_20_1_5 = createProblemAnswer("What are the conditions for static equilibrium?", "The conditions for static equilibrium are: \n1. The sum of all horizontal forces must be zero (ΣFx = 0). \n2. The sum of all vertical forces must be zero (ΣFy = 0). \n3. The sum of all moments about any point must be zero (ΣM = 0).");
+        addAssignmentToProblemAnswer(pa_20_1_5, assignment20_1);
+        addProblemAnswerToAssignment(assignment20_1, pa_20_1_5);
+
+        ProblemAnswer pa_20_1_6 = createProblemAnswer("What is a free-body diagram?", "A free-body diagram is a graphical representation used to visualize the forces and moments acting on a body. It helps in analyzing the equilibrium of the body by showing all external forces as vectors originating from the object.");
+        addAssignmentToProblemAnswer(pa_20_1_6, assignment20_1);
+        addProblemAnswerToAssignment(assignment20_1, pa_20_1_6);
+
+        ProblemAnswer pa_20_1_7 = createProblemAnswer("How do you calculate the resultant force?", "The resultant force is calculated by vectorially adding all the individual forces acting on a body. It represents the single force that has the same effect as all the forces combined.");
+        addAssignmentToProblemAnswer(pa_20_1_7, assignment20_1);
+        addProblemAnswerToAssignment(assignment20_1, pa_20_1_7);
+
+        ProblemAnswer pa_20_1_8 = createProblemAnswer("What is the principle of transmissibility?", "The principle of transmissibility states that the condition of static equilibrium or motion of a rigid body remains unchanged if a force acting on the body is replaced by an equal and collinear force applied at a different point on the body.");
+        addAssignmentToProblemAnswer(pa_20_1_8, assignment20_1);
+        addProblemAnswerToAssignment(assignment20_1, pa_20_1_8);
+
+        ProblemAnswer pa_20_1_9 = createProblemAnswer("What is a couple in statics?", "A couple is a pair of equal and opposite forces acting on a body, separated by a distance. It creates a rotational effect but does not produce any translational motion. The moment of a couple is calculated as the product of one of the forces and the perpendicular distance between them.");
+        addAssignmentToProblemAnswer(pa_20_1_9, assignment20_1);
+        addProblemAnswerToAssignment(assignment20_1, pa_20_1_9);
+
+        ProblemAnswer pa_20_1_10 = createProblemAnswer("What are some applications of statics?", "Statics is used in various engineering applications, including structural analysis, mechanical design, and construction. It helps engineers design stable structures, analyze forces in machines, and ensure safety and stability in engineering projects.");
+        addAssignmentToProblemAnswer(pa_20_1_10, assignment20_1);
+        addProblemAnswerToAssignment(assignment20_1, pa_20_1_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Statics' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment20_2 = createAssignment("Dynamics Assignment", faculty5, Date.from(LocalDate.of(2030, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_20_2_1 = createProblemAnswer("What is dynamics?", "Dynamics is the branch of mechanics that deals with bodies in motion. It involves studying the kinematics and kinetics of particles and rigid bodies, and analyzing their motion under the influence of forces.");
+        addAssignmentToProblemAnswer(pa_20_2_1, assignment20_2);
+        addProblemAnswerToAssignment(assignment20_2, pa_20_2_1);
+
+        ProblemAnswer pa_20_2_2 = createProblemAnswer("What is kinematics?", "Kinematics is the study of the motion of objects without considering the forces that cause the motion. It involves analyzing displacement, velocity, and acceleration of particles and rigid bodies.");
+        addAssignmentToProblemAnswer(pa_20_2_2, assignment20_2);
+        addProblemAnswerToAssignment(assignment20_2, pa_20_2_2);
+
+        ProblemAnswer pa_20_2_3 = createProblemAnswer("What is kinetics?", "Kinetics is the study of the motion of objects by considering the forces that cause the motion. It involves analyzing the relationship between forces, mass, and acceleration using Newton's laws of motion.");
+        addAssignmentToProblemAnswer(pa_20_2_3, assignment20_2);
+        addProblemAnswerToAssignment(assignment20_2, pa_20_2_3);
+
+        ProblemAnswer pa_20_2_4 = createProblemAnswer("What are Newton's laws of motion?", "Newton's laws of motion are three fundamental principles that describe the relationship between the motion of an object and the forces acting on it. They include:\n1. Newton's First Law (Law of Inertia) - An object at rest stays at rest, and an object in motion stays in motion unless acted upon by an external force.\n2. Newton's Second Law (Law of Acceleration) - The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass (F = ma).\n3. Newton's Third Law (Law of Action and Reaction) - For every action, there is an equal and opposite reaction.");
+        addAssignmentToProblemAnswer(pa_20_2_4, assignment20_2);
+        addProblemAnswerToAssignment(assignment20_2, pa_20_2_4);
+
+        ProblemAnswer pa_20_2_5 = createProblemAnswer("What is projectile motion?", "Projectile motion is the curved path an object follows when it is thrown or projected near the Earth's surface. It is influenced by gravity and initial velocity, and its motion can be analyzed using the equations of motion.");
+        addAssignmentToProblemAnswer(pa_20_2_5, assignment20_2);
+        addProblemAnswerToAssignment(assignment20_2, pa_20_2_5);
+
+        ProblemAnswer pa_20_2_6 = createProblemAnswer("What is circular motion?", "Circular motion is the movement of an object along a circular path. It is characterized by parameters such as angular displacement, angular velocity, and centripetal acceleration.");
+        addAssignmentToProblemAnswer(pa_20_2_6, assignment20_2);
+        addProblemAnswerToAssignment(assignment20_2, pa_20_2_6);
+
+        ProblemAnswer pa_20_2_7 = createProblemAnswer("What is work-energy principle?", "The work-energy principle states that the work done on an object is equal to the change in its kinetic energy. It is mathematically expressed as W = ΔKE, where W is the work done and ΔKE is the change in kinetic energy.");
+        addAssignmentToProblemAnswer(pa_20_2_7, assignment20_2);
+        addProblemAnswerToAssignment(assignment20_2, pa_20_2_7);
+
+        ProblemAnswer pa_20_2_8 = createProblemAnswer("What is impulse-momentum principle?", "The impulse-momentum principle states that the change in momentum of an object is equal to the impulse applied to it. It is mathematically expressed as Δp = FΔt, where Δp is the change in momentum, F is the force applied, and Δt is the time interval.");
+        addAssignmentToProblemAnswer(pa_20_2_8, assignment20_2);
+        addProblemAnswerToAssignment(assignment20_2, pa_20_2_8);
+
+        ProblemAnswer pa_20_2_9 = createProblemAnswer("What is harmonic motion?", "Harmonic motion is a type of periodic motion where an object oscillates back and forth around an equilibrium position. Examples include the motion of a pendulum and a mass-spring system. It is characterized by parameters such as amplitude, frequency, and period.");
+        addAssignmentToProblemAnswer(pa_20_2_9, assignment20_2);
+        addProblemAnswerToAssignment(assignment20_2, pa_20_2_9);
+
+        ProblemAnswer pa_20_2_10 = createProblemAnswer("How are dynamics principles applied in real-world scenarios?", "Dynamics principles are applied in various real-world scenarios, such as analyzing the motion of vehicles, predicting the trajectory of projectiles, designing amusement park rides, and understanding the behavior of celestial bodies. These concepts provide a framework for solving problems in physics and engineering.");
+        addAssignmentToProblemAnswer(pa_20_2_10, assignment20_2);
+        addProblemAnswerToAssignment(assignment20_2, pa_20_2_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Dynamics' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment20_3 = createAssignment("Thermodynamics Assignment", faculty5, Date.from(LocalDate.of(2030, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_20_3_1 = createProblemAnswer("What is thermodynamics?", "Thermodynamics is the branch of physics that deals with the study of energy transfer, heat, and work. It involves analyzing the behavior of gases and liquids, and understanding the principles governing energy transformations.");
+        addAssignmentToProblemAnswer(pa_20_3_1, assignment20_3);
+        addProblemAnswerToAssignment(assignment20_3, pa_20_3_1);
+
+        ProblemAnswer pa_20_3_2 = createProblemAnswer("What are the laws of thermodynamics?", "The laws of thermodynamics are fundamental principles that describe how energy is transferred and transformed:\n1. The First Law (Law of Energy Conservation) - Energy cannot be created or destroyed, only transferred or transformed.\n2. The Second Law - The total entropy of an isolated system always increases over time, and energy transformations are not 100% efficient.\n3. The Third Law - As the temperature of a system approaches absolute zero, the entropy of the system approaches a minimum value.");
+        addAssignmentToProblemAnswer(pa_20_3_2, assignment20_3);
+        addProblemAnswerToAssignment(assignment20_3, pa_20_3_2);
+
+        ProblemAnswer pa_20_3_3 = createProblemAnswer("What is the First Law of Thermodynamics?", "The First Law of Thermodynamics, also known as the Law of Energy Conservation, states that energy cannot be created or destroyed, only transferred or transformed. It is mathematically expressed as ΔU = Q - W, where ΔU is the change in internal energy, Q is the heat added to the system, and W is the work done by the system.");
+        addAssignmentToProblemAnswer(pa_20_3_3, assignment20_3);
+        addProblemAnswerToAssignment(assignment20_3, pa_20_3_3);
+
+        ProblemAnswer pa_20_3_4 = createProblemAnswer("What is the Second Law of Thermodynamics?", "The Second Law of Thermodynamics states that the total entropy of an isolated system always increases over time. It implies that energy transformations are not 100% efficient and that some energy is always lost as waste heat.");
+        addAssignmentToProblemAnswer(pa_20_3_4, assignment20_3);
+        addProblemAnswerToAssignment(assignment20_3, pa_20_3_4);
+
+        ProblemAnswer pa_20_3_5 = createProblemAnswer("What is the Third Law of Thermodynamics?", "The Third Law of Thermodynamics states that as the temperature of a system approaches absolute zero, the entropy of the system approaches a minimum value. It implies that it is impossible to reach absolute zero through any finite number of processes.");
+        addAssignmentToProblemAnswer(pa_20_3_5, assignment20_3);
+        addProblemAnswerToAssignment(assignment20_3, pa_20_3_5);
+
+        ProblemAnswer pa_20_3_6 = createProblemAnswer("What is entropy?", "Entropy is a measure of the disorder or randomness in a system. It is a fundamental concept in thermodynamics and is related to the Second Law, which states that the total entropy of an isolated system always increases over time.");
+        addAssignmentToProblemAnswer(pa_20_3_6, assignment20_3);
+        addProblemAnswerToAssignment(assignment20_3, pa_20_3_6);
+
+        ProblemAnswer pa_20_3_7 = createProblemAnswer("What is the relationship between heat and work?", "Heat and work are two forms of energy transfer. Heat is the transfer of thermal energy due to a temperature difference, while work is the transfer of energy due to a force acting over a distance. The First Law of Thermodynamics relates heat and work to changes in internal energy.");
+        addAssignmentToProblemAnswer(pa_20_3_7, assignment20_3);
+        addProblemAnswerToAssignment(assignment20_3, pa_20_3_7);
+
+        ProblemAnswer pa_20_3_8 = createProblemAnswer("What is a thermodynamic system?", "A thermodynamic system is a defined region of space or a specific quantity of matter under study. It is separated from its surroundings by boundaries, which can be real or imaginary, and can exchange energy and matter with its surroundings.");
+        addAssignmentToProblemAnswer(pa_20_3_8, assignment20_3);
+        addProblemAnswerToAssignment(assignment20_3, pa_20_3_8);
+
+        ProblemAnswer pa_20_3_9 = createProblemAnswer("What is a thermodynamic process?", "A thermodynamic process is a transformation that a system undergoes from one state to another. Examples include isothermal (constant temperature), adiabatic (no heat transfer), isobaric (constant pressure), and isochoric (constant volume) processes.");
+        addAssignmentToProblemAnswer(pa_20_3_9, assignment20_3);
+        addProblemAnswerToAssignment(assignment20_3, pa_20_3_9);
+
+        ProblemAnswer pa_20_3_10 = createProblemAnswer("What are some applications of thermodynamics?", "Thermodynamics has various applications, including in engineering (heat engines, refrigerators, and power plants), chemistry (chemical reactions and phase changes), and environmental science (climate modeling and energy efficiency). It helps solve problems involving heat transfer, energy conversion, and the behavior of gases and liquids.");
+        addAssignmentToProblemAnswer(pa_20_3_10, assignment20_3);
+        addProblemAnswerToAssignment(assignment20_3, pa_20_3_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Thermodynamics' unit created with 10 problem answers, due date, faculty, and syllabus.");
+// Creating the assignment with the due date specified inline and including the teacher and syllabus
+        Assignment assignment20_4 = createAssignment("Material Science Assignment", faculty5, Date.from(LocalDate.of(2030, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
+
+// Creating and adding problem answers to the assignment
+        ProblemAnswer pa_20_4_1 = createProblemAnswer("What is material science?", "Material science is the study of the properties and behavior of materials. It involves understanding the structure, processing, and performance of different materials, including metals, ceramics, polymers, and composites.");
+        addAssignmentToProblemAnswer(pa_20_4_1, assignment20_4);
+        addProblemAnswerToAssignment(assignment20_4, pa_20_4_1);
+
+        ProblemAnswer pa_20_4_2 = createProblemAnswer("What are metals?", "Metals are materials that are typically hard, shiny, malleable, and conductive. They are used in a wide range of applications, including construction, transportation, electronics, and manufacturing. Examples include iron, aluminum, and copper.");
+        addAssignmentToProblemAnswer(pa_20_4_2, assignment20_4);
+        addProblemAnswerToAssignment(assignment20_4, pa_20_4_2);
+
+        ProblemAnswer pa_20_4_3 = createProblemAnswer("What are ceramics?", "Ceramics are non-metallic, inorganic materials that are typically hard and brittle. They have high melting points and are used in applications such as pottery, glass, and advanced engineering materials. Examples include clay, porcelain, and silicon carbide.");
+        addAssignmentToProblemAnswer(pa_20_4_3, assignment20_4);
+        addProblemAnswerToAssignment(assignment20_4, pa_20_4_3);
+
+        ProblemAnswer pa_20_4_4 = createProblemAnswer("What are polymers?", "Polymers are large molecules made up of repeating units called monomers. They have diverse properties and applications, ranging from plastics and rubber to textiles and biomedical devices. Examples include polyethylene, polystyrene, and DNA.");
+        addAssignmentToProblemAnswer(pa_20_4_4, assignment20_4);
+        addProblemAnswerToAssignment(assignment20_4, pa_20_4_4);
+
+        ProblemAnswer pa_20_4_5 = createProblemAnswer("What are composites?", "Composites are materials made from two or more constituent materials with different properties. They combine the advantages of the individual materials to create a new material with enhanced performance. Examples include fiberglass, carbon fiber, and concrete.");
+        addAssignmentToProblemAnswer(pa_20_4_5, assignment20_4);
+        addProblemAnswerToAssignment(assignment20_4, pa_20_4_5);
+
+        ProblemAnswer pa_20_4_6 = createProblemAnswer("What is the importance of material selection in engineering?", "Material selection is crucial in engineering because it affects the performance, durability, and cost of a product. Engineers must consider factors such as strength, weight, corrosion resistance, and thermal properties to choose the most suitable material for a specific application.");
+        addAssignmentToProblemAnswer(pa_20_4_6, assignment20_4);
+        addProblemAnswerToAssignment(assignment20_4, pa_20_4_6);
+
+        ProblemAnswer pa_20_4_7 = createProblemAnswer("What is the structure-property relationship in materials?", "The structure-property relationship in materials refers to how the internal structure of a material, including its atomic arrangement and microstructure, influences its properties and behavior. Understanding this relationship helps engineers design materials with desired properties.");
+        addAssignmentToProblemAnswer(pa_20_4_7, assignment20_4);
+        addProblemAnswerToAssignment(assignment20_4, pa_20_4_7);
+
+        ProblemAnswer pa_20_4_8 = createProblemAnswer("What is material processing?", "Material processing involves the techniques and methods used to shape, form, and fabricate materials into desired products. It includes processes such as casting, forging, welding, machining, and additive manufacturing.");
+        addAssignmentToProblemAnswer(pa_20_4_8, assignment20_4);
+        addProblemAnswerToAssignment(assignment20_4, pa_20_4_8);
+
+        ProblemAnswer pa_20_4_9 = createProblemAnswer("What are the mechanical properties of materials?", "The mechanical properties of materials include strength, hardness, ductility, toughness, and elasticity. These properties determine how a material responds to applied forces and are critical in selecting materials for structural and mechanical applications.");
+        addAssignmentToProblemAnswer(pa_20_4_9, assignment20_4);
+        addProblemAnswerToAssignment(assignment20_4, pa_20_4_9);
+
+        ProblemAnswer pa_20_4_10 = createProblemAnswer("How is material science applied in real-world scenarios?", "Material science is applied in various fields, including aerospace, automotive, electronics, construction, and healthcare. It helps develop new materials, improve existing materials, and solve engineering challenges related to material performance and sustainability.");
+        addAssignmentToProblemAnswer(pa_20_4_10, assignment20_4);
+        addProblemAnswerToAssignment(assignment20_4, pa_20_4_10);
+
+// Output for confirmation
+        System.out.println("Assignment for 'Material Science' unit created with 10 problem answers, due date, faculty, and syllabus.");
 
 
         attendanceRepo.saveAllAndFlush(Arrays.asList(attendance1, attendance2, attendance3, attendance4, attendance5, attendance6, attendance7, attendance8, attendance9, attendance10, attendance11, attendance12, attendance13, attendance14, attendance15, attendance16, attendance17, attendance18, attendance19, attendance20));
