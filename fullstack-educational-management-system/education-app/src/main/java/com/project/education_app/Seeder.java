@@ -9037,6 +9037,1541 @@ public class Seeder implements CommandLineRunner {
         System.out.println("Project for 'Material Science' unit created with associated problem answer.");
 
 
+// Creating StudentAnswer instances for student1
+        StudentAnswer sa1_1_1_student1 = createStudentAnswer(student1, pa1_1_1, "A variable in programming is a storage location identified by a name that holds data.");
+        addStudentAnswerToProblemAnswer(pa1_1_1, sa1_1_1_student1);
+
+        StudentAnswer sa1_1_2_student1 = createStudentAnswer(student1, pa1_1_2, "x = 5");
+        addStudentAnswerToProblemAnswer(pa1_1_2, sa1_1_2_student1);
+
+        StudentAnswer sa1_1_3_student1 = createStudentAnswer(student1, pa1_1_3, "Variables store and manipulate data.");
+        addStudentAnswerToProblemAnswer(pa1_1_3, sa1_1_3_student1);
+
+        StudentAnswer sa1_1_4_student1 = createStudentAnswer(student1, pa1_1_4, "Reassign with a new value: x = 10.");
+        addStudentAnswerToProblemAnswer(pa1_1_4, sa1_1_4_student1);
+
+        StudentAnswer sa1_1_5_student1 = createStudentAnswer(student1, pa1_1_5, "Start with a letter or underscore, case-sensitive.");
+        addStudentAnswerToProblemAnswer(pa1_1_5, sa1_1_5_student1);
+
+        StudentAnswer sa1_1_6_student1 = createStudentAnswer(student1, pa1_1_6, "Meaningful names improve code readability.");
+        addStudentAnswerToProblemAnswer(pa1_1_6, sa1_1_6_student1);
+
+        StudentAnswer sa1_1_7_student1 = createStudentAnswer(student1, pa1_1_7, "Variables can change value, constants cannot.");
+        addStudentAnswerToProblemAnswer(pa1_1_7, sa1_1_7_student1);
+
+        StudentAnswer sa1_1_8_student1 = createStudentAnswer(student1, pa1_1_8, "Yes, Python supports different data types.");
+        addStudentAnswerToProblemAnswer(pa1_1_8, sa1_1_8_student1);
+
+        StudentAnswer sa1_1_9_student1 = createStudentAnswer(student1, pa1_1_9, "Use del statement, e.g., del x.");
+        addStudentAnswerToProblemAnswer(pa1_1_9, sa1_1_9_student1);
+
+        StudentAnswer sa1_1_10_student1 = createStudentAnswer(student1, pa1_1_10, "Scope determines variable visibility.");
+        addStudentAnswerToProblemAnswer(pa1_1_10, sa1_1_10_student1);
+
+// Creating StudentAnswer instances for student2
+        StudentAnswer sa1_1_1_student2 = createStudentAnswer(student2, pa1_1_1, "A variable holds data that can be changed.");
+        addStudentAnswerToProblemAnswer(pa1_1_1, sa1_1_1_student2);
+
+        StudentAnswer sa1_1_2_student2 = createStudentAnswer(student2, pa1_1_2, "y = 10");
+        addStudentAnswerToProblemAnswer(pa1_1_2, sa1_1_2_student2);
+
+        StudentAnswer sa1_1_3_student2 = createStudentAnswer(student2, pa1_1_3, "Variables are key for data manipulation.");
+        addStudentAnswerToProblemAnswer(pa1_1_3, sa1_1_3_student2);
+
+        StudentAnswer sa1_1_4_student2 = createStudentAnswer(student2, pa1_1_4, "Reassign it, e.g., x = 20.");
+        addStudentAnswerToProblemAnswer(pa1_1_4, sa1_1_4_student2);
+
+        StudentAnswer sa1_1_5_student2 = createStudentAnswer(student2, pa1_1_5, "Names must start with a letter or underscore.");
+        addStudentAnswerToProblemAnswer(pa1_1_5, sa1_1_5_student2);
+
+        StudentAnswer sa1_1_6_student2 = createStudentAnswer(student2, pa1_1_6, "Meaningful names help understand code.");
+        addStudentAnswerToProblemAnswer(pa1_1_6, sa1_1_6_student2);
+
+        StudentAnswer sa1_1_7_student2 = createStudentAnswer(student2, pa1_1_7, "Variables can change, constants do not.");
+        addStudentAnswerToProblemAnswer(pa1_1_7, sa1_1_7_student2);
+
+        StudentAnswer sa1_1_8_student2 = createStudentAnswer(student2, pa1_1_8, "Yes, Python supports various data types.");
+        addStudentAnswerToProblemAnswer(pa1_1_8, sa1_1_8_student2);
+
+        StudentAnswer sa1_1_9_student2 = createStudentAnswer(student2, pa1_1_9, "Delete with del, e.g., del y.");
+        addStudentAnswerToProblemAnswer(pa1_1_9, sa1_1_9_student2);
+
+        StudentAnswer sa1_1_10_student2 = createStudentAnswer(student2, pa1_1_10, "Scope defines where variables can be accessed.");
+        addStudentAnswerToProblemAnswer(pa1_1_10, sa1_1_10_student2);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers.");
+// Creating StudentAnswer instances for student1
+        StudentAnswer sa1_2_1_student1 = createStudentAnswer(student1, pa_1_2_1, "The primary data types in Python are integers, floats, strings, and booleans.");
+        addStudentAnswerToProblemAnswer(pa_1_2_1, sa1_2_1_student1);
+
+        StudentAnswer sa1_2_2_student1 = createStudentAnswer(student1, pa_1_2_2, "An integer is defined by assigning a whole number, like x = 10.");
+        addStudentAnswerToProblemAnswer(pa_1_2_2, sa1_2_2_student1);
+
+        StudentAnswer sa1_2_3_student1 = createStudentAnswer(student1, pa_1_2_3, "An integer is a whole number, a float includes a decimal point, like 3.14.");
+        addStudentAnswerToProblemAnswer(pa_1_2_3, sa1_2_3_student1);
+
+        StudentAnswer sa1_2_4_student1 = createStudentAnswer(student1, pa_1_2_4, "Convert a string to an integer using int(), e.g., int(\"10\") converts \"10\" to 10.");
+        addStudentAnswerToProblemAnswer(pa_1_2_4, sa1_2_4_student1);
+
+        StudentAnswer sa1_2_5_student1 = createStudentAnswer(student1, pa_1_2_5, "A boolean data type is True or False, used in conditionals.");
+        addStudentAnswerToProblemAnswer(pa_1_2_5, sa1_2_5_student1);
+
+        StudentAnswer sa1_2_6_student1 = createStudentAnswer(student1, pa_1_2_6, "Use type() to check the data type of a variable.");
+        addStudentAnswerToProblemAnswer(pa_1_2_6, sa1_2_6_student1);
+
+        StudentAnswer sa1_2_7_student1 = createStudentAnswer(student1, pa_1_2_7, "Type casting converts variables from one type to another, useful for specific operations.");
+        addStudentAnswerToProblemAnswer(pa_1_2_7, sa1_2_7_student1);
+
+        StudentAnswer sa1_2_8_student1 = createStudentAnswer(student1, pa_1_2_8, "A string is defined by enclosing text in quotes, like name = \"Alice\".");
+        addStudentAnswerToProblemAnswer(pa_1_2_8, sa1_2_8_student1);
+
+        StudentAnswer sa1_2_9_student1 = createStudentAnswer(student1, pa_1_2_9, "Convert a float to a string using str(), e.g., str(3.14) converts 3.14 to \"3.14\".");
+        addStudentAnswerToProblemAnswer(pa_1_2_9, sa1_2_9_student1);
+
+        StudentAnswer sa1_2_10_student1 = createStudentAnswer(student1, pa_1_2_10, "Mutable types can change after creation (e.g., lists), immutable types cannot (e.g., strings).");
+        addStudentAnswerToProblemAnswer(pa_1_2_10, sa1_2_10_student1);
+
+// Creating StudentAnswer instances for student2
+        StudentAnswer sa1_2_1_student2 = createStudentAnswer(student2, pa_1_2_1, "The main data types are integers, floats, strings, and booleans.");
+        addStudentAnswerToProblemAnswer(pa_1_2_1, sa1_2_1_student2);
+
+        StudentAnswer sa1_2_2_student2 = createStudentAnswer(student2, pa_1_2_2, "Define an integer by assigning a whole number, like x = 20.");
+        addStudentAnswerToProblemAnswer(pa_1_2_2, sa1_2_2_student2);
+
+        StudentAnswer sa1_2_3_student2 = createStudentAnswer(student2, pa_1_2_3, "Integers are whole numbers, floats have decimals, like 2.71.");
+        addStudentAnswerToProblemAnswer(pa_1_2_3, sa1_2_3_student2);
+
+        StudentAnswer sa1_2_4_student2 = createStudentAnswer(student2, pa_1_2_4, "Use int() to convert strings to integers, like int(\"20\") converts \"20\" to 20.");
+        addStudentAnswerToProblemAnswer(pa_1_2_4, sa1_2_4_student2);
+
+        StudentAnswer sa1_2_5_student2 = createStudentAnswer(student2, pa_1_2_5, "Boolean data types are True or False, used in conditionals.");
+        addStudentAnswerToProblemAnswer(pa_1_2_5, sa1_2_5_student2);
+
+        StudentAnswer sa1_2_6_student2 = createStudentAnswer(student2, pa_1_2_6, "Check data type of a variable using type(), e.g., type(x).");
+        addStudentAnswerToProblemAnswer(pa_1_2_6, sa1_2_6_student2);
+
+        StudentAnswer sa1_2_7_student2 = createStudentAnswer(student2, pa_1_2_7, "Type casting converts a variable to another type, useful for operations.");
+        addStudentAnswerToProblemAnswer(pa_1_2_7, sa1_2_7_student2);
+
+        StudentAnswer sa1_2_8_student2 = createStudentAnswer(student2, pa_1_2_8, "Define strings with quotes, like name = \"Bob\".");
+        addStudentAnswerToProblemAnswer(pa_1_2_8, sa1_2_8_student2);
+
+        StudentAnswer sa1_2_9_student2 = createStudentAnswer(student2, pa_1_2_9, "Convert floats to strings using str(), e.g., str(2.71).");
+        addStudentAnswerToProblemAnswer(pa_1_2_9, sa1_2_9_student2);
+
+        StudentAnswer sa1_2_10_student2 = createStudentAnswer(student2, pa_1_2_10, "Mutable types change after creation, immutable types do not.");
+        addStudentAnswerToProblemAnswer(pa_1_2_10, sa1_2_10_student2);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment2.");
+// Creating StudentAnswer instances for student1
+        StudentAnswer sa1_3_1_student1 = createStudentAnswer(student1, pa_1_3_1, "Control structures include loops and conditionals to control flow.");
+        addStudentAnswerToProblemAnswer(pa_1_3_1, sa1_3_1_student1);
+
+        StudentAnswer sa1_3_2_student1 = createStudentAnswer(student1, pa_1_3_2, "for i in range(5): print(i)");
+        addStudentAnswerToProblemAnswer(pa_1_3_2, sa1_3_2_student1);
+
+        StudentAnswer sa1_3_3_student1 = createStudentAnswer(student1, pa_1_3_3, "For loops iterate over elements, while loops repeat as long as condition is true.");
+        addStudentAnswerToProblemAnswer(pa_1_3_3, sa1_3_3_student1);
+
+        StudentAnswer sa1_3_4_student1 = createStudentAnswer(student1, pa_1_3_4, "x = 0; while x < 5: print(x); x += 1");
+        addStudentAnswerToProblemAnswer(pa_1_3_4, sa1_3_4_student1);
+
+        StudentAnswer sa1_3_5_student1 = createStudentAnswer(student1, pa_1_3_5, "Conditional statements include if, elif, else for decision-making.");
+        addStudentAnswerToProblemAnswer(pa_1_3_5, sa1_3_5_student1);
+
+        StudentAnswer sa1_3_6_student1 = createStudentAnswer(student1, pa_1_3_6, "if x > 0: print('x is positive')");
+        addStudentAnswerToProblemAnswer(pa_1_3_6, sa1_3_6_student1);
+
+        StudentAnswer sa1_3_7_student1 = createStudentAnswer(student1, pa_1_3_7, "Elif allows for multiple conditions to be checked in sequence.");
+        addStudentAnswerToProblemAnswer(pa_1_3_7, sa1_3_7_student1);
+
+        StudentAnswer sa1_3_8_student1 = createStudentAnswer(student1, pa_1_3_8, "Else statement executes if all previous conditions are false.");
+        addStudentAnswerToProblemAnswer(pa_1_3_8, sa1_3_8_student1);
+
+        StudentAnswer sa1_3_9_student1 = createStudentAnswer(student1, pa_1_3_9, "Yes, for i in range(10): if i % 2 == 0: print(i, 'is even')");
+        addStudentAnswerToProblemAnswer(pa_1_3_9, sa1_3_9_student1);
+
+        StudentAnswer sa1_3_10_student1 = createStudentAnswer(student1, pa_1_3_10, "Control structures enable decision-making, iteration, and organized logic.");
+        addStudentAnswerToProblemAnswer(pa_1_3_10, sa1_3_10_student1);
+
+// Creating StudentAnswer instances for student2
+        StudentAnswer sa1_3_1_student2 = createStudentAnswer(student2, pa_1_3_1, "Control structures are constructs like loops and conditionals.");
+        addStudentAnswerToProblemAnswer(pa_1_3_1, sa1_3_1_student2);
+
+        StudentAnswer sa1_3_2_student2 = createStudentAnswer(student2, pa_1_3_2, "for i in range(3): print(i)");
+        addStudentAnswerToProblemAnswer(pa_1_3_2, sa1_3_2_student2);
+
+        StudentAnswer sa1_3_3_student2 = createStudentAnswer(student2, pa_1_3_3, "For loops iterate over lists, while loops run while a condition is true.");
+        addStudentAnswerToProblemAnswer(pa_1_3_3, sa1_3_3_student2);
+
+        StudentAnswer sa1_3_4_student2 = createStudentAnswer(student2, pa_1_3_4, "x = 0; while x < 3: print(x); x += 1");
+        addStudentAnswerToProblemAnswer(pa_1_3_4, sa1_3_4_student2);
+
+        StudentAnswer sa1_3_5_student2 = createStudentAnswer(student2, pa_1_3_5, "Conditionals like if, elif, else allow decision-making in code.");
+        addStudentAnswerToProblemAnswer(pa_1_3_5, sa1_3_5_student2);
+
+        StudentAnswer sa1_3_6_student2 = createStudentAnswer(student2, pa_1_3_6, "if y > 0: print('y is positive')");
+        addStudentAnswerToProblemAnswer(pa_1_3_6, sa1_3_6_student2);
+
+        StudentAnswer sa1_3_7_student2 = createStudentAnswer(student2, pa_1_3_7, "Elif checks multiple conditions after an initial if condition.");
+        addStudentAnswerToProblemAnswer(pa_1_3_7, sa1_3_7_student2);
+
+        StudentAnswer sa1_3_8_student2 = createStudentAnswer(student2, pa_1_3_8, "Else executes if previous conditions are false.");
+        addStudentAnswerToProblemAnswer(pa_1_3_8, sa1_3_8_student2);
+
+        StudentAnswer sa1_3_9_student2 = createStudentAnswer(student2, pa_1_3_9, "Yes, for i in range(3): if i % 2 == 0: print(i, 'is even')");
+        addStudentAnswerToProblemAnswer(pa_1_3_9, sa1_3_9_student2);
+
+        StudentAnswer sa1_3_10_student2 = createStudentAnswer(student2, pa_1_3_10, "Control structures help manage program logic efficiently.");
+        addStudentAnswerToProblemAnswer(pa_1_3_10, sa1_3_10_student2);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment3.");
+// Creating StudentAnswer instances for student1
+        StudentAnswer sa1_4_1_student1 = createStudentAnswer(student1, pa_1_4_1, "A function is a block of code for a specific task, takes inputs, and returns output.");
+        addStudentAnswerToProblemAnswer(pa_1_4_1, sa1_4_1_student1);
+
+        StudentAnswer sa1_4_2_student1 = createStudentAnswer(student1, pa_1_4_2, "def greet(): print('Hello, world!')");
+        addStudentAnswerToProblemAnswer(pa_1_4_2, sa1_4_2_student1);
+
+        StudentAnswer sa1_4_3_student1 = createStudentAnswer(student1, pa_1_4_3, "Parameters are placeholders in function definitions for input values.");
+        addStudentAnswerToProblemAnswer(pa_1_4_3, sa1_4_3_student1);
+
+        StudentAnswer sa1_4_4_student1 = createStudentAnswer(student1, pa_1_4_4, "Call a function using its name followed by parentheses, e.g., greet().");
+        addStudentAnswerToProblemAnswer(pa_1_4_4, sa1_4_4_student1);
+
+        StudentAnswer sa1_4_5_student1 = createStudentAnswer(student1, pa_1_4_5, "Parameters are in definitions, arguments are actual values passed.");
+        addStudentAnswerToProblemAnswer(pa_1_4_5, sa1_4_5_student1);
+
+        StudentAnswer sa1_4_6_student1 = createStudentAnswer(student1, pa_1_4_6, "Return a value using the return keyword, e.g., return a + b.");
+        addStudentAnswerToProblemAnswer(pa_1_4_6, sa1_4_6_student1);
+
+        StudentAnswer sa1_4_7_student1 = createStudentAnswer(student1, pa_1_4_7, "A recursive function calls itself and has a base case to prevent infinite recursion.");
+        addStudentAnswerToProblemAnswer(pa_1_4_7, sa1_4_7_student1);
+
+        StudentAnswer sa1_4_8_student1 = createStudentAnswer(student1, pa_1_4_8, "Default parameters are set by assigning values in the function definition, e.g., def greet(name='world').");
+        addStudentAnswerToProblemAnswer(pa_1_4_8, sa1_4_8_student1);
+
+        StudentAnswer sa1_4_9_student1 = createStudentAnswer(student1, pa_1_4_9, "Functions organize code, improve readability, and allow for code reuse.");
+        addStudentAnswerToProblemAnswer(pa_1_4_9, sa1_4_9_student1);
+
+        StudentAnswer sa1_4_10_student1 = createStudentAnswer(student1, pa_1_4_10, "Yes, nested functions are possible, e.g., def outer_function(): def inner_function(): print('Hello from the inner function!'); inner_function().");
+        addStudentAnswerToProblemAnswer(pa_1_4_10, sa1_4_10_student1);
+
+// Creating StudentAnswer instances for student2
+        StudentAnswer sa1_4_1_student2 = createStudentAnswer(student2, pa_1_4_1, "A function is a block of code that takes inputs and returns an output.");
+        addStudentAnswerToProblemAnswer(pa_1_4_1, sa1_4_1_student2);
+
+        StudentAnswer sa1_4_2_student2 = createStudentAnswer(student2, pa_1_4_2, "def greet(): print('Hello!')");
+        addStudentAnswerToProblemAnswer(pa_1_4_2, sa1_4_2_student2);
+
+        StudentAnswer sa1_4_3_student2 = createStudentAnswer(student2, pa_1_4_3, "Parameters are placeholders for input values in function definitions.");
+        addStudentAnswerToProblemAnswer(pa_1_4_3, sa1_4_3_student2);
+
+        StudentAnswer sa1_4_4_student2 = createStudentAnswer(student2, pa_1_4_4, "Call a function with its name followed by parentheses, e.g., greet().");
+        addStudentAnswerToProblemAnswer(pa_1_4_4, sa1_4_4_student2);
+
+        StudentAnswer sa1_4_5_student2 = createStudentAnswer(student2, pa_1_4_5, "Parameters are in definitions, arguments are values passed to functions.");
+        addStudentAnswerToProblemAnswer(pa_1_4_5, sa1_4_5_student2);
+
+        StudentAnswer sa1_4_6_student2 = createStudentAnswer(student2, pa_1_4_6, "Use return to output a value from a function, e.g., return a + b.");
+        addStudentAnswerToProblemAnswer(pa_1_4_6, sa1_4_6_student2);
+
+        StudentAnswer sa1_4_7_student2 = createStudentAnswer(student2, pa_1_4_7, "A recursive function calls itself to solve a problem with a base case.");
+        addStudentAnswerToProblemAnswer(pa_1_4_7, sa1_4_7_student2);
+
+        StudentAnswer sa1_4_8_student2 = createStudentAnswer(student2, pa_1_4_8, "Set default parameters by assigning values, e.g., def greet(name='world').");
+        addStudentAnswerToProblemAnswer(pa_1_4_8, sa1_4_8_student2);
+
+        StudentAnswer sa1_4_9_student2 = createStudentAnswer(student2, pa_1_4_9, "Functions modularize code, making it easier to read, maintain, and reuse.");
+        addStudentAnswerToProblemAnswer(pa_1_4_9, sa1_4_9_student2);
+
+        StudentAnswer sa1_4_10_student2 = createStudentAnswer(student2, pa_1_4_10, "Yes, you can have nested functions, e.g., def outer_function(): def inner_function(): print('Hello from the inner function!'); inner_function().");
+        addStudentAnswerToProblemAnswer(pa_1_4_10, sa1_4_10_student2);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment4.");
+// Creating StudentAnswer instances for student1
+        StudentAnswer sa1_5_1_student1 = createStudentAnswer(student1, pa_1_5_1, "A module in Python is a file with code that defines functions, classes, and variables.");
+        addStudentAnswerToProblemAnswer(pa_1_5_1, sa1_5_1_student1);
+
+        StudentAnswer sa1_5_2_student1 = createStudentAnswer(student1, pa_1_5_2, "Import a module using the import keyword, e.g., import math.");
+        addStudentAnswerToProblemAnswer(pa_1_5_2, sa1_5_2_student1);
+
+        StudentAnswer sa1_5_3_student1 = createStudentAnswer(student1, pa_1_5_3, "Modules improve code organization, reuse, and maintainability.");
+        addStudentAnswerToProblemAnswer(pa_1_5_3, sa1_5_3_student1);
+
+        StudentAnswer sa1_5_4_student1 = createStudentAnswer(student1, pa_1_5_4, "Access functions and variables using dot notation, e.g., math.sqrt(16).");
+        addStudentAnswerToProblemAnswer(pa_1_5_4, sa1_5_4_student1);
+
+        StudentAnswer sa1_5_5_student1 = createStudentAnswer(student1, pa_1_5_5, "Import specific functions using from keyword, e.g., from math import sqrt.");
+        addStudentAnswerToProblemAnswer(pa_1_5_5, sa1_5_5_student1);
+
+        StudentAnswer sa1_5_6_student1 = createStudentAnswer(student1, pa_1_5_6, "Built-in modules come with Python, e.g., the os module.");
+        addStudentAnswerToProblemAnswer(pa_1_5_6, sa1_5_6_student1);
+
+        StudentAnswer sa1_5_7_student1 = createStudentAnswer(student1, pa_1_5_7, "Create a module by saving Python code in a .py file, e.g., mymodule.py.");
+        addStudentAnswerToProblemAnswer(pa_1_5_7, sa1_5_7_student1);
+
+        StudentAnswer sa1_5_8_student1 = createStudentAnswer(student1, pa_1_5_8, "Reload a module with importlib.reload(), e.g., importlib.reload(mymodule).");
+        addStudentAnswerToProblemAnswer(pa_1_5_8, sa1_5_8_student1);
+
+        StudentAnswer sa1_5_9_student1 = createStudentAnswer(student1, pa_1_5_9, "The __name__ variable is '__main__' if the module is run as the main program.");
+        addStudentAnswerToProblemAnswer(pa_1_5_9, sa1_5_9_student1);
+
+        StudentAnswer sa1_5_10_student1 = createStudentAnswer(student1, pa_1_5_10, "Modules provide reusability, organization, maintenance, and extensibility benefits.");
+        addStudentAnswerToProblemAnswer(pa_1_5_10, sa1_5_10_student1);
+
+// Creating StudentAnswer instances for student2
+        StudentAnswer sa1_5_1_student2 = createStudentAnswer(student2, pa_1_5_1, "A module contains Python code for functions, classes, and variables.");
+        addStudentAnswerToProblemAnswer(pa_1_5_1, sa1_5_1_student2);
+
+        StudentAnswer sa1_5_2_student2 = createStudentAnswer(student2, pa_1_5_2, "Use the import keyword to import a module, e.g., import math.");
+        addStudentAnswerToProblemAnswer(pa_1_5_2, sa1_5_2_student2);
+
+        StudentAnswer sa1_5_3_student2 = createStudentAnswer(student2, pa_1_5_3, "Modules help organize, reuse, and maintain code.");
+        addStudentAnswerToProblemAnswer(pa_1_5_3, sa1_5_3_student2);
+
+        StudentAnswer sa1_5_4_student2 = createStudentAnswer(student2, pa_1_5_4, "Access module functions using dot notation, e.g., math.sqrt(16).");
+        addStudentAnswerToProblemAnswer(pa_1_5_4, sa1_5_4_student2);
+
+        StudentAnswer sa1_5_5_student2 = createStudentAnswer(student2, pa_1_5_5, "Import specific functions with from keyword, e.g., from math import sqrt.");
+        addStudentAnswerToProblemAnswer(pa_1_5_5, sa1_5_5_student2);
+
+        StudentAnswer sa1_5_6_student2 = createStudentAnswer(student2, pa_1_5_6, "Built-in modules are pre-installed with Python, like the os module.");
+        addStudentAnswerToProblemAnswer(pa_1_5_6, sa1_5_6_student2);
+
+        StudentAnswer sa1_5_7_student2 = createStudentAnswer(student2, pa_1_5_7, "Create a module by saving Python code in a file with a .py extension.");
+        addStudentAnswerToProblemAnswer(pa_1_5_7, sa1_5_7_student2);
+
+        StudentAnswer sa1_5_8_student2 = createStudentAnswer(student2, pa_1_5_8, "Reload a module using importlib.reload(), e.g., importlib.reload(mymodule).");
+        addStudentAnswerToProblemAnswer(pa_1_5_8, sa1_5_8_student2);
+
+        StudentAnswer sa1_5_9_student2 = createStudentAnswer(student2, pa_1_5_9, "The __name__ variable is '__main__' when the module is the main program.");
+        addStudentAnswerToProblemAnswer(pa_1_5_9, sa1_5_9_student2);
+
+        StudentAnswer sa1_5_10_student2 = createStudentAnswer(student2, pa_1_5_10, "Modules offer reusability, organization, easier maintenance, and extensibility.");
+        addStudentAnswerToProblemAnswer(pa_1_5_10, sa1_5_10_student2);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment5.");
+// Creating StudentAnswer instances for student1
+        StudentAnswer sa1_6_1_student1 = createStudentAnswer(student1, pa_1_6_1, "A library is a collection of pre-written code for various tasks.");
+        addStudentAnswerToProblemAnswer(pa_1_6_1, sa1_6_1_student1);
+
+        StudentAnswer sa1_6_2_student1 = createStudentAnswer(student1, pa_1_6_2, "Install a library using pip, e.g., pip install requests.");
+        addStudentAnswerToProblemAnswer(pa_1_6_2, sa1_6_2_student1);
+
+        StudentAnswer sa1_6_3_student1 = createStudentAnswer(student1, pa_1_6_3, "A module is a single file, while a library is a collection of modules.");
+        addStudentAnswerToProblemAnswer(pa_1_6_3, sa1_6_3_student1);
+
+        StudentAnswer sa1_6_4_student1 = createStudentAnswer(student1, pa_1_6_4, "Import a library using the import keyword, e.g., import requests.");
+        addStudentAnswerToProblemAnswer(pa_1_6_4, sa1_6_4_student1);
+
+        StudentAnswer sa1_6_5_student1 = createStudentAnswer(student1, pa_1_6_5, "Popular libraries include NumPy, Pandas, Matplotlib, and requests.");
+        addStudentAnswerToProblemAnswer(pa_1_6_5, sa1_6_5_student1);
+
+        StudentAnswer sa1_6_6_student1 = createStudentAnswer(student1, pa_1_6_6, "Read documentation on the official website, e.g., docs.python-requests.org.");
+        addStudentAnswerToProblemAnswer(pa_1_6_6, sa1_6_6_student1);
+
+        StudentAnswer sa1_6_7_student1 = createStudentAnswer(student1, pa_1_6_7, "Update a library using pip with the --upgrade option, e.g., pip install --upgrade requests.");
+        addStudentAnswerToProblemAnswer(pa_1_6_7, sa1_6_7_student1);
+
+        StudentAnswer sa1_6_8_student1 = createStudentAnswer(student1, pa_1_6_8, "Uninstall a library with pip, e.g., pip uninstall requests.");
+        addStudentAnswerToProblemAnswer(pa_1_6_8, sa1_6_8_student1);
+
+        StudentAnswer sa1_6_9_student1 = createStudentAnswer(student1, pa_1_6_9, "A virtual environment isolates project dependencies, preventing conflicts.");
+        addStudentAnswerToProblemAnswer(pa_1_6_9, sa1_6_9_student1);
+
+        StudentAnswer sa1_6_10_student1 = createStudentAnswer(student1, pa_1_6_10, "Create and activate a virtual environment with venv module, e.g., python -m venv myenv.");
+        addStudentAnswerToProblemAnswer(pa_1_6_10, sa1_6_10_student1);
+
+// Creating StudentAnswer instances for student2
+        StudentAnswer sa1_6_1_student2 = createStudentAnswer(student2, pa_1_6_1, "A library contains pre-written code for various functionalities.");
+        addStudentAnswerToProblemAnswer(pa_1_6_1, sa1_6_1_student2);
+
+        StudentAnswer sa1_6_2_student2 = createStudentAnswer(student2, pa_1_6_2, "Use pip to install a library, e.g., pip install requests.");
+        addStudentAnswerToProblemAnswer(pa_1_6_2, sa1_6_2_student2);
+
+        StudentAnswer sa1_6_3_student2 = createStudentAnswer(student2, pa_1_6_3, "Modules are single files, libraries are collections of modules.");
+        addStudentAnswerToProblemAnswer(pa_1_6_3, sa1_6_3_student2);
+
+        StudentAnswer sa1_6_4_student2 = createStudentAnswer(student2, pa_1_6_4, "Import a library with the import keyword, e.g., import requests.");
+        addStudentAnswerToProblemAnswer(pa_1_6_4, sa1_6_4_student2);
+
+        StudentAnswer sa1_6_5_student2 = createStudentAnswer(student2, pa_1_6_5, "Popular libraries include NumPy, Pandas, Matplotlib, and requests.");
+        addStudentAnswerToProblemAnswer(pa_1_6_5, sa1_6_5_student2);
+
+        StudentAnswer sa1_6_6_student2 = createStudentAnswer(student2, pa_1_6_6, "Read library documentation on official websites, e.g., docs.python-requests.org.");
+        addStudentAnswerToProblemAnswer(pa_1_6_6, sa1_6_6_student2);
+
+        StudentAnswer sa1_6_7_student2 = createStudentAnswer(student2, pa_1_6_7, "Update a library using pip --upgrade, e.g., pip install --upgrade requests.");
+        addStudentAnswerToProblemAnswer(pa_1_6_7, sa1_6_7_student2);
+
+        StudentAnswer sa1_6_8_student2 = createStudentAnswer(student2, pa_1_6_8, "Uninstall a library with pip, e.g., pip uninstall requests.");
+        addStudentAnswerToProblemAnswer(pa_1_6_8, sa1_6_8_student2);
+
+        StudentAnswer sa1_6_9_student2 = createStudentAnswer(student2, pa_1_6_9, "Virtual environments manage project dependencies and prevent conflicts.");
+        addStudentAnswerToProblemAnswer(pa_1_6_9, sa1_6_9_student2);
+
+        StudentAnswer sa1_6_10_student2 = createStudentAnswer(student2, pa_1_6_10, "Create a virtual environment with venv and activate it, e.g., python -m venv myenv.");
+        addStudentAnswerToProblemAnswer(pa_1_6_10, sa1_6_10_student2);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment6.");
+// Creating StudentAnswer instances for student1
+        StudentAnswer sa2_1_1_student1 = createStudentAnswer(student1, pa_2_1_1, "An array is a collection of elements stored in contiguous memory locations.");
+        addStudentAnswerToProblemAnswer(pa_2_1_1, sa2_1_1_student1);
+
+        StudentAnswer sa2_1_2_student1 = createStudentAnswer(student1, pa_2_1_2, "In Python, use lists or the array module. Example: import array as arr; my_array = arr.array('i', [1, 2, 3, 4, 5]).");
+        addStudentAnswerToProblemAnswer(pa_2_1_2, sa2_1_2_student1);
+
+        StudentAnswer sa2_1_3_student1 = createStudentAnswer(student1, pa_2_1_3, "Arrays allow efficient data storage and retrieval, and quick access using indices.");
+        addStudentAnswerToProblemAnswer(pa_2_1_3, sa2_1_3_student1);
+
+        StudentAnswer sa2_1_4_student1 = createStudentAnswer(student1, pa_2_1_4, "Access an element using its index. Example: my_array[0] returns the first element.");
+        addStudentAnswerToProblemAnswer(pa_2_1_4, sa2_1_4_student1);
+
+        StudentAnswer sa2_1_5_student1 = createStudentAnswer(student1, pa_2_1_5, "Update an element by assigning a new value to the desired index. Example: my_array[0] = 10.");
+        addStudentAnswerToProblemAnswer(pa_2_1_5, sa2_1_5_student1);
+
+        StudentAnswer sa2_1_6_student1 = createStudentAnswer(student1, pa_2_1_6, "A 1-dimensional array is a single list of elements, while a 2-dimensional array is a list of lists.");
+        addStudentAnswerToProblemAnswer(pa_2_1_6, sa2_1_6_student1);
+
+        StudentAnswer sa2_1_7_student1 = createStudentAnswer(student1, pa_2_1_7, "Iterate through an array using a for loop. Example: for element in my_array: print(element).");
+        addStudentAnswerToProblemAnswer(pa_2_1_7, sa2_1_7_student1);
+
+        StudentAnswer sa2_1_8_student1 = createStudentAnswer(student1, pa_2_1_8, "An array's index is the position of an element within the array, starting from 0.");
+        addStudentAnswerToProblemAnswer(pa_2_1_8, sa2_1_8_student1);
+
+        StudentAnswer sa2_1_9_student1 = createStudentAnswer(student1, pa_2_1_9, "Find the length of an array using the len() function. Example: len(my_array).");
+        addStudentAnswerToProblemAnswer(pa_2_1_9, sa2_1_9_student1);
+
+        StudentAnswer sa2_1_10_student1 = createStudentAnswer(student1, pa_2_1_10, "Common operations include searching, sorting, inserting, deleting, and iterating.");
+        addStudentAnswerToProblemAnswer(pa_2_1_10, sa2_1_10_student1);
+
+// Creating StudentAnswer instances for student2
+        StudentAnswer sa2_1_1_student2 = createStudentAnswer(student2, pa_2_1_1, "An array is a collection of elements stored contiguously in memory.");
+        addStudentAnswerToProblemAnswer(pa_2_1_1, sa2_1_1_student2);
+
+        StudentAnswer sa2_1_2_student2 = createStudentAnswer(student2, pa_2_1_2, "In Python, use lists or the array module. Example: import array as arr; my_array = arr.array('i', [1, 2, 3, 4, 5]).");
+        addStudentAnswerToProblemAnswer(pa_2_1_2, sa2_1_2_student2);
+
+        StudentAnswer sa2_1_3_student2 = createStudentAnswer(student2, pa_2_1_3, "Arrays are efficient for data storage and retrieval, providing quick access with indices.");
+        addStudentAnswerToProblemAnswer(pa_2_1_3, sa2_1_3_student2);
+
+        StudentAnswer sa2_1_4_student2 = createStudentAnswer(student2, pa_2_1_4, "Access an element by its index. Example: my_array[0] returns the first element.");
+        addStudentAnswerToProblemAnswer(pa_2_1_4, sa2_1_4_student2);
+
+        StudentAnswer sa2_1_5_student2 = createStudentAnswer(student2, pa_2_1_5, "Update an element by assigning a new value to the index. Example: my_array[0] = 10.");
+        addStudentAnswerToProblemAnswer(pa_2_1_5, sa2_1_5_student2);
+
+        StudentAnswer sa2_1_6_student2 = createStudentAnswer(student2, pa_2_1_6, "A 1-dimensional array is a list of elements, a 2-dimensional array is a list of lists.");
+        addStudentAnswerToProblemAnswer(pa_2_1_6, sa2_1_6_student2);
+
+        StudentAnswer sa2_1_7_student2 = createStudentAnswer(student2, pa_2_1_7, "Iterate through an array using a for loop. Example: for element in my_array: print(element).");
+        addStudentAnswerToProblemAnswer(pa_2_1_7, sa2_1_7_student2);
+
+        StudentAnswer sa2_1_8_student2 = createStudentAnswer(student2, pa_2_1_8, "An array's index is the position of an element within it, starting from 0.");
+        addStudentAnswerToProblemAnswer(pa_2_1_8, sa2_1_8_student2);
+
+        StudentAnswer sa2_1_9_student2 = createStudentAnswer(student2, pa_2_1_9, "Use len() to find the length of an array. Example: len(my_array).");
+        addStudentAnswerToProblemAnswer(pa_2_1_9, sa2_1_9_student2);
+
+        StudentAnswer sa2_1_10_student2 = createStudentAnswer(student2, pa_2_1_10, "Common operations are searching, sorting, inserting, deleting, and iterating.");
+        addStudentAnswerToProblemAnswer(pa_2_1_10, sa2_1_10_student2);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment2_1.");
+// Creating StudentAnswer instances for student1
+        StudentAnswer sa2_2_1_student1 = createStudentAnswer(student1, pa_2_2_1, "A linked list is a data structure with nodes that contain data and a reference to the next node.");
+        addStudentAnswerToProblemAnswer(pa_2_2_1, sa2_2_1_student1);
+
+        StudentAnswer sa2_2_2_student1 = createStudentAnswer(student1, pa_2_2_2, "A node in a linked list has data and a reference to the next node. Example:\nclass Node:\n    def __init__(self, data):\n        self.data = data\n        self.next = None");
+        addStudentAnswerToProblemAnswer(pa_2_2_2, sa2_2_2_student1);
+
+        StudentAnswer sa2_2_3_student1 = createStudentAnswer(student1, pa_2_2_3, "Linked lists allow efficient insertion and deletion, and use memory efficiently.");
+        addStudentAnswerToProblemAnswer(pa_2_2_3, sa2_2_3_student1);
+
+        StudentAnswer sa2_2_4_student1 = createStudentAnswer(student1, pa_2_2_4, "To insert at the beginning, create a new node, set its reference to the current head, and update the head to this new node.");
+        addStudentAnswerToProblemAnswer(pa_2_2_4, sa2_2_4_student1);
+
+        StudentAnswer sa2_2_5_student1 = createStudentAnswer(student1, pa_2_2_5, "A singly linked list has references to the next node only, while a doubly linked list has references to both the next and previous nodes.");
+        addStudentAnswerToProblemAnswer(pa_2_2_5, sa2_2_5_student1);
+
+        StudentAnswer sa2_2_6_student1 = createStudentAnswer(student1, pa_2_2_6, "Traverse a linked list by starting at the head and following the references to each node. Example:\ncurrent = head\nwhile current:\n    print(current.data)\n    current = current.next");
+        addStudentAnswerToProblemAnswer(pa_2_2_6, sa2_2_6_student1);
+
+        StudentAnswer sa2_2_7_student1 = createStudentAnswer(student1, pa_2_2_7, "To delete an element, update the previous node's reference to skip the node to be deleted. Example:\nif head.data == key:\n    head = head.next\nelse:\n    current = head\n    while current.next and current.next.data != key:\n        current = current.next\n    if current.next:\n        current.next = current.next.next");
+        addStudentAnswerToProblemAnswer(pa_2_2_7, sa2_2_7_student1);
+
+        StudentAnswer sa2_2_8_student1 = createStudentAnswer(student1, pa_2_2_8, "The head node is the first node in a linked list, serving as the entry point for operations.");
+        addStudentAnswerToProblemAnswer(pa_2_2_8, sa2_2_8_student1);
+
+        StudentAnswer sa2_2_9_student1 = createStudentAnswer(student1, pa_2_2_9, "To reverse a linked list, change the direction of the links between nodes. Example:\nprev = None\ncurrent = head\nwhile current:\n    next_node = current.next\n    current.next = prev\n    prev = current\n    current = next_node\nhead = prev");
+        addStudentAnswerToProblemAnswer(pa_2_2_9, sa2_2_9_student1);
+
+        StudentAnswer sa2_2_10_student1 = createStudentAnswer(student1, pa_2_2_10, "Common operations on linked lists include insertion, deletion, traversal, searching, and reversing.");
+        addStudentAnswerToProblemAnswer(pa_2_2_10, sa2_2_10_student1);
+
+// Creating StudentAnswer instances for student2
+        StudentAnswer sa2_2_1_student2 = createStudentAnswer(student2, pa_2_2_1, "A linked list is a data structure with nodes containing data and a reference to the next node.");
+        addStudentAnswerToProblemAnswer(pa_2_2_1, sa2_2_1_student2);
+
+        StudentAnswer sa2_2_2_student2 = createStudentAnswer(student2, pa_2_2_2, "A node has data and a reference to the next node. Example:\nclass Node:\n    def __init__(self, data):\n        self.data = data\n        self.next = None");
+        addStudentAnswerToProblemAnswer(pa_2_2_2, sa2_2_2_student2);
+
+        StudentAnswer sa2_2_3_student2 = createStudentAnswer(student2, pa_2_2_3, "Linked lists are efficient for insertion and deletion, and use memory well.");
+        addStudentAnswerToProblemAnswer(pa_2_2_3, sa2_2_3_student2);
+
+        StudentAnswer sa2_2_4_student2 = createStudentAnswer(student2, pa_2_2_4, "Insert at the beginning by creating a new node, setting its reference to the head, and updating the head.");
+        addStudentAnswerToProblemAnswer(pa_2_2_4, sa2_2_4_student2);
+
+        StudentAnswer sa2_2_5_student2 = createStudentAnswer(student2, pa_2_2_5, "Singly linked lists have next node references, doubly linked lists have next and previous node references.");
+        addStudentAnswerToProblemAnswer(pa_2_2_5, sa2_2_5_student2);
+
+        StudentAnswer sa2_2_6_student2 = createStudentAnswer(student2, pa_2_2_6, "Traverse by starting at the head and following references to each node. Example:\ncurrent = head\nwhile current:\n    print(current.data)\n    current = current.next");
+        addStudentAnswerToProblemAnswer(pa_2_2_6, sa2_2_6_student2);
+
+        StudentAnswer sa2_2_7_student2 = createStudentAnswer(student2, pa_2_2_7, "Delete an element by updating the previous node's reference to skip the node. Example:\nif head.data == key:\n    head = head.next\nelse:\n    current = head\n    while current.next and current.next.data != key:\n        current = current.next\n    if current.next:\n        current.next = current.next.next");
+        addStudentAnswerToProblemAnswer(pa_2_2_7, sa2_2_7_student2);
+
+        StudentAnswer sa2_2_8_student2 = createStudentAnswer(student2, pa_2_2_8, "The head node is the first node, the entry point for list operations.");
+        addStudentAnswerToProblemAnswer(pa_2_2_8, sa2_2_8_student2);
+
+        StudentAnswer sa2_2_9_student2 = createStudentAnswer(student2, pa_2_2_9, "Reverse a linked list by changing link directions. Example:\nprev = None\ncurrent = head\nwhile current:\n    next_node = current.next\n    current.next = prev\n    prev = current\n    current = next_node\nhead = prev");
+        addStudentAnswerToProblemAnswer(pa_2_2_9, sa2_2_9_student2);
+
+        StudentAnswer sa2_2_10_student2 = createStudentAnswer(student2, pa_2_2_10, "Common operations include insertion, deletion, traversal, searching, and reversing.");
+        addStudentAnswerToProblemAnswer(pa_2_2_10, sa2_2_10_student2);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment2_2.");
+// Creating StudentAnswer instances for student1
+        StudentAnswer sa2_3_1_student1 = createStudentAnswer(student1, pa_2_3_1, "A stack is a linear data structure following the LIFO principle, where the last element added is the first one removed.");
+        addStudentAnswerToProblemAnswer(pa_2_3_1, sa2_3_1_student1);
+
+        StudentAnswer sa2_3_2_student1 = createStudentAnswer(student1, pa_2_3_2, "Implement a stack using a list in Python. Example:\nstack = []\nstack.append(1)\nstack.append(2)\nstack.pop()");
+        addStudentAnswerToProblemAnswer(pa_2_3_2, sa2_3_2_student1);
+
+        StudentAnswer sa2_3_3_student1 = createStudentAnswer(student1, pa_2_3_3, "Main operations are push (adding an element), pop (removing the top element), and peek (viewing the top element).");
+        addStudentAnswerToProblemAnswer(pa_2_3_3, sa2_3_3_student1);
+
+        StudentAnswer sa2_3_4_student1 = createStudentAnswer(student1, pa_2_3_4, "Check if a stack is empty by verifying if its length is zero. Example:\nif len(stack) == 0: print(\"Stack is empty\")");
+        addStudentAnswerToProblemAnswer(pa_2_3_4, sa2_3_4_student1);
+
+        StudentAnswer sa2_3_5_student1 = createStudentAnswer(student1, pa_2_3_5, "The peek operation returns the top element without removing it.");
+        addStudentAnswerToProblemAnswer(pa_2_3_5, sa2_3_5_student1);
+
+        StudentAnswer sa2_3_6_student1 = createStudentAnswer(student1, pa_2_3_6, "Implement push in a stack class. Example:\nclass Stack {\n  public Stack() {\n    this.items = new LinkedList<>();\n  }\n  public void push(Object item) {\n    this.items.addFirst(item);\n  }\n}");
+        addStudentAnswerToProblemAnswer(pa_2_3_6, sa2_3_6_student1);
+
+        StudentAnswer sa2_3_7_student1 = createStudentAnswer(student1, pa_2_3_7, "Implement pop in a stack class. Example:\nclass Stack {\n  public Stack() {\n    this.items = new LinkedList<>();\n  }\n  public void push(Object item) {\n    this.items.addFirst(item);\n  }\n  public Object pop() {\n    if (!this.items.isEmpty()) {\n      return this.items.removeFirst();\n    }\n    return null;\n  }\n}");
+        addStudentAnswerToProblemAnswer(pa_2_3_7, sa2_3_7_student1);
+
+        StudentAnswer sa2_3_8_student1 = createStudentAnswer(student1, pa_2_3_8, "Common applications of stacks include expression evaluation, syntax parsing, function call management, undo mechanisms, and backtracking algorithms.");
+        addStudentAnswerToProblemAnswer(pa_2_3_8, sa2_3_8_student1);
+
+        StudentAnswer sa2_3_9_student1 = createStudentAnswer(student1, pa_2_3_9, "The LIFO principle means the last element added is the first one removed, useful for reversing sequences and tracking nested structures.");
+        addStudentAnswerToProblemAnswer(pa_2_3_9, sa2_3_9_student1);
+
+        StudentAnswer sa2_3_10_student1 = createStudentAnswer(student1, pa_2_3_10, "Implement peek in a stack class. Example:\nclass Stack {\n  public Stack() {\n    this.items = new LinkedList<>();\n  }\n  public void push(Object item) {\n    this.items.addFirst(item);\n  }\n  public Object pop() {\n    if (!this.items.isEmpty()) {\n      return this.items.removeFirst();\n    }\n    return null;\n  }\n  public Object peek() {\n    if (!this.items.isEmpty()) {\n      return this.items.getFirst();\n    }\n    return null;\n  }\n}");
+        addStudentAnswerToProblemAnswer(pa_2_3_10, sa2_3_10_student1);
+
+// Creating StudentAnswer instances for student2
+        StudentAnswer sa2_3_1_student2 = createStudentAnswer(student2, pa_2_3_1, "A stack is a linear data structure that uses the LIFO principle, meaning the last element added is the first one to be removed.");
+        addStudentAnswerToProblemAnswer(pa_2_3_1, sa2_3_1_student2);
+
+        StudentAnswer sa2_3_2_student2 = createStudentAnswer(student2, pa_2_3_2, "Implement a stack in Python using a list. Example:\nstack = []\nstack.append(1)\nstack.append(2)\nstack.pop()");
+        addStudentAnswerToProblemAnswer(pa_2_3_2, sa2_3_2_student2);
+
+        StudentAnswer sa2_3_3_student2 = createStudentAnswer(student2, pa_2_3_3, "Main operations are push (adding an element), pop (removing the top element), and peek (viewing the top element without removing it).");
+        addStudentAnswerToProblemAnswer(pa_2_3_3, sa2_3_3_student2);
+
+        StudentAnswer sa2_3_4_student2 = createStudentAnswer(student2, pa_2_3_4, "Check if a stack is empty by checking if its length is zero. Example:\nif len(stack) == 0: print(\"Stack is empty\")");
+        addStudentAnswerToProblemAnswer(pa_2_3_4, sa2_3_4_student2);
+
+        StudentAnswer sa2_3_5_student2 = createStudentAnswer(student2, pa_2_3_5, "The peek operation returns the top element without removing it from the stack.");
+        addStudentAnswerToProblemAnswer(pa_2_3_5, sa2_3_5_student2);
+
+        StudentAnswer sa2_3_6_student2 = createStudentAnswer(student2, pa_2_3_6, "Implement the push operation in a stack class. Example:\nclass Stack {\n  public Stack() {\n    this.items = new LinkedList<>();\n  }\n  public void push(Object item) {\n    this.items.addFirst(item);\n  }\n}");
+        addStudentAnswerToProblemAnswer(pa_2_3_6, sa2_3_6_student2);
+
+        StudentAnswer sa2_3_7_student2 = createStudentAnswer(student2, pa_2_3_7, "Implement the pop operation in a stack class. Example:\nclass Stack {\n  public Stack() {\n    this.items = new LinkedList<>();\n  }\n  public void push(Object item) {\n    this.items.addFirst(item);\n  }\n  public Object pop() {\n    if (!this.items.isEmpty()) {\n      return this.items.removeFirst();\n    }\n    return null;\n  }\n}");
+        addStudentAnswerToProblemAnswer(pa_2_3_7, sa2_3_7_student2);
+
+        StudentAnswer sa2_3_8_student2 = createStudentAnswer(student2, pa_2_3_8, "Common applications of stacks are expression evaluation, syntax parsing, function call management, undo mechanisms, and backtracking algorithms.");
+        addStudentAnswerToProblemAnswer(pa_2_3_8, sa2_3_8_student2);
+
+        StudentAnswer sa2_3_9_student2 = createStudentAnswer(student2, pa_2_3_9, "The LIFO principle means the last element added is the first one removed, useful for reversing sequences and tracking nested structures.");
+        addStudentAnswerToProblemAnswer(pa_2_3_9, sa2_3_9_student2);
+
+        StudentAnswer sa2_3_10_student2 = createStudentAnswer(student2, pa_2_3_10, "Implement the peek operation in a stack class. Example:\nclass Stack {\n  public Stack() {\n    this.items = new LinkedList<>();\n  }\n  public void push(Object item) {\n    this.items.addFirst(item);\n  }\n  public Object pop() {\n    if (!this.items.isEmpty()) {\n      return this.items.removeFirst();\n    }\n    return null;\n  }\n  public Object peek() {\n    if (!this.items.isEmpty()) {\n      return this.items.getFirst();\n    }\n    return null;\n  }\n}");
+        addStudentAnswerToProblemAnswer(pa_2_3_10, sa2_3_10_student2);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment2_3.");
+// Creating StudentAnswer instances for student1
+        StudentAnswer sa2_4_1_student1 = createStudentAnswer(student1, pa_2_4_1, "A queue is a linear data structure following the FIFO principle, where the first element added is the first one removed.");
+        addStudentAnswerToProblemAnswer(pa_2_4_1, sa2_4_1_student1);
+
+        StudentAnswer sa2_4_2_student1 = createStudentAnswer(student1, pa_2_4_2, "Implement a queue using collections.deque in Python. Example:\nfrom collections import deque\nqueue = deque()\nqueue.append(1)\nqueue.append(2)\nqueue.popleft()");
+        addStudentAnswerToProblemAnswer(pa_2_4_2, sa2_4_2_student1);
+
+        StudentAnswer sa2_4_3_student1 = createStudentAnswer(student1, pa_2_4_3, "Main operations are enqueue (adding an element), dequeue (removing the front element), and peek (viewing the front element).");
+        addStudentAnswerToProblemAnswer(pa_2_4_3, sa2_4_3_student1);
+
+        StudentAnswer sa2_4_4_student1 = createStudentAnswer(student1, pa_2_4_4, "Check if a queue is empty by verifying if its length is zero. Example:\nif len(queue) == 0: print(\"Queue is empty\")");
+        addStudentAnswerToProblemAnswer(pa_2_4_4, sa2_4_4_student1);
+
+        StudentAnswer sa2_4_5_student1 = createStudentAnswer(student1, pa_2_4_5, "The peek operation returns the front element without removing it.");
+        addStudentAnswerToProblemAnswer(pa_2_4_5, sa2_4_5_student1);
+
+        StudentAnswer sa2_4_6_student1 = createStudentAnswer(student1, pa_2_4_6, "Implement enqueue in a queue class. Example:\nclass Queue:\n    def __init__(self):\n        self.items = deque()\n    def enqueue(self, item):\n        self.items.append(item)");
+        addStudentAnswerToProblemAnswer(pa_2_4_6, sa2_4_6_student1);
+
+        StudentAnswer sa2_4_7_student1 = createStudentAnswer(student1, pa_2_4_7, "Implement dequeue in a queue class. Example:\nclass Queue:\n    def __init__(self):\n        self.items = deque()\n    def enqueue(self, item):\n        self.items.append(item)\n    def dequeue(self):\n        if not self.is_empty():\n            return self.items.popleft()\n        return None\n    def is_empty(self):\n        return len(self.items) == 0");
+        addStudentAnswerToProblemAnswer(pa_2_4_7, sa2_4_7_student1);
+
+        StudentAnswer sa2_4_8_student1 = createStudentAnswer(student1, pa_2_4_8, "Common applications of queues include task scheduling, managing print jobs, handling requests in web servers, breadth-first search algorithms, and implementing cache mechanisms.");
+        addStudentAnswerToProblemAnswer(pa_2_4_8, sa2_4_8_student1);
+
+        StudentAnswer sa2_4_9_student1 = createStudentAnswer(student1, pa_2_4_9, "The FIFO principle means the first element added is the first one removed, maintaining order in tasks processing.");
+        addStudentAnswerToProblemAnswer(pa_2_4_9, sa2_4_9_student1);
+
+        StudentAnswer sa2_4_10_student1 = createStudentAnswer(student1, pa_2_4_10, "Implement peek in a queue class. Example:\nclass Queue:\n    def __init__(self):\n        self.items = deque()\n    def enqueue(self, item):\n        self.items.append(item)\n    def dequeue(self):\n        if not self.is_empty():\n            return self.items.popleft()\n        return None\n    def peek(self):\n        if not self.is_empty():\n            return self.items[0]\n        return None\n    def is_empty(self):\n        return len(self.items) == 0");
+        addStudentAnswerToProblemAnswer(pa_2_4_10, sa2_4_10_student1);
+
+// Creating StudentAnswer instances for student2
+        StudentAnswer sa2_4_1_student2 = createStudentAnswer(student2, pa_2_4_1, "A queue is a linear data structure that uses the FIFO principle, meaning the first element added is the first one to be removed.");
+        addStudentAnswerToProblemAnswer(pa_2_4_1, sa2_4_1_student2);
+
+        StudentAnswer sa2_4_2_student2 = createStudentAnswer(student2, pa_2_4_2, "Implement a queue in Python using collections.deque. Example:\nfrom collections import deque\nqueue = deque()\nqueue.append(1)\nqueue.append(2)\nqueue.popleft()");
+        addStudentAnswerToProblemAnswer(pa_2_4_2, sa2_4_2_student2);
+
+        StudentAnswer sa2_4_3_student2 = createStudentAnswer(student2, pa_2_4_3, "Main operations are enqueue (adding an element), dequeue (removing the front element), and peek (viewing the front element without removing it).");
+        addStudentAnswerToProblemAnswer(pa_2_4_3, sa2_4_3_student2);
+
+        StudentAnswer sa2_4_4_student2 = createStudentAnswer(student2, pa_2_4_4, "Check if a queue is empty by checking if its length is zero. Example:\nif len(queue) == 0: print(\"Queue is empty\")");
+        addStudentAnswerToProblemAnswer(pa_2_4_4, sa2_4_4_student2);
+
+        StudentAnswer sa2_4_5_student2 = createStudentAnswer(student2, pa_2_4_5, "The peek operation returns the front element without removing it from the queue.");
+        addStudentAnswerToProblemAnswer(pa_2_4_5, sa2_4_5_student2);
+
+        StudentAnswer sa2_4_6_student2 = createStudentAnswer(student2, pa_2_4_6, "Implement the enqueue operation in a queue class. Example:\nclass Queue:\n    def __init__(self):\n        self.items = deque()\n    def enqueue(self, item):\n        self.items.append(item)");
+        addStudentAnswerToProblemAnswer(pa_2_4_6, sa2_4_6_student2);
+
+        StudentAnswer sa2_4_7_student2 = createStudentAnswer(student2, pa_2_4_7, "Implement the dequeue operation in a queue class. Example:\nclass Queue:\n    def __init__(self):\n        self.items = deque()\n    def enqueue(self, item):\n        self.items.append(item)\n    def dequeue(self):\n        if not self.is_empty():\n            return self.items.popleft()\n        return None\n    def is_empty(self):\n        return len(self.items) == 0");
+        addStudentAnswerToProblemAnswer(pa_2_4_7, sa2_4_7_student2);
+
+        StudentAnswer sa2_4_8_student2 = createStudentAnswer(student2, pa_2_4_8, "Common applications of queues include task scheduling, managing print jobs, handling requests in web servers, breadth-first search algorithms, and implementing cache mechanisms.");
+        addStudentAnswerToProblemAnswer(pa_2_4_8, sa2_4_8_student2);
+
+        StudentAnswer sa2_4_9_student2 = createStudentAnswer(student2, pa_2_4_9, "The FIFO principle means the first element added is the first one removed, maintaining order in processing tasks.");
+        addStudentAnswerToProblemAnswer(pa_2_4_9, sa2_4_9_student2);
+
+        StudentAnswer sa2_4_10_student2 = createStudentAnswer(student2, pa_2_4_10, "Implement the peek operation in a queue class. Example:\nclass Queue:\n    def __init__(self):\n        self.items = deque()\n    def enqueue(self, item):\n        self.items.append(item)\n    def dequeue(self):\n        if not self.is_empty():\n            return self.items.popleft()\n        return None\n    def peek(self):\n        if not self.is_empty():\n            return self.items[0]\n        return None\n    def is_empty(self):\n        return len(self.items) == 0");
+        addStudentAnswerToProblemAnswer(pa_2_4_10, sa2_4_10_student2);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment2_4.");
+// Creating StudentAnswer instances for student1
+        StudentAnswer sa2_5_1_student1 = createStudentAnswer(student1, pa_2_5_1, "A tree is a hierarchical data structure with nodes connected by edges, each having a value and references to child nodes, with a single root node.");
+        addStudentAnswerToProblemAnswer(pa_2_5_1, sa2_5_1_student1);
+
+        StudentAnswer sa2_5_2_student1 = createStudentAnswer(student1, pa_2_5_2, "A node in a tree contains a value and references to child nodes. Example:\nclass TreeNode {\n    public TreeNode(Object data) {\n        this.data = data;\n        this.children = new ArrayList<>();\n    }\n}");
+        addStudentAnswerToProblemAnswer(pa_2_5_2, sa2_5_2_student1);
+
+        StudentAnswer sa2_5_3_student1 = createStudentAnswer(student1, pa_2_5_3, "Trees allow efficient data organization, making searching, insertion, and deletion faster, and represent hierarchical relationships naturally.");
+        addStudentAnswerToProblemAnswer(pa_2_5_3, sa2_5_3_student1);
+
+        StudentAnswer sa2_5_4_student1 = createStudentAnswer(student1, pa_2_5_4, "Perform DFS by starting at the root and exploring branches before backtracking. Example:\ndef dfs(node):\n    if not node:\n        return\n    print(node.data)\n    for child in node.children:\n        dfs(child)");
+        addStudentAnswerToProblemAnswer(pa_2_5_4, sa2_5_4_student1);
+
+        StudentAnswer sa2_5_5_student1 = createStudentAnswer(student1, pa_2_5_5, "A binary tree is a type of tree where each node has at most two child nodes: left and right.");
+        addStudentAnswerToProblemAnswer(pa_2_5_5, sa2_5_5_student1);
+
+        StudentAnswer sa2_5_6_student1 = createStudentAnswer(student1, pa_2_5_6, "Perform BFS by starting at the root, exploring nodes level by level. Example:\nfrom collections import deque\n\ndef bfs(root):\n    queue = deque([root])\n    while queue:\n        node = queue.popleft()\n        print(node.data)\n        for child in node.children:\n            queue.append(child)");
+        addStudentAnswerToProblemAnswer(pa_2_5_6, sa2_5_6_student1);
+
+        StudentAnswer sa2_5_7_student1 = createStudentAnswer(student1, pa_2_5_7, "A BST is a type of binary tree where left child values are less and right child values are greater than the node's value.");
+        addStudentAnswerToProblemAnswer(pa_2_5_7, sa2_5_7_student1);
+
+        StudentAnswer sa2_5_8_student1 = createStudentAnswer(student1, pa_2_5_8, "Insert a node into a BST by comparing values, moving left if less and right if greater, until finding an empty spot. Example:\nclass BSTNode {\n    public BSTNode(int data) {\n        this.data = data;\n        this.left = null;\n        this.right = null;\n    }\n}\n\nclass BST {\n    public BST() {\n        this.root = null;\n    }\n\n    public void insert(int data) {\n        this.root = this.insertRec(this.root, data);\n    }\n\n    private BSTNode insertRec(BSTNode root, int data) {\n        if (root == null) {\n            root = new BSTNode(data);\n            return root;\n        }\n\n        if (data < root.data) {\n            root.left = this.insertRec(root.left, data);\n        } else if (data > root.data) {\n            root.right = this.insertRec(root.right, data);\n        }\n\n        return root;\n    }\n}");
+        addStudentAnswerToProblemAnswer(pa_2_5_8, sa2_5_8_student1);
+
+        StudentAnswer sa2_5_9_student1 = createStudentAnswer(student1, pa_2_5_9, "The height of a tree is the length of the longest path from the root to a leaf node, representing the maximum depth of the tree.");
+        addStudentAnswerToProblemAnswer(pa_2_5_9, sa2_5_9_student1);
+
+        StudentAnswer sa2_5_10_student1 = createStudentAnswer(student1, pa_2_5_10, "Common operations on trees include traversal (in-order, pre-order, post-order), insertion, deletion, searching, and calculating height or depth.");
+        addStudentAnswerToProblemAnswer(pa_2_5_10, sa2_5_10_student1);
+
+// Creating StudentAnswer instances for student2
+        StudentAnswer sa2_5_1_student2 = createStudentAnswer(student2, pa_2_5_1, "A tree is a hierarchical data structure with nodes connected by edges. Each node has a value and references to child nodes, with a single root.");
+        addStudentAnswerToProblemAnswer(pa_2_5_1, sa2_5_1_student2);
+
+        StudentAnswer sa2_5_2_student2 = createStudentAnswer(student2, pa_2_5_2, "A node contains a value and references to child nodes. Example:\nclass TreeNode {\n    public TreeNode(Object data) {\n        this.data = data;\n        this.children = new ArrayList<>();\n    }\n}");
+        addStudentAnswerToProblemAnswer(pa_2_5_2, sa2_5_2_student2);
+
+        StudentAnswer sa2_5_3_student2 = createStudentAnswer(student2, pa_2_5_3, "Trees allow efficient data organization and manipulation, making searching, insertion, and deletion faster, and represent hierarchical relationships naturally.");
+        addStudentAnswerToProblemAnswer(pa_2_5_3, sa2_5_3_student2);
+
+        StudentAnswer sa2_5_4_student2 = createStudentAnswer(student2, pa_2_5_4, "Perform DFS by starting at the root and exploring branches before backtracking. Example:\ndef dfs(node):\n    if not node:\n        return\n    print(node.data)\n    for child in node.children:\n        dfs(child)");
+        addStudentAnswerToProblemAnswer(pa_2_5_4, sa2_5_4_student2);
+
+        StudentAnswer sa2_5_5_student2 = createStudentAnswer(student2, pa_2_5_5, "A binary tree is a type of tree where each node has at most two child nodes: left and right.");
+        addStudentAnswerToProblemAnswer(pa_2_5_5, sa2_5_5_student2);
+
+        StudentAnswer sa2_5_6_student2 = createStudentAnswer(student2, pa_2_5_6, "Perform BFS by starting at the root, exploring nodes level by level. Example:\nfrom collections import deque\n\ndef bfs(root):\n    queue = deque([root])\n    while queue:\n        node = queue.popleft()\n        print(node.data)\n        for child in node.children:\n            queue.append(child)");
+        addStudentAnswerToProblemAnswer(pa_2_5_6, sa2_5_6_student2);
+
+        StudentAnswer sa2_5_7_student2 = createStudentAnswer(student2, pa_2_5_7, "A BST is a type of binary tree where left child values are less than the node's value and right child values are greater.");
+        addStudentAnswerToProblemAnswer(pa_2_5_7, sa2_5_7_student2);
+
+        StudentAnswer sa2_5_8_student2 = createStudentAnswer(student2, pa_2_5_8, "Insert a node into a BST by comparing values, moving left if less and right if greater, until finding an empty spot. Example:\nclass BSTNode {\n    public BSTNode(int data) {\n        this.data = data;\n        this.left = null;\n        this.right = null;\n    }\n}\n\nclass BST {\n    public BST() {\n        this.root = null;\n    }\n\n    public void insert(int data) {\n        this.root = this.insertRec(this.root, data);\n    }\n\n    private BSTNode insertRec(BSTNode root, int data) {\n        if (root == null) {\n            root = new BSTNode(data);\n            return root;\n        }\n\n        if (data < root.data) {\n            root.left = this.insertRec(root.left, data);\n        } else if (data > root.data) {\n            root.right = this.insertRec(root.right, data);\n        }\n\n        return root;\n    }\n}");
+        addStudentAnswerToProblemAnswer(pa_2_5_8, sa2_5_8_student2);
+
+        StudentAnswer sa2_5_9_student2 = createStudentAnswer(student2, pa_2_5_9, "The height of a tree is the length of the longest path from the root to a leaf node, representing the maximum depth of the tree.");
+        addStudentAnswerToProblemAnswer(pa_2_5_9, sa2_5_9_student2);
+
+        StudentAnswer sa2_5_10_student2 = createStudentAnswer(student2, pa_2_5_10, "Common operations on trees include traversal (in-order, pre-order, post-order), insertion, deletion, searching, and calculating height or depth.");
+        addStudentAnswerToProblemAnswer(pa_2_5_10, sa2_5_10_student2);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment2_5.");
+// Creating StudentAnswer instances for student1
+        StudentAnswer sa2_6_1_student1 = createStudentAnswer(student1, pa_2_6_1, "A graph is a data structure with nodes (vertices) and edges that connect pairs of nodes, representing relationships.");
+        addStudentAnswerToProblemAnswer(pa_2_6_1, sa2_6_1_student1);
+
+        StudentAnswer sa2_6_2_student1 = createStudentAnswer(student1, pa_2_6_2, "Represent a graph using an adjacency list, where each node has a list of adjacent nodes. Example:\nclass Graph {\n  public Graph() {\n    this.adj_list = new HashMap<>();\n  }\n}");
+        addStudentAnswerToProblemAnswer(pa_2_6_2, sa2_6_2_student1);
+
+        StudentAnswer sa2_6_3_student1 = createStudentAnswer(student1, pa_2_6_3, "Graphs model real-world problems like social networks, transportation networks, and dependencies, efficiently finding shortest paths, detecting cycles, and traversing nodes.");
+        addStudentAnswerToProblemAnswer(pa_2_6_3, sa2_6_3_student1);
+
+        StudentAnswer sa2_6_4_student1 = createStudentAnswer(student1, pa_2_6_4, "Perform DFS by starting at a node, exploring branches before backtracking. Example:\ndef dfs(graph, start, visited=None):\n    if visited is None:\n        visited = set()\n    visited.add(start)\n    print(start)\n    for next in graph[start] - visited:\n        dfs(graph, next, visited)");
+        addStudentAnswerToProblemAnswer(pa_2_6_4, sa2_6_4_student1);
+
+        StudentAnswer sa2_6_5_student1 = createStudentAnswer(student1, pa_2_6_5, "A directed graph (digraph) has edges with directions, going from one node to another but not necessarily back.");
+        addStudentAnswerToProblemAnswer(pa_2_6_5, sa2_6_5_student1);
+
+        StudentAnswer sa2_6_6_student1 = createStudentAnswer(student1, pa_2_6_6, "Perform BFS by starting at a node, exploring all adjacent nodes level by level. Example:\nfrom collections import deque\n\ndef bfs(graph, start):\n    visited = set()\n    queue = deque([start])\n    while queue:\n        node = queue.popleft()\n        if node not in visited:\n            visited.add(node)\n            print(node)\n            queue.extend(graph[node] - visited)");
+        addStudentAnswerToProblemAnswer(pa_2_6_6, sa2_6_6_student1);
+
+        StudentAnswer sa2_6_7_student1 = createStudentAnswer(student1, pa_2_6_7, "A weighted graph has edges with numerical values (weights) representing cost or distance between nodes.");
+        addStudentAnswerToProblemAnswer(pa_2_6_7, sa2_6_7_student1);
+
+        StudentAnswer sa2_6_8_student1 = createStudentAnswer(student1, pa_2_6_8, "Find the shortest path using Dijkstra's algorithm by initializing distances to infinity, updating based on edge weights, and visiting nearest unvisited nodes. Example:\nimport heapq\n\ndef dijkstra(graph, start):\n    queue = []\n    heapq.heappush(queue, (0, start))\n    distances = {vertex: float('infinity') for vertex in graph}\n    distances[start] = 0\n\n    while queue:\n        current_distance, current_vertex = heapq.heappop(queue)\n\n        if current_distance > distances[current_vertex]:\n            continue\n\n        for neighbor, weight in graph[current_vertex].items():\n            distance = current_distance + weight\n            if distance < distances[neighbor]:\n                distances[neighbor] = distance\n                heapq.heappush(queue, (distance, neighbor))\n\n    return distances");
+        addStudentAnswerToProblemAnswer(pa_2_6_8, sa2_6_8_student1);
+
+        StudentAnswer sa2_6_9_student1 = createStudentAnswer(student1, pa_2_6_9, "A cycle in a graph is a path that starts and ends at the same node, forming a loop by traversing at least one edge more than once.");
+        addStudentAnswerToProblemAnswer(pa_2_6_9, sa2_6_9_student1);
+
+        StudentAnswer sa2_6_10_student1 = createStudentAnswer(student1, pa_2_6_10, "Common operations on graphs include traversal (DFS, BFS), finding shortest paths (Dijkstra's, Bellman-Ford), detecting cycles, and finding connected components.");
+        addStudentAnswerToProblemAnswer(pa_2_6_10, sa2_6_10_student1);
+
+// Creating StudentAnswer instances for student2
+        StudentAnswer sa2_6_1_student2 = createStudentAnswer(student2, pa_2_6_1, "A graph is a data structure with nodes (vertices) and edges that connect pairs of nodes, representing relationships.");
+        addStudentAnswerToProblemAnswer(pa_2_6_1, sa2_6_1_student2);
+
+        StudentAnswer sa2_6_2_student2 = createStudentAnswer(student2, pa_2_6_2, "Represent a graph using an adjacency list, where each node has a list of adjacent nodes. Example:\nclass Graph {\n  public Graph() {\n    this.adj_list = new HashMap<>();\n  }\n}");
+        addStudentAnswerToProblemAnswer(pa_2_6_2, sa2_6_2_student2);
+
+        StudentAnswer sa2_6_3_student2 = createStudentAnswer(student2, pa_2_6_3, "Graphs model real-world problems like social networks, transportation networks, and dependencies, efficiently finding shortest paths, detecting cycles, and traversing nodes.");
+        addStudentAnswerToProblemAnswer(pa_2_6_3, sa2_6_3_student2);
+
+        StudentAnswer sa2_6_4_student2 = createStudentAnswer(student2, pa_2_6_4, "Perform DFS by starting at a node, exploring branches before backtracking. Example:\ndef dfs(graph, start, visited=None):\n    if visited is None:\n        visited = set()\n    visited.add(start)\n    print(start)\n    for next in graph[start] - visited:\n        dfs(graph, next, visited)");
+        addStudentAnswerToProblemAnswer(pa_2_6_4, sa2_6_4_student2);
+
+        StudentAnswer sa2_6_5_student2 = createStudentAnswer(student2, pa_2_6_5, "A directed graph (digraph) has edges with directions, going from one node to another but not necessarily back.");
+        addStudentAnswerToProblemAnswer(pa_2_6_5, sa2_6_5_student2);
+
+        StudentAnswer sa2_6_6_student2 = createStudentAnswer(student2, pa_2_6_6, "Perform BFS by starting at a node, exploring all adjacent nodes level by level. Example:\nfrom collections import deque\n\ndef bfs(graph, start):\n    visited = set()\n    queue = deque([start])\n    while queue:\n        node = queue.popleft()\n        if node not in visited:\n            visited.add(node)\n            print(node)\n            queue.extend(graph[node] - visited)");
+        addStudentAnswerToProblemAnswer(pa_2_6_6, sa2_6_6_student2);
+
+        StudentAnswer sa2_6_7_student2 = createStudentAnswer(student2, pa_2_6_7, "A weighted graph has edges with numerical values (weights) representing cost or distance between nodes.");
+        addStudentAnswerToProblemAnswer(pa_2_6_7, sa2_6_7_student2);
+
+        StudentAnswer sa2_6_8_student2 = createStudentAnswer(student2, pa_2_6_8, "Find the shortest path using Dijkstra's algorithm by initializing distances to infinity, updating based on edge weights, and visiting nearest unvisited nodes. Example:\nimport heapq\n\ndef dijkstra(graph, start):\n    queue = []\n    heapq.heappush(queue, (0, start))\n    distances = {vertex: float('infinity') for vertex in graph}\n    distances[start] = 0\n\n    while queue:\n        current_distance, current_vertex = heapq.heappop(queue)\n\n        if current_distance > distances[current_vertex]:\n            continue\n\n        for neighbor, weight in graph[current_vertex].items():\n            distance = current_distance + weight\n            if distance < distances[neighbor]:\n                distances[neighbor] = distance\n                heapq.heappush(queue, (distance, neighbor))\n\n    return distances");
+        addStudentAnswerToProblemAnswer(pa_2_6_8, sa2_6_8_student2);
+
+        StudentAnswer sa2_6_9_student2 = createStudentAnswer(student2, pa_2_6_9, "A cycle in a graph is a path that starts and ends at the same node, forming a loop by traversing at least one edge more than once.");
+        addStudentAnswerToProblemAnswer(pa_2_6_9, sa2_6_9_student2);
+
+        StudentAnswer sa2_6_10_student2 = createStudentAnswer(student2, pa_2_6_10, "Common operations on graphs include traversal (DFS, BFS), finding shortest paths (Dijkstra's, Bellman-Ford), detecting cycles, and finding connected components.");
+        addStudentAnswerToProblemAnswer(pa_2_6_10, sa2_6_10_student2);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment2_6.");
+// Creating StudentAnswer instances for student1
+        StudentAnswer sa3_1_1_student1 = createStudentAnswer(student1, pa_3_1_1, "Sorting is arranging data in a particular order, typically ascending or descending.");
+        addStudentAnswerToProblemAnswer(pa_3_1_1, sa3_1_1_student1);
+
+        StudentAnswer sa3_1_2_student1 = createStudentAnswer(student1, pa_3_1_2, "Bubble sort steps through the list, compares adjacent elements, and swaps them if needed, until the list is sorted.");
+        addStudentAnswerToProblemAnswer(pa_3_1_2, sa3_1_2_student1);
+
+        StudentAnswer sa3_1_3_student1 = createStudentAnswer(student1, pa_3_1_3, "The time complexity of bubble sort is O(n^2) in the worst and average cases.");
+        addStudentAnswerToProblemAnswer(pa_3_1_3, sa3_1_3_student1);
+
+        StudentAnswer sa3_1_4_student1 = createStudentAnswer(student1, pa_3_1_4, "Merge sort divides the list, recursively sorts each half, and merges the sorted halves.");
+        addStudentAnswerToProblemAnswer(pa_3_1_4, sa3_1_4_student1);
+
+        StudentAnswer sa3_1_5_student1 = createStudentAnswer(student1, pa_3_1_5, "The time complexity of merge sort is O(n log n) in all cases.");
+        addStudentAnswerToProblemAnswer(pa_3_1_5, sa3_1_5_student1);
+
+        StudentAnswer sa3_1_6_student1 = createStudentAnswer(student1, pa_3_1_6, "Quicksort selects a pivot, partitions the list, and recursively sorts the sublists.");
+        addStudentAnswerToProblemAnswer(pa_3_1_6, sa3_1_6_student1);
+
+        StudentAnswer sa3_1_7_student1 = createStudentAnswer(student1, pa_3_1_7, "The time complexity of quicksort is O(n log n) on average, but it can degrade to O(n^2) in the worst case.");
+        addStudentAnswerToProblemAnswer(pa_3_1_7, sa3_1_7_student1);
+
+        StudentAnswer sa3_1_8_student1 = createStudentAnswer(student1, pa_3_1_8, "A stable sorting algorithm maintains the relative order of equal elements, while an unstable one does not.");
+        addStudentAnswerToProblemAnswer(pa_3_1_8, sa3_1_8_student1);
+
+        StudentAnswer sa3_1_9_student1 = createStudentAnswer(student1, pa_3_1_9, "Yes, bubble sort is a stable sorting algorithm.");
+        addStudentAnswerToProblemAnswer(pa_3_1_9, sa3_1_9_student1);
+
+        StudentAnswer sa3_1_10_student1 = createStudentAnswer(student1, pa_3_1_10, "Quicksort is generally preferred over bubble sort because it has a better average-case time complexity, making it more efficient for larger datasets.");
+        addStudentAnswerToProblemAnswer(pa_3_1_10, sa3_1_10_student1);
+
+// Creating StudentAnswer instances for student2
+        StudentAnswer sa3_1_1_student2 = createStudentAnswer(student2, pa_3_1_1, "Sorting arranges data in a particular order, usually ascending or descending.");
+        addStudentAnswerToProblemAnswer(pa_3_1_1, sa3_1_1_student2);
+
+        StudentAnswer sa3_1_2_student2 = createStudentAnswer(student2, pa_3_1_2, "Bubble sort compares adjacent elements, swapping them if needed, until the list is sorted.");
+        addStudentAnswerToProblemAnswer(pa_3_1_2, sa3_1_2_student2);
+
+        StudentAnswer sa3_1_3_student2 = createStudentAnswer(student2, pa_3_1_3, "Bubble sort has a time complexity of O(n^2) in the worst and average cases.");
+        addStudentAnswerToProblemAnswer(pa_3_1_3, sa3_1_3_student2);
+
+        StudentAnswer sa3_1_4_student2 = createStudentAnswer(student2, pa_3_1_4, "Merge sort divides the list, sorts each half, and merges the sorted halves.");
+        addStudentAnswerToProblemAnswer(pa_3_1_4, sa3_1_4_student2);
+
+        StudentAnswer sa3_1_5_student2 = createStudentAnswer(student2, pa_3_1_5, "Merge sort has a time complexity of O(n log n) in all cases.");
+        addStudentAnswerToProblemAnswer(pa_3_1_5, sa3_1_5_student2);
+
+        StudentAnswer sa3_1_6_student2 = createStudentAnswer(student2, pa_3_1_6, "Quicksort selects a pivot, partitions the list, and sorts the sublists.");
+        addStudentAnswerToProblemAnswer(pa_3_1_6, sa3_1_6_student2);
+
+        StudentAnswer sa3_1_7_student2 = createStudentAnswer(student2, pa_3_1_7, "Quicksort has a time complexity of O(n log n) on average, but can degrade to O(n^2) in the worst case.");
+        addStudentAnswerToProblemAnswer(pa_3_1_7, sa3_1_7_student2);
+
+        StudentAnswer sa3_1_8_student2 = createStudentAnswer(student2, pa_3_1_8, "Stable sorting algorithms maintain the relative order of equal elements, unstable ones do not.");
+        addStudentAnswerToProblemAnswer(pa_3_1_8, sa3_1_8_student2);
+
+        StudentAnswer sa3_1_9_student2 = createStudentAnswer(student2, pa_3_1_9, "Yes, bubble sort is stable.");
+        addStudentAnswerToProblemAnswer(pa_3_1_9, sa3_1_9_student2);
+
+        StudentAnswer sa3_1_10_student2 = createStudentAnswer(student2, pa_3_1_10, "Quicksort is preferred over bubble sort due to its better average-case time complexity, making it more efficient for large datasets.");
+        addStudentAnswerToProblemAnswer(pa_3_1_10, sa3_1_10_student2);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment3_1.");
+// Creating StudentAnswer instances for student1
+        StudentAnswer sa3_2_1_student1 = createStudentAnswer(student1, pa_3_2_1, "Searching is the process of finding a specific element or value within a data structure.");
+        addStudentAnswerToProblemAnswer(pa_3_2_1, sa3_2_1_student1);
+
+        StudentAnswer sa3_2_2_student1 = createStudentAnswer(student1, pa_3_2_2, "Linear search sequentially checks each element until the desired element is found or the list ends.");
+        addStudentAnswerToProblemAnswer(pa_3_2_2, sa3_2_2_student1);
+
+        StudentAnswer sa3_2_3_student1 = createStudentAnswer(student1, pa_3_2_3, "The time complexity of linear search is O(n), where n is the number of elements in the list.");
+        addStudentAnswerToProblemAnswer(pa_3_2_3, sa3_2_3_student1);
+
+        StudentAnswer sa3_2_4_student1 = createStudentAnswer(student1, pa_3_2_4, "Binary search divides the sorted list in half, compares the target value to the middle element, and narrows the search to the appropriate half.");
+        addStudentAnswerToProblemAnswer(pa_3_2_4, sa3_2_4_student1);
+
+        StudentAnswer sa3_2_5_student1 = createStudentAnswer(student1, pa_3_2_5, "The time complexity of binary search is O(log n), where n is the number of elements in the sorted list.");
+        addStudentAnswerToProblemAnswer(pa_3_2_5, sa3_2_5_student1);
+
+        StudentAnswer sa3_2_6_student1 = createStudentAnswer(student1, pa_3_2_6, "Linear search checks each element sequentially, while binary search divides the sorted list in half, requiring the list to be sorted.");
+        addStudentAnswerToProblemAnswer(pa_3_2_6, sa3_2_6_student1);
+
+        StudentAnswer sa3_2_7_student1 = createStudentAnswer(student1, pa_3_2_7, "No, binary search requires the list to be sorted to work correctly.");
+        addStudentAnswerToProblemAnswer(pa_3_2_7, sa3_2_7_student1);
+
+        StudentAnswer sa3_2_8_student1 = createStudentAnswer(student1, pa_3_2_8, "A search algorithm efficiently locates a specific element or value within a data structure, minimizing comparisons and operations.");
+        addStudentAnswerToProblemAnswer(pa_3_2_8, sa3_2_8_student1);
+
+        StudentAnswer sa3_2_9_student1 = createStudentAnswer(student1, pa_3_2_9, "The average time complexity of searching in a hash table is O(1), but it can degrade to O(n) in the worst case due to collisions.");
+        addStudentAnswerToProblemAnswer(pa_3_2_9, sa3_2_9_student1);
+
+        StudentAnswer sa3_2_10_student1 = createStudentAnswer(student1, pa_3_2_10, "Binary search is more efficient for large datasets because it reduces the search space by half with each step, resulting in a logarithmic time complexity.");
+        addStudentAnswerToProblemAnswer(pa_3_2_10, sa3_2_10_student1);
+
+// Creating StudentAnswer instances for student2
+        StudentAnswer sa3_2_1_student2 = createStudentAnswer(student2, pa_3_2_1, "Searching is the process of finding a specific element or value within a data structure.");
+        addStudentAnswerToProblemAnswer(pa_3_2_1, sa3_2_1_student2);
+
+        StudentAnswer sa3_2_2_student2 = createStudentAnswer(student2, pa_3_2_2, "Linear search checks each element sequentially until the desired element is found or the list ends.");
+        addStudentAnswerToProblemAnswer(pa_3_2_2, sa3_2_2_student2);
+
+        StudentAnswer sa3_2_3_student2 = createStudentAnswer(student2, pa_3_2_3, "Linear search has a time complexity of O(n), where n is the number of elements in the list.");
+        addStudentAnswerToProblemAnswer(pa_3_2_3, sa3_2_3_student2);
+
+        StudentAnswer sa3_2_4_student2 = createStudentAnswer(student2, pa_3_2_4, "Binary search works by dividing the sorted list in half, comparing the target value to the middle element, and narrowing the search accordingly.");
+        addStudentAnswerToProblemAnswer(pa_3_2_4, sa3_2_4_student2);
+
+        StudentAnswer sa3_2_5_student2 = createStudentAnswer(student2, pa_3_2_5, "Binary search has a time complexity of O(log n), where n is the number of elements in the sorted list.");
+        addStudentAnswerToProblemAnswer(pa_3_2_5, sa3_2_5_student2);
+
+        StudentAnswer sa3_2_6_student2 = createStudentAnswer(student2, pa_3_2_6, "Linear search checks each element one by one, while binary search divides the sorted list in half and requires the list to be sorted.");
+        addStudentAnswerToProblemAnswer(pa_3_2_6, sa3_2_6_student2);
+
+        StudentAnswer sa3_2_7_student2 = createStudentAnswer(student2, pa_3_2_7, "No, binary search requires the list to be sorted.");
+        addStudentAnswerToProblemAnswer(pa_3_2_7, sa3_2_7_student2);
+
+        StudentAnswer sa3_2_8_student2 = createStudentAnswer(student2, pa_3_2_8, "The purpose of a search algorithm is to efficiently locate a specific element or value within a data structure, minimizing comparisons and operations.");
+        addStudentAnswerToProblemAnswer(pa_3_2_8, sa3_2_8_student2);
+
+        StudentAnswer sa3_2_9_student2 = createStudentAnswer(student2, pa_3_2_9, "The average time complexity of searching in a hash table is O(1), but it can degrade to O(n) in the worst case due to collisions.");
+        addStudentAnswerToProblemAnswer(pa_3_2_9, sa3_2_9_student2);
+
+        StudentAnswer sa3_2_10_student2 = createStudentAnswer(student2, pa_3_2_10, "Binary search is more efficient for large datasets because it reduces the search space by half with each step, resulting in a logarithmic time complexity.");
+        addStudentAnswerToProblemAnswer(pa_3_2_10, sa3_2_10_student2);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment3_2.");
+// Creating StudentAnswer instances for student1
+        StudentAnswer sa3_3_1_student1 = createStudentAnswer(student1, pa_3_3_1, "A graph algorithm is a procedure or formula used to solve problems related to graph theory, such as traversal, searching, and finding shortest paths.");
+        addStudentAnswerToProblemAnswer(pa_3_3_1, sa3_3_1_student1);
+
+        StudentAnswer sa3_3_2_student1 = createStudentAnswer(student1, pa_3_3_2, "Depth-first search (DFS) explores a graph by going as deep as possible along each branch before backtracking. It uses a stack to keep track of the nodes to be visited.");
+        addStudentAnswerToProblemAnswer(pa_3_3_2, sa3_3_2_student1);
+
+        StudentAnswer sa3_3_3_student1 = createStudentAnswer(student1, pa_3_3_3, "Breadth-first search (BFS) explores a graph by visiting all the neighbors of a node before moving on to the next level of neighbors. It uses a queue to keep track of the nodes to be visited.");
+        addStudentAnswerToProblemAnswer(pa_3_3_3, sa3_3_3_student1);
+
+        StudentAnswer sa3_3_4_student1 = createStudentAnswer(student1, pa_3_3_4, "The time complexity of both DFS and BFS is O(V + E), where V is the number of vertices and E is the number of edges in the graph.");
+        addStudentAnswerToProblemAnswer(pa_3_3_4, sa3_3_4_student1);
+
+        StudentAnswer sa3_3_5_student1 = createStudentAnswer(student1, pa_3_3_5, "Here is a Python implementation of DFS:\n```python\ndef dfs(graph, start, visited=None):\n    if visited is None:\n        visited = set()\n    visited.add(start)\n    print(start)\n    for next in graph[start] - visited:\n        dfs(graph, next, visited)\n    return visited\n```");
+        addStudentAnswerToProblemAnswer(pa_3_3_5, sa3_3_5_student1);
+
+        StudentAnswer sa3_3_6_student1 = createStudentAnswer(student1, pa_3_3_6, "Here is a Python implementation of BFS:\n```python\nfrom collections import deque\n\ndef bfs(graph, start):\n    visited = set()\n    queue = deque([start])\n    while queue:\n        vertex = queue.popleft()\n        if vertex not in visited:\n            visited.add(vertex)\n            print(vertex)\n            queue.extend(graph[vertex] - visited)\n    return visited\n```");
+        addStudentAnswerToProblemAnswer(pa_3_3_6, sa3_3_6_student1);
+
+        StudentAnswer sa3_3_7_student1 = createStudentAnswer(student1, pa_3_3_7, "The main difference between DFS and BFS is the order in which nodes are visited. DFS goes as deep as possible before backtracking, while BFS visits all the neighbors of a node before moving on to the next level of neighbors.");
+        addStudentAnswerToProblemAnswer(pa_3_3_7, sa3_3_7_student1);
+
+        StudentAnswer sa3_3_8_student1 = createStudentAnswer(student1, pa_3_3_8, "Applications of DFS include topological sorting, finding strongly connected components, and solving puzzles. Applications of BFS include finding the shortest path in an unweighted graph, web crawling, and social network analysis.");
+        addStudentAnswerToProblemAnswer(pa_3_3_8, sa3_3_8_student1);
+
+        StudentAnswer sa3_3_9_student1 = createStudentAnswer(student1, pa_3_3_9, "Dijkstra's algorithm finds the shortest path from a source node to all other nodes in a weighted graph. It uses a priority queue to greedily select the nearest unvisited node and update the distances to its neighbors.");
+        addStudentAnswerToProblemAnswer(pa_3_3_9, sa3_3_9_student1);
+
+        StudentAnswer sa3_3_10_student1 = createStudentAnswer(student1, pa_3_3_10, "The time complexity of Dijkstra's algorithm is O(V^2) for a simple implementation and O(V + E log V) for an implementation using a priority queue.");
+        addStudentAnswerToProblemAnswer(pa_3_3_10, sa3_3_10_student1);
+
+// Creating StudentAnswer instances for student2
+        StudentAnswer sa3_3_1_student2 = createStudentAnswer(student2, pa_3_3_1, "A graph algorithm is a procedure or formula used to solve problems related to graph theory, such as traversal, searching, and finding shortest paths.");
+        addStudentAnswerToProblemAnswer(pa_3_3_1, sa3_3_1_student2);
+
+        StudentAnswer sa3_3_2_student2 = createStudentAnswer(student2, pa_3_3_2, "Depth-first search (DFS) explores a graph by going as deep as possible along each branch before backtracking. It uses a stack to keep track of the nodes to be visited.");
+        addStudentAnswerToProblemAnswer(pa_3_3_2, sa3_3_2_student2);
+
+        StudentAnswer sa3_3_3_student2 = createStudentAnswer(student2, pa_3_3_3, "Breadth-first search (BFS) explores a graph by visiting all the neighbors of a node before moving on to the next level of neighbors. It uses a queue to keep track of the nodes to be visited.");
+        addStudentAnswerToProblemAnswer(pa_3_3_3, sa3_3_3_student2);
+
+        StudentAnswer sa3_3_4_student2 = createStudentAnswer(student2, pa_3_3_4, "The time complexity of both DFS and BFS is O(V + E), where V is the number of vertices and E is the number of edges in the graph.");
+        addStudentAnswerToProblemAnswer(pa_3_3_4, sa3_3_4_student2);
+
+        StudentAnswer sa3_3_5_student2 = createStudentAnswer(student2, pa_3_3_5, "Here is a Python implementation of DFS:\n```python\ndef dfs(graph, start, visited=None):\n    if visited is None:\n        visited = set()\n    visited.add(start)\n    print(start)\n    for next in graph[start] - visited:\n        dfs(graph, next, visited)\n    return visited\n```");
+        addStudentAnswerToProblemAnswer(pa_3_3_5, sa3_3_5_student2);
+
+        StudentAnswer sa3_3_6_student2 = createStudentAnswer(student2, pa_3_3_6, "Here is a Python implementation of BFS:\n```python\nfrom collections import deque\n\ndef bfs(graph, start):\n    visited = set()\n    queue = deque([start])\n    while queue:\n        vertex = queue.popleft()\n        if vertex not in visited:\n            visited.add(vertex)\n            print(vertex)\n            queue.extend(graph[vertex] - visited)\n    return visited\n```");
+        addStudentAnswerToProblemAnswer(pa_3_3_6, sa3_3_6_student2);
+
+        StudentAnswer sa3_3_7_student2 = createStudentAnswer(student2, pa_3_3_7, "The main difference between DFS and BFS is the order in which nodes are visited. DFS goes as deep as possible before backtracking, while BFS visits all the neighbors of a node before moving on to the next level of neighbors.");
+        addStudentAnswerToProblemAnswer(pa_3_3_7, sa3_3_7_student2);
+
+        StudentAnswer sa3_3_8_student2 = createStudentAnswer(student2, pa_3_3_8, "Applications of DFS include topological sorting, finding strongly connected components, and solving puzzles. Applications of BFS include finding the shortest path in an unweighted graph, web crawling, and social network analysis.");
+        addStudentAnswerToProblemAnswer(pa_3_3_8, sa3_3_8_student2);
+
+        StudentAnswer sa3_3_9_student2 = createStudentAnswer(student2, pa_3_3_9, "Dijkstra's algorithm finds the shortest path from a source node to all other nodes in a weighted graph. It uses a priority queue to greedily select the nearest unvisited node and update the distances to its neighbors.");
+        addStudentAnswerToProblemAnswer(pa_3_3_9, sa3_3_9_student2);
+
+        StudentAnswer sa3_3_10_student2 = createStudentAnswer(student2, pa_3_3_10, "The time complexity of Dijkstra's algorithm is O(V^2) for a simple implementation and O(V + E log V) for an implementation using a priority queue.");
+        addStudentAnswerToProblemAnswer(pa_3_3_10, sa3_3_10_student2);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment3_3.");
+// Creating StudentAnswer instances for student1
+        StudentAnswer sa3_4_1_student1 = createStudentAnswer(student1, pa_3_4_1, "Dynamic programming solves complex problems by breaking them into simpler subproblems and storing the results to avoid redundant calculations.");
+        addStudentAnswerToProblemAnswer(pa_3_4_1, sa3_4_1_student1);
+
+        StudentAnswer sa3_4_2_student1 = createStudentAnswer(student1, pa_3_4_2, "The principle of optimality states that an optimal solution to a problem contains optimal solutions to its subproblems.");
+        addStudentAnswerToProblemAnswer(pa_3_4_2, sa3_4_2_student1);
+
+        StudentAnswer sa3_4_3_student1 = createStudentAnswer(student1, pa_3_4_3, "Memoization stores the results of expensive function calls to avoid redundant calculations and improve efficiency.");
+        addStudentAnswerToProblemAnswer(pa_3_4_3, sa3_4_3_student1);
+
+        StudentAnswer sa3_4_4_student1 = createStudentAnswer(student1, pa_3_4_4, "Top-down dynamic programming uses recursion and memoization, while bottom-up dynamic programming uses an iterative approach.");
+        addStudentAnswerToProblemAnswer(pa_3_4_4, sa3_4_4_student1);
+
+        StudentAnswer sa3_4_5_student1 = createStudentAnswer(student1, pa_3_4_5, "Here is a Python implementation of dynamic programming for the Fibonacci sequence:\n```python\ndef fibonacci(n, memo={}):\n    if n in memo:\n        return memo[n]\n    if n <= 1:\n        return n\n    memo[n] = fibonacci(n-1, memo) + fibonacci(n-2, memo)\n    return memo[n]\n```");
+        addStudentAnswerToProblemAnswer(pa_3_4_5, sa3_4_5_student1);
+
+        StudentAnswer sa3_4_6_student1 = createStudentAnswer(student1, pa_3_4_6, "The knapsack problem involves selecting items with given weights and values to maximize the total value without exceeding a weight limit. Dynamic programming breaks the problem into subproblems and builds up to the optimal solution.");
+        addStudentAnswerToProblemAnswer(pa_3_4_6, sa3_4_6_student1);
+
+        StudentAnswer sa3_4_7_student1 = createStudentAnswer(student1, pa_3_4_7, "Here is a Python implementation of dynamic programming for the knapsack problem:\n```python\ndef knapsack(W, wt, val, n):\n    dp = [[0 for x in range(W + 1)] for x in range(n + 1)]\n    for i in range(n + 1):\n        for w in range(W + 1):\n            if i == 0 or w == 0:\n                dp[i][w] = 0\n            elif wt[i-1] <= w:\n                dp[i][w] = max(val[i-1] + dp[i-1][w-wt[i-1]], dp[i-1][w])\n            else:\n                dp[i][w] = dp[i-1][w]\n    return dp[n][W]\n```");
+        addStudentAnswerToProblemAnswer(pa_3_4_7, sa3_4_7_student1);
+
+        StudentAnswer sa3_4_8_student1 = createStudentAnswer(student1, pa_3_4_8, "The longest common subsequence problem involves finding the longest subsequence common to two sequences. Dynamic programming breaks the problem into subproblems and builds up to the optimal solution.");
+        addStudentAnswerToProblemAnswer(pa_3_4_8, sa3_4_8_student1);
+
+        StudentAnswer sa3_4_9_student1 = createStudentAnswer(student1, pa_3_4_9, "Here is a Python implementation of dynamic programming for the longest common subsequence problem:\n```python\ndef lcs(X, Y):\n    m = len(X)\n    n = len(Y)\n    dp = [[None]*(n+1) for i in range(m+1)]\n    for i in range(m+1):\n        for j in range(n+1):\n            if i == 0 or j == 0:\n                dp[i][j] = 0\n            elif X[i-1] == Y[j-1]:\n                dp[i][j] = dp[i-1][j-1]+1\n            else:\n                dp[i][j] = max(dp[i-1][j], dp[i][j-1])\n    return dp[m][n]\n```");
+        addStudentAnswerToProblemAnswer(pa_3_4_9, sa3_4_9_student1);
+
+        StudentAnswer sa3_4_10_student1 = createStudentAnswer(student1, pa_3_4_10, "Common applications of dynamic programming include solving optimization problems like the knapsack problem, shortest path problems, sequence alignment in bioinformatics, and finding the longest common subsequence.");
+        addStudentAnswerToProblemAnswer(pa_3_4_10, sa3_4_10_student1);
+
+// Creating StudentAnswer instances for student2
+        StudentAnswer sa3_4_1_student2 = createStudentAnswer(student2, pa_3_4_1, "Dynamic programming solves complex problems by breaking them into simpler subproblems and storing the results to avoid redundant calculations.");
+        addStudentAnswerToProblemAnswer(pa_3_4_1, sa3_4_1_student2);
+
+        StudentAnswer sa3_4_2_student2 = createStudentAnswer(student2, pa_3_4_2, "The principle of optimality states that an optimal solution to a problem contains optimal solutions to its subproblems.");
+        addStudentAnswerToProblemAnswer(pa_3_4_2, sa3_4_2_student2);
+
+        StudentAnswer sa3_4_3_student2 = createStudentAnswer(student2, pa_3_4_3, "Memoization stores the results of expensive function calls to avoid redundant calculations and improve efficiency.");
+        addStudentAnswerToProblemAnswer(pa_3_4_3, sa3_4_3_student2);
+
+        StudentAnswer sa3_4_4_student2 = createStudentAnswer(student2, pa_3_4_4, "Top-down dynamic programming uses recursion and memoization, while bottom-up dynamic programming uses an iterative approach.");
+        addStudentAnswerToProblemAnswer(pa_3_4_4, sa3_4_4_student2);
+
+        StudentAnswer sa3_4_5_student2 = createStudentAnswer(student2, pa_3_4_5, "Here is a Python implementation of dynamic programming for the Fibonacci sequence:\n```python\ndef fibonacci(n, memo={}):\n    if n in memo:\n        return memo[n]\n    if n <= 1:\n        return n\n    memo[n] = fibonacci(n-1, memo) + fibonacci(n-2, memo)\n    return memo[n]\n```");
+        addStudentAnswerToProblemAnswer(pa_3_4_5, sa3_4_5_student2);
+
+        StudentAnswer sa3_4_6_student2 = createStudentAnswer(student2, pa_3_4_6, "The knapsack problem involves selecting items with given weights and values to maximize the total value without exceeding a weight limit. Dynamic programming breaks the problem into subproblems and builds up to the optimal solution.");
+        addStudentAnswerToProblemAnswer(pa_3_4_6, sa3_4_6_student2);
+
+        StudentAnswer sa3_4_7_student2 = createStudentAnswer(student2, pa_3_4_7, "Here is a Python implementation of dynamic programming for the knapsack problem:\n```python\ndef knapsack(W, wt, val, n):\n    dp = [[0 for x in range(W + 1)] for x in range(n + 1)]\n    for i in range(n + 1):\n        for w in range(W + 1):\n            if i == 0 or w == 0:\n                dp[i][w] = 0\n            elif wt[i-1] <= w:\n                dp[i][w] = max(val[i-1] + dp[i-1][w-wt[i-1]], dp[i-1][w])\n            else:\n                dp[i][w] = dp[i-1][w]\n    return dp[n][W]\n```");
+        addStudentAnswerToProblemAnswer(pa_3_4_7, sa3_4_7_student2);
+
+        StudentAnswer sa3_4_8_student2 = createStudentAnswer(student2, pa_3_4_8, "The longest common subsequence problem involves finding the longest subsequence common to two sequences. Dynamic programming breaks the problem into subproblems and builds up to the optimal solution.");
+        addStudentAnswerToProblemAnswer(pa_3_4_8, sa3_4_8_student2);
+
+        StudentAnswer sa3_4_9_student2 = createStudentAnswer(student2, pa_3_4_9, "Here is a Python implementation of dynamic programming for the longest common subsequence problem:\n```python\ndef lcs(X, Y):\n    m = len(X)\n    n = len(Y)\n    dp = [[None]*(n+1) for i in range(m+1)]\n    for i in range(m+1):\n        for j in range(n+1):\n            if i == 0 or j == 0:\n                dp[i][j] = 0\n            elif X[i-1] == Y[j-1]:\n                dp[i][j] = dp[i-1][j-1]+1\n            else:\n                dp[i][j] = max(dp[i-1][j], dp[i][j-1])\n    return dp[m][n]\n```");
+        addStudentAnswerToProblemAnswer(pa_3_4_9, sa3_4_9_student2);
+
+        StudentAnswer sa3_4_10_student2 = createStudentAnswer(student2, pa_3_4_10, "Common applications of dynamic programming include solving optimization problems like the knapsack problem, shortest path problems, sequence alignment in bioinformatics, and finding the longest common subsequence.");
+        addStudentAnswerToProblemAnswer(pa_3_4_10, sa3_4_10_student2);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment3_4.");
+// Creating StudentAnswer instances for student1
+        StudentAnswer sa4_1_1_student1 = createStudentAnswer(student1, pa_4_1_1, "A relational database organizes data into tables with rows and columns, and uses keys to define relationships between tables.");
+        addStudentAnswerToProblemAnswer(pa_4_1_1, sa4_1_1_student1);
+
+        StudentAnswer sa4_1_2_student1 = createStudentAnswer(student1, pa_4_1_2, "A primary key is a unique identifier for a row in a table, ensuring each row can be uniquely identified and retrieved.");
+        addStudentAnswerToProblemAnswer(pa_4_1_2, sa4_1_2_student1);
+
+        StudentAnswer sa4_1_3_student1 = createStudentAnswer(student1, pa_4_1_3, "A foreign key is a column or set of columns in one table that references the primary key in another table, establishing a relationship between the tables.");
+        addStudentAnswerToProblemAnswer(pa_4_1_3, sa4_1_3_student1);
+
+        StudentAnswer sa4_1_4_student1 = createStudentAnswer(student1, pa_4_1_4, "Normalization is the process of organizing data to reduce redundancy and improve data integrity by dividing tables into smaller, related tables and defining relationships.");
+        addStudentAnswerToProblemAnswer(pa_4_1_4, sa4_1_4_student1);
+
+        StudentAnswer sa4_1_5_student1 = createStudentAnswer(student1, pa_4_1_5, "A relationship in a relational database is an association between tables established using keys like primary and foreign keys.");
+        addStudentAnswerToProblemAnswer(pa_4_1_5, sa4_1_5_student1);
+
+        StudentAnswer sa4_1_6_student1 = createStudentAnswer(student1, pa_4_1_6, "An entity-relationship (ER) diagram is a visual representation of the entities (tables) in a database and the relationships between them, used in database design.");
+        addStudentAnswerToProblemAnswer(pa_4_1_6, sa4_1_6_student1);
+
+        StudentAnswer sa4_1_7_student1 = createStudentAnswer(student1, pa_4_1_7, "A table in a relational database is a collection of related data organized into rows and columns, where each row represents a record and each column represents a field.");
+        addStudentAnswerToProblemAnswer(pa_4_1_7, sa4_1_7_student1);
+
+        StudentAnswer sa4_1_8_student1 = createStudentAnswer(student1, pa_4_1_8, "A schema in a relational database defines the structure of the database, including tables, columns, data types, and relationships.");
+        addStudentAnswerToProblemAnswer(pa_4_1_8, sa4_1_8_student1);
+
+        StudentAnswer sa4_1_9_student1 = createStudentAnswer(student1, pa_4_1_9, "SQL (Structured Query Language) is used to query and manipulate data in relational databases, allowing users to create, read, update, delete data, and manage database schemas.");
+        addStudentAnswerToProblemAnswer(pa_4_1_9, sa4_1_9_student1);
+
+        StudentAnswer sa4_1_10_student1 = createStudentAnswer(student1, pa_4_1_10, "Relational databases offer advantages like data integrity, flexibility, scalability, and support for complex queries and transactions, making it easier to retrieve and analyze information.");
+        addStudentAnswerToProblemAnswer(pa_4_1_10, sa4_1_10_student1);
+
+// Creating StudentAnswer instances for student2
+        StudentAnswer sa4_1_1_student2 = createStudentAnswer(student2, pa_4_1_1, "A relational database organizes data into tables with rows and columns, and uses keys to define relationships between tables.");
+        addStudentAnswerToProblemAnswer(pa_4_1_1, sa4_1_1_student2);
+
+        StudentAnswer sa4_1_2_student2 = createStudentAnswer(student2, pa_4_1_2, "A primary key is a unique identifier for a row in a table, ensuring each row can be uniquely identified and retrieved.");
+        addStudentAnswerToProblemAnswer(pa_4_1_2, sa4_1_2_student2);
+
+        StudentAnswer sa4_1_3_student2 = createStudentAnswer(student2, pa_4_1_3, "A foreign key is a column or set of columns in one table that references the primary key in another table, establishing a relationship between the tables.");
+        addStudentAnswerToProblemAnswer(pa_4_1_3, sa4_1_3_student2);
+
+        StudentAnswer sa4_1_4_student2 = createStudentAnswer(student2, pa_4_1_4, "Normalization is the process of organizing data to reduce redundancy and improve data integrity by dividing tables into smaller, related tables and defining relationships.");
+        addStudentAnswerToProblemAnswer(pa_4_1_4, sa4_1_4_student2);
+
+        StudentAnswer sa4_1_5_student2 = createStudentAnswer(student2, pa_4_1_5, "A relationship in a relational database is an association between tables established using keys like primary and foreign keys.");
+        addStudentAnswerToProblemAnswer(pa_4_1_5, sa4_1_5_student2);
+
+        StudentAnswer sa4_1_6_student2 = createStudentAnswer(student2, pa_4_1_6, "An entity-relationship (ER) diagram is a visual representation of the entities (tables) in a database and the relationships between them, used in database design.");
+        addStudentAnswerToProblemAnswer(pa_4_1_6, sa4_1_6_student2);
+
+        StudentAnswer sa4_1_7_student2 = createStudentAnswer(student2, pa_4_1_7, "A table in a relational database is a collection of related data organized into rows and columns, where each row represents a record and each column represents a field.");
+        addStudentAnswerToProblemAnswer(pa_4_1_7, sa4_1_7_student2);
+
+        StudentAnswer sa4_1_8_student2 = createStudentAnswer(student2, pa_4_1_8, "A schema in a relational database defines the structure of the database, including tables, columns, data types, and relationships.");
+        addStudentAnswerToProblemAnswer(pa_4_1_8, sa4_1_8_student2);
+
+        StudentAnswer sa4_1_9_student2 = createStudentAnswer(student2, pa_4_1_9, "SQL (Structured Query Language) is used to query and manipulate data in relational databases, allowing users to create, read, update, delete data, and manage database schemas.");
+        addStudentAnswerToProblemAnswer(pa_4_1_9, sa4_1_9_student2);
+
+        StudentAnswer sa4_1_10_student2 = createStudentAnswer(student2, pa_4_1_10, "Relational databases offer advantages like data integrity, flexibility, scalability, and support for complex queries and transactions, making it easier to retrieve and analyze information.");
+        addStudentAnswerToProblemAnswer(pa_4_1_10, sa4_1_10_student2);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment4_1.");
+// Creating StudentAnswer instances for student1
+        StudentAnswer sa4_2_1_student1 = createStudentAnswer(student1, pa_4_2_1, "SQL (Structured Query Language) is the standard language for querying and manipulating databases. It allows users to create, read, update, and delete data, as well as perform complex data operations.");
+        addStudentAnswerToProblemAnswer(pa_4_2_1, sa4_2_1_student1);
+
+        StudentAnswer sa4_2_2_student1 = createStudentAnswer(student1, pa_4_2_2, "Here is a basic SQL query to select all records from a table:\n```sql\nSELECT * FROM table_name;\n```");
+        addStudentAnswerToProblemAnswer(pa_4_2_2, sa4_2_2_student1);
+
+        StudentAnswer sa4_2_3_student1 = createStudentAnswer(student1, pa_4_2_3, "The WHERE clause is used to filter records based on specified conditions, allowing users to retrieve only the records that meet the given criteria.");
+        addStudentAnswerToProblemAnswer(pa_4_2_3, sa4_2_3_student1);
+
+        StudentAnswer sa4_2_4_student1 = createStudentAnswer(student1, pa_4_2_4, "Here is an SQL query to update a record in a table:\n```sql\nUPDATE table_name\nSET column1 = value1, column2 = value2\nWHERE condition;\n```");
+        addStudentAnswerToProblemAnswer(pa_4_2_4, sa4_2_4_student1);
+
+        StudentAnswer sa4_2_5_student1 = createStudentAnswer(student1, pa_4_2_5, "The INSERT INTO statement is used to add new records to a table, allowing users to insert data into specific columns.");
+        addStudentAnswerToProblemAnswer(pa_4_2_5, sa4_2_5_student1);
+
+        StudentAnswer sa4_2_6_student1 = createStudentAnswer(student1, pa_4_2_6, "Here is an SQL query to delete a record from a table:\n```sql\nDELETE FROM table_name\nWHERE condition;\n```");
+        addStudentAnswerToProblemAnswer(pa_4_2_6, sa4_2_6_student1);
+
+        StudentAnswer sa4_2_7_student1 = createStudentAnswer(student1, pa_4_2_7, "The JOIN clause is used to combine records from two or more tables based on a related column, allowing users to retrieve data from multiple tables in a single query.");
+        addStudentAnswerToProblemAnswer(pa_4_2_7, sa4_2_7_student1);
+
+        StudentAnswer sa4_2_8_student1 = createStudentAnswer(student1, pa_4_2_8, "Here is an SQL query to perform an INNER JOIN:\n```sql\nSELECT table1.column1, table2.column2\nFROM table1\nINNER JOIN table2\nON table1.common_column = table2.common_column;\n```");
+        addStudentAnswerToProblemAnswer(pa_4_2_8, sa4_2_8_student1);
+
+        StudentAnswer sa4_2_9_student1 = createStudentAnswer(student1, pa_4_2_9, "The GROUP BY clause groups records that have the same values in specified columns and is often used with aggregate functions to perform calculations on each group.");
+        addStudentAnswerToProblemAnswer(pa_4_2_9, sa4_2_9_student1);
+
+        StudentAnswer sa4_2_10_student1 = createStudentAnswer(student1, pa_4_2_10, "Here is an SQL query to find the average value of a column:\n```sql\nSELECT AVG(column_name)\nFROM table_name;\n```");
+        addStudentAnswerToProblemAnswer(pa_4_2_10, sa4_2_10_student1);
+
+// Creating StudentAnswer instances for student2
+        StudentAnswer sa4_2_1_student2 = createStudentAnswer(student2, pa_4_2_1, "SQL (Structured Query Language) is the standard language for querying and manipulating databases. It allows users to create, read, update, and delete data, as well as perform complex data operations.");
+        addStudentAnswerToProblemAnswer(pa_4_2_1, sa4_2_1_student2);
+
+        StudentAnswer sa4_2_2_student2 = createStudentAnswer(student2, pa_4_2_2, "Here is a basic SQL query to select all records from a table:\n```sql\nSELECT * FROM table_name;\n```");
+        addStudentAnswerToProblemAnswer(pa_4_2_2, sa4_2_2_student2);
+
+        StudentAnswer sa4_2_3_student2 = createStudentAnswer(student2, pa_4_2_3, "The WHERE clause is used to filter records based on specified conditions, allowing users to retrieve only the records that meet the given criteria.");
+        addStudentAnswerToProblemAnswer(pa_4_2_3, sa4_2_3_student2);
+
+        StudentAnswer sa4_2_4_student2 = createStudentAnswer(student2, pa_4_2_4, "Here is an SQL query to update a record in a table:\n```sql\nUPDATE table_name\nSET column1 = value1, column2 = value2\nWHERE condition;\n```");
+        addStudentAnswerToProblemAnswer(pa_4_2_4, sa4_2_4_student2);
+
+        StudentAnswer sa4_2_5_student2 = createStudentAnswer(student2, pa_4_2_5, "The INSERT INTO statement is used to add new records to a table, allowing users to insert data into specific columns.");
+        addStudentAnswerToProblemAnswer(pa_4_2_5, sa4_2_5_student2);
+
+        StudentAnswer sa4_2_6_student2 = createStudentAnswer(student2, pa_4_2_6, "Here is an SQL query to delete a record from a table:\n```sql\nDELETE FROM table_name\nWHERE condition;\n```");
+        addStudentAnswerToProblemAnswer(pa_4_2_6, sa4_2_6_student2);
+
+        StudentAnswer sa4_2_7_student2 = createStudentAnswer(student2, pa_4_2_7, "The JOIN clause is used to combine records from two or more tables based on a related column, allowing users to retrieve data from multiple tables in a single query.");
+        addStudentAnswerToProblemAnswer(pa_4_2_7, sa4_2_7_student2);
+
+        StudentAnswer sa4_2_8_student2 = createStudentAnswer(student2, pa_4_2_8, "Here is an SQL query to perform an INNER JOIN:\n```sql\nSELECT table1.column1, table2.column2\nFROM table1\nINNER JOIN table2\nON table1.common_column = table2.common_column;\n```");
+        addStudentAnswerToProblemAnswer(pa_4_2_8, sa4_2_8_student2);
+
+        StudentAnswer sa4_2_9_student2 = createStudentAnswer(student2, pa_4_2_9, "The GROUP BY clause groups records that have the same values in specified columns and is often used with aggregate functions to perform calculations on each group.");
+        addStudentAnswerToProblemAnswer(pa_4_2_9, sa4_2_9_student2);
+
+        StudentAnswer sa4_2_10_student2 = createStudentAnswer(student2, pa_4_2_10, "Here is an SQL query to find the average value of a column:\n```sql\nSELECT AVG(column_name)\nFROM table_name;\n```");
+        addStudentAnswerToProblemAnswer(pa_4_2_10, sa4_2_10_student2);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment4_2.");
+// Creating StudentAnswer instances for student1
+        StudentAnswer sa4_3_1_student1 = createStudentAnswer(student1, pa_4_3_1, "A database transaction is a sequence of one or more SQL operations executed as a single unit of work, ensuring data integrity and consistency.");
+        addStudentAnswerToProblemAnswer(pa_4_3_1, sa4_3_1_student1);
+
+        StudentAnswer sa4_3_2_student1 = createStudentAnswer(student1, pa_4_3_2, "The ACID properties of a transaction are Atomicity, Consistency, Isolation, and Durability, ensuring that transactions are processed reliably.");
+        addStudentAnswerToProblemAnswer(pa_4_3_2, sa4_3_2_student1);
+
+        StudentAnswer sa4_3_3_student1 = createStudentAnswer(student1, pa_4_3_3, "Atomicity ensures that all operations within a transaction are completed successfully or none are, rolling back the entire transaction if any operation fails.");
+        addStudentAnswerToProblemAnswer(pa_4_3_3, sa4_3_3_student1);
+
+        StudentAnswer sa4_3_4_student1 = createStudentAnswer(student1, pa_4_3_4, "Consistency ensures that a transaction brings the database from one valid state to another, maintaining all predefined rules and constraints.");
+        addStudentAnswerToProblemAnswer(pa_4_3_4, sa4_3_4_student1);
+
+        StudentAnswer sa4_3_5_student1 = createStudentAnswer(student1, pa_4_3_5, "Isolation ensures that the operations of one transaction are isolated from those of other transactions, preventing conflicts and ensuring data integrity.");
+        addStudentAnswerToProblemAnswer(pa_4_3_5, sa4_3_5_student1);
+
+        StudentAnswer sa4_3_6_student1 = createStudentAnswer(student1, pa_4_3_6, "Durability ensures that once a transaction is committed, its results are permanent and will survive any subsequent system failures.");
+        addStudentAnswerToProblemAnswer(pa_4_3_6, sa4_3_6_student1);
+
+        StudentAnswer sa4_3_7_student1 = createStudentAnswer(student1, pa_4_3_7, "You start a transaction in SQL using the `BEGIN TRANSACTION` statement. For example:\n```sql\nBEGIN TRANSACTION;\n```");
+        addStudentAnswerToProblemAnswer(pa_4_3_7, sa4_3_7_student1);
+
+        StudentAnswer sa4_3_8_student1 = createStudentAnswer(student1, pa_4_3_8, "You commit a transaction in SQL using the `COMMIT` statement. For example:\n```sql\nCOMMIT;\n```");
+        addStudentAnswerToProblemAnswer(pa_4_3_8, sa4_3_8_student1);
+
+        StudentAnswer sa4_3_9_student1 = createStudentAnswer(student1, pa_4_3_9, "You roll back a transaction in SQL using the `ROLLBACK` statement. For example:\n```sql\nROLLBACK;\n```");
+        addStudentAnswerToProblemAnswer(pa_4_3_9, sa4_3_9_student1);
+
+        StudentAnswer sa4_3_10_student1 = createStudentAnswer(student1, pa_4_3_10, "The purpose of using transactions in SQL is to ensure data integrity and consistency, especially in scenarios involving multiple operations or concurrent access to the database. Transactions allow for safe and reliable data management.");
+        addStudentAnswerToProblemAnswer(pa_4_3_10, sa4_3_10_student1);
+
+// Creating StudentAnswer instances for student2
+        StudentAnswer sa4_3_1_student2 = createStudentAnswer(student2, pa_4_3_1, "A database transaction is a sequence of one or more SQL operations executed as a single unit of work, ensuring data integrity and consistency.");
+        addStudentAnswerToProblemAnswer(pa_4_3_1, sa4_3_1_student2);
+
+        StudentAnswer sa4_3_2_student2 = createStudentAnswer(student2, pa_4_3_2, "The ACID properties of a transaction are Atomicity, Consistency, Isolation, and Durability, ensuring that transactions are processed reliably.");
+        addStudentAnswerToProblemAnswer(pa_4_3_2, sa4_3_2_student2);
+
+        StudentAnswer sa4_3_3_student2 = createStudentAnswer(student2, pa_4_3_3, "Atomicity ensures that all operations within a transaction are completed successfully or none are, rolling back the entire transaction if any operation fails.");
+        addStudentAnswerToProblemAnswer(pa_4_3_3, sa4_3_3_student2);
+
+        StudentAnswer sa4_3_4_student2 = createStudentAnswer(student2, pa_4_3_4, "Consistency ensures that a transaction brings the database from one valid state to another, maintaining all predefined rules and constraints.");
+        addStudentAnswerToProblemAnswer(pa_4_3_4, sa4_3_4_student2);
+
+        StudentAnswer sa4_3_5_student2 = createStudentAnswer(student2, pa_4_3_5, "Isolation ensures that the operations of one transaction are isolated from those of other transactions, preventing conflicts and ensuring data integrity.");
+        addStudentAnswerToProblemAnswer(pa_4_3_5, sa4_3_5_student2);
+
+        StudentAnswer sa4_3_6_student2 = createStudentAnswer(student2, pa_4_3_6, "Durability ensures that once a transaction is committed, its results are permanent and will survive any subsequent system failures.");
+        addStudentAnswerToProblemAnswer(pa_4_3_6, sa4_3_6_student2);
+
+        StudentAnswer sa4_3_7_student2 = createStudentAnswer(student2, pa_4_3_7, "You start a transaction in SQL using the `BEGIN TRANSACTION` statement. For example:\n```sql\nBEGIN TRANSACTION;\n```");
+        addStudentAnswerToProblemAnswer(pa_4_3_7, sa4_3_7_student2);
+
+        StudentAnswer sa4_3_8_student2 = createStudentAnswer(student2, pa_4_3_8, "You commit a transaction in SQL using the `COMMIT` statement. For example:\n```sql\nCOMMIT;\n```");
+        addStudentAnswerToProblemAnswer(pa_4_3_8, sa4_3_8_student2);
+
+        StudentAnswer sa4_3_9_student2 = createStudentAnswer(student2, pa_4_3_9, "You roll back a transaction in SQL using the `ROLLBACK` statement. For example:\n```sql\nROLLBACK;\n```");
+        addStudentAnswerToProblemAnswer(pa_4_3_9, sa4_3_9_student2);
+
+        StudentAnswer sa4_3_10_student2 = createStudentAnswer(student2, pa_4_3_10, "The purpose of using transactions in SQL is to ensure data integrity and consistency, especially in scenarios involving multiple operations or concurrent access to the database. Transactions allow for safe and reliable data management.");
+        addStudentAnswerToProblemAnswer(pa_4_3_10, sa4_3_10_student2);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment4_3.");
+// Creating StudentAnswer instances for student1
+        StudentAnswer sa4_4_1_student1 = createStudentAnswer(student1, pa_4_4_1, "Database design is defining the structure, organization, and relationships of data within a database.");
+        addStudentAnswerToProblemAnswer(pa_4_4_1, sa4_4_1_student1);
+
+        StudentAnswer sa4_4_2_student1 = createStudentAnswer(student1, pa_4_4_2, "Normalization is organizing data to reduce redundancy and improve data integrity.");
+        addStudentAnswerToProblemAnswer(pa_4_4_2, sa4_4_2_student1);
+
+        StudentAnswer sa4_4_3_student1 = createStudentAnswer(student1, pa_4_4_3, "Normal forms are: 1NF, 2NF, 3NF, BCNF, and higher forms, each reducing redundancy and dependency.");
+        addStudentAnswerToProblemAnswer(pa_4_4_3, sa4_4_3_student1);
+
+        StudentAnswer sa4_4_4_student1 = createStudentAnswer(student1, pa_4_4_4, "Denormalization combines normalized tables to reduce query complexity and improve performance.");
+        addStudentAnswerToProblemAnswer(pa_4_4_4, sa4_4_4_student1);
+
+        StudentAnswer sa4_4_5_student1 = createStudentAnswer(student1, pa_4_4_5, "An ER diagram is a visual representation of database entities and relationships.");
+        addStudentAnswerToProblemAnswer(pa_4_4_5, sa4_4_5_student1);
+
+        StudentAnswer sa4_4_6_student1 = createStudentAnswer(student1, pa_4_4_6, "A primary key is a unique identifier for a row in a table.");
+        addStudentAnswerToProblemAnswer(pa_4_4_6, sa4_4_6_student1);
+
+        StudentAnswer sa4_4_7_student1 = createStudentAnswer(student1, pa_4_4_7, "A foreign key is a column in one table that references the primary key in another table.");
+        addStudentAnswerToProblemAnswer(pa_4_4_7, sa4_4_7_student1);
+
+        StudentAnswer sa4_4_8_student1 = createStudentAnswer(student1, pa_4_4_8, "Data modeling is creating a visual representation of the data and its relationships within a database.");
+        addStudentAnswerToProblemAnswer(pa_4_4_8, sa4_4_8_student1);
+
+        StudentAnswer sa4_4_9_student1 = createStudentAnswer(student1, pa_4_4_9, "A schema defines the structure of the database, including tables, columns, data types, and relationships.");
+        addStudentAnswerToProblemAnswer(pa_4_4_9, sa4_4_9_student1);
+
+        StudentAnswer sa4_4_10_student1 = createStudentAnswer(student1, pa_4_4_10, "Best practices include normalizing data, choosing appropriate data types, defining keys, creating indexes, ensuring data integrity, and designing for scalability.");
+        addStudentAnswerToProblemAnswer(pa_4_4_10, sa4_4_10_student1);
+
+// Creating StudentAnswer instances for student2
+        StudentAnswer sa4_4_1_student2 = createStudentAnswer(student2, pa_4_4_1, "Database design is defining the structure, organization, and relationships of data within a database.");
+        addStudentAnswerToProblemAnswer(pa_4_4_1, sa4_4_1_student2);
+
+        StudentAnswer sa4_4_2_student2 = createStudentAnswer(student2, pa_4_4_2, "Normalization is organizing data to reduce redundancy and improve data integrity.");
+        addStudentAnswerToProblemAnswer(pa_4_4_2, sa4_4_2_student2);
+
+        StudentAnswer sa4_4_3_student2 = createStudentAnswer(student2, pa_4_4_3, "Normal forms are: 1NF, 2NF, 3NF, BCNF, and higher forms, each reducing redundancy and dependency.");
+        addStudentAnswerToProblemAnswer(pa_4_4_3, sa4_4_3_student2);
+
+        StudentAnswer sa4_4_4_student2 = createStudentAnswer(student2, pa_4_4_4, "Denormalization combines normalized tables to reduce query complexity and improve performance.");
+        addStudentAnswerToProblemAnswer(pa_4_4_4, sa4_4_4_student2);
+
+        StudentAnswer sa4_4_5_student2 = createStudentAnswer(student2, pa_4_4_5, "An ER diagram is a visual representation of database entities and relationships.");
+        addStudentAnswerToProblemAnswer(pa_4_4_5, sa4_4_5_student2);
+
+        StudentAnswer sa4_4_6_student2 = createStudentAnswer(student2, pa_4_4_6, "A primary key is a unique identifier for a row in a table.");
+        addStudentAnswerToProblemAnswer(pa_4_4_6, sa4_4_6_student2);
+
+        StudentAnswer sa4_4_7_student2 = createStudentAnswer(student2, pa_4_4_7, "A foreign key is a column in one table that references the primary key in another table.");
+        addStudentAnswerToProblemAnswer(pa_4_4_7, sa4_4_7_student2);
+
+        StudentAnswer sa4_4_8_student2 = createStudentAnswer(student2, pa_4_4_8, "Data modeling is creating a visual representation of the data and its relationships within a database.");
+        addStudentAnswerToProblemAnswer(pa_4_4_8, sa4_4_8_student2);
+
+        StudentAnswer sa4_4_9_student2 = createStudentAnswer(student2, pa_4_4_9, "A schema defines the structure of the database, including tables, columns, data types, and relationships.");
+        addStudentAnswerToProblemAnswer(pa_4_4_9, sa4_4_9_student2);
+
+        StudentAnswer sa4_4_10_student2 = createStudentAnswer(student2, pa_4_4_10, "Best practices include normalizing data, choosing appropriate data types, defining keys, creating indexes, ensuring data integrity, and designing for scalability.");
+        addStudentAnswerToProblemAnswer(pa_4_4_10, sa4_4_10_student2);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment4_4.");
+// Creating StudentAnswer instances for student3
+        StudentAnswer sa5_1_1_student3 = createStudentAnswer(student3, pa_5_1_1, "A process is an instance of a program being executed, including the program code, data, and other resources required for execution.");
+        addStudentAnswerToProblemAnswer(pa_5_1_1, sa5_1_1_student3);
+
+        StudentAnswer sa5_1_2_student3 = createStudentAnswer(student3, pa_5_1_2, "The OS handles process creation by assigning a unique PID, allocating memory, and setting up necessary resources for the new process.");
+        addStudentAnswerToProblemAnswer(pa_5_1_2, sa5_1_2_student3);
+
+        StudentAnswer sa5_1_3_student3 = createStudentAnswer(student3, pa_5_1_3, "Process scheduling is the method used by the OS to allocate CPU time to processes, determining the order of execution and duration.");
+        addStudentAnswerToProblemAnswer(pa_5_1_3, sa5_1_3_student3);
+
+        StudentAnswer sa5_1_4_student3 = createStudentAnswer(student3, pa_5_1_4, "Process termination is the act of ending a process's execution, occurring when a process completes its task or is terminated by the OS.");
+        addStudentAnswerToProblemAnswer(pa_5_1_4, sa5_1_4_student3);
+
+        StudentAnswer sa5_1_5_student3 = createStudentAnswer(student3, pa_5_1_5, "IPC allows processes to communicate and synchronize their actions through methods like message passing, shared memory, and semaphores.");
+        addStudentAnswerToProblemAnswer(pa_5_1_5, sa5_1_5_student3);
+
+        StudentAnswer sa5_1_6_student3 = createStudentAnswer(student3, pa_5_1_6, "A PCB is a data structure used by the OS to store information about a process, including its state, PID, program counter, registers, and memory allocation.");
+        addStudentAnswerToProblemAnswer(pa_5_1_6, sa5_1_6_student3);
+
+        StudentAnswer sa5_1_7_student3 = createStudentAnswer(student3, pa_5_1_7, "Context switching is saving the state of a running process and loading the state of another process, allowing the OS to switch between processes efficiently.");
+        addStudentAnswerToProblemAnswer(pa_5_1_7, sa5_1_7_student3);
+
+        StudentAnswer sa5_1_8_student3 = createStudentAnswer(student3, pa_5_1_8, "A process state represents the current status of a process, with common states being new, ready, running, waiting, and terminated.");
+        addStudentAnswerToProblemAnswer(pa_5_1_8, sa5_1_8_student3);
+
+        StudentAnswer sa5_1_9_student3 = createStudentAnswer(student3, pa_5_1_9, "A fork creates a new process by duplicating an existing process, with the new process called the child process running concurrently with the parent process.");
+        addStudentAnswerToProblemAnswer(pa_5_1_9, sa5_1_9_student3);
+
+        StudentAnswer sa5_1_10_student3 = createStudentAnswer(student3, pa_5_1_10, "A thread is the smallest unit of execution within a process, with multiple threads sharing the same memory and resources but executing independently.");
+        addStudentAnswerToProblemAnswer(pa_5_1_10, sa5_1_10_student3);
+// Creating StudentAnswer instances for student4
+        StudentAnswer sa5_1_1_student4 = createStudentAnswer(student4, pa_5_1_1, "A process is an instance of a program being executed, including the program code, data, and other resources required for execution.");
+        addStudentAnswerToProblemAnswer(pa_5_1_1, sa5_1_1_student4);
+
+        StudentAnswer sa5_1_2_student4 = createStudentAnswer(student4, pa_5_1_2, "The OS handles process creation by assigning a unique PID, allocating memory, and setting up necessary resources for the new process.");
+        addStudentAnswerToProblemAnswer(pa_5_1_2, sa5_1_2_student4);
+
+        StudentAnswer sa5_1_3_student4 = createStudentAnswer(student4, pa_5_1_3, "Process scheduling is the method used by the OS to allocate CPU time to processes, determining the order of execution and duration.");
+        addStudentAnswerToProblemAnswer(pa_5_1_3, sa5_1_3_student4);
+
+        StudentAnswer sa5_1_4_student4 = createStudentAnswer(student4, pa_5_1_4, "Process termination is the act of ending a process's execution, occurring when a process completes its task or is terminated by the OS.");
+        addStudentAnswerToProblemAnswer(pa_5_1_4, sa5_1_4_student4);
+
+        StudentAnswer sa5_1_5_student4 = createStudentAnswer(student4, pa_5_1_5, "IPC allows processes to communicate and synchronize their actions through methods like message passing, shared memory, and semaphores.");
+        addStudentAnswerToProblemAnswer(pa_5_1_5, sa5_1_5_student4);
+
+        StudentAnswer sa5_1_6_student4 = createStudentAnswer(student4, pa_5_1_6, "A PCB is a data structure used by the OS to store information about a process, including its state, PID, program counter, registers, and memory allocation.");
+        addStudentAnswerToProblemAnswer(pa_5_1_6, sa5_1_6_student4);
+
+        StudentAnswer sa5_1_7_student4 = createStudentAnswer(student4, pa_5_1_7, "Context switching is saving the state of a running process and loading the state of another process, allowing the OS to switch between processes efficiently.");
+        addStudentAnswerToProblemAnswer(pa_5_1_7, sa5_1_7_student4);
+
+        StudentAnswer sa5_1_8_student4 = createStudentAnswer(student4, pa_5_1_8, "A process state represents the current status of a process, with common states being new, ready, running, waiting, and terminated.");
+        addStudentAnswerToProblemAnswer(pa_5_1_8, sa5_1_8_student4);
+
+        StudentAnswer sa5_1_9_student4 = createStudentAnswer(student4, pa_5_1_9, "A fork creates a new process by duplicating an existing process, with the new process called the child process running concurrently with the parent process.");
+        addStudentAnswerToProblemAnswer(pa_5_1_9, sa5_1_9_student4);
+
+        StudentAnswer sa5_1_10_student4 = createStudentAnswer(student4, pa_5_1_10, "A thread is the smallest unit of execution within a process, with multiple threads sharing the same memory and resources but executing independently.");
+        addStudentAnswerToProblemAnswer(pa_5_1_10, sa5_1_10_student4);
+// Creating StudentAnswer instances for student3
+        StudentAnswer sa5_2_1_student3 = createStudentAnswer(student3, pa_5_2_1, "Memory management is how the OS allocates, tracks, and manages computer memory.");
+        addStudentAnswerToProblemAnswer(pa_5_2_1, sa5_2_1_student3);
+
+        StudentAnswer sa5_2_2_student3 = createStudentAnswer(student3, pa_5_2_2, "Paging divides physical memory into fixed-sized blocks called pages.");
+        addStudentAnswerToProblemAnswer(pa_5_2_2, sa5_2_2_student3);
+
+        StudentAnswer sa5_2_3_student3 = createStudentAnswer(student3, pa_5_2_3, "Segmentation divides memory into variable-sized segments based on logical divisions of a program.");
+        addStudentAnswerToProblemAnswer(pa_5_2_3, sa5_2_3_student3);
+
+        StudentAnswer sa5_2_4_student3 = createStudentAnswer(student3, pa_5_2_4, "Virtual memory allows processes to execute that may not be entirely in physical memory by using disk space.");
+        addStudentAnswerToProblemAnswer(pa_5_2_4, sa5_2_4_student3);
+
+        StudentAnswer sa5_2_5_student3 = createStudentAnswer(student3, pa_5_2_5, "The OS uses algorithms like first-fit, best-fit, and worst-fit to allocate memory blocks to processes efficiently.");
+        addStudentAnswerToProblemAnswer(pa_5_2_5, sa5_2_5_student3);
+
+        StudentAnswer sa5_2_6_student3 = createStudentAnswer(student3, pa_5_2_6, "A page table maps virtual addresses to physical addresses, helping the OS translate addresses.");
+        addStudentAnswerToProblemAnswer(pa_5_2_6, sa5_2_6_student3);
+
+        StudentAnswer sa5_2_7_student3 = createStudentAnswer(student3, pa_5_2_7, "A memory leak occurs when a program doesn't release memory, causing available memory to decrease.");
+        addStudentAnswerToProblemAnswer(pa_5_2_7, sa5_2_7_student3);
+
+        StudentAnswer sa5_2_8_student3 = createStudentAnswer(student3, pa_5_2_8, "A frame is a fixed-sized block of physical memory used in paging.");
+        addStudentAnswerToProblemAnswer(pa_5_2_8, sa5_2_8_student3);
+
+        StudentAnswer sa5_2_9_student3 = createStudentAnswer(student3, pa_5_2_9, "Demand paging loads pages into memory only when needed, reducing memory usage and improving performance.");
+        addStudentAnswerToProblemAnswer(pa_5_2_9, sa5_2_9_student3);
+
+        StudentAnswer sa5_2_10_student3 = createStudentAnswer(student3, pa_5_2_10, "Thrashing occurs when excessive paging causes more time spent swapping pages than executing processes, degrading performance.");
+        addStudentAnswerToProblemAnswer(pa_5_2_10, sa5_2_10_student3);
+
+// Creating StudentAnswer instances for student4
+        StudentAnswer sa5_2_1_student4 = createStudentAnswer(student4, pa_5_2_1, "Memory management is how the OS allocates, tracks, and manages computer memory.");
+        addStudentAnswerToProblemAnswer(pa_5_2_1, sa5_2_1_student4);
+
+        StudentAnswer sa5_2_2_student4 = createStudentAnswer(student4, pa_5_2_2, "Paging divides physical memory into fixed-sized blocks called pages.");
+        addStudentAnswerToProblemAnswer(pa_5_2_2, sa5_2_2_student4);
+
+        StudentAnswer sa5_2_3_student4 = createStudentAnswer(student4, pa_5_2_3, "Segmentation divides memory into variable-sized segments based on logical divisions of a program.");
+        addStudentAnswerToProblemAnswer(pa_5_2_3, sa5_2_3_student4);
+
+        StudentAnswer sa5_2_4_student4 = createStudentAnswer(student4, pa_5_2_4, "Virtual memory allows processes to execute that may not be entirely in physical memory by using disk space.");
+        addStudentAnswerToProblemAnswer(pa_5_2_4, sa5_2_4_student4);
+
+        StudentAnswer sa5_2_5_student4 = createStudentAnswer(student4, pa_5_2_5, "The OS uses algorithms like first-fit, best-fit, and worst-fit to allocate memory blocks to processes efficiently.");
+        addStudentAnswerToProblemAnswer(pa_5_2_5, sa5_2_5_student4);
+
+        StudentAnswer sa5_2_6_student4 = createStudentAnswer(student4, pa_5_2_6, "A page table maps virtual addresses to physical addresses, helping the OS translate addresses.");
+        addStudentAnswerToProblemAnswer(pa_5_2_6, sa5_2_6_student4);
+
+        StudentAnswer sa5_2_7_student4 = createStudentAnswer(student4, pa_5_2_7, "A memory leak occurs when a program doesn't release memory, causing available memory to decrease.");
+        addStudentAnswerToProblemAnswer(pa_5_2_7, sa5_2_7_student4);
+
+        StudentAnswer sa5_2_8_student4 = createStudentAnswer(student4, pa_5_2_8, "A frame is a fixed-sized block of physical memory used in paging.");
+        addStudentAnswerToProblemAnswer(pa_5_2_8, sa5_2_8_student4);
+
+        StudentAnswer sa5_2_9_student4 = createStudentAnswer(student4, pa_5_2_9, "Demand paging loads pages into memory only when needed, reducing memory usage and improving performance.");
+        addStudentAnswerToProblemAnswer(pa_5_2_9, sa5_2_9_student4);
+
+        StudentAnswer sa5_2_10_student4 = createStudentAnswer(student4, pa_5_2_10, "Thrashing occurs when excessive paging causes more time spent swapping pages than executing processes, degrading performance.");
+        addStudentAnswerToProblemAnswer(pa_5_2_10, sa5_2_10_student4);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student3 and student4 for all 10 problem answers in assignment5_2.");
+// Creating StudentAnswer instances for student3
+        StudentAnswer sa5_3_1_student3 = createStudentAnswer(student3, pa_5_3_1, "A file system is a method used by operating systems to store, organize, and manage files on storage devices.");
+        addStudentAnswerToProblemAnswer(pa_5_3_1, sa5_3_1_student3);
+
+        StudentAnswer sa5_3_2_student3 = createStudentAnswer(student3, pa_5_3_2, "File organization refers to how files are logically arranged and stored on a storage device.");
+        addStudentAnswerToProblemAnswer(pa_5_3_2, sa5_3_2_student3);
+
+        StudentAnswer sa5_3_3_student3 = createStudentAnswer(student3, pa_5_3_3, "Storage allocation is the process of assigning storage space to files and directories on a storage device.");
+        addStudentAnswerToProblemAnswer(pa_5_3_3, sa5_3_3_student3);
+
+        StudentAnswer sa5_3_4_student3 = createStudentAnswer(student3, pa_5_3_4, "A directory structure is a hierarchical organization of files and directories on a storage device.");
+        addStudentAnswerToProblemAnswer(pa_5_3_4, sa5_3_4_student3);
+
+        StudentAnswer sa5_3_5_student3 = createStudentAnswer(student3, pa_5_3_5, "File access methods define how data within a file is accessed, including sequential, direct, and indexed access.");
+        addStudentAnswerToProblemAnswer(pa_5_3_5, sa5_3_5_student3);
+
+        StudentAnswer sa5_3_6_student3 = createStudentAnswer(student3, pa_5_3_6, "A file allocation table (FAT) is a data structure that keeps track of the blocks of data that make up a file.");
+        addStudentAnswerToProblemAnswer(pa_5_3_6, sa5_3_6_student3);
+
+        StudentAnswer sa5_3_7_student3 = createStudentAnswer(student3, pa_5_3_7, "A journaling file system keeps a log of changes being made, helping recover the file system in case of a crash.");
+        addStudentAnswerToProblemAnswer(pa_5_3_7, sa5_3_7_student3);
+
+        StudentAnswer sa5_3_8_student3 = createStudentAnswer(student3, pa_5_3_8, "File permissions control access to files and directories, defining read, write, and execute actions for users or groups.");
+        addStudentAnswerToProblemAnswer(pa_5_3_8, sa5_3_8_student3);
+
+        StudentAnswer sa5_3_9_student3 = createStudentAnswer(student3, pa_5_3_9, "A file system manages files on storage devices, while a database manages structured data with advanced querying and data manipulation capabilities.");
+        addStudentAnswerToProblemAnswer(pa_5_3_9, sa5_3_9_student3);
+
+        StudentAnswer sa5_3_10_student3 = createStudentAnswer(student3, pa_5_3_10, "Disk fragmentation occurs when files are divided into scattered pieces, leading to slower performance. Defragmentation reorganizes data to improve efficiency.");
+        addStudentAnswerToProblemAnswer(pa_5_3_10, sa5_3_10_student3);
+// Creating StudentAnswer instances for student4
+        StudentAnswer sa5_3_1_student4 = createStudentAnswer(student4, pa_5_3_1, "A file system is a method used by operating systems to store, organize, and manage files on storage devices.");
+        addStudentAnswerToProblemAnswer(pa_5_3_1, sa5_3_1_student4);
+
+        StudentAnswer sa5_3_2_student4 = createStudentAnswer(student4, pa_5_3_2, "File organization refers to how files are logically arranged and stored on a storage device.");
+        addStudentAnswerToProblemAnswer(pa_5_3_2, sa5_3_2_student4);
+
+        StudentAnswer sa5_3_3_student4 = createStudentAnswer(student4, pa_5_3_3, "Storage allocation is the process of assigning storage space to files and directories on a storage device.");
+        addStudentAnswerToProblemAnswer(pa_5_3_3, sa5_3_3_student4);
+
+        StudentAnswer sa5_3_4_student4 = createStudentAnswer(student4, pa_5_3_4, "A directory structure is a hierarchical organization of files and directories on a storage device.");
+        addStudentAnswerToProblemAnswer(pa_5_3_4, sa5_3_4_student4);
+
+        StudentAnswer sa5_3_5_student4 = createStudentAnswer(student4, pa_5_3_5, "File access methods define how data within a file is accessed, including sequential, direct, and indexed access.");
+        addStudentAnswerToProblemAnswer(pa_5_3_5, sa5_3_5_student4);
+
+        StudentAnswer sa5_3_6_student4 = createStudentAnswer(student4, pa_5_3_6, "A file allocation table (FAT) is a data structure that keeps track of the blocks of data that make up a file.");
+        addStudentAnswerToProblemAnswer(pa_5_3_6, sa5_3_6_student4);
+
+        StudentAnswer sa5_3_7_student4 = createStudentAnswer(student4, pa_5_3_7, "A journaling file system keeps a log of changes being made, helping recover the file system in case of a crash.");
+        addStudentAnswerToProblemAnswer(pa_5_3_7, sa5_3_7_student4);
+
+        StudentAnswer sa5_3_8_student4 = createStudentAnswer(student4, pa_5_3_8, "File permissions control access to files and directories, defining read, write, and execute actions for users or groups.");
+        addStudentAnswerToProblemAnswer(pa_5_3_8, sa5_3_8_student4);
+
+        StudentAnswer sa5_3_9_student4 = createStudentAnswer(student4, pa_5_3_9, "A file system manages files on storage devices, while a database manages structured data with advanced querying and data manipulation capabilities.");
+        addStudentAnswerToProblemAnswer(pa_5_3_9, sa5_3_9_student4);
+
+        StudentAnswer sa5_3_10_student4 = createStudentAnswer(student4, pa_5_3_10, "Disk fragmentation occurs when files are divided into scattered pieces, leading to slower performance. Defragmentation reorganizes data to improve efficiency.");
+        addStudentAnswerToProblemAnswer(pa_5_3_10, sa5_3_10_student4);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment5_3.");
+// Creating StudentAnswer instances for student3
+        StudentAnswer sa5_4_1_student3 = createStudentAnswer(student3, pa_5_4_1, "CPU scheduling manages the execution of processes by allocating CPU time.");
+        addStudentAnswerToProblemAnswer(pa_5_4_1, sa5_4_1_student3);
+
+        StudentAnswer sa5_4_2_student3 = createStudentAnswer(student3, pa_5_4_2, "Scheduling algorithms optimize CPU usage, improve performance, and ensure fairness among processes.");
+        addStudentAnswerToProblemAnswer(pa_5_4_2, sa5_4_2_student3);
+
+        StudentAnswer sa5_4_3_student3 = createStudentAnswer(student3, pa_5_4_3, "Round-robin scheduling assigns a fixed time slice to each process in a circular order.");
+        addStudentAnswerToProblemAnswer(pa_5_4_3, sa5_4_3_student3);
+
+        StudentAnswer sa5_4_4_student3 = createStudentAnswer(student3, pa_5_4_4, "Priority scheduling selects the process with the highest priority for execution.");
+        addStudentAnswerToProblemAnswer(pa_5_4_4, sa5_4_4_student3);
+
+        StudentAnswer sa5_4_5_student3 = createStudentAnswer(student3, pa_5_4_5, "A multi-level queue divides processes into multiple queues based on priority or type.");
+        addStudentAnswerToProblemAnswer(pa_5_4_5, sa5_4_5_student3);
+
+        StudentAnswer sa5_4_6_student3 = createStudentAnswer(student3, pa_5_4_6, "A multi-level feedback queue allows processes to move between queues based on behavior and execution history.");
+        addStudentAnswerToProblemAnswer(pa_5_4_6, sa5_4_6_student3);
+
+        StudentAnswer sa5_4_7_student3 = createStudentAnswer(student3, pa_5_4_7, "The time quantum in round-robin scheduling is the fixed time slice assigned to each process.");
+        addStudentAnswerToProblemAnswer(pa_5_4_7, sa5_4_7_student3);
+
+        StudentAnswer sa5_4_8_student3 = createStudentAnswer(student3, pa_5_4_8, "Preemptive scheduling interrupts and switches processes before they complete execution; non-preemptive scheduling requires processes to run until they finish or block.");
+        addStudentAnswerToProblemAnswer(pa_5_4_8, sa5_4_8_student3);
+
+        StudentAnswer sa5_4_9_student3 = createStudentAnswer(student3, pa_5_4_9, "The shortest job next (SJN) scheduling algorithm selects the process with the shortest expected processing time.");
+        addStudentAnswerToProblemAnswer(pa_5_4_9, sa5_4_9_student3);
+
+        StudentAnswer sa5_4_10_student3 = createStudentAnswer(student3, pa_5_4_10, "The dispatcher switches the CPU from one process to another, loads the context, allocates CPU time, and manages context switching.");
+        addStudentAnswerToProblemAnswer(pa_5_4_10, sa5_4_10_student3);
+// Creating StudentAnswer instances for student4
+        StudentAnswer sa5_4_1_student4 = createStudentAnswer(student4, pa_5_4_1, "CPU scheduling manages the execution of processes by allocating CPU time.");
+        addStudentAnswerToProblemAnswer(pa_5_4_1, sa5_4_1_student4);
+
+        StudentAnswer sa5_4_2_student4 = createStudentAnswer(student4, pa_5_4_2, "Scheduling algorithms optimize CPU usage, improve performance, and ensure fairness among processes.");
+        addStudentAnswerToProblemAnswer(pa_5_4_2, sa5_4_2_student4);
+
+        StudentAnswer sa5_4_3_student4 = createStudentAnswer(student4, pa_5_4_3, "Round-robin scheduling assigns a fixed time slice to each process in a circular order.");
+        addStudentAnswerToProblemAnswer(pa_5_4_3, sa5_4_3_student4);
+
+        StudentAnswer sa5_4_4_student4 = createStudentAnswer(student4, pa_5_4_4, "Priority scheduling selects the process with the highest priority for execution.");
+        addStudentAnswerToProblemAnswer(pa_5_4_4, sa5_4_4_student4);
+
+        StudentAnswer sa5_4_5_student4 = createStudentAnswer(student4, pa_5_4_5, "A multi-level queue divides processes into multiple queues based on priority or type.");
+        addStudentAnswerToProblemAnswer(pa_5_4_5, sa5_4_5_student4);
+
+        StudentAnswer sa5_4_6_student4 = createStudentAnswer(student4, pa_5_4_6, "A multi-level feedback queue allows processes to move between queues based on behavior and execution history.");
+        addStudentAnswerToProblemAnswer(pa_5_4_6, sa5_4_6_student4);
+
+        StudentAnswer sa5_4_7_student4 = createStudentAnswer(student4, pa_5_4_7, "The time quantum in round-robin scheduling is the fixed time slice assigned to each process.");
+        addStudentAnswerToProblemAnswer(pa_5_4_7, sa5_4_7_student4);
+
+        StudentAnswer sa5_4_8_student4 = createStudentAnswer(student4, pa_5_4_8, "Preemptive scheduling interrupts and switches processes before they complete execution; non-preemptive scheduling requires processes to run until they finish or block.");
+        addStudentAnswerToProblemAnswer(pa_5_4_8, sa5_4_8_student4);
+
+        StudentAnswer sa5_4_9_student4 = createStudentAnswer(student4, pa_5_4_9, "The shortest job next (SJN) scheduling algorithm selects the process with the shortest expected processing time.");
+        addStudentAnswerToProblemAnswer(pa_5_4_9, sa5_4_9_student4);
+
+        StudentAnswer sa5_4_10_student4 = createStudentAnswer(student4, pa_5_4_10, "The dispatcher switches the CPU from one process to another, loads the context, allocates CPU time, and manages context switching.");
+        addStudentAnswerToProblemAnswer(pa_5_4_10, sa5_4_10_student4);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment5_4.");
+
+
+
+
+
         attendanceRepo.saveAllAndFlush(Arrays.asList(attendance1, attendance2, attendance3, attendance4, attendance5, attendance6, attendance7, attendance8, attendance9, attendance10, attendance11, attendance12, attendance13, attendance14, attendance15, attendance16, attendance17, attendance18, attendance19, attendance20));
         resourceRepo.saveAllAndFlush(Arrays.asList(resource1a, resource1b, resource2a, resource2b, resource3a, resource3b, resource4a, resource4b, resource5a, resource5b, resource6a, resource6b, resource7a, resource7b, resource8a, resource8b, resource9a, resource9b, resource10a, resource10b, resource11a, resource11b, resource12a, resource12b, resource13a, resource13b, resource14a, resource14b, resource15a, resource15b, resource16a, resource16b, resource17a, resource17b, resource18a, resource18b, resource19a, resource19b, resource20a, resource20b));
         discussionRepo.saveAllAndFlush(Arrays.asList(discussion1a, discussion1b, discussion1c, discussion1d, discussion1e, discussion1f, discussion2a, discussion2b, discussion2c, discussion2d, discussion2e, discussion2f, discussion3a, discussion3b, discussion3c, discussion3d, discussion4a, discussion4b, discussion4c, discussion4d, discussion5a, discussion5b, discussion5c, discussion5d, discussion6a, discussion6b, discussion6c, discussion6d, discussion6e, discussion7a, discussion7b, discussion7c, discussion7d, discussion8a, discussion8b, discussion8c, discussion8d, discussion8e, discussion9a, discussion9b, discussion9c, discussion10a, discussion10b, discussion10c, discussion10d, discussion11a, discussion11b, discussion11c, discussion11d, discussion12a, discussion12b, discussion12c, discussion12d, discussion12e, discussion13a, discussion13b, discussion13c, discussion13d, discussion14a, discussion14b, discussion14c, discussion14d, discussion15a, discussion15b, discussion15c, discussion16a, discussion16b, discussion16c, discussion17a, discussion17b, discussion17c, discussion17d, discussion18a, discussion18b, discussion18c,
