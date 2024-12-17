@@ -10567,8 +10567,3655 @@ public class Seeder implements CommandLineRunner {
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment5_4.");
+// Creating StudentAnswer instances for student3
+        StudentAnswer sa6_1_1_student3 = createStudentAnswer(student3, pa_6_1_1, "The OSI model standardizes the functions of a telecommunication or computing system in seven layers.");
+        addStudentAnswerToProblemAnswer(pa_6_1_1, sa6_1_1_student3);
 
+        StudentAnswer sa6_1_2_student3 = createStudentAnswer(student3, pa_6_1_2, "The seven layers of the OSI model are: Physical, Data Link, Network, Transport, Session, Presentation, and Application.");
+        addStudentAnswerToProblemAnswer(pa_6_1_2, sa6_1_2_student3);
 
+        StudentAnswer sa6_1_3_student3 = createStudentAnswer(student3, pa_6_1_3, "The Physical layer deals with the transmission and reception of raw bitstreams over a physical medium.");
+        addStudentAnswerToProblemAnswer(pa_6_1_3, sa6_1_3_student3);
+
+        StudentAnswer sa6_1_4_student3 = createStudentAnswer(student3, pa_6_1_4, "The Data Link layer is responsible for node-to-node data transfer and error detection and correction.");
+        addStudentAnswerToProblemAnswer(pa_6_1_4, sa6_1_4_student3);
+
+        StudentAnswer sa6_1_5_student3 = createStudentAnswer(student3, pa_6_1_5, "The Network layer handles routing and forwarding data packets across different networks.");
+        addStudentAnswerToProblemAnswer(pa_6_1_5, sa6_1_5_student3);
+
+        StudentAnswer sa6_1_6_student3 = createStudentAnswer(student3, pa_6_1_6, "The Transport layer manages end-to-end communication and data transfer, ensuring reliable and error-free transmission.");
+        addStudentAnswerToProblemAnswer(pa_6_1_6, sa6_1_6_student3);
+
+        StudentAnswer sa6_1_7_student3 = createStudentAnswer(student3, pa_6_1_7, "The Session layer is responsible for establishing, managing, and terminating communication sessions.");
+        addStudentAnswerToProblemAnswer(pa_6_1_7, sa6_1_7_student3);
+
+        StudentAnswer sa6_1_8_student3 = createStudentAnswer(student3, pa_6_1_8, "The Presentation layer handles data translation, encryption, and compression.");
+        addStudentAnswerToProblemAnswer(pa_6_1_8, sa6_1_8_student3);
+
+        StudentAnswer sa6_1_9_student3 = createStudentAnswer(student3, pa_6_1_9, "The Application layer provides network services to end-users, supporting application services like email and web browsing.");
+        addStudentAnswerToProblemAnswer(pa_6_1_9, sa6_1_9_student3);
+
+        StudentAnswer sa6_1_10_student3 = createStudentAnswer(student3, pa_6_1_10, "Data transmission involves encapsulation and decapsulation across the OSI layers, with data being encapsulated with protocol headers as it moves down the stack and decapsulated as it moves up at the receiving end.");
+        addStudentAnswerToProblemAnswer(pa_6_1_10, sa6_1_10_student3);
+// Creating StudentAnswer instances for student4
+        StudentAnswer sa6_1_1_student4 = createStudentAnswer(student4, pa_6_1_1, "The OSI model standardizes the functions of a telecommunication or computing system in seven layers.");
+        addStudentAnswerToProblemAnswer(pa_6_1_1, sa6_1_1_student4);
+
+        StudentAnswer sa6_1_2_student4 = createStudentAnswer(student4, pa_6_1_2, "The seven layers of the OSI model are: Physical, Data Link, Network, Transport, Session, Presentation, and Application.");
+        addStudentAnswerToProblemAnswer(pa_6_1_2, sa6_1_2_student4);
+
+        StudentAnswer sa6_1_3_student4 = createStudentAnswer(student4, pa_6_1_3, "The Physical layer deals with the transmission and reception of raw bitstreams over a physical medium.");
+        addStudentAnswerToProblemAnswer(pa_6_1_3, sa6_1_3_student4);
+
+        StudentAnswer sa6_1_4_student4 = createStudentAnswer(student4, pa_6_1_4, "The Data Link layer is responsible for node-to-node data transfer and error detection and correction.");
+        addStudentAnswerToProblemAnswer(pa_6_1_4, sa6_1_4_student4);
+
+        StudentAnswer sa6_1_5_student4 = createStudentAnswer(student4, pa_6_1_5, "The Network layer handles routing and forwarding data packets across different networks.");
+        addStudentAnswerToProblemAnswer(pa_6_1_5, sa6_1_5_student4);
+
+        StudentAnswer sa6_1_6_student4 = createStudentAnswer(student4, pa_6_1_6, "The Transport layer manages end-to-end communication and data transfer, ensuring reliable and error-free transmission.");
+        addStudentAnswerToProblemAnswer(pa_6_1_6, sa6_1_6_student4);
+
+        StudentAnswer sa6_1_7_student4 = createStudentAnswer(student4, pa_6_1_7, "The Session layer is responsible for establishing, managing, and terminating communication sessions.");
+        addStudentAnswerToProblemAnswer(pa_6_1_7, sa6_1_7_student4);
+
+        StudentAnswer sa6_1_8_student4 = createStudentAnswer(student4, pa_6_1_8, "The Presentation layer handles data translation, encryption, and compression.");
+        addStudentAnswerToProblemAnswer(pa_6_1_8, sa6_1_8_student4);
+
+        StudentAnswer sa6_1_9_student4 = createStudentAnswer(student4, pa_6_1_9, "The Application layer provides network services to end-users, supporting application services like email and web browsing.");
+        addStudentAnswerToProblemAnswer(pa_6_1_9, sa6_1_9_student4);
+
+        StudentAnswer sa6_1_10_student4 = createStudentAnswer(student4, pa_6_1_10, "Data transmission involves encapsulation and decapsulation across the OSI layers, with data being encapsulated with protocol headers as it moves down the stack and decapsulated as it moves up at the receiving end.");
+        addStudentAnswerToProblemAnswer(pa_6_1_10, sa6_1_10_student4);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment6_1.");
+// Creating StudentAnswer instances for student3
+        StudentAnswer sa6_2_1_student3 = createStudentAnswer(student3, pa_6_2_1, "The TCP/IP model is the foundational protocol suite for the internet, standardizing communication functions.");
+        addStudentAnswerToProblemAnswer(pa_6_2_1, sa6_2_1_student3);
+
+        StudentAnswer sa6_2_2_student3 = createStudentAnswer(student3, pa_6_2_2, "The four layers of the TCP/IP model are: Network Interface, Internet, Transport, and Application.");
+        addStudentAnswerToProblemAnswer(pa_6_2_2, sa6_2_2_student3);
+
+        StudentAnswer sa6_2_3_student3 = createStudentAnswer(student3, pa_6_2_3, "The Network Interface layer handles the physical transmission of data between devices, including protocols for data link and hardware addressing.");
+        addStudentAnswerToProblemAnswer(pa_6_2_3, sa6_2_3_student3);
+
+        StudentAnswer sa6_2_4_student3 = createStudentAnswer(student3, pa_6_2_4, "The Internet layer manages routing and forwarding data packets across networks, including protocols like IP.");
+        addStudentAnswerToProblemAnswer(pa_6_2_4, sa6_2_4_student3);
+
+        StudentAnswer sa6_2_5_student3 = createStudentAnswer(student3, pa_6_2_5, "The Transport layer is responsible for end-to-end communication and data transfer, ensuring reliability with protocols like TCP and UDP.");
+        addStudentAnswerToProblemAnswer(pa_6_2_5, sa6_2_5_student3);
+
+        StudentAnswer sa6_2_6_student3 = createStudentAnswer(student3, pa_6_2_6, "The Application layer provides network services to end-users, supporting protocols like HTTP, FTP, and SMTP.");
+        addStudentAnswerToProblemAnswer(pa_6_2_6, sa6_2_6_student3);
+
+        StudentAnswer sa6_2_7_student3 = createStudentAnswer(student3, pa_6_2_7, "TCP is a connection-oriented protocol ensuring reliable data transmission, while UDP is connectionless, providing faster but less reliable transmission.");
+        addStudentAnswerToProblemAnswer(pa_6_2_7, sa6_2_7_student3);
+
+        StudentAnswer sa6_2_8_student3 = createStudentAnswer(student3, pa_6_2_8, "IP is responsible for addressing and routing data packets across networks, ensuring data reaches the correct destination.");
+        addStudentAnswerToProblemAnswer(pa_6_2_8, sa6_2_8_student3);
+
+        StudentAnswer sa6_2_9_student3 = createStudentAnswer(student3, pa_6_2_9, "TCP ensures reliable data transmission through error checking, flow control, and retransmission of lost packets.");
+        addStudentAnswerToProblemAnswer(pa_6_2_9, sa6_2_9_student3);
+
+        StudentAnswer sa6_2_10_student3 = createStudentAnswer(student3, pa_6_2_10, "The TCP/IP model standardizes communication between networked devices, enabling interoperability, scalability, and reliable data exchange.");
+        addStudentAnswerToProblemAnswer(pa_6_2_10, sa6_2_10_student3);
+// Creating StudentAnswer instances for student4
+        StudentAnswer sa6_2_1_student4 = createStudentAnswer(student4, pa_6_2_1, "The TCP/IP model is the foundational protocol suite for the internet, standardizing communication functions.");
+        addStudentAnswerToProblemAnswer(pa_6_2_1, sa6_2_1_student4);
+
+        StudentAnswer sa6_2_2_student4 = createStudentAnswer(student4, pa_6_2_2, "The four layers of the TCP/IP model are: Network Interface, Internet, Transport, and Application.");
+        addStudentAnswerToProblemAnswer(pa_6_2_2, sa6_2_2_student4);
+
+        StudentAnswer sa6_2_3_student4 = createStudentAnswer(student4, pa_6_2_3, "The Network Interface layer handles the physical transmission of data between devices, including protocols for data link and hardware addressing.");
+        addStudentAnswerToProblemAnswer(pa_6_2_3, sa6_2_3_student4);
+
+        StudentAnswer sa6_2_4_student4 = createStudentAnswer(student4, pa_6_2_4, "The Internet layer manages routing and forwarding data packets across networks, including protocols like IP.");
+        addStudentAnswerToProblemAnswer(pa_6_2_4, sa6_2_4_student4);
+
+        StudentAnswer sa6_2_5_student4 = createStudentAnswer(student4, pa_6_2_5, "The Transport layer is responsible for end-to-end communication and data transfer, ensuring reliability with protocols like TCP and UDP.");
+        addStudentAnswerToProblemAnswer(pa_6_2_5, sa6_2_5_student4);
+
+        StudentAnswer sa6_2_6_student4 = createStudentAnswer(student4, pa_6_2_6, "The Application layer provides network services to end-users, supporting protocols like HTTP, FTP, and SMTP.");
+        addStudentAnswerToProblemAnswer(pa_6_2_6, sa6_2_6_student4);
+
+        StudentAnswer sa6_2_7_student4 = createStudentAnswer(student4, pa_6_2_7, "TCP is a connection-oriented protocol ensuring reliable data transmission, while UDP is connectionless, providing faster but less reliable transmission.");
+        addStudentAnswerToProblemAnswer(pa_6_2_7, sa6_2_7_student4);
+
+        StudentAnswer sa6_2_8_student4 = createStudentAnswer(student4, pa_6_2_8, "IP is responsible for addressing and routing data packets across networks, ensuring data reaches the correct destination.");
+        addStudentAnswerToProblemAnswer(pa_6_2_8, sa6_2_8_student4);
+
+        StudentAnswer sa6_2_9_student4 = createStudentAnswer(student4, pa_6_2_9, "TCP ensures reliable data transmission through error checking, flow control, and retransmission of lost packets.");
+        addStudentAnswerToProblemAnswer(pa_6_2_9, sa6_2_9_student4);
+
+        StudentAnswer sa6_2_10_student4 = createStudentAnswer(student4, pa_6_2_10, "The TCP/IP model standardizes communication between networked devices, enabling interoperability, scalability, and reliable data exchange.");
+        addStudentAnswerToProblemAnswer(pa_6_2_10, sa6_2_10_student4);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment6_2.");
+// Creating StudentAnswer instances for student3
+        StudentAnswer sa6_3_1_student3 = createStudentAnswer(student3, pa_6_3_1, "Network protocols are rules and standards that govern data exchange over networks.");
+        addStudentAnswerToProblemAnswer(pa_6_3_1, sa6_3_1_student3);
+
+        StudentAnswer sa6_3_2_student3 = createStudentAnswer(student3, pa_6_3_2, "HTTP is a protocol for transferring web pages and other resources over the internet.");
+        addStudentAnswerToProblemAnswer(pa_6_3_2, sa6_3_2_student3);
+
+        StudentAnswer sa6_3_3_student3 = createStudentAnswer(student3, pa_6_3_3, "FTP is a protocol for transferring files between clients and servers over a network.");
+        addStudentAnswerToProblemAnswer(pa_6_3_3, sa6_3_3_student3);
+
+        StudentAnswer sa6_3_4_student3 = createStudentAnswer(student3, pa_6_3_4, "DNS translates human-readable domain names into IP addresses.");
+        addStudentAnswerToProblemAnswer(pa_6_3_4, sa6_3_4_student3);
+
+        StudentAnswer sa6_3_5_student3 = createStudentAnswer(student3, pa_6_3_5, "DHCP automatically assigns IP addresses and other network configuration parameters to devices on a network.");
+        addStudentAnswerToProblemAnswer(pa_6_3_5, sa6_3_5_student3);
+
+        StudentAnswer sa6_3_6_student3 = createStudentAnswer(student3, pa_6_3_6, "HTTP ensures secure communication using HTTPS, which encrypts data with SSL/TLS protocols.");
+        addStudentAnswerToProblemAnswer(pa_6_3_6, sa6_3_6_student3);
+
+        StudentAnswer sa6_3_7_student3 = createStudentAnswer(student3, pa_6_3_7, "SMTP is a protocol for sending and receiving email messages.");
+        addStudentAnswerToProblemAnswer(pa_6_3_7, sa6_3_7_student3);
+
+        StudentAnswer sa6_3_8_student3 = createStudentAnswer(student3, pa_6_3_8, "SNMP is a protocol for network management and monitoring.");
+        addStudentAnswerToProblemAnswer(pa_6_3_8, sa6_3_8_student3);
+
+        StudentAnswer sa6_3_9_student3 = createStudentAnswer(student3, pa_6_3_9, "HTTP is for transferring web pages, while HTTPS is a secure version that encrypts data using SSL/TLS.");
+        addStudentAnswerToProblemAnswer(pa_6_3_9, sa6_3_9_student3);
+
+        StudentAnswer sa6_3_10_student3 = createStudentAnswer(student3, pa_6_3_10, "DNS translates domain names into IP addresses by querying a server's database and returning the corresponding IP address.");
+        addStudentAnswerToProblemAnswer(pa_6_3_10, sa6_3_10_student3);
+// Creating StudentAnswer instances for student4
+        StudentAnswer sa6_3_1_student4 = createStudentAnswer(student4, pa_6_3_1, "Network protocols are rules and standards that govern data exchange over networks.");
+        addStudentAnswerToProblemAnswer(pa_6_3_1, sa6_3_1_student4);
+
+        StudentAnswer sa6_3_2_student4 = createStudentAnswer(student4, pa_6_3_2, "HTTP is a protocol for transferring web pages and other resources over the internet.");
+        addStudentAnswerToProblemAnswer(pa_6_3_2, sa6_3_2_student4);
+
+        StudentAnswer sa6_3_3_student4 = createStudentAnswer(student4, pa_6_3_3, "FTP is a protocol for transferring files between clients and servers over a network.");
+        addStudentAnswerToProblemAnswer(pa_6_3_3, sa6_3_3_student4);
+
+        StudentAnswer sa6_3_4_student4 = createStudentAnswer(student4, pa_6_3_4, "DNS translates human-readable domain names into IP addresses.");
+        addStudentAnswerToProblemAnswer(pa_6_3_4, sa6_3_4_student4);
+
+        StudentAnswer sa6_3_5_student4 = createStudentAnswer(student4, pa_6_3_5, "DHCP automatically assigns IP addresses and other network configuration parameters to devices on a network.");
+        addStudentAnswerToProblemAnswer(pa_6_3_5, sa6_3_5_student4);
+
+        StudentAnswer sa6_3_6_student4 = createStudentAnswer(student4, pa_6_3_6, "HTTP ensures secure communication using HTTPS, which encrypts data with SSL/TLS protocols.");
+        addStudentAnswerToProblemAnswer(pa_6_3_6, sa6_3_6_student4);
+
+        StudentAnswer sa6_3_7_student4 = createStudentAnswer(student4, pa_6_3_7, "SMTP is a protocol for sending and receiving email messages.");
+        addStudentAnswerToProblemAnswer(pa_6_3_7, sa6_3_7_student4);
+
+        StudentAnswer sa6_3_8_student4 = createStudentAnswer(student4, pa_6_3_8, "SNMP is a protocol for network management and monitoring.");
+        addStudentAnswerToProblemAnswer(pa_6_3_8, sa6_3_8_student4);
+
+        StudentAnswer sa6_3_9_student4 = createStudentAnswer(student4, pa_6_3_9, "HTTP is for transferring web pages, while HTTPS is a secure version that encrypts data using SSL/TLS.");
+        addStudentAnswerToProblemAnswer(pa_6_3_9, sa6_3_9_student4);
+
+        StudentAnswer sa6_3_10_student4 = createStudentAnswer(student4, pa_6_3_10, "DNS translates domain names into IP addresses by querying a server's database and returning the corresponding IP address.");
+        addStudentAnswerToProblemAnswer(pa_6_3_10, sa6_3_10_student4);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment6_3.");
+// Creating StudentAnswer instances for student3
+        StudentAnswer sa6_4_1_student3 = createStudentAnswer(student3, pa_6_4_1, "Routing is the process of selecting paths in a network to send data packets.");
+        addStudentAnswerToProblemAnswer(pa_6_4_1, sa6_4_1_student3);
+
+        StudentAnswer sa6_4_2_student3 = createStudentAnswer(student3, pa_6_4_2, "Routing algorithms determine the best path for data to travel across a network.");
+        addStudentAnswerToProblemAnswer(pa_6_4_2, sa6_4_2_student3);
+
+        StudentAnswer sa6_4_3_student3 = createStudentAnswer(student3, pa_6_4_3, "OSPF is a link-state routing protocol that uses Dijkstra's algorithm to compute the shortest path.");
+        addStudentAnswerToProblemAnswer(pa_6_4_3, sa6_4_3_student3);
+
+        StudentAnswer sa6_4_4_student3 = createStudentAnswer(student3, pa_6_4_4, "BGP is a path vector routing protocol that enables data routing between different autonomous systems on the internet.");
+        addStudentAnswerToProblemAnswer(pa_6_4_4, sa6_4_4_student3);
+
+        StudentAnswer sa6_4_5_student3 = createStudentAnswer(student3, pa_6_4_5, "Static routing uses manually configured fixed routes, while dynamic routing adjusts routes based on network conditions.");
+        addStudentAnswerToProblemAnswer(pa_6_4_5, sa6_4_5_student3);
+
+        StudentAnswer sa6_4_6_student3 = createStudentAnswer(student3, pa_6_4_6, "RIP is a distance vector routing protocol that uses hop count to determine the best path and periodically updates routing tables.");
+        addStudentAnswerToProblemAnswer(pa_6_4_6, sa6_4_6_student3);
+
+        StudentAnswer sa6_4_7_student3 = createStudentAnswer(student3, pa_6_4_7, "A router forwards data packets between networks, using routing tables and algorithms to determine the best path.");
+        addStudentAnswerToProblemAnswer(pa_6_4_7, sa6_4_7_student3);
+
+        StudentAnswer sa6_4_8_student3 = createStudentAnswer(student3, pa_6_4_8, "A routing table stores information about paths to network destinations, including destination IP addresses and next-hop addresses.");
+        addStudentAnswerToProblemAnswer(pa_6_4_8, sa6_4_8_student3);
+
+        StudentAnswer sa6_4_9_student3 = createStudentAnswer(student3, pa_6_4_9, "The default route directs data packets to a default gateway when no specific path is found in the routing table.");
+        addStudentAnswerToProblemAnswer(pa_6_4_9, sa6_4_9_student3);
+
+        StudentAnswer sa6_4_10_student3 = createStudentAnswer(student3, pa_6_4_10, "Convergence is the process by which routers update their routing tables and reach a consistent state after a network topology change.");
+        addStudentAnswerToProblemAnswer(pa_6_4_10, sa6_4_10_student3);
+// Creating StudentAnswer instances for student4
+        StudentAnswer sa6_4_1_student4 = createStudentAnswer(student4, pa_6_4_1, "Routing is the process of selecting paths in a network to send data packets.");
+        addStudentAnswerToProblemAnswer(pa_6_4_1, sa6_4_1_student4);
+
+        StudentAnswer sa6_4_2_student4 = createStudentAnswer(student4, pa_6_4_2, "Routing algorithms determine the best path for data to travel across a network.");
+        addStudentAnswerToProblemAnswer(pa_6_4_2, sa6_4_2_student4);
+
+        StudentAnswer sa6_4_3_student4 = createStudentAnswer(student4, pa_6_4_3, "OSPF is a link-state routing protocol that uses Dijkstra's algorithm to compute the shortest path.");
+        addStudentAnswerToProblemAnswer(pa_6_4_3, sa6_4_3_student4);
+
+        StudentAnswer sa6_4_4_student4 = createStudentAnswer(student4, pa_6_4_4, "BGP is a path vector routing protocol that enables data routing between different autonomous systems on the internet.");
+        addStudentAnswerToProblemAnswer(pa_6_4_4, sa6_4_4_student4);
+
+        StudentAnswer sa6_4_5_student4 = createStudentAnswer(student4, pa_6_4_5, "Static routing uses manually configured fixed routes, while dynamic routing adjusts routes based on network conditions.");
+        addStudentAnswerToProblemAnswer(pa_6_4_5, sa6_4_5_student4);
+
+        StudentAnswer sa6_4_6_student4 = createStudentAnswer(student4, pa_6_4_6, "RIP is a distance vector routing protocol that uses hop count to determine the best path and periodically updates routing tables.");
+        addStudentAnswerToProblemAnswer(pa_6_4_6, sa6_4_6_student4);
+
+        StudentAnswer sa6_4_7_student4 = createStudentAnswer(student4, pa_6_4_7, "A router forwards data packets between networks, using routing tables and algorithms to determine the best path.");
+        addStudentAnswerToProblemAnswer(pa_6_4_7, sa6_4_7_student4);
+
+        StudentAnswer sa6_4_8_student4 = createStudentAnswer(student4, pa_6_4_8, "A routing table stores information about paths to network destinations, including destination IP addresses and next-hop addresses.");
+        addStudentAnswerToProblemAnswer(pa_6_4_8, sa6_4_8_student4);
+
+        StudentAnswer sa6_4_9_student4 = createStudentAnswer(student4, pa_6_4_9, "The default route directs data packets to a default gateway when no specific path is found in the routing table.");
+        addStudentAnswerToProblemAnswer(pa_6_4_9, sa6_4_9_student4);
+
+        StudentAnswer sa6_4_10_student4 = createStudentAnswer(student4, pa_6_4_10, "Convergence is the process by which routers update their routing tables and reach a consistent state after a network topology change.");
+        addStudentAnswerToProblemAnswer(pa_6_4_10, sa6_4_10_student4);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment6_4.");
+// Creating StudentAnswer instances for student3
+        StudentAnswer sa6_5_1_student3 = createStudentAnswer(student3, pa_6_5_1, "Switching forwards data packets between devices within a network.");
+        addStudentAnswerToProblemAnswer(pa_6_5_1, sa6_5_1_student3);
+
+        StudentAnswer sa6_5_2_student3 = createStudentAnswer(student3, pa_6_5_2, "Types of switches: unmanaged, managed, and smart switches.");
+        addStudentAnswerToProblemAnswer(pa_6_5_2, sa6_5_2_student3);
+
+        StudentAnswer sa6_5_3_student3 = createStudentAnswer(student3, pa_6_5_3, "Packet switching breaks data into smaller packets transmitted independently.");
+        addStudentAnswerToProblemAnswer(pa_6_5_3, sa6_5_3_student3);
+
+        StudentAnswer sa6_5_4_student3 = createStudentAnswer(student3, pa_6_5_4, "Circuit switching establishes a dedicated communication path for data transmission.");
+        addStudentAnswerToProblemAnswer(pa_6_5_4, sa6_5_4_student3);
+
+        StudentAnswer sa6_5_5_student3 = createStudentAnswer(student3, pa_6_5_5, "A VLAN groups devices on different physical LANs for enhanced segmentation and security.");
+        addStudentAnswerToProblemAnswer(pa_6_5_5, sa6_5_5_student3);
+
+        StudentAnswer sa6_5_6_student3 = createStudentAnswer(student3, pa_6_5_6, "Layer 2 switch uses MAC addresses; Layer 3 switch uses IP addresses for routing and switching.");
+        addStudentAnswerToProblemAnswer(pa_6_5_6, sa6_5_6_student3);
+
+        StudentAnswer sa6_5_7_student3 = createStudentAnswer(student3, pa_6_5_7, "A MAC address is a unique identifier for network interfaces, used by switches to forward data.");
+        addStudentAnswerToProblemAnswer(pa_6_5_7, sa6_5_7_student3);
+
+        StudentAnswer sa6_5_8_student3 = createStudentAnswer(student3, pa_6_5_8, "A switch fabric determines how data packets are transmitted within a switch.");
+        addStudentAnswerToProblemAnswer(pa_6_5_8, sa6_5_8_student3);
+
+        StudentAnswer sa6_5_9_student3 = createStudentAnswer(student3, pa_6_5_9, "Store-and-forward switching stores the entire data packet before forwarding, ensuring error checking.");
+        addStudentAnswerToProblemAnswer(pa_6_5_9, sa6_5_9_student3);
+
+        StudentAnswer sa6_5_10_student3 = createStudentAnswer(student3, pa_6_5_10, "Cut-through switching forwards the data packet as soon as it reads the destination address, reducing latency.");
+        addStudentAnswerToProblemAnswer(pa_6_5_10, sa6_5_10_student3);
+// Creating StudentAnswer instances for student4
+        StudentAnswer sa6_5_1_student4 = createStudentAnswer(student4, pa_6_5_1, "Switching forwards data packets between devices within a network.");
+        addStudentAnswerToProblemAnswer(pa_6_5_1, sa6_5_1_student4);
+
+        StudentAnswer sa6_5_2_student4 = createStudentAnswer(student4, pa_6_5_2, "Types of switches: unmanaged, managed, and smart switches.");
+        addStudentAnswerToProblemAnswer(pa_6_5_2, sa6_5_2_student4);
+
+        StudentAnswer sa6_5_3_student4 = createStudentAnswer(student4, pa_6_5_3, "Packet switching breaks data into smaller packets transmitted independently.");
+        addStudentAnswerToProblemAnswer(pa_6_5_3, sa6_5_3_student4);
+
+        StudentAnswer sa6_5_4_student4 = createStudentAnswer(student4, pa_6_5_4, "Circuit switching establishes a dedicated communication path for data transmission.");
+        addStudentAnswerToProblemAnswer(pa_6_5_4, sa6_5_4_student4);
+
+        StudentAnswer sa6_5_5_student4 = createStudentAnswer(student4, pa_6_5_5, "A VLAN groups devices on different physical LANs for enhanced segmentation and security.");
+        addStudentAnswerToProblemAnswer(pa_6_5_5, sa6_5_5_student4);
+
+        StudentAnswer sa6_5_6_student4 = createStudentAnswer(student4, pa_6_5_6, "Layer 2 switch uses MAC addresses; Layer 3 switch uses IP addresses for routing and switching.");
+        addStudentAnswerToProblemAnswer(pa_6_5_6, sa6_5_6_student4);
+
+        StudentAnswer sa6_5_7_student4 = createStudentAnswer(student4, pa_6_5_7, "A MAC address is a unique identifier for network interfaces, used by switches to forward data.");
+        addStudentAnswerToProblemAnswer(pa_6_5_7, sa6_5_7_student4);
+
+        StudentAnswer sa6_5_8_student4 = createStudentAnswer(student4, pa_6_5_8, "A switch fabric determines how data packets are transmitted within a switch.");
+        addStudentAnswerToProblemAnswer(pa_6_5_8, sa6_5_8_student4);
+
+        StudentAnswer sa6_5_9_student4 = createStudentAnswer(student4, pa_6_5_9, "Store-and-forward switching stores the entire data packet before forwarding, ensuring error checking.");
+        addStudentAnswerToProblemAnswer(pa_6_5_9, sa6_5_9_student4);
+
+        StudentAnswer sa6_5_10_student4 = createStudentAnswer(student4, pa_6_5_10, "Cut-through switching forwards the data packet as soon as it reads the destination address, reducing latency.");
+        addStudentAnswerToProblemAnswer(pa_6_5_10, sa6_5_10_student4);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment6_5.");
+// Creating StudentAnswer instances for student3
+        StudentAnswer sa7_1_1_student3 = createStudentAnswer(student3, pa_7_1_1, "The SDLC is a process for planning, creating, testing, and deploying an information system.");
+        addStudentAnswerToProblemAnswer(pa_7_1_1, sa7_1_1_student3);
+
+        StudentAnswer sa7_1_2_student3 = createStudentAnswer(student3, pa_7_1_2, "The common phases of the SDLC include: requirements analysis, system design, implementation, testing, deployment, and maintenance.");
+        addStudentAnswerToProblemAnswer(pa_7_1_2, sa7_1_2_student3);
+
+        StudentAnswer sa7_1_3_student3 = createStudentAnswer(student3, pa_7_1_3, "The iterative model divides the development process into small, repeating cycles, producing a working version in each iteration.");
+        addStudentAnswerToProblemAnswer(pa_7_1_3, sa7_1_3_student3);
+
+        StudentAnswer sa7_1_4_student3 = createStudentAnswer(student3, pa_7_1_4, "The incremental model develops and delivers software in small increments, adding new functionality with each increment.");
+        addStudentAnswerToProblemAnswer(pa_7_1_4, sa7_1_4_student3);
+
+        StudentAnswer sa7_1_5_student3 = createStudentAnswer(student3, pa_7_1_5, "The spiral model combines iterative development with risk assessment, allowing for continuous refinement and risk mitigation.");
+        addStudentAnswerToProblemAnswer(pa_7_1_5, sa7_1_5_student3);
+
+        StudentAnswer sa7_1_6_student3 = createStudentAnswer(student3, pa_7_1_6, "The requirements analysis phase gathers and defines the functional and non-functional requirements of the software.");
+        addStudentAnswerToProblemAnswer(pa_7_1_6, sa7_1_6_student3);
+
+        StudentAnswer sa7_1_7_student3 = createStudentAnswer(student3, pa_7_1_7, "The system design phase creates a detailed design based on the requirements specification, defining the architecture and components.");
+        addStudentAnswerToProblemAnswer(pa_7_1_7, sa7_1_7_student3);
+
+        StudentAnswer sa7_1_8_student3 = createStudentAnswer(student3, pa_7_1_8, "The implementation phase develops the actual code for the software based on the design specifications.");
+        addStudentAnswerToProblemAnswer(pa_7_1_8, sa7_1_8_student3);
+
+        StudentAnswer sa7_1_9_student3 = createStudentAnswer(student3, pa_7_1_9, "The testing phase verifies and validates that the software meets the requirements and functions as expected.");
+        addStudentAnswerToProblemAnswer(pa_7_1_9, sa7_1_9_student3);
+
+        StudentAnswer sa7_1_10_student3 = createStudentAnswer(student3, pa_7_1_10, "The maintenance phase provides ongoing support and updates, fixing bugs and making enhancements after deployment.");
+        addStudentAnswerToProblemAnswer(pa_7_1_10, sa7_1_10_student3);
+// Creating StudentAnswer instances for student4
+        StudentAnswer sa7_1_1_student4 = createStudentAnswer(student4, pa_7_1_1, "The SDLC is a process for planning, creating, testing, and deploying an information system.");
+        addStudentAnswerToProblemAnswer(pa_7_1_1, sa7_1_1_student4);
+
+        StudentAnswer sa7_1_2_student4 = createStudentAnswer(student4, pa_7_1_2, "The common phases of the SDLC include: requirements analysis, system design, implementation, testing, deployment, and maintenance.");
+        addStudentAnswerToProblemAnswer(pa_7_1_2, sa7_1_2_student4);
+
+        StudentAnswer sa7_1_3_student4 = createStudentAnswer(student4, pa_7_1_3, "The iterative model divides the development process into small, repeating cycles, producing a working version in each iteration.");
+        addStudentAnswerToProblemAnswer(pa_7_1_3, sa7_1_3_student4);
+
+        StudentAnswer sa7_1_4_student4 = createStudentAnswer(student4, pa_7_1_4, "The incremental model develops and delivers software in small increments, adding new functionality with each increment.");
+        addStudentAnswerToProblemAnswer(pa_7_1_4, sa7_1_4_student4);
+
+        StudentAnswer sa7_1_5_student4 = createStudentAnswer(student4, pa_7_1_5, "The spiral model combines iterative development with risk assessment, allowing for continuous refinement and risk mitigation.");
+        addStudentAnswerToProblemAnswer(pa_7_1_5, sa7_1_5_student4);
+
+        StudentAnswer sa7_1_6_student4 = createStudentAnswer(student4, pa_7_1_6, "The requirements analysis phase gathers and defines the functional and non-functional requirements of the software.");
+        addStudentAnswerToProblemAnswer(pa_7_1_6, sa7_1_6_student4);
+
+        StudentAnswer sa7_1_7_student4 = createStudentAnswer(student4, pa_7_1_7, "The system design phase creates a detailed design based on the requirements specification, defining the architecture and components.");
+        addStudentAnswerToProblemAnswer(pa_7_1_7, sa7_1_7_student4);
+
+        StudentAnswer sa7_1_8_student4 = createStudentAnswer(student4, pa_7_1_8, "The implementation phase develops the actual code for the software based on the design specifications.");
+        addStudentAnswerToProblemAnswer(pa_7_1_8, sa7_1_8_student4);
+
+        StudentAnswer sa7_1_9_student4 = createStudentAnswer(student4, pa_7_1_9, "The testing phase verifies and validates that the software meets the requirements and functions as expected.");
+        addStudentAnswerToProblemAnswer(pa_7_1_9, sa7_1_9_student4);
+
+        StudentAnswer sa7_1_10_student4 = createStudentAnswer(student4, pa_7_1_10, "The maintenance phase provides ongoing support and updates, fixing bugs and making enhancements after deployment.");
+        addStudentAnswerToProblemAnswer(pa_7_1_10, sa7_1_10_student4);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment7_1.");
+// Creating StudentAnswer instances for student3
+        StudentAnswer sa7_2_1_student3 = createStudentAnswer(student3, pa_7_2_1, "Agile is an iterative approach that emphasizes flexibility, collaboration, and customer feedback.");
+        addStudentAnswerToProblemAnswer(pa_7_2_1, sa7_2_1_student3);
+
+        StudentAnswer sa7_2_2_student3 = createStudentAnswer(student3, pa_7_2_2, "Core principles of Agile: (1) Customer satisfaction, (2) Welcoming changes, (3) Frequent delivery, (4) Collaboration, (5) Motivated individuals, (6) Face-to-face communication, (7) Working software, (8) Sustainable development, (9) Technical excellence, (10) Simplicity, (11) Self-organizing teams, (12) Regular reflection.");
+        addStudentAnswerToProblemAnswer(pa_7_2_2, sa7_2_2_student3);
+
+        StudentAnswer sa7_2_3_student3 = createStudentAnswer(student3, pa_7_2_3, "Scrum is an Agile framework with roles like Scrum Master and Product Owner, and ceremonies like Sprint Planning and Daily Stand-ups.");
+        addStudentAnswerToProblemAnswer(pa_7_2_3, sa7_2_3_student3);
+
+        StudentAnswer sa7_2_4_student3 = createStudentAnswer(student3, pa_7_2_4, "Kanban focuses on visualizing work, limiting work in progress, and improving flow using a Kanban board.");
+        addStudentAnswerToProblemAnswer(pa_7_2_4, sa7_2_4_student3);
+
+        StudentAnswer sa7_2_5_student3 = createStudentAnswer(student3, pa_7_2_5, "Agile handles changing requirements by embracing change and enabling teams to respond to new information and customer feedback.");
+        addStudentAnswerToProblemAnswer(pa_7_2_5, sa7_2_5_student3);
+
+        StudentAnswer sa7_2_6_student3 = createStudentAnswer(student3, pa_7_2_6, "A Sprint is a fixed-length time period, typically 1-4 weeks, for completing a specific set of work items.");
+        addStudentAnswerToProblemAnswer(pa_7_2_6, sa7_2_6_student3);
+
+        StudentAnswer sa7_2_7_student3 = createStudentAnswer(student3, pa_7_2_7, "The Scrum Master facilitates the Scrum process, removes impediments, and coaches the development team.");
+        addStudentAnswerToProblemAnswer(pa_7_2_7, sa7_2_7_student3);
+
+        StudentAnswer sa7_2_8_student3 = createStudentAnswer(student3, pa_7_2_8, "The Product Owner defines and prioritizes the product backlog, acting as a liaison between stakeholders and the development team.");
+        addStudentAnswerToProblemAnswer(pa_7_2_8, sa7_2_8_student3);
+
+        StudentAnswer sa7_2_9_student3 = createStudentAnswer(student3, pa_7_2_9, "A user story is a concise description of a feature from the end-user's perspective, typically following: 'As a user, I want to [goal] so that [reason].'");
+        addStudentAnswerToProblemAnswer(pa_7_2_9, sa7_2_9_student3);
+
+        StudentAnswer sa7_2_10_student3 = createStudentAnswer(student3, pa_7_2_10, "Kanban focuses on continuous delivery and flow, while Scrum emphasizes iterative development through Sprints.");
+        addStudentAnswerToProblemAnswer(pa_7_2_10, sa7_2_10_student3);
+// Creating StudentAnswer instances for student4
+        StudentAnswer sa7_2_1_student4 = createStudentAnswer(student4, pa_7_2_1, "Agile is an iterative approach that emphasizes flexibility, collaboration, and customer feedback.");
+        addStudentAnswerToProblemAnswer(pa_7_2_1, sa7_2_1_student4);
+
+        StudentAnswer sa7_2_2_student4 = createStudentAnswer(student4, pa_7_2_2, "Core principles of Agile: (1) Customer satisfaction, (2) Welcoming changes, (3) Frequent delivery, (4) Collaboration, (5) Motivated individuals, (6) Face-to-face communication, (7) Working software, (8) Sustainable development, (9) Technical excellence, (10) Simplicity, (11) Self-organizing teams, (12) Regular reflection.");
+        addStudentAnswerToProblemAnswer(pa_7_2_2, sa7_2_2_student4);
+
+        StudentAnswer sa7_2_3_student4 = createStudentAnswer(student4, pa_7_2_3, "Scrum is an Agile framework with roles like Scrum Master and Product Owner, and ceremonies like Sprint Planning and Daily Stand-ups.");
+        addStudentAnswerToProblemAnswer(pa_7_2_3, sa7_2_3_student4);
+
+        StudentAnswer sa7_2_4_student4 = createStudentAnswer(student4, pa_7_2_4, "Kanban focuses on visualizing work, limiting work in progress, and improving flow using a Kanban board.");
+        addStudentAnswerToProblemAnswer(pa_7_2_4, sa7_2_4_student4);
+
+        StudentAnswer sa7_2_5_student4 = createStudentAnswer(student4, pa_7_2_5, "Agile handles changing requirements by embracing change and enabling teams to respond to new information and customer feedback.");
+        addStudentAnswerToProblemAnswer(pa_7_2_5, sa7_2_5_student4);
+
+        StudentAnswer sa7_2_6_student4 = createStudentAnswer(student4, pa_7_2_6, "A Sprint is a fixed-length time period, typically 1-4 weeks, for completing a specific set of work items.");
+        addStudentAnswerToProblemAnswer(pa_7_2_6, sa7_2_6_student4);
+
+        StudentAnswer sa7_2_7_student4 = createStudentAnswer(student4, pa_7_2_7, "The Scrum Master facilitates the Scrum process, removes impediments, and coaches the development team.");
+        addStudentAnswerToProblemAnswer(pa_7_2_7, sa7_2_7_student4);
+
+        StudentAnswer sa7_2_8_student4 = createStudentAnswer(student4, pa_7_2_8, "The Product Owner defines and prioritizes the product backlog, acting as a liaison between stakeholders and the development team.");
+        addStudentAnswerToProblemAnswer(pa_7_2_8, sa7_2_8_student4);
+
+        StudentAnswer sa7_2_9_student4 = createStudentAnswer(student4, pa_7_2_9, "A user story is a concise description of a feature from the end-user's perspective, typically following: 'As a user, I want to [goal] so that [reason].'");
+        addStudentAnswerToProblemAnswer(pa_7_2_9, sa7_2_9_student4);
+
+        StudentAnswer sa7_2_10_student4 = createStudentAnswer(student4, pa_7_2_10, "Kanban focuses on continuous delivery and flow, while Scrum emphasizes iterative development through Sprints.");
+        addStudentAnswerToProblemAnswer(pa_7_2_10, sa7_2_10_student4);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment7_2.");
+// Creating StudentAnswer instances for student3
+        StudentAnswer sa7_3_1_student3 = createStudentAnswer(student3, pa_7_3_1, "The Waterfall model is a linear and sequential approach to software development.");
+        addStudentAnswerToProblemAnswer(pa_7_3_1, sa7_3_1_student3);
+
+        StudentAnswer sa7_3_2_student3 = createStudentAnswer(student3, pa_7_3_2, "The phases of the Waterfall model include: requirements analysis, system design, implementation, testing, deployment, and maintenance.");
+        addStudentAnswerToProblemAnswer(pa_7_3_2, sa7_3_2_student3);
+
+        StudentAnswer sa7_3_3_student3 = createStudentAnswer(student3, pa_7_3_3, "The purpose of the requirements analysis phase is to gather and define the functional and non-functional requirements.");
+        addStudentAnswerToProblemAnswer(pa_7_3_3, sa7_3_3_student3);
+
+        StudentAnswer sa7_3_4_student3 = createStudentAnswer(student3, pa_7_3_4, "The purpose of the system design phase is to create a detailed design of the software based on the requirements specification.");
+        addStudentAnswerToProblemAnswer(pa_7_3_4, sa7_3_4_student3);
+
+        StudentAnswer sa7_3_5_student3 = createStudentAnswer(student3, pa_7_3_5, "The purpose of the implementation phase is to develop the actual code for the software based on the design specifications.");
+        addStudentAnswerToProblemAnswer(pa_7_3_5, sa7_3_5_student3);
+
+        StudentAnswer sa7_3_6_student3 = createStudentAnswer(student3, pa_7_3_6, "The purpose of the testing phase is to verify and validate that the software meets the requirements and functions as expected.");
+        addStudentAnswerToProblemAnswer(pa_7_3_6, sa7_3_6_student3);
+
+        StudentAnswer sa7_3_7_student3 = createStudentAnswer(student3, pa_7_3_7, "The purpose of the deployment phase is to release the software to end-users and ensure it is properly installed and configured.");
+        addStudentAnswerToProblemAnswer(pa_7_3_7, sa7_3_7_student3);
+
+        StudentAnswer sa7_3_8_student3 = createStudentAnswer(student3, pa_7_3_8, "The purpose of the maintenance phase is to provide ongoing support and updates after deployment.");
+        addStudentAnswerToProblemAnswer(pa_7_3_8, sa7_3_8_student3);
+
+        StudentAnswer sa7_3_9_student3 = createStudentAnswer(student3, pa_7_3_9, "Advantages: (1) Clear and structured phases, (2) Easy to manage, (3) Well-documented requirements and design, (4) Suitable for well-defined projects.");
+        addStudentAnswerToProblemAnswer(pa_7_3_9, sa7_3_9_student3);
+
+        StudentAnswer sa7_3_10_student3 = createStudentAnswer(student3, pa_7_3_10, "Disadvantages: (1) Inflexibility to changes, (2) Late testing, (3) Limited customer feedback, (4) Not suitable for complex projects.");
+        addStudentAnswerToProblemAnswer(pa_7_3_10, sa7_3_10_student3);
+// Creating StudentAnswer instances for student4
+        StudentAnswer sa7_3_1_student4 = createStudentAnswer(student4, pa_7_3_1, "The Waterfall model is a linear and sequential approach to software development.");
+        addStudentAnswerToProblemAnswer(pa_7_3_1, sa7_3_1_student4);
+
+        StudentAnswer sa7_3_2_student4 = createStudentAnswer(student4, pa_7_3_2, "The phases of the Waterfall model include: requirements analysis, system design, implementation, testing, deployment, and maintenance.");
+        addStudentAnswerToProblemAnswer(pa_7_3_2, sa7_3_2_student4);
+
+        StudentAnswer sa7_3_3_student4 = createStudentAnswer(student4, pa_7_3_3, "The purpose of the requirements analysis phase is to gather and define the functional and non-functional requirements.");
+        addStudentAnswerToProblemAnswer(pa_7_3_3, sa7_3_3_student4);
+
+        StudentAnswer sa7_3_4_student4 = createStudentAnswer(student4, pa_7_3_4, "The purpose of the system design phase is to create a detailed design of the software based on the requirements specification.");
+        addStudentAnswerToProblemAnswer(pa_7_3_4, sa7_3_4_student4);
+
+        StudentAnswer sa7_3_5_student4 = createStudentAnswer(student4, pa_7_3_5, "The purpose of the implementation phase is to develop the actual code for the software based on the design specifications.");
+        addStudentAnswerToProblemAnswer(pa_7_3_5, sa7_3_5_student4);
+
+        StudentAnswer sa7_3_6_student4 = createStudentAnswer(student4, pa_7_3_6, "The purpose of the testing phase is to verify and validate that the software meets the requirements and functions as expected.");
+        addStudentAnswerToProblemAnswer(pa_7_3_6, sa7_3_6_student4);
+
+        StudentAnswer sa7_3_7_student4 = createStudentAnswer(student4, pa_7_3_7, "The purpose of the deployment phase is to release the software to end-users and ensure it is properly installed and configured.");
+        addStudentAnswerToProblemAnswer(pa_7_3_7, sa7_3_7_student4);
+
+        StudentAnswer sa7_3_8_student4 = createStudentAnswer(student4, pa_7_3_8, "The purpose of the maintenance phase is to provide ongoing support and updates after deployment.");
+        addStudentAnswerToProblemAnswer(pa_7_3_8, sa7_3_8_student4);
+
+        StudentAnswer sa7_3_9_student4 = createStudentAnswer(student4, pa_7_3_9, "Advantages: (1) Clear and structured phases, (2) Easy to manage, (3) Well-documented requirements and design, (4) Suitable for well-defined projects.");
+        addStudentAnswerToProblemAnswer(pa_7_3_9, sa7_3_9_student4);
+
+        StudentAnswer sa7_3_10_student4 = createStudentAnswer(student4, pa_7_3_10, "Disadvantages: (1) Inflexibility to changes, (2) Late testing, (3) Limited customer feedback, (4) Not suitable for complex projects.");
+        addStudentAnswerToProblemAnswer(pa_7_3_10, sa7_3_10_student4);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment7_3.");
+// Creating StudentAnswer instances for student3
+        StudentAnswer sa7_4_1_student3 = createStudentAnswer(student3, pa_7_4_1, "Project management involves planning, organizing, and managing resources to achieve specific goals and complete projects efficiently.");
+        addStudentAnswerToProblemAnswer(pa_7_4_1, sa7_4_1_student3);
+
+        StudentAnswer sa7_4_2_student3 = createStudentAnswer(student3, pa_7_4_2, "Key phases: (1) Initiation, (2) Planning, (3) Execution, (4) Monitoring and Controlling, and (5) Closure.");
+        addStudentAnswerToProblemAnswer(pa_7_4_2, sa7_4_2_student3);
+
+        StudentAnswer sa7_4_3_student3 = createStudentAnswer(student3, pa_7_4_3, "Project planning defines scope, objectives, deliverables, timelines, and resource requirements.");
+        addStudentAnswerToProblemAnswer(pa_7_4_3, sa7_4_3_student3);
+
+        StudentAnswer sa7_4_4_student3 = createStudentAnswer(student3, pa_7_4_4, "Project scheduling creates a timeline for tasks and activities, determining dates, dependencies, milestones, and resource allocation.");
+        addStudentAnswerToProblemAnswer(pa_7_4_4, sa7_4_4_student3);
+
+        StudentAnswer sa7_4_5_student3 = createStudentAnswer(student3, pa_7_4_5, "Resource management identifies, allocates, and manages resources needed for a project.");
+        addStudentAnswerToProblemAnswer(pa_7_4_5, sa7_4_5_student3);
+
+        StudentAnswer sa7_4_6_student3 = createStudentAnswer(student3, pa_7_4_6, "Risk management identifies, assesses, and mitigates potential risks to the project's success.");
+        addStudentAnswerToProblemAnswer(pa_7_4_6, sa7_4_6_student3);
+
+        StudentAnswer sa7_4_7_student3 = createStudentAnswer(student3, pa_7_4_7, "Quality assurance ensures that deliverables meet required standards and specifications.");
+        addStudentAnswerToProblemAnswer(pa_7_4_7, sa7_4_7_student3);
+
+        StudentAnswer sa7_4_8_student3 = createStudentAnswer(student3, pa_7_4_8, "Common tools: Gantt charts, project management software (e.g., Microsoft Project, Trello, Asana), WBS, and CPM charts.");
+        addStudentAnswerToProblemAnswer(pa_7_4_8, sa7_4_8_student3);
+
+        StudentAnswer sa7_4_9_student3 = createStudentAnswer(student3, pa_7_4_9, "The project manager plans, executes, and closes projects, managing the team, resources, schedule, budget, and risks.");
+        addStudentAnswerToProblemAnswer(pa_7_4_9, sa7_4_9_student3);
+
+        StudentAnswer sa7_4_10_student3 = createStudentAnswer(student3, pa_7_4_10, "Communication ensures that all stakeholders are informed and aligned, sharing updates, addressing issues, and facilitating collaboration.");
+        addStudentAnswerToProblemAnswer(pa_7_4_10, sa7_4_10_student3);
+// Creating StudentAnswer instances for student4
+        StudentAnswer sa7_4_1_student4 = createStudentAnswer(student4, pa_7_4_1, "Project management involves planning, organizing, and managing resources to achieve specific goals and complete projects efficiently.");
+        addStudentAnswerToProblemAnswer(pa_7_4_1, sa7_4_1_student4);
+
+        StudentAnswer sa7_4_2_student4 = createStudentAnswer(student4, pa_7_4_2, "Key phases: (1) Initiation, (2) Planning, (3) Execution, (4) Monitoring and Controlling, and (5) Closure.");
+        addStudentAnswerToProblemAnswer(pa_7_4_2, sa7_4_2_student4);
+
+        StudentAnswer sa7_4_3_student4 = createStudentAnswer(student4, pa_7_4_3, "Project planning defines scope, objectives, deliverables, timelines, and resource requirements.");
+        addStudentAnswerToProblemAnswer(pa_7_4_3, sa7_4_3_student4);
+
+        StudentAnswer sa7_4_4_student4 = createStudentAnswer(student4, pa_7_4_4, "Project scheduling creates a timeline for tasks and activities, determining dates, dependencies, milestones, and resource allocation.");
+        addStudentAnswerToProblemAnswer(pa_7_4_4, sa7_4_4_student4);
+
+        StudentAnswer sa7_4_5_student4 = createStudentAnswer(student4, pa_7_4_5, "Resource management identifies, allocates, and manages resources needed for a project.");
+        addStudentAnswerToProblemAnswer(pa_7_4_5, sa7_4_5_student4);
+
+        StudentAnswer sa7_4_6_student4 = createStudentAnswer(student4, pa_7_4_6, "Risk management identifies, assesses, and mitigates potential risks to the project's success.");
+        addStudentAnswerToProblemAnswer(pa_7_4_6, sa7_4_6_student4);
+
+        StudentAnswer sa7_4_7_student4 = createStudentAnswer(student4, pa_7_4_7, "Quality assurance ensures that deliverables meet required standards and specifications.");
+        addStudentAnswerToProblemAnswer(pa_7_4_7, sa7_4_7_student4);
+
+        StudentAnswer sa7_4_8_student4 = createStudentAnswer(student4, pa_7_4_8, "Common tools: Gantt charts, project management software (e.g., Microsoft Project, Trello, Asana), WBS, and CPM charts.");
+        addStudentAnswerToProblemAnswer(pa_7_4_8, sa7_4_8_student4);
+
+        StudentAnswer sa7_4_9_student4 = createStudentAnswer(student4, pa_7_4_9, "The project manager plans, executes, and closes projects, managing the team, resources, schedule, budget, and risks.");
+        addStudentAnswerToProblemAnswer(pa_7_4_9, sa7_4_9_student4);
+
+        StudentAnswer sa7_4_10_student4 = createStudentAnswer(student4, pa_7_4_10, "Communication ensures that all stakeholders are informed and aligned, sharing updates, addressing issues, and facilitating collaboration.");
+        addStudentAnswerToProblemAnswer(pa_7_4_10, sa7_4_10_student4);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment7_4.");
+// Creating StudentAnswer instances for student3
+        StudentAnswer sa8_1_1_student3 = createStudentAnswer(student3, pa_8_1_1, "HTML is the standard language for creating web pages, defining structure and content using tags and attributes.");
+        addStudentAnswerToProblemAnswer(pa_8_1_1, sa8_1_1_student3);
+
+        StudentAnswer sa8_1_2_student3 = createStudentAnswer(student3, pa_8_1_2, "HTML tags are the building blocks of HTML, defining and structuring content within angle brackets.");
+        addStudentAnswerToProblemAnswer(pa_8_1_2, sa8_1_2_student3);
+
+        StudentAnswer sa8_1_3_student3 = createStudentAnswer(student3, pa_8_1_3, "An HTML attribute provides additional information about an element, specified within the opening tag as name/value pairs.");
+        addStudentAnswerToProblemAnswer(pa_8_1_3, sa8_1_3_student3);
+
+        StudentAnswer sa8_1_4_student3 = createStudentAnswer(student3, pa_8_1_4, "The <head> tag contains meta-information about the document, such as title, character set, and links to stylesheets or scripts.");
+        addStudentAnswerToProblemAnswer(pa_8_1_4, sa8_1_4_student3);
+
+        StudentAnswer sa8_1_5_student3 = createStudentAnswer(student3, pa_8_1_5, "The <body> tag contains the content of the web page, such as text, images, links, and other elements.");
+        addStudentAnswerToProblemAnswer(pa_8_1_5, sa8_1_5_student3);
+
+        StudentAnswer sa8_1_6_student3 = createStudentAnswer(student3, pa_8_1_6, "An HTML element is a piece of content defined by a start tag, its content, and an end tag.");
+        addStudentAnswerToProblemAnswer(pa_8_1_6, sa8_1_6_student3);
+
+        StudentAnswer sa8_1_7_student3 = createStudentAnswer(student3, pa_8_1_7, "To create a hyperlink, use the <a> tag with the href attribute, e.g., <a href=\"https://example.com\">Visit Example</a>.");
+        addStudentAnswerToProblemAnswer(pa_8_1_7, sa8_1_7_student3);
+
+        StudentAnswer sa8_1_8_student3 = createStudentAnswer(student3, pa_8_1_8, "To insert an image, use the <img> tag with the src attribute, e.g., <img src=\"image.jpg\" alt=\"Description of the image\">.");
+        addStudentAnswerToProblemAnswer(pa_8_1_8, sa8_1_8_student3);
+
+        StudentAnswer sa8_1_9_student3 = createStudentAnswer(student3, pa_8_1_9, "An HTML list is a collection of related items, either ordered (<ol>) or unordered (<ul>), with items defined by <li>.");
+        addStudentAnswerToProblemAnswer(pa_8_1_9, sa8_1_9_student3);
+
+        StudentAnswer sa8_1_10_student3 = createStudentAnswer(student3, pa_8_1_10, "The <div> tag is a container used to group elements and apply styles or layout controls.");
+        addStudentAnswerToProblemAnswer(pa_8_1_10, sa8_1_10_student3);
+// Creating StudentAnswer instances for student4
+        StudentAnswer sa8_1_1_student4 = createStudentAnswer(student4, pa_8_1_1, "HTML is the standard language for creating web pages, defining structure and content using tags and attributes.");
+        addStudentAnswerToProblemAnswer(pa_8_1_1, sa8_1_1_student4);
+
+        StudentAnswer sa8_1_2_student4 = createStudentAnswer(student4, pa_8_1_2, "HTML tags are the building blocks of HTML, defining and structuring content within angle brackets.");
+        addStudentAnswerToProblemAnswer(pa_8_1_2, sa8_1_2_student4);
+
+        StudentAnswer sa8_1_3_student4 = createStudentAnswer(student4, pa_8_1_3, "An HTML attribute provides additional information about an element, specified within the opening tag as name/value pairs.");
+        addStudentAnswerToProblemAnswer(pa_8_1_3, sa8_1_3_student4);
+
+        StudentAnswer sa8_1_4_student4 = createStudentAnswer(student4, pa_8_1_4, "The <head> tag contains meta-information about the document, such as title, character set, and links to stylesheets or scripts.");
+        addStudentAnswerToProblemAnswer(pa_8_1_4, sa8_1_4_student4);
+
+        StudentAnswer sa8_1_5_student4 = createStudentAnswer(student4, pa_8_1_5, "The <body> tag contains the content of the web page, such as text, images, links, and other elements.");
+        addStudentAnswerToProblemAnswer(pa_8_1_5, sa8_1_5_student4);
+
+        StudentAnswer sa8_1_6_student4 = createStudentAnswer(student4, pa_8_1_6, "An HTML element is a piece of content defined by a start tag, its content, and an end tag.");
+        addStudentAnswerToProblemAnswer(pa_8_1_6, sa8_1_6_student4);
+
+        StudentAnswer sa8_1_7_student4 = createStudentAnswer(student4, pa_8_1_7, "To create a hyperlink, use the <a> tag with the href attribute, e.g., <a href=\"https://example.com\">Visit Example</a>.");
+        addStudentAnswerToProblemAnswer(pa_8_1_7, sa8_1_7_student4);
+
+        StudentAnswer sa8_1_8_student4 = createStudentAnswer(student4, pa_8_1_8, "To insert an image, use the <img> tag with the src attribute, e.g., <img src=\"image.jpg\" alt=\"Description of the image\">.");
+        addStudentAnswerToProblemAnswer(pa_8_1_8, sa8_1_8_student4);
+
+        StudentAnswer sa8_1_9_student4 = createStudentAnswer(student4, pa_8_1_9, "An HTML list is a collection of related items, either ordered (<ol>) or unordered (<ul>), with items defined by <li>.");
+        addStudentAnswerToProblemAnswer(pa_8_1_9, sa8_1_9_student4);
+
+        StudentAnswer sa8_1_10_student4 = createStudentAnswer(student4, pa_8_1_10, "The <div> tag is a container used to group elements and apply styles or layout controls.");
+        addStudentAnswerToProblemAnswer(pa_8_1_10, sa8_1_10_student4);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment8_1.");
+// Creating StudentAnswer instances for student3
+        StudentAnswer sa8_2_1_student3 = createStudentAnswer(student3, pa_8_2_1, "CSS is a language used to style HTML documents, controlling layout, colors, fonts, and visual presentation.");
+        addStudentAnswerToProblemAnswer(pa_8_2_1, sa8_2_1_student3);
+
+        StudentAnswer sa8_2_2_student3 = createStudentAnswer(student3, pa_8_2_2, "To link a CSS file to an HTML document, use the <link> tag within the <head> section, e.g., <link rel=\"stylesheet\" href=\"styles.css\">.");
+        addStudentAnswerToProblemAnswer(pa_8_2_2, sa8_2_2_student3);
+
+        StudentAnswer sa8_2_3_student3 = createStudentAnswer(student3, pa_8_2_3, "The CSS box model describes the rectangular boxes generated for elements, including the content, padding, border, and margin areas.");
+        addStudentAnswerToProblemAnswer(pa_8_2_3, sa8_2_3_student3);
+
+        StudentAnswer sa8_2_4_student3 = createStudentAnswer(student3, pa_8_2_4, "Styles can be applied to HTML elements using selectors in a CSS file, e.g., p { color: blue; font-size: 16px; }.");
+        addStudentAnswerToProblemAnswer(pa_8_2_4, sa8_2_4_student3);
+
+        StudentAnswer sa8_2_5_student3 = createStudentAnswer(student3, pa_8_2_5, "CSS selectors are patterns used to select and style specific elements on a web page, such as element, class, ID, and attribute selectors.");
+        addStudentAnswerToProblemAnswer(pa_8_2_5, sa8_2_5_student3);
+
+        StudentAnswer sa8_2_6_student3 = createStudentAnswer(student3, pa_8_2_6, "To create a class in CSS, use the class selector (.) followed by the class name, e.g., .exampleClass { color: red; background-color: yellow; }.");
+        addStudentAnswerToProblemAnswer(pa_8_2_6, sa8_2_6_student3);
+
+        StudentAnswer sa8_2_7_student3 = createStudentAnswer(student3, pa_8_2_7, "A CSS ID selector uses the ID attribute of an HTML element to select and style a specific element, e.g., #exampleID { color: green; font-weight: bold; }.");
+        addStudentAnswerToProblemAnswer(pa_8_2_7, sa8_2_7_student3);
+
+        StudentAnswer sa8_2_8_student3 = createStudentAnswer(student3, pa_8_2_8, "Inline CSS is applied directly within an HTML element; internal CSS is within the <style> tag in the <head> section; external CSS is in a separate .css file linked with the <link> tag.");
+        addStudentAnswerToProblemAnswer(pa_8_2_8, sa8_2_8_student3);
+
+        StudentAnswer sa8_2_9_student3 = createStudentAnswer(student3, pa_8_2_9, "To make a web page responsive, use media queries in CSS to apply different styles based on screen size and device type, e.g., @media (max-width: 600px) { body { background-color: lightblue; } }.");
+        addStudentAnswerToProblemAnswer(pa_8_2_9, sa8_2_9_student3);
+
+        StudentAnswer sa8_2_10_student3 = createStudentAnswer(student3, pa_8_2_10, "CSS frameworks are pre-prepared libraries that make it easier to create responsive and visually appealing designs, e.g., Bootstrap, Foundation, Bulma.");
+        addStudentAnswerToProblemAnswer(pa_8_2_10, sa8_2_10_student3);
+// Creating StudentAnswer instances for student4
+        StudentAnswer sa8_2_1_student4 = createStudentAnswer(student4, pa_8_2_1, "CSS is a language used to style HTML documents, controlling layout, colors, fonts, and visual presentation.");
+        addStudentAnswerToProblemAnswer(pa_8_2_1, sa8_2_1_student4);
+
+        StudentAnswer sa8_2_2_student4 = createStudentAnswer(student4, pa_8_2_2, "To link a CSS file to an HTML document, use the <link> tag within the <head> section, e.g., <link rel=\"stylesheet\" href=\"styles.css\">.");
+        addStudentAnswerToProblemAnswer(pa_8_2_2, sa8_2_2_student4);
+
+        StudentAnswer sa8_2_3_student4 = createStudentAnswer(student4, pa_8_2_3, "The CSS box model describes the rectangular boxes generated for elements, including the content, padding, border, and margin areas.");
+        addStudentAnswerToProblemAnswer(pa_8_2_3, sa8_2_3_student4);
+
+        StudentAnswer sa8_2_4_student4 = createStudentAnswer(student4, pa_8_2_4, "Styles can be applied to HTML elements using selectors in a CSS file, e.g., p { color: blue; font-size: 16px; }.");
+        addStudentAnswerToProblemAnswer(pa_8_2_4, sa8_2_4_student4);
+
+        StudentAnswer sa8_2_5_student4 = createStudentAnswer(student4, pa_8_2_5, "CSS selectors are patterns used to select and style specific elements on a web page, such as element, class, ID, and attribute selectors.");
+        addStudentAnswerToProblemAnswer(pa_8_2_5, sa8_2_5_student4);
+
+        StudentAnswer sa8_2_6_student4 = createStudentAnswer(student4, pa_8_2_6, "To create a class in CSS, use the class selector (.) followed by the class name, e.g., .exampleClass { color: red; background-color: yellow; }.");
+        addStudentAnswerToProblemAnswer(pa_8_2_6, sa8_2_6_student4);
+
+        StudentAnswer sa8_2_7_student4 = createStudentAnswer(student4, pa_8_2_7, "A CSS ID selector uses the ID attribute of an HTML element to select and style a specific element, e.g., #exampleID { color: green; font-weight: bold; }.");
+        addStudentAnswerToProblemAnswer(pa_8_2_7, sa8_2_7_student4);
+
+        StudentAnswer sa8_2_8_student4 = createStudentAnswer(student4, pa_8_2_8, "Inline CSS is applied directly within an HTML element; internal CSS is within the <style> tag in the <head> section; external CSS is in a separate .css file linked with the <link> tag.");
+        addStudentAnswerToProblemAnswer(pa_8_2_8, sa8_2_8_student4);
+
+        StudentAnswer sa8_2_9_student4 = createStudentAnswer(student4, pa_8_2_9, "To make a web page responsive, use media queries in CSS to apply different styles based on screen size and device type, e.g., @media (max-width: 600px) { body { background-color: lightblue; } }.");
+        addStudentAnswerToProblemAnswer(pa_8_2_9, sa8_2_9_student4);
+
+        StudentAnswer sa8_2_10_student4 = createStudentAnswer(student4, pa_8_2_10, "CSS frameworks are pre-prepared libraries that make it easier to create responsive and visually appealing designs, e.g., Bootstrap, Foundation, Bulma.");
+        addStudentAnswerToProblemAnswer(pa_8_2_10, sa8_2_10_student4);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment8_2.");
+// Creating StudentAnswer instances for student3
+        StudentAnswer sa8_3_1_student3 = createStudentAnswer(student3, pa_8_3_1, "JavaScript is a programming language for creating interactive and dynamic web content.");
+        addStudentAnswerToProblemAnswer(pa_8_3_1, sa8_3_1_student3);
+
+        StudentAnswer sa8_3_2_student3 = createStudentAnswer(student3, pa_8_3_2, "To include JavaScript in an HTML document, use the <script> tag, e.g., <script src=\"script.js\"></script> for an external script.");
+        addStudentAnswerToProblemAnswer(pa_8_3_2, sa8_3_2_student3);
+
+        StudentAnswer sa8_3_3_student3 = createStudentAnswer(student3, pa_8_3_3, "The DOM is a programming interface for HTML and XML documents, representing the structure as a tree of objects.");
+        addStudentAnswerToProblemAnswer(pa_8_3_3, sa8_3_3_student3);
+
+        StudentAnswer sa8_3_4_student3 = createStudentAnswer(student3, pa_8_3_4, "Select an HTML element using methods like getElementById, getElementsByClassName, querySelector, e.g., document.getElementById('elementID');");
+        addStudentAnswerToProblemAnswer(pa_8_3_4, sa8_3_4_student3);
+
+        StudentAnswer sa8_3_5_student3 = createStudentAnswer(student3, pa_8_3_5, "Handle events by adding event listeners to elements, e.g., document.getElementById('button').addEventListener('click', function() { alert('Button clicked!'); });");
+        addStudentAnswerToProblemAnswer(pa_8_3_5, sa8_3_5_student3);
+
+        StudentAnswer sa8_3_6_student3 = createStudentAnswer(student3, pa_8_3_6, "An array holds multiple values and is defined using square brackets, e.g., let fruits = ['apple', 'banana', 'orange'];");
+        addStudentAnswerToProblemAnswer(pa_8_3_6, sa8_3_6_student3);
+
+        StudentAnswer sa8_3_7_student3 = createStudentAnswer(student3, pa_8_3_7, "Loop through an array using a for loop, forEach method, or other iteration methods, e.g., for (let i = 0; i < array.length; i++) { console.log(array[i]); }.");
+        addStudentAnswerToProblemAnswer(pa_8_3_7, sa8_3_7_student3);
+
+        StudentAnswer sa8_3_8_student3 = createStudentAnswer(student3, pa_8_3_8, "Manipulate the DOM by selecting elements and modifying properties, attributes, or styles, e.g., document.getElementById('elementID').style.color = 'red';");
+        addStudentAnswerToProblemAnswer(pa_8_3_8, sa8_3_8_student3);
+
+        StudentAnswer sa8_3_9_student3 = createStudentAnswer(student3, pa_8_3_9, "A function is a block of code designed to perform a task, defined using the function keyword, e.g., function greet() { console.log('Hello, World!'); }.");
+        addStudentAnswerToProblemAnswer(pa_8_3_9, sa8_3_9_student3);
+
+        StudentAnswer sa8_3_10_student3 = createStudentAnswer(student3, pa_8_3_10, "The let keyword declares a block-scoped variable, while var declares a function-scoped variable. let is preferred to prevent issues related to variable hoisting.");
+        addStudentAnswerToProblemAnswer(pa_8_3_10, sa8_3_10_student3);
+// Creating StudentAnswer instances for student4
+        StudentAnswer sa8_3_1_student4 = createStudentAnswer(student4, pa_8_3_1, "JavaScript is a programming language for creating interactive and dynamic web content.");
+        addStudentAnswerToProblemAnswer(pa_8_3_1, sa8_3_1_student4);
+
+        StudentAnswer sa8_3_2_student4 = createStudentAnswer(student4, pa_8_3_2, "To include JavaScript in an HTML document, use the <script> tag, e.g., <script src=\"script.js\"></script> for an external script.");
+        addStudentAnswerToProblemAnswer(pa_8_3_2, sa8_3_2_student4);
+
+        StudentAnswer sa8_3_3_student4 = createStudentAnswer(student4, pa_8_3_3, "The DOM is a programming interface for HTML and XML documents, representing the structure as a tree of objects.");
+        addStudentAnswerToProblemAnswer(pa_8_3_3, sa8_3_3_student4);
+
+        StudentAnswer sa8_3_4_student4 = createStudentAnswer(student4, pa_8_3_4, "Select an HTML element using methods like getElementById, getElementsByClassName, querySelector, e.g., document.getElementById('elementID');");
+        addStudentAnswerToProblemAnswer(pa_8_3_4, sa8_3_4_student4);
+
+        StudentAnswer sa8_3_5_student4 = createStudentAnswer(student4, pa_8_3_5, "Handle events by adding event listeners to elements, e.g., document.getElementById('button').addEventListener('click', function() { alert('Button clicked!'); });");
+        addStudentAnswerToProblemAnswer(pa_8_3_5, sa8_3_5_student4);
+
+        StudentAnswer sa8_3_6_student4 = createStudentAnswer(student4, pa_8_3_6, "An array holds multiple values and is defined using square brackets, e.g., let fruits = ['apple', 'banana', 'orange'];");
+        addStudentAnswerToProblemAnswer(pa_8_3_6, sa8_3_6_student4);
+
+        StudentAnswer sa8_3_7_student4 = createStudentAnswer(student4, pa_8_3_7, "Loop through an array using a for loop, forEach method, or other iteration methods, e.g., for (let i = 0; i < array.length; i++) { console.log(array[i]); }.");
+        addStudentAnswerToProblemAnswer(pa_8_3_7, sa8_3_7_student4);
+
+        StudentAnswer sa8_3_8_student4 = createStudentAnswer(student4, pa_8_3_8, "Manipulate the DOM by selecting elements and modifying properties, attributes, or styles, e.g., document.getElementById('elementID').style.color = 'red';");
+        addStudentAnswerToProblemAnswer(pa_8_3_8, sa8_3_8_student4);
+
+        StudentAnswer sa8_3_9_student4 = createStudentAnswer(student4, pa_8_3_9, "A function is a block of code designed to perform a task, defined using the function keyword, e.g., function greet() { console.log('Hello, World!'); }.");
+        addStudentAnswerToProblemAnswer(pa_8_3_9, sa8_3_9_student4);
+
+        StudentAnswer sa8_3_10_student4 = createStudentAnswer(student4, pa_8_3_10, "The let keyword declares a block-scoped variable, while var declares a function-scoped variable. let is preferred to prevent issues related to variable hoisting.");
+        addStudentAnswerToProblemAnswer(pa_8_3_10, sa8_3_10_student4);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment8_3.");
+// Creating StudentAnswer instances for student3
+        StudentAnswer sa8_4_1_student3 = createStudentAnswer(student3, pa_8_4_1, "React is a popular JavaScript library for building user interfaces, allowing the creation of reusable UI components.");
+        addStudentAnswerToProblemAnswer(pa_8_4_1, sa8_4_1_student3);
+
+        StudentAnswer sa8_4_2_student3 = createStudentAnswer(student3, pa_8_4_2, "React components are reusable pieces of UI in a React application, which can be functional or class-based.");
+        addStudentAnswerToProblemAnswer(pa_8_4_2, sa8_4_2_student3);
+
+        StudentAnswer sa8_4_3_student3 = createStudentAnswer(student3, pa_8_4_3, "JSX is a syntax extension for JavaScript that allows developers to write HTML-like code within their JavaScript.");
+        addStudentAnswerToProblemAnswer(pa_8_4_3, sa8_4_3_student3);
+
+        StudentAnswer sa8_4_4_student3 = createStudentAnswer(student3, pa_8_4_4, "State is an object that holds data that can change over time and affect the rendering of a component.");
+        addStudentAnswerToProblemAnswer(pa_8_4_4, sa8_4_4_student3);
+
+        StudentAnswer sa8_4_5_student3 = createStudentAnswer(student3, pa_8_4_5, "Props are read-only properties that allow data to be passed from parent components to child components.");
+        addStudentAnswerToProblemAnswer(pa_8_4_5, sa8_4_5_student3);
+
+        StudentAnswer sa8_4_6_student3 = createStudentAnswer(student3, pa_8_4_6, "Create a React component using a function or a class, e.g., function Welcome() { return <h1>Hello, World!</h1>; }.");
+        addStudentAnswerToProblemAnswer(pa_8_4_6, sa8_4_6_student3);
+
+        StudentAnswer sa8_4_7_student3 = createStudentAnswer(student3, pa_8_4_7, "The useEffect hook allows you to perform side effects in functional components, such as fetching data or updating the DOM.");
+        addStudentAnswerToProblemAnswer(pa_8_4_7, sa8_4_7_student3);
+
+        StudentAnswer sa8_4_8_student3 = createStudentAnswer(student3, pa_8_4_8, "The virtual DOM is a lightweight representation of the real DOM used by React to optimize rendering.");
+        addStudentAnswerToProblemAnswer(pa_8_4_8, sa8_4_8_student3);
+
+        StudentAnswer sa8_4_9_student3 = createStudentAnswer(student3, pa_8_4_9, "A single-page application (SPA) loads a single HTML page and dynamically updates the content as the user interacts with the app.");
+        addStudentAnswerToProblemAnswer(pa_8_4_9, sa8_4_9_student3);
+
+        StudentAnswer sa8_4_10_student3 = createStudentAnswer(student3, pa_8_4_10, "React hooks are functions that allow you to use state and other React features in functional components.");
+        addStudentAnswerToProblemAnswer(pa_8_4_10, sa8_4_10_student3);
+// Creating StudentAnswer instances for student4
+        StudentAnswer sa8_4_1_student4 = createStudentAnswer(student4, pa_8_4_1, "React is a popular JavaScript library for building user interfaces, allowing the creation of reusable UI components.");
+        addStudentAnswerToProblemAnswer(pa_8_4_1, sa8_4_1_student4);
+
+        StudentAnswer sa8_4_2_student4 = createStudentAnswer(student4, pa_8_4_2, "React components are reusable pieces of UI in a React application, which can be functional or class-based.");
+        addStudentAnswerToProblemAnswer(pa_8_4_2, sa8_4_2_student4);
+
+        StudentAnswer sa8_4_3_student4 = createStudentAnswer(student4, pa_8_4_3, "JSX is a syntax extension for JavaScript that allows developers to write HTML-like code within their JavaScript.");
+        addStudentAnswerToProblemAnswer(pa_8_4_3, sa8_4_3_student4);
+
+        StudentAnswer sa8_4_4_student4 = createStudentAnswer(student4, pa_8_4_4, "State is an object that holds data that can change over time and affect the rendering of a component.");
+        addStudentAnswerToProblemAnswer(pa_8_4_4, sa8_4_4_student4);
+
+        StudentAnswer sa8_4_5_student4 = createStudentAnswer(student4, pa_8_4_5, "Props are read-only properties that allow data to be passed from parent components to child components.");
+        addStudentAnswerToProblemAnswer(pa_8_4_5, sa8_4_5_student4);
+
+        StudentAnswer sa8_4_6_student4 = createStudentAnswer(student4, pa_8_4_6, "Create a React component using a function or a class, e.g., function Welcome() { return <h1>Hello, World!</h1>; }.");
+        addStudentAnswerToProblemAnswer(pa_8_4_6, sa8_4_6_student4);
+
+        StudentAnswer sa8_4_7_student4 = createStudentAnswer(student4, pa_8_4_7, "The useEffect hook allows you to perform side effects in functional components, such as fetching data or updating the DOM.");
+        addStudentAnswerToProblemAnswer(pa_8_4_7, sa8_4_7_student4);
+
+        StudentAnswer sa8_4_8_student4 = createStudentAnswer(student4, pa_8_4_8, "The virtual DOM is a lightweight representation of the real DOM used by React to optimize rendering.");
+        addStudentAnswerToProblemAnswer(pa_8_4_8, sa8_4_8_student4);
+
+        StudentAnswer sa8_4_9_student4 = createStudentAnswer(student4, pa_8_4_9, "A single-page application (SPA) loads a single HTML page and dynamically updates the content as the user interacts with the app.");
+        addStudentAnswerToProblemAnswer(pa_8_4_9, sa8_4_9_student4);
+
+        StudentAnswer sa8_4_10_student4 = createStudentAnswer(student4, pa_8_4_10, "React hooks are functions that allow you to use state and other React features in functional components.");
+        addStudentAnswerToProblemAnswer(pa_8_4_10, sa8_4_10_student4);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment8_4.");
+// Creating StudentAnswer instances for student3
+        StudentAnswer sa8_5_1_student3 = createStudentAnswer(student3, pa_8_5_1, "Backend integration connects front-end web applications with backend services for communication, data fetching, and server-side operations.");
+        addStudentAnswerToProblemAnswer(pa_8_5_1, sa8_5_1_student3);
+
+        StudentAnswer sa8_5_2_student3 = createStudentAnswer(student3, pa_8_5_2, "A RESTful API uses standard HTTP methods to interact with resources and perform CRUD operations.");
+        addStudentAnswerToProblemAnswer(pa_8_5_2, sa8_5_2_student3);
+
+        StudentAnswer sa8_5_3_student3 = createStudentAnswer(student3, pa_8_5_3, "Use JavaScript's Fetch API to fetch data from a RESTful API, e.g., fetch('https://api.example.com/data').then(response => response.json()).then(data => console.log(data));");
+        addStudentAnswerToProblemAnswer(pa_8_5_3, sa8_5_3_student3);
+
+        StudentAnswer sa8_5_4_student3 = createStudentAnswer(student3, pa_8_5_4, "Server-side rendering (SSR) renders web pages on the server to improve initial load time and SEO.");
+        addStudentAnswerToProblemAnswer(pa_8_5_4, sa8_5_4_student3);
+
+        StudentAnswer sa8_5_5_student3 = createStudentAnswer(student3, pa_8_5_5, "Client-side rendering (CSR) renders web pages in the browser; server-side rendering (SSR) renders web pages on the server for faster initial load times.");
+        addStudentAnswerToProblemAnswer(pa_8_5_5, sa8_5_5_student3);
+
+        StudentAnswer sa8_5_6_student3 = createStudentAnswer(student3, pa_8_5_6, "Authentication verifies the identity of users, using methods like session-based, token-based (e.g., JWT), and OAuth.");
+        addStudentAnswerToProblemAnswer(pa_8_5_6, sa8_5_6_student3);
+
+        StudentAnswer sa8_5_7_student3 = createStudentAnswer(student3, pa_8_5_7, "A database is a structured collection of data used to store, retrieve, and manipulate data in backend integration.");
+        addStudentAnswerToProblemAnswer(pa_8_5_7, sa8_5_7_student3);
+
+        StudentAnswer sa8_5_8_student3 = createStudentAnswer(student3, pa_8_5_8, "Common databases: relational (e.g., MySQL, PostgreSQL), NoSQL (e.g., MongoDB, CouchDB), and in-memory (e.g., Redis).");
+        addStudentAnswerToProblemAnswer(pa_8_5_8, sa8_5_8_student3);
+
+        StudentAnswer sa8_5_9_student3 = createStudentAnswer(student3, pa_8_5_9, "Middleware acts as an intermediary between the front end and backend services, handling request and response processing, authentication, and routing.");
+        addStudentAnswerToProblemAnswer(pa_8_5_9, sa8_5_9_student3);
+
+        StudentAnswer sa8_5_10_student3 = createStudentAnswer(student3, pa_8_5_10, "Testing backend integration includes unit tests, integration tests, and end-to-end tests to verify communication between the front end and backend services.");
+        addStudentAnswerToProblemAnswer(pa_8_5_10, sa8_5_10_student3);
+// Creating StudentAnswer instances for student4
+        StudentAnswer sa8_5_1_student4 = createStudentAnswer(student4, pa_8_5_1, "Backend integration connects front-end web applications with backend services for communication, data fetching, and server-side operations.");
+        addStudentAnswerToProblemAnswer(pa_8_5_1, sa8_5_1_student4);
+
+        StudentAnswer sa8_5_2_student4 = createStudentAnswer(student4, pa_8_5_2, "A RESTful API uses standard HTTP methods to interact with resources and perform CRUD operations.");
+        addStudentAnswerToProblemAnswer(pa_8_5_2, sa8_5_2_student4);
+
+        StudentAnswer sa8_5_3_student4 = createStudentAnswer(student4, pa_8_5_3, "Use JavaScript's Fetch API to fetch data from a RESTful API, e.g., fetch('https://api.example.com/data').then(response => response.json()).then(data => console.log(data));");
+        addStudentAnswerToProblemAnswer(pa_8_5_3, sa8_5_3_student4);
+
+        StudentAnswer sa8_5_4_student4 = createStudentAnswer(student4, pa_8_5_4, "Server-side rendering (SSR) renders web pages on the server to improve initial load time and SEO.");
+        addStudentAnswerToProblemAnswer(pa_8_5_4, sa8_5_4_student4);
+
+        StudentAnswer sa8_5_5_student4 = createStudentAnswer(student4, pa_8_5_5, "Client-side rendering (CSR) renders web pages in the browser; server-side rendering (SSR) renders web pages on the server for faster initial load times.");
+        addStudentAnswerToProblemAnswer(pa_8_5_5, sa8_5_5_student4);
+
+        StudentAnswer sa8_5_6_student4 = createStudentAnswer(student4, pa_8_5_6, "Authentication verifies the identity of users, using methods like session-based, token-based (e.g., JWT), and OAuth.");
+        addStudentAnswerToProblemAnswer(pa_8_5_6, sa8_5_6_student4);
+
+        StudentAnswer sa8_5_7_student4 = createStudentAnswer(student4, pa_8_5_7, "A database is a structured collection of data used to store, retrieve, and manipulate data in backend integration.");
+        addStudentAnswerToProblemAnswer(pa_8_5_7, sa8_5_7_student4);
+
+        StudentAnswer sa8_5_8_student4 = createStudentAnswer(student4, pa_8_5_8, "Common databases: relational (e.g., MySQL, PostgreSQL), NoSQL (e.g., MongoDB, CouchDB), and in-memory (e.g., Redis).");
+        addStudentAnswerToProblemAnswer(pa_8_5_8, sa8_5_8_student4);
+
+        StudentAnswer sa8_5_9_student4 = createStudentAnswer(student4, pa_8_5_9, "Middleware acts as an intermediary between the front end and backend services, handling request and response processing, authentication, and routing.");
+        addStudentAnswerToProblemAnswer(pa_8_5_9, sa8_5_9_student4);
+
+        StudentAnswer sa8_5_10_student4 = createStudentAnswer(student4, pa_8_5_10, "Testing backend integration includes unit tests, integration tests, and end-to-end tests to verify communication between the front end and backend services.");
+        addStudentAnswerToProblemAnswer(pa_8_5_10, sa8_5_10_student4);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment8_5.");
+// Creating StudentAnswer instances for student5
+        StudentAnswer sa9_1_1_student5 = createStudentAnswer(student5, pa_9_1_1, "Machine learning is a subset of AI that focuses on developing algorithms that enable computers to learn from and make predictions based on data.");
+        addStudentAnswerToProblemAnswer(pa_9_1_1, sa9_1_1_student5);
+
+        StudentAnswer sa9_1_2_student5 = createStudentAnswer(student5, pa_9_1_2, "Common machine learning techniques include supervised learning, unsupervised learning, reinforcement learning, and deep learning.");
+        addStudentAnswerToProblemAnswer(pa_9_1_2, sa9_1_2_student5);
+
+        StudentAnswer sa9_1_3_student5 = createStudentAnswer(student5, pa_9_1_3, "Supervised learning is a technique where the model is trained on labeled data, learning to make predictions based on input-output pairs.");
+        addStudentAnswerToProblemAnswer(pa_9_1_3, sa9_1_3_student5);
+
+        StudentAnswer sa9_1_4_student5 = createStudentAnswer(student5, pa_9_1_4, "Unsupervised learning is a technique where the model is trained on unlabeled data, learning to find patterns and relationships without explicit input-output pairs.");
+        addStudentAnswerToProblemAnswer(pa_9_1_4, sa9_1_4_student5);
+
+        StudentAnswer sa9_1_5_student5 = createStudentAnswer(student5, pa_9_1_5, "Reinforcement learning is a technique where the model learns to make decisions by interacting with an environment and receiving rewards or penalties.");
+        addStudentAnswerToProblemAnswer(pa_9_1_5, sa9_1_5_student5);
+
+        StudentAnswer sa9_1_6_student5 = createStudentAnswer(student5, pa_9_1_6, "Deep learning involves neural networks with many layers, learning complex patterns and representations from large amounts of data.");
+        addStudentAnswerToProblemAnswer(pa_9_1_6, sa9_1_6_student5);
+
+        StudentAnswer sa9_1_7_student5 = createStudentAnswer(student5, pa_9_1_7, "A training dataset is used to train a machine learning model, including input features and corresponding labels or outcomes.");
+        addStudentAnswerToProblemAnswer(pa_9_1_7, sa9_1_7_student5);
+
+        StudentAnswer sa9_1_8_student5 = createStudentAnswer(student5, pa_9_1_8, "A test dataset is used to evaluate the performance of a machine learning model, including input features and corresponding labels not seen during training.");
+        addStudentAnswerToProblemAnswer(pa_9_1_8, sa9_1_8_student5);
+
+        StudentAnswer sa9_1_9_student5 = createStudentAnswer(student5, pa_9_1_9, "Overfitting occurs when a model learns the training data too well, including noise and outliers, performing poorly on new data.");
+        addStudentAnswerToProblemAnswer(pa_9_1_9, sa9_1_9_student5);
+
+        StudentAnswer sa9_1_10_student5 = createStudentAnswer(student5, pa_9_1_10, "Cross-validation evaluates a model's performance by splitting the data into subsets, training and testing on different subsets to ensure generalization.");
+        addStudentAnswerToProblemAnswer(pa_9_1_10, sa9_1_10_student5);
+
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa9_1_1_student6 = createStudentAnswer(student6, pa_9_1_1, "Machine learning is a subset of AI that focuses on developing algorithms that enable computers to learn from and make predictions based on data.");
+        addStudentAnswerToProblemAnswer(pa_9_1_1, sa9_1_1_student6);
+
+        StudentAnswer sa9_1_2_student6 = createStudentAnswer(student6, pa_9_1_2, "Common machine learning techniques include supervised learning, unsupervised learning, reinforcement learning, and deep learning.");
+        addStudentAnswerToProblemAnswer(pa_9_1_2, sa9_1_2_student6);
+
+        StudentAnswer sa9_1_3_student6 = createStudentAnswer(student6, pa_9_1_3, "Supervised learning is a technique where the model is trained on labeled data, learning to make predictions based on input-output pairs.");
+        addStudentAnswerToProblemAnswer(pa_9_1_3, sa9_1_3_student6);
+
+        StudentAnswer sa9_1_4_student6 = createStudentAnswer(student6, pa_9_1_4, "Unsupervised learning is a technique where the model is trained on unlabeled data, learning to find patterns and relationships without explicit input-output pairs.");
+        addStudentAnswerToProblemAnswer(pa_9_1_4, sa9_1_4_student6);
+
+        StudentAnswer sa9_1_5_student6 = createStudentAnswer(student6, pa_9_1_5, "Reinforcement learning is a technique where the model learns to make decisions by interacting with an environment and receiving rewards or penalties.");
+        addStudentAnswerToProblemAnswer(pa_9_1_5, sa9_1_5_student6);
+
+        StudentAnswer sa9_1_6_student6 = createStudentAnswer(student6, pa_9_1_6, "Deep learning involves neural networks with many layers, learning complex patterns and representations from large amounts of data.");
+        addStudentAnswerToProblemAnswer(pa_9_1_6, sa9_1_6_student6);
+
+        StudentAnswer sa9_1_7_student6 = createStudentAnswer(student6, pa_9_1_7, "A training dataset is used to train a machine learning model, including input features and corresponding labels or outcomes.");
+        addStudentAnswerToProblemAnswer(pa_9_1_7, sa9_1_7_student6);
+
+        StudentAnswer sa9_1_8_student6 = createStudentAnswer(student6, pa_9_1_8, "A test dataset is used to evaluate the performance of a machine learning model, including input features and corresponding labels not seen during training.");
+        addStudentAnswerToProblemAnswer(pa_9_1_8, sa9_1_8_student6);
+
+        StudentAnswer sa9_1_9_student6 = createStudentAnswer(student6, pa_9_1_9, "Overfitting occurs when a model learns the training data too well, including noise and outliers, performing poorly on new data.");
+        addStudentAnswerToProblemAnswer(pa_9_1_9, sa9_1_9_student6);
+
+        StudentAnswer sa9_1_10_student6 = createStudentAnswer(student6, pa_9_1_10, "Cross-validation evaluates a model's performance by splitting the data into subsets, training and testing on different subsets to ensure generalization.");
+        addStudentAnswerToProblemAnswer(pa_9_1_10, sa9_1_10_student6);
+// Creating StudentAnswer instances for student5
+        StudentAnswer sa9_2_1_student5 = createStudentAnswer(student5, pa_9_2_1, "Neural networks are a set of algorithms modeled after the human brain, used to recognize patterns and make predictions based on data.");
+        addStudentAnswerToProblemAnswer(pa_9_2_1, sa9_2_1_student5);
+
+        StudentAnswer sa9_2_2_student5 = createStudentAnswer(student5, pa_9_2_2, "The basic architecture of a neural network consists of an input layer, hidden layers, and an output layer, with interconnected nodes (neurons).");
+        addStudentAnswerToProblemAnswer(pa_9_2_2, sa9_2_2_student5);
+
+        StudentAnswer sa9_2_3_student5 = createStudentAnswer(student5, pa_9_2_3, "Backpropagation is a training algorithm that minimizes error by adjusting the weights of the connections between neurons.");
+        addStudentAnswerToProblemAnswer(pa_9_2_3, sa9_2_3_student5);
+
+        StudentAnswer sa9_2_4_student5 = createStudentAnswer(student5, pa_9_2_4, "An activation function introduces non-linearity into the model, with common functions including ReLU, sigmoid, and tanh.");
+        addStudentAnswerToProblemAnswer(pa_9_2_4, sa9_2_4_student5);
+
+        StudentAnswer sa9_2_5_student5 = createStudentAnswer(student5, pa_9_2_5, "A feedforward neural network moves information in one direction, from the input layer to the output layer, without forming cycles.");
+        addStudentAnswerToProblemAnswer(pa_9_2_5, sa9_2_5_student5);
+
+        StudentAnswer sa9_2_6_student5 = createStudentAnswer(student5, pa_9_2_6, "A convolutional neural network (CNN) processes structured grid data, such as images, using convolutional layers to detect and learn features.");
+        addStudentAnswerToProblemAnswer(pa_9_2_6, sa9_2_6_student5);
+
+        StudentAnswer sa9_2_7_student5 = createStudentAnswer(student5, pa_9_2_7, "A recurrent neural network (RNN) processes sequential data, using feedback connections to maintain a memory of previous inputs.");
+        addStudentAnswerToProblemAnswer(pa_9_2_7, sa9_2_7_student5);
+
+        StudentAnswer sa9_2_8_student5 = createStudentAnswer(student5, pa_9_2_8, "Weights determine the strength of connections between neurons and are adjusted during training to minimize error.");
+        addStudentAnswerToProblemAnswer(pa_9_2_8, sa9_2_8_student5);
+
+        StudentAnswer sa9_2_9_student5 = createStudentAnswer(student5, pa_9_2_9, "Supervised learning trains neural networks on labeled data, while unsupervised learning trains them on unlabeled data to find patterns.");
+        addStudentAnswerToProblemAnswer(pa_9_2_9, sa9_2_9_student5);
+
+        StudentAnswer sa9_2_10_student5 = createStudentAnswer(student5, pa_9_2_10, "Overfitting occurs when a neural network learns training data too well, including noise and outliers, and performs poorly on new data.");
+        addStudentAnswerToProblemAnswer(pa_9_2_10, sa9_2_10_student5);
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa9_2_1_student6 = createStudentAnswer(student6, pa_9_2_1, "Neural networks are a set of algorithms modeled after the human brain, used to recognize patterns and make predictions based on data.");
+        addStudentAnswerToProblemAnswer(pa_9_2_1, sa9_2_1_student6);
+
+        StudentAnswer sa9_2_2_student6 = createStudentAnswer(student6, pa_9_2_2, "The basic architecture of a neural network consists of an input layer, hidden layers, and an output layer, with interconnected nodes (neurons).");
+        addStudentAnswerToProblemAnswer(pa_9_2_2, sa9_2_2_student6);
+
+        StudentAnswer sa9_2_3_student6 = createStudentAnswer(student6, pa_9_2_3, "Backpropagation is a training algorithm that minimizes error by adjusting the weights of the connections between neurons.");
+        addStudentAnswerToProblemAnswer(pa_9_2_3, sa9_2_3_student6);
+
+        StudentAnswer sa9_2_4_student6 = createStudentAnswer(student6, pa_9_2_4, "An activation function introduces non-linearity into the model, with common functions including ReLU, sigmoid, and tanh.");
+        addStudentAnswerToProblemAnswer(pa_9_2_4, sa9_2_4_student6);
+
+        StudentAnswer sa9_2_5_student6 = createStudentAnswer(student6, pa_9_2_5, "A feedforward neural network moves information in one direction, from the input layer to the output layer, without forming cycles.");
+        addStudentAnswerToProblemAnswer(pa_9_2_5, sa9_2_5_student6);
+
+        StudentAnswer sa9_2_6_student6 = createStudentAnswer(student6, pa_9_2_6, "A convolutional neural network (CNN) processes structured grid data, such as images, using convolutional layers to detect and learn features.");
+        addStudentAnswerToProblemAnswer(pa_9_2_6, sa9_2_6_student6);
+
+        StudentAnswer sa9_2_7_student6 = createStudentAnswer(student6, pa_9_2_7, "A recurrent neural network (RNN) processes sequential data, using feedback connections to maintain a memory of previous inputs.");
+        addStudentAnswerToProblemAnswer(pa_9_2_7, sa9_2_7_student6);
+
+        StudentAnswer sa9_2_8_student6 = createStudentAnswer(student6, pa_9_2_8, "Weights determine the strength of connections between neurons and are adjusted during training to minimize error.");
+        addStudentAnswerToProblemAnswer(pa_9_2_8, sa9_2_8_student6);
+
+        StudentAnswer sa9_2_9_student6 = createStudentAnswer(student6, pa_9_2_9, "Supervised learning trains neural networks on labeled data, while unsupervised learning trains them on unlabeled data to find patterns.");
+        addStudentAnswerToProblemAnswer(pa_9_2_9, sa9_2_9_student6);
+
+        StudentAnswer sa9_2_10_student6 = createStudentAnswer(student6, pa_9_2_10, "Overfitting occurs when a neural network learns training data too well, including noise and outliers, and performs poorly on new data.");
+        addStudentAnswerToProblemAnswer(pa_9_2_10, sa9_2_10_student6);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment9_2.");
+// Creating StudentAnswer instances for student5
+        StudentAnswer sa9_3_1_student5 = createStudentAnswer(student5, pa_9_3_1, "Natural language processing (NLP) is a field of AI that enables computers to understand, interpret, and generate human language.");
+        addStudentAnswerToProblemAnswer(pa_9_3_1, sa9_3_1_student5);
+
+        StudentAnswer sa9_3_2_student5 = createStudentAnswer(student5, pa_9_3_2, "Common applications of NLP include language translation, sentiment analysis, chatbots, speech recognition, and text summarization.");
+        addStudentAnswerToProblemAnswer(pa_9_3_2, sa9_3_2_student5);
+
+        StudentAnswer sa9_3_3_student5 = createStudentAnswer(student5, pa_9_3_3, "Tokenization is the process of breaking down a text into smaller units called tokens, which can be words, phrases, or sentences.");
+        addStudentAnswerToProblemAnswer(pa_9_3_3, sa9_3_3_student5);
+
+        StudentAnswer sa9_3_4_student5 = createStudentAnswer(student5, pa_9_3_4, "Sentiment analysis is an NLP technique used to determine the emotional tone of a piece of text, classifying it as positive, negative, or neutral.");
+        addStudentAnswerToProblemAnswer(pa_9_3_4, sa9_3_4_student5);
+
+        StudentAnswer sa9_3_5_student5 = createStudentAnswer(student5, pa_9_3_5, "Named entity recognition (NER) is an NLP technique used to identify and classify named entities in a text, such as names of people, organizations, and locations.");
+        addStudentAnswerToProblemAnswer(pa_9_3_5, sa9_3_5_student5);
+
+        StudentAnswer sa9_3_6_student5 = createStudentAnswer(student5, pa_9_3_6, "The bag-of-words model represents text data as a collection of individual words, disregarding grammar and word order, used for text classification and information retrieval.");
+        addStudentAnswerToProblemAnswer(pa_9_3_6, sa9_3_6_student5);
+
+        StudentAnswer sa9_3_7_student5 = createStudentAnswer(student5, pa_9_3_7, "TF-IDF (Term Frequency-Inverse Document Frequency) measures the importance of a word in a document relative to a collection of documents.");
+        addStudentAnswerToProblemAnswer(pa_9_3_7, sa9_3_7_student5);
+
+        StudentAnswer sa9_3_8_student5 = createStudentAnswer(student5, pa_9_3_8, "A language model is a probabilistic model used to predict the likelihood of a sequence of words, used in tasks like text generation and machine translation.");
+        addStudentAnswerToProblemAnswer(pa_9_3_8, sa9_3_8_student5);
+
+        StudentAnswer sa9_3_9_student5 = createStudentAnswer(student5, pa_9_3_9, "Preprocessing text data for NLP tasks involves tokenization, removing stop words, stemming, lemmatization, and converting text to lowercase.");
+        addStudentAnswerToProblemAnswer(pa_9_3_9, sa9_3_9_student5);
+
+        StudentAnswer sa9_3_10_student5 = createStudentAnswer(student5, pa_9_3_10, "Word embedding represents words as dense vectors in a continuous vector space, capturing semantic relationships based on context.");
+        addStudentAnswerToProblemAnswer(pa_9_3_10, sa9_3_10_student5);
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa9_3_1_student6 = createStudentAnswer(student6, pa_9_3_1, "Natural language processing (NLP) is a field of AI that enables computers to understand, interpret, and generate human language.");
+        addStudentAnswerToProblemAnswer(pa_9_3_1, sa9_3_1_student6);
+
+        StudentAnswer sa9_3_2_student6 = createStudentAnswer(student6, pa_9_3_2, "Common applications of NLP include language translation, sentiment analysis, chatbots, speech recognition, and text summarization.");
+        addStudentAnswerToProblemAnswer(pa_9_3_2, sa9_3_2_student6);
+
+        StudentAnswer sa9_3_3_student6 = createStudentAnswer(student6, pa_9_3_3, "Tokenization is the process of breaking down a text into smaller units called tokens, which can be words, phrases, or sentences.");
+        addStudentAnswerToProblemAnswer(pa_9_3_3, sa9_3_3_student6);
+
+        StudentAnswer sa9_3_4_student6 = createStudentAnswer(student6, pa_9_3_4, "Sentiment analysis is an NLP technique used to determine the emotional tone of a piece of text, classifying it as positive, negative, or neutral.");
+        addStudentAnswerToProblemAnswer(pa_9_3_4, sa9_3_4_student6);
+
+        StudentAnswer sa9_3_5_student6 = createStudentAnswer(student6, pa_9_3_5, "Named entity recognition (NER) is an NLP technique used to identify and classify named entities in a text, such as names of people, organizations, and locations.");
+        addStudentAnswerToProblemAnswer(pa_9_3_5, sa9_3_5_student6);
+
+        StudentAnswer sa9_3_6_student6 = createStudentAnswer(student6, pa_9_3_6, "The bag-of-words model represents text data as a collection of individual words, disregarding grammar and word order, used for text classification and information retrieval.");
+        addStudentAnswerToProblemAnswer(pa_9_3_6, sa9_3_6_student6);
+
+        StudentAnswer sa9_3_7_student6 = createStudentAnswer(student6, pa_9_3_7, "TF-IDF (Term Frequency-Inverse Document Frequency) measures the importance of a word in a document relative to a collection of documents.");
+        addStudentAnswerToProblemAnswer(pa_9_3_7, sa9_3_7_student6);
+
+        StudentAnswer sa9_3_8_student6 = createStudentAnswer(student6, pa_9_3_8, "A language model is a probabilistic model used to predict the likelihood of a sequence of words, used in tasks like text generation and machine translation.");
+        addStudentAnswerToProblemAnswer(pa_9_3_8, sa9_3_8_student6);
+
+        StudentAnswer sa9_3_9_student6 = createStudentAnswer(student6, pa_9_3_9, "Preprocessing text data for NLP tasks involves tokenization, removing stop words, stemming, lemmatization, and converting text to lowercase.");
+        addStudentAnswerToProblemAnswer(pa_9_3_9, sa9_3_9_student6);
+
+        StudentAnswer sa9_3_10_student6 = createStudentAnswer(student6, pa_9_3_10, "Word embedding represents words as dense vectors in a continuous vector space, capturing semantic relationships based on context.");
+        addStudentAnswerToProblemAnswer(pa_9_3_10, sa9_3_10_student6);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment9_3.");
+// Creating StudentAnswer instances for student5
+        StudentAnswer sa10_1_1_student5 = createStudentAnswer(student5, pa_10_1_1, "Threat analysis involves identifying potential security threats and vulnerabilities in a system.");
+        addStudentAnswerToProblemAnswer(pa_10_1_1, sa10_1_1_student5);
+
+        StudentAnswer sa10_1_2_student5 = createStudentAnswer(student5, pa_10_1_2, "Key steps: (1) Identifying assets and resources, (2) Identifying potential threats, (3) Assessing vulnerabilities, (4) Evaluating risks, (5) Implementing mitigation strategies.");
+        addStudentAnswerToProblemAnswer(pa_10_1_2, sa10_1_2_student5);
+
+        StudentAnswer sa10_1_3_student5 = createStudentAnswer(student5, pa_10_1_3, "Common security threats include malware, phishing attacks, denial-of-service (DoS) attacks, man-in-the-middle attacks, and insider threats.");
+        addStudentAnswerToProblemAnswer(pa_10_1_3, sa10_1_3_student5);
+
+        StudentAnswer sa10_1_4_student5 = createStudentAnswer(student5, pa_10_1_4, "A vulnerability is a weakness or flaw in a system that can be exploited by a threat actor to gain unauthorized access or cause harm.");
+        addStudentAnswerToProblemAnswer(pa_10_1_4, sa10_1_4_student5);
+
+        StudentAnswer sa10_1_5_student5 = createStudentAnswer(student5, pa_10_1_5, "Risk assessment evaluates the potential impact and likelihood of identified threats exploiting vulnerabilities.");
+        addStudentAnswerToProblemAnswer(pa_10_1_5, sa10_1_5_student5);
+
+        StudentAnswer sa10_1_6_student5 = createStudentAnswer(student5, pa_10_1_6, "Mitigation strategies are actions taken to reduce or eliminate the risk of security threats, such as implementing security controls and conducting audits.");
+        addStudentAnswerToProblemAnswer(pa_10_1_6, sa10_1_6_student5);
+
+        StudentAnswer sa10_1_7_student5 = createStudentAnswer(student5, pa_10_1_7, "Threat intelligence involves collecting and analyzing information about potential threats to improve threat analysis and mitigation efforts.");
+        addStudentAnswerToProblemAnswer(pa_10_1_7, sa10_1_7_student5);
+
+        StudentAnswer sa10_1_8_student5 = createStudentAnswer(student5, pa_10_1_8, "Regular security audits help identify and address vulnerabilities, ensure compliance, and improve overall security posture.");
+        addStudentAnswerToProblemAnswer(pa_10_1_8, sa10_1_8_student5);
+
+        StudentAnswer sa10_1_9_student5 = createStudentAnswer(student5, pa_10_1_9, "Organizations can improve threat analysis by adopting a proactive approach, leveraging threat intelligence, and conducting regular security training.");
+        addStudentAnswerToProblemAnswer(pa_10_1_9, sa10_1_9_student5);
+
+        StudentAnswer sa10_1_10_student5 = createStudentAnswer(student5, pa_10_1_10, "A security operations center (SOC) monitors and analyzes security incidents in real-time, providing continuous monitoring, incident response, and threat intelligence.");
+        addStudentAnswerToProblemAnswer(pa_10_1_10, sa10_1_10_student5);
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa10_1_1_student6 = createStudentAnswer(student6, pa_10_1_1, "Threat analysis involves identifying potential security threats and vulnerabilities in a system.");
+        addStudentAnswerToProblemAnswer(pa_10_1_1, sa10_1_1_student6);
+
+        StudentAnswer sa10_1_2_student6 = createStudentAnswer(student6, pa_10_1_2, "Key steps: (1) Identifying assets and resources, (2) Identifying potential threats, (3) Assessing vulnerabilities, (4) Evaluating risks, (5) Implementing mitigation strategies.");
+        addStudentAnswerToProblemAnswer(pa_10_1_2, sa10_1_2_student6);
+
+        StudentAnswer sa10_1_3_student6 = createStudentAnswer(student6, pa_10_1_3, "Common security threats include malware, phishing attacks, denial-of-service (DoS) attacks, man-in-the-middle attacks, and insider threats.");
+        addStudentAnswerToProblemAnswer(pa_10_1_3, sa10_1_3_student6);
+
+        StudentAnswer sa10_1_4_student6 = createStudentAnswer(student6, pa_10_1_4, "A vulnerability is a weakness or flaw in a system that can be exploited by a threat actor to gain unauthorized access or cause harm.");
+        addStudentAnswerToProblemAnswer(pa_10_1_4, sa10_1_4_student6);
+
+        StudentAnswer sa10_1_5_student6 = createStudentAnswer(student6, pa_10_1_5, "Risk assessment evaluates the potential impact and likelihood of identified threats exploiting vulnerabilities.");
+        addStudentAnswerToProblemAnswer(pa_10_1_5, sa10_1_5_student6);
+
+        StudentAnswer sa10_1_6_student6 = createStudentAnswer(student6, pa_10_1_6, "Mitigation strategies are actions taken to reduce or eliminate the risk of security threats, such as implementing security controls and conducting audits.");
+        addStudentAnswerToProblemAnswer(pa_10_1_6, sa10_1_6_student6);
+
+        StudentAnswer sa10_1_7_student6 = createStudentAnswer(student6, pa_10_1_7, "Threat intelligence involves collecting and analyzing information about potential threats to improve threat analysis and mitigation efforts.");
+        addStudentAnswerToProblemAnswer(pa_10_1_7, sa10_1_7_student6);
+
+        StudentAnswer sa10_1_8_student6 = createStudentAnswer(student6, pa_10_1_8, "Regular security audits help identify and address vulnerabilities, ensure compliance, and improve overall security posture.");
+        addStudentAnswerToProblemAnswer(pa_10_1_8, sa10_1_8_student6);
+
+        StudentAnswer sa10_1_9_student6 = createStudentAnswer(student6, pa_10_1_9, "Organizations can improve threat analysis by adopting a proactive approach, leveraging threat intelligence, and conducting regular security training.");
+        addStudentAnswerToProblemAnswer(pa_10_1_9, sa10_1_9_student6);
+
+        StudentAnswer sa10_1_10_student6 = createStudentAnswer(student6, pa_10_1_10, "A security operations center (SOC) monitors and analyzes security incidents in real-time, providing continuous monitoring, incident response, and threat intelligence.");
+        addStudentAnswerToProblemAnswer(pa_10_1_10, sa10_1_10_student6);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment10_1.");
+// Creating StudentAnswer instances for student5
+        StudentAnswer sa10_2_1_student5 = createStudentAnswer(student5, pa_10_2_1, "Encryption is the process of converting information into a secure format to prevent unauthorized access.");
+        addStudentAnswerToProblemAnswer(pa_10_2_1, sa10_2_1_student5);
+
+        StudentAnswer sa10_2_2_student5 = createStudentAnswer(student5, pa_10_2_2, "The two main types of encryption are symmetric encryption and asymmetric encryption.");
+        addStudentAnswerToProblemAnswer(pa_10_2_2, sa10_2_2_student5);
+
+        StudentAnswer sa10_2_3_student5 = createStudentAnswer(student5, pa_10_2_3, "A cryptographic algorithm is a mathematical formula used to encrypt and decrypt data, such as AES, RSA, and DES.");
+        addStudentAnswerToProblemAnswer(pa_10_2_3, sa10_2_3_student5);
+
+        StudentAnswer sa10_2_4_student5 = createStudentAnswer(student5, pa_10_2_4, "Encryption is essential for protecting sensitive data from unauthorized access, ensuring confidentiality, and maintaining privacy.");
+        addStudentAnswerToProblemAnswer(pa_10_2_4, sa10_2_4_student5);
+
+        StudentAnswer sa10_2_5_student5 = createStudentAnswer(student5, pa_10_2_5, "An encryption key is a piece of information used by a cryptographic algorithm to transform plaintext into ciphertext and vice versa.");
+        addStudentAnswerToProblemAnswer(pa_10_2_5, sa10_2_5_student5);
+
+        StudentAnswer sa10_2_6_student5 = createStudentAnswer(student5, pa_10_2_6, "Symmetric encryption uses the same key for both encryption and decryption, making it efficient and fast for large amounts of data.");
+        addStudentAnswerToProblemAnswer(pa_10_2_6, sa10_2_6_student5);
+
+        StudentAnswer sa10_2_7_student5 = createStudentAnswer(student5, pa_10_2_7, "Asymmetric encryption uses a pair of keys: a public key for encryption and a private key for decryption, providing higher security.");
+        addStudentAnswerToProblemAnswer(pa_10_2_7, sa10_2_7_student5);
+
+        StudentAnswer sa10_2_8_student5 = createStudentAnswer(student5, pa_10_2_8, "Encryption converts plaintext into ciphertext using a key and can be reversed, while hashing is a one-way process that creates a fixed-length hash value.");
+        addStudentAnswerToProblemAnswer(pa_10_2_8, sa10_2_8_student5);
+
+        StudentAnswer sa10_2_9_student5 = createStudentAnswer(student5, pa_10_2_9, "End-to-end encryption ensures data is encrypted on the sender's device and decrypted only on the recipient's device, preventing intermediary access.");
+        addStudentAnswerToProblemAnswer(pa_10_2_9, sa10_2_9_student5);
+
+        StudentAnswer sa10_2_10_student5 = createStudentAnswer(student5, pa_10_2_10, "A digital certificate is an electronic document that verifies an entity's identity and binds a public key to that entity, issued by a trusted certificate authority.");
+        addStudentAnswerToProblemAnswer(pa_10_2_10, sa10_2_10_student5);
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa10_2_1_student6 = createStudentAnswer(student6, pa_10_2_1, "Encryption is the process of converting information into a secure format to prevent unauthorized access.");
+        addStudentAnswerToProblemAnswer(pa_10_2_1, sa10_2_1_student6);
+
+        StudentAnswer sa10_2_2_student6 = createStudentAnswer(student6, pa_10_2_2, "The two main types of encryption are symmetric encryption and asymmetric encryption.");
+        addStudentAnswerToProblemAnswer(pa_10_2_2, sa10_2_2_student6);
+
+        StudentAnswer sa10_2_3_student6 = createStudentAnswer(student6, pa_10_2_3, "A cryptographic algorithm is a mathematical formula used to encrypt and decrypt data, such as AES, RSA, and DES.");
+        addStudentAnswerToProblemAnswer(pa_10_2_3, sa10_2_3_student6);
+
+        StudentAnswer sa10_2_4_student6 = createStudentAnswer(student6, pa_10_2_4, "Encryption is essential for protecting sensitive data from unauthorized access, ensuring confidentiality, and maintaining privacy.");
+        addStudentAnswerToProblemAnswer(pa_10_2_4, sa10_2_4_student6);
+
+        StudentAnswer sa10_2_5_student6 = createStudentAnswer(student6, pa_10_2_5, "An encryption key is a piece of information used by a cryptographic algorithm to transform plaintext into ciphertext and vice versa.");
+        addStudentAnswerToProblemAnswer(pa_10_2_5, sa10_2_5_student6);
+
+        StudentAnswer sa10_2_6_student6 = createStudentAnswer(student6, pa_10_2_6, "Symmetric encryption uses the same key for both encryption and decryption, making it efficient and fast for large amounts of data.");
+        addStudentAnswerToProblemAnswer(pa_10_2_6, sa10_2_6_student6);
+
+        StudentAnswer sa10_2_7_student6 = createStudentAnswer(student6, pa_10_2_7, "Asymmetric encryption uses a pair of keys: a public key for encryption and a private key for decryption, providing higher security.");
+        addStudentAnswerToProblemAnswer(pa_10_2_7, sa10_2_7_student6);
+
+        StudentAnswer sa10_2_8_student6 = createStudentAnswer(student6, pa_10_2_8, "Encryption converts plaintext into ciphertext using a key and can be reversed, while hashing is a one-way process that creates a fixed-length hash value.");
+        addStudentAnswerToProblemAnswer(pa_10_2_8, sa10_2_8_student6);
+
+        StudentAnswer sa10_2_9_student6 = createStudentAnswer(student6, pa_10_2_9, "End-to-end encryption ensures data is encrypted on the sender's device and decrypted only on the recipient's device, preventing intermediary access.");
+        addStudentAnswerToProblemAnswer(pa_10_2_9, sa10_2_9_student6);
+
+        StudentAnswer sa10_2_10_student6 = createStudentAnswer(student6, pa_10_2_10, "A digital certificate is an electronic document that verifies an entity's identity and binds a public key to that entity, issued by a trusted certificate authority.");
+        addStudentAnswerToProblemAnswer(pa_10_2_10, sa10_2_10_student6);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment10_2.");
+// Creating StudentAnswer instances for student5
+        StudentAnswer sa10_3_1_student5 = createStudentAnswer(student5, pa_10_3_1, "Network security involves measures to protect data during transmission across networks, ensuring confidentiality, integrity, and availability.");
+        addStudentAnswerToProblemAnswer(pa_10_3_1, sa10_3_1_student5);
+
+        StudentAnswer sa10_3_2_student5 = createStudentAnswer(student5, pa_10_3_2, "A firewall is a network security device that monitors and controls network traffic, establishing a barrier between trusted and untrusted networks.");
+        addStudentAnswerToProblemAnswer(pa_10_3_2, sa10_3_2_student5);
+
+        StudentAnswer sa10_3_3_student5 = createStudentAnswer(student5, pa_10_3_3, "An intrusion detection system (IDS) detects and responds to potential security breaches by monitoring network traffic for suspicious activity.");
+        addStudentAnswerToProblemAnswer(pa_10_3_3, sa10_3_3_student5);
+
+        StudentAnswer sa10_3_4_student5 = createStudentAnswer(student5, pa_10_3_4, "An IDS alerts administrators to security threats, while an intrusion prevention system (IPS) actively blocks and prevents malicious traffic.");
+        addStudentAnswerToProblemAnswer(pa_10_3_4, sa10_3_4_student5);
+
+        StudentAnswer sa10_3_5_student5 = createStudentAnswer(student5, pa_10_3_5, "Network segmentation divides a network into smaller segments to enhance security, contain breaches, and limit the spread of attacks.");
+        addStudentAnswerToProblemAnswer(pa_10_3_5, sa10_3_5_student5);
+
+        StudentAnswer sa10_3_6_student5 = createStudentAnswer(student5, pa_10_3_6, "A virtual private network (VPN) is a secure connection between a user's device and a private network, encrypting data transmission and masking the user's IP address.");
+        addStudentAnswerToProblemAnswer(pa_10_3_6, sa10_3_6_student5);
+
+        StudentAnswer sa10_3_7_student5 = createStudentAnswer(student5, pa_10_3_7, "Encryption converts data into a secure format during transmission, ensuring only authorized parties can access and interpret the data.");
+        addStudentAnswerToProblemAnswer(pa_10_3_7, sa10_3_7_student5);
+
+        StudentAnswer sa10_3_8_student5 = createStudentAnswer(student5, pa_10_3_8, "Secure Socket Layer (SSL) and Transport Layer Security (TLS) are cryptographic protocols that provide secure communication over a computer network.");
+        addStudentAnswerToProblemAnswer(pa_10_3_8, sa10_3_8_student5);
+
+        StudentAnswer sa10_3_9_student5 = createStudentAnswer(student5, pa_10_3_9, "Network access control (NAC) restricts unauthorized devices and users from accessing a network, enforcing policies and ensuring compliance with security standards.");
+        addStudentAnswerToProblemAnswer(pa_10_3_9, sa10_3_9_student5);
+
+        StudentAnswer sa10_3_10_student5 = createStudentAnswer(student5, pa_10_3_10, "Network monitoring continuously observes network activity to detect and respond to security threats, performance issues, and anomalies.");
+        addStudentAnswerToProblemAnswer(pa_10_3_10, sa10_3_10_student5);
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa10_3_1_student6 = createStudentAnswer(student6, pa_10_3_1, "Network security involves measures to protect data during transmission across networks, ensuring confidentiality, integrity, and availability.");
+        addStudentAnswerToProblemAnswer(pa_10_3_1, sa10_3_1_student6);
+
+        StudentAnswer sa10_3_2_student6 = createStudentAnswer(student6, pa_10_3_2, "A firewall is a network security device that monitors and controls network traffic, establishing a barrier between trusted and untrusted networks.");
+        addStudentAnswerToProblemAnswer(pa_10_3_2, sa10_3_2_student6);
+
+        StudentAnswer sa10_3_3_student6 = createStudentAnswer(student6, pa_10_3_3, "An intrusion detection system (IDS) detects and responds to potential security breaches by monitoring network traffic for suspicious activity.");
+        addStudentAnswerToProblemAnswer(pa_10_3_3, sa10_3_3_student6);
+
+        StudentAnswer sa10_3_4_student6 = createStudentAnswer(student6, pa_10_3_4, "An IDS alerts administrators to security threats, while an intrusion prevention system (IPS) actively blocks and prevents malicious traffic.");
+        addStudentAnswerToProblemAnswer(pa_10_3_4, sa10_3_4_student6);
+
+        StudentAnswer sa10_3_5_student6 = createStudentAnswer(student6, pa_10_3_5, "Network segmentation divides a network into smaller segments to enhance security, contain breaches, and limit the spread of attacks.");
+        addStudentAnswerToProblemAnswer(pa_10_3_5, sa10_3_5_student6);
+
+        StudentAnswer sa10_3_6_student6 = createStudentAnswer(student6, pa_10_3_6, "A virtual private network (VPN) is a secure connection between a user's device and a private network, encrypting data transmission and masking the user's IP address.");
+        addStudentAnswerToProblemAnswer(pa_10_3_6, sa10_3_6_student6);
+
+        StudentAnswer sa10_3_7_student6 = createStudentAnswer(student6, pa_10_3_7, "Encryption converts data into a secure format during transmission, ensuring only authorized parties can access and interpret the data.");
+        addStudentAnswerToProblemAnswer(pa_10_3_7, sa10_3_7_student6);
+
+        StudentAnswer sa10_3_8_student6 = createStudentAnswer(student6, pa_10_3_8, "Secure Socket Layer (SSL) and Transport Layer Security (TLS) are cryptographic protocols that provide secure communication over a computer network.");
+        addStudentAnswerToProblemAnswer(pa_10_3_8, sa10_3_8_student6);
+
+        StudentAnswer sa10_3_9_student6 = createStudentAnswer(student6, pa_10_3_9, "Network access control (NAC) restricts unauthorized devices and users from accessing a network, enforcing policies and ensuring compliance with security standards.");
+        addStudentAnswerToProblemAnswer(pa_10_3_9, sa10_3_9_student6);
+
+        StudentAnswer sa10_3_10_student6 = createStudentAnswer(student6, pa_10_3_10, "Network monitoring continuously observes network activity to detect and respond to security threats, performance issues, and anomalies.");
+        addStudentAnswerToProblemAnswer(pa_10_3_10, sa10_3_10_student6);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment10_3.");
+// Creating StudentAnswer instances for student5
+        StudentAnswer sa10_4_1_student5 = createStudentAnswer(student5, pa_10_4_1, "Secure coding involves writing software in a way that minimizes vulnerabilities and prevents security breaches.");
+        addStudentAnswerToProblemAnswer(pa_10_4_1, sa10_4_1_student5);
+
+        StudentAnswer sa10_4_2_student5 = createStudentAnswer(student5, pa_10_4_2, "Common security flaws include buffer overflows, SQL injection, cross-site scripting (XSS), cross-site request forgery (CSRF), and improper error handling.");
+        addStudentAnswerToProblemAnswer(pa_10_4_2, sa10_4_2_student5);
+
+        StudentAnswer sa10_4_3_student5 = createStudentAnswer(student5, pa_10_4_3, "SQL injection is an attack where an attacker inserts malicious SQL code into a query, allowing them to manipulate the database.");
+        addStudentAnswerToProblemAnswer(pa_10_4_3, sa10_4_3_student5);
+
+        StudentAnswer sa10_4_4_student5 = createStudentAnswer(student5, pa_10_4_4, "Cross-site scripting (XSS) is a vulnerability where an attacker injects malicious scripts into web pages viewed by users.");
+        addStudentAnswerToProblemAnswer(pa_10_4_4, sa10_4_4_student5);
+
+        StudentAnswer sa10_4_5_student5 = createStudentAnswer(student5, pa_10_4_5, "Cross-site request forgery (CSRF) is an attack where an attacker tricks a user into performing actions on a web application without their consent.");
+        addStudentAnswerToProblemAnswer(pa_10_4_5, sa10_4_5_student5);
+
+        StudentAnswer sa10_4_6_student5 = createStudentAnswer(student5, pa_10_4_6, "Buffer overflow vulnerabilities can be prevented by using safe programming practices, such as bounds checking and input validation.");
+        addStudentAnswerToProblemAnswer(pa_10_4_6, sa10_4_6_student5);
+
+        StudentAnswer sa10_4_7_student5 = createStudentAnswer(student5, pa_10_4_7, "Input validation involves checking and sanitizing user inputs to ensure they meet the expected format and do not contain malicious data.");
+        addStudentAnswerToProblemAnswer(pa_10_4_7, sa10_4_7_student5);
+
+        StudentAnswer sa10_4_8_student5 = createStudentAnswer(student5, pa_10_4_8, "The principle of least privilege involves granting users and systems the minimum level of access necessary to perform their tasks.");
+        addStudentAnswerToProblemAnswer(pa_10_4_8, sa10_4_8_student5);
+
+        StudentAnswer sa10_4_9_student5 = createStudentAnswer(student5, pa_10_4_9, "Proper error handling prevents revealing sensitive information to attackers and ensures errors are logged securely without exposing system details.");
+        addStudentAnswerToProblemAnswer(pa_10_4_9, sa10_4_9_student5);
+
+        StudentAnswer sa10_4_10_student5 = createStudentAnswer(student5, pa_10_4_10, "Best practices for maintaining software security include regular code reviews, using secure libraries, conducting security testing, and following secure coding guidelines.");
+        addStudentAnswerToProblemAnswer(pa_10_4_10, sa10_4_10_student5);
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa10_4_1_student6 = createStudentAnswer(student6, pa_10_4_1, "Secure coding involves writing software in a way that minimizes vulnerabilities and prevents security breaches.");
+        addStudentAnswerToProblemAnswer(pa_10_4_1, sa10_4_1_student6);
+
+        StudentAnswer sa10_4_2_student6 = createStudentAnswer(student6, pa_10_4_2, "Common security flaws include buffer overflows, SQL injection, cross-site scripting (XSS), cross-site request forgery (CSRF), and improper error handling.");
+        addStudentAnswerToProblemAnswer(pa_10_4_2, sa10_4_2_student6);
+
+        StudentAnswer sa10_4_3_student6 = createStudentAnswer(student6, pa_10_4_3, "SQL injection is an attack where an attacker inserts malicious SQL code into a query, allowing them to manipulate the database.");
+        addStudentAnswerToProblemAnswer(pa_10_4_3, sa10_4_3_student6);
+
+        StudentAnswer sa10_4_4_student6 = createStudentAnswer(student6, pa_10_4_4, "Cross-site scripting (XSS) is a vulnerability where an attacker injects malicious scripts into web pages viewed by users.");
+        addStudentAnswerToProblemAnswer(pa_10_4_4, sa10_4_4_student6);
+
+        StudentAnswer sa10_4_5_student6 = createStudentAnswer(student6, pa_10_4_5, "Cross-site request forgery (CSRF) is an attack where an attacker tricks a user into performing actions on a web application without their consent.");
+        addStudentAnswerToProblemAnswer(pa_10_4_5, sa10_4_5_student6);
+
+        StudentAnswer sa10_4_6_student6 = createStudentAnswer(student6, pa_10_4_6, "Buffer overflow vulnerabilities can be prevented by using safe programming practices, such as bounds checking and input validation.");
+        addStudentAnswerToProblemAnswer(pa_10_4_6, sa10_4_6_student6);
+
+        StudentAnswer sa10_4_7_student6 = createStudentAnswer(student6, pa_10_4_7, "Input validation involves checking and sanitizing user inputs to ensure they meet the expected format and do not contain malicious data.");
+        addStudentAnswerToProblemAnswer(pa_10_4_7, sa10_4_7_student6);
+
+        StudentAnswer sa10_4_8_student6 = createStudentAnswer(student6, pa_10_4_8, "The principle of least privilege involves granting users and systems the minimum level of access necessary to perform their tasks.");
+        addStudentAnswerToProblemAnswer(pa_10_4_8, sa10_4_8_student6);
+
+        StudentAnswer sa10_4_9_student6 = createStudentAnswer(student6, pa_10_4_9, "Proper error handling prevents revealing sensitive information to attackers and ensures errors are logged securely without exposing system details.");
+        addStudentAnswerToProblemAnswer(pa_10_4_9, sa10_4_9_student6);
+
+        StudentAnswer sa10_4_10_student6 = createStudentAnswer(student6, pa_10_4_10, "Best practices for maintaining software security include regular code reviews, using secure libraries, conducting security testing, and following secure coding guidelines.");
+        addStudentAnswerToProblemAnswer(pa_10_4_10, sa10_4_10_student6);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment10_4.");
+// Creating StudentAnswer instances for student5
+        StudentAnswer sa11_1_1_student5 = createStudentAnswer(student5, pa_11_1_1, "A limit is the value that a function approaches as the input approaches a certain value, foundational in defining continuity, derivatives, and integrals.");
+        addStudentAnswerToProblemAnswer(pa_11_1_1, sa11_1_1_student5);
+
+        StudentAnswer sa11_1_2_student5 = createStudentAnswer(student5, pa_11_1_2, "To calculate the limit of a function as x approaches a value, substitute the value into the function or use algebraic manipulation and limit laws if undefined.");
+        addStudentAnswerToProblemAnswer(pa_11_1_2, sa11_1_2_student5);
+
+        StudentAnswer sa11_1_3_student5 = createStudentAnswer(student5, pa_11_1_3, "One-sided limits approach a specific value from either the left (left-hand limit) or the right (right-hand limit), useful for points of discontinuity.");
+        addStudentAnswerToProblemAnswer(pa_11_1_3, sa11_1_3_student5);
+
+        StudentAnswer sa11_1_4_student5 = createStudentAnswer(student5, pa_11_1_4, "The limit law of sums states that the limit of the sum of two functions is the sum of their limits, i.e., lim(x->c)[f(x) + g(x)] = L + M.");
+        addStudentAnswerToProblemAnswer(pa_11_1_4, sa11_1_4_student5);
+
+        StudentAnswer sa11_1_5_student5 = createStudentAnswer(student5, pa_11_1_5, "The epsilon-delta definition states that for every ε > 0, there exists a δ > 0 such that if 0 < |x - c| < δ, then |f(x) - L| < ε.");
+        addStudentAnswerToProblemAnswer(pa_11_1_5, sa11_1_5_student5);
+
+        StudentAnswer sa11_1_6_student5 = createStudentAnswer(student5, pa_11_1_6, "An infinite limit occurs when the values of a function increase or decrease without bound as the input approaches a certain value, represented as lim(x->c)f(x) = ±∞.");
+        addStudentAnswerToProblemAnswer(pa_11_1_6, sa11_1_6_student5);
+
+        StudentAnswer sa11_1_7_student5 = createStudentAnswer(student5, pa_11_1_7, "To evaluate a limit at infinity, analyze the behavior of the function as the input grows larger, simplify if necessary, and identify the dominant terms.");
+        addStudentAnswerToProblemAnswer(pa_11_1_7, sa11_1_7_student5);
+
+        StudentAnswer sa11_1_8_student5 = createStudentAnswer(student5, pa_11_1_8, "A removable discontinuity occurs when a function is not defined at a point but the limit exists there; it can be 'removed' by redefining the function value.");
+        addStudentAnswerToProblemAnswer(pa_11_1_8, sa11_1_8_student5);
+
+        StudentAnswer sa11_1_9_student5 = createStudentAnswer(student5, pa_11_1_9, "The Squeeze Theorem states that if f(x) ≤ g(x) ≤ h(x) around c, and lim(x->c)f(x) = lim(x->c)h(x) = L, then lim(x->c)g(x) = L.");
+        addStudentAnswerToProblemAnswer(pa_11_1_9, sa11_1_9_student5);
+
+        StudentAnswer sa11_1_10_student5 = createStudentAnswer(student5, pa_11_1_10, "Limits are crucial in calculus for defining continuity, derivatives, and integrals, helping to understand the behavior of functions at points of interest.");
+        addStudentAnswerToProblemAnswer(pa_11_1_10, sa11_1_10_student5);
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa11_1_1_student6 = createStudentAnswer(student6, pa_11_1_1, "A limit is the value that a function approaches as the input approaches a certain value, foundational in defining continuity, derivatives, and integrals.");
+        addStudentAnswerToProblemAnswer(pa_11_1_1, sa11_1_1_student6);
+
+        StudentAnswer sa11_1_2_student6 = createStudentAnswer(student6, pa_11_1_2, "To calculate the limit of a function as x approaches a value, substitute the value into the function or use algebraic manipulation and limit laws if undefined.");
+        addStudentAnswerToProblemAnswer(pa_11_1_2, sa11_1_2_student6);
+
+        StudentAnswer sa11_1_3_student6 = createStudentAnswer(student6, pa_11_1_3, "One-sided limits approach a specific value from either the left (left-hand limit) or the right (right-hand limit), useful for points of discontinuity.");
+        addStudentAnswerToProblemAnswer(pa_11_1_3, sa11_1_3_student6);
+
+        StudentAnswer sa11_1_4_student6 = createStudentAnswer(student6, pa_11_1_4, "The limit law of sums states that the limit of the sum of two functions is the sum of their limits, i.e., lim(x->c)[f(x) + g(x)] = L + M.");
+        addStudentAnswerToProblemAnswer(pa_11_1_4, sa11_1_4_student6);
+
+        StudentAnswer sa11_1_5_student6 = createStudentAnswer(student6, pa_11_1_5, "The epsilon-delta definition states that for every ε > 0, there exists a δ > 0 such that if 0 < |x - c| < δ, then |f(x) - L| < ε.");
+        addStudentAnswerToProblemAnswer(pa_11_1_5, sa11_1_5_student6);
+
+        StudentAnswer sa11_1_6_student6 = createStudentAnswer(student6, pa_11_1_6, "An infinite limit occurs when the values of a function increase or decrease without bound as the input approaches a certain value, represented as lim(x->c)f(x) = ±∞.");
+        addStudentAnswerToProblemAnswer(pa_11_1_6, sa11_1_6_student6);
+
+        StudentAnswer sa11_1_7_student6 = createStudentAnswer(student6, pa_11_1_7, "To evaluate a limit at infinity, analyze the behavior of the function as the input grows larger, simplify if necessary, and identify the dominant terms.");
+        addStudentAnswerToProblemAnswer(pa_11_1_7, sa11_1_7_student6);
+
+        StudentAnswer sa11_1_8_student6 = createStudentAnswer(student6, pa_11_1_8, "A removable discontinuity occurs when a function is not defined at a point but the limit exists there; it can be 'removed' by redefining the function value.");
+        addStudentAnswerToProblemAnswer(pa_11_1_8, sa11_1_8_student6);
+
+        StudentAnswer sa11_1_9_student6 = createStudentAnswer(student6, pa_11_1_9, "The Squeeze Theorem states that if f(x) ≤ g(x) ≤ h(x) around c, and lim(x->c)f(x) = lim(x->c)h(x) = L, then lim(x->c)g(x) = L.");
+        addStudentAnswerToProblemAnswer(pa_11_1_9, sa11_1_9_student6);
+
+        StudentAnswer sa11_1_10_student6 = createStudentAnswer(student6, pa_11_1_10, "Limits are crucial in calculus for defining continuity, derivatives, and integrals, helping to understand the behavior of functions at points of interest.");
+        addStudentAnswerToProblemAnswer(pa_11_1_10, sa11_1_10_student6);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment11_1.");
+// Creating StudentAnswer instances for student5
+        StudentAnswer sa11_2_1_student5 = createStudentAnswer(student5, pa_11_2_1, "A derivative represents the rate at which a function changes as its input changes, determining the slope of a function at any given point.");
+        addStudentAnswerToProblemAnswer(pa_11_2_1, sa11_2_1_student5);
+
+        StudentAnswer sa11_2_2_student5 = createStudentAnswer(student5, pa_11_2_2, "The derivative of a function is calculated using differentiation techniques, commonly the limit definition: f'(x) = lim(h->0)[f(x+h) - f(x)]/h.");
+        addStudentAnswerToProblemAnswer(pa_11_2_2, sa11_2_2_student5);
+
+        StudentAnswer sa11_2_3_student5 = createStudentAnswer(student5, pa_11_2_3, "Common rules of differentiation include the power rule, product rule, quotient rule, and chain rule, simplifying the process for various functions.");
+        addStudentAnswerToProblemAnswer(pa_11_2_3, sa11_2_3_student5);
+
+        StudentAnswer sa11_2_4_student5 = createStudentAnswer(student5, pa_11_2_4, "The power rule states that the derivative of x^n (where n is a constant) is n*x^(n-1), e.g., the derivative of x^3 is 3*x^2.");
+        addStudentAnswerToProblemAnswer(pa_11_2_4, sa11_2_4_student5);
+
+        StudentAnswer sa11_2_5_student5 = createStudentAnswer(student5, pa_11_2_5, "The product rule is used for the derivative of the product of two functions: (uv)' = u'v + uv', where u and v are functions of x.");
+        addStudentAnswerToProblemAnswer(pa_11_2_5, sa11_2_5_student5);
+
+        StudentAnswer sa11_2_6_student5 = createStudentAnswer(student5, pa_11_2_6, "The quotient rule is used for the derivative of the quotient of two functions: (u/v)' = (u'v - uv')/v^2, where u and v are functions of x.");
+        addStudentAnswerToProblemAnswer(pa_11_2_6, sa11_2_6_student5);
+
+        StudentAnswer sa11_2_7_student5 = createStudentAnswer(student5, pa_11_2_7, "The chain rule is for the derivative of a composite function: if y = f(g(x)), then dy/dx = f'(g(x)) * g'(x).");
+        addStudentAnswerToProblemAnswer(pa_11_2_7, sa11_2_7_student5);
+
+        StudentAnswer sa11_2_8_student5 = createStudentAnswer(student5, pa_11_2_8, "Higher-order derivatives are derivatives of derivatives, providing information about concavity and acceleration of a function.");
+        addStudentAnswerToProblemAnswer(pa_11_2_8, sa11_2_8_student5);
+
+        StudentAnswer sa11_2_9_student5 = createStudentAnswer(student5, pa_11_2_9, "Implicit differentiation finds the derivative of functions defined implicitly by differentiating both sides with respect to x and solving for dy/dx.");
+        addStudentAnswerToProblemAnswer(pa_11_2_9, sa11_2_9_student5);
+
+        StudentAnswer sa11_2_10_student5 = createStudentAnswer(student5, pa_11_2_10, "Derivatives have applications in finding the rate of change, optimizing functions, determining maximum and minimum values, and modeling motion and growth.");
+        addStudentAnswerToProblemAnswer(pa_11_2_10, sa11_2_10_student5);
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa11_2_1_student6 = createStudentAnswer(student6, pa_11_2_1, "A derivative represents the rate at which a function changes as its input changes, determining the slope of a function at any given point.");
+        addStudentAnswerToProblemAnswer(pa_11_2_1, sa11_2_1_student6);
+
+        StudentAnswer sa11_2_2_student6 = createStudentAnswer(student6, pa_11_2_2, "The derivative of a function is calculated using differentiation techniques, commonly the limit definition: f'(x) = lim(h->0)[f(x+h) - f(x)]/h.");
+        addStudentAnswerToProblemAnswer(pa_11_2_2, sa11_2_2_student6);
+
+        StudentAnswer sa11_2_3_student6 = createStudentAnswer(student6, pa_11_2_3, "Common rules of differentiation include the power rule, product rule, quotient rule, and chain rule, simplifying the process for various functions.");
+        addStudentAnswerToProblemAnswer(pa_11_2_3, sa11_2_3_student6);
+
+        StudentAnswer sa11_2_4_student6 = createStudentAnswer(student6, pa_11_2_4, "The power rule states that the derivative of x^n (where n is a constant) is n*x^(n-1), e.g., the derivative of x^3 is 3*x^2.");
+        addStudentAnswerToProblemAnswer(pa_11_2_4, sa11_2_4_student6);
+
+        StudentAnswer sa11_2_5_student6 = createStudentAnswer(student6, pa_11_2_5, "The product rule is used for the derivative of the product of two functions: (uv)' = u'v + uv', where u and v are functions of x.");
+        addStudentAnswerToProblemAnswer(pa_11_2_5, sa11_2_5_student6);
+
+        StudentAnswer sa11_2_6_student6 = createStudentAnswer(student6, pa_11_2_6, "The quotient rule is used for the derivative of the quotient of two functions: (u/v)' = (u'v - uv')/v^2, where u and v are functions of x.");
+        addStudentAnswerToProblemAnswer(pa_11_2_6, sa11_2_6_student6);
+
+        StudentAnswer sa11_2_7_student6 = createStudentAnswer(student6, pa_11_2_7, "The chain rule is for the derivative of a composite function: if y = f(g(x)), then dy/dx = f'(g(x)) * g'(x).");
+        addStudentAnswerToProblemAnswer(pa_11_2_7, sa11_2_7_student6);
+
+        StudentAnswer sa11_2_8_student6 = createStudentAnswer(student6, pa_11_2_8, "Higher-order derivatives are derivatives of derivatives, providing information about concavity and acceleration of a function.");
+        addStudentAnswerToProblemAnswer(pa_11_2_8, sa11_2_8_student6);
+
+        StudentAnswer sa11_2_9_student6 = createStudentAnswer(student6, pa_11_2_9, "Implicit differentiation finds the derivative of functions defined implicitly by differentiating both sides with respect to x and solving for dy/dx.");
+        addStudentAnswerToProblemAnswer(pa_11_2_9, sa11_2_9_student6);
+
+        StudentAnswer sa11_2_10_student6 = createStudentAnswer(student6, pa_11_2_10, "Derivatives have applications in finding the rate of change, optimizing functions, determining maximum and minimum values, and modeling motion and growth.");
+        addStudentAnswerToProblemAnswer(pa_11_2_10, sa11_2_10_student6);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment11_2.");
+// Creating StudentAnswer instances for student5
+        StudentAnswer sa11_3_1_student5 = createStudentAnswer(student5, pa_11_3_1, "An integral represents the accumulation of quantities over a continuous interval and is used to calculate areas, volumes, and other related quantities.");
+        addStudentAnswerToProblemAnswer(pa_11_3_1, sa11_3_1_student5);
+
+        StudentAnswer sa11_3_2_student5 = createStudentAnswer(student5, pa_11_3_2, "The Fundamental Theorem of Calculus links differentiation and integration, stating that if F is an antiderivative of f on [a, b], then the integral of f from a to b is F(b) - F(a).");
+        addStudentAnswerToProblemAnswer(pa_11_3_2, sa11_3_2_student5);
+
+        StudentAnswer sa11_3_3_student5 = createStudentAnswer(student5, pa_11_3_3, "To calculate a definite integral, find the antiderivative of the integrand, evaluate it at the upper and lower limits, and subtract the lower limit value from the upper limit value.");
+        addStudentAnswerToProblemAnswer(pa_11_3_3, sa11_3_3_student5);
+
+        StudentAnswer sa11_3_4_student5 = createStudentAnswer(student5, pa_11_3_4, "An indefinite integral represents the family of all antiderivatives of a function, expressed with the integral symbol and a constant of integration (C).");
+        addStudentAnswerToProblemAnswer(pa_11_3_4, sa11_3_4_student5);
+
+        StudentAnswer sa11_3_5_student5 = createStudentAnswer(student5, pa_11_3_5, "Integration by substitution simplifies integration by changing the variable of integration, substituting a new variable and its differential.");
+        addStudentAnswerToProblemAnswer(pa_11_3_5, sa11_3_5_student5);
+
+        StudentAnswer sa11_3_6_student5 = createStudentAnswer(student5, pa_11_3_6, "Integration by parts integrates the product of two functions using the formula ∫u dv = uv - ∫v du, where u and v are functions of x.");
+        addStudentAnswerToProblemAnswer(pa_11_3_6, sa11_3_6_student5);
+
+        StudentAnswer sa11_3_7_student5 = createStudentAnswer(student5, pa_11_3_7, "The method of partial fractions integrates rational functions by expressing them as a sum of simpler fractions, breaking down complex fractions.");
+        addStudentAnswerToProblemAnswer(pa_11_3_7, sa11_3_7_student5);
+
+        StudentAnswer sa11_3_8_student5 = createStudentAnswer(student5, pa_11_3_8, "The area under a curve is found by calculating the definite integral of the function representing the curve over the desired interval, giving the accumulated area.");
+        addStudentAnswerToProblemAnswer(pa_11_3_8, sa11_3_8_student5);
+
+        StudentAnswer sa11_3_9_student5 = createStudentAnswer(student5, pa_11_3_9, "The volume of a solid of revolution is found by rotating a region around an axis and calculating the integral, using the disk method or the shell method.");
+        addStudentAnswerToProblemAnswer(pa_11_3_9, sa11_3_9_student5);
+
+        StudentAnswer sa11_3_10_student5 = createStudentAnswer(student5, pa_11_3_10, "Integrals have applications in calculating areas and volumes, determining displacement and velocity, finding work done by a force, and modeling growth and decay.");
+        addStudentAnswerToProblemAnswer(pa_11_3_10, sa11_3_10_student5);
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa11_3_1_student6 = createStudentAnswer(student6, pa_11_3_1, "An integral represents the accumulation of quantities over a continuous interval and is used to calculate areas, volumes, and other related quantities.");
+        addStudentAnswerToProblemAnswer(pa_11_3_1, sa11_3_1_student6);
+
+        StudentAnswer sa11_3_2_student6 = createStudentAnswer(student6, pa_11_3_2, "The Fundamental Theorem of Calculus links differentiation and integration, stating that if F is an antiderivative of f on [a, b], then the integral of f from a to b is F(b) - F(a).");
+        addStudentAnswerToProblemAnswer(pa_11_3_2, sa11_3_2_student6);
+
+        StudentAnswer sa11_3_3_student6 = createStudentAnswer(student6, pa_11_3_3, "To calculate a definite integral, find the antiderivative of the integrand, evaluate it at the upper and lower limits, and subtract the lower limit value from the upper limit value.");
+        addStudentAnswerToProblemAnswer(pa_11_3_3, sa11_3_3_student6);
+
+        StudentAnswer sa11_3_4_student6 = createStudentAnswer(student6, pa_11_3_4, "An indefinite integral represents the family of all antiderivatives of a function, expressed with the integral symbol and a constant of integration (C).");
+        addStudentAnswerToProblemAnswer(pa_11_3_4, sa11_3_4_student6);
+
+        StudentAnswer sa11_3_5_student6 = createStudentAnswer(student6, pa_11_3_5, "Integration by substitution simplifies integration by changing the variable of integration, substituting a new variable and its differential.");
+        addStudentAnswerToProblemAnswer(pa_11_3_5, sa11_3_5_student6);
+
+        StudentAnswer sa11_3_6_student6 = createStudentAnswer(student6, pa_11_3_6, "Integration by parts integrates the product of two functions using the formula ∫u dv = uv - ∫v du, where u and v are functions of x.");
+        addStudentAnswerToProblemAnswer(pa_11_3_6, sa11_3_6_student6);
+
+        StudentAnswer sa11_3_7_student6 = createStudentAnswer(student6, pa_11_3_7, "The method of partial fractions integrates rational functions by expressing them as a sum of simpler fractions, breaking down complex fractions.");
+        addStudentAnswerToProblemAnswer(pa_11_3_7, sa11_3_7_student6);
+
+        StudentAnswer sa11_3_8_student6 = createStudentAnswer(student6, pa_11_3_8, "The area under a curve is found by calculating the definite integral of the function representing the curve over the desired interval, giving the accumulated area.");
+        addStudentAnswerToProblemAnswer(pa_11_3_8, sa11_3_8_student6);
+
+        StudentAnswer sa11_3_9_student6 = createStudentAnswer(student6, pa_11_3_9, "The volume of a solid of revolution is found by rotating a region around an axis and calculating the integral, using the disk method or the shell method.");
+        addStudentAnswerToProblemAnswer(pa_11_3_9, sa11_3_9_student6);
+
+        StudentAnswer sa11_3_10_student6 = createStudentAnswer(student6, pa_11_3_10, "Integrals have applications in calculating areas and volumes, determining displacement and velocity, finding work done by a force, and modeling growth and decay.");
+        addStudentAnswerToProblemAnswer(pa_11_3_10, sa11_3_10_student6);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment11_3.");
+// Creating StudentAnswer instances for student5
+        StudentAnswer sa11_4_1_student5 = createStudentAnswer(student5, pa_11_4_1, "Calculus is used in physics to model and analyze physical systems, describing motion, forces, and energy through derivatives and integrals.");
+        addStudentAnswerToProblemAnswer(pa_11_4_1, sa11_4_1_student5);
+
+        StudentAnswer sa11_4_2_student5 = createStudentAnswer(student5, pa_11_4_2, "Calculus in engineering is used for designing and analyzing systems, optimizing processes, and solving differential equations in fields like civil, mechanical, and electrical engineering.");
+        addStudentAnswerToProblemAnswer(pa_11_4_2, sa11_4_2_student5);
+
+        StudentAnswer sa11_4_3_student5 = createStudentAnswer(student5, pa_11_4_3, "In economics, calculus models economic systems, optimizes production and consumption, and studies changes over time, calculating marginal cost, revenue, and profit.");
+        addStudentAnswerToProblemAnswer(pa_11_4_3, sa11_4_3_student5);
+
+        StudentAnswer sa11_4_4_student5 = createStudentAnswer(student5, pa_11_4_4, "Calculus in biology models population dynamics, spread of diseases, and changes in biological systems, understanding growth rates and interactions between species.");
+        addStudentAnswerToProblemAnswer(pa_11_4_4, sa11_4_4_student5);
+
+        StudentAnswer sa11_4_5_student5 = createStudentAnswer(student5, pa_11_4_5, "In computer science, calculus is used for algorithm analysis, computer graphics, machine learning, and simulations, optimizing algorithms and modeling continuous data.");
+        addStudentAnswerToProblemAnswer(pa_11_4_5, sa11_4_5_student5);
+
+        StudentAnswer sa11_4_6_student5 = createStudentAnswer(student5, pa_11_4_6, "In environmental science, calculus models and analyzes systems like population growth, pollution dispersion, and climate change, understanding rates of change.");
+        addStudentAnswerToProblemAnswer(pa_11_4_6, sa11_4_6_student5);
+
+        StudentAnswer sa11_4_7_student5 = createStudentAnswer(student5, pa_11_4_7, "Calculus in medicine models disease spread, analyzes medical imaging, and understands physiological processes, calculating drug dosage and blood flow rates.");
+        addStudentAnswerToProblemAnswer(pa_11_4_7, sa11_4_7_student5);
+
+        StudentAnswer sa11_4_8_student5 = createStudentAnswer(student5, pa_11_4_8, "In business and finance, calculus optimizes investment strategies, models market trends, and analyzes financial data, calculating interest rates and maximizing profit.");
+        addStudentAnswerToProblemAnswer(pa_11_4_8, sa11_4_8_student5);
+
+        StudentAnswer sa11_4_9_student5 = createStudentAnswer(student5, pa_11_4_9, "In astronomy, calculus models and analyzes celestial motion, calculates orbits, and understands universe changes, solving gravitational force equations.");
+        addStudentAnswerToProblemAnswer(pa_11_4_9, sa11_4_9_student5);
+
+        StudentAnswer sa11_4_10_student5 = createStudentAnswer(student5, pa_11_4_10, "Calculus provides tools for modeling, analyzing, and solving real-world problems, optimizing processes, and understanding complex systems.");
+        addStudentAnswerToProblemAnswer(pa_11_4_10, sa11_4_10_student5);
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa11_4_1_student6 = createStudentAnswer(student6, pa_11_4_1, "Calculus is used in physics to model and analyze physical systems, describing motion, forces, and energy through derivatives and integrals.");
+        addStudentAnswerToProblemAnswer(pa_11_4_1, sa11_4_1_student6);
+
+        StudentAnswer sa11_4_2_student6 = createStudentAnswer(student6, pa_11_4_2, "Calculus in engineering is used for designing and analyzing systems, optimizing processes, and solving differential equations in fields like civil, mechanical, and electrical engineering.");
+        addStudentAnswerToProblemAnswer(pa_11_4_2, sa11_4_2_student6);
+
+        StudentAnswer sa11_4_3_student6 = createStudentAnswer(student6, pa_11_4_3, "In economics, calculus models economic systems, optimizes production and consumption, and studies changes over time, calculating marginal cost, revenue, and profit.");
+        addStudentAnswerToProblemAnswer(pa_11_4_3, sa11_4_3_student6);
+
+        StudentAnswer sa11_4_4_student6 = createStudentAnswer(student6, pa_11_4_4, "Calculus in biology models population dynamics, spread of diseases, and changes in biological systems, understanding growth rates and interactions between species.");
+        addStudentAnswerToProblemAnswer(pa_11_4_4, sa11_4_4_student6);
+
+        StudentAnswer sa11_4_5_student6 = createStudentAnswer(student6, pa_11_4_5, "In computer science, calculus is used for algorithm analysis, computer graphics, machine learning, and simulations, optimizing algorithms and modeling continuous data.");
+        addStudentAnswerToProblemAnswer(pa_11_4_5, sa11_4_5_student6);
+
+        StudentAnswer sa11_4_6_student6 = createStudentAnswer(student6, pa_11_4_6, "In environmental science, calculus models and analyzes systems like population growth, pollution dispersion, and climate change, understanding rates of change.");
+        addStudentAnswerToProblemAnswer(pa_11_4_6, sa11_4_6_student6);
+
+        StudentAnswer sa11_4_7_student6 = createStudentAnswer(student6, pa_11_4_7, "Calculus in medicine models disease spread, analyzes medical imaging, and understands physiological processes, calculating drug dosage and blood flow rates.");
+        addStudentAnswerToProblemAnswer(pa_11_4_7, sa11_4_7_student6);
+
+        StudentAnswer sa11_4_8_student6 = createStudentAnswer(student6, pa_11_4_8, "In business and finance, calculus optimizes investment strategies, models market trends, and analyzes financial data, calculating interest rates and maximizing profit.");
+        addStudentAnswerToProblemAnswer(pa_11_4_8, sa11_4_8_student6);
+
+        StudentAnswer sa11_4_9_student6 = createStudentAnswer(student6, pa_11_4_9, "In astronomy, calculus models and analyzes celestial motion, calculates orbits, and understands universe changes, solving gravitational force equations.");
+        addStudentAnswerToProblemAnswer(pa_11_4_9, sa11_4_9_student6);
+
+        StudentAnswer sa11_4_10_student6 = createStudentAnswer(student6, pa_11_4_10, "Calculus provides tools for modeling, analyzing, and solving real-world problems, optimizing processes, and understanding complex systems.");
+        addStudentAnswerToProblemAnswer(pa_11_4_10, sa11_4_10_student6);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment11_4.");
+// Creating StudentAnswer instances for student5
+        StudentAnswer sa12_1_1_student5 = createStudentAnswer(student5, pa_12_1_1, "A vector is a quantity that has both magnitude and direction, represented by an arrow from one point to another in space.");
+        addStudentAnswerToProblemAnswer(pa_12_1_1, sa12_1_1_student5);
+
+        StudentAnswer sa12_1_2_student5 = createStudentAnswer(student5, pa_12_1_2, "Vector addition is the process of adding two or more vectors by adding their corresponding components to get a resultant vector.");
+        addStudentAnswerToProblemAnswer(pa_12_1_2, sa12_1_2_student5);
+
+        StudentAnswer sa12_1_3_student5 = createStudentAnswer(student5, pa_12_1_3, "Scalar multiplication involves multiplying a vector by a scalar (a real number), changing the magnitude but not the direction of the vector.");
+        addStudentAnswerToProblemAnswer(pa_12_1_3, sa12_1_3_student5);
+
+        StudentAnswer sa12_1_4_student5 = createStudentAnswer(student5, pa_12_1_4, "The dot product (or scalar product) of two vectors is a measure of their alignment, calculated as the product of their magnitudes and the cosine of the angle between them.");
+        addStudentAnswerToProblemAnswer(pa_12_1_4, sa12_1_4_student5);
+
+        StudentAnswer sa12_1_5_student5 = createStudentAnswer(student5, pa_12_1_5, "The cross product (or vector product) of two vectors is a vector perpendicular to both original vectors, calculated as the product of their magnitudes and the sine of the angle between them.");
+        addStudentAnswerToProblemAnswer(pa_12_1_5, sa12_1_5_student5);
+
+        StudentAnswer sa12_1_6_student5 = createStudentAnswer(student5, pa_12_1_6, "Unit vectors are vectors with a magnitude of 1, used to indicate direction and often denoted with a hat symbol (e.g., î, ĵ, k̂).");
+        addStudentAnswerToProblemAnswer(pa_12_1_6, sa12_1_6_student5);
+
+        StudentAnswer sa12_1_7_student5 = createStudentAnswer(student5, pa_12_1_7, "The magnitude of a vector is found using the Pythagorean theorem. For a vector (a, b), the magnitude is √(a^2 + b^2).");
+        addStudentAnswerToProblemAnswer(pa_12_1_7, sa12_1_7_student5);
+
+        StudentAnswer sa12_1_8_student5 = createStudentAnswer(student5, pa_12_1_8, "A zero vector is a vector with a magnitude of 0 and no specific direction, represented by (0, 0) in two dimensions and (0, 0, 0) in three dimensions.");
+        addStudentAnswerToProblemAnswer(pa_12_1_8, sa12_1_8_student5);
+
+        StudentAnswer sa12_1_9_student5 = createStudentAnswer(student5, pa_12_1_9, "Vectors are used in physics to represent quantities like displacement, velocity, acceleration, and force, describing their direction and magnitude.");
+        addStudentAnswerToProblemAnswer(pa_12_1_9, sa12_1_9_student5);
+
+        StudentAnswer sa12_1_10_student5 = createStudentAnswer(student5, pa_12_1_10, "A vector has both magnitude and direction, while a scalar has only magnitude. Examples of vectors include velocity and force, while scalars include temperature and mass.");
+        addStudentAnswerToProblemAnswer(pa_12_1_10, sa12_1_10_student5);
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa12_1_1_student6 = createStudentAnswer(student6, pa_12_1_1, "A vector is a quantity that has both magnitude and direction, represented by an arrow from one point to another in space.");
+        addStudentAnswerToProblemAnswer(pa_12_1_1, sa12_1_1_student6);
+
+        StudentAnswer sa12_1_2_student6 = createStudentAnswer(student6, pa_12_1_2, "Vector addition is the process of adding two or more vectors by adding their corresponding components to get a resultant vector.");
+        addStudentAnswerToProblemAnswer(pa_12_1_2, sa12_1_2_student6);
+
+        StudentAnswer sa12_1_3_student6 = createStudentAnswer(student6, pa_12_1_3, "Scalar multiplication involves multiplying a vector by a scalar (a real number), changing the magnitude but not the direction of the vector.");
+        addStudentAnswerToProblemAnswer(pa_12_1_3, sa12_1_3_student6);
+
+        StudentAnswer sa12_1_4_student6 = createStudentAnswer(student6, pa_12_1_4, "The dot product (or scalar product) of two vectors is a measure of their alignment, calculated as the product of their magnitudes and the cosine of the angle between them.");
+        addStudentAnswerToProblemAnswer(pa_12_1_4, sa12_1_4_student6);
+
+        StudentAnswer sa12_1_5_student6 = createStudentAnswer(student6, pa_12_1_5, "The cross product (or vector product) of two vectors is a vector perpendicular to both original vectors, calculated as the product of their magnitudes and the sine of the angle between them.");
+        addStudentAnswerToProblemAnswer(pa_12_1_5, sa12_1_5_student6);
+
+        StudentAnswer sa12_1_6_student6 = createStudentAnswer(student6, pa_12_1_6, "Unit vectors are vectors with a magnitude of 1, used to indicate direction and often denoted with a hat symbol (e.g., î, ĵ, k̂).");
+        addStudentAnswerToProblemAnswer(pa_12_1_6, sa12_1_6_student6);
+
+        StudentAnswer sa12_1_7_student6 = createStudentAnswer(student6, pa_12_1_7, "The magnitude of a vector is found using the Pythagorean theorem. For a vector (a, b), the magnitude is √(a^2 + b^2).");
+        addStudentAnswerToProblemAnswer(pa_12_1_7, sa12_1_7_student6);
+
+        StudentAnswer sa12_1_8_student6 = createStudentAnswer(student6, pa_12_1_8, "A zero vector is a vector with a magnitude of 0 and no specific direction, represented by (0, 0) in two dimensions and (0, 0, 0) in three dimensions.");
+        addStudentAnswerToProblemAnswer(pa_12_1_8, sa12_1_8_student6);
+
+        StudentAnswer sa12_1_9_student6 = createStudentAnswer(student6, pa_12_1_9, "Vectors are used in physics to represent quantities like displacement, velocity, acceleration, and force, describing their direction and magnitude.");
+        addStudentAnswerToProblemAnswer(pa_12_1_9, sa12_1_9_student6);
+
+        StudentAnswer sa12_1_10_student6 = createStudentAnswer(student6, pa_12_1_10, "A vector has both magnitude and direction, while a scalar has only magnitude. Examples of vectors include velocity and force, while scalars include temperature and mass.");
+        addStudentAnswerToProblemAnswer(pa_12_1_10, sa12_1_10_student6);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment12_1.");
+// Creating StudentAnswer instances for student5
+        StudentAnswer sa12_2_1_student5 = createStudentAnswer(student5, pa_12_2_1, "A matrix is a rectangular array of numbers arranged in rows and columns, used to represent and solve systems of linear equations.");
+        addStudentAnswerToProblemAnswer(pa_12_2_1, sa12_2_1_student5);
+
+        StudentAnswer sa12_2_2_student5 = createStudentAnswer(student5, pa_12_2_2, "Matrix addition involves adding two matrices by adding their corresponding elements. The matrices must have the same dimensions.");
+        addStudentAnswerToProblemAnswer(pa_12_2_2, sa12_2_2_student5);
+
+        StudentAnswer sa12_2_3_student5 = createStudentAnswer(student5, pa_12_2_3, "Matrix multiplication involves multiplying two matrices by taking the dot product of rows and columns. The number of columns in the first matrix must equal the number of rows in the second.");
+        addStudentAnswerToProblemAnswer(pa_12_2_3, sa12_2_3_student5);
+
+        StudentAnswer sa12_2_4_student5 = createStudentAnswer(student5, pa_12_2_4, "The identity matrix is a square matrix with ones on the diagonal and zeros elsewhere, acting as the multiplicative identity in matrix multiplication.");
+        addStudentAnswerToProblemAnswer(pa_12_2_4, sa12_2_4_student5);
+
+        StudentAnswer sa12_2_5_student5 = createStudentAnswer(student5, pa_12_2_5, "The inverse of a matrix is a matrix that, when multiplied by the original matrix, yields the identity matrix. Not all matrices have inverses.");
+        addStudentAnswerToProblemAnswer(pa_12_2_5, sa12_2_5_student5);
+
+        StudentAnswer sa12_2_6_student5 = createStudentAnswer(student5, pa_12_2_6, "The determinant is a scalar value computed from the elements of a square matrix, providing information about the matrix properties and used in solving linear systems.");
+        addStudentAnswerToProblemAnswer(pa_12_2_6, sa12_2_6_student5);
+
+        StudentAnswer sa12_2_7_student5 = createStudentAnswer(student5, pa_12_2_7, "The transpose of a matrix is obtained by swapping its rows and columns. If A is an m×n matrix, its transpose A^T is an n×m matrix.");
+        addStudentAnswerToProblemAnswer(pa_12_2_7, sa12_2_7_student5);
+
+        StudentAnswer sa12_2_8_student5 = createStudentAnswer(student5, pa_12_2_8, "A diagonal matrix is a square matrix with all elements outside the main diagonal being zero. The main diagonal can contain non-zero elements.");
+        addStudentAnswerToProblemAnswer(pa_12_2_8, sa12_2_8_student5);
+
+        StudentAnswer sa12_2_9_student5 = createStudentAnswer(student5, pa_12_2_9, "Matrices represent and solve systems of linear equations, written as a matrix equation and solved using operations like Gaussian elimination or matrix inversion.");
+        addStudentAnswerToProblemAnswer(pa_12_2_9, sa12_2_9_student5);
+
+        StudentAnswer sa12_2_10_student5 = createStudentAnswer(student5, pa_12_2_10, "Matrices have applications in fields like computer graphics, engineering, physics, economics, and statistics for transformations, modeling systems, data analysis, and solving differential equations.");
+        addStudentAnswerToProblemAnswer(pa_12_2_10, sa12_2_10_student5);
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa12_2_1_student6 = createStudentAnswer(student6, pa_12_2_1, "A matrix is a rectangular array of numbers arranged in rows and columns, used to represent and solve systems of linear equations.");
+        addStudentAnswerToProblemAnswer(pa_12_2_1, sa12_2_1_student6);
+
+        StudentAnswer sa12_2_2_student6 = createStudentAnswer(student6, pa_12_2_2, "Matrix addition involves adding two matrices by adding their corresponding elements. The matrices must have the same dimensions.");
+        addStudentAnswerToProblemAnswer(pa_12_2_2, sa12_2_2_student6);
+
+        StudentAnswer sa12_2_3_student6 = createStudentAnswer(student6, pa_12_2_3, "Matrix multiplication involves multiplying two matrices by taking the dot product of rows and columns. The number of columns in the first matrix must equal the number of rows in the second.");
+        addStudentAnswerToProblemAnswer(pa_12_2_3, sa12_2_3_student6);
+
+        StudentAnswer sa12_2_4_student6 = createStudentAnswer(student6, pa_12_2_4, "The identity matrix is a square matrix with ones on the diagonal and zeros elsewhere, acting as the multiplicative identity in matrix multiplication.");
+        addStudentAnswerToProblemAnswer(pa_12_2_4, sa12_2_4_student6);
+
+        StudentAnswer sa12_2_5_student6 = createStudentAnswer(student6, pa_12_2_5, "The inverse of a matrix is a matrix that, when multiplied by the original matrix, yields the identity matrix. Not all matrices have inverses.");
+        addStudentAnswerToProblemAnswer(pa_12_2_5, sa12_2_5_student6);
+
+        StudentAnswer sa12_2_6_student6 = createStudentAnswer(student6, pa_12_2_6, "The determinant is a scalar value computed from the elements of a square matrix, providing information about the matrix properties and used in solving linear systems.");
+        addStudentAnswerToProblemAnswer(pa_12_2_6, sa12_2_6_student6);
+
+        StudentAnswer sa12_2_7_student6 = createStudentAnswer(student6, pa_12_2_7, "The transpose of a matrix is obtained by swapping its rows and columns. If A is an m×n matrix, its transpose A^T is an n×m matrix.");
+        addStudentAnswerToProblemAnswer(pa_12_2_7, sa12_2_7_student6);
+
+        StudentAnswer sa12_2_8_student6 = createStudentAnswer(student6, pa_12_2_8, "A diagonal matrix is a square matrix with all elements outside the main diagonal being zero. The main diagonal can contain non-zero elements.");
+        addStudentAnswerToProblemAnswer(pa_12_2_8, sa12_2_8_student6);
+
+        StudentAnswer sa12_2_9_student6 = createStudentAnswer(student6, pa_12_2_9, "Matrices represent and solve systems of linear equations, written as a matrix equation and solved using operations like Gaussian elimination or matrix inversion.");
+        addStudentAnswerToProblemAnswer(pa_12_2_9, sa12_2_9_student6);
+
+        StudentAnswer sa12_2_10_student6 = createStudentAnswer(student6, pa_12_2_10, "Matrices have applications in fields like computer graphics, engineering, physics, economics, and statistics for transformations, modeling systems, data analysis, and solving differential equations.");
+        addStudentAnswerToProblemAnswer(pa_12_2_10, sa12_2_10_student6);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment12_2.");
+// Creating StudentAnswer instances for student5
+        StudentAnswer sa12_3_1_student5 = createStudentAnswer(student5, pa_12_3_1, "A determinant is a scalar value computed from the elements of a square matrix, providing important information about the matrix, such as whether it is invertible.");
+        addStudentAnswerToProblemAnswer(pa_12_3_1, sa12_3_1_student5);
+
+        StudentAnswer sa12_3_2_student5 = createStudentAnswer(student5, pa_12_3_2, "The determinant of a 2x2 matrix [a b; c d] is calculated as ad - bc.");
+        addStudentAnswerToProblemAnswer(pa_12_3_2, sa12_3_2_student5);
+
+        StudentAnswer sa12_3_3_student5 = createStudentAnswer(student5, pa_12_3_3, "Determinants help determine the invertibility of a matrix, solve systems of linear equations, and find the area or volume of geometric shapes.");
+        addStudentAnswerToProblemAnswer(pa_12_3_3, sa12_3_3_student5);
+
+        StudentAnswer sa12_3_4_student5 = createStudentAnswer(student5, pa_12_3_4, "The determinant of a 3x3 matrix [a b c; d e f; g h i] is calculated using the formula: a(ei - fh) - b(di - fg) + c(dh - eg).");
+        addStudentAnswerToProblemAnswer(pa_12_3_4, sa12_3_4_student5);
+
+        StudentAnswer sa12_3_5_student5 = createStudentAnswer(student5, pa_12_3_5, "Properties of determinants: (1) The determinant of the identity matrix is 1, (2) The determinant of a matrix product is the product of the determinants, (3) Swapping rows or columns changes the sign of the determinant, (4) The determinant of a triangular matrix is the product of its diagonal elements.");
+        addStudentAnswerToProblemAnswer(pa_12_3_5, sa12_3_5_student5);
+
+        StudentAnswer sa12_3_6_student5 = createStudentAnswer(student5, pa_12_3_6, "Determinants are used to solve linear systems through Cramer's rule, finding solutions using the determinants of the coefficient matrix and its submatrices.");
+        addStudentAnswerToProblemAnswer(pa_12_3_6, sa12_3_6_student5);
+
+        StudentAnswer sa12_3_7_student5 = createStudentAnswer(student5, pa_12_3_7, "The determinant of a triangular matrix (upper or lower) is the product of its diagonal elements.");
+        addStudentAnswerToProblemAnswer(pa_12_3_7, sa12_3_7_student5);
+
+        StudentAnswer sa12_3_8_student5 = createStudentAnswer(student5, pa_12_3_8, "The cofactor expansion method expresses the determinant of a matrix as a sum of the products of its elements and their cofactors, breaking it down into smaller submatrices.");
+        addStudentAnswerToProblemAnswer(pa_12_3_8, sa12_3_8_student5);
+
+        StudentAnswer sa12_3_9_student5 = createStudentAnswer(student5, pa_12_3_9, "Determinants are related to eigenvalues through the characteristic polynomial of a matrix. The eigenvalues are the roots of this polynomial, and the determinant is the product of the eigenvalues.");
+        addStudentAnswerToProblemAnswer(pa_12_3_9, sa12_3_9_student5);
+
+        StudentAnswer sa12_3_10_student5 = createStudentAnswer(student5, pa_12_3_10, "A zero determinant indicates that a matrix is singular, meaning it is not invertible and its rows or columns are linearly dependent.");
+        addStudentAnswerToProblemAnswer(pa_12_3_10, sa12_3_10_student5);
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa12_3_1_student6 = createStudentAnswer(student6, pa_12_3_1, "A determinant is a scalar value computed from the elements of a square matrix, providing important information about the matrix, such as whether it is invertible.");
+        addStudentAnswerToProblemAnswer(pa_12_3_1, sa12_3_1_student6);
+
+        StudentAnswer sa12_3_2_student6 = createStudentAnswer(student6, pa_12_3_2, "The determinant of a 2x2 matrix [a b; c d] is calculated as ad - bc.");
+        addStudentAnswerToProblemAnswer(pa_12_3_2, sa12_3_2_student6);
+
+        StudentAnswer sa12_3_3_student6 = createStudentAnswer(student6, pa_12_3_3, "Determinants help determine the invertibility of a matrix, solve systems of linear equations, and find the area or volume of geometric shapes.");
+        addStudentAnswerToProblemAnswer(pa_12_3_3, sa12_3_3_student6);
+
+        StudentAnswer sa12_3_4_student6 = createStudentAnswer(student6, pa_12_3_4, "The determinant of a 3x3 matrix [a b c; d e f; g h i] is calculated using the formula: a(ei - fh) - b(di - fg) + c(dh - eg).");
+        addStudentAnswerToProblemAnswer(pa_12_3_4, sa12_3_4_student6);
+
+        StudentAnswer sa12_3_5_student6 = createStudentAnswer(student6, pa_12_3_5, "Properties of determinants: (1) The determinant of the identity matrix is 1, (2) The determinant of a matrix product is the product of the determinants, (3) Swapping rows or columns changes the sign of the determinant, (4) The determinant of a triangular matrix is the product of its diagonal elements.");
+        addStudentAnswerToProblemAnswer(pa_12_3_5, sa12_3_5_student6);
+
+        StudentAnswer sa12_3_6_student6 = createStudentAnswer(student6, pa_12_3_6, "Determinants are used to solve linear systems through Cramer's rule, finding solutions using the determinants of the coefficient matrix and its submatrices.");
+        addStudentAnswerToProblemAnswer(pa_12_3_6, sa12_3_6_student6);
+
+        StudentAnswer sa12_3_7_student6 = createStudentAnswer(student6, pa_12_3_7, "The determinant of a triangular matrix (upper or lower) is the product of its diagonal elements.");
+        addStudentAnswerToProblemAnswer(pa_12_3_7, sa12_3_7_student6);
+
+        StudentAnswer sa12_3_8_student6 = createStudentAnswer(student6, pa_12_3_8, "The cofactor expansion method expresses the determinant of a matrix as a sum of the products of its elements and their cofactors, breaking it down into smaller submatrices.");
+        addStudentAnswerToProblemAnswer(pa_12_3_8, sa12_3_8_student6);
+
+        StudentAnswer sa12_3_9_student6 = createStudentAnswer(student6, pa_12_3_9, "Determinants are related to eigenvalues through the characteristic polynomial of a matrix. The eigenvalues are the roots of this polynomial, and the determinant is the product of the eigenvalues.");
+        addStudentAnswerToProblemAnswer(pa_12_3_9, sa12_3_9_student6);
+
+        StudentAnswer sa12_3_10_student6 = createStudentAnswer(student6, pa_12_3_10, "A zero determinant indicates that a matrix is singular, meaning it is not invertible and its rows or columns are linearly dependent.");
+        addStudentAnswerToProblemAnswer(pa_12_3_10, sa12_3_10_student6);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment12_3.");
+// Creating StudentAnswer instances for student5
+        StudentAnswer sa12_4_1_student5 = createStudentAnswer(student5, pa_12_4_1, "Eigenvalues are special numbers associated with a matrix that characterize the scaling factor by which the eigenvectors are stretched or compressed under a linear transformation.");
+        addStudentAnswerToProblemAnswer(pa_12_4_1, sa12_4_1_student5);
+
+        StudentAnswer sa12_4_2_student5 = createStudentAnswer(student5, pa_12_4_2, "Eigenvalues are calculated by solving the characteristic equation, obtained by setting the determinant of (A - λI) equal to zero, where A is the matrix, λ is the eigenvalue, and I is the identity matrix.");
+        addStudentAnswerToProblemAnswer(pa_12_4_2, sa12_4_2_student5);
+
+        StudentAnswer sa12_4_3_student5 = createStudentAnswer(student5, pa_12_4_3, "The characteristic equation of a matrix A is given by det(A - λI) = 0, where det denotes the determinant, λ represents the eigenvalue, and I is the identity matrix.");
+        addStudentAnswerToProblemAnswer(pa_12_4_3, sa12_4_3_student5);
+
+        StudentAnswer sa12_4_4_student5 = createStudentAnswer(student5, pa_12_4_4, "Eigenvalues provide important information about a matrix's properties, such as invertibility, stability, and behavior under linear transformations, used in differential equations and matrix diagonalization.");
+        addStudentAnswerToProblemAnswer(pa_12_4_4, sa12_4_4_student5);
+
+        StudentAnswer sa12_4_5_student5 = createStudentAnswer(student5, pa_12_4_5, "The determinant of a matrix is equal to the product of its eigenvalues, providing a way to calculate the determinant using eigenvalues and understanding matrix properties.");
+        addStudentAnswerToProblemAnswer(pa_12_4_5, sa12_4_5_student5);
+
+        StudentAnswer sa12_4_6_student5 = createStudentAnswer(student5, pa_12_4_6, "Eigenvalues have applications in fields like vibration analysis, stability analysis, principal component analysis (PCA), quantum mechanics, and computer graphics.");
+        addStudentAnswerToProblemAnswer(pa_12_4_6, sa12_4_6_student5);
+
+        StudentAnswer sa12_4_7_student5 = createStudentAnswer(student5, pa_12_4_7, "Real eigenvalues are on the real number line, while complex eigenvalues have real and imaginary parts, affecting the matrix's behavior under linear transformations.");
+        addStudentAnswerToProblemAnswer(pa_12_4_7, sa12_4_7_student5);
+
+        StudentAnswer sa12_4_8_student5 = createStudentAnswer(student5, pa_12_4_8, "Eigenvalue decomposition decomposes a matrix into a product of its eigenvectors and eigenvalues, simplifying matrix operations and solving differential equations.");
+        addStudentAnswerToProblemAnswer(pa_12_4_8, sa12_4_8_student5);
+
+        StudentAnswer sa12_4_9_student5 = createStudentAnswer(student5, pa_12_4_9, "Eigenvalues represent the factor by which eigenvectors are stretched or compressed under a linear transformation, providing insights into scaling and rotation properties.");
+        addStudentAnswerToProblemAnswer(pa_12_4_9, sa12_4_9_student5);
+
+        StudentAnswer sa12_4_10_student5 = createStudentAnswer(student5, pa_12_4_10, "The largest eigenvalue, the dominant eigenvalue, provides important information about the matrix's behavior under repeated applications, used in stability analysis and spectral graph theory.");
+        addStudentAnswerToProblemAnswer(pa_12_4_10, sa12_4_10_student5);
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa12_4_1_student6 = createStudentAnswer(student6, pa_12_4_1, "Eigenvalues are special numbers associated with a matrix that characterize the scaling factor by which the eigenvectors are stretched or compressed under a linear transformation.");
+        addStudentAnswerToProblemAnswer(pa_12_4_1, sa12_4_1_student6);
+
+        StudentAnswer sa12_4_2_student6 = createStudentAnswer(student6, pa_12_4_2, "Eigenvalues are calculated by solving the characteristic equation, obtained by setting the determinant of (A - λI) equal to zero, where A is the matrix, λ is the eigenvalue, and I is the identity matrix.");
+        addStudentAnswerToProblemAnswer(pa_12_4_2, sa12_4_2_student6);
+
+        StudentAnswer sa12_4_3_student6 = createStudentAnswer(student6, pa_12_4_3, "The characteristic equation of a matrix A is given by det(A - λI) = 0, where det denotes the determinant, λ represents the eigenvalue, and I is the identity matrix.");
+        addStudentAnswerToProblemAnswer(pa_12_4_3, sa12_4_3_student6);
+
+        StudentAnswer sa12_4_4_student6 = createStudentAnswer(student6, pa_12_4_4, "Eigenvalues provide important information about a matrix's properties, such as invertibility, stability, and behavior under linear transformations, used in differential equations and matrix diagonalization.");
+        addStudentAnswerToProblemAnswer(pa_12_4_4, sa12_4_4_student6);
+
+        StudentAnswer sa12_4_5_student6 = createStudentAnswer(student6, pa_12_4_5, "The determinant of a matrix is equal to the product of its eigenvalues, providing a way to calculate the determinant using eigenvalues and understanding matrix properties.");
+        addStudentAnswerToProblemAnswer(pa_12_4_5, sa12_4_5_student6);
+
+        StudentAnswer sa12_4_6_student6 = createStudentAnswer(student6, pa_12_4_6, "Eigenvalues have applications in fields like vibration analysis, stability analysis, principal component analysis (PCA), quantum mechanics, and computer graphics.");
+        addStudentAnswerToProblemAnswer(pa_12_4_6, sa12_4_6_student6);
+
+        StudentAnswer sa12_4_7_student6 = createStudentAnswer(student6, pa_12_4_7, "Real eigenvalues are on the real number line, while complex eigenvalues have real and imaginary parts, affecting the matrix's behavior under linear transformations.");
+        addStudentAnswerToProblemAnswer(pa_12_4_7, sa12_4_7_student6);
+
+        StudentAnswer sa12_4_8_student6 = createStudentAnswer(student6, pa_12_4_8, "Eigenvalue decomposition decomposes a matrix into a product of its eigenvectors and eigenvalues, simplifying matrix operations and solving differential equations.");
+        addStudentAnswerToProblemAnswer(pa_12_4_8, sa12_4_8_student6);
+
+        StudentAnswer sa12_4_9_student6 = createStudentAnswer(student6, pa_12_4_9, "Eigenvalues represent the factor by which eigenvectors are stretched or compressed under a linear transformation, providing insights into scaling and rotation properties.");
+        addStudentAnswerToProblemAnswer(pa_12_4_9, sa12_4_9_student6);
+
+        StudentAnswer sa12_4_10_student6 = createStudentAnswer(student6, pa_12_4_10, "The largest eigenvalue, the dominant eigenvalue, provides important information about the matrix's behavior under repeated applications, used in stability analysis and spectral graph theory.");
+        addStudentAnswerToProblemAnswer(pa_12_4_10, sa12_4_10_student6);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment12_4.");
+// Creating StudentAnswer instances for student5
+        StudentAnswer sa12_5_1_student5 = createStudentAnswer(student5, pa_12_5_1, "Eigenvectors are special vectors associated with a matrix that remain in the same direction under a linear transformation. They are scaled by their corresponding eigenvalues.");
+        addStudentAnswerToProblemAnswer(pa_12_5_1, sa12_5_1_student5);
+
+        StudentAnswer sa12_5_2_student5 = createStudentAnswer(student5, pa_12_5_2, "Eigenvectors are found by solving the equation (A - λI)v = 0, where A is the matrix, λ is the eigenvalue, I is the identity matrix, and v is the eigenvector.");
+        addStudentAnswerToProblemAnswer(pa_12_5_2, sa12_5_2_student5);
+
+        StudentAnswer sa12_5_3_student5 = createStudentAnswer(student5, pa_12_5_3, "Eigenvectors are vectors scaled by a factor (the eigenvalue) when a linear transformation is applied. The eigenvalue determines the amount of scaling, while the eigenvector determines the direction.");
+        addStudentAnswerToProblemAnswer(pa_12_5_3, sa12_5_3_student5);
+
+        StudentAnswer sa12_5_4_student5 = createStudentAnswer(student5, pa_12_5_4, "Eigenvectors provide insight into the behavior of a linear transformation, representing directions that remain unchanged and helping to understand the transformation's effect on different system components.");
+        addStudentAnswerToProblemAnswer(pa_12_5_4, sa12_5_4_student5);
+
+        StudentAnswer sa12_5_5_student5 = createStudentAnswer(student5, pa_12_5_5, "Matrix diagonalization involves expressing a matrix as a product of its eigenvectors and a diagonal matrix of its eigenvalues, simplifying matrix operations and solving systems of differential equations.");
+        addStudentAnswerToProblemAnswer(pa_12_5_5, sa12_5_5_student5);
+
+        StudentAnswer sa12_5_6_student5 = createStudentAnswer(student5, pa_12_5_6, "Geometrically, eigenvectors represent directions in which the linear transformation acts by stretching or compressing without changing the direction, helping visualize the transformation's effect.");
+        addStudentAnswerToProblemAnswer(pa_12_5_6, sa12_5_6_student5);
+
+        StudentAnswer sa12_5_7_student5 = createStudentAnswer(student5, pa_12_5_7, "In PCA, eigenvectors of the covariance matrix represent directions of maximum variance, used to project data onto a lower-dimensional space while retaining important features.");
+        addStudentAnswerToProblemAnswer(pa_12_5_7, sa12_5_7_student5);
+
+        StudentAnswer sa12_5_8_student5 = createStudentAnswer(student5, pa_12_5_8, "In stability analysis, eigenvectors help determine the behavior of dynamic systems by indicating directions of stable and unstable modes, providing insights into system responses to perturbations.");
+        addStudentAnswerToProblemAnswer(pa_12_5_8, sa12_5_8_student5);
+
+        StudentAnswer sa12_5_9_student5 = createStudentAnswer(student5, pa_12_5_9, "Eigenvectors have properties such as linear independence, their number equals the matrix rank, they form the basis of the eigenspace, and they are used to diagonalize the matrix.");
+        addStudentAnswerToProblemAnswer(pa_12_5_9, sa12_5_9_student5);
+
+        StudentAnswer sa12_5_10_student5 = createStudentAnswer(student5, pa_12_5_10, "Eigenvectors can be normalized by dividing them by their magnitude, resulting in a unit vector, simplifying calculations and interpreting eigenvectors in standard form.");
+        addStudentAnswerToProblemAnswer(pa_12_5_10, sa12_5_10_student5);
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa12_5_1_student6 = createStudentAnswer(student6, pa_12_5_1, "Eigenvectors are special vectors associated with a matrix that remain in the same direction under a linear transformation. They are scaled by their corresponding eigenvalues.");
+        addStudentAnswerToProblemAnswer(pa_12_5_1, sa12_5_1_student6);
+
+        StudentAnswer sa12_5_2_student6 = createStudentAnswer(student6, pa_12_5_2, "Eigenvectors are found by solving the equation (A - λI)v = 0, where A is the matrix, λ is the eigenvalue, I is the identity matrix, and v is the eigenvector.");
+        addStudentAnswerToProblemAnswer(pa_12_5_2, sa12_5_2_student6);
+
+        StudentAnswer sa12_5_3_student6 = createStudentAnswer(student6, pa_12_5_3, "Eigenvectors are vectors scaled by a factor (the eigenvalue) when a linear transformation is applied. The eigenvalue determines the amount of scaling, while the eigenvector determines the direction.");
+        addStudentAnswerToProblemAnswer(pa_12_5_3, sa12_5_3_student6);
+
+        StudentAnswer sa12_5_4_student6 = createStudentAnswer(student6, pa_12_5_4, "Eigenvectors provide insight into the behavior of a linear transformation, representing directions that remain unchanged and helping to understand the transformation's effect on different system components.");
+        addStudentAnswerToProblemAnswer(pa_12_5_4, sa12_5_4_student6);
+
+        StudentAnswer sa12_5_5_student6 = createStudentAnswer(student6, pa_12_5_5, "Matrix diagonalization involves expressing a matrix as a product of its eigenvectors and a diagonal matrix of its eigenvalues, simplifying matrix operations and solving systems of differential equations.");
+        addStudentAnswerToProblemAnswer(pa_12_5_5, sa12_5_5_student6);
+
+        StudentAnswer sa12_5_6_student6 = createStudentAnswer(student6, pa_12_5_6, "Geometrically, eigenvectors represent directions in which the linear transformation acts by stretching or compressing without changing the direction, helping visualize the transformation's effect.");
+        addStudentAnswerToProblemAnswer(pa_12_5_6, sa12_5_6_student6);
+
+        StudentAnswer sa12_5_7_student6 = createStudentAnswer(student6, pa_12_5_7, "In PCA, eigenvectors of the covariance matrix represent directions of maximum variance, used to project data onto a lower-dimensional space while retaining important features.");
+        addStudentAnswerToProblemAnswer(pa_12_5_7, sa12_5_7_student6);
+
+        StudentAnswer sa12_5_8_student6 = createStudentAnswer(student6, pa_12_5_8, "In stability analysis, eigenvectors help determine the behavior of dynamic systems by indicating directions of stable and unstable modes, providing insights into system responses to perturbations.");
+        addStudentAnswerToProblemAnswer(pa_12_5_8, sa12_5_8_student6);
+
+        StudentAnswer sa12_5_9_student6 = createStudentAnswer(student6, pa_12_5_9, "Eigenvectors have properties such as linear independence, their number equals the matrix rank, they form the basis of the eigenspace, and they are used to diagonalize the matrix.");
+        addStudentAnswerToProblemAnswer(pa_12_5_9, sa12_5_9_student6);
+
+        StudentAnswer sa12_5_10_student6 = createStudentAnswer(student6, pa_12_5_10, "Eigenvectors can be normalized by dividing them by their magnitude, resulting in a unit vector, simplifying calculations and interpreting eigenvectors in standard form.");
+        addStudentAnswerToProblemAnswer(pa_12_5_10, sa12_5_10_student6);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment12_5.");
+// Creating StudentAnswer instances for student7
+        StudentAnswer sa13_1_1_student7 = createStudentAnswer(student7, pa_13_1_1, "A sequence is an ordered list of numbers or terms that follow a specific pattern or rule, with each term identified by its position in the list.");
+        addStudentAnswerToProblemAnswer(pa_13_1_1, sa13_1_1_student7);
+
+        StudentAnswer sa13_1_2_student7 = createStudentAnswer(student7, pa_13_1_2, "A series is the sum of the terms of a sequence, which can be finite with a fixed number of terms or infinite with an infinite number of terms.");
+        addStudentAnswerToProblemAnswer(pa_13_1_2, sa13_1_2_student7);
+
+        StudentAnswer sa13_1_3_student7 = createStudentAnswer(student7, pa_13_1_3, "A convergent series is a series whose terms approach a specific value as the number of terms increases, meaning the sum of the series approaches a finite limit.");
+        addStudentAnswerToProblemAnswer(pa_13_1_3, sa13_1_3_student7);
+
+        StudentAnswer sa13_1_4_student7 = createStudentAnswer(student7, pa_13_1_4, "A divergent series is a series whose terms do not approach a specific value as the number of terms increases, meaning the sum of the series does not converge to a finite limit.");
+        addStudentAnswerToProblemAnswer(pa_13_1_4, sa13_1_4_student7);
+
+        StudentAnswer sa13_1_5_student7 = createStudentAnswer(student7, pa_13_1_5, "A power series is an infinite series of the form Σa_n(x-c)^n, where a_n are the coefficients, x is the variable, and c is the center of the series, used to represent functions in terms of Taylor or Maclaurin series expansions.");
+        addStudentAnswerToProblemAnswer(pa_13_1_5, sa13_1_5_student7);
+
+        StudentAnswer sa13_1_6_student7 = createStudentAnswer(student7, pa_13_1_6, "The ratio test is a method for determining the convergence or divergence of an infinite series by finding the limit of the ratio of consecutive terms. If the limit is less than 1, the series converges; if it is greater than 1, the series diverges.");
+        addStudentAnswerToProblemAnswer(pa_13_1_6, sa13_1_6_student7);
+
+        StudentAnswer sa13_1_7_student7 = createStudentAnswer(student7, pa_13_1_7, "The root test is a method for determining the convergence or divergence of an infinite series by finding the limit of the nth root of the absolute value of the nth term. If the limit is less than 1, the series converges; if it is greater than 1, the series diverges.");
+        addStudentAnswerToProblemAnswer(pa_13_1_7, sa13_1_7_student7);
+
+        StudentAnswer sa13_1_8_student7 = createStudentAnswer(student7, pa_13_1_8, "A Taylor series is an infinite series that represents a function as a sum of its derivatives evaluated at a specific point, given by Σ[f^n(a)/n!]*(x-a)^n.");
+        addStudentAnswerToProblemAnswer(pa_13_1_8, sa13_1_8_student7);
+
+        StudentAnswer sa13_1_9_student7 = createStudentAnswer(student7, pa_13_1_9, "A Maclaurin series is a special case of a Taylor series where the expansion is centered at zero (a=0), given by Σ[f^n(0)/n!]*x^n.");
+        addStudentAnswerToProblemAnswer(pa_13_1_9, sa13_1_9_student7);
+
+        StudentAnswer sa13_1_10_student7 = createStudentAnswer(student7, pa_13_1_10, "Sequences and series have various real-world applications in finance (calculating interest and annuities), engineering (signal processing and control systems), physics (modeling waveforms and quantum mechanics), and computer science (algorithm analysis and data structures).");
+        addStudentAnswerToProblemAnswer(pa_13_1_10, sa13_1_10_student7);
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa13_1_1_student8 = createStudentAnswer(student8, pa_13_1_1, "A sequence is an ordered list of numbers or terms that follow a specific pattern or rule, with each term identified by its position in the list.");
+        addStudentAnswerToProblemAnswer(pa_13_1_1, sa13_1_1_student8);
+
+        StudentAnswer sa13_1_2_student8 = createStudentAnswer(student8, pa_13_1_2, "A series is the sum of the terms of a sequence, which can be finite with a fixed number of terms or infinite with an infinite number of terms.");
+        addStudentAnswerToProblemAnswer(pa_13_1_2, sa13_1_2_student8);
+
+        StudentAnswer sa13_1_3_student8 = createStudentAnswer(student8, pa_13_1_3, "A convergent series is a series whose terms approach a specific value as the number of terms increases, meaning the sum of the series approaches a finite limit.");
+        addStudentAnswerToProblemAnswer(pa_13_1_3, sa13_1_3_student8);
+
+        StudentAnswer sa13_1_4_student8 = createStudentAnswer(student8, pa_13_1_4, "A divergent series is a series whose terms do not approach a specific value as the number of terms increases, meaning the sum of the series does not converge to a finite limit.");
+        addStudentAnswerToProblemAnswer(pa_13_1_4, sa13_1_4_student8);
+
+        StudentAnswer sa13_1_5_student8 = createStudentAnswer(student8, pa_13_1_5, "A power series is an infinite series of the form Σa_n(x-c)^n, where a_n are the coefficients, x is the variable, and c is the center of the series, used to represent functions in terms of Taylor or Maclaurin series expansions.");
+        addStudentAnswerToProblemAnswer(pa_13_1_5, sa13_1_5_student8);
+
+        StudentAnswer sa13_1_6_student8 = createStudentAnswer(student8, pa_13_1_6, "The ratio test is a method for determining the convergence or divergence of an infinite series by finding the limit of the ratio of consecutive terms. If the limit is less than 1, the series converges; if it is greater than 1, the series diverges.");
+        addStudentAnswerToProblemAnswer(pa_13_1_6, sa13_1_6_student8);
+
+        StudentAnswer sa13_1_7_student8 = createStudentAnswer(student8, pa_13_1_7, "The root test is a method for determining the convergence or divergence of an infinite series by finding the limit of the nth root of the absolute value of the nth term. If the limit is less than 1, the series converges; if it is greater than 1, the series diverges.");
+        addStudentAnswerToProblemAnswer(pa_13_1_7, sa13_1_7_student8);
+
+        StudentAnswer sa13_1_8_student8 = createStudentAnswer(student8, pa_13_1_8, "A Taylor series is an infinite series that represents a function as a sum of its derivatives evaluated at a specific point, given by Σ[f^n(a)/n!]*(x-a)^n.");
+        addStudentAnswerToProblemAnswer(pa_13_1_8, sa13_1_8_student8);
+
+        StudentAnswer sa13_1_9_student8 = createStudentAnswer(student8, pa_13_1_9, "A Maclaurin series is a special case of a Taylor series where the expansion is centered at zero (a=0), given by Σ[f^n(0)/n!]*x^n.");
+        addStudentAnswerToProblemAnswer(pa_13_1_9, sa13_1_9_student8);
+
+        StudentAnswer sa13_1_10_student8 = createStudentAnswer(student8, pa_13_1_10, "Sequences and series have various real-world applications in finance (calculating interest and annuities), engineering (signal processing and control systems), physics (modeling waveforms and quantum mechanics), and computer science (algorithm analysis and data structures).");
+        addStudentAnswerToProblemAnswer(pa_13_1_10, sa13_1_10_student8);
+// Creating StudentAnswer instances for student7
+        StudentAnswer sa13_2_1_student7 = createStudentAnswer(student7, pa_13_2_1, "Integration by parts is a method used to integrate the product of two functions, based on the formula ∫u dv = uv - ∫v du, where u and v are functions of x.");
+        addStudentAnswerToProblemAnswer(pa_13_2_1, sa13_2_1_student7);
+
+        StudentAnswer sa13_2_2_student7 = createStudentAnswer(student7, pa_13_2_2, "Partial fraction decomposition breaks down a complex rational function into simpler fractions that can be integrated individually, useful for integrating rational functions.");
+        addStudentAnswerToProblemAnswer(pa_13_2_2, sa13_2_2_student7);
+
+        StudentAnswer sa13_2_3_student7 = createStudentAnswer(student7, pa_13_2_3, "Trigonometric integrals involve integrals of functions with trigonometric functions like sine, cosine, and tangent. Techniques include using trigonometric identities and substitution.");
+        addStudentAnswerToProblemAnswer(pa_13_2_3, sa13_2_3_student7);
+
+        StudentAnswer sa13_2_4_student7 = createStudentAnswer(student7, pa_13_2_4, "Improper integrals have infinite limits of integration or integrands that approach infinity within the integration interval, evaluated by taking the limit of the integral as it approaches the problematic point.");
+        addStudentAnswerToProblemAnswer(pa_13_2_4, sa13_2_4_student7);
+
+        StudentAnswer sa13_2_5_student7 = createStudentAnswer(student7, pa_13_2_5, "Trigonometric substitution simplifies integrals by substituting trigonometric functions for expressions with square roots, useful for integrals involving radicals.");
+        addStudentAnswerToProblemAnswer(pa_13_2_5, sa13_2_5_student7);
+
+        StudentAnswer sa13_2_6_student7 = createStudentAnswer(student7, pa_13_2_6, "Integration by partial fractions expresses a rational function as a sum of simpler fractions and integrates each fraction individually, breaking down complex fractions.");
+        addStudentAnswerToProblemAnswer(pa_13_2_6, sa13_2_6_student7);
+
+        StudentAnswer sa13_2_7_student7 = createStudentAnswer(student7, pa_13_2_7, "Trigonometric identities help evaluate integrals by transforming the integrand into a simpler form, using identities like Pythagorean identities, angle sum and difference identities, and double angle identities.");
+        addStudentAnswerToProblemAnswer(pa_13_2_7, sa13_2_7_student7);
+
+        StudentAnswer sa13_2_8_student7 = createStudentAnswer(student7, pa_13_2_8, "The method of cylindrical shells finds the volume of a solid of revolution by integrating the circumference and height of cylindrical shells formed by rotating a region around an axis.");
+        addStudentAnswerToProblemAnswer(pa_13_2_8, sa13_2_8_student7);
+
+        StudentAnswer sa13_2_9_student7 = createStudentAnswer(student7, pa_13_2_9, "The method of disks and washers finds the volume of a solid of revolution by integrating the area of cross-sectional disks or washers perpendicular to the axis of rotation.");
+        addStudentAnswerToProblemAnswer(pa_13_2_9, sa13_2_9_student7);
+
+        StudentAnswer sa13_2_10_student7 = createStudentAnswer(student7, pa_13_2_10, "Advanced integration techniques have applications in calculating areas and volumes of complex shapes, solving differential equations, analyzing physical systems, and modeling economic and biological processes.");
+        addStudentAnswerToProblemAnswer(pa_13_2_10, sa13_2_10_student7);
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa13_2_1_student8 = createStudentAnswer(student8, pa_13_2_1, "Integration by parts is a method used to integrate the product of two functions, based on the formula ∫u dv = uv - ∫v du, where u and v are functions of x.");
+        addStudentAnswerToProblemAnswer(pa_13_2_1, sa13_2_1_student8);
+
+        StudentAnswer sa13_2_2_student8 = createStudentAnswer(student8, pa_13_2_2, "Partial fraction decomposition breaks down a complex rational function into simpler fractions that can be integrated individually, useful for integrating rational functions.");
+        addStudentAnswerToProblemAnswer(pa_13_2_2, sa13_2_2_student8);
+
+        StudentAnswer sa13_2_3_student8 = createStudentAnswer(student8, pa_13_2_3, "Trigonometric integrals involve integrals of functions with trigonometric functions like sine, cosine, and tangent. Techniques include using trigonometric identities and substitution.");
+        addStudentAnswerToProblemAnswer(pa_13_2_3, sa13_2_3_student8);
+
+        StudentAnswer sa13_2_4_student8 = createStudentAnswer(student8, pa_13_2_4, "Improper integrals have infinite limits of integration or integrands that approach infinity within the integration interval, evaluated by taking the limit of the integral as it approaches the problematic point.");
+        addStudentAnswerToProblemAnswer(pa_13_2_4, sa13_2_4_student8);
+
+        StudentAnswer sa13_2_5_student8 = createStudentAnswer(student8, pa_13_2_5, "Trigonometric substitution simplifies integrals by substituting trigonometric functions for expressions with square roots, useful for integrals involving radicals.");
+        addStudentAnswerToProblemAnswer(pa_13_2_5, sa13_2_5_student8);
+
+        StudentAnswer sa13_2_6_student8 = createStudentAnswer(student8, pa_13_2_6, "Integration by partial fractions expresses a rational function as a sum of simpler fractions and integrates each fraction individually, breaking down complex fractions.");
+        addStudentAnswerToProblemAnswer(pa_13_2_6, sa13_2_6_student8);
+
+        StudentAnswer sa13_2_7_student8 = createStudentAnswer(student8, pa_13_2_7, "Trigonometric identities help evaluate integrals by transforming the integrand into a simpler form, using identities like Pythagorean identities, angle sum and difference identities, and double angle identities.");
+        addStudentAnswerToProblemAnswer(pa_13_2_7, sa13_2_7_student8);
+
+        StudentAnswer sa13_2_8_student8 = createStudentAnswer(student8, pa_13_2_8, "The method of cylindrical shells finds the volume of a solid of revolution by integrating the circumference and height of cylindrical shells formed by rotating a region around an axis.");
+        addStudentAnswerToProblemAnswer(pa_13_2_8, sa13_2_8_student8);
+
+        StudentAnswer sa13_2_9_student8 = createStudentAnswer(student8, pa_13_2_9, "The method of disks and washers finds the volume of a solid of revolution by integrating the area of cross-sectional disks or washers perpendicular to the axis of rotation.");
+        addStudentAnswerToProblemAnswer(pa_13_2_9, sa13_2_9_student8);
+
+        StudentAnswer sa13_2_10_student8 = createStudentAnswer(student8, pa_13_2_10, "Advanced integration techniques have applications in calculating areas and volumes of complex shapes, solving differential equations, analyzing physical systems, and modeling economic and biological processes.");
+        addStudentAnswerToProblemAnswer(pa_13_2_10, sa13_2_10_student8);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment13_2.");
+// Creating StudentAnswer instances for student7
+        StudentAnswer sa13_3_1_student7 = createStudentAnswer(student7, pa_13_3_1, "Multivariable functions have more than one input variable and model relationships involving multiple quantities, often represented as f(x, y, z).");
+        addStudentAnswerToProblemAnswer(pa_13_3_1, sa13_3_1_student7);
+
+        StudentAnswer sa13_3_2_student7 = createStudentAnswer(student7, pa_13_3_2, "A partial derivative is the derivative of a multivariable function with respect to one variable, while keeping the other variables constant, measuring how the function changes as that variable changes.");
+        addStudentAnswerToProblemAnswer(pa_13_3_2, sa13_3_2_student7);
+
+        StudentAnswer sa13_3_3_student7 = createStudentAnswer(student7, pa_13_3_3, "The gradient of a multivariable function is a vector pointing in the direction of the steepest ascent, calculated by taking the partial derivatives with respect to each variable and combining them into a vector.");
+        addStudentAnswerToProblemAnswer(pa_13_3_3, sa13_3_3_student7);
+
+        StudentAnswer sa13_3_4_student7 = createStudentAnswer(student7, pa_13_3_4, "A multiple integral involves more than one variable and is used to calculate volumes, areas, and other quantities in higher dimensions, such as double and triple integrals.");
+        addStudentAnswerToProblemAnswer(pa_13_3_4, sa13_3_4_student7);
+
+        StudentAnswer sa13_3_5_student7 = createStudentAnswer(student7, pa_13_3_5, "The Jacobian matrix is a matrix of all first-order partial derivatives of a multivariable function, used to analyze the function's behavior and perform coordinate transformations.");
+        addStudentAnswerToProblemAnswer(pa_13_3_5, sa13_3_5_student7);
+
+        StudentAnswer sa13_3_6_student7 = createStudentAnswer(student7, pa_13_3_6, "The Hessian matrix is a square matrix of second-order partial derivatives, providing information about the function's curvature and used in optimization problems.");
+        addStudentAnswerToProblemAnswer(pa_13_3_6, sa13_3_6_student7);
+
+        StudentAnswer sa13_3_7_student7 = createStudentAnswer(student7, pa_13_3_7, "A level curve is a curve along which a multivariable function has a constant value, used to visualize the function's behavior in two dimensions, often in contour plots.");
+        addStudentAnswerToProblemAnswer(pa_13_3_7, sa13_3_7_student7);
+
+        StudentAnswer sa13_3_8_student7 = createStudentAnswer(student7, pa_13_3_8, "To find the maximum and minimum values of a multivariable function, use techniques like setting the gradient to zero to find critical points and analyzing the function's behavior at these points and along the boundaries.");
+        addStudentAnswerToProblemAnswer(pa_13_3_8, sa13_3_8_student7);
+
+        StudentAnswer sa13_3_9_student7 = createStudentAnswer(student7, pa_13_3_9, "A Lagrange multiplier method finds the maximum and minimum values of a function subject to constraints by adding the constraint to the function using a new variable and solving for the variables.");
+        addStudentAnswerToProblemAnswer(pa_13_3_9, sa13_3_9_student7);
+
+        StudentAnswer sa13_3_10_student7 = createStudentAnswer(student7, pa_13_3_10, "Multivariable functions are used in physics (modeling fluid dynamics and electromagnetic fields), engineering (analyzing stress and strain in materials), economics (optimizing production and consumption), and environmental science (modeling pollution dispersion).");
+        addStudentAnswerToProblemAnswer(pa_13_3_10, sa13_3_10_student7);
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa13_3_1_student8 = createStudentAnswer(student8, pa_13_3_1, "Multivariable functions have more than one input variable and model relationships involving multiple quantities, often represented as f(x, y, z).");
+        addStudentAnswerToProblemAnswer(pa_13_3_1, sa13_3_1_student8);
+
+        StudentAnswer sa13_3_2_student8 = createStudentAnswer(student8, pa_13_3_2, "A partial derivative is the derivative of a multivariable function with respect to one variable, while keeping the other variables constant, measuring how the function changes as that variable changes.");
+        addStudentAnswerToProblemAnswer(pa_13_3_2, sa13_3_2_student8);
+
+        StudentAnswer sa13_3_3_student8 = createStudentAnswer(student8, pa_13_3_3, "The gradient of a multivariable function is a vector pointing in the direction of the steepest ascent, calculated by taking the partial derivatives with respect to each variable and combining them into a vector.");
+        addStudentAnswerToProblemAnswer(pa_13_3_3, sa13_3_3_student8);
+
+        StudentAnswer sa13_3_4_student8 = createStudentAnswer(student8, pa_13_3_4, "A multiple integral involves more than one variable and is used to calculate volumes, areas, and other quantities in higher dimensions, such as double and triple integrals.");
+        addStudentAnswerToProblemAnswer(pa_13_3_4, sa13_3_4_student8);
+
+        StudentAnswer sa13_3_5_student8 = createStudentAnswer(student8, pa_13_3_5, "The Jacobian matrix is a matrix of all first-order partial derivatives of a multivariable function, used to analyze the function's behavior and perform coordinate transformations.");
+        addStudentAnswerToProblemAnswer(pa_13_3_5, sa13_3_5_student8);
+
+        StudentAnswer sa13_3_6_student8 = createStudentAnswer(student8, pa_13_3_6, "The Hessian matrix is a square matrix of second-order partial derivatives, providing information about the function's curvature and used in optimization problems.");
+        addStudentAnswerToProblemAnswer(pa_13_3_6, sa13_3_6_student8);
+
+        StudentAnswer sa13_3_7_student8 = createStudentAnswer(student8, pa_13_3_7, "A level curve is a curve along which a multivariable function has a constant value, used to visualize the function's behavior in two dimensions, often in contour plots.");
+        addStudentAnswerToProblemAnswer(pa_13_3_7, sa13_3_7_student8);
+
+        StudentAnswer sa13_3_8_student8 = createStudentAnswer(student8, pa_13_3_8, "To find the maximum and minimum values of a multivariable function, use techniques like setting the gradient to zero to find critical points and analyzing the function's behavior at these points and along the boundaries.");
+        addStudentAnswerToProblemAnswer(pa_13_3_8, sa13_3_8_student8);
+
+        StudentAnswer sa13_3_9_student8 = createStudentAnswer(student8, pa_13_3_9, "A Lagrange multiplier method finds the maximum and minimum values of a function subject to constraints by adding the constraint to the function using a new variable and solving for the variables.");
+        addStudentAnswerToProblemAnswer(pa_13_3_9, sa13_3_9_student8);
+
+        StudentAnswer sa13_3_10_student8 = createStudentAnswer(student8, pa_13_3_10, "Multivariable functions are used in physics (modeling fluid dynamics and electromagnetic fields), engineering (analyzing stress and strain in materials), economics (optimizing production and consumption), and environmental science (modeling pollution dispersion).");
+        addStudentAnswerToProblemAnswer(pa_13_3_10, sa13_3_10_student8);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment13_3.");
+// Creating StudentAnswer instances for student7
+        StudentAnswer sa13_4_1_student7 = createStudentAnswer(student7, pa_13_4_1, "Vector calculus is the study of vector fields and their applications, involving operations like differentiation and integration of vector functions to solve problems with vector fields.");
+        addStudentAnswerToProblemAnswer(pa_13_4_1, sa13_4_1_student7);
+
+        StudentAnswer sa13_4_2_student7 = createStudentAnswer(student7, pa_13_4_2, "A line integral evaluates the sum of a function along a curve, used to calculate quantities like work done by a force field along a path and circulation in fluid dynamics.");
+        addStudentAnswerToProblemAnswer(pa_13_4_2, sa13_4_2_student7);
+
+        StudentAnswer sa13_4_3_student7 = createStudentAnswer(student7, pa_13_4_3, "A surface integral evaluates the sum of a function over a surface, used to calculate quantities like flux through a surface and surface area in three-dimensional space.");
+        addStudentAnswerToProblemAnswer(pa_13_4_3, sa13_4_3_student7);
+
+        StudentAnswer sa13_4_4_student7 = createStudentAnswer(student7, pa_13_4_4, "Green's Theorem relates the line integral around a simple, closed curve to the double integral over the enclosed region, converting between line integrals and double integrals to analyze two-dimensional vector fields.");
+        addStudentAnswerToProblemAnswer(pa_13_4_4, sa13_4_4_student7);
+
+        StudentAnswer sa13_4_5_student7 = createStudentAnswer(student7, pa_13_4_5, "Stokes' Theorem relates the surface integral of the curl of a vector field over a surface to the line integral of the vector field around the surface's boundary, generalizing Green's Theorem to three dimensions.");
+        addStudentAnswerToProblemAnswer(pa_13_4_5, sa13_4_5_student7);
+
+        StudentAnswer sa13_4_6_student7 = createStudentAnswer(student7, pa_13_4_6, "The Divergence Theorem relates the surface integral of a vector field over a closed surface to the volume integral of the divergence of the vector field within the region, converting between surface integrals and volume integrals.");
+        addStudentAnswerToProblemAnswer(pa_13_4_6, sa13_4_6_student7);
+
+        StudentAnswer sa13_4_7_student7 = createStudentAnswer(student7, pa_13_4_7, "A gradient vector points in the direction of the greatest rate of increase of a scalar function, calculated by taking the partial derivatives with respect to each variable and combining them into a vector.");
+        addStudentAnswerToProblemAnswer(pa_13_4_7, sa13_4_7_student7);
+
+        StudentAnswer sa13_4_8_student7 = createStudentAnswer(student7, pa_13_4_8, "The curl of a vector field measures the rotation or swirling strength of the field at a point, represented by a vector pointing in the axis of rotation's direction with a magnitude proportional to the rotation's strength.");
+        addStudentAnswerToProblemAnswer(pa_13_4_8, sa13_4_8_student7);
+
+        StudentAnswer sa13_4_9_student7 = createStudentAnswer(student7, pa_13_4_9, "The divergence of a vector field measures the rate at which the field spreads out or converges at a point, representing the net flow of the field out of or into the point.");
+        addStudentAnswerToProblemAnswer(pa_13_4_9, sa13_4_9_student7);
+
+        StudentAnswer sa13_4_10_student7 = createStudentAnswer(student7, pa_13_4_10, "Vector calculus has applications in fluid dynamics (analyzing flow fields), electromagnetism (describing electric and magnetic fields), engineering (designing control systems and analyzing stress and strain), and physics (modeling gravitational and electromagnetic fields).");
+        addStudentAnswerToProblemAnswer(pa_13_4_10, sa13_4_10_student7);
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa13_4_1_student8 = createStudentAnswer(student8, pa_13_4_1, "Vector calculus is the study of vector fields and their applications, involving operations like differentiation and integration of vector functions to solve problems with vector fields.");
+        addStudentAnswerToProblemAnswer(pa_13_4_1, sa13_4_1_student8);
+
+        StudentAnswer sa13_4_2_student8 = createStudentAnswer(student8, pa_13_4_2, "A line integral evaluates the sum of a function along a curve, used to calculate quantities like work done by a force field along a path and circulation in fluid dynamics.");
+        addStudentAnswerToProblemAnswer(pa_13_4_2, sa13_4_2_student8);
+
+        StudentAnswer sa13_4_3_student8 = createStudentAnswer(student8, pa_13_4_3, "A surface integral evaluates the sum of a function over a surface, used to calculate quantities like flux through a surface and surface area in three-dimensional space.");
+        addStudentAnswerToProblemAnswer(pa_13_4_3, sa13_4_3_student8);
+
+        StudentAnswer sa13_4_4_student8 = createStudentAnswer(student8, pa_13_4_4, "Green's Theorem relates the line integral around a simple, closed curve to the double integral over the enclosed region, converting between line integrals and double integrals to analyze two-dimensional vector fields.");
+        addStudentAnswerToProblemAnswer(pa_13_4_4, sa13_4_4_student8);
+
+        StudentAnswer sa13_4_5_student8 = createStudentAnswer(student8, pa_13_4_5, "Stokes' Theorem relates the surface integral of the curl of a vector field over a surface to the line integral of the vector field around the surface's boundary, generalizing Green's Theorem to three dimensions.");
+        addStudentAnswerToProblemAnswer(pa_13_4_5, sa13_4_5_student8);
+
+        StudentAnswer sa13_4_6_student8 = createStudentAnswer(student8, pa_13_4_6, "The Divergence Theorem relates the surface integral of a vector field over a closed surface to the volume integral of the divergence of the vector field within the region, converting between surface integrals and volume integrals.");
+        addStudentAnswerToProblemAnswer(pa_13_4_6, sa13_4_6_student8);
+
+        StudentAnswer sa13_4_7_student8 = createStudentAnswer(student8, pa_13_4_7, "A gradient vector points in the direction of the greatest rate of increase of a scalar function, calculated by taking the partial derivatives with respect to each variable and combining them into a vector.");
+        addStudentAnswerToProblemAnswer(pa_13_4_7, sa13_4_7_student8);
+
+        StudentAnswer sa13_4_8_student8 = createStudentAnswer(student8, pa_13_4_8, "The curl of a vector field measures the rotation or swirling strength of the field at a point, represented by a vector pointing in the axis of rotation's direction with a magnitude proportional to the rotation's strength.");
+        addStudentAnswerToProblemAnswer(pa_13_4_8, sa13_4_8_student8);
+
+        StudentAnswer sa13_4_9_student8 = createStudentAnswer(student8, pa_13_4_9, "The divergence of a vector field measures the rate at which the field spreads out or converges at a point, representing the net flow of the field out of or into the point.");
+        addStudentAnswerToProblemAnswer(pa_13_4_9, sa13_4_9_student8);
+
+        StudentAnswer sa13_4_10_student8 = createStudentAnswer(student8, pa_13_4_10, "Vector calculus has applications in fluid dynamics (analyzing flow fields), electromagnetism (describing electric and magnetic fields), engineering (designing control systems and analyzing stress and strain), and physics (modeling gravitational and electromagnetic fields).");
+        addStudentAnswerToProblemAnswer(pa_13_4_10, sa13_4_10_student8);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment13_4.");
+// Creating StudentAnswer instances for student7
+        StudentAnswer sa14_1_1_student7 = createStudentAnswer(student7, pa_14_1_1, "Propositional logic deals with propositions, which are statements that can be true or false, and uses logical connectives like AND, OR, NOT, and IMPLIES to form complex statements.");
+        addStudentAnswerToProblemAnswer(pa_14_1_1, sa14_1_1_student7);
+
+        StudentAnswer sa14_1_2_student7 = createStudentAnswer(student7, pa_14_1_2, "Predicate logic, or first-order logic, extends propositional logic by dealing with predicates, which are statements with variables, and uses quantifiers like FOR ALL and THERE EXISTS for more expressive statements.");
+        addStudentAnswerToProblemAnswer(pa_14_1_2, sa14_1_2_student7);
+
+        StudentAnswer sa14_1_3_student7 = createStudentAnswer(student7, pa_14_1_3, "Logical connectives are symbols or words used to connect propositions and form complex logical statements. Common logical connectives include AND (∧), OR (∨), NOT (¬), IMPLIES (→), and IF AND ONLY IF (↔).");
+        addStudentAnswerToProblemAnswer(pa_14_1_3, sa14_1_3_student7);
+
+        StudentAnswer sa14_1_4_student7 = createStudentAnswer(student7, pa_14_1_4, "A truth table determines the truth value of a logical expression based on all possible combinations of truth values for its components, useful for analyzing and verifying logical statements.");
+        addStudentAnswerToProblemAnswer(pa_14_1_4, sa14_1_4_student7);
+
+        StudentAnswer sa14_1_5_student7 = createStudentAnswer(student7, pa_14_1_5, "A logical argument is a sequence of propositions leading to a conclusion. An argument is valid if the conclusion logically follows from the premises, and sound if the premises are true.");
+        addStudentAnswerToProblemAnswer(pa_14_1_5, sa14_1_5_student7);
+
+        StudentAnswer sa14_1_6_student7 = createStudentAnswer(student7, pa_14_1_6, "Logical equivalence occurs when two statements have the same truth value in all scenarios. Two statements are logically equivalent if their truth tables are identical.");
+        addStudentAnswerToProblemAnswer(pa_14_1_6, sa14_1_6_student7);
+
+        StudentAnswer sa14_1_7_student7 = createStudentAnswer(student7, pa_14_1_7, "A tautology is a logical statement that is always true, regardless of the truth values of its components, meaning it is true in all possible scenarios.");
+        addStudentAnswerToProblemAnswer(pa_14_1_7, sa14_1_7_student7);
+
+        StudentAnswer sa14_1_8_student7 = createStudentAnswer(student7, pa_14_1_8, "A contradiction is a logical statement that is always false, regardless of the truth values of its components, meaning it is false in all possible scenarios.");
+        addStudentAnswerToProblemAnswer(pa_14_1_8, sa14_1_8_student7);
+
+        StudentAnswer sa14_1_9_student7 = createStudentAnswer(student7, pa_14_1_9, "Modus ponens is a rule of inference stating that if 'P implies Q' (P → Q) and 'P' is true, then 'Q' must also be true, a fundamental rule of logical reasoning.");
+        addStudentAnswerToProblemAnswer(pa_14_1_9, sa14_1_9_student7);
+
+        StudentAnswer sa14_1_10_student7 = createStudentAnswer(student7, pa_14_1_10, "Logic is used in problem-solving to analyze and structure arguments, identify valid conclusions, and ensure consistency in reasoning, foundational in mathematics, computer science, and philosophy.");
+        addStudentAnswerToProblemAnswer(pa_14_1_10, sa14_1_10_student7);
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa14_1_1_student8 = createStudentAnswer(student8, pa_14_1_1, "Propositional logic deals with propositions, which are statements that can be true or false, and uses logical connectives like AND, OR, NOT, and IMPLIES to form complex statements.");
+        addStudentAnswerToProblemAnswer(pa_14_1_1, sa14_1_1_student8);
+
+        StudentAnswer sa14_1_2_student8 = createStudentAnswer(student8, pa_14_1_2, "Predicate logic, or first-order logic, extends propositional logic by dealing with predicates, which are statements with variables, and uses quantifiers like FOR ALL and THERE EXISTS for more expressive statements.");
+        addStudentAnswerToProblemAnswer(pa_14_1_2, sa14_1_2_student8);
+
+        StudentAnswer sa14_1_3_student8 = createStudentAnswer(student8, pa_14_1_3, "Logical connectives are symbols or words used to connect propositions and form complex logical statements. Common logical connectives include AND (∧), OR (∨), NOT (¬), IMPLIES (→), and IF AND ONLY IF (↔).");
+        addStudentAnswerToProblemAnswer(pa_14_1_3, sa14_1_3_student8);
+
+        StudentAnswer sa14_1_4_student8 = createStudentAnswer(student8, pa_14_1_4, "A truth table determines the truth value of a logical expression based on all possible combinations of truth values for its components, useful for analyzing and verifying logical statements.");
+        addStudentAnswerToProblemAnswer(pa_14_1_4, sa14_1_4_student8);
+
+        StudentAnswer sa14_1_5_student8 = createStudentAnswer(student8, pa_14_1_5, "A logical argument is a sequence of propositions leading to a conclusion. An argument is valid if the conclusion logically follows from the premises, and sound if the premises are true.");
+        addStudentAnswerToProblemAnswer(pa_14_1_5, sa14_1_5_student8);
+
+        StudentAnswer sa14_1_6_student8 = createStudentAnswer(student8, pa_14_1_6, "Logical equivalence occurs when two statements have the same truth value in all scenarios. Two statements are logically equivalent if their truth tables are identical.");
+        addStudentAnswerToProblemAnswer(pa_14_1_6, sa14_1_6_student8);
+
+        StudentAnswer sa14_1_7_student8 = createStudentAnswer(student8, pa_14_1_7, "A tautology is a logical statement that is always true, regardless of the truth values of its components, meaning it is true in all possible scenarios.");
+        addStudentAnswerToProblemAnswer(pa_14_1_7, sa14_1_7_student8);
+
+        StudentAnswer sa14_1_8_student8 = createStudentAnswer(student8, pa_14_1_8, "A contradiction is a logical statement that is always false, regardless of the truth values of its components, meaning it is false in all possible scenarios.");
+        addStudentAnswerToProblemAnswer(pa_14_1_8, sa14_1_8_student8);
+
+        StudentAnswer sa14_1_9_student8 = createStudentAnswer(student8, pa_14_1_9, "Modus ponens is a rule of inference stating that if 'P implies Q' (P → Q) and 'P' is true, then 'Q' must also be true, a fundamental rule of logical reasoning.");
+        addStudentAnswerToProblemAnswer(pa_14_1_9, sa14_1_9_student8);
+
+        StudentAnswer sa14_1_10_student8 = createStudentAnswer(student8, pa_14_1_10, "Logic is used in problem-solving to analyze and structure arguments, identify valid conclusions, and ensure consistency in reasoning, foundational in mathematics, computer science, and philosophy.");
+        addStudentAnswerToProblemAnswer(pa_14_1_10, sa14_1_10_student8);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment14_1.");
+// Creating StudentAnswer instances for student7
+        StudentAnswer sa14_2_1_student7 = createStudentAnswer(student7, pa_14_2_1, "A set is a collection of distinct objects, considered as an object in its own right, fundamental in mathematics and used to define various concepts.");
+        addStudentAnswerToProblemAnswer(pa_14_2_1, sa14_2_1_student7);
+
+        StudentAnswer sa14_2_2_student7 = createStudentAnswer(student7, pa_14_2_2, "A subset is a set whose elements are all contained within another set. If A is a subset of B, every element of A is also an element of B.");
+        addStudentAnswerToProblemAnswer(pa_14_2_2, sa14_2_2_student7);
+
+        StudentAnswer sa14_2_3_student7 = createStudentAnswer(student7, pa_14_2_3, "The union of two sets is a set containing all the elements of both sets. The union of sets A and B is denoted by A ∪ B and includes all elements in A, B, or both.");
+        addStudentAnswerToProblemAnswer(pa_14_2_3, sa14_2_3_student7);
+
+        StudentAnswer sa14_2_4_student7 = createStudentAnswer(student7, pa_14_2_4, "The intersection of two sets is a set containing only the elements that are common to both sets. The intersection of sets A and B is denoted by A ∩ B and includes all elements in both A and B.");
+        addStudentAnswerToProblemAnswer(pa_14_2_4, sa14_2_4_student7);
+
+        StudentAnswer sa14_2_5_student7 = createStudentAnswer(student7, pa_14_2_5, "The difference between two sets is a set containing the elements of one set that are not in the other. The difference of sets A and B is denoted by A - B and includes all elements in A but not in B.");
+        addStudentAnswerToProblemAnswer(pa_14_2_5, sa14_2_5_student7);
+
+        StudentAnswer sa14_2_6_student7 = createStudentAnswer(student7, pa_14_2_6, "The Cartesian product of two sets is a set of ordered pairs, with the first element from the first set and the second from the second. The Cartesian product of sets A and B is denoted by A × B.");
+        addStudentAnswerToProblemAnswer(pa_14_2_6, sa14_2_6_student7);
+
+        StudentAnswer sa14_2_7_student7 = createStudentAnswer(student7, pa_14_2_7, "The power set of a set is the set of all possible subsets of the original set. If the original set has n elements, its power set will have 2^n elements.");
+        addStudentAnswerToProblemAnswer(pa_14_2_7, sa14_2_7_student7);
+
+        StudentAnswer sa14_2_8_student7 = createStudentAnswer(student7, pa_14_2_8, "A Venn diagram is a visual representation of sets and their relationships, using overlapping circles to show the union, intersection, and differences of sets.");
+        addStudentAnswerToProblemAnswer(pa_14_2_8, sa14_2_8_student7);
+
+        StudentAnswer sa14_2_9_student7 = createStudentAnswer(student7, pa_14_2_9, "The principle of inclusion-exclusion is a formula to calculate the number of elements in the union of multiple sets, adding the sizes of individual sets and subtracting the sizes of their intersections.");
+        addStudentAnswerToProblemAnswer(pa_14_2_9, sa14_2_9_student7);
+
+        StudentAnswer sa14_2_10_student7 = createStudentAnswer(student7, pa_14_2_10, "Set theory has real-world applications in computer science (database queries and algorithms), probability (defining events and outcomes), logic (formalizing reasoning), and data analysis (grouping and categorizing information).");
+        addStudentAnswerToProblemAnswer(pa_14_2_10, sa14_2_10_student7);
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa14_2_1_student8 = createStudentAnswer(student8, pa_14_2_1, "A set is a collection of distinct objects, considered as an object in its own right, fundamental in mathematics and used to define various concepts.");
+        addStudentAnswerToProblemAnswer(pa_14_2_1, sa14_2_1_student8);
+
+        StudentAnswer sa14_2_2_student8 = createStudentAnswer(student8, pa_14_2_2, "A subset is a set whose elements are all contained within another set. If A is a subset of B, every element of A is also an element of B.");
+        addStudentAnswerToProblemAnswer(pa_14_2_2, sa14_2_2_student8);
+
+        StudentAnswer sa14_2_3_student8 = createStudentAnswer(student8, pa_14_2_3, "The union of two sets is a set containing all the elements of both sets. The union of sets A and B is denoted by A ∪ B and includes all elements in A, B, or both.");
+        addStudentAnswerToProblemAnswer(pa_14_2_3, sa14_2_3_student8);
+
+        StudentAnswer sa14_2_4_student8 = createStudentAnswer(student8, pa_14_2_4, "The intersection of two sets is a set containing only the elements that are common to both sets. The intersection of sets A and B is denoted by A ∩ B and includes all elements in both A and B.");
+        addStudentAnswerToProblemAnswer(pa_14_2_4, sa14_2_4_student8);
+
+        StudentAnswer sa14_2_5_student8 = createStudentAnswer(student8, pa_14_2_5, "The difference between two sets is a set containing the elements of one set that are not in the other. The difference of sets A and B is denoted by A - B and includes all elements in A but not in B.");
+        addStudentAnswerToProblemAnswer(pa_14_2_5, sa14_2_5_student8);
+
+        StudentAnswer sa14_2_6_student8 = createStudentAnswer(student8, pa_14_2_6, "The Cartesian product of two sets is a set of ordered pairs, with the first element from the first set and the second from the second. The Cartesian product of sets A and B is denoted by A × B.");
+        addStudentAnswerToProblemAnswer(pa_14_2_6, sa14_2_6_student8);
+
+        StudentAnswer sa14_2_7_student8 = createStudentAnswer(student8, pa_14_2_7, "The power set of a set is the set of all possible subsets of the original set. If the original set has n elements, its power set will have 2^n elements.");
+        addStudentAnswerToProblemAnswer(pa_14_2_7, sa14_2_7_student8);
+
+        StudentAnswer sa14_2_8_student8 = createStudentAnswer(student8, pa_14_2_8, "A Venn diagram is a visual representation of sets and their relationships, using overlapping circles to show the union, intersection, and differences of sets.");
+        addStudentAnswerToProblemAnswer(pa_14_2_8, sa14_2_8_student8);
+
+        StudentAnswer sa14_2_9_student8 = createStudentAnswer(student8, pa_14_2_9, "The principle of inclusion-exclusion is a formula to calculate the number of elements in the union of multiple sets, adding the sizes of individual sets and subtracting the sizes of their intersections.");
+        addStudentAnswerToProblemAnswer(pa_14_2_9, sa14_2_9_student8);
+
+        StudentAnswer sa14_2_10_student8 = createStudentAnswer(student8, pa_14_2_10, "Set theory has real-world applications in computer science (database queries and algorithms), probability (defining events and outcomes), logic (formalizing reasoning), and data analysis (grouping and categorizing information).");
+        addStudentAnswerToProblemAnswer(pa_14_2_10, sa14_2_10_student8);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment14_2.");
+// Creating StudentAnswer instances for student7
+        StudentAnswer sa14_3_1_student7 = createStudentAnswer(student7, pa_14_3_1, "Graph theory is the study of graphs as mathematical structures used to model pairwise relations between objects, involving the analysis of vertices (nodes) and edges (connections) that form graphs.");
+        addStudentAnswerToProblemAnswer(pa_14_3_1, sa14_3_1_student7);
+
+        StudentAnswer sa14_3_2_student7 = createStudentAnswer(student7, pa_14_3_2, "A directed graph (or digraph) is a graph in which edges have a direction, indicated by arrows, showing the relationship between two vertices, like a one-way street or hierarchy.");
+        addStudentAnswerToProblemAnswer(pa_14_3_2, sa14_3_2_student7);
+
+        StudentAnswer sa14_3_3_student7 = createStudentAnswer(student7, pa_14_3_3, "An undirected graph is a graph in which edges do not have a direction. The connections between vertices are bidirectional, meaning there is no distinction between the two endpoints of an edge.");
+        addStudentAnswerToProblemAnswer(pa_14_3_3, sa14_3_3_student7);
+
+        StudentAnswer sa14_3_4_student7 = createStudentAnswer(student7, pa_14_3_4, "A connected graph is a graph in which there is a path between any two vertices, meaning all vertices in the graph are reachable from any other vertex.");
+        addStudentAnswerToProblemAnswer(pa_14_3_4, sa14_3_4_student7);
+
+        StudentAnswer sa14_3_5_student7 = createStudentAnswer(student7, pa_14_3_5, "A cycle in a graph is a path that starts and ends at the same vertex, with all edges and vertices being distinct except for the starting and ending vertex, important for analyzing graph structure and properties.");
+        addStudentAnswerToProblemAnswer(pa_14_3_5, sa14_3_5_student7);
+
+        StudentAnswer sa14_3_6_student7 = createStudentAnswer(student7, pa_14_3_6, "A tree is a connected, acyclic graph, meaning it has no cycles. It is a hierarchical structure with a unique path between any two vertices, used to model hierarchical relationships in computer science and other fields.");
+        addStudentAnswerToProblemAnswer(pa_14_3_6, sa14_3_6_student7);
+
+        StudentAnswer sa14_3_7_student7 = createStudentAnswer(student7, pa_14_3_7, "A spanning tree of a graph is a subgraph that includes all the vertices of the original graph and is a tree, providing a way to connect all vertices with the minimum number of edges.");
+        addStudentAnswerToProblemAnswer(pa_14_3_7, sa14_3_7_student7);
+
+        StudentAnswer sa14_3_8_student7 = createStudentAnswer(student7, pa_14_3_8, "A bipartite graph is a graph whose vertices can be divided into two disjoint sets such that no two vertices within the same set are adjacent, used to model relationships between two distinct groups.");
+        addStudentAnswerToProblemAnswer(pa_14_3_8, sa14_3_8_student7);
+
+        StudentAnswer sa14_3_9_student7 = createStudentAnswer(student7, pa_14_3_9, "The degree of a vertex in a graph is the number of edges connected to it. In a directed graph, the in-degree is the number of incoming edges, and the out-degree is the number of outgoing edges.");
+        addStudentAnswerToProblemAnswer(pa_14_3_9, sa14_3_9_student7);
+
+        StudentAnswer sa14_3_10_student7 = createStudentAnswer(student7, pa_14_3_10, "Common graph traversal algorithms include Depth-First Search (DFS) and Breadth-First Search (BFS), used to explore and analyze the structure of graphs by visiting vertices in a systematic manner.");
+        addStudentAnswerToProblemAnswer(pa_14_3_10, sa14_3_10_student7);
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa14_3_1_student8 = createStudentAnswer(student8, pa_14_3_1, "Graph theory is the study of graphs as mathematical structures used to model pairwise relations between objects, involving the analysis of vertices (nodes) and edges (connections) that form graphs.");
+        addStudentAnswerToProblemAnswer(pa_14_3_1, sa14_3_1_student8);
+
+        StudentAnswer sa14_3_2_student8 = createStudentAnswer(student8, pa_14_3_2, "A directed graph (or digraph) is a graph in which edges have a direction, indicated by arrows, showing the relationship between two vertices, like a one-way street or hierarchy.");
+        addStudentAnswerToProblemAnswer(pa_14_3_2, sa14_3_2_student8);
+
+        StudentAnswer sa14_3_3_student8 = createStudentAnswer(student8, pa_14_3_3, "An undirected graph is a graph in which edges do not have a direction. The connections between vertices are bidirectional, meaning there is no distinction between the two endpoints of an edge.");
+        addStudentAnswerToProblemAnswer(pa_14_3_3, sa14_3_3_student8);
+
+        StudentAnswer sa14_3_4_student8 = createStudentAnswer(student8, pa_14_3_4, "A connected graph is a graph in which there is a path between any two vertices, meaning all vertices in the graph are reachable from any other vertex.");
+        addStudentAnswerToProblemAnswer(pa_14_3_4, sa14_3_4_student8);
+
+        StudentAnswer sa14_3_5_student8 = createStudentAnswer(student8, pa_14_3_5, "A cycle in a graph is a path that starts and ends at the same vertex, with all edges and vertices being distinct except for the starting and ending vertex, important for analyzing graph structure and properties.");
+        addStudentAnswerToProblemAnswer(pa_14_3_5, sa14_3_5_student8);
+
+        StudentAnswer sa14_3_6_student8 = createStudentAnswer(student8, pa_14_3_6, "A tree is a connected, acyclic graph, meaning it has no cycles. It is a hierarchical structure with a unique path between any two vertices, used to model hierarchical relationships in computer science and other fields.");
+        addStudentAnswerToProblemAnswer(pa_14_3_6, sa14_3_6_student8);
+
+        StudentAnswer sa14_3_7_student8 = createStudentAnswer(student8, pa_14_3_7, "A spanning tree of a graph is a subgraph that includes all the vertices of the original graph and is a tree, providing a way to connect all vertices with the minimum number of edges.");
+        addStudentAnswerToProblemAnswer(pa_14_3_7, sa14_3_7_student8);
+
+        StudentAnswer sa14_3_8_student8 = createStudentAnswer(student8, pa_14_3_8, "A bipartite graph is a graph whose vertices can be divided into two disjoint sets such that no two vertices within the same set are adjacent, used to model relationships between two distinct groups.");
+        addStudentAnswerToProblemAnswer(pa_14_3_8, sa14_3_8_student8);
+
+        StudentAnswer sa14_3_9_student8 = createStudentAnswer(student8, pa_14_3_9, "The degree of a vertex in a graph is the number of edges connected to it. In a directed graph, the in-degree is the number of incoming edges, and the out-degree is the number of outgoing edges.");
+        addStudentAnswerToProblemAnswer(pa_14_3_9, sa14_3_9_student8);
+
+        StudentAnswer sa14_3_10_student8 = createStudentAnswer(student8, pa_14_3_10, "Common graph traversal algorithms include Depth-First Search (DFS) and Breadth-First Search (BFS), used to explore and analyze the structure of graphs by visiting vertices in a systematic manner.");
+        addStudentAnswerToProblemAnswer(pa_14_3_10, sa14_3_10_student8);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment14_3.");
+// Creating StudentAnswer instances for student7
+        StudentAnswer sa14_4_1_student7 = createStudentAnswer(student7, pa_14_4_1, "Combinatorics is the study of counting, arrangement, and combination of objects, dealing with problems related to enumeration and combination of discrete structures.");
+        addStudentAnswerToProblemAnswer(pa_14_4_1, sa14_4_1_student7);
+
+        StudentAnswer sa14_4_2_student7 = createStudentAnswer(student7, pa_14_4_2, "Permutations are arrangements of objects in a specific order. The number of permutations of n distinct objects is given by n! (n factorial), the product of all positive integers up to n.");
+        addStudentAnswerToProblemAnswer(pa_14_4_2, sa14_4_2_student7);
+
+        StudentAnswer sa14_4_3_student7 = createStudentAnswer(student7, pa_14_4_3, "Combinations are selections of objects without regard to order. The number of combinations of n objects taken r at a time is given by C(n, r) = n! / [r!(n-r)!], known as binomial coefficients.");
+        addStudentAnswerToProblemAnswer(pa_14_4_3, sa14_4_3_student7);
+
+        StudentAnswer sa14_4_4_student7 = createStudentAnswer(student7, pa_14_4_4, "The principle of multiplication states that if there are m ways to do one thing and n ways to do another, there are m * n ways to do both, a fundamental rule in counting and combinatorics.");
+        addStudentAnswerToProblemAnswer(pa_14_4_4, sa14_4_4_student7);
+
+        StudentAnswer sa14_4_5_student7 = createStudentAnswer(student7, pa_14_4_5, "The principle of addition states that if there are m ways to do one thing and n ways to do another, and the two events are mutually exclusive, there are m + n ways to do either, used to combine disjoint sets.");
+        addStudentAnswerToProblemAnswer(pa_14_4_5, sa14_4_5_student7);
+
+        StudentAnswer sa14_4_6_student7 = createStudentAnswer(student7, pa_14_4_6, "The binomial theorem expands expressions of the form (a + b)^n, stating (a + b)^n = Σ[k=0 to n] C(n, k) * a^(n-k) * b^k, where C(n, k) are binomial coefficients.");
+        addStudentAnswerToProblemAnswer(pa_14_4_6, sa14_4_6_student7);
+
+        StudentAnswer sa14_4_7_student7 = createStudentAnswer(student7, pa_14_4_7, "A combination with repetition allows selecting objects where each can be chosen more than once. The number of such combinations of n objects taken r at a time is given by C(n+r-1, r).");
+        addStudentAnswerToProblemAnswer(pa_14_4_7, sa14_4_7_student7);
+
+        StudentAnswer sa14_4_8_student7 = createStudentAnswer(student7, pa_14_4_8, "The pigeonhole principle states that if more than n objects are placed into n containers, at least one container must contain more than one object, used to prove properties in combinatorial problems.");
+        addStudentAnswerToProblemAnswer(pa_14_4_8, sa14_4_8_student7);
+
+        StudentAnswer sa14_4_9_student7 = createStudentAnswer(student7, pa_14_4_9, "Derangements are permutations where no object appears in its original position. The number of derangements of n objects is given by !n (subfactorial n), calculated using a recursive formula.");
+        addStudentAnswerToProblemAnswer(pa_14_4_9, sa14_4_9_student7);
+
+        StudentAnswer sa14_4_10_student7 = createStudentAnswer(student7, pa_14_4_10, "Combinatorics has applications in computer science (algorithm analysis and cryptography), biology (genetic combinations and phylogenetics), statistics (probability and data analysis), and operations research (optimization and scheduling).");
+        addStudentAnswerToProblemAnswer(pa_14_4_10, sa14_4_10_student7);
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa14_4_1_student8 = createStudentAnswer(student8, pa_14_4_1, "Combinatorics is the study of counting, arrangement, and combination of objects, dealing with problems related to enumeration and combination of discrete structures.");
+        addStudentAnswerToProblemAnswer(pa_14_4_1, sa14_4_1_student8);
+
+        StudentAnswer sa14_4_2_student8 = createStudentAnswer(student8, pa_14_4_2, "Permutations are arrangements of objects in a specific order. The number of permutations of n distinct objects is given by n! (n factorial), the product of all positive integers up to n.");
+        addStudentAnswerToProblemAnswer(pa_14_4_2, sa14_4_2_student8);
+
+        StudentAnswer sa14_4_3_student8 = createStudentAnswer(student8, pa_14_4_3, "Combinations are selections of objects without regard to order. The number of combinations of n objects taken r at a time is given by C(n, r) = n! / [r!(n-r)!], known as binomial coefficients.");
+        addStudentAnswerToProblemAnswer(pa_14_4_3, sa14_4_3_student8);
+
+        StudentAnswer sa14_4_4_student8 = createStudentAnswer(student8, pa_14_4_4, "The principle of multiplication states that if there are m ways to do one thing and n ways to do another, there are m * n ways to do both, a fundamental rule in counting and combinatorics.");
+        addStudentAnswerToProblemAnswer(pa_14_4_4, sa14_4_4_student8);
+
+        StudentAnswer sa14_4_5_student8 = createStudentAnswer(student8, pa_14_4_5, "The principle of addition states that if there are m ways to do one thing and n ways to do another, and the two events are mutually exclusive, there are m + n ways to do either, used to combine disjoint sets.");
+        addStudentAnswerToProblemAnswer(pa_14_4_5, sa14_4_5_student8);
+
+        StudentAnswer sa14_4_6_student8 = createStudentAnswer(student8, pa_14_4_6, "The binomial theorem expands expressions of the form (a + b)^n, stating (a + b)^n = Σ[k=0 to n] C(n, k) * a^(n-k) * b^k, where C(n, k) are binomial coefficients.");
+        addStudentAnswerToProblemAnswer(pa_14_4_6, sa14_4_6_student8);
+
+        StudentAnswer sa14_4_7_student8 = createStudentAnswer(student8, pa_14_4_7, "A combination with repetition allows selecting objects where each can be chosen more than once. The number of such combinations of n objects taken r at a time is given by C(n+r-1, r).");
+        addStudentAnswerToProblemAnswer(pa_14_4_7, sa14_4_7_student8);
+
+        StudentAnswer sa14_4_8_student8 = createStudentAnswer(student8, pa_14_4_8, "The pigeonhole principle states that if more than n objects are placed into n containers, at least one container must contain more than one object, used to prove properties in combinatorial problems.");
+        addStudentAnswerToProblemAnswer(pa_14_4_8, sa14_4_8_student8);
+
+        StudentAnswer sa14_4_9_student8 = createStudentAnswer(student8, pa_14_4_9, "Derangements are permutations where no object appears in its original position. The number of derangements of n objects is given by !n (subfactorial n), calculated using a recursive formula.");
+        addStudentAnswerToProblemAnswer(pa_14_4_9, sa14_4_9_student8);
+
+        StudentAnswer sa14_4_10_student8 = createStudentAnswer(student8, pa_14_4_10, "Combinatorics has applications in computer science (algorithm analysis and cryptography), biology (genetic combinations and phylogenetics), statistics (probability and data analysis), and operations research (optimization and scheduling).");
+        addStudentAnswerToProblemAnswer(pa_14_4_10, sa14_4_10_student8);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment14_4.");
+// Creating StudentAnswer instances for student7
+        StudentAnswer sa15_1_1_student7 = createStudentAnswer(student7, pa_15_1_1, "Newton's First Law of Motion, also known as the law of inertia, states that an object will remain at rest or in uniform motion in a straight line unless acted upon by an external force.");
+        addStudentAnswerToProblemAnswer(pa_15_1_1, sa15_1_1_student7);
+
+        StudentAnswer sa15_1_2_student7 = createStudentAnswer(student7, pa_15_1_2, "Newton's Second Law of Motion states that the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass. The law is mathematically expressed as F = ma, where F is the net force, m is the mass, and a is the acceleration.");
+        addStudentAnswerToProblemAnswer(pa_15_1_2, sa15_1_2_student7);
+
+        StudentAnswer sa15_1_3_student7 = createStudentAnswer(student7, pa_15_1_3, "Newton's Third Law of Motion states that for every action, there is an equal and opposite reaction. This means that forces always occur in pairs; if one object exerts a force on another, the second object exerts an equal and opposite force on the first.");
+        addStudentAnswerToProblemAnswer(pa_15_1_3, sa15_1_3_student7);
+
+        StudentAnswer sa15_1_4_student7 = createStudentAnswer(student7, pa_15_1_4, "Inertia is the property of an object that resists changes to its state of motion. An object with greater mass has greater inertia and requires more force to change its motion.");
+        addStudentAnswerToProblemAnswer(pa_15_1_4, sa15_1_4_student7);
+
+        StudentAnswer sa15_1_5_student7 = createStudentAnswer(student7, pa_15_1_5, "The equation of motion for an object under constant acceleration is given by the kinematic equations: \n1. v = u + at \n2. s = ut + 0.5at^2 \n3. v^2 = u^2 + 2as \nwhere u is the initial velocity, v is the final velocity, a is the acceleration, t is the time, and s is the displacement.");
+        addStudentAnswerToProblemAnswer(pa_15_1_5, sa15_1_5_student7);
+
+        StudentAnswer sa15_1_6_student7 = createStudentAnswer(student7, pa_15_1_6, "Equilibrium in mechanics refers to a state where the net force acting on an object is zero, resulting in no acceleration. An object in equilibrium can either be at rest or moving with constant velocity.");
+        addStudentAnswerToProblemAnswer(pa_15_1_6, sa15_1_6_student7);
+
+        StudentAnswer sa15_1_7_student7 = createStudentAnswer(student7, pa_15_1_7, "A free-body diagram is a graphical representation used to visualize the forces acting on an object. It helps in analyzing the motion of the object by showing all external forces as vectors originating from the object.");
+        addStudentAnswerToProblemAnswer(pa_15_1_7, sa15_1_7_student7);
+
+        StudentAnswer sa15_1_8_student7 = createStudentAnswer(student7, pa_15_1_8, "The net force acting on an object is calculated by vectorially adding all the individual forces acting on the object. The net force determines the acceleration of the object according to Newton's Second Law of Motion.");
+        addStudentAnswerToProblemAnswer(pa_15_1_8, sa15_1_8_student7);
+
+        StudentAnswer sa15_1_9_student7 = createStudentAnswer(student7, pa_15_1_9, "Mass is a measure of the amount of matter in an object, while weight is the force exerted by gravity on that object. Mass is measured in kilograms (kg), and weight is measured in newtons (N). Weight is calculated as W = mg, where m is the mass and g is the acceleration due to gravity.");
+        addStudentAnswerToProblemAnswer(pa_15_1_9, sa15_1_9_student7);
+
+        StudentAnswer sa15_1_10_student7 = createStudentAnswer(student7, pa_15_1_10, "Newton's laws are applied in various real-world scenarios, such as calculating the motion of vehicles, analyzing the stability of structures, understanding the behavior of fluids, and predicting the motion of celestial bodies. These laws provide a framework for solving problems in mechanics and engineering.");
+        addStudentAnswerToProblemAnswer(pa_15_1_10, sa15_1_10_student7);
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa15_1_1_student8 = createStudentAnswer(student8, pa_15_1_1, "Newton's First Law of Motion, also known as the law of inertia, states that an object will remain at rest or in uniform motion in a straight line unless acted upon by an external force.");
+        addStudentAnswerToProblemAnswer(pa_15_1_1, sa15_1_1_student8);
+
+        StudentAnswer sa15_1_2_student8 = createStudentAnswer(student8, pa_15_1_2, "Newton's Second Law of Motion states that the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass. The law is mathematically expressed as F = ma, where F is the net force, m is the mass, and a is the acceleration.");
+        addStudentAnswerToProblemAnswer(pa_15_1_2, sa15_1_2_student8);
+
+        StudentAnswer sa15_1_3_student8 = createStudentAnswer(student8, pa_15_1_3, "Newton's Third Law of Motion states that for every action, there is an equal and opposite reaction. This means that forces always occur in pairs; if one object exerts a force on another, the second object exerts an equal and opposite force on the first.");
+        addStudentAnswerToProblemAnswer(pa_15_1_3, sa15_1_3_student8);
+
+        StudentAnswer sa15_1_4_student8 = createStudentAnswer(student8, pa_15_1_4, "Inertia is the property of an object that resists changes to its state of motion. An object with greater mass has greater inertia and requires more force to change its motion.");
+        addStudentAnswerToProblemAnswer(pa_15_1_4, sa15_1_4_student8);
+
+        StudentAnswer sa15_1_5_student8 = createStudentAnswer(student8, pa_15_1_5, "The equation of motion for an object under constant acceleration is given by the kinematic equations: \n1. v = u + at \n2. s = ut + 0.5at^2 \n3. v^2 = u^2 + 2as \nwhere u is the initial velocity, v is the final velocity, a is the acceleration, t is the time, and s is the displacement.");
+        addStudentAnswerToProblemAnswer(pa_15_1_5, sa15_1_5_student8);
+
+        StudentAnswer sa15_1_6_student8 = createStudentAnswer(student8, pa_15_1_6, "Equilibrium in mechanics refers to a state where the net force acting on an object is zero, resulting in no acceleration. An object in equilibrium can either be at rest or moving with constant velocity.");
+        addStudentAnswerToProblemAnswer(pa_15_1_6, sa15_1_6_student8);
+
+        StudentAnswer sa15_1_7_student8 = createStudentAnswer(student8, pa_15_1_7, "A free-body diagram is a graphical representation used to visualize the forces acting on an object. It helps in analyzing the motion of the object by showing all external forces as vectors originating from the object.");
+        addStudentAnswerToProblemAnswer(pa_15_1_7, sa15_1_7_student8);
+
+        StudentAnswer sa15_1_8_student8 = createStudentAnswer(student8, pa_15_1_8, "The net force acting on an object is calculated by vectorially adding all the individual forces acting on the object. The net force determines the acceleration of the object according to Newton's Second Law of Motion.");
+        addStudentAnswerToProblemAnswer(pa_15_1_8, sa15_1_8_student8);
+
+        StudentAnswer sa15_1_9_student8 = createStudentAnswer(student8, pa_15_1_9, "Mass is a measure of the amount of matter in an object, while weight is the force exerted by gravity on that object. Mass is measured in kilograms (kg), and weight is measured in newtons (N). Weight is calculated as W = mg, where m is the mass and g is the acceleration due to gravity.");
+        addStudentAnswerToProblemAnswer(pa_15_1_9, sa15_1_9_student8);
+
+        StudentAnswer sa15_1_10_student8 = createStudentAnswer(student8, pa_15_1_10, "Newton's laws are applied in various real-world scenarios, such as calculating the motion of vehicles, analyzing the stability of structures, understanding the behavior of fluids, and predicting the motion of celestial bodies. These laws provide a framework for solving problems in mechanics and engineering.");
+        addStudentAnswerToProblemAnswer(pa_15_1_10, sa15_1_10_student8);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment15_1.");
+// Creating StudentAnswer instances for student7
+        StudentAnswer sa15_2_1_student7 = createStudentAnswer(student7, pa_15_2_1, "Kinetic energy is the energy possessed by an object due to its motion. It is calculated using the formula KE = 0.5 * m * v^2, where m is the mass of the object and v is its velocity.");
+        addStudentAnswerToProblemAnswer(pa_15_2_1, sa15_2_1_student7);
+
+        StudentAnswer sa15_2_2_student7 = createStudentAnswer(student7, pa_15_2_2, "Potential energy is the energy stored in an object due to its position or configuration. Gravitational potential energy is calculated using the formula PE = mgh, where m is the mass, g is the acceleration due to gravity, and h is the height above a reference level.");
+        addStudentAnswerToProblemAnswer(pa_15_2_2, sa15_2_2_student7);
+
+        StudentAnswer sa15_2_3_student7 = createStudentAnswer(student7, pa_15_2_3, "The work-energy principle states that the work done on an object is equal to the change in its kinetic energy. It is mathematically expressed as W = ΔKE, where W is the work done and ΔKE is the change in kinetic energy.");
+        addStudentAnswerToProblemAnswer(pa_15_2_3, sa15_2_3_student7);
+
+        StudentAnswer sa15_2_4_student7 = createStudentAnswer(student7, pa_15_2_4, "The conservation of energy principle states that energy cannot be created or destroyed, only transferred or transformed from one form to another. The total energy of an isolated system remains constant over time.");
+        addStudentAnswerToProblemAnswer(pa_15_2_4, sa15_2_4_student7);
+
+        StudentAnswer sa15_2_5_student7 = createStudentAnswer(student7, pa_15_2_5, "Mechanical energy is the sum of kinetic and potential energy in a system. It is the energy associated with the motion and position of an object. Mechanical energy can be conserved in the absence of non-conservative forces such as friction.");
+        addStudentAnswerToProblemAnswer(pa_15_2_5, sa15_2_5_student7);
+
+        StudentAnswer sa15_2_6_student7 = createStudentAnswer(student7, pa_15_2_6, "Power is the rate at which work is done or energy is transferred. It is calculated using the formula P = W/t or P = ΔE/t, where P is the power, W is the work done, ΔE is the change in energy, and t is the time taken. Power is measured in watts (W).");
+        addStudentAnswerToProblemAnswer(pa_15_2_6, sa15_2_6_student7);
+
+        StudentAnswer sa15_2_7_student7 = createStudentAnswer(student7, pa_15_2_7, "Efficiency is a measure of how effectively energy is converted from one form to another in a system. It is calculated as the ratio of useful energy output to the total energy input, expressed as a percentage: Efficiency = (useful energy output / total energy input) * 100%.");
+        addStudentAnswerToProblemAnswer(pa_15_2_7, sa15_2_7_student7);
+
+        StudentAnswer sa15_2_8_student7 = createStudentAnswer(student7, pa_15_2_8, "Work is done when a force acts on an object to move it in the direction of the force. It is calculated using the formula W = F * d * cos(θ), where W is the work, F is the force, d is the displacement, and θ is the angle between the force and the direction of motion. Work is measured in joules (J).");
+        addStudentAnswerToProblemAnswer(pa_15_2_8, sa15_2_8_student7);
+
+        StudentAnswer sa15_2_9_student7 = createStudentAnswer(student7, pa_15_2_9, "Conservative forces, such as gravity and spring force, do not dissipate energy and the work done by them depends only on the initial and final positions, not on the path taken. Non-conservative forces, such as friction and air resistance, dissipate energy as heat and the work done by them depends on the path taken.");
+        addStudentAnswerToProblemAnswer(pa_15_2_9, sa15_2_9_student7);
+
+        StudentAnswer sa15_2_10_student7 = createStudentAnswer(student7, pa_15_2_10, "Energy principles are applied in various real-world scenarios, such as calculating the efficiency of machines, analyzing the motion of objects, designing energy-efficient systems, and understanding the behavior of physical systems. These principles provide a framework for solving problems in engineering, physics, and other fields.");
+        addStudentAnswerToProblemAnswer(pa_15_2_10, sa15_2_10_student7);
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa15_2_1_student8 = createStudentAnswer(student8, pa_15_2_1, "Kinetic energy is the energy possessed by an object due to its motion. It is calculated using the formula KE = 0.5 * m * v^2, where m is the mass of the object and v is its velocity.");
+        addStudentAnswerToProblemAnswer(pa_15_2_1, sa15_2_1_student8);
+
+        StudentAnswer sa15_2_2_student8 = createStudentAnswer(student8, pa_15_2_2, "Potential energy is the energy stored in an object due to its position or configuration. Gravitational potential energy is calculated using the formula PE = mgh, where m is the mass, g is the acceleration due to gravity, and h is the height above a reference level.");
+        addStudentAnswerToProblemAnswer(pa_15_2_2, sa15_2_2_student8);
+
+        StudentAnswer sa15_2_3_student8 = createStudentAnswer(student8, pa_15_2_3, "The work-energy principle states that the work done on an object is equal to the change in its kinetic energy. It is mathematically expressed as W = ΔKE, where W is the work done and ΔKE is the change in kinetic energy.");
+        addStudentAnswerToProblemAnswer(pa_15_2_3, sa15_2_3_student8);
+
+        StudentAnswer sa15_2_4_student8 = createStudentAnswer(student8, pa_15_2_4, "The conservation of energy principle states that energy cannot be created or destroyed, only transferred or transformed from one form to another. The total energy of an isolated system remains constant over time.");
+        addStudentAnswerToProblemAnswer(pa_15_2_4, sa15_2_4_student8);
+
+        StudentAnswer sa15_2_5_student8 = createStudentAnswer(student8, pa_15_2_5, "Mechanical energy is the sum of kinetic and potential energy in a system. It is the energy associated with the motion and position of an object. Mechanical energy can be conserved in the absence of non-conservative forces such as friction.");
+        addStudentAnswerToProblemAnswer(pa_15_2_5, sa15_2_5_student8);
+
+        StudentAnswer sa15_2_6_student8 = createStudentAnswer(student8, pa_15_2_6, "Power is the rate at which work is done or energy is transferred. It is calculated using the formula P = W/t or P = ΔE/t, where P is the power, W is the work done, ΔE is the change in energy, and t is the time taken. Power is measured in watts (W).");
+        addStudentAnswerToProblemAnswer(pa_15_2_6, sa15_2_6_student8);
+
+        StudentAnswer sa15_2_7_student8 = createStudentAnswer(student8, pa_15_2_7, "Efficiency is a measure of how effectively energy is converted from one form to another in a system. It is calculated as the ratio of useful energy output to the total energy input, expressed as a percentage: Efficiency = (useful energy output / total energy input) * 100%.");
+        addStudentAnswerToProblemAnswer(pa_15_2_7, sa15_2_7_student8);
+
+        StudentAnswer sa15_2_8_student8 = createStudentAnswer(student8, pa_15_2_8, "Work is done when a force acts on an object to move it in the direction of the force. It is calculated using the formula W = F * d * cos(θ), where W is the work, F is the force, d is the displacement, and θ is the angle between the force and the direction of motion. Work is measured in joules (J).");
+        addStudentAnswerToProblemAnswer(pa_15_2_8, sa15_2_8_student8);
+
+        StudentAnswer sa15_2_9_student8 = createStudentAnswer(student8, pa_15_2_9, "Conservative forces, such as gravity and spring force, do not dissipate energy and the work done by them depends only on the initial and final positions, not on the path taken. Non-conservative forces, such as friction and air resistance, dissipate energy as heat and the work done by them depends on the path taken.");
+        addStudentAnswerToProblemAnswer(pa_15_2_9, sa15_2_9_student8);
+
+        StudentAnswer sa15_2_10_student8 = createStudentAnswer(student8, pa_15_2_10, "Energy principles are applied in various real-world scenarios, such as calculating the efficiency of machines, analyzing the motion of objects, designing energy-efficient systems, and understanding the behavior of physical systems. These principles provide a framework for solving problems in engineering, physics, and other fields.");
+        addStudentAnswerToProblemAnswer(pa_15_2_10, sa15_2_10_student8);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment15_2.");
+// Creating StudentAnswer instances for student7
+        StudentAnswer sa15_3_1_student7 = createStudentAnswer(student7, pa_15_3_1, "Linear motion is the movement of an object along a straight path. It is described by parameters such as displacement, velocity, and acceleration.");
+        addStudentAnswerToProblemAnswer(pa_15_3_1, sa15_3_1_student7);
+
+        StudentAnswer sa15_3_2_student7 = createStudentAnswer(student7, pa_15_3_2, "Projectile motion is the curved path an object follows when it is thrown or projected near the Earth's surface. It is influenced by gravity and initial velocity, and its motion can be analyzed using the equations of motion.");
+        addStudentAnswerToProblemAnswer(pa_15_3_2, sa15_3_2_student7);
+
+        StudentAnswer sa15_3_3_student7 = createStudentAnswer(student7, pa_15_3_3, "Circular motion is the movement of an object along a circular path. It is characterized by parameters such as angular displacement, angular velocity, and centripetal acceleration.");
+        addStudentAnswerToProblemAnswer(pa_15_3_3, sa15_3_3_student7);
+
+        StudentAnswer sa15_3_4_student7 = createStudentAnswer(student7, pa_15_3_4, "Velocity is a vector quantity that describes the rate of change of an object's displacement with respect to time. It has both magnitude and direction and is measured in meters per second (m/s).");
+        addStudentAnswerToProblemAnswer(pa_15_3_4, sa15_3_4_student7);
+
+        StudentAnswer sa15_3_5_student7 = createStudentAnswer(student7, pa_15_3_5, "Acceleration is a vector quantity that describes the rate of change of an object's velocity with respect to time. It is measured in meters per second squared (m/s^2).");
+        addStudentAnswerToProblemAnswer(pa_15_3_5, sa15_3_5_student7);
+
+        StudentAnswer sa15_3_6_student7 = createStudentAnswer(student7, pa_15_3_6, "The equations of motion for constant acceleration are: \n1. v = u + at \n2. s = ut + 0.5at^2 \n3. v^2 = u^2 + 2as \nwhere u is the initial velocity, v is the final velocity, a is the acceleration, t is the time, and s is the displacement.");
+        addStudentAnswerToProblemAnswer(pa_15_3_6, sa15_3_6_student7);
+
+        StudentAnswer sa15_3_7_student7 = createStudentAnswer(student7, pa_15_3_7, "Free fall is the motion of an object under the influence of gravity alone, without any other forces acting on it. The acceleration due to gravity is approximately 9.8 m/s^2 near the Earth's surface.");
+        addStudentAnswerToProblemAnswer(pa_15_3_7, sa15_3_7_student7);
+
+        StudentAnswer sa15_3_8_student7 = createStudentAnswer(student7, pa_15_3_8, "Centripetal acceleration is the acceleration experienced by an object moving in a circular path, directed towards the center of the circle. It is calculated using the formula a_c = v^2 / r, where v is the tangential velocity and r is the radius of the circular path.");
+        addStudentAnswerToProblemAnswer(pa_15_3_8, sa15_3_8_student7);
+
+        StudentAnswer sa15_3_9_student7 = createStudentAnswer(student7, pa_15_3_9, "Speed is a scalar quantity that represents the rate of motion, measured as the distance traveled per unit of time. Velocity is a vector quantity that includes both the speed and direction of motion.");
+        addStudentAnswerToProblemAnswer(pa_15_3_9, sa15_3_9_student7);
+
+        StudentAnswer sa15_3_10_student7 = createStudentAnswer(student7, pa_15_3_10, "Concepts of motion are applied in various real-world scenarios, such as analyzing the motion of vehicles, predicting the trajectory of projectiles, designing amusement park rides, and understanding the behavior of celestial bodies. These concepts provide a framework for solving problems in physics and engineering.");
+        addStudentAnswerToProblemAnswer(pa_15_3_10, sa15_3_10_student7);
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa15_3_1_student8 = createStudentAnswer(student8, pa_15_3_1, "Linear motion is the movement of an object along a straight path. It is described by parameters such as displacement, velocity, and acceleration.");
+        addStudentAnswerToProblemAnswer(pa_15_3_1, sa15_3_1_student8);
+
+        StudentAnswer sa15_3_2_student8 = createStudentAnswer(student8, pa_15_3_2, "Projectile motion is the curved path an object follows when it is thrown or projected near the Earth's surface. It is influenced by gravity and initial velocity, and its motion can be analyzed using the equations of motion.");
+        addStudentAnswerToProblemAnswer(pa_15_3_2, sa15_3_2_student8);
+
+        StudentAnswer sa15_3_3_student8 = createStudentAnswer(student8, pa_15_3_3, "Circular motion is the movement of an object along a circular path. It is characterized by parameters such as angular displacement, angular velocity, and centripetal acceleration.");
+        addStudentAnswerToProblemAnswer(pa_15_3_3, sa15_3_3_student8);
+
+        StudentAnswer sa15_3_4_student8 = createStudentAnswer(student8, pa_15_3_4, "Velocity is a vector quantity that describes the rate of change of an object's displacement with respect to time. It has both magnitude and direction and is measured in meters per second (m/s).");
+        addStudentAnswerToProblemAnswer(pa_15_3_4, sa15_3_4_student8);
+
+        StudentAnswer sa15_3_5_student8 = createStudentAnswer(student8, pa_15_3_5, "Acceleration is a vector quantity that describes the rate of change of an object's velocity with respect to time. It is measured in meters per second squared (m/s^2).");
+        addStudentAnswerToProblemAnswer(pa_15_3_5, sa15_3_5_student8);
+
+        StudentAnswer sa15_3_6_student8 = createStudentAnswer(student8, pa_15_3_6, "The equations of motion for constant acceleration are: \n1. v = u + at \n2. s = ut + 0.5at^2 \n3. v^2 = u^2 + 2as \nwhere u is the initial velocity, v is the final velocity, a is the acceleration, t is the time, and s is the displacement.");
+        addStudentAnswerToProblemAnswer(pa_15_3_6, sa15_3_6_student8);
+
+        StudentAnswer sa15_3_7_student8 = createStudentAnswer(student8, pa_15_3_7, "Free fall is the motion of an object under the influence of gravity alone, without any other forces acting on it. The acceleration due to gravity is approximately 9.8 m/s^2 near the Earth's surface.");
+        addStudentAnswerToProblemAnswer(pa_15_3_7, sa15_3_7_student8);
+
+        StudentAnswer sa15_3_8_student8 = createStudentAnswer(student8, pa_15_3_8, "Centripetal acceleration is the acceleration experienced by an object moving in a circular path, directed towards the center of the circle. It is calculated using the formula a_c = v^2 / r, where v is the tangential velocity and r is the radius of the circular path.");
+        addStudentAnswerToProblemAnswer(pa_15_3_8, sa15_3_8_student8);
+
+        StudentAnswer sa15_3_9_student8 = createStudentAnswer(student8, pa_15_3_9, "Speed is a scalar quantity that represents the rate of motion, measured as the distance traveled per unit of time. Velocity is a vector quantity that includes both the speed and direction of motion.");
+        addStudentAnswerToProblemAnswer(pa_15_3_9, sa15_3_9_student8);
+
+        StudentAnswer sa15_3_10_student8 = createStudentAnswer(student8, pa_15_3_10, "Concepts of motion are applied in various real-world scenarios, such as analyzing the motion of vehicles, predicting the trajectory of projectiles, designing amusement park rides, and understanding the behavior of celestial bodies. These concepts provide a framework for solving problems in physics and engineering.");
+        addStudentAnswerToProblemAnswer(pa_15_3_10, sa15_3_10_student8);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment15_3.");
+// Creating StudentAnswer instances for student7
+        StudentAnswer sa16_1_1_student7 = createStudentAnswer(student7, pa_16_1_1, "The main subatomic particles in an atom are protons, neutrons, and electrons. Protons and neutrons are located in the nucleus, while electrons orbit the nucleus in electron shells.");
+        addStudentAnswerToProblemAnswer(pa_16_1_1, sa16_1_1_student7);
+
+        StudentAnswer sa16_1_2_student7 = createStudentAnswer(student7, pa_16_1_2, "The atomic number is the number of protons in the nucleus of an atom. It defines the element and its position in the periodic table. For example, the atomic number of hydrogen is 1, and the atomic number of carbon is 6.");
+        addStudentAnswerToProblemAnswer(pa_16_1_2, sa16_1_2_student7);
+
+        StudentAnswer sa16_1_3_student7 = createStudentAnswer(student7, pa_16_1_3, "The mass number is the total number of protons and neutrons in the nucleus of an atom. It is used to distinguish between different isotopes of an element. For example, carbon-12 has a mass number of 12 (6 protons and 6 neutrons).");
+        addStudentAnswerToProblemAnswer(pa_16_1_3, sa16_1_3_student7);
+
+        StudentAnswer sa16_1_4_student7 = createStudentAnswer(student7, pa_16_1_4, "Isotopes are atoms of the same element that have different numbers of neutrons and, therefore, different mass numbers. For example, carbon-12 and carbon-14 are isotopes of carbon.");
+        addStudentAnswerToProblemAnswer(pa_16_1_4, sa16_1_4_student7);
+
+        StudentAnswer sa16_1_5_student7 = createStudentAnswer(student7, pa_16_1_5, "Electron configuration is the distribution of electrons in an atom's electron shells. It follows the Aufbau principle, Pauli exclusion principle, and Hund's rule. For example, the electron configuration of carbon is 1s^2 2s^2 2p^2.");
+        addStudentAnswerToProblemAnswer(pa_16_1_5, sa16_1_5_student7);
+
+        StudentAnswer sa16_1_6_student7 = createStudentAnswer(student7, pa_16_1_6, "The periodic table is a tabular arrangement of elements based on their atomic number, electron configuration, and recurring chemical properties. Elements are organized into periods (rows) and groups (columns).");
+        addStudentAnswerToProblemAnswer(pa_16_1_6, sa16_1_6_student7);
+
+        StudentAnswer sa16_1_7_student7 = createStudentAnswer(student7, pa_16_1_7, "Valence electrons are the electrons in the outermost electron shell of an atom. They are important in determining an element's chemical properties and reactivity. For example, carbon has 4 valence electrons.");
+        addStudentAnswerToProblemAnswer(pa_16_1_7, sa16_1_7_student7);
+
+        StudentAnswer sa16_1_8_student7 = createStudentAnswer(student7, pa_16_1_8, "An atomic orbital is a region of space around the nucleus where an electron is likely to be found. Orbitals have different shapes and energy levels, such as s, p, d, and f orbitals.");
+        addStudentAnswerToProblemAnswer(pa_16_1_8, sa16_1_8_student7);
+
+        StudentAnswer sa16_1_9_student7 = createStudentAnswer(student7, pa_16_1_9, "The Bohr model of the atom describes electrons orbiting the nucleus in discrete energy levels. It explains the quantization of energy and the emission of light by atoms, leading to the development of quantum mechanics.");
+        addStudentAnswerToProblemAnswer(pa_16_1_9, sa16_1_9_student7);
+
+        StudentAnswer sa16_1_10_student7 = createStudentAnswer(student7, pa_16_1_10, "Atomic structure, including the arrangement of protons, neutrons, and electrons, determines an element's chemical and physical properties. These properties include atomic size, ionization energy, electronegativity, and reactivity.");
+        addStudentAnswerToProblemAnswer(pa_16_1_10, sa16_1_10_student7);
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa16_1_1_student8 = createStudentAnswer(student8, pa_16_1_1, "The main subatomic particles in an atom are protons, neutrons, and electrons. Protons and neutrons are located in the nucleus, while electrons orbit the nucleus in electron shells.");
+        addStudentAnswerToProblemAnswer(pa_16_1_1, sa16_1_1_student8);
+
+        StudentAnswer sa16_1_2_student8 = createStudentAnswer(student8, pa_16_1_2, "The atomic number is the number of protons in the nucleus of an atom. It defines the element and its position in the periodic table. For example, the atomic number of hydrogen is 1, and the atomic number of carbon is 6.");
+        addStudentAnswerToProblemAnswer(pa_16_1_2, sa16_1_2_student8);
+
+        StudentAnswer sa16_1_3_student8 = createStudentAnswer(student8, pa_16_1_3, "The mass number is the total number of protons and neutrons in the nucleus of an atom. It is used to distinguish between different isotopes of an element. For example, carbon-12 has a mass number of 12 (6 protons and 6 neutrons).");
+        addStudentAnswerToProblemAnswer(pa_16_1_3, sa16_1_3_student8);
+
+        StudentAnswer sa16_1_4_student8 = createStudentAnswer(student8, pa_16_1_4, "Isotopes are atoms of the same element that have different numbers of neutrons and, therefore, different mass numbers. For example, carbon-12 and carbon-14 are isotopes of carbon.");
+        addStudentAnswerToProblemAnswer(pa_16_1_4, sa16_1_4_student8);
+
+        StudentAnswer sa16_1_5_student8 = createStudentAnswer(student8, pa_16_1_5, "Electron configuration is the distribution of electrons in an atom's electron shells. It follows the Aufbau principle, Pauli exclusion principle, and Hund's rule. For example, the electron configuration of carbon is 1s^2 2s^2 2p^2.");
+        addStudentAnswerToProblemAnswer(pa_16_1_5, sa16_1_5_student8);
+
+        StudentAnswer sa16_1_6_student8 = createStudentAnswer(student8, pa_16_1_6, "The periodic table is a tabular arrangement of elements based on their atomic number, electron configuration, and recurring chemical properties. Elements are organized into periods (rows) and groups (columns).");
+        addStudentAnswerToProblemAnswer(pa_16_1_6, sa16_1_6_student8);
+
+        StudentAnswer sa16_1_7_student8 = createStudentAnswer(student8, pa_16_1_7, "Valence electrons are the electrons in the outermost electron shell of an atom. They are important in determining an element's chemical properties and reactivity. For example, carbon has 4 valence electrons.");
+        addStudentAnswerToProblemAnswer(pa_16_1_7, sa16_1_7_student8);
+
+        StudentAnswer sa16_1_8_student8 = createStudentAnswer(student8, pa_16_1_8, "An atomic orbital is a region of space around the nucleus where an electron is likely to be found. Orbitals have different shapes and energy levels, such as s, p, d, and f orbitals.");
+        addStudentAnswerToProblemAnswer(pa_16_1_8, sa16_1_8_student8);
+
+        StudentAnswer sa16_1_9_student8 = createStudentAnswer(student8, pa_16_1_9, "The Bohr model of the atom describes electrons orbiting the nucleus in discrete energy levels. It explains the quantization of energy and the emission of light by atoms, leading to the development of quantum mechanics.");
+        addStudentAnswerToProblemAnswer(pa_16_1_9, sa16_1_9_student8);
+
+        StudentAnswer sa16_1_10_student8 = createStudentAnswer(student8, pa_16_1_10, "Atomic structure, including the arrangement of protons, neutrons, and electrons, determines an element's chemical and physical properties. These properties include atomic size, ionization energy, electronegativity, and reactivity.");
+        addStudentAnswerToProblemAnswer(pa_16_1_10, sa16_1_10_student8);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment16_1.");
+// Creating StudentAnswer instances for student7
+        StudentAnswer sa16_2_1_student7 = createStudentAnswer(student7, pa_16_2_1, "A chemical bond is a force of attraction that holds atoms together in a molecule or compound. It is formed by the sharing or transfer of electrons between atoms.");
+        addStudentAnswerToProblemAnswer(pa_16_2_1, sa16_2_1_student7);
+
+        StudentAnswer sa16_2_2_student7 = createStudentAnswer(student7, pa_16_2_2, "An ionic bond is a type of chemical bond formed by the electrostatic attraction between oppositely charged ions. It occurs when one atom donates an electron to another, resulting in the formation of positive and negative ions.");
+        addStudentAnswerToProblemAnswer(pa_16_2_2, sa16_2_2_student7);
+
+        StudentAnswer sa16_2_3_student7 = createStudentAnswer(student7, pa_16_2_3, "A covalent bond is a type of chemical bond formed by the sharing of electron pairs between atoms. It occurs when atoms have similar electronegativities and share electrons to achieve a stable electron configuration.");
+        addStudentAnswerToProblemAnswer(pa_16_2_3, sa16_2_3_student7);
+
+        StudentAnswer sa16_2_4_student7 = createStudentAnswer(student7, pa_16_2_4, "A metallic bond is a type of chemical bond found in metals. It involves the attraction between positively charged metal ions and the sea of delocalized electrons that move freely throughout the metal lattice.");
+        addStudentAnswerToProblemAnswer(pa_16_2_4, sa16_2_4_student7);
+
+        StudentAnswer sa16_2_5_student7 = createStudentAnswer(student7, pa_16_2_5, "Electronegativity is a measure of an atom's ability to attract and hold onto electrons in a chemical bond. It determines the type of bond formed between atoms. For example, fluorine has the highest electronegativity, while francium has the lowest.");
+        addStudentAnswerToProblemAnswer(pa_16_2_5, sa16_2_5_student7);
+
+        StudentAnswer sa16_2_6_student7 = createStudentAnswer(student7, pa_16_2_6, "A polar covalent bond is a type of covalent bond in which the electrons are shared unequally between atoms, resulting in a partial positive charge on one atom and a partial negative charge on the other. This occurs due to differences in electronegativity.");
+        addStudentAnswerToProblemAnswer(pa_16_2_6, sa16_2_6_student7);
+
+        StudentAnswer sa16_2_7_student7 = createStudentAnswer(student7, pa_16_2_7, "A nonpolar covalent bond is a type of covalent bond in which the electrons are shared equally between atoms, resulting in no significant charge separation. This occurs when the atoms have similar electronegativities.");
+        addStudentAnswerToProblemAnswer(pa_16_2_7, sa16_2_7_student7);
+
+        StudentAnswer sa16_2_8_student7 = createStudentAnswer(student7, pa_16_2_8, "Bond energy is the amount of energy required to break a chemical bond and separate the atoms in a molecule. It is a measure of bond strength, with higher bond energy indicating a stronger bond.");
+        addStudentAnswerToProblemAnswer(pa_16_2_8, sa16_2_8_student7);
+
+        StudentAnswer sa16_2_9_student7 = createStudentAnswer(student7, pa_16_2_9, "A Lewis structure is a diagram that represents the arrangement of electrons in a molecule. It shows the bonding between atoms and the lone pairs of electrons. Lewis structures help predict the shapes and reactivities of molecules.");
+        addStudentAnswerToProblemAnswer(pa_16_2_9, sa16_2_9_student7);
+
+        StudentAnswer sa16_2_10_student7 = createStudentAnswer(student7, pa_16_2_10, "Chemical bonds determine the physical and chemical properties of substances, such as melting point, boiling point, solubility, conductivity, and reactivity. The type and strength of bonds affect how substances interact with each other.");
+        addStudentAnswerToProblemAnswer(pa_16_2_10, sa16_2_10_student7);
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa16_2_1_student8 = createStudentAnswer(student8, pa_16_2_1, "A chemical bond is a force of attraction that holds atoms together in a molecule or compound. It is formed by the sharing or transfer of electrons between atoms.");
+        addStudentAnswerToProblemAnswer(pa_16_2_1, sa16_2_1_student8);
+
+        StudentAnswer sa16_2_2_student8 = createStudentAnswer(student8, pa_16_2_2, "An ionic bond is a type of chemical bond formed by the electrostatic attraction between oppositely charged ions. It occurs when one atom donates an electron to another, resulting in the formation of positive and negative ions.");
+        addStudentAnswerToProblemAnswer(pa_16_2_2, sa16_2_2_student8);
+
+        StudentAnswer sa16_2_3_student8 = createStudentAnswer(student8, pa_16_2_3, "A covalent bond is a type of chemical bond formed by the sharing of electron pairs between atoms. It occurs when atoms have similar electronegativities and share electrons to achieve a stable electron configuration.");
+        addStudentAnswerToProblemAnswer(pa_16_2_3, sa16_2_3_student8);
+
+        StudentAnswer sa16_2_4_student8 = createStudentAnswer(student8, pa_16_2_4, "A metallic bond is a type of chemical bond found in metals. It involves the attraction between positively charged metal ions and the sea of delocalized electrons that move freely throughout the metal lattice.");
+        addStudentAnswerToProblemAnswer(pa_16_2_4, sa16_2_4_student8);
+
+        StudentAnswer sa16_2_5_student8 = createStudentAnswer(student8, pa_16_2_5, "Electronegativity is a measure of an atom's ability to attract and hold onto electrons in a chemical bond. It determines the type of bond formed between atoms. For example, fluorine has the highest electronegativity, while francium has the lowest.");
+        addStudentAnswerToProblemAnswer(pa_16_2_5, sa16_2_5_student8);
+
+        StudentAnswer sa16_2_6_student8 = createStudentAnswer(student8, pa_16_2_6, "A polar covalent bond is a type of covalent bond in which the electrons are shared unequally between atoms, resulting in a partial positive charge on one atom and a partial negative charge on the other. This occurs due to differences in electronegativity.");
+        addStudentAnswerToProblemAnswer(pa_16_2_6, sa16_2_6_student8);
+
+        StudentAnswer sa16_2_7_student8 = createStudentAnswer(student8, pa_16_2_7, "A nonpolar covalent bond is a type of covalent bond in which the electrons are shared equally between atoms, resulting in no significant charge separation. This occurs when the atoms have similar electronegativities.");
+        addStudentAnswerToProblemAnswer(pa_16_2_7, sa16_2_7_student8);
+
+        StudentAnswer sa16_2_8_student8 = createStudentAnswer(student8, pa_16_2_8, "Bond energy is the amount of energy required to break a chemical bond and separate the atoms in a molecule. It is a measure of bond strength, with higher bond energy indicating a stronger bond.");
+        addStudentAnswerToProblemAnswer(pa_16_2_8, sa16_2_8_student8);
+
+        StudentAnswer sa16_2_9_student8 = createStudentAnswer(student8, pa_16_2_9, "A Lewis structure is a diagram that represents the arrangement of electrons in a molecule. It shows the bonding between atoms and the lone pairs of electrons. Lewis structures help predict the shapes and reactivities of molecules.");
+        addStudentAnswerToProblemAnswer(pa_16_2_9, sa16_2_9_student8);
+
+        StudentAnswer sa16_2_10_student8 = createStudentAnswer(student8, pa_16_2_10, "Chemical bonds determine the physical and chemical properties of substances, such as melting point, boiling point, solubility, conductivity, and reactivity. The type and strength of bonds affect how substances interact with each other.");
+        addStudentAnswerToProblemAnswer(pa_16_2_10, sa16_2_10_student8);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment16_2.");
+// Creating StudentAnswer instances for student7
+        StudentAnswer sa16_3_1_student7 = createStudentAnswer(student7, pa_16_3_1, "A chemical reaction is a process in which substances (reactants) are transformed into different substances (products) through the breaking and forming of chemical bonds.");
+        addStudentAnswerToProblemAnswer(pa_16_3_1, sa16_3_1_student7);
+
+        StudentAnswer sa16_3_2_student7 = createStudentAnswer(student7, pa_16_3_2, "Reactants are the starting substances in a chemical reaction, while products are the substances formed as a result of the reaction. The reactants undergo chemical changes to form the products.");
+        addStudentAnswerToProblemAnswer(pa_16_3_2, sa16_3_2_student7);
+
+        StudentAnswer sa16_3_3_student7 = createStudentAnswer(student7, pa_16_3_3, "The law of conservation of mass states that mass is neither created nor destroyed in a chemical reaction. The total mass of the reactants is equal to the total mass of the products.");
+        addStudentAnswerToProblemAnswer(pa_16_3_3, sa16_3_3_student7);
+
+        StudentAnswer sa16_3_4_student7 = createStudentAnswer(student7, pa_16_3_4, "Different types of chemical reactions include synthesis (combination), decomposition, single displacement, double displacement, combustion, and redox (oxidation-reduction) reactions.");
+        addStudentAnswerToProblemAnswer(pa_16_3_4, sa16_3_4_student7);
+
+        StudentAnswer sa16_3_5_student7 = createStudentAnswer(student7, pa_16_3_5, "A synthesis reaction, also known as a combination reaction, occurs when two or more reactants combine to form a single product. The general form is A + B → AB.");
+        addStudentAnswerToProblemAnswer(pa_16_3_5, sa16_3_5_student7);
+
+        StudentAnswer sa16_3_6_student7 = createStudentAnswer(student7, pa_16_3_6, "A decomposition reaction occurs when a single compound breaks down into two or more simpler substances. The general form is AB → A + B.");
+        addStudentAnswerToProblemAnswer(pa_16_3_6, sa16_3_6_student7);
+
+        StudentAnswer sa16_3_7_student7 = createStudentAnswer(student7, pa_16_3_7, "A single displacement reaction occurs when an element replaces another element in a compound. The general form is A + BC → AC + B.");
+        addStudentAnswerToProblemAnswer(pa_16_3_7, sa16_3_7_student7);
+
+        StudentAnswer sa16_3_8_student7 = createStudentAnswer(student7, pa_16_3_8, "A double displacement reaction occurs when the ions of two compounds exchange places to form two new compounds. The general form is AB + CD → AD + CB.");
+        addStudentAnswerToProblemAnswer(pa_16_3_8, sa16_3_8_student7);
+
+        StudentAnswer sa16_3_9_student7 = createStudentAnswer(student7, pa_16_3_9, "A combustion reaction occurs when a substance reacts with oxygen to produce heat and light. It often involves hydrocarbons reacting with oxygen to produce carbon dioxide and water. The general form is CxHy + O2 → CO2 + H2O.");
+        addStudentAnswerToProblemAnswer(pa_16_3_9, sa16_3_9_student7);
+
+        StudentAnswer sa16_3_10_student7 = createStudentAnswer(student7, pa_16_3_10, "Chemical equilibrium is a state in which the forward and reverse reactions occur at the same rate, resulting in constant concentrations of reactants and products. It can be influenced by factors such as temperature, pressure, and concentration.");
+        addStudentAnswerToProblemAnswer(pa_16_3_10, sa16_3_10_student7);
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa16_3_1_student8 = createStudentAnswer(student8, pa_16_3_1, "A chemical reaction is a process in which substances (reactants) are transformed into different substances (products) through the breaking and forming of chemical bonds.");
+        addStudentAnswerToProblemAnswer(pa_16_3_1, sa16_3_1_student8);
+
+        StudentAnswer sa16_3_2_student8 = createStudentAnswer(student8, pa_16_3_2, "Reactants are the starting substances in a chemical reaction, while products are the substances formed as a result of the reaction. The reactants undergo chemical changes to form the products.");
+        addStudentAnswerToProblemAnswer(pa_16_3_2, sa16_3_2_student8);
+
+        StudentAnswer sa16_3_3_student8 = createStudentAnswer(student8, pa_16_3_3, "The law of conservation of mass states that mass is neither created nor destroyed in a chemical reaction. The total mass of the reactants is equal to the total mass of the products.");
+        addStudentAnswerToProblemAnswer(pa_16_3_3, sa16_3_3_student8);
+
+        StudentAnswer sa16_3_4_student8 = createStudentAnswer(student8, pa_16_3_4, "Different types of chemical reactions include synthesis (combination), decomposition, single displacement, double displacement, combustion, and redox (oxidation-reduction) reactions.");
+        addStudentAnswerToProblemAnswer(pa_16_3_4, sa16_3_4_student8);
+
+        StudentAnswer sa16_3_5_student8 = createStudentAnswer(student8, pa_16_3_5, "A synthesis reaction, also known as a combination reaction, occurs when two or more reactants combine to form a single product. The general form is A + B → AB.");
+        addStudentAnswerToProblemAnswer(pa_16_3_5, sa16_3_5_student8);
+
+        StudentAnswer sa16_3_6_student8 = createStudentAnswer(student8, pa_16_3_6, "A decomposition reaction occurs when a single compound breaks down into two or more simpler substances. The general form is AB → A + B.");
+        addStudentAnswerToProblemAnswer(pa_16_3_6, sa16_3_6_student8);
+
+        StudentAnswer sa16_3_7_student8 = createStudentAnswer(student8, pa_16_3_7, "A single displacement reaction occurs when an element replaces another element in a compound. The general form is A + BC → AC + B.");
+        addStudentAnswerToProblemAnswer(pa_16_3_7, sa16_3_7_student8);
+
+        StudentAnswer sa16_3_8_student8 = createStudentAnswer(student8, pa_16_3_8, "A double displacement reaction occurs when the ions of two compounds exchange places to form two new compounds. The general form is AB + CD → AD + CB.");
+        addStudentAnswerToProblemAnswer(pa_16_3_8, sa16_3_8_student8);
+
+        StudentAnswer sa16_3_9_student8 = createStudentAnswer(student8, pa_16_3_9, "A combustion reaction occurs when a substance reacts with oxygen to produce heat and light. It often involves hydrocarbons reacting with oxygen to produce carbon dioxide and water. The general form is CxHy + O2 → CO2 + H2O.");
+        addStudentAnswerToProblemAnswer(pa_16_3_9, sa16_3_9_student8);
+
+        StudentAnswer sa16_3_10_student8 = createStudentAnswer(student8, pa_16_3_10, "Chemical equilibrium is a state in which the forward and reverse reactions occur at the same rate, resulting in constant concentrations of reactants and products. It can be influenced by factors such as temperature, pressure, and concentration.");
+        addStudentAnswerToProblemAnswer(pa_16_3_10, sa16_3_10_student8);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment16_3.");
+// Creating StudentAnswer instances for student9
+        StudentAnswer sa17_1_1_student9 = createStudentAnswer(student9, pa_17_1_1, "The cell membrane is a thin, flexible barrier that surrounds the cell, regulating what enters and exits the cell. It is composed of a lipid bilayer with embedded proteins.");
+        addStudentAnswerToProblemAnswer(pa_17_1_1, sa17_1_1_student9);
+
+        StudentAnswer sa17_1_2_student9 = createStudentAnswer(student9, pa_17_1_2, "The nucleus is the control center of the cell, containing the cell's genetic material (DNA). It regulates gene expression and controls cellular activities such as growth, metabolism, and reproduction.");
+        addStudentAnswerToProblemAnswer(pa_17_1_2, sa17_1_2_student9);
+
+        StudentAnswer sa17_1_3_student9 = createStudentAnswer(student9, pa_17_1_3, "Organelles are specialized structures within a cell that perform specific functions. Examples include the mitochondria (energy production), endoplasmic reticulum (protein and lipid synthesis), and Golgi apparatus (modifying, sorting, and packaging proteins).");
+        addStudentAnswerToProblemAnswer(pa_17_1_3, sa17_1_3_student9);
+
+        StudentAnswer sa17_1_4_student9 = createStudentAnswer(student9, pa_17_1_4, "Prokaryotic cells lack a true nucleus and membrane-bound organelles, while eukaryotic cells have a defined nucleus and various membrane-bound organelles. Prokaryotes include bacteria and archaea, while eukaryotes include plants, animals, fungi, and protists.");
+        addStudentAnswerToProblemAnswer(pa_17_1_4, sa17_1_4_student9);
+
+        StudentAnswer sa17_1_5_student9 = createStudentAnswer(student9, pa_17_1_5, "Mitochondria are the powerhouse of the cell, responsible for producing energy through cellular respiration. They convert glucose and oxygen into ATP (adenosine triphosphate), the cell's main energy currency.");
+        addStudentAnswerToProblemAnswer(pa_17_1_5, sa17_1_5_student9);
+
+        StudentAnswer sa17_1_6_student9 = createStudentAnswer(student9, pa_17_1_6, "The endoplasmic reticulum (ER) is a network of membranous tubules within the cell that plays a role in protein and lipid synthesis. The rough ER is studded with ribosomes, while the smooth ER lacks ribosomes.");
+        addStudentAnswerToProblemAnswer(pa_17_1_6, sa17_1_6_student9);
+
+        StudentAnswer sa17_1_7_student9 = createStudentAnswer(student9, pa_17_1_7, "Ribosomes are the molecular machines responsible for protein synthesis. They translate messenger RNA (mRNA) into polypeptide chains, which fold into functional proteins.");
+        addStudentAnswerToProblemAnswer(pa_17_1_7, sa17_1_7_student9);
+
+        StudentAnswer sa17_1_8_student9 = createStudentAnswer(student9, pa_17_1_8, "The Golgi apparatus is an organelle that modifies, sorts, and packages proteins and lipids for transport to their final destinations. It is often likened to a cellular post office.");
+        addStudentAnswerToProblemAnswer(pa_17_1_8, sa17_1_8_student9);
+
+        StudentAnswer sa17_1_9_student9 = createStudentAnswer(student9, pa_17_1_9, "Lysosomes are organelles that contain digestive enzymes to break down waste materials and cellular debris. They play a key role in recycling cellular components and defending against pathogens.");
+        addStudentAnswerToProblemAnswer(pa_17_1_9, sa17_1_9_student9);
+
+        StudentAnswer sa17_1_10_student9 = createStudentAnswer(student9, pa_17_1_10, "Cell structures are specialized to perform specific functions that are crucial for the cell's survival and efficiency. Each organelle and component of the cell works together to maintain homeostasis, facilitate metabolism, and ensure proper growth and division.");
+        addStudentAnswerToProblemAnswer(pa_17_1_10, sa17_1_10_student9);
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa17_1_1_student10 = createStudentAnswer(student10, pa_17_1_1, "The cell membrane is a thin, flexible barrier that surrounds the cell, regulating what enters and exits the cell. It is composed of a lipid bilayer with embedded proteins.");
+        addStudentAnswerToProblemAnswer(pa_17_1_1, sa17_1_1_student10);
+
+        StudentAnswer sa17_1_2_student10 = createStudentAnswer(student10, pa_17_1_2, "The nucleus is the control center of the cell, containing the cell's genetic material (DNA). It regulates gene expression and controls cellular activities such as growth, metabolism, and reproduction.");
+        addStudentAnswerToProblemAnswer(pa_17_1_2, sa17_1_2_student10);
+
+        StudentAnswer sa17_1_3_student10 = createStudentAnswer(student10, pa_17_1_3, "Organelles are specialized structures within a cell that perform specific functions. Examples include the mitochondria (energy production), endoplasmic reticulum (protein and lipid synthesis), and Golgi apparatus (modifying, sorting, and packaging proteins).");
+        addStudentAnswerToProblemAnswer(pa_17_1_3, sa17_1_3_student10);
+
+        StudentAnswer sa17_1_4_student10 = createStudentAnswer(student10, pa_17_1_4, "Prokaryotic cells lack a true nucleus and membrane-bound organelles, while eukaryotic cells have a defined nucleus and various membrane-bound organelles. Prokaryotes include bacteria and archaea, while eukaryotes include plants, animals, fungi, and protists.");
+        addStudentAnswerToProblemAnswer(pa_17_1_4, sa17_1_4_student10);
+
+        StudentAnswer sa17_1_5_student10 = createStudentAnswer(student10, pa_17_1_5, "Mitochondria are the powerhouse of the cell, responsible for producing energy through cellular respiration. They convert glucose and oxygen into ATP (adenosine triphosphate), the cell's main energy currency.");
+        addStudentAnswerToProblemAnswer(pa_17_1_5, sa17_1_5_student10);
+
+        StudentAnswer sa17_1_6_student10 = createStudentAnswer(student10, pa_17_1_6, "The endoplasmic reticulum (ER) is a network of membranous tubules within the cell that plays a role in protein and lipid synthesis. The rough ER is studded with ribosomes, while the smooth ER lacks ribosomes.");
+        addStudentAnswerToProblemAnswer(pa_17_1_6, sa17_1_6_student10);
+
+        StudentAnswer sa17_1_7_student10 = createStudentAnswer(student10, pa_17_1_7, "Ribosomes are the molecular machines responsible for protein synthesis. They translate messenger RNA (mRNA) into polypeptide chains, which fold into functional proteins.");
+        addStudentAnswerToProblemAnswer(pa_17_1_7, sa17_1_7_student10);
+
+        StudentAnswer sa17_1_8_student10 = createStudentAnswer(student10, pa_17_1_8, "The Golgi apparatus is an organelle that modifies, sorts, and packages proteins and lipids for transport to their final destinations. It is often likened to a cellular post office.");
+        addStudentAnswerToProblemAnswer(pa_17_1_8, sa17_1_8_student10);
+
+        StudentAnswer sa17_1_9_student10 = createStudentAnswer(student10, pa_17_1_9, "Lysosomes are organelles that contain digestive enzymes to break down waste materials and cellular debris. They play a key role in recycling cellular components and defending against pathogens.");
+        addStudentAnswerToProblemAnswer(pa_17_1_9, sa17_1_9_student10);
+
+        StudentAnswer sa17_1_10_student10 = createStudentAnswer(student10, pa_17_1_10, "Cell structures are specialized to perform specific functions that are crucial for the cell's survival and efficiency. Each organelle and component of the cell works together to maintain homeostasis, facilitate metabolism, and ensure proper growth and division.");
+        addStudentAnswerToProblemAnswer(pa_17_1_10, sa17_1_10_student10);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student9 and student10 for all problem answers in assignment17_1.");
+// Creating StudentAnswer instances for student9
+        StudentAnswer sa17_2_1_student9 = createStudentAnswer(student9, pa_17_2_1, "Genetics is the study of heredity and the variation of inherited characteristics. It examines how traits are passed from one generation to the next through genes.");
+        addStudentAnswerToProblemAnswer(pa_17_2_1, sa17_2_1_student9);
+
+        StudentAnswer sa17_2_2_student9 = createStudentAnswer(student9, pa_17_2_2, "Mendelian genetics is the study of the principles of inheritance discovered by Gregor Mendel. It includes the laws of segregation and independent assortment, which explain how traits are inherited through dominant and recessive alleles.");
+        addStudentAnswerToProblemAnswer(pa_17_2_2, sa17_2_2_student9);
+
+        StudentAnswer sa17_2_3_student9 = createStudentAnswer(student9, pa_17_2_3, "DNA (deoxyribonucleic acid) is the molecule that carries genetic information in living organisms. It is composed of two strands forming a double helix, with each strand made up of nucleotides containing a sugar, a phosphate group, and a nitrogenous base.");
+        addStudentAnswerToProblemAnswer(pa_17_2_3, sa17_2_3_student9);
+
+        StudentAnswer sa17_2_4_student9 = createStudentAnswer(student9, pa_17_2_4, "A gene is a segment of DNA that contains the instructions for building a specific protein. It includes coding regions called exons and non-coding regions called introns, as well as regulatory sequences that control gene expression.");
+        addStudentAnswerToProblemAnswer(pa_17_2_4, sa17_2_4_student9);
+
+        StudentAnswer sa17_2_5_student9 = createStudentAnswer(student9, pa_17_2_5, "DNA replication is the process by which a cell copies its DNA before cell division. It involves the unwinding of the double helix, the formation of a replication fork, and the synthesis of new DNA strands by DNA polymerase.");
+        addStudentAnswerToProblemAnswer(pa_17_2_5, sa17_2_5_student9);
+
+        StudentAnswer sa17_2_6_student9 = createStudentAnswer(student9, pa_17_2_6, "Transcription is the process by which the genetic information in DNA is copied into messenger RNA (mRNA). It involves the binding of RNA polymerase to a promoter, the unwinding of the DNA, and the synthesis of a complementary RNA strand.");
+        addStudentAnswerToProblemAnswer(pa_17_2_6, sa17_2_6_student9);
+
+        StudentAnswer sa17_2_7_student9 = createStudentAnswer(student9, pa_17_2_7, "Translation is the process by which the genetic information in mRNA is used to synthesize a protein. It occurs at the ribosome, where transfer RNA (tRNA) molecules bring amino acids that are added to a growing polypeptide chain according to the codon sequence in the mRNA.");
+        addStudentAnswerToProblemAnswer(pa_17_2_7, sa17_2_7_student9);
+
+        StudentAnswer sa17_2_8_student9 = createStudentAnswer(student9, pa_17_2_8, "A mutation is a change in the DNA sequence that can result in an altered gene product or regulation. Mutations can be caused by errors during DNA replication, exposure to mutagens, or other factors, and they can have various effects on an organism's traits.");
+        addStudentAnswerToProblemAnswer(pa_17_2_8, sa17_2_8_student9);
+
+        StudentAnswer sa17_2_9_student9 = createStudentAnswer(student9, pa_17_2_9, "Genetic variation refers to the diversity in gene frequencies within a population. It is the result of mutations, genetic recombination during sexual reproduction, and other mechanisms, and it is essential for evolution and adaptation.");
+        addStudentAnswerToProblemAnswer(pa_17_2_9, sa17_2_9_student9);
+
+        StudentAnswer sa17_2_10_student9 = createStudentAnswer(student9, pa_17_2_10, "Applications of genetics include medical diagnostics and treatments, genetic engineering and biotechnology, forensic science, agriculture (crop and livestock breeding), and understanding evolutionary relationships among species.");
+        addStudentAnswerToProblemAnswer(pa_17_2_10, sa17_2_10_student9);
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa17_2_1_student10 = createStudentAnswer(student10, pa_17_2_1, "Genetics is the study of heredity and the variation of inherited characteristics. It examines how traits are passed from one generation to the next through genes.");
+        addStudentAnswerToProblemAnswer(pa_17_2_1, sa17_2_1_student10);
+
+        StudentAnswer sa17_2_2_student10 = createStudentAnswer(student10, pa_17_2_2, "Mendelian genetics is the study of the principles of inheritance discovered by Gregor Mendel. It includes the laws of segregation and independent assortment, which explain how traits are inherited through dominant and recessive alleles.");
+        addStudentAnswerToProblemAnswer(pa_17_2_2, sa17_2_2_student10);
+
+        StudentAnswer sa17_2_3_student10 = createStudentAnswer(student10, pa_17_2_3, "DNA (deoxyribonucleic acid) is the molecule that carries genetic information in living organisms. It is composed of two strands forming a double helix, with each strand made up of nucleotides containing a sugar, a phosphate group, and a nitrogenous base.");
+        addStudentAnswerToProblemAnswer(pa_17_2_3, sa17_2_3_student10);
+
+        StudentAnswer sa17_2_4_student10 = createStudentAnswer(student10, pa_17_2_4, "A gene is a segment of DNA that contains the instructions for building a specific protein. It includes coding regions called exons and non-coding regions called introns, as well as regulatory sequences that control gene expression.");
+        addStudentAnswerToProblemAnswer(pa_17_2_4, sa17_2_4_student10);
+
+        StudentAnswer sa17_2_5_student10 = createStudentAnswer(student10, pa_17_2_5, "DNA replication is the process by which a cell copies its DNA before cell division. It involves the unwinding of the double helix, the formation of a replication fork, and the synthesis of new DNA strands by DNA polymerase.");
+        addStudentAnswerToProblemAnswer(pa_17_2_5, sa17_2_5_student10);
+
+        StudentAnswer sa17_2_6_student10 = createStudentAnswer(student10, pa_17_2_6, "Transcription is the process by which the genetic information in DNA is copied into messenger RNA (mRNA). It involves the binding of RNA polymerase to a promoter, the unwinding of the DNA, and the synthesis of a complementary RNA strand.");
+        addStudentAnswerToProblemAnswer(pa_17_2_6, sa17_2_6_student10);
+
+        StudentAnswer sa17_2_7_student10 = createStudentAnswer(student10, pa_17_2_7, "Translation is the process by which the genetic information in mRNA is used to synthesize a protein. It occurs at the ribosome, where transfer RNA (tRNA) molecules bring amino acids that are added to a growing polypeptide chain according to the codon sequence in the mRNA.");
+        addStudentAnswerToProblemAnswer(pa_17_2_7, sa17_2_7_student10);
+
+        StudentAnswer sa17_2_8_student10 = createStudentAnswer(student10, pa_17_2_8, "A mutation is a change in the DNA sequence that can result in an altered gene product or regulation. Mutations can be caused by errors during DNA replication, exposure to mutagens, or other factors, and they can have various effects on an organism's traits.");
+        addStudentAnswerToProblemAnswer(pa_17_2_8, sa17_2_8_student10);
+
+        StudentAnswer sa17_2_9_student10 = createStudentAnswer(student10, pa_17_2_9, "Genetic variation refers to the diversity in gene frequencies within a population. It is the result of mutations, genetic recombination during sexual reproduction, and other mechanisms, and it is essential for evolution and adaptation.");
+        addStudentAnswerToProblemAnswer(pa_17_2_9, sa17_2_9_student10);
+
+        StudentAnswer sa17_2_10_student10 = createStudentAnswer(student10, pa_17_2_10, "Applications of genetics include medical diagnostics and treatments, genetic engineering and biotechnology, forensic science, agriculture (crop and livestock breeding), and understanding evolutionary relationships among species.");
+        addStudentAnswerToProblemAnswer(pa_17_2_10, sa17_2_10_student10);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student9 and student10 for all problem answers in assignment17_2.");
+// Creating StudentAnswer instances for student9
+        StudentAnswer sa17_3_1_student9 = createStudentAnswer(student9, pa_17_3_1, "The theory of evolution is the scientific explanation for the diversity of life on Earth. It states that all species of organisms have descended from common ancestors through a process of gradual change and natural selection.");
+        addStudentAnswerToProblemAnswer(pa_17_3_1, sa17_3_1_student9);
+
+        StudentAnswer sa17_3_2_student9 = createStudentAnswer(student9, pa_17_3_2, "Natural selection is the process by which certain traits become more common in a population because they increase an organism's chances of survival and reproduction. It is a key mechanism of evolution.");
+        addStudentAnswerToProblemAnswer(pa_17_3_2, sa17_3_2_student9);
+
+        StudentAnswer sa17_3_3_student9 = createStudentAnswer(student9, pa_17_3_3, "Genetic variation refers to the differences in DNA sequences among individuals within a population. It is the raw material for evolution, as it provides the genetic diversity on which natural selection acts.");
+        addStudentAnswerToProblemAnswer(pa_17_3_3, sa17_3_3_student9);
+
+        StudentAnswer sa17_3_4_student9 = createStudentAnswer(student9, pa_17_3_4, "Evidence for evolution comes from various fields, including paleontology (fossil record), comparative anatomy (homologous structures), molecular biology (DNA and protein similarities), biogeography (distribution of species), and embryology (developmental stages).");
+        addStudentAnswerToProblemAnswer(pa_17_3_4, sa17_3_4_student9);
+
+        StudentAnswer sa17_3_5_student9 = createStudentAnswer(student9, pa_17_3_5, "The fossil record is the collection of fossils that provides evidence of the history of life on Earth. It shows the progression of life forms over time and supports the idea of common ancestry and evolutionary change.");
+        addStudentAnswerToProblemAnswer(pa_17_3_5, sa17_3_5_student9);
+
+        StudentAnswer sa17_3_6_student9 = createStudentAnswer(student9, pa_17_3_6, "Homologous structures are anatomical features that are similar in different species because they share a common ancestor. Examples include the forelimbs of humans, whales, bats, and birds, which have different functions but similar bone structures.");
+        addStudentAnswerToProblemAnswer(pa_17_3_6, sa17_3_6_student9);
+
+        StudentAnswer sa17_3_7_student9 = createStudentAnswer(student9, pa_17_3_7, "Speciation is the process by which new species arise from existing species. It occurs when populations of the same species become isolated and diverge due to genetic variation and natural selection, eventually becoming reproductively incompatible.");
+        addStudentAnswerToProblemAnswer(pa_17_3_7, sa17_3_7_student9);
+
+        StudentAnswer sa17_3_8_student9 = createStudentAnswer(student9, pa_17_3_8, "Adaptive radiation is the rapid evolution of a single species into multiple species that occupy different ecological niches. It often occurs when a species colonizes a new environment with diverse habitats and limited competition.");
+        addStudentAnswerToProblemAnswer(pa_17_3_8, sa17_3_8_student9);
+
+        StudentAnswer sa17_3_9_student9 = createStudentAnswer(student9, pa_17_3_9, "Genetic drift is a random process that can cause changes in allele frequencies in a population. It is more pronounced in small populations and can lead to the fixation or loss of alleles, contributing to evolutionary change.");
+        addStudentAnswerToProblemAnswer(pa_17_3_9, sa17_3_9_student9);
+
+        StudentAnswer sa17_3_10_student9 = createStudentAnswer(student9, pa_17_3_10, "Environmental factors, such as climate, food availability, and predators, exert selective pressures on organisms. These pressures influence which traits are advantageous and contribute to the adaptation of species to their environment.");
+        addStudentAnswerToProblemAnswer(pa_17_3_10, sa17_3_10_student9);
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa17_3_1_student10 = createStudentAnswer(student10, pa_17_3_1, "The theory of evolution is the scientific explanation for the diversity of life on Earth. It states that all species of organisms have descended from common ancestors through a process of gradual change and natural selection.");
+        addStudentAnswerToProblemAnswer(pa_17_3_1, sa17_3_1_student10);
+
+        StudentAnswer sa17_3_2_student10 = createStudentAnswer(student10, pa_17_3_2, "Natural selection is the process by which certain traits become more common in a population because they increase an organism's chances of survival and reproduction. It is a key mechanism of evolution.");
+        addStudentAnswerToProblemAnswer(pa_17_3_2, sa17_3_2_student10);
+
+        StudentAnswer sa17_3_3_student10 = createStudentAnswer(student10, pa_17_3_3, "Genetic variation refers to the differences in DNA sequences among individuals within a population. It is the raw material for evolution, as it provides the genetic diversity on which natural selection acts.");
+        addStudentAnswerToProblemAnswer(pa_17_3_3, sa17_3_3_student10);
+
+        StudentAnswer sa17_3_4_student10 = createStudentAnswer(student10, pa_17_3_4, "Evidence for evolution comes from various fields, including paleontology (fossil record), comparative anatomy (homologous structures), molecular biology (DNA and protein similarities), biogeography (distribution of species), and embryology (developmental stages).");
+        addStudentAnswerToProblemAnswer(pa_17_3_4, sa17_3_4_student10);
+
+        StudentAnswer sa17_3_5_student10 = createStudentAnswer(student10, pa_17_3_5, "The fossil record is the collection of fossils that provides evidence of the history of life on Earth. It shows the progression of life forms over time and supports the idea of common ancestry and evolutionary change.");
+        addStudentAnswerToProblemAnswer(pa_17_3_5, sa17_3_5_student10);
+
+        StudentAnswer sa17_3_6_student10 = createStudentAnswer(student10, pa_17_3_6, "Homologous structures are anatomical features that are similar in different species because they share a common ancestor. Examples include the forelimbs of humans, whales, bats, and birds, which have different functions but similar bone structures.");
+        addStudentAnswerToProblemAnswer(pa_17_3_6, sa17_3_6_student10);
+
+        StudentAnswer sa17_3_7_student10 = createStudentAnswer(student10, pa_17_3_7, "Speciation is the process by which new species arise from existing species. It occurs when populations of the same species become isolated and diverge due to genetic variation and natural selection, eventually becoming reproductively incompatible.");
+        addStudentAnswerToProblemAnswer(pa_17_3_7, sa17_3_7_student10);
+
+        StudentAnswer sa17_3_8_student10 = createStudentAnswer(student10, pa_17_3_8, "Adaptive radiation is the rapid evolution of a single species into multiple species that occupy different ecological niches. It often occurs when a species colonizes a new environment with diverse habitats and limited competition.");
+        addStudentAnswerToProblemAnswer(pa_17_3_8, sa17_3_8_student10);
+
+        StudentAnswer sa17_3_9_student10 = createStudentAnswer(student10, pa_17_3_9, "Genetic drift is a random process that can cause changes in allele frequencies in a population. It is more pronounced in small populations and can lead to the fixation or loss of alleles, contributing to evolutionary change.");
+        addStudentAnswerToProblemAnswer(pa_17_3_9, sa17_3_9_student10);
+
+        StudentAnswer sa17_3_10_student10 = createStudentAnswer(student10, pa_17_3_10, "Environmental factors, such as climate, food availability, and predators, exert selective pressures on organisms. These pressures influence which traits are advantageous and contribute to the adaptation of species to their environment.");
+        addStudentAnswerToProblemAnswer(pa_17_3_10, sa17_3_10_student10);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student9 and student10 for all problem answers in assignment17_3.");
+// Creating StudentAnswer instances for student9
+        StudentAnswer sa17_4_1_student9 = createStudentAnswer(student9, pa_17_4_1, "Ecology is the study of interactions between organisms and their environment. It examines how organisms affect and are affected by their surroundings, including other organisms and physical factors.");
+        addStudentAnswerToProblemAnswer(pa_17_4_1, sa17_4_1_student9);
+
+        StudentAnswer sa17_4_2_student9 = createStudentAnswer(student9, pa_17_4_2, "An ecosystem is a community of living organisms (plants, animals, and microbes) interacting with their physical environment (air, water, and soil). It includes both biotic (living) and abiotic (non-living) components.");
+        addStudentAnswerToProblemAnswer(pa_17_4_2, sa17_4_2_student9);
+
+        StudentAnswer sa17_4_3_student9 = createStudentAnswer(student9, pa_17_4_3, "A food web is a complex network of interconnected food chains that shows the feeding relationships between organisms in an ecosystem. It illustrates how energy and nutrients flow through different trophic levels.");
+        addStudentAnswerToProblemAnswer(pa_17_4_3, sa17_4_3_student9);
+
+        StudentAnswer sa17_4_4_student9 = createStudentAnswer(student9, pa_17_4_4, "Energy flow in an ecosystem refers to the transfer of energy from one trophic level to another, beginning with primary producers (plants) and moving through herbivores, carnivores, and decomposers. Energy is lost at each level through metabolic processes and heat.");
+        addStudentAnswerToProblemAnswer(pa_17_4_4, sa17_4_4_student9);
+
+        StudentAnswer sa17_4_5_student9 = createStudentAnswer(student9, pa_17_4_5, "Producers (plants and algae) convert sunlight into chemical energy through photosynthesis. Consumers (herbivores, carnivores, and omnivores) obtain energy by eating other organisms. Decomposers (bacteria and fungi) break down dead organic matter, recycling nutrients back into the ecosystem.");
+        addStudentAnswerToProblemAnswer(pa_17_4_5, sa17_4_5_student9);
+
+        StudentAnswer sa17_4_6_student9 = createStudentAnswer(student9, pa_17_4_6, "A biogeochemical cycle is the movement of elements and compounds between living organisms and the physical environment. Examples include the carbon cycle, nitrogen cycle, and water cycle, which are essential for maintaining ecosystem health.");
+        addStudentAnswerToProblemAnswer(pa_17_4_6, sa17_4_6_student9);
+
+        StudentAnswer sa17_4_7_student9 = createStudentAnswer(student9, pa_17_4_7, "Biodiversity refers to the variety of life forms within an ecosystem, including species diversity, genetic diversity, and ecosystem diversity. High biodiversity contributes to ecosystem stability, resilience, and productivity.");
+        addStudentAnswerToProblemAnswer(pa_17_4_7, sa17_4_7_student9);
+
+        StudentAnswer sa17_4_8_student9 = createStudentAnswer(student9, pa_17_4_8, "Human activities, such as deforestation, pollution, urbanization, and climate change, can have significant impacts on ecosystems. These activities can lead to habitat destruction, loss of biodiversity, and alterations in nutrient cycles and energy flow.");
+        addStudentAnswerToProblemAnswer(pa_17_4_8, sa17_4_8_student9);
+
+        StudentAnswer sa17_4_9_student9 = createStudentAnswer(student9, pa_17_4_9, "An ecological niche is the role and position of an organism within an ecosystem, including its interactions with other organisms, its habitat, and its contributions to energy flow and nutrient cycling. Each species has a unique niche that helps maintain ecosystem balance.");
+        addStudentAnswerToProblemAnswer(pa_17_4_9, sa17_4_9_student9);
+
+        StudentAnswer sa17_4_10_student9 = createStudentAnswer(student9, pa_17_4_10, "Ecological succession is the process by which ecosystems undergo gradual changes in species composition and structure over time. It can be primary (starting from a barren environment) or secondary (following a disturbance), leading to the establishment of a stable community.");
+        addStudentAnswerToProblemAnswer(pa_17_4_10, sa17_4_10_student9);
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa17_4_1_student10 = createStudentAnswer(student10, pa_17_4_1, "Ecology is the study of interactions between organisms and their environment. It examines how organisms affect and are affected by their surroundings, including other organisms and physical factors.");
+        addStudentAnswerToProblemAnswer(pa_17_4_1, sa17_4_1_student10);
+
+        StudentAnswer sa17_4_2_student10 = createStudentAnswer(student10, pa_17_4_2, "An ecosystem is a community of living organisms (plants, animals, and microbes) interacting with their physical environment (air, water, and soil). It includes both biotic (living) and abiotic (non-living) components.");
+        addStudentAnswerToProblemAnswer(pa_17_4_2, sa17_4_2_student10);
+
+        StudentAnswer sa17_4_3_student10 = createStudentAnswer(student10, pa_17_4_3, "A food web is a complex network of interconnected food chains that shows the feeding relationships between organisms in an ecosystem. It illustrates how energy and nutrients flow through different trophic levels.");
+        addStudentAnswerToProblemAnswer(pa_17_4_3, sa17_4_3_student10);
+
+        StudentAnswer sa17_4_4_student10 = createStudentAnswer(student10, pa_17_4_4, "Energy flow in an ecosystem refers to the transfer of energy from one trophic level to another, beginning with primary producers (plants) and moving through herbivores, carnivores, and decomposers. Energy is lost at each level through metabolic processes and heat.");
+        addStudentAnswerToProblemAnswer(pa_17_4_4, sa17_4_4_student10);
+
+        StudentAnswer sa17_4_5_student10 = createStudentAnswer(student10, pa_17_4_5, "Producers (plants and algae) convert sunlight into chemical energy through photosynthesis. Consumers (herbivores, carnivores, and omnivores) obtain energy by eating other organisms. Decomposers (bacteria and fungi) break down dead organic matter, recycling nutrients back into the ecosystem.");
+        addStudentAnswerToProblemAnswer(pa_17_4_5, sa17_4_5_student10);
+
+        StudentAnswer sa17_4_6_student10 = createStudentAnswer(student10, pa_17_4_6, "A biogeochemical cycle is the movement of elements and compounds between living organisms and the physical environment. Examples include the carbon cycle, nitrogen cycle, and water cycle, which are essential for maintaining ecosystem health.");
+        addStudentAnswerToProblemAnswer(pa_17_4_6, sa17_4_6_student10);
+
+        StudentAnswer sa17_4_7_student10 = createStudentAnswer(student10, pa_17_4_7, "Biodiversity refers to the variety of life forms within an ecosystem, including species diversity, genetic diversity, and ecosystem diversity. High biodiversity contributes to ecosystem stability, resilience, and productivity.");
+        addStudentAnswerToProblemAnswer(pa_17_4_7, sa17_4_7_student10);
+
+        StudentAnswer sa17_4_8_student10 = createStudentAnswer(student10, pa_17_4_8, "Human activities, such as deforestation, pollution, urbanization, and climate change, can have significant impacts on ecosystems. These activities can lead to habitat destruction, loss of biodiversity, and alterations in nutrient cycles and energy flow.");
+        addStudentAnswerToProblemAnswer(pa_17_4_8, sa17_4_8_student10);
+
+        StudentAnswer sa17_4_9_student10 = createStudentAnswer(student10, pa_17_4_9, "An ecological niche is the role and position of an organism within an ecosystem, including its interactions with other organisms, its habitat, and its contributions to energy flow and nutrient cycling. Each species has a unique niche that helps maintain ecosystem balance.");
+        addStudentAnswerToProblemAnswer(pa_17_4_9, sa17_4_9_student10);
+
+        StudentAnswer sa17_4_10_student10 = createStudentAnswer(student10, pa_17_4_10, "Ecological succession is the process by which ecosystems undergo gradual changes in species composition and structure over time. It can be primary (starting from a barren environment) or secondary (following a disturbance), leading to the establishment of a stable community.");
+        addStudentAnswerToProblemAnswer(pa_17_4_10, sa17_4_10_student10);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student9 and student10 for all problem answers in assignment17_4.");
+// Creating StudentAnswer instances for student9
+        StudentAnswer sa18_1_1_student9 = createStudentAnswer(student9, pa_18_1_1, "Civil engineering is the discipline that deals with the design, construction, and maintenance of the built environment. This includes infrastructure such as roads, bridges, dams, and buildings.");
+        addStudentAnswerToProblemAnswer(pa_18_1_1, sa18_1_1_student9);
+
+        StudentAnswer sa18_1_2_student9 = createStudentAnswer(student9, pa_18_1_2, "Mechanical engineering is the discipline that applies principles of physics and materials science for the design, analysis, manufacturing, and maintenance of mechanical systems. It involves the development of machines and tools.");
+        addStudentAnswerToProblemAnswer(pa_18_1_2, sa18_1_2_student9);
+
+        StudentAnswer sa18_1_3_student9 = createStudentAnswer(student9, pa_18_1_3, "Electrical engineering is the discipline that focuses on the study and application of electricity, electronics, and electromagnetism. It includes the design and development of electrical circuits, devices, and systems.");
+        addStudentAnswerToProblemAnswer(pa_18_1_3, sa18_1_3_student9);
+
+        StudentAnswer sa18_1_4_student9 = createStudentAnswer(student9, pa_18_1_4, "Chemical engineering is the discipline that combines principles of chemistry, physics, mathematics, and engineering to design and operate processes for producing, transforming, and using chemicals and materials.");
+        addStudentAnswerToProblemAnswer(pa_18_1_4, sa18_1_4_student9);
+
+        StudentAnswer sa18_1_5_student9 = createStudentAnswer(student9, pa_18_1_5, "Civil engineers are responsible for planning, designing, and overseeing construction projects. They ensure the safety, sustainability, and efficiency of infrastructure, including roads, bridges, water supply systems, and buildings.");
+        addStudentAnswerToProblemAnswer(pa_18_1_5, sa18_1_5_student9);
+
+        StudentAnswer sa18_1_6_student9 = createStudentAnswer(student9, pa_18_1_6, "Mechanical engineers design, develop, and test mechanical devices and systems. They work on a wide range of projects, from small components to large machinery, and ensure that these systems operate efficiently and safely.");
+        addStudentAnswerToProblemAnswer(pa_18_1_6, sa18_1_6_student9);
+
+        StudentAnswer sa18_1_7_student9 = createStudentAnswer(student9, pa_18_1_7, "Electrical engineers design and develop electrical equipment and systems, such as power generation and distribution networks, communication systems, and electronic devices. They also work on improving and maintaining these systems.");
+        addStudentAnswerToProblemAnswer(pa_18_1_7, sa18_1_7_student9);
+
+        StudentAnswer sa18_1_8_student9 = createStudentAnswer(student9, pa_18_1_8, "Chemical engineers are involved in designing and optimizing processes for producing chemicals, fuels, pharmaceuticals, and other products. They work on scaling up chemical reactions, managing production processes, and ensuring environmental and safety compliance.");
+        addStudentAnswerToProblemAnswer(pa_18_1_8, sa18_1_8_student9);
+
+        StudentAnswer sa18_1_9_student9 = createStudentAnswer(student9, pa_18_1_9, "Applications of civil engineering include designing and constructing infrastructure such as highways, bridges, tunnels, airports, water treatment plants, and buildings. Civil engineers also work on environmental projects, urban planning, and disaster mitigation.");
+        addStudentAnswerToProblemAnswer(pa_18_1_9, sa18_1_9_student9);
+
+        StudentAnswer sa18_1_10_student9 = createStudentAnswer(student9, pa_18_1_10, "Applications of mechanical engineering include developing automotive and aerospace systems, designing industrial machinery, creating energy systems, and working on robotics and automation. Mechanical engineers also contribute to manufacturing processes and product development.");
+        addStudentAnswerToProblemAnswer(pa_18_1_10, sa18_1_10_student9);
+        // Creating StudentAnswer instances for student10
+        StudentAnswer sa18_1_1_student10 = createStudentAnswer(student10, pa_18_1_1, "Civil engineering is the discipline that deals with the design, construction, and maintenance of the built environment. This includes infrastructure such as roads, bridges, dams, and buildings.");
+        addStudentAnswerToProblemAnswer(pa_18_1_1, sa18_1_1_student10);
+
+        StudentAnswer sa18_1_2_student10 = createStudentAnswer(student10, pa_18_1_2, "Mechanical engineering is the discipline that applies principles of physics and materials science for the design, analysis, manufacturing, and maintenance of mechanical systems. It involves the development of machines and tools.");
+        addStudentAnswerToProblemAnswer(pa_18_1_2, sa18_1_2_student10);
+
+        StudentAnswer sa18_1_3_student10 = createStudentAnswer(student10, pa_18_1_3, "Electrical engineering is the discipline that focuses on the study and application of electricity, electronics, and electromagnetism. It includes the design and development of electrical circuits, devices, and systems.");
+        addStudentAnswerToProblemAnswer(pa_18_1_3, sa18_1_3_student10);
+
+        StudentAnswer sa18_1_4_student10 = createStudentAnswer(student10, pa_18_1_4, "Chemical engineering is the discipline that combines principles of chemistry, physics, mathematics, and engineering to design and operate processes for producing, transforming, and using chemicals and materials.");
+        addStudentAnswerToProblemAnswer(pa_18_1_4, sa18_1_4_student10);
+
+        StudentAnswer sa18_1_5_student10 = createStudentAnswer(student10, pa_18_1_5, "Civil engineers are responsible for planning, designing, and overseeing construction projects. They ensure the safety, sustainability, and efficiency of infrastructure, including roads, bridges, water supply systems, and buildings.");
+        addStudentAnswerToProblemAnswer(pa_18_1_5, sa18_1_5_student10);
+
+        StudentAnswer sa18_1_6_student10 = createStudentAnswer(student10, pa_18_1_6, "Mechanical engineers design, develop, and test mechanical devices and systems. They work on a wide range of projects, from small components to large machinery, and ensure that these systems operate efficiently and safely.");
+        addStudentAnswerToProblemAnswer(pa_18_1_6, sa18_1_6_student10);
+
+        StudentAnswer sa18_1_7_student10 = createStudentAnswer(student10, pa_18_1_7, "Electrical engineers design and develop electrical equipment and systems, such as power generation and distribution networks, communication systems, and electronic devices. They also work on improving and maintaining these systems.");
+        addStudentAnswerToProblemAnswer(pa_18_1_7, sa18_1_7_student10);
+
+        StudentAnswer sa18_1_8_student10 = createStudentAnswer(student10, pa_18_1_8, "Chemical engineers are involved in designing and optimizing processes for producing chemicals, fuels, pharmaceuticals, and other products. They work on scaling up chemical reactions, managing production processes, and ensuring environmental and safety compliance.");
+        addStudentAnswerToProblemAnswer(pa_18_1_8, sa18_1_8_student10);
+
+        StudentAnswer sa18_1_9_student10 = createStudentAnswer(student10, pa_18_1_9, "Applications of civil engineering include designing and constructing infrastructure such as highways, bridges, tunnels, airports, water treatment plants, and buildings. Civil engineers also work on environmental projects, urban planning, and disaster mitigation.");
+        addStudentAnswerToProblemAnswer(pa_18_1_9, sa18_1_9_student10);
+
+        StudentAnswer sa18_1_10_student10 = createStudentAnswer(student10, pa_18_1_10, "Applications of mechanical engineering include developing automotive and aerospace systems, designing industrial machinery, creating energy systems, and working on robotics and automation. Mechanical engineers also contribute to manufacturing processes and product development.");
+        addStudentAnswerToProblemAnswer(pa_18_1_10, sa18_1_10_student10);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student9 and student10 for all problem answers in assignment18_1.");
+// Creating StudentAnswer instances for student9
+        StudentAnswer sa18_2_1_student9 = createStudentAnswer(student9, pa_18_2_1, "The engineering problem-solving process involves identifying a problem, generating potential solutions, evaluating and selecting the best solution, and implementing and testing the solution. It is a systematic approach to addressing engineering challenges.");
+        addStudentAnswerToProblemAnswer(pa_18_2_1, sa18_2_1_student9);
+
+        StudentAnswer sa18_2_2_student9 = createStudentAnswer(student9, pa_18_2_2, "The steps in the engineering problem-solving process include: \n1. Identifying the problem \n2. Defining the problem clearly \n3. Generating possible solutions \n4. Evaluating and selecting the best solution \n5. Implementing the solution \n6. Testing and refining the solution");
+        addStudentAnswerToProblemAnswer(pa_18_2_2, sa18_2_2_student9);
+
+        StudentAnswer sa18_2_3_student9 = createStudentAnswer(student9, pa_18_2_3, "Techniques for generating solutions include brainstorming, using creativity tools such as mind maps and TRIZ (theory of inventive problem solving), and applying engineering principles and heuristics.");
+        addStudentAnswerToProblemAnswer(pa_18_2_3, sa18_2_3_student9);
+
+        StudentAnswer sa18_2_4_student9 = createStudentAnswer(student9, pa_18_2_4, "Brainstorming is a technique used to generate a large number of ideas in a short amount of time. It encourages open and creative thinking, allowing participants to propose solutions without criticism or evaluation during the session.");
+        addStudentAnswerToProblemAnswer(pa_18_2_4, sa18_2_4_student9);
+
+        StudentAnswer sa18_2_5_student9 = createStudentAnswer(student9, pa_18_2_5, "TRIZ is a problem-solving methodology based on the study of patterns in inventive solutions. It provides a systematic approach to identifying and overcoming contradictions in engineering problems and generating innovative solutions.");
+        addStudentAnswerToProblemAnswer(pa_18_2_5, sa18_2_5_student9);
+
+        StudentAnswer sa18_2_6_student9 = createStudentAnswer(student9, pa_18_2_6, "Engineers evaluate potential solutions by considering factors such as feasibility, cost, safety, reliability, and environmental impact. They use techniques such as decision matrices, cost-benefit analysis, and simulation to compare and select the best solution.");
+        addStudentAnswerToProblemAnswer(pa_18_2_6, sa18_2_6_student9);
+
+        StudentAnswer sa18_2_7_student9 = createStudentAnswer(student9, pa_18_2_7, "A decision matrix is a tool used to evaluate and compare different solutions based on specific criteria. Each solution is scored against the criteria, and the scores are weighted and summed to determine the best option.");
+        addStudentAnswerToProblemAnswer(pa_18_2_7, sa18_2_7_student9);
+
+        StudentAnswer sa18_2_8_student9 = createStudentAnswer(student9, pa_18_2_8, "Cost-benefit analysis is a technique used to evaluate the economic feasibility of a solution by comparing its costs and benefits. It involves calculating the total costs and benefits, and determining whether the benefits outweigh the costs.");
+        addStudentAnswerToProblemAnswer(pa_18_2_8, sa18_2_8_student9);
+
+        StudentAnswer sa18_2_9_student9 = createStudentAnswer(student9, pa_18_2_9, "Engineers implement solutions by designing and constructing prototypes or systems. They test these solutions through experiments, simulations, and field trials to ensure they meet the specified requirements and perform as expected.");
+        addStudentAnswerToProblemAnswer(pa_18_2_9, sa18_2_9_student9);
+
+        StudentAnswer sa18_2_10_student9 = createStudentAnswer(student9, pa_18_2_10, "Iteration is important in problem-solving because it allows engineers to refine and improve their solutions. By testing and evaluating prototypes, they can identify and address any issues, making incremental improvements until the final solution meets all requirements.");
+        addStudentAnswerToProblemAnswer(pa_18_2_10, sa18_2_10_student9);
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa18_2_1_student10 = createStudentAnswer(student10, pa_18_2_1, "The engineering problem-solving process involves identifying a problem, generating potential solutions, evaluating and selecting the best solution, and implementing and testing the solution. It is a systematic approach to addressing engineering challenges.");
+        addStudentAnswerToProblemAnswer(pa_18_2_1, sa18_2_1_student10);
+
+        StudentAnswer sa18_2_2_student10 = createStudentAnswer(student10, pa_18_2_2, "The steps in the engineering problem-solving process include: \n1. Identifying the problem \n2. Defining the problem clearly \n3. Generating possible solutions \n4. Evaluating and selecting the best solution \n5. Implementing the solution \n6. Testing and refining the solution");
+        addStudentAnswerToProblemAnswer(pa_18_2_2, sa18_2_2_student10);
+
+        StudentAnswer sa18_2_3_student10 = createStudentAnswer(student10, pa_18_2_3, "Techniques for generating solutions include brainstorming, using creativity tools such as mind maps and TRIZ (theory of inventive problem solving), and applying engineering principles and heuristics.");
+        addStudentAnswerToProblemAnswer(pa_18_2_3, sa18_2_3_student10);
+
+        StudentAnswer sa18_2_4_student10 = createStudentAnswer(student10, pa_18_2_4, "Brainstorming is a technique used to generate a large number of ideas in a short amount of time. It encourages open and creative thinking, allowing participants to propose solutions without criticism or evaluation during the session.");
+        addStudentAnswerToProblemAnswer(pa_18_2_4, sa18_2_4_student10);
+
+        StudentAnswer sa18_2_5_student10 = createStudentAnswer(student10, pa_18_2_5, "TRIZ is a problem-solving methodology based on the study of patterns in inventive solutions. It provides a systematic approach to identifying and overcoming contradictions in engineering problems and generating innovative solutions.");
+        addStudentAnswerToProblemAnswer(pa_18_2_5, sa18_2_5_student10);
+
+        StudentAnswer sa18_2_6_student10 = createStudentAnswer(student10, pa_18_2_6, "Engineers evaluate potential solutions by considering factors such as feasibility, cost, safety, reliability, and environmental impact. They use techniques such as decision matrices, cost-benefit analysis, and simulation to compare and select the best solution.");
+        addStudentAnswerToProblemAnswer(pa_18_2_6, sa18_2_6_student10);
+
+        StudentAnswer sa18_2_7_student10 = createStudentAnswer(student10, pa_18_2_7, "A decision matrix is a tool used to evaluate and compare different solutions based on specific criteria. Each solution is scored against the criteria, and the scores are weighted and summed to determine the best option.");
+        addStudentAnswerToProblemAnswer(pa_18_2_7, sa18_2_7_student10);
+
+        StudentAnswer sa18_2_8_student10 = createStudentAnswer(student10, pa_18_2_8, "Cost-benefit analysis is a technique used to evaluate the economic feasibility of a solution by comparing its costs and benefits. It involves calculating the total costs and benefits, and determining whether the benefits outweigh the costs.");
+        addStudentAnswerToProblemAnswer(pa_18_2_8, sa18_2_8_student10);
+
+        StudentAnswer sa18_2_9_student10 = createStudentAnswer(student10, pa_18_2_9, "Engineers implement solutions by designing and constructing prototypes or systems. They test these solutions through experiments, simulations, and field trials to ensure they meet the specified requirements and perform as expected.");
+        addStudentAnswerToProblemAnswer(pa_18_2_9, sa18_2_9_student10);
+
+        StudentAnswer sa18_2_10_student10 = createStudentAnswer(student10, pa_18_2_10, "Iteration is important in problem-solving because it allows engineers to refine and improve their solutions. By testing and evaluating prototypes, they can identify and address any issues, making incremental improvements until the final solution meets all requirements.");
+        addStudentAnswerToProblemAnswer(pa_18_2_10, sa18_2_10_student10);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student9 and student10 for all problem answers in assignment18_2.");
+// Creating StudentAnswer instances for student9
+        StudentAnswer sa18_3_1_student9 = createStudentAnswer(student9, pa_18_3_1, "The engineering design process is a systematic approach to solving engineering problems. It involves defining the problem, generating ideas, developing solutions, testing and evaluating, and improving the design.");
+        addStudentAnswerToProblemAnswer(pa_18_3_1, sa18_3_1_student9);
+
+        StudentAnswer sa18_3_2_student9 = createStudentAnswer(student9, pa_18_3_2, "The stages of the design process include: \n1. Defining the problem \n2. Researching and gathering information \n3. Brainstorming and generating ideas \n4. Developing and prototyping solutions \n5. Testing and evaluating prototypes \n6. Refining and improving the design \n7. Communicating the final solution");
+        addStudentAnswerToProblemAnswer(pa_18_3_2, sa18_3_2_student9);
+
+        StudentAnswer sa18_3_3_student9 = createStudentAnswer(student9, pa_18_3_3, "Engineers define requirements by identifying the needs and constraints of the project. This involves understanding the problem, considering the end-users, and establishing criteria for success. Requirements are often documented in a design brief or specification.");
+        addStudentAnswerToProblemAnswer(pa_18_3_3, sa18_3_3_student9);
+
+        StudentAnswer sa18_3_4_student9 = createStudentAnswer(student9, pa_18_3_4, "Brainstorming is a creative technique used to generate a wide range of ideas and solutions. It encourages open and free-flowing thinking, allowing participants to build on each other's ideas without judgment or criticism.");
+        addStudentAnswerToProblemAnswer(pa_18_3_4, sa18_3_4_student9);
+
+        StudentAnswer sa18_3_5_student9 = createStudentAnswer(student9, pa_18_3_5, "Prototyping involves creating a physical or digital model of a solution to test and evaluate its functionality, design, and usability. Prototypes can range from simple sketches and mock-ups to fully functional models.");
+        addStudentAnswerToProblemAnswer(pa_18_3_5, sa18_3_5_student9);
+
+        StudentAnswer sa18_3_6_student9 = createStudentAnswer(student9, pa_18_3_6, "Engineers test prototypes by conducting experiments, simulations, and user tests to gather data on performance, reliability, and user experience. This helps identify any issues or areas for improvement.");
+        addStudentAnswerToProblemAnswer(pa_18_3_6, sa18_3_6_student9);
+
+        StudentAnswer sa18_3_7_student9 = createStudentAnswer(student9, pa_18_3_7, "Iteration is the process of refining and improving a design based on feedback and testing results. It involves making incremental changes, re-evaluating, and repeating the cycle until the final solution meets the desired criteria.");
+        addStudentAnswerToProblemAnswer(pa_18_3_7, sa18_3_7_student9);
+
+        StudentAnswer sa18_3_8_student9 = createStudentAnswer(student9, pa_18_3_8, "The engineering design process helps ensure that solutions are well thought out, feasible, and effective. It promotes creativity, collaboration, and systematic problem-solving, leading to innovative and optimized solutions.");
+        addStudentAnswerToProblemAnswer(pa_18_3_8, sa18_3_8_student9);
+
+        StudentAnswer sa18_3_9_student9 = createStudentAnswer(student9, pa_18_3_9, "Engineers communicate their design solutions through technical reports, presentations, drawings, and models. Clear and effective communication is essential for conveying ideas, justifying decisions, and gaining approval from stakeholders.");
+        addStudentAnswerToProblemAnswer(pa_18_3_9, sa18_3_9_student9);
+
+        StudentAnswer sa18_3_10_student9 = createStudentAnswer(student9, pa_18_3_10, "The engineering design process is used in various fields, including product development, architecture, software engineering, and industrial design. It helps create innovative solutions to complex problems, from designing consumer electronics to developing sustainable infrastructure.");
+        addStudentAnswerToProblemAnswer(pa_18_3_10, sa18_3_10_student9);
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa18_3_1_student10 = createStudentAnswer(student10, pa_18_3_1, "The engineering design process is a systematic approach to solving engineering problems. It involves defining the problem, generating ideas, developing solutions, testing and evaluating, and improving the design.");
+        addStudentAnswerToProblemAnswer(pa_18_3_1, sa18_3_1_student10);
+
+        StudentAnswer sa18_3_2_student10 = createStudentAnswer(student10, pa_18_3_2, "The stages of the design process include: \n1. Defining the problem \n2. Researching and gathering information \n3. Brainstorming and generating ideas \n4. Developing and prototyping solutions \n5. Testing and evaluating prototypes \n6. Refining and improving the design \n7. Communicating the final solution");
+        addStudentAnswerToProblemAnswer(pa_18_3_2, sa18_3_2_student10);
+
+        StudentAnswer sa18_3_3_student10 = createStudentAnswer(student10, pa_18_3_3, "Engineers define requirements by identifying the needs and constraints of the project. This involves understanding the problem, considering the end-users, and establishing criteria for success. Requirements are often documented in a design brief or specification.");
+        addStudentAnswerToProblemAnswer(pa_18_3_3, sa18_3_3_student10);
+
+        StudentAnswer sa18_3_4_student10 = createStudentAnswer(student10, pa_18_3_4, "Brainstorming is a creative technique used to generate a wide range of ideas and solutions. It encourages open and free-flowing thinking, allowing participants to build on each other's ideas without judgment or criticism.");
+        addStudentAnswerToProblemAnswer(pa_18_3_4, sa18_3_4_student10);
+
+        StudentAnswer sa18_3_5_student10 = createStudentAnswer(student10, pa_18_3_5, "Prototyping involves creating a physical or digital model of a solution to test and evaluate its functionality, design, and usability. Prototypes can range from simple sketches and mock-ups to fully functional models.");
+        addStudentAnswerToProblemAnswer(pa_18_3_5, sa18_3_5_student10);
+
+        StudentAnswer sa18_3_6_student10 = createStudentAnswer(student10, pa_18_3_6, "Engineers test prototypes by conducting experiments, simulations, and user tests to gather data on performance, reliability, and user experience. This helps identify any issues or areas for improvement.");
+        addStudentAnswerToProblemAnswer(pa_18_3_6, sa18_3_6_student10);
+
+        StudentAnswer sa18_3_7_student10 = createStudentAnswer(student10, pa_18_3_7, "Iteration is the process of refining and improving a design based on feedback and testing results. It involves making incremental changes, re-evaluating, and repeating the cycle until the final solution meets the desired criteria.");
+        addStudentAnswerToProblemAnswer(pa_18_3_7, sa18_3_7_student10);
+
+        StudentAnswer sa18_3_8_student10 = createStudentAnswer(student10, pa_18_3_8, "The engineering design process helps ensure that solutions are well thought out, feasible, and effective. It promotes creativity, collaboration, and systematic problem-solving, leading to innovative and optimized solutions.");
+        addStudentAnswerToProblemAnswer(pa_18_3_8, sa18_3_8_student10);
+
+        StudentAnswer sa18_3_9_student10 = createStudentAnswer(student10, pa_18_3_9, "Engineers communicate their design solutions through technical reports, presentations, drawings, and models. Clear and effective communication is essential for conveying ideas, justifying decisions, and gaining approval from stakeholders.");
+        addStudentAnswerToProblemAnswer(pa_18_3_9, sa18_3_9_student10);
+
+        StudentAnswer sa18_3_10_student10 = createStudentAnswer(student10, pa_18_3_10, "The engineering design process is used in various fields, including product development, architecture, software engineering, and industrial design. It helps create innovative solutions to complex problems, from designing consumer electronics to developing sustainable infrastructure.");
+        addStudentAnswerToProblemAnswer(pa_18_3_10, sa18_3_10_student10);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student9 and student10 for all problem answers in assignment18_3.");
+// Creating StudentAnswer instances for student9
+        StudentAnswer sa19_1_1_student9 = createStudentAnswer(student9, pa_19_1_1, "Ohm's Law states that the current through a conductor between two points is directly proportional to the voltage across the two points and inversely proportional to the resistance between them. It is mathematically expressed as V = IR, where V is the voltage, I is the current, and R is the resistance.");
+        addStudentAnswerToProblemAnswer(pa_19_1_1, sa19_1_1_student9);
+
+        StudentAnswer sa19_1_2_student9 = createStudentAnswer(student9, pa_19_1_2, "Kirchhoff's Current Law (KCL) states that the total current entering a junction in an electrical circuit is equal to the total current leaving the junction. This law is based on the principle of conservation of charge.");
+        addStudentAnswerToProblemAnswer(pa_19_1_2, sa19_1_2_student9);
+
+        StudentAnswer sa19_1_3_student9 = createStudentAnswer(student9, pa_19_1_3, "Kirchhoff's Voltage Law (KVL) states that the sum of the electrical potential differences (voltages) around any closed loop or mesh in a circuit is equal to zero. This law is based on the principle of conservation of energy.");
+        addStudentAnswerToProblemAnswer(pa_19_1_3, sa19_1_3_student9);
+
+        StudentAnswer sa19_1_4_student9 = createStudentAnswer(student9, pa_19_1_4, "In a series circuit, the total resistance is the sum of the individual resistances. The formula is: R_total = R1 + R2 + R3 + ... + Rn, where R1, R2, R3, ..., Rn are the individual resistances.");
+        addStudentAnswerToProblemAnswer(pa_19_1_4, sa19_1_4_student9);
+
+        StudentAnswer sa19_1_5_student9 = createStudentAnswer(student9, pa_19_1_5, "In a parallel circuit, the total resistance is calculated using the formula: 1/R_total = 1/R1 + 1/R2 + 1/R3 + ... + 1/Rn. The reciprocal of the sum of the reciprocals of the individual resistances gives the total resistance.");
+        addStudentAnswerToProblemAnswer(pa_19_1_5, sa19_1_5_student9);
+
+        StudentAnswer sa19_1_6_student9 = createStudentAnswer(student9, pa_19_1_6, "AC (Alternating Current) circuits have current that changes direction periodically, while DC (Direct Current) circuits have current that flows in one direction. AC is commonly used for power distribution, while DC is used in batteries and electronic devices.");
+        addStudentAnswerToProblemAnswer(pa_19_1_6, sa19_1_6_student9);
+
+        StudentAnswer sa19_1_7_student9 = createStudentAnswer(student9, pa_19_1_7, "A Thevenin equivalent circuit is a simplified representation of a complex circuit. It consists of a single voltage source (Thevenin voltage) in series with a single resistor (Thevenin resistance) that can replace a more complicated network to simplify analysis.");
+        addStudentAnswerToProblemAnswer(pa_19_1_7, sa19_1_7_student9);
+
+        StudentAnswer sa19_1_8_student9 = createStudentAnswer(student9, pa_19_1_8, "A Norton equivalent circuit is another simplified representation of a complex circuit. It consists of a single current source (Norton current) in parallel with a single resistor (Norton resistance) that can replace a more complicated network to simplify analysis.");
+        addStudentAnswerToProblemAnswer(pa_19_1_8, sa19_1_8_student9);
+
+        StudentAnswer sa19_1_9_student9 = createStudentAnswer(student9, pa_19_1_9, "Capacitors store and release electrical energy in a circuit. They are used for filtering, energy storage, and signal coupling. Capacitors block DC while allowing AC to pass, making them important components in AC circuits.");
+        addStudentAnswerToProblemAnswer(pa_19_1_9, sa19_1_9_student9);
+
+        StudentAnswer sa19_1_10_student9 = createStudentAnswer(student9, pa_19_1_10, "Inductors store energy in a magnetic field when current flows through them. They are used for filtering, energy storage, and inductive coupling. Inductors oppose changes in current, making them important components in AC circuits.");
+        addStudentAnswerToProblemAnswer(pa_19_1_10, sa19_1_10_student9);
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa19_1_1_student10 = createStudentAnswer(student10, pa_19_1_1, "Ohm's Law states that the current through a conductor between two points is directly proportional to the voltage across the two points and inversely proportional to the resistance between them. It is mathematically expressed as V = IR, where V is the voltage, I is the current, and R is the resistance.");
+        addStudentAnswerToProblemAnswer(pa_19_1_1, sa19_1_1_student10);
+
+        StudentAnswer sa19_1_2_student10 = createStudentAnswer(student10, pa_19_1_2, "Kirchhoff's Current Law (KCL) states that the total current entering a junction in an electrical circuit is equal to the total current leaving the junction. This law is based on the principle of conservation of charge.");
+        addStudentAnswerToProblemAnswer(pa_19_1_2, sa19_1_2_student10);
+
+        StudentAnswer sa19_1_3_student10 = createStudentAnswer(student10, pa_19_1_3, "Kirchhoff's Voltage Law (KVL) states that the sum of the electrical potential differences (voltages) around any closed loop or mesh in a circuit is equal to zero. This law is based on the principle of conservation of energy.");
+        addStudentAnswerToProblemAnswer(pa_19_1_3, sa19_1_3_student10);
+
+        StudentAnswer sa19_1_4_student10 = createStudentAnswer(student10, pa_19_1_4, "In a series circuit, the total resistance is the sum of the individual resistances. The formula is: R_total = R1 + R2 + R3 + ... + Rn, where R1, R2, R3, ..., Rn are the individual resistances.");
+        addStudentAnswerToProblemAnswer(pa_19_1_4, sa19_1_4_student10);
+
+        StudentAnswer sa19_1_5_student10 = createStudentAnswer(student10, pa_19_1_5, "In a parallel circuit, the total resistance is calculated using the formula: 1/R_total = 1/R1 + 1/R2 + 1/R3 + ... + 1/Rn. The reciprocal of the sum of the reciprocals of the individual resistances gives the total resistance.");
+        addStudentAnswerToProblemAnswer(pa_19_1_5, sa19_1_5_student10);
+
+        StudentAnswer sa19_1_6_student10 = createStudentAnswer(student10, pa_19_1_6, "AC (Alternating Current) circuits have current that changes direction periodically, while DC (Direct Current) circuits have current that flows in one direction. AC is commonly used for power distribution, while DC is used in batteries and electronic devices.");
+        addStudentAnswerToProblemAnswer(pa_19_1_6, sa19_1_6_student10);
+
+        StudentAnswer sa19_1_7_student10 = createStudentAnswer(student10, pa_19_1_7, "A Thevenin equivalent circuit is a simplified representation of a complex circuit. It consists of a single voltage source (Thevenin voltage) in series with a single resistor (Thevenin resistance) that can replace a more complicated network to simplify analysis.");
+        addStudentAnswerToProblemAnswer(pa_19_1_7, sa19_1_7_student10);
+
+        StudentAnswer sa19_1_8_student10 = createStudentAnswer(student10, pa_19_1_8, "A Norton equivalent circuit is another simplified representation of a complex circuit. It consists of a single current source (Norton current) in parallel with a single resistor (Norton resistance) that can replace a more complicated network to simplify analysis.");
+        addStudentAnswerToProblemAnswer(pa_19_1_8, sa19_1_8_student10);
+
+        StudentAnswer sa19_1_9_student10 = createStudentAnswer(student10, pa_19_1_9, "Capacitors store and release electrical energy in a circuit. They are used for filtering, energy storage, and signal coupling. Capacitors block DC while allowing AC to pass, making them important components in AC circuits.");
+        addStudentAnswerToProblemAnswer(pa_19_1_9, sa19_1_9_student10);
+
+        StudentAnswer sa19_1_10_student10 = createStudentAnswer(student10, pa_19_1_10, "Inductors store energy in a magnetic field when current flows through them. They are used for filtering, energy storage, and inductive coupling. Inductors oppose changes in current, making them important components in AC circuits.");
+        addStudentAnswerToProblemAnswer(pa_19_1_10, sa19_1_10_student10);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student9 and student10 for all problem answers in assignment19_1.");
+// Creating StudentAnswer instances for student9
+        StudentAnswer sa19_2_1_student9 = createStudentAnswer(student9, pa_19_2_1, "Signal processing involves the analysis, manipulation, and interpretation of signals. It includes techniques for filtering, transforming, and extracting information from signals in various domains, such as time, frequency, and space.");
+        addStudentAnswerToProblemAnswer(pa_19_2_1, sa19_2_1_student9);
+
+        StudentAnswer sa19_2_2_student9 = createStudentAnswer(student9, pa_19_2_2, "A Fourier transform is a mathematical technique used to transform a signal from the time domain to the frequency domain. It decomposes a signal into its constituent frequencies, providing insights into the signal's frequency content.");
+        addStudentAnswerToProblemAnswer(pa_19_2_2, sa19_2_2_student9);
+
+        StudentAnswer sa19_2_3_student9 = createStudentAnswer(student9, pa_19_2_3, "Filtering is the process of removing unwanted components from a signal or enhancing certain aspects of a signal. Filters can be designed to pass specific frequency ranges (passbands) while attenuating others (stopbands).");
+        addStudentAnswerToProblemAnswer(pa_19_2_3, sa19_2_3_student9);
+
+        StudentAnswer sa19_2_4_student9 = createStudentAnswer(student9, pa_19_2_4, "Common types of filters include low-pass filters, high-pass filters, band-pass filters, and band-stop filters. Each type of filter allows or attenuates different frequency ranges of a signal.");
+        addStudentAnswerToProblemAnswer(pa_19_2_4, sa19_2_4_student9);
+
+        StudentAnswer sa19_2_5_student9 = createStudentAnswer(student9, pa_19_2_5, "Digital signal processing (DSP) involves the use of digital techniques to analyze, modify, and synthesize signals. DSP techniques are widely used in communication systems, audio and video processing, radar, and control systems.");
+        addStudentAnswerToProblemAnswer(pa_19_2_5, sa19_2_5_student9);
+
+        StudentAnswer sa19_2_6_student9 = createStudentAnswer(student9, pa_19_2_6, "The Fast Fourier Transform (FFT) is an algorithm used to efficiently compute the Fourier transform of a signal. It significantly reduces the computational complexity, making it practical for real-time signal processing applications.");
+        addStudentAnswerToProblemAnswer(pa_19_2_6, sa19_2_6_student9);
+
+        StudentAnswer sa19_2_7_student9 = createStudentAnswer(student9, pa_19_2_7, "Modulation is the process of varying a carrier signal's properties (amplitude, frequency, or phase) to encode information. It is used in communication systems to transmit signals over long distances and through various media.");
+        addStudentAnswerToProblemAnswer(pa_19_2_7, sa19_2_7_student9);
+
+        StudentAnswer sa19_2_8_student9 = createStudentAnswer(student9, pa_19_2_8, "Demodulation is the process of extracting the original information-bearing signal from a modulated carrier signal. It is the reverse operation of modulation and is essential in communication receivers.");
+        addStudentAnswerToProblemAnswer(pa_19_2_8, sa19_2_8_student9);
+
+        StudentAnswer sa19_2_9_student9 = createStudentAnswer(student9, pa_19_2_9, "The Nyquist-Shannon sampling theorem states that a continuous signal can be accurately reconstructed from its samples if the sampling rate is at least twice the highest frequency present in the signal (Nyquist rate).");
+        addStudentAnswerToProblemAnswer(pa_19_2_9, sa19_2_9_student9);
+
+        StudentAnswer sa19_2_10_student9 = createStudentAnswer(student9, pa_19_2_10, "Signal processing has numerous applications, including audio and speech processing, image and video processing, biomedical signal analysis (e.g., ECG, EEG), telecommunications, radar and sonar systems, and control systems.");
+        addStudentAnswerToProblemAnswer(pa_19_2_10, sa19_2_10_student9);
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa19_2_1_student10 = createStudentAnswer(student10, pa_19_2_1, "Signal processing involves the analysis, manipulation, and interpretation of signals. It includes techniques for filtering, transforming, and extracting information from signals in various domains, such as time, frequency, and space.");
+        addStudentAnswerToProblemAnswer(pa_19_2_1, sa19_2_1_student10);
+
+        StudentAnswer sa19_2_2_student10 = createStudentAnswer(student10, pa_19_2_2, "A Fourier transform is a mathematical technique used to transform a signal from the time domain to the frequency domain. It decomposes a signal into its constituent frequencies, providing insights into the signal's frequency content.");
+        addStudentAnswerToProblemAnswer(pa_19_2_2, sa19_2_2_student10);
+
+        StudentAnswer sa19_2_3_student10 = createStudentAnswer(student10, pa_19_2_3, "Filtering is the process of removing unwanted components from a signal or enhancing certain aspects of a signal. Filters can be designed to pass specific frequency ranges (passbands) while attenuating others (stopbands).");
+        addStudentAnswerToProblemAnswer(pa_19_2_3, sa19_2_3_student10);
+
+        StudentAnswer sa19_2_4_student10 = createStudentAnswer(student10, pa_19_2_4, "Common types of filters include low-pass filters, high-pass filters, band-pass filters, and band-stop filters. Each type of filter allows or attenuates different frequency ranges of a signal.");
+        addStudentAnswerToProblemAnswer(pa_19_2_4, sa19_2_4_student10);
+
+        StudentAnswer sa19_2_5_student10 = createStudentAnswer(student10, pa_19_2_5, "Digital signal processing (DSP) involves the use of digital techniques to analyze, modify, and synthesize signals. DSP techniques are widely used in communication systems, audio and video processing, radar, and control systems.");
+        addStudentAnswerToProblemAnswer(pa_19_2_5, sa19_2_5_student10);
+
+        StudentAnswer sa19_2_6_student10 = createStudentAnswer(student10, pa_19_2_6, "The Fast Fourier Transform (FFT) is an algorithm used to efficiently compute the Fourier transform of a signal. It significantly reduces the computational complexity, making it practical for real-time signal processing applications.");
+        addStudentAnswerToProblemAnswer(pa_19_2_6, sa19_2_6_student10);
+
+        StudentAnswer sa19_2_7_student10 = createStudentAnswer(student10, pa_19_2_7, "Modulation is the process of varying a carrier signal's properties (amplitude, frequency, or phase) to encode information. It is used in communication systems to transmit signals over long distances and through various media.");
+        addStudentAnswerToProblemAnswer(pa_19_2_7, sa19_2_7_student10);
+
+        StudentAnswer sa19_2_8_student10 = createStudentAnswer(student10, pa_19_2_8, "Demodulation is the process of extracting the original information-bearing signal from a modulated carrier signal. It is the reverse operation of modulation and is essential in communication receivers.");
+        addStudentAnswerToProblemAnswer(pa_19_2_8, sa19_2_8_student10);
+
+        StudentAnswer sa19_2_9_student10 = createStudentAnswer(student10, pa_19_2_9, "The Nyquist-Shannon sampling theorem states that a continuous signal can be accurately reconstructed from its samples if the sampling rate is at least twice the highest frequency present in the signal (Nyquist rate).");
+        addStudentAnswerToProblemAnswer(pa_19_2_9, sa19_2_9_student10);
+
+        StudentAnswer sa19_2_10_student10 = createStudentAnswer(student10, pa_19_2_10, "Signal processing has numerous applications, including audio and speech processing, image and video processing, biomedical signal analysis (e.g., ECG, EEG), telecommunications, radar and sonar systems, and control systems.");
+        addStudentAnswerToProblemAnswer(pa_19_2_10, sa19_2_10_student10);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student9 and student10 for all problem answers in assignment19_2.");
+// Creating StudentAnswer instances for student9
+        StudentAnswer sa19_3_1_student9 = createStudentAnswer(student9, pa_19_3_1, "Systems theory is the study of systems and their behavior, including how components of a system interact and how systems function as a whole. It is used to analyze and design complex systems across various disciplines.");
+        addStudentAnswerToProblemAnswer(pa_19_3_1, sa19_3_1_student9);
+
+        StudentAnswer sa19_3_2_student9 = createStudentAnswer(student9, pa_19_3_2, "System modeling involves creating abstract representations of systems to understand, analyze, and predict their behavior. Models can be mathematical, graphical, or computational, and they help in designing and optimizing systems.");
+        addStudentAnswerToProblemAnswer(pa_19_3_2, sa19_3_2_student9);
+
+        StudentAnswer sa19_3_3_student9 = createStudentAnswer(student9, pa_19_3_3, "Feedback is the process by which a system's output is returned as input to influence its behavior. Positive feedback amplifies changes, while negative feedback stabilizes a system by counteracting changes.");
+        addStudentAnswerToProblemAnswer(pa_19_3_3, sa19_3_3_student9);
+
+        StudentAnswer sa19_3_4_student9 = createStudentAnswer(student9, pa_19_3_4, "Control systems are systems designed to regulate and control processes or outputs. They use feedback mechanisms to maintain desired performance, such as temperature control in heating systems or speed control in vehicles.");
+        addStudentAnswerToProblemAnswer(pa_19_3_4, sa19_3_4_student9);
+
+        StudentAnswer sa19_3_5_student9 = createStudentAnswer(student9, pa_19_3_5, "Open-loop control is a type of control system that operates without feedback. It follows a predetermined set of instructions, regardless of the output, such as a washing machine's fixed cycle times.");
+        addStudentAnswerToProblemAnswer(pa_19_3_5, sa19_3_5_student9);
+
+        StudentAnswer sa19_3_6_student9 = createStudentAnswer(student9, pa_19_3_6, "Closed-loop control, also known as feedback control, is a type of control system that adjusts its actions based on feedback from the output. Examples include thermostats that adjust heating based on room temperature.");
+        addStudentAnswerToProblemAnswer(pa_19_3_6, sa19_3_6_student9);
+
+        StudentAnswer sa19_3_7_student9 = createStudentAnswer(student9, pa_19_3_7, "A transfer function is a mathematical representation of the relationship between the input and output of a linear time-invariant system. It is used to analyze and design control systems by describing system dynamics in the frequency domain.");
+        addStudentAnswerToProblemAnswer(pa_19_3_7, sa19_3_7_student9);
+
+        StudentAnswer sa19_3_8_student9 = createStudentAnswer(student9, pa_19_3_8, "State-space representation is a mathematical model of a system that uses state variables to describe the system's behavior. It provides a framework for analyzing and designing complex systems, particularly in control engineering.");
+        addStudentAnswerToProblemAnswer(pa_19_3_8, sa19_3_8_student9);
+
+        StudentAnswer sa19_3_9_student9 = createStudentAnswer(student9, pa_19_3_9, "Stability in a system refers to its ability to return to equilibrium after a disturbance. A stable system can recover from perturbations and maintain consistent performance over time.");
+        addStudentAnswerToProblemAnswer(pa_19_3_9, sa19_3_9_student9);
+
+        StudentAnswer sa19_3_10_student9 = createStudentAnswer(student9, pa_19_3_10, "Systems theory has diverse applications, including in engineering (control systems and automation), biology (ecosystems and cellular processes), economics (market dynamics), and social sciences (organizational behavior and public policy).");
+        addStudentAnswerToProblemAnswer(pa_19_3_10, sa19_3_10_student9);
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa19_3_1_student10 = createStudentAnswer(student10, pa_19_3_1, "Systems theory is the study of systems and their behavior, including how components of a system interact and how systems function as a whole. It is used to analyze and design complex systems across various disciplines.");
+        addStudentAnswerToProblemAnswer(pa_19_3_1, sa19_3_1_student10);
+
+        StudentAnswer sa19_3_2_student10 = createStudentAnswer(student10, pa_19_3_2, "System modeling involves creating abstract representations of systems to understand, analyze, and predict their behavior. Models can be mathematical, graphical, or computational, and they help in designing and optimizing systems.");
+        addStudentAnswerToProblemAnswer(pa_19_3_2, sa19_3_2_student10);
+
+        StudentAnswer sa19_3_3_student10 = createStudentAnswer(student10, pa_19_3_3, "Feedback is the process by which a system's output is returned as input to influence its behavior. Positive feedback amplifies changes, while negative feedback stabilizes a system by counteracting changes.");
+        addStudentAnswerToProblemAnswer(pa_19_3_3, sa19_3_3_student10);
+
+        StudentAnswer sa19_3_4_student10 = createStudentAnswer(student10, pa_19_3_4, "Control systems are systems designed to regulate and control processes or outputs. They use feedback mechanisms to maintain desired performance, such as temperature control in heating systems or speed control in vehicles.");
+        addStudentAnswerToProblemAnswer(pa_19_3_4, sa19_3_4_student10);
+
+        StudentAnswer sa19_3_5_student10 = createStudentAnswer(student10, pa_19_3_5, "Open-loop control is a type of control system that operates without feedback. It follows a predetermined set of instructions, regardless of the output, such as a washing machine's fixed cycle times.");
+        addStudentAnswerToProblemAnswer(pa_19_3_5, sa19_3_5_student10);
+
+        StudentAnswer sa19_3_6_student10 = createStudentAnswer(student10, pa_19_3_6, "Closed-loop control, also known as feedback control, is a type of control system that adjusts its actions based on feedback from the output. Examples include thermostats that adjust heating based on room temperature.");
+        addStudentAnswerToProblemAnswer(pa_19_3_6, sa19_3_6_student10);
+
+        StudentAnswer sa19_3_7_student10 = createStudentAnswer(student10, pa_19_3_7, "A transfer function is a mathematical representation of the relationship between the input and output of a linear time-invariant system. It is used to analyze and design control systems by describing system dynamics in the frequency domain.");
+        addStudentAnswerToProblemAnswer(pa_19_3_7, sa19_3_7_student10);
+
+        StudentAnswer sa19_3_8_student10 = createStudentAnswer(student10, pa_19_3_8, "State-space representation is a mathematical model of a system that uses state variables to describe the system's behavior. It provides a framework for analyzing and designing complex systems, particularly in control engineering.");
+        addStudentAnswerToProblemAnswer(pa_19_3_8, sa19_3_8_student10);
+
+        StudentAnswer sa19_3_9_student10 = createStudentAnswer(student10, pa_19_3_9, "Stability in a system refers to its ability to return to equilibrium after a disturbance. A stable system can recover from perturbations and maintain consistent performance over time.");
+        addStudentAnswerToProblemAnswer(pa_19_3_9, sa19_3_9_student10);
+
+        StudentAnswer sa19_3_10_student10 = createStudentAnswer(student10, pa_19_3_10, "Systems theory has diverse applications, including in engineering (control systems and automation), biology (ecosystems and cellular processes), economics (market dynamics), and social sciences (organizational behavior and public policy).");
+        addStudentAnswerToProblemAnswer(pa_19_3_10, sa19_3_10_student10);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student9 and student10 for all problem answers in assignment19_3.");
+// Creating StudentAnswer instances for student9
+        StudentAnswer sa20_1_1_student9 = createStudentAnswer(student9, pa_20_1_1, "Statics is the branch of mechanics that deals with bodies at rest and forces in equilibrium. It involves analyzing force systems, calculating moments, and solving problems related to static equilibrium.");
+        addStudentAnswerToProblemAnswer(pa_20_1_1, sa20_1_1_student9);
+
+        StudentAnswer sa20_1_2_student9 = createStudentAnswer(student9, pa_20_1_2, "Static equilibrium occurs when the sum of all forces and the sum of all moments acting on a body are zero, resulting in no motion. It is a state where the body is at rest or moving with constant velocity.");
+        addStudentAnswerToProblemAnswer(pa_20_1_2, sa20_1_2_student9);
+
+        StudentAnswer sa20_1_3_student9 = createStudentAnswer(student9, pa_20_1_3, "A force system is a collection of forces acting on a body. It includes concurrent, parallel, and non-concurrent force systems. Analyzing these systems helps determine the resultant force and its effect on the body.");
+        addStudentAnswerToProblemAnswer(pa_20_1_3, sa20_1_3_student9);
+
+        StudentAnswer sa20_1_4_student9 = createStudentAnswer(student9, pa_20_1_4, "A moment is the measure of the tendency of a force to rotate an object about a point or axis. It is calculated as the product of the force and the perpendicular distance from the point or axis to the line of action of the force.");
+        addStudentAnswerToProblemAnswer(pa_20_1_4, sa20_1_4_student9);
+
+        StudentAnswer sa20_1_5_student9 = createStudentAnswer(student9, pa_20_1_5, "The conditions for static equilibrium are: \n1. The sum of all horizontal forces must be zero (ΣFx = 0). \n2. The sum of all vertical forces must be zero (ΣFy = 0). \n3. The sum of all moments about any point must be zero (ΣM = 0).");
+        addStudentAnswerToProblemAnswer(pa_20_1_5, sa20_1_5_student9);
+
+        StudentAnswer sa20_1_6_student9 = createStudentAnswer(student9, pa_20_1_6, "A free-body diagram is a graphical representation used to visualize the forces and moments acting on a body. It helps in analyzing the equilibrium of the body by showing all external forces as vectors originating from the object.");
+        addStudentAnswerToProblemAnswer(pa_20_1_6, sa20_1_6_student9);
+
+        StudentAnswer sa20_1_7_student9 = createStudentAnswer(student9, pa_20_1_7, "The resultant force is calculated by vectorially adding all the individual forces acting on a body. It represents the single force that has the same effect as all the forces combined.");
+        addStudentAnswerToProblemAnswer(pa_20_1_7, sa20_1_7_student9);
+
+        StudentAnswer sa20_1_8_student9 = createStudentAnswer(student9, pa_20_1_8, "The principle of transmissibility states that the condition of static equilibrium or motion of a rigid body remains unchanged if a force acting on the body is replaced by an equal and collinear force applied at a different point on the body.");
+        addStudentAnswerToProblemAnswer(pa_20_1_8, sa20_1_8_student9);
+
+        StudentAnswer sa20_1_9_student9 = createStudentAnswer(student9, pa_20_1_9, "A couple is a pair of equal and opposite forces acting on a body, separated by a distance. It creates a rotational effect but does not produce any translational motion. The moment of a couple is calculated as the product of one of the forces and the perpendicular distance between them.");
+        addStudentAnswerToProblemAnswer(pa_20_1_9, sa20_1_9_student9);
+
+        StudentAnswer sa20_1_10_student9 = createStudentAnswer(student9, pa_20_1_10, "Statics is used in various engineering applications, including structural analysis, mechanical design, and construction. It helps engineers design stable structures, analyze forces in machines, and ensure safety and stability in engineering projects.");
+        addStudentAnswerToProblemAnswer(pa_20_1_10, sa20_1_10_student9);
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa20_1_1_student10 = createStudentAnswer(student10, pa_20_1_1, "Statics is the branch of mechanics that deals with bodies at rest and forces in equilibrium. It involves analyzing force systems, calculating moments, and solving problems related to static equilibrium.");
+        addStudentAnswerToProblemAnswer(pa_20_1_1, sa20_1_1_student10);
+
+        StudentAnswer sa20_1_2_student10 = createStudentAnswer(student10, pa_20_1_2, "Static equilibrium occurs when the sum of all forces and the sum of all moments acting on a body are zero, resulting in no motion. It is a state where the body is at rest or moving with constant velocity.");
+        addStudentAnswerToProblemAnswer(pa_20_1_2, sa20_1_2_student10);
+
+        StudentAnswer sa20_1_3_student10 = createStudentAnswer(student10, pa_20_1_3, "A force system is a collection of forces acting on a body. It includes concurrent, parallel, and non-concurrent force systems. Analyzing these systems helps determine the resultant force and its effect on the body.");
+        addStudentAnswerToProblemAnswer(pa_20_1_3, sa20_1_3_student10);
+
+        StudentAnswer sa20_1_4_student10 = createStudentAnswer(student10, pa_20_1_4, "A moment is the measure of the tendency of a force to rotate an object about a point or axis. It is calculated as the product of the force and the perpendicular distance from the point or axis to the line of action of the force.");
+        addStudentAnswerToProblemAnswer(pa_20_1_4, sa20_1_4_student10);
+
+        StudentAnswer sa20_1_5_student10 = createStudentAnswer(student10, pa_20_1_5, "The conditions for static equilibrium are: \n1. The sum of all horizontal forces must be zero (ΣFx = 0). \n2. The sum of all vertical forces must be zero (ΣFy = 0). \n3. The sum of all moments about any point must be zero (ΣM = 0).");
+        addStudentAnswerToProblemAnswer(pa_20_1_5, sa20_1_5_student10);
+
+        StudentAnswer sa20_1_6_student10 = createStudentAnswer(student10, pa_20_1_6, "A free-body diagram is a graphical representation used to visualize the forces and moments acting on a body. It helps in analyzing the equilibrium of the body by showing all external forces as vectors originating from the object.");
+        addStudentAnswerToProblemAnswer(pa_20_1_6, sa20_1_6_student10);
+
+        StudentAnswer sa20_1_7_student10 = createStudentAnswer(student10, pa_20_1_7, "The resultant force is calculated by vectorially adding all the individual forces acting on a body. It represents the single force that has the same effect as all the forces combined.");
+        addStudentAnswerToProblemAnswer(pa_20_1_7, sa20_1_7_student10);
+
+        StudentAnswer sa20_1_8_student10 = createStudentAnswer(student10, pa_20_1_8, "The principle of transmissibility states that the condition of static equilibrium or motion of a rigid body remains unchanged if a force acting on the body is replaced by an equal and collinear force applied at a different point on the body.");
+        addStudentAnswerToProblemAnswer(pa_20_1_8, sa20_1_8_student10);
+
+        StudentAnswer sa20_1_9_student10 = createStudentAnswer(student10, pa_20_1_9, "A couple is a pair of equal and opposite forces acting on a body, separated by a distance. It creates a rotational effect but does not produce any translational motion. The moment of a couple is calculated as the product of one of the forces and the perpendicular distance between them.");
+        addStudentAnswerToProblemAnswer(pa_20_1_9, sa20_1_9_student10);
+
+        StudentAnswer sa20_1_10_student10 = createStudentAnswer(student10, pa_20_1_10, "Statics is used in various engineering applications, including structural analysis, mechanical design, and construction. It helps engineers design stable structures, analyze forces in machines, and ensure safety and stability in engineering projects.");
+        addStudentAnswerToProblemAnswer(pa_20_1_10, sa20_1_10_student10);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student9 and student10 for all problem answers in assignment20_1.");
+// Creating StudentAnswer instances for student9
+        StudentAnswer sa20_2_1_student9 = createStudentAnswer(student9, pa_20_2_1, "Dynamics is the branch of mechanics that deals with bodies in motion. It involves studying the kinematics and kinetics of particles and rigid bodies, and analyzing their motion under the influence of forces.");
+        addStudentAnswerToProblemAnswer(pa_20_2_1, sa20_2_1_student9);
+
+        StudentAnswer sa20_2_2_student9 = createStudentAnswer(student9, pa_20_2_2, "Kinematics is the study of the motion of objects without considering the forces that cause the motion. It involves analyzing displacement, velocity, and acceleration of particles and rigid bodies.");
+        addStudentAnswerToProblemAnswer(pa_20_2_2, sa20_2_2_student9);
+
+        StudentAnswer sa20_2_3_student9 = createStudentAnswer(student9, pa_20_2_3, "Kinetics is the study of the motion of objects by considering the forces that cause the motion. It involves analyzing the relationship between forces, mass, and acceleration using Newton's laws of motion.");
+        addStudentAnswerToProblemAnswer(pa_20_2_3, sa20_2_3_student9);
+
+        StudentAnswer sa20_2_4_student9 = createStudentAnswer(student9, pa_20_2_4, "Newton's laws of motion are three fundamental principles that describe the relationship between the motion of an object and the forces acting on it. They include:\n1. Newton's First Law (Law of Inertia) - An object at rest stays at rest, and an object in motion stays in motion unless acted upon by an external force.\n2. Newton's Second Law (Law of Acceleration) - The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass (F = ma).\n3. Newton's Third Law (Law of Action and Reaction) - For every action, there is an equal and opposite reaction.");
+        addStudentAnswerToProblemAnswer(pa_20_2_4, sa20_2_4_student9);
+
+        StudentAnswer sa20_2_5_student9 = createStudentAnswer(student9, pa_20_2_5, "Projectile motion is the curved path an object follows when it is thrown or projected near the Earth's surface. It is influenced by gravity and initial velocity, and its motion can be analyzed using the equations of motion.");
+        addStudentAnswerToProblemAnswer(pa_20_2_5, sa20_2_5_student9);
+
+        StudentAnswer sa20_2_6_student9 = createStudentAnswer(student9, pa_20_2_6, "Circular motion is the movement of an object along a circular path. It is characterized by parameters such as angular displacement, angular velocity, and centripetal acceleration.");
+        addStudentAnswerToProblemAnswer(pa_20_2_6, sa20_2_6_student9);
+
+        StudentAnswer sa20_2_7_student9 = createStudentAnswer(student9, pa_20_2_7, "The work-energy principle states that the work done on an object is equal to the change in its kinetic energy. It is mathematically expressed as W = ΔKE, where W is the work done and ΔKE is the change in kinetic energy.");
+        addStudentAnswerToProblemAnswer(pa_20_2_7, sa20_2_7_student9);
+
+        StudentAnswer sa20_2_8_student9 = createStudentAnswer(student9, pa_20_2_8, "The impulse-momentum principle states that the change in momentum of an object is equal to the impulse applied to it. It is mathematically expressed as Δp = FΔt, where Δp is the change in momentum, F is the force applied, and Δt is the time interval.");
+        addStudentAnswerToProblemAnswer(pa_20_2_8, sa20_2_8_student9);
+
+        StudentAnswer sa20_2_9_student9 = createStudentAnswer(student9, pa_20_2_9, "Harmonic motion is a type of periodic motion where an object oscillates back and forth around an equilibrium position. Examples include the motion of a pendulum and a mass-spring system. It is characterized by parameters such as amplitude, frequency, and period.");
+        addStudentAnswerToProblemAnswer(pa_20_2_9, sa20_2_9_student9);
+
+        StudentAnswer sa20_2_10_student9 = createStudentAnswer(student9, pa_20_2_10, "Dynamics principles are applied in various real-world scenarios, such as analyzing the motion of vehicles, predicting the trajectory of projectiles, designing amusement park rides, and understanding the behavior of celestial bodies. These concepts provide a framework for solving problems in physics and engineering.");
+        addStudentAnswerToProblemAnswer(pa_20_2_10, sa20_2_10_student9);
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa20_2_1_student10 = createStudentAnswer(student10, pa_20_2_1, "Dynamics is the branch of mechanics that deals with bodies in motion. It involves studying the kinematics and kinetics of particles and rigid bodies, and analyzing their motion under the influence of forces.");
+        addStudentAnswerToProblemAnswer(pa_20_2_1, sa20_2_1_student10);
+
+        StudentAnswer sa20_2_2_student10 = createStudentAnswer(student10, pa_20_2_2, "Kinematics is the study of the motion of objects without considering the forces that cause the motion. It involves analyzing displacement, velocity, and acceleration of particles and rigid bodies.");
+        addStudentAnswerToProblemAnswer(pa_20_2_2, sa20_2_2_student10);
+
+        StudentAnswer sa20_2_3_student10 = createStudentAnswer(student10, pa_20_2_3, "Kinetics is the study of the motion of objects by considering the forces that cause the motion. It involves analyzing the relationship between forces, mass, and acceleration using Newton's laws of motion.");
+        addStudentAnswerToProblemAnswer(pa_20_2_3, sa20_2_3_student10);
+
+        StudentAnswer sa20_2_4_student10 = createStudentAnswer(student10, pa_20_2_4, "Newton's laws of motion are three fundamental principles that describe the relationship between the motion of an object and the forces acting on it. They include:\n1. Newton's First Law (Law of Inertia) - An object at rest stays at rest, and an object in motion stays in motion unless acted upon by an external force.\n2. Newton's Second Law (Law of Acceleration) - The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass (F = ma).\n3. Newton's Third Law (Law of Action and Reaction) - For every action, there is an equal and opposite reaction.");
+        addStudentAnswerToProblemAnswer(pa_20_2_4, sa20_2_4_student10);
+
+        StudentAnswer sa20_2_5_student10 = createStudentAnswer(student10, pa_20_2_5, "Projectile motion is the curved path an object follows when it is thrown or projected near the Earth's surface. It is influenced by gravity and initial velocity, and its motion can be analyzed using the equations of motion.");
+        addStudentAnswerToProblemAnswer(pa_20_2_5, sa20_2_5_student10);
+
+        StudentAnswer sa20_2_6_student10 = createStudentAnswer(student10, pa_20_2_6, "Circular motion is the movement of an object along a circular path. It is characterized by parameters such as angular displacement, angular velocity, and centripetal acceleration.");
+        addStudentAnswerToProblemAnswer(pa_20_2_6, sa20_2_6_student10);
+
+        StudentAnswer sa20_2_7_student10 = createStudentAnswer(student10, pa_20_2_7, "The work-energy principle states that the work done on an object is equal to the change in its kinetic energy. It is mathematically expressed as W = ΔKE, where W is the work done and ΔKE is the change in kinetic energy.");
+        addStudentAnswerToProblemAnswer(pa_20_2_7, sa20_2_7_student10);
+
+        StudentAnswer sa20_2_8_student10 = createStudentAnswer(student10, pa_20_2_8, "The impulse-momentum principle states that the change in momentum of an object is equal to the impulse applied to it. It is mathematically expressed as Δp = FΔt, where Δp is the change in momentum, F is the force applied, and Δt is the time interval.");
+        addStudentAnswerToProblemAnswer(pa_20_2_8, sa20_2_8_student10);
+
+        StudentAnswer sa20_2_9_student10 = createStudentAnswer(student10, pa_20_2_9, "Harmonic motion is a type of periodic motion where an object oscillates back and forth around an equilibrium position. Examples include the motion of a pendulum and a mass-spring system. It is characterized by parameters such as amplitude, frequency, and period.");
+        addStudentAnswerToProblemAnswer(pa_20_2_9, sa20_2_9_student10);
+
+        StudentAnswer sa20_2_10_student10 = createStudentAnswer(student10, pa_20_2_10, "Dynamics principles are applied in various real-world scenarios, such as analyzing the motion of vehicles, predicting the trajectory of projectiles, designing amusement park rides, and understanding the behavior of celestial bodies. These concepts provide a framework for solving problems in physics and engineering.");
+        addStudentAnswerToProblemAnswer(pa_20_2_10, sa20_2_10_student10);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student9 and student10 for all problem answers");
+// Creating StudentAnswer instances for student9
+        StudentAnswer sa20_3_1_student9 = createStudentAnswer(student9, pa_20_3_1, "Thermodynamics is the branch of physics that deals with the study of energy transfer, heat, and work. It involves analyzing the behavior of gases and liquids, and understanding the principles governing energy transformations.");
+        addStudentAnswerToProblemAnswer(pa_20_3_1, sa20_3_1_student9);
+
+        StudentAnswer sa20_3_2_student9 = createStudentAnswer(student9, pa_20_3_2, "The laws of thermodynamics are fundamental principles that describe how energy is transferred and transformed:\n1. The First Law (Law of Energy Conservation) - Energy cannot be created or destroyed, only transferred or transformed.\n2. The Second Law - The total entropy of an isolated system always increases over time, and energy transformations are not 100% efficient.\n3. The Third Law - As the temperature of a system approaches absolute zero, the entropy of the system approaches a minimum value.");
+        addStudentAnswerToProblemAnswer(pa_20_3_2, sa20_3_2_student9);
+
+        StudentAnswer sa20_3_3_student9 = createStudentAnswer(student9, pa_20_3_3, "The First Law of Thermodynamics, also known as the Law of Energy Conservation, states that energy cannot be created or destroyed, only transferred or transformed. It is mathematically expressed as ΔU = Q - W, where ΔU is the change in internal energy, Q is the heat added to the system, and W is the work done by the system.");
+        addStudentAnswerToProblemAnswer(pa_20_3_3, sa20_3_3_student9);
+
+        StudentAnswer sa20_3_4_student9 = createStudentAnswer(student9, pa_20_3_4, "The Second Law of Thermodynamics states that the total entropy of an isolated system always increases over time. It implies that energy transformations are not 100% efficient and that some energy is always lost as waste heat.");
+        addStudentAnswerToProblemAnswer(pa_20_3_4, sa20_3_4_student9);
+
+        StudentAnswer sa20_3_5_student9 = createStudentAnswer(student9, pa_20_3_5, "The Third Law of Thermodynamics states that as the temperature of a system approaches absolute zero, the entropy of the system approaches a minimum value. It implies that it is impossible to reach absolute zero through any finite number of processes.");
+        addStudentAnswerToProblemAnswer(pa_20_3_5, sa20_3_5_student9);
+
+        StudentAnswer sa20_3_6_student9 = createStudentAnswer(student9, pa_20_3_6, "Entropy is a measure of the disorder or randomness in a system. It is a fundamental concept in thermodynamics and is related to the Second Law, which states that the total entropy of an isolated system always increases over time.");
+        addStudentAnswerToProblemAnswer(pa_20_3_6, sa20_3_6_student9);
+
+        StudentAnswer sa20_3_7_student9 = createStudentAnswer(student9, pa_20_3_7, "Heat and work are two forms of energy transfer. Heat is the transfer of thermal energy due to a temperature difference, while work is the transfer of energy due to a force acting over a distance. The First Law of Thermodynamics relates heat and work to changes in internal energy.");
+        addStudentAnswerToProblemAnswer(pa_20_3_7, sa20_3_7_student9);
+
+        StudentAnswer sa20_3_8_student9 = createStudentAnswer(student9, pa_20_3_8, "A thermodynamic system is a defined region of space or a specific quantity of matter under study. It is separated from its surroundings by boundaries, which can be real or imaginary, and can exchange energy and matter with its surroundings.");
+        addStudentAnswerToProblemAnswer(pa_20_3_8, sa20_3_8_student9);
+
+        StudentAnswer sa20_3_9_student9 = createStudentAnswer(student9, pa_20_3_9, "A thermodynamic process is a transformation that a system undergoes from one state to another. Examples include isothermal (constant temperature), adiabatic (no heat transfer), isobaric (constant pressure), and isochoric (constant volume) processes.");
+        addStudentAnswerToProblemAnswer(pa_20_3_9, sa20_3_9_student9);
+
+        StudentAnswer sa20_3_10_student9 = createStudentAnswer(student9, pa_20_3_10, "Thermodynamics has various applications, including in engineering (heat engines, refrigerators, and power plants), chemistry (chemical reactions and phase changes), and environmental science (climate modeling and energy efficiency). It helps solve problems involving heat transfer, energy conversion, and the behavior of gases and liquids.");
+        addStudentAnswerToProblemAnswer(pa_20_3_10, sa20_3_10_student9);
+        // Creating StudentAnswer instances for student10
+        StudentAnswer sa20_3_1_student10 = createStudentAnswer(student10, pa_20_3_1, "Thermodynamics is the branch of physics that deals with the study of energy transfer, heat, and work. It involves analyzing the behavior of gases and liquids, and understanding the principles governing energy transformations.");
+        addStudentAnswerToProblemAnswer(pa_20_3_1, sa20_3_1_student10);
+
+        StudentAnswer sa20_3_2_student10 = createStudentAnswer(student10, pa_20_3_2, "The laws of thermodynamics are fundamental principles that describe how energy is transferred and transformed:\n1. The First Law (Law of Energy Conservation) - Energy cannot be created or destroyed, only transferred or transformed.\n2. The Second Law - The total entropy of an isolated system always increases over time, and energy transformations are not 100% efficient.\n3. The Third Law - As the temperature of a system approaches absolute zero, the entropy of the system approaches a minimum value.");
+        addStudentAnswerToProblemAnswer(pa_20_3_2, sa20_3_2_student10);
+
+        StudentAnswer sa20_3_3_student10 = createStudentAnswer(student10, pa_20_3_3, "The First Law of Thermodynamics, also known as the Law of Energy Conservation, states that energy cannot be created or destroyed, only transferred or transformed. It is mathematically expressed as ΔU = Q - W, where ΔU is the change in internal energy, Q is the heat added to the system, and W is the work done by the system.");
+        addStudentAnswerToProblemAnswer(pa_20_3_3, sa20_3_3_student10);
+
+        StudentAnswer sa20_3_4_student10 = createStudentAnswer(student10, pa_20_3_4, "The Second Law of Thermodynamics states that the total entropy of an isolated system always increases over time. It implies that energy transformations are not 100% efficient and that some energy is always lost as waste heat.");
+        addStudentAnswerToProblemAnswer(pa_20_3_4, sa20_3_4_student10);
+
+        StudentAnswer sa20_3_5_student10 = createStudentAnswer(student10, pa_20_3_5, "The Third Law of Thermodynamics states that as the temperature of a system approaches absolute zero, the entropy of the system approaches a minimum value. It implies that it is impossible to reach absolute zero through any finite number of processes.");
+        addStudentAnswerToProblemAnswer(pa_20_3_5, sa20_3_5_student10);
+
+        StudentAnswer sa20_3_6_student10 = createStudentAnswer(student10, pa_20_3_6, "Entropy is a measure of the disorder or randomness in a system. It is a fundamental concept in thermodynamics and is related to the Second Law, which states that the total entropy of an isolated system always increases over time.");
+        addStudentAnswerToProblemAnswer(pa_20_3_6, sa20_3_6_student10);
+
+        StudentAnswer sa20_3_7_student10 = createStudentAnswer(student10, pa_20_3_7, "Heat and work are two forms of energy transfer. Heat is the transfer of thermal energy due to a temperature difference, while work is the transfer of energy due to a force acting over a distance. The First Law of Thermodynamics relates heat and work to changes in internal energy.");
+        addStudentAnswerToProblemAnswer(pa_20_3_7, sa20_3_7_student10);
+
+        StudentAnswer sa20_3_8_student10 = createStudentAnswer(student10, pa_20_3_8, "A thermodynamic system is a defined region of space or a specific quantity of matter under study. It is separated from its surroundings by boundaries, which can be real or imaginary, and can exchange energy and matter with its surroundings.");
+        addStudentAnswerToProblemAnswer(pa_20_3_8, sa20_3_8_student10);
+
+        StudentAnswer sa20_3_9_student10 = createStudentAnswer(student10, pa_20_3_9, "A thermodynamic process is a transformation that a system undergoes from one state to another. Examples include isothermal (constant temperature), adiabatic (no heat transfer), isobaric (constant pressure), and isochoric (constant volume) processes.");
+        addStudentAnswerToProblemAnswer(pa_20_3_9, sa20_3_9_student10);
+
+        StudentAnswer sa20_3_10_student10 = createStudentAnswer(student10, pa_20_3_10, "Thermodynamics has various applications, including in engineering (heat engines, refrigerators, and power plants), chemistry (chemical reactions and phase changes), and environmental science (climate modeling and energy efficiency). It helps solve problems involving heat transfer, energy conversion, and the behavior of gases and liquids.");
+        addStudentAnswerToProblemAnswer(pa_20_3_10, sa20_3_10_student10);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student9 and student10 for all problem answers in assignment20_3.");
+// Creating StudentAnswer instances for student9
+        StudentAnswer sa20_4_1_student9 = createStudentAnswer(student9, pa_20_4_1, "Material science is the study of the properties and behavior of materials. It involves understanding the structure, processing, and performance of different materials, including metals, ceramics, polymers, and composites.");
+        addStudentAnswerToProblemAnswer(pa_20_4_1, sa20_4_1_student9);
+
+        StudentAnswer sa20_4_2_student9 = createStudentAnswer(student9, pa_20_4_2, "Metals are materials that are typically hard, shiny, malleable, and conductive. They are used in a wide range of applications, including construction, transportation, electronics, and manufacturing. Examples include iron, aluminum, and copper.");
+        addStudentAnswerToProblemAnswer(pa_20_4_2, sa20_4_2_student9);
+
+        StudentAnswer sa20_4_3_student9 = createStudentAnswer(student9, pa_20_4_3, "Ceramics are non-metallic, inorganic materials that are typically hard and brittle. They have high melting points and are used in applications such as pottery, glass, and advanced engineering materials. Examples include clay, porcelain, and silicon carbide.");
+        addStudentAnswerToProblemAnswer(pa_20_4_3, sa20_4_3_student9);
+
+        StudentAnswer sa20_4_4_student9 = createStudentAnswer(student9, pa_20_4_4, "Polymers are large molecules made up of repeating units called monomers. They have diverse properties and applications, ranging from plastics and rubber to textiles and biomedical devices. Examples include polyethylene, polystyrene, and DNA.");
+        addStudentAnswerToProblemAnswer(pa_20_4_4, sa20_4_4_student9);
+
+        StudentAnswer sa20_4_5_student9 = createStudentAnswer(student9, pa_20_4_5, "Composites are materials made from two or more constituent materials with different properties. They combine the advantages of the individual materials to create a new material with enhanced performance. Examples include fiberglass, carbon fiber, and concrete.");
+        addStudentAnswerToProblemAnswer(pa_20_4_5, sa20_4_5_student9);
+
+        StudentAnswer sa20_4_6_student9 = createStudentAnswer(student9, pa_20_4_6, "Material selection is crucial in engineering because it affects the performance, durability, and cost of a product. Engineers must consider factors such as strength, weight, corrosion resistance, and thermal properties to choose the most suitable material for a specific application.");
+        addStudentAnswerToProblemAnswer(pa_20_4_6, sa20_4_6_student9);
+
+        StudentAnswer sa20_4_7_student9 = createStudentAnswer(student9, pa_20_4_7, "The structure-property relationship in materials refers to how the internal structure of a material, including its atomic arrangement and microstructure, influences its properties and behavior. Understanding this relationship helps engineers design materials with desired properties.");
+        addStudentAnswerToProblemAnswer(pa_20_4_7, sa20_4_7_student9);
+
+        StudentAnswer sa20_4_8_student9 = createStudentAnswer(student9, pa_20_4_8, "Material processing involves the techniques and methods used to shape, form, and fabricate materials into desired products. It includes processes such as casting, forging, welding, machining, and additive manufacturing.");
+        addStudentAnswerToProblemAnswer(pa_20_4_8, sa20_4_8_student9);
+
+        StudentAnswer sa20_4_9_student9 = createStudentAnswer(student9, pa_20_4_9, "The mechanical properties of materials include strength, hardness, ductility, toughness, and elasticity. These properties determine how a material responds to applied forces and are critical in selecting materials for structural and mechanical applications.");
+        addStudentAnswerToProblemAnswer(pa_20_4_9, sa20_4_9_student9);
+
+        StudentAnswer sa20_4_10_student9 = createStudentAnswer(student9, pa_20_4_10, "Material science is applied in various fields, including aerospace, automotive, electronics, construction, and healthcare. It helps develop new materials, improve existing materials, and solve engineering challenges related to material performance and sustainability.");
+        addStudentAnswerToProblemAnswer(pa_20_4_10, sa20_4_10_student9);
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa20_4_1_student10 = createStudentAnswer(student10, pa_20_4_1, "Material science is the study of the properties and behavior of materials. It involves understanding the structure, processing, and performance of different materials, including metals, ceramics, polymers, and composites.");
+        addStudentAnswerToProblemAnswer(pa_20_4_1, sa20_4_1_student10);
+
+        StudentAnswer sa20_4_2_student10 = createStudentAnswer(student10, pa_20_4_2, "Metals are materials that are typically hard, shiny, malleable, and conductive. They are used in a wide range of applications, including construction, transportation, electronics, and manufacturing. Examples include iron, aluminum, and copper.");
+        addStudentAnswerToProblemAnswer(pa_20_4_2, sa20_4_2_student10);
+
+        StudentAnswer sa20_4_3_student10 = createStudentAnswer(student10, pa_20_4_3, "Ceramics are non-metallic, inorganic materials that are typically hard and brittle. They have high melting points and are used in applications such as pottery, glass, and advanced engineering materials. Examples include clay, porcelain, and silicon carbide.");
+        addStudentAnswerToProblemAnswer(pa_20_4_3, sa20_4_3_student10);
+
+        StudentAnswer sa20_4_4_student10 = createStudentAnswer(student10, pa_20_4_4, "Polymers are large molecules made up of repeating units called monomers. They have diverse properties and applications, ranging from plastics and rubber to textiles and biomedical devices. Examples include polyethylene, polystyrene, and DNA.");
+        addStudentAnswerToProblemAnswer(pa_20_4_4, sa20_4_4_student10);
+
+        StudentAnswer sa20_4_5_student10 = createStudentAnswer(student10, pa_20_4_5, "Composites are materials made from two or more constituent materials with different properties. They combine the advantages of the individual materials to create a new material with enhanced performance. Examples include fiberglass, carbon fiber, and concrete.");
+        addStudentAnswerToProblemAnswer(pa_20_4_5, sa20_4_5_student10);
+
+        StudentAnswer sa20_4_6_student10 = createStudentAnswer(student10, pa_20_4_6, "Material selection is crucial in engineering because it affects the performance, durability, and cost of a product. Engineers must consider factors such as strength, weight, corrosion resistance, and thermal properties to choose the most suitable material for a specific application.");
+        addStudentAnswerToProblemAnswer(pa_20_4_6, sa20_4_6_student10);
+
+        StudentAnswer sa20_4_7_student10 = createStudentAnswer(student10, pa_20_4_7, "The structure-property relationship in materials refers to how the internal structure of a material, including its atomic arrangement and microstructure, influences its properties and behavior. Understanding this relationship helps engineers design materials with desired properties.");
+        addStudentAnswerToProblemAnswer(pa_20_4_7, sa20_4_7_student10);
+
+        StudentAnswer sa20_4_8_student10 = createStudentAnswer(student10, pa_20_4_8, "Material processing involves the techniques and methods used to shape, form, and fabricate materials into desired products. It includes processes such as casting, forging, welding, machining, and additive manufacturing.");
+        addStudentAnswerToProblemAnswer(pa_20_4_8, sa20_4_8_student10);
+
+        StudentAnswer sa20_4_9_student10 = createStudentAnswer(student10, pa_20_4_9, "The mechanical properties of materials include strength, hardness, ductility, toughness, and elasticity. These properties determine how a material responds to applied forces and are critical in selecting materials for structural and mechanical applications.");
+        addStudentAnswerToProblemAnswer(pa_20_4_9, sa20_4_9_student10);
+
+        StudentAnswer sa20_4_10_student10 = createStudentAnswer(student10, pa_20_4_10, "Material science is applied in various fields, including aerospace, automotive, electronics, construction, and healthcare. It helps develop new materials, improve existing materials, and solve engineering challenges related to material performance and sustainability.");
+        addStudentAnswerToProblemAnswer(pa_20_4_10, sa20_4_10_student10);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student9 and student10 for all problem answers in assignment20_4.");
 
 
 
