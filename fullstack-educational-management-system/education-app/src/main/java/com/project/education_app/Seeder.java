@@ -14218,6 +14218,579 @@ public class Seeder implements CommandLineRunner {
         System.out.println("Student answers created and added for student9 and student10 for all problem answers in assignment20_4.");
 
 
+        // Creating StudentAnswer instances for student1
+        StudentAnswer sa1a_project_student1 = createStudentAnswer(student1, pa1a_project, "Variables are essential for storing and manipulating data, allowing programmers to create dynamic and flexible programs.");
+        addStudentAnswerToProblemAnswer(pa1a_project, sa1a_project_student1);
+
+        StudentAnswer sa1b_project_student1 = createStudentAnswer(student1, pa1b_project, "Different data types allow for the representation and manipulation of various forms of data, ensuring the correct handling and processing in programs.");
+        addStudentAnswerToProblemAnswer(pa1b_project, sa1b_project_student1);
+
+        StudentAnswer sa1c_project_student1 = createStudentAnswer(student1, pa1c_project, "Control structures like loops and conditionals enable the flow control of a program, allowing for repeated actions and decision-making based on conditions.");
+        addStudentAnswerToProblemAnswer(pa1c_project, sa1c_project_student1);
+
+        StudentAnswer sa1d_project_student1 = createStudentAnswer(student1, pa1d_project, "Functions allow for code reuse and modularity, making programs more organized, readable, and maintainable.");
+        addStudentAnswerToProblemAnswer(pa1d_project, sa1d_project_student1);
+
+        StudentAnswer sa1e_project_student1 = createStudentAnswer(student1, pa1e_project, "Modules allow for the modularization of code, making it more manageable and reusable, and enable the use of built-in and custom functionalities.");
+        addStudentAnswerToProblemAnswer(pa1e_project, sa1e_project_student1);
+
+        StudentAnswer sa1f_project_student1 = createStudentAnswer(student1, pa1f_project, "Libraries provide pre-written code that extends the functionality of programs, allowing developers to perform complex tasks efficiently.");
+        addStudentAnswerToProblemAnswer(pa1f_project, sa1f_project_student1);
+
+// Creating StudentAnswer instances for student2
+        StudentAnswer sa1a_project_student2 = createStudentAnswer(student2, pa1a_project, "Variables are essential for storing and manipulating data, allowing programmers to create dynamic and flexible programs.");
+        addStudentAnswerToProblemAnswer(pa1a_project, sa1a_project_student2);
+
+        StudentAnswer sa1b_project_student2 = createStudentAnswer(student2, pa1b_project, "Different data types allow for the representation and manipulation of various forms of data, ensuring the correct handling and processing in programs.");
+        addStudentAnswerToProblemAnswer(pa1b_project, sa1b_project_student2);
+
+        StudentAnswer sa1c_project_student2 = createStudentAnswer(student2, pa1c_project, "Control structures like loops and conditionals enable the flow control of a program, allowing for repeated actions and decision-making based on conditions.");
+        addStudentAnswerToProblemAnswer(pa1c_project, sa1c_project_student2);
+
+        StudentAnswer sa1d_project_student2 = createStudentAnswer(student2, pa1d_project, "Functions allow for code reuse and modularity, making programs more organized, readable, and maintainable.");
+        addStudentAnswerToProblemAnswer(pa1d_project, sa1d_project_student2);
+
+        StudentAnswer sa1e_project_student2 = createStudentAnswer(student2, pa1e_project, "Modules allow for the modularization of code, making it more manageable and reusable, and enable the use of built-in and custom functionalities.");
+        addStudentAnswerToProblemAnswer(pa1e_project, sa1e_project_student2);
+
+        StudentAnswer sa1f_project_student2 = createStudentAnswer(student2, pa1f_project, "Libraries provide pre-written code that extends the functionality of programs, allowing developers to perform complex tasks efficiently.");
+        addStudentAnswerToProblemAnswer(pa1f_project, sa1f_project_student2);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student1 and student2 for all project-related problem answers.");
+// Creating StudentAnswer instances for student1
+        StudentAnswer sa2a_project_student1 = createStudentAnswer(student1, pa2a_project, "Arrays provide a way to store multiple elements of the same type in a contiguous block of memory, allowing for efficient indexing and traversal.");
+        addStudentAnswerToProblemAnswer(pa2a_project, sa2a_project_student1);
+
+        StudentAnswer sa2b_project_student1 = createStudentAnswer(student1, pa2b_project, "Linked lists allow for efficient insertions and deletions at any position in the list, providing more flexibility than arrays.");
+        addStudentAnswerToProblemAnswer(pa2b_project, sa2b_project_student1);
+
+        StudentAnswer sa2c_project_student1 = createStudentAnswer(student1, pa2c_project, "Stacks are commonly used for function call management, expression evaluation, and depth-first search algorithms.");
+        addStudentAnswerToProblemAnswer(pa2c_project, sa2c_project_student1);
+
+        StudentAnswer sa2d_project_student1 = createStudentAnswer(student1, pa2d_project, "Queues are used in scheduling algorithms, buffering data streams, and breadth-first search algorithms.");
+        addStudentAnswerToProblemAnswer(pa2d_project, sa2d_project_student1);
+
+        StudentAnswer sa2e_project_student1 = createStudentAnswer(student1, pa2e_project, "Trees provide a hierarchical structure for organizing data, enabling efficient search, insertion, and deletion operations.");
+        addStudentAnswerToProblemAnswer(pa2e_project, sa2e_project_student1);
+
+        StudentAnswer sa2f_project_student1 = createStudentAnswer(student1, pa2f_project, "Graphs are used to represent relationships between entities in various fields such as social networks, transportation systems, and computer networks.");
+        addStudentAnswerToProblemAnswer(pa2f_project, sa2f_project_student1);
+
+// Creating StudentAnswer instances for student2
+        StudentAnswer sa2a_project_student2 = createStudentAnswer(student2, pa2a_project, "Arrays provide a way to store multiple elements of the same type in a contiguous block of memory, allowing for efficient indexing and traversal.");
+        addStudentAnswerToProblemAnswer(pa2a_project, sa2a_project_student2);
+
+        StudentAnswer sa2b_project_student2 = createStudentAnswer(student2, pa2b_project, "Linked lists allow for efficient insertions and deletions at any position in the list, providing more flexibility than arrays.");
+        addStudentAnswerToProblemAnswer(pa2b_project, sa2b_project_student2);
+
+        StudentAnswer sa2c_project_student2 = createStudentAnswer(student2, pa2c_project, "Stacks are commonly used for function call management, expression evaluation, and depth-first search algorithms.");
+        addStudentAnswerToProblemAnswer(pa2c_project, sa2c_project_student2);
+
+        StudentAnswer sa2d_project_student2 = createStudentAnswer(student2, pa2d_project, "Queues are used in scheduling algorithms, buffering data streams, and breadth-first search algorithms.");
+        addStudentAnswerToProblemAnswer(pa2d_project, sa2d_project_student2);
+
+        StudentAnswer sa2e_project_student2 = createStudentAnswer(student2, pa2e_project, "Trees provide a hierarchical structure for organizing data, enabling efficient search, insertion, and deletion operations.");
+        addStudentAnswerToProblemAnswer(pa2e_project, sa2e_project_student2);
+
+        StudentAnswer sa2f_project_student2 = createStudentAnswer(student2, pa2f_project, "Graphs are used to represent relationships between entities in various fields such as social networks, transportation systems, and computer networks.");
+        addStudentAnswerToProblemAnswer(pa2f_project, sa2f_project_student2);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student1 and student2 for all project-related problem answers.");
+// Creating StudentAnswer instances for student1
+        StudentAnswer sa3a_project_student1 = createStudentAnswer(student1, pa3a_project, "Efficient sorting algorithms improve the performance of applications by reducing the time complexity of sorting operations, leading to faster data processing.");
+        addStudentAnswerToProblemAnswer(pa3a_project, sa3a_project_student1);
+
+        StudentAnswer sa3b_project_student1 = createStudentAnswer(student1, pa3b_project, "Binary search significantly reduces the time complexity by dividing the search space in half with each step, making it much faster for large datasets compared to linear search.");
+        addStudentAnswerToProblemAnswer(pa3b_project, sa3b_project_student1);
+
+        StudentAnswer sa3c_project_student1 = createStudentAnswer(student1, pa3c_project, "Graph algorithms like DFS and BFS are crucial for analyzing network structures, identifying connectivity, and optimizing routes and connections in various fields, such as social networks and transportation.");
+        addStudentAnswerToProblemAnswer(pa3c_project, sa3c_project_student1);
+
+        StudentAnswer sa3d_project_student1 = createStudentAnswer(student1, pa3d_project, "Dynamic programming optimizes the solution of complex problems by breaking them down into simpler subproblems, reducing redundancy and improving efficiency.");
+        addStudentAnswerToProblemAnswer(pa3d_project, sa3d_project_student1);
+
+// Creating StudentAnswer instances for student2
+        StudentAnswer sa3a_project_student2 = createStudentAnswer(student2, pa3a_project, "Efficient sorting algorithms improve the performance of applications by reducing the time complexity of sorting operations, leading to faster data processing.");
+        addStudentAnswerToProblemAnswer(pa3a_project, sa3a_project_student2);
+
+        StudentAnswer sa3b_project_student2 = createStudentAnswer(student2, pa3b_project, "Binary search significantly reduces the time complexity by dividing the search space in half with each step, making it much faster for large datasets compared to linear search.");
+        addStudentAnswerToProblemAnswer(pa3b_project, sa3b_project_student2);
+
+        StudentAnswer sa3c_project_student2 = createStudentAnswer(student2, pa3c_project, "Graph algorithms like DFS and BFS are crucial for analyzing network structures, identifying connectivity, and optimizing routes and connections in various fields, such as social networks and transportation.");
+        addStudentAnswerToProblemAnswer(pa3c_project, sa3c_project_student2);
+
+        StudentAnswer sa3d_project_student2 = createStudentAnswer(student2, pa3d_project, "Dynamic programming optimizes the solution of complex problems by breaking them down into simpler subproblems, reducing redundancy and improving efficiency.");
+        addStudentAnswerToProblemAnswer(pa3d_project, sa3d_project_student2);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student1 and student2 for all project-related problem answers.");
+// Creating StudentAnswer instances for student1
+        StudentAnswer sa4a_project_student1 = createStudentAnswer(student1, pa4a_project, "Relational databases organize data efficiently and establish clear relationships between data points, ensuring data integrity and ease of access.");
+        addStudentAnswerToProblemAnswer(pa4a_project, sa4a_project_student1);
+
+        StudentAnswer sa4b_project_student1 = createStudentAnswer(student1, pa4b_project, "SQL allows for efficient querying and manipulation of data, enabling users to create, read, update, and delete records with precision and ease.");
+        addStudentAnswerToProblemAnswer(pa4b_project, sa4b_project_student1);
+
+        StudentAnswer sa4c_project_student1 = createStudentAnswer(student1, pa4c_project, "Transactions ensure data integrity and consistency by adhering to ACID properties, allowing for safe and reliable database operations.");
+        addStudentAnswerToProblemAnswer(pa4c_project, sa4c_project_student1);
+
+        StudentAnswer sa4d_project_student1 = createStudentAnswer(student1, pa4d_project, "Best practices in database design include normalization, efficient schema creation, and data modeling to ensure optimal performance and data integrity.");
+        addStudentAnswerToProblemAnswer(pa4d_project, sa4d_project_student1);
+
+// Creating StudentAnswer instances for student2
+        StudentAnswer sa4a_project_student2 = createStudentAnswer(student2, pa4a_project, "Relational databases organize data efficiently and establish clear relationships between data points, ensuring data integrity and ease of access.");
+        addStudentAnswerToProblemAnswer(pa4a_project, sa4a_project_student2);
+
+        StudentAnswer sa4b_project_student2 = createStudentAnswer(student2, pa4b_project, "SQL allows for efficient querying and manipulation of data, enabling users to create, read, update, and delete records with precision and ease.");
+        addStudentAnswerToProblemAnswer(pa4b_project, sa4b_project_student2);
+
+        StudentAnswer sa4c_project_student2 = createStudentAnswer(student2, pa4c_project, "Transactions ensure data integrity and consistency by adhering to ACID properties, allowing for safe and reliable database operations.");
+        addStudentAnswerToProblemAnswer(pa4c_project, sa4c_project_student2);
+
+        StudentAnswer sa4d_project_student2 = createStudentAnswer(student2, pa4d_project, "Best practices in database design include normalization, efficient schema creation, and data modeling to ensure optimal performance and data integrity.");
+        addStudentAnswerToProblemAnswer(pa4d_project, sa4d_project_student2);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student1 and student2 for all project-related problem answers.");
+// Creating StudentAnswer instances for student3
+        StudentAnswer sa5a_project_student3 = createStudentAnswer(student3, pa5a_project, "Process management ensures efficient execution of processes, maintains system stability, and allows for multitasking and resource sharing.");
+        addStudentAnswerToProblemAnswer(pa5a_project, sa5a_project_student3);
+
+        StudentAnswer sa5b_project_student3 = createStudentAnswer(student3, pa5b_project, "Memory management techniques like paging, segmentation, and virtual memory optimize resource allocation and improve system efficiency.");
+        addStudentAnswerToProblemAnswer(pa5b_project, sa5b_project_student3);
+
+        StudentAnswer sa5c_project_student3 = createStudentAnswer(student3, pa5c_project, "File systems organize and manage data storage, providing a structured way to store, retrieve, and manage files efficiently.");
+        addStudentAnswerToProblemAnswer(pa5c_project, sa5c_project_student3);
+
+        StudentAnswer sa5d_project_student3 = createStudentAnswer(student3, pa5d_project, "CPU scheduling algorithms optimize process execution, improve system responsiveness, and ensure efficient utilization of CPU resources.");
+        addStudentAnswerToProblemAnswer(pa5d_project, sa5d_project_student3);
+
+// Creating StudentAnswer instances for student4
+        StudentAnswer sa5a_project_student4 = createStudentAnswer(student4, pa5a_project, "Process management ensures efficient execution of processes, maintains system stability, and allows for multitasking and resource sharing.");
+        addStudentAnswerToProblemAnswer(pa5a_project, sa5a_project_student4);
+
+        StudentAnswer sa5b_project_student4 = createStudentAnswer(student4, pa5b_project, "Memory management techniques like paging, segmentation, and virtual memory optimize resource allocation and improve system efficiency.");
+        addStudentAnswerToProblemAnswer(pa5b_project, sa5b_project_student4);
+
+        StudentAnswer sa5c_project_student4 = createStudentAnswer(student4, pa5c_project, "File systems organize and manage data storage, providing a structured way to store, retrieve, and manage files efficiently.");
+        addStudentAnswerToProblemAnswer(pa5c_project, sa5c_project_student4);
+
+        StudentAnswer sa5d_project_student4 = createStudentAnswer(student4, pa5d_project, "CPU scheduling algorithms optimize process execution, improve system responsiveness, and ensure efficient utilization of CPU resources.");
+        addStudentAnswerToProblemAnswer(pa5d_project, sa5d_project_student4);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student3 and student4 for all project-related problem answers.");
+// Creating StudentAnswer instances for student3
+        StudentAnswer sa6a_project_student3 = createStudentAnswer(student3, pa6a_project, "The OSI model standardizes network functions, enabling interoperability between different systems and technologies.");
+        addStudentAnswerToProblemAnswer(pa6a_project, sa6a_project_student3);
+
+        StudentAnswer sa6b_project_student3 = createStudentAnswer(student3, pa6b_project, "The TCP/IP model provides a robust and scalable framework for data transmission, ensuring reliable communication between networked devices.");
+        addStudentAnswerToProblemAnswer(pa6b_project, sa6b_project_student3);
+
+        StudentAnswer sa6c_project_student3 = createStudentAnswer(student3, pa6c_project, "Network protocols govern the rules and conventions for communication between devices, ensuring secure and efficient data exchange.");
+        addStudentAnswerToProblemAnswer(pa6c_project, sa6c_project_student3);
+
+        StudentAnswer sa6d_project_student3 = createStudentAnswer(student3, pa6d_project, "Routing determines the optimal paths for data packets, ensuring efficient and reliable data delivery across complex networks.");
+        addStudentAnswerToProblemAnswer(pa6d_project, sa6d_project_student3);
+
+        StudentAnswer sa6e_project_student3 = createStudentAnswer(student3, pa6e_project, "Switching efficiently forwards data packets within a network, enhancing communication speed and reducing latency.");
+        addStudentAnswerToProblemAnswer(pa6e_project, sa6e_project_student3);
+
+// Creating StudentAnswer instances for student4
+        StudentAnswer sa6a_project_student4 = createStudentAnswer(student4, pa6a_project, "The OSI model standardizes network functions, enabling interoperability between different systems and technologies.");
+        addStudentAnswerToProblemAnswer(pa6a_project, sa6a_project_student4);
+
+        StudentAnswer sa6b_project_student4 = createStudentAnswer(student4, pa6b_project, "The TCP/IP model provides a robust and scalable framework for data transmission, ensuring reliable communication between networked devices.");
+        addStudentAnswerToProblemAnswer(pa6b_project, sa6b_project_student4);
+
+        StudentAnswer sa6c_project_student4 = createStudentAnswer(student4, pa6c_project, "Network protocols govern the rules and conventions for communication between devices, ensuring secure and efficient data exchange.");
+        addStudentAnswerToProblemAnswer(pa6c_project, sa6c_project_student4);
+
+        StudentAnswer sa6d_project_student4 = createStudentAnswer(student4, pa6d_project, "Routing determines the optimal paths for data packets, ensuring efficient and reliable data delivery across complex networks.");
+        addStudentAnswerToProblemAnswer(pa6d_project, sa6d_project_student4);
+
+        StudentAnswer sa6e_project_student4 = createStudentAnswer(student4, pa6e_project, "Switching efficiently forwards data packets within a network, enhancing communication speed and reducing latency.");
+        addStudentAnswerToProblemAnswer(pa6e_project, sa6e_project_student4);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student3 and student4 for all project-related problem answers.");
+// Creating StudentAnswer instances for student3
+        StudentAnswer sa7a_project_student3 = createStudentAnswer(student3, pa7a_project, "The SDLC provides a structured approach to planning, creating, testing, and deploying software, ensuring quality and efficiency throughout the development process.");
+        addStudentAnswerToProblemAnswer(pa7a_project, sa7a_project_student3);
+
+        StudentAnswer sa7b_project_student3 = createStudentAnswer(student3, pa7b_project, "Agile methodology enhances flexibility, customer feedback, and iterative progress, allowing for adaptive and efficient software development.");
+        addStudentAnswerToProblemAnswer(pa7b_project, sa7b_project_student3);
+
+        StudentAnswer sa7c_project_student3 = createStudentAnswer(student3, pa7c_project, "The Waterfall model follows a linear and sequential approach, ensuring each phase of development is completed before moving on to the next, promoting thorough documentation and planning.");
+        addStudentAnswerToProblemAnswer(pa7c_project, sa7c_project_student3);
+
+        StudentAnswer sa7d_project_student3 = createStudentAnswer(student3, pa7d_project, "Effective project management involves planning, scheduling, resource allocation, risk management, and quality assurance, ensuring successful project completion.");
+        addStudentAnswerToProblemAnswer(pa7d_project, sa7d_project_student3);
+
+// Creating StudentAnswer instances for student4
+        StudentAnswer sa7a_project_student4 = createStudentAnswer(student4, pa7a_project, "The SDLC provides a structured approach to planning, creating, testing, and deploying software, ensuring quality and efficiency throughout the development process.");
+        addStudentAnswerToProblemAnswer(pa7a_project, sa7a_project_student4);
+
+        StudentAnswer sa7b_project_student4 = createStudentAnswer(student4, pa7b_project, "Agile methodology enhances flexibility, customer feedback, and iterative progress, allowing for adaptive and efficient software development.");
+        addStudentAnswerToProblemAnswer(pa7b_project, sa7b_project_student4);
+
+        StudentAnswer sa7c_project_student4 = createStudentAnswer(student4, pa7c_project, "The Waterfall model follows a linear and sequential approach, ensuring each phase of development is completed before moving on to the next, promoting thorough documentation and planning.");
+        addStudentAnswerToProblemAnswer(pa7c_project, sa7c_project_student4);
+
+        StudentAnswer sa7d_project_student4 = createStudentAnswer(student4, pa7d_project, "Effective project management involves planning, scheduling, resource allocation, risk management, and quality assurance, ensuring successful project completion.");
+        addStudentAnswerToProblemAnswer(pa7d_project, sa7d_project_student4);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student3 and student4 for all project-related problem answers.");
+// Creating StudentAnswer instances for student3
+        StudentAnswer sa8a_project_student3 = createStudentAnswer(student3, pa8a_project, "HTML is the foundational language for creating web pages, providing the structure and layout for web content.");
+        addStudentAnswerToProblemAnswer(pa8a_project, sa8a_project_student3);
+
+        StudentAnswer sa8b_project_student3 = createStudentAnswer(student3, pa8b_project, "CSS enhances web page design by allowing developers to style and layout HTML content, improving the visual appeal and user experience.");
+        addStudentAnswerToProblemAnswer(pa8b_project, sa8b_project_student3);
+
+        StudentAnswer sa8c_project_student3 = createStudentAnswer(student3, pa8c_project, "JavaScript adds interactivity and dynamic behavior to web pages, allowing developers to create engaging and responsive user experiences.");
+        addStudentAnswerToProblemAnswer(pa8c_project, sa8c_project_student3);
+
+        StudentAnswer sa8d_project_student3 = createStudentAnswer(student3, pa8d_project, "React's component-based architecture and efficient rendering make it ideal for building complex, interactive user interfaces in a scalable and maintainable way.");
+        addStudentAnswerToProblemAnswer(pa8d_project, sa8d_project_student3);
+
+        StudentAnswer sa8e_project_student3 = createStudentAnswer(student3, pa8e_project, "Backend integration allows front-end applications to interact with servers and databases, enabling dynamic data fetching, user authentication, and seamless full-stack functionality.");
+        addStudentAnswerToProblemAnswer(pa8e_project, sa8e_project_student3);
+
+// Creating StudentAnswer instances for student4
+        StudentAnswer sa8a_project_student4 = createStudentAnswer(student4, pa8a_project, "HTML is the foundational language for creating web pages, providing the structure and layout for web content.");
+        addStudentAnswerToProblemAnswer(pa8a_project, sa8a_project_student4);
+
+        StudentAnswer sa8b_project_student4 = createStudentAnswer(student4, pa8b_project, "CSS enhances web page design by allowing developers to style and layout HTML content, improving the visual appeal and user experience.");
+        addStudentAnswerToProblemAnswer(pa8b_project, sa8b_project_student4);
+
+        StudentAnswer sa8c_project_student4 = createStudentAnswer(student4, pa8c_project, "JavaScript adds interactivity and dynamic behavior to web pages, allowing developers to create engaging and responsive user experiences.");
+        addStudentAnswerToProblemAnswer(pa8c_project, sa8c_project_student4);
+
+        StudentAnswer sa8d_project_student4 = createStudentAnswer(student4, pa8d_project, "React's component-based architecture and efficient rendering make it ideal for building complex, interactive user interfaces in a scalable and maintainable way.");
+        addStudentAnswerToProblemAnswer(pa8d_project, sa8d_project_student4);
+
+        StudentAnswer sa8e_project_student4 = createStudentAnswer(student4, pa8e_project, "Backend integration allows front-end applications to interact with servers and databases, enabling dynamic data fetching, user authentication, and seamless full-stack functionality.");
+        addStudentAnswerToProblemAnswer(pa8e_project, sa8e_project_student4);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student3 and student4 for all project-related problem answers.");
+// Creating StudentAnswer instances for student5
+        StudentAnswer sa9a_project_student5 = createStudentAnswer(student5, pa9a_project, "Machine learning is used in various fields such as healthcare, finance, and marketing to make predictions, automate processes, and gain insights from data.");
+        addStudentAnswerToProblemAnswer(pa9a_project, sa9a_project_student5);
+
+        StudentAnswer sa9b_project_student5 = createStudentAnswer(student5, pa9b_project, "Neural networks use interconnected layers of nodes (neurons) to process information, similar to the way neurons in the human brain work, enabling them to learn and make decisions.");
+        addStudentAnswerToProblemAnswer(pa9b_project, sa9b_project_student5);
+
+        StudentAnswer sa9c_project_student5 = createStudentAnswer(student5, pa9c_project, "NLP enables computers to understand, interpret, and generate human language, facilitating applications such as chatbots, language translation, and sentiment analysis.");
+        addStudentAnswerToProblemAnswer(pa9c_project, sa9c_project_student5);
+
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa9a_project_student6 = createStudentAnswer(student6, pa9a_project, "Machine learning is used in various fields such as healthcare, finance, and marketing to make predictions, automate processes, and gain insights from data.");
+        addStudentAnswerToProblemAnswer(pa9a_project, sa9a_project_student6);
+
+        StudentAnswer sa9b_project_student6 = createStudentAnswer(student6, pa9b_project, "Neural networks use interconnected layers of nodes (neurons) to process information, similar to the way neurons in the human brain work, enabling them to learn and make decisions.");
+        addStudentAnswerToProblemAnswer(pa9b_project, sa9b_project_student6);
+
+        StudentAnswer sa9c_project_student6 = createStudentAnswer(student6, pa9c_project, "NLP enables computers to understand, interpret, and generate human language, facilitating applications such as chatbots, language translation, and sentiment analysis.");
+        addStudentAnswerToProblemAnswer(pa9c_project, sa9c_project_student6);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student5 and student6 for all project-related problem answers.");
+// Creating StudentAnswer instances for student5
+        StudentAnswer sa10a_project_student5 = createStudentAnswer(student5, pa10a_project, "Threat analysis helps identify potential security threats and vulnerabilities, allowing organizations to implement strategies to mitigate these risks and protect their systems.");
+        addStudentAnswerToProblemAnswer(pa10a_project, sa10a_project_student5);
+
+        StudentAnswer sa10b_project_student5 = createStudentAnswer(student5, pa10b_project, "Encryption converts information into a secure format, preventing unauthorized access and ensuring the confidentiality and integrity of data.");
+        addStudentAnswerToProblemAnswer(pa10b_project, sa10b_project_student5);
+
+        StudentAnswer sa10c_project_student5 = createStudentAnswer(student5, pa10c_project, "Measures such as firewalls, intrusion detection systems, and encryption protocols safeguard networks and ensure secure data transmission.");
+        addStudentAnswerToProblemAnswer(pa10c_project, sa10c_project_student5);
+
+        StudentAnswer sa10d_project_student5 = createStudentAnswer(student5, pa10d_project, "Secure coding practices involve writing code that is free of vulnerabilities, using techniques such as input validation, error handling, and regular security testing.");
+        addStudentAnswerToProblemAnswer(pa10d_project, sa10d_project_student5);
+
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa10a_project_student6 = createStudentAnswer(student6, pa10a_project, "Threat analysis helps identify potential security threats and vulnerabilities, allowing organizations to implement strategies to mitigate these risks and protect their systems.");
+        addStudentAnswerToProblemAnswer(pa10a_project, sa10a_project_student6);
+
+        StudentAnswer sa10b_project_student6 = createStudentAnswer(student6, pa10b_project, "Encryption converts information into a secure format, preventing unauthorized access and ensuring the confidentiality and integrity of data.");
+        addStudentAnswerToProblemAnswer(pa10b_project, sa10b_project_student6);
+
+        StudentAnswer sa10c_project_student6 = createStudentAnswer(student6, pa10c_project, "Measures such as firewalls, intrusion detection systems, and encryption protocols safeguard networks and ensure secure data transmission.");
+        addStudentAnswerToProblemAnswer(pa10c_project, sa10c_project_student6);
+
+        StudentAnswer sa10d_project_student6 = createStudentAnswer(student6, pa10d_project, "Secure coding practices involve writing code that is free of vulnerabilities, using techniques such as input validation, error handling, and regular security testing.");
+        addStudentAnswerToProblemAnswer(pa10d_project, sa10d_project_student6);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student5 and student6 for all project-related problem answers.");
+// Creating StudentAnswer instances for student5
+        StudentAnswer sa11a_project_student5 = createStudentAnswer(student5, pa11a_project, "Limits are fundamental to calculus, serving as the foundation for defining continuity, derivatives, and integrals.");
+        addStudentAnswerToProblemAnswer(pa11a_project, sa11a_project_student5);
+
+        StudentAnswer sa11b_project_student5 = createStudentAnswer(student5, pa11b_project, "Derivatives measure how a function changes as its input changes, enabling the analysis and optimization of various physical and economic systems.");
+        addStudentAnswerToProblemAnswer(pa11b_project, sa11b_project_student5);
+
+        StudentAnswer sa11c_project_student5 = createStudentAnswer(student5, pa11c_project, "Integrals are used to calculate areas, volumes, and the accumulation of quantities, making them essential in fields like physics, engineering, and economics.");
+        addStudentAnswerToProblemAnswer(pa11c_project, sa11c_project_student5);
+
+        StudentAnswer sa11d_project_student5 = createStudentAnswer(student5, pa11d_project, "Calculus is used to model and analyze dynamic systems, optimize processes, and solve complex problems in science, engineering, and economics.");
+        addStudentAnswerToProblemAnswer(pa11d_project, sa11d_project_student5);
+
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa11a_project_student6 = createStudentAnswer(student6, pa11a_project, "Limits are fundamental to calculus, serving as the foundation for defining continuity, derivatives, and integrals.");
+        addStudentAnswerToProblemAnswer(pa11a_project, sa11a_project_student6);
+
+        StudentAnswer sa11b_project_student6 = createStudentAnswer(student6, pa11b_project, "Derivatives measure how a function changes as its input changes, enabling the analysis and optimization of various physical and economic systems.");
+        addStudentAnswerToProblemAnswer(pa11b_project, sa11b_project_student6);
+
+        StudentAnswer sa11c_project_student6 = createStudentAnswer(student6, pa11c_project, "Integrals are used to calculate areas, volumes, and the accumulation of quantities, making them essential in fields like physics, engineering, and economics.");
+        addStudentAnswerToProblemAnswer(pa11c_project, sa11c_project_student6);
+
+        StudentAnswer sa11d_project_student6 = createStudentAnswer(student6, pa11d_project, "Calculus is used to model and analyze dynamic systems, optimize processes, and solve complex problems in science, engineering, and economics.");
+        addStudentAnswerToProblemAnswer(pa11d_project, sa11d_project_student6);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student5 and student6 for all project-related problem answers.");
+// Creating StudentAnswer instances for student5
+        StudentAnswer sa12a_project_student5 = createStudentAnswer(student5, pa12a_project, "Vectors are used in physics, engineering, and computer graphics to represent quantities that have both magnitude and direction.");
+        addStudentAnswerToProblemAnswer(pa12a_project, sa12a_project_student5);
+
+        StudentAnswer sa12b_project_student5 = createStudentAnswer(student5, pa12b_project, "Matrices provide a structured way to represent and solve systems of linear equations, enabling efficient computation and transformations.");
+        addStudentAnswerToProblemAnswer(pa12b_project, sa12b_project_student5);
+
+        StudentAnswer sa12c_project_student5 = createStudentAnswer(student5, pa12c_project, "Determinants help determine the solvability of a system of linear equations and are used to find the inverse of a matrix.");
+        addStudentAnswerToProblemAnswer(pa12c_project, sa12c_project_student5);
+
+        StudentAnswer sa12d_project_student5 = createStudentAnswer(student5, pa12d_project, "Eigenvalues provide insights into the properties of linear transformations and are used in various applications, including stability analysis and vibration analysis.");
+        addStudentAnswerToProblemAnswer(pa12d_project, sa12d_project_student5);
+
+        StudentAnswer sa12e_project_student5 = createStudentAnswer(student5, pa12e_project, "Eigenvectors are vectors that remain in the same direction under a linear transformation, corresponding to their eigenvalues, and are used in matrix diagonalization and solving systems of linear equations.");
+        addStudentAnswerToProblemAnswer(pa12e_project, sa12e_project_student5);
+
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa12a_project_student6 = createStudentAnswer(student6, pa12a_project, "Vectors are used in physics, engineering, and computer graphics to represent quantities that have both magnitude and direction.");
+        addStudentAnswerToProblemAnswer(pa12a_project, sa12a_project_student6);
+
+        StudentAnswer sa12b_project_student6 = createStudentAnswer(student6, pa12b_project, "Matrices provide a structured way to represent and solve systems of linear equations, enabling efficient computation and transformations.");
+        addStudentAnswerToProblemAnswer(pa12b_project, sa12b_project_student6);
+
+        StudentAnswer sa12c_project_student6 = createStudentAnswer(student6, pa12c_project, "Determinants help determine the solvability of a system of linear equations and are used to find the inverse of a matrix.");
+        addStudentAnswerToProblemAnswer(pa12c_project, sa12c_project_student6);
+
+        StudentAnswer sa12d_project_student6 = createStudentAnswer(student6, pa12d_project, "Eigenvalues provide insights into the properties of linear transformations and are used in various applications, including stability analysis and vibration analysis.");
+        addStudentAnswerToProblemAnswer(pa12d_project, sa12d_project_student6);
+
+        StudentAnswer sa12e_project_student6 = createStudentAnswer(student6, pa12e_project, "Eigenvectors are vectors that remain in the same direction under a linear transformation, corresponding to their eigenvalues, and are used in matrix diagonalization and solving systems of linear equations.");
+        addStudentAnswerToProblemAnswer(pa12e_project, sa12e_project_student6);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student5 and student6 for all project-related problem answers.");
+// Creating StudentAnswer instances for student7
+        StudentAnswer sa13a_project_student7 = createStudentAnswer(student7, pa13a_project, "Sequences and series are fundamental in analyzing the behavior of mathematical functions and in solving problems in calculus and other areas of mathematics.");
+        addStudentAnswerToProblemAnswer(pa13a_project, sa13a_project_student7);
+
+        StudentAnswer sa13b_project_student7 = createStudentAnswer(student7, pa13b_project, "Advanced integration techniques allow for the evaluation of complex integrals, which are essential in solving real-world problems in physics, engineering, and economics.");
+        addStudentAnswerToProblemAnswer(pa13b_project, sa13b_project_student7);
+
+        StudentAnswer sa13c_project_student7 = createStudentAnswer(student7, pa13c_project, "Multivariable functions are used to model and analyze systems with multiple variables, such as in physics, engineering, and economics.");
+        addStudentAnswerToProblemAnswer(pa13c_project, sa13c_project_student7);
+
+        StudentAnswer sa13d_project_student7 = createStudentAnswer(student7, pa13d_project, "Vector calculus provides tools to analyze and solve problems involving vector fields, such as fluid dynamics, electromagnetism, and other applications in physics and engineering.");
+        addStudentAnswerToProblemAnswer(pa13d_project, sa13d_project_student7);
+
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa13a_project_student8 = createStudentAnswer(student8, pa13a_project, "Sequences and series are fundamental in analyzing the behavior of mathematical functions and in solving problems in calculus and other areas of mathematics.");
+        addStudentAnswerToProblemAnswer(pa13a_project, sa13a_project_student8);
+
+        StudentAnswer sa13b_project_student8 = createStudentAnswer(student8, pa13b_project, "Advanced integration techniques allow for the evaluation of complex integrals, which are essential in solving real-world problems in physics, engineering, and economics.");
+        addStudentAnswerToProblemAnswer(pa13b_project, sa13b_project_student8);
+
+        StudentAnswer sa13c_project_student8 = createStudentAnswer(student8, pa13c_project, "Multivariable functions are used to model and analyze systems with multiple variables, such as in physics, engineering, and economics.");
+        addStudentAnswerToProblemAnswer(pa13c_project, sa13c_project_student8);
+
+        StudentAnswer sa13d_project_student8 = createStudentAnswer(student8, pa13d_project, "Vector calculus provides tools to analyze and solve problems involving vector fields, such as fluid dynamics, electromagnetism, and other applications in physics and engineering.");
+        addStudentAnswerToProblemAnswer(pa13d_project, sa13d_project_student8);
+// Creating StudentAnswer instances for student7
+        StudentAnswer sa14a_project_student7 = createStudentAnswer(student7, pa14a_project, "Logic provides a foundation for forming sound arguments and reasoning, enabling effective problem-solving and decision-making.");
+        addStudentAnswerToProblemAnswer(pa14a_project, sa14a_project_student7);
+
+        StudentAnswer sa14b_project_student7 = createStudentAnswer(student7, pa14b_project, "Set theory provides a framework for understanding collections of objects, and is fundamental in areas such as probability, statistics, and algebra.");
+        addStudentAnswerToProblemAnswer(pa14b_project, sa14b_project_student7);
+
+        StudentAnswer sa14c_project_student7 = createStudentAnswer(student7, pa14c_project, "Graph theory allows for the modeling of pairwise relations between objects, facilitating the analysis of networks, paths, and connectivity in various fields.");
+        addStudentAnswerToProblemAnswer(pa14c_project, sa14c_project_student7);
+
+        StudentAnswer sa14d_project_student7 = createStudentAnswer(student7, pa14d_project, "Combinatorics provides techniques for counting, arrangement, and combination of objects, essential in fields such as computer science, cryptography, and optimization.");
+        addStudentAnswerToProblemAnswer(pa14d_project, sa14d_project_student7);
+
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa14a_project_student8 = createStudentAnswer(student8, pa14a_project, "Logic provides a foundation for forming sound arguments and reasoning, enabling effective problem-solving and decision-making.");
+        addStudentAnswerToProblemAnswer(pa14a_project, sa14a_project_student8);
+
+        StudentAnswer sa14b_project_student8 = createStudentAnswer(student8, pa14b_project, "Set theory provides a framework for understanding collections of objects, and is fundamental in areas such as probability, statistics, and algebra.");
+        addStudentAnswerToProblemAnswer(pa14b_project, sa14b_project_student8);
+
+        StudentAnswer sa14c_project_student8 = createStudentAnswer(student8, pa14c_project, "Graph theory allows for the modeling of pairwise relations between objects, facilitating the analysis of networks, paths, and connectivity in various fields.");
+        addStudentAnswerToProblemAnswer(pa14c_project, sa14c_project_student8);
+
+        StudentAnswer sa14d_project_student8 = createStudentAnswer(student8, pa14d_project, "Combinatorics provides techniques for counting, arrangement, and combination of objects, essential in fields such as computer science, cryptography, and optimization.");
+        addStudentAnswerToProblemAnswer(pa14d_project, sa14d_project_student8);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student7 and student8 for all project-related problem answers.");
+// Creating StudentAnswer instances for student7
+        StudentAnswer sa15a_project_student7 = createStudentAnswer(student7, pa15a_project, "Newton's laws describe the relationship between forces and the motion of objects, providing a foundation for understanding mechanics and solving problems in physics.");
+        addStudentAnswerToProblemAnswer(pa15a_project, sa15a_project_student7);
+
+        StudentAnswer sa15b_project_student7 = createStudentAnswer(student7, pa15b_project, "The principles of energy, including kinetic and potential energy, and the conservation of energy, are fundamental to understanding work, power, and efficiency in physical systems.");
+        addStudentAnswerToProblemAnswer(pa15b_project, sa15b_project_student7);
+
+        StudentAnswer sa15c_project_student7 = createStudentAnswer(student7, pa15c_project, "Concepts of motion, including linear, projectile, and circular motion, are analyzed using velocity, acceleration, and the equations of motion to understand and predict the behavior of moving objects.");
+        addStudentAnswerToProblemAnswer(pa15c_project, sa15c_project_student7);
+
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa15a_project_student8 = createStudentAnswer(student8, pa15a_project, "Newton's laws describe the relationship between forces and the motion of objects, providing a foundation for understanding mechanics and solving problems in physics.");
+        addStudentAnswerToProblemAnswer(pa15a_project, sa15a_project_student8);
+
+        StudentAnswer sa15b_project_student8 = createStudentAnswer(student8, pa15b_project, "The principles of energy, including kinetic and potential energy, and the conservation of energy, are fundamental to understanding work, power, and efficiency in physical systems.");
+        addStudentAnswerToProblemAnswer(pa15b_project, sa15b_project_student8);
+
+        StudentAnswer sa15c_project_student8 = createStudentAnswer(student8, pa15c_project, "Concepts of motion, including linear, projectile, and circular motion, are analyzed using velocity, acceleration, and the equations of motion to understand and predict the behavior of moving objects.");
+        addStudentAnswerToProblemAnswer(pa15c_project, sa15c_project_student8);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student7 and student8 for all project-related problem answers.");
+// Creating StudentAnswer instances for student7
+        StudentAnswer sa16a_project_student7 = createStudentAnswer(student7, pa16a_project, "Understanding atomic structure is fundamental to chemistry as it defines the properties of elements and their interactions, laying the groundwork for studying chemical behavior.");
+        addStudentAnswerToProblemAnswer(pa16a_project, sa16a_project_student7);
+
+        StudentAnswer sa16b_project_student7 = createStudentAnswer(student7, pa16b_project, "Chemical bonds determine the structure and stability of molecules and compounds, influencing their physical and chemical properties.");
+        addStudentAnswerToProblemAnswer(pa16b_project, sa16b_project_student7);
+
+        StudentAnswer sa16c_project_student7 = createStudentAnswer(student7, pa16c_project, "Chemical reactions are influenced by factors such as temperature, concentration, pressure, catalysts, and the nature of the reactants, affecting reaction rates and equilibrium.");
+        addStudentAnswerToProblemAnswer(pa16c_project, sa16c_project_student7);
+
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa16a_project_student8 = createStudentAnswer(student8, pa16a_project, "Understanding atomic structure is fundamental to chemistry as it defines the properties of elements and their interactions, laying the groundwork for studying chemical behavior.");
+        addStudentAnswerToProblemAnswer(pa16a_project, sa16a_project_student8);
+
+        StudentAnswer sa16b_project_student8 = createStudentAnswer(student8, pa16b_project, "Chemical bonds determine the structure and stability of molecules and compounds, influencing their physical and chemical properties.");
+        addStudentAnswerToProblemAnswer(pa16b_project, sa16b_project_student8);
+
+        StudentAnswer sa16c_project_student8 = createStudentAnswer(student8, pa16c_project, "Chemical reactions are influenced by factors such as temperature, concentration, pressure, catalysts, and the nature of the reactants, affecting reaction rates and equilibrium.");
+        addStudentAnswerToProblemAnswer(pa16c_project, sa16c_project_student8);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student7 and student8 for all project-related problem answers.");
+// Creating StudentAnswer instances for student9
+        StudentAnswer sa17a_project_student9 = createStudentAnswer(student9, pa17a_project, "Understanding cell structure is fundamental to biology as it provides insights into the function and organization of all living organisms.");
+        addStudentAnswerToProblemAnswer(pa17a_project, sa17a_project_student9);
+
+        StudentAnswer sa17b_project_student9 = createStudentAnswer(student9, pa17b_project, "Genetics helps explain how traits are passed from one generation to the next, providing a foundation for studying biological variation and inheritance.");
+        addStudentAnswerToProblemAnswer(pa17b_project, sa17b_project_student9);
+
+        StudentAnswer sa17c_project_student9 = createStudentAnswer(student9, pa17c_project, "The theory of evolution explains the diversity of life through the processes of natural selection and genetic variation, providing evidence for the common ancestry of all species.");
+        addStudentAnswerToProblemAnswer(pa17c_project, sa17c_project_student9);
+
+        StudentAnswer sa17d_project_student9 = createStudentAnswer(student9, pa17d_project, "Ecology studies the interactions between organisms and their environment, providing insights into ecosystem dynamics, biodiversity, and the impact of human activities on the natural world.");
+        addStudentAnswerToProblemAnswer(pa17d_project, sa17d_project_student9);
+
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa17a_project_student10 = createStudentAnswer(student10, pa17a_project, "Understanding cell structure is fundamental to biology as it provides insights into the function and organization of all living organisms.");
+        addStudentAnswerToProblemAnswer(pa17a_project, sa17a_project_student10);
+
+        StudentAnswer sa17b_project_student10 = createStudentAnswer(student10, pa17b_project, "Genetics helps explain how traits are passed from one generation to the next, providing a foundation for studying biological variation and inheritance.");
+        addStudentAnswerToProblemAnswer(pa17b_project, sa17b_project_student10);
+
+        StudentAnswer sa17c_project_student10 = createStudentAnswer(student10, pa17c_project, "The theory of evolution explains the diversity of life through the processes of natural selection and genetic variation, providing evidence for the common ancestry of all species.");
+        addStudentAnswerToProblemAnswer(pa17c_project, sa17c_project_student10);
+
+        StudentAnswer sa17d_project_student10 = createStudentAnswer(student10, pa17d_project, "Ecology studies the interactions between organisms and their environment, providing insights into ecosystem dynamics, biodiversity, and the impact of human activities on the natural world.");
+        addStudentAnswerToProblemAnswer(pa17d_project, sa17d_project_student10);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student9 and student10 for all project-related problem answers.");
+// Creating StudentAnswer instances for student9
+        StudentAnswer sa18a_project_student9 = createStudentAnswer(student9, pa18a_project, "Engineering disciplines such as civil, mechanical, electrical, and chemical engineering have diverse applications, ranging from infrastructure development to technological innovations in various industries.");
+        addStudentAnswerToProblemAnswer(pa18a_project, sa18a_project_student9);
+
+        StudentAnswer sa18b_project_student9 = createStudentAnswer(student9, pa18b_project, "Problem-solving techniques are crucial in engineering as they enable engineers to identify and address challenges efficiently, leading to innovative solutions and improved processes.");
+        addStudentAnswerToProblemAnswer(pa18b_project, sa18b_project_student9);
+
+        StudentAnswer sa18c_project_student9 = createStudentAnswer(student9, pa18c_project, "The engineering design process provides a systematic approach to problem-solving, guiding engineers through stages such as defining requirements, brainstorming, prototyping, testing, and iteration to develop effective solutions.");
+        addStudentAnswerToProblemAnswer(pa18c_project, sa18c_project_student9);
+
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa18a_project_student10 = createStudentAnswer(student10, pa18a_project, "Engineering disciplines such as civil, mechanical, electrical, and chemical engineering have diverse applications, ranging from infrastructure development to technological innovations in various industries.");
+        addStudentAnswerToProblemAnswer(pa18a_project, sa18a_project_student10);
+
+        StudentAnswer sa18b_project_student10 = createStudentAnswer(student10, pa18b_project, "Problem-solving techniques are crucial in engineering as they enable engineers to identify and address challenges efficiently, leading to innovative solutions and improved processes.");
+        addStudentAnswerToProblemAnswer(pa18b_project, sa18b_project_student10);
+
+        StudentAnswer sa18c_project_student10 = createStudentAnswer(student10, pa18c_project, "The engineering design process provides a systematic approach to problem-solving, guiding engineers through stages such as defining requirements, brainstorming, prototyping, testing, and iteration to develop effective solutions.");
+        addStudentAnswerToProblemAnswer(pa18c_project, sa18c_project_student10);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student9 and student10 for all project-related problem answers.");
+// Creating StudentAnswer instances for student9
+        StudentAnswer sa19a_project_student9 = createStudentAnswer(student9, pa19a_project, "Circuit analysis involves principles such as Ohm's law, Kirchhoff's laws, and various techniques for analyzing DC and AC circuits, essential for understanding voltage, current, and resistance in electrical systems.");
+        addStudentAnswerToProblemAnswer(pa19a_project, sa19a_project_student9);
+
+        StudentAnswer sa19b_project_student9 = createStudentAnswer(student9, pa19b_project, "Signal processing involves the analysis and manipulation of signals using techniques like Fourier transforms and filtering, which are crucial for improving communication systems and digital signal processing (DSP).");
+        addStudentAnswerToProblemAnswer(pa19b_project, sa19b_project_student9);
+
+        StudentAnswer sa19c_project_student9 = createStudentAnswer(student9, pa19c_project, "Systems theory helps in understanding and modeling the behavior of complex systems through concepts such as feedback and control systems, which are essential for analyzing and designing efficient electrical systems.");
+        addStudentAnswerToProblemAnswer(pa19c_project, sa19c_project_student9);
+
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa19a_project_student10 = createStudentAnswer(student10, pa19a_project, "Circuit analysis involves principles such as Ohm's law, Kirchhoff's laws, and various techniques for analyzing DC and AC circuits, essential for understanding voltage, current, and resistance in electrical systems.");
+        addStudentAnswerToProblemAnswer(pa19a_project, sa19a_project_student10);
+
+        StudentAnswer sa19b_project_student10 = createStudentAnswer(student10, pa19b_project, "Signal processing involves the analysis and manipulation of signals using techniques like Fourier transforms and filtering, which are crucial for improving communication systems and digital signal processing (DSP).");
+        addStudentAnswerToProblemAnswer(pa19b_project, sa19b_project_student10);
+
+        StudentAnswer sa19c_project_student10 = createStudentAnswer(student10, pa19c_project, "Systems theory helps in understanding and modeling the behavior of complex systems through concepts such as feedback and control systems, which are essential for analyzing and designing efficient electrical systems.");
+        addStudentAnswerToProblemAnswer(pa19c_project, sa19c_project_student10);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student9 and student10 for all project-related problem answers.");
+// Creating StudentAnswer instances for student9
+        StudentAnswer sa20a_project_student9 = createStudentAnswer(student9, pa20a_project, "Analyzing force systems is crucial for understanding the equilibrium and stability of structures, ensuring safety and reliability in engineering applications.");
+        addStudentAnswerToProblemAnswer(pa20a_project, sa20a_project_student9);
+
+        StudentAnswer sa20b_project_student9 = createStudentAnswer(student9, pa20b_project, "Newton's laws of motion provide the foundation for analyzing the motion of particles and rigid bodies, allowing engineers to predict and optimize their behavior.");
+        addStudentAnswerToProblemAnswer(pa20b_project, sa20b_project_student9);
+
+        StudentAnswer sa20c_project_student9 = createStudentAnswer(student9, pa20c_project, "Thermodynamics principles are essential for understanding energy transfer, heat, and the behavior of gases and liquids, which are crucial for solving engineering problems involving energy and work.");
+        addStudentAnswerToProblemAnswer(pa20c_project, sa20c_project_student9);
+
+        StudentAnswer sa20d_project_student9 = createStudentAnswer(student9, pa20d_project, "Material selection determines the performance, durability, and cost-effectiveness of engineering designs, ensuring that materials meet specific requirements and application needs.");
+        addStudentAnswerToProblemAnswer(pa20d_project, sa20d_project_student9);
+
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa20a_project_student10 = createStudentAnswer(student10, pa20a_project, "Analyzing force systems is crucial for understanding the equilibrium and stability of structures, ensuring safety and reliability in engineering applications.");
+        addStudentAnswerToProblemAnswer(pa20a_project, sa20a_project_student10);
+
+        StudentAnswer sa20b_project_student10 = createStudentAnswer(student10, pa20b_project, "Newton's laws of motion provide the foundation for analyzing the motion of particles and rigid bodies, allowing engineers to predict and optimize their behavior.");
+        addStudentAnswerToProblemAnswer(pa20b_project, sa20b_project_student10);
+
+        StudentAnswer sa20c_project_student10 = createStudentAnswer(student10, pa20c_project, "Thermodynamics principles are essential for understanding energy transfer, heat, and the behavior of gases and liquids, which are crucial for solving engineering problems involving energy and work.");
+        addStudentAnswerToProblemAnswer(pa20c_project, sa20c_project_student10);
+
+        StudentAnswer sa20d_project_student10 = createStudentAnswer(student10, pa20d_project, "Material selection determines the performance, durability, and cost-effectiveness of engineering designs, ensuring that materials meet specific requirements and application needs.");
+        addStudentAnswerToProblemAnswer(pa20d_project, sa20d_project_student10);
+
+// Output for confirmation
+        System.out.println("Student answers created and added for student9 and student10 for all project-related problem answers.");
+
+
+
+
 
         attendanceRepo.saveAllAndFlush(Arrays.asList(attendance1, attendance2, attendance3, attendance4, attendance5, attendance6, attendance7, attendance8, attendance9, attendance10, attendance11, attendance12, attendance13, attendance14, attendance15, attendance16, attendance17, attendance18, attendance19, attendance20));
         resourceRepo.saveAllAndFlush(Arrays.asList(resource1a, resource1b, resource2a, resource2b, resource3a, resource3b, resource4a, resource4b, resource5a, resource5b, resource6a, resource6b, resource7a, resource7b, resource8a, resource8b, resource9a, resource9b, resource10a, resource10b, resource11a, resource11b, resource12a, resource12b, resource13a, resource13b, resource14a, resource14b, resource15a, resource15b, resource16a, resource16b, resource17a, resource17b, resource18a, resource18b, resource19a, resource19b, resource20a, resource20b));
