@@ -1161,7 +1161,6 @@ public class TestSeeder implements CommandLineRunner {
         addTestToProblemAnswer(pa10a_5, test10a);
         addProblemAnswerToTest(test10a, pa10a_5);
 
-
 // Output for confirmation
         System.out.println("Test for 'Threat Analysis' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Encryption
@@ -3460,6 +3459,518 @@ public class TestSeeder implements CommandLineRunner {
 
         StudentAnswer sa8e_5_student4 = createStudentAnswer(student4, pa8e_5, "You can fetch data from an API in JavaScript using the fetch() function or libraries like Axios. For example: fetch('https://api.example.com/data').then(response => response.json()).then(data => console.log(data));.");
         addStudentAnswerToProblemAnswer(pa8e_5, sa8e_5_student4);
+
+        // Creating StudentAnswer instances for student5
+        StudentAnswer sa9a_1_student5 = createStudentAnswer(student5, pa9a_1, "Machine learning is a subset of artificial intelligence that involves developing algorithms that enable computers to learn from and make predictions based on data.");
+        addStudentAnswerToProblemAnswer(pa9a_1, sa9a_1_student5);
+
+        StudentAnswer sa9a_2_student5 = createStudentAnswer(student5, pa9a_2, "Supervised learning algorithms are a type of machine learning where the model is trained on labeled data. Examples include linear regression, decision trees, and support vector machines.");
+        addStudentAnswerToProblemAnswer(pa9a_2, sa9a_2_student5);
+
+        StudentAnswer sa9a_3_student5 = createStudentAnswer(student5, pa9a_3, "Unsupervised learning algorithms are a type of machine learning where the model is trained on unlabeled data. Examples include k-means clustering, hierarchical clustering, and principal component analysis.");
+        addStudentAnswerToProblemAnswer(pa9a_3, sa9a_3_student5);
+
+        StudentAnswer sa9a_4_student5 = createStudentAnswer(student5, pa9a_4, "A neural network is a set of algorithms modeled after the human brain, designed to recognize patterns and make predictions. It consists of layers of interconnected nodes (neurons) that process and transmit information.");
+        addStudentAnswerToProblemAnswer(pa9a_4, sa9a_4_student5);
+
+        StudentAnswer sa9a_5_student5 = createStudentAnswer(student5, pa9a_5, "Overfitting occurs when a machine learning model learns the training data too well, capturing noise and details that do not generalize to new, unseen data. This results in poor performance on test data.");
+        addStudentAnswerToProblemAnswer(pa9a_5, sa9a_5_student5);
+
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa9a_1_student6 = createStudentAnswer(student6, pa9a_1, "Machine learning is a subset of artificial intelligence that involves developing algorithms that enable computers to learn from and make predictions based on data.");
+        addStudentAnswerToProblemAnswer(pa9a_1, sa9a_1_student6);
+
+        StudentAnswer sa9a_2_student6 = createStudentAnswer(student6, pa9a_2, "Supervised learning algorithms are a type of machine learning where the model is trained on labeled data. Examples include linear regression, decision trees, and support vector machines.");
+        addStudentAnswerToProblemAnswer(pa9a_2, sa9a_2_student6);
+
+        StudentAnswer sa9a_3_student6 = createStudentAnswer(student6, pa9a_3, "Unsupervised learning algorithms are a type of machine learning where the model is trained on unlabeled data. Examples include k-means clustering, hierarchical clustering, and principal component analysis.");
+        addStudentAnswerToProblemAnswer(pa9a_3, sa9a_3_student6);
+
+        StudentAnswer sa9a_4_student6 = createStudentAnswer(student6, pa9a_4, "A neural network is a set of algorithms modeled after the human brain, designed to recognize patterns and make predictions. It consists of layers of interconnected nodes (neurons) that process and transmit information.");
+        addStudentAnswerToProblemAnswer(pa9a_4, sa9a_4_student6);
+
+        StudentAnswer sa9a_5_student6 = createStudentAnswer(student6, pa9a_5, "Overfitting occurs when a machine learning model learns the training data too well, capturing noise and details that do not generalize to new, unseen data. This results in poor performance on test data.");
+        addStudentAnswerToProblemAnswer(pa9a_5, sa9a_5_student6);
+
+        // Creating StudentAnswer instances for student5
+        StudentAnswer sa9b_1_student5 = createStudentAnswer(student5, pa9b_1, "A neural network is a set of algorithms modeled after the human brain, designed to recognize patterns and make predictions. It consists of layers of interconnected nodes (neurons) that process and transmit information.");
+        addStudentAnswerToProblemAnswer(pa9b_1, sa9b_1_student5);
+
+        StudentAnswer sa9b_2_student5 = createStudentAnswer(student5, pa9b_2, "The architecture of a neural network typically consists of an input layer, one or more hidden layers, and an output layer. Each layer contains nodes (neurons) that perform computations.");
+        addStudentAnswerToProblemAnswer(pa9b_2, sa9b_2_student5);
+
+        StudentAnswer sa9b_3_student5 = createStudentAnswer(student5, pa9b_3, "A perceptron is the simplest type of artificial neuron, representing a linear binary classifier. It takes multiple input signals, applies weights, sums them, and passes the result through an activation function.");
+        addStudentAnswerToProblemAnswer(pa9b_3, sa9b_3_student5);
+
+        StudentAnswer sa9b_4_student5 = createStudentAnswer(student5, pa9b_4, "Backpropagation is a learning algorithm used in neural networks to adjust the weights of the connections based on the error of the output. It involves calculating the gradient of the loss function and updating the weights to minimize the error.");
+        addStudentAnswerToProblemAnswer(pa9b_4, sa9b_4_student5);
+
+        StudentAnswer sa9b_5_student5 = createStudentAnswer(student5, pa9b_5, "An activation function is a mathematical function used in neural networks to introduce non-linearity into the model. Common activation functions include sigmoid, tanh, and ReLU.");
+        addStudentAnswerToProblemAnswer(pa9b_5, sa9b_5_student5);
+
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa9b_1_student6 = createStudentAnswer(student6, pa9b_1, "A neural network is a set of algorithms modeled after the human brain, designed to recognize patterns and make predictions. It consists of layers of interconnected nodes (neurons) that process and transmit information.");
+        addStudentAnswerToProblemAnswer(pa9b_1, sa9b_1_student6);
+
+        StudentAnswer sa9b_2_student6 = createStudentAnswer(student6, pa9b_2, "The architecture of a neural network typically consists of an input layer, one or more hidden layers, and an output layer. Each layer contains nodes (neurons) that perform computations.");
+        addStudentAnswerToProblemAnswer(pa9b_2, sa9b_2_student6);
+
+        StudentAnswer sa9b_3_student6 = createStudentAnswer(student6, pa9b_3, "A perceptron is the simplest type of artificial neuron, representing a linear binary classifier. It takes multiple input signals, applies weights, sums them, and passes the result through an activation function.");
+        addStudentAnswerToProblemAnswer(pa9b_3, sa9b_3_student6);
+
+        StudentAnswer sa9b_4_student6 = createStudentAnswer(student6, pa9b_4, "Backpropagation is a learning algorithm used in neural networks to adjust the weights of the connections based on the error of the output. It involves calculating the gradient of the loss function and updating the weights to minimize the error.");
+        addStudentAnswerToProblemAnswer(pa9b_4, sa9b_4_student6);
+
+        StudentAnswer sa9b_5_student6 = createStudentAnswer(student6, pa9b_5, "An activation function is a mathematical function used in neural networks to introduce non-linearity into the model. Common activation functions include sigmoid, tanh, and ReLU.");
+        addStudentAnswerToProblemAnswer(pa9b_5, sa9b_5_student6);
+
+        // Creating StudentAnswer instances for student5
+        StudentAnswer sa9c_1_student5 = createStudentAnswer(student5, pa9c_1, "Natural language processing (NLP) is a field of artificial intelligence that enables computers to understand, interpret, and generate human language.");
+        addStudentAnswerToProblemAnswer(pa9c_1, sa9c_1_student5);
+
+        StudentAnswer sa9c_2_student5 = createStudentAnswer(student5, pa9c_2, "Tokenization is the process of breaking down text into smaller units called tokens, such as words, phrases, or sentences. It is a fundamental step in NLP tasks.");
+        addStudentAnswerToProblemAnswer(pa9c_2, sa9c_2_student5);
+
+        StudentAnswer sa9c_3_student5 = createStudentAnswer(student5, pa9c_3, "Sentiment analysis is a technique used in NLP to determine the sentiment or emotional tone of a piece of text. It involves classifying text as positive, negative, or neutral.");
+        addStudentAnswerToProblemAnswer(pa9c_3, sa9c_3_student5);
+
+        StudentAnswer sa9c_4_student5 = createStudentAnswer(student5, pa9c_4, "Named entity recognition (NER) is a technique used in NLP to identify and classify named entities in text, such as people, organizations, locations, and dates.");
+        addStudentAnswerToProblemAnswer(pa9c_4, sa9c_4_student5);
+
+        StudentAnswer sa9c_5_student5 = createStudentAnswer(student5, pa9c_5, "Part-of-speech tagging is a technique used in NLP to assign parts of speech (such as nouns, verbs, adjectives, and adverbs) to each word in a text.");
+        addStudentAnswerToProblemAnswer(pa9c_5, sa9c_5_student5);
+
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa9c_1_student6 = createStudentAnswer(student6, pa9c_1, "Natural language processing (NLP) is a field of artificial intelligence that enables computers to understand, interpret, and generate human language.");
+        addStudentAnswerToProblemAnswer(pa9c_1, sa9c_1_student6);
+
+        StudentAnswer sa9c_2_student6 = createStudentAnswer(student6, pa9c_2, "Tokenization is the process of breaking down text into smaller units called tokens, such as words, phrases, or sentences. It is a fundamental step in NLP tasks.");
+        addStudentAnswerToProblemAnswer(pa9c_2, sa9c_2_student6);
+
+        StudentAnswer sa9c_3_student6 = createStudentAnswer(student6, pa9c_3, "Sentiment analysis is a technique used in NLP to determine the sentiment or emotional tone of a piece of text. It involves classifying text as positive, negative, or neutral.");
+        addStudentAnswerToProblemAnswer(pa9c_3, sa9c_3_student6);
+
+        StudentAnswer sa9c_4_student6 = createStudentAnswer(student6, pa9c_4, "Named entity recognition (NER) is a technique used in NLP to identify and classify named entities in text, such as people, organizations, locations, and dates.");
+        addStudentAnswerToProblemAnswer(pa9c_4, sa9c_4_student6);
+
+        StudentAnswer sa9c_5_student6 = createStudentAnswer(student6, pa9c_5, "Part-of-speech tagging is a technique used in NLP to assign parts of speech (such as nouns, verbs, adjectives, and adverbs) to each word in a text.");
+        addStudentAnswerToProblemAnswer(pa9c_5, sa9c_5_student6);
+
+        // Creating StudentAnswer instances for student5
+        StudentAnswer sa10a_1_student5 = createStudentAnswer(student5, pa10a_1, "Threat analysis is the process of identifying potential security threats and vulnerabilities in a system or network. It involves assessing risks and implementing strategies to mitigate these threats.");
+        addStudentAnswerToProblemAnswer(pa10a_1, sa10a_1_student5);
+
+        StudentAnswer sa10a_2_student5 = createStudentAnswer(student5, pa10a_2, "Risk assessment is the process of evaluating the potential risks that may impact an organization's operations or assets. It involves identifying threats, analyzing their likelihood and impact, and determining appropriate measures to mitigate or manage the risks.");
+        addStudentAnswerToProblemAnswer(pa10a_2, sa10a_2_student5);
+
+        StudentAnswer sa10a_3_student5 = createStudentAnswer(student5, pa10a_3, "Common types of security threats include malware, phishing, denial-of-service (DoS) attacks, man-in-the-middle attacks, and insider threats.");
+        addStudentAnswerToProblemAnswer(pa10a_3, sa10a_3_student5);
+
+        StudentAnswer sa10a_4_student5 = createStudentAnswer(student5, pa10a_4, "Vulnerability assessment is the process of identifying and evaluating vulnerabilities in a system or network. It involves scanning for weaknesses that could be exploited by attackers and assessing the severity of these vulnerabilities.");
+        addStudentAnswerToProblemAnswer(pa10a_4, sa10a_4_student5);
+
+        StudentAnswer sa10a_5_student5 = createStudentAnswer(student5, pa10a_5, "A threat is a potential cause of harm to a system or network, while a vulnerability is a weakness or flaw that can be exploited by a threat to cause harm.");
+        addStudentAnswerToProblemAnswer(pa10a_5, sa10a_5_student5);
+
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa10a_1_student6 = createStudentAnswer(student6, pa10a_1, "Threat analysis is the process of identifying potential security threats and vulnerabilities in a system or network. It involves assessing risks and implementing strategies to mitigate these threats.");
+        addStudentAnswerToProblemAnswer(pa10a_1, sa10a_1_student6);
+
+        StudentAnswer sa10a_2_student6 = createStudentAnswer(student6, pa10a_2, "Risk assessment is the process of evaluating the potential risks that may impact an organization's operations or assets. It involves identifying threats, analyzing their likelihood and impact, and determining appropriate measures to mitigate or manage the risks.");
+        addStudentAnswerToProblemAnswer(pa10a_2, sa10a_2_student6);
+
+        StudentAnswer sa10a_3_student6 = createStudentAnswer(student6, pa10a_3, "Common types of security threats include malware, phishing, denial-of-service (DoS) attacks, man-in-the-middle attacks, and insider threats.");
+        addStudentAnswerToProblemAnswer(pa10a_3, sa10a_3_student6);
+
+        StudentAnswer sa10a_4_student6 = createStudentAnswer(student6, pa10a_4, "Vulnerability assessment is the process of identifying and evaluating vulnerabilities in a system or network. It involves scanning for weaknesses that could be exploited by attackers and assessing the severity of these vulnerabilities.");
+        addStudentAnswerToProblemAnswer(pa10a_4, sa10a_4_student6);
+
+        StudentAnswer sa10a_5_student6 = createStudentAnswer(student6, pa10a_5, "A threat is a potential cause of harm to a system or network, while a vulnerability is a weakness or flaw that can be exploited by a threat to cause harm.");
+        addStudentAnswerToProblemAnswer(pa10a_5, sa10a_5_student6);
+
+        // Creating StudentAnswer instances for student5
+        StudentAnswer sa10b_1_student5 = createStudentAnswer(student5, pa10b_1, "Encryption is the process of converting information into a secure format that can only be read by authorized parties. It protects data by transforming it into an unreadable form.");
+        addStudentAnswerToProblemAnswer(pa10b_1, sa10b_1_student5);
+
+        StudentAnswer sa10b_2_student5 = createStudentAnswer(student5, pa10b_2, "The main types of encryption are symmetric encryption and asymmetric encryption. Symmetric encryption uses the same key for encryption and decryption, while asymmetric encryption uses a pair of keys (public and private) for encryption and decryption.");
+        addStudentAnswerToProblemAnswer(pa10b_2, sa10b_2_student5);
+
+        StudentAnswer sa10b_3_student5 = createStudentAnswer(student5, pa10b_3, "Symmetric encryption is a type of encryption where the same key is used to encrypt and decrypt data. Examples of symmetric encryption algorithms include AES (Advanced Encryption Standard) and DES (Data Encryption Standard).");
+        addStudentAnswerToProblemAnswer(pa10b_3, sa10b_3_student5);
+
+        StudentAnswer sa10b_4_student5 = createStudentAnswer(student5, pa10b_4, "Asymmetric encryption is a type of encryption that uses a pair of keys—a public key for encryption and a private key for decryption. Examples of asymmetric encryption algorithms include RSA (Rivest-Shamir-Adleman) and ECC (Elliptic Curve Cryptography).");
+        addStudentAnswerToProblemAnswer(pa10b_4, sa10b_4_student5);
+
+        StudentAnswer sa10b_5_student5 = createStudentAnswer(student5, pa10b_5, "Encryption is crucial for data protection as it ensures the confidentiality and integrity of sensitive information. It prevents unauthorized access, protects data during transmission, and helps comply with regulatory requirements.");
+        addStudentAnswerToProblemAnswer(pa10b_5, sa10b_5_student5);
+
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa10b_1_student6 = createStudentAnswer(student6, pa10b_1, "Encryption is the process of converting information into a secure format that can only be read by authorized parties. It protects data by transforming it into an unreadable form.");
+        addStudentAnswerToProblemAnswer(pa10b_1, sa10b_1_student6);
+
+        StudentAnswer sa10b_2_student6 = createStudentAnswer(student6, pa10b_2, "The main types of encryption are symmetric encryption and asymmetric encryption. Symmetric encryption uses the same key for encryption and decryption, while asymmetric encryption uses a pair of keys (public and private) for encryption and decryption.");
+        addStudentAnswerToProblemAnswer(pa10b_2, sa10b_2_student6);
+
+        StudentAnswer sa10b_3_student6 = createStudentAnswer(student6, pa10b_3, "Symmetric encryption is a type of encryption where the same key is used to encrypt and decrypt data. Examples of symmetric encryption algorithms include AES (Advanced Encryption Standard) and DES (Data Encryption Standard).");
+        addStudentAnswerToProblemAnswer(pa10b_3, sa10b_3_student6);
+
+        StudentAnswer sa10b_4_student6 = createStudentAnswer(student6, pa10b_4, "Asymmetric encryption is a type of encryption that uses a pair of keys—a public key for encryption and a private key for decryption. Examples of asymmetric encryption algorithms include RSA (Rivest-Shamir-Adleman) and ECC (Elliptic Curve Cryptography).");
+        addStudentAnswerToProblemAnswer(pa10b_4, sa10b_4_student6);
+
+        StudentAnswer sa10b_5_student6 = createStudentAnswer(student6, pa10b_5, "Encryption is crucial for data protection as it ensures the confidentiality and integrity of sensitive information. It prevents unauthorized access, protects data during transmission, and helps comply with regulatory requirements.");
+        addStudentAnswerToProblemAnswer(pa10b_5, sa10b_5_student6);
+
+        // Creating StudentAnswer instances for student5
+        StudentAnswer sa10c_1_student5 = createStudentAnswer(student5, pa10c_1, "Network security involves measures and protocols to protect data during transmission across networks, preventing unauthorized access and ensuring data integrity.");
+        addStudentAnswerToProblemAnswer(pa10c_1, sa10c_1_student5);
+
+        StudentAnswer sa10c_2_student5 = createStudentAnswer(student5, pa10c_2, "A firewall is a network security device that monitors and controls incoming and outgoing network traffic based on predetermined security rules. It acts as a barrier between trusted and untrusted networks.");
+        addStudentAnswerToProblemAnswer(pa10c_2, sa10c_2_student5);
+
+        StudentAnswer sa10c_3_student5 = createStudentAnswer(student5, pa10c_3, "An intrusion detection system (IDS) is a security tool that monitors network traffic for suspicious activity and potential threats. It alerts administrators to potential security breaches.");
+        addStudentAnswerToProblemAnswer(pa10c_3, sa10c_3_student5);
+
+        StudentAnswer sa10c_4_student5 = createStudentAnswer(student5, pa10c_4, "An intrusion prevention system (IPS) is similar to an IDS but can also take action to block or prevent detected threats. It actively monitors and responds to potential security incidents.");
+        addStudentAnswerToProblemAnswer(pa10c_4, sa10c_4_student5);
+
+        StudentAnswer sa10c_5_student5 = createStudentAnswer(student5, pa10c_5, "A virtual private network (VPN) is a secure connection that extends a private network across a public network, such as the internet. It encrypts data transmission, ensuring privacy and security for remote users.");
+        addStudentAnswerToProblemAnswer(pa10c_5, sa10c_5_student5);
+
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa10c_1_student6 = createStudentAnswer(student6, pa10c_1, "Network security involves measures and protocols to protect data during transmission across networks, preventing unauthorized access and ensuring data integrity.");
+        addStudentAnswerToProblemAnswer(pa10c_1, sa10c_1_student6);
+
+        StudentAnswer sa10c_2_student6 = createStudentAnswer(student6, pa10c_2, "A firewall is a network security device that monitors and controls incoming and outgoing network traffic based on predetermined security rules. It acts as a barrier between trusted and untrusted networks.");
+        addStudentAnswerToProblemAnswer(pa10c_2, sa10c_2_student6);
+
+        StudentAnswer sa10c_3_student6 = createStudentAnswer(student6, pa10c_3, "An intrusion detection system (IDS) is a security tool that monitors network traffic for suspicious activity and potential threats. It alerts administrators to potential security breaches.");
+        addStudentAnswerToProblemAnswer(pa10c_3, sa10c_3_student6);
+
+        StudentAnswer sa10c_4_student6 = createStudentAnswer(student6, pa10c_4, "An intrusion prevention system (IPS) is similar to an IDS but can also take action to block or prevent detected threats. It actively monitors and responds to potential security incidents.");
+        addStudentAnswerToProblemAnswer(pa10c_4, sa10c_4_student6);
+
+        StudentAnswer sa10c_5_student6 = createStudentAnswer(student6, pa10c_5, "A virtual private network (VPN) is a secure connection that extends a private network across a public network, such as the internet. It encrypts data transmission, ensuring privacy and security for remote users.");
+        addStudentAnswerToProblemAnswer(pa10c_5, sa10c_5_student6);
+
+        // Creating StudentAnswer instances for student5
+        StudentAnswer sa10d_1_student5 = createStudentAnswer(student5, pa10d_1, "Secure coding involves writing software in a way that minimizes vulnerabilities and ensures the software is resistant to attacks. It involves following best practices and guidelines to prevent security flaws.");
+        addStudentAnswerToProblemAnswer(pa10d_1, sa10d_1_student5);
+
+        StudentAnswer sa10d_2_student5 = createStudentAnswer(student5, pa10d_2, "Common security flaws in software include buffer overflows, SQL injection, cross-site scripting (XSS), cross-site request forgery (CSRF), and improper error handling.");
+        addStudentAnswerToProblemAnswer(pa10d_2, sa10d_2_student5);
+
+        StudentAnswer sa10d_3_student5 = createStudentAnswer(student5, pa10d_3, "Input validation is the process of verifying and sanitizing user inputs to ensure they are safe and meet the expected format. It helps prevent attacks like SQL injection and XSS.");
+        addStudentAnswerToProblemAnswer(pa10d_3, sa10d_3_student5);
+
+        StudentAnswer sa10d_4_student5 = createStudentAnswer(student5, pa10d_4, "The principle of least privilege involves granting users and systems the minimum level of access necessary to perform their functions. It reduces the risk of accidental or malicious damage to systems and data.");
+        addStudentAnswerToProblemAnswer(pa10d_4, sa10d_4_student5);
+
+        StudentAnswer sa10d_5_student5 = createStudentAnswer(student5, pa10d_5, "Secure authentication involves verifying the identity of users and systems using secure methods, such as multi-factor authentication, strong passwords, and cryptographic protocols.");
+        addStudentAnswerToProblemAnswer(pa10d_5, sa10d_5_student5);
+
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa10d_1_student6 = createStudentAnswer(student6, pa10d_1, "Secure coding involves writing software in a way that minimizes vulnerabilities and ensures the software is resistant to attacks. It involves following best practices and guidelines to prevent security flaws.");
+        addStudentAnswerToProblemAnswer(pa10d_1, sa10d_1_student6);
+
+        StudentAnswer sa10d_2_student6 = createStudentAnswer(student6, pa10d_2, "Common security flaws in software include buffer overflows, SQL injection, cross-site scripting (XSS), cross-site request forgery (CSRF), and improper error handling.");
+        addStudentAnswerToProblemAnswer(pa10d_2, sa10d_2_student6);
+
+        StudentAnswer sa10d_3_student6 = createStudentAnswer(student6, pa10d_3, "Input validation is the process of verifying and sanitizing user inputs to ensure they are safe and meet the expected format. It helps prevent attacks like SQL injection and XSS.");
+        addStudentAnswerToProblemAnswer(pa10d_3, sa10d_3_student6);
+
+        StudentAnswer sa10d_4_student6 = createStudentAnswer(student6, pa10d_4, "The principle of least privilege involves granting users and systems the minimum level of access necessary to perform their functions. It reduces the risk of accidental or malicious damage to systems and data.");
+        addStudentAnswerToProblemAnswer(pa10d_4, sa10d_4_student6);
+
+        StudentAnswer sa10d_5_student6 = createStudentAnswer(student6, pa10d_5, "Secure authentication involves verifying the identity of users and systems using secure methods, such as multi-factor authentication, strong passwords, and cryptographic protocols.");
+        addStudentAnswerToProblemAnswer(pa10d_5, sa10d_5_student6);
+
+        // Creating StudentAnswer instances for student5
+        StudentAnswer sa11a_1_student5 = createStudentAnswer(student5, pa11a_1, "A limit is the value that a function approaches as the input approaches a certain point. It is used to define continuity, derivatives, and integrals.");
+        addStudentAnswerToProblemAnswer(pa11a_1, sa11a_1_student5);
+
+        StudentAnswer sa11a_2_student5 = createStudentAnswer(student5, pa11a_2, "To calculate a limit, you can use direct substitution, factoring, rationalizing, or applying the L'Hôpital's Rule if applicable. The method depends on the form of the function.");
+        addStudentAnswerToProblemAnswer(pa11a_2, sa11a_2_student5);
+
+        StudentAnswer sa11a_3_student5 = createStudentAnswer(student5, pa11a_3, "Limits are fundamental in calculus as they are used to define derivatives, integrals, and continuity. They help in understanding the behavior of functions at specific points or as inputs approach infinity.");
+        addStudentAnswerToProblemAnswer(pa11a_3, sa11a_3_student5);
+
+        StudentAnswer sa11a_4_student5 = createStudentAnswer(student5, pa11a_4, "A one-sided limit is the value that a function approaches as the input approaches a certain point from one side (either the left or the right). It is denoted as lim(x→c⁺) f(x) for the right-hand limit and lim(x→c⁻) f(x) for the left-hand limit.");
+        addStudentAnswerToProblemAnswer(pa11a_4, sa11a_4_student5);
+
+        StudentAnswer sa11a_5_student5 = createStudentAnswer(student5, pa11a_5, "An infinite limit describes the behavior of a function as it increases or decreases without bound as the input approaches a certain value. It is denoted as lim(x→c) f(x) = ±∞.");
+        addStudentAnswerToProblemAnswer(pa11a_5, sa11a_5_student5);
+
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa11a_1_student6 = createStudentAnswer(student6, pa11a_1, "A limit is the value that a function approaches as the input approaches a certain point. It is used to define continuity, derivatives, and integrals.");
+        addStudentAnswerToProblemAnswer(pa11a_1, sa11a_1_student6);
+
+        StudentAnswer sa11a_2_student6 = createStudentAnswer(student6, pa11a_2, "To calculate a limit, you can use direct substitution, factoring, rationalizing, or applying the L'Hôpital's Rule if applicable. The method depends on the form of the function.");
+        addStudentAnswerToProblemAnswer(pa11a_2, sa11a_2_student6);
+
+        StudentAnswer sa11a_3_student6 = createStudentAnswer(student6, pa11a_3, "Limits are fundamental in calculus as they are used to define derivatives, integrals, and continuity. They help in understanding the behavior of functions at specific points or as inputs approach infinity.");
+        addStudentAnswerToProblemAnswer(pa11a_3, sa11a_3_student6);
+
+        StudentAnswer sa11a_4_student6 = createStudentAnswer(student6, pa11a_4, "A one-sided limit is the value that a function approaches as the input approaches a certain point from one side (either the left or the right). It is denoted as lim(x→c⁺) f(x) for the right-hand limit and lim(x→c⁻) f(x) for the left-hand limit.");
+        addStudentAnswerToProblemAnswer(pa11a_4, sa11a_4_student6);
+
+        StudentAnswer sa11a_5_student6 = createStudentAnswer(student6, pa11a_5, "An infinite limit describes the behavior of a function as it increases or decreases without bound as the input approaches a certain value. It is denoted as lim(x→c) f(x) = ±∞.");
+        addStudentAnswerToProblemAnswer(pa11a_5, sa11a_5_student6);
+
+        // Creating StudentAnswer instances for student5
+        StudentAnswer sa11b_1_student5 = createStudentAnswer(student5, pa11b_1, "A derivative measures how a function changes as its input changes. It represents the rate of change or slope of the function at a given point.");
+        addStudentAnswerToProblemAnswer(pa11b_1, sa11b_1_student5);
+
+        StudentAnswer sa11b_2_student5 = createStudentAnswer(student5, pa11b_2, "The power rule for differentiation states that if f(x) = x^n, then the derivative f'(x) = n*x^(n-1).");
+        addStudentAnswerToProblemAnswer(pa11b_2, sa11b_2_student5);
+
+        StudentAnswer sa11b_3_student5 = createStudentAnswer(student5, pa11b_3, "The product rule for differentiation states that if f(x) = u(x) * v(x), then the derivative f'(x) = u'(x) * v(x) + u(x) * v'(x).");
+        addStudentAnswerToProblemAnswer(pa11b_3, sa11b_3_student5);
+
+        StudentAnswer sa11b_4_student5 = createStudentAnswer(student5, pa11b_4, "The quotient rule for differentiation states that if f(x) = u(x) / v(x), then the derivative f'(x) = (u'(x) * v(x) - u(x) * v'(x)) / (v(x))^2.");
+        addStudentAnswerToProblemAnswer(pa11b_4, sa11b_4_student5);
+
+        StudentAnswer sa11b_5_student5 = createStudentAnswer(student5, pa11b_5, "The chain rule for differentiation states that if a function y = f(g(x)), then the derivative dy/dx = f'(g(x)) * g'(x).");
+        addStudentAnswerToProblemAnswer(pa11b_5, sa11b_5_student5);
+
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa11b_1_student6 = createStudentAnswer(student6, pa11b_1, "A derivative measures how a function changes as its input changes. It represents the rate of change or slope of the function at a given point.");
+        addStudentAnswerToProblemAnswer(pa11b_1, sa11b_1_student6);
+
+        StudentAnswer sa11b_2_student6 = createStudentAnswer(student6, pa11b_2, "The power rule for differentiation states that if f(x) = x^n, then the derivative f'(x) = n*x^(n-1).");
+        addStudentAnswerToProblemAnswer(pa11b_2, sa11b_2_student6);
+
+        StudentAnswer sa11b_3_student6 = createStudentAnswer(student6, pa11b_3, "The product rule for differentiation states that if f(x) = u(x) * v(x), then the derivative f'(x) = u'(x) * v(x) + u(x) * v'(x).");
+        addStudentAnswerToProblemAnswer(pa11b_3, sa11b_3_student6);
+
+        StudentAnswer sa11b_4_student6 = createStudentAnswer(student6, pa11b_4, "The quotient rule for differentiation states that if f(x) = u(x) / v(x), then the derivative f'(x) = (u'(x) * v(x) - u(x) * v'(x)) / (v(x))^2.");
+        addStudentAnswerToProblemAnswer(pa11b_4, sa11b_4_student6);
+
+        StudentAnswer sa11b_5_student6 = createStudentAnswer(student6, pa11b_5, "The chain rule for differentiation states that if a function y = f(g(x)), then the derivative dy/dx = f'(g(x)) * g'(x).");
+        addStudentAnswerToProblemAnswer(pa11b_5, sa11b_5_student6);
+
+        // Creating StudentAnswer instances for student5
+        StudentAnswer sa11c_1_student5 = createStudentAnswer(student5, pa11c_1, "An integral is a mathematical concept that represents the accumulation of quantities. It is used to calculate areas, volumes, and other quantities that accumulate over a region.");
+        addStudentAnswerToProblemAnswer(pa11c_1, sa11c_1_student5);
+
+        StudentAnswer sa11c_2_student5 = createStudentAnswer(student5, pa11c_2, "The Fundamental Theorem of Calculus links differentiation and integration. It states that the definite integral of a function over an interval is equal to the difference of its antiderivative evaluated at the endpoints of the interval.");
+        addStudentAnswerToProblemAnswer(pa11c_2, sa11c_2_student5);
+
+        StudentAnswer sa11c_3_student5 = createStudentAnswer(student5, pa11c_3, "The two types of integrals are definite integrals and indefinite integrals. Definite integrals have specific limits of integration and calculate a numerical value, while indefinite integrals represent a family of functions and include a constant of integration (C).");
+        addStudentAnswerToProblemAnswer(pa11c_3, sa11c_3_student5);
+
+        StudentAnswer sa11c_4_student5 = createStudentAnswer(student5, pa11c_4, "The method of substitution in integration is used to simplify integrals by substituting a part of the integrand with a new variable. It often makes the integral easier to evaluate.");
+        addStudentAnswerToProblemAnswer(pa11c_4, sa11c_4_student5);
+
+        StudentAnswer sa11c_5_student5 = createStudentAnswer(student5, pa11c_5, "Integration by parts is a technique used to integrate the product of two functions. It is based on the product rule of differentiation and is given by the formula: ∫u dv = uv - ∫v du.");
+        addStudentAnswerToProblemAnswer(pa11c_5, sa11c_5_student5);
+
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa11c_1_student6 = createStudentAnswer(student6, pa11c_1, "An integral is a mathematical concept that represents the accumulation of quantities. It is used to calculate areas, volumes, and other quantities that accumulate over a region.");
+        addStudentAnswerToProblemAnswer(pa11c_1, sa11c_1_student6);
+
+        StudentAnswer sa11c_2_student6 = createStudentAnswer(student6, pa11c_2, "The Fundamental Theorem of Calculus links differentiation and integration. It states that the definite integral of a function over an interval is equal to the difference of its antiderivative evaluated at the endpoints of the interval.");
+        addStudentAnswerToProblemAnswer(pa11c_2, sa11c_2_student6);
+
+        StudentAnswer sa11c_3_student6 = createStudentAnswer(student6, pa11c_3, "The two types of integrals are definite integrals and indefinite integrals. Definite integrals have specific limits of integration and calculate a numerical value, while indefinite integrals represent a family of functions and include a constant of integration (C).");
+        addStudentAnswerToProblemAnswer(pa11c_3, sa11c_3_student6);
+
+        StudentAnswer sa11c_4_student6 = createStudentAnswer(student6, pa11c_4, "The method of substitution in integration is used to simplify integrals by substituting a part of the integrand with a new variable. It often makes the integral easier to evaluate.");
+        addStudentAnswerToProblemAnswer(pa11c_4, sa11c_4_student6);
+
+        StudentAnswer sa11c_5_student6 = createStudentAnswer(student6, pa11c_5, "Integration by parts is a technique used to integrate the product of two functions. It is based on the product rule of differentiation and is given by the formula: ∫u dv = uv - ∫v du.");
+        addStudentAnswerToProblemAnswer(pa11c_5, sa11c_5_student6);
+
+        // Creating StudentAnswer instances for student5
+        StudentAnswer sa11d_1_student5 = createStudentAnswer(student5, pa11d_1, "In physics, calculus is used to model and analyze the motion of objects, calculate forces and energy, and describe the behavior of physical systems. Examples include finding the velocity and acceleration of objects and solving differential equations.");
+        addStudentAnswerToProblemAnswer(pa11d_1, sa11d_1_student5);
+
+        StudentAnswer sa11d_2_student5 = createStudentAnswer(student5, pa11d_2, "In engineering, calculus is used to design and analyze systems and structures, optimize processes, and solve problems related to fluid dynamics, thermodynamics, and electrical circuits. Examples include calculating stress and strain in materials and modeling fluid flow.");
+        addStudentAnswerToProblemAnswer(pa11d_2, sa11d_2_student5);
+
+        StudentAnswer sa11d_3_student5 = createStudentAnswer(student5, pa11d_3, "In economics, calculus is used to model and analyze economic behavior, optimize production and consumption, and study changes in economic variables. Examples include finding marginal cost and revenue, and solving optimization problems in resource allocation.");
+        addStudentAnswerToProblemAnswer(pa11d_3, sa11d_3_student5);
+
+        StudentAnswer sa11d_4_student5 = createStudentAnswer(student5, pa11d_4, "In biology, calculus is used to model population growth, analyze rates of biochemical reactions, and understand the dynamics of ecosystems. Examples include modeling the spread of diseases and calculating the rate of enzyme reactions.");
+        addStudentAnswerToProblemAnswer(pa11d_4, sa11d_4_student5);
+
+        StudentAnswer sa11d_5_student5 = createStudentAnswer(student5, pa11d_5, "In finance, calculus is used to model and analyze financial markets, optimize investment strategies, and calculate the present value of cash flows. Examples include pricing options and other derivatives and solving optimization problems in portfolio management.");
+        addStudentAnswerToProblemAnswer(pa11d_5, sa11d_5_student5);
+
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa11d_1_student6 = createStudentAnswer(student6, pa11d_1, "In physics, calculus is used to model and analyze the motion of objects, calculate forces and energy, and describe the behavior of physical systems. Examples include finding the velocity and acceleration of objects and solving differential equations.");
+        addStudentAnswerToProblemAnswer(pa11d_1, sa11d_1_student6);
+
+        StudentAnswer sa11d_2_student6 = createStudentAnswer(student6, pa11d_2, "In engineering, calculus is used to design and analyze systems and structures, optimize processes, and solve problems related to fluid dynamics, thermodynamics, and electrical circuits. Examples include calculating stress and strain in materials and modeling fluid flow.");
+        addStudentAnswerToProblemAnswer(pa11d_2, sa11d_2_student6);
+
+        StudentAnswer sa11d_3_student6 = createStudentAnswer(student6, pa11d_3, "In economics, calculus is used to model and analyze economic behavior, optimize production and consumption, and study changes in economic variables. Examples include finding marginal cost and revenue, and solving optimization problems in resource allocation.");
+        addStudentAnswerToProblemAnswer(pa11d_3, sa11d_3_student6);
+
+        StudentAnswer sa11d_4_student6 = createStudentAnswer(student6, pa11d_4, "In biology, calculus is used to model population growth, analyze rates of biochemical reactions, and understand the dynamics of ecosystems. Examples include modeling the spread of diseases and calculating the rate of enzyme reactions.");
+        addStudentAnswerToProblemAnswer(pa11d_4, sa11d_4_student6);
+
+        StudentAnswer sa11d_5_student6 = createStudentAnswer(student6, pa11d_5, "In finance, calculus is used to model and analyze financial markets, optimize investment strategies, and calculate the present value of cash flows. Examples include pricing options and other derivatives and solving optimization problems in portfolio management.");
+        addStudentAnswerToProblemAnswer(pa11d_5, sa11d_5_student6);
+
+        // Creating StudentAnswer instances for student5
+        StudentAnswer sa12a_1_student5 = createStudentAnswer(student5, pa12a_1, "A vector is a quantity that has both magnitude and direction. It can be represented graphically by an arrow or algebraically by coordinates.");
+        addStudentAnswerToProblemAnswer(pa12a_1, sa12a_1_student5);
+
+        StudentAnswer sa12a_2_student5 = createStudentAnswer(student5, pa12a_2, "Vectors are added by adding their corresponding components. If A = (a1, a2, a3) and B = (b1, b2, b3), then A + B = (a1 + b1, a2 + b2, a3 + b3).");
+        addStudentAnswerToProblemAnswer(pa12a_2, sa12a_2_student5);
+
+        StudentAnswer sa12a_3_student5 = createStudentAnswer(student5, pa12a_3, "Scalar multiplication involves multiplying a vector by a scalar (a real number). If k is a scalar and A = (a1, a2, a3), then kA = (k*a1, k*a2, k*a3).");
+        addStudentAnswerToProblemAnswer(pa12a_3, sa12a_3_student5);
+
+        StudentAnswer sa12a_4_student5 = createStudentAnswer(student5, pa12a_4, "The dot product of two vectors A and B is a scalar obtained by multiplying their corresponding components and summing the results. If A = (a1, a2, a3) and B = (b1, b2, b3), then A ⋅ B = a1*b1 + a2*b2 + a3*b3.");
+        addStudentAnswerToProblemAnswer(pa12a_4, sa12a_4_student5);
+
+        StudentAnswer sa12a_5_student5 = createStudentAnswer(student5, pa12a_5, "The cross product of two vectors A and B is a vector that is perpendicular to both A and B. If A = (a1, a2, a3) and B = (b1, b2, b3), then A × B = (a2*b3 - a3*b2, a3*b1 - a1*b3, a1*b2 - a2*b1).");
+        addStudentAnswerToProblemAnswer(pa12a_5, sa12a_5_student5);
+
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa12a_1_student6 = createStudentAnswer(student6, pa12a_1, "A vector is a quantity that has both magnitude and direction. It can be represented graphically by an arrow or algebraically by coordinates.");
+        addStudentAnswerToProblemAnswer(pa12a_1, sa12a_1_student6);
+
+        StudentAnswer sa12a_2_student6 = createStudentAnswer(student6, pa12a_2, "Vectors are added by adding their corresponding components. If A = (a1, a2, a3) and B = (b1, b2, b3), then A + B = (a1 + b1, a2 + b2, a3 + b3).");
+        addStudentAnswerToProblemAnswer(pa12a_2, sa12a_2_student6);
+
+        StudentAnswer sa12a_3_student6 = createStudentAnswer(student6, pa12a_3, "Scalar multiplication involves multiplying a vector by a scalar (a real number). If k is a scalar and A = (a1, a2, a3), then kA = (k*a1, k*a2, k*a3).");
+        addStudentAnswerToProblemAnswer(pa12a_3, sa12a_3_student6);
+
+        StudentAnswer sa12a_4_student6 = createStudentAnswer(student6, pa12a_4, "The dot product of two vectors A and B is a scalar obtained by multiplying their corresponding components and summing the results. If A = (a1, a2, a3) and B = (b1, b2, b3), then A ⋅ B = a1*b1 + a2*b2 + a3*b3.");
+        addStudentAnswerToProblemAnswer(pa12a_4, sa12a_4_student6);
+
+        StudentAnswer sa12a_5_student6 = createStudentAnswer(student6, pa12a_5, "The cross product of two vectors A and B is a vector that is perpendicular to both A and B. If A = (a1, a2, a3) and B = (b1, b2, b3), then A × B = (a2*b3 - a3*b2, a3*b1 - a1*b3, a1*b2 - a2*b1).");
+        addStudentAnswerToProblemAnswer(pa12a_5, sa12a_5_student6);
+
+        // Creating StudentAnswer instances for student5
+        StudentAnswer sa12b_1_student5 = createStudentAnswer(student5, pa12b_1, "A matrix is a rectangular array of numbers arranged in rows and columns. It is used to represent linear transformations and solve systems of linear equations.");
+        addStudentAnswerToProblemAnswer(pa12b_1, sa12b_1_student5);
+
+        StudentAnswer sa12b_2_student5 = createStudentAnswer(student5, pa12b_2, "Matrices are added by adding their corresponding elements. If A and B are matrices of the same dimension, then the sum C = A + B is obtained by adding each corresponding element of A and B.");
+        addStudentAnswerToProblemAnswer(pa12b_2, sa12b_2_student5);
+
+        StudentAnswer sa12b_3_student5 = createStudentAnswer(student5, pa12b_3, "Matrix multiplication involves multiplying rows of the first matrix by columns of the second matrix and summing the products. If A is an m×n matrix and B is an n×p matrix, the product AB is an m×p matrix.");
+        addStudentAnswerToProblemAnswer(pa12b_3, sa12b_3_student5);
+
+        StudentAnswer sa12b_4_student5 = createStudentAnswer(student5, pa12b_4, "The identity matrix is a square matrix with ones on the diagonal and zeros elsewhere. It acts as the multiplicative identity in matrix multiplication, meaning AI = IA = A for any matrix A.");
+        addStudentAnswerToProblemAnswer(pa12b_4, sa12b_4_student5);
+
+        StudentAnswer sa12b_5_student5 = createStudentAnswer(student5, pa12b_5, "The inverse of a matrix A is a matrix B such that AB = BA = I, where I is the identity matrix. Not all matrices have inverses; only square matrices that are non-singular (determinant is non-zero) have inverses.");
+        addStudentAnswerToProblemAnswer(pa12b_5, sa12b_5_student5);
+
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa12b_1_student6 = createStudentAnswer(student6, pa12b_1, "A matrix is a rectangular array of numbers arranged in rows and columns. It is used to represent linear transformations and solve systems of linear equations.");
+        addStudentAnswerToProblemAnswer(pa12b_1, sa12b_1_student6);
+
+        StudentAnswer sa12b_2_student6 = createStudentAnswer(student6, pa12b_2, "Matrices are added by adding their corresponding elements. If A and B are matrices of the same dimension, then the sum C = A + B is obtained by adding each corresponding element of A and B.");
+        addStudentAnswerToProblemAnswer(pa12b_2, sa12b_2_student6);
+
+        StudentAnswer sa12b_3_student6 = createStudentAnswer(student6, pa12b_3, "Matrix multiplication involves multiplying rows of the first matrix by columns of the second matrix and summing the products. If A is an m×n matrix and B is an n×p matrix, the product AB is an m×p matrix.");
+        addStudentAnswerToProblemAnswer(pa12b_3, sa12b_3_student6);
+
+        StudentAnswer sa12b_4_student6 = createStudentAnswer(student6, pa12b_4, "The identity matrix is a square matrix with ones on the diagonal and zeros elsewhere. It acts as the multiplicative identity in matrix multiplication, meaning AI = IA = A for any matrix A.");
+        addStudentAnswerToProblemAnswer(pa12b_4, sa12b_4_student6);
+
+        StudentAnswer sa12b_5_student6 = createStudentAnswer(student6, pa12b_5, "The inverse of a matrix A is a matrix B such that AB = BA = I, where I is the identity matrix. Not all matrices have inverses; only square matrices that are non-singular (determinant is non-zero) have inverses.");
+        addStudentAnswerToProblemAnswer(pa12b_5, sa12b_5_student6);
+
+        // Creating StudentAnswer instances for student5
+        StudentAnswer sa12c_1_student5 = createStudentAnswer(student5, pa12c_1, "A determinant is a scalar value that can be computed from the elements of a square matrix. It provides important properties of the matrix, such as whether it is invertible.");
+        addStudentAnswerToProblemAnswer(pa12c_1, sa12c_1_student5);
+
+        StudentAnswer sa12c_2_student5 = createStudentAnswer(student5, pa12c_2, "For a 2x2 matrix A = [[a, b], [c, d]], the determinant is det(A) = ad - bc.");
+        addStudentAnswerToProblemAnswer(pa12c_2, sa12c_2_student5);
+
+        StudentAnswer sa12c_3_student5 = createStudentAnswer(student5, pa12c_3, "For a 3x3 matrix A = [[a, b, c], [d, e, f], [g, h, i]], the determinant is det(A) = a(ei - fh) - b(di - fg) + c(dh - eg).");
+        addStudentAnswerToProblemAnswer(pa12c_3, sa12c_3_student5);
+
+        StudentAnswer sa12c_4_student5 = createStudentAnswer(student5, pa12c_4, "Properties of determinants include: det(AB) = det(A)det(B), det(A^T) = det(A), det(cA) = c^n det(A) for an nxn matrix, and a matrix is invertible if and only if its determinant is non-zero.");
+        addStudentAnswerToProblemAnswer(pa12c_4, sa12c_4_student5);
+
+        StudentAnswer sa12c_5_student5 = createStudentAnswer(student5, pa12c_5, "The cofactor expansion, also known as Laplace expansion, is a method for calculating the determinant of an nxn matrix by expanding along a row or column and using the minors and cofactors.");
+        addStudentAnswerToProblemAnswer(pa12c_5, sa12c_5_student5);
+
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa12c_1_student6 = createStudentAnswer(student6, pa12c_1, "A determinant is a scalar value that can be computed from the elements of a square matrix. It provides important properties of the matrix, such as whether it is invertible.");
+        addStudentAnswerToProblemAnswer(pa12c_1, sa12c_1_student6);
+
+        StudentAnswer sa12c_2_student6 = createStudentAnswer(student6, pa12c_2, "For a 2x2 matrix A = [[a, b], [c, d]], the determinant is det(A) = ad - bc.");
+        addStudentAnswerToProblemAnswer(pa12c_2, sa12c_2_student6);
+
+        StudentAnswer sa12c_3_student6 = createStudentAnswer(student6, pa12c_3, "For a 3x3 matrix A = [[a, b, c], [d, e, f], [g, h, i]], the determinant is det(A) = a(ei - fh) - b(di - fg) + c(dh - eg).");
+        addStudentAnswerToProblemAnswer(pa12c_3, sa12c_3_student6);
+
+        StudentAnswer sa12c_4_student6 = createStudentAnswer(student6, pa12c_4, "Properties of determinants include: det(AB) = det(A)det(B), det(A^T) = det(A), det(cA) = c^n det(A) for an nxn matrix, and a matrix is invertible if and only if its determinant is non-zero.");
+        addStudentAnswerToProblemAnswer(pa12c_4, sa12c_4_student6);
+
+        StudentAnswer sa12c_5_student6 = createStudentAnswer(student6, pa12c_5, "The cofactor expansion, also known as Laplace expansion, is a method for calculating the determinant of an nxn matrix by expanding along a row or column and using the minors and cofactors.");
+        addStudentAnswerToProblemAnswer(pa12c_5, sa12c_5_student6);
+
+        // Creating StudentAnswer instances for student5
+        StudentAnswer sa12d_1_student5 = createStudentAnswer(student5, pa12d_1, "An eigenvalue is a scalar value associated with a matrix that, when multiplied by its corresponding eigenvector, yields the same eigenvector. It is a special number that provides insight into the matrix's properties.");
+        addStudentAnswerToProblemAnswer(pa12d_1, sa12d_1_student5);
+
+        StudentAnswer sa12d_2_student5 = createStudentAnswer(student5, pa12d_2, "To calculate the eigenvalues of a matrix A, solve the characteristic equation det(A - λI) = 0, where λ represents the eigenvalues, I is the identity matrix, and det denotes the determinant.");
+        addStudentAnswerToProblemAnswer(pa12d_2, sa12d_2_student5);
+
+        StudentAnswer sa12d_3_student5 = createStudentAnswer(student5, pa12d_3, "The characteristic polynomial of a matrix A is the polynomial obtained by computing the determinant of (A - λI). The roots of this polynomial are the eigenvalues of the matrix.");
+        addStudentAnswerToProblemAnswer(pa12d_3, sa12d_3_student5);
+
+        StudentAnswer sa12d_4_student5 = createStudentAnswer(student5, pa12d_4, "The geometric multiplicity of an eigenvalue is the number of linearly independent eigenvectors associated with it. It represents the dimension of the eigenspace corresponding to that eigenvalue.");
+        addStudentAnswerToProblemAnswer(pa12d_4, sa12d_4_student5);
+
+        StudentAnswer sa12d_5_student5 = createStudentAnswer(student5, pa12d_5, "The algebraic multiplicity of an eigenvalue is the number of times that eigenvalue appears as a root of the characteristic polynomial. It can be equal to or greater than the geometric multiplicity.");
+        addStudentAnswerToProblemAnswer(pa12d_5, sa12d_5_student5);
+
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa12d_1_student6 = createStudentAnswer(student6, pa12d_1, "An eigenvalue is a scalar value associated with a matrix that, when multiplied by its corresponding eigenvector, yields the same eigenvector. It is a special number that provides insight into the matrix's properties.");
+        addStudentAnswerToProblemAnswer(pa12d_1, sa12d_1_student6);
+
+        StudentAnswer sa12d_2_student6 = createStudentAnswer(student6, pa12d_2, "To calculate the eigenvalues of a matrix A, solve the characteristic equation det(A - λI) = 0, where λ represents the eigenvalues, I is the identity matrix, and det denotes the determinant.");
+        addStudentAnswerToProblemAnswer(pa12d_2, sa12d_2_student6);
+
+        StudentAnswer sa12d_3_student6 = createStudentAnswer(student6, pa12d_3, "The characteristic polynomial of a matrix A is the polynomial obtained by computing the determinant of (A - λI). The roots of this polynomial are the eigenvalues of the matrix.");
+        addStudentAnswerToProblemAnswer(pa12d_3, sa12d_3_student6);
+
+        StudentAnswer sa12d_4_student6 = createStudentAnswer(student6, pa12d_4, "The geometric multiplicity of an eigenvalue is the number of linearly independent eigenvectors associated with it. It represents the dimension of the eigenspace corresponding to that eigenvalue.");
+        addStudentAnswerToProblemAnswer(pa12d_4, sa12d_4_student6);
+
+        StudentAnswer sa12d_5_student6 = createStudentAnswer(student6, pa12d_5, "The algebraic multiplicity of an eigenvalue is the number of times that eigenvalue appears as a root of the characteristic polynomial. It can be equal to or greater than the geometric multiplicity.");
+        addStudentAnswerToProblemAnswer(pa12d_5, sa12d_5_student6);
+
+        // Creating StudentAnswer instances for student5
+        StudentAnswer sa12e_1_student5 = createStudentAnswer(student5, pa12e_1, "An eigenvector is a non-zero vector that changes only in scale (not direction) when a linear transformation is applied to it. It is associated with a specific eigenvalue.");
+        addStudentAnswerToProblemAnswer(pa12e_1, sa12e_1_student5);
+
+        StudentAnswer sa12e_2_student5 = createStudentAnswer(student5, pa12e_2, "Eigenvectors of a matrix A are found by solving the equation (A - λI)x = 0, where λ is an eigenvalue, I is the identity matrix, and x is the eigenvector.");
+        addStudentAnswerToProblemAnswer(pa12e_2, sa12e_2_student5);
+
+        StudentAnswer sa12e_3_student5 = createStudentAnswer(student5, pa12e_3, "Eigenvalues are the scalars associated with eigenvectors. If x is an eigenvector of matrix A with eigenvalue λ, then Ax = λx.");
+        addStudentAnswerToProblemAnswer(pa12e_3, sa12e_3_student5);
+
+        StudentAnswer sa12e_4_student5 = createStudentAnswer(student5, pa12e_4, "An eigenspace is the set of all eigenvectors corresponding to a particular eigenvalue, along with the zero vector. It forms a subspace of the vector space.");
+        addStudentAnswerToProblemAnswer(pa12e_4, sa12e_4_student5);
+
+        StudentAnswer sa12e_5_student5 = createStudentAnswer(student5, pa12e_5, "Matrix diagonalization involves expressing a matrix A as PDP^(-1), where P is a matrix of eigenvectors, D is a diagonal matrix of eigenvalues, and P^(-1) is the inverse of P.");
+        addStudentAnswerToProblemAnswer(pa12e_5, sa12e_5_student5);
+
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa12e_1_student6 = createStudentAnswer(student6, pa12e_1, "An eigenvector is a non-zero vector that changes only in scale (not direction) when a linear transformation is applied to it. It is associated with a specific eigenvalue.");
+        addStudentAnswerToProblemAnswer(pa12e_1, sa12e_1_student6);
+
+        StudentAnswer sa12e_2_student6 = createStudentAnswer(student6, pa12e_2, "Eigenvectors of a matrix A are found by solving the equation (A - λI)x = 0, where λ is an eigenvalue, I is the identity matrix, and x is the eigenvector.");
+        addStudentAnswerToProblemAnswer(pa12e_2, sa12e_2_student6);
+
+        StudentAnswer sa12e_3_student6 = createStudentAnswer(student6, pa12e_3, "Eigenvalues are the scalars associated with eigenvectors. If x is an eigenvector of matrix A with eigenvalue λ, then Ax = λx.");
+        addStudentAnswerToProblemAnswer(pa12e_3, sa12e_3_student6);
+
+        StudentAnswer sa12e_4_student6 = createStudentAnswer(student6, pa12e_4, "An eigenspace is the set of all eigenvectors corresponding to a particular eigenvalue, along with the zero vector. It forms a subspace of the vector space.");
+        addStudentAnswerToProblemAnswer(pa12e_4, sa12e_4_student6);
+
+        StudentAnswer sa12e_5_student6 = createStudentAnswer(student6, pa12e_5, "Matrix diagonalization involves expressing a matrix A as PDP^(-1), where P is a matrix of eigenvectors, D is a diagonal matrix of eigenvalues, and P^(-1) is the inverse of P.");
+        addStudentAnswerToProblemAnswer(pa12e_5, sa12e_5_student6);
 
     }
 
