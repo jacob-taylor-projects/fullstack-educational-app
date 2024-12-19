@@ -5,14 +5,18 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface FacultyRepo extends JpaRepository<Faculty,Long> {
+
+    Faculty findById(long id);
+
     List<Faculty> findByAge(int age);
 
     List<Faculty> findByGender(String gender);
 
-    List<Faculty> findByProfileLastName(String lastName);
+    Faculty findByProfileLastName(String lastName);
 
     List<Faculty> findByCredentialsUsername(String username);
 

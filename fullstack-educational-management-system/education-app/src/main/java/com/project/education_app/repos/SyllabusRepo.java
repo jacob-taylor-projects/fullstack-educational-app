@@ -5,9 +5,13 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface SyllabusRepo extends JpaRepository<Syllabus,Long> {
+
+    Syllabus findById(long id);
+
     List<Syllabus> findByObjectivesContaining(String objectives);
 
     List<Syllabus> findByTopicsContaining(String topics);
