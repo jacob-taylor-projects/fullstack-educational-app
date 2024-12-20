@@ -3972,6 +3972,902 @@ public class TestSeeder implements CommandLineRunner {
         StudentAnswer sa12e_5_student6 = createStudentAnswer(student6, pa12e_5, "Matrix diagonalization involves expressing a matrix A as PDP^(-1), where P is a matrix of eigenvectors, D is a diagonal matrix of eigenvalues, and P^(-1) is the inverse of P.");
         addStudentAnswerToProblemAnswer(pa12e_5, sa12e_5_student6);
 
+        // Creating StudentAnswer instances for student5
+        StudentAnswer sa13a_1_student7 = createStudentAnswer(student7, pa13a_1, "A sequence is an ordered list of numbers that follows a specific pattern or rule. Each number in the sequence is called a term.");
+        addStudentAnswerToProblemAnswer(pa13a_1, sa13a_1_student7);
+
+        StudentAnswer sa13a_2_student7 = createStudentAnswer(student7, pa13a_2, "A series is the sum of the terms of a sequence. It can be finite or infinite, depending on the number of terms being summed.");
+        addStudentAnswerToProblemAnswer(pa13a_2, sa13a_2_student7);
+
+        StudentAnswer sa13a_3_student7 = createStudentAnswer(student7, pa13a_3, "A convergent series is a series whose terms approach a finite limit as the number of terms increases. The series converges to this limit.");
+        addStudentAnswerToProblemAnswer(pa13a_3, sa13a_3_student7);
+
+        StudentAnswer sa13a_4_student7 = createStudentAnswer(student7, pa13a_4, "A divergent series is a series whose terms do not approach a finite limit as the number of terms increases. The series either increases without bound or oscillates indefinitely.");
+        addStudentAnswerToProblemAnswer(pa13a_4, sa13a_4_student7);
+
+        StudentAnswer sa13a_5_student7 = createStudentAnswer(student7, pa13a_5, "A power series is an infinite series of the form Σ(an)(x^n), where an are coefficients and x is the variable. Power series can represent functions within a certain interval of convergence.");
+        addStudentAnswerToProblemAnswer(pa13a_5, sa13a_5_student7);
+
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa13a_1_student8 = createStudentAnswer(student8, pa13a_1, "A sequence is an ordered list of numbers that follows a specific pattern or rule. Each number in the sequence is called a term.");
+        addStudentAnswerToProblemAnswer(pa13a_1, sa13a_1_student8);
+
+        StudentAnswer sa13a_2_student8 = createStudentAnswer(student8, pa13a_2, "A series is the sum of the terms of a sequence. It can be finite or infinite, depending on the number of terms being summed.");
+        addStudentAnswerToProblemAnswer(pa13a_2, sa13a_2_student8);
+
+        StudentAnswer sa13a_3_student8 = createStudentAnswer(student8, pa13a_3, "A convergent series is a series whose terms approach a finite limit as the number of terms increases. The series converges to this limit.");
+        addStudentAnswerToProblemAnswer(pa13a_3, sa13a_3_student8);
+
+        StudentAnswer sa13a_4_student8 = createStudentAnswer(student8, pa13a_4, "A divergent series is a series whose terms do not approach a finite limit as the number of terms increases. The series either increases without bound or oscillates indefinitely.");
+        addStudentAnswerToProblemAnswer(pa13a_4, sa13a_4_student8);
+
+        StudentAnswer sa13a_5_student8 = createStudentAnswer(student8, pa13a_5, "A power series is an infinite series of the form Σ(an)(x^n), where an are coefficients and x is the variable. Power series can represent functions within a certain interval of convergence.");
+        addStudentAnswerToProblemAnswer(pa13a_5, sa13a_5_student8);
+
+        // Creating StudentAnswer instances for student5
+        StudentAnswer sa13b_1_student7 = createStudentAnswer(student7, pa13b_1, "Integration by parts is a technique used to integrate the product of two functions. It is based on the product rule of differentiation and is given by the formula: ∫u dv = uv - ∫v du.");
+        addStudentAnswerToProblemAnswer(pa13b_1, sa13b_1_student7);
+
+        StudentAnswer sa13b_2_student7 = createStudentAnswer(student7, pa13b_2, "Partial fractions integration is a method used to integrate rational functions by expressing them as a sum of simpler fractions. This technique involves decomposing the rational function into partial fractions and then integrating each fraction separately.");
+        addStudentAnswerToProblemAnswer(pa13b_2, sa13b_2_student7);
+
+        StudentAnswer sa13b_3_student7 = createStudentAnswer(student7, pa13b_3, "To integrate trigonometric functions, you can use trigonometric identities, substitution, and integration formulas. Common techniques include using identities to simplify the integrand and applying specific integration formulas for trigonometric functions.");
+        addStudentAnswerToProblemAnswer(pa13b_3, sa13b_3_student7);
+
+        StudentAnswer sa13b_4_student7 = createStudentAnswer(student7, pa13b_4, "Improper integrals are integrals that have infinite limits of integration or integrands with infinite discontinuities. They are evaluated as limits, such as ∫[a, ∞] f(x) dx = lim(b→∞) ∫[a, b] f(x) dx.");
+        addStudentAnswerToProblemAnswer(pa13b_4, sa13b_4_student7);
+
+        StudentAnswer sa13b_5_student7 = createStudentAnswer(student7, pa13b_5, "The substitution method, also known as u-substitution, is used to simplify integrals by substituting a part of the integrand with a new variable. This technique often makes the integral easier to evaluate.");
+        addStudentAnswerToProblemAnswer(pa13b_5, sa13b_5_student7);
+
+// Creating StudentAnswer instances for student6
+        StudentAnswer sa13b_1_student8 = createStudentAnswer(student8, pa13b_1, "Integration by parts is a technique used to integrate the product of two functions. It is based on the product rule of differentiation and is given by the formula: ∫u dv = uv - ∫v du.");
+        addStudentAnswerToProblemAnswer(pa13b_1, sa13b_1_student8);
+
+        StudentAnswer sa13b_2_student8 = createStudentAnswer(student8, pa13b_2, "Partial fractions integration is a method used to integrate rational functions by expressing them as a sum of simpler fractions. This technique involves decomposing the rational function into partial fractions and then integrating each fraction separately.");
+        addStudentAnswerToProblemAnswer(pa13b_2, sa13b_2_student8);
+
+        StudentAnswer sa13b_3_student8 = createStudentAnswer(student8, pa13b_3, "To integrate trigonometric functions, you can use trigonometric identities, substitution, and integration formulas. Common techniques include using identities to simplify the integrand and applying specific integration formulas for trigonometric functions.");
+        addStudentAnswerToProblemAnswer(pa13b_3, sa13b_3_student8);
+
+        StudentAnswer sa13b_4_student8 = createStudentAnswer(student8, pa13b_4, "Improper integrals are integrals that have infinite limits of integration or integrands with infinite discontinuities. They are evaluated as limits, such as ∫[a, ∞] f(x) dx = lim(b→∞) ∫[a, b] f(x) dx.");
+        addStudentAnswerToProblemAnswer(pa13b_4, sa13b_4_student8);
+
+        StudentAnswer sa13b_5_student8 = createStudentAnswer(student8, pa13b_5, "The substitution method, also known as u-substitution, is used to simplify integrals by substituting a part of the integrand with a new variable. This technique often makes the integral easier to evaluate.");
+        addStudentAnswerToProblemAnswer(pa13b_5, sa13b_5_student8);
+
+        // Creating StudentAnswer instances for student7
+        StudentAnswer sa13c_1_student7 = createStudentAnswer(student7, pa13c_1, "A multivariable function is a function that has more than one input variable. It maps a set of input variables to a single output value.");
+        addStudentAnswerToProblemAnswer(pa13c_1, sa13c_1_student7);
+
+        StudentAnswer sa13c_2_student7 = createStudentAnswer(student7, pa13c_2, "A partial derivative is the derivative of a multivariable function with respect to one of its variables, while keeping the other variables constant. It measures how the function changes as that variable changes.");
+        addStudentAnswerToProblemAnswer(pa13c_2, sa13c_2_student7);
+
+        StudentAnswer sa13c_3_student7 = createStudentAnswer(student7, pa13c_3, "A gradient vector is a vector that contains all the partial derivatives of a multivariable function. It points in the direction of the steepest ascent of the function.");
+        addStudentAnswerToProblemAnswer(pa13c_3, sa13c_3_student7);
+
+        StudentAnswer sa13c_4_student7 = createStudentAnswer(student7, pa13c_4, "A level curve is a curve on a graph where the function has a constant value. It represents points in the domain of the function where the function's value is the same.");
+        addStudentAnswerToProblemAnswer(pa13c_4, sa13c_4_student7);
+
+        StudentAnswer sa13c_5_student7 = createStudentAnswer(student7, pa13c_5, "A multiple integral is an integral that involves more than one variable. It is used to calculate the volume under a surface or the accumulation of a quantity over a region.");
+        addStudentAnswerToProblemAnswer(pa13c_5, sa13c_5_student7);
+
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa13c_1_student8 = createStudentAnswer(student8, pa13c_1, "A multivariable function is a function that has more than one input variable. It maps a set of input variables to a single output value.");
+        addStudentAnswerToProblemAnswer(pa13c_1, sa13c_1_student8);
+
+        StudentAnswer sa13c_2_student8 = createStudentAnswer(student8, pa13c_2, "A partial derivative is the derivative of a multivariable function with respect to one of its variables, while keeping the other variables constant. It measures how the function changes as that variable changes.");
+        addStudentAnswerToProblemAnswer(pa13c_2, sa13c_2_student8);
+
+        StudentAnswer sa13c_3_student8 = createStudentAnswer(student8, pa13c_3, "A gradient vector is a vector that contains all the partial derivatives of a multivariable function. It points in the direction of the steepest ascent of the function.");
+        addStudentAnswerToProblemAnswer(pa13c_3, sa13c_3_student8);
+
+        StudentAnswer sa13c_4_student8 = createStudentAnswer(student8, pa13c_4, "A level curve is a curve on a graph where the function has a constant value. It represents points in the domain of the function where the function's value is the same.");
+        addStudentAnswerToProblemAnswer(pa13c_4, sa13c_4_student8);
+
+        StudentAnswer sa13c_5_student8 = createStudentAnswer(student8, pa13c_5, "A multiple integral is an integral that involves more than one variable. It is used to calculate the volume under a surface or the accumulation of a quantity over a region.");
+        addStudentAnswerToProblemAnswer(pa13c_5, sa13c_5_student8);
+
+        // Creating StudentAnswer instances for student7
+        StudentAnswer sa13d_1_student7 = createStudentAnswer(student7, pa13d_1, "A vector field is a function that assigns a vector to every point in a space. It represents the direction and magnitude of a vector quantity, such as velocity or force, at each point.");
+        addStudentAnswerToProblemAnswer(pa13d_1, sa13d_1_student7);
+
+        StudentAnswer sa13d_2_student7 = createStudentAnswer(student7, pa13d_2, "A line integral is an integral that evaluates the work done by a vector field along a curve. It is given by the integral of the dot product of the vector field and the differential element of the curve.");
+        addStudentAnswerToProblemAnswer(pa13d_2, sa13d_2_student7);
+
+        StudentAnswer sa13d_3_student7 = createStudentAnswer(student7, pa13d_3, "Green's Theorem relates the line integral around a simple closed curve to the double integral over the region enclosed by the curve. It is given by ∮C F ⋅ dr = ∬R (∂N/∂x - ∂M/∂y) dA, where F = (M, N) is the vector field.");
+        addStudentAnswerToProblemAnswer(pa13d_3, sa13d_3_student7);
+
+        StudentAnswer sa13d_4_student7 = createStudentAnswer(student7, pa13d_4, "A surface integral is an integral that evaluates the flux of a vector field through a surface. It is given by the integral of the dot product of the vector field and the differential element of the surface.");
+        addStudentAnswerToProblemAnswer(pa13d_4, sa13d_4_student7);
+
+        StudentAnswer sa13d_5_student7 = createStudentAnswer(student7, pa13d_5, "Stokes' Theorem relates the surface integral of the curl of a vector field over a surface to the line integral of the vector field around the boundary of the surface. It is given by ∬S curl(F) ⋅ dS = ∮C F ⋅ dr.");
+        addStudentAnswerToProblemAnswer(pa13d_5, sa13d_5_student7);
+
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa13d_1_student8 = createStudentAnswer(student8, pa13d_1, "A vector field is a function that assigns a vector to every point in a space. It represents the direction and magnitude of a vector quantity, such as velocity or force, at each point.");
+        addStudentAnswerToProblemAnswer(pa13d_1, sa13d_1_student8);
+
+        StudentAnswer sa13d_2_student8 = createStudentAnswer(student8, pa13d_2, "A line integral is an integral that evaluates the work done by a vector field along a curve. It is given by the integral of the dot product of the vector field and the differential element of the curve.");
+        addStudentAnswerToProblemAnswer(pa13d_2, sa13d_2_student8);
+
+        StudentAnswer sa13d_3_student8 = createStudentAnswer(student8, pa13d_3, "Green's Theorem relates the line integral around a simple closed curve to the double integral over the region enclosed by the curve. It is given by ∮C F ⋅ dr = ∬R (∂N/∂x - ∂M/∂y) dA, where F = (M, N) is the vector field.");
+        addStudentAnswerToProblemAnswer(pa13d_3, sa13d_3_student8);
+
+        StudentAnswer sa13d_4_student8 = createStudentAnswer(student8, pa13d_4, "A surface integral is an integral that evaluates the flux of a vector field through a surface. It is given by the integral of the dot product of the vector field and the differential element of the surface.");
+        addStudentAnswerToProblemAnswer(pa13d_4, sa13d_4_student8);
+
+        StudentAnswer sa13d_5_student8 = createStudentAnswer(student8, pa13d_5, "Stokes' Theorem relates the surface integral of the curl of a vector field over a surface to the line integral of the vector field around the boundary of the surface. It is given by ∬S curl(F) ⋅ dS = ∮C F ⋅ dr.");
+        addStudentAnswerToProblemAnswer(pa13d_5, sa13d_5_student8);
+
+// Creating StudentAnswer instances for student7
+        StudentAnswer sa14a_1_student7 = createStudentAnswer(student7, pa14a_1, "Propositional logic is a branch of logic that deals with propositions, which are statements that can be either true or false. It uses logical connectives such as AND, OR, and NOT to form complex logical expressions.");
+        addStudentAnswerToProblemAnswer(pa14a_1, sa14a_1_student7);
+
+        StudentAnswer sa14a_2_student7 = createStudentAnswer(student7, pa14a_2, "Predicate logic, also known as first-order logic, is a branch of logic that extends propositional logic by dealing with predicates, which are functions that return true or false based on the values of their variables. It includes quantifiers such as 'forall' and 'exists'.");
+        addStudentAnswerToProblemAnswer(pa14a_2, sa14a_2_student7);
+
+        StudentAnswer sa14a_3_student7 = createStudentAnswer(student7, pa14a_3, "Logical connectives are symbols or words used to connect propositions and form complex logical expressions. Common logical connectives include AND (∧), OR (∨), NOT (¬), IMPLIES (→), and IFF (↔).");
+        addStudentAnswerToProblemAnswer(pa14a_3, sa14a_3_student7);
+
+        StudentAnswer sa14a_4_student7 = createStudentAnswer(student7, pa14a_4, "A truth table is a tabular representation of all possible truth values of logical expressions. It lists all possible combinations of truth values for the variables involved and the resulting truth value of the expression for each combination.");
+        addStudentAnswerToProblemAnswer(pa14a_4, sa14a_4_student7);
+
+        StudentAnswer sa14a_5_student7 = createStudentAnswer(student7, pa14a_5, "Logical equivalence is a relationship between two logical expressions that have the same truth values in all possible scenarios. If two expressions are logically equivalent, they can be substituted for each other in logical arguments.");
+        addStudentAnswerToProblemAnswer(pa14a_5, sa14a_5_student7);
+
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa14a_1_student8 = createStudentAnswer(student8, pa14a_1, "Propositional logic is a branch of logic that deals with propositions, which are statements that can be either true or false. It uses logical connectives such as AND, OR, and NOT to form complex logical expressions.");
+        addStudentAnswerToProblemAnswer(pa14a_1, sa14a_1_student8);
+
+        StudentAnswer sa14a_2_student8 = createStudentAnswer(student8, pa14a_2, "Predicate logic, also known as first-order logic, is a branch of logic that extends propositional logic by dealing with predicates, which are functions that return true or false based on the values of their variables. It includes quantifiers such as 'forall' and 'exists'.");
+        addStudentAnswerToProblemAnswer(pa14a_2, sa14a_2_student8);
+
+        StudentAnswer sa14a_3_student8 = createStudentAnswer(student8, pa14a_3, "Logical connectives are symbols or words used to connect propositions and form complex logical expressions. Common logical connectives include AND (∧), OR (∨), NOT (¬), IMPLIES (→), and IFF (↔).");
+        addStudentAnswerToProblemAnswer(pa14a_3, sa14a_3_student8);
+
+        StudentAnswer sa14a_4_student8 = createStudentAnswer(student8, pa14a_4, "A truth table is a tabular representation of all possible truth values of logical expressions. It lists all possible combinations of truth values for the variables involved and the resulting truth value of the expression for each combination.");
+        addStudentAnswerToProblemAnswer(pa14a_4, sa14a_4_student8);
+
+        StudentAnswer sa14a_5_student8 = createStudentAnswer(student8, pa14a_5, "Logical equivalence is a relationship between two logical expressions that have the same truth values in all possible scenarios. If two expressions are logically equivalent, they can be substituted for each other in logical arguments.");
+        addStudentAnswerToProblemAnswer(pa14a_5, sa14a_5_student8);
+
+        // Creating StudentAnswer instances for student7
+        StudentAnswer sa14b_1_student7 = createStudentAnswer(student7, pa14b_1, "A set is a collection of distinct objects, considered as an object in its own right. Sets are usually denoted by capital letters and their elements are listed within curly brackets, e.g., A = {1, 2, 3}.");
+        addStudentAnswerToProblemAnswer(pa14b_1, sa14b_1_student7);
+
+        StudentAnswer sa14b_2_student7 = createStudentAnswer(student7, pa14b_2, "A subset is a set whose elements are all contained in another set. If A and B are sets, A is a subset of B if every element of A is also an element of B, denoted as A ⊆ B.");
+        addStudentAnswerToProblemAnswer(pa14b_2, sa14b_2_student7);
+
+        StudentAnswer sa14b_3_student7 = createStudentAnswer(student7, pa14b_3, "The union of sets is a set containing all elements from the given sets. For sets A and B, the union is denoted as A ∪ B and consists of all elements that are in A, in B, or in both.");
+        addStudentAnswerToProblemAnswer(pa14b_3, sa14b_3_student7);
+
+        StudentAnswer sa14b_4_student7 = createStudentAnswer(student7, pa14b_4, "The intersection of sets is a set containing only the elements that are common to the given sets. For sets A and B, the intersection is denoted as A ∩ B and consists of all elements that are in both A and B.");
+        addStudentAnswerToProblemAnswer(pa14b_4, sa14b_4_student7);
+
+        StudentAnswer sa14b_5_student7 = createStudentAnswer(student7, pa14b_5, "The difference of sets is a set containing the elements that are in one set but not in another. For sets A and B, the difference is denoted as A - B and consists of all elements that are in A but not in B.");
+        addStudentAnswerToProblemAnswer(pa14b_5, sa14b_5_student7);
+
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa14b_1_student8 = createStudentAnswer(student8, pa14b_1, "A set is a collection of distinct objects, considered as an object in its own right. Sets are usually denoted by capital letters and their elements are listed within curly brackets, e.g., A = {1, 2, 3}.");
+        addStudentAnswerToProblemAnswer(pa14b_1, sa14b_1_student8);
+
+        StudentAnswer sa14b_2_student8 = createStudentAnswer(student8, pa14b_2, "A subset is a set whose elements are all contained in another set. If A and B are sets, A is a subset of B if every element of A is also an element of B, denoted as A ⊆ B.");
+        addStudentAnswerToProblemAnswer(pa14b_2, sa14b_2_student8);
+
+        StudentAnswer sa14b_3_student8 = createStudentAnswer(student8, pa14b_3, "The union of sets is a set containing all elements from the given sets. For sets A and B, the union is denoted as A ∪ B and consists of all elements that are in A, in B, or in both.");
+        addStudentAnswerToProblemAnswer(pa14b_3, sa14b_3_student8);
+
+        StudentAnswer sa14b_4_student8 = createStudentAnswer(student8, pa14b_4, "The intersection of sets is a set containing only the elements that are common to the given sets. For sets A and B, the intersection is denoted as A ∩ B and consists of all elements that are in both A and B.");
+        addStudentAnswerToProblemAnswer(pa14b_4, sa14b_4_student8);
+
+        StudentAnswer sa14b_5_student8 = createStudentAnswer(student8, pa14b_5, "The difference of sets is a set containing the elements that are in one set but not in another. For sets A and B, the difference is denoted as A - B and consists of all elements that are in A but not in B.");
+        addStudentAnswerToProblemAnswer(pa14b_5, sa14b_5_student8);
+
+        // Creating StudentAnswer instances for student7
+        StudentAnswer sa14c_1_student7 = createStudentAnswer(student7, pa14c_1, "A graph is a mathematical structure consisting of a set of vertices (nodes) and a set of edges (lines) that connect pairs of vertices. Graphs are used to model pairwise relations between objects.");
+        addStudentAnswerToProblemAnswer(pa14c_1, sa14c_1_student7);
+
+        StudentAnswer sa14c_2_student7 = createStudentAnswer(student7, pa14c_2, "In a directed graph, edges have a direction, indicating a one-way relationship between vertices. In an undirected graph, edges have no direction, indicating a two-way relationship between vertices.");
+        addStudentAnswerToProblemAnswer(pa14c_2, sa14c_2_student7);
+
+        StudentAnswer sa14c_3_student7 = createStudentAnswer(student7, pa14c_3, "A path in a graph is a sequence of vertices connected by edges. A path can be simple (no repeated vertices) or general (vertices can be repeated). The length of a path is the number of edges it contains.");
+        addStudentAnswerToProblemAnswer(pa14c_3, sa14c_3_student7);
+
+        StudentAnswer sa14c_4_student7 = createStudentAnswer(student7, pa14c_4, "A cycle in a graph is a path that starts and ends at the same vertex, with no other repeated vertices. Cycles are used to study the connectivity and structure of graphs.");
+        addStudentAnswerToProblemAnswer(pa14c_4, sa14c_4_student7);
+
+        StudentAnswer sa14c_5_student7 = createStudentAnswer(student7, pa14c_5, "A connected graph is a graph in which there is a path between every pair of vertices. In a connected graph, all vertices are reachable from any other vertex.");
+        addStudentAnswerToProblemAnswer(pa14c_5, sa14c_5_student7);
+
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa14c_1_student8 = createStudentAnswer(student8, pa14c_1, "A graph is a mathematical structure consisting of a set of vertices (nodes) and a set of edges (lines) that connect pairs of vertices. Graphs are used to model pairwise relations between objects.");
+        addStudentAnswerToProblemAnswer(pa14c_1, sa14c_1_student8);
+
+        StudentAnswer sa14c_2_student8 = createStudentAnswer(student8, pa14c_2, "In a directed graph, edges have a direction, indicating a one-way relationship between vertices. In an undirected graph, edges have no direction, indicating a two-way relationship between vertices.");
+        addStudentAnswerToProblemAnswer(pa14c_2, sa14c_2_student8);
+
+        StudentAnswer sa14c_3_student8 = createStudentAnswer(student8, pa14c_3, "A path in a graph is a sequence of vertices connected by edges. A path can be simple (no repeated vertices) or general (vertices can be repeated). The length of a path is the number of edges it contains.");
+        addStudentAnswerToProblemAnswer(pa14c_3, sa14c_3_student8);
+
+        StudentAnswer sa14c_4_student8 = createStudentAnswer(student8, pa14c_4, "A cycle in a graph is a path that starts and ends at the same vertex, with no other repeated vertices. Cycles are used to study the connectivity and structure of graphs.");
+        addStudentAnswerToProblemAnswer(pa14c_4, sa14c_4_student8);
+
+        StudentAnswer sa14c_5_student8 = createStudentAnswer(student8, pa14c_5, "A connected graph is a graph in which there is a path between every pair of vertices. In a connected graph, all vertices are reachable from any other vertex.");
+        addStudentAnswerToProblemAnswer(pa14c_5, sa14c_5_student8);
+
+        // Creating StudentAnswer instances for student7
+        StudentAnswer sa14d_1_student7 = createStudentAnswer(student7, pa14d_1, "Combinatorics is the branch of mathematics that deals with counting, arrangement, and combination of objects. It involves studying finite structures and solving problems related to discrete objects.");
+        addStudentAnswerToProblemAnswer(pa14d_1, sa14d_1_student7);
+
+        StudentAnswer sa14d_2_student7 = createStudentAnswer(student7, pa14d_2, "A permutation is an arrangement of objects in a specific order. The number of permutations of n distinct objects is given by n!, where ! denotes factorial.");
+        addStudentAnswerToProblemAnswer(pa14d_2, sa14d_2_student7);
+
+        StudentAnswer sa14d_3_student7 = createStudentAnswer(student7, pa14d_3, "A combination is a selection of objects without regard to order. The number of combinations of n objects taken r at a time is given by the binomial coefficient C(n, r) = n! / (r!(n - r)!).");
+        addStudentAnswerToProblemAnswer(pa14d_3, sa14d_3_student7);
+
+        StudentAnswer sa14d_4_student7 = createStudentAnswer(student7, pa14d_4, "The principle of inclusion-exclusion is a method for counting the number of elements in the union of overlapping sets. It involves adding the sizes of individual sets and subtracting the sizes of their pairwise intersections, and so on.");
+        addStudentAnswerToProblemAnswer(pa14d_4, sa14d_4_student7);
+
+        StudentAnswer sa14d_5_student7 = createStudentAnswer(student7, pa14d_5, "A binomial coefficient, denoted C(n, r) or (n choose r), represents the number of ways to choose r objects from a set of n objects without regard to order. It is given by the formula C(n, r) = n! / (r!(n - r)!).");
+        addStudentAnswerToProblemAnswer(pa14d_5, sa14d_5_student7);
+
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa14d_1_student8 = createStudentAnswer(student8, pa14d_1, "Combinatorics is the branch of mathematics that deals with counting, arrangement, and combination of objects. It involves studying finite structures and solving problems related to discrete objects.");
+        addStudentAnswerToProblemAnswer(pa14d_1, sa14d_1_student8);
+
+        StudentAnswer sa14d_2_student8 = createStudentAnswer(student8, pa14d_2, "A permutation is an arrangement of objects in a specific order. The number of permutations of n distinct objects is given by n!, where ! denotes factorial.");
+        addStudentAnswerToProblemAnswer(pa14d_2, sa14d_2_student8);
+
+        StudentAnswer sa14d_3_student8 = createStudentAnswer(student8, pa14d_3, "A combination is a selection of objects without regard to order. The number of combinations of n objects taken r at a time is given by the binomial coefficient C(n, r) = n! / (r!(n - r)!).");
+        addStudentAnswerToProblemAnswer(pa14d_3, sa14d_3_student8);
+
+        StudentAnswer sa14d_4_student8 = createStudentAnswer(student8, pa14d_4, "The principle of inclusion-exclusion is a method for counting the number of elements in the union of overlapping sets. It involves adding the sizes of individual sets and subtracting the sizes of their pairwise intersections, and so on.");
+        addStudentAnswerToProblemAnswer(pa14d_4, sa14d_4_student8);
+
+        StudentAnswer sa14d_5_student8 = createStudentAnswer(student8, pa14d_5, "A binomial coefficient, denoted C(n, r) or (n choose r), represents the number of ways to choose r objects from a set of n objects without regard to order. It is given by the formula C(n, r) = n! / (r!(n - r)!).");
+        addStudentAnswerToProblemAnswer(pa14d_5, sa14d_5_student8);
+
+        // Creating StudentAnswer instances for student7
+        StudentAnswer sa15a_1_student7 = createStudentAnswer(student7, pa15a_1, "Newton's First Law of Motion, also known as the Law of Inertia, states that an object will remain at rest or in uniform motion in a straight line unless acted upon by an external force.");
+        addStudentAnswerToProblemAnswer(pa15a_1, sa15a_1_student7);
+
+        StudentAnswer sa15a_2_student7 = createStudentAnswer(student7, pa15a_2, "Newton's Second Law of Motion states that the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass. It is expressed by the equation F = ma, where F is the force, m is the mass, and a is the acceleration.");
+        addStudentAnswerToProblemAnswer(pa15a_2, sa15a_2_student7);
+
+        StudentAnswer sa15a_3_student7 = createStudentAnswer(student7, pa15a_3, "Newton's Third Law of Motion states that for every action, there is an equal and opposite reaction. This means that if one body exerts a force on another body, the second body exerts a force of equal magnitude but in the opposite direction on the first body.");
+        addStudentAnswerToProblemAnswer(pa15a_3, sa15a_3_student7);
+
+        StudentAnswer sa15a_4_student7 = createStudentAnswer(student7, pa15a_4, "Inertia is the property of an object to resist changes in its state of motion. It is directly related to the mass of the object: the greater the mass, the greater the inertia.");
+        addStudentAnswerToProblemAnswer(pa15a_4, sa15a_4_student7);
+
+        StudentAnswer sa15a_5_student7 = createStudentAnswer(student7, pa15a_5, "In a car crash, the passengers inside the car continue moving at the car's speed due to inertia until an external force, such as a seatbelt or airbag, acts to decelerate them and bring them to a stop.");
+        addStudentAnswerToProblemAnswer(pa15a_5, sa15a_5_student7);
+
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa15a_1_student8 = createStudentAnswer(student8, pa15a_1, "Newton's First Law of Motion, also known as the Law of Inertia, states that an object will remain at rest or in uniform motion in a straight line unless acted upon by an external force.");
+        addStudentAnswerToProblemAnswer(pa15a_1, sa15a_1_student8);
+
+        StudentAnswer sa15a_2_student8 = createStudentAnswer(student8, pa15a_2, "Newton's Second Law of Motion states that the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass. It is expressed by the equation F = ma, where F is the force, m is the mass, and a is the acceleration.");
+        addStudentAnswerToProblemAnswer(pa15a_2, sa15a_2_student8);
+
+        StudentAnswer sa15a_3_student8 = createStudentAnswer(student8, pa15a_3, "Newton's Third Law of Motion states that for every action, there is an equal and opposite reaction. This means that if one body exerts a force on another body, the second body exerts a force of equal magnitude but in the opposite direction on the first body.");
+        addStudentAnswerToProblemAnswer(pa15a_3, sa15a_3_student8);
+
+        StudentAnswer sa15a_4_student8 = createStudentAnswer(student8, pa15a_4, "Inertia is the property of an object to resist changes in its state of motion. It is directly related to the mass of the object: the greater the mass, the greater the inertia.");
+        addStudentAnswerToProblemAnswer(pa15a_4, sa15a_4_student8);
+
+        StudentAnswer sa15a_5_student8 = createStudentAnswer(student8, pa15a_5, "In a car crash, the passengers inside the car continue moving at the car's speed due to inertia until an external force, such as a seatbelt or airbag, acts to decelerate them and bring them to a stop.");
+        addStudentAnswerToProblemAnswer(pa15a_5, sa15a_5_student8);
+
+        // Creating StudentAnswer instances for student7
+        StudentAnswer sa15b_1_student7 = createStudentAnswer(student7, pa15b_1, "Kinetic energy is the energy possessed by an object due to its motion. It is calculated using the formula KE = 1/2 mv^2, where m is the mass and v is the velocity of the object.");
+        addStudentAnswerToProblemAnswer(pa15b_1, sa15b_1_student7);
+
+        StudentAnswer sa15b_2_student7 = createStudentAnswer(student7, pa15b_2, "Potential energy is the energy stored in an object due to its position or configuration. Examples include gravitational potential energy (U = mgh) and elastic potential energy (U = 1/2 kx^2).");
+        addStudentAnswerToProblemAnswer(pa15b_2, sa15b_2_student7);
+
+        StudentAnswer sa15b_3_student7 = createStudentAnswer(student7, pa15b_3, "The work-energy theorem states that the work done on an object is equal to the change in its kinetic energy. It is expressed as W = ΔKE, where W is the work done and ΔKE is the change in kinetic energy.");
+        addStudentAnswerToProblemAnswer(pa15b_3, sa15b_3_student7);
+
+        StudentAnswer sa15b_4_student7 = createStudentAnswer(student7, pa15b_4, "The principle of conservation of energy states that energy cannot be created or destroyed, only transformed from one form to another. The total energy in an isolated system remains constant.");
+        addStudentAnswerToProblemAnswer(pa15b_4, sa15b_4_student7);
+
+        StudentAnswer sa15b_5_student7 = createStudentAnswer(student7, pa15b_5, "Power is the rate at which work is done or energy is transferred. It is calculated using the formula P = W/t, where P is power, W is work, and t is time. The unit of power is the watt (W).");
+        addStudentAnswerToProblemAnswer(pa15b_5, sa15b_5_student7);
+
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa15b_1_student8 = createStudentAnswer(student8, pa15b_1, "Kinetic energy is the energy possessed by an object due to its motion. It is calculated using the formula KE = 1/2 mv^2, where m is the mass and v is the velocity of the object.");
+        addStudentAnswerToProblemAnswer(pa15b_1, sa15b_1_student8);
+
+        StudentAnswer sa15b_2_student8 = createStudentAnswer(student8, pa15b_2, "Potential energy is the energy stored in an object due to its position or configuration. Examples include gravitational potential energy (U = mgh) and elastic potential energy (U = 1/2 kx^2).");
+        addStudentAnswerToProblemAnswer(pa15b_2, sa15b_2_student8);
+
+        StudentAnswer sa15b_3_student8 = createStudentAnswer(student8, pa15b_3, "The work-energy theorem states that the work done on an object is equal to the change in its kinetic energy. It is expressed as W = ΔKE, where W is the work done and ΔKE is the change in kinetic energy.");
+        addStudentAnswerToProblemAnswer(pa15b_3, sa15b_3_student8);
+
+        StudentAnswer sa15b_4_student8 = createStudentAnswer(student8, pa15b_4, "The principle of conservation of energy states that energy cannot be created or destroyed, only transformed from one form to another. The total energy in an isolated system remains constant.");
+        addStudentAnswerToProblemAnswer(pa15b_4, sa15b_4_student8);
+
+        StudentAnswer sa15b_5_student8 = createStudentAnswer(student8, pa15b_5, "Power is the rate at which work is done or energy is transferred. It is calculated using the formula P = W/t, where P is power, W is work, and t is time. The unit of power is the watt (W).");
+        addStudentAnswerToProblemAnswer(pa15b_5, sa15b_5_student8);
+
+        // Creating StudentAnswer instances for student7
+        StudentAnswer sa15c_1_student7 = createStudentAnswer(student7, pa15c_1, "Linear motion is the movement of an object along a straight line. It can be described by parameters such as displacement, velocity, and acceleration.");
+        addStudentAnswerToProblemAnswer(pa15c_1, sa15c_1_student7);
+
+        StudentAnswer sa15c_2_student7 = createStudentAnswer(student7, pa15c_2, "Projectile motion is the curved path that an object follows when it is thrown or propelled near the surface of the Earth. It is influenced by gravity and can be analyzed using the equations of motion.");
+        addStudentAnswerToProblemAnswer(pa15c_2, sa15c_2_student7);
+
+        StudentAnswer sa15c_3_student7 = createStudentAnswer(student7, pa15c_3, "Circular motion is the movement of an object along a circular path. It can be characterized by parameters such as angular displacement, angular velocity, and centripetal acceleration.");
+        addStudentAnswerToProblemAnswer(pa15c_3, sa15c_3_student7);
+
+        StudentAnswer sa15c_4_student7 = createStudentAnswer(student7, pa15c_4, "Velocity is the rate of change of displacement with respect to time. It is a vector quantity with both magnitude and direction. The formula for velocity is v = Δx / Δt, where Δx is the displacement and Δt is the time interval.");
+        addStudentAnswerToProblemAnswer(pa15c_4, sa15c_4_student7);
+
+        StudentAnswer sa15c_5_student7 = createStudentAnswer(student7, pa15c_5, "Acceleration is the rate of change of velocity with respect to time. It is a vector quantity and can be positive (speeding up) or negative (slowing down). The formula for acceleration is a = Δv / Δt, where Δv is the change in velocity and Δt is the time interval.");
+        addStudentAnswerToProblemAnswer(pa15c_5, sa15c_5_student7);
+
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa15c_1_student8 = createStudentAnswer(student8, pa15c_1, "Linear motion is the movement of an object along a straight line. It can be described by parameters such as displacement, velocity, and acceleration.");
+        addStudentAnswerToProblemAnswer(pa15c_1, sa15c_1_student8);
+
+        StudentAnswer sa15c_2_student8 = createStudentAnswer(student8, pa15c_2, "Projectile motion is the curved path that an object follows when it is thrown or propelled near the surface of the Earth. It is influenced by gravity and can be analyzed using the equations of motion.");
+        addStudentAnswerToProblemAnswer(pa15c_2, sa15c_2_student8);
+
+        StudentAnswer sa15c_3_student8 = createStudentAnswer(student8, pa15c_3, "Circular motion is the movement of an object along a circular path. It can be characterized by parameters such as angular displacement, angular velocity, and centripetal acceleration.");
+        addStudentAnswerToProblemAnswer(pa15c_3, sa15c_3_student8);
+
+        StudentAnswer sa15c_4_student8 = createStudentAnswer(student8, pa15c_4, "Velocity is the rate of change of displacement with respect to time. It is a vector quantity with both magnitude and direction. The formula for velocity is v = Δx / Δt, where Δx is the displacement and Δt is the time interval.");
+        addStudentAnswerToProblemAnswer(pa15c_4, sa15c_4_student8);
+
+        StudentAnswer sa15c_5_student8 = createStudentAnswer(student8, pa15c_5, "Acceleration is the rate of change of velocity with respect to time. It is a vector quantity and can be positive (speeding up) or negative (slowing down). The formula for acceleration is a = Δv / Δt, where Δv is the change in velocity and Δt is the time interval.");
+        addStudentAnswerToProblemAnswer(pa15c_5, sa15c_5_student8);
+
+        // Creating StudentAnswer instances for student7
+        StudentAnswer sa16a_1_student7 = createStudentAnswer(student7, pa16a_1, "The three main subatomic particles in an atom are protons, neutrons, and electrons. Protons and neutrons are located in the nucleus, while electrons orbit the nucleus.");
+        addStudentAnswerToProblemAnswer(pa16a_1, sa16a_1_student7);
+
+        StudentAnswer sa16a_2_student7 = createStudentAnswer(student7, pa16a_2, "The atomic number of an element is the number of protons in the nucleus of an atom. It determines the identity of the element and its position in the periodic table.");
+        addStudentAnswerToProblemAnswer(pa16a_2, sa16a_2_student7);
+
+        StudentAnswer sa16a_3_student7 = createStudentAnswer(student7, pa16a_3, "The mass number of an atom is the total number of protons and neutrons in its nucleus. It is represented as A and can be calculated as A = Z + N, where Z is the atomic number and N is the number of neutrons.");
+        addStudentAnswerToProblemAnswer(pa16a_3, sa16a_3_student7);
+
+        StudentAnswer sa16a_4_student7 = createStudentAnswer(student7, pa16a_4, "Isotopes are variants of a given chemical element that have the same number of protons but different numbers of neutrons. This results in different mass numbers for the isotopes.");
+        addStudentAnswerToProblemAnswer(pa16a_4, sa16a_4_student7);
+
+        StudentAnswer sa16a_5_student7 = createStudentAnswer(student7, pa16a_5, "An electron configuration is the distribution of electrons in an atom's orbitals. It follows the Aufbau principle, Hund's rule, and the Pauli exclusion principle to determine the most stable arrangement of electrons.");
+        addStudentAnswerToProblemAnswer(pa16a_5, sa16a_5_student7);
+
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa16a_1_student8 = createStudentAnswer(student8, pa16a_1, "The three main subatomic particles in an atom are protons, neutrons, and electrons. Protons and neutrons are located in the nucleus, while electrons orbit the nucleus.");
+        addStudentAnswerToProblemAnswer(pa16a_1, sa16a_1_student8);
+
+        StudentAnswer sa16a_2_student8 = createStudentAnswer(student8, pa16a_2, "The atomic number of an element is the number of protons in the nucleus of an atom. It determines the identity of the element and its position in the periodic table.");
+        addStudentAnswerToProblemAnswer(pa16a_2, sa16a_2_student8);
+
+        StudentAnswer sa16a_3_student8 = createStudentAnswer(student8, pa16a_3, "The mass number of an atom is the total number of protons and neutrons in its nucleus. It is represented as A and can be calculated as A = Z + N, where Z is the atomic number and N is the number of neutrons.");
+        addStudentAnswerToProblemAnswer(pa16a_3, sa16a_3_student8);
+
+        StudentAnswer sa16a_4_student8 = createStudentAnswer(student8, pa16a_4, "Isotopes are variants of a given chemical element that have the same number of protons but different numbers of neutrons. This results in different mass numbers for the isotopes.");
+        addStudentAnswerToProblemAnswer(pa16a_4, sa16a_4_student8);
+
+        StudentAnswer sa16a_5_student8 = createStudentAnswer(student8, pa16a_5, "An electron configuration is the distribution of electrons in an atom's orbitals. It follows the Aufbau principle, Hund's rule, and the Pauli exclusion principle to determine the most stable arrangement of electrons.");
+        addStudentAnswerToProblemAnswer(pa16a_5, sa16a_5_student8);
+
+        // Creating StudentAnswer instances for student7
+        StudentAnswer sa16b_1_student7 = createStudentAnswer(student7, pa16b_1, "An ionic bond is a type of chemical bond formed through the electrostatic attraction between oppositely charged ions. It typically occurs between a metal and a non-metal.");
+        addStudentAnswerToProblemAnswer(pa16b_1, sa16b_1_student7);
+
+        StudentAnswer sa16b_2_student7 = createStudentAnswer(student7, pa16b_2, "A covalent bond is a type of chemical bond where two atoms share one or more pairs of electrons. It usually occurs between non-metal atoms.");
+        addStudentAnswerToProblemAnswer(pa16b_2, sa16b_2_student7);
+
+        StudentAnswer sa16b_3_student7 = createStudentAnswer(student7, pa16b_3, "A metallic bond is a type of chemical bond found in metals, where electrons are shared and move freely among a lattice of metal atoms. This creates a 'sea of electrons' that contributes to the conductivity and malleability of metals.");
+        addStudentAnswerToProblemAnswer(pa16b_3, sa16b_3_student7);
+
+        StudentAnswer sa16b_4_student7 = createStudentAnswer(student7, pa16b_4, "Electronegativity is a measure of an atom's ability to attract and hold onto electrons in a chemical bond. Elements with high electronegativity tend to attract electrons more strongly.");
+        addStudentAnswerToProblemAnswer(pa16b_4, sa16b_4_student7);
+
+        StudentAnswer sa16b_5_student7 = createStudentAnswer(student7, pa16b_5, "A polar covalent bond is a type of covalent bond in which the electrons are not shared equally between the atoms. This results in a partial positive charge on one atom and a partial negative charge on the other.");
+        addStudentAnswerToProblemAnswer(pa16b_5, sa16b_5_student7);
+
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa16b_1_student8 = createStudentAnswer(student8, pa16b_1, "An ionic bond is a type of chemical bond formed through the electrostatic attraction between oppositely charged ions. It typically occurs between a metal and a non-metal.");
+        addStudentAnswerToProblemAnswer(pa16b_1, sa16b_1_student8);
+
+        StudentAnswer sa16b_2_student8 = createStudentAnswer(student8, pa16b_2, "A covalent bond is a type of chemical bond where two atoms share one or more pairs of electrons. It usually occurs between non-metal atoms.");
+        addStudentAnswerToProblemAnswer(pa16b_2, sa16b_2_student8);
+
+        StudentAnswer sa16b_3_student8 = createStudentAnswer(student8, pa16b_3, "A metallic bond is a type of chemical bond found in metals, where electrons are shared and move freely among a lattice of metal atoms. This creates a 'sea of electrons' that contributes to the conductivity and malleability of metals.");
+        addStudentAnswerToProblemAnswer(pa16b_3, sa16b_3_student8);
+
+        StudentAnswer sa16b_4_student8 = createStudentAnswer(student8, pa16b_4, "Electronegativity is a measure of an atom's ability to attract and hold onto electrons in a chemical bond. Elements with high electronegativity tend to attract electrons more strongly.");
+        addStudentAnswerToProblemAnswer(pa16b_4, sa16b_4_student8);
+
+        StudentAnswer sa16b_5_student8 = createStudentAnswer(student8, pa16b_5, "A polar covalent bond is a type of covalent bond in which the electrons are not shared equally between the atoms. This results in a partial positive charge on one atom and a partial negative charge on the other.");
+        addStudentAnswerToProblemAnswer(pa16b_5, sa16b_5_student8);
+
+        // Creating StudentAnswer instances for student7
+        StudentAnswer sa16c_1_student7 = createStudentAnswer(student7, pa16c_1, "Chemical reactions are processes in which one or more substances (reactants) are converted into one or more different substances (products). They involve the breaking and forming of chemical bonds.");
+        addStudentAnswerToProblemAnswer(pa16c_1, sa16c_1_student7);
+
+        StudentAnswer sa16c_2_student7 = createStudentAnswer(student7, pa16c_2, "The main types of chemical reactions include synthesis (combination), decomposition, single displacement (substitution), double displacement (metathesis), and combustion reactions.");
+        addStudentAnswerToProblemAnswer(pa16c_2, sa16c_2_student7);
+
+        StudentAnswer sa16c_3_student7 = createStudentAnswer(student7, pa16c_3, "A synthesis reaction is a type of chemical reaction in which two or more reactants combine to form a single product. It is represented by the general equation: A + B → AB.");
+        addStudentAnswerToProblemAnswer(pa16c_3, sa16c_3_student7);
+
+        StudentAnswer sa16c_4_student7 = createStudentAnswer(student7, pa16c_4, "A decomposition reaction is a type of chemical reaction in which a single compound breaks down into two or more simpler products. It is represented by the general equation: AB → A + B.");
+        addStudentAnswerToProblemAnswer(pa16c_4, sa16c_4_student7);
+
+        StudentAnswer sa16c_5_student7 = createStudentAnswer(student7, pa16c_5, "A single displacement reaction, also known as a substitution reaction, is a type of chemical reaction in which one element replaces another in a compound. It is represented by the general equation: A + BC → AC + B.");
+        addStudentAnswerToProblemAnswer(pa16c_5, sa16c_5_student7);
+
+// Creating StudentAnswer instances for student8
+        StudentAnswer sa16c_1_student8 = createStudentAnswer(student8, pa16c_1, "Chemical reactions are processes in which one or more substances (reactants) are converted into one or more different substances (products). They involve the breaking and forming of chemical bonds.");
+        addStudentAnswerToProblemAnswer(pa16c_1, sa16c_1_student8);
+
+        StudentAnswer sa16c_2_student8 = createStudentAnswer(student8, pa16c_2, "The main types of chemical reactions include synthesis (combination), decomposition, single displacement (substitution), double displacement (metathesis), and combustion reactions.");
+        addStudentAnswerToProblemAnswer(pa16c_2, sa16c_2_student8);
+
+        StudentAnswer sa16c_3_student8 = createStudentAnswer(student8, pa16c_3, "A synthesis reaction is a type of chemical reaction in which two or more reactants combine to form a single product. It is represented by the general equation: A + B → AB.");
+        addStudentAnswerToProblemAnswer(pa16c_3, sa16c_3_student8);
+
+        StudentAnswer sa16c_4_student8 = createStudentAnswer(student8, pa16c_4, "A decomposition reaction is a type of chemical reaction in which a single compound breaks down into two or more simpler products. It is represented by the general equation: AB → A + B.");
+        addStudentAnswerToProblemAnswer(pa16c_4, sa16c_4_student8);
+
+        StudentAnswer sa16c_5_student8 = createStudentAnswer(student8, pa16c_5, "A single displacement reaction, also known as a substitution reaction, is a type of chemical reaction in which one element replaces another in a compound. It is represented by the general equation: A + BC → AC + B.");
+        addStudentAnswerToProblemAnswer(pa16c_5, sa16c_5_student8);
+
+        // Creating StudentAnswer instances for student9
+        StudentAnswer sa17a_1_student9 = createStudentAnswer(student9, pa17a_1, "The main components of a cell include the cell membrane, nucleus, cytoplasm, and various organelles such as mitochondria, ribosomes, endoplasmic reticulum, Golgi apparatus, and lysosomes.");
+        addStudentAnswerToProblemAnswer(pa17a_1, sa17a_1_student9);
+
+        StudentAnswer sa17a_2_student9 = createStudentAnswer(student9, pa17a_2, "The cell membrane, also known as the plasma membrane, controls the movement of substances in and out of the cell. It provides protection and support to the cell and helps maintain its shape.");
+        addStudentAnswerToProblemAnswer(pa17a_2, sa17a_2_student9);
+
+        StudentAnswer sa17a_3_student9 = createStudentAnswer(student9, pa17a_3, "The nucleus is the control center of the cell, containing the cell's genetic material (DNA). It regulates gene expression, cell growth, and reproduction, and directs various cellular activities.");
+        addStudentAnswerToProblemAnswer(pa17a_3, sa17a_3_student9);
+
+        StudentAnswer sa17a_4_student9 = createStudentAnswer(student9, pa17a_4, "Organelles are specialized structures within a cell that perform specific functions. Examples include mitochondria (energy production), ribosomes (protein synthesis), and the endoplasmic reticulum (protein and lipid processing).");
+        addStudentAnswerToProblemAnswer(pa17a_4, sa17a_4_student9);
+
+        StudentAnswer sa17a_5_student9 = createStudentAnswer(student9, pa17a_5, "Prokaryotic cells lack a true nucleus and membrane-bound organelles, while eukaryotic cells have a defined nucleus and various membrane-bound organelles. Prokaryotes include bacteria and archaea, whereas eukaryotes include plants, animals, fungi, and protists.");
+        addStudentAnswerToProblemAnswer(pa17a_5, sa17a_5_student9);
+
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa17a_1_student10 = createStudentAnswer(student10, pa17a_1, "The main components of a cell include the cell membrane, nucleus, cytoplasm, and various organelles such as mitochondria, ribosomes, endoplasmic reticulum, Golgi apparatus, and lysosomes.");
+        addStudentAnswerToProblemAnswer(pa17a_1, sa17a_1_student10);
+
+        StudentAnswer sa17a_2_student10 = createStudentAnswer(student10, pa17a_2, "The cell membrane, also known as the plasma membrane, controls the movement of substances in and out of the cell. It provides protection and support to the cell and helps maintain its shape.");
+        addStudentAnswerToProblemAnswer(pa17a_2, sa17a_2_student10);
+
+        StudentAnswer sa17a_3_student10 = createStudentAnswer(student10, pa17a_3, "The nucleus is the control center of the cell, containing the cell's genetic material (DNA). It regulates gene expression, cell growth, and reproduction, and directs various cellular activities.");
+        addStudentAnswerToProblemAnswer(pa17a_3, sa17a_3_student10);
+
+        StudentAnswer sa17a_4_student10 = createStudentAnswer(student10, pa17a_4, "Organelles are specialized structures within a cell that perform specific functions. Examples include mitochondria (energy production), ribosomes (protein synthesis), and the endoplasmic reticulum (protein and lipid processing).");
+        addStudentAnswerToProblemAnswer(pa17a_4, sa17a_4_student10);
+
+        StudentAnswer sa17a_5_student10 = createStudentAnswer(student10, pa17a_5, "Prokaryotic cells lack a true nucleus and membrane-bound organelles, while eukaryotic cells have a defined nucleus and various membrane-bound organelles. Prokaryotes include bacteria and archaea, whereas eukaryotes include plants, animals, fungi, and protists.");
+        addStudentAnswerToProblemAnswer(pa17a_5, sa17a_5_student10);
+
+        // Creating StudentAnswer instances for student9
+        StudentAnswer sa17b_1_student9 = createStudentAnswer(student9, pa17b_1, "Genetics is the study of heredity and the variation of inherited characteristics. It involves understanding how traits are passed from parents to offspring through genes.");
+        addStudentAnswerToProblemAnswer(pa17b_1, sa17b_1_student9);
+
+        StudentAnswer sa17b_2_student9 = createStudentAnswer(student9, pa17b_2, "The principles of Mendelian genetics, established by Gregor Mendel, include the Law of Segregation (each individual has two alleles for each gene, which separate during gamete formation) and the Law of Independent Assortment (genes for different traits can segregate independently during the formation of gametes).");
+        addStudentAnswerToProblemAnswer(pa17b_2, sa17b_2_student9);
+
+        StudentAnswer sa17b_3_student9 = createStudentAnswer(student9, pa17b_3, "DNA (deoxyribonucleic acid) is the molecule that carries the genetic instructions for life. It consists of two strands forming a double helix, with each strand composed of nucleotides containing a sugar, phosphate group, and a nitrogenous base (adenine, thymine, cytosine, or guanine).");
+        addStudentAnswerToProblemAnswer(pa17b_3, sa17b_3_student9);
+
+        StudentAnswer sa17b_4_student9 = createStudentAnswer(student9, pa17b_4, "The function of DNA is to store and transmit genetic information. It provides the instructions for building and maintaining an organism and guides the production of proteins through the processes of transcription and translation.");
+        addStudentAnswerToProblemAnswer(pa17b_4, sa17b_4_student9);
+
+        StudentAnswer sa17b_5_student9 = createStudentAnswer(student9, pa17b_5, "Replication is the process by which DNA is copied before cell division. It ensures that each daughter cell receives an exact copy of the parent cell's DNA. The process involves unwinding the DNA double helix and using each strand as a template to synthesize a new complementary strand.");
+        addStudentAnswerToProblemAnswer(pa17b_5, sa17b_5_student9);
+
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa17b_1_student10 = createStudentAnswer(student10, pa17b_1, "Genetics is the study of heredity and the variation of inherited characteristics. It involves understanding how traits are passed from parents to offspring through genes.");
+        addStudentAnswerToProblemAnswer(pa17b_1, sa17b_1_student10);
+
+        StudentAnswer sa17b_2_student10 = createStudentAnswer(student10, pa17b_2, "The principles of Mendelian genetics, established by Gregor Mendel, include the Law of Segregation (each individual has two alleles for each gene, which separate during gamete formation) and the Law of Independent Assortment (genes for different traits can segregate independently during the formation of gametes).");
+        addStudentAnswerToProblemAnswer(pa17b_2, sa17b_2_student10);
+
+        StudentAnswer sa17b_3_student10 = createStudentAnswer(student10, pa17b_3, "DNA (deoxyribonucleic acid) is the molecule that carries the genetic instructions for life. It consists of two strands forming a double helix, with each strand composed of nucleotides containing a sugar, phosphate group, and a nitrogenous base (adenine, thymine, cytosine, or guanine).");
+        addStudentAnswerToProblemAnswer(pa17b_3, sa17b_3_student10);
+
+        StudentAnswer sa17b_4_student10 = createStudentAnswer(student10, pa17b_4, "The function of DNA is to store and transmit genetic information. It provides the instructions for building and maintaining an organism and guides the production of proteins through the processes of transcription and translation.");
+        addStudentAnswerToProblemAnswer(pa17b_4, sa17b_4_student10);
+
+        StudentAnswer sa17b_5_student10 = createStudentAnswer(student10, pa17b_5, "Replication is the process by which DNA is copied before cell division. It ensures that each daughter cell receives an exact copy of the parent cell's DNA. The process involves unwinding the DNA double helix and using each strand as a template to synthesize a new complementary strand.");
+        addStudentAnswerToProblemAnswer(pa17b_5, sa17b_5_student10);
+
+        // Creating StudentAnswer instances for student9
+        StudentAnswer sa17c_1_student9 = createStudentAnswer(student9, pa17c_1, "The theory of evolution, developed by Charles Darwin, explains how species change over time through the process of natural selection. It states that organisms with traits better suited to their environment are more likely to survive and reproduce, passing those traits to their offspring.");
+        addStudentAnswerToProblemAnswer(pa17c_1, sa17c_1_student9);
+
+        StudentAnswer sa17c_2_student9 = createStudentAnswer(student9, pa17c_2, "Natural selection is the process by which individuals with advantageous traits are more likely to survive and reproduce, leading to the gradual accumulation of those traits in a population over generations.");
+        addStudentAnswerToProblemAnswer(pa17c_2, sa17c_2_student9);
+
+        StudentAnswer sa17c_3_student9 = createStudentAnswer(student9, pa17c_3, "Genetic variation is the diversity of gene combinations within a population. It is essential for evolution as it provides the raw material for natural selection to act upon.");
+        addStudentAnswerToProblemAnswer(pa17c_3, sa17c_3_student9);
+
+        StudentAnswer sa17c_4_student9 = createStudentAnswer(student9, pa17c_4, "A mutation is a change in the DNA sequence of an organism. Mutations can introduce new genetic variations and are a source of genetic diversity in a population.");
+        addStudentAnswerToProblemAnswer(pa17c_4, sa17c_4_student9);
+
+        StudentAnswer sa17c_5_student9 = createStudentAnswer(student9, pa17c_5, "An adaptation is a trait that increases an organism's chances of survival and reproduction in a particular environment. Adaptations result from the process of natural selection acting on genetic variation.");
+        addStudentAnswerToProblemAnswer(pa17c_5, sa17c_5_student9);
+
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa17c_1_student10 = createStudentAnswer(student10, pa17c_1, "The theory of evolution, developed by Charles Darwin, explains how species change over time through the process of natural selection. It states that organisms with traits better suited to their environment are more likely to survive and reproduce, passing those traits to their offspring.");
+        addStudentAnswerToProblemAnswer(pa17c_1, sa17c_1_student10);
+
+        StudentAnswer sa17c_2_student10 = createStudentAnswer(student10, pa17c_2, "Natural selection is the process by which individuals with advantageous traits are more likely to survive and reproduce, leading to the gradual accumulation of those traits in a population over generations.");
+        addStudentAnswerToProblemAnswer(pa17c_2, sa17c_2_student10);
+
+        StudentAnswer sa17c_3_student10 = createStudentAnswer(student10, pa17c_3, "Genetic variation is the diversity of gene combinations within a population. It is essential for evolution as it provides the raw material for natural selection to act upon.");
+        addStudentAnswerToProblemAnswer(pa17c_3, sa17c_3_student10);
+
+        StudentAnswer sa17c_4_student10 = createStudentAnswer(student10, pa17c_4, "A mutation is a change in the DNA sequence of an organism. Mutations can introduce new genetic variations and are a source of genetic diversity in a population.");
+        addStudentAnswerToProblemAnswer(pa17c_4, sa17c_4_student10);
+
+        StudentAnswer sa17c_5_student10 = createStudentAnswer(student10, pa17c_5, "An adaptation is a trait that increases an organism's chances of survival and reproduction in a particular environment. Adaptations result from the process of natural selection acting on genetic variation.");
+        addStudentAnswerToProblemAnswer(pa17c_5, sa17c_5_student10);
+
+        // Creating StudentAnswer instances for student9
+        StudentAnswer sa17d_1_student9 = createStudentAnswer(student9, pa17d_1, "Ecology is the study of interactions between organisms and their environment. It examines how living things interact with each other and with their physical surroundings.");
+        addStudentAnswerToProblemAnswer(pa17d_1, sa17d_1_student9);
+
+        StudentAnswer sa17d_2_student9 = createStudentAnswer(student9, pa17d_2, "Ecosystems are communities of living organisms interacting with their physical environment. They include both biotic (living) components, such as plants and animals, and abiotic (non-living) components, such as water, soil, and climate.");
+        addStudentAnswerToProblemAnswer(pa17d_2, sa17d_2_student9);
+
+        StudentAnswer sa17d_3_student9 = createStudentAnswer(student9, pa17d_3, "A food web is a complex network of interconnected food chains within an ecosystem. It illustrates the feeding relationships and energy flow between different organisms, showing how energy is transferred from producers to consumers and decomposers.");
+        addStudentAnswerToProblemAnswer(pa17d_3, sa17d_3_student9);
+
+        StudentAnswer sa17d_4_student9 = createStudentAnswer(student9, pa17d_4, "Energy flow in an ecosystem refers to the transfer of energy from one trophic level to another. Energy enters the ecosystem through photosynthesis by producers, and it is passed on to consumers and decomposers through feeding relationships.");
+        addStudentAnswerToProblemAnswer(pa17d_4, sa17d_4_student9);
+
+        StudentAnswer sa17d_5_student9 = createStudentAnswer(student9, pa17d_5, "The levels of organization in ecology, from smallest to largest, are: organism, population, community, ecosystem, biome, and biosphere. Each level represents a different scale of interaction between living organisms and their environment.");
+        addStudentAnswerToProblemAnswer(pa17d_5, sa17d_5_student9);
+
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa17d_1_student10 = createStudentAnswer(student10, pa17d_1, "Ecology is the study of interactions between organisms and their environment. It examines how living things interact with each other and with their physical surroundings.");
+        addStudentAnswerToProblemAnswer(pa17d_1, sa17d_1_student10);
+
+        StudentAnswer sa17d_2_student10 = createStudentAnswer(student10, pa17d_2, "Ecosystems are communities of living organisms interacting with their physical environment. They include both biotic (living) components, such as plants and animals, and abiotic (non-living) components, such as water, soil, and climate.");
+        addStudentAnswerToProblemAnswer(pa17d_2, sa17d_2_student10);
+
+        StudentAnswer sa17d_3_student10 = createStudentAnswer(student10, pa17d_3, "A food web is a complex network of interconnected food chains within an ecosystem. It illustrates the feeding relationships and energy flow between different organisms, showing how energy is transferred from producers to consumers and decomposers.");
+        addStudentAnswerToProblemAnswer(pa17d_3, sa17d_3_student10);
+
+        StudentAnswer sa17d_4_student10 = createStudentAnswer(student10, pa17d_4, "Energy flow in an ecosystem refers to the transfer of energy from one trophic level to another. Energy enters the ecosystem through photosynthesis by producers, and it is passed on to consumers and decomposers through feeding relationships.");
+        addStudentAnswerToProblemAnswer(pa17d_4, sa17d_4_student10);
+
+        StudentAnswer sa17d_5_student10 = createStudentAnswer(student10, pa17d_5, "The levels of organization in ecology, from smallest to largest, are: organism, population, community, ecosystem, biome, and biosphere. Each level represents a different scale of interaction between living organisms and their environment.");
+        addStudentAnswerToProblemAnswer(pa17d_5, sa17d_5_student10);
+
+        // Creating StudentAnswer instances for student9
+        StudentAnswer sa18a_1_student9 = createStudentAnswer(student9, pa18a_1, "Civil engineering is a discipline that deals with the design, construction, and maintenance of infrastructure such as roads, bridges, buildings, and water supply systems. Civil engineers work on projects that improve the built environment and enhance public safety.");
+        addStudentAnswerToProblemAnswer(pa18a_1, sa18a_1_student9);
+
+        StudentAnswer sa18a_2_student9 = createStudentAnswer(student9, pa18a_2, "Mechanical engineering is a discipline that involves the design, analysis, manufacturing, and maintenance of mechanical systems. Mechanical engineers work on projects ranging from small devices to large machinery, including engines, HVAC systems, and robotics.");
+        addStudentAnswerToProblemAnswer(pa18a_2, sa18a_2_student9);
+
+        StudentAnswer sa18a_3_student9 = createStudentAnswer(student9, pa18a_3, "Electrical engineering is a discipline focused on the study and application of electricity, electronics, and electromagnetism. Electrical engineers design and develop electrical systems, including power generation, transmission, and distribution, as well as electronic devices and communication systems.");
+        addStudentAnswerToProblemAnswer(pa18a_3, sa18a_3_student9);
+
+        StudentAnswer sa18a_4_student9 = createStudentAnswer(student9, pa18a_4, "Chemical engineering is a discipline that combines principles of chemistry, physics, mathematics, and engineering to design and operate processes that convert raw materials into valuable products. Chemical engineers work in industries such as pharmaceuticals, petrochemicals, and food processing.");
+        addStudentAnswerToProblemAnswer(pa18a_4, sa18a_4_student9);
+
+        StudentAnswer sa18a_5_student9 = createStudentAnswer(student9, pa18a_5, "Civil engineers are responsible for planning, designing, constructing, and maintaining infrastructure projects. They ensure the safety, functionality, and sustainability of structures such as roads, bridges, buildings, and water supply systems.");
+        addStudentAnswerToProblemAnswer(pa18a_5, sa18a_5_student9);
+
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa18a_1_student10 = createStudentAnswer(student10, pa18a_1, "Civil engineering is a discipline that deals with the design, construction, and maintenance of infrastructure such as roads, bridges, buildings, and water supply systems. Civil engineers work on projects that improve the built environment and enhance public safety.");
+        addStudentAnswerToProblemAnswer(pa18a_1, sa18a_1_student10);
+
+        StudentAnswer sa18a_2_student10 = createStudentAnswer(student10, pa18a_2, "Mechanical engineering is a discipline that involves the design, analysis, manufacturing, and maintenance of mechanical systems. Mechanical engineers work on projects ranging from small devices to large machinery, including engines, HVAC systems, and robotics.");
+        addStudentAnswerToProblemAnswer(pa18a_2, sa18a_2_student10);
+
+        StudentAnswer sa18a_3_student10 = createStudentAnswer(student10, pa18a_3, "Electrical engineering is a discipline focused on the study and application of electricity, electronics, and electromagnetism. Electrical engineers design and develop electrical systems, including power generation, transmission, and distribution, as well as electronic devices and communication systems.");
+        addStudentAnswerToProblemAnswer(pa18a_3, sa18a_3_student10);
+
+        StudentAnswer sa18a_4_student10 = createStudentAnswer(student10, pa18a_4, "Chemical engineering is a discipline that combines principles of chemistry, physics, mathematics, and engineering to design and operate processes that convert raw materials into valuable products. Chemical engineers work in industries such as pharmaceuticals, petrochemicals, and food processing.");
+        addStudentAnswerToProblemAnswer(pa18a_4, sa18a_4_student10);
+
+        StudentAnswer sa18a_5_student10 = createStudentAnswer(student10, pa18a_5, "Civil engineers are responsible for planning, designing, constructing, and maintaining infrastructure projects. They ensure the safety, functionality, and sustainability of structures such as roads, bridges, buildings, and water supply systems.");
+        addStudentAnswerToProblemAnswer(pa18a_5, sa18a_5_student10);
+
+        // Creating StudentAnswer instances for student9
+        StudentAnswer sa18b_1_student9 = createStudentAnswer(student9, pa18b_1, "The engineering problem-solving process is a systematic approach to addressing engineering challenges. It involves defining the problem, conducting research, generating potential solutions, selecting the best solution, implementing the solution, and evaluating the results.");
+        addStudentAnswerToProblemAnswer(pa18b_1, sa18b_1_student9);
+
+        StudentAnswer sa18b_2_student9 = createStudentAnswer(student9, pa18b_2, "Defining a problem in engineering involves identifying the specific issue or need, understanding the constraints and requirements, and clearly stating the problem in a way that guides the development of solutions.");
+        addStudentAnswerToProblemAnswer(pa18b_2, sa18b_2_student9);
+
+        StudentAnswer sa18b_3_student9 = createStudentAnswer(student9, pa18b_3, "Brainstorming is a creative process used to generate a wide range of potential solutions to an engineering problem. It encourages free thinking and the sharing of ideas without immediate evaluation or criticism.");
+        addStudentAnswerToProblemAnswer(pa18b_3, sa18b_3_student9);
+
+        StudentAnswer sa18b_4_student9 = createStudentAnswer(student9, pa18b_4, "Engineers select the best solution by evaluating the potential solutions based on criteria such as feasibility, cost, effectiveness, safety, and sustainability. They use decision-making tools and techniques to compare and rank the solutions.");
+        addStudentAnswerToProblemAnswer(pa18b_4, sa18b_4_student9);
+
+        StudentAnswer sa18b_5_student9 = createStudentAnswer(student9, pa18b_5, "Implementation involves putting the chosen solution into practice. This includes designing, developing, testing, and deploying the solution, as well as managing the resources and timelines required for successful implementation.");
+        addStudentAnswerToProblemAnswer(pa18b_5, sa18b_5_student9);
+
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa18b_1_student10 = createStudentAnswer(student10, pa18b_1, "The engineering problem-solving process is a systematic approach to addressing engineering challenges. It involves defining the problem, conducting research, generating potential solutions, selecting the best solution, implementing the solution, and evaluating the results.");
+        addStudentAnswerToProblemAnswer(pa18b_1, sa18b_1_student10);
+
+        StudentAnswer sa18b_2_student10 = createStudentAnswer(student10, pa18b_2, "Defining a problem in engineering involves identifying the specific issue or need, understanding the constraints and requirements, and clearly stating the problem in a way that guides the development of solutions.");
+        addStudentAnswerToProblemAnswer(pa18b_2, sa18b_2_student10);
+
+        StudentAnswer sa18b_3_student10 = createStudentAnswer(student10, pa18b_3, "Brainstorming is a creative process used to generate a wide range of potential solutions to an engineering problem. It encourages free thinking and the sharing of ideas without immediate evaluation or criticism.");
+        addStudentAnswerToProblemAnswer(pa18b_3, sa18b_3_student10);
+
+        StudentAnswer sa18b_4_student10 = createStudentAnswer(student10, pa18b_4, "Engineers select the best solution by evaluating the potential solutions based on criteria such as feasibility, cost, effectiveness, safety, and sustainability. They use decision-making tools and techniques to compare and rank the solutions.");
+        addStudentAnswerToProblemAnswer(pa18b_4, sa18b_4_student10);
+
+        StudentAnswer sa18b_5_student10 = createStudentAnswer(student10, pa18b_5, "Implementation involves putting the chosen solution into practice. This includes designing, developing, testing, and deploying the solution, as well as managing the resources and timelines required for successful implementation.");
+        addStudentAnswerToProblemAnswer(pa18b_5, sa18b_5_student10);
+
+        // Creating StudentAnswer instances for student9
+        StudentAnswer sa18c_1_student9 = createStudentAnswer(student9, pa18c_1, "The engineering design process is a systematic approach to solving engineering problems. It involves defining requirements, brainstorming, prototyping, testing, and iteration to develop and refine solutions.");
+        addStudentAnswerToProblemAnswer(pa18c_1, sa18c_1_student9);
+
+        StudentAnswer sa18c_2_student9 = createStudentAnswer(student9, pa18c_2, "The stages of the design process typically include defining the problem, researching and gathering information, generating ideas, developing and testing prototypes, evaluating and refining the solution, and finalizing and implementing the design.");
+        addStudentAnswerToProblemAnswer(pa18c_2, sa18c_2_student9);
+
+        StudentAnswer sa18c_3_student9 = createStudentAnswer(student9, pa18c_3, "Engineers define requirements by identifying the specific needs and constraints of the project. This includes understanding the problem, setting clear objectives, and determining the criteria for a successful solution.");
+        addStudentAnswerToProblemAnswer(pa18c_3, sa18c_3_student9);
+
+        StudentAnswer sa18c_4_student9 = createStudentAnswer(student9, pa18c_4, "Brainstorming is important because it encourages the generation of a wide range of ideas and solutions. It fosters creativity and collaboration, allowing engineers to explore different approaches and identify the best possible solution.");
+        addStudentAnswerToProblemAnswer(pa18c_4, sa18c_4_student9);
+
+        StudentAnswer sa18c_5_student9 = createStudentAnswer(student9, pa18c_5, "Prototyping involves creating a preliminary model or version of a solution to test its feasibility and functionality. Prototypes allow engineers to identify potential issues, gather feedback, and make improvements before finalizing the design.");
+        addStudentAnswerToProblemAnswer(pa18c_5, sa18c_5_student9);
+
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa18c_1_student10 = createStudentAnswer(student10, pa18c_1, "The engineering design process is a systematic approach to solving engineering problems. It involves defining requirements, brainstorming, prototyping, testing, and iteration to develop and refine solutions.");
+        addStudentAnswerToProblemAnswer(pa18c_1, sa18c_1_student10);
+
+        StudentAnswer sa18c_2_student10 = createStudentAnswer(student10, pa18c_2, "The stages of the design process typically include defining the problem, researching and gathering information, generating ideas, developing and testing prototypes, evaluating and refining the solution, and finalizing and implementing the design.");
+        addStudentAnswerToProblemAnswer(pa18c_2, sa18c_2_student10);
+
+        StudentAnswer sa18c_3_student10 = createStudentAnswer(student10, pa18c_3, "Engineers define requirements by identifying the specific needs and constraints of the project. This includes understanding the problem, setting clear objectives, and determining the criteria for a successful solution.");
+        addStudentAnswerToProblemAnswer(pa18c_3, sa18c_3_student10);
+
+        StudentAnswer sa18c_4_student10 = createStudentAnswer(student10, pa18c_4, "Brainstorming is important because it encourages the generation of a wide range of ideas and solutions. It fosters creativity and collaboration, allowing engineers to explore different approaches and identify the best possible solution.");
+        addStudentAnswerToProblemAnswer(pa18c_4, sa18c_4_student10);
+
+        StudentAnswer sa18c_5_student10 = createStudentAnswer(student10, pa18c_5, "Prototyping involves creating a preliminary model or version of a solution to test its feasibility and functionality. Prototypes allow engineers to identify potential issues, gather feedback, and make improvements before finalizing the design.");
+        addStudentAnswerToProblemAnswer(pa18c_5, sa18c_5_student10);
+
+        // Creating StudentAnswer instances for student9
+        StudentAnswer sa19a_1_student9 = createStudentAnswer(student9, pa19a_1, "Ohm's law states that the current flowing through a conductor between two points is directly proportional to the voltage across the two points. It is mathematically expressed as V = IR, where V is voltage, I is current, and R is resistance.");
+        addStudentAnswerToProblemAnswer(pa19a_1, sa19a_1_student9);
+
+        StudentAnswer sa19a_2_student9 = createStudentAnswer(student9, pa19a_2, "Kirchhoff's laws include Kirchhoff's Current Law (KCL) and Kirchhoff's Voltage Law (KVL). KCL states that the total current entering a junction equals the total current leaving the junction. KVL states that the sum of all voltages around a closed loop equals zero.");
+        addStudentAnswerToProblemAnswer(pa19a_2, sa19a_2_student9);
+
+        StudentAnswer sa19a_3_student9 = createStudentAnswer(student9, pa19a_3, "Voltage in a circuit can be calculated using Ohm's law (V = IR) and Kirchhoff's Voltage Law (KVL). For a series circuit, the total voltage is the sum of the voltages across each component. For a parallel circuit, the voltage is the same across each branch.");
+        addStudentAnswerToProblemAnswer(pa19a_3, sa19a_3_student9);
+
+        StudentAnswer sa19a_4_student9 = createStudentAnswer(student9, pa19a_4, "Current in a circuit can be calculated using Ohm's law (I = V/R) and Kirchhoff's Current Law (KCL). For a series circuit, the current is the same through each component. For a parallel circuit, the total current is the sum of the currents in each branch.");
+        addStudentAnswerToProblemAnswer(pa19a_4, sa19a_4_student9);
+
+        StudentAnswer sa19a_5_student9 = createStudentAnswer(student9, pa19a_5, "Techniques for analyzing DC circuits include using Ohm's law, Kirchhoff's laws, voltage division, current division, mesh analysis, and nodal analysis. These techniques help determine the voltage, current, and resistance in various parts of the circuit.");
+        addStudentAnswerToProblemAnswer(pa19a_5, sa19a_5_student9);
+
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa19a_1_student10 = createStudentAnswer(student10, pa19a_1, "Ohm's law states that the current flowing through a conductor between two points is directly proportional to the voltage across the two points. It is mathematically expressed as V = IR, where V is voltage, I is current, and R is resistance.");
+        addStudentAnswerToProblemAnswer(pa19a_1, sa19a_1_student10);
+
+        StudentAnswer sa19a_2_student10 = createStudentAnswer(student10, pa19a_2, "Kirchhoff's laws include Kirchhoff's Current Law (KCL) and Kirchhoff's Voltage Law (KVL). KCL states that the total current entering a junction equals the total current leaving the junction. KVL states that the sum of all voltages around a closed loop equals zero.");
+        addStudentAnswerToProblemAnswer(pa19a_2, sa19a_2_student10);
+
+        StudentAnswer sa19a_3_student10 = createStudentAnswer(student10, pa19a_3, "Voltage in a circuit can be calculated using Ohm's law (V = IR) and Kirchhoff's Voltage Law (KVL). For a series circuit, the total voltage is the sum of the voltages across each component. For a parallel circuit, the voltage is the same across each branch.");
+        addStudentAnswerToProblemAnswer(pa19a_3, sa19a_3_student10);
+
+        StudentAnswer sa19a_4_student10 = createStudentAnswer(student10, pa19a_4, "Current in a circuit can be calculated using Ohm's law (I = V/R) and Kirchhoff's Current Law (KCL). For a series circuit, the current is the same through each component. For a parallel circuit, the total current is the sum of the currents in each branch.");
+        addStudentAnswerToProblemAnswer(pa19a_4, sa19a_4_student10);
+
+        StudentAnswer sa19a_5_student10 = createStudentAnswer(student10, pa19a_5, "Techniques for analyzing DC circuits include using Ohm's law, Kirchhoff's laws, voltage division, current division, mesh analysis, and nodal analysis. These techniques help determine the voltage, current, and resistance in various parts of the circuit.");
+        addStudentAnswerToProblemAnswer(pa19a_5, sa19a_5_student10);
+
+        // Creating StudentAnswer instances for student9
+        StudentAnswer sa19b_1_student9 = createStudentAnswer(student9, pa19b_1, "Signal processing is the analysis, manipulation, and interpretation of signals. It involves techniques for filtering, transforming, and extracting information from signals in various forms, such as audio, video, and data.");
+        addStudentAnswerToProblemAnswer(pa19b_1, sa19b_1_student9);
+
+        StudentAnswer sa19b_2_student9 = createStudentAnswer(student9, pa19b_2, "A Fourier transform is a mathematical technique used to transform a signal from the time domain to the frequency domain. It decomposes a signal into its constituent frequencies, allowing analysis of the signal's frequency content.");
+        addStudentAnswerToProblemAnswer(pa19b_2, sa19b_2_student9);
+
+        StudentAnswer sa19b_3_student9 = createStudentAnswer(student9, pa19b_3, "Filtering is the process of removing unwanted components or noise from a signal. Filters can be designed to pass certain frequencies while attenuating others, such as low-pass, high-pass, band-pass, and band-stop filters.");
+        addStudentAnswerToProblemAnswer(pa19b_3, sa19b_3_student9);
+
+        StudentAnswer sa19b_4_student9 = createStudentAnswer(student9, pa19b_4, "Digital signal processing (DSP) involves the manipulation of signals using digital techniques. DSP algorithms are implemented on digital hardware, allowing for efficient processing, analysis, and transformation of signals in digital form.");
+        addStudentAnswerToProblemAnswer(pa19b_4, sa19b_4_student9);
+
+        StudentAnswer sa19b_5_student9 = createStudentAnswer(student9, pa19b_5, "Applications of signal processing include telecommunications (signal transmission and reception), audio and video processing (enhancement and compression), medical imaging (MRI and CT scans), and radar and sonar systems (target detection and tracking).");
+        addStudentAnswerToProblemAnswer(pa19b_5, sa19b_5_student9);
+
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa19b_1_student10 = createStudentAnswer(student10, pa19b_1, "Signal processing is the analysis, manipulation, and interpretation of signals. It involves techniques for filtering, transforming, and extracting information from signals in various forms, such as audio, video, and data.");
+        addStudentAnswerToProblemAnswer(pa19b_1, sa19b_1_student10);
+
+        StudentAnswer sa19b_2_student10 = createStudentAnswer(student10, pa19b_2, "A Fourier transform is a mathematical technique used to transform a signal from the time domain to the frequency domain. It decomposes a signal into its constituent frequencies, allowing analysis of the signal's frequency content.");
+        addStudentAnswerToProblemAnswer(pa19b_2, sa19b_2_student10);
+
+        StudentAnswer sa19b_3_student10 = createStudentAnswer(student10, pa19b_3, "Filtering is the process of removing unwanted components or noise from a signal. Filters can be designed to pass certain frequencies while attenuating others, such as low-pass, high-pass, band-pass, and band-stop filters.");
+        addStudentAnswerToProblemAnswer(pa19b_3, sa19b_3_student10);
+
+        StudentAnswer sa19b_4_student10 = createStudentAnswer(student10, pa19b_4, "Digital signal processing (DSP) involves the manipulation of signals using digital techniques. DSP algorithms are implemented on digital hardware, allowing for efficient processing, analysis, and transformation of signals in digital form.");
+        addStudentAnswerToProblemAnswer(pa19b_4, sa19b_4_student10);
+
+        StudentAnswer sa19b_5_student10 = createStudentAnswer(student10, pa19b_5, "Applications of signal processing include telecommunications (signal transmission and reception), audio and video processing (enhancement and compression), medical imaging (MRI and CT scans), and radar and sonar systems (target detection and tracking).");
+        addStudentAnswerToProblemAnswer(pa19b_5, sa19b_5_student10);
+
+        // Creating StudentAnswer instances for student9
+        StudentAnswer sa19c_1_student9 = createStudentAnswer(student9, pa19c_1, "Systems theory is the study of systems, which are sets of interacting components working together as a whole. It focuses on understanding the behavior, structure, and dynamics of complex systems.");
+        addStudentAnswerToProblemAnswer(pa19c_1, sa19c_1_student9);
+
+        StudentAnswer sa19c_2_student9 = createStudentAnswer(student9, pa19c_2, "System modeling involves creating abstract representations of systems to analyze their behavior and predict their performance. Models can be mathematical, graphical, or computational and help in understanding and designing systems.");
+        addStudentAnswerToProblemAnswer(pa19c_2, sa19c_2_student9);
+
+        StudentAnswer sa19c_3_student9 = createStudentAnswer(student9, pa19c_3, "Feedback is a process in which the output of a system is fed back into the system as input, influencing its future behavior. Positive feedback amplifies changes, while negative feedback stabilizes the system.");
+        addStudentAnswerToProblemAnswer(pa19c_3, sa19c_3_student9);
+
+        StudentAnswer sa19c_4_student9 = createStudentAnswer(student9, pa19c_4, "Control systems are systems designed to regulate the behavior of other systems. They use feedback and control mechanisms to maintain desired outputs despite disturbances. Examples include thermostats and automatic pilot systems.");
+        addStudentAnswerToProblemAnswer(pa19c_4, sa19c_4_student9);
+
+        StudentAnswer sa19c_5_student9 = createStudentAnswer(student9, pa19c_5, "Transfer functions are mathematical representations of the relationship between the input and output of a linear time-invariant system. They are used to analyze and design control systems by providing insights into system dynamics.");
+        addStudentAnswerToProblemAnswer(pa19c_5, sa19c_5_student9);
+
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa19c_1_student10 = createStudentAnswer(student10, pa19c_1, "Systems theory is the study of systems, which are sets of interacting components working together as a whole. It focuses on understanding the behavior, structure, and dynamics of complex systems.");
+        addStudentAnswerToProblemAnswer(pa19c_1, sa19c_1_student10);
+
+        StudentAnswer sa19c_2_student10 = createStudentAnswer(student10, pa19c_2, "System modeling involves creating abstract representations of systems to analyze their behavior and predict their performance. Models can be mathematical, graphical, or computational and help in understanding and designing systems.");
+        addStudentAnswerToProblemAnswer(pa19c_2, sa19c_2_student10);
+
+        StudentAnswer sa19c_3_student10 = createStudentAnswer(student10, pa19c_3, "Feedback is a process in which the output of a system is fed back into the system as input, influencing its future behavior. Positive feedback amplifies changes, while negative feedback stabilizes the system.");
+        addStudentAnswerToProblemAnswer(pa19c_3, sa19c_3_student10);
+
+        StudentAnswer sa19c_4_student10 = createStudentAnswer(student10, pa19c_4, "Control systems are systems designed to regulate the behavior of other systems. They use feedback and control mechanisms to maintain desired outputs despite disturbances. Examples include thermostats and automatic pilot systems.");
+        addStudentAnswerToProblemAnswer(pa19c_4, sa19c_4_student10);
+
+        StudentAnswer sa19c_5_student10 = createStudentAnswer(student10, pa19c_5, "Transfer functions are mathematical representations of the relationship between the input and output of a linear time-invariant system. They are used to analyze and design control systems by providing insights into system dynamics.");
+        addStudentAnswerToProblemAnswer(pa19c_5, sa19c_5_student10);
+
+        // Creating StudentAnswer instances for student9
+        StudentAnswer sa20a_1_student9 = createStudentAnswer(student9, pa20a_1, "Statics is the branch of mechanics that deals with bodies at rest and forces in equilibrium. It involves analyzing force systems, calculating moments, and solving problems related to static equilibrium.");
+        addStudentAnswerToProblemAnswer(pa20a_1, sa20a_1_student9);
+
+        StudentAnswer sa20a_2_student9 = createStudentAnswer(student9, pa20a_2, "A force system is a collection of forces acting on a body. It includes the magnitudes, directions, and points of application of the forces. Analyzing force systems is essential for understanding how forces affect a body's equilibrium.");
+        addStudentAnswerToProblemAnswer(pa20a_2, sa20a_2_student9);
+
+        StudentAnswer sa20a_3_student9 = createStudentAnswer(student9, pa20a_3, "A moment is a measure of the tendency of a force to rotate a body about a point or axis. It is calculated as the product of the force and the perpendicular distance from the point or axis to the line of action of the force, expressed as M = Fd.");
+        addStudentAnswerToProblemAnswer(pa20a_3, sa20a_3_student9);
+
+        StudentAnswer sa20a_4_student9 = createStudentAnswer(student9, pa20a_4, "Static equilibrium occurs when a body is at rest and the sum of all forces and moments acting on it is zero. In this state, the body does not experience any linear or rotational motion.");
+        addStudentAnswerToProblemAnswer(pa20a_4, sa20a_4_student9);
+
+        StudentAnswer sa20a_5_student9 = createStudentAnswer(student9, pa20a_5, "The resultant force is the single force that has the same effect as the combined forces acting on a body. It is calculated by vector addition of all the individual forces in the system.");
+        addStudentAnswerToProblemAnswer(pa20a_5, sa20a_5_student9);
+
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa20a_1_student10 = createStudentAnswer(student10, pa20a_1, "Statics is the branch of mechanics that deals with bodies at rest and forces in equilibrium. It involves analyzing force systems, calculating moments, and solving problems related to static equilibrium.");
+        addStudentAnswerToProblemAnswer(pa20a_1, sa20a_1_student10);
+
+        StudentAnswer sa20a_2_student10 = createStudentAnswer(student10, pa20a_2, "A force system is a collection of forces acting on a body. It includes the magnitudes, directions, and points of application of the forces. Analyzing force systems is essential for understanding how forces affect a body's equilibrium.");
+        addStudentAnswerToProblemAnswer(pa20a_2, sa20a_2_student10);
+
+        StudentAnswer sa20a_3_student10 = createStudentAnswer(student10, pa20a_3, "A moment is a measure of the tendency of a force to rotate a body about a point or axis. It is calculated as the product of the force and the perpendicular distance from the point or axis to the line of action of the force, expressed as M = Fd.");
+        addStudentAnswerToProblemAnswer(pa20a_3, sa20a_3_student10);
+
+        StudentAnswer sa20a_4_student10 = createStudentAnswer(student10, pa20a_4, "Static equilibrium occurs when a body is at rest and the sum of all forces and moments acting on it is zero. In this state, the body does not experience any linear or rotational motion.");
+        addStudentAnswerToProblemAnswer(pa20a_4, sa20a_4_student10);
+
+        StudentAnswer sa20a_5_student10 = createStudentAnswer(student10, pa20a_5, "The resultant force is the single force that has the same effect as the combined forces acting on a body. It is calculated by vector addition of all the individual forces in the system.");
+        addStudentAnswerToProblemAnswer(pa20a_5, sa20a_5_student10);
+
+        // Creating StudentAnswer instances for student9
+        StudentAnswer sa20b_1_student9 = createStudentAnswer(student9, pa20b_1, "Dynamics is the study of bodies in motion. It involves analyzing the forces and torques that cause motion and understanding the principles of kinematics and kinetics.");
+        addStudentAnswerToProblemAnswer(pa20b_1, sa20b_1_student9);
+
+        StudentAnswer sa20b_2_student9 = createStudentAnswer(student9, pa20b_2, "Kinematics is the branch of dynamics that deals with the description of motion without considering the forces that cause it. It involves analyzing the position, velocity, and acceleration of objects.");
+        addStudentAnswerToProblemAnswer(pa20b_2, sa20b_2_student9);
+
+        StudentAnswer sa20b_3_student9 = createStudentAnswer(student9, pa20b_3, "Kinetics is the branch of dynamics that deals with the forces and torques that cause motion. It involves analyzing the relationship between the motion of objects and the forces acting on them.");
+        addStudentAnswerToProblemAnswer(pa20b_3, sa20b_3_student9);
+
+        StudentAnswer sa20b_4_new_student9 = createStudentAnswer(student9, pa20b_4_new, "Newton's Second Law of Motion states that the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass. This law is expressed by the equation F = ma, where F is the force, m is the mass, and a is the acceleration.");
+        addStudentAnswerToProblemAnswer(pa20b_4_new, sa20b_4_new_student9);
+
+        StudentAnswer sa20b_5_student9 = createStudentAnswer(student9, pa20b_5, "Velocity is the rate of change of displacement with respect to time, and it is a vector quantity with both magnitude and direction. Acceleration is the rate of change of velocity with respect to time, and it is also a vector quantity.");
+        addStudentAnswerToProblemAnswer(pa20b_5, sa20b_5_student9);
+
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa20b_1_student10 = createStudentAnswer(student10, pa20b_1, "Dynamics is the study of bodies in motion. It involves analyzing the forces and torques that cause motion and understanding the principles of kinematics and kinetics.");
+        addStudentAnswerToProblemAnswer(pa20b_1, sa20b_1_student10);
+
+        StudentAnswer sa20b_2_student10 = createStudentAnswer(student10, pa20b_2, "Kinematics is the branch of dynamics that deals with the description of motion without considering the forces that cause it. It involves analyzing the position, velocity, and acceleration of objects.");
+        addStudentAnswerToProblemAnswer(pa20b_2, sa20b_2_student10);
+
+        StudentAnswer sa20b_3_student10 = createStudentAnswer(student10, pa20b_3, "Kinetics is the branch of dynamics that deals with the forces and torques that cause motion. It involves analyzing the relationship between the motion of objects and the forces acting on them.");
+        addStudentAnswerToProblemAnswer(pa20b_3, sa20b_3_student10);
+
+        StudentAnswer sa20b_4_new_student10 = createStudentAnswer(student10, pa20b_4_new, "Newton's Second Law of Motion states that the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass. This law is expressed by the equation F = ma, where F is the force, m is the mass, and a is the acceleration.");
+        addStudentAnswerToProblemAnswer(pa20b_4_new, sa20b_4_new_student10);
+
+        StudentAnswer sa20b_5_student10 = createStudentAnswer(student10, pa20b_5, "Velocity is the rate of change of displacement with respect to time, and it is a vector quantity with both magnitude and direction. Acceleration is the rate of change of velocity with respect to time, and it is also a vector quantity.");
+        addStudentAnswerToProblemAnswer(pa20b_5, sa20b_5_student10);
+
+        // Creating StudentAnswer instances for student9
+        StudentAnswer sa20c_1_student9 = createStudentAnswer(student9, pa20c_1, "Thermodynamics is the branch of physics that deals with the study of heat, energy, and the transformation of energy from one form to another. It involves understanding the principles governing the behavior of gases and liquids, as well as the laws of thermodynamics.");
+        addStudentAnswerToProblemAnswer(pa20c_1, sa20c_1_student9);
+
+        StudentAnswer sa20c_2_student9 = createStudentAnswer(student9, pa20c_2, "The first law of thermodynamics, also known as the law of energy conservation, states that energy cannot be created or destroyed, only transformed from one form to another. It is expressed as ΔU = Q - W, where ΔU is the change in internal energy, Q is the heat added to the system, and W is the work done by the system.");
+        addStudentAnswerToProblemAnswer(pa20c_2, sa20c_2_student9);
+
+        StudentAnswer sa20c_3_student9 = createStudentAnswer(student9, pa20c_3, "The second law of thermodynamics states that the entropy of an isolated system always increases over time. It also implies that heat naturally flows from a region of higher temperature to a region of lower temperature and that it is impossible to convert heat completely into work without some loss of energy.");
+        addStudentAnswerToProblemAnswer(pa20c_3, sa20c_3_student9);
+
+        StudentAnswer sa20c_4_student9 = createStudentAnswer(student9, pa20c_4, "Entropy is a measure of the disorder or randomness in a system. It quantifies the number of possible microstates of a system and is a key concept in the second law of thermodynamics. Higher entropy indicates greater disorder and lower energy availability for work.");
+        addStudentAnswerToProblemAnswer(pa20c_4, sa20c_4_student9);
+
+        StudentAnswer sa20c_5_student9 = createStudentAnswer(student9, pa20c_5, "The third law of thermodynamics states that as the temperature of a system approaches absolute zero, the entropy of the system approaches a minimum value. This implies that it is impossible to reach absolute zero through any finite number of processes.");
+        addStudentAnswerToProblemAnswer(pa20c_5, sa20c_5_student9);
+
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa20c_1_student10 = createStudentAnswer(student10, pa20c_1, "Thermodynamics is the branch of physics that deals with the study of heat, energy, and the transformation of energy from one form to another. It involves understanding the principles governing the behavior of gases and liquids, as well as the laws of thermodynamics.");
+        addStudentAnswerToProblemAnswer(pa20c_1, sa20c_1_student10);
+
+        StudentAnswer sa20c_2_student10 = createStudentAnswer(student10, pa20c_2, "The first law of thermodynamics, also known as the law of energy conservation, states that energy cannot be created or destroyed, only transformed from one form to another. It is expressed as ΔU = Q - W, where ΔU is the change in internal energy, Q is the heat added to the system, and W is the work done by the system.");
+        addStudentAnswerToProblemAnswer(pa20c_2, sa20c_2_student10);
+
+        StudentAnswer sa20c_3_student10 = createStudentAnswer(student10, pa20c_3, "The second law of thermodynamics states that the entropy of an isolated system always increases over time. It also implies that heat naturally flows from a region of higher temperature to a region of lower temperature and that it is impossible to convert heat completely into work without some loss of energy.");
+        addStudentAnswerToProblemAnswer(pa20c_3, sa20c_3_student10);
+
+        StudentAnswer sa20c_4_student10 = createStudentAnswer(student10, pa20c_4, "Entropy is a measure of the disorder or randomness in a system. It quantifies the number of possible microstates of a system and is a key concept in the second law of thermodynamics. Higher entropy indicates greater disorder and lower energy availability for work.");
+        addStudentAnswerToProblemAnswer(pa20c_4, sa20c_4_student10);
+
+        StudentAnswer sa20c_5_student10 = createStudentAnswer(student10, pa20c_5, "The third law of thermodynamics states that as the temperature of a system approaches absolute zero, the entropy of the system approaches a minimum value. This implies that it is impossible to reach absolute zero through any finite number of processes.");
+        addStudentAnswerToProblemAnswer(pa20c_5, sa20c_5_student10);
+
+        // Creating StudentAnswer instances for student9
+        StudentAnswer sa20d_1_student9 = createStudentAnswer(student9, pa20d_1, "Material science is the study of the properties and behavior of materials. It involves understanding the structure, composition, and performance of different materials and how they can be used in various engineering applications.");
+        addStudentAnswerToProblemAnswer(pa20d_1, sa20d_1_student9);
+
+        StudentAnswer sa20d_2_student9 = createStudentAnswer(student9, pa20d_2, "The main types of materials studied in material science include metals, ceramics, polymers, and composites. Each type has distinct properties and applications, making them suitable for different engineering purposes.");
+        addStudentAnswerToProblemAnswer(pa20d_2, sa20d_2_student9);
+
+        StudentAnswer sa20d_3_student9 = createStudentAnswer(student9, pa20d_3, "Metals have properties such as high electrical and thermal conductivity, ductility, malleability, and strength. They are widely used in engineering applications such as construction, transportation, and electronics.");
+        addStudentAnswerToProblemAnswer(pa20d_3, sa20d_3_student9);
+
+        StudentAnswer sa20d_4_student9 = createStudentAnswer(student9, pa20d_4, "Ceramics are non-metallic, inorganic materials that are typically hard, brittle, and resistant to heat and chemical attack. They are used in applications such as pottery, building materials, and high-temperature environments.");
+        addStudentAnswerToProblemAnswer(pa20d_4, sa20d_4_student9);
+
+        StudentAnswer sa20d_5_student9 = createStudentAnswer(student9, pa20d_5, "Polymers are large molecules composed of repeating structural units. They can be natural or synthetic and have properties such as flexibility, elasticity, and low density. Polymers are used in a wide range of applications, including plastics, textiles, and medical devices.");
+        addStudentAnswerToProblemAnswer(pa20d_5, sa20d_5_student9);
+
+// Creating StudentAnswer instances for student10
+        StudentAnswer sa20d_1_student10 = createStudentAnswer(student10, pa20d_1, "Material science is the study of the properties and behavior of materials. It involves understanding the structure, composition, and performance of different materials and how they can be used in various engineering applications.");
+        addStudentAnswerToProblemAnswer(pa20d_1, sa20d_1_student10);
+
+        StudentAnswer sa20d_2_student10 = createStudentAnswer(student10, pa20d_2, "The main types of materials studied in material science include metals, ceramics, polymers, and composites. Each type has distinct properties and applications, making them suitable for different engineering purposes.");
+        addStudentAnswerToProblemAnswer(pa20d_2, sa20d_2_student10);
+
+        StudentAnswer sa20d_3_student10 = createStudentAnswer(student10, pa20d_3, "Metals have properties such as high electrical and thermal conductivity, ductility, malleability, and strength. They are widely used in engineering applications such as construction, transportation, and electronics.");
+        addStudentAnswerToProblemAnswer(pa20d_3, sa20d_3_student10);
+
+        StudentAnswer sa20d_4_student10 = createStudentAnswer(student10, pa20d_4, "Ceramics are non-metallic, inorganic materials that are typically hard, brittle, and resistant to heat and chemical attack. They are used in applications such as pottery, building materials, and high-temperature environments.");
+        addStudentAnswerToProblemAnswer(pa20d_4, sa20d_4_student10);
+
+        StudentAnswer sa20d_5_student10 = createStudentAnswer(student10, pa20d_5, "Polymers are large molecules composed of repeating structural units. They can be natural or synthetic and have properties such as flexibility, elasticity, and low density. Polymers are used in a wide range of applications, including plastics, textiles, and medical devices.");
+        addStudentAnswerToProblemAnswer(pa20d_5, sa20d_5_student10);
+
     }
 
     public static Test createTest(String title, Faculty teacher, Date dueDate, Syllabus syllabus, boolean completed) {
