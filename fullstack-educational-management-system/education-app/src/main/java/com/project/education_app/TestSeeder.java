@@ -10,9 +10,12 @@ import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 import java.time.ZoneId;
+import java.util.Arrays;
 import java.util.Date;
 
 import static com.project.education_app.AssignmentSeeder.*;
+import static com.project.education_app.Seeder.addSubmissionToStudentAnswer;
+import static com.project.education_app.Seeder.createSubmission;
 
 @Component
 @Data
@@ -4782,8 +4785,8 @@ public class TestSeeder implements CommandLineRunner {
         StudentAnswer sa20b_3_student9 = createStudentAnswer(student9, pa20b_3, "Kinetics is the branch of dynamics that deals with the forces and torques that cause motion. It involves analyzing the relationship between the motion of objects and the forces acting on them.");
         addStudentAnswerToProblemAnswer(pa20b_3, sa20b_3_student9);
 
-        StudentAnswer sa20b_4_new_student9 = createStudentAnswer(student9, pa20b_4_new, "Newton's Second Law of Motion states that the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass. This law is expressed by the equation F = ma, where F is the force, m is the mass, and a is the acceleration.");
-        addStudentAnswerToProblemAnswer(pa20b_4_new, sa20b_4_new_student9);
+        StudentAnswer sa20b_4_student9 = createStudentAnswer(student9, pa20b_4_new, "Newton's Second Law of Motion states that the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass. This law is expressed by the equation F = ma, where F is the force, m is the mass, and a is the acceleration.");
+        addStudentAnswerToProblemAnswer(pa20b_4_new, sa20b_4_student9);
 
         StudentAnswer sa20b_5_student9 = createStudentAnswer(student9, pa20b_5, "Velocity is the rate of change of displacement with respect to time, and it is a vector quantity with both magnitude and direction. Acceleration is the rate of change of velocity with respect to time, and it is also a vector quantity.");
         addStudentAnswerToProblemAnswer(pa20b_5, sa20b_5_student9);
@@ -4798,8 +4801,8 @@ public class TestSeeder implements CommandLineRunner {
         StudentAnswer sa20b_3_student10 = createStudentAnswer(student10, pa20b_3, "Kinetics is the branch of dynamics that deals with the forces and torques that cause motion. It involves analyzing the relationship between the motion of objects and the forces acting on them.");
         addStudentAnswerToProblemAnswer(pa20b_3, sa20b_3_student10);
 
-        StudentAnswer sa20b_4_new_student10 = createStudentAnswer(student10, pa20b_4_new, "Newton's Second Law of Motion states that the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass. This law is expressed by the equation F = ma, where F is the force, m is the mass, and a is the acceleration.");
-        addStudentAnswerToProblemAnswer(pa20b_4_new, sa20b_4_new_student10);
+        StudentAnswer sa20b_4_student10 = createStudentAnswer(student10, pa20b_4_new, "Newton's Second Law of Motion states that the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass. This law is expressed by the equation F = ma, where F is the force, m is the mass, and a is the acceleration.");
+        addStudentAnswerToProblemAnswer(pa20b_4_new, sa20b_4_student10);
 
         StudentAnswer sa20b_5_student10 = createStudentAnswer(student10, pa20b_5, "Velocity is the rate of change of displacement with respect to time, and it is a vector quantity with both magnitude and direction. Acceleration is the rate of change of velocity with respect to time, and it is also a vector quantity.");
         addStudentAnswerToProblemAnswer(pa20b_5, sa20b_5_student10);
@@ -4867,6 +4870,1580 @@ public class TestSeeder implements CommandLineRunner {
 
         StudentAnswer sa20d_5_student10 = createStudentAnswer(student10, pa20d_5, "Polymers are large molecules composed of repeating structural units. They can be natural or synthetic and have properties such as flexibility, elasticity, and low density. Polymers are used in a wide range of applications, including plastics, textiles, and medical devices.");
         addStudentAnswerToProblemAnswer(pa20d_5, sa20d_5_student10);
+
+// Creating submission for student1 with student answers for 1a
+        Submission submission1a_1 = createSubmission("Submission from student1", student1, Arrays.asList(
+                sa1a_1_student1, sa1a_2_student1, sa1a_3_student1, sa1a_4_student1, sa1a_5_student1
+        ));
+
+// Adding the submission to each student answer for student1
+        for (StudentAnswer studentAnswer : submission1a_1.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission1a_1);
+        }
+
+// Creating submission for student2 with student answers for 1a
+        Submission submission1a_2 = createSubmission("Submission from student2", student2, Arrays.asList(
+                sa1a_1_student2, sa1a_2_student2, sa1a_3_student2, sa1a_4_student2, sa1a_5_student2
+        ));
+
+// Adding the submission to each student answer for student2
+        for (StudentAnswer studentAnswer : submission1a_2.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission1a_2);
+        }
+// Creating submission for student1 with student answers for 1b
+        Submission submission1b_1 = createSubmission("Submission from student1", student1, Arrays.asList(
+                sa1b_1_student1, sa1b_2_student1, sa1b_3_student1, sa1b_4_student1, sa1b_5_student1
+        ));
+
+// Adding the submission to each student answer for student1
+        for (StudentAnswer studentAnswer : submission1b_1.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission1b_1);
+        }
+
+// Creating submission for student2 with student answers for 1b
+        Submission submission1b_2 = createSubmission("Submission from student2", student2, Arrays.asList(
+                sa1b_1_student2, sa1b_2_student2, sa1b_3_student2, sa1b_4_student2, sa1b_5_student2
+        ));
+
+// Adding the submission to each student answer for student2
+        for (StudentAnswer studentAnswer : submission1b_2.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission1b_2);
+        }
+// Creating submission for student1 with student answers for 1c
+        Submission submission1c_1 = createSubmission("Submission from student1", student1, Arrays.asList(
+                sa1c_1_student1, sa1c_2_student1, sa1c_3_student1, sa1c_4_student1, sa1c_5_student1
+        ));
+
+// Adding the submission to each student answer for student1
+        for (StudentAnswer studentAnswer : submission1c_1.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission1c_1);
+        }
+
+// Creating submission for student2 with student answers for 1c
+        Submission submission1c_2 = createSubmission("Submission from student2", student2, Arrays.asList(
+                sa1c_1_student2, sa1c_2_student2, sa1c_3_student2, sa1c_4_student2, sa1c_5_student2
+        ));
+
+// Adding the submission to each student answer for student2
+        for (StudentAnswer studentAnswer : submission1c_2.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission1c_2);
+        }
+// Creating submission for student1 with student answers for 1d
+        Submission submission1d_1 = createSubmission("Submission from student1", student1, Arrays.asList(
+                sa1d_1_student1, sa1d_2_student1, sa1d_3_student1, sa1d_4_student1, sa1d_5_student1
+        ));
+
+// Adding the submission to each student answer for student1
+        for (StudentAnswer studentAnswer : submission1d_1.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission1d_1);
+        }
+
+// Creating submission for student2 with student answers for 1d
+        Submission submission1d_2 = createSubmission("Submission from student2", student2, Arrays.asList(
+                sa1d_1_student2, sa1d_2_student2, sa1d_3_student2, sa1d_4_student2, sa1d_5_student2
+        ));
+
+// Adding the submission to each student answer for student2
+        for (StudentAnswer studentAnswer : submission1d_2.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission1d_2);
+        }
+// Creating submission for student1 with student answers for 1e
+        Submission submission1e_1 = createSubmission("Submission from student1", student1, Arrays.asList(
+                sa1e_1_student1, sa1e_2_student1, sa1e_3_student1, sa1e_4_student1, sa1e_5_student1
+        ));
+
+// Adding the submission to each student answer for student1
+        for (StudentAnswer studentAnswer : submission1e_1.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission1e_1);
+        }
+
+// Creating submission for student2 with student answers for 1e
+        Submission submission1e_2 = createSubmission("Submission from student2", student2, Arrays.asList(
+                sa1e_1_student2, sa1e_2_student2, sa1e_3_student2, sa1e_4_student2, sa1e_5_student2
+        ));
+
+// Adding the submission to each student answer for student2
+        for (StudentAnswer studentAnswer : submission1e_2.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission1e_2);
+        }
+// Creating submission for student1 with student answers for 1f
+        Submission submission1f_1 = createSubmission("Submission from student1", student1, Arrays.asList(
+                sa1f_1_student1, sa1f_2_student1, sa1f_3_student1, sa1f_4_student1, sa1f_5_student1
+        ));
+
+// Adding the submission to each student answer for student1
+        for (StudentAnswer studentAnswer : submission1f_1.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission1f_1);
+        }
+
+// Creating submission for student2 with student answers for 1f
+        Submission submission1f_2 = createSubmission("Submission from student2", student2, Arrays.asList(
+                sa1f_1_student2, sa1f_2_student2, sa1f_3_student2, sa1f_4_student2, sa1f_5_student2
+        ));
+
+// Adding the submission to each student answer for student2
+        for (StudentAnswer studentAnswer : submission1f_2.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission1f_2);
+        }
+// Creating submission for student1 with student answers for 2a
+        Submission submission2a_1 = createSubmission("Submission from student1", student1, Arrays.asList(
+                sa2a_1_student1, sa2a_2_student1, sa2a_3_student1, sa2a_4_student1, sa2a_5_student1
+        ));
+
+// Adding the submission to each student answer for student1
+        for (StudentAnswer studentAnswer : submission2a_1.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission2a_1);
+        }
+
+// Creating submission for student2 with student answers for 2a
+        Submission submission2a_2 = createSubmission("Submission from student2", student2, Arrays.asList(
+                sa2a_1_student2, sa2a_2_student2, sa2a_3_student2, sa2a_4_student2, sa2a_5_student2
+        ));
+
+// Adding the submission to each student answer for student2
+        for (StudentAnswer studentAnswer : submission2a_2.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission2a_2);
+        }
+// Creating submission for student1 with student answers for 2b
+        Submission submission2b_1 = createSubmission("Submission from student1", student1, Arrays.asList(
+                sa2b_1_student1, sa2b_2_student1, sa2b_3_student1, sa2b_4_student1, sa2b_5_student1
+        ));
+
+// Adding the submission to each student answer for student1
+        for (StudentAnswer studentAnswer : submission2b_1.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission2b_1);
+        }
+
+// Creating submission for student2 with student answers for 2b
+        Submission submission2b_2 = createSubmission("Submission from student2", student2, Arrays.asList(
+                sa2b_1_student2, sa2b_2_student2, sa2b_3_student2, sa2b_4_student2, sa2b_5_student2
+        ));
+
+// Adding the submission to each student answer for student2
+        for (StudentAnswer studentAnswer : submission2b_2.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission2b_2);
+        }
+// Creating submission for student1 with student answers for 2c
+        Submission submission2c_1 = createSubmission("Submission from student1", student1, Arrays.asList(
+                sa2c_1_student1, sa2c_2_student1, sa2c_3_student1, sa2c_4_student1, sa2c_5_student1
+        ));
+
+// Adding the submission to each student answer for student1
+        for (StudentAnswer studentAnswer : submission2c_1.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission2c_1);
+        }
+
+// Creating submission for student2 with student answers for 2c
+        Submission submission2c_2 = createSubmission("Submission from student2", student2, Arrays.asList(
+                sa2c_1_student2, sa2c_2_student2, sa2c_3_student2, sa2c_4_student2, sa2c_5_student2
+        ));
+
+// Adding the submission to each student answer for student2
+        for (StudentAnswer studentAnswer : submission2c_2.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission2c_2);
+        }
+// Creating submission for student1 with student answers for 2d
+        Submission submission2d_1 = createSubmission("Submission from student1", student1, Arrays.asList(
+                sa2d_1_student1, sa2d_2_student1, sa2d_3_student1, sa2d_4_student1, sa2d_5_student1
+        ));
+
+// Adding the submission to each student answer for student1
+        for (StudentAnswer studentAnswer : submission2d_1.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission2d_1);
+        }
+
+// Creating submission for student2 with student answers for 2d
+        Submission submission2d_2 = createSubmission("Submission from student2", student2, Arrays.asList(
+                sa2d_1_student2, sa2d_2_student2, sa2d_3_student2, sa2d_4_student2, sa2d_5_student2
+        ));
+
+// Adding the submission to each student answer for student2
+        for (StudentAnswer studentAnswer : submission2d_2.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission2d_2);
+        }
+// Creating submission for student1 with student answers for 2e
+        Submission submission2e_1 = createSubmission("Submission from student1", student1, Arrays.asList(
+                sa2e_1_student1, sa2e_2_student1, sa2e_3_student1, sa2e_4_student1, sa2e_5_student1
+        ));
+
+// Adding the submission to each student answer for student1
+        for (StudentAnswer studentAnswer : submission2e_1.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission2e_1);
+        }
+
+// Creating submission for student2 with student answers for 2e
+        Submission submission2e_2 = createSubmission("Submission from student2", student2, Arrays.asList(
+                sa2e_1_student2, sa2e_2_student2, sa2e_3_student2, sa2e_4_student2, sa2e_5_student2
+        ));
+
+// Adding the submission to each student answer for student2
+        for (StudentAnswer studentAnswer : submission2e_2.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission2e_2);
+        }
+// Creating submission for student1 with student answers for 2f
+        Submission submission2f_1 = createSubmission("Submission from student1", student1, Arrays.asList(
+                sa2f_1_student1, sa2f_2_student1, sa2f_3_student1, sa2f_4_student1, sa2f_5_student1
+        ));
+
+// Adding the submission to each student answer for student1
+        for (StudentAnswer studentAnswer : submission2f_1.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission2f_1);
+        }
+
+// Creating submission for student2 with student answers for 2f
+        Submission submission2f_2 = createSubmission("Submission from student2", student2, Arrays.asList(
+                sa2f_1_student2, sa2f_2_student2, sa2f_3_student2, sa2f_4_student2, sa2f_5_student2
+        ));
+
+// Adding the submission to each student answer for student2
+        for (StudentAnswer studentAnswer : submission2f_2.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission2f_2);
+        }
+// Creating submission for student1 with student answers for 3a
+        Submission submission3a_1 = createSubmission("Submission from student1", student1, Arrays.asList(
+                sa3a_1_student1, sa3a_2_student1, sa3a_3_student1, sa3a_4_student1, sa3a_5_student1
+        ));
+
+// Adding the submission to each student answer for student1
+        for (StudentAnswer studentAnswer : submission3a_1.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission3a_1);
+        }
+
+// Creating submission for student2 with student answers for 3a
+        Submission submission3a_2 = createSubmission("Submission from student2", student2, Arrays.asList(
+                sa3a_1_student2, sa3a_2_student2, sa3a_3_student2, sa3a_4_student2, sa3a_5_student2
+        ));
+
+// Adding the submission to each student answer for student2
+        for (StudentAnswer studentAnswer : submission3a_2.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission3a_2);
+        }
+// Creating submission for student1 with student answers for 3b
+        Submission submission3b_1 = createSubmission("Submission from student1", student1, Arrays.asList(
+                sa3b_1_student1, sa3b_2_student1, sa3b_3_student1, sa3b_4_student1, sa3b_5_student1
+        ));
+
+// Adding the submission to each student answer for student1
+        for (StudentAnswer studentAnswer : submission3b_1.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission3b_1);
+        }
+
+// Creating submission for student2 with student answers for 3b
+        Submission submission3b_2 = createSubmission("Submission from student2", student2, Arrays.asList(
+                sa3b_1_student2, sa3b_2_student2, sa3b_3_student2, sa3b_4_student2, sa3b_5_student2
+        ));
+
+// Adding the submission to each student answer for student2
+        for (StudentAnswer studentAnswer : submission3b_2.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission3b_2);
+        }
+// Creating submission for student1 with student answers for 3c
+        Submission submission3c_1 = createSubmission("Submission from student1", student1, Arrays.asList(
+                sa3c_1_student1, sa3c_2_student1, sa3c_3_student1, sa3c_4_student1, sa3c_5_student1
+        ));
+
+// Adding the submission to each student answer for student1
+        for (StudentAnswer studentAnswer : submission3c_1.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission3c_1);
+        }
+
+// Creating submission for student2 with student answers for 3c
+        Submission submission3c_2 = createSubmission("Submission from student2", student2, Arrays.asList(
+                sa3c_1_student2, sa3c_2_student2, sa3c_3_student2, sa3c_4_student2, sa3c_5_student2
+        ));
+
+// Adding the submission to each student answer for student2
+        for (StudentAnswer studentAnswer : submission3c_2.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission3c_2);
+        }
+// Creating submission for student1 with student answers for 3d
+        Submission submission3d_1 = createSubmission("Submission from student1", student1, Arrays.asList(
+                sa3d_1_student1, sa3d_2_student1, sa3d_3_student1, sa3d_4_student1, sa3d_5_student1
+        ));
+
+// Adding the submission to each student answer for student1
+        for (StudentAnswer studentAnswer : submission3d_1.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission3d_1);
+        }
+
+// Creating submission for student2 with student answers for 3d
+        Submission submission3d_2 = createSubmission("Submission from student2", student2, Arrays.asList(
+                sa3d_1_student2, sa3d_2_student2, sa3d_3_student2, sa3d_4_student2, sa3d_5_student2
+        ));
+
+// Adding the submission to each student answer for student2
+        for (StudentAnswer studentAnswer : submission3d_2.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission3d_2);
+        }
+// Creating submission for student1 with student answers for 4a
+        Submission submission4a_1 = createSubmission("Submission from student1", student1, Arrays.asList(
+                sa4a_1_student1, sa4a_2_student1, sa4a_3_student1, sa4a_4_student1, sa4a_5_student1
+        ));
+
+// Adding the submission to each student answer for student1
+        for (StudentAnswer studentAnswer : submission4a_1.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission4a_1);
+        }
+
+// Creating submission for student2 with student answers for 4a
+        Submission submission4a_2 = createSubmission("Submission from student2", student2, Arrays.asList(
+                sa4a_1_student2, sa4a_2_student2, sa4a_3_student2, sa4a_4_student2, sa4a_5_student2
+        ));
+
+// Adding the submission to each student answer for student2
+        for (StudentAnswer studentAnswer : submission4a_2.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission4a_2);
+        }
+// Creating submission for student1 with student answers for 4b
+        Submission submission4b_1 = createSubmission("Submission from student1", student1, Arrays.asList(
+                sa4b_1_student1, sa4b_2_student1, sa4b_3_student1, sa4b_4_student1, sa4b_5_student1
+        ));
+
+// Adding the submission to each student answer for student1
+        for (StudentAnswer studentAnswer : submission4b_1.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission4b_1);
+        }
+
+// Creating submission for student2 with student answers for 4b
+        Submission submission4b_2 = createSubmission("Submission from student2", student2, Arrays.asList(
+                sa4b_1_student2, sa4b_2_student2, sa4b_3_student2, sa4b_4_student2, sa4b_5_student2
+        ));
+
+// Adding the submission to each student answer for student2
+        for (StudentAnswer studentAnswer : submission4b_2.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission4b_2);
+        }
+// Creating submission for student1 with student answers for 4c
+        Submission submission4c_1 = createSubmission("Submission from student1", student1, Arrays.asList(
+                sa4c_1_student1, sa4c_2_student1, sa4c_3_student1, sa4c_4_student1, sa4c_5_student1
+        ));
+
+// Adding the submission to each student answer for student1
+        for (StudentAnswer studentAnswer : submission4c_1.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission4c_1);
+        }
+
+// Creating submission for student2 with student answers for 4c
+        Submission submission4c_2 = createSubmission("Submission from student2", student2, Arrays.asList(
+                sa4c_1_student2, sa4c_2_student2, sa4c_3_student2, sa4c_4_student2, sa4c_5_student2
+        ));
+
+// Adding the submission to each student answer for student2
+        for (StudentAnswer studentAnswer : submission4c_2.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission4c_2);
+        }
+// Creating submission for student1 with student answers for 4d
+        Submission submission4d_1 = createSubmission("Submission from student1", student1, Arrays.asList(
+                sa4d_1_student1, sa4d_2_student1, sa4d_3_student1, sa4d_4_student1, sa4d_5_student1
+        ));
+
+// Adding the submission to each student answer for student1
+        for (StudentAnswer studentAnswer : submission4d_1.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission4d_1);
+        }
+
+// Creating submission for student2 with student answers for 4d
+        Submission submission4d_2 = createSubmission("Submission from student2", student2, Arrays.asList(
+                sa4d_1_student2, sa4d_2_student2, sa4d_3_student2, sa4d_4_student2, sa4d_5_student2
+        ));
+
+// Adding the submission to each student answer for student2
+        for (StudentAnswer studentAnswer : submission4d_2.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission4d_2);
+        }
+// Creating submission for student3 with student answers for 5a
+        Submission submission5a_3 = createSubmission("Submission from student3", student3, Arrays.asList(
+                sa5a_1_student3, sa5a_2_student3, sa5a_3_student3, sa5a_4_student3, sa5a_5_student3
+        ));
+
+// Adding the submission to each student answer for student3
+        for (StudentAnswer studentAnswer : submission5a_3.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission5a_3);
+        }
+
+// Creating submission for student4 with student answers for 5a
+        Submission submission5a_4 = createSubmission("Submission from student4", student4, Arrays.asList(
+                sa5a_1_student4, sa5a_2_student4, sa5a_3_student4, sa5a_4_student4, sa5a_5_student4
+        ));
+
+// Adding the submission to each student answer for student4
+        for (StudentAnswer studentAnswer : submission5a_4.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission5a_4);
+        }
+// Creating submission for student3 with student answers for 5b
+        Submission submission5b_3 = createSubmission("Submission from student3", student3, Arrays.asList(
+                sa5b_1_student3, sa5b_2_student3, sa5b_3_student3, sa5b_4_student3, sa5b_5_student3
+        ));
+
+// Adding the submission to each student answer for student3
+        for (StudentAnswer studentAnswer : submission5b_3.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission5b_3);
+        }
+
+// Creating submission for student4 with student answers for 5b
+        Submission submission5b_4 = createSubmission("Submission from student4", student4, Arrays.asList(
+                sa5b_1_student4, sa5b_2_student4, sa5b_3_student4, sa5b_4_student4, sa5b_5_student4
+        ));
+
+// Adding the submission to each student answer for student4
+        for (StudentAnswer studentAnswer : submission5b_4.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission5b_4);
+        }
+// Creating submission for student3 with student answers for 5c
+        Submission submission5c_3 = createSubmission("Submission from student3", student3, Arrays.asList(
+                sa5c_1_student3, sa5c_2_student3, sa5c_3_student3, sa5c_4_student3, sa5c_5_student3
+        ));
+
+// Adding the submission to each student answer for student3
+        for (StudentAnswer studentAnswer : submission5c_3.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission5c_3);
+        }
+
+// Creating submission for student4 with student answers for 5c
+        Submission submission5c_4 = createSubmission("Submission from student4", student4, Arrays.asList(
+                sa5c_1_student4, sa5c_2_student4, sa5c_3_student4, sa5c_4_student4, sa5c_5_student4
+        ));
+
+// Adding the submission to each student answer for student4
+        for (StudentAnswer studentAnswer : submission5c_4.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission5c_4);
+        }
+// Creating submission for student3 with student answers for 5d
+        Submission submission5d_3 = createSubmission("Submission from student3", student3, Arrays.asList(
+                sa5d_1_student3, sa5d_2_student3, sa5d_3_student3, sa5d_4_student3, sa5d_5_student3
+        ));
+
+// Adding the submission to each student answer for student3
+        for (StudentAnswer studentAnswer : submission5d_3.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission5d_3);
+        }
+
+// Creating submission for student4 with student answers for 5d
+        Submission submission5d_4 = createSubmission("Submission from student4", student4, Arrays.asList(
+                sa5d_1_student4, sa5d_2_student4, sa5d_3_student4, sa5d_4_student4, sa5d_5_student4
+        ));
+
+// Adding the submission to each student answer for student4
+        for (StudentAnswer studentAnswer : submission5d_4.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission5d_4);
+        }
+// Creating submission for student3 with student answers for 6a
+        Submission submission6a_3 = createSubmission("Submission from student3", student3, Arrays.asList(
+                sa6a_1_student3, sa6a_2_student3, sa6a_3_student3, sa6a_4_student3, sa6a_5_student3
+        ));
+
+// Adding the submission to each student answer for student3
+        for (StudentAnswer studentAnswer : submission6a_3.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission6a_3);
+        }
+
+// Creating submission for student4 with student answers for 6a
+        Submission submission6a_4 = createSubmission("Submission from student4", student4, Arrays.asList(
+                sa6a_1_student4, sa6a_2_student4, sa6a_3_student4, sa6a_4_student4, sa6a_5_student4
+        ));
+
+// Adding the submission to each student answer for student4
+        for (StudentAnswer studentAnswer : submission6a_4.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission6a_4);
+        }
+// Creating submission for student3 with student answers for 6b
+        Submission submission6b_3 = createSubmission("Submission from student3", student3, Arrays.asList(
+                sa6b_1_student3, sa6b_2_student3, sa6b_3_student3, sa6b_4_student3, sa6b_5_student3
+        ));
+
+// Adding the submission to each student answer for student3
+        for (StudentAnswer studentAnswer : submission6b_3.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission6b_3);
+        }
+
+// Creating submission for student4 with student answers for 6b
+        Submission submission6b_4 = createSubmission("Submission from student4", student4, Arrays.asList(
+                sa6b_1_student4, sa6b_2_student4, sa6b_3_student4, sa6b_4_student4, sa6b_5_student4
+        ));
+
+// Adding the submission to each student answer for student4
+        for (StudentAnswer studentAnswer : submission6b_4.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission6b_4);
+        }
+// Creating submission for student3 with student answers for 6c
+        Submission submission6c_3 = createSubmission("Submission from student3", student3, Arrays.asList(
+                sa6c_1_student3, sa6c_2_student3, sa6c_3_student3, sa6c_4_student3, sa6c_5_student3
+        ));
+
+// Adding the submission to each student answer for student3
+        for (StudentAnswer studentAnswer : submission6c_3.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission6c_3);
+        }
+
+// Creating submission for student4 with student answers for 6c
+        Submission submission6c_4 = createSubmission("Submission from student4", student4, Arrays.asList(
+                sa6c_1_student4, sa6c_2_student4, sa6c_3_student4, sa6c_4_student4, sa6c_5_student4
+        ));
+
+// Adding the submission to each student answer for student4
+        for (StudentAnswer studentAnswer : submission6c_4.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission6c_4);
+        }
+// Creating submission for student3 with student answers for 6d
+        Submission submission6d_3 = createSubmission("Submission from student3", student3, Arrays.asList(
+                sa6d_1_student3, sa6d_2_student3, sa6d_3_student3, sa6d_4_student3, sa6d_5_student3
+        ));
+
+// Adding the submission to each student answer for student3
+        for (StudentAnswer studentAnswer : submission6d_3.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission6d_3);
+        }
+
+// Creating submission for student4 with student answers for 6d
+        Submission submission6d_4 = createSubmission("Submission from student4", student4, Arrays.asList(
+                sa6d_1_student4, sa6d_2_student4, sa6d_3_student4, sa6d_4_student4, sa6d_5_student4
+        ));
+
+// Adding the submission to each student answer for student4
+        for (StudentAnswer studentAnswer : submission6d_4.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission6d_4);
+        }
+// Creating submission for student3 with student answers for 6e
+        Submission submission6e_3 = createSubmission("Submission from student3", student3, Arrays.asList(
+                sa6e_1_student3, sa6e_2_student3, sa6e_3_student3, sa6e_4_student3, sa6e_5_student3
+        ));
+
+// Adding the submission to each student answer for student3
+        for (StudentAnswer studentAnswer : submission6e_3.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission6e_3);
+        }
+
+// Creating submission for student4 with student answers for 6e
+        Submission submission6e_4 = createSubmission("Submission from student4", student4, Arrays.asList(
+                sa6e_1_student4, sa6e_2_student4, sa6e_3_student4, sa6e_4_student4, sa6e_5_student4
+        ));
+
+// Adding the submission to each student answer for student4
+        for (StudentAnswer studentAnswer : submission6e_4.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission6e_4);
+        }
+// Creating submission for student3 with student answers for 7a
+        Submission submission7a_3 = createSubmission("Submission from student3", student3, Arrays.asList(
+                sa7a_1_student3, sa7a_2_student3, sa7a_3_student3, sa7a_4_student3, sa7a_5_student3
+        ));
+
+// Adding the submission to each student answer for student3
+        for (StudentAnswer studentAnswer : submission7a_3.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission7a_3);
+        }
+
+// Creating submission for student4 with student answers for 7a
+        Submission submission7a_4 = createSubmission("Submission from student4", student4, Arrays.asList(
+                sa7a_1_student4, sa7a_2_student4, sa7a_3_student4, sa7a_4_student4, sa7a_5_student4
+        ));
+
+// Adding the submission to each student answer for student4
+        for (StudentAnswer studentAnswer : submission7a_4.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission7a_4);
+        }
+// Creating submission for student3 with student answers for 7b
+        Submission submission7b_3 = createSubmission("Submission from student3", student3, Arrays.asList(
+                sa7b_1_student3, sa7b_2_student3, sa7b_3_student3, sa7b_4_student3, sa7b_5_student3
+        ));
+
+// Adding the submission to each student answer for student3
+        for (StudentAnswer studentAnswer : submission7b_3.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission7b_3);
+        }
+
+// Creating submission for student4 with student answers for 7b
+        Submission submission7b_4 = createSubmission("Submission from student4", student4, Arrays.asList(
+                sa7b_1_student4, sa7b_2_student4, sa7b_3_student4, sa7b_4_student4, sa7b_5_student4
+        ));
+
+// Adding the submission to each student answer for student4
+        for (StudentAnswer studentAnswer : submission7b_4.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission7b_4);
+        }
+// Creating submission for student3 with student answers for 7c
+        Submission submission7c_3 = createSubmission("Submission from student3", student3, Arrays.asList(
+                sa7c_1_student3, sa7c_2_student3, sa7c_3_student3, sa7c_4_student3, sa7c_5_student3
+        ));
+
+// Adding the submission to each student answer for student3
+        for (StudentAnswer studentAnswer : submission7c_3.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission7c_3);
+        }
+
+// Creating submission for student4 with student answers for 7c
+        Submission submission7c_4 = createSubmission("Submission from student4", student4, Arrays.asList(
+                sa7c_1_student4, sa7c_2_student4, sa7c_3_student4, sa7c_4_student4, sa7c_5_student4
+        ));
+
+// Adding the submission to each student answer for student4
+        for (StudentAnswer studentAnswer : submission7c_4.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission7c_4);
+        }
+// Creating submission for student3 with student answers for 7d
+        Submission submission7d_3 = createSubmission("Submission from student3", student3, Arrays.asList(
+                sa7d_1_student3, sa7d_2_student3, sa7d_3_student3, sa7d_4_student3, sa7d_5_student3
+        ));
+
+// Adding the submission to each student answer for student3
+        for (StudentAnswer studentAnswer : submission7d_3.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission7d_3);
+        }
+
+// Creating submission for student4 with student answers for 7d
+        Submission submission7d_4 = createSubmission("Submission from student4", student4, Arrays.asList(
+                sa7d_1_student4, sa7d_2_student4, sa7d_3_student4, sa7d_4_student4, sa7d_5_student4
+        ));
+
+// Adding the submission to each student answer for student4
+        for (StudentAnswer studentAnswer : submission7d_4.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission7d_4);
+        }
+// Creating submission for student3 with student answers for 8a
+        Submission submission8a_3 = createSubmission("Submission from student3", student3, Arrays.asList(
+                sa8a_1_student3, sa8a_2_student3, sa8a_3_student3, sa8a_4_student3, sa8a_5_student3
+        ));
+
+// Adding the submission to each student answer for student3
+        for (StudentAnswer studentAnswer : submission8a_3.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission8a_3);
+        }
+
+// Creating submission for student4 with student answers for 8a
+        Submission submission8a_4 = createSubmission("Submission from student4", student4, Arrays.asList(
+                sa8a_1_student4, sa8a_2_student4, sa8a_3_student4, sa8a_4_student4, sa8a_5_student4
+        ));
+
+// Adding the submission to each student answer for student4
+        for (StudentAnswer studentAnswer : submission8a_4.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission8a_4);
+        }
+// Creating submission for student3 with student answers for 8b
+        Submission submission8b_3 = createSubmission("Submission from student3", student3, Arrays.asList(
+                sa8b_1_student3, sa8b_2_student3, sa8b_3_student3, sa8b_4_student3, sa8b_5_student3
+        ));
+
+// Adding the submission to each student answer for student3
+        for (StudentAnswer studentAnswer : submission8b_3.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission8b_3);
+        }
+
+// Creating submission for student4 with student answers for 8b
+        Submission submission8b_4 = createSubmission("Submission from student4", student4, Arrays.asList(
+                sa8b_1_student4, sa8b_2_student4, sa8b_3_student4, sa8b_4_student4, sa8b_5_student4
+        ));
+
+// Adding the submission to each student answer for student4
+        for (StudentAnswer studentAnswer : submission8b_4.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission8b_4);
+        }
+// Creating submission for student3 with student answers for 8c
+        Submission submission8c_3 = createSubmission("Submission from student3", student3, Arrays.asList(
+                sa8c_1_student3, sa8c_2_student3, sa8c_3_student3, sa8c_4_student3, sa8c_5_student3
+        ));
+
+// Adding the submission to each student answer for student3
+        for (StudentAnswer studentAnswer : submission8c_3.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission8c_3);
+        }
+
+// Creating submission for student4 with student answers for 8c
+        Submission submission8c_4 = createSubmission("Submission from student4", student4, Arrays.asList(
+                sa8c_1_student4, sa8c_2_student4, sa8c_3_student4, sa8c_4_student4, sa8c_5_student4
+        ));
+
+// Adding the submission to each student answer for student4
+        for (StudentAnswer studentAnswer : submission8c_4.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission8c_4);
+        }
+// Creating submission for student3 with student answers for 8d
+        Submission submission8d_3 = createSubmission("Submission from student3", student3, Arrays.asList(
+                sa8d_1_student3, sa8d_2_student3, sa8d_3_student3, sa8d_4_student3, sa8d_5_student3
+        ));
+
+// Adding the submission to each student answer for student3
+        for (StudentAnswer studentAnswer : submission8d_3.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission8d_3);
+        }
+
+// Creating submission for student4 with student answers for 8d
+        Submission submission8d_4 = createSubmission("Submission from student4", student4, Arrays.asList(
+                sa8d_1_student4, sa8d_2_student4, sa8d_3_student4, sa8d_4_student4, sa8d_5_student4
+        ));
+
+// Adding the submission to each student answer for student4
+        for (StudentAnswer studentAnswer : submission8d_4.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission8d_4);
+        }
+// Creating submission for student3 with student answers for 8e
+        Submission submission8e_3 = createSubmission("Submission from student3", student3, Arrays.asList(
+                sa8e_1_student3, sa8e_2_student3, sa8e_3_student3, sa8e_4_student3, sa8e_5_student3
+        ));
+
+// Adding the submission to each student answer for student3
+        for (StudentAnswer studentAnswer : submission8e_3.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission8e_3);
+        }
+
+// Creating submission for student4 with student answers for 8e
+        Submission submission8e_4 = createSubmission("Submission from student4", student4, Arrays.asList(
+                sa8e_1_student4, sa8e_2_student4, sa8e_3_student4, sa8e_4_student4, sa8e_5_student4
+        ));
+
+// Adding the submission to each student answer for student4
+        for (StudentAnswer studentAnswer : submission8e_4.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission8e_4);
+        }
+// Creating submission for student5 with student answers for 9a
+        Submission submission9a_5 = createSubmission("Submission from student5", student5, Arrays.asList(
+                sa9a_1_student5, sa9a_2_student5, sa9a_3_student5, sa9a_4_student5, sa9a_5_student5
+        ));
+
+// Adding the submission to each student answer for student5
+        for (StudentAnswer studentAnswer : submission9a_5.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission9a_5);
+        }
+
+// Creating submission for student6 with student answers for 9a
+        Submission submission9a_6 = createSubmission("Submission from student6", student6, Arrays.asList(
+                sa9a_1_student6, sa9a_2_student6, sa9a_3_student6, sa9a_4_student6, sa9a_5_student6
+        ));
+
+// Adding the submission to each student answer for student6
+        for (StudentAnswer studentAnswer : submission9a_6.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission9a_6);
+        }
+// Creating submission for student5 with student answers for 9b
+        Submission submission9b_5 = createSubmission("Submission from student5", student5, Arrays.asList(
+                sa9b_1_student5, sa9b_2_student5, sa9b_3_student5, sa9b_4_student5, sa9b_5_student5
+        ));
+
+// Adding the submission to each student answer for student5
+        for (StudentAnswer studentAnswer : submission9b_5.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission9b_5);
+        }
+
+// Creating submission for student6 with student answers for 9b
+        Submission submission9b_6 = createSubmission("Submission from student6", student6, Arrays.asList(
+                sa9b_1_student6, sa9b_2_student6, sa9b_3_student6, sa9b_4_student6, sa9b_5_student6
+        ));
+
+// Adding the submission to each student answer for student6
+        for (StudentAnswer studentAnswer : submission9b_6.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission9b_6);
+        }
+// Creating submission for student5 with student answers for 9c
+        Submission submission9c_5 = createSubmission("Submission from student5", student5, Arrays.asList(
+                sa9c_1_student5, sa9c_2_student5, sa9c_3_student5, sa9c_4_student5, sa9c_5_student5
+        ));
+
+// Adding the submission to each student answer for student5
+        for (StudentAnswer studentAnswer : submission9c_5.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission9c_5);
+        }
+
+// Creating submission for student6 with student answers for 9c
+        Submission submission9c_6 = createSubmission("Submission from student6", student6, Arrays.asList(
+                sa9c_1_student6, sa9c_2_student6, sa9c_3_student6, sa9c_4_student6, sa9c_5_student6
+        ));
+
+// Adding the submission to each student answer for student6
+        for (StudentAnswer studentAnswer : submission9c_6.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission9c_6);
+        }
+// Creating submission for student5 with student answers for 10a
+        Submission submission10a_5 = createSubmission("Submission from student5", student5, Arrays.asList(
+                sa10a_1_student5, sa10a_2_student5, sa10a_3_student5, sa10a_4_student5, sa10a_5_student5
+        ));
+
+// Adding the submission to each student answer for student5
+        for (StudentAnswer studentAnswer : submission10a_5.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission10a_5);
+        }
+
+// Creating submission for student6 with student answers for 10a
+        Submission submission10a_6 = createSubmission("Submission from student6", student6, Arrays.asList(
+                sa10a_1_student6, sa10a_2_student6, sa10a_3_student6, sa10a_4_student6, sa10a_5_student6
+        ));
+
+// Adding the submission to each student answer for student6
+        for (StudentAnswer studentAnswer : submission10a_6.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission10a_6);
+        }
+// Creating submission for student5 with student answers for 10b
+        Submission submission10b_5 = createSubmission("Submission from student5", student5, Arrays.asList(
+                sa10b_1_student5, sa10b_2_student5, sa10b_3_student5, sa10b_4_student5, sa10b_5_student5
+        ));
+
+// Adding the submission to each student answer for student5
+        for (StudentAnswer studentAnswer : submission10b_5.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission10b_5);
+        }
+
+// Creating submission for student6 with student answers for 10b
+        Submission submission10b_6 = createSubmission("Submission from student6", student6, Arrays.asList(
+                sa10b_1_student6, sa10b_2_student6, sa10b_3_student6, sa10b_4_student6, sa10b_5_student6
+        ));
+
+// Adding the submission to each student answer for student6
+        for (StudentAnswer studentAnswer : submission10b_6.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission10b_6);
+        }
+// Creating submission for student5 with student answers for 10c
+        Submission submission10c_5 = createSubmission("Submission from student5", student5, Arrays.asList(
+                sa10c_1_student5, sa10c_2_student5, sa10c_3_student5, sa10c_4_student5, sa10c_5_student5
+        ));
+
+// Adding the submission to each student answer for student5
+        for (StudentAnswer studentAnswer : submission10c_5.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission10c_5);
+        }
+
+// Creating submission for student6 with student answers for 10c
+        Submission submission10c_6 = createSubmission("Submission from student6", student6, Arrays.asList(
+                sa10c_1_student6, sa10c_2_student6, sa10c_3_student6, sa10c_4_student6, sa10c_5_student6
+        ));
+
+// Adding the submission to each student answer for student6
+        for (StudentAnswer studentAnswer : submission10c_6.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission10c_6);
+        }
+// Creating submission for student5 with student answers for 10d
+        Submission submission10d_5 = createSubmission("Submission from student5", student5, Arrays.asList(
+                sa10d_1_student5, sa10d_2_student5, sa10d_3_student5, sa10d_4_student5, sa10d_5_student5
+        ));
+
+// Adding the submission to each student answer for student5
+        for (StudentAnswer studentAnswer : submission10d_5.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission10d_5);
+        }
+
+// Creating submission for student6 with student answers for 10d
+        Submission submission10d_6 = createSubmission("Submission from student6", student6, Arrays.asList(
+                sa10d_1_student6, sa10d_2_student6, sa10d_3_student6, sa10d_4_student6, sa10d_5_student6
+        ));
+
+// Adding the submission to each student answer for student6
+        for (StudentAnswer studentAnswer : submission10d_6.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission10d_6);
+        }
+// Creating submission for student5 with student answers for 11a
+        Submission submission11a_5 = createSubmission("Submission from student5", student5, Arrays.asList(
+                sa11a_1_student5, sa11a_2_student5, sa11a_3_student5, sa11a_4_student5, sa11a_5_student5
+        ));
+
+// Adding the submission to each student answer for student5
+        for (StudentAnswer studentAnswer : submission11a_5.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission11a_5);
+        }
+
+// Creating submission for student6 with student answers for 11a
+        Submission submission11a_6 = createSubmission("Submission from student6", student6, Arrays.asList(
+                sa11a_1_student6, sa11a_2_student6, sa11a_3_student6, sa11a_4_student6, sa11a_5_student6
+        ));
+
+// Adding the submission to each student answer for student6
+        for (StudentAnswer studentAnswer : submission11a_6.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission11a_6);
+        }
+// Creating submission for student5 with student answers for 11b
+        Submission submission11b_5 = createSubmission("Submission from student5", student5, Arrays.asList(
+                sa11b_1_student5, sa11b_2_student5, sa11b_3_student5, sa11b_4_student5, sa11b_5_student5
+        ));
+
+// Adding the submission to each student answer for student5
+        for (StudentAnswer studentAnswer : submission11b_5.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission11b_5);
+        }
+
+// Creating submission for student6 with student answers for 11b
+        Submission submission11b_6 = createSubmission("Submission from student6", student6, Arrays.asList(
+                sa11b_1_student6, sa11b_2_student6, sa11b_3_student6, sa11b_4_student6, sa11b_5_student6
+        ));
+
+// Adding the submission to each student answer for student6
+        for (StudentAnswer studentAnswer : submission11b_6.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission11b_6);
+        }
+// Creating submission for student5 with student answers for 11c
+        Submission submission11c_5 = createSubmission("Submission from student5", student5, Arrays.asList(
+                sa11c_1_student5, sa11c_2_student5, sa11c_3_student5, sa11c_4_student5, sa11c_5_student5
+        ));
+
+// Adding the submission to each student answer for student5
+        for (StudentAnswer studentAnswer : submission11c_5.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission11c_5);
+        }
+
+// Creating submission for student6 with student answers for 11c
+        Submission submission11c_6 = createSubmission("Submission from student6", student6, Arrays.asList(
+                sa11c_1_student6, sa11c_2_student6, sa11c_3_student6, sa11c_4_student6, sa11c_5_student6
+        ));
+
+// Adding the submission to each student answer for student6
+        for (StudentAnswer studentAnswer : submission11c_6.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission11c_6);
+        }
+// Creating submission for student5 with student answers for 11d
+        Submission submission11d_5 = createSubmission("Submission from student5", student5, Arrays.asList(
+                sa11d_1_student5, sa11d_2_student5, sa11d_3_student5, sa11d_4_student5, sa11d_5_student5
+        ));
+
+// Adding the submission to each student answer for student5
+        for (StudentAnswer studentAnswer : submission11d_5.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission11d_5);
+        }
+
+// Creating submission for student6 with student answers for 11d
+        Submission submission11d_6 = createSubmission("Submission from student6", student6, Arrays.asList(
+                sa11d_1_student6, sa11d_2_student6, sa11d_3_student6, sa11d_4_student6, sa11d_5_student6
+        ));
+
+// Adding the submission to each student answer for student6
+        for (StudentAnswer studentAnswer : submission11d_6.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission11d_6);
+        }
+// Creating submission for student5 with student answers for 12a
+        Submission submission12a_5 = createSubmission("Submission from student5", student5, Arrays.asList(
+                sa12a_1_student5, sa12a_2_student5, sa12a_3_student5, sa12a_4_student5, sa12a_5_student5
+        ));
+
+// Adding the submission to each student answer for student5
+        for (StudentAnswer studentAnswer : submission12a_5.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission12a_5);
+        }
+
+// Creating submission for student6 with student answers for 12a
+        Submission submission12a_6 = createSubmission("Submission from student6", student6, Arrays.asList(
+                sa12a_1_student6, sa12a_2_student6, sa12a_3_student6, sa12a_4_student6, sa12a_5_student6
+        ));
+
+// Adding the submission to each student answer for student6
+        for (StudentAnswer studentAnswer : submission12a_6.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission12a_6);
+        }
+// Creating submission for student5 with student answers for 12b
+        Submission submission12b_5 = createSubmission("Submission from student5", student5, Arrays.asList(
+                sa12b_1_student5, sa12b_2_student5, sa12b_3_student5, sa12b_4_student5, sa12b_5_student5
+        ));
+
+// Adding the submission to each student answer for student5
+        for (StudentAnswer studentAnswer : submission12b_5.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission12b_5);
+        }
+
+// Creating submission for student6 with student answers for 12b
+        Submission submission12b_6 = createSubmission("Submission from student6", student6, Arrays.asList(
+                sa12b_1_student6, sa12b_2_student6, sa12b_3_student6, sa12b_4_student6, sa12b_5_student6
+        ));
+
+// Adding the submission to each student answer for student6
+        for (StudentAnswer studentAnswer : submission12b_6.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission12b_6);
+        }
+// Creating submission for student5 with student answers for 12c
+        Submission submission12c_5 = createSubmission("Submission from student5", student5, Arrays.asList(
+                sa12c_1_student5, sa12c_2_student5, sa12c_3_student5, sa12c_4_student5, sa12c_5_student5
+        ));
+
+// Adding the submission to each student answer for student5
+        for (StudentAnswer studentAnswer : submission12c_5.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission12c_5);
+        }
+
+// Creating submission for student6 with student answers for 12c
+        Submission submission12c_6 = createSubmission("Submission from student6", student6, Arrays.asList(
+                sa12c_1_student6, sa12c_2_student6, sa12c_3_student6, sa12c_4_student6, sa12c_5_student6
+        ));
+
+// Adding the submission to each student answer for student6
+        for (StudentAnswer studentAnswer : submission12c_6.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission12c_6);
+        }
+// Creating submission for student5 with student answers for 12d
+        Submission submission12d_5 = createSubmission("Submission from student5", student5, Arrays.asList(
+                sa12d_1_student5, sa12d_2_student5, sa12d_3_student5, sa12d_4_student5, sa12d_5_student5
+        ));
+
+// Adding the submission to each student answer for student5
+        for (StudentAnswer studentAnswer : submission12d_5.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission12d_5);
+        }
+
+// Creating submission for student6 with student answers for 12d
+        Submission submission12d_6 = createSubmission("Submission from student6", student6, Arrays.asList(
+                sa12d_1_student6, sa12d_2_student6, sa12d_3_student6, sa12d_4_student6, sa12d_5_student6
+        ));
+
+// Adding the submission to each student answer for student6
+        for (StudentAnswer studentAnswer : submission12d_6.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission12d_6);
+        }
+// Creating submission for student5 with student answers for 12e
+        Submission submission12e_5 = createSubmission("Submission from student5", student5, Arrays.asList(
+                sa12e_1_student5, sa12e_2_student5, sa12e_3_student5, sa12e_4_student5, sa12e_5_student5
+        ));
+
+// Adding the submission to each student answer for student5
+        for (StudentAnswer studentAnswer : submission12e_5.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission12e_5);
+        }
+
+// Creating submission for student6 with student answers for 12e
+        Submission submission12e_6 = createSubmission("Submission from student6", student6, Arrays.asList(
+                sa12e_1_student6, sa12e_2_student6, sa12e_3_student6, sa12e_4_student6, sa12e_5_student6
+        ));
+
+// Adding the submission to each student answer for student6
+        for (StudentAnswer studentAnswer : submission12e_6.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission12e_6);
+        }
+// Creating submission for student7 with student answers for 13a
+        Submission submission13a_7 = createSubmission("Submission from student7", student7, Arrays.asList(
+                sa13a_1_student7, sa13a_2_student7, sa13a_3_student7, sa13a_4_student7, sa13a_5_student7
+        ));
+
+// Adding the submission to each student answer for student7
+        for (StudentAnswer studentAnswer : submission13a_7.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission13a_7);
+        }
+
+// Creating submission for student8 with student answers for 13a
+        Submission submission13a_8 = createSubmission("Submission from student8", student8, Arrays.asList(
+                sa13a_1_student8, sa13a_2_student8, sa13a_3_student8, sa13a_4_student8, sa13a_5_student8
+        ));
+
+// Adding the submission to each student answer for student8
+        for (StudentAnswer studentAnswer : submission13a_8.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission13a_8);
+        }
+// Creating submission for student7 with student answers for 13b
+        Submission submission13b_7 = createSubmission("Submission from student7", student7, Arrays.asList(
+                sa13b_1_student7, sa13b_2_student7, sa13b_3_student7, sa13b_4_student7, sa13b_5_student7
+        ));
+
+// Adding the submission to each student answer for student7
+        for (StudentAnswer studentAnswer : submission13b_7.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission13b_7);
+        }
+
+// Creating submission for student8 with student answers for 13b
+        Submission submission13b_8 = createSubmission("Submission from student8", student8, Arrays.asList(
+                sa13b_1_student8, sa13b_2_student8, sa13b_3_student8, sa13b_4_student8, sa13b_5_student8
+        ));
+
+// Adding the submission to each student answer for student8
+        for (StudentAnswer studentAnswer : submission13b_8.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission13b_8);
+        }
+// Creating submission for student7 with student answers for 13c
+        Submission submission13c_7 = createSubmission("Submission from student7", student7, Arrays.asList(
+                sa13c_1_student7, sa13c_2_student7, sa13c_3_student7, sa13c_4_student7, sa13c_5_student7
+        ));
+
+// Adding the submission to each student answer for student7
+        for (StudentAnswer studentAnswer : submission13c_7.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission13c_7);
+        }
+
+// Creating submission for student8 with student answers for 13c
+        Submission submission13c_8 = createSubmission("Submission from student8", student8, Arrays.asList(
+                sa13c_1_student8, sa13c_2_student8, sa13c_3_student8, sa13c_4_student8, sa13c_5_student8
+        ));
+
+// Adding the submission to each student answer for student8
+        for (StudentAnswer studentAnswer : submission13c_8.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission13c_8);
+        }
+// Creating submission for student7 with student answers for 13d
+        Submission submission13d_7 = createSubmission("Submission from student7", student7, Arrays.asList(
+                sa13d_1_student7, sa13d_2_student7, sa13d_3_student7, sa13d_4_student7, sa13d_5_student7
+        ));
+
+// Adding the submission to each student answer for student7
+        for (StudentAnswer studentAnswer : submission13d_7.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission13d_7);
+        }
+
+// Creating submission for student8 with student answers for 13d
+        Submission submission13d_8 = createSubmission("Submission from student8", student8, Arrays.asList(
+                sa13d_1_student8, sa13d_2_student8, sa13d_3_student8, sa13d_4_student8, sa13d_5_student8
+        ));
+
+// Adding the submission to each student answer for student8
+        for (StudentAnswer studentAnswer : submission13d_8.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission13d_8);
+        }
+// Creating submission for student7 with student answers for 14a
+        Submission submission14a_7 = createSubmission("Submission from student7", student7, Arrays.asList(
+                sa14a_1_student7, sa14a_2_student7, sa14a_3_student7, sa14a_4_student7, sa14a_5_student7
+        ));
+
+// Adding the submission to each student answer for student7
+        for (StudentAnswer studentAnswer : submission14a_7.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission14a_7);
+        }
+
+// Creating submission for student8 with student answers for 14a
+        Submission submission14a_8 = createSubmission("Submission from student8", student8, Arrays.asList(
+                sa14a_1_student8, sa14a_2_student8, sa14a_3_student8, sa14a_4_student8, sa14a_5_student8
+        ));
+
+// Adding the submission to each student answer for student8
+        for (StudentAnswer studentAnswer : submission14a_8.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission14a_8);
+        }
+// Creating submission for student7 with student answers for 14b
+        Submission submission14b_7 = createSubmission("Submission from student7", student7, Arrays.asList(
+                sa14b_1_student7, sa14b_2_student7, sa14b_3_student7, sa14b_4_student7, sa14b_5_student7
+        ));
+
+// Adding the submission to each student answer for student7
+        for (StudentAnswer studentAnswer : submission14b_7.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission14b_7);
+        }
+
+// Creating submission for student8 with student answers for 14b
+        Submission submission14b_8 = createSubmission("Submission from student8", student8, Arrays.asList(
+                sa14b_1_student8, sa14b_2_student8, sa14b_3_student8, sa14b_4_student8, sa14b_5_student8
+        ));
+
+// Adding the submission to each student answer for student8
+        for (StudentAnswer studentAnswer : submission14b_8.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission14b_8);
+        }
+// Creating submission for student7 with student answers for 14c
+        Submission submission14c_7 = createSubmission("Submission from student7", student7, Arrays.asList(
+                sa14c_1_student7, sa14c_2_student7, sa14c_3_student7, sa14c_4_student7, sa14c_5_student7
+        ));
+
+// Adding the submission to each student answer for student7
+        for (StudentAnswer studentAnswer : submission14c_7.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission14c_7);
+        }
+
+// Creating submission for student8 with student answers for 14c
+        Submission submission14c_8 = createSubmission("Submission from student8", student8, Arrays.asList(
+                sa14c_1_student8, sa14c_2_student8, sa14c_3_student8, sa14c_4_student8, sa14c_5_student8
+        ));
+
+// Adding the submission to each student answer for student8
+        for (StudentAnswer studentAnswer : submission14c_8.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission14c_8);
+        }
+// Creating submission for student7 with student answers for 14d
+        Submission submission14d_7 = createSubmission("Submission from student7", student7, Arrays.asList(
+                sa14d_1_student7, sa14d_2_student7, sa14d_3_student7, sa14d_4_student7, sa14d_5_student7
+        ));
+
+// Adding the submission to each student answer for student7
+        for (StudentAnswer studentAnswer : submission14d_7.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission14d_7);
+        }
+
+// Creating submission for student8 with student answers for 14d
+        Submission submission14d_8 = createSubmission("Submission from student8", student8, Arrays.asList(
+                sa14d_1_student8, sa14d_2_student8, sa14d_3_student8, sa14d_4_student8, sa14d_5_student8
+        ));
+
+// Adding the submission to each student answer for student8
+        for (StudentAnswer studentAnswer : submission14d_8.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission14d_8);
+        }
+// Creating submission for student7 with student answers for 15a
+        Submission submission15a_7 = createSubmission("Submission from student7", student7, Arrays.asList(
+                sa15a_1_student7, sa15a_2_student7, sa15a_3_student7, sa15a_4_student7, sa15a_5_student7
+        ));
+
+// Adding the submission to each student answer for student7
+        for (StudentAnswer studentAnswer : submission15a_7.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission15a_7);
+        }
+
+// Creating submission for student8 with student answers for 15a
+        Submission submission15a_8 = createSubmission("Submission from student8", student8, Arrays.asList(
+                sa15a_1_student8, sa15a_2_student8, sa15a_3_student8, sa15a_4_student8, sa15a_5_student8
+        ));
+
+// Adding the submission to each student answer for student8
+        for (StudentAnswer studentAnswer : submission15a_8.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission15a_8);
+        }
+// Creating submission for student7 with student answers for 15b
+        Submission submission15b_7 = createSubmission("Submission from student7", student7, Arrays.asList(
+                sa15b_1_student7, sa15b_2_student7, sa15b_3_student7, sa15b_4_student7, sa15b_5_student7
+        ));
+
+// Adding the submission to each student answer for student7
+        for (StudentAnswer studentAnswer : submission15b_7.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission15b_7);
+        }
+
+// Creating submission for student8 with student answers for 15b
+        Submission submission15b_8 = createSubmission("Submission from student8", student8, Arrays.asList(
+                sa15b_1_student8, sa15b_2_student8, sa15b_3_student8, sa15b_4_student8, sa15b_5_student8
+        ));
+
+// Adding the submission to each student answer for student8
+        for (StudentAnswer studentAnswer : submission15b_8.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission15b_8);
+        }
+// Creating submission for student7 with student answers for 15c
+        Submission submission15c_7 = createSubmission("Submission from student7", student7, Arrays.asList(
+                sa15c_1_student7, sa15c_2_student7, sa15c_3_student7, sa15c_4_student7, sa15c_5_student7
+        ));
+
+// Adding the submission to each student answer for student7
+        for (StudentAnswer studentAnswer : submission15c_7.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission15c_7);
+        }
+
+// Creating submission for student8 with student answers for 15c
+        Submission submission15c_8 = createSubmission("Submission from student8", student8, Arrays.asList(
+                sa15c_1_student8, sa15c_2_student8, sa15c_3_student8, sa15c_4_student8, sa15c_5_student8
+        ));
+
+// Adding the submission to each student answer for student8
+        for (StudentAnswer studentAnswer : submission15c_8.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission15c_8);
+        }
+// Creating submission for student7 with student answers for 16a
+        Submission submission16a_7 = createSubmission("Submission from student7", student7, Arrays.asList(
+                sa16a_1_student7, sa16a_2_student7, sa16a_3_student7, sa16a_4_student7, sa16a_5_student7
+        ));
+
+// Adding the submission to each student answer for student7
+        for (StudentAnswer studentAnswer : submission16a_7.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission16a_7);
+        }
+
+// Creating submission for student8 with student answers for 16a
+        Submission submission16a_8 = createSubmission("Submission from student8", student8, Arrays.asList(
+                sa16a_1_student8, sa16a_2_student8, sa16a_3_student8, sa16a_4_student8, sa16a_5_student8
+        ));
+
+// Adding the submission to each student answer for student8
+        for (StudentAnswer studentAnswer : submission16a_8.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission16a_8);
+        }
+// Creating submission for student7 with student answers for 16b
+        Submission submission16b_7 = createSubmission("Submission from student7", student7, Arrays.asList(
+                sa16b_1_student7, sa16b_2_student7, sa16b_3_student7, sa16b_4_student7, sa16b_5_student7
+        ));
+
+// Adding the submission to each student answer for student7
+        for (StudentAnswer studentAnswer : submission16b_7.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission16b_7);
+        }
+
+// Creating submission for student8 with student answers for 16b
+        Submission submission16b_8 = createSubmission("Submission from student8", student8, Arrays.asList(
+                sa16b_1_student8, sa16b_2_student8, sa16b_3_student8, sa16b_4_student8, sa16b_5_student8
+        ));
+
+// Adding the submission to each student answer for student8
+        for (StudentAnswer studentAnswer : submission16b_8.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission16b_8);
+        }
+// Creating submission for student7 with student answers for 16c
+        Submission submission16c_7 = createSubmission("Submission from student7", student7, Arrays.asList(
+                sa16c_1_student7, sa16c_2_student7, sa16c_3_student7, sa16c_4_student7, sa16c_5_student7
+        ));
+
+// Adding the submission to each student answer for student7
+        for (StudentAnswer studentAnswer : submission16c_7.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission16c_7);
+        }
+
+// Creating submission for student8 with student answers for 16c
+        Submission submission16c_8 = createSubmission("Submission from student8", student8, Arrays.asList(
+                sa16c_1_student8, sa16c_2_student8, sa16c_3_student8, sa16c_4_student8, sa16c_5_student8
+        ));
+
+// Adding the submission to each student answer for student8
+        for (StudentAnswer studentAnswer : submission16c_8.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission16c_8);
+        }
+// Creating submission for student9 with student answers for 17a
+        Submission submission17a_9 = createSubmission("Submission from student9", student9, Arrays.asList(
+                sa17a_1_student9, sa17a_2_student9, sa17a_3_student9, sa17a_4_student9, sa17a_5_student9
+        ));
+
+// Adding the submission to each student answer for student9
+        for (StudentAnswer studentAnswer : submission17a_9.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission17a_9);
+        }
+
+// Creating submission for student10 with student answers for 17a
+        Submission submission17a_10 = createSubmission("Submission from student10", student10, Arrays.asList(
+                sa17a_1_student10, sa17a_2_student10, sa17a_3_student10, sa17a_4_student10, sa17a_5_student10
+        ));
+
+// Adding the submission to each student answer for student10
+        for (StudentAnswer studentAnswer : submission17a_10.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission17a_10);
+        }
+// Creating submission for student9 with student answers for 17b
+        Submission submission17b_9 = createSubmission("Submission from student9", student9, Arrays.asList(
+                sa17b_1_student9, sa17b_2_student9, sa17b_3_student9, sa17b_4_student9, sa17b_5_student9
+        ));
+
+// Adding the submission to each student answer for student9
+        for (StudentAnswer studentAnswer : submission17b_9.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission17b_9);
+        }
+
+// Creating submission for student10 with student answers for 17b
+        Submission submission17b_10 = createSubmission("Submission from student10", student10, Arrays.asList(
+                sa17b_1_student10, sa17b_2_student10, sa17b_3_student10, sa17b_4_student10, sa17b_5_student10
+        ));
+
+// Adding the submission to each student answer for student10
+        for (StudentAnswer studentAnswer : submission17b_10.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission17b_10);
+        }
+// Creating submission for student9 with student answers for 17c
+        Submission submission17c_9 = createSubmission("Submission from student9", student9, Arrays.asList(
+                sa17c_1_student9, sa17c_2_student9, sa17c_3_student9, sa17c_4_student9, sa17c_5_student9
+        ));
+
+// Adding the submission to each student answer for student9
+        for (StudentAnswer studentAnswer : submission17c_9.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission17c_9);
+        }
+
+// Creating submission for student10 with student answers for 17c
+        Submission submission17c_10 = createSubmission("Submission from student10", student10, Arrays.asList(
+                sa17c_1_student10, sa17c_2_student10, sa17c_3_student10, sa17c_4_student10, sa17c_5_student10
+        ));
+
+// Adding the submission to each student answer for student10
+        for (StudentAnswer studentAnswer : submission17c_10.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission17c_10);
+        }
+// Creating submission for student9 with student answers for 17d
+        Submission submission17d_9 = createSubmission("Submission from student9", student9, Arrays.asList(
+                sa17d_1_student9, sa17d_2_student9, sa17d_3_student9, sa17d_4_student9, sa17d_5_student9
+        ));
+
+// Adding the submission to each student answer for student9
+        for (StudentAnswer studentAnswer : submission17d_9.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission17d_9);
+        }
+
+// Creating submission for student10 with student answers for 17d
+        Submission submission17d_10 = createSubmission("Submission from student10", student10, Arrays.asList(
+                sa17d_1_student10, sa17d_2_student10, sa17d_3_student10, sa17d_4_student10, sa17d_5_student10
+        ));
+
+// Adding the submission to each student answer for student10
+        for (StudentAnswer studentAnswer : submission17d_10.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission17d_10);
+        }
+// Creating submission for student9 with student answers for 18a
+        Submission submission18a_9 = createSubmission("Submission from student9", student9, Arrays.asList(
+                sa18a_1_student9, sa18a_2_student9, sa18a_3_student9, sa18a_4_student9, sa18a_5_student9
+        ));
+
+// Adding the submission to each student answer for student9
+        for (StudentAnswer studentAnswer : submission18a_9.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission18a_9);
+        }
+
+// Creating submission for student10 with student answers for 18a
+        Submission submission18a_10 = createSubmission("Submission from student10", student10, Arrays.asList(
+                sa18a_1_student10, sa18a_2_student10, sa18a_3_student10, sa18a_4_student10, sa18a_5_student10
+        ));
+
+// Adding the submission to each student answer for student10
+        for (StudentAnswer studentAnswer : submission18a_10.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission18a_10);
+        }
+// Creating submission for student9 with student answers for 18b
+        Submission submission18b_9 = createSubmission("Submission from student9", student9, Arrays.asList(
+                sa18b_1_student9, sa18b_2_student9, sa18b_3_student9, sa18b_4_student9, sa18b_5_student9
+        ));
+
+// Adding the submission to each student answer for student9
+        for (StudentAnswer studentAnswer : submission18b_9.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission18b_9);
+        }
+
+// Creating submission for student10 with student answers for 18b
+        Submission submission18b_10 = createSubmission("Submission from student10", student10, Arrays.asList(
+                sa18b_1_student10, sa18b_2_student10, sa18b_3_student10, sa18b_4_student10, sa18b_5_student10
+        ));
+
+// Adding the submission to each student answer for student10
+        for (StudentAnswer studentAnswer : submission18b_10.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission18b_10);
+        }
+// Creating submission for student9 with student answers for 18c
+        Submission submission18c_9 = createSubmission("Submission from student9", student9, Arrays.asList(
+                sa18c_1_student9, sa18c_2_student9, sa18c_3_student9, sa18c_4_student9, sa18c_5_student9
+        ));
+
+// Adding the submission to each student answer for student9
+        for (StudentAnswer studentAnswer : submission18c_9.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission18c_9);
+        }
+
+// Creating submission for student10 with student answers for 18c
+        Submission submission18c_10 = createSubmission("Submission from student10", student10, Arrays.asList(
+                sa18c_1_student10, sa18c_2_student10, sa18c_3_student10, sa18c_4_student10, sa18c_5_student10
+        ));
+
+// Adding the submission to each student answer for student10
+        for (StudentAnswer studentAnswer : submission18c_10.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission18c_10);
+        }
+// Creating submission for student9 with student answers for 19a
+        Submission submission19a_9 = createSubmission("Submission from student9", student9, Arrays.asList(
+                sa19a_1_student9, sa19a_2_student9, sa19a_3_student9, sa19a_4_student9, sa19a_5_student9
+        ));
+
+// Adding the submission to each student answer for student9
+        for (StudentAnswer studentAnswer : submission19a_9.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission19a_9);
+        }
+
+// Creating submission for student10 with student answers for 19a
+        Submission submission19a_10 = createSubmission("Submission from student10", student10, Arrays.asList(
+                sa19a_1_student10, sa19a_2_student10, sa19a_3_student10, sa19a_4_student10, sa19a_5_student10
+        ));
+
+// Adding the submission to each student answer for student10
+        for (StudentAnswer studentAnswer : submission19a_10.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission19a_10);
+        }
+// Creating submission for student9 with student answers for 19b
+        Submission submission19b_9 = createSubmission("Submission from student9", student9, Arrays.asList(
+                sa19b_1_student9, sa19b_2_student9, sa19b_3_student9, sa19b_4_student9, sa19b_5_student9
+        ));
+
+// Adding the submission to each student answer for student9
+        for (StudentAnswer studentAnswer : submission19b_9.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission19b_9);
+        }
+
+// Creating submission for student10 with student answers for 19b
+        Submission submission19b_10 = createSubmission("Submission from student10", student10, Arrays.asList(
+                sa19b_1_student10, sa19b_2_student10, sa19b_3_student10, sa19b_4_student10, sa19b_5_student10
+        ));
+
+// Adding the submission to each student answer for student10
+        for (StudentAnswer studentAnswer : submission19b_10.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission19b_10);
+        }
+// Creating submission for student9 with student answers for 19c
+        Submission submission19c_9 = createSubmission("Submission from student9", student9, Arrays.asList(
+                sa19c_1_student9, sa19c_2_student9, sa19c_3_student9, sa19c_4_student9, sa19c_5_student9
+        ));
+
+// Adding the submission to each student answer for student9
+        for (StudentAnswer studentAnswer : submission19c_9.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission19c_9);
+        }
+
+// Creating submission for student10 with student answers for 19c
+        Submission submission19c_10 = createSubmission("Submission from student10", student10, Arrays.asList(
+                sa19c_1_student10, sa19c_2_student10, sa19c_3_student10, sa19c_4_student10, sa19c_5_student10
+        ));
+
+// Adding the submission to each student answer for student10
+        for (StudentAnswer studentAnswer : submission19c_10.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission19c_10);
+        }
+// Creating submission for student9 with student answers for 20a
+        Submission submission20a_9 = createSubmission("Submission from student9", student9, Arrays.asList(
+                sa20a_1_student9, sa20a_2_student9, sa20a_3_student9, sa20a_4_student9, sa20a_5_student9
+        ));
+
+// Adding the submission to each student answer for student9
+        for (StudentAnswer studentAnswer : submission20a_9.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission20a_9);
+        }
+
+// Creating submission for student10 with student answers for 20a
+        Submission submission20a_10 = createSubmission("Submission from student10", student10, Arrays.asList(
+                sa20a_1_student10, sa20a_2_student10, sa20a_3_student10, sa20a_4_student10, sa20a_5_student10
+        ));
+
+// Adding the submission to each student answer for student10
+        for (StudentAnswer studentAnswer : submission20a_10.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission20a_10);
+        }
+// Creating submission for student9 with student answers for 20b
+        Submission submission20b_9 = createSubmission("Submission from student9", student9, Arrays.asList(
+                sa20b_1_student9, sa20b_2_student9, sa20b_3_student9, sa20b_4_student9, sa20b_5_student9
+        ));
+
+// Adding the submission to each student answer for student9
+        for (StudentAnswer studentAnswer : submission20b_9.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission20b_9);
+        }
+
+// Creating submission for student10 with student answers for 20b
+        Submission submission20b_10 = createSubmission("Submission from student10", student10, Arrays.asList(
+                sa20b_1_student10, sa20b_2_student10, sa20b_3_student10, sa20b_4_student10, sa20b_5_student10
+        ));
+
+// Adding the submission to each student answer for student10
+        for (StudentAnswer studentAnswer : submission20b_10.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission20b_10);
+        }
+// Creating submission for student9 with student answers for 20c
+        Submission submission20c_9 = createSubmission("Submission from student9", student9, Arrays.asList(
+                sa20c_1_student9, sa20c_2_student9, sa20c_3_student9, sa20c_4_student9, sa20c_5_student9
+        ));
+
+// Adding the submission to each student answer for student9
+        for (StudentAnswer studentAnswer : submission20c_9.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission20c_9);
+        }
+
+// Creating submission for student10 with student answers for 20c
+        Submission submission20c_10 = createSubmission("Submission from student10", student10, Arrays.asList(
+                sa20c_1_student10, sa20c_2_student10, sa20c_3_student10, sa20c_4_student10, sa20c_5_student10
+        ));
+
+// Adding the submission to each student answer for student10
+        for (StudentAnswer studentAnswer : submission20c_10.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission20c_10);
+        }
+// Creating submission for student9 with student answers for 20d
+        Submission submission20d_9 = createSubmission("Submission from student9", student9, Arrays.asList(
+                sa20d_1_student9, sa20d_2_student9, sa20d_3_student9, sa20d_4_student9, sa20d_5_student9
+        ));
+
+// Adding the submission to each student answer for student9
+        for (StudentAnswer studentAnswer : submission20d_9.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission20d_9);
+        }
+
+// Creating submission for student10 with student answers for 20d
+        Submission submission20d_10 = createSubmission("Submission from student10", student10, Arrays.asList(
+                sa20d_1_student10, sa20d_2_student10, sa20d_3_student10, sa20d_4_student10, sa20d_5_student10
+        ));
+
+// Adding the submission to each student answer for student10
+        for (StudentAnswer studentAnswer : submission20d_10.getStudentAnswers()) {
+            addSubmissionToStudentAnswer(studentAnswer, submission20d_10);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     }
 

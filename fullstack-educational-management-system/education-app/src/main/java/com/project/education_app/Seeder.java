@@ -1274,5 +1274,103 @@ public class Seeder implements CommandLineRunner {
         return schedule;
     }
 
+    public static void addSubmissionToStudentAnswer(StudentAnswer studentAnswer, Submission submission) {
+        studentAnswer.setSubmission(submission);
+    }
+
+    public static Submission createSubmission(String content, Student student, List<StudentAnswer> studentAnswers) {
+        Submission submission = new Submission();
+        submission.setContent(content);
+        submission.setStudent(student);
+        submission.setSubmissionDate(Timestamp.valueOf(LocalDateTime.now()));
+        for (StudentAnswer studentAnswer : studentAnswers) {
+            studentAnswer.setSubmission(submission);
+            submission.getStudentAnswers().add(studentAnswer);
+        }
+        return submission;
+    }
+
+    public static void addGradeToSubmission(Submission submission, Grade grade) {
+        submission.setGrade(grade);
+        grade.setSubmission(submission); // Ensures the relationship is bidirectional
+    }
+
+    public static void addFeedbackToSubmission(Submission submission, Feedback feedback) {
+        submission.setFeedback(feedback);
+        feedback.setSubmission(submission); // Ensures the relationship is bidirectional
+    }
+
+    public static CourseGrade createCourseGrade(Course course, Student student) {
+        CourseGrade courseGrade = new CourseGrade();
+        courseGrade.setCourse(course);
+        courseGrade.setStudent(student);
+        // Add to the collection of course grades
+        course.getCourseGrades().add(courseGrade);
+        student.getCourseGrades().add(courseGrade); // Ensure bidirectional relationship
+        return courseGrade;
+    }
+
+    public static void updateCourseGrade(Course course, CourseGrade courseGrade, int assignmentPercent, int testPercent, int projectPercent) {
+        List<Grade> grades = course.getGrades();
+        double totalWeightedGrade = 0;
+        double totalWeight = 0;
+
+        // Convert percentages to decimals
+        double assignmentWeight = assignmentPercent / 100.0;
+        double testWeight = testPercent / 100.0;
+        double projectWeight = projectPercent / 100.0;
+
+        for (Grade grade : grades) {
+            Submission submission = grade.getSubmission();
+            for (StudentAnswer studentAnswer : submission.getStudentAnswers()) {
+                ProblemAnswer problemAnswer = studentAnswer.getProblemAnswer();
+
+                if (problemAnswer.getAssignment() != null) {
+                    totalWeightedGrade += grade.getGrade() * assignmentWeight;
+                    totalWeight += assignmentWeight;
+                } else if (problemAnswer.getTest() != null) {
+                    totalWeightedGrade += grade.getGrade() * testWeight;
+                    totalWeight += testWeight;
+                } else if (problemAnswer.getProject() != null) {
+                    totalWeightedGrade += grade.getGrade() * projectWeight;
+                    totalWeight += projectWeight;
+                }
+            }
+        }
+
+        double averageGrade = totalWeight > 0 ? totalWeightedGrade / totalWeight : 0;
+        courseGrade.setOverallGrade(averageGrade);
+    }
+
+
+    public static Grade createGrade(double gradeValue, Student student, Faculty teacher, Course course, Submission submission, int assignmentPercent, int testPercent, int projectPercent) {
+        Grade grade = new Grade();
+        grade.setGrade(gradeValue);
+        grade.setStudent(student);
+        grade.setTeacher(teacher);
+        grade.setCourse(course);
+        grade.setSubmission(submission);
+        grade.setDateGraded(Timestamp.valueOf(LocalDateTime.now()));
+
+        // Add the new grade to the course's grades
+        course.getGrades().add(grade);
+
+        // Update the CourseGrade
+        CourseGrade courseGrade = course.getCourseGrades().stream()
+                .filter(cg -> cg.getStudent().equals(student))
+                .findFirst()
+                .orElseGet(() -> createCourseGrade(course, student));
+        updateCourseGrade(course, courseGrade, assignmentPercent, testPercent, projectPercent);
+
+        return grade;
+    }
+
+    public static Feedback createFeedback(String feedbackText, Submission submission) {
+        Feedback feedback = new Feedback();
+        feedback.setFeedbackText(feedbackText);
+        feedback.setSubmission(submission);
+        feedback.setFeedbackDate(Timestamp.valueOf(LocalDateTime.now()));
+        return feedback;
+    }
 
 }

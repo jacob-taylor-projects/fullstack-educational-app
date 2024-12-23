@@ -10,9 +10,13 @@ import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 import java.time.ZoneId;
+import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 
 import static com.project.education_app.AssignmentSeeder.*;
+import static com.project.education_app.Seeder.addSubmissionToStudentAnswer;
+import static com.project.education_app.Seeder.createSubmission;
 
 @Component
 @Data
@@ -1039,6 +1043,1250 @@ public class ProjectSeeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Student answers created and added for student9 and student10 for all project-related problem answers.");
 // Creating StudentAnswer instances for student1
+
+// Creating submission for student1 with project answers for 1a
+        Submission submission1a_project_1 = createSubmission("Submission from student1", student1, List.of(
+                sa1a_project_student1
+        ));
+
+// Adding the submission to the project answer for student1
+        addSubmissionToStudentAnswer(sa1a_project_student1, submission1a_project_1);
+
+// Creating submission for student2 with project answers for 1a
+        Submission submission1a_project_2 = createSubmission("Submission from student2", student2, List.of(
+                sa1a_project_student2
+        ));
+
+// Adding the submission to the project answer for student2
+        addSubmissionToStudentAnswer(sa1a_project_student2, submission1a_project_2);
+
+// Creating submission for student1 with project answers for 1b
+        Submission submission1b_project_1 = createSubmission("Submission from student1", student1, List.of(
+                sa1b_project_student1
+        ));
+
+// Adding the submission to the project answer for student1
+        addSubmissionToStudentAnswer(sa1b_project_student1, submission1b_project_1);
+
+// Creating submission for student2 with project answers for 1b
+        Submission submission1b_project_2 = createSubmission("Submission from student2", student2, List.of(
+                sa1b_project_student2
+        ));
+
+// Adding the submission to the project answer for student2
+        addSubmissionToStudentAnswer(sa1b_project_student2, submission1b_project_2);
+// Creating submission for student1 with project answers for 1c
+        Submission submission1c_project_1 = createSubmission("Submission from student1", student1, List.of(
+                sa1c_project_student1
+        ));
+
+// Adding the submission to the project answer for student1
+        addSubmissionToStudentAnswer(sa1c_project_student1, submission1c_project_1);
+
+// Creating submission for student2 with project answers for 1c
+        Submission submission1c_project_2 = createSubmission("Submission from student2", student2, List.of(
+                sa1c_project_student2
+        ));
+
+// Adding the submission to the project answer for student2
+        addSubmissionToStudentAnswer(sa1c_project_student2, submission1c_project_2);
+// Creating submission for student1 with project answers for 1d
+        Submission submission1d_project_1 = createSubmission("Submission from student1", student1, List.of(
+                sa1d_project_student1
+        ));
+
+// Adding the submission to the project answer for student1
+        addSubmissionToStudentAnswer(sa1d_project_student1, submission1d_project_1);
+
+// Creating submission for student2 with project answers for 1d
+        Submission submission1d_project_2 = createSubmission("Submission from student2", student2, List.of(
+                sa1d_project_student2
+        ));
+
+// Adding the submission to the project answer for student2
+        addSubmissionToStudentAnswer(sa1d_project_student2, submission1d_project_2);
+// Creating submission for student1 with project answers for 1e
+        Submission submission1e_project_1 = createSubmission("Submission from student1", student1, List.of(
+                sa1e_project_student1
+        ));
+
+// Adding the submission to the project answer for student1
+        addSubmissionToStudentAnswer(sa1e_project_student1, submission1e_project_1);
+
+// Creating submission for student2 with project answers for 1e
+        Submission submission1e_project_2 = createSubmission("Submission from student2", student2, List.of(
+                sa1e_project_student2
+        ));
+
+// Adding the submission to the project answer for student2
+        addSubmissionToStudentAnswer(sa1e_project_student2, submission1e_project_2);
+// Creating submission for student1 with project answers for 1f
+        Submission submission1f_project_1 = createSubmission("Submission from student1", student1, List.of(
+                sa1f_project_student1
+        ));
+
+// Adding the submission to the project answer for student1
+        addSubmissionToStudentAnswer(sa1f_project_student1, submission1f_project_1);
+
+// Creating submission for student2 with project answers for 1f
+        Submission submission1f_project_2 = createSubmission("Submission from student2", student2, List.of(
+                sa1f_project_student2
+        ));
+
+// Adding the submission to the project answer for student2
+        addSubmissionToStudentAnswer(sa1f_project_student2, submission1f_project_2);
+// Creating submission for student1 with project answers for 2a
+        Submission submission2a_project_1 = createSubmission("Submission from student1", student1, List.of(
+                sa2a_project_student1
+        ));
+
+// Adding the submission to the project answer for student1
+        addSubmissionToStudentAnswer(sa2a_project_student1, submission2a_project_1);
+
+// Creating submission for student2 with project answers for 2a
+        Submission submission2a_project_2 = createSubmission("Submission from student2", student2, List.of(
+                sa2a_project_student2
+        ));
+
+// Adding the submission to the project answer for student2
+        addSubmissionToStudentAnswer(sa2a_project_student2, submission2a_project_2);
+// Creating submission for student1 with project answers for 2b
+        Submission submission2b_project_1 = createSubmission("Submission from student1", student1, List.of(
+                sa2b_project_student1
+        ));
+
+// Adding the submission to the project answer for student1
+        addSubmissionToStudentAnswer(sa2b_project_student1, submission2b_project_1);
+
+// Creating submission for student2 with project answers for 2b
+        Submission submission2b_project_2 = createSubmission("Submission from student2", student2, List.of(
+                sa2b_project_student2
+        ));
+
+// Adding the submission to the project answer for student2
+        addSubmissionToStudentAnswer(sa2b_project_student2, submission2b_project_2);
+// Creating submission for student1 with project answers for 2c
+        Submission submission2c_project_1 = createSubmission("Submission from student1", student1, List.of(
+                sa2c_project_student1
+        ));
+
+// Adding the submission to the project answer for student1
+        addSubmissionToStudentAnswer(sa2c_project_student1, submission2c_project_1);
+
+// Creating submission for student2 with project answers for 2c
+        Submission submission2c_project_2 = createSubmission("Submission from student2", student2, List.of(
+                sa2c_project_student2
+        ));
+
+// Adding the submission to the project answer for student2
+        addSubmissionToStudentAnswer(sa2c_project_student2, submission2c_project_2);
+// Creating submission for student1 with project answers for 2d
+        Submission submission2d_project_1 = createSubmission("Submission from student1", student1, List.of(
+                sa2d_project_student1
+        ));
+
+// Adding the submission to the project answer for student1
+        addSubmissionToStudentAnswer(sa2d_project_student1, submission2d_project_1);
+
+// Creating submission for student2 with project answers for 2d
+        Submission submission2d_project_2 = createSubmission("Submission from student2", student2, List.of(
+                sa2d_project_student2
+        ));
+
+// Adding the submission to the project answer for student2
+        addSubmissionToStudentAnswer(sa2d_project_student2, submission2d_project_2);
+// Creating submission for student1 with project answers for 2e
+        Submission submission2e_project_1 = createSubmission("Submission from student1", student1, List.of(
+                sa2e_project_student1
+        ));
+
+// Adding the submission to the project answer for student1
+        addSubmissionToStudentAnswer(sa2e_project_student1, submission2e_project_1);
+
+// Creating submission for student2 with project answers for 2e
+        Submission submission2e_project_2 = createSubmission("Submission from student2", student2, List.of(
+                sa2e_project_student2
+        ));
+
+// Adding the submission to the project answer for student2
+        addSubmissionToStudentAnswer(sa2e_project_student2, submission2e_project_2);
+// Creating submission for student1 with project answers for 2f
+        Submission submission2f_project_1 = createSubmission("Submission from student1", student1, List.of(
+                sa2f_project_student1
+        ));
+
+// Adding the submission to the project answer for student1
+        addSubmissionToStudentAnswer(sa2f_project_student1, submission2f_project_1);
+
+// Creating submission for student2 with project answers for 2f
+        Submission submission2f_project_2 = createSubmission("Submission from student2", student2, List.of(
+                sa2f_project_student2
+        ));
+
+// Adding the submission to the project answer for student2
+        addSubmissionToStudentAnswer(sa2f_project_student2, submission2f_project_2);
+// Creating submission for student1 with project answers for 3a
+        Submission submission3a_project_1 = createSubmission("Submission from student1", student1, List.of(
+                sa3a_project_student1
+        ));
+
+// Adding the submission to the project answer for student1
+        addSubmissionToStudentAnswer(sa3a_project_student1, submission3a_project_1);
+
+// Creating submission for student2 with project answers for 3a
+        Submission submission3a_project_2 = createSubmission("Submission from student2", student2, List.of(
+                sa3a_project_student2
+        ));
+
+// Adding the submission to the project answer for student2
+        addSubmissionToStudentAnswer(sa3a_project_student2, submission3a_project_2);
+// Creating submission for student1 with project answers for 3b
+        Submission submission3b_project_1 = createSubmission("Submission from student1", student1, List.of(
+                sa3b_project_student1
+        ));
+
+// Adding the submission to the project answer for student1
+        addSubmissionToStudentAnswer(sa3b_project_student1, submission3b_project_1);
+
+// Creating submission for student2 with project answers for 3b
+        Submission submission3b_project_2 = createSubmission("Submission from student2", student2, List.of(
+                sa3b_project_student2
+        ));
+
+// Adding the submission to the project answer for student2
+        addSubmissionToStudentAnswer(sa3b_project_student2, submission3b_project_2);
+// Creating submission for student1 with project answers for 3c
+        Submission submission3c_project_1 = createSubmission("Submission from student1", student1, List.of(
+                sa3c_project_student1
+        ));
+
+// Adding the submission to the project answer for student1
+        addSubmissionToStudentAnswer(sa3c_project_student1, submission3c_project_1);
+
+// Creating submission for student2 with project answers for 3c
+        Submission submission3c_project_2 = createSubmission("Submission from student2", student2, List.of(
+                sa3c_project_student2
+        ));
+
+// Adding the submission to the project answer for student2
+        addSubmissionToStudentAnswer(sa3c_project_student2, submission3c_project_2);
+// Creating submission for student1 with project answers for 3d
+        Submission submission3d_project_1 = createSubmission("Submission from student1", student1, List.of(
+                sa3d_project_student1
+        ));
+
+// Adding the submission to the project answer for student1
+        addSubmissionToStudentAnswer(sa3d_project_student1, submission3d_project_1);
+
+// Creating submission for student2 with project answers for 3d
+        Submission submission3d_project_2 = createSubmission("Submission from student2", student2, List.of(
+                sa3d_project_student2
+        ));
+
+// Adding the submission to the project answer for student2
+        addSubmissionToStudentAnswer(sa3d_project_student2, submission3d_project_2);
+// Creating submission for student1 with project answers for 4a
+        Submission submission4a_project_1 = createSubmission("Submission from student1", student1, List.of(
+                sa4a_project_student1
+        ));
+
+// Adding the submission to the project answer for student1
+        addSubmissionToStudentAnswer(sa4a_project_student1, submission4a_project_1);
+
+// Creating submission for student2 with project answers for 4a
+        Submission submission4a_project_2 = createSubmission("Submission from student2", student2, List.of(
+                sa4a_project_student2
+        ));
+
+// Adding the submission to the project answer for student2
+        addSubmissionToStudentAnswer(sa4a_project_student2, submission4a_project_2);
+// Creating submission for student1 with project answers for 4b
+        Submission submission4b_project_1 = createSubmission("Submission from student1", student1, List.of(
+                sa4b_project_student1
+        ));
+
+// Adding the submission to the project answer for student1
+        addSubmissionToStudentAnswer(sa4b_project_student1, submission4b_project_1);
+
+// Creating submission for student2 with project answers for 4b
+        Submission submission4b_project_2 = createSubmission("Submission from student2", student2, List.of(
+                sa4b_project_student2
+        ));
+
+// Adding the submission to the project answer for student2
+        addSubmissionToStudentAnswer(sa4b_project_student2, submission4b_project_2);
+// Creating submission for student1 with project answers for 4c
+        Submission submission4c_project_1 = createSubmission("Submission from student1", student1, List.of(
+                sa4c_project_student1
+        ));
+
+// Adding the submission to the project answer for student1
+        addSubmissionToStudentAnswer(sa4c_project_student1, submission4c_project_1);
+
+// Creating submission for student2 with project answers for 4c
+        Submission submission4c_project_2 = createSubmission("Submission from student2", student2, List.of(
+                sa4c_project_student2
+        ));
+
+// Adding the submission to the project answer for student2
+        addSubmissionToStudentAnswer(sa4c_project_student2, submission4c_project_2);
+// Creating submission for student1 with project answers for 4d
+        Submission submission4d_project_1 = createSubmission("Submission from student1", student1, List.of(
+                sa4d_project_student1
+        ));
+
+// Adding the submission to the project answer for student1
+        addSubmissionToStudentAnswer(sa4d_project_student1, submission4d_project_1);
+
+// Creating submission for student2 with project answers for 4d
+        Submission submission4d_project_2 = createSubmission("Submission from student2", student2, List.of(
+                sa4d_project_student2
+        ));
+
+// Adding the submission to the project answer for student2
+        addSubmissionToStudentAnswer(sa4d_project_student2, submission4d_project_2);
+// Creating submission for student3 with project answers for 5a
+        Submission submission5a_project_3 = createSubmission("Submission from student3", student3, List.of(
+                sa5a_project_student3
+        ));
+
+// Adding the submission to the project answer for student3
+        addSubmissionToStudentAnswer(sa5a_project_student3, submission5a_project_3);
+
+// Creating submission for student4 with project answers for 5a
+        Submission submission5a_project_4 = createSubmission("Submission from student4", student4, List.of(
+                sa5a_project_student4
+        ));
+
+// Adding the submission to the project answer for student4
+        addSubmissionToStudentAnswer(sa5a_project_student4, submission5a_project_4);
+// Creating submission for student3 with project answers for 5b
+        Submission submission5b_project_3 = createSubmission("Submission from student3", student3, List.of(
+                sa5b_project_student3
+        ));
+
+// Adding the submission to the project answer for student3
+        addSubmissionToStudentAnswer(sa5b_project_student3, submission5b_project_3);
+
+// Creating submission for student4 with project answers for 5b
+        Submission submission5b_project_4 = createSubmission("Submission from student4", student4, List.of(
+                sa5b_project_student4
+        ));
+
+// Adding the submission to the project answer for student4
+        addSubmissionToStudentAnswer(sa5b_project_student4, submission5b_project_4);
+// Creating submission for student3 with project answers for 5c
+        Submission submission5c_project_3 = createSubmission("Submission from student3", student3, List.of(
+                sa5c_project_student3
+        ));
+
+// Adding the submission to the project answer for student3
+        addSubmissionToStudentAnswer(sa5c_project_student3, submission5c_project_3);
+
+// Creating submission for student4 with project answers for 5c
+        Submission submission5c_project_4 = createSubmission("Submission from student4", student4, List.of(
+                sa5c_project_student4
+        ));
+
+// Adding the submission to the project answer for student4
+        addSubmissionToStudentAnswer(sa5c_project_student4, submission5c_project_4);
+// Creating submission for student3 with project answers for 5d
+        Submission submission5d_project_3 = createSubmission("Submission from student3", student3, List.of(
+                sa5d_project_student3
+        ));
+
+// Adding the submission to the project answer for student3
+        addSubmissionToStudentAnswer(sa5d_project_student3, submission5d_project_3);
+
+// Creating submission for student4 with project answers for 5d
+        Submission submission5d_project_4 = createSubmission("Submission from student4", student4, List.of(
+                sa5d_project_student4
+        ));
+
+// Adding the submission to the project answer for student4
+        addSubmissionToStudentAnswer(sa5d_project_student4, submission5d_project_4);
+// Creating submission for student3 with project answers for 6a
+        Submission submission6a_project_3 = createSubmission("Submission from student3", student3, List.of(
+                sa6a_project_student3
+        ));
+
+// Adding the submission to the project answer for student3
+        addSubmissionToStudentAnswer(sa6a_project_student3, submission6a_project_3);
+
+// Creating submission for student4 with project answers for 6a
+        Submission submission6a_project_4 = createSubmission("Submission from student4", student4, List.of(
+                sa6a_project_student4
+        ));
+
+// Adding the submission to the project answer for student4
+        addSubmissionToStudentAnswer(sa6a_project_student4, submission6a_project_4);
+// Creating submission for student3 with project answers for 6b
+        Submission submission6b_project_3 = createSubmission("Submission from student3", student3, List.of(
+                sa6b_project_student3
+        ));
+
+// Adding the submission to the project answer for student3
+        addSubmissionToStudentAnswer(sa6b_project_student3, submission6b_project_3);
+
+// Creating submission for student4 with project answers for 6b
+        Submission submission6b_project_4 = createSubmission("Submission from student4", student4, List.of(
+                sa6b_project_student4
+        ));
+
+// Adding the submission to the project answer for student4
+        addSubmissionToStudentAnswer(sa6b_project_student4, submission6b_project_4);
+// Creating submission for student3 with project answers for 6c
+        Submission submission6c_project_3 = createSubmission("Submission from student3", student3, List.of(
+                sa6c_project_student3
+        ));
+
+// Adding the submission to the project answer for student3
+        addSubmissionToStudentAnswer(sa6c_project_student3, submission6c_project_3);
+
+// Creating submission for student4 with project answers for 6c
+        Submission submission6c_project_4 = createSubmission("Submission from student4", student4, List.of(
+                sa6c_project_student4
+        ));
+
+// Adding the submission to the project answer for student4
+        addSubmissionToStudentAnswer(sa6c_project_student4, submission6c_project_4);
+// Creating submission for student3 with project answers for 6d
+        Submission submission6d_project_3 = createSubmission("Submission from student3", student3, List.of(
+                sa6d_project_student3
+        ));
+
+// Adding the submission to the project answer for student3
+        addSubmissionToStudentAnswer(sa6d_project_student3, submission6d_project_3);
+
+// Creating submission for student4 with project answers for 6d
+        Submission submission6d_project_4 = createSubmission("Submission from student4", student4, List.of(
+                sa6d_project_student4
+        ));
+
+// Adding the submission to the project answer for student4
+        addSubmissionToStudentAnswer(sa6d_project_student4, submission6d_project_4);
+// Creating submission for student3 with project answers for 6e
+        Submission submission6e_project_3 = createSubmission("Submission from student3", student3, List.of(
+                sa6e_project_student3
+        ));
+
+// Adding the submission to the project answer for student3
+        addSubmissionToStudentAnswer(sa6e_project_student3, submission6e_project_3);
+
+// Creating submission for student4 with project answers for 6e
+        Submission submission6e_project_4 = createSubmission("Submission from student4", student4, List.of(
+                sa6e_project_student4
+        ));
+
+// Adding the submission to the project answer for student4
+        addSubmissionToStudentAnswer(sa6e_project_student4, submission6e_project_4);
+// Creating submission for student3 with project answers for 7a
+        Submission submission7a_project_3 = createSubmission("Submission from student3", student3, List.of(
+                sa7a_project_student3
+        ));
+
+// Adding the submission to the project answer for student3
+        addSubmissionToStudentAnswer(sa7a_project_student3, submission7a_project_3);
+
+// Creating submission for student4 with project answers for 7a
+        Submission submission7a_project_4 = createSubmission("Submission from student4", student4, List.of(
+                sa7a_project_student4
+        ));
+
+// Adding the submission to the project answer for student4
+        addSubmissionToStudentAnswer(sa7a_project_student4, submission7a_project_4);
+// Creating submission for student3 with project answers for 7b
+        Submission submission7b_project_3 = createSubmission("Submission from student3", student3, List.of(
+                sa7b_project_student3
+        ));
+
+// Adding the submission to the project answer for student3
+        addSubmissionToStudentAnswer(sa7b_project_student3, submission7b_project_3);
+
+// Creating submission for student4 with project answers for 7b
+        Submission submission7b_project_4 = createSubmission("Submission from student4", student4, List.of(
+                sa7b_project_student4
+        ));
+
+// Adding the submission to the project answer for student4
+        addSubmissionToStudentAnswer(sa7b_project_student4, submission7b_project_4);
+// Creating submission for student3 with project answers for 7c
+        Submission submission7c_project_3 = createSubmission("Submission from student3", student3, List.of(
+                sa7c_project_student3
+        ));
+
+// Adding the submission to the project answer for student3
+        addSubmissionToStudentAnswer(sa7c_project_student3, submission7c_project_3);
+
+// Creating submission for student4 with project answers for 7c
+        Submission submission7c_project_4 = createSubmission("Submission from student4", student4, List.of(
+                sa7c_project_student4
+        ));
+
+// Adding the submission to the project answer for student4
+        addSubmissionToStudentAnswer(sa7c_project_student4, submission7c_project_4);
+// Creating submission for student3 with project answers for 7d
+        Submission submission7d_project_3 = createSubmission("Submission from student3", student3, List.of(
+                sa7d_project_student3
+        ));
+
+// Adding the submission to the project answer for student3
+        addSubmissionToStudentAnswer(sa7d_project_student3, submission7d_project_3);
+
+// Creating submission for student4 with project answers for 7d
+        Submission submission7d_project_4 = createSubmission("Submission from student4", student4, List.of(
+                sa7d_project_student4
+        ));
+
+// Adding the submission to the project answer for student4
+        addSubmissionToStudentAnswer(sa7d_project_student4, submission7d_project_4);
+// Creating submission for student3 with project answers for 8a
+        Submission submission8a_project_3 = createSubmission("Submission from student3", student3, List.of(
+                sa8a_project_student3
+        ));
+
+// Adding the submission to the project answer for student3
+        addSubmissionToStudentAnswer(sa8a_project_student3, submission8a_project_3);
+
+// Creating submission for student4 with project answers for 8a
+        Submission submission8a_project_4 = createSubmission("Submission from student4", student4, List.of(
+                sa8a_project_student4
+        ));
+
+// Adding the submission to the project answer for student4
+        addSubmissionToStudentAnswer(sa8a_project_student4, submission8a_project_4);
+// Creating submission for student3 with project answers for 8b
+        Submission submission8b_project_3 = createSubmission("Submission from student3", student3, List.of(
+                sa8b_project_student3
+        ));
+
+// Adding the submission to the project answer for student3
+        addSubmissionToStudentAnswer(sa8b_project_student3, submission8b_project_3);
+
+// Creating submission for student4 with project answers for 8b
+        Submission submission8b_project_4 = createSubmission("Submission from student4", student4, List.of(
+                sa8b_project_student4
+        ));
+
+// Adding the submission to the project answer for student4
+        addSubmissionToStudentAnswer(sa8b_project_student4, submission8b_project_4);
+// Creating submission for student3 with project answers for 8c
+        Submission submission8c_project_3 = createSubmission("Submission from student3", student3, List.of(
+                sa8c_project_student3
+        ));
+
+// Adding the submission to the project answer for student3
+        addSubmissionToStudentAnswer(sa8c_project_student3, submission8c_project_3);
+
+// Creating submission for student4 with project answers for 8c
+        Submission submission8c_project_4 = createSubmission("Submission from student4", student4, List.of(
+                sa8c_project_student4
+        ));
+
+// Adding the submission to the project answer for student4
+        addSubmissionToStudentAnswer(sa8c_project_student4, submission8c_project_4);
+// Creating submission for student3 with project answers for 8d
+        Submission submission8d_project_3 = createSubmission("Submission from student3", student3, List.of(
+                sa8d_project_student3
+        ));
+
+// Adding the submission to the project answer for student3
+        addSubmissionToStudentAnswer(sa8d_project_student3, submission8d_project_3);
+
+// Creating submission for student4 with project answers for 8d
+        Submission submission8d_project_4 = createSubmission("Submission from student4", student4, List.of(
+                sa8d_project_student4
+        ));
+
+// Adding the submission to the project answer for student4
+        addSubmissionToStudentAnswer(sa8d_project_student4, submission8d_project_4);
+// Creating submission for student3 with project answers for 8e
+        Submission submission8e_project_3 = createSubmission("Submission from student3", student3, List.of(
+                sa8e_project_student3
+        ));
+
+// Adding the submission to the project answer for student3
+        addSubmissionToStudentAnswer(sa8e_project_student3, submission8e_project_3);
+
+// Creating submission for student4 with project answers for 8e
+        Submission submission8e_project_4 = createSubmission("Submission from student4", student4, List.of(
+                sa8e_project_student4
+        ));
+
+// Adding the submission to the project answer for student4
+        addSubmissionToStudentAnswer(sa8e_project_student4, submission8e_project_4);
+// Creating submission for student5 with project answers for 9a
+        Submission submission9a_project_5 = createSubmission("Submission from student5", student5, List.of(
+                sa9a_project_student5
+        ));
+
+// Adding the submission to the project answer for student5
+        addSubmissionToStudentAnswer(sa9a_project_student5, submission9a_project_5);
+
+// Creating submission for student6 with project answers for 9a
+        Submission submission9a_project_6 = createSubmission("Submission from student6", student6, List.of(
+                sa9a_project_student6
+        ));
+
+// Adding the submission to the project answer for student6
+        addSubmissionToStudentAnswer(sa9a_project_student6, submission9a_project_6);
+// Creating submission for student5 with project answers for 9b
+        Submission submission9b_project_5 = createSubmission("Submission from student5", student5, List.of(
+                sa9b_project_student5
+        ));
+
+// Adding the submission to the project answer for student5
+        addSubmissionToStudentAnswer(sa9b_project_student5, submission9b_project_5);
+
+// Creating submission for student6 with project answers for 9b
+        Submission submission9b_project_6 = createSubmission("Submission from student6", student6, List.of(
+                sa9b_project_student6
+        ));
+
+// Adding the submission to the project answer for student6
+        addSubmissionToStudentAnswer(sa9b_project_student6, submission9b_project_6);
+// Creating submission for student5 with project answers for 9c
+        Submission submission9c_project_5 = createSubmission("Submission from student5", student5, List.of(
+                sa9c_project_student5
+        ));
+
+// Adding the submission to the project answer for student5
+        addSubmissionToStudentAnswer(sa9c_project_student5, submission9c_project_5);
+
+// Creating submission for student6 with project answers for 9c
+        Submission submission9c_project_6 = createSubmission("Submission from student6", student6, List.of(
+                sa9c_project_student6
+        ));
+
+// Adding the submission to the project answer for student6
+        addSubmissionToStudentAnswer(sa9c_project_student6, submission9c_project_6);
+// Creating submission for student5 with project answers for 10a
+        Submission submission10a_project_5 = createSubmission("Submission from student5", student5, List.of(
+                sa10a_project_student5
+        ));
+
+// Adding the submission to the project answer for student5
+        addSubmissionToStudentAnswer(sa10a_project_student5, submission10a_project_5);
+
+// Creating submission for student6 with project answers for 10a
+        Submission submission10a_project_6 = createSubmission("Submission from student6", student6, List.of(
+                sa10a_project_student6
+        ));
+
+// Adding the submission to the project answer for student6
+        addSubmissionToStudentAnswer(sa10a_project_student6, submission10a_project_6);
+// Creating submission for student5 with project answers for 10b
+        Submission submission10b_project_5 = createSubmission("Submission from student5", student5, List.of(
+                sa10b_project_student5
+        ));
+
+// Adding the submission to the project answer for student5
+        addSubmissionToStudentAnswer(sa10b_project_student5, submission10b_project_5);
+
+// Creating submission for student6 with project answers for 10b
+        Submission submission10b_project_6 = createSubmission("Submission from student6", student6, List.of(
+                sa10b_project_student6
+        ));
+
+// Adding the submission to the project answer for student6
+        addSubmissionToStudentAnswer(sa10b_project_student6, submission10b_project_6);
+// Creating submission for student5 with project answers for 10c
+        Submission submission10c_project_5 = createSubmission("Submission from student5", student5, List.of(
+                sa10c_project_student5
+        ));
+
+// Adding the submission to the project answer for student5
+        addSubmissionToStudentAnswer(sa10c_project_student5, submission10c_project_5);
+
+// Creating submission for student6 with project answers for 10c
+        Submission submission10c_project_6 = createSubmission("Submission from student6", student6, List.of(
+                sa10c_project_student6
+        ));
+
+// Adding the submission to the project answer for student6
+        addSubmissionToStudentAnswer(sa10c_project_student6, submission10c_project_6);
+// Creating submission for student5 with project answers for 10d
+        Submission submission10d_project_5 = createSubmission("Submission from student5", student5, List.of(
+                sa10d_project_student5
+        ));
+
+// Adding the submission to the project answer for student5
+        addSubmissionToStudentAnswer(sa10d_project_student5, submission10d_project_5);
+
+// Creating submission for student6 with project answers for 10d
+        Submission submission10d_project_6 = createSubmission("Submission from student6", student6, List.of(
+                sa10d_project_student6
+        ));
+
+// Adding the submission to the project answer for student6
+        addSubmissionToStudentAnswer(sa10d_project_student6, submission10d_project_6);
+// Creating submission for student5 with project answers for 11a
+        Submission submission11a_project_5 = createSubmission("Submission from student5", student5, List.of(
+                sa11a_project_student5
+        ));
+
+// Adding the submission to the project answer for student5
+        addSubmissionToStudentAnswer(sa11a_project_student5, submission11a_project_5);
+
+// Creating submission for student6 with project answers for 11a
+        Submission submission11a_project_6 = createSubmission("Submission from student6", student6, List.of(
+                sa11a_project_student6
+        ));
+
+// Adding the submission to the project answer for student6
+        addSubmissionToStudentAnswer(sa11a_project_student6, submission11a_project_6);
+// Creating submission for student5 with project answers for 11b
+        Submission submission11b_project_5 = createSubmission("Submission from student5", student5, List.of(
+                sa11b_project_student5
+        ));
+
+// Adding the submission to the project answer for student5
+        addSubmissionToStudentAnswer(sa11b_project_student5, submission11b_project_5);
+
+// Creating submission for student6 with project answers for 11b
+        Submission submission11b_project_6 = createSubmission("Submission from student6", student6, List.of(
+                sa11b_project_student6
+        ));
+
+// Adding the submission to the project answer for student6
+        addSubmissionToStudentAnswer(sa11b_project_student6, submission11b_project_6);
+// Creating submission for student5 with project answers for 11c
+        Submission submission11c_project_5 = createSubmission("Submission from student5", student5, List.of(
+                sa11c_project_student5
+        ));
+
+// Adding the submission to the project answer for student5
+        addSubmissionToStudentAnswer(sa11c_project_student5, submission11c_project_5);
+
+// Creating submission for student6 with project answers for 11c
+        Submission submission11c_project_6 = createSubmission("Submission from student6", student6, List.of(
+                sa11c_project_student6
+        ));
+
+// Adding the submission to the project answer for student6
+        addSubmissionToStudentAnswer(sa11c_project_student6, submission11c_project_6);
+// Creating submission for student5 with project answers for 11d
+        Submission submission11d_project_5 = createSubmission("Submission from student5", student5, List.of(
+                sa11d_project_student5
+        ));
+
+// Adding the submission to the project answer for student5
+        addSubmissionToStudentAnswer(sa11d_project_student5, submission11d_project_5);
+
+// Creating submission for student6 with project answers for 11d
+        Submission submission11d_project_6 = createSubmission("Submission from student6", student6, List.of(
+                sa11d_project_student6
+        ));
+
+// Adding the submission to the project answer for student6
+        addSubmissionToStudentAnswer(sa11d_project_student6, submission11d_project_6);
+// Creating submission for student5 with project answers for 12a
+        Submission submission12a_project_5 = createSubmission("Submission from student5", student5, List.of(
+                sa12a_project_student5
+        ));
+
+// Adding the submission to the project answer for student5
+        addSubmissionToStudentAnswer(sa12a_project_student5, submission12a_project_5);
+
+// Creating submission for student6 with project answers for 12a
+        Submission submission12a_project_6 = createSubmission("Submission from student6", student6, List.of(
+                sa12a_project_student6
+        ));
+
+// Adding the submission to the project answer for student6
+        addSubmissionToStudentAnswer(sa12a_project_student6, submission12a_project_6);
+// Creating submission for student5 with project answers for 12b
+        Submission submission12b_project_5 = createSubmission("Submission from student5", student5, List.of(
+                sa12b_project_student5
+        ));
+
+// Adding the submission to the project answer for student5
+        addSubmissionToStudentAnswer(sa12b_project_student5, submission12b_project_5);
+
+// Creating submission for student6 with project answers for 12b
+        Submission submission12b_project_6 = createSubmission("Submission from student6", student6, List.of(
+                sa12b_project_student6
+        ));
+
+// Adding the submission to the project answer for student6
+        addSubmissionToStudentAnswer(sa12b_project_student6, submission12b_project_6);
+// Creating submission for student5 with project answers for 12c
+        Submission submission12c_project_5 = createSubmission("Submission from student5", student5, List.of(
+                sa12c_project_student5
+        ));
+
+// Adding the submission to the project answer for student5
+        addSubmissionToStudentAnswer(sa12c_project_student5, submission12c_project_5);
+
+// Creating submission for student6 with project answers for 12c
+        Submission submission12c_project_6 = createSubmission("Submission from student6", student6, List.of(
+                sa12c_project_student6
+        ));
+
+// Adding the submission to the project answer for student6
+        addSubmissionToStudentAnswer(sa12c_project_student6, submission12c_project_6);
+// Creating submission for student5 with project answers for 12d
+        Submission submission12d_project_5 = createSubmission("Submission from student5", student5, List.of(
+                sa12d_project_student5
+        ));
+
+// Adding the submission to the project answer for student5
+        addSubmissionToStudentAnswer(sa12d_project_student5, submission12d_project_5);
+
+// Creating submission for student6 with project answers for 12d
+        Submission submission12d_project_6 = createSubmission("Submission from student6", student6, List.of(
+                sa12d_project_student6
+        ));
+
+// Adding the submission to the project answer for student6
+        addSubmissionToStudentAnswer(sa12d_project_student6, submission12d_project_6);
+// Creating submission for student5 with project answers for 12e
+        Submission submission12e_project_5 = createSubmission("Submission from student5", student5, List.of(
+                sa12e_project_student5
+        ));
+
+// Adding the submission to the project answer for student5
+        addSubmissionToStudentAnswer(sa12e_project_student5, submission12e_project_5);
+
+// Creating submission for student6 with project answers for 12e
+        Submission submission12e_project_6 = createSubmission("Submission from student6", student6, List.of(
+                sa12e_project_student6
+        ));
+
+// Adding the submission to the project answer for student6
+        addSubmissionToStudentAnswer(sa12e_project_student6, submission12e_project_6);
+// Creating submission for student7 with project answers for 13a
+        Submission submission13a_project_7 = createSubmission("Submission from student7", student7, List.of(
+                sa13a_project_student7
+        ));
+
+// Adding the submission to the project answer for student7
+        addSubmissionToStudentAnswer(sa13a_project_student7, submission13a_project_7);
+
+// Creating submission for student8 with project answers for 13a
+        Submission submission13a_project_8 = createSubmission("Submission from student8", student8, List.of(
+                sa13a_project_student8
+        ));
+
+// Adding the submission to the project answer for student8
+        addSubmissionToStudentAnswer(sa13a_project_student8, submission13a_project_8);
+// Creating submission for student7 with project answers for 13b
+        Submission submission13b_project_7 = createSubmission("Submission from student7", student7, List.of(
+                sa13b_project_student7
+        ));
+
+// Adding the submission to the project answer for student7
+        addSubmissionToStudentAnswer(sa13b_project_student7, submission13b_project_7);
+
+// Creating submission for student8 with project answers for 13b
+        Submission submission13b_project_8 = createSubmission("Submission from student8", student8, List.of(
+                sa13b_project_student8
+        ));
+
+// Adding the submission to the project answer for student8
+        addSubmissionToStudentAnswer(sa13b_project_student8, submission13b_project_8);
+// Creating submission for student7 with project answers for 13c
+        Submission submission13c_project_7 = createSubmission("Submission from student7", student7, List.of(
+                sa13c_project_student7
+        ));
+
+// Adding the submission to the project answer for student7
+        addSubmissionToStudentAnswer(sa13c_project_student7, submission13c_project_7);
+
+// Creating submission for student8 with project answers for 13c
+        Submission submission13c_project_8 = createSubmission("Submission from student8", student8, List.of(
+                sa13c_project_student8
+        ));
+
+// Adding the submission to the project answer for student8
+        addSubmissionToStudentAnswer(sa13c_project_student8, submission13c_project_8);
+// Creating submission for student7 with project answers for 13d
+        Submission submission13d_project_7 = createSubmission("Submission from student7", student7, List.of(
+                sa13d_project_student7
+        ));
+
+// Adding the submission to the project answer for student7
+        addSubmissionToStudentAnswer(sa13d_project_student7, submission13d_project_7);
+
+// Creating submission for student8 with project answers for 13d
+        Submission submission13d_project_8 = createSubmission("Submission from student8", student8, List.of(
+                sa13d_project_student8
+        ));
+
+// Adding the submission to the project answer for student8
+        addSubmissionToStudentAnswer(sa13d_project_student8, submission13d_project_8);
+// Creating submission for student7 with project answers for 14a
+        Submission submission14a_project_7 = createSubmission("Submission from student7", student7, List.of(
+                sa14a_project_student7
+        ));
+
+// Adding the submission to the project answer for student7
+        addSubmissionToStudentAnswer(sa14a_project_student7, submission14a_project_7);
+
+// Creating submission for student8 with project answers for 14a
+        Submission submission14a_project_8 = createSubmission("Submission from student8", student8, List.of(
+                sa14a_project_student8
+        ));
+
+// Adding the submission to the project answer for student8
+        addSubmissionToStudentAnswer(sa14a_project_student8, submission14a_project_8);
+// Creating submission for student7 with project answers for 14b
+        Submission submission14b_project_7 = createSubmission("Submission from student7", student7, List.of(
+                sa14b_project_student7
+        ));
+
+// Adding the submission to the project answer for student7
+        addSubmissionToStudentAnswer(sa14b_project_student7, submission14b_project_7);
+
+// Creating submission for student8 with project answers for 14b
+        Submission submission14b_project_8 = createSubmission("Submission from student8", student8, List.of(
+                sa14b_project_student8
+        ));
+
+// Adding the submission to the project answer for student8
+        addSubmissionToStudentAnswer(sa14b_project_student8, submission14b_project_8);
+// Creating submission for student7 with project answers for 14c
+        Submission submission14c_project_7 = createSubmission("Submission from student7", student7, List.of(
+                sa14c_project_student7
+        ));
+
+// Adding the submission to the project answer for student7
+        addSubmissionToStudentAnswer(sa14c_project_student7, submission14c_project_7);
+
+// Creating submission for student8 with project answers for 14c
+        Submission submission14c_project_8 = createSubmission("Submission from student8", student8, List.of(
+                sa14c_project_student8
+        ));
+
+// Adding the submission to the project answer for student8
+        addSubmissionToStudentAnswer(sa14c_project_student8, submission14c_project_8);
+// Creating submission for student7 with project answers for 14d
+        Submission submission14d_project_7 = createSubmission("Submission from student7", student7, List.of(
+                sa14d_project_student7
+        ));
+
+// Adding the submission to the project answer for student7
+        addSubmissionToStudentAnswer(sa14d_project_student7, submission14d_project_7);
+
+// Creating submission for student8 with project answers for 14d
+        Submission submission14d_project_8 = createSubmission("Submission from student8", student8, List.of(
+                sa14d_project_student8
+        ));
+
+// Adding the submission to the project answer for student8
+        addSubmissionToStudentAnswer(sa14d_project_student8, submission14d_project_8);
+// Creating submission for student7 with project answers for 15a
+        Submission submission15a_project_7 = createSubmission("Submission from student7", student7, List.of(
+                sa15a_project_student7
+        ));
+
+// Adding the submission to the project answer for student7
+        addSubmissionToStudentAnswer(sa15a_project_student7, submission15a_project_7);
+
+// Creating submission for student8 with project answers for 15a
+        Submission submission15a_project_8 = createSubmission("Submission from student8", student8, List.of(
+                sa15a_project_student8
+        ));
+
+// Adding the submission to the project answer for student8
+        addSubmissionToStudentAnswer(sa15a_project_student8, submission15a_project_8);
+// Creating submission for student7 with project answers for 15b
+        Submission submission15b_project_7 = createSubmission("Submission from student7", student7, List.of(
+                sa15b_project_student7
+        ));
+
+// Adding the submission to the project answer for student7
+        addSubmissionToStudentAnswer(sa15b_project_student7, submission15b_project_7);
+
+// Creating submission for student8 with project answers for 15b
+        Submission submission15b_project_8 = createSubmission("Submission from student8", student8, List.of(
+                sa15b_project_student8
+        ));
+
+// Adding the submission to the project answer for student8
+        addSubmissionToStudentAnswer(sa15b_project_student8, submission15b_project_8);
+// Creating submission for student7 with project answers for 15c
+        Submission submission15c_project_7 = createSubmission("Submission from student7", student7, List.of(
+                sa15c_project_student7
+        ));
+
+// Adding the submission to the project answer for student7
+        addSubmissionToStudentAnswer(sa15c_project_student7, submission15c_project_7);
+
+// Creating submission for student8 with project answers for 15c
+        Submission submission15c_project_8 = createSubmission("Submission from student8", student8, List.of(
+                sa15c_project_student8
+        ));
+
+// Adding the submission to the project answer for student8
+        addSubmissionToStudentAnswer(sa15c_project_student8, submission15c_project_8);
+// Creating submission for student7 with project answers for 16a
+        Submission submission16a_project_7 = createSubmission("Submission from student7", student7, List.of(
+                sa16a_project_student7
+        ));
+
+// Adding the submission to the project answer for student7
+        addSubmissionToStudentAnswer(sa16a_project_student7, submission16a_project_7);
+
+// Creating submission for student8 with project answers for 16a
+        Submission submission16a_project_8 = createSubmission("Submission from student8", student8, List.of(
+                sa16a_project_student8
+        ));
+
+// Adding the submission to the project answer for student8
+        addSubmissionToStudentAnswer(sa16a_project_student8, submission16a_project_8);
+// Creating submission for student7 with project answers for 16b
+        Submission submission16b_project_7 = createSubmission("Submission from student7", student7, List.of(
+                sa16b_project_student7
+        ));
+
+// Adding the submission to the project answer for student7
+        addSubmissionToStudentAnswer(sa16b_project_student7, submission16b_project_7);
+
+// Creating submission for student8 with project answers for 16b
+        Submission submission16b_project_8 = createSubmission("Submission from student8", student8, List.of(
+                sa16b_project_student8
+        ));
+
+// Adding the submission to the project answer for student8
+        addSubmissionToStudentAnswer(sa16b_project_student8, submission16b_project_8);
+// Creating submission for student7 with project answers for 16c
+        Submission submission16c_project_7 = createSubmission("Submission from student7", student7, List.of(
+                sa16c_project_student7
+        ));
+
+// Adding the submission to the project answer for student7
+        addSubmissionToStudentAnswer(sa16c_project_student7, submission16c_project_7);
+
+// Creating submission for student8 with project answers for 16c
+        Submission submission16c_project_8 = createSubmission("Submission from student8", student8, List.of(
+                sa16c_project_student8
+        ));
+
+// Adding the submission to the project answer for student8
+        addSubmissionToStudentAnswer(sa16c_project_student8, submission16c_project_8);
+// Creating submission for student9 with project answers for 17a
+        Submission submission17a_project_9 = createSubmission("Submission from student9", student9, List.of(
+                sa17a_project_student9
+        ));
+
+// Adding the submission to the project answer for student9
+        addSubmissionToStudentAnswer(sa17a_project_student9, submission17a_project_9);
+
+// Creating submission for student10 with project answers for 17a
+        Submission submission17a_project_10 = createSubmission("Submission from student10", student10, List.of(
+                sa17a_project_student10
+        ));
+
+// Adding the submission to the project answer for student10
+        addSubmissionToStudentAnswer(sa17a_project_student10, submission17a_project_10);
+// Creating submission for student9 with project answers for 17b
+        Submission submission17b_project_9 = createSubmission("Submission from student9", student9, List.of(
+                sa17b_project_student9
+        ));
+
+// Adding the submission to the project answer for student9
+        addSubmissionToStudentAnswer(sa17b_project_student9, submission17b_project_9);
+
+// Creating submission for student10 with project answers for 17b
+        Submission submission17b_project_10 = createSubmission("Submission from student10", student10, List.of(
+                sa17b_project_student10
+        ));
+
+// Adding the submission to the project answer for student10
+        addSubmissionToStudentAnswer(sa17b_project_student10, submission17b_project_10);
+// Creating submission for student9 with project answers for 17c
+        Submission submission17c_project_9 = createSubmission("Submission from student9", student9, List.of(
+                sa17c_project_student9
+        ));
+
+// Adding the submission to the project answer for student9
+        addSubmissionToStudentAnswer(sa17c_project_student9, submission17c_project_9);
+
+// Creating submission for student10 with project answers for 17c
+        Submission submission17c_project_10 = createSubmission("Submission from student10", student10, List.of(
+                sa17c_project_student10
+        ));
+
+// Adding the submission to the project answer for student10
+        addSubmissionToStudentAnswer(sa17c_project_student10, submission17c_project_10);
+// Creating submission for student9 with project answers for 17d
+        Submission submission17d_project_9 = createSubmission("Submission from student9", student9, List.of(
+                sa17d_project_student9
+        ));
+
+// Adding the submission to the project answer for student9
+        addSubmissionToStudentAnswer(sa17d_project_student9, submission17d_project_9);
+
+// Creating submission for student10 with project answers for 17d
+        Submission submission17d_project_10 = createSubmission("Submission from student10", student10, List.of(
+                sa17d_project_student10
+        ));
+
+// Adding the submission to the project answer for student10
+        addSubmissionToStudentAnswer(sa17d_project_student10, submission17d_project_10);
+// Creating submission for student9 with project answers for 18a
+        Submission submission18a_project_9 = createSubmission("Submission from student9", student9, List.of(
+                sa18a_project_student9
+        ));
+
+// Adding the submission to the project answer for student9
+        addSubmissionToStudentAnswer(sa18a_project_student9, submission18a_project_9);
+
+// Creating submission for student10 with project answers for 18a
+        Submission submission18a_project_10 = createSubmission("Submission from student10", student10, List.of(
+                sa18a_project_student10
+        ));
+
+// Adding the submission to the project answer for student10
+        addSubmissionToStudentAnswer(sa18a_project_student10, submission18a_project_10);
+// Creating submission for student9 with project answers for 18b
+        Submission submission18b_project_9 = createSubmission("Submission from student9", student9, List.of(
+                sa18b_project_student9
+        ));
+
+// Adding the submission to the project answer for student9
+        addSubmissionToStudentAnswer(sa18b_project_student9, submission18b_project_9);
+
+// Creating submission for student10 with project answers for 18b
+        Submission submission18b_project_10 = createSubmission("Submission from student10", student10, List.of(
+                sa18b_project_student10
+        ));
+
+// Adding the submission to the project answer for student10
+        addSubmissionToStudentAnswer(sa18b_project_student10, submission18b_project_10);
+// Creating submission for student9 with project answers for 18c
+        Submission submission18c_project_9 = createSubmission("Submission from student9", student9, List.of(
+                sa18c_project_student9
+        ));
+
+// Adding the submission to the project answer for student9
+        addSubmissionToStudentAnswer(sa18c_project_student9, submission18c_project_9);
+
+// Creating submission for student10 with project answers for 18c
+        Submission submission18c_project_10 = createSubmission("Submission from student10", student10, List.of(
+                sa18c_project_student10
+        ));
+
+// Adding the submission to the project answer for student10
+        addSubmissionToStudentAnswer(sa18c_project_student10, submission18c_project_10);
+// Creating submission for student9 with project answers for 19a
+        Submission submission19a_project_9 = createSubmission("Submission from student9", student9, List.of(
+                sa19a_project_student9
+        ));
+
+// Adding the submission to the project answer for student9
+        addSubmissionToStudentAnswer(sa19a_project_student9, submission19a_project_9);
+
+// Creating submission for student10 with project answers for 19a
+        Submission submission19a_project_10 = createSubmission("Submission from student10", student10, List.of(
+                sa19a_project_student10
+        ));
+
+// Adding the submission to the project answer for student10
+        addSubmissionToStudentAnswer(sa19a_project_student10, submission19a_project_10);
+// Creating submission for student9 with project answers for 19b
+        Submission submission19b_project_9 = createSubmission("Submission from student9", student9, List.of(
+                sa19b_project_student9
+        ));
+
+// Adding the submission to the project answer for student9
+        addSubmissionToStudentAnswer(sa19b_project_student9, submission19b_project_9);
+
+// Creating submission for student10 with project answers for 19b
+        Submission submission19b_project_10 = createSubmission("Submission from student10", student10, List.of(
+                sa19b_project_student10
+        ));
+
+// Adding the submission to the project answer for student10
+        addSubmissionToStudentAnswer(sa19b_project_student10, submission19b_project_10);
+// Creating submission for student9 with project answers for 19c
+        Submission submission19c_project_9 = createSubmission("Submission from student9", student9, List.of(
+                sa19c_project_student9
+        ));
+
+// Adding the submission to the project answer for student9
+        addSubmissionToStudentAnswer(sa19c_project_student9, submission19c_project_9);
+
+// Creating submission for student10 with project answers for 19c
+        Submission submission19c_project_10 = createSubmission("Submission from student10", student10, List.of(
+                sa19c_project_student10
+        ));
+
+// Adding the submission to the project answer for student10
+        addSubmissionToStudentAnswer(sa19c_project_student10, submission19c_project_10);
+// Creating submission for student9 with project answers for 20a
+        Submission submission20a_project_9 = createSubmission("Submission from student9", student9, List.of(
+                sa20a_project_student9
+        ));
+
+// Adding the submission to the project answer for student9
+        addSubmissionToStudentAnswer(sa20a_project_student9, submission20a_project_9);
+
+// Creating submission for student10 with project answers for 20a
+        Submission submission20a_project_10 = createSubmission("Submission from student10", student10, List.of(
+                sa20a_project_student10
+        ));
+
+// Adding the submission to the project answer for student10
+        addSubmissionToStudentAnswer(sa20a_project_student10, submission20a_project_10);
+// Creating submission for student9 with project answers for 20b
+        Submission submission20b_project_9 = createSubmission("Submission from student9", student9, List.of(
+                sa20b_project_student9
+        ));
+
+// Adding the submission to the project answer for student9
+        addSubmissionToStudentAnswer(sa20b_project_student9, submission20b_project_9);
+
+// Creating submission for student10 with project answers for 20b
+        Submission submission20b_project_10 = createSubmission("Submission from student10", student10, List.of(
+                sa20b_project_student10
+        ));
+
+// Adding the submission to the project answer for student10
+        addSubmissionToStudentAnswer(sa20b_project_student10, submission20b_project_10);
+// Creating submission for student9 with project answers for 20c
+        Submission submission20c_project_9 = createSubmission("Submission from student9", student9, List.of(
+                sa20c_project_student9
+        ));
+
+// Adding the submission to the project answer for student9
+        addSubmissionToStudentAnswer(sa20c_project_student9, submission20c_project_9);
+
+// Creating submission for student10 with project answers for 20c
+        Submission submission20c_project_10 = createSubmission("Submission from student10", student10, List.of(
+                sa20c_project_student10
+        ));
+
+// Adding the submission to the project answer for student10
+        addSubmissionToStudentAnswer(sa20c_project_student10, submission20c_project_10);
+// Creating submission for student9 with project answers for 20d
+        Submission submission20d_project_9 = createSubmission("Submission from student9", student9, List.of(
+                sa20d_project_student9
+        ));
+
+// Adding the submission to the project answer for student9
+        addSubmissionToStudentAnswer(sa20d_project_student9, submission20d_project_9);
+
+// Creating submission for student10 with project answers for 20d
+        Submission submission20d_project_10 = createSubmission("Submission from student10", student10, List.of(
+                sa20d_project_student10
+        ));
+
+// Adding the submission to the project answer for student10
+        addSubmissionToStudentAnswer(sa20d_project_student10, submission20d_project_10);
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
     public static Project createProject(String name, Faculty teacher, Date dueDate, Syllabus syllabus, boolean completed, ProblemAnswer problemAnswer) {
