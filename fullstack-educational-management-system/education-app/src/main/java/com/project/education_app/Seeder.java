@@ -1310,40 +1310,7 @@ public class Seeder implements CommandLineRunner {
         return courseGrade;
     }
 
-    public static void updateCourseGrade(Course course, CourseGrade courseGrade, int assignmentPercent, int testPercent, int projectPercent) {
-        List<Grade> grades = course.getGrades();
-        double totalWeightedGrade = 0;
-        double totalWeight = 0;
-
-        // Convert percentages to decimals
-        double assignmentWeight = assignmentPercent / 100.0;
-        double testWeight = testPercent / 100.0;
-        double projectWeight = projectPercent / 100.0;
-
-        for (Grade grade : grades) {
-            Submission submission = grade.getSubmission();
-            for (StudentAnswer studentAnswer : submission.getStudentAnswers()) {
-                ProblemAnswer problemAnswer = studentAnswer.getProblemAnswer();
-
-                if (problemAnswer.getAssignment() != null) {
-                    totalWeightedGrade += grade.getGrade() * assignmentWeight;
-                    totalWeight += assignmentWeight;
-                } else if (problemAnswer.getTest() != null) {
-                    totalWeightedGrade += grade.getGrade() * testWeight;
-                    totalWeight += testWeight;
-                } else if (problemAnswer.getProject() != null) {
-                    totalWeightedGrade += grade.getGrade() * projectWeight;
-                    totalWeight += projectWeight;
-                }
-            }
-        }
-
-        double averageGrade = totalWeight > 0 ? totalWeightedGrade / totalWeight : 0;
-        courseGrade.setOverallGrade(averageGrade);
-    }
-
-
-    public static Grade createGrade(double gradeValue, Student student, Faculty teacher, Course course, Submission submission, int assignmentPercent, int testPercent, int projectPercent) {
+    public static Grade createGrade(double gradeValue, Student student, Faculty teacher, Course course, Submission submission) {
         Grade grade = new Grade();
         grade.setGrade(gradeValue);
         grade.setStudent(student);
@@ -1351,19 +1318,11 @@ public class Seeder implements CommandLineRunner {
         grade.setCourse(course);
         grade.setSubmission(submission);
         grade.setDateGraded(Timestamp.valueOf(LocalDateTime.now()));
-
         // Add the new grade to the course's grades
         course.getGrades().add(grade);
-
-        // Update the CourseGrade
-        CourseGrade courseGrade = course.getCourseGrades().stream()
-                .filter(cg -> cg.getStudent().equals(student))
-                .findFirst()
-                .orElseGet(() -> createCourseGrade(course, student));
-        updateCourseGrade(course, courseGrade, assignmentPercent, testPercent, projectPercent);
-
         return grade;
     }
+
 
     public static Feedback createFeedback(String feedbackText, Submission submission) {
         Feedback feedback = new Feedback();

@@ -30,4 +30,5 @@ public interface CourseRepo extends JpaRepository<Course,Long> {
 
     List<Course> findBySemestersId(Long semesterId);
 
+    Course findById(long id);
 }
