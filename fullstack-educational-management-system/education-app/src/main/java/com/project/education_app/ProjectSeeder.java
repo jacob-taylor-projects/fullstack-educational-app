@@ -1,6 +1,7 @@
 package com.project.education_app;
 
 import com.project.education_app.entities.*;
+import com.project.education_app.repos.CourseRepo;
 import com.project.education_app.repos.FacultyRepo;
 import com.project.education_app.repos.StudentRepo;
 import com.project.education_app.repos.SyllabusRepo;
@@ -15,8 +16,7 @@ import java.util.Date;
 import java.util.List;
 
 import static com.project.education_app.AssignmentSeeder.*;
-import static com.project.education_app.Seeder.addSubmissionToStudentAnswer;
-import static com.project.education_app.Seeder.createSubmission;
+import static com.project.education_app.Seeder.*;
 
 @Component
 @Data
@@ -24,6 +24,7 @@ public class ProjectSeeder implements CommandLineRunner {
     private final FacultyRepo facultyRepo;
     private final SyllabusRepo syllabusRepo;
     private final StudentRepo studentRepo;
+    private final CourseRepo courseRepo;
 
     @Override
     public void run(String... args) throws Exception {
@@ -62,6 +63,27 @@ public class ProjectSeeder implements CommandLineRunner {
         Student student8 = studentRepo.findById(8);
         Student student9 = studentRepo.findById(9);
         Student student10 = studentRepo.findById(10);
+        Course course1 = courseRepo.findById(1);
+        Course course2 = courseRepo.findById(2);
+        Course course3 = courseRepo.findById(3);
+        Course course4 = courseRepo.findById(4);
+        Course course5 = courseRepo.findById(5);
+        Course course6 = courseRepo.findById(6);
+        Course course7 = courseRepo.findById(7);
+        Course course8 = courseRepo.findById(8);
+        Course course9 = courseRepo.findById(9);
+        Course course10 = courseRepo.findById(10);
+        Course course11 = courseRepo.findById(11);
+        Course course12 = courseRepo.findById(12);
+        Course course13 = courseRepo.findById(13);
+        Course course14 = courseRepo.findById(14);
+        Course course15 = courseRepo.findById(15);
+        Course course16 = courseRepo.findById(16);
+        Course course17 = courseRepo.findById(17);
+        Course course18 = courseRepo.findById(18);
+        Course course19 = courseRepo.findById(19);
+        Course course20 = courseRepo.findById(20);
+
         ProblemAnswer pa1a_project = createProblemAnswer("What is the significance of variables in programming?", "Variables are essential for storing and manipulating data, allowing programmers to create dynamic and flexible programs.");
         Project project1a = createProject("Variables Project", faculty1, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false, pa1a_project);
         addProjectToProblemAnswer(pa1a_project, project1a);
@@ -2277,13 +2299,187 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa20d_project_student10, submission20d_project_10);
 
 
+        Grade grade1a_1 = createGrade(88.5, student1, faculty1, course1, submission1a_project_1);
+        Grade grade1a_2 = createGrade(86.7, student2, faculty1, course1, submission1a_project_2);
+        Grade grade1b_1 = createGrade(87.3, student1, faculty1, course1, submission1b_project_1);
+        Grade grade1b_2 = createGrade(89.1, student2, faculty1, course1, submission1b_project_2);
+        Grade grade1c_1 = createGrade(86.9, student1, faculty1, course1, submission1c_project_1);
+        Grade grade1c_2 = createGrade(88.4, student2, faculty1, course1, submission1c_project_2);
+        Grade grade1d_1 = createGrade(85.8, student1, faculty1, course1, submission1d_project_1);
+        Grade grade1d_2 = createGrade(89.0, student2, faculty1, course1, submission1d_project_2);
+        Grade grade1e_1 = createGrade(88.2, student1, faculty1, course1, submission1e_project_1);
+        Grade grade1e_2 = createGrade(87.6, student2, faculty1, course1, submission1e_project_2);
+        Grade grade1f_1 = createGrade(85.7, student1, faculty1, course1, submission1f_project_1);
+        Grade grade1f_2 = createGrade(87.9, student2, faculty1, course1, submission1f_project_2);
 
+        Grade grade2a_1 = createGrade(87.9, student1, faculty2, course2, submission2a_project_1);
+        Grade grade2a_2 = createGrade(86.5, student2, faculty2, course2, submission2a_project_2);
+        Grade grade2b_1 = createGrade(89.3, student1, faculty2, course2, submission2b_project_1);
+        Grade grade2b_2 = createGrade(88.7, student2, faculty2, course2, submission2b_project_2);
+        Grade grade2c_1 = createGrade(87.5, student1, faculty2, course2, submission2c_project_1);
+        Grade grade2c_2 = createGrade(86.3, student2, faculty2, course2, submission2c_project_2);
+        Grade grade2d_1 = createGrade(88.6, student1, faculty2, course2, submission2d_project_1);
+        Grade grade2d_2 = createGrade(87.8, student2, faculty2, course2, submission2d_project_2);
+        Grade grade2e_1 = createGrade(89.1, student1, faculty2, course2, submission2e_project_1);
+        Grade grade2e_2 = createGrade(87.7, student2, faculty2, course2, submission2e_project_2);
+        Grade grade2f_1 = createGrade(88.2, student1, faculty2, course2, submission2f_project_1);
+        Grade grade2f_2 = createGrade(86.9, student2, faculty2, course2, submission2f_project_2);
 
+        Grade grade3a_1 = createGrade(88.7, student1, faculty3, course3, submission3a_project_1);
+        Grade grade3a_2 = createGrade(86.4, student2, faculty3, course3, submission3a_project_2);
+        Grade grade3b_1 = createGrade(87.9, student1, faculty3, course3, submission3b_project_1);
+        Grade grade3b_2 = createGrade(89.5, student2, faculty3, course3, submission3b_project_2);
+        Grade grade3c_1 = createGrade(86.8, student1, faculty3, course3, submission3c_project_1);
+        Grade grade3c_2 = createGrade(88.2, student2, faculty3, course3, submission3c_project_2);
+        Grade grade3d_1 = createGrade(85.6, student1, faculty3, course3, submission3d_project_1);
+        Grade grade3d_2 = createGrade(87.3, student2, faculty3, course3, submission3d_project_2);
 
+        Grade grade4a_1 = createGrade(88.2, student1, faculty4, course4, submission4a_project_1);
+        Grade grade4a_2 = createGrade(86.7, student2, faculty4, course4, submission4a_project_2);
+        Grade grade4b_1 = createGrade(89.5, student1, faculty4, course4, submission4b_project_1);
+        Grade grade4b_2 = createGrade(87.1, student2, faculty4, course4, submission4b_project_2);
+        Grade grade4c_1 = createGrade(85.9, student1, faculty4, course4, submission4c_project_1);
+        Grade grade4c_2 = createGrade(88.6, student2, faculty4, course4, submission4c_project_2);
+        Grade grade4d_1 = createGrade(87.3, student1, faculty4, course4, submission4d_project_1);
+        Grade grade4d_2 = createGrade(89.4, student2, faculty4, course4, submission4d_project_2);
 
+        Grade grade5a_3 = createGrade(87.2, student3, faculty5, course5, submission5a_project_3);
+        Grade grade5a_4 = createGrade(85.9, student4, faculty5, course5, submission5a_project_4);
+        Grade grade5b_3 = createGrade(88.7, student3, faculty5, course5, submission5b_project_3);
+        Grade grade5b_4 = createGrade(89.1, student4, faculty5, course5, submission5b_project_4);
+        Grade grade5c_3 = createGrade(86.3, student3, faculty5, course5, submission5c_project_3);
+        Grade grade5c_4 = createGrade(87.8, student4, faculty5, course5, submission5c_project_4);
+        Grade grade5d_3 = createGrade(85.6, student3, faculty5, course5, submission5d_project_3);
+        Grade grade5d_4 = createGrade(88.1, student4, faculty5, course5, submission5d_project_4);
 
+        Grade grade6a_3 = createGrade(88.5, student3, faculty1, course6, submission6a_project_3);
+        Grade grade6a_4 = createGrade(86.9, student4, faculty1, course6, submission6a_project_4);
+        Grade grade6b_3 = createGrade(89.2, student3, faculty1, course6, submission6b_project_3);
+        Grade grade6b_4 = createGrade(87.6, student4, faculty1, course6, submission6b_project_4);
+        Grade grade6c_3 = createGrade(86.4, student3, faculty1, course6, submission6c_project_3);
+        Grade grade6c_4 = createGrade(88.8, student4, faculty1, course6, submission6c_project_4);
+        Grade grade6d_3 = createGrade(87.3, student3, faculty1, course6, submission6d_project_3);
+        Grade grade6d_4 = createGrade(89.1, student4, faculty1, course6, submission6d_project_4);
+        Grade grade6e_3 = createGrade(86.2, student3, faculty1, course6, submission6e_project_3);
+        Grade grade6e_4 = createGrade(88.3, student4, faculty1, course6, submission6e_project_4);
 
+        Grade grade7a_3 = createGrade(88.9, student3, faculty2, course7, submission7a_project_3);
+        Grade grade7a_4 = createGrade(87.1, student4, faculty2, course7, submission7a_project_4);
+        Grade grade7b_3 = createGrade(89.6, student3, faculty2, course7, submission7b_project_3);
+        Grade grade7b_4 = createGrade(88.4, student4, faculty2, course7, submission7b_project_4);
+        Grade grade7c_3 = createGrade(87.7, student3, faculty2, course7, submission7c_project_3);
+        Grade grade7c_4 = createGrade(89.3, student4, faculty2, course7, submission7c_project_4);
+        Grade grade7d_3 = createGrade(86.9, student3, faculty2, course7, submission7d_project_3);
+        Grade grade7d_4 = createGrade(88.6, student4, faculty2, course7, submission7d_project_4);
 
+        Grade grade8a_3 = createGrade(87.1, student3, faculty3, course8, submission8a_project_3);
+        Grade grade8a_4 = createGrade(88.7, student4, faculty3, course8, submission8a_project_4);
+        Grade grade8b_3 = createGrade(86.8, student3, faculty3, course8, submission8b_project_3);
+        Grade grade8b_4 = createGrade(89.5, student4, faculty3, course8, submission8b_project_4);
+        Grade grade8c_3 = createGrade(85.9, student3, faculty3, course8, submission8c_project_3);
+        Grade grade8c_4 = createGrade(88.2, student4, faculty3, course8, submission8c_project_4);
+        Grade grade8d_3 = createGrade(87.4, student3, faculty3, course8, submission8d_project_3);
+        Grade grade8d_4 = createGrade(89.1, student4, faculty3, course8, submission8d_project_4);
+        Grade grade8e_3 = createGrade(86.5, student3, faculty3, course8, submission8e_project_3);
+        Grade grade8e_4 = createGrade(88.6, student4, faculty3, course8, submission8e_project_4);
+
+        Grade grade9a_5 = createGrade(87.5, student5, faculty4, course9, submission9a_project_5);
+        Grade grade9a_6 = createGrade(88.9, student6, faculty4, course9, submission9a_project_6);
+        Grade grade9b_5 = createGrade(86.8, student5, faculty4, course9, submission9b_project_5);
+        Grade grade9b_6 = createGrade(89.1, student6, faculty4, course9, submission9b_project_6);
+        Grade grade9c_5 = createGrade(88.4, student5, faculty4, course9, submission9c_project_5);
+        Grade grade9c_6 = createGrade(87.2, student6, faculty4, course9, submission9c_project_6);
+
+        Grade grade10a_5 = createGrade(86.9, student5, faculty5, course10, submission10a_project_5);
+        Grade grade10a_6 = createGrade(88.5, student6, faculty5, course10, submission10a_project_6);
+        Grade grade10b_5 = createGrade(87.3, student5, faculty5, course10, submission10b_project_5);
+        Grade grade10b_6 = createGrade(89.1, student6, faculty5, course10, submission10b_project_6);
+        Grade grade10c_5 = createGrade(86.8, student5, faculty5, course10, submission10c_project_5);
+        Grade grade10c_6 = createGrade(87.9, student6, faculty5, course10, submission10c_project_6);
+
+        Grade grade11a_5 = createGrade(88.3, student5, faculty1, course11, submission11a_project_5);
+        Grade grade11a_6 = createGrade(86.5, student6, faculty1, course11, submission11a_project_6);
+        Grade grade11b_5 = createGrade(87.9, student5, faculty1, course11, submission11b_project_5);
+        Grade grade11b_6 = createGrade(89.1, student6, faculty1, course11, submission11b_project_6);
+        Grade grade11c_5 = createGrade(86.7, student5, faculty1, course11, submission11c_project_5);
+        Grade grade11c_6 = createGrade(88.2, student6, faculty1, course11, submission11c_project_6);
+        Grade grade11d_5 = createGrade(87.3, student5, faculty1, course11, submission11d_project_5);
+        Grade grade11d_6 = createGrade(89.4, student6, faculty1, course11, submission11d_project_6);
+
+        Grade grade12a_5 = createGrade(87.3, student5, faculty2, course12, submission12a_project_5);
+        Grade grade12a_6 = createGrade(86.8, student6, faculty2, course12, submission12a_project_6);
+        Grade grade12b_5 = createGrade(89.1, student5, faculty2, course12, submission12b_project_5);
+        Grade grade12b_6 = createGrade(88.4, student6, faculty2, course12, submission12b_project_6);
+        Grade grade12c_5 = createGrade(86.9, student5, faculty2, course12, submission12c_project_5);
+        Grade grade12c_6 = createGrade(88.7, student6, faculty2, course12, submission12c_project_6);
+        Grade grade12d_5 = createGrade(87.2, student5, faculty2, course12, submission12d_project_5);
+        Grade grade12d_6 = createGrade(86.5, student6, faculty2, course12, submission12d_project_6);
+        Grade grade12e_5 = createGrade(88.3, student5, faculty2, course12, submission12e_project_5);
+        Grade grade12e_6 = createGrade(86.6, student6, faculty2, course12, submission12e_project_6);
+
+        Grade grade13a_7 = createGrade(88.2, student7, faculty3, course13, submission13a_project_7);
+        Grade grade13a_8 = createGrade(86.7, student8, faculty3, course13, submission13a_project_8);
+        Grade grade13b_7 = createGrade(89.1, student7, faculty3, course13, submission13b_project_7);
+        Grade grade13b_8 = createGrade(87.3, student8, faculty3, course13, submission13b_project_8);
+        Grade grade13c_7 = createGrade(88.7, student7, faculty3, course13, submission13c_project_7);
+        Grade grade13c_8 = createGrade(87.9, student8, faculty3, course13, submission13c_project_8);
+        Grade grade13d_7 = createGrade(86.4, student7, faculty3, course13, submission13d_project_7);
+        Grade grade13d_8 = createGrade(88.5, student8, faculty3, course13, submission13d_project_8);
+
+        Grade grade14a_7 = createGrade(88.5, student7, faculty4, course14, submission14a_project_7);
+        Grade grade14a_8 = createGrade(87.1, student8, faculty4, course14, submission14a_project_8);
+        Grade grade14b_7 = createGrade(89.2, student7, faculty4, course14, submission14b_project_7);
+        Grade grade14b_8 = createGrade(88.7, student8, faculty4, course14, submission14b_project_8);
+        Grade grade14c_7 = createGrade(87.6, student7, faculty4, course14, submission14c_project_7);
+        Grade grade14c_8 = createGrade(89.1, student8, faculty4, course14, submission14c_project_8);
+        Grade grade14d_7 = createGrade(88.4, student7, faculty4, course14, submission14d_project_7);
+        Grade grade14d_8 = createGrade(87.9, student8, faculty4, course14, submission14d_project_8);
+
+        Grade grade15a_7 = createGrade(87.4, student7, faculty5, course15, submission15a_project_7);
+        Grade grade15a_8 = createGrade(88.7, student8, faculty5, course15, submission15a_project_8);
+        Grade grade15b_7 = createGrade(86.9, student7, faculty5, course15, submission15b_project_7);
+        Grade grade15b_8 = createGrade(87.6, student8, faculty5, course15, submission15b_project_8);
+        Grade grade15c_7 = createGrade(88.2, student7, faculty5, course15, submission15c_project_7);
+        Grade grade15c_8 = createGrade(86.5, student8, faculty5, course15, submission15c_project_8);
+
+        Grade grade16a_7 = createGrade(88.3, student7, faculty1, course16, submission16a_project_7);
+        Grade grade16a_8 = createGrade(87.1, student8, faculty1, course16, submission16a_project_8);
+        Grade grade16b_7 = createGrade(89.2, student7, faculty1, course16, submission16b_project_7);
+        Grade grade16b_8 = createGrade(88.4, student8, faculty1, course16, submission16b_project_8);
+        Grade grade16c_7 = createGrade(87.9, student7, faculty1, course16, submission16c_project_7);
+        Grade grade16c_8 = createGrade(89.5, student8, faculty1, course16, submission16c_project_8);
+
+        Grade grade17a_9 = createGrade(88.4, student9, faculty2, course17, submission17a_project_9);
+        Grade grade17a_10 = createGrade(87.6, student10, faculty2, course17, submission17a_project_10);
+        Grade grade17b_9 = createGrade(88.7, student9, faculty2, course17, submission17b_project_9);
+        Grade grade17b_10 = createGrade(89.2, student10, faculty2, course17, submission17b_project_10);
+        Grade grade17c_9 = createGrade(87.9, student9, faculty2, course17, submission17c_project_9);
+        Grade grade17c_10 = createGrade(88.5, student10, faculty2, course17, submission17c_project_10);
+        Grade grade17d_9 = createGrade(89.1, student9, faculty2, course17, submission17d_project_9);
+        Grade grade17d_10 = createGrade(86.8, student10, faculty2, course17, submission17d_project_10);
+
+        Grade grade18a_9 = createGrade(87.6, student9, faculty3, course18, submission18a_project_9);
+        Grade grade18a_10 = createGrade(89.1, student10, faculty3, course18, submission18a_project_10);
+        Grade grade18b_9 = createGrade(88.4, student9, faculty3, course18, submission18b_project_9);
+        Grade grade18b_10 = createGrade(86.7, student10, faculty3, course18, submission18b_project_10);
+        Grade grade18c_9 = createGrade(88.7, student9, faculty3, course18, submission18c_project_9);
+        Grade grade18c_10 = createGrade(87.8, student10, faculty3, course18, submission18c_project_10);
+
+        Grade grade19a_9 = createGrade(87.3, student9, faculty4, course19, submission19a_project_9);
+        Grade grade19a_10 = createGrade(88.7, student10, faculty4, course19, submission19a_project_10);
+        Grade grade19b_9 = createGrade(87.9, student9, faculty4, course19, submission19b_project_9);
+        Grade grade19b_10 = createGrade(86.4, student10, faculty4, course19, submission19b_project_10);
+        Grade grade19c_9 = createGrade(88.5, student9, faculty4, course19, submission19c_project_9);
+        Grade grade19c_10 = createGrade(87.1, student10, faculty4, course19, submission19c_project_10);
+
+        Grade grade20a_9 = createGrade(88.3, student9, faculty5, course20, submission20a_project_9);
+        Grade grade20a_10 = createGrade(87.6, student10, faculty5, course20, submission20a_project_10);
+        Grade grade20b_9 = createGrade(89.1, student9, faculty5, course20, submission20b_project_9);
+        Grade grade20b_10 = createGrade(86.9, student10, faculty5, course20, submission20b_project_10);
+        Grade grade20c_9 = createGrade(88.7, student9, faculty5, course20, submission20c_project_9);
+        Grade grade20c_10 = createGrade(87.2, student10, faculty5, course20, submission20c_project_10);
+        Grade grade20d_9 = createGrade(89.4, student9, faculty5, course20, submission20d_project_9);
+        Grade grade20d_10 = createGrade(88.1, student10, faculty5, course20, submission20d_project_10);
 
 
 
