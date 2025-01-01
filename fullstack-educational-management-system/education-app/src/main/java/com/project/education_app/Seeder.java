@@ -1300,15 +1300,14 @@ public class Seeder implements CommandLineRunner {
         feedback.setSubmission(submission); // Ensures the relationship is bidirectional
     }
 
-    public static CourseGrade createCourseGrade(Course course, Student student) {
+    public static CourseGrade createCourseGrade(Student student, Course course, double overallGrade) {
         CourseGrade courseGrade = new CourseGrade();
-        courseGrade.setCourse(course);
         courseGrade.setStudent(student);
-        // Add to the collection of course grades
-        course.getCourseGrades().add(courseGrade);
-        student.getCourseGrades().add(courseGrade); // Ensure bidirectional relationship
+        courseGrade.setCourse(course);
+        courseGrade.setOverallGrade(overallGrade);
         return courseGrade;
     }
+
 
     public static Grade createGrade(double gradeValue, Student student, Faculty teacher, Course course, Submission submission) {
         Grade grade = new Grade();

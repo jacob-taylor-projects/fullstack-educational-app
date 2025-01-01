@@ -6637,6 +6637,69 @@ public class TestSeeder implements CommandLineRunner {
         Grade grade20d_10 = createGrade(85.8, student10, faculty5, course20, submission20d_10);
 
 
+        CourseGrade courseGrade1a_1 = createCourseGrade(student1, course1, 87.4);
+        CourseGrade courseGrade1a_2 = createCourseGrade(student2, course1, 87.9);
+
+        CourseGrade courseGrade2a_1 = createCourseGrade(student1, course2, 87.4);
+        CourseGrade courseGrade2a_2 = createCourseGrade(student2, course2, 87.7);
+
+        CourseGrade courseGrade3a_1 = createCourseGrade(student1, course3, 87.05);
+        CourseGrade courseGrade3a_2 = createCourseGrade(student2, course3, 87.575);
+
+        CourseGrade courseGrade4a_1 = createCourseGrade(student1, course4, 87.725);
+        CourseGrade courseGrade4a_2 = createCourseGrade(student2, course4, 87.95);
+
+        CourseGrade courseGrade5a_3 = createCourseGrade(student3, course5, 86.925);
+        CourseGrade courseGrade5a_4 = createCourseGrade(student4, course5, 88.025);
+
+        CourseGrade courseGrade6a_3 = createCourseGrade(student3, course6, 87.44);
+        CourseGrade courseGrade6a_4 = createCourseGrade(student4, course6, 87.54);
+
+        CourseGrade courseGrade7a_3 = createCourseGrade(student3, course7, 87.5);
+        CourseGrade courseGrade7a_4 = createCourseGrade(student4, course7, 87.0);
+
+        CourseGrade courseGrade8a_3 = createCourseGrade(student3, course8, 87.74);
+        CourseGrade courseGrade8a_4 = createCourseGrade(student4, course8, 87.02);
+
+        CourseGrade courseGrade9a_5 = createCourseGrade(student5, course9, 87.23);
+        CourseGrade courseGrade9a_6 = createCourseGrade(student6, course9, 88.17);
+
+        CourseGrade courseGrade10a_5 = createCourseGrade(student5, course10, 88.35);
+        CourseGrade courseGrade10a_6 = createCourseGrade(student6, course10, 87.35);
+
+        CourseGrade courseGrade11a_5 = createCourseGrade(student5, course11, 86.95);
+        CourseGrade courseGrade11a_6 = createCourseGrade(student6, course11, 87.95);
+
+        CourseGrade courseGrade12a_5 = createCourseGrade(student5, course12, 87.58);
+        CourseGrade courseGrade12a_6 = createCourseGrade(student6, course12, 88.18);
+
+        CourseGrade courseGrade13a_7 = createCourseGrade(student7, course13, 87.5);
+        CourseGrade courseGrade13a_8 = createCourseGrade(student8, course13, 88.05);
+
+        CourseGrade courseGrade14a_7 = createCourseGrade(student7, course14, 88.375);
+        CourseGrade courseGrade14a_8 = createCourseGrade(student8, course14, 86.175);
+
+        CourseGrade courseGrade15a_7 = createCourseGrade(student7, course15, 88.667);
+        CourseGrade courseGrade15a_8 = createCourseGrade(student8, course15, 86.633);
+
+        CourseGrade courseGrade16a_7 = createCourseGrade(student7, course16, 87.433);
+        CourseGrade courseGrade16a_8 = createCourseGrade(student8, course16, 87.2);
+
+        CourseGrade courseGrade17a_9 = createCourseGrade(student9, course17, 87.55);
+        CourseGrade courseGrade17a_10 = createCourseGrade(student10, course17, 88.3);
+
+        CourseGrade courseGrade18a_9 = createCourseGrade(student9, course18, 87.2);
+        CourseGrade courseGrade18a_10 = createCourseGrade(student10, course18, 87.63);
+
+        CourseGrade courseGrade19a_9 = createCourseGrade(student9, course19, 87.3);
+        CourseGrade courseGrade19a_10 = createCourseGrade(student10, course19, 88.1);
+
+        CourseGrade courseGrade20a_9 = createCourseGrade(student9, course20, 87.6);
+        CourseGrade courseGrade20a_10 = createCourseGrade(student10, course20, 87.5);
+
+
+
+
 
     }
 

@@ -6974,6 +6974,67 @@ public class AssignmentSeeder implements CommandLineRunner {
         Grade grade20_4_9 = createGrade(87.7, student9, faculty5, course20, submission20_4_9);
         Grade grade20_4_10 = createGrade(85.8, student10, faculty5, course20, submission20_4_10);
 
+
+        CourseGrade courseGrade1_1_1 = createCourseGrade(student1, course1, 85.7);
+        CourseGrade courseGrade1_1_2 = createCourseGrade(student2, course1, 86.13);
+
+        CourseGrade courseGrade2_1_1 = createCourseGrade(student1, course2, 84.25);
+        CourseGrade courseGrade2_1_2 = createCourseGrade(student2, course2, 85.42);
+
+        CourseGrade courseGrade3_1_1 = createCourseGrade(student1, course3, 88.6);
+        CourseGrade courseGrade3_1_2 = createCourseGrade(student2, course3, 88.0);
+
+        CourseGrade courseGrade4_1_1 = createCourseGrade(student1, course4, 87.575);
+        CourseGrade courseGrade4_1_2 = createCourseGrade(student2, course4, 87.975);
+
+        CourseGrade courseGrade5_1_3 = createCourseGrade(student3, course5, 85.875);
+        CourseGrade courseGrade5_1_4 = createCourseGrade(student4, course5, 88.175);
+
+        CourseGrade courseGrade6_1_3 = createCourseGrade(student3, course6, 86.9);
+        CourseGrade courseGrade6_1_4 = createCourseGrade(student4, course6, 85.94);
+
+        CourseGrade courseGrade7_1_3 = createCourseGrade(student3, course7, 87.15);
+        CourseGrade courseGrade7_1_4 = createCourseGrade(student4, course7, 86.4);
+
+        CourseGrade courseGrade8_1_3 = createCourseGrade(student3, course8, 86.74);
+        CourseGrade courseGrade8_1_4 = createCourseGrade(student4, course8, 86.32);
+
+        CourseGrade courseGrade9_1_5 = createCourseGrade(student5, course9, 87.2);
+        CourseGrade courseGrade9_1_6 = createCourseGrade(student6, course9, 88.67);
+
+        CourseGrade courseGrade10_1_5 = createCourseGrade(student5, course10, 86.75);
+        CourseGrade courseGrade10_1_6 = createCourseGrade(student6, course10, 87.25);
+
+        CourseGrade courseGrade11_1_5 = createCourseGrade(student5, course11, 88.225);
+        CourseGrade courseGrade11_1_6 = createCourseGrade(student6, course11, 86.75);
+
+        CourseGrade courseGrade12_1_5 = createCourseGrade(student5, course12, 87.88);
+        CourseGrade courseGrade12_1_6 = createCourseGrade(student6, course12, 87.56);
+
+        CourseGrade courseGrade13_1_7 = createCourseGrade(student7, course13, 87.25);
+        CourseGrade courseGrade13_1_8 = createCourseGrade(student8, course13, 88.025);
+
+        CourseGrade courseGrade14_1_7 = createCourseGrade(student7, course14, 88.375);
+        CourseGrade courseGrade14_1_8 = createCourseGrade(student8, course14, 86.675);
+
+        CourseGrade courseGrade15_1_7 = createCourseGrade(student7, course15, 87.0333);
+        CourseGrade courseGrade15_1_8 = createCourseGrade(student8, course15, 87.6);
+
+        CourseGrade courseGrade16_1_7 = createCourseGrade(student7, course16, 86.7667);
+        CourseGrade courseGrade16_1_8 = createCourseGrade(student8, course16, 86.5333);
+
+        CourseGrade courseGrade17_1_9 = createCourseGrade(student9, course17, 87.775);
+        CourseGrade courseGrade17_1_10 = createCourseGrade(student10, course17, 87.3);
+
+        CourseGrade courseGrade18_1_9 = createCourseGrade(student9, course18, 87.2);
+        CourseGrade courseGrade18_1_10 = createCourseGrade(student10, course18, 87.6333);
+
+        CourseGrade courseGrade19_1_9 = createCourseGrade(student9, course19, 87.3);
+        CourseGrade courseGrade19_1_10 = createCourseGrade(student10, course19, 88.1);
+
+        CourseGrade courseGrade20_1_9 = createCourseGrade(student9, course20, 87.6);
+        CourseGrade courseGrade20_1_10 = createCourseGrade(student10, course20, 87.5);
+
     }
 
     public static ProblemAnswer createProblemAnswer(String problemContent, String answerContent) {
