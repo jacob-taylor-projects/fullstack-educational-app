@@ -2542,6 +2542,253 @@ public class ProjectSeeder implements CommandLineRunner {
         CourseGrade courseGrade20a_project_9 = createCourseGrade(student9, course20, 88.88);
         CourseGrade courseGrade20a_project_10 = createCourseGrade(student10, course20, 87.45);
 
+
+        Feedback feedback1a_project_1 = createFeedback("Great project submission, student1!", submission1a_project_1);
+        Feedback feedback1a_project_2 = createFeedback("Well done, student2!", submission1a_project_2);
+
+        Feedback feedback1b_project_1 = createFeedback("Excellent effort, student1.", submission1b_project_1);
+        Feedback feedback1b_project_2 = createFeedback("Nice project work, student2.", submission1b_project_2);
+
+        Feedback feedback1c_project_1 = createFeedback("Good job, student1.", submission1c_project_1);
+        Feedback feedback1c_project_2 = createFeedback("Strong performance, student2.", submission1c_project_2);
+
+        Feedback feedback1d_project_1 = createFeedback("Well written, student1.", submission1d_project_1);
+        Feedback feedback1d_project_2 = createFeedback("Great job, student2.", submission1d_project_2);
+
+        Feedback feedback1e_project_1 = createFeedback("Impressive work, student1!", submission1e_project_1);
+        Feedback feedback1e_project_2 = createFeedback("Solid project submission, student2.", submission1e_project_2);
+
+        Feedback feedback1f_project_1 = createFeedback("Very good effort, student1.", submission1f_project_1);
+        Feedback feedback1f_project_2 = createFeedback("Nice job, student2.", submission1f_project_2);
+
+        Feedback feedback2a_project_1 = createFeedback("Great project submission, student1!", submission2a_project_1);
+        Feedback feedback2a_project_2 = createFeedback("Well done, student2!", submission2a_project_2);
+
+        Feedback feedback2b_project_1 = createFeedback("Excellent effort, student1.", submission2b_project_1);
+        Feedback feedback2b_project_2 = createFeedback("Nice project work, student2.", submission2b_project_2);
+
+        Feedback feedback2c_project_1 = createFeedback("Good job, student1.", submission2c_project_1);
+        Feedback feedback2c_project_2 = createFeedback("Strong performance, student2.", submission2c_project_2);
+
+        Feedback feedback2d_project_1 = createFeedback("Well written, student1.", submission2d_project_1);
+        Feedback feedback2d_project_2 = createFeedback("Great job, student2.", submission2d_project_2);
+
+        Feedback feedback2e_project_1 = createFeedback("Impressive work, student1!", submission2e_project_1);
+        Feedback feedback2e_project_2 = createFeedback("Solid project submission, student2.", submission2e_project_2);
+
+        Feedback feedback2f_project_1 = createFeedback("Very good effort, student1.", submission2f_project_1);
+        Feedback feedback2f_project_2 = createFeedback("Nice job, student2.", submission2f_project_2);
+
+        Feedback feedback3a_project_1 = createFeedback("Great project submission, student1!", submission3a_project_1);
+        Feedback feedback3a_project_2 = createFeedback("Well done, student2!", submission3a_project_2);
+
+        Feedback feedback3b_project_1 = createFeedback("Excellent effort, student1.", submission3b_project_1);
+        Feedback feedback3b_project_2 = createFeedback("Nice project work, student2.", submission3b_project_2);
+
+        Feedback feedback3c_project_1 = createFeedback("Good job, student1.", submission3c_project_1);
+        Feedback feedback3c_project_2 = createFeedback("Strong performance, student2.", submission3c_project_2);
+
+        Feedback feedback3d_project_1 = createFeedback("Well written, student1.", submission3d_project_1);
+        Feedback feedback3d_project_2 = createFeedback("Great job, student2.", submission3d_project_2);
+
+        Feedback feedback4a_project_1 = createFeedback("Great project submission, student1!", submission4a_project_1);
+        Feedback feedback4a_project_2 = createFeedback("Well done, student2!", submission4a_project_2);
+
+        Feedback feedback4b_project_1 = createFeedback("Excellent effort, student1.", submission4b_project_1);
+        Feedback feedback4b_project_2 = createFeedback("Nice project work, student2.", submission4b_project_2);
+
+        Feedback feedback4c_project_1 = createFeedback("Good job, student1.", submission4c_project_1);
+        Feedback feedback4c_project_2 = createFeedback("Strong performance, student2.", submission4c_project_2);
+
+        Feedback feedback4d_project_1 = createFeedback("Well written, student1.", submission4d_project_1);
+        Feedback feedback4d_project_2 = createFeedback("Great job, student2.", submission4d_project_2);
+
+        Feedback feedback5a_project_3 = createFeedback("Great project submission, student3!", submission5a_project_3);
+        Feedback feedback5a_project_4 = createFeedback("Well done, student4!", submission5a_project_4);
+
+        Feedback feedback5b_project_3 = createFeedback("Excellent effort, student3.", submission5b_project_3);
+        Feedback feedback5b_project_4 = createFeedback("Nice project work, student4.", submission5b_project_4);
+
+        Feedback feedback5c_project_3 = createFeedback("Good job, student3.", submission5c_project_3);
+        Feedback feedback5c_project_4 = createFeedback("Strong performance, student4.", submission5c_project_4);
+
+        Feedback feedback5d_project_3 = createFeedback("Well written, student3.", submission5d_project_3);
+        Feedback feedback5d_project_4 = createFeedback("Great job, student4.", submission5d_project_4);
+
+        Feedback feedback6a_project_3 = createFeedback("Great project submission, student3!", submission6a_project_3);
+        Feedback feedback6a_project_4 = createFeedback("Well done, student4!", submission6a_project_4);
+
+        Feedback feedback6b_project_3 = createFeedback("Excellent effort, student3.", submission6b_project_3);
+        Feedback feedback6b_project_4 = createFeedback("Nice project work, student4.", submission6b_project_4);
+
+        Feedback feedback6c_project_3 = createFeedback("Good job, student3.", submission6c_project_3);
+        Feedback feedback6c_project_4 = createFeedback("Strong performance, student4.", submission6c_project_4);
+
+        Feedback feedback6d_project_3 = createFeedback("Well written, student3.", submission6d_project_3);
+        Feedback feedback6d_project_4 = createFeedback("Great job, student4.", submission6d_project_4);
+
+        Feedback feedback6e_project_3 = createFeedback("Impressive work, student3!", submission6e_project_3);
+        Feedback feedback6e_project_4 = createFeedback("Solid project submission, student4.", submission6e_project_4);
+
+        Feedback feedback7a_project_3 = createFeedback("Great project submission, student3!", submission7a_project_3);
+        Feedback feedback7a_project_4 = createFeedback("Well done, student4!", submission7a_project_4);
+
+        Feedback feedback7b_project_3 = createFeedback("Excellent effort, student3.", submission7b_project_3);
+        Feedback feedback7b_project_4 = createFeedback("Nice project work, student4.", submission7b_project_4);
+
+        Feedback feedback7c_project_3 = createFeedback("Good job, student3.", submission7c_project_3);
+        Feedback feedback7c_project_4 = createFeedback("Strong performance, student4.", submission7c_project_4);
+
+        Feedback feedback7d_project_3 = createFeedback("Well written, student3.", submission7d_project_3);
+        Feedback feedback7d_project_4 = createFeedback("Great job, student4.", submission7d_project_4);
+
+        Feedback feedback8a_project_3 = createFeedback("Great project submission, student3!", submission8a_project_3);
+        Feedback feedback8a_project_4 = createFeedback("Well done, student4!", submission8a_project_4);
+
+        Feedback feedback8b_project_3 = createFeedback("Excellent effort, student3.", submission8b_project_3);
+        Feedback feedback8b_project_4 = createFeedback("Nice project work, student4.", submission8b_project_4);
+
+        Feedback feedback8c_project_3 = createFeedback("Good job, student3.", submission8c_project_3);
+        Feedback feedback8c_project_4 = createFeedback("Strong performance, student4.", submission8c_project_4);
+
+        Feedback feedback8d_project_3 = createFeedback("Well written, student3.", submission8d_project_3);
+        Feedback feedback8d_project_4 = createFeedback("Great job, student4.", submission8d_project_4);
+
+        Feedback feedback8e_project_3 = createFeedback("Impressive work, student3!", submission8e_project_3);
+        Feedback feedback8e_project_4 = createFeedback("Solid project submission, student4.", submission8e_project_4);
+
+        Feedback feedback9a_project_5 = createFeedback("Great project submission, student5!", submission9a_project_5);
+        Feedback feedback9a_project_6 = createFeedback("Well done, student6!", submission9a_project_6);
+
+        Feedback feedback9b_project_5 = createFeedback("Excellent effort, student5.", submission9b_project_5);
+        Feedback feedback9b_project_6 = createFeedback("Nice project work, student6.", submission9b_project_6);
+
+        Feedback feedback9c_project_5 = createFeedback("Good job, student5.", submission9c_project_5);
+        Feedback feedback9c_project_6 = createFeedback("Strong performance, student6.", submission9c_project_6);
+
+        Feedback feedback10a_project_5 = createFeedback("Great project submission, student5!", submission10a_project_5);
+        Feedback feedback10a_project_6 = createFeedback("Well done, student6!", submission10a_project_6);
+
+        Feedback feedback10b_project_5 = createFeedback("Excellent effort, student5.", submission10b_project_5);
+        Feedback feedback10b_project_6 = createFeedback("Nice project work, student6.", submission10b_project_6);
+
+        Feedback feedback10c_project_5 = createFeedback("Good job, student5.", submission10c_project_5);
+        Feedback feedback10c_project_6 = createFeedback("Strong performance, student6.", submission10c_project_6);
+
+        Feedback feedback10d_project_5 = createFeedback("Well written, student5.", submission10d_project_5);
+        Feedback feedback10d_project_6 = createFeedback("Great job, student6.", submission10d_project_6);
+
+        Feedback feedback11a_project_5 = createFeedback("Great project submission, student5!", submission11a_project_5);
+        Feedback feedback11a_project_6 = createFeedback("Well done, student6!", submission11a_project_6);
+
+        Feedback feedback11b_project_5 = createFeedback("Excellent effort, student5.", submission11b_project_5);
+        Feedback feedback11b_project_6 = createFeedback("Nice project work, student6.", submission11b_project_6);
+
+        Feedback feedback11c_project_5 = createFeedback("Good job, student5.", submission11c_project_5);
+        Feedback feedback11c_project_6 = createFeedback("Strong performance, student6.", submission11c_project_6);
+
+        Feedback feedback11d_project_5 = createFeedback("Well written, student5.", submission11d_project_5);
+        Feedback feedback11d_project_6 = createFeedback("Great job, student6.", submission11d_project_6);
+
+        Feedback feedback12a_project_5 = createFeedback("Great project submission, student5!", submission12a_project_5);
+        Feedback feedback12a_project_6 = createFeedback("Well done, student6!", submission12a_project_6);
+
+        Feedback feedback12b_project_5 = createFeedback("Excellent effort, student5.", submission12b_project_5);
+        Feedback feedback12b_project_6 = createFeedback("Nice project work, student6.", submission12b_project_6);
+
+        Feedback feedback12c_project_5 = createFeedback("Good job, student5.", submission12c_project_5);
+        Feedback feedback12c_project_6 = createFeedback("Strong performance, student6.", submission12c_project_6);
+
+        Feedback feedback12d_project_5 = createFeedback("Well written, student5.", submission12d_project_5);
+        Feedback feedback12d_project_6 = createFeedback("Great job, student6.", submission12d_project_6);
+
+        Feedback feedback12e_project_5 = createFeedback("Impressive work, student5!", submission12e_project_5);
+        Feedback feedback12e_project_6 = createFeedback("Solid project submission, student6.", submission12e_project_6);
+
+        Feedback feedback13a_project_7 = createFeedback("Great project submission, student7!", submission13a_project_7);
+        Feedback feedback13a_project_8 = createFeedback("Well done, student8!", submission13a_project_8);
+
+        Feedback feedback13b_project_7 = createFeedback("Excellent effort, student7.", submission13b_project_7);
+        Feedback feedback13b_project_8 = createFeedback("Nice project work, student8.", submission13b_project_8);
+
+        Feedback feedback13c_project_7 = createFeedback("Good job, student7.", submission13c_project_7);
+        Feedback feedback13c_project_8 = createFeedback("Strong performance, student8.", submission13c_project_8);
+
+        Feedback feedback13d_project_7 = createFeedback("Well written, student7.", submission13d_project_7);
+        Feedback feedback13d_project_8 = createFeedback("Great job, student8.", submission13d_project_8);
+
+        Feedback feedback14a_project_7 = createFeedback("Great project submission, student7!", submission14a_project_7);
+        Feedback feedback14a_project_8 = createFeedback("Well done, student8!", submission14a_project_8);
+
+        Feedback feedback14b_project_7 = createFeedback("Excellent effort, student7.", submission14b_project_7);
+        Feedback feedback14b_project_8 = createFeedback("Nice project work, student8.", submission14b_project_8);
+
+        Feedback feedback14c_project_7 = createFeedback("Good job, student7.", submission14c_project_7);
+        Feedback feedback14c_project_8 = createFeedback("Strong performance, student8.", submission14c_project_8);
+
+        Feedback feedback14d_project_7 = createFeedback("Well written, student7.", submission14d_project_7);
+        Feedback feedback14d_project_8 = createFeedback("Great job, student8.", submission14d_project_8);
+
+        Feedback feedback15a_project_7 = createFeedback("Great project submission, student7!", submission15a_project_7);
+        Feedback feedback15a_project_8 = createFeedback("Well done, student8!", submission15a_project_8);
+
+        Feedback feedback15b_project_7 = createFeedback("Excellent effort, student7.", submission15b_project_7);
+        Feedback feedback15b_project_8 = createFeedback("Nice project work, student8.", submission15b_project_8);
+
+        Feedback feedback15c_project_7 = createFeedback("Good job, student7.", submission15c_project_7);
+        Feedback feedback15c_project_8 = createFeedback("Strong performance, student8.", submission15c_project_8);
+
+        Feedback feedback16a_project_7 = createFeedback("Great project submission, student7!", submission16a_project_7);
+        Feedback feedback16a_project_8 = createFeedback("Well done, student8!", submission16a_project_8);
+
+        Feedback feedback16b_project_7 = createFeedback("Excellent effort, student7.", submission16b_project_7);
+        Feedback feedback16b_project_8 = createFeedback("Nice project work, student8.", submission16b_project_8);
+
+        Feedback feedback16c_project_7 = createFeedback("Good job, student7.", submission16c_project_7);
+        Feedback feedback16c_project_8 = createFeedback("Strong performance, student8.", submission16c_project_8);
+
+        Feedback feedback17a_project_9 = createFeedback("Great project submission, student9!", submission17a_project_9);
+        Feedback feedback17a_project_10 = createFeedback("Well done, student10!", submission17a_project_10);
+
+        Feedback feedback17b_project_9 = createFeedback("Excellent effort, student9.", submission17b_project_9);
+        Feedback feedback17b_project_10 = createFeedback("Nice project work, student10.", submission17b_project_10);
+
+        Feedback feedback17c_project_9 = createFeedback("Good job, student9.", submission17c_project_9);
+        Feedback feedback17c_project_10 = createFeedback("Strong performance, student10.", submission17c_project_10);
+
+        Feedback feedback17d_project_9 = createFeedback("Well written, student9.", submission17d_project_9);
+        Feedback feedback17d_project_10 = createFeedback("Great job, student10.", submission17d_project_10);
+
+        Feedback feedback18a_project_9 = createFeedback("Great project submission, student9!", submission18a_project_9);
+        Feedback feedback18a_project_10 = createFeedback("Well done, student10!", submission18a_project_10);
+
+        Feedback feedback18b_project_9 = createFeedback("Excellent effort, student9.", submission18b_project_9);
+        Feedback feedback18b_project_10 = createFeedback("Nice project work, student10.", submission18b_project_10);
+
+        Feedback feedback18c_project_9 = createFeedback("Good job, student9.", submission18c_project_9);
+        Feedback feedback18c_project_10 = createFeedback("Strong performance, student10.", submission18c_project_10);
+
+        Feedback feedback19a_project_9 = createFeedback("Great project submission, student9!", submission19a_project_9);
+        Feedback feedback19a_project_10 = createFeedback("Well done, student10!", submission19a_project_10);
+
+        Feedback feedback19b_project_9 = createFeedback("Excellent effort, student9.", submission19b_project_9);
+        Feedback feedback19b_project_10 = createFeedback("Nice project work, student10.", submission19b_project_10);
+
+        Feedback feedback19c_project_9 = createFeedback("Good job, student9.", submission19c_project_9);
+        Feedback feedback19c_project_10 = createFeedback("Strong performance, student10.", submission19c_project_10);
+
+        Feedback feedback20a_project_9 = createFeedback("Great project submission, student9!", submission20a_project_9);
+        Feedback feedback20a_project_10 = createFeedback("Well done, student10!", submission20a_project_10);
+
+        Feedback feedback20b_project_9 = createFeedback("Excellent effort, student9.", submission20b_project_9);
+        Feedback feedback20b_project_10 = createFeedback("Nice project work, student10.", submission20b_project_10);
+
+        Feedback feedback20c_project_9 = createFeedback("Good job, student9.", submission20c_project_9);
+        Feedback feedback20c_project_10 = createFeedback("Strong performance, student10.", submission20c_project_10);
+
+        Feedback feedback20d_project_9 = createFeedback("Well written, student9.", submission20d_project_9);
+        Feedback feedback20d_project_10 = createFeedback("Great job, student10.", submission20d_project_10);
+
     }
 
     public static Project createProject(String name, Faculty teacher, Date dueDate, Syllabus syllabus, boolean completed, ProblemAnswer problemAnswer) {
