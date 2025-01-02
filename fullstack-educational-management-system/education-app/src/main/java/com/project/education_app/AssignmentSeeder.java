@@ -88,6 +88,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         //Course 1 Unit 1 Assignment
         // Creating the assignment
         Assignment assignment = createAssignment("Variables Assignment", faculty1, Date.from(LocalDate.of(2024, 12, 31).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+        addStudentToAssignment(assignment, student1);
+        addStudentToAssignment(assignment, student2);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa1_1_1 = createProblemAnswer("What is a variable in programming?", "A variable in programming is a storage location identified by a name that holds data which can be changed during the program's execution.");
@@ -118,6 +120,8 @@ public class AssignmentSeeder implements CommandLineRunner {
 
         // Creating the assignment with the due date specified inline
         Assignment assignment2 = createAssignment("Data Types Assignment", faculty1, Date.from(LocalDate.of(2025, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+        addStudentToAssignment(assignment2, student1);
+        addStudentToAssignment(assignment2, student2);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_1_2_1 = createProblemAnswer("What are the primary data types in Python?", "The primary data types in Python are integers, floats, strings, and booleans.");
@@ -146,6 +150,8 @@ public class AssignmentSeeder implements CommandLineRunner {
 
         // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment3 = createAssignment("Control Structures Assignment", faculty1, Date.from(LocalDate.of(2025, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+        addStudentToAssignment(assignment3, student1);
+        addStudentToAssignment(assignment3, student2);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_1_3_1 = createProblemAnswer("What are control structures in programming?", "Control structures are constructs that control the flow of execution in a program. They include loops and conditional statements, allowing for repeated execution of code and decision-making.");
@@ -173,6 +179,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Control Structures' unit created with 10 problem answers, due date, faculty, and syllabus.");
         // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment4 = createAssignment("Functions Assignment", faculty1, Date.from(LocalDate.of(2025, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+        addStudentToAssignment(assignment4, student1);
+        addStudentToAssignment(assignment4, student2);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_1_4_1 = createProblemAnswer("What is a function in programming?", "A function in programming is a block of code that performs a specific task. It can take inputs, process them, and return an output.");
@@ -200,6 +208,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Functions' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment5 = createAssignment("Modules Assignment", faculty1, Date.from(LocalDate.of(2025, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+        addStudentToAssignment(assignment5, student1);
+        addStudentToAssignment(assignment5, student2);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_1_5_1 = createProblemAnswer("What is a module in Python?", "A module in Python is a file containing Python code that defines functions, classes, and variables. It allows for organizing and reusing code across different programs.");
@@ -227,6 +237,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Modules' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment6 = createAssignment("Libraries Assignment", faculty1, Date.from(LocalDate.of(2025, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+        addStudentToAssignment(assignment6, student1);
+        addStudentToAssignment(assignment6, student2);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_1_6_1 = createProblemAnswer("What is a library in Python?", "A library in Python is a collection of pre-written code that provides useful functionalities for various tasks. Libraries help in extending the capabilities of Python programs without writing code from scratch.");
@@ -255,6 +267,8 @@ public class AssignmentSeeder implements CommandLineRunner {
 
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment2_1 = createAssignment("Arrays Assignment", faculty2, Date.from(LocalDate.of(2025, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+        addStudentToAssignment(assignment2_1, student1);
+        addStudentToAssignment(assignment2_1, student2);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_2_1_1 = createProblemAnswer("What is an array in programming?", "An array is a collection of elements, typically of the same data type, stored in contiguous memory locations.");
@@ -282,6 +296,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Arrays' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment2_2 = createAssignment("Linked Lists Assignment", faculty2, Date.from(LocalDate.of(2025, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+        addStudentToAssignment(assignment2_2, student1);
+        addStudentToAssignment(assignment2_2, student2);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_2_2_1 = createProblemAnswer("What is a linked list in programming?", "A linked list is a data structure consisting of nodes, where each node contains a data value and a reference (or link) to the next node in the sequence.");
@@ -309,6 +325,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Linked Lists' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment2_3 = createAssignment("Stacks Assignment", faculty2, Date.from(LocalDate.of(2025, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+        addStudentToAssignment(assignment2_3, student1);
+        addStudentToAssignment(assignment2_3, student2);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_2_3_1 = createProblemAnswer("What is a stack in programming?", "A stack is a linear data structure that follows the Last-In, First-Out (LIFO) principle, where the last element added is the first one to be removed.");
@@ -336,6 +354,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Stacks' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment2_4 = createAssignment("Queues Assignment", faculty2, Date.from(LocalDate.of(2025, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+        addStudentToAssignment(assignment2_4, student1);
+        addStudentToAssignment(assignment2_4, student2);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_2_4_1 = createProblemAnswer("What is a queue in programming?", "A queue is a linear data structure that follows the First-In, First-Out (FIFO) principle, where the first element added is the first one to be removed.");
@@ -363,6 +383,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Queues' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment2_5 = createAssignment("Trees Assignment", faculty2, Date.from(LocalDate.of(2025, 9, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+        addStudentToAssignment(assignment2_5, student1);
+        addStudentToAssignment(assignment2_5, student2);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_2_5_1 = createProblemAnswer("What is a tree in programming?", "A tree is a hierarchical data structure that consists of nodes connected by edges. Each node has a value and a list of references to its child nodes, with a single node called the root.");
@@ -390,6 +412,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Trees' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment2_6 = createAssignment("Graphs Assignment", faculty2, Date.from(LocalDate.of(2025, 10, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+        addStudentToAssignment(assignment2_6, student1);
+        addStudentToAssignment(assignment2_6, student2);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_2_6_1 = createProblemAnswer("What is a graph in programming?", "A graph is a data structure consisting of nodes (vertices) and edges that connect pairs of nodes. It is used to represent relationships between elements.");
@@ -417,6 +441,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Graphs' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment3_1 = createAssignment("Sorting Assignment", faculty3, Date.from(LocalDate.of(2025, 11, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus3, false);
+        addStudentToAssignment(assignment3_1, student1);
+        addStudentToAssignment(assignment3_1, student2);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_3_1_1 = createProblemAnswer("What is sorting in programming?", "Sorting is the process of arranging data in a particular order, typically ascending or descending.");
@@ -444,6 +470,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Sorting' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment3_2 = createAssignment("Searching Assignment", faculty3, Date.from(LocalDate.of(2025, 12, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus3, false);
+        addStudentToAssignment(assignment3_2, student1);
+        addStudentToAssignment(assignment3_2, student2);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_3_2_1 = createProblemAnswer("What is searching in programming?", "Searching is the process of finding a specific element or value within a data structure, such as an array, list, or database.");
@@ -471,6 +499,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Searching' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment3_3 = createAssignment("Graph Algorithms Assignment", faculty3, Date.from(LocalDate.of(2026, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus3, false);
+        addStudentToAssignment(assignment3_3, student1);
+        addStudentToAssignment(assignment3_3, student2);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_3_3_1 = createProblemAnswer("What is a graph algorithm?", "A graph algorithm is a procedure or formula used to solve problems related to graph theory, such as traversal, searching, and finding shortest paths.");
@@ -498,6 +528,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Graph Algorithms' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment3_4 = createAssignment("Dynamic Programming Assignment", faculty3, Date.from(LocalDate.of(2026, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus3, false);
+        addStudentToAssignment(assignment3_4, student1);
+        addStudentToAssignment(assignment3_4, student2);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_3_4_1 = createProblemAnswer("What is dynamic programming?", "Dynamic programming is a method for solving complex problems by breaking them down into simpler subproblems and storing the results of these subproblems to avoid redundant calculations.");
@@ -525,6 +557,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Dynamic Programming' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment4_1 = createAssignment("Relational Databases Assignment", faculty4, Date.from(LocalDate.of(2026, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus4, false);
+        addStudentToAssignment(assignment4_1, student1);
+        addStudentToAssignment(assignment4_1, student2);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_4_1_1 = createProblemAnswer("What is a relational database?", "A relational database is a type of database that organizes data into tables, which consist of rows and columns. Relationships between tables are defined using keys.");
@@ -552,6 +586,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Relational Databases' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment4_2 = createAssignment("SQL Assignment", faculty4, Date.from(LocalDate.of(2026, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus4, false);
+        addStudentToAssignment(assignment4_2, student1);
+        addStudentToAssignment(assignment4_2, student2);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_4_2_1 = createProblemAnswer("What is SQL?", "SQL (Structured Query Language) is the standard language for querying and manipulating databases. It allows users to create, read, update, and delete data, as well as perform complex data operations.");
@@ -579,6 +615,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'SQL' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment4_3 = createAssignment("Transactions Assignment", faculty4, Date.from(LocalDate.of(2026, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus4, false);
+        addStudentToAssignment(assignment4_3, student1);
+        addStudentToAssignment(assignment4_3, student2);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_4_3_1 = createProblemAnswer("What is a database transaction?", "A database transaction is a sequence of one or more SQL operations executed as a single unit of work, ensuring data integrity and consistency.");
@@ -606,6 +644,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Transactions' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment4_4 = createAssignment("Database Design Assignment", faculty4, Date.from(LocalDate.of(2026, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus4, false);
+        addStudentToAssignment(assignment4_4, student1);
+        addStudentToAssignment(assignment4_4, student2);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_4_4_1 = createProblemAnswer("What is database design?", "Database design is the process of defining the structure, organization, and relationships of data within a database. It involves creating schemas, tables, and relationships to store and manage data efficiently.");
@@ -633,6 +673,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Database Design' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment5_1 = createAssignment("Processes Assignment", faculty5, Date.from(LocalDate.of(2026, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus5, false);
+        addStudentToAssignment(assignment5_1, student3);
+        addStudentToAssignment(assignment5_1, student4);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_5_1_1 = createProblemAnswer("What is a process in operating systems?", "A process is an instance of a program that is being executed. It includes the program code, data, and other resources required for execution.");
@@ -660,6 +702,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Processes' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment5_2 = createAssignment("Memory Management Assignment", faculty5, Date.from(LocalDate.of(2026, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus5, false);
+        addStudentToAssignment(assignment5_2, student3);
+        addStudentToAssignment(assignment5_2, student4);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_5_2_1 = createProblemAnswer("What is memory management in operating systems?", "Memory management is the process by which an operating system allocates, tracks, and manages the computer's memory resources.");
@@ -687,6 +731,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Memory Management' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment5_3 = createAssignment("File Systems Assignment", faculty5, Date.from(LocalDate.of(2026, 9, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus5, false);
+        addStudentToAssignment(assignment5_3, student3);
+        addStudentToAssignment(assignment5_3, student4);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_5_3_1 = createProblemAnswer("What is a file system in operating systems?", "A file system is a method used by operating systems to store, organize, and manage files on storage devices. It defines how data is stored and accessed.");
@@ -714,6 +760,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'File Systems' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment5_4 = createAssignment("Scheduling Assignment", faculty5, Date.from(LocalDate.of(2026, 10, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus5, false);
+        addStudentToAssignment(assignment5_4, student3);
+        addStudentToAssignment(assignment5_4, student4);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_5_4_1 = createProblemAnswer("What is CPU scheduling?", "CPU scheduling is the process used by the operating system to manage the execution of processes by allocating CPU time to them.");
@@ -741,6 +789,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Scheduling' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment6_1 = createAssignment("OSI Model Assignment", faculty1, Date.from(LocalDate.of(2026, 11, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus6, false);
+        addStudentToAssignment(assignment6_1, student3);
+        addStudentToAssignment(assignment6_1, student4);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_6_1_1 = createProblemAnswer("What is the OSI model?", "The OSI (Open Systems Interconnection) model standardizes the functions of a telecommunication or computing system irrespective of its underlying structure and technology. It consists of seven layers that describe how data is transmitted across a network.");
@@ -768,6 +818,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'OSI Model' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment6_2 = createAssignment("TCP/IP Assignment", faculty1, Date.from(LocalDate.of(2026, 12, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus6, false);
+        addStudentToAssignment(assignment6_2, student3);
+        addStudentToAssignment(assignment6_2, student4);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_6_2_1 = createProblemAnswer("What is the TCP/IP model?", "The TCP/IP (Transmission Control Protocol/Internet Protocol) model is the foundational protocol suite for the internet. It standardizes communication functions across networked devices.");
@@ -795,6 +847,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'TCP/IP' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment6_3 = createAssignment("Network Protocols Assignment", faculty1, Date.from(LocalDate.of(2027, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus6, false);
+        addStudentToAssignment(assignment6_3, student3);
+        addStudentToAssignment(assignment6_3, student4);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_6_3_1 = createProblemAnswer("What are network protocols?", "Network protocols are rules and standards that govern data exchange over networks. They define how data is formatted, transmitted, and received.");
@@ -822,6 +876,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Network Protocols' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment6_4 = createAssignment("Routing Assignment", faculty1, Date.from(LocalDate.of(2027, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus6, false);
+        addStudentToAssignment(assignment6_4, student3);
+        addStudentToAssignment(assignment6_4, student4);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_6_4_1 = createProblemAnswer("What is routing in networking?", "Routing is the process of selecting paths in a network along which to send data packets. It determines the best route for data to travel from the source to the destination.");
@@ -849,6 +905,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Routing' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment6_5 = createAssignment("Switching Assignment", faculty1, Date.from(LocalDate.of(2027, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus6, false);
+        addStudentToAssignment(assignment6_5, student3);
+        addStudentToAssignment(assignment6_5, student4);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_6_5_1 = createProblemAnswer("What is switching in networking?", "Switching is a technique used to forward data packets from one device to another within a network. It ensures that data is transmitted efficiently between devices.");
@@ -876,6 +934,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Switching' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment7_1 = createAssignment("Software Development Life Cycle Assignment", faculty2, Date.from(LocalDate.of(2027, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus7, false);
+        addStudentToAssignment(assignment7_1, student3);
+        addStudentToAssignment(assignment7_1, student4);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_7_1_1 = createProblemAnswer("What is the Software Development Life Cycle (SDLC)?", "The Software Development Life Cycle (SDLC) is a process for planning, creating, testing, and deploying an information system. It consists of several phases that guide the development of software.");
@@ -903,6 +963,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Software Development Life Cycle' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment7_2 = createAssignment("Agile Assignment", faculty2, Date.from(LocalDate.of(2027, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus7, false);
+        addStudentToAssignment(assignment7_2, student3);
+        addStudentToAssignment(assignment7_2, student4);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_7_2_1 = createProblemAnswer("What is Agile methodology?", "Agile methodology is an iterative approach to software development that emphasizes flexibility, collaboration, and customer feedback. It focuses on delivering small, incremental improvements to the software.");
@@ -930,6 +992,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Agile' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment7_3 = createAssignment("Waterfall Assignment", faculty2, Date.from(LocalDate.of(2027, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus7, false);
+        addStudentToAssignment(assignment7_3, student3);
+        addStudentToAssignment(assignment7_3, student4);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_7_3_1 = createProblemAnswer("What is the Waterfall model?", "The Waterfall model is a linear and sequential approach to software development. It involves completing each phase of the development process before moving on to the next phase.");
@@ -957,6 +1021,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Waterfall' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment7_4 = createAssignment("Project Management Assignment", faculty2, Date.from(LocalDate.of(2027, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus7, false);
+        addStudentToAssignment(assignment7_4, student3);
+        addStudentToAssignment(assignment7_4, student4);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_7_4_1 = createProblemAnswer("What is project management?", "Project management involves planning, organizing, and managing resources to achieve specific goals and complete projects efficiently. It encompasses processes, methods, skills, and knowledge required to deliver projects successfully.");
@@ -984,6 +1050,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Project Management' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment8_1 = createAssignment("HTML Assignment", faculty3, Date.from(LocalDate.of(2027, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus8, false);
+        addStudentToAssignment(assignment8_1, student3);
+        addStudentToAssignment(assignment8_1, student4);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_8_1_1 = createProblemAnswer("What is HTML?", "HTML (HyperText Markup Language) is the standard language for creating web pages. It defines the structure and content of web pages using tags and attributes.");
@@ -1011,6 +1079,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'HTML' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment8_2 = createAssignment("CSS Assignment", faculty3, Date.from(LocalDate.of(2027, 9, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus8, false);
+        addStudentToAssignment(assignment8_2, student3);
+        addStudentToAssignment(assignment8_2, student4);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_8_2_1 = createProblemAnswer("What is CSS?", "CSS (Cascading Style Sheets) is a language used to style HTML documents. It controls the layout, colors, fonts, and overall visual presentation of web pages.");
@@ -1038,6 +1108,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'CSS' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment8_3 = createAssignment("JavaScript Assignment", faculty3, Date.from(LocalDate.of(2027, 10, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus8, false);
+        addStudentToAssignment(assignment8_3, student3);
+        addStudentToAssignment(assignment8_3, student4);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_8_3_1 = createProblemAnswer("What is JavaScript?", "JavaScript is a programming language that allows you to create interactive and dynamic web content. It can manipulate the DOM (Document Object Model), handle events, and perform animations.");
@@ -1065,6 +1137,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'JavaScript' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment8_4 = createAssignment("React Assignment", faculty3, Date.from(LocalDate.of(2027, 11, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus8, false);
+        addStudentToAssignment(assignment8_4, student3);
+        addStudentToAssignment(assignment8_4, student4);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_8_4_1 = createProblemAnswer("What is React?", "React is a popular JavaScript library for building user interfaces. It allows developers to create reusable UI components and manage the state of applications efficiently.");
@@ -1092,6 +1166,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'React' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment8_5 = createAssignment("Backend Integration Assignment", faculty3, Date.from(LocalDate.of(2027, 12, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus8, false);
+        addStudentToAssignment(assignment8_5, student3);
+        addStudentToAssignment(assignment8_5, student4);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_8_5_1 = createProblemAnswer("What is backend integration?", "Backend integration involves connecting front-end web applications with backend services. It allows the front end to communicate with the server, fetch data, and perform server-side operations.");
@@ -1119,6 +1195,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Backend Integration' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment9_1 = createAssignment("Machine Learning Assignment", faculty4, Date.from(LocalDate.of(2028, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus9, false);
+        addStudentToAssignment(assignment9_1, student5);
+        addStudentToAssignment(assignment9_1, student6);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_9_1_1 = createProblemAnswer("What is machine learning?", "Machine learning is a subset of AI that focuses on developing algorithms that enable computers to learn from and make predictions based on data.");
@@ -1146,6 +1224,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Machine Learning' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment9_2 = createAssignment("Neural Networks Assignment", faculty4, Date.from(LocalDate.of(2028, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus9, false);
+        addStudentToAssignment(assignment9_2, student5);
+        addStudentToAssignment(assignment9_2, student6);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_9_2_1 = createProblemAnswer("What are neural networks?", "Neural networks are a set of algorithms modeled after the human brain. They are used to recognize patterns and make predictions based on data.");
@@ -1173,6 +1253,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Neural Networks' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment9_3 = createAssignment("Natural Language Processing Assignment", faculty4, Date.from(LocalDate.of(2028, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus9, false);
+        addStudentToAssignment(assignment9_3, student5);
+        addStudentToAssignment(assignment9_3, student6);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_9_3_1 = createProblemAnswer("What is natural language processing (NLP)?", "Natural language processing (NLP) is a field of AI that enables computers to understand, interpret, and generate human language. It involves a combination of linguistics, computer science, and machine learning.");
@@ -1200,6 +1282,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Natural Language Processing' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment10_1 = createAssignment("Threat Analysis Assignment", faculty5, Date.from(LocalDate.of(2028, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+        addStudentToAssignment(assignment10_1, student5);
+        addStudentToAssignment(assignment10_1, student6);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_10_1_1 = createProblemAnswer("What is threat analysis?", "Threat analysis involves identifying potential security threats and vulnerabilities in a system. It is a critical process in ensuring the security and integrity of information and assets.");
@@ -1227,6 +1311,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Threat Analysis' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment10_2 = createAssignment("Encryption Assignment", faculty5, Date.from(LocalDate.of(2028, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+        addStudentToAssignment(assignment10_2, student5);
+        addStudentToAssignment(assignment10_2, student6);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_10_2_1 = createProblemAnswer("What is encryption?", "Encryption is the process of converting information into a secure format to prevent unauthorized access. It ensures the confidentiality and integrity of data.");
@@ -1254,6 +1340,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Encryption' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment10_3 = createAssignment("Network Security Assignment", faculty5, Date.from(LocalDate.of(2028, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+        addStudentToAssignment(assignment10_3, student5);
+        addStudentToAssignment(assignment10_3, student6);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_10_3_1 = createProblemAnswer("What is network security?", "Network security involves measures to protect data during transmission across networks. It ensures the confidentiality, integrity, and availability of data by preventing unauthorized access and attacks.");
@@ -1281,6 +1369,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Network Security' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment10_4 = createAssignment("Secure Coding Assignment", faculty5, Date.from(LocalDate.of(2028, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+        addStudentToAssignment(assignment10_4, student5);
+        addStudentToAssignment(assignment10_4, student6);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_10_4_1 = createProblemAnswer("What is secure coding?", "Secure coding involves writing software in a way that minimizes vulnerabilities and prevents security breaches. It follows best practices and guidelines to ensure the security and integrity of the software.");
@@ -1308,6 +1398,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Secure Coding' unit created with  problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment11_1 = createAssignment("Limits Assignment", faculty1, Date.from(LocalDate.of(2028, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+        addStudentToAssignment(assignment11_1, student5);
+        addStudentToAssignment(assignment11_1, student6);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_11_1_1 = createProblemAnswer("What is a limit in calculus?", "A limit is the value that a function approaches as the input approaches a certain value. It is a foundational concept in calculus used to define continuity, derivatives, and integrals.");
@@ -1335,6 +1427,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Limits' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment11_2 = createAssignment("Derivatives Assignment", faculty1, Date.from(LocalDate.of(2028, 9, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+        addStudentToAssignment(assignment11_2, student5);
+        addStudentToAssignment(assignment11_2, student6);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_11_2_1 = createProblemAnswer("What is a derivative in calculus?", "A derivative represents the rate at which a function changes as its input changes. It is a fundamental concept in calculus used to determine the slope of a function at any given point.");
@@ -1362,6 +1456,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Derivatives' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment11_3 = createAssignment("Integrals Assignment", faculty1, Date.from(LocalDate.of(2028, 10, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+        addStudentToAssignment(assignment11_3, student5);
+        addStudentToAssignment(assignment11_3, student6);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_11_3_1 = createProblemAnswer("What is an integral in calculus?", "An integral represents the accumulation of quantities over a continuous interval. It is the inverse operation of differentiation and is used to calculate areas, volumes, and other related quantities.");
@@ -1388,6 +1484,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Integrals' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment11_4 = createAssignment("Applications of Calculus Assignment", faculty1, Date.from(LocalDate.of(2028, 11, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+        addStudentToAssignment(assignment11_4, student5);
+        addStudentToAssignment(assignment11_4, student6);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_11_4_1 = createProblemAnswer("How is calculus used in physics?", "Calculus is used in physics to model and analyze the behavior of physical systems. It helps describe motion, forces, and energy through derivatives and integrals, such as in calculating velocity, acceleration, and work.");
@@ -1414,6 +1512,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Applications of Calculus' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment12_1 = createAssignment("Vectors Assignment", faculty2, Date.from(LocalDate.of(2028, 12, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+        addStudentToAssignment(assignment12_1, student5);
+        addStudentToAssignment(assignment12_1, student6);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_12_1_1 = createProblemAnswer("What is a vector?", "A vector is a quantity that has both magnitude and direction. It is represented by an arrow pointing from one point to another in space.");
@@ -1440,6 +1540,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Vectors' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment12_2 = createAssignment("Matrices Assignment", faculty2, Date.from(LocalDate.of(2029, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+        addStudentToAssignment(assignment12_2, student5);
+        addStudentToAssignment(assignment12_2, student6);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_12_2_1 = createProblemAnswer("What is a matrix?", "A matrix is a rectangular array of numbers arranged in rows and columns. It is used to represent and solve systems of linear equations and perform various operations in mathematics.");
@@ -1467,6 +1569,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Matrices' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment12_3 = createAssignment("Determinants Assignment", faculty2, Date.from(LocalDate.of(2029, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+        addStudentToAssignment(assignment12_3, student5);
+        addStudentToAssignment(assignment12_3, student6);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_12_3_1 = createProblemAnswer("What is a determinant?", "A determinant is a scalar value that can be computed from the elements of a square matrix. It provides important information about the matrix, such as whether it is invertible.");
@@ -1494,6 +1598,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Determinants' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment12_4 = createAssignment("Eigenvalues Assignment", faculty2, Date.from(LocalDate.of(2029, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+        addStudentToAssignment(assignment12_4, student5);
+        addStudentToAssignment(assignment12_4, student6);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_12_4_1 = createProblemAnswer("What are eigenvalues?", "Eigenvalues are special numbers associated with a matrix that characterize the scaling factor by which the eigenvectors are stretched or compressed under a linear transformation.");
@@ -1520,6 +1626,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Eigenvalues' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment12_5 = createAssignment("Eigenvectors Assignment", faculty2, Date.from(LocalDate.of(2029, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+        addStudentToAssignment(assignment12_5, student5);
+        addStudentToAssignment(assignment12_5, student6);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_12_5_1 = createProblemAnswer("What are eigenvectors?", "Eigenvectors are special vectors associated with a matrix that remain in the same direction under a linear transformation. They are scaled by their corresponding eigenvalues.");
@@ -1546,6 +1654,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Eigenvectors' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment13_1 = createAssignment("Sequences and Series Assignment", faculty3, Date.from(LocalDate.of(2029, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+        addStudentToAssignment(assignment13_1, student7);
+        addStudentToAssignment(assignment13_1, student8);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_13_1_1 = createProblemAnswer("What is a sequence in mathematics?", "A sequence is an ordered list of numbers or terms that follow a specific pattern or rule. Each term in the sequence is identified by its position in the list.");
@@ -1573,6 +1683,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Sequences and Series' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment13_2 = createAssignment("Techniques of Integration Assignment", faculty3, Date.from(LocalDate.of(2029, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+        addStudentToAssignment(assignment13_2, student7);
+        addStudentToAssignment(assignment13_2, student8);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_13_2_1 = createProblemAnswer("What is integration by parts?", "Integration by parts is a method used to integrate the product of two functions. It is based on the formula ∫u dv = uv - ∫v du, where u and v are functions of x.");
@@ -1600,6 +1712,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Techniques of Integration' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment13_3 = createAssignment("Multivariable Functions Assignment", faculty3, Date.from(LocalDate.of(2029, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+        addStudentToAssignment(assignment13_3, student7);
+        addStudentToAssignment(assignment13_3, student8);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_13_3_1 = createProblemAnswer("What are multivariable functions?", "Multivariable functions are functions that have more than one input variable. They are used to model relationships involving multiple quantities and are often represented as f(x, y, z), where x, y, and z are the variables.");
@@ -1627,6 +1741,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Multivariable Functions' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment13_4 = createAssignment("Vector Calculus Assignment", faculty3, Date.from(LocalDate.of(2029, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+        addStudentToAssignment(assignment13_4, student7);
+        addStudentToAssignment(assignment13_4, student8);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_13_4_1 = createProblemAnswer("What is vector calculus?", "Vector calculus is the study of vector fields and their applications. It involves operations such as differentiation and integration of vector functions, and is used to analyze and solve problems involving vector fields.");
@@ -1654,6 +1770,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Vector Calculus' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment14_1 = createAssignment("Logic Assignment", faculty4, Date.from(LocalDate.of(2029, 9, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+        addStudentToAssignment(assignment14_1, student7);
+        addStudentToAssignment(assignment14_1, student8);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_14_1_1 = createProblemAnswer("What is propositional logic?", "Propositional logic is a branch of logic that deals with propositions, which are statements that can be either true or false. It uses logical connectives such as AND, OR, NOT, and IMPLIES to form complex logical statements.");
@@ -1681,6 +1799,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Logic' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment14_2 = createAssignment("Set Theory Assignment", faculty4, Date.from(LocalDate.of(2029, 10, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+        addStudentToAssignment(assignment14_2, student7);
+        addStudentToAssignment(assignment14_2, student8);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_14_2_1 = createProblemAnswer("What is a set?", "A set is a collection of distinct objects, considered as an object in its own right. Sets are fundamental objects in mathematics and are used to define various mathematical concepts.");
@@ -1708,6 +1828,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Set Theory' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment14_3 = createAssignment("Graph Theory Assignment", faculty4, Date.from(LocalDate.of(2029, 11, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+        addStudentToAssignment(assignment14_3, student7);
+        addStudentToAssignment(assignment14_3, student8);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_14_3_1 = createProblemAnswer("What is graph theory?", "Graph theory is the study of graphs as mathematical structures used to model pairwise relations between objects. It involves the analysis of vertices (nodes) and edges (connections) that form graphs.");
@@ -1735,6 +1857,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Graph Theory' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment14_4 = createAssignment("Combinatorics Assignment", faculty4, Date.from(LocalDate.of(2029, 12, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+        addStudentToAssignment(assignment14_4, student7);
+        addStudentToAssignment(assignment14_4, student8);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_14_4_1 = createProblemAnswer("What is combinatorics?", "Combinatorics is the study of counting, arrangement, and combination of objects. It deals with problems related to the enumeration and combination of discrete structures.");
@@ -1762,6 +1886,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Combinatorics' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment15_1 = createAssignment("Newton's Laws Assignment", faculty5, Date.from(LocalDate.of(2029, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus15, false);
+        addStudentToAssignment(assignment15_1, student7);
+        addStudentToAssignment(assignment15_1, student8);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_15_1_1 = createProblemAnswer("What is Newton's First Law of Motion?", "Newton's First Law of Motion, also known as the law of inertia, states that an object will remain at rest or in uniform motion in a straight line unless acted upon by an external force.");
@@ -1789,6 +1915,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Newton's Laws' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment15_2 = createAssignment("Energy Principles Assignment", faculty5, Date.from(LocalDate.of(2029, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus15, false);
+        addStudentToAssignment(assignment15_2, student7);
+        addStudentToAssignment(assignment15_2, student8);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_15_2_1 = createProblemAnswer("What is kinetic energy?", "Kinetic energy is the energy possessed by an object due to its motion. It is calculated using the formula KE = 0.5 * m * v^2, where m is the mass of the object and v is its velocity.");
@@ -1816,6 +1944,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Energy Principles' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment15_3 = createAssignment("Motion Assignment", faculty5, Date.from(LocalDate.of(2029, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus15, false);
+        addStudentToAssignment(assignment15_3, student7);
+        addStudentToAssignment(assignment15_3, student8);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_15_3_1 = createProblemAnswer("What is linear motion?", "Linear motion is the movement of an object along a straight path. It is described by parameters such as displacement, velocity, and acceleration.");
@@ -1843,6 +1973,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Motion' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment16_1 = createAssignment("Atomic Structure Assignment", faculty1, Date.from(LocalDate.of(2029, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus16, false);
+        addStudentToAssignment(assignment16_1, student7);
+        addStudentToAssignment(assignment16_1, student8);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_16_1_1 = createProblemAnswer("What are the main subatomic particles in an atom?", "The main subatomic particles in an atom are protons, neutrons, and electrons. Protons and neutrons are located in the nucleus, while electrons orbit the nucleus in electron shells.");
@@ -1870,6 +2002,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Atomic Structure' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment16_2 = createAssignment("Chemical Bonding Assignment", faculty1, Date.from(LocalDate.of(2029, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus16, false);
+        addStudentToAssignment(assignment16_2, student7);
+        addStudentToAssignment(assignment16_2, student8);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_16_2_1 = createProblemAnswer("What is a chemical bond?", "A chemical bond is a force of attraction that holds atoms together in a molecule or compound. It is formed by the sharing or transfer of electrons between atoms.");
@@ -1897,6 +2031,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Chemical Bonding' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment16_3 = createAssignment("Reactions Assignment", faculty1, Date.from(LocalDate.of(2029, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus16, false);
+        addStudentToAssignment(assignment16_3, student7);
+        addStudentToAssignment(assignment16_3, student8);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_16_3_1 = createProblemAnswer("What is a chemical reaction?", "A chemical reaction is a process in which substances (reactants) are transformed into different substances (products) through the breaking and forming of chemical bonds.");
@@ -1924,6 +2060,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Reactions' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment17_1 = createAssignment("Cell Structure Assignment", faculty2, Date.from(LocalDate.of(2029, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
+        addStudentToAssignment(assignment17_1, student9);
+        addStudentToAssignment(assignment17_1, student10);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_17_1_1 = createProblemAnswer("What is the cell membrane?", "The cell membrane is a thin, flexible barrier that surrounds the cell, regulating what enters and exits the cell. It is composed of a lipid bilayer with embedded proteins.");
@@ -1951,6 +2089,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Cell Structure' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment17_2 = createAssignment("Genetics Assignment", faculty2, Date.from(LocalDate.of(2029, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
+        addStudentToAssignment(assignment17_2, student9);
+        addStudentToAssignment(assignment17_2, student10);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_17_2_1 = createProblemAnswer("What is genetics?", "Genetics is the study of heredity and the variation of inherited characteristics. It examines how traits are passed from one generation to the next through genes.");
@@ -1978,6 +2118,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Genetics' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment17_3 = createAssignment("Evolution Assignment", faculty2, Date.from(LocalDate.of(2029, 9, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
+        addStudentToAssignment(assignment17_3, student9);
+        addStudentToAssignment(assignment17_3, student10);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_17_3_1 = createProblemAnswer("What is the theory of evolution?", "The theory of evolution is the scientific explanation for the diversity of life on Earth. It states that all species of organisms have descended from common ancestors through a process of gradual change and natural selection.");
@@ -2005,6 +2147,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Evolution' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment17_4 = createAssignment("Ecology Assignment", faculty2, Date.from(LocalDate.of(2029, 10, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
+        addStudentToAssignment(assignment17_4, student9);
+        addStudentToAssignment(assignment17_4, student10);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_17_4_1 = createProblemAnswer("What is ecology?", "Ecology is the study of interactions between organisms and their environment. It examines how organisms affect and are affected by their surroundings, including other organisms and physical factors.");
@@ -2032,6 +2176,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Ecology' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment18_1 = createAssignment("Engineering Disciplines Assignment", faculty3, Date.from(LocalDate.of(2029, 11, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus18, false);
+        addStudentToAssignment(assignment18_1, student9);
+        addStudentToAssignment(assignment18_1, student10);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_18_1_1 = createProblemAnswer("What is civil engineering?", "Civil engineering is the discipline that deals with the design, construction, and maintenance of the built environment. This includes infrastructure such as roads, bridges, dams, and buildings.");
@@ -2059,6 +2205,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Engineering Disciplines' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment18_2 = createAssignment("Problem-Solving Assignment", faculty3, Date.from(LocalDate.of(2029, 12, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus18, false);
+        addStudentToAssignment(assignment18_2, student9);
+        addStudentToAssignment(assignment18_2, student10);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_18_2_1 = createProblemAnswer("What is the engineering problem-solving process?", "The engineering problem-solving process involves identifying a problem, generating potential solutions, evaluating and selecting the best solution, and implementing and testing the solution. It is a systematic approach to addressing engineering challenges.");
@@ -2086,6 +2234,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Problem-Solving' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment18_3 = createAssignment("Design Process Assignment", faculty3, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus18, false);
+        addStudentToAssignment(assignment18_3, student9);
+        addStudentToAssignment(assignment18_3, student10);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_18_3_1 = createProblemAnswer("What is the engineering design process?", "The engineering design process is a systematic approach to solving engineering problems. It involves defining the problem, generating ideas, developing solutions, testing and evaluating, and improving the design.");
@@ -2113,6 +2263,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Design Process' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment19_1 = createAssignment("Circuit Analysis Assignment", faculty4, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus19, false);
+        addStudentToAssignment(assignment19_1, student9);
+        addStudentToAssignment(assignment19_1, student10);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_19_1_1 = createProblemAnswer("What is Ohm's Law?", "Ohm's Law states that the current through a conductor between two points is directly proportional to the voltage across the two points and inversely proportional to the resistance between them. It is mathematically expressed as V = IR, where V is the voltage, I is the current, and R is the resistance.");
@@ -2140,6 +2292,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Circuit Analysis' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment19_2 = createAssignment("Signal Processing Assignment", faculty4, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus19, false);
+        addStudentToAssignment(assignment19_2, student9);
+        addStudentToAssignment(assignment19_2, student10);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_19_2_1 = createProblemAnswer("What is signal processing?", "Signal processing involves the analysis, manipulation, and interpretation of signals. It includes techniques for filtering, transforming, and extracting information from signals in various domains, such as time, frequency, and space.");
@@ -2166,6 +2320,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Signal Processing' unit created with  problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment19_3 = createAssignment("Systems Theory Assignment", faculty4, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus19, false);
+        addStudentToAssignment(assignment19_3, student9);
+        addStudentToAssignment(assignment19_3, student10);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_19_3_1 = createProblemAnswer("What is systems theory?", "Systems theory is the study of systems and their behavior, including how components of a system interact and how systems function as a whole. It is used to analyze and design complex systems across various disciplines.");
@@ -2193,6 +2349,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Systems Theory' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment20_1 = createAssignment("Statics Assignment", faculty5, Date.from(LocalDate.of(2030, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
+        addStudentToAssignment(assignment20_1, student9);
+        addStudentToAssignment(assignment20_1, student10);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_20_1_1 = createProblemAnswer("What is statics?", "Statics is the branch of mechanics that deals with bodies at rest and forces in equilibrium. It involves analyzing force systems, calculating moments, and solving problems related to static equilibrium.");
@@ -2220,6 +2378,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Statics' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment20_2 = createAssignment("Dynamics Assignment", faculty5, Date.from(LocalDate.of(2030, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
+        addStudentToAssignment(assignment20_2, student9);
+        addStudentToAssignment(assignment20_2, student10);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_20_2_1 = createProblemAnswer("What is dynamics?", "Dynamics is the branch of mechanics that deals with bodies in motion. It involves studying the kinematics and kinetics of particles and rigid bodies, and analyzing their motion under the influence of forces.");
@@ -2247,6 +2407,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Dynamics' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment20_3 = createAssignment("Thermodynamics Assignment", faculty5, Date.from(LocalDate.of(2030, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
+        addStudentToAssignment(assignment20_3, student9);
+        addStudentToAssignment(assignment20_3, student10);
 
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_20_3_1 = createProblemAnswer("What is thermodynamics?", "Thermodynamics is the branch of physics that deals with the study of energy transfer, heat, and work. It involves analyzing the behavior of gases and liquids, and understanding the principles governing energy transformations.");
@@ -2274,7 +2436,8 @@ public class AssignmentSeeder implements CommandLineRunner {
         System.out.println("Assignment for 'Thermodynamics' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment20_4 = createAssignment("Material Science Assignment", faculty5, Date.from(LocalDate.of(2030, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
-
+        addStudentToAssignment(assignment20_4, student9);
+        addStudentToAssignment(assignment20_4, student10);
 // Creating and adding problem answers to the assignment
         ProblemAnswer pa_20_4_1 = createProblemAnswer("What is material science?", "Material science is the study of the properties and behavior of materials. It involves understanding the structure, processing, and performance of different materials, including metals, ceramics, polymers, and composites.");
         addAssignmentToProblemAnswer(pa_20_4_1, assignment20_4);
