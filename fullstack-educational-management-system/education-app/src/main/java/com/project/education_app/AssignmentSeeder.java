@@ -7445,6 +7445,49 @@ public class AssignmentSeeder implements CommandLineRunner {
         Feedback feedback20_4_9 = createFeedback("Great effort, student9!", submission20_4_9);
         Feedback feedback20_4_10 = createFeedback("Well done, student10!", submission20_4_10);
 
+
+        course1.setGrades(List.of(grade1_1_1, grade1_1_2));
+        course2.setGrades(List.of(grade2_1_1, grade2_1_2));
+        course3.setGrades(List.of(grade3_1_1, grade3_1_2));
+        course4.setGrades(List.of(grade4_1_1, grade4_1_2));
+        course5.setGrades(List.of(grade5_1_3, grade5_1_4));
+        course6.setGrades(List.of(grade6_1_3, grade6_1_4));
+        course7.setGrades(List.of(grade7_1_3, grade7_1_4));
+        course8.setGrades(List.of(grade8_1_3, grade8_1_4));
+        course9.setGrades(List.of(grade9_1_5, grade9_1_6));
+        course10.setGrades(List.of(grade10_1_5, grade10_1_6));
+        course11.setGrades(List.of(grade11_1_5, grade11_1_6));
+        course12.setGrades(List.of(grade12_1_5, grade12_1_6));
+        course13.setGrades(List.of(grade13_1_7, grade13_1_8));
+        course14.setGrades(List.of(grade14_1_7, grade14_1_8));
+        course15.setGrades(List.of(grade15_1_7, grade15_1_8));
+        course16.setGrades(List.of(grade16_1_7, grade16_1_8));
+        course17.setGrades(List.of(grade17_1_9, grade17_1_10));
+        course18.setGrades(List.of(grade18_1_9, grade18_1_10));
+        course19.setGrades(List.of(grade19_1_9, grade19_1_10));
+        course20.setGrades(List.of(grade20_1_9, grade20_1_10));
+
+        course1.setCourseGrades(List.of(courseGrade1_1_1, courseGrade1_1_2));
+        course2.setCourseGrades(List.of(courseGrade2_1_1, courseGrade2_1_2));
+        course3.setCourseGrades(List.of(courseGrade3_1_1, courseGrade3_1_2));
+        course4.setCourseGrades(List.of(courseGrade4_1_1, courseGrade4_1_2));
+        course5.setCourseGrades(List.of(courseGrade5_1_3, courseGrade5_1_4));
+        course6.setCourseGrades(List.of(courseGrade6_1_3, courseGrade6_1_4));
+        course7.setCourseGrades(List.of(courseGrade7_1_3, courseGrade7_1_4));
+        course8.setCourseGrades(List.of(courseGrade8_1_3, courseGrade8_1_4));
+        course9.setCourseGrades(List.of(courseGrade9_1_5, courseGrade9_1_6));
+        course10.setCourseGrades(List.of(courseGrade10_1_5, courseGrade10_1_6));
+        course11.setCourseGrades(List.of(courseGrade11_1_5, courseGrade11_1_6));
+        course12.setCourseGrades(List.of(courseGrade12_1_5, courseGrade12_1_6));
+        course13.setCourseGrades(List.of(courseGrade13_1_7, courseGrade13_1_8));
+        course14.setCourseGrades(List.of(courseGrade14_1_7, courseGrade14_1_8));
+        course15.setCourseGrades(List.of(courseGrade15_1_7, courseGrade15_1_8));
+        course16.setCourseGrades(List.of(courseGrade16_1_7, courseGrade16_1_8));
+        course17.setCourseGrades(List.of(courseGrade17_1_9, courseGrade17_1_10));
+        course18.setCourseGrades(List.of(courseGrade18_1_9, courseGrade18_1_10));
+        course19.setCourseGrades(List.of(courseGrade19_1_9, courseGrade19_1_10));
+        course20.setCourseGrades(List.of(courseGrade20_1_9, courseGrade20_1_10));
+
     }
 
     public static ProblemAnswer createProblemAnswer(String problemContent, String answerContent) {

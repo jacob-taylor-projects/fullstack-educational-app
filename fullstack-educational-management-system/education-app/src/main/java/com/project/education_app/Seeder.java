@@ -3,7 +3,6 @@ package com.project.education_app;
 import com.project.education_app.entities.*;
 import com.project.education_app.repos.*;
 import lombok.Data;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -56,7 +55,7 @@ public class Seeder implements CommandLineRunner {
         Guardian guardian1 = createGuardian("nolan", "everhart", "Nolan", "Everhart", "everhart@email.com", "(987) 654-3210", 54, "male", "100 blvd");
         guardian1.setStudents(List.of(student1));
         Guardian guardian2 = createGuardian("helena", "marlowe", "Helena", "Marlowe", "marlowe@email.com", "(876) 543-2109", 52, "female", "100 blvd");
-        guardian2.setStudents((List.of(student1));
+        guardian2.setStudents(List.of(student1));
         Guardian guardian3 = createGuardian("samuel", "langdon", "Samuel", "Langdon", "langdon@email.com", "(765) 432-1098", 56, "male", "200 blvd");
         guardian3.setStudents(List.of(student2));
         Guardian guardian4 = createGuardian("clara", "ridley", "Clara", "Ridley", "ridley@email.com", "(654) 321-0987", 46, "female", "200 blvd");
@@ -521,7 +520,7 @@ public class Seeder implements CommandLineRunner {
                  unit20d.setLessons(List.of(lesson20d));
         //Semesters
         Semester fall2024 = createSemester("Fall", "2024");
-        Semester spring2024 = createSemester("Spring", "2024");
+        Semester spring2025 = createSemester("Spring", "2025");
 
         //Attendance
         LocalDate attendanceLocalDate1=LocalDate.of(2024,12,4);
@@ -545,6 +544,27 @@ public class Seeder implements CommandLineRunner {
         Attendance attendance18=createAttendance(attendanceLocalDate1,true,student9,course18);
         Attendance attendance19=createAttendance(attendanceLocalDate1,true,student10,course19);
         Attendance attendance20=createAttendance(attendanceLocalDate1,true,student10,course20);
+
+        course1.setAttendances(List.of(attendance1));
+        course2.setAttendances(List.of(attendance2));
+        course3.setAttendances(List.of(attendance3));
+        course4.setAttendances(List.of(attendance4));
+        course5.setAttendances(List.of(attendance5));
+        course6.setAttendances(List.of(attendance6));
+        course7.setAttendances(List.of(attendance7));
+        course8.setAttendances(List.of(attendance8));
+        course9.setAttendances(List.of(attendance9));
+        course10.setAttendances(List.of(attendance10));
+        course11.setAttendances(List.of(attendance11));
+        course12.setAttendances(List.of(attendance12));
+        course13.setAttendances(List.of(attendance13));
+        course14.setAttendances(List.of(attendance14));
+        course15.setAttendances(List.of(attendance15));
+        course16.setAttendances(List.of(attendance16));
+        course17.setAttendances(List.of(attendance17));
+        course18.setAttendances(List.of(attendance18));
+        course19.setAttendances(List.of(attendance19));
+        course20.setAttendances(List.of(attendance20));
 
         //Discussions
         Discussion discussion1a = createDiscussion("The Importance of variables in Programming Discussion", "Discuss how variables are used to store and manipulate data in programs and share examples.", faculty1);
@@ -1094,12 +1114,89 @@ public class Seeder implements CommandLineRunner {
         Schedule scheduleStudent9 = createSchedule("Student 9's Fall Schedule", "List of courses for Student 9 in Fall 2024", student9, fall2024, course17, course18, course19, course20);
         Schedule scheduleStudent10 = createSchedule("Student 10's Fall Schedule", "List of courses for Student 10 in Fall 2024", student10, fall2024, course17, course18, course19, course20);
 
+        course1.setStudents(List.of(student1, student2));
+        course2.setStudents(List.of(student1, student2));
+        course3.setStudents(List.of(student1, student2));
+        course4.setStudents(List.of(student1, student2));
+        course5.setStudents(List.of(student3, student4));
+        course6.setStudents(List.of(student3, student4));
+        course7.setStudents(List.of(student3, student4));
+        course8.setStudents(List.of(student3, student4));
+        course9.setStudents(List.of(student5, student6));
+        course10.setStudents(List.of(student5, student6));
+        course11.setStudents(List.of(student5, student6));
+        course12.setStudents(List.of(student5, student6));
+        course13.setStudents(List.of(student7, student8));
+        course14.setStudents(List.of(student7, student8));
+        course15.setStudents(List.of(student7, student8));
+        course16.setStudents(List.of(student7, student8));
+        course17.setStudents(List.of(student9, student10));
+        course18.setStudents(List.of(student9, student10));
+        course19.setStudents(List.of(student9, student10));
+        course20.setStudents(List.of(student9, student10));
 
+        course1.setResources(List.of(resource1a, resource1b));
+        course2.setResources(List.of(resource2a, resource2b));
+        course3.setResources(List.of(resource3a, resource3b));
+        course4.setResources(List.of(resource4a, resource4b));
+        course5.setResources(List.of(resource5a, resource5b));
+        course6.setResources(List.of(resource6a, resource6b));
+        course7.setResources(List.of(resource7a, resource7b));
+        course8.setResources(List.of(resource8a, resource8b));
+        course9.setResources(List.of(resource9a, resource9b));
+        course10.setResources(List.of(resource10a, resource10b));
+        course11.setResources(List.of(resource11a, resource11b));
+        course12.setResources(List.of(resource12a, resource12b));
+        course13.setResources(List.of(resource13a, resource13b));
+        course14.setResources(List.of(resource14a, resource14b));
+        course15.setResources(List.of(resource15a, resource15b));
+        course16.setResources(List.of(resource16a, resource16b));
+        course17.setResources(List.of(resource17a, resource17b));
+        course18.setResources(List.of(resource18a, resource18b));
+        course19.setResources(List.of(resource19a, resource19b));
+        course20.setResources(List.of(resource20a, resource20b));
 
+        course1.setSchedules(List.of(scheduleStudent1, scheduleStudent2));
+        course2.setSchedules(List.of(scheduleStudent1, scheduleStudent2));
+        course3.setSchedules(List.of(scheduleStudent1, scheduleStudent2));
+        course4.setSchedules(List.of(scheduleStudent1, scheduleStudent2));
+        course5.setSchedules(List.of(scheduleStudent3, scheduleStudent4));
+        course6.setSchedules(List.of(scheduleStudent3, scheduleStudent4));
+        course7.setSchedules(List.of(scheduleStudent3, scheduleStudent4));
+        course8.setSchedules(List.of(scheduleStudent3, scheduleStudent4));
+        course9.setSchedules(List.of(scheduleStudent5, scheduleStudent6));
+        course10.setSchedules(List.of(scheduleStudent5, scheduleStudent6));
+        course11.setSchedules(List.of(scheduleStudent5, scheduleStudent6));
+        course12.setSchedules(List.of(scheduleStudent5, scheduleStudent6));
+        course13.setSchedules(List.of(scheduleStudent7, scheduleStudent8));
+        course14.setSchedules(List.of(scheduleStudent7, scheduleStudent8));
+        course15.setSchedules(List.of(scheduleStudent7, scheduleStudent8));
+        course16.setSchedules(List.of(scheduleStudent7, scheduleStudent8));
+        course17.setSchedules(List.of(scheduleStudent9, scheduleStudent10));
+        course18.setSchedules(List.of(scheduleStudent9, scheduleStudent10));
+        course19.setSchedules(List.of(scheduleStudent9, scheduleStudent10));
+        course20.setSchedules(List.of(scheduleStudent9, scheduleStudent10));
 
-
-
-
+        course1.setSemesters(List.of(fall2024, spring2025));
+        course2.setSemesters(List.of(fall2024, spring2025));
+        course3.setSemesters(List.of(fall2024, spring2025));
+        course4.setSemesters(List.of(fall2024, spring2025));
+        course5.setSemesters(List.of(fall2024, spring2025));
+        course6.setSemesters(List.of(fall2024, spring2025));
+        course7.setSemesters(List.of(fall2024, spring2025));
+        course8.setSemesters(List.of(fall2024, spring2025));
+        course9.setSemesters(List.of(fall2024, spring2025));
+        course10.setSemesters(List.of(fall2024, spring2025));
+        course11.setSemesters(List.of(fall2024, spring2025));
+        course12.setSemesters(List.of(fall2024, spring2025));
+        course13.setSemesters(List.of(fall2024, spring2025));
+        course14.setSemesters(List.of(fall2024, spring2025));
+        course15.setSemesters(List.of(fall2024, spring2025));
+        course16.setSemesters(List.of(fall2024, spring2025));
+        course17.setSemesters(List.of(fall2024, spring2025));
+        course18.setSemesters(List.of(fall2024, spring2025));
+        course19.setSemesters(List.of(fall2024, spring2025));
+        course20.setSemesters(List.of(fall2024, spring2025));
 
 
         attendanceRepo.saveAllAndFlush(Arrays.asList(attendance1, attendance2, attendance3, attendance4, attendance5, attendance6, attendance7, attendance8, attendance9, attendance10, attendance11, attendance12, attendance13, attendance14, attendance15, attendance16, attendance17, attendance18, attendance19, attendance20));

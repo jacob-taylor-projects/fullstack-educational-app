@@ -13,6 +13,7 @@ import java.time.LocalDate;
 import java.time.ZoneId;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.List;
 
 import static com.project.education_app.AssignmentSeeder.*;
 import static com.project.education_app.Seeder.*;
@@ -6943,6 +6944,66 @@ public class TestSeeder implements CommandLineRunner {
 
         Feedback feedback20d_9 = createFeedback("Great effort, student9!", submission20d_9);
         Feedback feedback20d_10 = createFeedback("Well done, student10!", submission20d_10);
+
+        // Set two grades per course for the first 20 courses
+
+        course1.setGrades(List.of(grade1a_1, grade1a_2));
+        course2.setGrades(List.of(grade2a_1, grade2a_2));
+        course3.setGrades(List.of(grade3a_1, grade3a_2));
+        course4.setGrades(List.of(grade4a_1, grade4a_2));
+        course5.setGrades(List.of(grade5a_3, grade5a_4));
+        course6.setGrades(List.of(grade6a_3, grade6a_4));
+        course7.setGrades(List.of(grade7a_3, grade7a_4));
+        course8.setGrades(List.of(grade8a_3, grade8a_4));
+        course9.setGrades(List.of(grade9a_5, grade9a_6));
+        course10.setGrades(List.of(grade10a_5, grade10a_6));
+        course11.setGrades(List.of(grade11a_5, grade11a_6));
+        course12.setGrades(List.of(grade12a_5, grade12a_6));
+        course13.setGrades(List.of(grade13a_7, grade13a_8));
+        course14.setGrades(List.of(grade14a_7, grade14a_8));
+        course15.setGrades(List.of(grade15a_7, grade15a_8));
+        course16.setGrades(List.of(grade16a_7, grade16a_8));
+        course17.setGrades(List.of(grade17a_9, grade17a_10));
+        course18.setGrades(List.of(grade18a_9, grade18a_10));
+        course19.setGrades(List.of(grade19a_9, grade19a_10));
+        course20.setGrades(List.of(grade20a_9, grade20a_10));
+
+        // Set course grades for all courses
+
+        // Set course grades for the first 10 courses
+
+        course1.setCourseGrades(List.of(courseGrade1a_1, courseGrade1a_2));
+        course2.setCourseGrades(List.of(courseGrade2a_1, courseGrade2a_2));
+        course3.setCourseGrades(List.of(courseGrade3a_1, courseGrade3a_2));
+        course4.setCourseGrades(List.of(courseGrade4a_1, courseGrade4a_2));
+        course5.setCourseGrades(List.of(courseGrade5a_3, courseGrade5a_4));
+        course6.setCourseGrades(List.of(courseGrade6a_3, courseGrade6a_4));
+        course7.setCourseGrades(List.of(courseGrade7a_3, courseGrade7a_4));
+        course8.setCourseGrades(List.of(courseGrade8a_3, courseGrade8a_4));
+        course9.setCourseGrades(List.of(courseGrade9a_5, courseGrade9a_6));
+        course10.setCourseGrades(List.of(courseGrade10a_5, courseGrade10a_6));
+        // Set course grades for all courses
+
+        course1.setCourseGrades(List.of(courseGrade1a_1, courseGrade1a_2));
+        course2.setCourseGrades(List.of(courseGrade2a_1, courseGrade2a_2));
+        course3.setCourseGrades(List.of(courseGrade3a_1, courseGrade3a_2));
+        course4.setCourseGrades(List.of(courseGrade4a_1, courseGrade4a_2));
+        course5.setCourseGrades(List.of(courseGrade5a_3, courseGrade5a_4));
+        course6.setCourseGrades(List.of(courseGrade6a_3, courseGrade6a_4));
+        course7.setCourseGrades(List.of(courseGrade7a_3, courseGrade7a_4));
+        course8.setCourseGrades(List.of(courseGrade8a_3, courseGrade8a_4));
+        course9.setCourseGrades(List.of(courseGrade9a_5, courseGrade9a_6));
+        course10.setCourseGrades(List.of(courseGrade10a_5, courseGrade10a_6));
+        course11.setCourseGrades(List.of(courseGrade11a_5, courseGrade11a_6));
+        course12.setCourseGrades(List.of(courseGrade12a_5, courseGrade12a_6));
+        course13.setCourseGrades(List.of(courseGrade13a_7, courseGrade13a_8));
+        course14.setCourseGrades(List.of(courseGrade14a_7, courseGrade14a_8));
+        course15.setCourseGrades(List.of(courseGrade15a_7, courseGrade15a_8));
+        course16.setCourseGrades(List.of(courseGrade16a_7, courseGrade16a_8));
+        course17.setCourseGrades(List.of(courseGrade17a_9, courseGrade17a_10));
+        course18.setCourseGrades(List.of(courseGrade18a_9, courseGrade18a_10));
+        course19.setCourseGrades(List.of(courseGrade19a_9, courseGrade19a_10));
+        course20.setCourseGrades(List.of(courseGrade20a_9, courseGrade20a_10));
 
     }
 
