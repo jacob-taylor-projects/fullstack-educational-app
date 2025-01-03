@@ -1416,11 +1416,12 @@ public class Seeder implements CommandLineRunner {
         feedback.setSubmission(submission); // Ensures the relationship is bidirectional
     }
 
-    public static CourseGrade createCourseGrade(Student student, Course course, double overallGrade) {
+    public static CourseGrade createCourseGrade(Student student, Course course, double overallGrade, List<Grade> grades) {
         CourseGrade courseGrade = new CourseGrade();
         courseGrade.setStudent(student);
         courseGrade.setCourse(course);
         courseGrade.setOverallGrade(overallGrade);
+        courseGrade.setGrades(grades);
         return courseGrade;
     }
 

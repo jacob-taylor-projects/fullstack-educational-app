@@ -2482,65 +2482,65 @@ public class ProjectSeeder implements CommandLineRunner {
         Grade grade20d_10 = createGrade(88.1, student10, faculty5, course20, submission20d_project_10);
 
 
-        CourseGrade courseGrade1a_project_1 = createCourseGrade(student1, course1, 87.4);
-        CourseGrade courseGrade1a_project_2 = createCourseGrade(student2, course1, 88.12);
+        CourseGrade courseGrade1a_project_1 = createCourseGrade(student1, course1, 87.4, List.of(grade1a_1, grade1b_1, grade1c_1, grade1d_1, grade1e_1, grade1f_1));
+        CourseGrade courseGrade1a_project_2 = createCourseGrade(student2, course1, 88.12, List.of(grade1a_2, grade1b_2, grade1c_2, grade1d_2, grade1e_2, grade1f_2));
 
-        CourseGrade courseGrade2a_project_1 = createCourseGrade(student1, course2, 87.93);
-        CourseGrade courseGrade2a_project_2 = createCourseGrade(student2, course2, 87.32);
+        CourseGrade courseGrade2a_project_1 = createCourseGrade(student1, course2, 87.93, List.of(grade2a_1, grade2b_1, grade2c_1, grade2d_1, grade2e_1, grade2f_1));
+        CourseGrade courseGrade2a_project_2 = createCourseGrade(student2, course2, 87.32, List.of(grade2a_2, grade2b_2, grade2c_2, grade2d_2, grade2e_2, grade2f_2));
 
-        CourseGrade courseGrade3a_project_1 = createCourseGrade(student1, course3, 87.12);
-        CourseGrade courseGrade3a_project_2 = createCourseGrade(student2, course3, 87.05);
+        CourseGrade courseGrade3a_project_1 = createCourseGrade(student1, course3, 87.12, List.of(grade3a_1, grade3b_1, grade3c_1, grade3d_1));
+        CourseGrade courseGrade3a_project_2 = createCourseGrade(student2, course3, 87.05, List.of(grade3a_2, grade3b_2, grade3c_2, grade3d_2));
 
-        CourseGrade courseGrade4a_project_1 = createCourseGrade(student1, course4, 87.325);
-        CourseGrade courseGrade4a_project_2 = createCourseGrade(student2, course4, 87.95);
+        CourseGrade courseGrade4a_project_1 = createCourseGrade(student1, course4, 87.325, List.of(grade4a_1, grade4b_1, grade4c_1, grade4d_1));
+        CourseGrade courseGrade4a_project_2 = createCourseGrade(student2, course4, 87.95, List.of(grade4a_2, grade4b_2, grade4c_2, grade4d_2));
 
-        CourseGrade courseGrade5a_project_3 = createCourseGrade(student3, course5, 86.45);
-        CourseGrade courseGrade5a_project_4 = createCourseGrade(student4, course5, 87.725);
+        CourseGrade courseGrade5a_project_3 = createCourseGrade(student3, course5, 86.45, List.of(grade5a_3, grade5b_3, grade5c_3, grade5d_3));
+        CourseGrade courseGrade5a_project_4 = createCourseGrade(student4, course5, 87.725, List.of(grade5a_4, grade5b_4, grade5c_4, grade5d_4));
 
-        CourseGrade courseGrade6a_project_3 = createCourseGrade(student3, course6, 87.32);
-        CourseGrade courseGrade6a_project_4 = createCourseGrade(student4, course6, 88.14);
+        CourseGrade courseGrade6a_project_3 = createCourseGrade(student3, course6, 87.32, List.of(grade6a_3, grade6b_3, grade6c_3, grade6d_3, grade6e_3));
+        CourseGrade courseGrade6a_project_4 = createCourseGrade(student4, course6, 88.14, List.of(grade6a_4, grade6b_4, grade6c_4, grade6d_4, grade6e_4));
 
-        CourseGrade courseGrade7a_project_3 = createCourseGrade(student3, course7, 88.28);
-        CourseGrade courseGrade7a_project_4 = createCourseGrade(student4, course7, 88.35);
+        CourseGrade courseGrade7a_project_3 = createCourseGrade(student3, course7, 88.28, List.of(grade7a_3, grade7b_3, grade7c_3, grade7d_3));
+        CourseGrade courseGrade7a_project_4 = createCourseGrade(student4, course7, 88.35, List.of(grade7a_4, grade7b_4, grade7c_4, grade7d_4));
 
-        CourseGrade courseGrade8a_project_3 = createCourseGrade(student3, course8, 86.74);
-        CourseGrade courseGrade8a_project_4 = createCourseGrade(student4, course8, 88.62);
+        CourseGrade courseGrade8a_project_3 = createCourseGrade(student3, course8, 86.74, List.of(grade8a_3, grade8b_3, grade8c_3, grade8d_3, grade8e_3));
+        CourseGrade courseGrade8a_project_4 = createCourseGrade(student4, course8, 88.62, List.of(grade8a_4, grade8b_4, grade8c_4, grade8d_4, grade8e_4));
 
-        CourseGrade courseGrade9a_project_5 = createCourseGrade(student5, course9, 87.57);
-        CourseGrade courseGrade9a_project_6 = createCourseGrade(student6, course9, 88.4);
+        CourseGrade courseGrade9a_project_5 = createCourseGrade(student5, course9, 87.57, List.of(grade9a_5, grade9b_5, grade9c_5));
+        CourseGrade courseGrade9a_project_6 = createCourseGrade(student6, course9, 88.4, List.of(grade9a_6, grade9b_6, grade9c_6));
 
-        CourseGrade courseGrade10a_project_5 = createCourseGrade(student5, course10, 87.42);
-        CourseGrade courseGrade10a_project_6 = createCourseGrade(student6, course10, 88.5);
+        CourseGrade courseGrade10a_project_5 = createCourseGrade(student5, course10, 87.42, List.of(grade10a_5, grade10b_5, grade10c_5));
+        CourseGrade courseGrade10a_project_6 = createCourseGrade(student6, course10, 88.5, List.of(grade10a_6, grade10b_6, grade10c_6));
 
-        CourseGrade courseGrade11a_project_5 = createCourseGrade(student5, course11, 87.55);
-        CourseGrade courseGrade11a_project_6 = createCourseGrade(student6, course11, 88.3);
+        CourseGrade courseGrade11a_project_5 = createCourseGrade(student5, course11, 87.55, List.of(grade11a_5, grade11b_5, grade11c_5, grade11d_5));
+        CourseGrade courseGrade11a_project_6 = createCourseGrade(student6, course11, 88.3, List.of(grade11a_6, grade11b_6, grade11c_6, grade11d_6));
 
-        CourseGrade courseGrade12a_project_5 = createCourseGrade(student5, course12, 87.76);
-        CourseGrade courseGrade12a_project_6 = createCourseGrade(student6, course12, 87.4);
+        CourseGrade courseGrade12a_project_5 = createCourseGrade(student5, course12, 87.76, List.of(grade12a_5, grade12b_5, grade12c_5, grade12d_5, grade12e_5));
+        CourseGrade courseGrade12a_project_6 = createCourseGrade(student6, course12, 87.4, List.of(grade12a_6, grade12b_6, grade12c_6, grade12d_6, grade12e_6));
 
-        CourseGrade courseGrade13a_project_7 = createCourseGrade(student7, course13, 88.1);
-        CourseGrade courseGrade13a_project_8 = createCourseGrade(student8, course13, 87.6);
+        CourseGrade courseGrade13a_project_7 = createCourseGrade(student7, course13, 88.1, List.of(grade13a_7, grade13b_7, grade13c_7, grade13d_7));
+        CourseGrade courseGrade13a_project_8 = createCourseGrade(student8, course13, 87.6, List.of(grade13a_8, grade13b_8, grade13c_8, grade13d_8));
 
-        CourseGrade courseGrade14a_project_7 = createCourseGrade(student7, course14, 88.425);
-        CourseGrade courseGrade14a_project_8 = createCourseGrade(student8, course14, 88.2);
+        CourseGrade courseGrade14a_project_7 = createCourseGrade(student7, course14, 88.425, List.of(grade14a_7, grade14b_7, grade14c_7, grade14d_7));
+        CourseGrade courseGrade14a_project_8 = createCourseGrade(student8, course14, 88.2, List.of(grade14a_8, grade14b_8, grade14c_8, grade14d_8));
 
-        CourseGrade courseGrade15a_project_7 = createCourseGrade(student7, course15, 87.5);
-        CourseGrade courseGrade15a_project_8 = createCourseGrade(student8, course15, 87.6);
+        CourseGrade courseGrade15a_project_7 = createCourseGrade(student7, course15, 87.5, List.of(grade15a_7, grade15b_7, grade15c_7));
+        CourseGrade courseGrade15a_project_8 = createCourseGrade(student8, course15, 87.6, List.of(grade15a_8, grade15b_8, grade15c_8));
 
-        CourseGrade courseGrade16a_project_7 = createCourseGrade(student7, course16, 88.47);
-        CourseGrade courseGrade16a_project_8 = createCourseGrade(student8, course16, 88.33);
+        CourseGrade courseGrade16a_project_7 = createCourseGrade(student7, course16, 88.47, List.of(grade16a_7, grade16b_7, grade16c_7));
+        CourseGrade courseGrade16a_project_8 = createCourseGrade(student8, course16, 88.33, List.of(grade16a_8, grade16b_8, grade16c_8));
 
-        CourseGrade courseGrade17a_project_9 = createCourseGrade(student9, course17, 88.53);
-        CourseGrade courseGrade17a_project_10 = createCourseGrade(student10, course17, 88.03);
+        CourseGrade courseGrade17a_project_9 = createCourseGrade(student9, course17, 88.53, List.of(grade17a_9, grade17b_9, grade17c_9, grade17d_9));
+        CourseGrade courseGrade17a_project_10 = createCourseGrade(student10, course17, 88.03, List.of(grade17a_10, grade17b_10, grade17c_10, grade17d_10));
 
-        CourseGrade courseGrade18a_project_9 = createCourseGrade(student9, course18, 88.23);
-        CourseGrade courseGrade18a_project_10 = createCourseGrade(student10, course18, 87.87);
+        CourseGrade courseGrade18a_project_9 = createCourseGrade(student9, course18, 88.23, List.of(grade18a_9, grade18b_9, grade18c_9));
+        CourseGrade courseGrade18a_project_10 = createCourseGrade(student10, course18, 87.87, List.of(grade18a_10, grade18b_10, grade18c_10));
 
-        CourseGrade courseGrade19a_project_9 = createCourseGrade(student9, course19, 87.9);
-        CourseGrade courseGrade19a_project_10 = createCourseGrade(student10, course19, 87.4);
+        CourseGrade courseGrade19a_project_9 = createCourseGrade(student9, course19, 87.9, List.of(grade19a_9, grade19b_9, grade19c_9));
+        CourseGrade courseGrade19a_project_10 = createCourseGrade(student10, course19, 87.4, List.of(grade19a_10, grade19b_10, grade19c_10));
 
-        CourseGrade courseGrade20a_project_9 = createCourseGrade(student9, course20, 88.88);
-        CourseGrade courseGrade20a_project_10 = createCourseGrade(student10, course20, 87.45);
+        CourseGrade courseGrade20a_project_9 = createCourseGrade(student9, course20, 88.88, List.of(grade20a_9, grade20b_9, grade20c_9, grade20d_9));
+        CourseGrade courseGrade20a_project_10 = createCourseGrade(student10, course20, 87.45, List.of(grade20a_10, grade20b_10, grade20c_10, grade20d_10));
 
 
         Feedback feedback1a_project_1 = createFeedback("Great project submission, student1!", submission1a_project_1);
