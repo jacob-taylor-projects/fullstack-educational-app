@@ -15,7 +15,7 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
 
-import static com.project.education_app.AssignmentSeeder.*;
+import static com.project.education_app.Assignment1to4Seeder.*;
 import static com.project.education_app.Seeder.*;
 
 @Component
@@ -2396,6 +2396,9 @@ public class ProjectSeeder implements CommandLineRunner {
         Grade grade10b_6 = createGrade(89.1, student6, faculty5, course10, submission10b_project_6);
         Grade grade10c_5 = createGrade(86.8, student5, faculty5, course10, submission10c_project_5);
         Grade grade10c_6 = createGrade(87.9, student6, faculty5, course10, submission10c_project_6);
+        Grade grade10d_5 = createGrade(86.8, student5, faculty5, course10, submission10d_project_5);
+        Grade grade10d_6 = createGrade(87.9, student6, faculty5, course10, submission10d_project_6);
+
 
         Grade grade11a_5 = createGrade(88.3, student5, faculty1, course11, submission11a_project_5);
         Grade grade11a_6 = createGrade(86.5, student6, faculty1, course11, submission11a_project_6);
@@ -2838,6 +2841,26 @@ public class ProjectSeeder implements CommandLineRunner {
         course19.setCourseGrades(List.of(courseGrade19a_project_9, courseGrade19a_project_10));
         course20.setCourseGrades(List.of(courseGrade20a_project_9, courseGrade20a_project_10));
 
+        createFacultyWithProject(faculty1, List.of(grade1a_1, grade1a_2, grade1b_1, grade1b_2, grade1c_1, grade1c_2, grade1d_1, grade1d_2, grade1e_1, grade1e_2, grade1f_1, grade1f_2), List.of(project1a, project1b, project1c, project1d, project1e, project1f));
+        createFacultyWithProject(faculty2, List.of(grade2a_1, grade2a_2, grade2b_1, grade2b_2, grade2c_1, grade2c_2, grade2d_1, grade2d_2, grade2e_1, grade2e_2, grade2f_1, grade2f_2), List.of(project2a, project2b, project2c, project2d, project2e, project2f));
+        createFacultyWithProject(faculty3, List.of(grade3a_1, grade3a_2, grade3b_1, grade3b_2, grade3c_1, grade3c_2, grade3d_1, grade3d_2), List.of(project3a, project3b, project3c, project3d));
+        createFacultyWithProject(faculty4, List.of(grade4a_1, grade4a_2, grade4b_1, grade4b_2, grade4c_1, grade4c_2, grade4d_1, grade4d_2), List.of(project4a, project4b, project4c, project4d));
+        createFacultyWithProject(faculty5, List.of(grade5a_3, grade5a_4, grade5b_3, grade5b_4, grade5c_3, grade5c_4, grade5d_3, grade5d_4), List.of(project5a, project5b, project5c, project5d));
+        createFacultyWithProject(faculty1, List.of(grade6a_3, grade6a_4, grade6b_3, grade6b_4, grade6c_3, grade6c_4, grade6d_3, grade6d_4, grade6e_3, grade6e_4), List.of(project6a, project6b, project6c, project6d, project6e));
+        createFacultyWithProject(faculty2, List.of(grade7a_3, grade7a_4, grade7b_3, grade7b_4, grade7c_3, grade7c_4, grade7d_3, grade7d_4), List.of(project7a, project7b, project7c, project7d));
+        createFacultyWithProject(faculty3, List.of(grade8a_3, grade8a_4, grade8b_3, grade8b_4, grade8c_3, grade8c_4, grade8d_3, grade8d_4, grade8e_3, grade8e_4), List.of(project8a, project8b, project8c, project8d, project8e));
+        createFacultyWithProject(faculty4, List.of(grade9a_5, grade9a_6, grade9b_5, grade9b_6, grade9c_5, grade9c_6), List.of(project9a, project9b, project9c));
+        createFacultyWithProject(faculty5, List.of(grade10a_5, grade10a_6, grade10b_5, grade10b_6, grade10c_5, grade10c_6, grade10d_5, grade10d_6), List.of(project10a, project10b, project10c, project10d));
+        createFacultyWithProject(faculty1, List.of(grade11a_5, grade11a_6, grade11b_5, grade11b_6, grade11c_5, grade11c_6, grade11d_5, grade11d_6), List.of(project11a, project11b, project11c, project11d));
+        createFacultyWithProject(faculty2, List.of(grade12a_5, grade12a_6, grade12b_5, grade12b_6, grade12c_5, grade12c_6, grade12d_5, grade12d_6, grade12e_5, grade12e_6), List.of(project12a, project12b, project12c, project12d, project12e));
+        createFacultyWithProject(faculty3, List.of(grade13a_7, grade13a_8, grade13b_7, grade13b_8, grade13c_7, grade13c_8, grade13d_7, grade13d_8), List.of(project13a, project13b, project13c, project13d));
+        createFacultyWithProject(faculty4, List.of(grade14a_7, grade14a_8, grade14b_7, grade14b_8, grade14c_7, grade14c_8, grade14d_7, grade14d_8), List.of(project14a, project14b, project14c, project14d));
+        createFacultyWithProject(faculty5, List.of(grade15a_7, grade15a_8, grade15b_7, grade15b_8, grade15c_7, grade15c_8), List.of(project15a, project15b, project15c));
+        createFacultyWithProject(faculty1, List.of(grade16a_7, grade16a_8, grade16b_7, grade16b_8, grade16c_7, grade16c_8), List.of(project16a, project16b, project16c));
+        createFacultyWithProject(faculty2, List.of(grade17a_9, grade17a_10, grade17b_9, grade17b_10, grade17c_9, grade17c_10, grade17d_9, grade17d_10), List.of(project17a, project17b, project17c, project17d));
+        createFacultyWithProject(faculty3, List.of(grade18a_9, grade18a_10, grade18b_9, grade18b_10, grade18c_9, grade18c_10), List.of(project18a, project18b, project18c));
+        createFacultyWithProject(faculty4, List.of(grade19a_9, grade19a_10, grade19b_9, grade19b_10, grade19c_9, grade19c_10), List.of(project19a, project19b, project19c));
+        createFacultyWithProject(faculty5, List.of(grade20a_9, grade20a_10, grade20b_9, grade20b_10, grade20c_9, grade20c_10, grade20d_9, grade20d_10), List.of(project20a, project20b, project20c, project20d));
     }
 
     public static Project createProject(String name, Faculty teacher, Date dueDate, Syllabus syllabus, boolean completed, ProblemAnswer problemAnswer) {
@@ -2850,6 +2873,12 @@ public class ProjectSeeder implements CommandLineRunner {
         project.setProblemAnswer(problemAnswer);
         problemAnswer.setProject(project);
         return project;
+    }
+
+    public static Faculty createFacultyWithProject(Faculty faculty, List<Grade> grades, List<Project> projects) {
+        faculty.setGrades(grades);
+        faculty.setProjects(projects);
+        return faculty;
     }
 
     public static void addStudentToProject(Project project, Student student) {

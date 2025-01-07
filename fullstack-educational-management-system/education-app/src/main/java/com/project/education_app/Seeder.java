@@ -997,6 +997,90 @@ public class Seeder implements CommandLineRunner {
         Post post20d1 = createPost("The properties and behaviors of different materials influence their selection for specific engineering applications. Examples include using metals for strength, polymers for flexibility, and composites for lightweight structures.", discussion20d, student9);
         Post post20d2 = createPost("In my project, I selected materials based on their properties to design a durable and lightweight drone, enhancing its performance and longevity.", discussion20d, student10);
 
+        discussion1a.setPosts(List.of(post1a1, post1a2));
+        discussion1b.setPosts(List.of(post1b1, post1b2));
+        discussion1c.setPosts(List.of(post1c1, post1c2));
+        discussion1d.setPosts(List.of(post1d1, post1d2));
+        discussion1e.setPosts(List.of(post1e1, post1e2));
+        discussion1f.setPosts(List.of(post1f1, post1f2));
+        discussion2a.setPosts(List.of(post2a1, post2a2));
+        discussion2b.setPosts(List.of(post2b1, post2b2));
+        discussion2c.setPosts(List.of(post2c1, post2c2));
+        discussion2d.setPosts(List.of(post2d1, post2d2));
+        discussion2e.setPosts(List.of(post2e1, post2e2));
+        discussion2f.setPosts(List.of(post2f1, post2f2));
+        discussion3a.setPosts(List.of(post3a1, post3a2));
+        discussion3b.setPosts(List.of(post3b1, post3b2));
+        discussion3c.setPosts(List.of(post3c1, post3c2));
+        discussion3d.setPosts(List.of(post3d1, post3d2));
+        discussion4a.setPosts(List.of(post4a1, post4a2));
+        discussion4b.setPosts(List.of(post4b1, post4b2));
+        discussion4c.setPosts(List.of(post4c1, post4c2));
+        discussion4d.setPosts(List.of(post4d1, post4d2));
+        discussion5a.setPosts(List.of(post5a1, post5a2));
+        discussion5b.setPosts(List.of(post5b1, post5b2));
+        discussion5c.setPosts(List.of(post5c1, post5c2));
+        discussion5d.setPosts(List.of(post5d1, post5d2));
+        discussion6a.setPosts(List.of(post6a1, post6a2));
+        discussion6b.setPosts(List.of(post6b1, post6b2));
+        discussion6c.setPosts(List.of(post6c1, post6c2));
+        discussion6d.setPosts(List.of(post6d1, post6d2));
+        discussion6e.setPosts(List.of(post6e1, post6e2));
+        discussion7a.setPosts(List.of(post7a1, post7a2));
+        discussion7b.setPosts(List.of(post7b1, post7b2));
+        discussion7c.setPosts(List.of(post7c1, post7c2));
+        discussion7d.setPosts(List.of(post7d1, post7d2));
+
+        discussion8a.setPosts(List.of(post8a1, post8a2));
+        discussion8b.setPosts(List.of(post8b1, post8b2));
+        discussion8c.setPosts(List.of(post8c1, post8c2));
+        discussion8d.setPosts(List.of(post8d1, post8d2));
+        discussion8e.setPosts(List.of(post8e1, post8e2));
+        discussion9a.setPosts(List.of(post9a1, post9a2));
+        discussion9b.setPosts(List.of(post9b1, post9b2));
+        discussion9c.setPosts(List.of(post9c1, post9c2));
+        discussion10a.setPosts(List.of(post10a1, post10a2));
+        discussion10b.setPosts(List.of(post10b1, post10b2));
+        discussion10c.setPosts(List.of(post10c1, post10c2));
+        discussion10d.setPosts(List.of(post10d1, post10d2));
+        discussion11a.setPosts(List.of(post11a1, post11a2));
+        discussion11b.setPosts(List.of(post11b1, post11b2));
+        discussion11c.setPosts(List.of(post11c1, post11c2));
+        discussion11d.setPosts(List.of(post11d1, post11d2));
+        discussion12a.setPosts(List.of(post12a1, post12a2));
+        discussion12b.setPosts(List.of(post12b1, post12b2));
+        discussion12c.setPosts(List.of(post12c1, post12c2));
+        discussion12d.setPosts(List.of(post12d1, post12d2));
+        discussion12e.setPosts(List.of(post12e1, post12e2));
+        discussion13a.setPosts(List.of(post13a1, post13a2));
+        discussion13b.setPosts(List.of(post13b1, post13b2));
+        discussion13c.setPosts(List.of(post13c1, post13c2));
+        discussion13d.setPosts(List.of(post13d1, post13d2));
+        discussion14a.setPosts(List.of(post14a1, post14a2));
+        discussion14b.setPosts(List.of(post14b1, post14b2));
+        discussion14c.setPosts(List.of(post14c1, post14c2));
+        discussion14d.setPosts(List.of(post14d1, post14d2));
+        discussion15a.setPosts(List.of(post15a1, post15a2));
+        discussion15b.setPosts(List.of(post15b1, post15b2));
+        discussion15c.setPosts(List.of(post15c1, post15c2));
+        discussion16a.setPosts(List.of(post16a1, post16a2));
+        discussion16b.setPosts(List.of(post16b1, post16b2));
+        discussion16c.setPosts(List.of(post16c1, post16c2));
+        discussion17a.setPosts(List.of(post17a1, post17a2));
+        discussion17b.setPosts(List.of(post17b1, post17b2));
+        discussion17c.setPosts(List.of(post17c1, post17c2));
+        discussion17d.setPosts(List.of(post17d1, post17d2));
+        discussion18a.setPosts(List.of(post18a1, post18a2));
+        discussion18b.setPosts(List.of(post18b1, post18b2));
+        discussion18c.setPosts(List.of(post18c1, post18c2));
+        discussion19a.setPosts(List.of(post19a1, post19a2));
+        discussion19b.setPosts(List.of(post19b1, post19b2));
+        discussion19c.setPosts(List.of(post19c1, post19c2));
+        discussion20a.setPosts(List.of(post20a1, post20a2));
+        discussion20b.setPosts(List.of(post20b1, post20b2));
+        discussion20c.setPosts(List.of(post20c1, post20c2));
+        discussion20d.setPosts(List.of(post20d1, post20d2));
+
 
         Comment comment1a1 = createComment("This is a great explanation of how variables can be used in programming. I like the example you provided about keeping track of player scores.", post1a1, student2);
         Comment comment1b1 = createComment("Your insights on type conversion and its importance in data manipulation are very helpful.", post1b1, student2);
@@ -1102,6 +1186,90 @@ public class Seeder implements CommandLineRunner {
         Comment comment20c1 = createComment("Great discussion on the laws of thermodynamics and energy transfer principles! Your explanation of their applications in engineering problems is very informative.", post20c1, student10);
         Comment comment20d1 = createComment("Your explanation of the properties and behaviors of different materials is very clear. The practical example you provided is very helpful.", post20d1, student10);
 
+
+        post1a1.setComments(List.of(comment1a1));
+        post1b1.setComments(List.of(comment1b1));
+        post1c1.setComments(List.of(comment1c1));
+        post1d1.setComments(List.of(comment1d1));
+        post1e1.setComments(List.of(comment1e1));
+        post1f1.setComments(List.of(comment1f1));
+        post2a1.setComments(List.of(comment2a1));
+        post2b1.setComments(List.of(comment2b1));
+        post2c1.setComments(List.of(comment2c1));
+        post2d1.setComments(List.of(comment2d1));
+        post2e1.setComments(List.of(comment2e1));
+        post2f1.setComments(List.of(comment2f1));
+        post3a1.setComments(List.of(comment3a1));
+        post3b1.setComments(List.of(comment3b1));
+        post3c1.setComments(List.of(comment3c1));
+        post3d1.setComments(List.of(comment3d1));
+        post4a1.setComments(List.of(comment4a1));
+        post4b1.setComments(List.of(comment4b1));
+        post4c1.setComments(List.of(comment4c1));
+        post4d1.setComments(List.of(comment4d1));
+        post5a1.setComments(List.of(comment5a1));
+        post5b1.setComments(List.of(comment5b1));
+        post5c1.setComments(List.of(comment5c1));
+        post5d1.setComments(List.of(comment5d1));
+        post6a1.setComments(List.of(comment6a1));
+        post6b1.setComments(List.of(comment6b1));
+        post6c1.setComments(List.of(comment6c1));
+        post6d1.setComments(List.of(comment6d1));
+        post6e1.setComments(List.of(comment6e1));
+        post7a1.setComments(List.of(comment7a1));
+        post7b1.setComments(List.of(comment7b1));
+        post7c1.setComments(List.of(comment7c1));
+        post7d1.setComments(List.of(comment7d1));
+        post8a1.setComments(List.of(comment8a1));
+        post8b1.setComments(List.of(comment8b1));
+        post8c1.setComments(List.of(comment8c1));
+        post8d1.setComments(List.of(comment8d1));
+        post8e1.setComments(List.of(comment8e1));
+        post9a1.setComments(List.of(comment9a1));
+        post9b1.setComments(List.of(comment9b1));
+        post9c1.setComments(List.of(comment9c1));
+        post10a1.setComments(List.of(comment10a1));
+        post10b1.setComments(List.of(comment10b1));
+        post10c1.setComments(List.of(comment10c1));
+        post10d1.setComments(List.of(comment10d1));
+        post11a1.setComments(List.of(comment11a1));
+        post11b1.setComments(List.of(comment11b1));
+        post11c1.setComments(List.of(comment11c1));
+        post11d1.setComments(List.of(comment11d1));
+        post12a1.setComments(List.of(comment12a1));
+        post12b1.setComments(List.of(comment12b1));
+        post12c1.setComments(List.of(comment12c1));
+        post12d1.setComments(List.of(comment12d1));
+        post12e1.setComments(List.of(comment12e1));
+        post13a1.setComments(List.of(comment13a1));
+        post13b1.setComments(List.of(comment13b1));
+        post13c1.setComments(List.of(comment13c1));
+        post13d1.setComments(List.of(comment13d1));
+        post14a1.setComments(List.of(comment14a1));
+        post14b1.setComments(List.of(comment14b1));
+        post14c1.setComments(List.of(comment14c1));
+        post14d1.setComments(List.of(comment14d1));
+        post15a1.setComments(List.of(comment15a1));
+        post15b1.setComments(List.of(comment15b1));
+        post15c1.setComments(List.of(comment15c1));
+        post16a1.setComments(List.of(comment16a1));
+        post16b1.setComments(List.of(comment16b1));
+        post16c1.setComments(List.of(comment16c1));
+        post17a1.setComments(List.of(comment17a1));
+        post17b1.setComments(List.of(comment17b1));
+        post17c1.setComments(List.of(comment17c1));
+        post17d1.setComments(List.of(comment17d1));
+        post18a1.setComments(List.of(comment18a1));
+        post18b1.setComments(List.of(comment18b1));
+        post18c1.setComments(List.of(comment18c1));
+        post19a1.setComments(List.of(comment19a1));
+        post19b1.setComments(List.of(comment19b1));
+        post19c1.setComments(List.of(comment19c1));
+        post20a1.setComments(List.of(comment20a1));
+        post20b1.setComments(List.of(comment20b1));
+        post20c1.setComments(List.of(comment20c1));
+        post20d1.setComments(List.of(comment20d1));
+
         //Schedules
         Schedule scheduleStudent1 = createSchedule("Student 1's Fall Schedule", "List of courses for student 1 in fall 2024", student1, fall2024, course1, course2, course3, course4);
         Schedule scheduleStudent2 = createSchedule("Student 2's Fall Schedule", "List of courses for student 2 in fall 2024", student2, fall2024, course1, course2, course3, course4);
@@ -1198,6 +1366,17 @@ public class Seeder implements CommandLineRunner {
         course19.setSemesters(List.of(fall2024, spring2025));
         course20.setSemesters(List.of(fall2024, spring2025));
 
+        fall2024.setSchedules(List.of(scheduleStudent1, scheduleStudent2, scheduleStudent3, scheduleStudent4, scheduleStudent5, scheduleStudent6, scheduleStudent7, scheduleStudent8, scheduleStudent9, scheduleStudent10));
+        fall2024.setCourses(List.of(course1, course2, course3, course4, course5, course6, course7, course8, course9, course10, course11, course12, course13, course14, course15, course16, course17, course18, course19, course20));
+        spring2025.setSchedules(List.of(scheduleStudent1, scheduleStudent2, scheduleStudent3, scheduleStudent4, scheduleStudent5, scheduleStudent6, scheduleStudent7, scheduleStudent8, scheduleStudent9, scheduleStudent10));
+        spring2025.setCourses(List.of(course1, course2, course3, course4, course5, course6, course7, course8, course9, course10, course11, course12, course13, course14, course15, course16, course17, course18, course19, course20));
+
+
+        createFacultyWithDetails(faculty1, List.of(announcement1, announcement8), List.of(lesson1a, lesson1b, lesson1c, lesson1d, lesson1e, lesson1f, lesson6a, lesson6b, lesson6c, lesson6d, lesson6e, lesson11a, lesson11b, lesson11c, lesson11d, lesson16a, lesson16b, lesson16c), List.of(discussion1a, discussion1b, discussion1c, discussion1d, discussion1e, discussion1f, discussion6a, discussion6b, discussion6c, discussion6d, discussion6e, discussion11a, discussion11b, discussion11c, discussion11d, discussion16a, discussion16b, discussion16c));
+        createFacultyWithDetails(faculty2, List.of(announcement2, announcement7), List.of(lesson2a, lesson2b, lesson2c, lesson2d, lesson2e, lesson2f, lesson7a, lesson7b, lesson7c, lesson7d, lesson12a, lesson12b, lesson12c, lesson12d, lesson12e, lesson17a, lesson17b, lesson17c, lesson17d), List.of(discussion2a, discussion2b, discussion2c, discussion2d, discussion2e, discussion2f, discussion7a, discussion7b, discussion7c, discussion7d, discussion12a, discussion12b, discussion12c, discussion12d, discussion12e, discussion17a, discussion17b, discussion17c, discussion17d));
+        createFacultyWithDetails(faculty3, List.of(announcement3), List.of(lesson3a, lesson3b, lesson3c, lesson3d, lesson8a, lesson8b, lesson8c, lesson8d, lesson8e, lesson13a, lesson13b, lesson13c, lesson13d, lesson18a, lesson18b, lesson18c), List.of(discussion3a, discussion3b, discussion3c, discussion3d, discussion8a, discussion8b, discussion8c, discussion8d, discussion8e, discussion13a, discussion13b, discussion13c, discussion13d, discussion18a, discussion18b, discussion18c));
+        createFacultyWithDetails(faculty4, List.of(announcement4), List.of(lesson4a, lesson4b, lesson4c, lesson4d, lesson9a, lesson9b, lesson9c, lesson14a, lesson14b, lesson14c, lesson14d, lesson19a, lesson19b, lesson19c), List.of(discussion4a, discussion4b, discussion4c, discussion4d, discussion9a, discussion9b, discussion9c, discussion14a, discussion14b, discussion14c, discussion14d, discussion19a, discussion19b, discussion19c));
+        createFacultyWithDetails(faculty5, List.of(announcement5, announcement6), List.of(lesson5a, lesson5b, lesson5c, lesson5d, lesson10a, lesson10b, lesson10c, lesson10d, lesson15a, lesson15b, lesson15c, lesson20a, lesson20b, lesson20c, lesson20d), List.of(discussion5a, discussion5b, discussion5c, discussion5d, discussion10a, discussion10b, discussion10c, discussion10d, discussion15a, discussion15b, discussion15c, discussion20a, discussion20b, discussion20c, discussion20d));
 
         attendanceRepo.saveAllAndFlush(Arrays.asList(attendance1, attendance2, attendance3, attendance4, attendance5, attendance6, attendance7, attendance8, attendance9, attendance10, attendance11, attendance12, attendance13, attendance14, attendance15, attendance16, attendance17, attendance18, attendance19, attendance20));
         resourceRepo.saveAllAndFlush(Arrays.asList(resource1a, resource1b, resource2a, resource2b, resource3a, resource3b, resource4a, resource4b, resource5a, resource5b, resource6a, resource6b, resource7a, resource7b, resource8a, resource8b, resource9a, resource9b, resource10a, resource10b, resource11a, resource11b, resource12a, resource12b, resource13a, resource13b, resource14a, resource14b, resource15a, resource15b, resource16a, resource16b, resource17a, resource17b, resource18a, resource18b, resource19a, resource19b, resource20a, resource20b));
@@ -1217,7 +1396,6 @@ public class Seeder implements CommandLineRunner {
 
 
     }
-
     public static Faculty createFaculty(String username, String password, String firstName, String lastName, String email, String phoneNumber, int age, String gender, String address, boolean isAdmin, boolean isTeacher, double salary) {
         Credential credential = new Credential();
         credential.setUsername(username);
@@ -1446,6 +1624,13 @@ public class Seeder implements CommandLineRunner {
         feedback.setSubmission(submission);
         feedback.setFeedbackDate(Timestamp.valueOf(LocalDateTime.now()));
         return feedback;
+    }
+
+    public static Faculty createFacultyWithDetails(Faculty faculty, List<Announcement> announcements, List<Lesson> lessons, List<Discussion> discussions) {
+        faculty.setAnnouncements(announcements);
+        faculty.setLessons(lessons);
+        faculty.setDiscussions(discussions);
+        return faculty;
     }
 
 }
