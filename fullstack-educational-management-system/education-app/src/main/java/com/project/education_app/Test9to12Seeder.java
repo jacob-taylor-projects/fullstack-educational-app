@@ -91,6 +91,8 @@ public class Test9to12Seeder implements CommandLineRunner {
 
         // Creating the test for Unit 1: Machine Learning
         Test test9a = createTest("Machine Learning Test", faculty4, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus9, false);
+        addStudentToTest(test9a, student5);
+        addStudentToTest(test9a, student6);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa9a_1 = createProblemAnswer("What is machine learning?", "Machine learning is a subset of artificial intelligence that involves developing algorithms that enable computers to learn from and make predictions based on data.");
@@ -117,6 +119,8 @@ public class Test9to12Seeder implements CommandLineRunner {
         System.out.println("Test for 'Machine Learning' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Neural Networks
         Test test9b = createTest("Neural Networks Test", faculty4, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus9, false);
+        addStudentToTest(test9b, student5);
+        addStudentToTest(test9b, student6);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa9b_1 = createProblemAnswer("What is a neural network?", "A neural network is a set of algorithms modeled after the human brain, designed to recognize patterns and make predictions. It consists of layers of interconnected nodes (neurons) that process and transmit information.");
@@ -143,6 +147,8 @@ public class Test9to12Seeder implements CommandLineRunner {
         System.out.println("Test for 'Neural Networks' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Natural Language Processing
         Test test9c = createTest("Natural Language Processing Test", faculty4, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus9, false);
+        addStudentToTest(test9c, student5);
+        addStudentToTest(test9c, student6);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa9c_1 = createProblemAnswer("What is natural language processing (NLP)?", "Natural language processing (NLP) is a field of artificial intelligence that enables computers to understand, interpret, and generate human language.");
@@ -169,6 +175,8 @@ public class Test9to12Seeder implements CommandLineRunner {
         System.out.println("Test for 'Natural Language Processing' unit created with 10 problem answers.");
 // Creating the test for Unit 1: Threat Analysis
         Test test10a = createTest("Threat Analysis Test", faculty5, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+        addStudentToTest(test10a, student5);
+        addStudentToTest(test10a, student6);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa10a_1 = createProblemAnswer("What is threat analysis?", "Threat analysis is the process of identifying potential security threats and vulnerabilities in a system or network. It involves assessing risks and implementing strategies to mitigate these threats.");
@@ -195,6 +203,8 @@ public class Test9to12Seeder implements CommandLineRunner {
         System.out.println("Test for 'Threat Analysis' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Encryption
         Test test10b = createTest("Encryption Test", faculty5, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+        addStudentToTest(test10b, student5);
+        addStudentToTest(test10b, student6);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa10b_1 = createProblemAnswer("What is encryption?", "Encryption is the process of converting information into a secure format that can only be read by authorized parties. It protects data by transforming it into an unreadable form.");
@@ -221,6 +231,8 @@ public class Test9to12Seeder implements CommandLineRunner {
         System.out.println("Test for 'Encryption' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Network Security
         Test test10c = createTest("Network Security Test", faculty5, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+        addStudentToTest(test10c, student5);
+        addStudentToTest(test10c, student6);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa10c_1 = createProblemAnswer("What is network security?", "Network security involves measures and protocols to protect data during transmission across networks, preventing unauthorized access and ensuring data integrity.");
@@ -247,6 +259,8 @@ public class Test9to12Seeder implements CommandLineRunner {
         System.out.println("Test for 'Network Security' unit created with 10 problem answers.");
 // Creating the test for Unit 4: Secure Coding
         Test test10d = createTest("Secure Coding Test", faculty5, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+        addStudentToTest(test10d, student5);
+        addStudentToTest(test10d, student6);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa10d_1 = createProblemAnswer("What is secure coding?", "Secure coding involves writing software in a way that minimizes vulnerabilities and ensures the software is resistant to attacks. It involves following best practices and guidelines to prevent security flaws.");
@@ -274,6 +288,8 @@ public class Test9to12Seeder implements CommandLineRunner {
         System.out.println("Test for 'Secure Coding' unit created with 10 problem answers.");
 // Creating the test for Unit 1: Limits
         Test test11a = createTest("Limits Test", faculty1, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+        addStudentToTest(test11a, student5);
+        addStudentToTest(test11a, student6);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa11a_1 = createProblemAnswer("What is a limit in calculus?", "A limit is the value that a function approaches as the input approaches a certain point. It is used to define continuity, derivatives, and integrals.");
@@ -300,6 +316,8 @@ public class Test9to12Seeder implements CommandLineRunner {
         System.out.println("Test for 'Limits' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Derivatives
         Test test11b = createTest("Derivatives Test", faculty1, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+        addStudentToTest(test11b, student5);
+        addStudentToTest(test11b, student6);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa11b_1 = createProblemAnswer("What is a derivative?", "A derivative measures how a function changes as its input changes. It represents the rate of change or slope of the function at a given point.");
@@ -326,6 +344,8 @@ public class Test9to12Seeder implements CommandLineRunner {
         System.out.println("Test for 'Derivatives' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Integrals
         Test test11c = createTest("Integrals Test", faculty1, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+        addStudentToTest(test11c, student5);
+        addStudentToTest(test11c, student6);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa11c_1 = createProblemAnswer("What is an integral?", "An integral is a mathematical concept that represents the accumulation of quantities. It is used to calculate areas, volumes, and other quantities that accumulate over a region.");
@@ -352,6 +372,8 @@ public class Test9to12Seeder implements CommandLineRunner {
         System.out.println("Test for 'Integrals' unit created with 10 problem answers.");
 // Creating the test for Unit 4: Applications of Calculus
         Test test11d = createTest("Applications of Calculus Test", faculty1, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+        addStudentToTest(test11d, student5);
+        addStudentToTest(test11d, student6);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa11d_1 = createProblemAnswer("How is calculus applied in physics?", "In physics, calculus is used to model and analyze the motion of objects, calculate forces and energy, and describe the behavior of physical systems. Examples include finding the velocity and acceleration of objects and solving differential equations.");
@@ -379,6 +401,8 @@ public class Test9to12Seeder implements CommandLineRunner {
         System.out.println("Test for 'Applications of Calculus' unit created with 10 problem answers.");
 // Creating the test for Unit 1: Vectors
         Test test12a = createTest("Vectors Test", faculty2, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+        addStudentToTest(test12a, student5);
+        addStudentToTest(test12a, student6);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa12a_1 = createProblemAnswer("What is a vector?", "A vector is a quantity that has both magnitude and direction. It can be represented graphically by an arrow or algebraically by coordinates.");
@@ -405,6 +429,8 @@ public class Test9to12Seeder implements CommandLineRunner {
         System.out.println("Test for 'Vectors' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Matrices
         Test test12b = createTest("Matrices Test", faculty2, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+        addStudentToTest(test12b, student5);
+        addStudentToTest(test12b, student6);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa12b_1 = createProblemAnswer("What is a matrix?", "A matrix is a rectangular array of numbers arranged in rows and columns. It is used to represent linear transformations and solve systems of linear equations.");
@@ -431,6 +457,8 @@ public class Test9to12Seeder implements CommandLineRunner {
         System.out.println("Test for 'Matrices' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Determinants
         Test test12c = createTest("Determinants Test", faculty2, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+        addStudentToTest(test12c, student5);
+        addStudentToTest(test12c, student6);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa12c_1 = createProblemAnswer("What is a determinant?", "A determinant is a scalar value that can be computed from the elements of a square matrix. It provides important properties of the matrix, such as whether it is invertible.");
@@ -457,6 +485,8 @@ public class Test9to12Seeder implements CommandLineRunner {
         System.out.println("Test for 'Determinants' unit created with 10 problem answers.");
 // Creating the test for Unit 4: Eigenvalues
         Test test12d = createTest("Eigenvalues Test", faculty2, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+        addStudentToTest(test12d, student5);
+        addStudentToTest(test12d, student6);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa12d_1 = createProblemAnswer("What is an eigenvalue?", "An eigenvalue is a scalar value associated with a matrix that, when multiplied by its corresponding eigenvector, yields the same eigenvector. It is a special number that provides insight into the matrix's properties.");
@@ -483,6 +513,8 @@ public class Test9to12Seeder implements CommandLineRunner {
         System.out.println("Test for 'Eigenvalues' unit created with 10 problem answers.");
 // Creating the test for Unit 5: Eigenvectors
         Test test12e = createTest("Eigenvectors Test", faculty2, Date.from(LocalDate.of(2030, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+        addStudentToTest(test12e, student5);
+        addStudentToTest(test12e, student6);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa12e_1 = createProblemAnswer("What is an eigenvector?", "An eigenvector is a non-zero vector that changes only in scale (not direction) when a linear transformation is applied to it. It is associated with a specific eigenvalue.");

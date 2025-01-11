@@ -90,6 +90,8 @@ public class Test17to20Seeder implements CommandLineRunner {
 
         // Creating the test for Unit 1: Cell Structure
         Test test17a = createTest("Cell Structure Test", faculty2, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
+        addStudentToTest(test17a, student9);
+        addStudentToTest(test17a, student10);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa17a_1 = createProblemAnswer("What are the main components of a cell?", "The main components of a cell include the cell membrane, nucleus, cytoplasm, and various organelles such as mitochondria, ribosomes, endoplasmic reticulum, Golgi apparatus, and lysosomes.");
@@ -116,7 +118,8 @@ public class Test17to20Seeder implements CommandLineRunner {
         System.out.println("Test for 'Cell Structure' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Genetics
         Test test17b = createTest("Genetics Test", faculty2, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
-
+        addStudentToTest(test17b, student9);
+        addStudentToTest(test17b, student10);
 // Creating and adding problem answers to the test
         ProblemAnswer pa17b_1 = createProblemAnswer("What is genetics?", "Genetics is the study of heredity and the variation of inherited characteristics. It involves understanding how traits are passed from parents to offspring through genes.");
         addTestToProblemAnswer(pa17b_1, test17b);
@@ -142,6 +145,8 @@ public class Test17to20Seeder implements CommandLineRunner {
         System.out.println("Test for 'Genetics' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Evolution
         Test test17c = createTest("Evolution Test", faculty2, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
+        addStudentToTest(test17c, student9);
+        addStudentToTest(test17c, student10);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa17c_1 = createProblemAnswer("What is the theory of evolution?", "The theory of evolution, developed by Charles Darwin, explains how species change over time through the process of natural selection. It states that organisms with traits better suited to their environment are more likely to survive and reproduce, passing those traits to their offspring.");
@@ -168,6 +173,8 @@ public class Test17to20Seeder implements CommandLineRunner {
         System.out.println("Test for 'Evolution' unit created with 10 problem answers.");
 // Creating the test for Unit 4: Ecology
         Test test17d = createTest("Ecology Test", faculty2, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
+        addStudentToTest(test17d, student9);
+        addStudentToTest(test17d, student10);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa17d_1 = createProblemAnswer("What is ecology?", "Ecology is the study of interactions between organisms and their environment. It examines how living things interact with each other and with their physical surroundings.");
@@ -194,6 +201,8 @@ public class Test17to20Seeder implements CommandLineRunner {
         System.out.println("Test for 'Ecology' unit created with 10 problem answers.");
 // Creating the test for Unit 1: Engineering Disciplines
         Test test18a = createTest("Engineering Disciplines Test", faculty3, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus18, false);
+        addStudentToTest(test18a, student9);
+        addStudentToTest(test18a, student10);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa18a_1 = createProblemAnswer("What is civil engineering?", "Civil engineering is a discipline that deals with the design, construction, and maintenance of infrastructure such as roads, bridges, buildings, and water supply systems. Civil engineers work on projects that improve the built environment and enhance public safety.");
@@ -220,6 +229,8 @@ public class Test17to20Seeder implements CommandLineRunner {
         System.out.println("Test for 'Engineering Disciplines' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Problem-Solving
         Test test18b = createTest("Problem-Solving Test", faculty3, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus18, false);
+        addStudentToTest(test18b, student9);
+        addStudentToTest(test18b, student10);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa18b_1 = createProblemAnswer("What is the engineering problem-solving process?", "The engineering problem-solving process is a systematic approach to addressing engineering challenges. It involves defining the problem, conducting research, generating potential solutions, selecting the best solution, implementing the solution, and evaluating the results.");
@@ -246,6 +257,8 @@ public class Test17to20Seeder implements CommandLineRunner {
         System.out.println("Test for 'Problem-Solving' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Design Process
         Test test18c = createTest("Design Process Test", faculty3, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus18, false);
+        addStudentToTest(test18c, student9);
+        addStudentToTest(test18c, student10);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa18c_1 = createProblemAnswer("What is the engineering design process?", "The engineering design process is a systematic approach to solving engineering problems. It involves defining requirements, brainstorming, prototyping, testing, and iteration to develop and refine solutions.");
@@ -272,6 +285,8 @@ public class Test17to20Seeder implements CommandLineRunner {
         System.out.println("Test for 'Design Process' unit created with 10 problem answers.");
 // Creating the test for Unit 1: Circuit Analysis
         Test test19a = createTest("Circuit Analysis Test", faculty4, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus19, false);
+        addStudentToTest(test19a, student9);
+        addStudentToTest(test19a, student10);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa19a_1 = createProblemAnswer("What is Ohm's law?", "Ohm's law states that the current flowing through a conductor between two points is directly proportional to the voltage across the two points. It is mathematically expressed as V = IR, where V is voltage, I is current, and R is resistance.");
@@ -298,6 +313,8 @@ public class Test17to20Seeder implements CommandLineRunner {
         System.out.println("Test for 'Circuit Analysis' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Signal Processing
         Test test19b = createTest("Signal Processing Test", faculty4, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus19, false);
+        addStudentToTest(test19b, student9);
+        addStudentToTest(test19b, student10);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa19b_1 = createProblemAnswer("What is signal processing?", "Signal processing is the analysis, manipulation, and interpretation of signals. It involves techniques for filtering, transforming, and extracting information from signals in various forms, such as audio, video, and data.");
@@ -324,6 +341,8 @@ public class Test17to20Seeder implements CommandLineRunner {
         System.out.println("Test for 'Signal Processing' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Systems Theory
         Test test19c = createTest("Systems Theory Test", faculty4, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus19, false);
+        addStudentToTest(test19c, student9);
+        addStudentToTest(test19c, student10);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa19c_1 = createProblemAnswer("What is systems theory?", "Systems theory is the study of systems, which are sets of interacting components working together as a whole. It focuses on understanding the behavior, structure, and dynamics of complex systems.");
@@ -350,6 +369,8 @@ public class Test17to20Seeder implements CommandLineRunner {
         System.out.println("Test for 'Systems Theory' unit created with 10 problem answers.");
 // Creating the test for Unit 1: Statics
         Test test20a = createTest("Statics Test", faculty5, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
+        addStudentToTest(test20a, student9);
+        addStudentToTest(test20a, student10);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa20a_1 = createProblemAnswer("What is statics?", "Statics is the branch of mechanics that deals with bodies at rest and forces in equilibrium. It involves analyzing force systems, calculating moments, and solving problems related to static equilibrium.");
@@ -376,6 +397,8 @@ public class Test17to20Seeder implements CommandLineRunner {
         System.out.println("Test for 'Statics' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Dynamics
         Test test20b = createTest("Dynamics Test", faculty5, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
+        addStudentToTest(test20b, student9);
+        addStudentToTest(test20b, student10);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa20b_1 = createProblemAnswer("What is dynamics?", "Dynamics is the study of bodies in motion. It involves analyzing the forces and torques that cause motion and understanding the principles of kinematics and kinetics.");
@@ -402,6 +425,8 @@ public class Test17to20Seeder implements CommandLineRunner {
         System.out.println("Test for 'Dynamics' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Thermodynamics
         Test test20c = createTest("Thermodynamics Test", faculty5, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
+        addStudentToTest(test20c, student9);
+        addStudentToTest(test20c, student10);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa20c_1 = createProblemAnswer("What is thermodynamics?", "Thermodynamics is the branch of physics that deals with the study of heat, energy, and the transformation of energy from one form to another. It involves understanding the principles governing the behavior of gases and liquids, as well as the laws of thermodynamics.");
@@ -428,6 +453,8 @@ public class Test17to20Seeder implements CommandLineRunner {
         System.out.println("Test for 'Thermodynamics' unit created with 10 problem answers.");
 // Creating the test for Unit 4: Material Science
         Test test20d = createTest("Material Science Test", faculty5, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
+        addStudentToTest(test20d, student9);
+        addStudentToTest(test20d, student10);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa20d_1 = createProblemAnswer("What is material science?", "Material science is the study of the properties and behavior of materials. It involves understanding the structure, composition, and performance of different materials and how they can be used in various engineering applications.");

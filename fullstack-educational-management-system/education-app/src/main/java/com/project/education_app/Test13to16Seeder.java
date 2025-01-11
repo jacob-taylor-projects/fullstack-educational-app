@@ -90,6 +90,8 @@ public class Test13to16Seeder implements CommandLineRunner {
 
         // Creating the test for Unit 1: Sequences and Series
         Test test13a = createTest("Sequences and Series Test", faculty3, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+        addStudentToTest(test13a, student7);
+        addStudentToTest(test13a, student8);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa13a_1 = createProblemAnswer("What is a sequence?", "A sequence is an ordered list of numbers that follows a specific pattern or rule. Each number in the sequence is called a term.");
@@ -117,6 +119,8 @@ public class Test13to16Seeder implements CommandLineRunner {
         System.out.println("Test for 'Sequences and Series' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Techniques of Integration
         Test test13b = createTest("Techniques of Integration Test", faculty3, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+        addStudentToTest(test13b, student7);
+        addStudentToTest(test13b, student8);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa13b_1 = createProblemAnswer("What is integration by parts?", "Integration by parts is a technique used to integrate the product of two functions. It is based on the product rule of differentiation and is given by the formula: ∫u dv = uv - ∫v du.");
@@ -143,6 +147,8 @@ public class Test13to16Seeder implements CommandLineRunner {
         System.out.println("Test for 'Techniques of Integration' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Multivariable Functions
         Test test13c = createTest("Multivariable Functions Test", faculty3, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+        addStudentToTest(test13c, student7);
+        addStudentToTest(test13c, student8);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa13c_1 = createProblemAnswer("What is a multivariable function?", "A multivariable function is a function that has more than one input variable. It maps a set of input variables to a single output value.");
@@ -169,6 +175,8 @@ public class Test13to16Seeder implements CommandLineRunner {
         System.out.println("Test for 'Multivariable Functions' unit created with 10 problem answers.");
 // Creating the test for Unit 4: Vector Calculus
         Test test13d = createTest("Vector Calculus Test", faculty3, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+        addStudentToTest(test13d, student7);
+        addStudentToTest(test13d, student8);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa13d_1 = createProblemAnswer("What is a vector field?", "A vector field is a function that assigns a vector to every point in a space. It represents the direction and magnitude of a vector quantity, such as velocity or force, at each point.");
@@ -195,6 +203,8 @@ public class Test13to16Seeder implements CommandLineRunner {
         System.out.println("Test for 'Vector Calculus' unit created with 10 problem answers.");
 // Creating the test for Unit 1: Logic
         Test test14a = createTest("Logic Test", faculty4, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+        addStudentToTest(test14a, student7);
+        addStudentToTest(test14a, student8);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa14a_1 = createProblemAnswer("What is propositional logic?", "Propositional logic is a branch of logic that deals with propositions, which are statements that can be either true or false. It uses logical connectives such as AND, OR, and NOT to form complex logical expressions.");
@@ -222,6 +232,8 @@ public class Test13to16Seeder implements CommandLineRunner {
         System.out.println("Test for 'Logic' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Set Theory
         Test test14b = createTest("Set Theory Test", faculty4, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+        addStudentToTest(test14b, student7);
+        addStudentToTest(test14b, student8);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa14b_1 = createProblemAnswer("What is a set?", "A set is a collection of distinct objects, considered as an object in its own right. Sets are usually denoted by capital letters and their elements are listed within curly brackets, e.g., A = {1, 2, 3}.");
@@ -248,6 +260,8 @@ public class Test13to16Seeder implements CommandLineRunner {
         System.out.println("Test for 'Set Theory' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Graph Theory
         Test test14c = createTest("Graph Theory Test", faculty4, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+        addStudentToTest(test14c, student7);
+        addStudentToTest(test14c, student8);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa14c_1 = createProblemAnswer("What is a graph?", "A graph is a mathematical structure consisting of a set of vertices (nodes) and a set of edges (lines) that connect pairs of vertices. Graphs are used to model pairwise relations between objects.");
@@ -274,6 +288,8 @@ public class Test13to16Seeder implements CommandLineRunner {
         System.out.println("Test for 'Graph Theory' unit created with 10 problem answers.");
 // Creating the test for Unit 4: Combinatorics
         Test test14d = createTest("Combinatorics Test", faculty4, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+        addStudentToTest(test14d, student7);
+        addStudentToTest(test14d, student8);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa14d_1 = createProblemAnswer("What is combinatorics?", "Combinatorics is the branch of mathematics that deals with counting, arrangement, and combination of objects. It involves studying finite structures and solving problems related to discrete objects.");
@@ -300,6 +316,8 @@ public class Test13to16Seeder implements CommandLineRunner {
         System.out.println("Test for 'Combinatorics' unit created with 10 problem answers.");
 // Creating the test for Unit 1: Newton's Laws
         Test test15a = createTest("Newton's Laws Test", faculty5, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus15, false);
+        addStudentToTest(test15a, student7);
+        addStudentToTest(test15a, student8);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa15a_1 = createProblemAnswer("What is Newton's First Law of Motion?", "Newton's First Law of Motion, also known as the Law of Inertia, states that an object will remain at rest or in uniform motion in a straight line unless acted upon by an external force.");
@@ -326,6 +344,8 @@ public class Test13to16Seeder implements CommandLineRunner {
         System.out.println("Test for 'Newton's Laws' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Energy Principles
         Test test15b = createTest("Energy Principles Test", faculty5, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus15, false);
+        addStudentToTest(test15b, student7);
+        addStudentToTest(test15b, student8);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa15b_1 = createProblemAnswer("What is kinetic energy?", "Kinetic energy is the energy possessed by an object due to its motion. It is calculated using the formula KE = 1/2 mv^2, where m is the mass and v is the velocity of the object.");
@@ -352,6 +372,8 @@ public class Test13to16Seeder implements CommandLineRunner {
         System.out.println("Test for 'Energy Principles' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Motion
         Test test15c = createTest("Motion Test", faculty5, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus15, false);
+        addStudentToTest(test15c, student7);
+        addStudentToTest(test15c, student8);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa15c_1 = createProblemAnswer("What is linear motion?", "Linear motion is the movement of an object along a straight line. It can be described by parameters such as displacement, velocity, and acceleration.");
@@ -378,6 +400,8 @@ public class Test13to16Seeder implements CommandLineRunner {
         System.out.println("Test for 'Motion' unit created with 10 problem answers.");
 // Creating the test for Unit 1: Atomic Structure
         Test test16a = createTest("Atomic Structure Test", faculty1, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus16, false);
+        addStudentToTest(test16a, student7);
+        addStudentToTest(test16a, student8);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa16a_1 = createProblemAnswer("What are the three main subatomic particles in an atom?", "The three main subatomic particles in an atom are protons, neutrons, and electrons. Protons and neutrons are located in the nucleus, while electrons orbit the nucleus.");
@@ -404,6 +428,8 @@ public class Test13to16Seeder implements CommandLineRunner {
         System.out.println("Test for 'Atomic Structure' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Chemical Bonding
         Test test16b = createTest("Chemical Bonding Test", faculty1, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus16, false);
+        addStudentToTest(test16b, student7);
+        addStudentToTest(test16b, student8);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa16b_1 = createProblemAnswer("What is an ionic bond?", "An ionic bond is a type of chemical bond formed through the electrostatic attraction between oppositely charged ions. It typically occurs between a metal and a non-metal.");
@@ -430,6 +456,8 @@ public class Test13to16Seeder implements CommandLineRunner {
         System.out.println("Test for 'Chemical Bonding' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Reactions
         Test test16c = createTest("Reactions Test", faculty1, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus16, false);
+        addStudentToTest(test16c, student7);
+        addStudentToTest(test16c, student8);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa16c_1 = createProblemAnswer("What are chemical reactions?", "Chemical reactions are processes in which one or more substances (reactants) are converted into one or more different substances (products). They involve the breaking and forming of chemical bonds.");

@@ -90,6 +90,8 @@ public class Test1to4Seeder implements CommandLineRunner {
         //Tests
 // Creating the test for Unit 1: Variables
         Test test1a = createTest("Variables Test", faculty1, Date.from(LocalDate.of(2029, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+        addStudentToTest(test1a, student1);
+        addStudentToTest(test1a, student2);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa1a_1 = createProblemAnswer("What is a variable in programming?", "A variable in programming is a storage location identified by a name that holds data which can be changed during the program's execution.");
@@ -116,6 +118,8 @@ public class Test1to4Seeder implements CommandLineRunner {
         System.out.println("Test for 'Variables' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Data Types
         Test test1b = createTest("Data Types Test", faculty1, Date.from(LocalDate.of(2029, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+        addStudentToTest(test1b, student1);
+        addStudentToTest(test1b, student2);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa1b_1 = createProblemAnswer("What is an integer in Python?", "An integer is a whole number without a fractional component.");
@@ -143,6 +147,8 @@ public class Test1to4Seeder implements CommandLineRunner {
         System.out.println("Test for 'Data Types' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Control Structures
         Test test1c = createTest("Control Structures Test", faculty1, Date.from(LocalDate.of(2029, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+        addStudentToTest(test1c, student1);
+        addStudentToTest(test1c, student2);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa1c_1 = createProblemAnswer("What is a for loop in Python?", "A for loop is a control structure that allows you to repeat a block of code a fixed number of times.");
@@ -169,6 +175,8 @@ public class Test1to4Seeder implements CommandLineRunner {
         System.out.println("Test for 'Control Structures' unit created with 10 problem answers.");
 // Creating the test for Unit 4: Functions
         Test test1d = createTest("Functions Test", faculty1, Date.from(LocalDate.of(2029, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+        addStudentToTest(test1d, student1);
+        addStudentToTest(test1d, student2);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa1d_1 = createProblemAnswer("What is a function in Python?", "A function is a block of reusable code that performs a specific task.");
@@ -195,6 +203,8 @@ public class Test1to4Seeder implements CommandLineRunner {
         System.out.println("Test for 'Functions' unit created with 10 problem answers.");
 // Creating the test for Unit 5: Modules
         Test test1e = createTest("Modules Test", faculty1, Date.from(LocalDate.of(2029, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+        addStudentToTest(test1e, student1);
+        addStudentToTest(test1e, student2);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa1e_1 = createProblemAnswer("What is a module in Python?", "A module is a file containing Python definitions and statements. It helps in organizing and reusing code.");
@@ -221,6 +231,8 @@ public class Test1to4Seeder implements CommandLineRunner {
         System.out.println("Test for 'Modules' unit created with 10 problem answers.");
 // Creating the test for Unit 6: Libraries
         Test test1f = createTest("Libraries Test", faculty1, Date.from(LocalDate.of(2029, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+        addStudentToTest(test1f, student1);
+        addStudentToTest(test1f, student2);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa1f_1 = createProblemAnswer("What is a library in Python?", "A library is a collection of modules and packages that provide pre-written code for common tasks.");
@@ -248,6 +260,8 @@ public class Test1to4Seeder implements CommandLineRunner {
         System.out.println("Test for 'Libraries' unit created with 10 problem answers.");
 // Creating the test for Unit 1: Arrays
         Test test2a = createTest("Arrays Test", faculty2, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+        addStudentToTest(test2a, student1);
+        addStudentToTest(test2a, student2);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa2a_1 = createProblemAnswer("What is an array?", "An array is a collection of elements, each identified by an index or a key, that stores data of the same type.");
@@ -274,6 +288,8 @@ public class Test1to4Seeder implements CommandLineRunner {
         System.out.println("Test for 'Arrays' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Linked Lists
         Test test2b = createTest("Linked Lists Test", faculty2, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+        addStudentToTest(test2b, student1);
+        addStudentToTest(test2b, student2);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa2b_1 = createProblemAnswer("What is a linked list?", "A linked list is a data structure consisting of nodes, where each node contains data and a reference to the next node in the sequence.");
@@ -301,6 +317,8 @@ public class Test1to4Seeder implements CommandLineRunner {
         System.out.println("Test for 'Linked Lists' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Stacks
         Test test2c = createTest("Stacks Test", faculty2, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+        addStudentToTest(test2c, student1);
+        addStudentToTest(test2c, student2);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa2c_1 = createProblemAnswer("What is a stack?", "A stack is a last-in, first-out (LIFO) data structure where the last element added is the first one to be removed.");
@@ -327,6 +345,8 @@ public class Test1to4Seeder implements CommandLineRunner {
         System.out.println("Test for 'Stacks' unit created with 10 problem answers.");
 // Creating the test for Unit 4: Queues
         Test test2d = createTest("Queues Test", faculty2, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+        addStudentToTest(test2d, student1);
+        addStudentToTest(test2d, student2);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa2d_1 = createProblemAnswer("What is a queue?", "A queue is a first-in, first-out (FIFO) data structure where the first element added is the first one to be removed.");
@@ -353,6 +373,8 @@ public class Test1to4Seeder implements CommandLineRunner {
         System.out.println("Test for 'Queues' unit created with 10 problem answers.");
 // Creating the test for Unit 5: Trees
         Test test2e = createTest("Trees Test", faculty2, Date.from(LocalDate.of(2030, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+        addStudentToTest(test2e, student1);
+        addStudentToTest(test2e, student2);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa2e_1 = createProblemAnswer("What is a tree in data structures?", "A tree is a hierarchical data structure consisting of nodes, where each node has a value and references to its children.");
@@ -380,6 +402,8 @@ public class Test1to4Seeder implements CommandLineRunner {
         System.out.println("Test for 'Trees' unit created with 10 problem answers.");
 // Creating the test for Unit 6: Graphs
         Test test2f = createTest("Graphs Test", faculty2, Date.from(LocalDate.of(2030, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+        addStudentToTest(test2f, student1);
+        addStudentToTest(test2f, student2);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa2f_1 = createProblemAnswer("What is a graph in data structures?", "A graph is a collection of nodes (vertices) and edges that connect pairs of nodes, used to represent relationships between entities.");
@@ -406,6 +430,8 @@ public class Test1to4Seeder implements CommandLineRunner {
         System.out.println("Test for 'Graphs' unit created with 10 problem answers.");
 // Creating the test for Unit 1: Sorting
         Test test3a = createTest("Sorting Test", faculty3, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus3, false);
+        addStudentToTest(test3a, student1);
+        addStudentToTest(test3a, student2);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa3a_1 = createProblemAnswer("What is bubble sort?", "Bubble sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order.");
@@ -433,6 +459,8 @@ public class Test1to4Seeder implements CommandLineRunner {
         System.out.println("Test for 'Sorting' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Searching
         Test test3b = createTest("Searching Test", faculty3, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus3, false);
+        addStudentToTest(test3b, student1);
+        addStudentToTest(test3b, student2);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa3b_1 = createProblemAnswer("What is linear search?", "Linear search is a simple searching algorithm that checks each element in the list sequentially until the desired element is found or the list ends.");
@@ -460,6 +488,8 @@ public class Test1to4Seeder implements CommandLineRunner {
         System.out.println("Test for 'Searching' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Graph Algorithms
         Test test3c = createTest("Graph Algorithms Test", faculty3, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus3, false);
+        addStudentToTest(test3c, student1);
+        addStudentToTest(test3c, student2);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa3c_1 = createProblemAnswer("What is depth-first search (DFS)?", "Depth-first search (DFS) is a graph traversal algorithm that explores as far as possible along each branch before backtracking.");
@@ -486,6 +516,8 @@ public class Test1to4Seeder implements CommandLineRunner {
         System.out.println("Test for 'Graph Algorithms' unit created with 10 problem answers.");
 // Creating the test for Unit 4: Dynamic Programming
         Test test3d = createTest("Dynamic Programming Test", faculty3, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus3, false);
+        addStudentToTest(test3d, student1);
+        addStudentToTest(test3d, student2);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa3d_1 = createProblemAnswer("What is dynamic programming?", "Dynamic programming is a method for solving complex problems by breaking them down into simpler subproblems and solving each subproblem just once, storing its solution.");
@@ -512,6 +544,8 @@ public class Test1to4Seeder implements CommandLineRunner {
         System.out.println("Test for 'Dynamic Programming' unit created with 10 problem answers.");
 // Creating the test for Unit 1: Relational Databases
         Test test4a = createTest("Relational Databases Test", faculty4, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus4, false);
+        addStudentToTest(test4a, student1);
+        addStudentToTest(test4a, student2);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa4a_1 = createProblemAnswer("What is a relational database?", "A relational database is a type of database that stores data in tables with rows and columns, where relationships between tables are established using keys.");
@@ -538,6 +572,8 @@ public class Test1to4Seeder implements CommandLineRunner {
         System.out.println("Test for 'Relational Databases' unit created with 10 problem answers.");
 // Creating the test for Unit 2: SQL
         Test test4b = createTest("SQL Test", faculty4, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus4, false);
+        addStudentToTest(test4b, student1);
+        addStudentToTest(test4b, student2);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa4b_1 = createProblemAnswer("What is SQL?", "SQL (Structured Query Language) is the standard language for querying and manipulating databases.");
@@ -565,6 +601,8 @@ public class Test1to4Seeder implements CommandLineRunner {
         System.out.println("Test for 'SQL' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Transactions
         Test test4c = createTest("Transactions Test", faculty4, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus4, false);
+        addStudentToTest(test4c, student1);
+        addStudentToTest(test4c, student2);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa4c_1 = createProblemAnswer("What is a transaction in a database?", "A transaction is a sequence of one or more SQL operations that are executed as a single unit of work. It ensures data integrity and consistency.");
@@ -592,7 +630,8 @@ public class Test1to4Seeder implements CommandLineRunner {
         System.out.println("Test for 'Transactions' unit created with 10 problem answers.");
 // Creating the test for Unit 4: Database Design
         Test test4d = createTest("Database Design Test", faculty4, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus4, false);
-
+        addStudentToTest(test4d, student1);
+        addStudentToTest(test4d, student2);
 // Creating and adding problem answers to the test
         ProblemAnswer pa4d_1 = createProblemAnswer("What is database design?", "Database design is the process of creating a detailed data model of a database, which includes the structure of tables, relationships, and constraints to efficiently store and retrieve data.");
         addTestToProblemAnswer(pa4d_1, test4d);

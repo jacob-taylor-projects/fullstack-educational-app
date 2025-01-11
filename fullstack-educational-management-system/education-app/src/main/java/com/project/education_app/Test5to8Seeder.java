@@ -91,6 +91,8 @@ public class Test5to8Seeder implements CommandLineRunner {
 
 // Creating the test for Unit 1: Processes
         Test test5a = createTest("Processes Test", faculty5, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus5, false);
+        addStudentToTest(test5a, student3);
+        addStudentToTest(test5a, student4);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa5a_1 = createProblemAnswer("What is a process in operating systems?", "A process is an instance of a program in execution, including the program code, current activity, and allocated resources.");
@@ -117,6 +119,8 @@ public class Test5to8Seeder implements CommandLineRunner {
         System.out.println("Test for 'Processes' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Memory Management
         Test test5b = createTest("Memory Management Test", faculty5, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus5, false);
+        addStudentToTest(test5b, student3);
+        addStudentToTest(test5b, student4);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa5b_1 = createProblemAnswer("What is memory management in operating systems?", "Memory management is the process by which an operating system handles the allocation, tracking, and deallocation of memory resources.");
@@ -143,6 +147,8 @@ public class Test5to8Seeder implements CommandLineRunner {
         System.out.println("Test for 'Memory Management' unit created with  problem answers.");
 // Creating the test for Unit 3: File Systems
         Test test5c = createTest("File Systems Test", faculty5, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus5, false);
+        addStudentToTest(test5c, student3);
+        addStudentToTest(test5c, student4);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa5c_1 = createProblemAnswer("What is a file system in operating systems?", "A file system is a method used by an operating system to organize, store, retrieve, and manage files and directories on a storage device.");
@@ -169,6 +175,8 @@ public class Test5to8Seeder implements CommandLineRunner {
         System.out.println("Test for 'File Systems' unit created with 10 problem answers.");
 // Creating the test for Unit 4: Scheduling
         Test test5d = createTest("Scheduling Test", faculty5, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus5, false);
+        addStudentToTest(test5d, student3);
+        addStudentToTest(test5d, student4);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa5d_1 = createProblemAnswer("What is CPU scheduling?", "CPU scheduling is the process by which the operating system decides which processes to run, in what order, and for how long, to ensure efficient use of the CPU.");
@@ -196,6 +204,8 @@ public class Test5to8Seeder implements CommandLineRunner {
         System.out.println("Test for 'Scheduling' unit created with 10 problem answers.");
 // Creating the test for Unit 1: OSI Model
         Test test6a = createTest("OSI Model Test", faculty1, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus6, false);
+        addStudentToTest(test6a, student3);
+        addStudentToTest(test6a, student4);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa6a_1 = createProblemAnswer("What is the OSI model?", "The OSI (Open Systems Interconnection) model is a conceptual framework that standardizes the functions of a telecommunication or computing system into seven distinct layers.");
@@ -222,6 +232,8 @@ public class Test5to8Seeder implements CommandLineRunner {
         System.out.println("Test for 'OSI Model' unit created with 10 problem answers.");
 // Creating the test for Unit 2: TCP/IP
         Test test6b = createTest("TCP/IP Test", faculty1, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus6, false);
+        addStudentToTest(test6b, student3);
+        addStudentToTest(test6b, student4);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa6b_1 = createProblemAnswer("What is the TCP/IP model?", "The TCP/IP (Transmission Control Protocol/Internet Protocol) model is a foundational protocol suite for the internet, consisting of four layers: Link, Internet, Transport, and Application.");
@@ -248,6 +260,8 @@ public class Test5to8Seeder implements CommandLineRunner {
         System.out.println("Test for 'TCP/IP' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Network Protocols
         Test test6c = createTest("Network Protocols Test", faculty1, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus6, false);
+        addStudentToTest(test6c, student3);
+        addStudentToTest(test6c, student4);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa6c_1 = createProblemAnswer("What is HTTP?", "HTTP (Hypertext Transfer Protocol) is a protocol used for transmitting web pages over the internet. It defines how messages are formatted and transmitted, and how web servers and browsers should respond to various commands.");
@@ -274,6 +288,8 @@ public class Test5to8Seeder implements CommandLineRunner {
         System.out.println("Test for 'Network Protocols' unit created with 10 problem answers.");
 // Creating the test for Unit 4: Routing
         Test test6d = createTest("Routing Test", faculty1, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus6, false);
+        addStudentToTest(test6d, student3);
+        addStudentToTest(test6d, student4);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa6d_1 = createProblemAnswer("What is routing in networking?", "Routing is the process of selecting paths in a network along which to send data packets from a source to a destination.");
@@ -301,6 +317,8 @@ public class Test5to8Seeder implements CommandLineRunner {
         System.out.println("Test for 'Routing' unit created with 10 problem answers.");
 // Creating the test for Unit 5: Switching
         Test test6e = createTest("Switching Test", faculty1, Date.from(LocalDate.of(2030, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus6, false);
+        addStudentToTest(test6e, student3);
+        addStudentToTest(test6e, student4);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa6e_1 = createProblemAnswer("What is switching in networking?", "Switching is the technique used to forward data packets from one device to another within a network. It determines the path that data packets take through the network.");
@@ -327,6 +345,8 @@ public class Test5to8Seeder implements CommandLineRunner {
         System.out.println("Test for 'Switching' unit created with 10 problem answers.");
 // Creating the test for Unit 1: Software Development Life Cycle
         Test test7a = createTest("Software Development Life Cycle Test", faculty2, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus7, false);
+        addStudentToTest(test7a, student3);
+        addStudentToTest(test7a, student4);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa7a_1 = createProblemAnswer("What is the Software Development Life Cycle (SDLC)?", "The SDLC is a process for planning, creating, testing, and deploying an information system. It provides a structured approach to software development.");
@@ -353,6 +373,8 @@ public class Test5to8Seeder implements CommandLineRunner {
         System.out.println("Test for 'Software Development Life Cycle' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Agile
         Test test7b = createTest("Agile Test", faculty2, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus7, false);
+        addStudentToTest(test7b, student3);
+        addStudentToTest(test7b, student4);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa7b_1 = createProblemAnswer("What is Agile methodology?", "Agile methodology is an iterative approach to software development that emphasizes flexibility, collaboration, and customer feedback. It aims to deliver small, incremental improvements to the software throughout the development process.");
@@ -379,6 +401,8 @@ public class Test5to8Seeder implements CommandLineRunner {
         System.out.println("Test for 'Agile' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Waterfall
         Test test7c = createTest("Waterfall Test", faculty2, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus7, false);
+        addStudentToTest(test7c, student3);
+        addStudentToTest(test7c, student4);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa7c_1 = createProblemAnswer("What is the Waterfall model?", "The Waterfall model is a linear and sequential approach to software development, where each phase must be completed before the next phase begins. It follows a top-down approach.");
@@ -405,6 +429,8 @@ public class Test5to8Seeder implements CommandLineRunner {
         System.out.println("Test for 'Waterfall' unit created with 10 problem answers.");
 // Creating the test for Unit 4: Project Management
         Test test7d = createTest("Project Management Test", faculty2, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus7, false);
+        addStudentToTest(test7d, student3);
+        addStudentToTest(test7d, student4);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa7d_1 = createProblemAnswer("What is project management?", "Project management is the process of planning, organizing, and managing resources to achieve specific goals and objectives within a defined timeframe and budget.");
@@ -431,6 +457,8 @@ public class Test5to8Seeder implements CommandLineRunner {
         System.out.println("Test for 'Project Management' unit created with 10 problem answers.");
 // Creating the test for Unit 1: HTML
         Test test8a = createTest("HTML Test", faculty3, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus8, false);
+        addStudentToTest(test8a, student3);
+        addStudentToTest(test8a, student4);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa8a_1 = createProblemAnswer("What is HTML?", "HTML (HyperText Markup Language) is the standard language used to create and structure content on web pages.");
@@ -457,6 +485,8 @@ public class Test5to8Seeder implements CommandLineRunner {
         System.out.println("Test for 'HTML' unit created with 10 problem answers.");
 // Creating the test for Unit 2: CSS
         Test test8b = createTest("CSS Test", faculty3, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus8, false);
+        addStudentToTest(test8b, student3);
+        addStudentToTest(test8b, student4);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa8b_1 = createProblemAnswer("What is CSS?", "CSS (Cascading Style Sheets) is a language used to describe the presentation of a document written in HTML or XML. It controls the layout, colors, fonts, and overall visual appearance of web pages.");
@@ -483,6 +513,8 @@ public class Test5to8Seeder implements CommandLineRunner {
         System.out.println("Test for 'CSS' unit created with 10 problem answers.");
 // Creating the test for Unit 3: JavaScript
         Test test8c = createTest("JavaScript Test", faculty3, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus8, false);
+        addStudentToTest(test8c, student3);
+        addStudentToTest(test8c, student4);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa8c_1 = createProblemAnswer("What is JavaScript?", "JavaScript is a programming language that allows you to create interactive and dynamic web content. It is widely used for client-side scripting on web pages.");
@@ -509,6 +541,8 @@ public class Test5to8Seeder implements CommandLineRunner {
         System.out.println("Test for 'JavaScript' unit created with 10 problem answers.");
 // Creating the test for Unit 4: React
         Test test8d = createTest("React Test", faculty3, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus8, false);
+        addStudentToTest(test8d, student3);
+        addStudentToTest(test8d, student4);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa8d_1 = createProblemAnswer("What is React?", "React is a popular JavaScript library for building user interfaces, particularly single-page applications. It allows developers to create reusable UI components.");
@@ -535,6 +569,8 @@ public class Test5to8Seeder implements CommandLineRunner {
         System.out.println("Test for 'React' unit created with 10 problem answers.");
 // Creating the test for Unit 5: Backend Integration
         Test test8e = createTest("Backend Integration Test", faculty3, Date.from(LocalDate.of(2030, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus8, false);
+        addStudentToTest(test8e, student3);
+        addStudentToTest(test8e, student4);
 
 // Creating and adding problem answers to the test
         ProblemAnswer pa8e_1 = createProblemAnswer("What is a RESTful API?", "A RESTful API (Representational State Transfer) is an architectural style for building web services that use HTTP methods to perform CRUD operations on resources.");
