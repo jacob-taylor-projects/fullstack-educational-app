@@ -1356,5 +1356,39 @@ public class Assignment13to16Seeder implements CommandLineRunner {
         createFacultyWithAssignment(faculty4, List.of(grade14_1_7, grade14_1_8, grade14_2_7, grade14_2_8, grade14_3_7, grade14_3_8, grade14_4_7, grade14_4_8), List.of(assignment14_1, assignment14_2, assignment14_3, assignment14_4));
         createFacultyWithAssignment(faculty5, List.of(grade15_1_7, grade15_1_8, grade15_2_7, grade15_2_8, grade15_3_7, grade15_3_8), List.of(assignment15_1, assignment15_2, assignment15_3));
         createFacultyWithAssignment(faculty1, List.of(grade16_1_7, grade16_1_8, grade16_2_7, grade16_2_8, grade16_3_7, grade16_3_8), List.of(assignment16_1, assignment16_2, assignment16_3));
+
+        linkSubmissionDetails(submission13_1_7, student7, grade13_1_7, feedback13_1_7, List.of(sa13_1_1_student7, sa13_1_2_student7, sa13_1_3_student7, sa13_1_4_student7, sa13_1_5_student7));
+        linkSubmissionDetails(submission13_1_8, student8, grade13_1_8, feedback13_1_8, List.of(sa13_1_1_student8, sa13_1_2_student8, sa13_1_3_student8, sa13_1_4_student8, sa13_1_5_student8));
+        linkSubmissionDetails(submission13_2_7, student7, grade13_2_7, feedback13_2_7, List.of(sa13_2_1_student7, sa13_2_2_student7, sa13_2_3_student7, sa13_2_4_student7, sa13_2_5_student7));
+        linkSubmissionDetails(submission13_2_8, student8, grade13_2_8, feedback13_2_8, List.of(sa13_2_1_student8, sa13_2_2_student8, sa13_2_3_student8, sa13_2_4_student8, sa13_2_5_student8));
+        linkSubmissionDetails(submission13_3_7, student7, grade13_3_7, feedback13_3_7, List.of(sa13_3_1_student7, sa13_3_2_student7, sa13_3_3_student7, sa13_3_4_student7, sa13_3_5_student7));
+        linkSubmissionDetails(submission13_3_8, student8, grade13_3_8, feedback13_3_8, List.of(sa13_3_1_student8, sa13_3_2_student8, sa13_3_3_student8, sa13_3_4_student8, sa13_3_5_student8));
+        linkSubmissionDetails(submission13_4_7, student7, grade13_4_7, feedback13_4_7, List.of(sa13_4_1_student7, sa13_4_2_student7, sa13_4_3_student7, sa13_4_4_student7, sa13_4_5_student7));
+        linkSubmissionDetails(submission13_4_8, student8, grade13_4_8, feedback13_4_8, List.of(sa13_4_1_student8, sa13_4_2_student8, sa13_4_3_student8, sa13_4_4_student8, sa13_4_5_student8));
+
+        linkSubmissionDetails(submission14_1_7, student7, grade14_1_7, feedback14_1_7, List.of(sa14_1_1_student7, sa14_1_2_student7, sa14_1_3_student7, sa14_1_4_student7, sa14_1_5_student7));
+        linkSubmissionDetails(submission14_1_8, student8, grade14_1_8, feedback14_1_8, List.of(sa14_1_1_student8, sa14_1_2_student8, sa14_1_3_student8, sa14_1_4_student8, sa14_1_5_student8));
+        linkSubmissionDetails(submission14_2_7, student7, grade14_2_7, feedback14_2_7, List.of(sa14_2_1_student7, sa14_2_2_student7, sa14_2_3_student7, sa14_2_4_student7, sa14_2_5_student7));
+        linkSubmissionDetails(submission14_2_8, student8, grade14_2_8, feedback14_2_8, List.of(sa14_2_1_student8, sa14_2_2_student8, sa14_2_3_student8, sa14_2_4_student8, sa14_2_5_student8));
+        linkSubmissionDetails(submission14_3_7, student7, grade14_3_7, feedback14_3_7, List.of(sa14_3_1_student7, sa14_3_2_student7, sa14_3_3_student7, sa14_3_4_student7, sa14_3_5_student7));
+        linkSubmissionDetails(submission14_3_8, student8, grade14_3_8, feedback14_3_8, List.of(sa14_3_1_student8, sa14_3_2_student8, sa14_3_3_student8, sa14_3_4_student8, sa14_3_5_student8));
+        linkSubmissionDetails(submission14_4_7, student7, grade14_4_7, feedback14_4_7, List.of(sa14_4_1_student7, sa14_4_2_student7, sa14_4_3_student7, sa14_4_4_student7, sa14_4_5_student7));
+        linkSubmissionDetails(submission14_4_8, student8, grade14_4_8, feedback14_4_8, List.of(sa14_4_1_student8, sa14_4_2_student8, sa14_4_3_student8, sa14_4_4_student8, sa14_4_5_student8));
+
+        linkSubmissionDetails(submission15_1_7, student7, grade15_1_7, feedback15_1_7, List.of(sa15_1_1_student7, sa15_1_2_student7, sa15_1_3_student7, sa15_1_4_student7, sa15_1_5_student7));
+        linkSubmissionDetails(submission15_1_8, student8, grade15_1_8, feedback15_1_8, List.of(sa15_1_1_student8, sa15_1_2_student8, sa15_1_3_student8, sa15_1_4_student8, sa15_1_5_student8));
+        linkSubmissionDetails(submission15_2_7, student7, grade15_2_7, feedback15_2_7, List.of(sa15_2_1_student7, sa15_2_2_student7, sa15_2_3_student7, sa15_2_4_student7, sa15_2_5_student7));
+        linkSubmissionDetails(submission15_2_8, student8, grade15_2_8, feedback15_2_8, List.of(sa15_2_1_student8, sa15_2_2_student8, sa15_2_3_student8, sa15_2_4_student8, sa15_2_5_student8));
+        linkSubmissionDetails(submission15_3_7, student7, grade15_3_7, feedback15_3_7, List.of(sa15_3_1_student7, sa15_3_2_student7, sa15_3_3_student7, sa15_3_4_student7, sa15_3_5_student7));
+        linkSubmissionDetails(submission15_3_8, student8, grade15_3_8, feedback15_3_8, List.of(sa15_3_1_student8, sa15_3_2_student8, sa15_3_3_student8, sa15_3_4_student8, sa15_3_5_student8));
+
+        linkSubmissionDetails(submission16_1_7, student7, grade16_1_7, feedback16_1_7, List.of(sa16_1_1_student7, sa16_1_2_student7, sa16_1_3_student7, sa16_1_4_student7, sa16_1_5_student7));
+        linkSubmissionDetails(submission16_1_8, student8, grade16_1_8, feedback16_1_8, List.of(sa16_1_1_student8, sa16_1_2_student8, sa16_1_3_student8, sa16_1_4_student8, sa16_1_5_student8));
+        linkSubmissionDetails(submission16_2_7, student7, grade16_2_7, feedback16_2_7, List.of(sa16_2_1_student7, sa16_2_2_student7, sa16_2_3_student7, sa16_2_4_student7, sa16_2_5_student7));
+        linkSubmissionDetails(submission16_2_8, student8, grade16_2_8, feedback16_2_8, List.of(sa16_2_1_student8, sa16_2_2_student8, sa16_2_3_student8, sa16_2_4_student8, sa16_2_5_student8));
+        linkSubmissionDetails(submission16_3_7, student7, grade16_3_7, feedback16_3_7, List.of(sa16_3_1_student7, sa16_3_2_student7, sa16_3_3_student7, sa16_3_4_student7, sa16_3_5_student7));
+        linkSubmissionDetails(submission16_3_8, student8, grade16_3_8, feedback16_3_8, List.of(sa16_3_1_student8, sa16_3_2_student8, sa16_3_3_student8, sa16_3_4_student8, sa16_3_5_student8));
+
+
     }
 }

@@ -13,6 +13,7 @@ import java.sql.Timestamp;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.List;
@@ -1901,6 +1902,51 @@ public class Assignment1to4Seeder implements CommandLineRunner {
         createFacultyWithAssignment(faculty2, List.of(grade2_1_1, grade2_1_2, grade2_2_1, grade2_2_2, grade2_3_1, grade2_3_2, grade2_4_1, grade2_4_2, grade2_5_1, grade2_5_2, grade2_6_1, grade2_6_2), List.of(assignment2_1, assignment2_2, assignment2_3, assignment2_4, assignment2_5, assignment2_6));
         createFacultyWithAssignment(faculty3, List.of(grade3_1_1, grade3_1_2, grade3_2_1, grade3_2_2, grade3_3_1, grade3_3_2, grade3_4_1, grade3_4_2), List.of(assignment3_1, assignment3_2, assignment3_3, assignment3_4));
         createFacultyWithAssignment(faculty4, List.of(grade4_1_1, grade4_1_2, grade4_2_1, grade4_2_2, grade4_3_1, grade4_3_2, grade4_4_1, grade4_4_2), List.of(assignment4_1, assignment4_2, assignment4_3, assignment4_4));
+
+        linkSubmissionDetails(submission1_1_1, student1, grade1_1_1, feedback1_1_1, List.of(sa1_1_1_student1, sa1_1_2_student1, sa1_1_3_student1, sa1_1_4_student1, sa1_1_5_student1));
+        linkSubmissionDetails(submission1_1_2, student2, grade1_1_2, feedback1_1_2, List.of(sa1_1_1_student2, sa1_1_2_student2, sa1_1_3_student2, sa1_1_4_student2, sa1_1_5_student2));
+        linkSubmissionDetails(submission1_2_1, student1, grade1_2_1, feedback1_2_1, List.of(sa1_2_1_student1, sa1_2_2_student1, sa1_2_3_student1, sa1_2_4_student1, sa1_2_5_student1));
+        linkSubmissionDetails(submission1_2_2, student2, grade1_2_2, feedback1_2_2, List.of(sa1_2_1_student2, sa1_2_2_student2, sa1_2_3_student2, sa1_2_4_student2, sa1_2_5_student2));
+        linkSubmissionDetails(submission1_3_1, student1, grade1_3_1, feedback1_3_1, List.of(sa1_3_1_student1, sa1_3_2_student1, sa1_3_3_student1, sa1_3_4_student1, sa1_3_5_student1));
+        linkSubmissionDetails(submission1_3_2, student2, grade1_3_2, feedback1_3_2, List.of(sa1_3_1_student2, sa1_3_2_student2, sa1_3_3_student2, sa1_3_4_student2, sa1_3_5_student2));
+        linkSubmissionDetails(submission1_4_1, student1, grade1_4_1, feedback1_4_1, List.of(sa1_4_1_student1, sa1_4_2_student1, sa1_4_3_student1, sa1_4_4_student1, sa1_4_5_student1));
+        linkSubmissionDetails(submission1_4_2, student2, grade1_4_2, feedback1_4_2, List.of(sa1_4_1_student2, sa1_4_2_student2, sa1_4_3_student2, sa1_4_4_student2, sa1_4_5_student2));
+        linkSubmissionDetails(submission1_5_1, student1, grade1_5_1, feedback1_5_1, List.of(sa1_5_1_student1, sa1_5_2_student1, sa1_5_3_student1, sa1_5_4_student1, sa1_5_5_student1));
+        linkSubmissionDetails(submission1_5_2, student2, grade1_5_2, feedback1_5_2, List.of(sa1_5_1_student2, sa1_5_2_student2, sa1_5_3_student2, sa1_5_4_student2, sa1_5_5_student2));
+        linkSubmissionDetails(submission1_6_1, student1, grade1_6_1, feedback1_6_1, List.of(sa1_6_1_student1, sa1_6_2_student1, sa1_6_3_student1, sa1_6_4_student1, sa1_6_5_student1));
+        linkSubmissionDetails(submission1_6_2, student2, grade1_6_2, feedback1_6_2, List.of(sa1_6_1_student2, sa1_6_2_student2, sa1_6_3_student2, sa1_6_4_student2, sa1_6_5_student2));
+
+        linkSubmissionDetails(submission2_1_1, student1, grade2_1_1, feedback2_1_1, List.of(sa2_1_1_student1, sa2_1_2_student1, sa2_1_3_student1, sa2_1_4_student1, sa2_1_5_student1));
+        linkSubmissionDetails(submission2_1_2, student2, grade2_1_2, feedback2_1_2, List.of(sa2_1_1_student2, sa2_1_2_student2, sa2_1_3_student2, sa2_1_4_student2, sa2_1_5_student2));
+        linkSubmissionDetails(submission2_2_1, student1, grade2_2_1, feedback2_2_1, List.of(sa2_2_1_student1, sa2_2_2_student1, sa2_2_3_student1, sa2_2_4_student1, sa2_2_5_student1));
+        linkSubmissionDetails(submission2_2_2, student2, grade2_2_2, feedback2_2_2, List.of(sa2_2_1_student2, sa2_2_2_student2, sa2_2_3_student2, sa2_2_4_student2, sa2_2_5_student2));
+        linkSubmissionDetails(submission2_3_1, student1, grade2_3_1, feedback2_3_1, List.of(sa2_3_1_student1, sa2_3_2_student1, sa2_3_3_student1, sa2_3_4_student1, sa2_3_5_student1));
+        linkSubmissionDetails(submission2_3_2, student2, grade2_3_2, feedback2_3_2, List.of(sa2_3_1_student2, sa2_3_2_student2, sa2_3_3_student2, sa2_3_4_student2, sa2_3_5_student2));
+        linkSubmissionDetails(submission2_4_1, student1, grade2_4_1, feedback2_4_1, List.of(sa2_4_1_student1, sa2_4_2_student1, sa2_4_3_student1, sa2_4_4_student1, sa2_4_5_student1));
+        linkSubmissionDetails(submission2_4_2, student2, grade2_4_2, feedback2_4_2, List.of(sa2_4_1_student2, sa2_4_2_student2, sa2_4_3_student2, sa2_4_4_student2, sa2_4_5_student2));
+        linkSubmissionDetails(submission2_5_1, student1, grade2_5_1, feedback2_5_1, List.of(sa2_5_1_student1, sa2_5_2_student1, sa2_5_3_student1, sa2_5_4_student1, sa2_5_5_student1));
+        linkSubmissionDetails(submission2_5_2, student2, grade2_5_2, feedback2_5_2, List.of(sa2_5_1_student2, sa2_5_2_student2, sa2_5_3_student2, sa2_5_4_student2, sa2_5_5_student2));
+        linkSubmissionDetails(submission2_6_1, student1, grade2_6_1, feedback2_6_1, List.of(sa2_6_1_student1, sa2_6_2_student1, sa2_6_3_student1, sa2_6_4_student1, sa2_6_5_student1));
+        linkSubmissionDetails(submission2_6_2, student2, grade2_6_2, feedback2_6_2, List.of(sa2_6_1_student2, sa2_6_2_student2, sa2_6_3_student2, sa2_6_4_student2, sa2_6_5_student2));
+
+        linkSubmissionDetails(submission3_1_1, student1, grade3_1_1, feedback3_1_1, List.of(sa3_1_1_student1, sa3_1_2_student1, sa3_1_3_student1, sa3_1_4_student1, sa3_1_5_student1));
+        linkSubmissionDetails(submission3_1_2, student2, grade3_1_2, feedback3_1_2, List.of(sa3_1_1_student2, sa3_1_2_student2, sa3_1_3_student2, sa3_1_4_student2, sa3_1_5_student2));
+        linkSubmissionDetails(submission3_2_1, student1, grade3_2_1, feedback3_2_1, List.of(sa3_2_1_student1, sa3_2_2_student1, sa3_2_3_student1, sa3_2_4_student1, sa3_2_5_student1));
+        linkSubmissionDetails(submission3_2_2, student2, grade3_2_2, feedback3_2_2, List.of(sa3_2_1_student2, sa3_2_2_student2, sa3_2_3_student2, sa3_2_4_student2, sa3_2_5_student2));
+        linkSubmissionDetails(submission3_3_1, student1, grade3_3_1, feedback3_3_1, List.of(sa3_3_1_student1, sa3_3_2_student1, sa3_3_3_student1, sa3_3_4_student1, sa3_3_5_student1));
+        linkSubmissionDetails(submission3_3_2, student2, grade3_3_2, feedback3_3_2, List.of(sa3_3_1_student2, sa3_3_2_student2, sa3_3_3_student2, sa3_3_4_student2, sa3_3_5_student2));
+        linkSubmissionDetails(submission3_4_1, student1, grade3_4_1, feedback3_4_1, List.of(sa3_4_1_student1, sa3_4_2_student1, sa3_4_3_student1, sa3_4_4_student1, sa3_4_5_student1));
+        linkSubmissionDetails(submission3_4_2, student2, grade3_4_2, feedback3_4_2, List.of(sa3_4_1_student2, sa3_4_2_student2, sa3_4_3_student2, sa3_4_4_student2, sa3_4_5_student2));
+
+        linkSubmissionDetails(submission4_1_1, student1, grade4_1_1, feedback4_1_1, List.of(sa4_1_1_student1, sa4_1_2_student1, sa4_1_3_student1, sa4_1_4_student1, sa4_1_5_student1));
+        linkSubmissionDetails(submission4_1_2, student2, grade4_1_2, feedback4_1_2, List.of(sa4_1_1_student2, sa4_1_2_student2, sa4_1_3_student2, sa4_1_4_student2, sa4_1_5_student2));
+        linkSubmissionDetails(submission4_2_1, student1, grade4_2_1, feedback4_2_1, List.of(sa4_2_1_student1, sa4_2_2_student1, sa4_2_3_student1, sa4_2_4_student1, sa4_2_5_student1));
+        linkSubmissionDetails(submission4_2_2, student2, grade4_2_2, feedback4_2_2, List.of(sa4_2_1_student2, sa4_2_2_student2, sa4_2_3_student2, sa4_2_4_student2, sa4_2_5_student2));
+        linkSubmissionDetails(submission4_3_1, student1, grade4_3_1, feedback4_3_1, List.of(sa4_3_1_student1, sa4_3_2_student1, sa4_3_3_student1, sa4_3_4_student1, sa4_3_5_student1));
+        linkSubmissionDetails(submission4_3_2, student2, grade4_3_2, feedback4_3_2, List.of(sa4_3_1_student2, sa4_3_2_student2, sa4_3_3_student2, sa4_3_4_student2, sa4_3_5_student2));
+        linkSubmissionDetails(submission4_4_1, student1, grade4_4_1, feedback4_4_1, List.of(sa4_4_1_student1, sa4_4_2_student1, sa4_4_3_student1, sa4_4_4_student1, sa4_4_5_student1));
+        linkSubmissionDetails(submission4_4_2, student2, grade4_4_2, feedback4_4_2, List.of(sa4_4_1_student2, sa4_4_2_student2, sa4_4_3_student2, sa4_4_4_student2, sa4_4_5_student2));
+
     }
 
     public static ProblemAnswer createProblemAnswer(String problemContent, String answerContent) {
@@ -1924,6 +1970,7 @@ public class Assignment1to4Seeder implements CommandLineRunner {
 
     public static void addStudentAnswerToProblemAnswer(ProblemAnswer problemAnswer, StudentAnswer studentAnswer) {
         problemAnswer.setStudentAnswer(studentAnswer);
+        studentAnswer.setProblemAnswer(problemAnswer);
     }
 
     public static Assignment createAssignment(String title, Faculty teacher, Date dueDate, Syllabus syllabus, boolean completed) {
@@ -1959,4 +2006,27 @@ public class Assignment1to4Seeder implements CommandLineRunner {
         faculty.setAssignments(assignments);
         return faculty;
     }
+
+    public static void linkSubmissionDetails(Submission submission, Student student, Grade grade, Feedback feedback, List<StudentAnswer> studentAnswers) {
+        // Link the submission details
+        submission.setStudent(student);
+        submission.setGrade(grade);
+        submission.setFeedback(feedback);
+        submission.setStudentAnswers(studentAnswers);
+
+        // Ensure the student has a list of submissions
+        List<Submission> studentSubmissions = student.getSubmissions();
+        if (studentSubmissions == null) {
+            studentSubmissions = new ArrayList<>();
+            student.setSubmissions(studentSubmissions);
+        }
+        studentSubmissions.add(submission);
+
+        // Link the other entities to the submission
+        grade.setSubmission(submission);
+        feedback.setSubmission(submission);
+        studentAnswers.forEach(answer -> answer.setSubmission(submission));
+    }
+
+
 }

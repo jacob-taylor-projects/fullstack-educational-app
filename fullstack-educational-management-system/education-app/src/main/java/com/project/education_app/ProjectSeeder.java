@@ -3025,6 +3025,191 @@ public class ProjectSeeder implements CommandLineRunner {
         createFacultyWithProject(faculty4, List.of(grade19a_9, grade19a_10, grade19b_9, grade19b_10, grade19c_9, grade19c_10), List.of(project19a, project19b, project19c));
         createFacultyWithProject(faculty5, List.of(grade20a_9, grade20a_10, grade20b_9, grade20b_10, grade20c_9, grade20c_10, grade20d_9, grade20d_10), List.of(project20a, project20b, project20c, project20d));
 
+        linkSubmissionDetails(submission1a_project_1, student1, grade1a_1, feedback1a_project_1, List.of(sa1a_project_student1));
+        linkSubmissionDetails(submission1a_project_2, student2, grade1a_2, feedback1a_project_2, List.of(sa1a_project_student2));
+        linkSubmissionDetails(submission1a_project_1, student1, grade1a_1, feedback1a_project_1, List.of(sa1a_project_student1));
+        linkSubmissionDetails(submission1a_project_2, student2, grade1a_2, feedback1a_project_2, List.of(sa1a_project_student2));
+        linkSubmissionDetails(submission1b_project_1, student1, grade1b_1, feedback1b_project_1, List.of(sa1b_project_student1));
+        linkSubmissionDetails(submission1b_project_2, student2, grade1b_2, feedback1b_project_2, List.of(sa1b_project_student2));
+        linkSubmissionDetails(submission1c_project_1, student1, grade1c_1, feedback1c_project_1, List.of(sa1c_project_student1));
+        linkSubmissionDetails(submission1c_project_2, student2, grade1c_2, feedback1c_project_2, List.of(sa1c_project_student2));
+        linkSubmissionDetails(submission1d_project_1, student1, grade1d_1, feedback1d_project_1, List.of(sa1d_project_student1));
+        linkSubmissionDetails(submission1d_project_2, student2, grade1d_2, feedback1d_project_2, List.of(sa1d_project_student2));
+        linkSubmissionDetails(submission1e_project_1, student1, grade1e_1, feedback1e_project_1, List.of(sa1e_project_student1));
+        linkSubmissionDetails(submission1e_project_2, student2, grade1e_2, feedback1e_project_2, List.of(sa1e_project_student2));
+        linkSubmissionDetails(submission1f_project_1, student1, grade1f_1, feedback1f_project_1, List.of(sa1f_project_student1));
+        linkSubmissionDetails(submission1f_project_2, student2, grade1f_2, feedback1f_project_2, List.of(sa1f_project_student2));
+
+        linkSubmissionDetails(submission2a_project_1, student1, grade2a_1, feedback2a_project_1, List.of(sa2a_project_student1));
+        linkSubmissionDetails(submission2a_project_2, student2, grade2a_2, feedback2a_project_2, List.of(sa2a_project_student2));
+        linkSubmissionDetails(submission2b_project_1, student1, grade2b_1, feedback2b_project_1, List.of(sa2b_project_student1));
+        linkSubmissionDetails(submission2b_project_2, student2, grade2b_2, feedback2b_project_2, List.of(sa2b_project_student2));
+        linkSubmissionDetails(submission2c_project_1, student1, grade2c_1, feedback2c_project_1, List.of(sa2c_project_student1));
+        linkSubmissionDetails(submission2c_project_2, student2, grade2c_2, feedback2c_project_2, List.of(sa2c_project_student2));
+        linkSubmissionDetails(submission2d_project_1, student1, grade2d_1, feedback2d_project_1, List.of(sa2d_project_student1));
+        linkSubmissionDetails(submission2d_project_2, student2, grade2d_2, feedback2d_project_2, List.of(sa2d_project_student2));
+        linkSubmissionDetails(submission2e_project_1, student1, grade2e_1, feedback2e_project_1, List.of(sa2e_project_student1));
+        linkSubmissionDetails(submission2e_project_2, student2, grade2e_2, feedback2e_project_2, List.of(sa2e_project_student2));
+        linkSubmissionDetails(submission2f_project_1, student1, grade2f_1, feedback2f_project_1, List.of(sa2f_project_student1));
+        linkSubmissionDetails(submission2f_project_2, student2, grade2f_2, feedback2f_project_2, List.of(sa2f_project_student2));
+
+        linkSubmissionDetails(submission3a_project_1, student1, grade3a_1, feedback3a_project_1, List.of(sa3a_project_student1));
+        linkSubmissionDetails(submission3a_project_2, student2, grade3a_2, feedback3a_project_2, List.of(sa3a_project_student2));
+        linkSubmissionDetails(submission3b_project_1, student1, grade3b_1, feedback3b_project_1, List.of(sa3b_project_student1));
+        linkSubmissionDetails(submission3b_project_2, student2, grade3b_2, feedback3b_project_2, List.of(sa3b_project_student2));
+        linkSubmissionDetails(submission3c_project_1, student1, grade3c_1, feedback3c_project_1, List.of(sa3c_project_student1));
+        linkSubmissionDetails(submission3c_project_2, student2, grade3c_2, feedback3c_project_2, List.of(sa3c_project_student2));
+        linkSubmissionDetails(submission3d_project_1, student1, grade3d_1, feedback3d_project_1, List.of(sa3d_project_student1));
+        linkSubmissionDetails(submission3d_project_2, student2, grade3d_2, feedback3d_project_2, List.of(sa3d_project_student2));
+
+        linkSubmissionDetails(submission4a_project_1, student1, grade4a_1, feedback4a_project_1, List.of(sa4a_project_student1));
+        linkSubmissionDetails(submission4a_project_2, student2, grade4a_2, feedback4a_project_2, List.of(sa4a_project_student2));
+        linkSubmissionDetails(submission4b_project_1, student1, grade4b_1, feedback4b_project_1, List.of(sa4b_project_student1));
+        linkSubmissionDetails(submission4b_project_2, student2, grade4b_2, feedback4b_project_2, List.of(sa4b_project_student2));
+        linkSubmissionDetails(submission4c_project_1, student1, grade4c_1, feedback4c_project_1, List.of(sa4c_project_student1));
+        linkSubmissionDetails(submission4c_project_2, student2, grade4c_2, feedback4c_project_2, List.of(sa4c_project_student2));
+        linkSubmissionDetails(submission4d_project_1, student1, grade4d_1, feedback4d_project_1, List.of(sa4d_project_student1));
+        linkSubmissionDetails(submission4d_project_2, student2, grade4d_2, feedback4d_project_2, List.of(sa4d_project_student2));
+
+        linkSubmissionDetails(submission5a_project_3, student3, grade5a_3, feedback5a_project_3, List.of(sa5a_project_student3));
+        linkSubmissionDetails(submission5a_project_4, student4, grade5a_4, feedback5a_project_4, List.of(sa5a_project_student4));
+        linkSubmissionDetails(submission5b_project_3, student3, grade5b_3, feedback5b_project_3, List.of(sa5b_project_student3));
+        linkSubmissionDetails(submission5b_project_4, student4, grade5b_4, feedback5b_project_4, List.of(sa5b_project_student4));
+        linkSubmissionDetails(submission5c_project_3, student3, grade5c_3, feedback5c_project_3, List.of(sa5c_project_student3));
+        linkSubmissionDetails(submission5c_project_4, student4, grade5c_4, feedback5c_project_4, List.of(sa5c_project_student4));
+        linkSubmissionDetails(submission5d_project_3, student3, grade5d_3, feedback5d_project_3, List.of(sa5d_project_student3));
+        linkSubmissionDetails(submission5d_project_4, student4, grade5d_4, feedback5d_project_4, List.of(sa5d_project_student4));
+
+        linkSubmissionDetails(submission6a_project_3, student3, grade6a_3, feedback6a_project_3, List.of(sa6a_project_student3));
+        linkSubmissionDetails(submission6a_project_4, student4, grade6a_4, feedback6a_project_4, List.of(sa6a_project_student4));
+        linkSubmissionDetails(submission6b_project_3, student3, grade6b_3, feedback6b_project_3, List.of(sa6b_project_student3));
+        linkSubmissionDetails(submission6b_project_4, student4, grade6b_4, feedback6b_project_4, List.of(sa6b_project_student4));
+        linkSubmissionDetails(submission6c_project_3, student3, grade6c_3, feedback6c_project_3, List.of(sa6c_project_student3));
+        linkSubmissionDetails(submission6c_project_4, student4, grade6c_4, feedback6c_project_4, List.of(sa6c_project_student4));
+        linkSubmissionDetails(submission6d_project_3, student3, grade6d_3, feedback6d_project_3, List.of(sa6d_project_student3));
+        linkSubmissionDetails(submission6d_project_4, student4, grade6d_4, feedback6d_project_4, List.of(sa6d_project_student4));
+        linkSubmissionDetails(submission6e_project_3, student3, grade6e_3, feedback6e_project_3, List.of(sa6e_project_student3));
+        linkSubmissionDetails(submission6e_project_4, student4, grade6e_4, feedback6e_project_4, List.of(sa6e_project_student4));
+
+        linkSubmissionDetails(submission7a_project_3, student3, grade7a_3, feedback7a_project_3, List.of(sa7a_project_student3));
+        linkSubmissionDetails(submission7a_project_4, student4, grade7a_4, feedback7a_project_4, List.of(sa7a_project_student4));
+        linkSubmissionDetails(submission7b_project_3, student3, grade7b_3, feedback7b_project_3, List.of(sa7b_project_student3));
+        linkSubmissionDetails(submission7b_project_4, student4, grade7b_4, feedback7b_project_4, List.of(sa7b_project_student4));
+        linkSubmissionDetails(submission7c_project_3, student3, grade7c_3, feedback7c_project_3, List.of(sa7c_project_student3));
+        linkSubmissionDetails(submission7c_project_4, student4, grade7c_4, feedback7c_project_4, List.of(sa7c_project_student4));
+        linkSubmissionDetails(submission7d_project_3, student3, grade7d_3, feedback7d_project_3, List.of(sa7d_project_student3));
+        linkSubmissionDetails(submission7d_project_4, student4, grade7d_4, feedback7d_project_4, List.of(sa7d_project_student4));
+
+        linkSubmissionDetails(submission8a_project_3, student3, grade8a_3, feedback8a_project_3, List.of(sa8a_project_student3));
+        linkSubmissionDetails(submission8a_project_4, student4, grade8a_4, feedback8a_project_4, List.of(sa8a_project_student4));
+        linkSubmissionDetails(submission8b_project_3, student3, grade8b_3, feedback8b_project_3, List.of(sa8b_project_student3));
+        linkSubmissionDetails(submission8b_project_4, student4, grade8b_4, feedback8b_project_4, List.of(sa8b_project_student4));
+        linkSubmissionDetails(submission8c_project_3, student3, grade8c_3, feedback8c_project_3, List.of(sa8c_project_student3));
+        linkSubmissionDetails(submission8c_project_4, student4, grade8c_4, feedback8c_project_4, List.of(sa8c_project_student4));
+        linkSubmissionDetails(submission8d_project_3, student3, grade8d_3, feedback8d_project_3, List.of(sa8d_project_student3));
+        linkSubmissionDetails(submission8d_project_4, student4, grade8d_4, feedback8d_project_4, List.of(sa8d_project_student4));
+        linkSubmissionDetails(submission8e_project_3, student3, grade8e_3, feedback8e_project_3, List.of(sa8e_project_student3));
+        linkSubmissionDetails(submission8e_project_4, student4, grade8e_4, feedback8e_project_4, List.of(sa8e_project_student4));
+
+        linkSubmissionDetails(submission9a_project_5, student5, grade9a_5, feedback9a_project_5, List.of(sa9a_project_student5));
+        linkSubmissionDetails(submission9a_project_6, student6, grade9a_6, feedback9a_project_6, List.of(sa9a_project_student6));
+        linkSubmissionDetails(submission9b_project_5, student5, grade9b_5, feedback9b_project_5, List.of(sa9b_project_student5));
+        linkSubmissionDetails(submission9b_project_6, student6, grade9b_6, feedback9b_project_6, List.of(sa9b_project_student6));
+        linkSubmissionDetails(submission9c_project_5, student5, grade9c_5, feedback9c_project_5, List.of(sa9c_project_student5));
+        linkSubmissionDetails(submission9c_project_6, student6, grade9c_6, feedback9c_project_6, List.of(sa9c_project_student6));
+
+        linkSubmissionDetails(submission10a_project_5, student5, grade10a_5, feedback10a_project_5, List.of(sa10a_project_student5));
+        linkSubmissionDetails(submission10a_project_6, student6, grade10a_6, feedback10a_project_6, List.of(sa10a_project_student6));
+        linkSubmissionDetails(submission10b_project_5, student5, grade10b_5, feedback10b_project_5, List.of(sa10b_project_student5));
+        linkSubmissionDetails(submission10b_project_6, student6, grade10b_6, feedback10b_project_6, List.of(sa10b_project_student6));
+        linkSubmissionDetails(submission10c_project_5, student5, grade10c_5, feedback10c_project_5, List.of(sa10c_project_student5));
+        linkSubmissionDetails(submission10c_project_6, student6, grade10c_6, feedback10c_project_6, List.of(sa10c_project_student6));
+        linkSubmissionDetails(submission10d_project_5, student5, grade10d_5, feedback10d_project_5, List.of(sa10d_project_student5));
+        linkSubmissionDetails(submission10d_project_6, student6, grade10d_6, feedback10d_project_6, List.of(sa10d_project_student6));
+
+        linkSubmissionDetails(submission11a_project_5, student5, grade11a_5, feedback11a_project_5, List.of(sa11a_project_student5));
+        linkSubmissionDetails(submission11a_project_6, student6, grade11a_6, feedback11a_project_6, List.of(sa11a_project_student6));
+        linkSubmissionDetails(submission11b_project_5, student5, grade11b_5, feedback11b_project_5, List.of(sa11b_project_student5));
+        linkSubmissionDetails(submission11b_project_6, student6, grade11b_6, feedback11b_project_6, List.of(sa11b_project_student6));
+        linkSubmissionDetails(submission11c_project_5, student5, grade11c_5, feedback11c_project_5, List.of(sa11c_project_student5));
+        linkSubmissionDetails(submission11c_project_6, student6, grade11c_6, feedback11c_project_6, List.of(sa11c_project_student6));
+        linkSubmissionDetails(submission11d_project_5, student5, grade11d_5, feedback11d_project_5, List.of(sa11d_project_student5));
+        linkSubmissionDetails(submission11d_project_6, student6, grade11d_6, feedback11d_project_6, List.of(sa11d_project_student6));
+
+        linkSubmissionDetails(submission12a_project_5, student5, grade12a_5, feedback12a_project_5, List.of(sa12a_project_student5));
+        linkSubmissionDetails(submission12a_project_6, student6, grade12a_6, feedback12a_project_6, List.of(sa12a_project_student6));
+        linkSubmissionDetails(submission12b_project_5, student5, grade12b_5, feedback12b_project_5, List.of(sa12b_project_student5));
+        linkSubmissionDetails(submission12b_project_6, student6, grade12b_6, feedback12b_project_6, List.of(sa12b_project_student6));
+        linkSubmissionDetails(submission12c_project_5, student5, grade12c_5, feedback12c_project_5, List.of(sa12c_project_student5));
+        linkSubmissionDetails(submission12c_project_6, student6, grade12c_6, feedback12c_project_6, List.of(sa12c_project_student6));
+        linkSubmissionDetails(submission12d_project_5, student5, grade12d_5, feedback12d_project_5, List.of(sa12d_project_student5));
+        linkSubmissionDetails(submission12d_project_6, student6, grade12d_6, feedback12d_project_6, List.of(sa12d_project_student6));
+        linkSubmissionDetails(submission12e_project_5, student5, grade12e_5, feedback12e_project_5, List.of(sa12e_project_student5));
+        linkSubmissionDetails(submission12e_project_6, student6, grade12e_6, feedback12e_project_6, List.of(sa12e_project_student6));
+
+        linkSubmissionDetails(submission13a_project_7, student7, grade13a_7, feedback13a_project_7, List.of(sa13a_project_student7));
+        linkSubmissionDetails(submission13a_project_8, student8, grade13a_8, feedback13a_project_8, List.of(sa13a_project_student8));
+        linkSubmissionDetails(submission13b_project_7, student7, grade13b_7, feedback13b_project_7, List.of(sa13b_project_student7));
+        linkSubmissionDetails(submission13b_project_8, student8, grade13b_8, feedback13b_project_8, List.of(sa13b_project_student8));
+        linkSubmissionDetails(submission13c_project_7, student7, grade13c_7, feedback13c_project_7, List.of(sa13c_project_student7));
+        linkSubmissionDetails(submission13c_project_8, student8, grade13c_8, feedback13c_project_8, List.of(sa13c_project_student8));
+        linkSubmissionDetails(submission13d_project_7, student7, grade13d_7, feedback13d_project_7, List.of(sa13d_project_student7));
+        linkSubmissionDetails(submission13d_project_8, student8, grade13d_8, feedback13d_project_8, List.of(sa13d_project_student8));
+
+        linkSubmissionDetails(submission14a_project_7, student7, grade14a_7, feedback14a_project_7, List.of(sa14a_project_student7));
+        linkSubmissionDetails(submission14a_project_8, student8, grade14a_8, feedback14a_project_8, List.of(sa14a_project_student8));
+        linkSubmissionDetails(submission14b_project_7, student7, grade14b_7, feedback14b_project_7, List.of(sa14b_project_student7));
+        linkSubmissionDetails(submission14b_project_8, student8, grade14b_8, feedback14b_project_8, List.of(sa14b_project_student8));
+        linkSubmissionDetails(submission14c_project_7, student7, grade14c_7, feedback14c_project_7, List.of(sa14c_project_student7));
+        linkSubmissionDetails(submission14c_project_8, student8, grade14c_8, feedback14c_project_8, List.of(sa14c_project_student8));
+        linkSubmissionDetails(submission14d_project_7, student7, grade14d_7, feedback14d_project_7, List.of(sa14d_project_student7));
+        linkSubmissionDetails(submission14d_project_8, student8, grade14d_8, feedback14d_project_8, List.of(sa14d_project_student8));
+
+        linkSubmissionDetails(submission15a_project_7, student7, grade15a_7, feedback15a_project_7, List.of(sa15a_project_student7));
+        linkSubmissionDetails(submission15a_project_8, student8, grade15a_8, feedback15a_project_8, List.of(sa15a_project_student8));
+        linkSubmissionDetails(submission15b_project_7, student7, grade15b_7, feedback15b_project_7, List.of(sa15b_project_student7));
+        linkSubmissionDetails(submission15b_project_8, student8, grade15b_8, feedback15b_project_8, List.of(sa15b_project_student8));
+        linkSubmissionDetails(submission15c_project_7, student7, grade15c_7, feedback15c_project_7, List.of(sa15c_project_student7));
+        linkSubmissionDetails(submission15c_project_8, student8, grade15c_8, feedback15c_project_8, List.of(sa15c_project_student8));
+
+        linkSubmissionDetails(submission16a_project_7, student7, grade16a_7, feedback16a_project_7, List.of(sa16a_project_student7));
+        linkSubmissionDetails(submission16a_project_8, student8, grade16a_8, feedback16a_project_8, List.of(sa16a_project_student8));
+        linkSubmissionDetails(submission16b_project_7, student7, grade16b_7, feedback16b_project_7, List.of(sa16b_project_student7));
+        linkSubmissionDetails(submission16b_project_8, student8, grade16b_8, feedback16b_project_8, List.of(sa16b_project_student8));
+        linkSubmissionDetails(submission16c_project_7, student7, grade16c_7, feedback16c_project_7, List.of(sa16c_project_student7));
+        linkSubmissionDetails(submission16c_project_8, student8, grade16c_8, feedback16c_project_8, List.of(sa16c_project_student8));
+
+        linkSubmissionDetails(submission17a_project_9, student9, grade17a_9, feedback17a_project_9, List.of(sa17a_project_student9));
+        linkSubmissionDetails(submission17a_project_10, student10, grade17a_10, feedback17a_project_10, List.of(sa17a_project_student10));
+        linkSubmissionDetails(submission17b_project_9, student9, grade17b_9, feedback17b_project_9, List.of(sa17b_project_student9));
+        linkSubmissionDetails(submission17b_project_10, student10, grade17b_10, feedback17b_project_10, List.of(sa17b_project_student10));
+        linkSubmissionDetails(submission17c_project_9, student9, grade17c_9, feedback17c_project_9, List.of(sa17c_project_student9));
+        linkSubmissionDetails(submission17c_project_10, student10, grade17c_10, feedback17c_project_10, List.of(sa17c_project_student10));
+        linkSubmissionDetails(submission17d_project_9, student9, grade17d_9, feedback17d_project_9, List.of(sa17d_project_student9));
+        linkSubmissionDetails(submission17d_project_10, student10, grade17d_10, feedback17d_project_10, List.of(sa17d_project_student10));
+
+        linkSubmissionDetails(submission18a_project_9, student9, grade18a_9, feedback18a_project_9, List.of(sa18a_project_student9));
+        linkSubmissionDetails(submission18a_project_10, student10, grade18a_10, feedback18a_project_10, List.of(sa18a_project_student10));
+        linkSubmissionDetails(submission18b_project_9, student9, grade18b_9, feedback18b_project_9, List.of(sa18b_project_student9));
+        linkSubmissionDetails(submission18b_project_10, student10, grade18b_10, feedback18b_project_10, List.of(sa18b_project_student10));
+        linkSubmissionDetails(submission18c_project_9, student9, grade18c_9, feedback18c_project_9, List.of(sa18c_project_student9));
+        linkSubmissionDetails(submission18c_project_10, student10, grade18c_10, feedback18c_project_10, List.of(sa18c_project_student10));
+
+        linkSubmissionDetails(submission19a_project_9, student9, grade19a_9, feedback19a_project_9, List.of(sa19a_project_student9));
+        linkSubmissionDetails(submission19a_project_10, student10, grade19a_10, feedback19a_project_10, List.of(sa19a_project_student10));
+        linkSubmissionDetails(submission19b_project_9, student9, grade19b_9, feedback19b_project_9, List.of(sa19b_project_student9));
+        linkSubmissionDetails(submission19b_project_10, student10, grade19b_10, feedback19b_project_10, List.of(sa19b_project_student10));
+        linkSubmissionDetails(submission19c_project_9, student9, grade19c_9, feedback19c_project_9, List.of(sa19c_project_student9));
+        linkSubmissionDetails(submission19c_project_10, student10, grade19c_10, feedback19c_project_10, List.of(sa19c_project_student10));
+
+        linkSubmissionDetails(submission20a_project_9, student9, grade20a_9, feedback20a_project_9, List.of(sa20a_project_student9));
+        linkSubmissionDetails(submission20a_project_10, student10, grade20a_10, feedback20a_project_10, List.of(sa20a_project_student10));
+        linkSubmissionDetails(submission20b_project_9, student9, grade20b_9, feedback20b_project_9, List.of(sa20b_project_student9));
+        linkSubmissionDetails(submission20b_project_10, student10, grade20b_10, feedback20b_project_10, List.of(sa20b_project_student10));
+        linkSubmissionDetails(submission20c_project_9, student9, grade20c_9, feedback20c_project_9, List.of(sa20c_project_student9));
+        linkSubmissionDetails(submission20c_project_10, student10, grade20c_10, feedback20c_project_10, List.of(sa20c_project_student10));
+        linkSubmissionDetails(submission20d_project_9, student9, grade20d_9, feedback20d_project_9, List.of(sa20d_project_student9));
+        linkSubmissionDetails(submission20d_project_10, student10, grade20d_10, feedback20d_project_10, List.of(sa20d_project_student10));
 
     }
 

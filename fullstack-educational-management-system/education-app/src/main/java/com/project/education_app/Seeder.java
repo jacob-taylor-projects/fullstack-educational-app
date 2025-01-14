@@ -128,15 +128,15 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson1d=createLesson("Functions","Functions are blocks of reusable code that perform a specific task. You can define a function using the def keyword followed by the function name and parentheses. Functions can take parameters(input) and return values(output). For example, def greet(name): return 'Hello' +name. Functions help organize code, making it more modular and easier to understand and avoid redundancy.",faculty1,unit1d);
             Lesson lesson1e=createLesson("Modules","Modules are Python files that contain functions,classes and variables. You can import modules into your program to access their functionality. This helps break down large programs into smaller, manageable pieces. Built-in modules like math,random, and datetime offer a wide range of functionalities. You can also create custom modules by writing Python code in a file and importing it using the import statement",faculty1,unit1e);
             Lesson lesson1f=createLesson("Libraries","Libraries in Python are collections of modules that provide additional functionality. Popular libraries like numpy(for numbers),pandas(for data manipulation), and matplotlib(for plotting) extend Pythons capabilities. You can also install libraries using the pip command(pip install library_name).Understanding how to find,install, and use libraries allows you to leverage existing solutions and simplify complex taskes in your programs.",faculty1,unit1f);
-                unit1a.setLessons(List.of(lesson1a));
-                unit1b.setLessons(List.of(lesson1b));
-                unit1c.setLessons(List.of(lesson1c));
-                unit1d.setLessons(List.of(lesson1d));
-                unit1e.setLessons(List.of(lesson1e));
-                unit1f.setLessons(List.of(lesson1f));
+        createUnitDetails(unit1a, List.of(lesson1a), course1);
+        createUnitDetails(unit1b, List.of(lesson1b), course1);
+        createUnitDetails(unit1c, List.of(lesson1c), course1);
+        createUnitDetails(unit1d, List.of(lesson1d), course1);
+        createUnitDetails(unit1e, List.of(lesson1e), course1);
+        createUnitDetails(unit1f, List.of(lesson1f), course1);
 
 
-            // Course 2: Data Structures
+        // Course 2: Data Structures
         Syllabus syllabus2 = createSyllabus("Understand and implement various data structures.", "Arrays, Linked Lists, Stacks, Queues, Trees, Graphs.", "Assignments (50%), Projects (20%), Tests (30%)");
 
           Unit unit2a=      createUnit("Arrays", "In this unit, students will learn about arrays, a fundamental data structure...");
@@ -155,12 +155,13 @@ public class Seeder implements CommandLineRunner {
           Lesson lesson2d=createLesson("Queues","Queues are a first-in, first-out(FIFO) data structure, meaning the first element added is the first to be removed. Common operations include enqueue(add) and dequeue(remove).Queues are essential for algorithms that process elements in the order they arrive, such as breadth-first search.",faculty2,unit2d);
           Lesson lesson2e=createLesson("Trees","Trees are hierarchical data structures consisting of nodes, where each node has a value and references to child nodes. The top node is called the root and the nodes with no children are called leaves.Trees are used to represent hierarchical relationships such as file systems or orgranizational structures.A common type of tree is the binary tree, where each node has at most 2 children.Trees are useful for tasks that involve hierarchical data, such as searching and sorting",faculty2,unit2e);
           Lesson lesson2f=createLesson("Graphs","Graphs are versatile data structures used to represent relationships between objects. A graph consists of vertices(nodes) and edges(links) that connect the vertices.Graphs can be directed or undirected, and they can represent various real-world structures, such as social networks,transportation systems, or the internet. Common graph algorithms include depth-first search, breadth-first search, and Dijkstra's algorithm for finding the shortest path between nodes.",faculty2,unit2f);
-                unit2a.setLessons(List.of(lesson2a));
-                unit2b.setLessons(List.of(lesson2b));
-                unit2c.setLessons(List.of(lesson2c));
-                unit2d.setLessons(List.of(lesson2d));
-                unit2e.setLessons(List.of(lesson2e));
-                unit2f.setLessons(List.of(lesson2f));
+        createUnitDetails(unit2a, List.of(lesson2a), course2);
+        createUnitDetails(unit2b, List.of(lesson2b), course2);
+        createUnitDetails(unit2c, List.of(lesson2c), course2);
+        createUnitDetails(unit2d, List.of(lesson2d), course2);
+        createUnitDetails(unit2e, List.of(lesson2e), course2);
+        createUnitDetails(unit2f, List.of(lesson2f), course2);
+
 
 // Course 3: Algorithms
         Syllabus syllabus3 = createSyllabus("Explore the design and analysis of algorithms.", "Sorting, Searching, Graph Algorithms, Dynamic Programming.", "Assignments (40%), Projects (30%), Tests (30%)");
@@ -177,10 +178,11 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson3b=createLesson("Searching","Searching algorithms find a specific element. Linear search checks each element one by one.Its simple but not great for big datasets.Binary search findes the target by repeatedly dividing the search interval in half.It requires the list to be sorted first.",faculty3,unit3b);
             Lesson lesson3c=createLesson("Graph Algorithms","Graph algorithms manipulate and traverse graphs.Depth-First Search(DFS) explores as far along each branch as possible before backtracking.Useful for tasks like solving mazes or finding connected components.Breadth-First Search(BFS) explores all neighbors ath the present depth before moving on to nodes at the next depth level. Useful for finding the shortest path.",faculty3,unit3c);
             Lesson lesson3d=createLesson("Dynamic Programming","Dynamic programming solves complex problems by breaking them down into smaller subproblems and solving each subproblem only once.Examples include the fibonacci sequence and the knapsack problem.",faculty3,unit3d);
-                unit3a.setLessons(List.of(lesson3a));
-                unit3b.setLessons(List.of(lesson3b));
-                unit3c.setLessons(List.of(lesson3c));
-                unit3d.setLessons(List.of(lesson3d));
+        createUnitDetails(unit3a, List.of(lesson3a), course3);
+        createUnitDetails(unit3b, List.of(lesson3b), course3);
+        createUnitDetails(unit3c, List.of(lesson3c), course3);
+        createUnitDetails(unit3d, List.of(lesson3d), course3);
+
 
 
 
@@ -199,10 +201,10 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson4b=createLesson("SQL","SQL(Structure Query Language) is the standard language for managing and manipulating databases. With SQL, you can perform various operations such as creating tables, inserting data,querying data, updating records and deleting data.Commands like SELECT,INSERT,UPDATE, and DELETE. You can also join tables,using aggregate functions, and writing complex queries to perform data analysis and manipulation.",faculty4,unit4b);
             Lesson lesson4c=createLesson("Transactions","Transactions are sequences of database operations that are treated as a single unit. They ensure data integrity and consistency through ACID properties: Atomicity(all operations are complete or none are),Consistency(data remains in valid state),Isolation(transactions do not interfere with each other) and Durability(changes are permanent once committed).Commands like BEGIN,COMMIT, and ROLLBACK are used.",faculty4,unit4c);
             Lesson lesson4d=createLesson("Database Design","Effective database design involves creating normalized schemas to minimize redundancy and ensure data integrity. Normalization techniques incolde organizing data into tables and defining relationships to eliminate anomalies.Key steps are indentifying entities defining primary and foreign keys, and applying normalization rules.",faculty4,unit4d);
-                unit4a.setLessons(List.of(lesson4a));
-                unit4b.setLessons(List.of(lesson4b));
-                unit4c.setLessons(List.of(lesson4c));
-                unit4d.setLessons(List.of(lesson4d));
+        createUnitDetails(unit4a, List.of(lesson4a), course4);
+        createUnitDetails(unit4b, List.of(lesson4b), course4);
+        createUnitDetails(unit4c, List.of(lesson4c), course4);
+        createUnitDetails(unit4d, List.of(lesson4d), course4);
 
 
 // Course 5: Operating Systems
@@ -220,10 +222,11 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson5b=createLesson("Memory Management","Memory management is the function of the OS that handles the allocation and deallocation of memory space. Techniques invlude paging, which divides memory into variable sized segments.VM allows the OS to use disk space as an extension of RAM enabling the execution of larger programs.",faculty5,unit5b);
             Lesson lesson5c=createLesson("File Systems","File systems manage how data is stored and retrieved on a disk. They organize files into directories and use different allocation methods (contiguous,linked,indexed) to manage storage space.File systems ensure data integrity,support file access methods, and maintain directory structures.",faculty5,unit5c);
             Lesson lesson5d=createLesson("Scheduling","Scheduling algorithms determine the order in which processes are executed by the CPU.Common algorithms include round-robin which assigns time slices to each process;priority scheduling,which executes processes by priority, and multi-level queues, which seperate processes based on characteristics.",faculty5,unit5d);
-                unit5a.setLessons(List.of(lesson5a));
-                unit5b.setLessons(List.of(lesson5b));
-                unit5c.setLessons(List.of(lesson5c));
-                unit5d.setLessons(List.of(lesson5d));
+        createUnitDetails(unit5a, List.of(lesson5a), course5);
+        createUnitDetails(unit5b, List.of(lesson5b), course5);
+        createUnitDetails(unit5c, List.of(lesson5c), course5);
+        createUnitDetails(unit5d, List.of(lesson5d), course5);
+
 // Course 6: Computer Networks
         Syllabus syllabus6 = createSyllabus("Learn about the principles of computer networking.", "OSI Model, TCP/IP, Network Protocols, Routing, Switching.", "Assignments (40%), Projects (30%), Tests (30%)");
 
@@ -241,11 +244,12 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson6c=createLesson("Network Protocols","Network protocols govern data exchange over networks, ensuring secure and efficient communication.HTTP(HyperText Transfer Protocol) used for transferring wbe pages.FTP(File Transfer Protocol) user for transferring files.DNS(Domain Name System) Translates domain names into IP addresses.DHCP(Dynamic Host Configuration Protocol)Assigns IP addresses to devices on a network.",faculty1,unit6c);
             Lesson lesson6d=createLesson("Routing","Routing is the process of selecting paths in a network along which to send data packets.Key routing algorithms include OSPF(Open Shortest Path First)A dynamic routing protocol that uses link-state info to build a map of the network and determine the shortest path.BGP(Border Gateway Protocol) Manages how packets are routed across the internet through multiple autonomous systems",faculty1,unit6d);
             Lesson lesson6e=createLesson("Switching","Switching is the technique used to forward data packets from one deviceto another within a network.Key switching methods include Packet Switching:Data is divided into packets and transmitted independently.Circuit Switching:A dedicated communication path is established between devices for the duration of the transmission.",faculty1,unit6e);
-                 unit6a.setLessons(List.of(lesson6a));
-                 unit6b.setLessons(List.of(lesson6b));
-                 unit6c.setLessons(List.of(lesson6c));
-                 unit6d.setLessons(List.of(lesson6d));
-                 unit6e.setLessons(List.of(lesson6e));
+        createUnitDetails(unit6a, List.of(lesson6a), course6);
+        createUnitDetails(unit6b, List.of(lesson6b), course6);
+        createUnitDetails(unit6c, List.of(lesson6c), course6);
+        createUnitDetails(unit6d, List.of(lesson6d), course6);
+        createUnitDetails(unit6e, List.of(lesson6e), course6);
+
 
 
 // Course 7: Software Engineering
@@ -263,10 +267,11 @@ public class Seeder implements CommandLineRunner {
               Lesson lesson7b=createLesson("Agile","Agile is an iterative approach to software development that emphasizes flexibility,customer feedback, and small rapide releases.Scrum: Uses sprints,time-boxed iterations typically lasting 1-4 weeks.Kanban:Visualizes work using a kanban board and focuses on continuous delivery by limiting work in progress.It allows teams to respond to change quickly.",faculty2,unit7b);
               Lesson lesson7c=createLesson("Waterfall","The Waterfall model is a linear and sequential approach to software development.It consists of distinct phases:Requirements Analysis,System Design,Implementation,Testing,Deployment and Maintenance.It is straightforward but less flexible than iterative models.",faculty2,unit7c);
               Lesson lesson7d=createLesson("Project Management","Project management involves Project Planning:define scope,goals and deliverables.Scheduling:Create a timeline for project tasks and milestones.Resource Management: Allocate and manage resources efficiently.Risk Management:Identify,assess, and mitigate risks.Quality Assurance:Ensures the projct means quality standards.They are on time, on budget.",faculty2,unit7d);
-                 unit7a.setLessons(List.of(lesson7a));
-                 unit7b.setLessons(List.of(lesson7b));
-                 unit7c.setLessons(List.of(lesson7c));
-                 unit7d.setLessons(List.of(lesson7d));
+        createUnitDetails(unit7a, List.of(lesson7a), course7);
+        createUnitDetails(unit7b, List.of(lesson7b), course7);
+        createUnitDetails(unit7c, List.of(lesson7c), course7);
+        createUnitDetails(unit7d, List.of(lesson7d), course7);
+
 
 
 
@@ -287,11 +292,12 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson8c=createLesson("JavaScript","JavaScript is a programming language that adds interactivity and dynamic behavior to web pages. It allows you to mainpulate the DOM(Document Object Model), handle events, and create animations.JavaScript transforms static HTML and CSS into engaging, interactive user experiences, making it an essential tool for modern web development.",faculty3,unit8c);
             Lesson lesson8d=createLesson("React","React is a popular JavaScript library for building user interfaces, especially single-page applications(SPAs). It uses components, which are reusable pieces of UI, and manages state and props to keep the UI in sync with the application data.React simplifies the development of complex user interfaces by breaking them down into manageable pieces,promoting code reusability and maintainability.",faculty3,unit8d);
             Lesson lesson8e=createLesson("Backend Integration","Backend integration involves connecting your front-end web applications with backend services. This often involves RESTful APIs to fetch and send data. ",faculty3,unit8e);
-                 unit8a.setLessons(List.of(lesson8a));
-                 unit8b.setLessons(List.of(lesson8b));
-                 unit8c.setLessons(List.of(lesson8c));
-                 unit8d.setLessons(List.of(lesson8d));
-                 unit8e.setLessons(List.of(lesson8e));
+        createUnitDetails(unit8a, List.of(lesson8a), course8);
+        createUnitDetails(unit8b, List.of(lesson8b), course8);
+        createUnitDetails(unit8c, List.of(lesson8c), course8);
+        createUnitDetails(unit8d, List.of(lesson8d), course8);
+        createUnitDetails(unit8e, List.of(lesson8e), course8);
+
 // Course 9: Artificial Intelligence
         Syllabus syllabus9 = createSyllabus(
                 "Explore the basics of artificial intelligence.",
@@ -309,9 +315,10 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson9a=createLesson("Machine Learning","Machine Learning is the subset of AI that involves developing algorithms that enable computers to learn from and make predictions based on data.Key techniques include supervised learning, where models are trained on labeled data; unsupervised learning, which finds patterns in unlabeled data; and reinforcement learning, which learns optimal actions through trial and error.",faculty4,unit9a);
             Lesson lesson9b=createLesson("Neural Networks","Neural networks are a set of algorithms inspired by the human brain.They consist of interconnected layers of nodes(neurons) that process data in a hierarchical manner. The basic structures includes a input layer, hidden layers, and an output layer.Backpropagation is a key algorithm used to train nerual networks by adjusting weights based on error rates. Building and training neural networks allows for tasks such as image recognition, speech processing, and predictive modeling",faculty4,unit9b);
             Lesson lesson9c=createLesson("Natural Language Processing","Natural language processing(NLP) is a field of AI that focuses on enabling computers to understand, interpret, and generate human language. Key techniques include text processing(tokenization,stemming, and lemmatization),sentiment analysis, and building language models using machine learning. NLP is crucial for applications like chatbots, language translation, and sentiment analysis, enhancing human-computer interaction and understanding of textual data",faculty4,unit9c);
-                 unit9a.setLessons(List.of(lesson9a));
-                 unit9b.setLessons(List.of(lesson9b));
-                 unit9c.setLessons(List.of(lesson9c));
+        createUnitDetails(unit9a, List.of(lesson9a), course9);
+        createUnitDetails(unit9b, List.of(lesson9b), course9);
+        createUnitDetails(unit9c, List.of(lesson9c), course9);
+
 
 // Create the Syllabus and Units for Course 10
         Syllabus syllabus10 = createSyllabus("Introduction to the principles of cybersecurity.", "Threat Analysis, Encryption, Network Security, Secure Coding.", "Assignments (40%), Projects (30%), Tests (30%)");
@@ -329,10 +336,11 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson10b=createLesson("Encryption","Encryption is the process of converting information into a secure format that can only be read by authorized parties.This involves using algorithms to encode data so that it appears random and unreadable to unauthorized users. Common encryption techniques include symmetric- key encryption(AES) and asymmetric-key encryption(RSA)",faculty5,unit10b);
             Lesson lesson10c=createLesson("Network Security","Network security involves protecting data during transmission across networks by implementing various measures. These measures include firewalls, which control incoming and outgoing network traffic; intrusion detection systems(IDS), which monitor network traffic for suspicious activity; and encryption protocols, which secure data in transit.",faculty5,unit10c);
             Lesson lesson10d=createLesson("Secure Coding","Secure coding practices aim to prevent vulnerabilites in software by following best practices during development. This includes writing code that is resistant to common security flaws, such as SQL injection,cross-site scripting(XSS), and buffer overflows.Key principles of secure coding involve input validation, proper error handling, and regular code reviews.",faculty5,unit10d);
-                 unit10a.setLessons(List.of(lesson10a));
-                 unit10b.setLessons(List.of(lesson10b));
-                 unit10c.setLessons(List.of(lesson10c));
-                 unit10d.setLessons(List.of(lesson10d));
+        createUnitDetails(unit10a, List.of(lesson10a), course10);
+        createUnitDetails(unit10b, List.of(lesson10b), course10);
+        createUnitDetails(unit10c, List.of(lesson10c), course10);
+        createUnitDetails(unit10d, List.of(lesson10d), course10);
+
 // Mathematics Courses
 
         // Course 11: Calculus I
@@ -350,10 +358,11 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson11b=createLesson("Derivatives","Derivatives measure how a function changes as its input changes. The derivative of a function(f(x)) at a point x is the slope of the tangent line to the curve at that point.Techniques of differentiation include the power rule, product rule,quotient rule, and chain rule.Derivatives have many applications such as finding rate of change,optimizing functions, and solving problems in physics and engineering",faculty1,unit11b);
             Lesson lesson11c=createLesson("Integrals","Integrals represent the accumulation of quantities, such as areas under curves. The integral of a function(f(x)) over an interval ([a,b]) is the total area between the function and the x-axis. Techniques of integration include substitution,integration by parts and partial fractions.The Fundamental Theorem of Calculs connects differentiation and integration,showing that they are inverse processes. Integrals are used in various fields,such as calculating areas,volumes, and solving differential equations.",faculty1,unit11c);
             Lesson lesson11d=createLesson("Applications of Calculus","Calculus has practical applications in science,engineering and economics.It is used to model and solve real-world problems, such as calculating the motion of objects,optimizing functions, and analyzing growth rates.",faculty1,unit11d);
-                unit11a.setLessons(List.of(lesson11a));
-                unit11b.setLessons(List.of(lesson11b));
-                unit11c.setLessons(List.of(lesson11c));
-                unit11d.setLessons(List.of(lesson11d));
+        createUnitDetails(unit11a, List.of(lesson11a), course11);
+        createUnitDetails(unit11b, List.of(lesson11b), course11);
+        createUnitDetails(unit11c, List.of(lesson11c), course11);
+        createUnitDetails(unit11d, List.of(lesson11d), course11);
+
 // Course 12: Linear Algebra
         Syllabus syllabus12 = createSyllabus("Study of vector spaces, matrices, and linear transformations.", "Vectors, Matrices, Determinants, Eigenvalues, Eigenvectors.", "Assignments (40%), Projects (30%), Tests (30%)");
 
@@ -371,11 +380,12 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson12c=createLesson("Determinants","Determinants are scalar values that can be computed from the elements of a square matrix. The determinant of a matrix provides important information about the matrix such as whether its invertable(if determinent doesnt equal 0)",faculty2,unit12c);
             Lesson lesson12d=createLesson("Eigenvalues","Eigenvalues are special numbers associated with a matrix that give insight into the matrix's properties and behavior. An eigenvalue of a matrix is scalar such that when the matrix is multiplied by a specific vector, the result is the same vector scaled by the eigenvalue.",faculty2,unit12d);
             Lesson lesson12e=createLesson("Eigenvectors","Eigenvectors are vectors associated with eigenvalues that remain in the same direction under a linear transformation.Eigenvectors are crucial in matrix diagonalization,simplifying matrix powers, and solving systems of linear differential equations.",faculty2,unit12e);
-                unit12a.setLessons(List.of(lesson12a));
-                unit12b.setLessons(List.of(lesson12b));
-                unit12c.setLessons(List.of(lesson12c));
-                unit12d.setLessons(List.of(lesson12d));
-                unit12e.setLessons(List.of(lesson12e));
+        createUnitDetails(unit12a, List.of(lesson12a), course12);
+        createUnitDetails(unit12b, List.of(lesson12b), course12);
+        createUnitDetails(unit12c, List.of(lesson12c), course12);
+        createUnitDetails(unit12d, List.of(lesson12d), course12);
+        createUnitDetails(unit12e, List.of(lesson12e), course12);
+
 // Course 13: Calculus II
         Syllabus syllabus13 = createSyllabus("Explore advanced calculus topics including sequences,series, and multivariable calculus.", "Sequences and Series, Techniques of integration, Multivariable Functions, Vector Calculus.", "Assignments (40%), Projects (30%), Tests (30%)");
 
@@ -391,10 +401,11 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson13b=createLesson("Techniques of Integration","Advance integration techniques are used to evaluate complex integrals.These include integration by parts,which integrate products of functions;partial fractions,which decompose rational functions into simpler fractions;trigonometric integrals,which extend the concept of integration to unbounded intervals or integrands.",faculty3,unit13b);
             Lesson lesson13c=createLesson("Multivariable Functions","Multivariable functions involve more than one variable.Key concepts include partial derivatives,which measure how a function changes with respect to one varaible while holding others constant;mulitple integrals,which extend the concept of integration to functions of several variables; and gradient vectors, which indicate the direction of the steepest ascent.",faculty3,unit13c);
             Lesson lesson13d=createLesson("Vector Calculus","Vector calculus studies vector fields and their applications. Important topics include line integrals, which integrate functions along curves; surfact integrals,which integrate over surfaces; Green's Theorem, which relates a line integral around a simple curve to a double integral over the region it encloses; Stoke's Theorem, which generalizes Green's Theorem to higher dimensions; and the Divergence Theorem,which relates the flux of a vector field through a surface to a triple integral over the volume it encloses",faculty3,unit13d);
-                unit13a.setLessons(List.of(lesson13a));
-                unit13b.setLessons(List.of(lesson13b));
-                unit13c.setLessons(List.of(lesson13c));
-                unit13d.setLessons(List.of(lesson13d));
+        createUnitDetails(unit13a, List.of(lesson13a), course13);
+        createUnitDetails(unit13b, List.of(lesson13b), course13);
+        createUnitDetails(unit13c, List.of(lesson13c), course13);
+        createUnitDetails(unit13d, List.of(lesson13d), course13);
+
 // Course 14: Discrete Mathematics
         Syllabus syllabus14 = createSyllabus("Study of mathematical structures that are fundamentally discrete.", "Logic, Set Theory, Graph Theory, Combinatorics.", "Assignments (40%), Projects (30%), Tests (30%)");
 
@@ -410,10 +421,11 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson14b=createLesson("Set Theory","Set theory is the study of sets, which are collections of distinct objects.Key concepts include subsets,unions,intersections, and Cartesian products(pairs of elements from sets). Set Theory provides a basis for understanding mathematical structures and relationships",faculty4,unit14b);
             Lesson lesson14c=createLesson("Graph Theory","Graph theory involves studying graphs which consist of vertices connected by edges. Different types of graphs include directed and undirected graphs. Algorithms for traversing and analyzing graphs, such as depth-first search(DFS) and breadth-first search(BFS) are essential for solving problems in networking,biology, and social sciences",faculty4,unit14c);
             Lesson lesson14d=createLesson("Combinatorics","Combinatorics is the study of counting,arrangement, and combination of objects.It includes permutations and combinations.Principles of counting, such as the Pigeonhole Principle and Inclusion-Exclusion Principle help solve combinatorial problems.Combinatorics is used in fields like cryptography,coding theory, and optimization",faculty4,unit14d);
-                unit14a.setLessons(List.of(lesson14a));
-                unit14b.setLessons(List.of(lesson14b));
-                unit14c.setLessons(List.of(lesson14c));
-                unit14d.setLessons(List.of(lesson14d));
+        createUnitDetails(unit14a, List.of(lesson14a), course14);
+        createUnitDetails(unit14b, List.of(lesson14b), course14);
+        createUnitDetails(unit14c, List.of(lesson14c), course14);
+        createUnitDetails(unit14d, List.of(lesson14d), course14);
+
 // Course 15: Physics I
         Syllabus syllabus15 = createSyllabus("Introduction to classical mechanics.", "Newton's Laws, Energy Principles, Motion.", "Assignments (40%), Projects (30%), Tests (30%)");
 
@@ -427,9 +439,10 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson15a=createLesson("Newton's Laws","First Law(Inertia): an object will remain at rest or in uniform motion unless acted upon by an external force. Second Law(F=ma):The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass.Third Law(Action-Reaction):For every action, there is an equal and opposite reaction",faculty5,unit15a);
             Lesson lesson15b=createLesson("Energy Principlies","The principles of energy include kinetic energy(energy of motion) and potential energy(stored energy). Work is the process of transferring energy by applying a force over a distance.The conservation of energy states that energy cannot be created or destroyed, only transformed from one form to another. Power measures the rate at which work is done or energy is transferred.",faculty5,unit15b);
             Lesson lesson15c=createLesson("Motion","Motion describes the change in position of an object over time. Key concepts include:Linear motion,Projectile motion: the curved path an object follows when launched near the earths surface.Circular motion:Movement along a circular path, characterized by angular velocity and centripetal acceleration",faculty5,unit15c);
-                unit15a.setLessons(List.of(lesson15a));
-                unit15b.setLessons(List.of(lesson15b));
-                unit15c.setLessons(List.of(lesson15c));
+        createUnitDetails(unit15a, List.of(lesson15a), course15);
+        createUnitDetails(unit15b, List.of(lesson15b), course15);
+        createUnitDetails(unit15c, List.of(lesson15c), course15);
+
 // Course 16: Chemistry I
         Syllabus syllabus16 = createSyllabus("Introduction to chemical principles.", "Atomic Structure, Chemical Bonding, Reactions.", "Assignments (40%), Projects (30%), Tests (30%)");
 
@@ -443,9 +456,10 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson16a=createLesson("Atomic Structure","Atomic structure is the foundation of chemistry. Atoms consist of three main subatomic particles:protons,neutrons and electrons.The atomic number is the number of protons in an atom and defines the element.The mass number is the total number of protons and neutrons.Isotopes are atoms of the same element with different numbers of neutrons.",faculty1,unit16a);
             Lesson lesson16b=createLesson("Chemical Bonding","Chemical bonding is the process by which atoms combine to form molecules and compounds.Ionic bonds are formed when one atom donates an electron to another,resulting in positive and negative ions that attract each other.Covalent bonds form when atoms share electrons to achieve a full outer shell.Metallic bonds are formed by the attraction between free-floating valence electrons and positively charged metal ions",faculty1,unit16b);
             Lesson lesson16c=createLesson("Reactions","Chemical reactions involve the transformation of reactants into products. Key concepts include reaction rates,which describe how quickly reactions occur, and equilibrium, where the rates of the forward and reverse reactions are equal. Types of chemical reactions include synthesis,decomposition,single replacement, and double replacement.Factors influencing chemical reactions include temperature, concentration,surface area, and catalysts.",faculty1,unit16c);
-                unit16a.setLessons(List.of(lesson16a));
-                unit16b.setLessons(List.of(lesson16b));
-                unit16c.setLessons(List.of(lesson16c));
+        createUnitDetails(unit16a, List.of(lesson16a), course16);
+        createUnitDetails(unit16b, List.of(lesson16b), course16);
+        createUnitDetails(unit16c, List.of(lesson16c), course16);
+
 
 // Course 17: Biology I
         Syllabus syllabus17 = createSyllabus("Introduction to cellular biology, genetics, and evolution.", "Cell Structure, Genetics, Evolution, Ecology.", "Assignments (40%), Projects (30%), Tests (30%)");
@@ -462,10 +476,11 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson17b=createLesson("Genetics","Genetics is the study of heredity and variation in living organisms.Key concepts include Mendelian genetics,which explains how traits are inherited through dominant and recessive alleles, and the structure and function of DNA.DNA replication ensures genetic information is passed on during cell division, while transcription and translation convert genetic information into proteins.",faculty2,unit17b);
             Lesson lesson17c=createLesson("Evolution","Evolution is the process by which species change over time through natural selection.Genetic variation and environmental factors contribute to the survival and reproduction of individuals whit advantageous traits.",faculty2,unit17c);
             Lesson lesson17d=createLesson("Ecology","Ecology studies the interactions between organisms and their environment.Key concepts include ecosystems, which consist of living organisms and their physical environment; food webs, which illustrate the flow of energy and nutrients; and energy flow,which describes how energy is transferred through trophic levels.Human activities impact ecosystems,leading to changes in biodiversity and ecological balance.",faculty2,unit17d);
-                unit17a.setLessons(List.of(lesson17a));
-                unit17b.setLessons(List.of(lesson17b));
-                unit17c.setLessons(List.of(lesson17c));
-                unit7d.setLessons(List.of(lesson17d));
+        createUnitDetails(unit17a, List.of(lesson17a), course17);
+        createUnitDetails(unit17b, List.of(lesson17b), course17);
+        createUnitDetails(unit17c, List.of(lesson17c), course17);
+        createUnitDetails(unit17d, List.of(lesson17d), course17);
+
 // Course 18: Introduction to Engineering
         Syllabus syllabus18 = createSyllabus("Overview of engineering disciplines and problem-solving techniques.", "Engineering Disciplines, Problem-Solving, Design Process.", "Assignments (40%), Projects (30%), Tests (30%)");
 
@@ -479,9 +494,10 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson18a=createLesson("Engineering Disciplines","Civil:infrastructure like bridges and roads.Mechanical:Design and maunfacturing of mechanical systems.Electrical:Study and application of electricity and electronics.Chemical:Production and use of chemicals and biochemical processes",faculty3,unit18a);
             Lesson lesson18b=createLesson("Problem-Solving","Identifying Problems,Generating solutions and seleting the best solution are the steps to problem solving",faculty3,unit18b);
             Lesson lesson18c=createLesson("Design Process","The design process includes defining requirements,brainstorming,prototyping,testing and iteration",faculty3,unit18c);
-                 unit18a.setLessons(List.of(lesson18a));
-                 unit18b.setLessons(List.of(lesson18b));
-                 unit18c.setLessons(List.of(lesson18c));
+        createUnitDetails(unit18a, List.of(lesson18a), course18);
+        createUnitDetails(unit18b, List.of(lesson18b), course18);
+        createUnitDetails(unit18c, List.of(lesson18c), course18);
+
 // Course 19: Electrical Engineering Basics
         Syllabus syllabus19 = createSyllabus("Fundamentals of electrical circuits, signals, and systems.", "Circuit Analysis, Signal Processing, Systems Theory.", "Assignments (40%), Projects (30%), Tests (30%)");
 
@@ -495,9 +511,10 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson19a=createLesson("Circuit Analysis","Circuit analysis involves understanding principles such as Ohm's law(V=IR) and Kirchhoff's laws. Techniques for analyzing both DC and AC circuits help in calculating voltage,current and resistance.",faculty4,unit19a);
             Lesson lesson19b=createLesson("Signal Processing","Signal processing focuses on analyzing and manipulating signals using tools like Fourier transforms and filtering.These techniques are vital in communication systems and digital signal processing(DSP), enabling effective data transmission and transformation.",faculty4,unit19b);
             Lesson lesson19c=createLesson("Systems Theory","Systems theory studies the behavior of systems through modeling,feedback, and control systems.",faculty4,unit19c);
-                unit19a.setLessons(List.of(lesson19a));
-                unit19b.setLessons(List.of(lesson19b));
-                unit19c.setLessons(List.of(lesson19c));
+        createUnitDetails(unit19a, List.of(lesson19a), course19);
+        createUnitDetails(unit19b, List.of(lesson19b), course19);
+        createUnitDetails(unit19c, List.of(lesson19c), course19);
+
 
 // Course 20: Mechanical Engineering Principles
         Syllabus syllabus20 = createSyllabus("Introduction to the principles of mechanics and thermodynamics.", "Statics, Dynamics, Thermodynamics, Material Science.", "Assignments (40%), Projects (30%), Tests (30%)");
@@ -514,10 +531,11 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson20b=createLesson("Dynamics","Dynamics is the study of bodies in motion and the forces that cause this motion",faculty5,unit20b);
             Lesson lesson20c=createLesson("Thermodynamics","Thermodynamics involves the study of energy,its transformations, and its relation to matter.",faculty5,unit20c);
             Lesson lesson20d=createLesson("Material Science","Material science is the study of the properties,behaviort and applications of materials",faculty5,unit20d);
-                 unit20a.setLessons(List.of(lesson20a));
-                 unit20b.setLessons(List.of(lesson20b));
-                 unit20c.setLessons(List.of(lesson20c));
-                 unit20d.setLessons(List.of(lesson20d));
+        createUnitDetails(unit20a, List.of(lesson20a), course20);
+        createUnitDetails(unit20b, List.of(lesson20b), course20);
+        createUnitDetails(unit20c, List.of(lesson20c), course20);
+        createUnitDetails(unit20d, List.of(lesson20d), course20);
+
         //Semesters
         Semester fall2024 = createSemester("Fall", "2024");
         Semester spring2025 = createSemester("Spring", "2025");
@@ -1633,4 +1651,9 @@ public class Seeder implements CommandLineRunner {
         return faculty;
     }
 
+    public static Unit createUnitDetails(Unit unit, List<Lesson> lessons, Course course) {
+        unit.setLessons(lessons);
+        unit.setCourse(course);
+        return unit;
+    }
 }

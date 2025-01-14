@@ -1640,5 +1640,45 @@ public class Test5to8Seeder implements CommandLineRunner {
         createFacultyWithTest(faculty2, List.of(grade7a_3, grade7a_4, grade7b_3, grade7b_4, grade7c_3, grade7c_4, grade7d_3, grade7d_4), List.of(test7a, test7b, test7c, test7d));
         createFacultyWithTest(faculty3, List.of(grade8a_3, grade8a_4, grade8b_3, grade8b_4, grade8c_3, grade8c_4, grade8d_3, grade8d_4, grade8e_3, grade8e_4), List.of(test8a, test8b, test8c, test8d, test8e));
 
+        linkSubmissionDetails(submission5a_3, student3, grade5a_3, feedback5a_3, List.of(sa5a_1_student3, sa5a_2_student3, sa5a_3_student3, sa5a_4_student3, sa5a_5_student3));
+        linkSubmissionDetails(submission5a_4, student4, grade5a_4, feedback5a_4, List.of(sa5a_1_student4, sa5a_2_student4, sa5a_3_student4, sa5a_4_student4, sa5a_5_student4));
+        linkSubmissionDetails(submission5b_3, student3, grade5b_3, feedback5b_3, List.of(sa5b_1_student3, sa5b_2_student3, sa5b_3_student3, sa5b_4_student3, sa5b_5_student3));
+        linkSubmissionDetails(submission5b_4, student4, grade5b_4, feedback5b_4, List.of(sa5b_1_student4, sa5b_2_student4, sa5b_3_student4, sa5b_4_student4, sa5b_5_student4));
+        linkSubmissionDetails(submission5c_3, student3, grade5c_3, feedback5c_3, List.of(sa5c_1_student3, sa5c_2_student3, sa5c_3_student3, sa5c_4_student3, sa5c_5_student3));
+        linkSubmissionDetails(submission5c_4, student4, grade5c_4, feedback5c_4, List.of(sa5c_1_student4, sa5c_2_student4, sa5c_3_student4, sa5c_4_student4, sa5c_5_student4));
+        linkSubmissionDetails(submission5d_3, student3, grade5d_3, feedback5d_3, List.of(sa5d_1_student3, sa5d_2_student3, sa5d_3_student3, sa5d_4_student3, sa5d_5_student3));
+        linkSubmissionDetails(submission5d_4, student4, grade5d_4, feedback5d_4, List.of(sa5d_1_student4, sa5d_2_student4, sa5d_3_student4, sa5d_4_student4, sa5d_5_student4));
+
+        linkSubmissionDetails(submission6a_3, student3, grade6a_3, feedback6a_3, List.of(sa6a_1_student3, sa6a_2_student3, sa6a_3_student3, sa6a_4_student3, sa6a_5_student3));
+        linkSubmissionDetails(submission6a_4, student4, grade6a_4, feedback6a_4, List.of(sa6a_1_student4, sa6a_2_student4, sa6a_3_student4, sa6a_4_student4, sa6a_5_student4));
+        linkSubmissionDetails(submission6b_3, student3, grade6b_3, feedback6b_3, List.of(sa6b_1_student3, sa6b_2_student3, sa6b_3_student3, sa6b_4_student3, sa6b_5_student3));
+        linkSubmissionDetails(submission6b_4, student4, grade6b_4, feedback6b_4, List.of(sa6b_1_student4, sa6b_2_student4, sa6b_3_student4, sa6b_4_student4, sa6b_5_student4));
+        linkSubmissionDetails(submission6c_3, student3, grade6c_3, feedback6c_3, List.of(sa6c_1_student3, sa6c_2_student3, sa6c_3_student3, sa6c_4_student3, sa6c_5_student3));
+        linkSubmissionDetails(submission6c_4, student4, grade6c_4, feedback6c_4, List.of(sa6c_1_student4, sa6c_2_student4, sa6c_3_student4, sa6c_4_student4, sa6c_5_student4));
+        linkSubmissionDetails(submission6d_3, student3, grade6d_3, feedback6d_3, List.of(sa6d_1_student3, sa6d_2_student3, sa6d_3_student3, sa6d_4_student3, sa6d_5_student3));
+        linkSubmissionDetails(submission6d_4, student4, grade6d_4, feedback6d_4, List.of(sa6d_1_student4, sa6d_2_student4, sa6d_3_student4, sa6d_4_student4, sa6d_5_student4));
+        linkSubmissionDetails(submission6e_3, student3, grade6e_3, feedback6e_3, List.of(sa6e_1_student3, sa6e_2_student3, sa6e_3_student3, sa6e_4_student3, sa6e_5_student3));
+        linkSubmissionDetails(submission6e_4, student4, grade6e_4, feedback6e_4, List.of(sa6e_1_student4, sa6e_2_student4, sa6e_3_student4, sa6e_4_student4, sa6e_5_student4));
+
+        linkSubmissionDetails(submission7a_3, student3, grade7a_3, feedback7a_3, List.of(sa7a_1_student3, sa7a_2_student3, sa7a_3_student3, sa7a_4_student3, sa7a_5_student3));
+        linkSubmissionDetails(submission7a_4, student4, grade7a_4, feedback7a_4, List.of(sa7a_1_student4, sa7a_2_student4, sa7a_3_student4, sa7a_4_student4, sa7a_5_student4));
+        linkSubmissionDetails(submission7b_3, student3, grade7b_3, feedback7b_3, List.of(sa7b_1_student3, sa7b_2_student3, sa7b_3_student3, sa7b_4_student3, sa7b_5_student3));
+        linkSubmissionDetails(submission7b_4, student4, grade7b_4, feedback7b_4, List.of(sa7b_1_student4, sa7b_2_student4, sa7b_3_student4, sa7b_4_student4, sa7b_5_student4));
+        linkSubmissionDetails(submission7c_3, student3, grade7c_3, feedback7c_3, List.of(sa7c_1_student3, sa7c_2_student3, sa7c_3_student3, sa7c_4_student3, sa7c_5_student3));
+        linkSubmissionDetails(submission7c_4, student4, grade7c_4, feedback7c_4, List.of(sa7c_1_student4, sa7c_2_student4, sa7c_3_student4, sa7c_4_student4, sa7c_5_student4));
+        linkSubmissionDetails(submission7d_3, student3, grade7d_3, feedback7d_3, List.of(sa7d_1_student3, sa7d_2_student3, sa7d_3_student3, sa7d_4_student3, sa7d_5_student3));
+        linkSubmissionDetails(submission7d_4, student4, grade7d_4, feedback7d_4, List.of(sa7d_1_student4, sa7d_2_student4, sa7d_3_student4, sa7d_4_student4, sa7d_5_student4));
+
+        linkSubmissionDetails(submission8a_3, student3, grade8a_3, feedback8a_3, List.of(sa8a_1_student3, sa8a_2_student3, sa8a_3_student3, sa8a_4_student3, sa8a_5_student3));
+        linkSubmissionDetails(submission8a_4, student4, grade8a_4, feedback8a_4, List.of(sa8a_1_student4, sa8a_2_student4, sa8a_3_student4, sa8a_4_student4, sa8a_5_student4));
+        linkSubmissionDetails(submission8b_3, student3, grade8b_3, feedback8b_3, List.of(sa8b_1_student3, sa8b_2_student3, sa8b_3_student3, sa8b_4_student3, sa8b_5_student3));
+        linkSubmissionDetails(submission8b_4, student4, grade8b_4, feedback8b_4, List.of(sa8b_1_student4, sa8b_2_student4, sa8b_3_student4, sa8b_4_student4, sa8b_5_student4));
+        linkSubmissionDetails(submission8c_3, student3, grade8c_3, feedback8c_3, List.of(sa8c_1_student3, sa8c_2_student3, sa8c_3_student3, sa8c_4_student3, sa8c_5_student3));
+        linkSubmissionDetails(submission8c_4, student4, grade8c_4, feedback8c_4, List.of(sa8c_1_student4, sa8c_2_student4, sa8c_3_student4, sa8c_4_student4, sa8c_5_student4));
+        linkSubmissionDetails(submission8d_3, student3, grade8d_3, feedback8d_3, List.of(sa8d_1_student3, sa8d_2_student3, sa8d_3_student3, sa8d_4_student3, sa8d_5_student3));
+        linkSubmissionDetails(submission8d_4, student4, grade8d_4, feedback8d_4, List.of(sa8d_1_student4, sa8d_2_student4, sa8d_3_student4, sa8d_4_student4, sa8d_5_student4));
+        linkSubmissionDetails(submission8e_3, student3, grade8e_3, feedback8e_3, List.of(sa8e_1_student3, sa8e_2_student3, sa8e_3_student3, sa8e_4_student3, sa8e_5_student3));
+        linkSubmissionDetails(submission8e_4, student4, grade8e_4, feedback8e_4, List.of(sa8e_1_student4, sa8e_2_student4, sa8e_3_student4, sa8e_4_student4, sa8e_5_student4));
+
     }
 }
