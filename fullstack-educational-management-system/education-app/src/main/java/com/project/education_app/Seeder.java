@@ -1396,6 +1396,41 @@ public class Seeder implements CommandLineRunner {
         createFacultyWithDetails(faculty4, List.of(announcement4), List.of(lesson4a, lesson4b, lesson4c, lesson4d, lesson9a, lesson9b, lesson9c, lesson14a, lesson14b, lesson14c, lesson14d, lesson19a, lesson19b, lesson19c), List.of(discussion4a, discussion4b, discussion4c, discussion4d, discussion9a, discussion9b, discussion9c, discussion14a, discussion14b, discussion14c, discussion14d, discussion19a, discussion19b, discussion19c));
         createFacultyWithDetails(faculty5, List.of(announcement5, announcement6), List.of(lesson5a, lesson5b, lesson5c, lesson5d, lesson10a, lesson10b, lesson10c, lesson10d, lesson15a, lesson15b, lesson15c, lesson20a, lesson20b, lesson20c, lesson20d), List.of(discussion5a, discussion5b, discussion5c, discussion5d, discussion10a, discussion10b, discussion10c, discussion10d, discussion15a, discussion15b, discussion15c, discussion20a, discussion20b, discussion20c, discussion20d));
 
+        addSyllabusCourseAndResource(syllabus1, course1, List.of(resource1a, resource1b));
+        addSyllabusCourseAndResource(syllabus2, course2, List.of(resource2a, resource2b));
+        addSyllabusCourseAndResource(syllabus3, course3, List.of(resource3a, resource3b));
+        addSyllabusCourseAndResource(syllabus4, course4, List.of(resource4a, resource4b));
+        addSyllabusCourseAndResource(syllabus5, course5, List.of(resource5a, resource5b));
+        addSyllabusCourseAndResource(syllabus6, course6, List.of(resource6a, resource6b));
+        addSyllabusCourseAndResource(syllabus7, course7, List.of(resource7a, resource7b));
+        addSyllabusCourseAndResource(syllabus8, course8, List.of(resource8a, resource8b));
+        addSyllabusCourseAndResource(syllabus9, course9, List.of(resource9a, resource9b));
+        addSyllabusCourseAndResource(syllabus10, course10, List.of(resource10a, resource10b));
+        addSyllabusCourseAndResource(syllabus11, course11, List.of(resource11a, resource11b));
+        addSyllabusCourseAndResource(syllabus12, course12, List.of(resource12a, resource12b));
+        addSyllabusCourseAndResource(syllabus13, course13, List.of(resource13a, resource13b));
+        addSyllabusCourseAndResource(syllabus14, course14, List.of(resource14a, resource14b));
+        addSyllabusCourseAndResource(syllabus15, course15, List.of(resource15a, resource15b));
+        addSyllabusCourseAndResource(syllabus16, course16, List.of(resource16a, resource16b));
+        addSyllabusCourseAndResource(syllabus17, course17, List.of(resource17a, resource17b));
+        addSyllabusCourseAndResource(syllabus18, course18, List.of(resource18a, resource18b));
+        addSyllabusCourseAndResource(syllabus19, course19, List.of(resource19a, resource19b));
+        addSyllabusCourseAndResource(syllabus20, course20, List.of(resource20a, resource20b));
+
+        createStudentDetails(student1, List.of(attendance1, attendance2), List.of(guardian1, guardian2), List.of(course1, course2, course3, course4), List.of(post1a1, post1b1, post1c1, post1d1, post1e1, post1f1, post2a1, post2b1, post2c1, post2d1, post2e1, post2f1, post3a1, post3b1, post3c1, post3d1, post4a1, post4b1, post4c1, post4d1), new ArrayList<>(), List.of(scheduleStudent1));
+        createStudentDetails(student1, List.of(attendance3, attendance4), List.of(guardian3, guardian4), List.of(course1, course2, course3, course4), List.of(post1a2, post1b2, post1c2, post1d2, post1e2, post1f2, post2a2, post2b2, post2c2, post2d2, post2e2, post2f2, post3a2, post3b2, post3c2, post3d2, post4a2, post4b2, post4c2, post4d2), List.of(comment1a1, comment1b1, comment1c1, comment1d1, comment1e1, comment1f1, comment2a1, comment2b1, comment2c1, comment2d1, comment2e1, comment2f1, comment3a1, comment3b1, comment3c1, comment3d1, comment4a1, comment4b1, comment4c1, comment4d1), List.of(scheduleStudent2));
+        createStudentDetails(student3, List.of(attendance5, attendance6), List.of(guardian5, guardian6), List.of(course5, course6, course7, course8), List.of(post5a1, post5b1, post5c1, post5d1, post6a1, post6b1, post6c1, post6d1, post6e1, post7a1, post7b1, post7c1, post7d1, post8a1, post8b1, post8c1, post8d1, post8e1), new ArrayList<>(), List.of(scheduleStudent3));
+        createStudentDetails(student4, List.of(attendance7, attendance8), List.of(guardian7, guardian8), List.of(course5, course6, course7, course8), List.of(post5a2, post5b2, post5c2, post5d2, post6a2, post6b2, post6c2, post6d2, post6e2, post7a2, post7b2, post7c2, post7d2, post8a2, post8b2, post8c2, post8d2, post8e2), List.of(comment5a1, comment5b1, comment5c1, comment5d1, comment6a1, comment6b1, comment6c1, comment6d1, comment6e1, comment7a1, comment7b1, comment7c1, comment7d1, comment8a1, comment8b1, comment8c1, comment8d1, comment8e1), List.of(scheduleStudent4));
+        createStudentDetails(student5, List.of(attendance9, attendance10), List.of(guardian9, guardian10), List.of(course9, course10, course11, course12), List.of(post9a1, post9b1, post9c1, post10a1, post10b1, post10c1, post10d1, post11a1, post11b1, post11c1, post11d1, post12a1, post12b1, post12c1, post12d1, post12e1), new ArrayList<>(), List.of(scheduleStudent5));
+        createStudentDetails(student6, List.of(attendance11, attendance12), List.of(guardian11, guardian12), List.of(course9, course10, course11, course12), List.of(post9a2, post9b2, post9c2, post10a2, post10b2, post10c2, post10d2, post11a2, post11b2, post11c2, post11d2, post12a2, post12b2, post12c2, post12d2, post12e2), List.of(comment9a1, comment9b1, comment9c1, comment10a1, comment10b1, comment10c1, comment10d1, comment11a1, comment11b1, comment11c1, comment11d1, comment12a1, comment12b1, comment12c1, comment12d1, comment12e1), List.of(scheduleStudent6));
+        createStudentDetails(student7, List.of(attendance13, attendance14), List.of(guardian13, guardian14), List.of(course13, course14, course15, course16), List.of(post13a1, post13b1, post13c1, post13d1, post14a1, post14b1, post14c1, post14d1, post15a1, post15b1, post15c1, post16a1, post16b1, post16c1), new ArrayList<>(), List.of(scheduleStudent7));
+        createStudentDetails(student8, List.of(attendance15, attendance16), List.of(guardian15, guardian16), List.of(course13, course14, course15, course16), List.of(post13a2, post13b2, post13c2, post13d2, post14a2, post14b2, post14c2, post14d2, post15a2, post15b2, post15c2, post16a2, post16b2, post16c2), List.of(comment13a1, comment13b1, comment13c1, comment13d1, comment14a1, comment14b1, comment14c1, comment14d1, comment15a1, comment15b1, comment15c1, comment16a1, comment16b1, comment16c1), List.of(scheduleStudent8));
+        createStudentDetails(student9, List.of(attendance17, attendance18), List.of(guardian17, guardian18), List.of(course17, course18, course19, course20), List.of(post17a1, post17b1, post17c1, post17d1, post18a1, post18b1, post18c1, post19a1, post19b1, post19c1, post20a1, post20b1, post20c1, post20d1), new ArrayList<>(), List.of(scheduleStudent9));
+        createStudentDetails(student10, List.of(attendance19, attendance20), List.of(guardian19, guardian20), List.of(course17, course18, course19, course20), List.of(post17a2, post17b2, post17c2, post17d2, post18a2, post18b2, post18c2, post19a2, post19b2, post19c2, post20a2, post20b2, post20c2, post20d2), List.of(comment17a1, comment17b1, comment17c1, comment17d1, comment18a1, comment18b1, comment18c1, comment19a1, comment19b1, comment19c1, comment20a1, comment20b1, comment20c1, comment20d1), List.of(scheduleStudent10));
+
+
+
+
         attendanceRepo.saveAllAndFlush(Arrays.asList(attendance1, attendance2, attendance3, attendance4, attendance5, attendance6, attendance7, attendance8, attendance9, attendance10, attendance11, attendance12, attendance13, attendance14, attendance15, attendance16, attendance17, attendance18, attendance19, attendance20));
         resourceRepo.saveAllAndFlush(Arrays.asList(resource1a, resource1b, resource2a, resource2b, resource3a, resource3b, resource4a, resource4b, resource5a, resource5b, resource6a, resource6b, resource7a, resource7b, resource8a, resource8b, resource9a, resource9b, resource10a, resource10b, resource11a, resource11b, resource12a, resource12b, resource13a, resource13b, resource14a, resource14b, resource15a, resource15b, resource16a, resource16b, resource17a, resource17b, resource18a, resource18b, resource19a, resource19b, resource20a, resource20b));
         discussionRepo.saveAllAndFlush(Arrays.asList(discussion1a, discussion1b, discussion1c, discussion1d, discussion1e, discussion1f, discussion2a, discussion2b, discussion2c, discussion2d, discussion2e, discussion2f, discussion3a, discussion3b, discussion3c, discussion3d, discussion4a, discussion4b, discussion4c, discussion4d, discussion5a, discussion5b, discussion5c, discussion5d, discussion6a, discussion6b, discussion6c, discussion6d, discussion6e, discussion7a, discussion7b, discussion7c, discussion7d, discussion8a, discussion8b, discussion8c, discussion8d, discussion8e, discussion9a, discussion9b, discussion9c, discussion10a, discussion10b, discussion10c, discussion10d, discussion11a, discussion11b, discussion11c, discussion11d, discussion12a, discussion12b, discussion12c, discussion12d, discussion12e, discussion13a, discussion13b, discussion13c, discussion13d, discussion14a, discussion14b, discussion14c, discussion14d, discussion15a, discussion15b, discussion15c, discussion16a, discussion16b, discussion16c, discussion17a, discussion17b, discussion17c, discussion17d, discussion18a, discussion18b, discussion18c,
@@ -1602,15 +1637,6 @@ public class Seeder implements CommandLineRunner {
         return submission;
     }
 
-    public static void addGradeToSubmission(Submission submission, Grade grade) {
-        submission.setGrade(grade);
-        grade.setSubmission(submission); // Ensures the relationship is bidirectional
-    }
-
-    public static void addFeedbackToSubmission(Submission submission, Feedback feedback) {
-        submission.setFeedback(feedback);
-        feedback.setSubmission(submission); // Ensures the relationship is bidirectional
-    }
 
     public static CourseGrade createCourseGrade(Student student, Course course, double overallGrade, List<Grade> grades) {
         CourseGrade courseGrade = new CourseGrade();
@@ -1618,6 +1644,10 @@ public class Seeder implements CommandLineRunner {
         courseGrade.setCourse(course);
         courseGrade.setOverallGrade(overallGrade);
         courseGrade.setGrades(grades);
+
+        for (Grade grade : grades) {
+            grade.setCourseGrade(courseGrade);
+        }
         return courseGrade;
     }
 
@@ -1655,5 +1685,37 @@ public class Seeder implements CommandLineRunner {
         unit.setLessons(lessons);
         unit.setCourse(course);
         return unit;
+    }
+
+    public static void addSyllabusCourseAndResource(Syllabus syllabus, Course course, List<Resource> resources) {
+        syllabus.setCourse(course);
+        syllabus.setResources(resources);
+    }
+
+    public static void createStudentDetails(Student student, List<Attendance> attendances, List<Guardian> guardians, List<Course> courses, List<Post> posts, List<Comment> comments, List<Schedule> schedules) {
+        student.setAttendances(attendances);
+        student.setGuardians(guardians);
+        student.setCourses(courses);
+        student.setPosts(posts);
+        student.setComments(comments);
+        student.setSchedules(schedules);
+    }
+
+    public static void studentAssignment(Student student, List<Grade> grades, List<CourseGrade> courseGrades, List<Assignment> assignments) {
+        student.setGrades(grades);
+        student.setCourseGrades(courseGrades);
+        student.setAssignments(assignments);
+    }
+
+    public static void studentProject(Student student, List<Grade> grades, List<CourseGrade> courseGrades, List<Project> projects) {
+        student.setGrades(grades);
+        student.setCourseGrades(courseGrades);
+        student.setProjects(projects);
+    }
+
+    public static void studentTest(Student student, List<Grade> grades, List<CourseGrade> courseGrades, List<Test> tests) {
+        student.setGrades(grades);
+        student.setCourseGrades(courseGrades);
+        student.setTests(tests);
     }
 }

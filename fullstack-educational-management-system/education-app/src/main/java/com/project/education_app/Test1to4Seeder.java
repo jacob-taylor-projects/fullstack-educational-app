@@ -1892,6 +1892,14 @@ public class Test1to4Seeder implements CommandLineRunner {
         linkSubmissionDetails(submission4d_1, student1, grade4d_1, feedback4d_1, List.of(sa4d_1_student1, sa4d_2_student1, sa4d_3_student1, sa4d_4_student1, sa4d_5_student1));
         linkSubmissionDetails(submission4d_2, student2, grade4d_2, feedback4d_2, List.of(sa4d_1_student2, sa4d_2_student2, sa4d_3_student2, sa4d_4_student2, sa4d_5_student2));
 
+        syllabus1.setTests(List.of(test1a, test1b, test1c, test1d, test1e, test1f));
+        syllabus2.setTests(List.of(test2a, test2b, test2c, test2d, test2e, test2f));
+        syllabus3.setTests(List.of(test3a, test3b, test3c, test3d));
+        syllabus4.setTests(List.of(test4a, test4b, test4c, test4d));
+
+        studentTest(student1, List.of(grade1a_1, grade1b_1, grade1c_1, grade1d_1, grade1e_1, grade1f_1, grade2a_1, grade2b_1, grade2c_1, grade2d_1, grade2e_1, grade2f_1, grade3a_1, grade3b_1, grade3c_1, grade3d_1, grade4a_1, grade4b_1, grade4c_1, grade4d_1), List.of(courseGrade1a_1, courseGrade2a_1, courseGrade3a_1, courseGrade4a_1), List.of(test1a, test1b, test1c, test1d, test1e, test1f, test2a, test2b, test2c, test2d, test2e, test2f, test3a, test3b, test3c, test3d, test4a, test4b, test4c, test4d));
+        studentTest(student2, List.of(grade1a_2, grade1b_2, grade1c_2, grade1d_2, grade1e_2, grade1f_2, grade2a_2, grade2b_2, grade2c_2, grade2d_2, grade2e_2, grade2f_2, grade3a_2, grade3b_2, grade3c_2, grade3d_2, grade4a_2, grade4b_2, grade4c_2, grade4d_2), List.of(courseGrade1a_2, courseGrade2a_2, courseGrade3a_2, courseGrade4a_2), List.of(test1a, test1b, test1c, test1d, test1e, test1f, test2a, test2b, test2c, test2d, test2e, test2f, test3a, test3b, test3c, test3d, test4a, test4b, test4c, test4d));
+
     }
 
     public static Test createTest(String title, Faculty teacher, Date dueDate, Syllabus syllabus, boolean completed) {

@@ -1390,5 +1390,13 @@ public class Assignment13to16Seeder implements CommandLineRunner {
         linkSubmissionDetails(submission16_3_8, student8, grade16_3_8, feedback16_3_8, List.of(sa16_3_1_student8, sa16_3_2_student8, sa16_3_3_student8, sa16_3_4_student8, sa16_3_5_student8));
 
 
+        syllabus13.setAssignments(List.of(assignment13_1, assignment13_2, assignment13_3, assignment13_4));
+        syllabus14.setAssignments(List.of(assignment14_1, assignment14_2, assignment14_3, assignment14_4));
+        syllabus15.setAssignments(List.of(assignment15_1, assignment15_2, assignment15_3));
+        syllabus16.setAssignments(List.of(assignment16_1, assignment16_2, assignment16_3));
+
+        studentAssignment(student7, List.of(grade13_1_7, grade13_2_7, grade13_3_7, grade13_4_7, grade14_1_7, grade14_2_7, grade14_3_7, grade14_4_7, grade15_1_7, grade15_2_7, grade15_3_7, grade16_1_7, grade16_2_7, grade16_3_7), List.of(courseGrade13_1_7, courseGrade14_1_7, courseGrade15_1_7, courseGrade16_1_7), List.of(assignment13_1, assignment13_2, assignment13_3, assignment13_4, assignment14_1, assignment14_2, assignment14_3, assignment14_4, assignment15_1, assignment15_2, assignment15_3, assignment16_1, assignment16_2, assignment16_3));
+        studentAssignment(student8, List.of(grade13_1_8, grade13_2_8, grade13_3_8, grade13_4_8, grade14_1_8, grade14_2_8, grade14_3_8, grade14_4_8, grade15_1_8, grade15_2_8, grade15_3_8, grade16_1_8, grade16_2_8, grade16_3_8), List.of(courseGrade13_1_8, courseGrade14_1_8, courseGrade15_1_8, courseGrade16_1_8), List.of(assignment13_1, assignment13_2, assignment13_3, assignment13_4, assignment14_1, assignment14_2, assignment14_3, assignment14_4, assignment15_1, assignment15_2, assignment15_3, assignment16_1, assignment16_2, assignment16_3));
+
     }
 }

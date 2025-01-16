@@ -3211,6 +3211,39 @@ public class ProjectSeeder implements CommandLineRunner {
         linkSubmissionDetails(submission20d_project_9, student9, grade20d_9, feedback20d_project_9, List.of(sa20d_project_student9));
         linkSubmissionDetails(submission20d_project_10, student10, grade20d_10, feedback20d_project_10, List.of(sa20d_project_student10));
 
+        syllabus1.setProjects(List.of(project1a, project1b, project1c, project1d, project1e, project1f));
+        syllabus2.setProjects(List.of(project2a, project2b, project2c, project2d, project2e, project2f));
+        syllabus3.setProjects(List.of(project3a, project3b, project3c, project3d));
+        syllabus4.setProjects(List.of(project4a, project4b, project4c, project4d));
+        syllabus5.setProjects(List.of(project5a, project5b, project5c, project5d));
+        syllabus6.setProjects(List.of(project6a, project6b, project6c, project6d, project6e));
+        syllabus7.setProjects(List.of(project7a, project7b, project7c, project7d));
+        syllabus8.setProjects(List.of(project8a, project8b, project8c, project8d, project8e));
+        syllabus9.setProjects(List.of(project9a, project9b, project9c));
+        syllabus10.setProjects(List.of(project10a, project10b, project10c, project10d));
+        syllabus11.setProjects(List.of(project11a, project11b, project11c, project11d));
+        syllabus12.setProjects(List.of(project12a, project12b, project12c, project12d, project12e));
+        syllabus13.setProjects(List.of(project13a, project13b, project13c, project13d));
+        syllabus14.setProjects(List.of(project14a, project14b, project14c, project14d));
+        syllabus15.setProjects(List.of(project15a, project15b, project15c));
+        syllabus16.setProjects(List.of(project16a, project16b, project16c));
+        syllabus17.setProjects(List.of(project17a, project17b, project17c, project17d));
+        syllabus18.setProjects(List.of(project18a, project18b, project18c));
+        syllabus19.setProjects(List.of(project19a, project19b, project19c));
+        syllabus20.setProjects(List.of(project20a, project20b, project20c, project20d));
+
+        studentProject(student1, List.of(grade1a_1, grade1b_1, grade1c_1, grade1d_1, grade1e_1, grade1f_1, grade2a_1, grade2b_1, grade2c_1, grade2d_1, grade2e_1, grade2f_1, grade3a_1, grade3b_1, grade3c_1, grade3d_1, grade4a_1, grade4b_1, grade4c_1, grade4d_1), List.of(courseGrade1a_project_1, courseGrade2a_project_1, courseGrade3a_project_1, courseGrade4a_project_1), List.of(project1a, project1b, project1c, project1d, project1e, project1f, project2a, project2b, project2c, project2d, project2e, project2f, project3a, project3b, project3c, project3d, project4a, project4b, project4c, project4d));
+        studentProject(student2, List.of(grade1a_2, grade1b_2, grade1c_2, grade1d_2, grade1e_2, grade1f_2, grade2a_2, grade2b_2, grade2c_2, grade2d_2, grade2e_2, grade2f_2, grade3a_2, grade3b_2, grade3c_2, grade3d_2, grade4a_2, grade4b_2, grade4c_2, grade4d_2), List.of(courseGrade1a_project_2, courseGrade2a_project_2, courseGrade3a_project_2, courseGrade4a_project_2), List.of(project1a, project1b, project1c, project1d, project1e, project1f, project2a, project2b, project2c, project2d, project2e, project2f, project3a, project3b, project3c, project3d, project4a, project4b, project4c, project4d));
+        studentProject(student3, List.of(grade5a_3, grade5b_3, grade5c_3, grade5d_3, grade6a_3, grade6b_3, grade6c_3, grade6d_3, grade6e_3, grade7a_3, grade7b_3, grade7c_3, grade7d_3, grade8a_3, grade8b_3, grade8c_3, grade8d_3, grade8e_3), List.of(courseGrade5a_project_3, courseGrade6a_project_3, courseGrade7a_project_3, courseGrade8a_project_3), List.of(project5a, project5b, project5c, project5d, project6a, project6b, project6c, project6d, project6e, project7a, project7b, project7c, project7d, project8a, project8b, project8c, project8d, project8e));
+        studentProject(student4, List.of(grade5a_4, grade5b_4, grade5c_4, grade5d_4, grade6a_4, grade6b_4, grade6c_4, grade6d_4, grade6e_4, grade7a_4, grade7b_4, grade7c_4, grade7d_4, grade8a_4, grade8b_4, grade8c_4, grade8d_4, grade8e_4), List.of(courseGrade5a_project_4, courseGrade6a_project_4, courseGrade7a_project_4, courseGrade8a_project_4), List.of(project5a, project5b, project5c, project5d, project6a, project6b, project6c, project6d, project6e, project7a, project7b, project7c, project7d, project8a, project8b, project8c, project8d, project8e));
+        studentProject(student5, List.of(grade9a_5, grade9b_5, grade9c_5, grade10a_5, grade10b_5, grade10c_5, grade10d_5, grade11a_5, grade11b_5, grade11c_5, grade11d_5, grade12a_5, grade12b_5, grade12c_5, grade12d_5, grade12e_5), List.of(courseGrade9a_project_5, courseGrade10a_project_5, courseGrade11a_project_5, courseGrade12a_project_5), List.of(project9a, project9b, project9c, project10a, project10b, project10c, project10d, project11a, project11b, project11c, project11d, project12a, project12b, project12c, project12d, project12e));
+        studentProject(student6, List.of(grade9a_6, grade9b_6, grade9c_6, grade10a_6, grade10b_6, grade10c_6, grade10d_6, grade11a_6, grade11b_6, grade11c_6, grade11d_6, grade12a_6, grade12b_6, grade12c_6, grade12d_6, grade12e_6), List.of(courseGrade9a_project_6, courseGrade10a_project_6, courseGrade11a_project_6, courseGrade12a_project_6), List.of(project9a, project9b, project9c, project10a, project10b, project10c, project10d, project11a, project11b, project11c, project11d, project12a, project12b, project12c, project12d, project12e));
+        studentProject(student7, List.of(grade13a_7, grade13b_7, grade13c_7, grade13d_7, grade14a_7, grade14b_7, grade14c_7, grade14d_7, grade15a_7, grade15b_7, grade15c_7, grade16a_7, grade16b_7, grade16c_7), List.of(courseGrade13a_project_7, courseGrade14a_project_7, courseGrade15a_project_7, courseGrade16a_project_7), List.of(project13a, project13b, project13c, project13d, project14a, project14b, project14c, project14d, project15a, project15b, project15c, project16a, project16b, project16c));
+        studentProject(student8, List.of(grade13a_8, grade13b_8, grade13c_8, grade13d_8, grade14a_8, grade14b_8, grade14c_8, grade14d_8, grade15a_8, grade15b_8, grade15c_8, grade16a_8, grade16b_8, grade16c_8), List.of(courseGrade13a_project_8, courseGrade14a_project_8, courseGrade15a_project_8, courseGrade16a_project_8), List.of(project13a, project13b, project13c, project13d, project14a, project14b, project14c, project14d, project15a, project15b, project15c, project16a, project16b, project16c));
+        studentProject(student9, List.of(grade17a_9, grade17b_9, grade17c_9, grade17d_9, grade18a_9, grade18b_9, grade18c_9, grade19a_9, grade19b_9, grade19c_9, grade20a_9, grade20b_9, grade20c_9, grade20d_9), List.of(courseGrade17a_project_9, courseGrade18a_project_9, courseGrade19a_project_9, courseGrade20a_project_9), List.of(project17a, project17b, project17c, project17d, project18a, project18b, project18c, project19a, project19b, project19c, project20a, project20b, project20c, project20d));
+        studentProject(student10, List.of(grade17a_10, grade17b_10, grade17c_10, grade17d_10, grade18a_10, grade18b_10, grade18c_10, grade19a_10, grade19b_10, grade19c_10, grade20a_10, grade20b_10, grade20c_10, grade20d_10), List.of(courseGrade17a_project_10, courseGrade18a_project_10, courseGrade19a_project_10, courseGrade20a_project_10), List.of(project17a, project17b, project17c, project17d, project18a, project18b, project18c, project19a, project19b, project19c, project20a, project20b, project20c, project20d));
+
+
     }
 
     public static Project createProject(String name, Faculty teacher, Date dueDate, Syllabus syllabus, boolean completed, ProblemAnswer problemAnswer) {

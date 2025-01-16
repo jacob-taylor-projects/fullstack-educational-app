@@ -1571,5 +1571,13 @@ public class Assignment9to12Seeder implements CommandLineRunner {
         linkSubmissionDetails(submission12_5_6, student6, grade12_5_6, feedback12_5_6, List.of(sa12_5_1_student6, sa12_5_2_student6, sa12_5_3_student6, sa12_5_4_student6, sa12_5_5_student6));
 
 
+        syllabus9.setAssignments(List.of(assignment9_1, assignment9_2, assignment9_3));
+        syllabus10.setAssignments(List.of(assignment10_1, assignment10_2, assignment10_3, assignment10_4));
+        syllabus11.setAssignments(List.of(assignment11_1, assignment11_2, assignment11_3, assignment11_4));
+        syllabus12.setAssignments(List.of(assignment12_1, assignment12_2, assignment12_3, assignment12_4, assignment12_5));
+
+        studentAssignment(student5, List.of(grade9_1_5, grade9_2_5, grade9_3_5, grade10_1_5, grade10_2_5, grade10_3_5, grade10_4_5, grade11_1_5, grade11_2_5, grade11_3_5, grade11_4_5, grade12_1_5, grade12_2_5, grade12_3_5, grade12_4_5, grade12_5_5), List.of(courseGrade9_1_5, courseGrade10_1_5, courseGrade11_1_5, courseGrade12_1_5), List.of(assignment9_1, assignment9_2, assignment9_3, assignment10_1, assignment10_2, assignment10_3, assignment10_4, assignment11_1, assignment11_2, assignment11_3, assignment11_4, assignment12_1, assignment12_2, assignment12_3, assignment12_4, assignment12_5));
+        studentAssignment(student6, List.of(grade9_1_6, grade9_2_6, grade9_3_6, grade10_1_6, grade10_2_6, grade10_3_6, grade10_4_6, grade11_1_6, grade11_2_6, grade11_3_6, grade11_4_6, grade12_1_6, grade12_2_6, grade12_3_6, grade12_4_6, grade12_5_6), List.of(courseGrade9_1_6, courseGrade10_1_6, courseGrade11_1_6, courseGrade12_1_6), List.of(assignment9_1, assignment9_2, assignment9_3, assignment10_1, assignment10_2, assignment10_3, assignment10_4, assignment11_1, assignment11_2, assignment11_3, assignment11_4, assignment12_1, assignment12_2, assignment12_3, assignment12_4, assignment12_5));
+
     }
 }

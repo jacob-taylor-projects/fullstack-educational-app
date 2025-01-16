@@ -1506,5 +1506,13 @@ public class Test9to12Seeder implements CommandLineRunner {
         linkSubmissionDetails(submission12e_5, student5, grade12e_5, feedback12e_5, List.of(sa12e_1_student5, sa12e_2_student5, sa12e_3_student5, sa12e_4_student5, sa12e_5_student5));
         linkSubmissionDetails(submission12e_6, student6, grade12e_6, feedback12e_6, List.of(sa12e_1_student6, sa12e_2_student6, sa12e_3_student6, sa12e_4_student6, sa12e_5_student6));
 
+        syllabus9.setTests(List.of(test9a, test9b, test9c));
+        syllabus10.setTests(List.of(test10a, test10b, test10c, test10d));
+        syllabus11.setTests(List.of(test11a, test11b, test11c, test11d));
+        syllabus12.setTests(List.of(test12a, test12b, test12c, test12d, test12e));
+
+        studentTest(student5, List.of(grade9a_5, grade9b_5, grade9c_5, grade10a_5, grade10b_5, grade10c_5, grade10d_5, grade11a_5, grade11b_5, grade11c_5, grade11d_5, grade12a_5, grade12b_5, grade12c_5, grade12d_5, grade12e_5), List.of(courseGrade9a_5, courseGrade10a_5, courseGrade11a_5, courseGrade12a_5), List.of(test9a, test9b, test9c, test10a, test10b, test10c, test10d, test11a, test11b, test11c, test11d, test12a, test12b, test12c, test12d, test12e));
+        studentTest(student6, List.of(grade9a_6, grade9b_6, grade9c_6, grade10a_6, grade10b_6, grade10c_6, grade10d_6, grade11a_6, grade11b_6, grade11c_6, grade11d_6, grade12a_6, grade12b_6, grade12c_6, grade12d_6, grade12e_6), List.of(courseGrade9a_6, courseGrade10a_6, courseGrade11a_6, courseGrade12a_6), List.of(test9a, test9b, test9c, test10a, test10b, test10c, test10d, test11a, test11b, test11c, test11d, test12a, test12b, test12c, test12d, test12e));
+
     }
 }

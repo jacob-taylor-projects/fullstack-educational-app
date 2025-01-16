@@ -1761,5 +1761,13 @@ public class Assignment5to8Seeder implements CommandLineRunner {
         linkSubmissionDetails(submission8_5_4, student4, grade8_5_4, feedback8_5_4, List.of(sa8_5_1_student4, sa8_5_2_student4, sa8_5_3_student4, sa8_5_4_student4, sa8_5_5_student4));
 
 
+        syllabus5.setAssignments(List.of(assignment5_1, assignment5_2, assignment5_3, assignment5_4));
+        syllabus6.setAssignments(List.of(assignment6_1, assignment6_2, assignment6_3, assignment6_4, assignment6_5));
+        syllabus7.setAssignments(List.of(assignment7_1, assignment7_2, assignment7_3, assignment7_4));
+        syllabus8.setAssignments(List.of(assignment8_1, assignment8_2, assignment8_3, assignment8_4, assignment8_5));
+
+        studentAssignment(student3, List.of(grade5_1_3, grade5_2_3, grade5_3_3, grade5_4_3, grade6_1_3, grade6_2_3, grade6_3_3, grade6_4_3, grade6_5_3, grade7_1_3, grade7_2_3, grade7_3_3, grade7_4_3, grade8_1_3, grade8_2_3, grade8_3_3, grade8_4_3, grade8_5_3), List.of(courseGrade5_1_3, courseGrade6_1_3, courseGrade7_1_3, courseGrade8_1_3), List.of(assignment5_1, assignment5_2, assignment5_3, assignment5_4, assignment6_1, assignment6_2, assignment6_3, assignment6_4, assignment6_5, assignment7_1, assignment7_2, assignment7_3, assignment7_4, assignment8_1, assignment8_2, assignment8_3, assignment8_4, assignment8_5));
+        studentAssignment(student4, List.of(grade5_1_4, grade5_2_4, grade5_3_4, grade5_4_4, grade6_1_4, grade6_2_4, grade6_3_4, grade6_4_4, grade6_5_4, grade7_1_4, grade7_2_4, grade7_3_4, grade7_4_4, grade8_1_4, grade8_2_4, grade8_3_4, grade8_4_4, grade8_5_4), List.of(courseGrade5_1_4, courseGrade6_1_4, courseGrade7_1_4, courseGrade8_1_4), List.of(assignment5_1, assignment5_2, assignment5_3, assignment5_4, assignment6_1, assignment6_2, assignment6_3, assignment6_4, assignment6_5, assignment7_1, assignment7_2, assignment7_3, assignment7_4, assignment8_1, assignment8_2, assignment8_3, assignment8_4, assignment8_5));
+
     }
 }

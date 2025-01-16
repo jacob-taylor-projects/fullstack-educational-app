@@ -1947,6 +1947,13 @@ public class Assignment1to4Seeder implements CommandLineRunner {
         linkSubmissionDetails(submission4_4_1, student1, grade4_4_1, feedback4_4_1, List.of(sa4_4_1_student1, sa4_4_2_student1, sa4_4_3_student1, sa4_4_4_student1, sa4_4_5_student1));
         linkSubmissionDetails(submission4_4_2, student2, grade4_4_2, feedback4_4_2, List.of(sa4_4_1_student2, sa4_4_2_student2, sa4_4_3_student2, sa4_4_4_student2, sa4_4_5_student2));
 
+        syllabus1.setAssignments(List.of(assignment, assignment2, assignment3, assignment4, assignment5, assignment6));
+        syllabus2.setAssignments(List.of(assignment2_1, assignment2_2, assignment2_3, assignment2_4, assignment2_5, assignment2_6));
+        syllabus3.setAssignments(List.of(assignment3_1, assignment3_2, assignment3_3, assignment3_4));
+        syllabus4.setAssignments(List.of(assignment4_1, assignment4_2, assignment4_3, assignment4_4));
+
+        studentAssignment(student1, List.of(grade1_1_1, grade1_2_1, grade1_3_1, grade1_4_1, grade1_5_1, grade1_6_1, grade2_1_1, grade2_2_1, grade2_3_1, grade2_4_1, grade2_5_1, grade2_6_1, grade3_1_1, grade3_2_1, grade3_3_1, grade3_4_1, grade4_1_1, grade4_2_1, grade4_3_1, grade4_4_1), List.of(courseGrade1_1_1, courseGrade2_1_1, courseGrade3_1_1, courseGrade4_1_1), List.of(assignment, assignment2, assignment3, assignment4, assignment5, assignment6, assignment2_1, assignment2_2, assignment2_3, assignment2_4, assignment2_5, assignment2_6, assignment3_1, assignment3_2, assignment3_3, assignment3_4, assignment4_1, assignment4_2, assignment4_3, assignment4_4));
+        studentAssignment(student2, List.of(grade1_1_2, grade1_2_2, grade1_3_2, grade1_4_2, grade1_5_2, grade1_6_2, grade2_1_2, grade2_2_2, grade2_3_2, grade2_4_2, grade2_5_2, grade2_6_2, grade3_1_2, grade3_2_2, grade3_3_2, grade3_4_2, grade4_1_2, grade4_2_2, grade4_3_2, grade4_4_2), List.of(courseGrade1_1_2, courseGrade2_1_2, courseGrade3_1_2, courseGrade4_1_2), List.of(assignment, assignment2, assignment3, assignment4, assignment5, assignment6, assignment2_1, assignment2_2, assignment2_3, assignment2_4, assignment2_5, assignment2_6, assignment3_1, assignment3_2, assignment3_3, assignment3_4, assignment4_1, assignment4_2, assignment4_3, assignment4_4));
     }
 
     public static ProblemAnswer createProblemAnswer(String problemContent, String answerContent) {

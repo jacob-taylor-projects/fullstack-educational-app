@@ -1330,5 +1330,13 @@ public class Test17to20Seeder implements CommandLineRunner {
         linkSubmissionDetails(submission20d_9, student9, grade20d_9, feedback20d_9, List.of(sa20d_1_student9, sa20d_2_student9, sa20d_3_student9, sa20d_4_student9, sa20d_5_student9));
         linkSubmissionDetails(submission20d_10, student10, grade20d_10, feedback20d_10, List.of(sa20d_1_student10, sa20d_2_student10, sa20d_3_student10, sa20d_4_student10, sa20d_5_student10));
 
+        syllabus17.setTests(List.of(test17a, test17b, test17c, test17d));
+        syllabus18.setTests(List.of(test18a, test18b, test18c));
+        syllabus19.setTests(List.of(test19a, test19b, test19c));
+        syllabus20.setTests(List.of(test20a, test20b, test20c, test20d));
+
+        studentTest(student9, List.of(grade17a_9, grade17b_9, grade17c_9, grade17d_9, grade18a_9, grade18b_9, grade18c_9, grade19a_9, grade19b_9, grade19c_9, grade20a_9, grade20b_9, grade20c_9, grade20d_9), List.of(courseGrade17a_9, courseGrade18a_9, courseGrade19a_9, courseGrade20a_9), List.of(test17a, test17b, test17c, test17d, test18a, test18b, test18c, test19a, test19b, test19c, test20a, test20b, test20c, test20d));
+        studentTest(student10, List.of(grade17a_10, grade17b_10, grade17c_10, grade17d_10, grade18a_10, grade18b_10, grade18c_10, grade19a_10, grade19b_10, grade19c_10, grade20a_10, grade20b_10, grade20c_10, grade20d_10), List.of(courseGrade17a_10, courseGrade18a_10, courseGrade19a_10, courseGrade20a_10), List.of(test17a, test17b, test17c, test17d, test18a, test18b, test18c, test19a, test19b, test19c, test20a, test20b, test20c, test20d));
+
     }
 }

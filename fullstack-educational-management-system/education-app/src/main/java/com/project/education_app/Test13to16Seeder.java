@@ -1332,5 +1332,13 @@ public class Test13to16Seeder implements CommandLineRunner {
         linkSubmissionDetails(submission16c_7, student7, grade16c_7, feedback16c_7, List.of(sa16c_1_student7, sa16c_2_student7, sa16c_3_student7, sa16c_4_student7, sa16c_5_student7));
         linkSubmissionDetails(submission16c_8, student8, grade16c_8, feedback16c_8, List.of(sa16c_1_student8, sa16c_2_student8, sa16c_3_student8, sa16c_4_student8, sa16c_5_student8));
 
+        syllabus13.setTests(List.of(test13a, test13b, test13c, test13d));
+        syllabus14.setTests(List.of(test14a, test14b, test14c, test14d));
+        syllabus15.setTests(List.of(test15a, test15b, test15c));
+        syllabus16.setTests(List.of(test16a, test16b, test16c));
+
+        studentTest(student7, List.of(grade13a_7, grade13b_7, grade13c_7, grade13d_7, grade14a_7, grade14b_7, grade14c_7, grade14d_7, grade15a_7, grade15b_7, grade15c_7, grade16a_7, grade16b_7, grade16c_7), List.of(courseGrade13a_7, courseGrade14a_7, courseGrade15a_7, courseGrade16a_7), List.of(test13a, test13b, test13c, test13d, test14a, test14b, test14c, test14d, test15a, test15b, test15c, test16a, test16b, test16c));
+        studentTest(student8, List.of(grade13a_8, grade13b_8, grade13c_8, grade13d_8, grade14a_8, grade14b_8, grade14c_8, grade14d_8, grade15a_8, grade15b_8, grade15c_8, grade16a_8, grade16b_8, grade16c_8), List.of(courseGrade13a_8, courseGrade14a_8, courseGrade15a_8, courseGrade16a_8), List.of(test13a, test13b, test13c, test13d, test14a, test14b, test14c, test14d, test15a, test15b, test15c, test16a, test16b, test16c));
+
     }
 }
