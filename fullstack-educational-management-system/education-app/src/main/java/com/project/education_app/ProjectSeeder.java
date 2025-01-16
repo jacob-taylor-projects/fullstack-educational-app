@@ -7,6 +7,7 @@ import com.project.education_app.repos.StudentRepo;
 import com.project.education_app.repos.SyllabusRepo;
 import lombok.Data;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
@@ -19,6 +20,7 @@ import static com.project.education_app.Assignment1to4Seeder.*;
 import static com.project.education_app.Seeder.*;
 
 @Component
+@Order(7)
 @Data
 public class ProjectSeeder implements CommandLineRunner {
     private final FacultyRepo facultyRepo;
@@ -1230,7 +1232,7 @@ public class ProjectSeeder implements CommandLineRunner {
 // Creating StudentAnswer instances for student1
 
 // Creating submission for student1 with project answers for 1a
-        Submission submission1a_project_1 = createSubmission("Submission from student1", student1, List.of(
+        Submission submission1a_project_1 = createSubmission("Submission from student1", student1, Arrays.asList(
                 sa1a_project_student1
         ));
 
@@ -1238,7 +1240,7 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa1a_project_student1, submission1a_project_1);
 
 // Creating submission for student2 with project answers for 1a
-        Submission submission1a_project_2 = createSubmission("Submission from student2", student2, List.of(
+        Submission submission1a_project_2 = createSubmission("Submission from student2", student2, Arrays.asList(
                 sa1a_project_student2
         ));
 
@@ -1246,7 +1248,7 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa1a_project_student2, submission1a_project_2);
 
 // Creating submission for student1 with project answers for 1b
-        Submission submission1b_project_1 = createSubmission("Submission from student1", student1, List.of(
+        Submission submission1b_project_1 = createSubmission("Submission from student1", student1, Arrays.asList(
                 sa1b_project_student1
         ));
 
@@ -1254,14 +1256,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa1b_project_student1, submission1b_project_1);
 
 // Creating submission for student2 with project answers for 1b
-        Submission submission1b_project_2 = createSubmission("Submission from student2", student2, List.of(
+        Submission submission1b_project_2 = createSubmission("Submission from student2", student2, Arrays.asList(
                 sa1b_project_student2
         ));
 
 // Adding the submission to the project answer for student2
         addSubmissionToStudentAnswer(sa1b_project_student2, submission1b_project_2);
 // Creating submission for student1 with project answers for 1c
-        Submission submission1c_project_1 = createSubmission("Submission from student1", student1, List.of(
+        Submission submission1c_project_1 = createSubmission("Submission from student1", student1, Arrays.asList(
                 sa1c_project_student1
         ));
 
@@ -1269,14 +1271,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa1c_project_student1, submission1c_project_1);
 
 // Creating submission for student2 with project answers for 1c
-        Submission submission1c_project_2 = createSubmission("Submission from student2", student2, List.of(
+        Submission submission1c_project_2 = createSubmission("Submission from student2", student2, Arrays.asList(
                 sa1c_project_student2
         ));
 
 // Adding the submission to the project answer for student2
         addSubmissionToStudentAnswer(sa1c_project_student2, submission1c_project_2);
 // Creating submission for student1 with project answers for 1d
-        Submission submission1d_project_1 = createSubmission("Submission from student1", student1, List.of(
+        Submission submission1d_project_1 = createSubmission("Submission from student1", student1, Arrays.asList(
                 sa1d_project_student1
         ));
 
@@ -1284,14 +1286,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa1d_project_student1, submission1d_project_1);
 
 // Creating submission for student2 with project answers for 1d
-        Submission submission1d_project_2 = createSubmission("Submission from student2", student2, List.of(
+        Submission submission1d_project_2 = createSubmission("Submission from student2", student2, Arrays.asList(
                 sa1d_project_student2
         ));
 
 // Adding the submission to the project answer for student2
         addSubmissionToStudentAnswer(sa1d_project_student2, submission1d_project_2);
 // Creating submission for student1 with project answers for 1e
-        Submission submission1e_project_1 = createSubmission("Submission from student1", student1, List.of(
+        Submission submission1e_project_1 = createSubmission("Submission from student1", student1, Arrays.asList(
                 sa1e_project_student1
         ));
 
@@ -1299,14 +1301,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa1e_project_student1, submission1e_project_1);
 
 // Creating submission for student2 with project answers for 1e
-        Submission submission1e_project_2 = createSubmission("Submission from student2", student2, List.of(
+        Submission submission1e_project_2 = createSubmission("Submission from student2", student2, Arrays.asList(
                 sa1e_project_student2
         ));
 
 // Adding the submission to the project answer for student2
         addSubmissionToStudentAnswer(sa1e_project_student2, submission1e_project_2);
 // Creating submission for student1 with project answers for 1f
-        Submission submission1f_project_1 = createSubmission("Submission from student1", student1, List.of(
+        Submission submission1f_project_1 = createSubmission("Submission from student1", student1, Arrays.asList(
                 sa1f_project_student1
         ));
 
@@ -1314,14 +1316,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa1f_project_student1, submission1f_project_1);
 
 // Creating submission for student2 with project answers for 1f
-        Submission submission1f_project_2 = createSubmission("Submission from student2", student2, List.of(
+        Submission submission1f_project_2 = createSubmission("Submission from student2", student2, Arrays.asList(
                 sa1f_project_student2
         ));
 
 // Adding the submission to the project answer for student2
         addSubmissionToStudentAnswer(sa1f_project_student2, submission1f_project_2);
 // Creating submission for student1 with project answers for 2a
-        Submission submission2a_project_1 = createSubmission("Submission from student1", student1, List.of(
+        Submission submission2a_project_1 = createSubmission("Submission from student1", student1, Arrays.asList(
                 sa2a_project_student1
         ));
 
@@ -1329,14 +1331,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa2a_project_student1, submission2a_project_1);
 
 // Creating submission for student2 with project answers for 2a
-        Submission submission2a_project_2 = createSubmission("Submission from student2", student2, List.of(
+        Submission submission2a_project_2 = createSubmission("Submission from student2", student2, Arrays.asList(
                 sa2a_project_student2
         ));
 
 // Adding the submission to the project answer for student2
         addSubmissionToStudentAnswer(sa2a_project_student2, submission2a_project_2);
 // Creating submission for student1 with project answers for 2b
-        Submission submission2b_project_1 = createSubmission("Submission from student1", student1, List.of(
+        Submission submission2b_project_1 = createSubmission("Submission from student1", student1, Arrays.asList(
                 sa2b_project_student1
         ));
 
@@ -1344,14 +1346,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa2b_project_student1, submission2b_project_1);
 
 // Creating submission for student2 with project answers for 2b
-        Submission submission2b_project_2 = createSubmission("Submission from student2", student2, List.of(
+        Submission submission2b_project_2 = createSubmission("Submission from student2", student2, Arrays.asList(
                 sa2b_project_student2
         ));
 
 // Adding the submission to the project answer for student2
         addSubmissionToStudentAnswer(sa2b_project_student2, submission2b_project_2);
 // Creating submission for student1 with project answers for 2c
-        Submission submission2c_project_1 = createSubmission("Submission from student1", student1, List.of(
+        Submission submission2c_project_1 = createSubmission("Submission from student1", student1, Arrays.asList(
                 sa2c_project_student1
         ));
 
@@ -1359,14 +1361,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa2c_project_student1, submission2c_project_1);
 
 // Creating submission for student2 with project answers for 2c
-        Submission submission2c_project_2 = createSubmission("Submission from student2", student2, List.of(
+        Submission submission2c_project_2 = createSubmission("Submission from student2", student2, Arrays.asList(
                 sa2c_project_student2
         ));
 
 // Adding the submission to the project answer for student2
         addSubmissionToStudentAnswer(sa2c_project_student2, submission2c_project_2);
 // Creating submission for student1 with project answers for 2d
-        Submission submission2d_project_1 = createSubmission("Submission from student1", student1, List.of(
+        Submission submission2d_project_1 = createSubmission("Submission from student1", student1, Arrays.asList(
                 sa2d_project_student1
         ));
 
@@ -1374,14 +1376,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa2d_project_student1, submission2d_project_1);
 
 // Creating submission for student2 with project answers for 2d
-        Submission submission2d_project_2 = createSubmission("Submission from student2", student2, List.of(
+        Submission submission2d_project_2 = createSubmission("Submission from student2", student2, Arrays.asList(
                 sa2d_project_student2
         ));
 
 // Adding the submission to the project answer for student2
         addSubmissionToStudentAnswer(sa2d_project_student2, submission2d_project_2);
 // Creating submission for student1 with project answers for 2e
-        Submission submission2e_project_1 = createSubmission("Submission from student1", student1, List.of(
+        Submission submission2e_project_1 = createSubmission("Submission from student1", student1, Arrays.asList(
                 sa2e_project_student1
         ));
 
@@ -1389,14 +1391,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa2e_project_student1, submission2e_project_1);
 
 // Creating submission for student2 with project answers for 2e
-        Submission submission2e_project_2 = createSubmission("Submission from student2", student2, List.of(
+        Submission submission2e_project_2 = createSubmission("Submission from student2", student2, Arrays.asList(
                 sa2e_project_student2
         ));
 
 // Adding the submission to the project answer for student2
         addSubmissionToStudentAnswer(sa2e_project_student2, submission2e_project_2);
 // Creating submission for student1 with project answers for 2f
-        Submission submission2f_project_1 = createSubmission("Submission from student1", student1, List.of(
+        Submission submission2f_project_1 = createSubmission("Submission from student1", student1, Arrays.asList(
                 sa2f_project_student1
         ));
 
@@ -1404,14 +1406,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa2f_project_student1, submission2f_project_1);
 
 // Creating submission for student2 with project answers for 2f
-        Submission submission2f_project_2 = createSubmission("Submission from student2", student2, List.of(
+        Submission submission2f_project_2 = createSubmission("Submission from student2", student2, Arrays.asList(
                 sa2f_project_student2
         ));
 
 // Adding the submission to the project answer for student2
         addSubmissionToStudentAnswer(sa2f_project_student2, submission2f_project_2);
 // Creating submission for student1 with project answers for 3a
-        Submission submission3a_project_1 = createSubmission("Submission from student1", student1, List.of(
+        Submission submission3a_project_1 = createSubmission("Submission from student1", student1, Arrays.asList(
                 sa3a_project_student1
         ));
 
@@ -1419,14 +1421,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa3a_project_student1, submission3a_project_1);
 
 // Creating submission for student2 with project answers for 3a
-        Submission submission3a_project_2 = createSubmission("Submission from student2", student2, List.of(
+        Submission submission3a_project_2 = createSubmission("Submission from student2", student2, Arrays.asList(
                 sa3a_project_student2
         ));
 
 // Adding the submission to the project answer for student2
         addSubmissionToStudentAnswer(sa3a_project_student2, submission3a_project_2);
 // Creating submission for student1 with project answers for 3b
-        Submission submission3b_project_1 = createSubmission("Submission from student1", student1, List.of(
+        Submission submission3b_project_1 = createSubmission("Submission from student1", student1, Arrays.asList(
                 sa3b_project_student1
         ));
 
@@ -1434,14 +1436,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa3b_project_student1, submission3b_project_1);
 
 // Creating submission for student2 with project answers for 3b
-        Submission submission3b_project_2 = createSubmission("Submission from student2", student2, List.of(
+        Submission submission3b_project_2 = createSubmission("Submission from student2", student2, Arrays.asList(
                 sa3b_project_student2
         ));
 
 // Adding the submission to the project answer for student2
         addSubmissionToStudentAnswer(sa3b_project_student2, submission3b_project_2);
 // Creating submission for student1 with project answers for 3c
-        Submission submission3c_project_1 = createSubmission("Submission from student1", student1, List.of(
+        Submission submission3c_project_1 = createSubmission("Submission from student1", student1, Arrays.asList(
                 sa3c_project_student1
         ));
 
@@ -1449,14 +1451,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa3c_project_student1, submission3c_project_1);
 
 // Creating submission for student2 with project answers for 3c
-        Submission submission3c_project_2 = createSubmission("Submission from student2", student2, List.of(
+        Submission submission3c_project_2 = createSubmission("Submission from student2", student2, Arrays.asList(
                 sa3c_project_student2
         ));
 
 // Adding the submission to the project answer for student2
         addSubmissionToStudentAnswer(sa3c_project_student2, submission3c_project_2);
 // Creating submission for student1 with project answers for 3d
-        Submission submission3d_project_1 = createSubmission("Submission from student1", student1, List.of(
+        Submission submission3d_project_1 = createSubmission("Submission from student1", student1, Arrays.asList(
                 sa3d_project_student1
         ));
 
@@ -1464,14 +1466,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa3d_project_student1, submission3d_project_1);
 
 // Creating submission for student2 with project answers for 3d
-        Submission submission3d_project_2 = createSubmission("Submission from student2", student2, List.of(
+        Submission submission3d_project_2 = createSubmission("Submission from student2", student2, Arrays.asList(
                 sa3d_project_student2
         ));
 
 // Adding the submission to the project answer for student2
         addSubmissionToStudentAnswer(sa3d_project_student2, submission3d_project_2);
 // Creating submission for student1 with project answers for 4a
-        Submission submission4a_project_1 = createSubmission("Submission from student1", student1, List.of(
+        Submission submission4a_project_1 = createSubmission("Submission from student1", student1, Arrays.asList(
                 sa4a_project_student1
         ));
 
@@ -1479,14 +1481,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa4a_project_student1, submission4a_project_1);
 
 // Creating submission for student2 with project answers for 4a
-        Submission submission4a_project_2 = createSubmission("Submission from student2", student2, List.of(
+        Submission submission4a_project_2 = createSubmission("Submission from student2", student2, Arrays.asList(
                 sa4a_project_student2
         ));
 
 // Adding the submission to the project answer for student2
         addSubmissionToStudentAnswer(sa4a_project_student2, submission4a_project_2);
 // Creating submission for student1 with project answers for 4b
-        Submission submission4b_project_1 = createSubmission("Submission from student1", student1, List.of(
+        Submission submission4b_project_1 = createSubmission("Submission from student1", student1, Arrays.asList(
                 sa4b_project_student1
         ));
 
@@ -1494,14 +1496,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa4b_project_student1, submission4b_project_1);
 
 // Creating submission for student2 with project answers for 4b
-        Submission submission4b_project_2 = createSubmission("Submission from student2", student2, List.of(
+        Submission submission4b_project_2 = createSubmission("Submission from student2", student2, Arrays.asList(
                 sa4b_project_student2
         ));
 
 // Adding the submission to the project answer for student2
         addSubmissionToStudentAnswer(sa4b_project_student2, submission4b_project_2);
 // Creating submission for student1 with project answers for 4c
-        Submission submission4c_project_1 = createSubmission("Submission from student1", student1, List.of(
+        Submission submission4c_project_1 = createSubmission("Submission from student1", student1, Arrays.asList(
                 sa4c_project_student1
         ));
 
@@ -1509,14 +1511,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa4c_project_student1, submission4c_project_1);
 
 // Creating submission for student2 with project answers for 4c
-        Submission submission4c_project_2 = createSubmission("Submission from student2", student2, List.of(
+        Submission submission4c_project_2 = createSubmission("Submission from student2", student2, Arrays.asList(
                 sa4c_project_student2
         ));
 
 // Adding the submission to the project answer for student2
         addSubmissionToStudentAnswer(sa4c_project_student2, submission4c_project_2);
 // Creating submission for student1 with project answers for 4d
-        Submission submission4d_project_1 = createSubmission("Submission from student1", student1, List.of(
+        Submission submission4d_project_1 = createSubmission("Submission from student1", student1, Arrays.asList(
                 sa4d_project_student1
         ));
 
@@ -1524,14 +1526,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa4d_project_student1, submission4d_project_1);
 
 // Creating submission for student2 with project answers for 4d
-        Submission submission4d_project_2 = createSubmission("Submission from student2", student2, List.of(
+        Submission submission4d_project_2 = createSubmission("Submission from student2", student2, Arrays.asList(
                 sa4d_project_student2
         ));
 
 // Adding the submission to the project answer for student2
         addSubmissionToStudentAnswer(sa4d_project_student2, submission4d_project_2);
 // Creating submission for student3 with project answers for 5a
-        Submission submission5a_project_3 = createSubmission("Submission from student3", student3, List.of(
+        Submission submission5a_project_3 = createSubmission("Submission from student3", student3, Arrays.asList(
                 sa5a_project_student3
         ));
 
@@ -1539,14 +1541,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa5a_project_student3, submission5a_project_3);
 
 // Creating submission for student4 with project answers for 5a
-        Submission submission5a_project_4 = createSubmission("Submission from student4", student4, List.of(
+        Submission submission5a_project_4 = createSubmission("Submission from student4", student4, Arrays.asList(
                 sa5a_project_student4
         ));
 
 // Adding the submission to the project answer for student4
         addSubmissionToStudentAnswer(sa5a_project_student4, submission5a_project_4);
 // Creating submission for student3 with project answers for 5b
-        Submission submission5b_project_3 = createSubmission("Submission from student3", student3, List.of(
+        Submission submission5b_project_3 = createSubmission("Submission from student3", student3, Arrays.asList(
                 sa5b_project_student3
         ));
 
@@ -1554,14 +1556,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa5b_project_student3, submission5b_project_3);
 
 // Creating submission for student4 with project answers for 5b
-        Submission submission5b_project_4 = createSubmission("Submission from student4", student4, List.of(
+        Submission submission5b_project_4 = createSubmission("Submission from student4", student4, Arrays.asList(
                 sa5b_project_student4
         ));
 
 // Adding the submission to the project answer for student4
         addSubmissionToStudentAnswer(sa5b_project_student4, submission5b_project_4);
 // Creating submission for student3 with project answers for 5c
-        Submission submission5c_project_3 = createSubmission("Submission from student3", student3, List.of(
+        Submission submission5c_project_3 = createSubmission("Submission from student3", student3, Arrays.asList(
                 sa5c_project_student3
         ));
 
@@ -1569,14 +1571,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa5c_project_student3, submission5c_project_3);
 
 // Creating submission for student4 with project answers for 5c
-        Submission submission5c_project_4 = createSubmission("Submission from student4", student4, List.of(
+        Submission submission5c_project_4 = createSubmission("Submission from student4", student4, Arrays.asList(
                 sa5c_project_student4
         ));
 
 // Adding the submission to the project answer for student4
         addSubmissionToStudentAnswer(sa5c_project_student4, submission5c_project_4);
 // Creating submission for student3 with project answers for 5d
-        Submission submission5d_project_3 = createSubmission("Submission from student3", student3, List.of(
+        Submission submission5d_project_3 = createSubmission("Submission from student3", student3, Arrays.asList(
                 sa5d_project_student3
         ));
 
@@ -1584,14 +1586,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa5d_project_student3, submission5d_project_3);
 
 // Creating submission for student4 with project answers for 5d
-        Submission submission5d_project_4 = createSubmission("Submission from student4", student4, List.of(
+        Submission submission5d_project_4 = createSubmission("Submission from student4", student4, Arrays.asList(
                 sa5d_project_student4
         ));
 
 // Adding the submission to the project answer for student4
         addSubmissionToStudentAnswer(sa5d_project_student4, submission5d_project_4);
 // Creating submission for student3 with project answers for 6a
-        Submission submission6a_project_3 = createSubmission("Submission from student3", student3, List.of(
+        Submission submission6a_project_3 = createSubmission("Submission from student3", student3, Arrays.asList(
                 sa6a_project_student3
         ));
 
@@ -1599,14 +1601,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa6a_project_student3, submission6a_project_3);
 
 // Creating submission for student4 with project answers for 6a
-        Submission submission6a_project_4 = createSubmission("Submission from student4", student4, List.of(
+        Submission submission6a_project_4 = createSubmission("Submission from student4", student4, Arrays.asList(
                 sa6a_project_student4
         ));
 
 // Adding the submission to the project answer for student4
         addSubmissionToStudentAnswer(sa6a_project_student4, submission6a_project_4);
 // Creating submission for student3 with project answers for 6b
-        Submission submission6b_project_3 = createSubmission("Submission from student3", student3, List.of(
+        Submission submission6b_project_3 = createSubmission("Submission from student3", student3, Arrays.asList(
                 sa6b_project_student3
         ));
 
@@ -1614,14 +1616,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa6b_project_student3, submission6b_project_3);
 
 // Creating submission for student4 with project answers for 6b
-        Submission submission6b_project_4 = createSubmission("Submission from student4", student4, List.of(
+        Submission submission6b_project_4 = createSubmission("Submission from student4", student4, Arrays.asList(
                 sa6b_project_student4
         ));
 
 // Adding the submission to the project answer for student4
         addSubmissionToStudentAnswer(sa6b_project_student4, submission6b_project_4);
 // Creating submission for student3 with project answers for 6c
-        Submission submission6c_project_3 = createSubmission("Submission from student3", student3, List.of(
+        Submission submission6c_project_3 = createSubmission("Submission from student3", student3, Arrays.asList(
                 sa6c_project_student3
         ));
 
@@ -1629,14 +1631,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa6c_project_student3, submission6c_project_3);
 
 // Creating submission for student4 with project answers for 6c
-        Submission submission6c_project_4 = createSubmission("Submission from student4", student4, List.of(
+        Submission submission6c_project_4 = createSubmission("Submission from student4", student4, Arrays.asList(
                 sa6c_project_student4
         ));
 
 // Adding the submission to the project answer for student4
         addSubmissionToStudentAnswer(sa6c_project_student4, submission6c_project_4);
 // Creating submission for student3 with project answers for 6d
-        Submission submission6d_project_3 = createSubmission("Submission from student3", student3, List.of(
+        Submission submission6d_project_3 = createSubmission("Submission from student3", student3, Arrays.asList(
                 sa6d_project_student3
         ));
 
@@ -1644,14 +1646,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa6d_project_student3, submission6d_project_3);
 
 // Creating submission for student4 with project answers for 6d
-        Submission submission6d_project_4 = createSubmission("Submission from student4", student4, List.of(
+        Submission submission6d_project_4 = createSubmission("Submission from student4", student4, Arrays.asList(
                 sa6d_project_student4
         ));
 
 // Adding the submission to the project answer for student4
         addSubmissionToStudentAnswer(sa6d_project_student4, submission6d_project_4);
 // Creating submission for student3 with project answers for 6e
-        Submission submission6e_project_3 = createSubmission("Submission from student3", student3, List.of(
+        Submission submission6e_project_3 = createSubmission("Submission from student3", student3, Arrays.asList(
                 sa6e_project_student3
         ));
 
@@ -1659,14 +1661,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa6e_project_student3, submission6e_project_3);
 
 // Creating submission for student4 with project answers for 6e
-        Submission submission6e_project_4 = createSubmission("Submission from student4", student4, List.of(
+        Submission submission6e_project_4 = createSubmission("Submission from student4", student4, Arrays.asList(
                 sa6e_project_student4
         ));
 
 // Adding the submission to the project answer for student4
         addSubmissionToStudentAnswer(sa6e_project_student4, submission6e_project_4);
 // Creating submission for student3 with project answers for 7a
-        Submission submission7a_project_3 = createSubmission("Submission from student3", student3, List.of(
+        Submission submission7a_project_3 = createSubmission("Submission from student3", student3, Arrays.asList(
                 sa7a_project_student3
         ));
 
@@ -1674,14 +1676,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa7a_project_student3, submission7a_project_3);
 
 // Creating submission for student4 with project answers for 7a
-        Submission submission7a_project_4 = createSubmission("Submission from student4", student4, List.of(
+        Submission submission7a_project_4 = createSubmission("Submission from student4", student4, Arrays.asList(
                 sa7a_project_student4
         ));
 
 // Adding the submission to the project answer for student4
         addSubmissionToStudentAnswer(sa7a_project_student4, submission7a_project_4);
 // Creating submission for student3 with project answers for 7b
-        Submission submission7b_project_3 = createSubmission("Submission from student3", student3, List.of(
+        Submission submission7b_project_3 = createSubmission("Submission from student3", student3, Arrays.asList(
                 sa7b_project_student3
         ));
 
@@ -1689,14 +1691,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa7b_project_student3, submission7b_project_3);
 
 // Creating submission for student4 with project answers for 7b
-        Submission submission7b_project_4 = createSubmission("Submission from student4", student4, List.of(
+        Submission submission7b_project_4 = createSubmission("Submission from student4", student4, Arrays.asList(
                 sa7b_project_student4
         ));
 
 // Adding the submission to the project answer for student4
         addSubmissionToStudentAnswer(sa7b_project_student4, submission7b_project_4);
 // Creating submission for student3 with project answers for 7c
-        Submission submission7c_project_3 = createSubmission("Submission from student3", student3, List.of(
+        Submission submission7c_project_3 = createSubmission("Submission from student3", student3, Arrays.asList(
                 sa7c_project_student3
         ));
 
@@ -1704,14 +1706,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa7c_project_student3, submission7c_project_3);
 
 // Creating submission for student4 with project answers for 7c
-        Submission submission7c_project_4 = createSubmission("Submission from student4", student4, List.of(
+        Submission submission7c_project_4 = createSubmission("Submission from student4", student4, Arrays.asList(
                 sa7c_project_student4
         ));
 
 // Adding the submission to the project answer for student4
         addSubmissionToStudentAnswer(sa7c_project_student4, submission7c_project_4);
 // Creating submission for student3 with project answers for 7d
-        Submission submission7d_project_3 = createSubmission("Submission from student3", student3, List.of(
+        Submission submission7d_project_3 = createSubmission("Submission from student3", student3, Arrays.asList(
                 sa7d_project_student3
         ));
 
@@ -1719,14 +1721,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa7d_project_student3, submission7d_project_3);
 
 // Creating submission for student4 with project answers for 7d
-        Submission submission7d_project_4 = createSubmission("Submission from student4", student4, List.of(
+        Submission submission7d_project_4 = createSubmission("Submission from student4", student4, Arrays.asList(
                 sa7d_project_student4
         ));
 
 // Adding the submission to the project answer for student4
         addSubmissionToStudentAnswer(sa7d_project_student4, submission7d_project_4);
 // Creating submission for student3 with project answers for 8a
-        Submission submission8a_project_3 = createSubmission("Submission from student3", student3, List.of(
+        Submission submission8a_project_3 = createSubmission("Submission from student3", student3, Arrays.asList(
                 sa8a_project_student3
         ));
 
@@ -1734,14 +1736,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa8a_project_student3, submission8a_project_3);
 
 // Creating submission for student4 with project answers for 8a
-        Submission submission8a_project_4 = createSubmission("Submission from student4", student4, List.of(
+        Submission submission8a_project_4 = createSubmission("Submission from student4", student4, Arrays.asList(
                 sa8a_project_student4
         ));
 
 // Adding the submission to the project answer for student4
         addSubmissionToStudentAnswer(sa8a_project_student4, submission8a_project_4);
 // Creating submission for student3 with project answers for 8b
-        Submission submission8b_project_3 = createSubmission("Submission from student3", student3, List.of(
+        Submission submission8b_project_3 = createSubmission("Submission from student3", student3, Arrays.asList(
                 sa8b_project_student3
         ));
 
@@ -1749,14 +1751,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa8b_project_student3, submission8b_project_3);
 
 // Creating submission for student4 with project answers for 8b
-        Submission submission8b_project_4 = createSubmission("Submission from student4", student4, List.of(
+        Submission submission8b_project_4 = createSubmission("Submission from student4", student4, Arrays.asList(
                 sa8b_project_student4
         ));
 
 // Adding the submission to the project answer for student4
         addSubmissionToStudentAnswer(sa8b_project_student4, submission8b_project_4);
 // Creating submission for student3 with project answers for 8c
-        Submission submission8c_project_3 = createSubmission("Submission from student3", student3, List.of(
+        Submission submission8c_project_3 = createSubmission("Submission from student3", student3, Arrays.asList(
                 sa8c_project_student3
         ));
 
@@ -1764,14 +1766,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa8c_project_student3, submission8c_project_3);
 
 // Creating submission for student4 with project answers for 8c
-        Submission submission8c_project_4 = createSubmission("Submission from student4", student4, List.of(
+        Submission submission8c_project_4 = createSubmission("Submission from student4", student4, Arrays.asList(
                 sa8c_project_student4
         ));
 
 // Adding the submission to the project answer for student4
         addSubmissionToStudentAnswer(sa8c_project_student4, submission8c_project_4);
 // Creating submission for student3 with project answers for 8d
-        Submission submission8d_project_3 = createSubmission("Submission from student3", student3, List.of(
+        Submission submission8d_project_3 = createSubmission("Submission from student3", student3, Arrays.asList(
                 sa8d_project_student3
         ));
 
@@ -1779,14 +1781,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa8d_project_student3, submission8d_project_3);
 
 // Creating submission for student4 with project answers for 8d
-        Submission submission8d_project_4 = createSubmission("Submission from student4", student4, List.of(
+        Submission submission8d_project_4 = createSubmission("Submission from student4", student4, Arrays.asList(
                 sa8d_project_student4
         ));
 
 // Adding the submission to the project answer for student4
         addSubmissionToStudentAnswer(sa8d_project_student4, submission8d_project_4);
 // Creating submission for student3 with project answers for 8e
-        Submission submission8e_project_3 = createSubmission("Submission from student3", student3, List.of(
+        Submission submission8e_project_3 = createSubmission("Submission from student3", student3, Arrays.asList(
                 sa8e_project_student3
         ));
 
@@ -1794,14 +1796,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa8e_project_student3, submission8e_project_3);
 
 // Creating submission for student4 with project answers for 8e
-        Submission submission8e_project_4 = createSubmission("Submission from student4", student4, List.of(
+        Submission submission8e_project_4 = createSubmission("Submission from student4", student4, Arrays.asList(
                 sa8e_project_student4
         ));
 
 // Adding the submission to the project answer for student4
         addSubmissionToStudentAnswer(sa8e_project_student4, submission8e_project_4);
 // Creating submission for student5 with project answers for 9a
-        Submission submission9a_project_5 = createSubmission("Submission from student5", student5, List.of(
+        Submission submission9a_project_5 = createSubmission("Submission from student5", student5, Arrays.asList(
                 sa9a_project_student5
         ));
 
@@ -1809,14 +1811,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa9a_project_student5, submission9a_project_5);
 
 // Creating submission for student6 with project answers for 9a
-        Submission submission9a_project_6 = createSubmission("Submission from student6", student6, List.of(
+        Submission submission9a_project_6 = createSubmission("Submission from student6", student6, Arrays.asList(
                 sa9a_project_student6
         ));
 
 // Adding the submission to the project answer for student6
         addSubmissionToStudentAnswer(sa9a_project_student6, submission9a_project_6);
 // Creating submission for student5 with project answers for 9b
-        Submission submission9b_project_5 = createSubmission("Submission from student5", student5, List.of(
+        Submission submission9b_project_5 = createSubmission("Submission from student5", student5, Arrays.asList(
                 sa9b_project_student5
         ));
 
@@ -1824,14 +1826,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa9b_project_student5, submission9b_project_5);
 
 // Creating submission for student6 with project answers for 9b
-        Submission submission9b_project_6 = createSubmission("Submission from student6", student6, List.of(
+        Submission submission9b_project_6 = createSubmission("Submission from student6", student6, Arrays.asList(
                 sa9b_project_student6
         ));
 
 // Adding the submission to the project answer for student6
         addSubmissionToStudentAnswer(sa9b_project_student6, submission9b_project_6);
 // Creating submission for student5 with project answers for 9c
-        Submission submission9c_project_5 = createSubmission("Submission from student5", student5, List.of(
+        Submission submission9c_project_5 = createSubmission("Submission from student5", student5, Arrays.asList(
                 sa9c_project_student5
         ));
 
@@ -1839,14 +1841,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa9c_project_student5, submission9c_project_5);
 
 // Creating submission for student6 with project answers for 9c
-        Submission submission9c_project_6 = createSubmission("Submission from student6", student6, List.of(
+        Submission submission9c_project_6 = createSubmission("Submission from student6", student6, Arrays.asList(
                 sa9c_project_student6
         ));
 
 // Adding the submission to the project answer for student6
         addSubmissionToStudentAnswer(sa9c_project_student6, submission9c_project_6);
 // Creating submission for student5 with project answers for 10a
-        Submission submission10a_project_5 = createSubmission("Submission from student5", student5, List.of(
+        Submission submission10a_project_5 = createSubmission("Submission from student5", student5, Arrays.asList(
                 sa10a_project_student5
         ));
 
@@ -1854,14 +1856,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa10a_project_student5, submission10a_project_5);
 
 // Creating submission for student6 with project answers for 10a
-        Submission submission10a_project_6 = createSubmission("Submission from student6", student6, List.of(
+        Submission submission10a_project_6 = createSubmission("Submission from student6", student6, Arrays.asList(
                 sa10a_project_student6
         ));
 
 // Adding the submission to the project answer for student6
         addSubmissionToStudentAnswer(sa10a_project_student6, submission10a_project_6);
 // Creating submission for student5 with project answers for 10b
-        Submission submission10b_project_5 = createSubmission("Submission from student5", student5, List.of(
+        Submission submission10b_project_5 = createSubmission("Submission from student5", student5, Arrays.asList(
                 sa10b_project_student5
         ));
 
@@ -1869,14 +1871,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa10b_project_student5, submission10b_project_5);
 
 // Creating submission for student6 with project answers for 10b
-        Submission submission10b_project_6 = createSubmission("Submission from student6", student6, List.of(
+        Submission submission10b_project_6 = createSubmission("Submission from student6", student6, Arrays.asList(
                 sa10b_project_student6
         ));
 
 // Adding the submission to the project answer for student6
         addSubmissionToStudentAnswer(sa10b_project_student6, submission10b_project_6);
 // Creating submission for student5 with project answers for 10c
-        Submission submission10c_project_5 = createSubmission("Submission from student5", student5, List.of(
+        Submission submission10c_project_5 = createSubmission("Submission from student5", student5, Arrays.asList(
                 sa10c_project_student5
         ));
 
@@ -1884,14 +1886,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa10c_project_student5, submission10c_project_5);
 
 // Creating submission for student6 with project answers for 10c
-        Submission submission10c_project_6 = createSubmission("Submission from student6", student6, List.of(
+        Submission submission10c_project_6 = createSubmission("Submission from student6", student6, Arrays.asList(
                 sa10c_project_student6
         ));
 
 // Adding the submission to the project answer for student6
         addSubmissionToStudentAnswer(sa10c_project_student6, submission10c_project_6);
 // Creating submission for student5 with project answers for 10d
-        Submission submission10d_project_5 = createSubmission("Submission from student5", student5, List.of(
+        Submission submission10d_project_5 = createSubmission("Submission from student5", student5, Arrays.asList(
                 sa10d_project_student5
         ));
 
@@ -1899,14 +1901,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa10d_project_student5, submission10d_project_5);
 
 // Creating submission for student6 with project answers for 10d
-        Submission submission10d_project_6 = createSubmission("Submission from student6", student6, List.of(
+        Submission submission10d_project_6 = createSubmission("Submission from student6", student6, Arrays.asList(
                 sa10d_project_student6
         ));
 
 // Adding the submission to the project answer for student6
         addSubmissionToStudentAnswer(sa10d_project_student6, submission10d_project_6);
 // Creating submission for student5 with project answers for 11a
-        Submission submission11a_project_5 = createSubmission("Submission from student5", student5, List.of(
+        Submission submission11a_project_5 = createSubmission("Submission from student5", student5, Arrays.asList(
                 sa11a_project_student5
         ));
 
@@ -1914,14 +1916,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa11a_project_student5, submission11a_project_5);
 
 // Creating submission for student6 with project answers for 11a
-        Submission submission11a_project_6 = createSubmission("Submission from student6", student6, List.of(
+        Submission submission11a_project_6 = createSubmission("Submission from student6", student6, Arrays.asList(
                 sa11a_project_student6
         ));
 
 // Adding the submission to the project answer for student6
         addSubmissionToStudentAnswer(sa11a_project_student6, submission11a_project_6);
 // Creating submission for student5 with project answers for 11b
-        Submission submission11b_project_5 = createSubmission("Submission from student5", student5, List.of(
+        Submission submission11b_project_5 = createSubmission("Submission from student5", student5, Arrays.asList(
                 sa11b_project_student5
         ));
 
@@ -1929,14 +1931,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa11b_project_student5, submission11b_project_5);
 
 // Creating submission for student6 with project answers for 11b
-        Submission submission11b_project_6 = createSubmission("Submission from student6", student6, List.of(
+        Submission submission11b_project_6 = createSubmission("Submission from student6", student6, Arrays.asList(
                 sa11b_project_student6
         ));
 
 // Adding the submission to the project answer for student6
         addSubmissionToStudentAnswer(sa11b_project_student6, submission11b_project_6);
 // Creating submission for student5 with project answers for 11c
-        Submission submission11c_project_5 = createSubmission("Submission from student5", student5, List.of(
+        Submission submission11c_project_5 = createSubmission("Submission from student5", student5, Arrays.asList(
                 sa11c_project_student5
         ));
 
@@ -1944,14 +1946,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa11c_project_student5, submission11c_project_5);
 
 // Creating submission for student6 with project answers for 11c
-        Submission submission11c_project_6 = createSubmission("Submission from student6", student6, List.of(
+        Submission submission11c_project_6 = createSubmission("Submission from student6", student6, Arrays.asList(
                 sa11c_project_student6
         ));
 
 // Adding the submission to the project answer for student6
         addSubmissionToStudentAnswer(sa11c_project_student6, submission11c_project_6);
 // Creating submission for student5 with project answers for 11d
-        Submission submission11d_project_5 = createSubmission("Submission from student5", student5, List.of(
+        Submission submission11d_project_5 = createSubmission("Submission from student5", student5, Arrays.asList(
                 sa11d_project_student5
         ));
 
@@ -1959,14 +1961,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa11d_project_student5, submission11d_project_5);
 
 // Creating submission for student6 with project answers for 11d
-        Submission submission11d_project_6 = createSubmission("Submission from student6", student6, List.of(
+        Submission submission11d_project_6 = createSubmission("Submission from student6", student6, Arrays.asList(
                 sa11d_project_student6
         ));
 
 // Adding the submission to the project answer for student6
         addSubmissionToStudentAnswer(sa11d_project_student6, submission11d_project_6);
 // Creating submission for student5 with project answers for 12a
-        Submission submission12a_project_5 = createSubmission("Submission from student5", student5, List.of(
+        Submission submission12a_project_5 = createSubmission("Submission from student5", student5, Arrays.asList(
                 sa12a_project_student5
         ));
 
@@ -1974,14 +1976,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa12a_project_student5, submission12a_project_5);
 
 // Creating submission for student6 with project answers for 12a
-        Submission submission12a_project_6 = createSubmission("Submission from student6", student6, List.of(
+        Submission submission12a_project_6 = createSubmission("Submission from student6", student6, Arrays.asList(
                 sa12a_project_student6
         ));
 
 // Adding the submission to the project answer for student6
         addSubmissionToStudentAnswer(sa12a_project_student6, submission12a_project_6);
 // Creating submission for student5 with project answers for 12b
-        Submission submission12b_project_5 = createSubmission("Submission from student5", student5, List.of(
+        Submission submission12b_project_5 = createSubmission("Submission from student5", student5, Arrays.asList(
                 sa12b_project_student5
         ));
 
@@ -1989,14 +1991,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa12b_project_student5, submission12b_project_5);
 
 // Creating submission for student6 with project answers for 12b
-        Submission submission12b_project_6 = createSubmission("Submission from student6", student6, List.of(
+        Submission submission12b_project_6 = createSubmission("Submission from student6", student6, Arrays.asList(
                 sa12b_project_student6
         ));
 
 // Adding the submission to the project answer for student6
         addSubmissionToStudentAnswer(sa12b_project_student6, submission12b_project_6);
 // Creating submission for student5 with project answers for 12c
-        Submission submission12c_project_5 = createSubmission("Submission from student5", student5, List.of(
+        Submission submission12c_project_5 = createSubmission("Submission from student5", student5, Arrays.asList(
                 sa12c_project_student5
         ));
 
@@ -2004,14 +2006,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa12c_project_student5, submission12c_project_5);
 
 // Creating submission for student6 with project answers for 12c
-        Submission submission12c_project_6 = createSubmission("Submission from student6", student6, List.of(
+        Submission submission12c_project_6 = createSubmission("Submission from student6", student6, Arrays.asList(
                 sa12c_project_student6
         ));
 
 // Adding the submission to the project answer for student6
         addSubmissionToStudentAnswer(sa12c_project_student6, submission12c_project_6);
 // Creating submission for student5 with project answers for 12d
-        Submission submission12d_project_5 = createSubmission("Submission from student5", student5, List.of(
+        Submission submission12d_project_5 = createSubmission("Submission from student5", student5, Arrays.asList(
                 sa12d_project_student5
         ));
 
@@ -2019,14 +2021,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa12d_project_student5, submission12d_project_5);
 
 // Creating submission for student6 with project answers for 12d
-        Submission submission12d_project_6 = createSubmission("Submission from student6", student6, List.of(
+        Submission submission12d_project_6 = createSubmission("Submission from student6", student6, Arrays.asList(
                 sa12d_project_student6
         ));
 
 // Adding the submission to the project answer for student6
         addSubmissionToStudentAnswer(sa12d_project_student6, submission12d_project_6);
 // Creating submission for student5 with project answers for 12e
-        Submission submission12e_project_5 = createSubmission("Submission from student5", student5, List.of(
+        Submission submission12e_project_5 = createSubmission("Submission from student5", student5, Arrays.asList(
                 sa12e_project_student5
         ));
 
@@ -2034,14 +2036,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa12e_project_student5, submission12e_project_5);
 
 // Creating submission for student6 with project answers for 12e
-        Submission submission12e_project_6 = createSubmission("Submission from student6", student6, List.of(
+        Submission submission12e_project_6 = createSubmission("Submission from student6", student6, Arrays.asList(
                 sa12e_project_student6
         ));
 
 // Adding the submission to the project answer for student6
         addSubmissionToStudentAnswer(sa12e_project_student6, submission12e_project_6);
 // Creating submission for student7 with project answers for 13a
-        Submission submission13a_project_7 = createSubmission("Submission from student7", student7, List.of(
+        Submission submission13a_project_7 = createSubmission("Submission from student7", student7, Arrays.asList(
                 sa13a_project_student7
         ));
 
@@ -2049,14 +2051,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa13a_project_student7, submission13a_project_7);
 
 // Creating submission for student8 with project answers for 13a
-        Submission submission13a_project_8 = createSubmission("Submission from student8", student8, List.of(
+        Submission submission13a_project_8 = createSubmission("Submission from student8", student8, Arrays.asList(
                 sa13a_project_student8
         ));
 
 // Adding the submission to the project answer for student8
         addSubmissionToStudentAnswer(sa13a_project_student8, submission13a_project_8);
 // Creating submission for student7 with project answers for 13b
-        Submission submission13b_project_7 = createSubmission("Submission from student7", student7, List.of(
+        Submission submission13b_project_7 = createSubmission("Submission from student7", student7, Arrays.asList(
                 sa13b_project_student7
         ));
 
@@ -2064,14 +2066,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa13b_project_student7, submission13b_project_7);
 
 // Creating submission for student8 with project answers for 13b
-        Submission submission13b_project_8 = createSubmission("Submission from student8", student8, List.of(
+        Submission submission13b_project_8 = createSubmission("Submission from student8", student8, Arrays.asList(
                 sa13b_project_student8
         ));
 
 // Adding the submission to the project answer for student8
         addSubmissionToStudentAnswer(sa13b_project_student8, submission13b_project_8);
 // Creating submission for student7 with project answers for 13c
-        Submission submission13c_project_7 = createSubmission("Submission from student7", student7, List.of(
+        Submission submission13c_project_7 = createSubmission("Submission from student7", student7, Arrays.asList(
                 sa13c_project_student7
         ));
 
@@ -2079,14 +2081,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa13c_project_student7, submission13c_project_7);
 
 // Creating submission for student8 with project answers for 13c
-        Submission submission13c_project_8 = createSubmission("Submission from student8", student8, List.of(
+        Submission submission13c_project_8 = createSubmission("Submission from student8", student8, Arrays.asList(
                 sa13c_project_student8
         ));
 
 // Adding the submission to the project answer for student8
         addSubmissionToStudentAnswer(sa13c_project_student8, submission13c_project_8);
 // Creating submission for student7 with project answers for 13d
-        Submission submission13d_project_7 = createSubmission("Submission from student7", student7, List.of(
+        Submission submission13d_project_7 = createSubmission("Submission from student7", student7, Arrays.asList(
                 sa13d_project_student7
         ));
 
@@ -2094,14 +2096,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa13d_project_student7, submission13d_project_7);
 
 // Creating submission for student8 with project answers for 13d
-        Submission submission13d_project_8 = createSubmission("Submission from student8", student8, List.of(
+        Submission submission13d_project_8 = createSubmission("Submission from student8", student8, Arrays.asList(
                 sa13d_project_student8
         ));
 
 // Adding the submission to the project answer for student8
         addSubmissionToStudentAnswer(sa13d_project_student8, submission13d_project_8);
 // Creating submission for student7 with project answers for 14a
-        Submission submission14a_project_7 = createSubmission("Submission from student7", student7, List.of(
+        Submission submission14a_project_7 = createSubmission("Submission from student7", student7, Arrays.asList(
                 sa14a_project_student7
         ));
 
@@ -2109,14 +2111,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa14a_project_student7, submission14a_project_7);
 
 // Creating submission for student8 with project answers for 14a
-        Submission submission14a_project_8 = createSubmission("Submission from student8", student8, List.of(
+        Submission submission14a_project_8 = createSubmission("Submission from student8", student8, Arrays.asList(
                 sa14a_project_student8
         ));
 
 // Adding the submission to the project answer for student8
         addSubmissionToStudentAnswer(sa14a_project_student8, submission14a_project_8);
 // Creating submission for student7 with project answers for 14b
-        Submission submission14b_project_7 = createSubmission("Submission from student7", student7, List.of(
+        Submission submission14b_project_7 = createSubmission("Submission from student7", student7, Arrays.asList(
                 sa14b_project_student7
         ));
 
@@ -2124,14 +2126,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa14b_project_student7, submission14b_project_7);
 
 // Creating submission for student8 with project answers for 14b
-        Submission submission14b_project_8 = createSubmission("Submission from student8", student8, List.of(
+        Submission submission14b_project_8 = createSubmission("Submission from student8", student8, Arrays.asList(
                 sa14b_project_student8
         ));
 
 // Adding the submission to the project answer for student8
         addSubmissionToStudentAnswer(sa14b_project_student8, submission14b_project_8);
 // Creating submission for student7 with project answers for 14c
-        Submission submission14c_project_7 = createSubmission("Submission from student7", student7, List.of(
+        Submission submission14c_project_7 = createSubmission("Submission from student7", student7, Arrays.asList(
                 sa14c_project_student7
         ));
 
@@ -2139,14 +2141,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa14c_project_student7, submission14c_project_7);
 
 // Creating submission for student8 with project answers for 14c
-        Submission submission14c_project_8 = createSubmission("Submission from student8", student8, List.of(
+        Submission submission14c_project_8 = createSubmission("Submission from student8", student8, Arrays.asList(
                 sa14c_project_student8
         ));
 
 // Adding the submission to the project answer for student8
         addSubmissionToStudentAnswer(sa14c_project_student8, submission14c_project_8);
 // Creating submission for student7 with project answers for 14d
-        Submission submission14d_project_7 = createSubmission("Submission from student7", student7, List.of(
+        Submission submission14d_project_7 = createSubmission("Submission from student7", student7, Arrays.asList(
                 sa14d_project_student7
         ));
 
@@ -2154,14 +2156,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa14d_project_student7, submission14d_project_7);
 
 // Creating submission for student8 with project answers for 14d
-        Submission submission14d_project_8 = createSubmission("Submission from student8", student8, List.of(
+        Submission submission14d_project_8 = createSubmission("Submission from student8", student8, Arrays.asList(
                 sa14d_project_student8
         ));
 
 // Adding the submission to the project answer for student8
         addSubmissionToStudentAnswer(sa14d_project_student8, submission14d_project_8);
 // Creating submission for student7 with project answers for 15a
-        Submission submission15a_project_7 = createSubmission("Submission from student7", student7, List.of(
+        Submission submission15a_project_7 = createSubmission("Submission from student7", student7, Arrays.asList(
                 sa15a_project_student7
         ));
 
@@ -2169,14 +2171,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa15a_project_student7, submission15a_project_7);
 
 // Creating submission for student8 with project answers for 15a
-        Submission submission15a_project_8 = createSubmission("Submission from student8", student8, List.of(
+        Submission submission15a_project_8 = createSubmission("Submission from student8", student8, Arrays.asList(
                 sa15a_project_student8
         ));
 
 // Adding the submission to the project answer for student8
         addSubmissionToStudentAnswer(sa15a_project_student8, submission15a_project_8);
 // Creating submission for student7 with project answers for 15b
-        Submission submission15b_project_7 = createSubmission("Submission from student7", student7, List.of(
+        Submission submission15b_project_7 = createSubmission("Submission from student7", student7, Arrays.asList(
                 sa15b_project_student7
         ));
 
@@ -2184,14 +2186,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa15b_project_student7, submission15b_project_7);
 
 // Creating submission for student8 with project answers for 15b
-        Submission submission15b_project_8 = createSubmission("Submission from student8", student8, List.of(
+        Submission submission15b_project_8 = createSubmission("Submission from student8", student8, Arrays.asList(
                 sa15b_project_student8
         ));
 
 // Adding the submission to the project answer for student8
         addSubmissionToStudentAnswer(sa15b_project_student8, submission15b_project_8);
 // Creating submission for student7 with project answers for 15c
-        Submission submission15c_project_7 = createSubmission("Submission from student7", student7, List.of(
+        Submission submission15c_project_7 = createSubmission("Submission from student7", student7, Arrays.asList(
                 sa15c_project_student7
         ));
 
@@ -2199,14 +2201,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa15c_project_student7, submission15c_project_7);
 
 // Creating submission for student8 with project answers for 15c
-        Submission submission15c_project_8 = createSubmission("Submission from student8", student8, List.of(
+        Submission submission15c_project_8 = createSubmission("Submission from student8", student8, Arrays.asList(
                 sa15c_project_student8
         ));
 
 // Adding the submission to the project answer for student8
         addSubmissionToStudentAnswer(sa15c_project_student8, submission15c_project_8);
 // Creating submission for student7 with project answers for 16a
-        Submission submission16a_project_7 = createSubmission("Submission from student7", student7, List.of(
+        Submission submission16a_project_7 = createSubmission("Submission from student7", student7, Arrays.asList(
                 sa16a_project_student7
         ));
 
@@ -2214,14 +2216,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa16a_project_student7, submission16a_project_7);
 
 // Creating submission for student8 with project answers for 16a
-        Submission submission16a_project_8 = createSubmission("Submission from student8", student8, List.of(
+        Submission submission16a_project_8 = createSubmission("Submission from student8", student8, Arrays.asList(
                 sa16a_project_student8
         ));
 
 // Adding the submission to the project answer for student8
         addSubmissionToStudentAnswer(sa16a_project_student8, submission16a_project_8);
 // Creating submission for student7 with project answers for 16b
-        Submission submission16b_project_7 = createSubmission("Submission from student7", student7, List.of(
+        Submission submission16b_project_7 = createSubmission("Submission from student7", student7, Arrays.asList(
                 sa16b_project_student7
         ));
 
@@ -2229,14 +2231,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa16b_project_student7, submission16b_project_7);
 
 // Creating submission for student8 with project answers for 16b
-        Submission submission16b_project_8 = createSubmission("Submission from student8", student8, List.of(
+        Submission submission16b_project_8 = createSubmission("Submission from student8", student8, Arrays.asList(
                 sa16b_project_student8
         ));
 
 // Adding the submission to the project answer for student8
         addSubmissionToStudentAnswer(sa16b_project_student8, submission16b_project_8);
 // Creating submission for student7 with project answers for 16c
-        Submission submission16c_project_7 = createSubmission("Submission from student7", student7, List.of(
+        Submission submission16c_project_7 = createSubmission("Submission from student7", student7, Arrays.asList(
                 sa16c_project_student7
         ));
 
@@ -2244,14 +2246,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa16c_project_student7, submission16c_project_7);
 
 // Creating submission for student8 with project answers for 16c
-        Submission submission16c_project_8 = createSubmission("Submission from student8", student8, List.of(
+        Submission submission16c_project_8 = createSubmission("Submission from student8", student8, Arrays.asList(
                 sa16c_project_student8
         ));
 
 // Adding the submission to the project answer for student8
         addSubmissionToStudentAnswer(sa16c_project_student8, submission16c_project_8);
 // Creating submission for student9 with project answers for 17a
-        Submission submission17a_project_9 = createSubmission("Submission from student9", student9, List.of(
+        Submission submission17a_project_9 = createSubmission("Submission from student9", student9, Arrays.asList(
                 sa17a_project_student9
         ));
 
@@ -2259,14 +2261,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa17a_project_student9, submission17a_project_9);
 
 // Creating submission for student10 with project answers for 17a
-        Submission submission17a_project_10 = createSubmission("Submission from student10", student10, List.of(
+        Submission submission17a_project_10 = createSubmission("Submission from student10", student10, Arrays.asList(
                 sa17a_project_student10
         ));
 
 // Adding the submission to the project answer for student10
         addSubmissionToStudentAnswer(sa17a_project_student10, submission17a_project_10);
 // Creating submission for student9 with project answers for 17b
-        Submission submission17b_project_9 = createSubmission("Submission from student9", student9, List.of(
+        Submission submission17b_project_9 = createSubmission("Submission from student9", student9, Arrays.asList(
                 sa17b_project_student9
         ));
 
@@ -2274,14 +2276,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa17b_project_student9, submission17b_project_9);
 
 // Creating submission for student10 with project answers for 17b
-        Submission submission17b_project_10 = createSubmission("Submission from student10", student10, List.of(
+        Submission submission17b_project_10 = createSubmission("Submission from student10", student10, Arrays.asList(
                 sa17b_project_student10
         ));
 
 // Adding the submission to the project answer for student10
         addSubmissionToStudentAnswer(sa17b_project_student10, submission17b_project_10);
 // Creating submission for student9 with project answers for 17c
-        Submission submission17c_project_9 = createSubmission("Submission from student9", student9, List.of(
+        Submission submission17c_project_9 = createSubmission("Submission from student9", student9, Arrays.asList(
                 sa17c_project_student9
         ));
 
@@ -2289,14 +2291,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa17c_project_student9, submission17c_project_9);
 
 // Creating submission for student10 with project answers for 17c
-        Submission submission17c_project_10 = createSubmission("Submission from student10", student10, List.of(
+        Submission submission17c_project_10 = createSubmission("Submission from student10", student10, Arrays.asList(
                 sa17c_project_student10
         ));
 
 // Adding the submission to the project answer for student10
         addSubmissionToStudentAnswer(sa17c_project_student10, submission17c_project_10);
 // Creating submission for student9 with project answers for 17d
-        Submission submission17d_project_9 = createSubmission("Submission from student9", student9, List.of(
+        Submission submission17d_project_9 = createSubmission("Submission from student9", student9, Arrays.asList(
                 sa17d_project_student9
         ));
 
@@ -2304,14 +2306,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa17d_project_student9, submission17d_project_9);
 
 // Creating submission for student10 with project answers for 17d
-        Submission submission17d_project_10 = createSubmission("Submission from student10", student10, List.of(
+        Submission submission17d_project_10 = createSubmission("Submission from student10", student10, Arrays.asList(
                 sa17d_project_student10
         ));
 
 // Adding the submission to the project answer for student10
         addSubmissionToStudentAnswer(sa17d_project_student10, submission17d_project_10);
 // Creating submission for student9 with project answers for 18a
-        Submission submission18a_project_9 = createSubmission("Submission from student9", student9, List.of(
+        Submission submission18a_project_9 = createSubmission("Submission from student9", student9, Arrays.asList(
                 sa18a_project_student9
         ));
 
@@ -2319,14 +2321,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa18a_project_student9, submission18a_project_9);
 
 // Creating submission for student10 with project answers for 18a
-        Submission submission18a_project_10 = createSubmission("Submission from student10", student10, List.of(
+        Submission submission18a_project_10 = createSubmission("Submission from student10", student10, Arrays.asList(
                 sa18a_project_student10
         ));
 
 // Adding the submission to the project answer for student10
         addSubmissionToStudentAnswer(sa18a_project_student10, submission18a_project_10);
 // Creating submission for student9 with project answers for 18b
-        Submission submission18b_project_9 = createSubmission("Submission from student9", student9, List.of(
+        Submission submission18b_project_9 = createSubmission("Submission from student9", student9, Arrays.asList(
                 sa18b_project_student9
         ));
 
@@ -2334,14 +2336,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa18b_project_student9, submission18b_project_9);
 
 // Creating submission for student10 with project answers for 18b
-        Submission submission18b_project_10 = createSubmission("Submission from student10", student10, List.of(
+        Submission submission18b_project_10 = createSubmission("Submission from student10", student10, Arrays.asList(
                 sa18b_project_student10
         ));
 
 // Adding the submission to the project answer for student10
         addSubmissionToStudentAnswer(sa18b_project_student10, submission18b_project_10);
 // Creating submission for student9 with project answers for 18c
-        Submission submission18c_project_9 = createSubmission("Submission from student9", student9, List.of(
+        Submission submission18c_project_9 = createSubmission("Submission from student9", student9, Arrays.asList(
                 sa18c_project_student9
         ));
 
@@ -2349,14 +2351,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa18c_project_student9, submission18c_project_9);
 
 // Creating submission for student10 with project answers for 18c
-        Submission submission18c_project_10 = createSubmission("Submission from student10", student10, List.of(
+        Submission submission18c_project_10 = createSubmission("Submission from student10", student10, Arrays.asList(
                 sa18c_project_student10
         ));
 
 // Adding the submission to the project answer for student10
         addSubmissionToStudentAnswer(sa18c_project_student10, submission18c_project_10);
 // Creating submission for student9 with project answers for 19a
-        Submission submission19a_project_9 = createSubmission("Submission from student9", student9, List.of(
+        Submission submission19a_project_9 = createSubmission("Submission from student9", student9, Arrays.asList(
                 sa19a_project_student9
         ));
 
@@ -2364,14 +2366,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa19a_project_student9, submission19a_project_9);
 
 // Creating submission for student10 with project answers for 19a
-        Submission submission19a_project_10 = createSubmission("Submission from student10", student10, List.of(
+        Submission submission19a_project_10 = createSubmission("Submission from student10", student10, Arrays.asList(
                 sa19a_project_student10
         ));
 
 // Adding the submission to the project answer for student10
         addSubmissionToStudentAnswer(sa19a_project_student10, submission19a_project_10);
 // Creating submission for student9 with project answers for 19b
-        Submission submission19b_project_9 = createSubmission("Submission from student9", student9, List.of(
+        Submission submission19b_project_9 = createSubmission("Submission from student9", student9, Arrays.asList(
                 sa19b_project_student9
         ));
 
@@ -2379,14 +2381,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa19b_project_student9, submission19b_project_9);
 
 // Creating submission for student10 with project answers for 19b
-        Submission submission19b_project_10 = createSubmission("Submission from student10", student10, List.of(
+        Submission submission19b_project_10 = createSubmission("Submission from student10", student10, Arrays.asList(
                 sa19b_project_student10
         ));
 
 // Adding the submission to the project answer for student10
         addSubmissionToStudentAnswer(sa19b_project_student10, submission19b_project_10);
 // Creating submission for student9 with project answers for 19c
-        Submission submission19c_project_9 = createSubmission("Submission from student9", student9, List.of(
+        Submission submission19c_project_9 = createSubmission("Submission from student9", student9, Arrays.asList(
                 sa19c_project_student9
         ));
 
@@ -2394,14 +2396,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa19c_project_student9, submission19c_project_9);
 
 // Creating submission for student10 with project answers for 19c
-        Submission submission19c_project_10 = createSubmission("Submission from student10", student10, List.of(
+        Submission submission19c_project_10 = createSubmission("Submission from student10", student10, Arrays.asList(
                 sa19c_project_student10
         ));
 
 // Adding the submission to the project answer for student10
         addSubmissionToStudentAnswer(sa19c_project_student10, submission19c_project_10);
 // Creating submission for student9 with project answers for 20a
-        Submission submission20a_project_9 = createSubmission("Submission from student9", student9, List.of(
+        Submission submission20a_project_9 = createSubmission("Submission from student9", student9, Arrays.asList(
                 sa20a_project_student9
         ));
 
@@ -2409,14 +2411,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa20a_project_student9, submission20a_project_9);
 
 // Creating submission for student10 with project answers for 20a
-        Submission submission20a_project_10 = createSubmission("Submission from student10", student10, List.of(
+        Submission submission20a_project_10 = createSubmission("Submission from student10", student10, Arrays.asList(
                 sa20a_project_student10
         ));
 
 // Adding the submission to the project answer for student10
         addSubmissionToStudentAnswer(sa20a_project_student10, submission20a_project_10);
 // Creating submission for student9 with project answers for 20b
-        Submission submission20b_project_9 = createSubmission("Submission from student9", student9, List.of(
+        Submission submission20b_project_9 = createSubmission("Submission from student9", student9, Arrays.asList(
                 sa20b_project_student9
         ));
 
@@ -2424,14 +2426,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa20b_project_student9, submission20b_project_9);
 
 // Creating submission for student10 with project answers for 20b
-        Submission submission20b_project_10 = createSubmission("Submission from student10", student10, List.of(
+        Submission submission20b_project_10 = createSubmission("Submission from student10", student10, Arrays.asList(
                 sa20b_project_student10
         ));
 
 // Adding the submission to the project answer for student10
         addSubmissionToStudentAnswer(sa20b_project_student10, submission20b_project_10);
 // Creating submission for student9 with project answers for 20c
-        Submission submission20c_project_9 = createSubmission("Submission from student9", student9, List.of(
+        Submission submission20c_project_9 = createSubmission("Submission from student9", student9, Arrays.asList(
                 sa20c_project_student9
         ));
 
@@ -2439,14 +2441,14 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa20c_project_student9, submission20c_project_9);
 
 // Creating submission for student10 with project answers for 20c
-        Submission submission20c_project_10 = createSubmission("Submission from student10", student10, List.of(
+        Submission submission20c_project_10 = createSubmission("Submission from student10", student10, Arrays.asList(
                 sa20c_project_student10
         ));
 
 // Adding the submission to the project answer for student10
         addSubmissionToStudentAnswer(sa20c_project_student10, submission20c_project_10);
 // Creating submission for student9 with project answers for 20d
-        Submission submission20d_project_9 = createSubmission("Submission from student9", student9, List.of(
+        Submission submission20d_project_9 = createSubmission("Submission from student9", student9, Arrays.asList(
                 sa20d_project_student9
         ));
 
@@ -2454,7 +2456,7 @@ public class ProjectSeeder implements CommandLineRunner {
         addSubmissionToStudentAnswer(sa20d_project_student9, submission20d_project_9);
 
 // Creating submission for student10 with project answers for 20d
-        Submission submission20d_project_10 = createSubmission("Submission from student10", student10, List.of(
+        Submission submission20d_project_10 = createSubmission("Submission from student10", student10, Arrays.asList(
                 sa20d_project_student10
         ));
 
@@ -2648,65 +2650,65 @@ public class ProjectSeeder implements CommandLineRunner {
         Grade grade20d_10 = createGrade(88.1, student10, faculty5, course20, submission20d_project_10);
 
 
-        CourseGrade courseGrade1a_project_1 = createCourseGrade(student1, course1, 87.4, List.of(grade1a_1, grade1b_1, grade1c_1, grade1d_1, grade1e_1, grade1f_1));
-        CourseGrade courseGrade1a_project_2 = createCourseGrade(student2, course1, 88.12, List.of(grade1a_2, grade1b_2, grade1c_2, grade1d_2, grade1e_2, grade1f_2));
+        CourseGrade courseGrade1a_project_1 = createCourseGrade(student1, course1, 87.4, Arrays.asList(grade1a_1, grade1b_1, grade1c_1, grade1d_1, grade1e_1, grade1f_1));
+        CourseGrade courseGrade1a_project_2 = createCourseGrade(student2, course1, 88.12, Arrays.asList(grade1a_2, grade1b_2, grade1c_2, grade1d_2, grade1e_2, grade1f_2));
 
-        CourseGrade courseGrade2a_project_1 = createCourseGrade(student1, course2, 87.93, List.of(grade2a_1, grade2b_1, grade2c_1, grade2d_1, grade2e_1, grade2f_1));
-        CourseGrade courseGrade2a_project_2 = createCourseGrade(student2, course2, 87.32, List.of(grade2a_2, grade2b_2, grade2c_2, grade2d_2, grade2e_2, grade2f_2));
+        CourseGrade courseGrade2a_project_1 = createCourseGrade(student1, course2, 87.93, Arrays.asList(grade2a_1, grade2b_1, grade2c_1, grade2d_1, grade2e_1, grade2f_1));
+        CourseGrade courseGrade2a_project_2 = createCourseGrade(student2, course2, 87.32, Arrays.asList(grade2a_2, grade2b_2, grade2c_2, grade2d_2, grade2e_2, grade2f_2));
 
-        CourseGrade courseGrade3a_project_1 = createCourseGrade(student1, course3, 87.12, List.of(grade3a_1, grade3b_1, grade3c_1, grade3d_1));
-        CourseGrade courseGrade3a_project_2 = createCourseGrade(student2, course3, 87.05, List.of(grade3a_2, grade3b_2, grade3c_2, grade3d_2));
+        CourseGrade courseGrade3a_project_1 = createCourseGrade(student1, course3, 87.12, Arrays.asList(grade3a_1, grade3b_1, grade3c_1, grade3d_1));
+        CourseGrade courseGrade3a_project_2 = createCourseGrade(student2, course3, 87.05, Arrays.asList(grade3a_2, grade3b_2, grade3c_2, grade3d_2));
 
-        CourseGrade courseGrade4a_project_1 = createCourseGrade(student1, course4, 87.325, List.of(grade4a_1, grade4b_1, grade4c_1, grade4d_1));
-        CourseGrade courseGrade4a_project_2 = createCourseGrade(student2, course4, 87.95, List.of(grade4a_2, grade4b_2, grade4c_2, grade4d_2));
+        CourseGrade courseGrade4a_project_1 = createCourseGrade(student1, course4, 87.325, Arrays.asList(grade4a_1, grade4b_1, grade4c_1, grade4d_1));
+        CourseGrade courseGrade4a_project_2 = createCourseGrade(student2, course4, 87.95, Arrays.asList(grade4a_2, grade4b_2, grade4c_2, grade4d_2));
 
-        CourseGrade courseGrade5a_project_3 = createCourseGrade(student3, course5, 86.45, List.of(grade5a_3, grade5b_3, grade5c_3, grade5d_3));
-        CourseGrade courseGrade5a_project_4 = createCourseGrade(student4, course5, 87.725, List.of(grade5a_4, grade5b_4, grade5c_4, grade5d_4));
+        CourseGrade courseGrade5a_project_3 = createCourseGrade(student3, course5, 86.45, Arrays.asList(grade5a_3, grade5b_3, grade5c_3, grade5d_3));
+        CourseGrade courseGrade5a_project_4 = createCourseGrade(student4, course5, 87.725, Arrays.asList(grade5a_4, grade5b_4, grade5c_4, grade5d_4));
 
-        CourseGrade courseGrade6a_project_3 = createCourseGrade(student3, course6, 87.32, List.of(grade6a_3, grade6b_3, grade6c_3, grade6d_3, grade6e_3));
-        CourseGrade courseGrade6a_project_4 = createCourseGrade(student4, course6, 88.14, List.of(grade6a_4, grade6b_4, grade6c_4, grade6d_4, grade6e_4));
+        CourseGrade courseGrade6a_project_3 = createCourseGrade(student3, course6, 87.32, Arrays.asList(grade6a_3, grade6b_3, grade6c_3, grade6d_3, grade6e_3));
+        CourseGrade courseGrade6a_project_4 = createCourseGrade(student4, course6, 88.14, Arrays.asList(grade6a_4, grade6b_4, grade6c_4, grade6d_4, grade6e_4));
 
-        CourseGrade courseGrade7a_project_3 = createCourseGrade(student3, course7, 88.28, List.of(grade7a_3, grade7b_3, grade7c_3, grade7d_3));
-        CourseGrade courseGrade7a_project_4 = createCourseGrade(student4, course7, 88.35, List.of(grade7a_4, grade7b_4, grade7c_4, grade7d_4));
+        CourseGrade courseGrade7a_project_3 = createCourseGrade(student3, course7, 88.28, Arrays.asList(grade7a_3, grade7b_3, grade7c_3, grade7d_3));
+        CourseGrade courseGrade7a_project_4 = createCourseGrade(student4, course7, 88.35, Arrays.asList(grade7a_4, grade7b_4, grade7c_4, grade7d_4));
 
-        CourseGrade courseGrade8a_project_3 = createCourseGrade(student3, course8, 86.74, List.of(grade8a_3, grade8b_3, grade8c_3, grade8d_3, grade8e_3));
-        CourseGrade courseGrade8a_project_4 = createCourseGrade(student4, course8, 88.62, List.of(grade8a_4, grade8b_4, grade8c_4, grade8d_4, grade8e_4));
+        CourseGrade courseGrade8a_project_3 = createCourseGrade(student3, course8, 86.74, Arrays.asList(grade8a_3, grade8b_3, grade8c_3, grade8d_3, grade8e_3));
+        CourseGrade courseGrade8a_project_4 = createCourseGrade(student4, course8, 88.62, Arrays.asList(grade8a_4, grade8b_4, grade8c_4, grade8d_4, grade8e_4));
 
-        CourseGrade courseGrade9a_project_5 = createCourseGrade(student5, course9, 87.57, List.of(grade9a_5, grade9b_5, grade9c_5));
-        CourseGrade courseGrade9a_project_6 = createCourseGrade(student6, course9, 88.4, List.of(grade9a_6, grade9b_6, grade9c_6));
+        CourseGrade courseGrade9a_project_5 = createCourseGrade(student5, course9, 87.57, Arrays.asList(grade9a_5, grade9b_5, grade9c_5));
+        CourseGrade courseGrade9a_project_6 = createCourseGrade(student6, course9, 88.4, Arrays.asList(grade9a_6, grade9b_6, grade9c_6));
 
-        CourseGrade courseGrade10a_project_5 = createCourseGrade(student5, course10, 87.42, List.of(grade10a_5, grade10b_5, grade10c_5));
-        CourseGrade courseGrade10a_project_6 = createCourseGrade(student6, course10, 88.5, List.of(grade10a_6, grade10b_6, grade10c_6));
+        CourseGrade courseGrade10a_project_5 = createCourseGrade(student5, course10, 87.42, Arrays.asList(grade10a_5, grade10b_5, grade10c_5));
+        CourseGrade courseGrade10a_project_6 = createCourseGrade(student6, course10, 88.5, Arrays.asList(grade10a_6, grade10b_6, grade10c_6));
 
-        CourseGrade courseGrade11a_project_5 = createCourseGrade(student5, course11, 87.55, List.of(grade11a_5, grade11b_5, grade11c_5, grade11d_5));
-        CourseGrade courseGrade11a_project_6 = createCourseGrade(student6, course11, 88.3, List.of(grade11a_6, grade11b_6, grade11c_6, grade11d_6));
+        CourseGrade courseGrade11a_project_5 = createCourseGrade(student5, course11, 87.55, Arrays.asList(grade11a_5, grade11b_5, grade11c_5, grade11d_5));
+        CourseGrade courseGrade11a_project_6 = createCourseGrade(student6, course11, 88.3, Arrays.asList(grade11a_6, grade11b_6, grade11c_6, grade11d_6));
 
-        CourseGrade courseGrade12a_project_5 = createCourseGrade(student5, course12, 87.76, List.of(grade12a_5, grade12b_5, grade12c_5, grade12d_5, grade12e_5));
-        CourseGrade courseGrade12a_project_6 = createCourseGrade(student6, course12, 87.4, List.of(grade12a_6, grade12b_6, grade12c_6, grade12d_6, grade12e_6));
+        CourseGrade courseGrade12a_project_5 = createCourseGrade(student5, course12, 87.76, Arrays.asList(grade12a_5, grade12b_5, grade12c_5, grade12d_5, grade12e_5));
+        CourseGrade courseGrade12a_project_6 = createCourseGrade(student6, course12, 87.4, Arrays.asList(grade12a_6, grade12b_6, grade12c_6, grade12d_6, grade12e_6));
 
-        CourseGrade courseGrade13a_project_7 = createCourseGrade(student7, course13, 88.1, List.of(grade13a_7, grade13b_7, grade13c_7, grade13d_7));
-        CourseGrade courseGrade13a_project_8 = createCourseGrade(student8, course13, 87.6, List.of(grade13a_8, grade13b_8, grade13c_8, grade13d_8));
+        CourseGrade courseGrade13a_project_7 = createCourseGrade(student7, course13, 88.1, Arrays.asList(grade13a_7, grade13b_7, grade13c_7, grade13d_7));
+        CourseGrade courseGrade13a_project_8 = createCourseGrade(student8, course13, 87.6, Arrays.asList(grade13a_8, grade13b_8, grade13c_8, grade13d_8));
 
-        CourseGrade courseGrade14a_project_7 = createCourseGrade(student7, course14, 88.425, List.of(grade14a_7, grade14b_7, grade14c_7, grade14d_7));
-        CourseGrade courseGrade14a_project_8 = createCourseGrade(student8, course14, 88.2, List.of(grade14a_8, grade14b_8, grade14c_8, grade14d_8));
+        CourseGrade courseGrade14a_project_7 = createCourseGrade(student7, course14, 88.425, Arrays.asList(grade14a_7, grade14b_7, grade14c_7, grade14d_7));
+        CourseGrade courseGrade14a_project_8 = createCourseGrade(student8, course14, 88.2, Arrays.asList(grade14a_8, grade14b_8, grade14c_8, grade14d_8));
 
-        CourseGrade courseGrade15a_project_7 = createCourseGrade(student7, course15, 87.5, List.of(grade15a_7, grade15b_7, grade15c_7));
-        CourseGrade courseGrade15a_project_8 = createCourseGrade(student8, course15, 87.6, List.of(grade15a_8, grade15b_8, grade15c_8));
+        CourseGrade courseGrade15a_project_7 = createCourseGrade(student7, course15, 87.5, Arrays.asList(grade15a_7, grade15b_7, grade15c_7));
+        CourseGrade courseGrade15a_project_8 = createCourseGrade(student8, course15, 87.6, Arrays.asList(grade15a_8, grade15b_8, grade15c_8));
 
-        CourseGrade courseGrade16a_project_7 = createCourseGrade(student7, course16, 88.47, List.of(grade16a_7, grade16b_7, grade16c_7));
-        CourseGrade courseGrade16a_project_8 = createCourseGrade(student8, course16, 88.33, List.of(grade16a_8, grade16b_8, grade16c_8));
+        CourseGrade courseGrade16a_project_7 = createCourseGrade(student7, course16, 88.47, Arrays.asList(grade16a_7, grade16b_7, grade16c_7));
+        CourseGrade courseGrade16a_project_8 = createCourseGrade(student8, course16, 88.33, Arrays.asList(grade16a_8, grade16b_8, grade16c_8));
 
-        CourseGrade courseGrade17a_project_9 = createCourseGrade(student9, course17, 88.53, List.of(grade17a_9, grade17b_9, grade17c_9, grade17d_9));
-        CourseGrade courseGrade17a_project_10 = createCourseGrade(student10, course17, 88.03, List.of(grade17a_10, grade17b_10, grade17c_10, grade17d_10));
+        CourseGrade courseGrade17a_project_9 = createCourseGrade(student9, course17, 88.53, Arrays.asList(grade17a_9, grade17b_9, grade17c_9, grade17d_9));
+        CourseGrade courseGrade17a_project_10 = createCourseGrade(student10, course17, 88.03, Arrays.asList(grade17a_10, grade17b_10, grade17c_10, grade17d_10));
 
-        CourseGrade courseGrade18a_project_9 = createCourseGrade(student9, course18, 88.23, List.of(grade18a_9, grade18b_9, grade18c_9));
-        CourseGrade courseGrade18a_project_10 = createCourseGrade(student10, course18, 87.87, List.of(grade18a_10, grade18b_10, grade18c_10));
+        CourseGrade courseGrade18a_project_9 = createCourseGrade(student9, course18, 88.23, Arrays.asList(grade18a_9, grade18b_9, grade18c_9));
+        CourseGrade courseGrade18a_project_10 = createCourseGrade(student10, course18, 87.87, Arrays.asList(grade18a_10, grade18b_10, grade18c_10));
 
-        CourseGrade courseGrade19a_project_9 = createCourseGrade(student9, course19, 87.9, List.of(grade19a_9, grade19b_9, grade19c_9));
-        CourseGrade courseGrade19a_project_10 = createCourseGrade(student10, course19, 87.4, List.of(grade19a_10, grade19b_10, grade19c_10));
+        CourseGrade courseGrade19a_project_9 = createCourseGrade(student9, course19, 87.9, Arrays.asList(grade19a_9, grade19b_9, grade19c_9));
+        CourseGrade courseGrade19a_project_10 = createCourseGrade(student10, course19, 87.4, Arrays.asList(grade19a_10, grade19b_10, grade19c_10));
 
-        CourseGrade courseGrade20a_project_9 = createCourseGrade(student9, course20, 88.88, List.of(grade20a_9, grade20b_9, grade20c_9, grade20d_9));
-        CourseGrade courseGrade20a_project_10 = createCourseGrade(student10, course20, 87.45, List.of(grade20a_10, grade20b_10, grade20c_10, grade20d_10));
+        CourseGrade courseGrade20a_project_9 = createCourseGrade(student9, course20, 88.88, Arrays.asList(grade20a_9, grade20b_9, grade20c_9, grade20d_9));
+        CourseGrade courseGrade20a_project_10 = createCourseGrade(student10, course20, 87.45, Arrays.asList(grade20a_10, grade20b_10, grade20c_10, grade20d_10));
 
 
         Feedback feedback1a_project_1 = createFeedback("Great project submission, student1!", submission1a_project_1);
@@ -2959,289 +2961,289 @@ public class ProjectSeeder implements CommandLineRunner {
 
         // Set two grades per course for the first 20 courses
 
-        course1.setGrades(List.of(grade1a_1, grade1a_2));
-        course2.setGrades(List.of(grade2a_1, grade2a_2));
-        course3.setGrades(List.of(grade3a_1, grade3a_2));
-        course4.setGrades(List.of(grade4a_1, grade4a_2));
-        course5.setGrades(List.of(grade5a_3, grade5a_4));
-        course6.setGrades(List.of(grade6a_3, grade6a_4));
-        course7.setGrades(List.of(grade7a_3, grade7a_4));
-        course8.setGrades(List.of(grade8a_3, grade8a_4));
-        course9.setGrades(List.of(grade9a_5, grade9a_6));
-        course10.setGrades(List.of(grade10a_5, grade10a_6));
-        course11.setGrades(List.of(grade11a_5, grade11a_6));
-        course12.setGrades(List.of(grade12a_5, grade12a_6));
-        course13.setGrades(List.of(grade13a_7, grade13a_8));
-        course14.setGrades(List.of(grade14a_7, grade14a_8));
-        course15.setGrades(List.of(grade15a_7, grade15a_8));
-        course16.setGrades(List.of(grade16a_7, grade16a_8));
-        course17.setGrades(List.of(grade17a_9, grade17a_10));
-        course18.setGrades(List.of(grade18a_9, grade18a_10));
-        course19.setGrades(List.of(grade19a_9, grade19a_10));
-        course20.setGrades(List.of(grade20a_9, grade20a_10));
+        course1.setGrades(Arrays.asList(grade1a_1, grade1a_2));
+        course2.setGrades(Arrays.asList(grade2a_1, grade2a_2));
+        course3.setGrades(Arrays.asList(grade3a_1, grade3a_2));
+        course4.setGrades(Arrays.asList(grade4a_1, grade4a_2));
+        course5.setGrades(Arrays.asList(grade5a_3, grade5a_4));
+        course6.setGrades(Arrays.asList(grade6a_3, grade6a_4));
+        course7.setGrades(Arrays.asList(grade7a_3, grade7a_4));
+        course8.setGrades(Arrays.asList(grade8a_3, grade8a_4));
+        course9.setGrades(Arrays.asList(grade9a_5, grade9a_6));
+        course10.setGrades(Arrays.asList(grade10a_5, grade10a_6));
+        course11.setGrades(Arrays.asList(grade11a_5, grade11a_6));
+        course12.setGrades(Arrays.asList(grade12a_5, grade12a_6));
+        course13.setGrades(Arrays.asList(grade13a_7, grade13a_8));
+        course14.setGrades(Arrays.asList(grade14a_7, grade14a_8));
+        course15.setGrades(Arrays.asList(grade15a_7, grade15a_8));
+        course16.setGrades(Arrays.asList(grade16a_7, grade16a_8));
+        course17.setGrades(Arrays.asList(grade17a_9, grade17a_10));
+        course18.setGrades(Arrays.asList(grade18a_9, grade18a_10));
+        course19.setGrades(Arrays.asList(grade19a_9, grade19a_10));
+        course20.setGrades(Arrays.asList(grade20a_9, grade20a_10));
 
 
         // Set course grades for all courses
 
-        course1.setCourseGrades(List.of(courseGrade1a_project_1, courseGrade1a_project_2));
-        course2.setCourseGrades(List.of(courseGrade2a_project_1, courseGrade2a_project_2));
-        course3.setCourseGrades(List.of(courseGrade3a_project_1, courseGrade3a_project_2));
-        course4.setCourseGrades(List.of(courseGrade4a_project_1, courseGrade4a_project_2));
-        course5.setCourseGrades(List.of(courseGrade5a_project_3, courseGrade5a_project_4));
-        course6.setCourseGrades(List.of(courseGrade6a_project_3, courseGrade6a_project_4));
-        course7.setCourseGrades(List.of(courseGrade7a_project_3, courseGrade7a_project_4));
-        course8.setCourseGrades(List.of(courseGrade8a_project_3, courseGrade8a_project_4));
-        course9.setCourseGrades(List.of(courseGrade9a_project_5, courseGrade9a_project_6));
-        course10.setCourseGrades(List.of(courseGrade10a_project_5, courseGrade10a_project_6));
-        course11.setCourseGrades(List.of(courseGrade11a_project_5, courseGrade11a_project_6));
-        course12.setCourseGrades(List.of(courseGrade12a_project_5, courseGrade12a_project_6));
-        course13.setCourseGrades(List.of(courseGrade13a_project_7, courseGrade13a_project_8));
-        course14.setCourseGrades(List.of(courseGrade14a_project_7, courseGrade14a_project_8));
-        course15.setCourseGrades(List.of(courseGrade15a_project_7, courseGrade15a_project_8));
-        course16.setCourseGrades(List.of(courseGrade16a_project_7, courseGrade16a_project_8));
-        course17.setCourseGrades(List.of(courseGrade17a_project_9, courseGrade17a_project_10));
-        course18.setCourseGrades(List.of(courseGrade18a_project_9, courseGrade18a_project_10));
-        course19.setCourseGrades(List.of(courseGrade19a_project_9, courseGrade19a_project_10));
-        course20.setCourseGrades(List.of(courseGrade20a_project_9, courseGrade20a_project_10));
+        course1.setCourseGrades(Arrays.asList(courseGrade1a_project_1, courseGrade1a_project_2));
+        course2.setCourseGrades(Arrays.asList(courseGrade2a_project_1, courseGrade2a_project_2));
+        course3.setCourseGrades(Arrays.asList(courseGrade3a_project_1, courseGrade3a_project_2));
+        course4.setCourseGrades(Arrays.asList(courseGrade4a_project_1, courseGrade4a_project_2));
+        course5.setCourseGrades(Arrays.asList(courseGrade5a_project_3, courseGrade5a_project_4));
+        course6.setCourseGrades(Arrays.asList(courseGrade6a_project_3, courseGrade6a_project_4));
+        course7.setCourseGrades(Arrays.asList(courseGrade7a_project_3, courseGrade7a_project_4));
+        course8.setCourseGrades(Arrays.asList(courseGrade8a_project_3, courseGrade8a_project_4));
+        course9.setCourseGrades(Arrays.asList(courseGrade9a_project_5, courseGrade9a_project_6));
+        course10.setCourseGrades(Arrays.asList(courseGrade10a_project_5, courseGrade10a_project_6));
+        course11.setCourseGrades(Arrays.asList(courseGrade11a_project_5, courseGrade11a_project_6));
+        course12.setCourseGrades(Arrays.asList(courseGrade12a_project_5, courseGrade12a_project_6));
+        course13.setCourseGrades(Arrays.asList(courseGrade13a_project_7, courseGrade13a_project_8));
+        course14.setCourseGrades(Arrays.asList(courseGrade14a_project_7, courseGrade14a_project_8));
+        course15.setCourseGrades(Arrays.asList(courseGrade15a_project_7, courseGrade15a_project_8));
+        course16.setCourseGrades(Arrays.asList(courseGrade16a_project_7, courseGrade16a_project_8));
+        course17.setCourseGrades(Arrays.asList(courseGrade17a_project_9, courseGrade17a_project_10));
+        course18.setCourseGrades(Arrays.asList(courseGrade18a_project_9, courseGrade18a_project_10));
+        course19.setCourseGrades(Arrays.asList(courseGrade19a_project_9, courseGrade19a_project_10));
+        course20.setCourseGrades(Arrays.asList(courseGrade20a_project_9, courseGrade20a_project_10));
 
-        createFacultyWithProject(faculty1, List.of(grade1a_1, grade1a_2, grade1b_1, grade1b_2, grade1c_1, grade1c_2, grade1d_1, grade1d_2, grade1e_1, grade1e_2, grade1f_1, grade1f_2), List.of(project1a, project1b, project1c, project1d, project1e, project1f));
-        createFacultyWithProject(faculty2, List.of(grade2a_1, grade2a_2, grade2b_1, grade2b_2, grade2c_1, grade2c_2, grade2d_1, grade2d_2, grade2e_1, grade2e_2, grade2f_1, grade2f_2), List.of(project2a, project2b, project2c, project2d, project2e, project2f));
-        createFacultyWithProject(faculty3, List.of(grade3a_1, grade3a_2, grade3b_1, grade3b_2, grade3c_1, grade3c_2, grade3d_1, grade3d_2), List.of(project3a, project3b, project3c, project3d));
-        createFacultyWithProject(faculty4, List.of(grade4a_1, grade4a_2, grade4b_1, grade4b_2, grade4c_1, grade4c_2, grade4d_1, grade4d_2), List.of(project4a, project4b, project4c, project4d));
-        createFacultyWithProject(faculty5, List.of(grade5a_3, grade5a_4, grade5b_3, grade5b_4, grade5c_3, grade5c_4, grade5d_3, grade5d_4), List.of(project5a, project5b, project5c, project5d));
-        createFacultyWithProject(faculty1, List.of(grade6a_3, grade6a_4, grade6b_3, grade6b_4, grade6c_3, grade6c_4, grade6d_3, grade6d_4, grade6e_3, grade6e_4), List.of(project6a, project6b, project6c, project6d, project6e));
-        createFacultyWithProject(faculty2, List.of(grade7a_3, grade7a_4, grade7b_3, grade7b_4, grade7c_3, grade7c_4, grade7d_3, grade7d_4), List.of(project7a, project7b, project7c, project7d));
-        createFacultyWithProject(faculty3, List.of(grade8a_3, grade8a_4, grade8b_3, grade8b_4, grade8c_3, grade8c_4, grade8d_3, grade8d_4, grade8e_3, grade8e_4), List.of(project8a, project8b, project8c, project8d, project8e));
-        createFacultyWithProject(faculty4, List.of(grade9a_5, grade9a_6, grade9b_5, grade9b_6, grade9c_5, grade9c_6), List.of(project9a, project9b, project9c));
-        createFacultyWithProject(faculty5, List.of(grade10a_5, grade10a_6, grade10b_5, grade10b_6, grade10c_5, grade10c_6, grade10d_5, grade10d_6), List.of(project10a, project10b, project10c, project10d));
-        createFacultyWithProject(faculty1, List.of(grade11a_5, grade11a_6, grade11b_5, grade11b_6, grade11c_5, grade11c_6, grade11d_5, grade11d_6), List.of(project11a, project11b, project11c, project11d));
-        createFacultyWithProject(faculty2, List.of(grade12a_5, grade12a_6, grade12b_5, grade12b_6, grade12c_5, grade12c_6, grade12d_5, grade12d_6, grade12e_5, grade12e_6), List.of(project12a, project12b, project12c, project12d, project12e));
-        createFacultyWithProject(faculty3, List.of(grade13a_7, grade13a_8, grade13b_7, grade13b_8, grade13c_7, grade13c_8, grade13d_7, grade13d_8), List.of(project13a, project13b, project13c, project13d));
-        createFacultyWithProject(faculty4, List.of(grade14a_7, grade14a_8, grade14b_7, grade14b_8, grade14c_7, grade14c_8, grade14d_7, grade14d_8), List.of(project14a, project14b, project14c, project14d));
-        createFacultyWithProject(faculty5, List.of(grade15a_7, grade15a_8, grade15b_7, grade15b_8, grade15c_7, grade15c_8), List.of(project15a, project15b, project15c));
-        createFacultyWithProject(faculty1, List.of(grade16a_7, grade16a_8, grade16b_7, grade16b_8, grade16c_7, grade16c_8), List.of(project16a, project16b, project16c));
-        createFacultyWithProject(faculty2, List.of(grade17a_9, grade17a_10, grade17b_9, grade17b_10, grade17c_9, grade17c_10, grade17d_9, grade17d_10), List.of(project17a, project17b, project17c, project17d));
-        createFacultyWithProject(faculty3, List.of(grade18a_9, grade18a_10, grade18b_9, grade18b_10, grade18c_9, grade18c_10), List.of(project18a, project18b, project18c));
-        createFacultyWithProject(faculty4, List.of(grade19a_9, grade19a_10, grade19b_9, grade19b_10, grade19c_9, grade19c_10), List.of(project19a, project19b, project19c));
-        createFacultyWithProject(faculty5, List.of(grade20a_9, grade20a_10, grade20b_9, grade20b_10, grade20c_9, grade20c_10, grade20d_9, grade20d_10), List.of(project20a, project20b, project20c, project20d));
+        createFacultyWithProject(faculty1, Arrays.asList(grade1a_1, grade1a_2, grade1b_1, grade1b_2, grade1c_1, grade1c_2, grade1d_1, grade1d_2, grade1e_1, grade1e_2, grade1f_1, grade1f_2), Arrays.asList(project1a, project1b, project1c, project1d, project1e, project1f));
+        createFacultyWithProject(faculty2, Arrays.asList(grade2a_1, grade2a_2, grade2b_1, grade2b_2, grade2c_1, grade2c_2, grade2d_1, grade2d_2, grade2e_1, grade2e_2, grade2f_1, grade2f_2), Arrays.asList(project2a, project2b, project2c, project2d, project2e, project2f));
+        createFacultyWithProject(faculty3, Arrays.asList(grade3a_1, grade3a_2, grade3b_1, grade3b_2, grade3c_1, grade3c_2, grade3d_1, grade3d_2), Arrays.asList(project3a, project3b, project3c, project3d));
+        createFacultyWithProject(faculty4, Arrays.asList(grade4a_1, grade4a_2, grade4b_1, grade4b_2, grade4c_1, grade4c_2, grade4d_1, grade4d_2), Arrays.asList(project4a, project4b, project4c, project4d));
+        createFacultyWithProject(faculty5, Arrays.asList(grade5a_3, grade5a_4, grade5b_3, grade5b_4, grade5c_3, grade5c_4, grade5d_3, grade5d_4), Arrays.asList(project5a, project5b, project5c, project5d));
+        createFacultyWithProject(faculty1, Arrays.asList(grade6a_3, grade6a_4, grade6b_3, grade6b_4, grade6c_3, grade6c_4, grade6d_3, grade6d_4, grade6e_3, grade6e_4), Arrays.asList(project6a, project6b, project6c, project6d, project6e));
+        createFacultyWithProject(faculty2, Arrays.asList(grade7a_3, grade7a_4, grade7b_3, grade7b_4, grade7c_3, grade7c_4, grade7d_3, grade7d_4), Arrays.asList(project7a, project7b, project7c, project7d));
+        createFacultyWithProject(faculty3, Arrays.asList(grade8a_3, grade8a_4, grade8b_3, grade8b_4, grade8c_3, grade8c_4, grade8d_3, grade8d_4, grade8e_3, grade8e_4), Arrays.asList(project8a, project8b, project8c, project8d, project8e));
+        createFacultyWithProject(faculty4, Arrays.asList(grade9a_5, grade9a_6, grade9b_5, grade9b_6, grade9c_5, grade9c_6), Arrays.asList(project9a, project9b, project9c));
+        createFacultyWithProject(faculty5, Arrays.asList(grade10a_5, grade10a_6, grade10b_5, grade10b_6, grade10c_5, grade10c_6, grade10d_5, grade10d_6), Arrays.asList(project10a, project10b, project10c, project10d));
+        createFacultyWithProject(faculty1, Arrays.asList(grade11a_5, grade11a_6, grade11b_5, grade11b_6, grade11c_5, grade11c_6, grade11d_5, grade11d_6), Arrays.asList(project11a, project11b, project11c, project11d));
+        createFacultyWithProject(faculty2, Arrays.asList(grade12a_5, grade12a_6, grade12b_5, grade12b_6, grade12c_5, grade12c_6, grade12d_5, grade12d_6, grade12e_5, grade12e_6), Arrays.asList(project12a, project12b, project12c, project12d, project12e));
+        createFacultyWithProject(faculty3, Arrays.asList(grade13a_7, grade13a_8, grade13b_7, grade13b_8, grade13c_7, grade13c_8, grade13d_7, grade13d_8), Arrays.asList(project13a, project13b, project13c, project13d));
+        createFacultyWithProject(faculty4, Arrays.asList(grade14a_7, grade14a_8, grade14b_7, grade14b_8, grade14c_7, grade14c_8, grade14d_7, grade14d_8), Arrays.asList(project14a, project14b, project14c, project14d));
+        createFacultyWithProject(faculty5, Arrays.asList(grade15a_7, grade15a_8, grade15b_7, grade15b_8, grade15c_7, grade15c_8), Arrays.asList(project15a, project15b, project15c));
+        createFacultyWithProject(faculty1, Arrays.asList(grade16a_7, grade16a_8, grade16b_7, grade16b_8, grade16c_7, grade16c_8), Arrays.asList(project16a, project16b, project16c));
+        createFacultyWithProject(faculty2, Arrays.asList(grade17a_9, grade17a_10, grade17b_9, grade17b_10, grade17c_9, grade17c_10, grade17d_9, grade17d_10), Arrays.asList(project17a, project17b, project17c, project17d));
+        createFacultyWithProject(faculty3, Arrays.asList(grade18a_9, grade18a_10, grade18b_9, grade18b_10, grade18c_9, grade18c_10), Arrays.asList(project18a, project18b, project18c));
+        createFacultyWithProject(faculty4, Arrays.asList(grade19a_9, grade19a_10, grade19b_9, grade19b_10, grade19c_9, grade19c_10), Arrays.asList(project19a, project19b, project19c));
+        createFacultyWithProject(faculty5, Arrays.asList(grade20a_9, grade20a_10, grade20b_9, grade20b_10, grade20c_9, grade20c_10, grade20d_9, grade20d_10), Arrays.asList(project20a, project20b, project20c, project20d));
 
-        linkSubmissionDetails(submission1a_project_1, student1, grade1a_1, feedback1a_project_1, List.of(sa1a_project_student1));
-        linkSubmissionDetails(submission1a_project_2, student2, grade1a_2, feedback1a_project_2, List.of(sa1a_project_student2));
-        linkSubmissionDetails(submission1a_project_1, student1, grade1a_1, feedback1a_project_1, List.of(sa1a_project_student1));
-        linkSubmissionDetails(submission1a_project_2, student2, grade1a_2, feedback1a_project_2, List.of(sa1a_project_student2));
-        linkSubmissionDetails(submission1b_project_1, student1, grade1b_1, feedback1b_project_1, List.of(sa1b_project_student1));
-        linkSubmissionDetails(submission1b_project_2, student2, grade1b_2, feedback1b_project_2, List.of(sa1b_project_student2));
-        linkSubmissionDetails(submission1c_project_1, student1, grade1c_1, feedback1c_project_1, List.of(sa1c_project_student1));
-        linkSubmissionDetails(submission1c_project_2, student2, grade1c_2, feedback1c_project_2, List.of(sa1c_project_student2));
-        linkSubmissionDetails(submission1d_project_1, student1, grade1d_1, feedback1d_project_1, List.of(sa1d_project_student1));
-        linkSubmissionDetails(submission1d_project_2, student2, grade1d_2, feedback1d_project_2, List.of(sa1d_project_student2));
-        linkSubmissionDetails(submission1e_project_1, student1, grade1e_1, feedback1e_project_1, List.of(sa1e_project_student1));
-        linkSubmissionDetails(submission1e_project_2, student2, grade1e_2, feedback1e_project_2, List.of(sa1e_project_student2));
-        linkSubmissionDetails(submission1f_project_1, student1, grade1f_1, feedback1f_project_1, List.of(sa1f_project_student1));
-        linkSubmissionDetails(submission1f_project_2, student2, grade1f_2, feedback1f_project_2, List.of(sa1f_project_student2));
+        linkSubmissionDetails(submission1a_project_1, student1, grade1a_1, feedback1a_project_1, Arrays.asList(sa1a_project_student1));
+        linkSubmissionDetails(submission1a_project_2, student2, grade1a_2, feedback1a_project_2, Arrays.asList(sa1a_project_student2));
+        linkSubmissionDetails(submission1a_project_1, student1, grade1a_1, feedback1a_project_1, Arrays.asList(sa1a_project_student1));
+        linkSubmissionDetails(submission1a_project_2, student2, grade1a_2, feedback1a_project_2, Arrays.asList(sa1a_project_student2));
+        linkSubmissionDetails(submission1b_project_1, student1, grade1b_1, feedback1b_project_1, Arrays.asList(sa1b_project_student1));
+        linkSubmissionDetails(submission1b_project_2, student2, grade1b_2, feedback1b_project_2, Arrays.asList(sa1b_project_student2));
+        linkSubmissionDetails(submission1c_project_1, student1, grade1c_1, feedback1c_project_1, Arrays.asList(sa1c_project_student1));
+        linkSubmissionDetails(submission1c_project_2, student2, grade1c_2, feedback1c_project_2, Arrays.asList(sa1c_project_student2));
+        linkSubmissionDetails(submission1d_project_1, student1, grade1d_1, feedback1d_project_1, Arrays.asList(sa1d_project_student1));
+        linkSubmissionDetails(submission1d_project_2, student2, grade1d_2, feedback1d_project_2, Arrays.asList(sa1d_project_student2));
+        linkSubmissionDetails(submission1e_project_1, student1, grade1e_1, feedback1e_project_1, Arrays.asList(sa1e_project_student1));
+        linkSubmissionDetails(submission1e_project_2, student2, grade1e_2, feedback1e_project_2, Arrays.asList(sa1e_project_student2));
+        linkSubmissionDetails(submission1f_project_1, student1, grade1f_1, feedback1f_project_1, Arrays.asList(sa1f_project_student1));
+        linkSubmissionDetails(submission1f_project_2, student2, grade1f_2, feedback1f_project_2, Arrays.asList(sa1f_project_student2));
 
-        linkSubmissionDetails(submission2a_project_1, student1, grade2a_1, feedback2a_project_1, List.of(sa2a_project_student1));
-        linkSubmissionDetails(submission2a_project_2, student2, grade2a_2, feedback2a_project_2, List.of(sa2a_project_student2));
-        linkSubmissionDetails(submission2b_project_1, student1, grade2b_1, feedback2b_project_1, List.of(sa2b_project_student1));
-        linkSubmissionDetails(submission2b_project_2, student2, grade2b_2, feedback2b_project_2, List.of(sa2b_project_student2));
-        linkSubmissionDetails(submission2c_project_1, student1, grade2c_1, feedback2c_project_1, List.of(sa2c_project_student1));
-        linkSubmissionDetails(submission2c_project_2, student2, grade2c_2, feedback2c_project_2, List.of(sa2c_project_student2));
-        linkSubmissionDetails(submission2d_project_1, student1, grade2d_1, feedback2d_project_1, List.of(sa2d_project_student1));
-        linkSubmissionDetails(submission2d_project_2, student2, grade2d_2, feedback2d_project_2, List.of(sa2d_project_student2));
-        linkSubmissionDetails(submission2e_project_1, student1, grade2e_1, feedback2e_project_1, List.of(sa2e_project_student1));
-        linkSubmissionDetails(submission2e_project_2, student2, grade2e_2, feedback2e_project_2, List.of(sa2e_project_student2));
-        linkSubmissionDetails(submission2f_project_1, student1, grade2f_1, feedback2f_project_1, List.of(sa2f_project_student1));
-        linkSubmissionDetails(submission2f_project_2, student2, grade2f_2, feedback2f_project_2, List.of(sa2f_project_student2));
+        linkSubmissionDetails(submission2a_project_1, student1, grade2a_1, feedback2a_project_1, Arrays.asList(sa2a_project_student1));
+        linkSubmissionDetails(submission2a_project_2, student2, grade2a_2, feedback2a_project_2, Arrays.asList(sa2a_project_student2));
+        linkSubmissionDetails(submission2b_project_1, student1, grade2b_1, feedback2b_project_1, Arrays.asList(sa2b_project_student1));
+        linkSubmissionDetails(submission2b_project_2, student2, grade2b_2, feedback2b_project_2, Arrays.asList(sa2b_project_student2));
+        linkSubmissionDetails(submission2c_project_1, student1, grade2c_1, feedback2c_project_1, Arrays.asList(sa2c_project_student1));
+        linkSubmissionDetails(submission2c_project_2, student2, grade2c_2, feedback2c_project_2, Arrays.asList(sa2c_project_student2));
+        linkSubmissionDetails(submission2d_project_1, student1, grade2d_1, feedback2d_project_1, Arrays.asList(sa2d_project_student1));
+        linkSubmissionDetails(submission2d_project_2, student2, grade2d_2, feedback2d_project_2, Arrays.asList(sa2d_project_student2));
+        linkSubmissionDetails(submission2e_project_1, student1, grade2e_1, feedback2e_project_1, Arrays.asList(sa2e_project_student1));
+        linkSubmissionDetails(submission2e_project_2, student2, grade2e_2, feedback2e_project_2, Arrays.asList(sa2e_project_student2));
+        linkSubmissionDetails(submission2f_project_1, student1, grade2f_1, feedback2f_project_1, Arrays.asList(sa2f_project_student1));
+        linkSubmissionDetails(submission2f_project_2, student2, grade2f_2, feedback2f_project_2, Arrays.asList(sa2f_project_student2));
 
-        linkSubmissionDetails(submission3a_project_1, student1, grade3a_1, feedback3a_project_1, List.of(sa3a_project_student1));
-        linkSubmissionDetails(submission3a_project_2, student2, grade3a_2, feedback3a_project_2, List.of(sa3a_project_student2));
-        linkSubmissionDetails(submission3b_project_1, student1, grade3b_1, feedback3b_project_1, List.of(sa3b_project_student1));
-        linkSubmissionDetails(submission3b_project_2, student2, grade3b_2, feedback3b_project_2, List.of(sa3b_project_student2));
-        linkSubmissionDetails(submission3c_project_1, student1, grade3c_1, feedback3c_project_1, List.of(sa3c_project_student1));
-        linkSubmissionDetails(submission3c_project_2, student2, grade3c_2, feedback3c_project_2, List.of(sa3c_project_student2));
-        linkSubmissionDetails(submission3d_project_1, student1, grade3d_1, feedback3d_project_1, List.of(sa3d_project_student1));
-        linkSubmissionDetails(submission3d_project_2, student2, grade3d_2, feedback3d_project_2, List.of(sa3d_project_student2));
+        linkSubmissionDetails(submission3a_project_1, student1, grade3a_1, feedback3a_project_1, Arrays.asList(sa3a_project_student1));
+        linkSubmissionDetails(submission3a_project_2, student2, grade3a_2, feedback3a_project_2, Arrays.asList(sa3a_project_student2));
+        linkSubmissionDetails(submission3b_project_1, student1, grade3b_1, feedback3b_project_1, Arrays.asList(sa3b_project_student1));
+        linkSubmissionDetails(submission3b_project_2, student2, grade3b_2, feedback3b_project_2, Arrays.asList(sa3b_project_student2));
+        linkSubmissionDetails(submission3c_project_1, student1, grade3c_1, feedback3c_project_1, Arrays.asList(sa3c_project_student1));
+        linkSubmissionDetails(submission3c_project_2, student2, grade3c_2, feedback3c_project_2, Arrays.asList(sa3c_project_student2));
+        linkSubmissionDetails(submission3d_project_1, student1, grade3d_1, feedback3d_project_1, Arrays.asList(sa3d_project_student1));
+        linkSubmissionDetails(submission3d_project_2, student2, grade3d_2, feedback3d_project_2, Arrays.asList(sa3d_project_student2));
 
-        linkSubmissionDetails(submission4a_project_1, student1, grade4a_1, feedback4a_project_1, List.of(sa4a_project_student1));
-        linkSubmissionDetails(submission4a_project_2, student2, grade4a_2, feedback4a_project_2, List.of(sa4a_project_student2));
-        linkSubmissionDetails(submission4b_project_1, student1, grade4b_1, feedback4b_project_1, List.of(sa4b_project_student1));
-        linkSubmissionDetails(submission4b_project_2, student2, grade4b_2, feedback4b_project_2, List.of(sa4b_project_student2));
-        linkSubmissionDetails(submission4c_project_1, student1, grade4c_1, feedback4c_project_1, List.of(sa4c_project_student1));
-        linkSubmissionDetails(submission4c_project_2, student2, grade4c_2, feedback4c_project_2, List.of(sa4c_project_student2));
-        linkSubmissionDetails(submission4d_project_1, student1, grade4d_1, feedback4d_project_1, List.of(sa4d_project_student1));
-        linkSubmissionDetails(submission4d_project_2, student2, grade4d_2, feedback4d_project_2, List.of(sa4d_project_student2));
+        linkSubmissionDetails(submission4a_project_1, student1, grade4a_1, feedback4a_project_1, Arrays.asList(sa4a_project_student1));
+        linkSubmissionDetails(submission4a_project_2, student2, grade4a_2, feedback4a_project_2, Arrays.asList(sa4a_project_student2));
+        linkSubmissionDetails(submission4b_project_1, student1, grade4b_1, feedback4b_project_1, Arrays.asList(sa4b_project_student1));
+        linkSubmissionDetails(submission4b_project_2, student2, grade4b_2, feedback4b_project_2, Arrays.asList(sa4b_project_student2));
+        linkSubmissionDetails(submission4c_project_1, student1, grade4c_1, feedback4c_project_1, Arrays.asList(sa4c_project_student1));
+        linkSubmissionDetails(submission4c_project_2, student2, grade4c_2, feedback4c_project_2, Arrays.asList(sa4c_project_student2));
+        linkSubmissionDetails(submission4d_project_1, student1, grade4d_1, feedback4d_project_1, Arrays.asList(sa4d_project_student1));
+        linkSubmissionDetails(submission4d_project_2, student2, grade4d_2, feedback4d_project_2, Arrays.asList(sa4d_project_student2));
 
-        linkSubmissionDetails(submission5a_project_3, student3, grade5a_3, feedback5a_project_3, List.of(sa5a_project_student3));
-        linkSubmissionDetails(submission5a_project_4, student4, grade5a_4, feedback5a_project_4, List.of(sa5a_project_student4));
-        linkSubmissionDetails(submission5b_project_3, student3, grade5b_3, feedback5b_project_3, List.of(sa5b_project_student3));
-        linkSubmissionDetails(submission5b_project_4, student4, grade5b_4, feedback5b_project_4, List.of(sa5b_project_student4));
-        linkSubmissionDetails(submission5c_project_3, student3, grade5c_3, feedback5c_project_3, List.of(sa5c_project_student3));
-        linkSubmissionDetails(submission5c_project_4, student4, grade5c_4, feedback5c_project_4, List.of(sa5c_project_student4));
-        linkSubmissionDetails(submission5d_project_3, student3, grade5d_3, feedback5d_project_3, List.of(sa5d_project_student3));
-        linkSubmissionDetails(submission5d_project_4, student4, grade5d_4, feedback5d_project_4, List.of(sa5d_project_student4));
+        linkSubmissionDetails(submission5a_project_3, student3, grade5a_3, feedback5a_project_3, Arrays.asList(sa5a_project_student3));
+        linkSubmissionDetails(submission5a_project_4, student4, grade5a_4, feedback5a_project_4, Arrays.asList(sa5a_project_student4));
+        linkSubmissionDetails(submission5b_project_3, student3, grade5b_3, feedback5b_project_3, Arrays.asList(sa5b_project_student3));
+        linkSubmissionDetails(submission5b_project_4, student4, grade5b_4, feedback5b_project_4, Arrays.asList(sa5b_project_student4));
+        linkSubmissionDetails(submission5c_project_3, student3, grade5c_3, feedback5c_project_3, Arrays.asList(sa5c_project_student3));
+        linkSubmissionDetails(submission5c_project_4, student4, grade5c_4, feedback5c_project_4, Arrays.asList(sa5c_project_student4));
+        linkSubmissionDetails(submission5d_project_3, student3, grade5d_3, feedback5d_project_3, Arrays.asList(sa5d_project_student3));
+        linkSubmissionDetails(submission5d_project_4, student4, grade5d_4, feedback5d_project_4, Arrays.asList(sa5d_project_student4));
 
-        linkSubmissionDetails(submission6a_project_3, student3, grade6a_3, feedback6a_project_3, List.of(sa6a_project_student3));
-        linkSubmissionDetails(submission6a_project_4, student4, grade6a_4, feedback6a_project_4, List.of(sa6a_project_student4));
-        linkSubmissionDetails(submission6b_project_3, student3, grade6b_3, feedback6b_project_3, List.of(sa6b_project_student3));
-        linkSubmissionDetails(submission6b_project_4, student4, grade6b_4, feedback6b_project_4, List.of(sa6b_project_student4));
-        linkSubmissionDetails(submission6c_project_3, student3, grade6c_3, feedback6c_project_3, List.of(sa6c_project_student3));
-        linkSubmissionDetails(submission6c_project_4, student4, grade6c_4, feedback6c_project_4, List.of(sa6c_project_student4));
-        linkSubmissionDetails(submission6d_project_3, student3, grade6d_3, feedback6d_project_3, List.of(sa6d_project_student3));
-        linkSubmissionDetails(submission6d_project_4, student4, grade6d_4, feedback6d_project_4, List.of(sa6d_project_student4));
-        linkSubmissionDetails(submission6e_project_3, student3, grade6e_3, feedback6e_project_3, List.of(sa6e_project_student3));
-        linkSubmissionDetails(submission6e_project_4, student4, grade6e_4, feedback6e_project_4, List.of(sa6e_project_student4));
+        linkSubmissionDetails(submission6a_project_3, student3, grade6a_3, feedback6a_project_3, Arrays.asList(sa6a_project_student3));
+        linkSubmissionDetails(submission6a_project_4, student4, grade6a_4, feedback6a_project_4, Arrays.asList(sa6a_project_student4));
+        linkSubmissionDetails(submission6b_project_3, student3, grade6b_3, feedback6b_project_3, Arrays.asList(sa6b_project_student3));
+        linkSubmissionDetails(submission6b_project_4, student4, grade6b_4, feedback6b_project_4, Arrays.asList(sa6b_project_student4));
+        linkSubmissionDetails(submission6c_project_3, student3, grade6c_3, feedback6c_project_3, Arrays.asList(sa6c_project_student3));
+        linkSubmissionDetails(submission6c_project_4, student4, grade6c_4, feedback6c_project_4, Arrays.asList(sa6c_project_student4));
+        linkSubmissionDetails(submission6d_project_3, student3, grade6d_3, feedback6d_project_3, Arrays.asList(sa6d_project_student3));
+        linkSubmissionDetails(submission6d_project_4, student4, grade6d_4, feedback6d_project_4, Arrays.asList(sa6d_project_student4));
+        linkSubmissionDetails(submission6e_project_3, student3, grade6e_3, feedback6e_project_3, Arrays.asList(sa6e_project_student3));
+        linkSubmissionDetails(submission6e_project_4, student4, grade6e_4, feedback6e_project_4, Arrays.asList(sa6e_project_student4));
 
-        linkSubmissionDetails(submission7a_project_3, student3, grade7a_3, feedback7a_project_3, List.of(sa7a_project_student3));
-        linkSubmissionDetails(submission7a_project_4, student4, grade7a_4, feedback7a_project_4, List.of(sa7a_project_student4));
-        linkSubmissionDetails(submission7b_project_3, student3, grade7b_3, feedback7b_project_3, List.of(sa7b_project_student3));
-        linkSubmissionDetails(submission7b_project_4, student4, grade7b_4, feedback7b_project_4, List.of(sa7b_project_student4));
-        linkSubmissionDetails(submission7c_project_3, student3, grade7c_3, feedback7c_project_3, List.of(sa7c_project_student3));
-        linkSubmissionDetails(submission7c_project_4, student4, grade7c_4, feedback7c_project_4, List.of(sa7c_project_student4));
-        linkSubmissionDetails(submission7d_project_3, student3, grade7d_3, feedback7d_project_3, List.of(sa7d_project_student3));
-        linkSubmissionDetails(submission7d_project_4, student4, grade7d_4, feedback7d_project_4, List.of(sa7d_project_student4));
+        linkSubmissionDetails(submission7a_project_3, student3, grade7a_3, feedback7a_project_3, Arrays.asList(sa7a_project_student3));
+        linkSubmissionDetails(submission7a_project_4, student4, grade7a_4, feedback7a_project_4, Arrays.asList(sa7a_project_student4));
+        linkSubmissionDetails(submission7b_project_3, student3, grade7b_3, feedback7b_project_3, Arrays.asList(sa7b_project_student3));
+        linkSubmissionDetails(submission7b_project_4, student4, grade7b_4, feedback7b_project_4, Arrays.asList(sa7b_project_student4));
+        linkSubmissionDetails(submission7c_project_3, student3, grade7c_3, feedback7c_project_3, Arrays.asList(sa7c_project_student3));
+        linkSubmissionDetails(submission7c_project_4, student4, grade7c_4, feedback7c_project_4, Arrays.asList(sa7c_project_student4));
+        linkSubmissionDetails(submission7d_project_3, student3, grade7d_3, feedback7d_project_3, Arrays.asList(sa7d_project_student3));
+        linkSubmissionDetails(submission7d_project_4, student4, grade7d_4, feedback7d_project_4, Arrays.asList(sa7d_project_student4));
 
-        linkSubmissionDetails(submission8a_project_3, student3, grade8a_3, feedback8a_project_3, List.of(sa8a_project_student3));
-        linkSubmissionDetails(submission8a_project_4, student4, grade8a_4, feedback8a_project_4, List.of(sa8a_project_student4));
-        linkSubmissionDetails(submission8b_project_3, student3, grade8b_3, feedback8b_project_3, List.of(sa8b_project_student3));
-        linkSubmissionDetails(submission8b_project_4, student4, grade8b_4, feedback8b_project_4, List.of(sa8b_project_student4));
-        linkSubmissionDetails(submission8c_project_3, student3, grade8c_3, feedback8c_project_3, List.of(sa8c_project_student3));
-        linkSubmissionDetails(submission8c_project_4, student4, grade8c_4, feedback8c_project_4, List.of(sa8c_project_student4));
-        linkSubmissionDetails(submission8d_project_3, student3, grade8d_3, feedback8d_project_3, List.of(sa8d_project_student3));
-        linkSubmissionDetails(submission8d_project_4, student4, grade8d_4, feedback8d_project_4, List.of(sa8d_project_student4));
-        linkSubmissionDetails(submission8e_project_3, student3, grade8e_3, feedback8e_project_3, List.of(sa8e_project_student3));
-        linkSubmissionDetails(submission8e_project_4, student4, grade8e_4, feedback8e_project_4, List.of(sa8e_project_student4));
+        linkSubmissionDetails(submission8a_project_3, student3, grade8a_3, feedback8a_project_3, Arrays.asList(sa8a_project_student3));
+        linkSubmissionDetails(submission8a_project_4, student4, grade8a_4, feedback8a_project_4, Arrays.asList(sa8a_project_student4));
+        linkSubmissionDetails(submission8b_project_3, student3, grade8b_3, feedback8b_project_3, Arrays.asList(sa8b_project_student3));
+        linkSubmissionDetails(submission8b_project_4, student4, grade8b_4, feedback8b_project_4, Arrays.asList(sa8b_project_student4));
+        linkSubmissionDetails(submission8c_project_3, student3, grade8c_3, feedback8c_project_3, Arrays.asList(sa8c_project_student3));
+        linkSubmissionDetails(submission8c_project_4, student4, grade8c_4, feedback8c_project_4, Arrays.asList(sa8c_project_student4));
+        linkSubmissionDetails(submission8d_project_3, student3, grade8d_3, feedback8d_project_3, Arrays.asList(sa8d_project_student3));
+        linkSubmissionDetails(submission8d_project_4, student4, grade8d_4, feedback8d_project_4, Arrays.asList(sa8d_project_student4));
+        linkSubmissionDetails(submission8e_project_3, student3, grade8e_3, feedback8e_project_3, Arrays.asList(sa8e_project_student3));
+        linkSubmissionDetails(submission8e_project_4, student4, grade8e_4, feedback8e_project_4, Arrays.asList(sa8e_project_student4));
 
-        linkSubmissionDetails(submission9a_project_5, student5, grade9a_5, feedback9a_project_5, List.of(sa9a_project_student5));
-        linkSubmissionDetails(submission9a_project_6, student6, grade9a_6, feedback9a_project_6, List.of(sa9a_project_student6));
-        linkSubmissionDetails(submission9b_project_5, student5, grade9b_5, feedback9b_project_5, List.of(sa9b_project_student5));
-        linkSubmissionDetails(submission9b_project_6, student6, grade9b_6, feedback9b_project_6, List.of(sa9b_project_student6));
-        linkSubmissionDetails(submission9c_project_5, student5, grade9c_5, feedback9c_project_5, List.of(sa9c_project_student5));
-        linkSubmissionDetails(submission9c_project_6, student6, grade9c_6, feedback9c_project_6, List.of(sa9c_project_student6));
+        linkSubmissionDetails(submission9a_project_5, student5, grade9a_5, feedback9a_project_5, Arrays.asList(sa9a_project_student5));
+        linkSubmissionDetails(submission9a_project_6, student6, grade9a_6, feedback9a_project_6, Arrays.asList(sa9a_project_student6));
+        linkSubmissionDetails(submission9b_project_5, student5, grade9b_5, feedback9b_project_5, Arrays.asList(sa9b_project_student5));
+        linkSubmissionDetails(submission9b_project_6, student6, grade9b_6, feedback9b_project_6, Arrays.asList(sa9b_project_student6));
+        linkSubmissionDetails(submission9c_project_5, student5, grade9c_5, feedback9c_project_5, Arrays.asList(sa9c_project_student5));
+        linkSubmissionDetails(submission9c_project_6, student6, grade9c_6, feedback9c_project_6, Arrays.asList(sa9c_project_student6));
 
-        linkSubmissionDetails(submission10a_project_5, student5, grade10a_5, feedback10a_project_5, List.of(sa10a_project_student5));
-        linkSubmissionDetails(submission10a_project_6, student6, grade10a_6, feedback10a_project_6, List.of(sa10a_project_student6));
-        linkSubmissionDetails(submission10b_project_5, student5, grade10b_5, feedback10b_project_5, List.of(sa10b_project_student5));
-        linkSubmissionDetails(submission10b_project_6, student6, grade10b_6, feedback10b_project_6, List.of(sa10b_project_student6));
-        linkSubmissionDetails(submission10c_project_5, student5, grade10c_5, feedback10c_project_5, List.of(sa10c_project_student5));
-        linkSubmissionDetails(submission10c_project_6, student6, grade10c_6, feedback10c_project_6, List.of(sa10c_project_student6));
-        linkSubmissionDetails(submission10d_project_5, student5, grade10d_5, feedback10d_project_5, List.of(sa10d_project_student5));
-        linkSubmissionDetails(submission10d_project_6, student6, grade10d_6, feedback10d_project_6, List.of(sa10d_project_student6));
+        linkSubmissionDetails(submission10a_project_5, student5, grade10a_5, feedback10a_project_5, Arrays.asList(sa10a_project_student5));
+        linkSubmissionDetails(submission10a_project_6, student6, grade10a_6, feedback10a_project_6, Arrays.asList(sa10a_project_student6));
+        linkSubmissionDetails(submission10b_project_5, student5, grade10b_5, feedback10b_project_5, Arrays.asList(sa10b_project_student5));
+        linkSubmissionDetails(submission10b_project_6, student6, grade10b_6, feedback10b_project_6, Arrays.asList(sa10b_project_student6));
+        linkSubmissionDetails(submission10c_project_5, student5, grade10c_5, feedback10c_project_5, Arrays.asList(sa10c_project_student5));
+        linkSubmissionDetails(submission10c_project_6, student6, grade10c_6, feedback10c_project_6, Arrays.asList(sa10c_project_student6));
+        linkSubmissionDetails(submission10d_project_5, student5, grade10d_5, feedback10d_project_5, Arrays.asList(sa10d_project_student5));
+        linkSubmissionDetails(submission10d_project_6, student6, grade10d_6, feedback10d_project_6, Arrays.asList(sa10d_project_student6));
 
-        linkSubmissionDetails(submission11a_project_5, student5, grade11a_5, feedback11a_project_5, List.of(sa11a_project_student5));
-        linkSubmissionDetails(submission11a_project_6, student6, grade11a_6, feedback11a_project_6, List.of(sa11a_project_student6));
-        linkSubmissionDetails(submission11b_project_5, student5, grade11b_5, feedback11b_project_5, List.of(sa11b_project_student5));
-        linkSubmissionDetails(submission11b_project_6, student6, grade11b_6, feedback11b_project_6, List.of(sa11b_project_student6));
-        linkSubmissionDetails(submission11c_project_5, student5, grade11c_5, feedback11c_project_5, List.of(sa11c_project_student5));
-        linkSubmissionDetails(submission11c_project_6, student6, grade11c_6, feedback11c_project_6, List.of(sa11c_project_student6));
-        linkSubmissionDetails(submission11d_project_5, student5, grade11d_5, feedback11d_project_5, List.of(sa11d_project_student5));
-        linkSubmissionDetails(submission11d_project_6, student6, grade11d_6, feedback11d_project_6, List.of(sa11d_project_student6));
+        linkSubmissionDetails(submission11a_project_5, student5, grade11a_5, feedback11a_project_5, Arrays.asList(sa11a_project_student5));
+        linkSubmissionDetails(submission11a_project_6, student6, grade11a_6, feedback11a_project_6, Arrays.asList(sa11a_project_student6));
+        linkSubmissionDetails(submission11b_project_5, student5, grade11b_5, feedback11b_project_5, Arrays.asList(sa11b_project_student5));
+        linkSubmissionDetails(submission11b_project_6, student6, grade11b_6, feedback11b_project_6, Arrays.asList(sa11b_project_student6));
+        linkSubmissionDetails(submission11c_project_5, student5, grade11c_5, feedback11c_project_5, Arrays.asList(sa11c_project_student5));
+        linkSubmissionDetails(submission11c_project_6, student6, grade11c_6, feedback11c_project_6, Arrays.asList(sa11c_project_student6));
+        linkSubmissionDetails(submission11d_project_5, student5, grade11d_5, feedback11d_project_5, Arrays.asList(sa11d_project_student5));
+        linkSubmissionDetails(submission11d_project_6, student6, grade11d_6, feedback11d_project_6, Arrays.asList(sa11d_project_student6));
 
-        linkSubmissionDetails(submission12a_project_5, student5, grade12a_5, feedback12a_project_5, List.of(sa12a_project_student5));
-        linkSubmissionDetails(submission12a_project_6, student6, grade12a_6, feedback12a_project_6, List.of(sa12a_project_student6));
-        linkSubmissionDetails(submission12b_project_5, student5, grade12b_5, feedback12b_project_5, List.of(sa12b_project_student5));
-        linkSubmissionDetails(submission12b_project_6, student6, grade12b_6, feedback12b_project_6, List.of(sa12b_project_student6));
-        linkSubmissionDetails(submission12c_project_5, student5, grade12c_5, feedback12c_project_5, List.of(sa12c_project_student5));
-        linkSubmissionDetails(submission12c_project_6, student6, grade12c_6, feedback12c_project_6, List.of(sa12c_project_student6));
-        linkSubmissionDetails(submission12d_project_5, student5, grade12d_5, feedback12d_project_5, List.of(sa12d_project_student5));
-        linkSubmissionDetails(submission12d_project_6, student6, grade12d_6, feedback12d_project_6, List.of(sa12d_project_student6));
-        linkSubmissionDetails(submission12e_project_5, student5, grade12e_5, feedback12e_project_5, List.of(sa12e_project_student5));
-        linkSubmissionDetails(submission12e_project_6, student6, grade12e_6, feedback12e_project_6, List.of(sa12e_project_student6));
+        linkSubmissionDetails(submission12a_project_5, student5, grade12a_5, feedback12a_project_5, Arrays.asList(sa12a_project_student5));
+        linkSubmissionDetails(submission12a_project_6, student6, grade12a_6, feedback12a_project_6, Arrays.asList(sa12a_project_student6));
+        linkSubmissionDetails(submission12b_project_5, student5, grade12b_5, feedback12b_project_5, Arrays.asList(sa12b_project_student5));
+        linkSubmissionDetails(submission12b_project_6, student6, grade12b_6, feedback12b_project_6, Arrays.asList(sa12b_project_student6));
+        linkSubmissionDetails(submission12c_project_5, student5, grade12c_5, feedback12c_project_5, Arrays.asList(sa12c_project_student5));
+        linkSubmissionDetails(submission12c_project_6, student6, grade12c_6, feedback12c_project_6, Arrays.asList(sa12c_project_student6));
+        linkSubmissionDetails(submission12d_project_5, student5, grade12d_5, feedback12d_project_5, Arrays.asList(sa12d_project_student5));
+        linkSubmissionDetails(submission12d_project_6, student6, grade12d_6, feedback12d_project_6, Arrays.asList(sa12d_project_student6));
+        linkSubmissionDetails(submission12e_project_5, student5, grade12e_5, feedback12e_project_5, Arrays.asList(sa12e_project_student5));
+        linkSubmissionDetails(submission12e_project_6, student6, grade12e_6, feedback12e_project_6, Arrays.asList(sa12e_project_student6));
 
-        linkSubmissionDetails(submission13a_project_7, student7, grade13a_7, feedback13a_project_7, List.of(sa13a_project_student7));
-        linkSubmissionDetails(submission13a_project_8, student8, grade13a_8, feedback13a_project_8, List.of(sa13a_project_student8));
-        linkSubmissionDetails(submission13b_project_7, student7, grade13b_7, feedback13b_project_7, List.of(sa13b_project_student7));
-        linkSubmissionDetails(submission13b_project_8, student8, grade13b_8, feedback13b_project_8, List.of(sa13b_project_student8));
-        linkSubmissionDetails(submission13c_project_7, student7, grade13c_7, feedback13c_project_7, List.of(sa13c_project_student7));
-        linkSubmissionDetails(submission13c_project_8, student8, grade13c_8, feedback13c_project_8, List.of(sa13c_project_student8));
-        linkSubmissionDetails(submission13d_project_7, student7, grade13d_7, feedback13d_project_7, List.of(sa13d_project_student7));
-        linkSubmissionDetails(submission13d_project_8, student8, grade13d_8, feedback13d_project_8, List.of(sa13d_project_student8));
+        linkSubmissionDetails(submission13a_project_7, student7, grade13a_7, feedback13a_project_7, Arrays.asList(sa13a_project_student7));
+        linkSubmissionDetails(submission13a_project_8, student8, grade13a_8, feedback13a_project_8, Arrays.asList(sa13a_project_student8));
+        linkSubmissionDetails(submission13b_project_7, student7, grade13b_7, feedback13b_project_7, Arrays.asList(sa13b_project_student7));
+        linkSubmissionDetails(submission13b_project_8, student8, grade13b_8, feedback13b_project_8, Arrays.asList(sa13b_project_student8));
+        linkSubmissionDetails(submission13c_project_7, student7, grade13c_7, feedback13c_project_7, Arrays.asList(sa13c_project_student7));
+        linkSubmissionDetails(submission13c_project_8, student8, grade13c_8, feedback13c_project_8, Arrays.asList(sa13c_project_student8));
+        linkSubmissionDetails(submission13d_project_7, student7, grade13d_7, feedback13d_project_7, Arrays.asList(sa13d_project_student7));
+        linkSubmissionDetails(submission13d_project_8, student8, grade13d_8, feedback13d_project_8, Arrays.asList(sa13d_project_student8));
 
-        linkSubmissionDetails(submission14a_project_7, student7, grade14a_7, feedback14a_project_7, List.of(sa14a_project_student7));
-        linkSubmissionDetails(submission14a_project_8, student8, grade14a_8, feedback14a_project_8, List.of(sa14a_project_student8));
-        linkSubmissionDetails(submission14b_project_7, student7, grade14b_7, feedback14b_project_7, List.of(sa14b_project_student7));
-        linkSubmissionDetails(submission14b_project_8, student8, grade14b_8, feedback14b_project_8, List.of(sa14b_project_student8));
-        linkSubmissionDetails(submission14c_project_7, student7, grade14c_7, feedback14c_project_7, List.of(sa14c_project_student7));
-        linkSubmissionDetails(submission14c_project_8, student8, grade14c_8, feedback14c_project_8, List.of(sa14c_project_student8));
-        linkSubmissionDetails(submission14d_project_7, student7, grade14d_7, feedback14d_project_7, List.of(sa14d_project_student7));
-        linkSubmissionDetails(submission14d_project_8, student8, grade14d_8, feedback14d_project_8, List.of(sa14d_project_student8));
+        linkSubmissionDetails(submission14a_project_7, student7, grade14a_7, feedback14a_project_7, Arrays.asList(sa14a_project_student7));
+        linkSubmissionDetails(submission14a_project_8, student8, grade14a_8, feedback14a_project_8, Arrays.asList(sa14a_project_student8));
+        linkSubmissionDetails(submission14b_project_7, student7, grade14b_7, feedback14b_project_7, Arrays.asList(sa14b_project_student7));
+        linkSubmissionDetails(submission14b_project_8, student8, grade14b_8, feedback14b_project_8, Arrays.asList(sa14b_project_student8));
+        linkSubmissionDetails(submission14c_project_7, student7, grade14c_7, feedback14c_project_7, Arrays.asList(sa14c_project_student7));
+        linkSubmissionDetails(submission14c_project_8, student8, grade14c_8, feedback14c_project_8, Arrays.asList(sa14c_project_student8));
+        linkSubmissionDetails(submission14d_project_7, student7, grade14d_7, feedback14d_project_7, Arrays.asList(sa14d_project_student7));
+        linkSubmissionDetails(submission14d_project_8, student8, grade14d_8, feedback14d_project_8, Arrays.asList(sa14d_project_student8));
 
-        linkSubmissionDetails(submission15a_project_7, student7, grade15a_7, feedback15a_project_7, List.of(sa15a_project_student7));
-        linkSubmissionDetails(submission15a_project_8, student8, grade15a_8, feedback15a_project_8, List.of(sa15a_project_student8));
-        linkSubmissionDetails(submission15b_project_7, student7, grade15b_7, feedback15b_project_7, List.of(sa15b_project_student7));
-        linkSubmissionDetails(submission15b_project_8, student8, grade15b_8, feedback15b_project_8, List.of(sa15b_project_student8));
-        linkSubmissionDetails(submission15c_project_7, student7, grade15c_7, feedback15c_project_7, List.of(sa15c_project_student7));
-        linkSubmissionDetails(submission15c_project_8, student8, grade15c_8, feedback15c_project_8, List.of(sa15c_project_student8));
+        linkSubmissionDetails(submission15a_project_7, student7, grade15a_7, feedback15a_project_7, Arrays.asList(sa15a_project_student7));
+        linkSubmissionDetails(submission15a_project_8, student8, grade15a_8, feedback15a_project_8, Arrays.asList(sa15a_project_student8));
+        linkSubmissionDetails(submission15b_project_7, student7, grade15b_7, feedback15b_project_7, Arrays.asList(sa15b_project_student7));
+        linkSubmissionDetails(submission15b_project_8, student8, grade15b_8, feedback15b_project_8, Arrays.asList(sa15b_project_student8));
+        linkSubmissionDetails(submission15c_project_7, student7, grade15c_7, feedback15c_project_7, Arrays.asList(sa15c_project_student7));
+        linkSubmissionDetails(submission15c_project_8, student8, grade15c_8, feedback15c_project_8, Arrays.asList(sa15c_project_student8));
 
-        linkSubmissionDetails(submission16a_project_7, student7, grade16a_7, feedback16a_project_7, List.of(sa16a_project_student7));
-        linkSubmissionDetails(submission16a_project_8, student8, grade16a_8, feedback16a_project_8, List.of(sa16a_project_student8));
-        linkSubmissionDetails(submission16b_project_7, student7, grade16b_7, feedback16b_project_7, List.of(sa16b_project_student7));
-        linkSubmissionDetails(submission16b_project_8, student8, grade16b_8, feedback16b_project_8, List.of(sa16b_project_student8));
-        linkSubmissionDetails(submission16c_project_7, student7, grade16c_7, feedback16c_project_7, List.of(sa16c_project_student7));
-        linkSubmissionDetails(submission16c_project_8, student8, grade16c_8, feedback16c_project_8, List.of(sa16c_project_student8));
+        linkSubmissionDetails(submission16a_project_7, student7, grade16a_7, feedback16a_project_7, Arrays.asList(sa16a_project_student7));
+        linkSubmissionDetails(submission16a_project_8, student8, grade16a_8, feedback16a_project_8, Arrays.asList(sa16a_project_student8));
+        linkSubmissionDetails(submission16b_project_7, student7, grade16b_7, feedback16b_project_7, Arrays.asList(sa16b_project_student7));
+        linkSubmissionDetails(submission16b_project_8, student8, grade16b_8, feedback16b_project_8, Arrays.asList(sa16b_project_student8));
+        linkSubmissionDetails(submission16c_project_7, student7, grade16c_7, feedback16c_project_7, Arrays.asList(sa16c_project_student7));
+        linkSubmissionDetails(submission16c_project_8, student8, grade16c_8, feedback16c_project_8, Arrays.asList(sa16c_project_student8));
 
-        linkSubmissionDetails(submission17a_project_9, student9, grade17a_9, feedback17a_project_9, List.of(sa17a_project_student9));
-        linkSubmissionDetails(submission17a_project_10, student10, grade17a_10, feedback17a_project_10, List.of(sa17a_project_student10));
-        linkSubmissionDetails(submission17b_project_9, student9, grade17b_9, feedback17b_project_9, List.of(sa17b_project_student9));
-        linkSubmissionDetails(submission17b_project_10, student10, grade17b_10, feedback17b_project_10, List.of(sa17b_project_student10));
-        linkSubmissionDetails(submission17c_project_9, student9, grade17c_9, feedback17c_project_9, List.of(sa17c_project_student9));
-        linkSubmissionDetails(submission17c_project_10, student10, grade17c_10, feedback17c_project_10, List.of(sa17c_project_student10));
-        linkSubmissionDetails(submission17d_project_9, student9, grade17d_9, feedback17d_project_9, List.of(sa17d_project_student9));
-        linkSubmissionDetails(submission17d_project_10, student10, grade17d_10, feedback17d_project_10, List.of(sa17d_project_student10));
+        linkSubmissionDetails(submission17a_project_9, student9, grade17a_9, feedback17a_project_9, Arrays.asList(sa17a_project_student9));
+        linkSubmissionDetails(submission17a_project_10, student10, grade17a_10, feedback17a_project_10, Arrays.asList(sa17a_project_student10));
+        linkSubmissionDetails(submission17b_project_9, student9, grade17b_9, feedback17b_project_9, Arrays.asList(sa17b_project_student9));
+        linkSubmissionDetails(submission17b_project_10, student10, grade17b_10, feedback17b_project_10, Arrays.asList(sa17b_project_student10));
+        linkSubmissionDetails(submission17c_project_9, student9, grade17c_9, feedback17c_project_9, Arrays.asList(sa17c_project_student9));
+        linkSubmissionDetails(submission17c_project_10, student10, grade17c_10, feedback17c_project_10, Arrays.asList(sa17c_project_student10));
+        linkSubmissionDetails(submission17d_project_9, student9, grade17d_9, feedback17d_project_9, Arrays.asList(sa17d_project_student9));
+        linkSubmissionDetails(submission17d_project_10, student10, grade17d_10, feedback17d_project_10, Arrays.asList(sa17d_project_student10));
 
-        linkSubmissionDetails(submission18a_project_9, student9, grade18a_9, feedback18a_project_9, List.of(sa18a_project_student9));
-        linkSubmissionDetails(submission18a_project_10, student10, grade18a_10, feedback18a_project_10, List.of(sa18a_project_student10));
-        linkSubmissionDetails(submission18b_project_9, student9, grade18b_9, feedback18b_project_9, List.of(sa18b_project_student9));
-        linkSubmissionDetails(submission18b_project_10, student10, grade18b_10, feedback18b_project_10, List.of(sa18b_project_student10));
-        linkSubmissionDetails(submission18c_project_9, student9, grade18c_9, feedback18c_project_9, List.of(sa18c_project_student9));
-        linkSubmissionDetails(submission18c_project_10, student10, grade18c_10, feedback18c_project_10, List.of(sa18c_project_student10));
+        linkSubmissionDetails(submission18a_project_9, student9, grade18a_9, feedback18a_project_9, Arrays.asList(sa18a_project_student9));
+        linkSubmissionDetails(submission18a_project_10, student10, grade18a_10, feedback18a_project_10, Arrays.asList(sa18a_project_student10));
+        linkSubmissionDetails(submission18b_project_9, student9, grade18b_9, feedback18b_project_9, Arrays.asList(sa18b_project_student9));
+        linkSubmissionDetails(submission18b_project_10, student10, grade18b_10, feedback18b_project_10, Arrays.asList(sa18b_project_student10));
+        linkSubmissionDetails(submission18c_project_9, student9, grade18c_9, feedback18c_project_9, Arrays.asList(sa18c_project_student9));
+        linkSubmissionDetails(submission18c_project_10, student10, grade18c_10, feedback18c_project_10, Arrays.asList(sa18c_project_student10));
 
-        linkSubmissionDetails(submission19a_project_9, student9, grade19a_9, feedback19a_project_9, List.of(sa19a_project_student9));
-        linkSubmissionDetails(submission19a_project_10, student10, grade19a_10, feedback19a_project_10, List.of(sa19a_project_student10));
-        linkSubmissionDetails(submission19b_project_9, student9, grade19b_9, feedback19b_project_9, List.of(sa19b_project_student9));
-        linkSubmissionDetails(submission19b_project_10, student10, grade19b_10, feedback19b_project_10, List.of(sa19b_project_student10));
-        linkSubmissionDetails(submission19c_project_9, student9, grade19c_9, feedback19c_project_9, List.of(sa19c_project_student9));
-        linkSubmissionDetails(submission19c_project_10, student10, grade19c_10, feedback19c_project_10, List.of(sa19c_project_student10));
+        linkSubmissionDetails(submission19a_project_9, student9, grade19a_9, feedback19a_project_9, Arrays.asList(sa19a_project_student9));
+        linkSubmissionDetails(submission19a_project_10, student10, grade19a_10, feedback19a_project_10, Arrays.asList(sa19a_project_student10));
+        linkSubmissionDetails(submission19b_project_9, student9, grade19b_9, feedback19b_project_9, Arrays.asList(sa19b_project_student9));
+        linkSubmissionDetails(submission19b_project_10, student10, grade19b_10, feedback19b_project_10, Arrays.asList(sa19b_project_student10));
+        linkSubmissionDetails(submission19c_project_9, student9, grade19c_9, feedback19c_project_9, Arrays.asList(sa19c_project_student9));
+        linkSubmissionDetails(submission19c_project_10, student10, grade19c_10, feedback19c_project_10, Arrays.asList(sa19c_project_student10));
 
-        linkSubmissionDetails(submission20a_project_9, student9, grade20a_9, feedback20a_project_9, List.of(sa20a_project_student9));
-        linkSubmissionDetails(submission20a_project_10, student10, grade20a_10, feedback20a_project_10, List.of(sa20a_project_student10));
-        linkSubmissionDetails(submission20b_project_9, student9, grade20b_9, feedback20b_project_9, List.of(sa20b_project_student9));
-        linkSubmissionDetails(submission20b_project_10, student10, grade20b_10, feedback20b_project_10, List.of(sa20b_project_student10));
-        linkSubmissionDetails(submission20c_project_9, student9, grade20c_9, feedback20c_project_9, List.of(sa20c_project_student9));
-        linkSubmissionDetails(submission20c_project_10, student10, grade20c_10, feedback20c_project_10, List.of(sa20c_project_student10));
-        linkSubmissionDetails(submission20d_project_9, student9, grade20d_9, feedback20d_project_9, List.of(sa20d_project_student9));
-        linkSubmissionDetails(submission20d_project_10, student10, grade20d_10, feedback20d_project_10, List.of(sa20d_project_student10));
+        linkSubmissionDetails(submission20a_project_9, student9, grade20a_9, feedback20a_project_9, Arrays.asList(sa20a_project_student9));
+        linkSubmissionDetails(submission20a_project_10, student10, grade20a_10, feedback20a_project_10, Arrays.asList(sa20a_project_student10));
+        linkSubmissionDetails(submission20b_project_9, student9, grade20b_9, feedback20b_project_9, Arrays.asList(sa20b_project_student9));
+        linkSubmissionDetails(submission20b_project_10, student10, grade20b_10, feedback20b_project_10, Arrays.asList(sa20b_project_student10));
+        linkSubmissionDetails(submission20c_project_9, student9, grade20c_9, feedback20c_project_9, Arrays.asList(sa20c_project_student9));
+        linkSubmissionDetails(submission20c_project_10, student10, grade20c_10, feedback20c_project_10, Arrays.asList(sa20c_project_student10));
+        linkSubmissionDetails(submission20d_project_9, student9, grade20d_9, feedback20d_project_9, Arrays.asList(sa20d_project_student9));
+        linkSubmissionDetails(submission20d_project_10, student10, grade20d_10, feedback20d_project_10, Arrays.asList(sa20d_project_student10));
 
-        syllabus1.setProjects(List.of(project1a, project1b, project1c, project1d, project1e, project1f));
-        syllabus2.setProjects(List.of(project2a, project2b, project2c, project2d, project2e, project2f));
-        syllabus3.setProjects(List.of(project3a, project3b, project3c, project3d));
-        syllabus4.setProjects(List.of(project4a, project4b, project4c, project4d));
-        syllabus5.setProjects(List.of(project5a, project5b, project5c, project5d));
-        syllabus6.setProjects(List.of(project6a, project6b, project6c, project6d, project6e));
-        syllabus7.setProjects(List.of(project7a, project7b, project7c, project7d));
-        syllabus8.setProjects(List.of(project8a, project8b, project8c, project8d, project8e));
-        syllabus9.setProjects(List.of(project9a, project9b, project9c));
-        syllabus10.setProjects(List.of(project10a, project10b, project10c, project10d));
-        syllabus11.setProjects(List.of(project11a, project11b, project11c, project11d));
-        syllabus12.setProjects(List.of(project12a, project12b, project12c, project12d, project12e));
-        syllabus13.setProjects(List.of(project13a, project13b, project13c, project13d));
-        syllabus14.setProjects(List.of(project14a, project14b, project14c, project14d));
-        syllabus15.setProjects(List.of(project15a, project15b, project15c));
-        syllabus16.setProjects(List.of(project16a, project16b, project16c));
-        syllabus17.setProjects(List.of(project17a, project17b, project17c, project17d));
-        syllabus18.setProjects(List.of(project18a, project18b, project18c));
-        syllabus19.setProjects(List.of(project19a, project19b, project19c));
-        syllabus20.setProjects(List.of(project20a, project20b, project20c, project20d));
+        syllabus1.setProjects(Arrays.asList(project1a, project1b, project1c, project1d, project1e, project1f));
+        syllabus2.setProjects(Arrays.asList(project2a, project2b, project2c, project2d, project2e, project2f));
+        syllabus3.setProjects(Arrays.asList(project3a, project3b, project3c, project3d));
+        syllabus4.setProjects(Arrays.asList(project4a, project4b, project4c, project4d));
+        syllabus5.setProjects(Arrays.asList(project5a, project5b, project5c, project5d));
+        syllabus6.setProjects(Arrays.asList(project6a, project6b, project6c, project6d, project6e));
+        syllabus7.setProjects(Arrays.asList(project7a, project7b, project7c, project7d));
+        syllabus8.setProjects(Arrays.asList(project8a, project8b, project8c, project8d, project8e));
+        syllabus9.setProjects(Arrays.asList(project9a, project9b, project9c));
+        syllabus10.setProjects(Arrays.asList(project10a, project10b, project10c, project10d));
+        syllabus11.setProjects(Arrays.asList(project11a, project11b, project11c, project11d));
+        syllabus12.setProjects(Arrays.asList(project12a, project12b, project12c, project12d, project12e));
+        syllabus13.setProjects(Arrays.asList(project13a, project13b, project13c, project13d));
+        syllabus14.setProjects(Arrays.asList(project14a, project14b, project14c, project14d));
+        syllabus15.setProjects(Arrays.asList(project15a, project15b, project15c));
+        syllabus16.setProjects(Arrays.asList(project16a, project16b, project16c));
+        syllabus17.setProjects(Arrays.asList(project17a, project17b, project17c, project17d));
+        syllabus18.setProjects(Arrays.asList(project18a, project18b, project18c));
+        syllabus19.setProjects(Arrays.asList(project19a, project19b, project19c));
+        syllabus20.setProjects(Arrays.asList(project20a, project20b, project20c, project20d));
 
-        studentProject(student1, List.of(grade1a_1, grade1b_1, grade1c_1, grade1d_1, grade1e_1, grade1f_1, grade2a_1, grade2b_1, grade2c_1, grade2d_1, grade2e_1, grade2f_1, grade3a_1, grade3b_1, grade3c_1, grade3d_1, grade4a_1, grade4b_1, grade4c_1, grade4d_1), List.of(courseGrade1a_project_1, courseGrade2a_project_1, courseGrade3a_project_1, courseGrade4a_project_1), List.of(project1a, project1b, project1c, project1d, project1e, project1f, project2a, project2b, project2c, project2d, project2e, project2f, project3a, project3b, project3c, project3d, project4a, project4b, project4c, project4d));
-        studentProject(student2, List.of(grade1a_2, grade1b_2, grade1c_2, grade1d_2, grade1e_2, grade1f_2, grade2a_2, grade2b_2, grade2c_2, grade2d_2, grade2e_2, grade2f_2, grade3a_2, grade3b_2, grade3c_2, grade3d_2, grade4a_2, grade4b_2, grade4c_2, grade4d_2), List.of(courseGrade1a_project_2, courseGrade2a_project_2, courseGrade3a_project_2, courseGrade4a_project_2), List.of(project1a, project1b, project1c, project1d, project1e, project1f, project2a, project2b, project2c, project2d, project2e, project2f, project3a, project3b, project3c, project3d, project4a, project4b, project4c, project4d));
-        studentProject(student3, List.of(grade5a_3, grade5b_3, grade5c_3, grade5d_3, grade6a_3, grade6b_3, grade6c_3, grade6d_3, grade6e_3, grade7a_3, grade7b_3, grade7c_3, grade7d_3, grade8a_3, grade8b_3, grade8c_3, grade8d_3, grade8e_3), List.of(courseGrade5a_project_3, courseGrade6a_project_3, courseGrade7a_project_3, courseGrade8a_project_3), List.of(project5a, project5b, project5c, project5d, project6a, project6b, project6c, project6d, project6e, project7a, project7b, project7c, project7d, project8a, project8b, project8c, project8d, project8e));
-        studentProject(student4, List.of(grade5a_4, grade5b_4, grade5c_4, grade5d_4, grade6a_4, grade6b_4, grade6c_4, grade6d_4, grade6e_4, grade7a_4, grade7b_4, grade7c_4, grade7d_4, grade8a_4, grade8b_4, grade8c_4, grade8d_4, grade8e_4), List.of(courseGrade5a_project_4, courseGrade6a_project_4, courseGrade7a_project_4, courseGrade8a_project_4), List.of(project5a, project5b, project5c, project5d, project6a, project6b, project6c, project6d, project6e, project7a, project7b, project7c, project7d, project8a, project8b, project8c, project8d, project8e));
-        studentProject(student5, List.of(grade9a_5, grade9b_5, grade9c_5, grade10a_5, grade10b_5, grade10c_5, grade10d_5, grade11a_5, grade11b_5, grade11c_5, grade11d_5, grade12a_5, grade12b_5, grade12c_5, grade12d_5, grade12e_5), List.of(courseGrade9a_project_5, courseGrade10a_project_5, courseGrade11a_project_5, courseGrade12a_project_5), List.of(project9a, project9b, project9c, project10a, project10b, project10c, project10d, project11a, project11b, project11c, project11d, project12a, project12b, project12c, project12d, project12e));
-        studentProject(student6, List.of(grade9a_6, grade9b_6, grade9c_6, grade10a_6, grade10b_6, grade10c_6, grade10d_6, grade11a_6, grade11b_6, grade11c_6, grade11d_6, grade12a_6, grade12b_6, grade12c_6, grade12d_6, grade12e_6), List.of(courseGrade9a_project_6, courseGrade10a_project_6, courseGrade11a_project_6, courseGrade12a_project_6), List.of(project9a, project9b, project9c, project10a, project10b, project10c, project10d, project11a, project11b, project11c, project11d, project12a, project12b, project12c, project12d, project12e));
-        studentProject(student7, List.of(grade13a_7, grade13b_7, grade13c_7, grade13d_7, grade14a_7, grade14b_7, grade14c_7, grade14d_7, grade15a_7, grade15b_7, grade15c_7, grade16a_7, grade16b_7, grade16c_7), List.of(courseGrade13a_project_7, courseGrade14a_project_7, courseGrade15a_project_7, courseGrade16a_project_7), List.of(project13a, project13b, project13c, project13d, project14a, project14b, project14c, project14d, project15a, project15b, project15c, project16a, project16b, project16c));
-        studentProject(student8, List.of(grade13a_8, grade13b_8, grade13c_8, grade13d_8, grade14a_8, grade14b_8, grade14c_8, grade14d_8, grade15a_8, grade15b_8, grade15c_8, grade16a_8, grade16b_8, grade16c_8), List.of(courseGrade13a_project_8, courseGrade14a_project_8, courseGrade15a_project_8, courseGrade16a_project_8), List.of(project13a, project13b, project13c, project13d, project14a, project14b, project14c, project14d, project15a, project15b, project15c, project16a, project16b, project16c));
-        studentProject(student9, List.of(grade17a_9, grade17b_9, grade17c_9, grade17d_9, grade18a_9, grade18b_9, grade18c_9, grade19a_9, grade19b_9, grade19c_9, grade20a_9, grade20b_9, grade20c_9, grade20d_9), List.of(courseGrade17a_project_9, courseGrade18a_project_9, courseGrade19a_project_9, courseGrade20a_project_9), List.of(project17a, project17b, project17c, project17d, project18a, project18b, project18c, project19a, project19b, project19c, project20a, project20b, project20c, project20d));
-        studentProject(student10, List.of(grade17a_10, grade17b_10, grade17c_10, grade17d_10, grade18a_10, grade18b_10, grade18c_10, grade19a_10, grade19b_10, grade19c_10, grade20a_10, grade20b_10, grade20c_10, grade20d_10), List.of(courseGrade17a_project_10, courseGrade18a_project_10, courseGrade19a_project_10, courseGrade20a_project_10), List.of(project17a, project17b, project17c, project17d, project18a, project18b, project18c, project19a, project19b, project19c, project20a, project20b, project20c, project20d));
+        studentProject(student1, Arrays.asList(grade1a_1, grade1b_1, grade1c_1, grade1d_1, grade1e_1, grade1f_1, grade2a_1, grade2b_1, grade2c_1, grade2d_1, grade2e_1, grade2f_1, grade3a_1, grade3b_1, grade3c_1, grade3d_1, grade4a_1, grade4b_1, grade4c_1, grade4d_1), Arrays.asList(courseGrade1a_project_1, courseGrade2a_project_1, courseGrade3a_project_1, courseGrade4a_project_1), Arrays.asList(project1a, project1b, project1c, project1d, project1e, project1f, project2a, project2b, project2c, project2d, project2e, project2f, project3a, project3b, project3c, project3d, project4a, project4b, project4c, project4d));
+        studentProject(student2, Arrays.asList(grade1a_2, grade1b_2, grade1c_2, grade1d_2, grade1e_2, grade1f_2, grade2a_2, grade2b_2, grade2c_2, grade2d_2, grade2e_2, grade2f_2, grade3a_2, grade3b_2, grade3c_2, grade3d_2, grade4a_2, grade4b_2, grade4c_2, grade4d_2), Arrays.asList(courseGrade1a_project_2, courseGrade2a_project_2, courseGrade3a_project_2, courseGrade4a_project_2), Arrays.asList(project1a, project1b, project1c, project1d, project1e, project1f, project2a, project2b, project2c, project2d, project2e, project2f, project3a, project3b, project3c, project3d, project4a, project4b, project4c, project4d));
+        studentProject(student3, Arrays.asList(grade5a_3, grade5b_3, grade5c_3, grade5d_3, grade6a_3, grade6b_3, grade6c_3, grade6d_3, grade6e_3, grade7a_3, grade7b_3, grade7c_3, grade7d_3, grade8a_3, grade8b_3, grade8c_3, grade8d_3, grade8e_3), Arrays.asList(courseGrade5a_project_3, courseGrade6a_project_3, courseGrade7a_project_3, courseGrade8a_project_3), Arrays.asList(project5a, project5b, project5c, project5d, project6a, project6b, project6c, project6d, project6e, project7a, project7b, project7c, project7d, project8a, project8b, project8c, project8d, project8e));
+        studentProject(student4, Arrays.asList(grade5a_4, grade5b_4, grade5c_4, grade5d_4, grade6a_4, grade6b_4, grade6c_4, grade6d_4, grade6e_4, grade7a_4, grade7b_4, grade7c_4, grade7d_4, grade8a_4, grade8b_4, grade8c_4, grade8d_4, grade8e_4), Arrays.asList(courseGrade5a_project_4, courseGrade6a_project_4, courseGrade7a_project_4, courseGrade8a_project_4), Arrays.asList(project5a, project5b, project5c, project5d, project6a, project6b, project6c, project6d, project6e, project7a, project7b, project7c, project7d, project8a, project8b, project8c, project8d, project8e));
+        studentProject(student5, Arrays.asList(grade9a_5, grade9b_5, grade9c_5, grade10a_5, grade10b_5, grade10c_5, grade10d_5, grade11a_5, grade11b_5, grade11c_5, grade11d_5, grade12a_5, grade12b_5, grade12c_5, grade12d_5, grade12e_5), Arrays.asList(courseGrade9a_project_5, courseGrade10a_project_5, courseGrade11a_project_5, courseGrade12a_project_5), Arrays.asList(project9a, project9b, project9c, project10a, project10b, project10c, project10d, project11a, project11b, project11c, project11d, project12a, project12b, project12c, project12d, project12e));
+        studentProject(student6, Arrays.asList(grade9a_6, grade9b_6, grade9c_6, grade10a_6, grade10b_6, grade10c_6, grade10d_6, grade11a_6, grade11b_6, grade11c_6, grade11d_6, grade12a_6, grade12b_6, grade12c_6, grade12d_6, grade12e_6), Arrays.asList(courseGrade9a_project_6, courseGrade10a_project_6, courseGrade11a_project_6, courseGrade12a_project_6), Arrays.asList(project9a, project9b, project9c, project10a, project10b, project10c, project10d, project11a, project11b, project11c, project11d, project12a, project12b, project12c, project12d, project12e));
+        studentProject(student7, Arrays.asList(grade13a_7, grade13b_7, grade13c_7, grade13d_7, grade14a_7, grade14b_7, grade14c_7, grade14d_7, grade15a_7, grade15b_7, grade15c_7, grade16a_7, grade16b_7, grade16c_7), Arrays.asList(courseGrade13a_project_7, courseGrade14a_project_7, courseGrade15a_project_7, courseGrade16a_project_7), Arrays.asList(project13a, project13b, project13c, project13d, project14a, project14b, project14c, project14d, project15a, project15b, project15c, project16a, project16b, project16c));
+        studentProject(student8, Arrays.asList(grade13a_8, grade13b_8, grade13c_8, grade13d_8, grade14a_8, grade14b_8, grade14c_8, grade14d_8, grade15a_8, grade15b_8, grade15c_8, grade16a_8, grade16b_8, grade16c_8), Arrays.asList(courseGrade13a_project_8, courseGrade14a_project_8, courseGrade15a_project_8, courseGrade16a_project_8), Arrays.asList(project13a, project13b, project13c, project13d, project14a, project14b, project14c, project14d, project15a, project15b, project15c, project16a, project16b, project16c));
+        studentProject(student9, Arrays.asList(grade17a_9, grade17b_9, grade17c_9, grade17d_9, grade18a_9, grade18b_9, grade18c_9, grade19a_9, grade19b_9, grade19c_9, grade20a_9, grade20b_9, grade20c_9, grade20d_9), Arrays.asList(courseGrade17a_project_9, courseGrade18a_project_9, courseGrade19a_project_9, courseGrade20a_project_9), Arrays.asList(project17a, project17b, project17c, project17d, project18a, project18b, project18c, project19a, project19b, project19c, project20a, project20b, project20c, project20d));
+        studentProject(student10, Arrays.asList(grade17a_10, grade17b_10, grade17c_10, grade17d_10, grade18a_10, grade18b_10, grade18c_10, grade19a_10, grade19b_10, grade19c_10, grade20a_10, grade20b_10, grade20c_10, grade20d_10), Arrays.asList(courseGrade17a_project_10, courseGrade18a_project_10, courseGrade19a_project_10, courseGrade20a_project_10), Arrays.asList(project17a, project17b, project17c, project17d, project18a, project18b, project18c, project19a, project19b, project19c, project20a, project20b, project20c, project20d));
 
 
     }

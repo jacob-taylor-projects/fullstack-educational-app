@@ -1,12 +1,10 @@
 package com.project.education_app;
 
 import com.project.education_app.entities.*;
-import com.project.education_app.repos.CourseRepo;
-import com.project.education_app.repos.FacultyRepo;
-import com.project.education_app.repos.StudentRepo;
-import com.project.education_app.repos.SyllabusRepo;
+import com.project.education_app.repos.*;
 import lombok.Data;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
@@ -20,12 +18,20 @@ import static com.project.education_app.Seeder.*;
 import static com.project.education_app.Seeder.createGrade;
 
 @Component
+@Order(5)
 @Data
 public class Assignment13to16Seeder implements CommandLineRunner {
     private final FacultyRepo facultyRepo;
     private final SyllabusRepo syllabusRepo;
     private final StudentRepo studentRepo;
     private final CourseRepo courseRepo;
+    private final AssignmentRepo assignmentRepo;
+    private final ProblemAnswerRepo problemAnswerRepo;
+    private final StudentAnswerRepo studentAnswerRepo;
+    private final SubmissionRepo submissionRepo;
+    private final GradeRepo gradeRepo;
+    private final CourseGradeRepo courseGradeRepo;
+    private final FeedbackRepo feedbackRepo;
 
     @Override
     public void run(String... args) throws Exception {
@@ -1288,17 +1294,17 @@ public class Assignment13to16Seeder implements CommandLineRunner {
         Grade grade16_3_7 = createGrade(84.9, student7, faculty1, course16, submission16_3_7);
         Grade grade16_3_8 = createGrade(87.5, student8, faculty1, course16, submission16_3_8);
 
-        CourseGrade courseGrade13_1_7 = createCourseGrade(student7, course13, 87.25, List.of(grade13_1_7, grade13_2_7, grade13_3_7, grade13_4_7));
-        CourseGrade courseGrade13_1_8 = createCourseGrade(student8, course13, 88.025, List.of(grade13_1_8, grade13_2_8, grade13_3_8, grade13_4_8));
+        CourseGrade courseGrade13_1_7 = createCourseGrade(student7, course13, 87.25, Arrays.asList(grade13_1_7, grade13_2_7, grade13_3_7, grade13_4_7));
+        CourseGrade courseGrade13_1_8 = createCourseGrade(student8, course13, 88.025, Arrays.asList(grade13_1_8, grade13_2_8, grade13_3_8, grade13_4_8));
 
-        CourseGrade courseGrade14_1_7 = createCourseGrade(student7, course14, 88.375, List.of(grade14_1_7, grade14_2_7, grade14_3_7, grade14_4_7));
-        CourseGrade courseGrade14_1_8 = createCourseGrade(student8, course14, 86.675, List.of(grade14_1_8, grade14_2_8, grade14_3_8, grade14_4_8));
+        CourseGrade courseGrade14_1_7 = createCourseGrade(student7, course14, 88.375, Arrays.asList(grade14_1_7, grade14_2_7, grade14_3_7, grade14_4_7));
+        CourseGrade courseGrade14_1_8 = createCourseGrade(student8, course14, 86.675, Arrays.asList(grade14_1_8, grade14_2_8, grade14_3_8, grade14_4_8));
 
-        CourseGrade courseGrade15_1_7 = createCourseGrade(student7, course15, 87.0333, List.of(grade15_1_7, grade15_2_7, grade15_3_7));
-        CourseGrade courseGrade15_1_8 = createCourseGrade(student8, course15, 87.6, List.of(grade15_1_8, grade15_2_8, grade15_3_8));
+        CourseGrade courseGrade15_1_7 = createCourseGrade(student7, course15, 87.0333, Arrays.asList(grade15_1_7, grade15_2_7, grade15_3_7));
+        CourseGrade courseGrade15_1_8 = createCourseGrade(student8, course15, 87.6, Arrays.asList(grade15_1_8, grade15_2_8, grade15_3_8));
 
-        CourseGrade courseGrade16_1_7 = createCourseGrade(student7, course16, 86.7667, List.of(grade16_1_7, grade16_2_7, grade16_3_7));
-        CourseGrade courseGrade16_1_8 = createCourseGrade(student8, course16, 86.5333, List.of(grade16_1_8, grade16_2_8, grade16_3_8));
+        CourseGrade courseGrade16_1_7 = createCourseGrade(student7, course16, 86.7667, Arrays.asList(grade16_1_7, grade16_2_7, grade16_3_7));
+        CourseGrade courseGrade16_1_8 = createCourseGrade(student8, course16, 86.5333, Arrays.asList(grade16_1_8, grade16_2_8, grade16_3_8));
 
         Feedback feedback13_1_7 = createFeedback("Excellent work, student7!", submission13_1_7);
         Feedback feedback13_1_8 = createFeedback("Great effort, student8!", submission13_1_8);
@@ -1342,61 +1348,61 @@ public class Assignment13to16Seeder implements CommandLineRunner {
         Feedback feedback16_3_7 = createFeedback("Well done on the answers, student7.", submission16_3_7);
         Feedback feedback16_3_8 = createFeedback("Good work, student8!", submission16_3_8);
 
-        course13.setGrades(List.of(grade13_1_7, grade13_1_8, grade13_2_7, grade13_2_8, grade13_3_7, grade13_3_8, grade13_4_7, grade13_4_8));
-        course14.setGrades(List.of(grade14_1_7, grade14_1_8, grade14_2_7, grade14_2_8, grade14_3_7, grade14_3_8, grade14_4_7, grade14_4_8));
-        course15.setGrades(List.of(grade15_1_7, grade15_1_8, grade15_2_7, grade15_2_8, grade15_3_7, grade15_3_8));
-        course16.setGrades(List.of(grade16_1_7, grade16_1_8, grade16_2_7, grade16_2_8, grade16_3_7, grade16_3_8));
+        course13.setGrades(Arrays.asList(grade13_1_7, grade13_1_8, grade13_2_7, grade13_2_8, grade13_3_7, grade13_3_8, grade13_4_7, grade13_4_8));
+        course14.setGrades(Arrays.asList(grade14_1_7, grade14_1_8, grade14_2_7, grade14_2_8, grade14_3_7, grade14_3_8, grade14_4_7, grade14_4_8));
+        course15.setGrades(Arrays.asList(grade15_1_7, grade15_1_8, grade15_2_7, grade15_2_8, grade15_3_7, grade15_3_8));
+        course16.setGrades(Arrays.asList(grade16_1_7, grade16_1_8, grade16_2_7, grade16_2_8, grade16_3_7, grade16_3_8));
 
-        course13.setCourseGrades(List.of(courseGrade13_1_7, courseGrade13_1_8));
-        course14.setCourseGrades(List.of(courseGrade14_1_7, courseGrade14_1_8));
-        course15.setCourseGrades(List.of(courseGrade15_1_7, courseGrade15_1_8));
-        course16.setCourseGrades(List.of(courseGrade16_1_7, courseGrade16_1_8));
+        course13.setCourseGrades(Arrays.asList(courseGrade13_1_7, courseGrade13_1_8));
+        course14.setCourseGrades(Arrays.asList(courseGrade14_1_7, courseGrade14_1_8));
+        course15.setCourseGrades(Arrays.asList(courseGrade15_1_7, courseGrade15_1_8));
+        course16.setCourseGrades(Arrays.asList(courseGrade16_1_7, courseGrade16_1_8));
 
-        createFacultyWithAssignment(faculty3, List.of(grade13_1_7, grade13_1_8, grade13_2_7, grade13_2_8, grade13_3_7, grade13_3_8, grade13_4_7, grade13_4_8), List.of(assignment13_1, assignment13_2, assignment13_3, assignment13_4));
-        createFacultyWithAssignment(faculty4, List.of(grade14_1_7, grade14_1_8, grade14_2_7, grade14_2_8, grade14_3_7, grade14_3_8, grade14_4_7, grade14_4_8), List.of(assignment14_1, assignment14_2, assignment14_3, assignment14_4));
-        createFacultyWithAssignment(faculty5, List.of(grade15_1_7, grade15_1_8, grade15_2_7, grade15_2_8, grade15_3_7, grade15_3_8), List.of(assignment15_1, assignment15_2, assignment15_3));
-        createFacultyWithAssignment(faculty1, List.of(grade16_1_7, grade16_1_8, grade16_2_7, grade16_2_8, grade16_3_7, grade16_3_8), List.of(assignment16_1, assignment16_2, assignment16_3));
+        createFacultyWithAssignment(faculty3, Arrays.asList(grade13_1_7, grade13_1_8, grade13_2_7, grade13_2_8, grade13_3_7, grade13_3_8, grade13_4_7, grade13_4_8), Arrays.asList(assignment13_1, assignment13_2, assignment13_3, assignment13_4));
+        createFacultyWithAssignment(faculty4, Arrays.asList(grade14_1_7, grade14_1_8, grade14_2_7, grade14_2_8, grade14_3_7, grade14_3_8, grade14_4_7, grade14_4_8), Arrays.asList(assignment14_1, assignment14_2, assignment14_3, assignment14_4));
+        createFacultyWithAssignment(faculty5, Arrays.asList(grade15_1_7, grade15_1_8, grade15_2_7, grade15_2_8, grade15_3_7, grade15_3_8), Arrays.asList(assignment15_1, assignment15_2, assignment15_3));
+        createFacultyWithAssignment(faculty1, Arrays.asList(grade16_1_7, grade16_1_8, grade16_2_7, grade16_2_8, grade16_3_7, grade16_3_8), Arrays.asList(assignment16_1, assignment16_2, assignment16_3));
 
-        linkSubmissionDetails(submission13_1_7, student7, grade13_1_7, feedback13_1_7, List.of(sa13_1_1_student7, sa13_1_2_student7, sa13_1_3_student7, sa13_1_4_student7, sa13_1_5_student7));
-        linkSubmissionDetails(submission13_1_8, student8, grade13_1_8, feedback13_1_8, List.of(sa13_1_1_student8, sa13_1_2_student8, sa13_1_3_student8, sa13_1_4_student8, sa13_1_5_student8));
-        linkSubmissionDetails(submission13_2_7, student7, grade13_2_7, feedback13_2_7, List.of(sa13_2_1_student7, sa13_2_2_student7, sa13_2_3_student7, sa13_2_4_student7, sa13_2_5_student7));
-        linkSubmissionDetails(submission13_2_8, student8, grade13_2_8, feedback13_2_8, List.of(sa13_2_1_student8, sa13_2_2_student8, sa13_2_3_student8, sa13_2_4_student8, sa13_2_5_student8));
-        linkSubmissionDetails(submission13_3_7, student7, grade13_3_7, feedback13_3_7, List.of(sa13_3_1_student7, sa13_3_2_student7, sa13_3_3_student7, sa13_3_4_student7, sa13_3_5_student7));
-        linkSubmissionDetails(submission13_3_8, student8, grade13_3_8, feedback13_3_8, List.of(sa13_3_1_student8, sa13_3_2_student8, sa13_3_3_student8, sa13_3_4_student8, sa13_3_5_student8));
-        linkSubmissionDetails(submission13_4_7, student7, grade13_4_7, feedback13_4_7, List.of(sa13_4_1_student7, sa13_4_2_student7, sa13_4_3_student7, sa13_4_4_student7, sa13_4_5_student7));
-        linkSubmissionDetails(submission13_4_8, student8, grade13_4_8, feedback13_4_8, List.of(sa13_4_1_student8, sa13_4_2_student8, sa13_4_3_student8, sa13_4_4_student8, sa13_4_5_student8));
+        linkSubmissionDetails(submission13_1_7, student7, grade13_1_7, feedback13_1_7, Arrays.asList(sa13_1_1_student7, sa13_1_2_student7, sa13_1_3_student7, sa13_1_4_student7, sa13_1_5_student7));
+        linkSubmissionDetails(submission13_1_8, student8, grade13_1_8, feedback13_1_8, Arrays.asList(sa13_1_1_student8, sa13_1_2_student8, sa13_1_3_student8, sa13_1_4_student8, sa13_1_5_student8));
+        linkSubmissionDetails(submission13_2_7, student7, grade13_2_7, feedback13_2_7, Arrays.asList(sa13_2_1_student7, sa13_2_2_student7, sa13_2_3_student7, sa13_2_4_student7, sa13_2_5_student7));
+        linkSubmissionDetails(submission13_2_8, student8, grade13_2_8, feedback13_2_8, Arrays.asList(sa13_2_1_student8, sa13_2_2_student8, sa13_2_3_student8, sa13_2_4_student8, sa13_2_5_student8));
+        linkSubmissionDetails(submission13_3_7, student7, grade13_3_7, feedback13_3_7, Arrays.asList(sa13_3_1_student7, sa13_3_2_student7, sa13_3_3_student7, sa13_3_4_student7, sa13_3_5_student7));
+        linkSubmissionDetails(submission13_3_8, student8, grade13_3_8, feedback13_3_8, Arrays.asList(sa13_3_1_student8, sa13_3_2_student8, sa13_3_3_student8, sa13_3_4_student8, sa13_3_5_student8));
+        linkSubmissionDetails(submission13_4_7, student7, grade13_4_7, feedback13_4_7, Arrays.asList(sa13_4_1_student7, sa13_4_2_student7, sa13_4_3_student7, sa13_4_4_student7, sa13_4_5_student7));
+        linkSubmissionDetails(submission13_4_8, student8, grade13_4_8, feedback13_4_8, Arrays.asList(sa13_4_1_student8, sa13_4_2_student8, sa13_4_3_student8, sa13_4_4_student8, sa13_4_5_student8));
 
-        linkSubmissionDetails(submission14_1_7, student7, grade14_1_7, feedback14_1_7, List.of(sa14_1_1_student7, sa14_1_2_student7, sa14_1_3_student7, sa14_1_4_student7, sa14_1_5_student7));
-        linkSubmissionDetails(submission14_1_8, student8, grade14_1_8, feedback14_1_8, List.of(sa14_1_1_student8, sa14_1_2_student8, sa14_1_3_student8, sa14_1_4_student8, sa14_1_5_student8));
-        linkSubmissionDetails(submission14_2_7, student7, grade14_2_7, feedback14_2_7, List.of(sa14_2_1_student7, sa14_2_2_student7, sa14_2_3_student7, sa14_2_4_student7, sa14_2_5_student7));
-        linkSubmissionDetails(submission14_2_8, student8, grade14_2_8, feedback14_2_8, List.of(sa14_2_1_student8, sa14_2_2_student8, sa14_2_3_student8, sa14_2_4_student8, sa14_2_5_student8));
-        linkSubmissionDetails(submission14_3_7, student7, grade14_3_7, feedback14_3_7, List.of(sa14_3_1_student7, sa14_3_2_student7, sa14_3_3_student7, sa14_3_4_student7, sa14_3_5_student7));
-        linkSubmissionDetails(submission14_3_8, student8, grade14_3_8, feedback14_3_8, List.of(sa14_3_1_student8, sa14_3_2_student8, sa14_3_3_student8, sa14_3_4_student8, sa14_3_5_student8));
-        linkSubmissionDetails(submission14_4_7, student7, grade14_4_7, feedback14_4_7, List.of(sa14_4_1_student7, sa14_4_2_student7, sa14_4_3_student7, sa14_4_4_student7, sa14_4_5_student7));
-        linkSubmissionDetails(submission14_4_8, student8, grade14_4_8, feedback14_4_8, List.of(sa14_4_1_student8, sa14_4_2_student8, sa14_4_3_student8, sa14_4_4_student8, sa14_4_5_student8));
+        linkSubmissionDetails(submission14_1_7, student7, grade14_1_7, feedback14_1_7, Arrays.asList(sa14_1_1_student7, sa14_1_2_student7, sa14_1_3_student7, sa14_1_4_student7, sa14_1_5_student7));
+        linkSubmissionDetails(submission14_1_8, student8, grade14_1_8, feedback14_1_8, Arrays.asList(sa14_1_1_student8, sa14_1_2_student8, sa14_1_3_student8, sa14_1_4_student8, sa14_1_5_student8));
+        linkSubmissionDetails(submission14_2_7, student7, grade14_2_7, feedback14_2_7, Arrays.asList(sa14_2_1_student7, sa14_2_2_student7, sa14_2_3_student7, sa14_2_4_student7, sa14_2_5_student7));
+        linkSubmissionDetails(submission14_2_8, student8, grade14_2_8, feedback14_2_8, Arrays.asList(sa14_2_1_student8, sa14_2_2_student8, sa14_2_3_student8, sa14_2_4_student8, sa14_2_5_student8));
+        linkSubmissionDetails(submission14_3_7, student7, grade14_3_7, feedback14_3_7, Arrays.asList(sa14_3_1_student7, sa14_3_2_student7, sa14_3_3_student7, sa14_3_4_student7, sa14_3_5_student7));
+        linkSubmissionDetails(submission14_3_8, student8, grade14_3_8, feedback14_3_8, Arrays.asList(sa14_3_1_student8, sa14_3_2_student8, sa14_3_3_student8, sa14_3_4_student8, sa14_3_5_student8));
+        linkSubmissionDetails(submission14_4_7, student7, grade14_4_7, feedback14_4_7, Arrays.asList(sa14_4_1_student7, sa14_4_2_student7, sa14_4_3_student7, sa14_4_4_student7, sa14_4_5_student7));
+        linkSubmissionDetails(submission14_4_8, student8, grade14_4_8, feedback14_4_8, Arrays.asList(sa14_4_1_student8, sa14_4_2_student8, sa14_4_3_student8, sa14_4_4_student8, sa14_4_5_student8));
 
-        linkSubmissionDetails(submission15_1_7, student7, grade15_1_7, feedback15_1_7, List.of(sa15_1_1_student7, sa15_1_2_student7, sa15_1_3_student7, sa15_1_4_student7, sa15_1_5_student7));
-        linkSubmissionDetails(submission15_1_8, student8, grade15_1_8, feedback15_1_8, List.of(sa15_1_1_student8, sa15_1_2_student8, sa15_1_3_student8, sa15_1_4_student8, sa15_1_5_student8));
-        linkSubmissionDetails(submission15_2_7, student7, grade15_2_7, feedback15_2_7, List.of(sa15_2_1_student7, sa15_2_2_student7, sa15_2_3_student7, sa15_2_4_student7, sa15_2_5_student7));
-        linkSubmissionDetails(submission15_2_8, student8, grade15_2_8, feedback15_2_8, List.of(sa15_2_1_student8, sa15_2_2_student8, sa15_2_3_student8, sa15_2_4_student8, sa15_2_5_student8));
-        linkSubmissionDetails(submission15_3_7, student7, grade15_3_7, feedback15_3_7, List.of(sa15_3_1_student7, sa15_3_2_student7, sa15_3_3_student7, sa15_3_4_student7, sa15_3_5_student7));
-        linkSubmissionDetails(submission15_3_8, student8, grade15_3_8, feedback15_3_8, List.of(sa15_3_1_student8, sa15_3_2_student8, sa15_3_3_student8, sa15_3_4_student8, sa15_3_5_student8));
+        linkSubmissionDetails(submission15_1_7, student7, grade15_1_7, feedback15_1_7, Arrays.asList(sa15_1_1_student7, sa15_1_2_student7, sa15_1_3_student7, sa15_1_4_student7, sa15_1_5_student7));
+        linkSubmissionDetails(submission15_1_8, student8, grade15_1_8, feedback15_1_8, Arrays.asList(sa15_1_1_student8, sa15_1_2_student8, sa15_1_3_student8, sa15_1_4_student8, sa15_1_5_student8));
+        linkSubmissionDetails(submission15_2_7, student7, grade15_2_7, feedback15_2_7, Arrays.asList(sa15_2_1_student7, sa15_2_2_student7, sa15_2_3_student7, sa15_2_4_student7, sa15_2_5_student7));
+        linkSubmissionDetails(submission15_2_8, student8, grade15_2_8, feedback15_2_8, Arrays.asList(sa15_2_1_student8, sa15_2_2_student8, sa15_2_3_student8, sa15_2_4_student8, sa15_2_5_student8));
+        linkSubmissionDetails(submission15_3_7, student7, grade15_3_7, feedback15_3_7, Arrays.asList(sa15_3_1_student7, sa15_3_2_student7, sa15_3_3_student7, sa15_3_4_student7, sa15_3_5_student7));
+        linkSubmissionDetails(submission15_3_8, student8, grade15_3_8, feedback15_3_8, Arrays.asList(sa15_3_1_student8, sa15_3_2_student8, sa15_3_3_student8, sa15_3_4_student8, sa15_3_5_student8));
 
-        linkSubmissionDetails(submission16_1_7, student7, grade16_1_7, feedback16_1_7, List.of(sa16_1_1_student7, sa16_1_2_student7, sa16_1_3_student7, sa16_1_4_student7, sa16_1_5_student7));
-        linkSubmissionDetails(submission16_1_8, student8, grade16_1_8, feedback16_1_8, List.of(sa16_1_1_student8, sa16_1_2_student8, sa16_1_3_student8, sa16_1_4_student8, sa16_1_5_student8));
-        linkSubmissionDetails(submission16_2_7, student7, grade16_2_7, feedback16_2_7, List.of(sa16_2_1_student7, sa16_2_2_student7, sa16_2_3_student7, sa16_2_4_student7, sa16_2_5_student7));
-        linkSubmissionDetails(submission16_2_8, student8, grade16_2_8, feedback16_2_8, List.of(sa16_2_1_student8, sa16_2_2_student8, sa16_2_3_student8, sa16_2_4_student8, sa16_2_5_student8));
-        linkSubmissionDetails(submission16_3_7, student7, grade16_3_7, feedback16_3_7, List.of(sa16_3_1_student7, sa16_3_2_student7, sa16_3_3_student7, sa16_3_4_student7, sa16_3_5_student7));
-        linkSubmissionDetails(submission16_3_8, student8, grade16_3_8, feedback16_3_8, List.of(sa16_3_1_student8, sa16_3_2_student8, sa16_3_3_student8, sa16_3_4_student8, sa16_3_5_student8));
+        linkSubmissionDetails(submission16_1_7, student7, grade16_1_7, feedback16_1_7, Arrays.asList(sa16_1_1_student7, sa16_1_2_student7, sa16_1_3_student7, sa16_1_4_student7, sa16_1_5_student7));
+        linkSubmissionDetails(submission16_1_8, student8, grade16_1_8, feedback16_1_8, Arrays.asList(sa16_1_1_student8, sa16_1_2_student8, sa16_1_3_student8, sa16_1_4_student8, sa16_1_5_student8));
+        linkSubmissionDetails(submission16_2_7, student7, grade16_2_7, feedback16_2_7, Arrays.asList(sa16_2_1_student7, sa16_2_2_student7, sa16_2_3_student7, sa16_2_4_student7, sa16_2_5_student7));
+        linkSubmissionDetails(submission16_2_8, student8, grade16_2_8, feedback16_2_8, Arrays.asList(sa16_2_1_student8, sa16_2_2_student8, sa16_2_3_student8, sa16_2_4_student8, sa16_2_5_student8));
+        linkSubmissionDetails(submission16_3_7, student7, grade16_3_7, feedback16_3_7, Arrays.asList(sa16_3_1_student7, sa16_3_2_student7, sa16_3_3_student7, sa16_3_4_student7, sa16_3_5_student7));
+        linkSubmissionDetails(submission16_3_8, student8, grade16_3_8, feedback16_3_8, Arrays.asList(sa16_3_1_student8, sa16_3_2_student8, sa16_3_3_student8, sa16_3_4_student8, sa16_3_5_student8));
 
 
-        syllabus13.setAssignments(List.of(assignment13_1, assignment13_2, assignment13_3, assignment13_4));
-        syllabus14.setAssignments(List.of(assignment14_1, assignment14_2, assignment14_3, assignment14_4));
-        syllabus15.setAssignments(List.of(assignment15_1, assignment15_2, assignment15_3));
-        syllabus16.setAssignments(List.of(assignment16_1, assignment16_2, assignment16_3));
+        syllabus13.setAssignments(Arrays.asList(assignment13_1, assignment13_2, assignment13_3, assignment13_4));
+        syllabus14.setAssignments(Arrays.asList(assignment14_1, assignment14_2, assignment14_3, assignment14_4));
+        syllabus15.setAssignments(Arrays.asList(assignment15_1, assignment15_2, assignment15_3));
+        syllabus16.setAssignments(Arrays.asList(assignment16_1, assignment16_2, assignment16_3));
 
-        studentAssignment(student7, List.of(grade13_1_7, grade13_2_7, grade13_3_7, grade13_4_7, grade14_1_7, grade14_2_7, grade14_3_7, grade14_4_7, grade15_1_7, grade15_2_7, grade15_3_7, grade16_1_7, grade16_2_7, grade16_3_7), List.of(courseGrade13_1_7, courseGrade14_1_7, courseGrade15_1_7, courseGrade16_1_7), List.of(assignment13_1, assignment13_2, assignment13_3, assignment13_4, assignment14_1, assignment14_2, assignment14_3, assignment14_4, assignment15_1, assignment15_2, assignment15_3, assignment16_1, assignment16_2, assignment16_3));
-        studentAssignment(student8, List.of(grade13_1_8, grade13_2_8, grade13_3_8, grade13_4_8, grade14_1_8, grade14_2_8, grade14_3_8, grade14_4_8, grade15_1_8, grade15_2_8, grade15_3_8, grade16_1_8, grade16_2_8, grade16_3_8), List.of(courseGrade13_1_8, courseGrade14_1_8, courseGrade15_1_8, courseGrade16_1_8), List.of(assignment13_1, assignment13_2, assignment13_3, assignment13_4, assignment14_1, assignment14_2, assignment14_3, assignment14_4, assignment15_1, assignment15_2, assignment15_3, assignment16_1, assignment16_2, assignment16_3));
+        studentAssignment(student7, Arrays.asList(grade13_1_7, grade13_2_7, grade13_3_7, grade13_4_7, grade14_1_7, grade14_2_7, grade14_3_7, grade14_4_7, grade15_1_7, grade15_2_7, grade15_3_7, grade16_1_7, grade16_2_7, grade16_3_7), Arrays.asList(courseGrade13_1_7, courseGrade14_1_7, courseGrade15_1_7, courseGrade16_1_7), Arrays.asList(assignment13_1, assignment13_2, assignment13_3, assignment13_4, assignment14_1, assignment14_2, assignment14_3, assignment14_4, assignment15_1, assignment15_2, assignment15_3, assignment16_1, assignment16_2, assignment16_3));
+        studentAssignment(student8, Arrays.asList(grade13_1_8, grade13_2_8, grade13_3_8, grade13_4_8, grade14_1_8, grade14_2_8, grade14_3_8, grade14_4_8, grade15_1_8, grade15_2_8, grade15_3_8, grade16_1_8, grade16_2_8, grade16_3_8), Arrays.asList(courseGrade13_1_8, courseGrade14_1_8, courseGrade15_1_8, courseGrade16_1_8), Arrays.asList(assignment13_1, assignment13_2, assignment13_3, assignment13_4, assignment14_1, assignment14_2, assignment14_3, assignment14_4, assignment15_1, assignment15_2, assignment15_3, assignment16_1, assignment16_2, assignment16_3));
 
     }
 }

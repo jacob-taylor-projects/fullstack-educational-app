@@ -4,6 +4,7 @@ import com.project.education_app.entities.*;
 import com.project.education_app.repos.*;
 import lombok.Data;
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 
 import java.sql.Timestamp;
@@ -16,6 +17,7 @@ import java.util.Date;
 import java.util.List;
 
 @Component
+@Order(1)
 @Data
 public class Seeder implements CommandLineRunner {
 
@@ -53,45 +55,45 @@ public class Seeder implements CommandLineRunner {
          Student student10 = createStudent("mia", "white", "Mia", "White", "white@email.com", "(012) 345-6789", 21, "female","1001 blvd");
 
         Guardian guardian1 = createGuardian("nolan", "everhart", "Nolan", "Everhart", "everhart@email.com", "(987) 654-3210", 54, "male", "100 blvd");
-        guardian1.setStudents(List.of(student1));
+        guardian1.setStudents(Arrays.asList(student1));
         Guardian guardian2 = createGuardian("helena", "marlowe", "Helena", "Marlowe", "marlowe@email.com", "(876) 543-2109", 52, "female", "100 blvd");
-        guardian2.setStudents(List.of(student1));
+        guardian2.setStudents(Arrays.asList(student1));
         Guardian guardian3 = createGuardian("samuel", "langdon", "Samuel", "Langdon", "langdon@email.com", "(765) 432-1098", 56, "male", "200 blvd");
-        guardian3.setStudents(List.of(student2));
+        guardian3.setStudents(Arrays.asList(student2));
         Guardian guardian4 = createGuardian("clara", "ridley", "Clara", "Ridley", "ridley@email.com", "(654) 321-0987", 46, "female", "200 blvd");
-        guardian4.setStudents(List.of(student2));
+        guardian4.setStudents(Arrays.asList(student2));
         Guardian guardian5 = createGuardian("jason", "whitaker", "Jason", "Whitaker", "whitaker@email.com", "(543) 210-9876", 50, "male", "300 blvd");
-        guardian5.setStudents(List.of(student3));
+        guardian5.setStudents(Arrays.asList(student3));
         Guardian guardian6 = createGuardian("evelyn", "sutherland", "Evelyn", "Sutherland", "sutherland@email.com", "(432) 109-8765", 45, "female", "300 blvd");
-        guardian6.setStudents(List.of(student3));
+        guardian6.setStudents(Arrays.asList(student3));
         Guardian guardian7 = createGuardian("brandon", "fenwick", "Brandon", "Fenwick", "fenwick@email.com", "(321) 098-7654", 55, "male", "400 blvd");
-        guardian7.setStudents(List.of(student4));
+        guardian7.setStudents(Arrays.asList(student4));
         Guardian guardian8 = createGuardian("fiona", "langley", "Fiona", "Langley", "langley@email.com", "(210) 987-6543", 48, "female", "400 blvd");
-        guardian8.setStudents(List.of(student4));
+        guardian8.setStudents(Arrays.asList(student4));
         Guardian guardian9 = createGuardian("miles", "torrence", "Miles", "Torrence", "torrence@email.com", "(109) 876-5432", 53, "male", "500 blvd");
-        guardian9.setStudents(List.of(student5));
+        guardian9.setStudents(Arrays.asList(student5));
         Guardian guardian10 = createGuardian("bridget", "leighton", "Bridget", "Leighton", "leighton@email.com", "(098) 765-4321", 44, "female", "500 blvd");
-        guardian10.setStudents(List.of(student5));
+        guardian10.setStudents(Arrays.asList(student5));
         Guardian guardian11 = createGuardian("riley", "pemberton", "Riley", "Pemberton", "pemberton@email.com", "(987) 654-3219", 57, "male", "600 blvd");
-        guardian11.setStudents(List.of(student6));
+        guardian11.setStudents(Arrays.asList(student6));
         Guardian guardian12 = createGuardian("eliza", "hastings", "Eliza", "Hastings", "hastings@email.com", "(876) 543-2108", 47, "female", "600 blvd");
-        guardian12.setStudents(List.of(student6));
+        guardian12.setStudents(Arrays.asList(student6));
         Guardian guardian13 = createGuardian("julian", "ashford", "Julian", "Ashford", "ashford@email.com", "(765) 432-1097", 49, "male", "700 blvd");
-        guardian13.setStudents(List.of(student7));
+        guardian13.setStudents(Arrays.asList(student7));
         Guardian guardian14 = createGuardian("hazel", "winslow", "Hazel", "Winslow", "winslow@email.com", "(654) 321-0986", 42, "female", "700 blvd");
-        guardian14.setStudents(List.of(student7));
+        guardian14.setStudents(Arrays.asList(student7));
         Guardian guardian15 = createGuardian("isaac", "thornfield", "Isaac", "Thornfield", "thornfield@email.com", "(543) 210-9875", 55, "male", "800 blvd");
-        guardian15.setStudents(List.of(student8));
+        guardian15.setStudents(Arrays.asList(student8));
         Guardian guardian16 = createGuardian("iris", "fairchild", "Iris", "Fairchild", "fairchild@email.com", "(432) 109-8764", 51, "female", "800 blvd");
-        guardian16.setStudents(List.of(student8));
+        guardian16.setStudents(Arrays.asList(student8));
         Guardian guardian17 = createGuardian("wesley", "fairchild", "Wesley", "Fairchild", "fairchild@email.com", "(321) 098-7653", 54, "male", "900 blvd");
-        guardian17.setStudents(List.of(student9));
+        guardian17.setStudents(Arrays.asList(student9));
         Guardian guardian18 = createGuardian("nora", "pembroke", "Nora", "Pembroke", "pembroke@email.com", "(210) 987-6542", 43, "female", "900 blvd");
-        guardian18.setStudents(List.of(student9));
+        guardian18.setStudents(Arrays.asList(student9));
         Guardian guardian19 = createGuardian("oliver", "winslow", "Oliver", "Winslow", "winslow@email.com", "(109) 876-5431", 58, "male", "1000 blvd");
-        guardian19.setStudents(List.of(student10));
+        guardian19.setStudents(Arrays.asList(student10));
         Guardian guardian20 = createGuardian("lillian", "ashford", "Lillian", "Ashford", "ashford@email.com", "(109) 876-5431", 58, "female", "1000 blvd");
-        guardian20.setStudents(List.of(student10));
+        guardian20.setStudents(Arrays.asList(student10));
 
         facultyRepo.saveAllAndFlush(Arrays.asList(faculty1,faculty2,faculty3,faculty4,faculty5));
         studentRepo.saveAllAndFlush(Arrays.asList(student1,student2,student3,student4,student5,student6,student7,student8,student9,student10));
@@ -128,12 +130,12 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson1d=createLesson("Functions","Functions are blocks of reusable code that perform a specific task. You can define a function using the def keyword followed by the function name and parentheses. Functions can take parameters(input) and return values(output). For example, def greet(name): return 'Hello' +name. Functions help organize code, making it more modular and easier to understand and avoid redundancy.",faculty1,unit1d);
             Lesson lesson1e=createLesson("Modules","Modules are Python files that contain functions,classes and variables. You can import modules into your program to access their functionality. This helps break down large programs into smaller, manageable pieces. Built-in modules like math,random, and datetime offer a wide range of functionalities. You can also create custom modules by writing Python code in a file and importing it using the import statement",faculty1,unit1e);
             Lesson lesson1f=createLesson("Libraries","Libraries in Python are collections of modules that provide additional functionality. Popular libraries like numpy(for numbers),pandas(for data manipulation), and matplotlib(for plotting) extend Pythons capabilities. You can also install libraries using the pip command(pip install library_name).Understanding how to find,install, and use libraries allows you to leverage existing solutions and simplify complex taskes in your programs.",faculty1,unit1f);
-        createUnitDetails(unit1a, List.of(lesson1a), course1);
-        createUnitDetails(unit1b, List.of(lesson1b), course1);
-        createUnitDetails(unit1c, List.of(lesson1c), course1);
-        createUnitDetails(unit1d, List.of(lesson1d), course1);
-        createUnitDetails(unit1e, List.of(lesson1e), course1);
-        createUnitDetails(unit1f, List.of(lesson1f), course1);
+        createUnitDetails(unit1a, Arrays.asList(lesson1a), course1);
+        createUnitDetails(unit1b, Arrays.asList(lesson1b), course1);
+        createUnitDetails(unit1c, Arrays.asList(lesson1c), course1);
+        createUnitDetails(unit1d, Arrays.asList(lesson1d), course1);
+        createUnitDetails(unit1e, Arrays.asList(lesson1e), course1);
+        createUnitDetails(unit1f, Arrays.asList(lesson1f), course1);
 
 
         // Course 2: Data Structures
@@ -155,12 +157,12 @@ public class Seeder implements CommandLineRunner {
           Lesson lesson2d=createLesson("Queues","Queues are a first-in, first-out(FIFO) data structure, meaning the first element added is the first to be removed. Common operations include enqueue(add) and dequeue(remove).Queues are essential for algorithms that process elements in the order they arrive, such as breadth-first search.",faculty2,unit2d);
           Lesson lesson2e=createLesson("Trees","Trees are hierarchical data structures consisting of nodes, where each node has a value and references to child nodes. The top node is called the root and the nodes with no children are called leaves.Trees are used to represent hierarchical relationships such as file systems or orgranizational structures.A common type of tree is the binary tree, where each node has at most 2 children.Trees are useful for tasks that involve hierarchical data, such as searching and sorting",faculty2,unit2e);
           Lesson lesson2f=createLesson("Graphs","Graphs are versatile data structures used to represent relationships between objects. A graph consists of vertices(nodes) and edges(links) that connect the vertices.Graphs can be directed or undirected, and they can represent various real-world structures, such as social networks,transportation systems, or the internet. Common graph algorithms include depth-first search, breadth-first search, and Dijkstra's algorithm for finding the shortest path between nodes.",faculty2,unit2f);
-        createUnitDetails(unit2a, List.of(lesson2a), course2);
-        createUnitDetails(unit2b, List.of(lesson2b), course2);
-        createUnitDetails(unit2c, List.of(lesson2c), course2);
-        createUnitDetails(unit2d, List.of(lesson2d), course2);
-        createUnitDetails(unit2e, List.of(lesson2e), course2);
-        createUnitDetails(unit2f, List.of(lesson2f), course2);
+        createUnitDetails(unit2a, Arrays.asList(lesson2a), course2);
+        createUnitDetails(unit2b, Arrays.asList(lesson2b), course2);
+        createUnitDetails(unit2c, Arrays.asList(lesson2c), course2);
+        createUnitDetails(unit2d, Arrays.asList(lesson2d), course2);
+        createUnitDetails(unit2e, Arrays.asList(lesson2e), course2);
+        createUnitDetails(unit2f, Arrays.asList(lesson2f), course2);
 
 
 // Course 3: Algorithms
@@ -178,10 +180,10 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson3b=createLesson("Searching","Searching algorithms find a specific element. Linear search checks each element one by one.Its simple but not great for big datasets.Binary search findes the target by repeatedly dividing the search interval in half.It requires the list to be sorted first.",faculty3,unit3b);
             Lesson lesson3c=createLesson("Graph Algorithms","Graph algorithms manipulate and traverse graphs.Depth-First Search(DFS) explores as far along each branch as possible before backtracking.Useful for tasks like solving mazes or finding connected components.Breadth-First Search(BFS) explores all neighbors ath the present depth before moving on to nodes at the next depth level. Useful for finding the shortest path.",faculty3,unit3c);
             Lesson lesson3d=createLesson("Dynamic Programming","Dynamic programming solves complex problems by breaking them down into smaller subproblems and solving each subproblem only once.Examples include the fibonacci sequence and the knapsack problem.",faculty3,unit3d);
-        createUnitDetails(unit3a, List.of(lesson3a), course3);
-        createUnitDetails(unit3b, List.of(lesson3b), course3);
-        createUnitDetails(unit3c, List.of(lesson3c), course3);
-        createUnitDetails(unit3d, List.of(lesson3d), course3);
+        createUnitDetails(unit3a, Arrays.asList(lesson3a), course3);
+        createUnitDetails(unit3b, Arrays.asList(lesson3b), course3);
+        createUnitDetails(unit3c, Arrays.asList(lesson3c), course3);
+        createUnitDetails(unit3d, Arrays.asList(lesson3d), course3);
 
 
 
@@ -201,10 +203,10 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson4b=createLesson("SQL","SQL(Structure Query Language) is the standard language for managing and manipulating databases. With SQL, you can perform various operations such as creating tables, inserting data,querying data, updating records and deleting data.Commands like SELECT,INSERT,UPDATE, and DELETE. You can also join tables,using aggregate functions, and writing complex queries to perform data analysis and manipulation.",faculty4,unit4b);
             Lesson lesson4c=createLesson("Transactions","Transactions are sequences of database operations that are treated as a single unit. They ensure data integrity and consistency through ACID properties: Atomicity(all operations are complete or none are),Consistency(data remains in valid state),Isolation(transactions do not interfere with each other) and Durability(changes are permanent once committed).Commands like BEGIN,COMMIT, and ROLLBACK are used.",faculty4,unit4c);
             Lesson lesson4d=createLesson("Database Design","Effective database design involves creating normalized schemas to minimize redundancy and ensure data integrity. Normalization techniques incolde organizing data into tables and defining relationships to eliminate anomalies.Key steps are indentifying entities defining primary and foreign keys, and applying normalization rules.",faculty4,unit4d);
-        createUnitDetails(unit4a, List.of(lesson4a), course4);
-        createUnitDetails(unit4b, List.of(lesson4b), course4);
-        createUnitDetails(unit4c, List.of(lesson4c), course4);
-        createUnitDetails(unit4d, List.of(lesson4d), course4);
+        createUnitDetails(unit4a, Arrays.asList(lesson4a), course4);
+        createUnitDetails(unit4b, Arrays.asList(lesson4b), course4);
+        createUnitDetails(unit4c, Arrays.asList(lesson4c), course4);
+        createUnitDetails(unit4d, Arrays.asList(lesson4d), course4);
 
 
 // Course 5: Operating Systems
@@ -222,10 +224,10 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson5b=createLesson("Memory Management","Memory management is the function of the OS that handles the allocation and deallocation of memory space. Techniques invlude paging, which divides memory into variable sized segments.VM allows the OS to use disk space as an extension of RAM enabling the execution of larger programs.",faculty5,unit5b);
             Lesson lesson5c=createLesson("File Systems","File systems manage how data is stored and retrieved on a disk. They organize files into directories and use different allocation methods (contiguous,linked,indexed) to manage storage space.File systems ensure data integrity,support file access methods, and maintain directory structures.",faculty5,unit5c);
             Lesson lesson5d=createLesson("Scheduling","Scheduling algorithms determine the order in which processes are executed by the CPU.Common algorithms include round-robin which assigns time slices to each process;priority scheduling,which executes processes by priority, and multi-level queues, which seperate processes based on characteristics.",faculty5,unit5d);
-        createUnitDetails(unit5a, List.of(lesson5a), course5);
-        createUnitDetails(unit5b, List.of(lesson5b), course5);
-        createUnitDetails(unit5c, List.of(lesson5c), course5);
-        createUnitDetails(unit5d, List.of(lesson5d), course5);
+        createUnitDetails(unit5a, Arrays.asList(lesson5a), course5);
+        createUnitDetails(unit5b, Arrays.asList(lesson5b), course5);
+        createUnitDetails(unit5c, Arrays.asList(lesson5c), course5);
+        createUnitDetails(unit5d, Arrays.asList(lesson5d), course5);
 
 // Course 6: Computer Networks
         Syllabus syllabus6 = createSyllabus("Learn about the principles of computer networking.", "OSI Model, TCP/IP, Network Protocols, Routing, Switching.", "Assignments (40%), Projects (30%), Tests (30%)");
@@ -244,11 +246,11 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson6c=createLesson("Network Protocols","Network protocols govern data exchange over networks, ensuring secure and efficient communication.HTTP(HyperText Transfer Protocol) used for transferring wbe pages.FTP(File Transfer Protocol) user for transferring files.DNS(Domain Name System) Translates domain names into IP addresses.DHCP(Dynamic Host Configuration Protocol)Assigns IP addresses to devices on a network.",faculty1,unit6c);
             Lesson lesson6d=createLesson("Routing","Routing is the process of selecting paths in a network along which to send data packets.Key routing algorithms include OSPF(Open Shortest Path First)A dynamic routing protocol that uses link-state info to build a map of the network and determine the shortest path.BGP(Border Gateway Protocol) Manages how packets are routed across the internet through multiple autonomous systems",faculty1,unit6d);
             Lesson lesson6e=createLesson("Switching","Switching is the technique used to forward data packets from one deviceto another within a network.Key switching methods include Packet Switching:Data is divided into packets and transmitted independently.Circuit Switching:A dedicated communication path is established between devices for the duration of the transmission.",faculty1,unit6e);
-        createUnitDetails(unit6a, List.of(lesson6a), course6);
-        createUnitDetails(unit6b, List.of(lesson6b), course6);
-        createUnitDetails(unit6c, List.of(lesson6c), course6);
-        createUnitDetails(unit6d, List.of(lesson6d), course6);
-        createUnitDetails(unit6e, List.of(lesson6e), course6);
+        createUnitDetails(unit6a, Arrays.asList(lesson6a), course6);
+        createUnitDetails(unit6b, Arrays.asList(lesson6b), course6);
+        createUnitDetails(unit6c, Arrays.asList(lesson6c), course6);
+        createUnitDetails(unit6d, Arrays.asList(lesson6d), course6);
+        createUnitDetails(unit6e, Arrays.asList(lesson6e), course6);
 
 
 
@@ -267,10 +269,10 @@ public class Seeder implements CommandLineRunner {
               Lesson lesson7b=createLesson("Agile","Agile is an iterative approach to software development that emphasizes flexibility,customer feedback, and small rapide releases.Scrum: Uses sprints,time-boxed iterations typically lasting 1-4 weeks.Kanban:Visualizes work using a kanban board and focuses on continuous delivery by limiting work in progress.It allows teams to respond to change quickly.",faculty2,unit7b);
               Lesson lesson7c=createLesson("Waterfall","The Waterfall model is a linear and sequential approach to software development.It consists of distinct phases:Requirements Analysis,System Design,Implementation,Testing,Deployment and Maintenance.It is straightforward but less flexible than iterative models.",faculty2,unit7c);
               Lesson lesson7d=createLesson("Project Management","Project management involves Project Planning:define scope,goals and deliverables.Scheduling:Create a timeline for project tasks and milestones.Resource Management: Allocate and manage resources efficiently.Risk Management:Identify,assess, and mitigate risks.Quality Assurance:Ensures the projct means quality standards.They are on time, on budget.",faculty2,unit7d);
-        createUnitDetails(unit7a, List.of(lesson7a), course7);
-        createUnitDetails(unit7b, List.of(lesson7b), course7);
-        createUnitDetails(unit7c, List.of(lesson7c), course7);
-        createUnitDetails(unit7d, List.of(lesson7d), course7);
+        createUnitDetails(unit7a, Arrays.asList(lesson7a), course7);
+        createUnitDetails(unit7b, Arrays.asList(lesson7b), course7);
+        createUnitDetails(unit7c, Arrays.asList(lesson7c), course7);
+        createUnitDetails(unit7d, Arrays.asList(lesson7d), course7);
 
 
 
@@ -292,11 +294,11 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson8c=createLesson("JavaScript","JavaScript is a programming language that adds interactivity and dynamic behavior to web pages. It allows you to mainpulate the DOM(Document Object Model), handle events, and create animations.JavaScript transforms static HTML and CSS into engaging, interactive user experiences, making it an essential tool for modern web development.",faculty3,unit8c);
             Lesson lesson8d=createLesson("React","React is a popular JavaScript library for building user interfaces, especially single-page applications(SPAs). It uses components, which are reusable pieces of UI, and manages state and props to keep the UI in sync with the application data.React simplifies the development of complex user interfaces by breaking them down into manageable pieces,promoting code reusability and maintainability.",faculty3,unit8d);
             Lesson lesson8e=createLesson("Backend Integration","Backend integration involves connecting your front-end web applications with backend services. This often involves RESTful APIs to fetch and send data. ",faculty3,unit8e);
-        createUnitDetails(unit8a, List.of(lesson8a), course8);
-        createUnitDetails(unit8b, List.of(lesson8b), course8);
-        createUnitDetails(unit8c, List.of(lesson8c), course8);
-        createUnitDetails(unit8d, List.of(lesson8d), course8);
-        createUnitDetails(unit8e, List.of(lesson8e), course8);
+        createUnitDetails(unit8a, Arrays.asList(lesson8a), course8);
+        createUnitDetails(unit8b, Arrays.asList(lesson8b), course8);
+        createUnitDetails(unit8c, Arrays.asList(lesson8c), course8);
+        createUnitDetails(unit8d, Arrays.asList(lesson8d), course8);
+        createUnitDetails(unit8e, Arrays.asList(lesson8e), course8);
 
 // Course 9: Artificial Intelligence
         Syllabus syllabus9 = createSyllabus(
@@ -315,9 +317,9 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson9a=createLesson("Machine Learning","Machine Learning is the subset of AI that involves developing algorithms that enable computers to learn from and make predictions based on data.Key techniques include supervised learning, where models are trained on labeled data; unsupervised learning, which finds patterns in unlabeled data; and reinforcement learning, which learns optimal actions through trial and error.",faculty4,unit9a);
             Lesson lesson9b=createLesson("Neural Networks","Neural networks are a set of algorithms inspired by the human brain.They consist of interconnected layers of nodes(neurons) that process data in a hierarchical manner. The basic structures includes a input layer, hidden layers, and an output layer.Backpropagation is a key algorithm used to train nerual networks by adjusting weights based on error rates. Building and training neural networks allows for tasks such as image recognition, speech processing, and predictive modeling",faculty4,unit9b);
             Lesson lesson9c=createLesson("Natural Language Processing","Natural language processing(NLP) is a field of AI that focuses on enabling computers to understand, interpret, and generate human language. Key techniques include text processing(tokenization,stemming, and lemmatization),sentiment analysis, and building language models using machine learning. NLP is crucial for applications like chatbots, language translation, and sentiment analysis, enhancing human-computer interaction and understanding of textual data",faculty4,unit9c);
-        createUnitDetails(unit9a, List.of(lesson9a), course9);
-        createUnitDetails(unit9b, List.of(lesson9b), course9);
-        createUnitDetails(unit9c, List.of(lesson9c), course9);
+        createUnitDetails(unit9a, Arrays.asList(lesson9a), course9);
+        createUnitDetails(unit9b, Arrays.asList(lesson9b), course9);
+        createUnitDetails(unit9c, Arrays.asList(lesson9c), course9);
 
 
 // Create the Syllabus and Units for Course 10
@@ -336,10 +338,10 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson10b=createLesson("Encryption","Encryption is the process of converting information into a secure format that can only be read by authorized parties.This involves using algorithms to encode data so that it appears random and unreadable to unauthorized users. Common encryption techniques include symmetric- key encryption(AES) and asymmetric-key encryption(RSA)",faculty5,unit10b);
             Lesson lesson10c=createLesson("Network Security","Network security involves protecting data during transmission across networks by implementing various measures. These measures include firewalls, which control incoming and outgoing network traffic; intrusion detection systems(IDS), which monitor network traffic for suspicious activity; and encryption protocols, which secure data in transit.",faculty5,unit10c);
             Lesson lesson10d=createLesson("Secure Coding","Secure coding practices aim to prevent vulnerabilites in software by following best practices during development. This includes writing code that is resistant to common security flaws, such as SQL injection,cross-site scripting(XSS), and buffer overflows.Key principles of secure coding involve input validation, proper error handling, and regular code reviews.",faculty5,unit10d);
-        createUnitDetails(unit10a, List.of(lesson10a), course10);
-        createUnitDetails(unit10b, List.of(lesson10b), course10);
-        createUnitDetails(unit10c, List.of(lesson10c), course10);
-        createUnitDetails(unit10d, List.of(lesson10d), course10);
+        createUnitDetails(unit10a, Arrays.asList(lesson10a), course10);
+        createUnitDetails(unit10b, Arrays.asList(lesson10b), course10);
+        createUnitDetails(unit10c, Arrays.asList(lesson10c), course10);
+        createUnitDetails(unit10d, Arrays.asList(lesson10d), course10);
 
 // Mathematics Courses
 
@@ -358,10 +360,10 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson11b=createLesson("Derivatives","Derivatives measure how a function changes as its input changes. The derivative of a function(f(x)) at a point x is the slope of the tangent line to the curve at that point.Techniques of differentiation include the power rule, product rule,quotient rule, and chain rule.Derivatives have many applications such as finding rate of change,optimizing functions, and solving problems in physics and engineering",faculty1,unit11b);
             Lesson lesson11c=createLesson("Integrals","Integrals represent the accumulation of quantities, such as areas under curves. The integral of a function(f(x)) over an interval ([a,b]) is the total area between the function and the x-axis. Techniques of integration include substitution,integration by parts and partial fractions.The Fundamental Theorem of Calculs connects differentiation and integration,showing that they are inverse processes. Integrals are used in various fields,such as calculating areas,volumes, and solving differential equations.",faculty1,unit11c);
             Lesson lesson11d=createLesson("Applications of Calculus","Calculus has practical applications in science,engineering and economics.It is used to model and solve real-world problems, such as calculating the motion of objects,optimizing functions, and analyzing growth rates.",faculty1,unit11d);
-        createUnitDetails(unit11a, List.of(lesson11a), course11);
-        createUnitDetails(unit11b, List.of(lesson11b), course11);
-        createUnitDetails(unit11c, List.of(lesson11c), course11);
-        createUnitDetails(unit11d, List.of(lesson11d), course11);
+        createUnitDetails(unit11a, Arrays.asList(lesson11a), course11);
+        createUnitDetails(unit11b, Arrays.asList(lesson11b), course11);
+        createUnitDetails(unit11c, Arrays.asList(lesson11c), course11);
+        createUnitDetails(unit11d, Arrays.asList(lesson11d), course11);
 
 // Course 12: Linear Algebra
         Syllabus syllabus12 = createSyllabus("Study of vector spaces, matrices, and linear transformations.", "Vectors, Matrices, Determinants, Eigenvalues, Eigenvectors.", "Assignments (40%), Projects (30%), Tests (30%)");
@@ -380,11 +382,11 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson12c=createLesson("Determinants","Determinants are scalar values that can be computed from the elements of a square matrix. The determinant of a matrix provides important information about the matrix such as whether its invertable(if determinent doesnt equal 0)",faculty2,unit12c);
             Lesson lesson12d=createLesson("Eigenvalues","Eigenvalues are special numbers associated with a matrix that give insight into the matrix's properties and behavior. An eigenvalue of a matrix is scalar such that when the matrix is multiplied by a specific vector, the result is the same vector scaled by the eigenvalue.",faculty2,unit12d);
             Lesson lesson12e=createLesson("Eigenvectors","Eigenvectors are vectors associated with eigenvalues that remain in the same direction under a linear transformation.Eigenvectors are crucial in matrix diagonalization,simplifying matrix powers, and solving systems of linear differential equations.",faculty2,unit12e);
-        createUnitDetails(unit12a, List.of(lesson12a), course12);
-        createUnitDetails(unit12b, List.of(lesson12b), course12);
-        createUnitDetails(unit12c, List.of(lesson12c), course12);
-        createUnitDetails(unit12d, List.of(lesson12d), course12);
-        createUnitDetails(unit12e, List.of(lesson12e), course12);
+        createUnitDetails(unit12a, Arrays.asList(lesson12a), course12);
+        createUnitDetails(unit12b, Arrays.asList(lesson12b), course12);
+        createUnitDetails(unit12c, Arrays.asList(lesson12c), course12);
+        createUnitDetails(unit12d, Arrays.asList(lesson12d), course12);
+        createUnitDetails(unit12e, Arrays.asList(lesson12e), course12);
 
 // Course 13: Calculus II
         Syllabus syllabus13 = createSyllabus("Explore advanced calculus topics including sequences,series, and multivariable calculus.", "Sequences and Series, Techniques of integration, Multivariable Functions, Vector Calculus.", "Assignments (40%), Projects (30%), Tests (30%)");
@@ -401,10 +403,10 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson13b=createLesson("Techniques of Integration","Advance integration techniques are used to evaluate complex integrals.These include integration by parts,which integrate products of functions;partial fractions,which decompose rational functions into simpler fractions;trigonometric integrals,which extend the concept of integration to unbounded intervals or integrands.",faculty3,unit13b);
             Lesson lesson13c=createLesson("Multivariable Functions","Multivariable functions involve more than one variable.Key concepts include partial derivatives,which measure how a function changes with respect to one varaible while holding others constant;mulitple integrals,which extend the concept of integration to functions of several variables; and gradient vectors, which indicate the direction of the steepest ascent.",faculty3,unit13c);
             Lesson lesson13d=createLesson("Vector Calculus","Vector calculus studies vector fields and their applications. Important topics include line integrals, which integrate functions along curves; surfact integrals,which integrate over surfaces; Green's Theorem, which relates a line integral around a simple curve to a double integral over the region it encloses; Stoke's Theorem, which generalizes Green's Theorem to higher dimensions; and the Divergence Theorem,which relates the flux of a vector field through a surface to a triple integral over the volume it encloses",faculty3,unit13d);
-        createUnitDetails(unit13a, List.of(lesson13a), course13);
-        createUnitDetails(unit13b, List.of(lesson13b), course13);
-        createUnitDetails(unit13c, List.of(lesson13c), course13);
-        createUnitDetails(unit13d, List.of(lesson13d), course13);
+        createUnitDetails(unit13a, Arrays.asList(lesson13a), course13);
+        createUnitDetails(unit13b, Arrays.asList(lesson13b), course13);
+        createUnitDetails(unit13c, Arrays.asList(lesson13c), course13);
+        createUnitDetails(unit13d, Arrays.asList(lesson13d), course13);
 
 // Course 14: Discrete Mathematics
         Syllabus syllabus14 = createSyllabus("Study of mathematical structures that are fundamentally discrete.", "Logic, Set Theory, Graph Theory, Combinatorics.", "Assignments (40%), Projects (30%), Tests (30%)");
@@ -421,10 +423,10 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson14b=createLesson("Set Theory","Set theory is the study of sets, which are collections of distinct objects.Key concepts include subsets,unions,intersections, and Cartesian products(pairs of elements from sets). Set Theory provides a basis for understanding mathematical structures and relationships",faculty4,unit14b);
             Lesson lesson14c=createLesson("Graph Theory","Graph theory involves studying graphs which consist of vertices connected by edges. Different types of graphs include directed and undirected graphs. Algorithms for traversing and analyzing graphs, such as depth-first search(DFS) and breadth-first search(BFS) are essential for solving problems in networking,biology, and social sciences",faculty4,unit14c);
             Lesson lesson14d=createLesson("Combinatorics","Combinatorics is the study of counting,arrangement, and combination of objects.It includes permutations and combinations.Principles of counting, such as the Pigeonhole Principle and Inclusion-Exclusion Principle help solve combinatorial problems.Combinatorics is used in fields like cryptography,coding theory, and optimization",faculty4,unit14d);
-        createUnitDetails(unit14a, List.of(lesson14a), course14);
-        createUnitDetails(unit14b, List.of(lesson14b), course14);
-        createUnitDetails(unit14c, List.of(lesson14c), course14);
-        createUnitDetails(unit14d, List.of(lesson14d), course14);
+        createUnitDetails(unit14a, Arrays.asList(lesson14a), course14);
+        createUnitDetails(unit14b, Arrays.asList(lesson14b), course14);
+        createUnitDetails(unit14c, Arrays.asList(lesson14c), course14);
+        createUnitDetails(unit14d, Arrays.asList(lesson14d), course14);
 
 // Course 15: Physics I
         Syllabus syllabus15 = createSyllabus("Introduction to classical mechanics.", "Newton's Laws, Energy Principles, Motion.", "Assignments (40%), Projects (30%), Tests (30%)");
@@ -439,9 +441,9 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson15a=createLesson("Newton's Laws","First Law(Inertia): an object will remain at rest or in uniform motion unless acted upon by an external force. Second Law(F=ma):The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass.Third Law(Action-Reaction):For every action, there is an equal and opposite reaction",faculty5,unit15a);
             Lesson lesson15b=createLesson("Energy Principlies","The principles of energy include kinetic energy(energy of motion) and potential energy(stored energy). Work is the process of transferring energy by applying a force over a distance.The conservation of energy states that energy cannot be created or destroyed, only transformed from one form to another. Power measures the rate at which work is done or energy is transferred.",faculty5,unit15b);
             Lesson lesson15c=createLesson("Motion","Motion describes the change in position of an object over time. Key concepts include:Linear motion,Projectile motion: the curved path an object follows when launched near the earths surface.Circular motion:Movement along a circular path, characterized by angular velocity and centripetal acceleration",faculty5,unit15c);
-        createUnitDetails(unit15a, List.of(lesson15a), course15);
-        createUnitDetails(unit15b, List.of(lesson15b), course15);
-        createUnitDetails(unit15c, List.of(lesson15c), course15);
+        createUnitDetails(unit15a, Arrays.asList(lesson15a), course15);
+        createUnitDetails(unit15b, Arrays.asList(lesson15b), course15);
+        createUnitDetails(unit15c, Arrays.asList(lesson15c), course15);
 
 // Course 16: Chemistry I
         Syllabus syllabus16 = createSyllabus("Introduction to chemical principles.", "Atomic Structure, Chemical Bonding, Reactions.", "Assignments (40%), Projects (30%), Tests (30%)");
@@ -456,9 +458,9 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson16a=createLesson("Atomic Structure","Atomic structure is the foundation of chemistry. Atoms consist of three main subatomic particles:protons,neutrons and electrons.The atomic number is the number of protons in an atom and defines the element.The mass number is the total number of protons and neutrons.Isotopes are atoms of the same element with different numbers of neutrons.",faculty1,unit16a);
             Lesson lesson16b=createLesson("Chemical Bonding","Chemical bonding is the process by which atoms combine to form molecules and compounds.Ionic bonds are formed when one atom donates an electron to another,resulting in positive and negative ions that attract each other.Covalent bonds form when atoms share electrons to achieve a full outer shell.Metallic bonds are formed by the attraction between free-floating valence electrons and positively charged metal ions",faculty1,unit16b);
             Lesson lesson16c=createLesson("Reactions","Chemical reactions involve the transformation of reactants into products. Key concepts include reaction rates,which describe how quickly reactions occur, and equilibrium, where the rates of the forward and reverse reactions are equal. Types of chemical reactions include synthesis,decomposition,single replacement, and double replacement.Factors influencing chemical reactions include temperature, concentration,surface area, and catalysts.",faculty1,unit16c);
-        createUnitDetails(unit16a, List.of(lesson16a), course16);
-        createUnitDetails(unit16b, List.of(lesson16b), course16);
-        createUnitDetails(unit16c, List.of(lesson16c), course16);
+        createUnitDetails(unit16a, Arrays.asList(lesson16a), course16);
+        createUnitDetails(unit16b, Arrays.asList(lesson16b), course16);
+        createUnitDetails(unit16c, Arrays.asList(lesson16c), course16);
 
 
 // Course 17: Biology I
@@ -476,10 +478,10 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson17b=createLesson("Genetics","Genetics is the study of heredity and variation in living organisms.Key concepts include Mendelian genetics,which explains how traits are inherited through dominant and recessive alleles, and the structure and function of DNA.DNA replication ensures genetic information is passed on during cell division, while transcription and translation convert genetic information into proteins.",faculty2,unit17b);
             Lesson lesson17c=createLesson("Evolution","Evolution is the process by which species change over time through natural selection.Genetic variation and environmental factors contribute to the survival and reproduction of individuals whit advantageous traits.",faculty2,unit17c);
             Lesson lesson17d=createLesson("Ecology","Ecology studies the interactions between organisms and their environment.Key concepts include ecosystems, which consist of living organisms and their physical environment; food webs, which illustrate the flow of energy and nutrients; and energy flow,which describes how energy is transferred through trophic levels.Human activities impact ecosystems,leading to changes in biodiversity and ecological balance.",faculty2,unit17d);
-        createUnitDetails(unit17a, List.of(lesson17a), course17);
-        createUnitDetails(unit17b, List.of(lesson17b), course17);
-        createUnitDetails(unit17c, List.of(lesson17c), course17);
-        createUnitDetails(unit17d, List.of(lesson17d), course17);
+        createUnitDetails(unit17a, Arrays.asList(lesson17a), course17);
+        createUnitDetails(unit17b, Arrays.asList(lesson17b), course17);
+        createUnitDetails(unit17c, Arrays.asList(lesson17c), course17);
+        createUnitDetails(unit17d, Arrays.asList(lesson17d), course17);
 
 // Course 18: Introduction to Engineering
         Syllabus syllabus18 = createSyllabus("Overview of engineering disciplines and problem-solving techniques.", "Engineering Disciplines, Problem-Solving, Design Process.", "Assignments (40%), Projects (30%), Tests (30%)");
@@ -494,9 +496,9 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson18a=createLesson("Engineering Disciplines","Civil:infrastructure like bridges and roads.Mechanical:Design and maunfacturing of mechanical systems.Electrical:Study and application of electricity and electronics.Chemical:Production and use of chemicals and biochemical processes",faculty3,unit18a);
             Lesson lesson18b=createLesson("Problem-Solving","Identifying Problems,Generating solutions and seleting the best solution are the steps to problem solving",faculty3,unit18b);
             Lesson lesson18c=createLesson("Design Process","The design process includes defining requirements,brainstorming,prototyping,testing and iteration",faculty3,unit18c);
-        createUnitDetails(unit18a, List.of(lesson18a), course18);
-        createUnitDetails(unit18b, List.of(lesson18b), course18);
-        createUnitDetails(unit18c, List.of(lesson18c), course18);
+        createUnitDetails(unit18a, Arrays.asList(lesson18a), course18);
+        createUnitDetails(unit18b, Arrays.asList(lesson18b), course18);
+        createUnitDetails(unit18c, Arrays.asList(lesson18c), course18);
 
 // Course 19: Electrical Engineering Basics
         Syllabus syllabus19 = createSyllabus("Fundamentals of electrical circuits, signals, and systems.", "Circuit Analysis, Signal Processing, Systems Theory.", "Assignments (40%), Projects (30%), Tests (30%)");
@@ -511,9 +513,9 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson19a=createLesson("Circuit Analysis","Circuit analysis involves understanding principles such as Ohm's law(V=IR) and Kirchhoff's laws. Techniques for analyzing both DC and AC circuits help in calculating voltage,current and resistance.",faculty4,unit19a);
             Lesson lesson19b=createLesson("Signal Processing","Signal processing focuses on analyzing and manipulating signals using tools like Fourier transforms and filtering.These techniques are vital in communication systems and digital signal processing(DSP), enabling effective data transmission and transformation.",faculty4,unit19b);
             Lesson lesson19c=createLesson("Systems Theory","Systems theory studies the behavior of systems through modeling,feedback, and control systems.",faculty4,unit19c);
-        createUnitDetails(unit19a, List.of(lesson19a), course19);
-        createUnitDetails(unit19b, List.of(lesson19b), course19);
-        createUnitDetails(unit19c, List.of(lesson19c), course19);
+        createUnitDetails(unit19a, Arrays.asList(lesson19a), course19);
+        createUnitDetails(unit19b, Arrays.asList(lesson19b), course19);
+        createUnitDetails(unit19c, Arrays.asList(lesson19c), course19);
 
 
 // Course 20: Mechanical Engineering Principles
@@ -531,10 +533,10 @@ public class Seeder implements CommandLineRunner {
             Lesson lesson20b=createLesson("Dynamics","Dynamics is the study of bodies in motion and the forces that cause this motion",faculty5,unit20b);
             Lesson lesson20c=createLesson("Thermodynamics","Thermodynamics involves the study of energy,its transformations, and its relation to matter.",faculty5,unit20c);
             Lesson lesson20d=createLesson("Material Science","Material science is the study of the properties,behaviort and applications of materials",faculty5,unit20d);
-        createUnitDetails(unit20a, List.of(lesson20a), course20);
-        createUnitDetails(unit20b, List.of(lesson20b), course20);
-        createUnitDetails(unit20c, List.of(lesson20c), course20);
-        createUnitDetails(unit20d, List.of(lesson20d), course20);
+        createUnitDetails(unit20a, Arrays.asList(lesson20a), course20);
+        createUnitDetails(unit20b, Arrays.asList(lesson20b), course20);
+        createUnitDetails(unit20c, Arrays.asList(lesson20c), course20);
+        createUnitDetails(unit20d, Arrays.asList(lesson20d), course20);
 
         //Semesters
         Semester fall2024 = createSemester("Fall", "2024");
@@ -563,26 +565,26 @@ public class Seeder implements CommandLineRunner {
         Attendance attendance19=createAttendance(attendanceLocalDate1,true,student10,course19);
         Attendance attendance20=createAttendance(attendanceLocalDate1,true,student10,course20);
 
-        course1.setAttendances(List.of(attendance1));
-        course2.setAttendances(List.of(attendance2));
-        course3.setAttendances(List.of(attendance3));
-        course4.setAttendances(List.of(attendance4));
-        course5.setAttendances(List.of(attendance5));
-        course6.setAttendances(List.of(attendance6));
-        course7.setAttendances(List.of(attendance7));
-        course8.setAttendances(List.of(attendance8));
-        course9.setAttendances(List.of(attendance9));
-        course10.setAttendances(List.of(attendance10));
-        course11.setAttendances(List.of(attendance11));
-        course12.setAttendances(List.of(attendance12));
-        course13.setAttendances(List.of(attendance13));
-        course14.setAttendances(List.of(attendance14));
-        course15.setAttendances(List.of(attendance15));
-        course16.setAttendances(List.of(attendance16));
-        course17.setAttendances(List.of(attendance17));
-        course18.setAttendances(List.of(attendance18));
-        course19.setAttendances(List.of(attendance19));
-        course20.setAttendances(List.of(attendance20));
+        course1.setAttendances(Arrays.asList(attendance1));
+        course2.setAttendances(Arrays.asList(attendance2));
+        course3.setAttendances(Arrays.asList(attendance3));
+        course4.setAttendances(Arrays.asList(attendance4));
+        course5.setAttendances(Arrays.asList(attendance5));
+        course6.setAttendances(Arrays.asList(attendance6));
+        course7.setAttendances(Arrays.asList(attendance7));
+        course8.setAttendances(Arrays.asList(attendance8));
+        course9.setAttendances(Arrays.asList(attendance9));
+        course10.setAttendances(Arrays.asList(attendance10));
+        course11.setAttendances(Arrays.asList(attendance11));
+        course12.setAttendances(Arrays.asList(attendance12));
+        course13.setAttendances(Arrays.asList(attendance13));
+        course14.setAttendances(Arrays.asList(attendance14));
+        course15.setAttendances(Arrays.asList(attendance15));
+        course16.setAttendances(Arrays.asList(attendance16));
+        course17.setAttendances(Arrays.asList(attendance17));
+        course18.setAttendances(Arrays.asList(attendance18));
+        course19.setAttendances(Arrays.asList(attendance19));
+        course20.setAttendances(Arrays.asList(attendance20));
 
         //Discussions
         Discussion discussion1a = createDiscussion("The Importance of variables in Programming Discussion", "Discuss how variables are used to store and manipulate data in programs and share examples.", faculty1);
@@ -1015,89 +1017,89 @@ public class Seeder implements CommandLineRunner {
         Post post20d1 = createPost("The properties and behaviors of different materials influence their selection for specific engineering applications. Examples include using metals for strength, polymers for flexibility, and composites for lightweight structures.", discussion20d, student9);
         Post post20d2 = createPost("In my project, I selected materials based on their properties to design a durable and lightweight drone, enhancing its performance and longevity.", discussion20d, student10);
 
-        discussion1a.setPosts(List.of(post1a1, post1a2));
-        discussion1b.setPosts(List.of(post1b1, post1b2));
-        discussion1c.setPosts(List.of(post1c1, post1c2));
-        discussion1d.setPosts(List.of(post1d1, post1d2));
-        discussion1e.setPosts(List.of(post1e1, post1e2));
-        discussion1f.setPosts(List.of(post1f1, post1f2));
-        discussion2a.setPosts(List.of(post2a1, post2a2));
-        discussion2b.setPosts(List.of(post2b1, post2b2));
-        discussion2c.setPosts(List.of(post2c1, post2c2));
-        discussion2d.setPosts(List.of(post2d1, post2d2));
-        discussion2e.setPosts(List.of(post2e1, post2e2));
-        discussion2f.setPosts(List.of(post2f1, post2f2));
-        discussion3a.setPosts(List.of(post3a1, post3a2));
-        discussion3b.setPosts(List.of(post3b1, post3b2));
-        discussion3c.setPosts(List.of(post3c1, post3c2));
-        discussion3d.setPosts(List.of(post3d1, post3d2));
-        discussion4a.setPosts(List.of(post4a1, post4a2));
-        discussion4b.setPosts(List.of(post4b1, post4b2));
-        discussion4c.setPosts(List.of(post4c1, post4c2));
-        discussion4d.setPosts(List.of(post4d1, post4d2));
-        discussion5a.setPosts(List.of(post5a1, post5a2));
-        discussion5b.setPosts(List.of(post5b1, post5b2));
-        discussion5c.setPosts(List.of(post5c1, post5c2));
-        discussion5d.setPosts(List.of(post5d1, post5d2));
-        discussion6a.setPosts(List.of(post6a1, post6a2));
-        discussion6b.setPosts(List.of(post6b1, post6b2));
-        discussion6c.setPosts(List.of(post6c1, post6c2));
-        discussion6d.setPosts(List.of(post6d1, post6d2));
-        discussion6e.setPosts(List.of(post6e1, post6e2));
-        discussion7a.setPosts(List.of(post7a1, post7a2));
-        discussion7b.setPosts(List.of(post7b1, post7b2));
-        discussion7c.setPosts(List.of(post7c1, post7c2));
-        discussion7d.setPosts(List.of(post7d1, post7d2));
+        discussion1a.setPosts(Arrays.asList(post1a1, post1a2));
+        discussion1b.setPosts(Arrays.asList(post1b1, post1b2));
+        discussion1c.setPosts(Arrays.asList(post1c1, post1c2));
+        discussion1d.setPosts(Arrays.asList(post1d1, post1d2));
+        discussion1e.setPosts(Arrays.asList(post1e1, post1e2));
+        discussion1f.setPosts(Arrays.asList(post1f1, post1f2));
+        discussion2a.setPosts(Arrays.asList(post2a1, post2a2));
+        discussion2b.setPosts(Arrays.asList(post2b1, post2b2));
+        discussion2c.setPosts(Arrays.asList(post2c1, post2c2));
+        discussion2d.setPosts(Arrays.asList(post2d1, post2d2));
+        discussion2e.setPosts(Arrays.asList(post2e1, post2e2));
+        discussion2f.setPosts(Arrays.asList(post2f1, post2f2));
+        discussion3a.setPosts(Arrays.asList(post3a1, post3a2));
+        discussion3b.setPosts(Arrays.asList(post3b1, post3b2));
+        discussion3c.setPosts(Arrays.asList(post3c1, post3c2));
+        discussion3d.setPosts(Arrays.asList(post3d1, post3d2));
+        discussion4a.setPosts(Arrays.asList(post4a1, post4a2));
+        discussion4b.setPosts(Arrays.asList(post4b1, post4b2));
+        discussion4c.setPosts(Arrays.asList(post4c1, post4c2));
+        discussion4d.setPosts(Arrays.asList(post4d1, post4d2));
+        discussion5a.setPosts(Arrays.asList(post5a1, post5a2));
+        discussion5b.setPosts(Arrays.asList(post5b1, post5b2));
+        discussion5c.setPosts(Arrays.asList(post5c1, post5c2));
+        discussion5d.setPosts(Arrays.asList(post5d1, post5d2));
+        discussion6a.setPosts(Arrays.asList(post6a1, post6a2));
+        discussion6b.setPosts(Arrays.asList(post6b1, post6b2));
+        discussion6c.setPosts(Arrays.asList(post6c1, post6c2));
+        discussion6d.setPosts(Arrays.asList(post6d1, post6d2));
+        discussion6e.setPosts(Arrays.asList(post6e1, post6e2));
+        discussion7a.setPosts(Arrays.asList(post7a1, post7a2));
+        discussion7b.setPosts(Arrays.asList(post7b1, post7b2));
+        discussion7c.setPosts(Arrays.asList(post7c1, post7c2));
+        discussion7d.setPosts(Arrays.asList(post7d1, post7d2));
 
-        discussion8a.setPosts(List.of(post8a1, post8a2));
-        discussion8b.setPosts(List.of(post8b1, post8b2));
-        discussion8c.setPosts(List.of(post8c1, post8c2));
-        discussion8d.setPosts(List.of(post8d1, post8d2));
-        discussion8e.setPosts(List.of(post8e1, post8e2));
-        discussion9a.setPosts(List.of(post9a1, post9a2));
-        discussion9b.setPosts(List.of(post9b1, post9b2));
-        discussion9c.setPosts(List.of(post9c1, post9c2));
-        discussion10a.setPosts(List.of(post10a1, post10a2));
-        discussion10b.setPosts(List.of(post10b1, post10b2));
-        discussion10c.setPosts(List.of(post10c1, post10c2));
-        discussion10d.setPosts(List.of(post10d1, post10d2));
-        discussion11a.setPosts(List.of(post11a1, post11a2));
-        discussion11b.setPosts(List.of(post11b1, post11b2));
-        discussion11c.setPosts(List.of(post11c1, post11c2));
-        discussion11d.setPosts(List.of(post11d1, post11d2));
-        discussion12a.setPosts(List.of(post12a1, post12a2));
-        discussion12b.setPosts(List.of(post12b1, post12b2));
-        discussion12c.setPosts(List.of(post12c1, post12c2));
-        discussion12d.setPosts(List.of(post12d1, post12d2));
-        discussion12e.setPosts(List.of(post12e1, post12e2));
-        discussion13a.setPosts(List.of(post13a1, post13a2));
-        discussion13b.setPosts(List.of(post13b1, post13b2));
-        discussion13c.setPosts(List.of(post13c1, post13c2));
-        discussion13d.setPosts(List.of(post13d1, post13d2));
-        discussion14a.setPosts(List.of(post14a1, post14a2));
-        discussion14b.setPosts(List.of(post14b1, post14b2));
-        discussion14c.setPosts(List.of(post14c1, post14c2));
-        discussion14d.setPosts(List.of(post14d1, post14d2));
-        discussion15a.setPosts(List.of(post15a1, post15a2));
-        discussion15b.setPosts(List.of(post15b1, post15b2));
-        discussion15c.setPosts(List.of(post15c1, post15c2));
-        discussion16a.setPosts(List.of(post16a1, post16a2));
-        discussion16b.setPosts(List.of(post16b1, post16b2));
-        discussion16c.setPosts(List.of(post16c1, post16c2));
-        discussion17a.setPosts(List.of(post17a1, post17a2));
-        discussion17b.setPosts(List.of(post17b1, post17b2));
-        discussion17c.setPosts(List.of(post17c1, post17c2));
-        discussion17d.setPosts(List.of(post17d1, post17d2));
-        discussion18a.setPosts(List.of(post18a1, post18a2));
-        discussion18b.setPosts(List.of(post18b1, post18b2));
-        discussion18c.setPosts(List.of(post18c1, post18c2));
-        discussion19a.setPosts(List.of(post19a1, post19a2));
-        discussion19b.setPosts(List.of(post19b1, post19b2));
-        discussion19c.setPosts(List.of(post19c1, post19c2));
-        discussion20a.setPosts(List.of(post20a1, post20a2));
-        discussion20b.setPosts(List.of(post20b1, post20b2));
-        discussion20c.setPosts(List.of(post20c1, post20c2));
-        discussion20d.setPosts(List.of(post20d1, post20d2));
+        discussion8a.setPosts(Arrays.asList(post8a1, post8a2));
+        discussion8b.setPosts(Arrays.asList(post8b1, post8b2));
+        discussion8c.setPosts(Arrays.asList(post8c1, post8c2));
+        discussion8d.setPosts(Arrays.asList(post8d1, post8d2));
+        discussion8e.setPosts(Arrays.asList(post8e1, post8e2));
+        discussion9a.setPosts(Arrays.asList(post9a1, post9a2));
+        discussion9b.setPosts(Arrays.asList(post9b1, post9b2));
+        discussion9c.setPosts(Arrays.asList(post9c1, post9c2));
+        discussion10a.setPosts(Arrays.asList(post10a1, post10a2));
+        discussion10b.setPosts(Arrays.asList(post10b1, post10b2));
+        discussion10c.setPosts(Arrays.asList(post10c1, post10c2));
+        discussion10d.setPosts(Arrays.asList(post10d1, post10d2));
+        discussion11a.setPosts(Arrays.asList(post11a1, post11a2));
+        discussion11b.setPosts(Arrays.asList(post11b1, post11b2));
+        discussion11c.setPosts(Arrays.asList(post11c1, post11c2));
+        discussion11d.setPosts(Arrays.asList(post11d1, post11d2));
+        discussion12a.setPosts(Arrays.asList(post12a1, post12a2));
+        discussion12b.setPosts(Arrays.asList(post12b1, post12b2));
+        discussion12c.setPosts(Arrays.asList(post12c1, post12c2));
+        discussion12d.setPosts(Arrays.asList(post12d1, post12d2));
+        discussion12e.setPosts(Arrays.asList(post12e1, post12e2));
+        discussion13a.setPosts(Arrays.asList(post13a1, post13a2));
+        discussion13b.setPosts(Arrays.asList(post13b1, post13b2));
+        discussion13c.setPosts(Arrays.asList(post13c1, post13c2));
+        discussion13d.setPosts(Arrays.asList(post13d1, post13d2));
+        discussion14a.setPosts(Arrays.asList(post14a1, post14a2));
+        discussion14b.setPosts(Arrays.asList(post14b1, post14b2));
+        discussion14c.setPosts(Arrays.asList(post14c1, post14c2));
+        discussion14d.setPosts(Arrays.asList(post14d1, post14d2));
+        discussion15a.setPosts(Arrays.asList(post15a1, post15a2));
+        discussion15b.setPosts(Arrays.asList(post15b1, post15b2));
+        discussion15c.setPosts(Arrays.asList(post15c1, post15c2));
+        discussion16a.setPosts(Arrays.asList(post16a1, post16a2));
+        discussion16b.setPosts(Arrays.asList(post16b1, post16b2));
+        discussion16c.setPosts(Arrays.asList(post16c1, post16c2));
+        discussion17a.setPosts(Arrays.asList(post17a1, post17a2));
+        discussion17b.setPosts(Arrays.asList(post17b1, post17b2));
+        discussion17c.setPosts(Arrays.asList(post17c1, post17c2));
+        discussion17d.setPosts(Arrays.asList(post17d1, post17d2));
+        discussion18a.setPosts(Arrays.asList(post18a1, post18a2));
+        discussion18b.setPosts(Arrays.asList(post18b1, post18b2));
+        discussion18c.setPosts(Arrays.asList(post18c1, post18c2));
+        discussion19a.setPosts(Arrays.asList(post19a1, post19a2));
+        discussion19b.setPosts(Arrays.asList(post19b1, post19b2));
+        discussion19c.setPosts(Arrays.asList(post19c1, post19c2));
+        discussion20a.setPosts(Arrays.asList(post20a1, post20a2));
+        discussion20b.setPosts(Arrays.asList(post20b1, post20b2));
+        discussion20c.setPosts(Arrays.asList(post20c1, post20c2));
+        discussion20d.setPosts(Arrays.asList(post20d1, post20d2));
 
 
         Comment comment1a1 = createComment("This is a great explanation of how variables can be used in programming. I like the example you provided about keeping track of player scores.", post1a1, student2);
@@ -1205,88 +1207,88 @@ public class Seeder implements CommandLineRunner {
         Comment comment20d1 = createComment("Your explanation of the properties and behaviors of different materials is very clear. The practical example you provided is very helpful.", post20d1, student10);
 
 
-        post1a1.setComments(List.of(comment1a1));
-        post1b1.setComments(List.of(comment1b1));
-        post1c1.setComments(List.of(comment1c1));
-        post1d1.setComments(List.of(comment1d1));
-        post1e1.setComments(List.of(comment1e1));
-        post1f1.setComments(List.of(comment1f1));
-        post2a1.setComments(List.of(comment2a1));
-        post2b1.setComments(List.of(comment2b1));
-        post2c1.setComments(List.of(comment2c1));
-        post2d1.setComments(List.of(comment2d1));
-        post2e1.setComments(List.of(comment2e1));
-        post2f1.setComments(List.of(comment2f1));
-        post3a1.setComments(List.of(comment3a1));
-        post3b1.setComments(List.of(comment3b1));
-        post3c1.setComments(List.of(comment3c1));
-        post3d1.setComments(List.of(comment3d1));
-        post4a1.setComments(List.of(comment4a1));
-        post4b1.setComments(List.of(comment4b1));
-        post4c1.setComments(List.of(comment4c1));
-        post4d1.setComments(List.of(comment4d1));
-        post5a1.setComments(List.of(comment5a1));
-        post5b1.setComments(List.of(comment5b1));
-        post5c1.setComments(List.of(comment5c1));
-        post5d1.setComments(List.of(comment5d1));
-        post6a1.setComments(List.of(comment6a1));
-        post6b1.setComments(List.of(comment6b1));
-        post6c1.setComments(List.of(comment6c1));
-        post6d1.setComments(List.of(comment6d1));
-        post6e1.setComments(List.of(comment6e1));
-        post7a1.setComments(List.of(comment7a1));
-        post7b1.setComments(List.of(comment7b1));
-        post7c1.setComments(List.of(comment7c1));
-        post7d1.setComments(List.of(comment7d1));
-        post8a1.setComments(List.of(comment8a1));
-        post8b1.setComments(List.of(comment8b1));
-        post8c1.setComments(List.of(comment8c1));
-        post8d1.setComments(List.of(comment8d1));
-        post8e1.setComments(List.of(comment8e1));
-        post9a1.setComments(List.of(comment9a1));
-        post9b1.setComments(List.of(comment9b1));
-        post9c1.setComments(List.of(comment9c1));
-        post10a1.setComments(List.of(comment10a1));
-        post10b1.setComments(List.of(comment10b1));
-        post10c1.setComments(List.of(comment10c1));
-        post10d1.setComments(List.of(comment10d1));
-        post11a1.setComments(List.of(comment11a1));
-        post11b1.setComments(List.of(comment11b1));
-        post11c1.setComments(List.of(comment11c1));
-        post11d1.setComments(List.of(comment11d1));
-        post12a1.setComments(List.of(comment12a1));
-        post12b1.setComments(List.of(comment12b1));
-        post12c1.setComments(List.of(comment12c1));
-        post12d1.setComments(List.of(comment12d1));
-        post12e1.setComments(List.of(comment12e1));
-        post13a1.setComments(List.of(comment13a1));
-        post13b1.setComments(List.of(comment13b1));
-        post13c1.setComments(List.of(comment13c1));
-        post13d1.setComments(List.of(comment13d1));
-        post14a1.setComments(List.of(comment14a1));
-        post14b1.setComments(List.of(comment14b1));
-        post14c1.setComments(List.of(comment14c1));
-        post14d1.setComments(List.of(comment14d1));
-        post15a1.setComments(List.of(comment15a1));
-        post15b1.setComments(List.of(comment15b1));
-        post15c1.setComments(List.of(comment15c1));
-        post16a1.setComments(List.of(comment16a1));
-        post16b1.setComments(List.of(comment16b1));
-        post16c1.setComments(List.of(comment16c1));
-        post17a1.setComments(List.of(comment17a1));
-        post17b1.setComments(List.of(comment17b1));
-        post17c1.setComments(List.of(comment17c1));
-        post17d1.setComments(List.of(comment17d1));
-        post18a1.setComments(List.of(comment18a1));
-        post18b1.setComments(List.of(comment18b1));
-        post18c1.setComments(List.of(comment18c1));
-        post19a1.setComments(List.of(comment19a1));
-        post19b1.setComments(List.of(comment19b1));
-        post19c1.setComments(List.of(comment19c1));
-        post20a1.setComments(List.of(comment20a1));
-        post20b1.setComments(List.of(comment20b1));
-        post20c1.setComments(List.of(comment20c1));
-        post20d1.setComments(List.of(comment20d1));
+        post1a1.setComments(Arrays.asList(comment1a1));
+        post1b1.setComments(Arrays.asList(comment1b1));
+        post1c1.setComments(Arrays.asList(comment1c1));
+        post1d1.setComments(Arrays.asList(comment1d1));
+        post1e1.setComments(Arrays.asList(comment1e1));
+        post1f1.setComments(Arrays.asList(comment1f1));
+        post2a1.setComments(Arrays.asList(comment2a1));
+        post2b1.setComments(Arrays.asList(comment2b1));
+        post2c1.setComments(Arrays.asList(comment2c1));
+        post2d1.setComments(Arrays.asList(comment2d1));
+        post2e1.setComments(Arrays.asList(comment2e1));
+        post2f1.setComments(Arrays.asList(comment2f1));
+        post3a1.setComments(Arrays.asList(comment3a1));
+        post3b1.setComments(Arrays.asList(comment3b1));
+        post3c1.setComments(Arrays.asList(comment3c1));
+        post3d1.setComments(Arrays.asList(comment3d1));
+        post4a1.setComments(Arrays.asList(comment4a1));
+        post4b1.setComments(Arrays.asList(comment4b1));
+        post4c1.setComments(Arrays.asList(comment4c1));
+        post4d1.setComments(Arrays.asList(comment4d1));
+        post5a1.setComments(Arrays.asList(comment5a1));
+        post5b1.setComments(Arrays.asList(comment5b1));
+        post5c1.setComments(Arrays.asList(comment5c1));
+        post5d1.setComments(Arrays.asList(comment5d1));
+        post6a1.setComments(Arrays.asList(comment6a1));
+        post6b1.setComments(Arrays.asList(comment6b1));
+        post6c1.setComments(Arrays.asList(comment6c1));
+        post6d1.setComments(Arrays.asList(comment6d1));
+        post6e1.setComments(Arrays.asList(comment6e1));
+        post7a1.setComments(Arrays.asList(comment7a1));
+        post7b1.setComments(Arrays.asList(comment7b1));
+        post7c1.setComments(Arrays.asList(comment7c1));
+        post7d1.setComments(Arrays.asList(comment7d1));
+        post8a1.setComments(Arrays.asList(comment8a1));
+        post8b1.setComments(Arrays.asList(comment8b1));
+        post8c1.setComments(Arrays.asList(comment8c1));
+        post8d1.setComments(Arrays.asList(comment8d1));
+        post8e1.setComments(Arrays.asList(comment8e1));
+        post9a1.setComments(Arrays.asList(comment9a1));
+        post9b1.setComments(Arrays.asList(comment9b1));
+        post9c1.setComments(Arrays.asList(comment9c1));
+        post10a1.setComments(Arrays.asList(comment10a1));
+        post10b1.setComments(Arrays.asList(comment10b1));
+        post10c1.setComments(Arrays.asList(comment10c1));
+        post10d1.setComments(Arrays.asList(comment10d1));
+        post11a1.setComments(Arrays.asList(comment11a1));
+        post11b1.setComments(Arrays.asList(comment11b1));
+        post11c1.setComments(Arrays.asList(comment11c1));
+        post11d1.setComments(Arrays.asList(comment11d1));
+        post12a1.setComments(Arrays.asList(comment12a1));
+        post12b1.setComments(Arrays.asList(comment12b1));
+        post12c1.setComments(Arrays.asList(comment12c1));
+        post12d1.setComments(Arrays.asList(comment12d1));
+        post12e1.setComments(Arrays.asList(comment12e1));
+        post13a1.setComments(Arrays.asList(comment13a1));
+        post13b1.setComments(Arrays.asList(comment13b1));
+        post13c1.setComments(Arrays.asList(comment13c1));
+        post13d1.setComments(Arrays.asList(comment13d1));
+        post14a1.setComments(Arrays.asList(comment14a1));
+        post14b1.setComments(Arrays.asList(comment14b1));
+        post14c1.setComments(Arrays.asList(comment14c1));
+        post14d1.setComments(Arrays.asList(comment14d1));
+        post15a1.setComments(Arrays.asList(comment15a1));
+        post15b1.setComments(Arrays.asList(comment15b1));
+        post15c1.setComments(Arrays.asList(comment15c1));
+        post16a1.setComments(Arrays.asList(comment16a1));
+        post16b1.setComments(Arrays.asList(comment16b1));
+        post16c1.setComments(Arrays.asList(comment16c1));
+        post17a1.setComments(Arrays.asList(comment17a1));
+        post17b1.setComments(Arrays.asList(comment17b1));
+        post17c1.setComments(Arrays.asList(comment17c1));
+        post17d1.setComments(Arrays.asList(comment17d1));
+        post18a1.setComments(Arrays.asList(comment18a1));
+        post18b1.setComments(Arrays.asList(comment18b1));
+        post18c1.setComments(Arrays.asList(comment18c1));
+        post19a1.setComments(Arrays.asList(comment19a1));
+        post19b1.setComments(Arrays.asList(comment19b1));
+        post19c1.setComments(Arrays.asList(comment19c1));
+        post20a1.setComments(Arrays.asList(comment20a1));
+        post20b1.setComments(Arrays.asList(comment20b1));
+        post20c1.setComments(Arrays.asList(comment20c1));
+        post20d1.setComments(Arrays.asList(comment20d1));
 
         //Schedules
         Schedule scheduleStudent1 = createSchedule("Student 1's Fall Schedule", "List of courses for student 1 in fall 2024", student1, fall2024, course1, course2, course3, course4);
@@ -1300,133 +1302,133 @@ public class Seeder implements CommandLineRunner {
         Schedule scheduleStudent9 = createSchedule("Student 9's Fall Schedule", "List of courses for Student 9 in Fall 2024", student9, fall2024, course17, course18, course19, course20);
         Schedule scheduleStudent10 = createSchedule("Student 10's Fall Schedule", "List of courses for Student 10 in Fall 2024", student10, fall2024, course17, course18, course19, course20);
 
-        course1.setStudents(List.of(student1, student2));
-        course2.setStudents(List.of(student1, student2));
-        course3.setStudents(List.of(student1, student2));
-        course4.setStudents(List.of(student1, student2));
-        course5.setStudents(List.of(student3, student4));
-        course6.setStudents(List.of(student3, student4));
-        course7.setStudents(List.of(student3, student4));
-        course8.setStudents(List.of(student3, student4));
-        course9.setStudents(List.of(student5, student6));
-        course10.setStudents(List.of(student5, student6));
-        course11.setStudents(List.of(student5, student6));
-        course12.setStudents(List.of(student5, student6));
-        course13.setStudents(List.of(student7, student8));
-        course14.setStudents(List.of(student7, student8));
-        course15.setStudents(List.of(student7, student8));
-        course16.setStudents(List.of(student7, student8));
-        course17.setStudents(List.of(student9, student10));
-        course18.setStudents(List.of(student9, student10));
-        course19.setStudents(List.of(student9, student10));
-        course20.setStudents(List.of(student9, student10));
+        course1.setStudents(Arrays.asList(student1, student2));
+        course2.setStudents(Arrays.asList(student1, student2));
+        course3.setStudents(Arrays.asList(student1, student2));
+        course4.setStudents(Arrays.asList(student1, student2));
+        course5.setStudents(Arrays.asList(student3, student4));
+        course6.setStudents(Arrays.asList(student3, student4));
+        course7.setStudents(Arrays.asList(student3, student4));
+        course8.setStudents(Arrays.asList(student3, student4));
+        course9.setStudents(Arrays.asList(student5, student6));
+        course10.setStudents(Arrays.asList(student5, student6));
+        course11.setStudents(Arrays.asList(student5, student6));
+        course12.setStudents(Arrays.asList(student5, student6));
+        course13.setStudents(Arrays.asList(student7, student8));
+        course14.setStudents(Arrays.asList(student7, student8));
+        course15.setStudents(Arrays.asList(student7, student8));
+        course16.setStudents(Arrays.asList(student7, student8));
+        course17.setStudents(Arrays.asList(student9, student10));
+        course18.setStudents(Arrays.asList(student9, student10));
+        course19.setStudents(Arrays.asList(student9, student10));
+        course20.setStudents(Arrays.asList(student9, student10));
 
-        course1.setResources(List.of(resource1a, resource1b));
-        course2.setResources(List.of(resource2a, resource2b));
-        course3.setResources(List.of(resource3a, resource3b));
-        course4.setResources(List.of(resource4a, resource4b));
-        course5.setResources(List.of(resource5a, resource5b));
-        course6.setResources(List.of(resource6a, resource6b));
-        course7.setResources(List.of(resource7a, resource7b));
-        course8.setResources(List.of(resource8a, resource8b));
-        course9.setResources(List.of(resource9a, resource9b));
-        course10.setResources(List.of(resource10a, resource10b));
-        course11.setResources(List.of(resource11a, resource11b));
-        course12.setResources(List.of(resource12a, resource12b));
-        course13.setResources(List.of(resource13a, resource13b));
-        course14.setResources(List.of(resource14a, resource14b));
-        course15.setResources(List.of(resource15a, resource15b));
-        course16.setResources(List.of(resource16a, resource16b));
-        course17.setResources(List.of(resource17a, resource17b));
-        course18.setResources(List.of(resource18a, resource18b));
-        course19.setResources(List.of(resource19a, resource19b));
-        course20.setResources(List.of(resource20a, resource20b));
+        course1.setResources(Arrays.asList(resource1a, resource1b));
+        course2.setResources(Arrays.asList(resource2a, resource2b));
+        course3.setResources(Arrays.asList(resource3a, resource3b));
+        course4.setResources(Arrays.asList(resource4a, resource4b));
+        course5.setResources(Arrays.asList(resource5a, resource5b));
+        course6.setResources(Arrays.asList(resource6a, resource6b));
+        course7.setResources(Arrays.asList(resource7a, resource7b));
+        course8.setResources(Arrays.asList(resource8a, resource8b));
+        course9.setResources(Arrays.asList(resource9a, resource9b));
+        course10.setResources(Arrays.asList(resource10a, resource10b));
+        course11.setResources(Arrays.asList(resource11a, resource11b));
+        course12.setResources(Arrays.asList(resource12a, resource12b));
+        course13.setResources(Arrays.asList(resource13a, resource13b));
+        course14.setResources(Arrays.asList(resource14a, resource14b));
+        course15.setResources(Arrays.asList(resource15a, resource15b));
+        course16.setResources(Arrays.asList(resource16a, resource16b));
+        course17.setResources(Arrays.asList(resource17a, resource17b));
+        course18.setResources(Arrays.asList(resource18a, resource18b));
+        course19.setResources(Arrays.asList(resource19a, resource19b));
+        course20.setResources(Arrays.asList(resource20a, resource20b));
 
-        course1.setSchedules(List.of(scheduleStudent1, scheduleStudent2));
-        course2.setSchedules(List.of(scheduleStudent1, scheduleStudent2));
-        course3.setSchedules(List.of(scheduleStudent1, scheduleStudent2));
-        course4.setSchedules(List.of(scheduleStudent1, scheduleStudent2));
-        course5.setSchedules(List.of(scheduleStudent3, scheduleStudent4));
-        course6.setSchedules(List.of(scheduleStudent3, scheduleStudent4));
-        course7.setSchedules(List.of(scheduleStudent3, scheduleStudent4));
-        course8.setSchedules(List.of(scheduleStudent3, scheduleStudent4));
-        course9.setSchedules(List.of(scheduleStudent5, scheduleStudent6));
-        course10.setSchedules(List.of(scheduleStudent5, scheduleStudent6));
-        course11.setSchedules(List.of(scheduleStudent5, scheduleStudent6));
-        course12.setSchedules(List.of(scheduleStudent5, scheduleStudent6));
-        course13.setSchedules(List.of(scheduleStudent7, scheduleStudent8));
-        course14.setSchedules(List.of(scheduleStudent7, scheduleStudent8));
-        course15.setSchedules(List.of(scheduleStudent7, scheduleStudent8));
-        course16.setSchedules(List.of(scheduleStudent7, scheduleStudent8));
-        course17.setSchedules(List.of(scheduleStudent9, scheduleStudent10));
-        course18.setSchedules(List.of(scheduleStudent9, scheduleStudent10));
-        course19.setSchedules(List.of(scheduleStudent9, scheduleStudent10));
-        course20.setSchedules(List.of(scheduleStudent9, scheduleStudent10));
+        course1.setSchedules(Arrays.asList(scheduleStudent1, scheduleStudent2));
+        course2.setSchedules(Arrays.asList(scheduleStudent1, scheduleStudent2));
+        course3.setSchedules(Arrays.asList(scheduleStudent1, scheduleStudent2));
+        course4.setSchedules(Arrays.asList(scheduleStudent1, scheduleStudent2));
+        course5.setSchedules(Arrays.asList(scheduleStudent3, scheduleStudent4));
+        course6.setSchedules(Arrays.asList(scheduleStudent3, scheduleStudent4));
+        course7.setSchedules(Arrays.asList(scheduleStudent3, scheduleStudent4));
+        course8.setSchedules(Arrays.asList(scheduleStudent3, scheduleStudent4));
+        course9.setSchedules(Arrays.asList(scheduleStudent5, scheduleStudent6));
+        course10.setSchedules(Arrays.asList(scheduleStudent5, scheduleStudent6));
+        course11.setSchedules(Arrays.asList(scheduleStudent5, scheduleStudent6));
+        course12.setSchedules(Arrays.asList(scheduleStudent5, scheduleStudent6));
+        course13.setSchedules(Arrays.asList(scheduleStudent7, scheduleStudent8));
+        course14.setSchedules(Arrays.asList(scheduleStudent7, scheduleStudent8));
+        course15.setSchedules(Arrays.asList(scheduleStudent7, scheduleStudent8));
+        course16.setSchedules(Arrays.asList(scheduleStudent7, scheduleStudent8));
+        course17.setSchedules(Arrays.asList(scheduleStudent9, scheduleStudent10));
+        course18.setSchedules(Arrays.asList(scheduleStudent9, scheduleStudent10));
+        course19.setSchedules(Arrays.asList(scheduleStudent9, scheduleStudent10));
+        course20.setSchedules(Arrays.asList(scheduleStudent9, scheduleStudent10));
 
-        course1.setSemesters(List.of(fall2024, spring2025));
-        course2.setSemesters(List.of(fall2024, spring2025));
-        course3.setSemesters(List.of(fall2024, spring2025));
-        course4.setSemesters(List.of(fall2024, spring2025));
-        course5.setSemesters(List.of(fall2024, spring2025));
-        course6.setSemesters(List.of(fall2024, spring2025));
-        course7.setSemesters(List.of(fall2024, spring2025));
-        course8.setSemesters(List.of(fall2024, spring2025));
-        course9.setSemesters(List.of(fall2024, spring2025));
-        course10.setSemesters(List.of(fall2024, spring2025));
-        course11.setSemesters(List.of(fall2024, spring2025));
-        course12.setSemesters(List.of(fall2024, spring2025));
-        course13.setSemesters(List.of(fall2024, spring2025));
-        course14.setSemesters(List.of(fall2024, spring2025));
-        course15.setSemesters(List.of(fall2024, spring2025));
-        course16.setSemesters(List.of(fall2024, spring2025));
-        course17.setSemesters(List.of(fall2024, spring2025));
-        course18.setSemesters(List.of(fall2024, spring2025));
-        course19.setSemesters(List.of(fall2024, spring2025));
-        course20.setSemesters(List.of(fall2024, spring2025));
+        course1.setSemesters(Arrays.asList(fall2024, spring2025));
+        course2.setSemesters(Arrays.asList(fall2024, spring2025));
+        course3.setSemesters(Arrays.asList(fall2024, spring2025));
+        course4.setSemesters(Arrays.asList(fall2024, spring2025));
+        course5.setSemesters(Arrays.asList(fall2024, spring2025));
+        course6.setSemesters(Arrays.asList(fall2024, spring2025));
+        course7.setSemesters(Arrays.asList(fall2024, spring2025));
+        course8.setSemesters(Arrays.asList(fall2024, spring2025));
+        course9.setSemesters(Arrays.asList(fall2024, spring2025));
+        course10.setSemesters(Arrays.asList(fall2024, spring2025));
+        course11.setSemesters(Arrays.asList(fall2024, spring2025));
+        course12.setSemesters(Arrays.asList(fall2024, spring2025));
+        course13.setSemesters(Arrays.asList(fall2024, spring2025));
+        course14.setSemesters(Arrays.asList(fall2024, spring2025));
+        course15.setSemesters(Arrays.asList(fall2024, spring2025));
+        course16.setSemesters(Arrays.asList(fall2024, spring2025));
+        course17.setSemesters(Arrays.asList(fall2024, spring2025));
+        course18.setSemesters(Arrays.asList(fall2024, spring2025));
+        course19.setSemesters(Arrays.asList(fall2024, spring2025));
+        course20.setSemesters(Arrays.asList(fall2024, spring2025));
 
-        fall2024.setSchedules(List.of(scheduleStudent1, scheduleStudent2, scheduleStudent3, scheduleStudent4, scheduleStudent5, scheduleStudent6, scheduleStudent7, scheduleStudent8, scheduleStudent9, scheduleStudent10));
-        fall2024.setCourses(List.of(course1, course2, course3, course4, course5, course6, course7, course8, course9, course10, course11, course12, course13, course14, course15, course16, course17, course18, course19, course20));
-        spring2025.setSchedules(List.of(scheduleStudent1, scheduleStudent2, scheduleStudent3, scheduleStudent4, scheduleStudent5, scheduleStudent6, scheduleStudent7, scheduleStudent8, scheduleStudent9, scheduleStudent10));
-        spring2025.setCourses(List.of(course1, course2, course3, course4, course5, course6, course7, course8, course9, course10, course11, course12, course13, course14, course15, course16, course17, course18, course19, course20));
+        fall2024.setSchedules(Arrays.asList(scheduleStudent1, scheduleStudent2, scheduleStudent3, scheduleStudent4, scheduleStudent5, scheduleStudent6, scheduleStudent7, scheduleStudent8, scheduleStudent9, scheduleStudent10));
+        fall2024.setCourses(Arrays.asList(course1, course2, course3, course4, course5, course6, course7, course8, course9, course10, course11, course12, course13, course14, course15, course16, course17, course18, course19, course20));
+        spring2025.setSchedules(Arrays.asList(scheduleStudent1, scheduleStudent2, scheduleStudent3, scheduleStudent4, scheduleStudent5, scheduleStudent6, scheduleStudent7, scheduleStudent8, scheduleStudent9, scheduleStudent10));
+        spring2025.setCourses(Arrays.asList(course1, course2, course3, course4, course5, course6, course7, course8, course9, course10, course11, course12, course13, course14, course15, course16, course17, course18, course19, course20));
 
 
-        createFacultyWithDetails(faculty1, List.of(announcement1, announcement8), List.of(lesson1a, lesson1b, lesson1c, lesson1d, lesson1e, lesson1f, lesson6a, lesson6b, lesson6c, lesson6d, lesson6e, lesson11a, lesson11b, lesson11c, lesson11d, lesson16a, lesson16b, lesson16c), List.of(discussion1a, discussion1b, discussion1c, discussion1d, discussion1e, discussion1f, discussion6a, discussion6b, discussion6c, discussion6d, discussion6e, discussion11a, discussion11b, discussion11c, discussion11d, discussion16a, discussion16b, discussion16c));
-        createFacultyWithDetails(faculty2, List.of(announcement2, announcement7), List.of(lesson2a, lesson2b, lesson2c, lesson2d, lesson2e, lesson2f, lesson7a, lesson7b, lesson7c, lesson7d, lesson12a, lesson12b, lesson12c, lesson12d, lesson12e, lesson17a, lesson17b, lesson17c, lesson17d), List.of(discussion2a, discussion2b, discussion2c, discussion2d, discussion2e, discussion2f, discussion7a, discussion7b, discussion7c, discussion7d, discussion12a, discussion12b, discussion12c, discussion12d, discussion12e, discussion17a, discussion17b, discussion17c, discussion17d));
-        createFacultyWithDetails(faculty3, List.of(announcement3), List.of(lesson3a, lesson3b, lesson3c, lesson3d, lesson8a, lesson8b, lesson8c, lesson8d, lesson8e, lesson13a, lesson13b, lesson13c, lesson13d, lesson18a, lesson18b, lesson18c), List.of(discussion3a, discussion3b, discussion3c, discussion3d, discussion8a, discussion8b, discussion8c, discussion8d, discussion8e, discussion13a, discussion13b, discussion13c, discussion13d, discussion18a, discussion18b, discussion18c));
-        createFacultyWithDetails(faculty4, List.of(announcement4), List.of(lesson4a, lesson4b, lesson4c, lesson4d, lesson9a, lesson9b, lesson9c, lesson14a, lesson14b, lesson14c, lesson14d, lesson19a, lesson19b, lesson19c), List.of(discussion4a, discussion4b, discussion4c, discussion4d, discussion9a, discussion9b, discussion9c, discussion14a, discussion14b, discussion14c, discussion14d, discussion19a, discussion19b, discussion19c));
-        createFacultyWithDetails(faculty5, List.of(announcement5, announcement6), List.of(lesson5a, lesson5b, lesson5c, lesson5d, lesson10a, lesson10b, lesson10c, lesson10d, lesson15a, lesson15b, lesson15c, lesson20a, lesson20b, lesson20c, lesson20d), List.of(discussion5a, discussion5b, discussion5c, discussion5d, discussion10a, discussion10b, discussion10c, discussion10d, discussion15a, discussion15b, discussion15c, discussion20a, discussion20b, discussion20c, discussion20d));
+        createFacultyWithDetails(faculty1, Arrays.asList(announcement1, announcement8), Arrays.asList(lesson1a, lesson1b, lesson1c, lesson1d, lesson1e, lesson1f, lesson6a, lesson6b, lesson6c, lesson6d, lesson6e, lesson11a, lesson11b, lesson11c, lesson11d, lesson16a, lesson16b, lesson16c), Arrays.asList(discussion1a, discussion1b, discussion1c, discussion1d, discussion1e, discussion1f, discussion6a, discussion6b, discussion6c, discussion6d, discussion6e, discussion11a, discussion11b, discussion11c, discussion11d, discussion16a, discussion16b, discussion16c));
+        createFacultyWithDetails(faculty2, Arrays.asList(announcement2, announcement7), Arrays.asList(lesson2a, lesson2b, lesson2c, lesson2d, lesson2e, lesson2f, lesson7a, lesson7b, lesson7c, lesson7d, lesson12a, lesson12b, lesson12c, lesson12d, lesson12e, lesson17a, lesson17b, lesson17c, lesson17d), Arrays.asList(discussion2a, discussion2b, discussion2c, discussion2d, discussion2e, discussion2f, discussion7a, discussion7b, discussion7c, discussion7d, discussion12a, discussion12b, discussion12c, discussion12d, discussion12e, discussion17a, discussion17b, discussion17c, discussion17d));
+        createFacultyWithDetails(faculty3, Arrays.asList(announcement3), Arrays.asList(lesson3a, lesson3b, lesson3c, lesson3d, lesson8a, lesson8b, lesson8c, lesson8d, lesson8e, lesson13a, lesson13b, lesson13c, lesson13d, lesson18a, lesson18b, lesson18c), Arrays.asList(discussion3a, discussion3b, discussion3c, discussion3d, discussion8a, discussion8b, discussion8c, discussion8d, discussion8e, discussion13a, discussion13b, discussion13c, discussion13d, discussion18a, discussion18b, discussion18c));
+        createFacultyWithDetails(faculty4, Arrays.asList(announcement4), Arrays.asList(lesson4a, lesson4b, lesson4c, lesson4d, lesson9a, lesson9b, lesson9c, lesson14a, lesson14b, lesson14c, lesson14d, lesson19a, lesson19b, lesson19c), Arrays.asList(discussion4a, discussion4b, discussion4c, discussion4d, discussion9a, discussion9b, discussion9c, discussion14a, discussion14b, discussion14c, discussion14d, discussion19a, discussion19b, discussion19c));
+        createFacultyWithDetails(faculty5, Arrays.asList(announcement5, announcement6), Arrays.asList(lesson5a, lesson5b, lesson5c, lesson5d, lesson10a, lesson10b, lesson10c, lesson10d, lesson15a, lesson15b, lesson15c, lesson20a, lesson20b, lesson20c, lesson20d), Arrays.asList(discussion5a, discussion5b, discussion5c, discussion5d, discussion10a, discussion10b, discussion10c, discussion10d, discussion15a, discussion15b, discussion15c, discussion20a, discussion20b, discussion20c, discussion20d));
 
-        addSyllabusCourseAndResource(syllabus1, course1, List.of(resource1a, resource1b));
-        addSyllabusCourseAndResource(syllabus2, course2, List.of(resource2a, resource2b));
-        addSyllabusCourseAndResource(syllabus3, course3, List.of(resource3a, resource3b));
-        addSyllabusCourseAndResource(syllabus4, course4, List.of(resource4a, resource4b));
-        addSyllabusCourseAndResource(syllabus5, course5, List.of(resource5a, resource5b));
-        addSyllabusCourseAndResource(syllabus6, course6, List.of(resource6a, resource6b));
-        addSyllabusCourseAndResource(syllabus7, course7, List.of(resource7a, resource7b));
-        addSyllabusCourseAndResource(syllabus8, course8, List.of(resource8a, resource8b));
-        addSyllabusCourseAndResource(syllabus9, course9, List.of(resource9a, resource9b));
-        addSyllabusCourseAndResource(syllabus10, course10, List.of(resource10a, resource10b));
-        addSyllabusCourseAndResource(syllabus11, course11, List.of(resource11a, resource11b));
-        addSyllabusCourseAndResource(syllabus12, course12, List.of(resource12a, resource12b));
-        addSyllabusCourseAndResource(syllabus13, course13, List.of(resource13a, resource13b));
-        addSyllabusCourseAndResource(syllabus14, course14, List.of(resource14a, resource14b));
-        addSyllabusCourseAndResource(syllabus15, course15, List.of(resource15a, resource15b));
-        addSyllabusCourseAndResource(syllabus16, course16, List.of(resource16a, resource16b));
-        addSyllabusCourseAndResource(syllabus17, course17, List.of(resource17a, resource17b));
-        addSyllabusCourseAndResource(syllabus18, course18, List.of(resource18a, resource18b));
-        addSyllabusCourseAndResource(syllabus19, course19, List.of(resource19a, resource19b));
-        addSyllabusCourseAndResource(syllabus20, course20, List.of(resource20a, resource20b));
+        addSyllabusCourseAndResource(syllabus1, course1, Arrays.asList(resource1a, resource1b));
+        addSyllabusCourseAndResource(syllabus2, course2, Arrays.asList(resource2a, resource2b));
+        addSyllabusCourseAndResource(syllabus3, course3, Arrays.asList(resource3a, resource3b));
+        addSyllabusCourseAndResource(syllabus4, course4, Arrays.asList(resource4a, resource4b));
+        addSyllabusCourseAndResource(syllabus5, course5, Arrays.asList(resource5a, resource5b));
+        addSyllabusCourseAndResource(syllabus6, course6, Arrays.asList(resource6a, resource6b));
+        addSyllabusCourseAndResource(syllabus7, course7, Arrays.asList(resource7a, resource7b));
+        addSyllabusCourseAndResource(syllabus8, course8, Arrays.asList(resource8a, resource8b));
+        addSyllabusCourseAndResource(syllabus9, course9, Arrays.asList(resource9a, resource9b));
+        addSyllabusCourseAndResource(syllabus10, course10, Arrays.asList(resource10a, resource10b));
+        addSyllabusCourseAndResource(syllabus11, course11, Arrays.asList(resource11a, resource11b));
+        addSyllabusCourseAndResource(syllabus12, course12, Arrays.asList(resource12a, resource12b));
+        addSyllabusCourseAndResource(syllabus13, course13, Arrays.asList(resource13a, resource13b));
+        addSyllabusCourseAndResource(syllabus14, course14, Arrays.asList(resource14a, resource14b));
+        addSyllabusCourseAndResource(syllabus15, course15, Arrays.asList(resource15a, resource15b));
+        addSyllabusCourseAndResource(syllabus16, course16, Arrays.asList(resource16a, resource16b));
+        addSyllabusCourseAndResource(syllabus17, course17, Arrays.asList(resource17a, resource17b));
+        addSyllabusCourseAndResource(syllabus18, course18, Arrays.asList(resource18a, resource18b));
+        addSyllabusCourseAndResource(syllabus19, course19, Arrays.asList(resource19a, resource19b));
+        addSyllabusCourseAndResource(syllabus20, course20, Arrays.asList(resource20a, resource20b));
 
-        createStudentDetails(student1, List.of(attendance1, attendance2), List.of(guardian1, guardian2), List.of(course1, course2, course3, course4), List.of(post1a1, post1b1, post1c1, post1d1, post1e1, post1f1, post2a1, post2b1, post2c1, post2d1, post2e1, post2f1, post3a1, post3b1, post3c1, post3d1, post4a1, post4b1, post4c1, post4d1), new ArrayList<>(), List.of(scheduleStudent1));
-        createStudentDetails(student1, List.of(attendance3, attendance4), List.of(guardian3, guardian4), List.of(course1, course2, course3, course4), List.of(post1a2, post1b2, post1c2, post1d2, post1e2, post1f2, post2a2, post2b2, post2c2, post2d2, post2e2, post2f2, post3a2, post3b2, post3c2, post3d2, post4a2, post4b2, post4c2, post4d2), List.of(comment1a1, comment1b1, comment1c1, comment1d1, comment1e1, comment1f1, comment2a1, comment2b1, comment2c1, comment2d1, comment2e1, comment2f1, comment3a1, comment3b1, comment3c1, comment3d1, comment4a1, comment4b1, comment4c1, comment4d1), List.of(scheduleStudent2));
-        createStudentDetails(student3, List.of(attendance5, attendance6), List.of(guardian5, guardian6), List.of(course5, course6, course7, course8), List.of(post5a1, post5b1, post5c1, post5d1, post6a1, post6b1, post6c1, post6d1, post6e1, post7a1, post7b1, post7c1, post7d1, post8a1, post8b1, post8c1, post8d1, post8e1), new ArrayList<>(), List.of(scheduleStudent3));
-        createStudentDetails(student4, List.of(attendance7, attendance8), List.of(guardian7, guardian8), List.of(course5, course6, course7, course8), List.of(post5a2, post5b2, post5c2, post5d2, post6a2, post6b2, post6c2, post6d2, post6e2, post7a2, post7b2, post7c2, post7d2, post8a2, post8b2, post8c2, post8d2, post8e2), List.of(comment5a1, comment5b1, comment5c1, comment5d1, comment6a1, comment6b1, comment6c1, comment6d1, comment6e1, comment7a1, comment7b1, comment7c1, comment7d1, comment8a1, comment8b1, comment8c1, comment8d1, comment8e1), List.of(scheduleStudent4));
-        createStudentDetails(student5, List.of(attendance9, attendance10), List.of(guardian9, guardian10), List.of(course9, course10, course11, course12), List.of(post9a1, post9b1, post9c1, post10a1, post10b1, post10c1, post10d1, post11a1, post11b1, post11c1, post11d1, post12a1, post12b1, post12c1, post12d1, post12e1), new ArrayList<>(), List.of(scheduleStudent5));
-        createStudentDetails(student6, List.of(attendance11, attendance12), List.of(guardian11, guardian12), List.of(course9, course10, course11, course12), List.of(post9a2, post9b2, post9c2, post10a2, post10b2, post10c2, post10d2, post11a2, post11b2, post11c2, post11d2, post12a2, post12b2, post12c2, post12d2, post12e2), List.of(comment9a1, comment9b1, comment9c1, comment10a1, comment10b1, comment10c1, comment10d1, comment11a1, comment11b1, comment11c1, comment11d1, comment12a1, comment12b1, comment12c1, comment12d1, comment12e1), List.of(scheduleStudent6));
-        createStudentDetails(student7, List.of(attendance13, attendance14), List.of(guardian13, guardian14), List.of(course13, course14, course15, course16), List.of(post13a1, post13b1, post13c1, post13d1, post14a1, post14b1, post14c1, post14d1, post15a1, post15b1, post15c1, post16a1, post16b1, post16c1), new ArrayList<>(), List.of(scheduleStudent7));
-        createStudentDetails(student8, List.of(attendance15, attendance16), List.of(guardian15, guardian16), List.of(course13, course14, course15, course16), List.of(post13a2, post13b2, post13c2, post13d2, post14a2, post14b2, post14c2, post14d2, post15a2, post15b2, post15c2, post16a2, post16b2, post16c2), List.of(comment13a1, comment13b1, comment13c1, comment13d1, comment14a1, comment14b1, comment14c1, comment14d1, comment15a1, comment15b1, comment15c1, comment16a1, comment16b1, comment16c1), List.of(scheduleStudent8));
-        createStudentDetails(student9, List.of(attendance17, attendance18), List.of(guardian17, guardian18), List.of(course17, course18, course19, course20), List.of(post17a1, post17b1, post17c1, post17d1, post18a1, post18b1, post18c1, post19a1, post19b1, post19c1, post20a1, post20b1, post20c1, post20d1), new ArrayList<>(), List.of(scheduleStudent9));
-        createStudentDetails(student10, List.of(attendance19, attendance20), List.of(guardian19, guardian20), List.of(course17, course18, course19, course20), List.of(post17a2, post17b2, post17c2, post17d2, post18a2, post18b2, post18c2, post19a2, post19b2, post19c2, post20a2, post20b2, post20c2, post20d2), List.of(comment17a1, comment17b1, comment17c1, comment17d1, comment18a1, comment18b1, comment18c1, comment19a1, comment19b1, comment19c1, comment20a1, comment20b1, comment20c1, comment20d1), List.of(scheduleStudent10));
+        createStudentDetails(student1, Arrays.asList(attendance1, attendance2), Arrays.asList(guardian1, guardian2), Arrays.asList(course1, course2, course3, course4), Arrays.asList(post1a1, post1b1, post1c1, post1d1, post1e1, post1f1, post2a1, post2b1, post2c1, post2d1, post2e1, post2f1, post3a1, post3b1, post3c1, post3d1, post4a1, post4b1, post4c1, post4d1), new ArrayList<>(), Arrays.asList(scheduleStudent1));
+        createStudentDetails(student1, Arrays.asList(attendance3, attendance4), Arrays.asList(guardian3, guardian4), Arrays.asList(course1, course2, course3, course4), Arrays.asList(post1a2, post1b2, post1c2, post1d2, post1e2, post1f2, post2a2, post2b2, post2c2, post2d2, post2e2, post2f2, post3a2, post3b2, post3c2, post3d2, post4a2, post4b2, post4c2, post4d2), Arrays.asList(comment1a1, comment1b1, comment1c1, comment1d1, comment1e1, comment1f1, comment2a1, comment2b1, comment2c1, comment2d1, comment2e1, comment2f1, comment3a1, comment3b1, comment3c1, comment3d1, comment4a1, comment4b1, comment4c1, comment4d1), Arrays.asList(scheduleStudent2));
+        createStudentDetails(student3, Arrays.asList(attendance5, attendance6), Arrays.asList(guardian5, guardian6), Arrays.asList(course5, course6, course7, course8), Arrays.asList(post5a1, post5b1, post5c1, post5d1, post6a1, post6b1, post6c1, post6d1, post6e1, post7a1, post7b1, post7c1, post7d1, post8a1, post8b1, post8c1, post8d1, post8e1), new ArrayList<>(), Arrays.asList(scheduleStudent3));
+        createStudentDetails(student4, Arrays.asList(attendance7, attendance8), Arrays.asList(guardian7, guardian8), Arrays.asList(course5, course6, course7, course8), Arrays.asList(post5a2, post5b2, post5c2, post5d2, post6a2, post6b2, post6c2, post6d2, post6e2, post7a2, post7b2, post7c2, post7d2, post8a2, post8b2, post8c2, post8d2, post8e2), Arrays.asList(comment5a1, comment5b1, comment5c1, comment5d1, comment6a1, comment6b1, comment6c1, comment6d1, comment6e1, comment7a1, comment7b1, comment7c1, comment7d1, comment8a1, comment8b1, comment8c1, comment8d1, comment8e1), Arrays.asList(scheduleStudent4));
+        createStudentDetails(student5, Arrays.asList(attendance9, attendance10), Arrays.asList(guardian9, guardian10), Arrays.asList(course9, course10, course11, course12), Arrays.asList(post9a1, post9b1, post9c1, post10a1, post10b1, post10c1, post10d1, post11a1, post11b1, post11c1, post11d1, post12a1, post12b1, post12c1, post12d1, post12e1), new ArrayList<>(), Arrays.asList(scheduleStudent5));
+        createStudentDetails(student6, Arrays.asList(attendance11, attendance12), Arrays.asList(guardian11, guardian12), Arrays.asList(course9, course10, course11, course12), Arrays.asList(post9a2, post9b2, post9c2, post10a2, post10b2, post10c2, post10d2, post11a2, post11b2, post11c2, post11d2, post12a2, post12b2, post12c2, post12d2, post12e2), Arrays.asList(comment9a1, comment9b1, comment9c1, comment10a1, comment10b1, comment10c1, comment10d1, comment11a1, comment11b1, comment11c1, comment11d1, comment12a1, comment12b1, comment12c1, comment12d1, comment12e1), Arrays.asList(scheduleStudent6));
+        createStudentDetails(student7, Arrays.asList(attendance13, attendance14), Arrays.asList(guardian13, guardian14), Arrays.asList(course13, course14, course15, course16), Arrays.asList(post13a1, post13b1, post13c1, post13d1, post14a1, post14b1, post14c1, post14d1, post15a1, post15b1, post15c1, post16a1, post16b1, post16c1), new ArrayList<>(), Arrays.asList(scheduleStudent7));
+        createStudentDetails(student8, Arrays.asList(attendance15, attendance16), Arrays.asList(guardian15, guardian16), Arrays.asList(course13, course14, course15, course16), Arrays.asList(post13a2, post13b2, post13c2, post13d2, post14a2, post14b2, post14c2, post14d2, post15a2, post15b2, post15c2, post16a2, post16b2, post16c2), Arrays.asList(comment13a1, comment13b1, comment13c1, comment13d1, comment14a1, comment14b1, comment14c1, comment14d1, comment15a1, comment15b1, comment15c1, comment16a1, comment16b1, comment16c1), Arrays.asList(scheduleStudent8));
+        createStudentDetails(student9, Arrays.asList(attendance17, attendance18), Arrays.asList(guardian17, guardian18), Arrays.asList(course17, course18, course19, course20), Arrays.asList(post17a1, post17b1, post17c1, post17d1, post18a1, post18b1, post18c1, post19a1, post19b1, post19c1, post20a1, post20b1, post20c1, post20d1), new ArrayList<>(), Arrays.asList(scheduleStudent9));
+        createStudentDetails(student10, Arrays.asList(attendance19, attendance20), Arrays.asList(guardian19, guardian20), Arrays.asList(course17, course18, course19, course20), Arrays.asList(post17a2, post17b2, post17c2, post17d2, post18a2, post18b2, post18c2, post19a2, post19b2, post19c2, post20a2, post20b2, post20c2, post20d2), Arrays.asList(comment17a1, comment17b1, comment17c1, comment17d1, comment18a1, comment18b1, comment18c1, comment19a1, comment19b1, comment19c1, comment20a1, comment20b1, comment20c1, comment20d1), Arrays.asList(scheduleStudent10));
 
 
 
