@@ -1,10 +1,7 @@
 package com.project.education_app;
 
 import com.project.education_app.entities.*;
-import com.project.education_app.repos.CourseRepo;
-import com.project.education_app.repos.FacultyRepo;
-import com.project.education_app.repos.StudentRepo;
-import com.project.education_app.repos.SyllabusRepo;
+import com.project.education_app.repos.*;
 import lombok.Data;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
@@ -31,6 +28,13 @@ public class Test9to12Seeder implements CommandLineRunner {
     private final SyllabusRepo syllabusRepo;
     private final StudentRepo studentRepo;
     private final CourseRepo courseRepo;
+    private final TestRepo testRepo;
+    private final ProblemAnswerRepo problemAnswerRepo;
+    private final StudentAnswerRepo studentAnswerRepo;
+    private final SubmissionRepo submissionRepo;
+    private final GradeRepo gradeRepo;
+    private final CourseGradeRepo courseGradeRepo;
+    private final FeedbackRepo feedbackRepo;
 
     @Override
     public void run(String... args) throws Exception {
@@ -1516,5 +1520,19 @@ public class Test9to12Seeder implements CommandLineRunner {
         studentTest(student5, Arrays.asList(grade9a_5, grade9b_5, grade9c_5, grade10a_5, grade10b_5, grade10c_5, grade10d_5, grade11a_5, grade11b_5, grade11c_5, grade11d_5, grade12a_5, grade12b_5, grade12c_5, grade12d_5, grade12e_5), Arrays.asList(courseGrade9a_5, courseGrade10a_5, courseGrade11a_5, courseGrade12a_5), Arrays.asList(test9a, test9b, test9c, test10a, test10b, test10c, test10d, test11a, test11b, test11c, test11d, test12a, test12b, test12c, test12d, test12e));
         studentTest(student6, Arrays.asList(grade9a_6, grade9b_6, grade9c_6, grade10a_6, grade10b_6, grade10c_6, grade10d_6, grade11a_6, grade11b_6, grade11c_6, grade11d_6, grade12a_6, grade12b_6, grade12c_6, grade12d_6, grade12e_6), Arrays.asList(courseGrade9a_6, courseGrade10a_6, courseGrade11a_6, courseGrade12a_6), Arrays.asList(test9a, test9b, test9c, test10a, test10b, test10c, test10d, test11a, test11b, test11c, test11d, test12a, test12b, test12c, test12d, test12e));
 
+        facultyRepo.saveAllAndFlush(Arrays.asList(faculty1, faculty2, faculty3, faculty4, faculty5));
+        syllabusRepo.saveAllAndFlush(Arrays.asList(syllabus1, syllabus2, syllabus3, syllabus4, syllabus5, syllabus6, syllabus7, syllabus8, syllabus9, syllabus10, syllabus11, syllabus12, syllabus13, syllabus14, syllabus15, syllabus16, syllabus17, syllabus18, syllabus19, syllabus20));
+        studentRepo.saveAllAndFlush(Arrays.asList(student1, student2, student3, student4, student5, student6, student7, student8, student9, student10));
+        courseRepo.saveAllAndFlush(Arrays.asList(course1, course2, course3, course4, course5, course6, course7, course8, course9, course10, course11, course12, course13, course14, course15, course16, course17, course18, course19, course20));
+        testRepo.saveAllAndFlush(Arrays.asList(test9a, test9b, test9c, test10a, test10b, test10c, test10d, test11a, test11b, test11c, test11d, test12a, test12b, test12c, test12d, test12e));
+        problemAnswerRepo.saveAllAndFlush(Arrays.asList(pa9a_1, pa9a_2, pa9a_3, pa9a_4, pa9a_5, pa9b_1, pa9b_2, pa9b_3, pa9b_4, pa9b_5, pa9c_1, pa9c_2, pa9c_3, pa9c_4, pa9c_5, pa10a_1, pa10a_2, pa10a_3, pa10a_4, pa10a_5, pa10b_1, pa10b_2, pa10b_3, pa10b_4, pa10b_5, pa10c_1, pa10c_2, pa10c_3, pa10c_4, pa10c_5, pa10d_1, pa10d_2, pa10d_3, pa10d_4, pa10d_5, pa11a_1, pa11a_2, pa11a_3, pa11a_4, pa11a_5, pa11b_1, pa11b_2, pa11b_3, pa11b_4, pa11b_5, pa11c_1, pa11c_2, pa11c_3, pa11c_4, pa11c_5, pa11d_1, pa11d_2, pa11d_3, pa11d_4, pa11d_5, pa12a_1, pa12a_2, pa12a_3, pa12a_4, pa12a_5, pa12b_1, pa12b_2, pa12b_3, pa12b_4, pa12b_5, pa12c_1, pa12c_2, pa12c_3, pa12c_4, pa12c_5, pa12d_1, pa12d_2, pa12d_3, pa12d_4, pa12d_5, pa12e_1, pa12e_2, pa12e_3, pa12e_4, pa12e_5));
+        studentAnswerRepo.saveAllAndFlush(Arrays.asList(sa9a_1_student5, sa9a_2_student5, sa9a_3_student5, sa9a_4_student5, sa9a_5_student5, sa9b_1_student5, sa9b_2_student5, sa9b_3_student5, sa9b_4_student5, sa9b_5_student5, sa9c_1_student5, sa9c_2_student5, sa9c_3_student5, sa9c_4_student5, sa9c_5_student5, sa9a_1_student6, sa9a_2_student6, sa9a_3_student6, sa9a_4_student6, sa9a_5_student6, sa9b_1_student6, sa9b_2_student6, sa9b_3_student6, sa9b_4_student6, sa9b_5_student6, sa9c_1_student6, sa9c_2_student6, sa9c_3_student6, sa9c_4_student6, sa9c_5_student6,
+                sa10a_1_student5, sa10a_2_student5, sa10a_3_student5, sa10a_4_student5, sa10a_5_student5, sa10b_1_student5, sa10b_2_student5, sa10b_3_student5, sa10b_4_student5, sa10b_5_student5, sa10c_1_student5, sa10c_2_student5, sa10c_3_student5, sa10c_4_student5, sa10c_5_student5, sa10d_1_student5, sa10d_2_student5, sa10d_3_student5, sa10d_4_student5, sa10d_5_student5, sa10a_1_student6, sa10a_2_student6, sa10a_3_student6, sa10a_4_student6, sa10a_5_student6, sa10b_1_student6, sa10b_2_student6, sa10b_3_student6, sa10b_4_student6, sa10b_5_student6, sa10c_1_student6, sa10c_2_student6, sa10c_3_student6, sa10c_4_student6, sa10c_5_student6, sa10d_1_student6, sa10d_2_student6, sa10d_3_student6, sa10d_4_student6, sa10d_5_student6,
+                sa11a_1_student5, sa11a_2_student5, sa11a_3_student5, sa11a_4_student5, sa11a_5_student5, sa11b_1_student5, sa11b_2_student5, sa11b_3_student5, sa11b_4_student5, sa11b_5_student5, sa11c_1_student5, sa11c_2_student5, sa11c_3_student5, sa11c_4_student5, sa11c_5_student5, sa11d_1_student5, sa11d_2_student5, sa11d_3_student5, sa11d_4_student5, sa11d_5_student5, sa11a_1_student6, sa11a_2_student6, sa11a_3_student6, sa11a_4_student6, sa11a_5_student6, sa11b_1_student6, sa11b_2_student6, sa11b_3_student6, sa11b_4_student6, sa11b_5_student6, sa11c_1_student6, sa11c_2_student6, sa11c_3_student6, sa11c_4_student6, sa11c_5_student6, sa11d_1_student6, sa11d_2_student6, sa11d_3_student6, sa11d_4_student6, sa11d_5_student6,
+                sa12a_1_student5, sa12a_2_student5, sa12a_3_student5, sa12a_4_student5, sa12a_5_student5, sa12b_1_student5, sa12b_2_student5, sa12b_3_student5, sa12b_4_student5, sa12b_5_student5, sa12c_1_student5, sa12c_2_student5, sa12c_3_student5, sa12c_4_student5, sa12c_5_student5, sa12d_1_student5, sa12d_2_student5, sa12d_3_student5, sa12d_4_student5, sa12d_5_student5, sa12e_1_student5, sa12e_2_student5, sa12e_3_student5, sa12e_4_student5, sa12e_5_student5, sa12a_1_student6, sa12a_2_student6, sa12a_3_student6, sa12a_4_student6, sa12a_5_student6, sa12b_1_student6, sa12b_2_student6, sa12b_3_student6, sa12b_4_student6, sa12b_5_student6, sa12c_1_student6, sa12c_2_student6, sa12c_3_student6, sa12c_4_student6, sa12c_5_student6, sa12d_1_student6, sa12d_2_student6, sa12d_3_student6, sa12d_4_student6, sa12d_5_student6, sa12e_1_student6, sa12e_2_student6, sa12e_3_student6, sa12e_4_student6, sa12e_5_student6));
+        submissionRepo.saveAllAndFlush(Arrays.asList(submission9a_5, submission9a_6, submission9b_5, submission9b_6, submission9c_5, submission9c_6, submission10a_5, submission10a_6, submission10b_5, submission10b_6, submission10c_5, submission10c_6, submission10d_5, submission10d_6, submission11a_5, submission11a_6, submission11b_5, submission11b_6, submission11c_5, submission11c_6, submission11d_5, submission11d_6, submission12a_5, submission12a_6, submission12b_5, submission12b_6, submission12c_5, submission12c_6, submission12d_5, submission12d_6, submission12e_5, submission12e_6));
+        gradeRepo.saveAllAndFlush(Arrays.asList(grade9a_5, grade9b_5, grade9c_5, grade10a_5, grade10b_5, grade10c_5, grade10d_5, grade11a_5, grade11b_5, grade11c_5, grade11d_5, grade12a_5, grade12b_5, grade12c_5, grade12d_5, grade12e_5, grade9a_6, grade9b_6, grade9c_6, grade10a_6, grade10b_6, grade10c_6, grade10d_6, grade11a_6, grade11b_6, grade11c_6, grade11d_6, grade12a_6, grade12b_6, grade12c_6, grade12d_6, grade12e_6));
+        courseGradeRepo.saveAllAndFlush(Arrays.asList(courseGrade9a_5, courseGrade10a_5, courseGrade11a_5, courseGrade12a_5, courseGrade9a_6, courseGrade10a_6, courseGrade11a_6, courseGrade12a_6));
+        feedbackRepo.saveAllAndFlush(Arrays.asList(feedback9a_5, feedback9a_6, feedback9b_5, feedback9b_6, feedback9c_5, feedback9c_6, feedback10a_5, feedback10a_6, feedback10b_5, feedback10b_6, feedback10c_5, feedback10c_6, feedback10d_5, feedback10d_6, feedback11a_5, feedback11a_6, feedback11b_5, feedback11b_6, feedback11c_5, feedback11c_6, feedback11d_5, feedback11d_6, feedback12a_5, feedback12a_6, feedback12b_5, feedback12b_6, feedback12c_5, feedback12c_6, feedback12d_5, feedback12d_6, feedback12e_5, feedback12e_6));
     }
 }

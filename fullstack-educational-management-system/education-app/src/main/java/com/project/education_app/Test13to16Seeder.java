@@ -1,10 +1,7 @@
 package com.project.education_app;
 
 import com.project.education_app.entities.*;
-import com.project.education_app.repos.CourseRepo;
-import com.project.education_app.repos.FacultyRepo;
-import com.project.education_app.repos.StudentRepo;
-import com.project.education_app.repos.SyllabusRepo;
+import com.project.education_app.repos.*;
 import lombok.Data;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.annotation.Order;
@@ -31,6 +28,13 @@ public class Test13to16Seeder implements CommandLineRunner {
     private final SyllabusRepo syllabusRepo;
     private final StudentRepo studentRepo;
     private final CourseRepo courseRepo;
+    private final TestRepo testRepo;
+    private final ProblemAnswerRepo problemAnswerRepo;
+    private final StudentAnswerRepo studentAnswerRepo;
+    private final SubmissionRepo submissionRepo;
+    private final GradeRepo gradeRepo;
+    private final CourseGradeRepo courseGradeRepo;
+    private final FeedbackRepo feedbackRepo;
 
     @Override
     public void run(String... args) throws Exception {
@@ -1342,5 +1346,19 @@ public class Test13to16Seeder implements CommandLineRunner {
         studentTest(student7, Arrays.asList(grade13a_7, grade13b_7, grade13c_7, grade13d_7, grade14a_7, grade14b_7, grade14c_7, grade14d_7, grade15a_7, grade15b_7, grade15c_7, grade16a_7, grade16b_7, grade16c_7), Arrays.asList(courseGrade13a_7, courseGrade14a_7, courseGrade15a_7, courseGrade16a_7), Arrays.asList(test13a, test13b, test13c, test13d, test14a, test14b, test14c, test14d, test15a, test15b, test15c, test16a, test16b, test16c));
         studentTest(student8, Arrays.asList(grade13a_8, grade13b_8, grade13c_8, grade13d_8, grade14a_8, grade14b_8, grade14c_8, grade14d_8, grade15a_8, grade15b_8, grade15c_8, grade16a_8, grade16b_8, grade16c_8), Arrays.asList(courseGrade13a_8, courseGrade14a_8, courseGrade15a_8, courseGrade16a_8), Arrays.asList(test13a, test13b, test13c, test13d, test14a, test14b, test14c, test14d, test15a, test15b, test15c, test16a, test16b, test16c));
 
+        facultyRepo.saveAllAndFlush(Arrays.asList(faculty1, faculty2, faculty3, faculty4, faculty5));
+        syllabusRepo.saveAllAndFlush(Arrays.asList(syllabus1, syllabus2, syllabus3, syllabus4, syllabus5, syllabus6, syllabus7, syllabus8, syllabus9, syllabus10, syllabus11, syllabus12, syllabus13, syllabus14, syllabus15, syllabus16, syllabus17, syllabus18, syllabus19, syllabus20));
+        studentRepo.saveAllAndFlush(Arrays.asList(student1, student2, student3, student4, student5, student6, student7, student8, student9, student10));
+        courseRepo.saveAllAndFlush(Arrays.asList(course1, course2, course3, course4, course5, course6, course7, course8, course9, course10, course11, course12, course13, course14, course15, course16, course17, course18, course19, course20));
+        testRepo.saveAllAndFlush(Arrays.asList(test13a, test13b, test13c, test13d, test14a, test14b, test14c, test14d, test15a, test15b, test15c, test16a, test16b, test16c));
+        problemAnswerRepo.saveAllAndFlush(Arrays.asList(pa13a_1, pa13a_2, pa13a_3, pa13a_4, pa13a_5, pa13b_1, pa13b_2, pa13b_3, pa13b_4, pa13b_5, pa13c_1, pa13c_2, pa13c_3, pa13c_4, pa13c_5, pa13d_1, pa13d_2, pa13d_3, pa13d_4, pa13d_5, pa14a_1, pa14a_2, pa14a_3, pa14a_4, pa14a_5, pa14b_1, pa14b_2, pa14b_3, pa14b_4, pa14b_5, pa14c_1, pa14c_2, pa14c_3, pa14c_4, pa14c_5, pa14d_1, pa14d_2, pa14d_3, pa14d_4, pa14d_5, pa15a_1, pa15a_2, pa15a_3, pa15a_4, pa15a_5, pa15b_1, pa15b_2, pa15b_3, pa15b_4, pa15b_5, pa15c_1, pa15c_2, pa15c_3, pa15c_4, pa15c_5, pa16a_1, pa16a_2, pa16a_3, pa16a_4, pa16a_5, pa16b_1, pa16b_2, pa16b_3, pa16b_4, pa16b_5, pa16c_1, pa16c_2, pa16c_3, pa16c_4, pa16c_5));
+        studentAnswerRepo.saveAllAndFlush(Arrays.asList(sa13a_1_student7, sa13a_2_student7, sa13a_3_student7, sa13a_4_student7, sa13a_5_student7, sa13b_1_student7, sa13b_2_student7, sa13b_3_student7, sa13b_4_student7, sa13b_5_student7, sa13c_1_student7, sa13c_2_student7, sa13c_3_student7, sa13c_4_student7, sa13c_5_student7, sa13d_1_student7, sa13d_2_student7, sa13d_3_student7, sa13d_4_student7, sa13d_5_student7, sa13a_1_student8, sa13a_2_student8, sa13a_3_student8, sa13a_4_student8, sa13a_5_student8, sa13b_1_student8, sa13b_2_student8, sa13b_3_student8, sa13b_4_student8, sa13b_5_student8, sa13c_1_student8, sa13c_2_student8, sa13c_3_student8, sa13c_4_student8, sa13c_5_student8, sa13d_1_student8, sa13d_2_student8, sa13d_3_student8, sa13d_4_student8, sa13d_5_student8,
+                sa14a_1_student7, sa14a_2_student7, sa14a_3_student7, sa14a_4_student7, sa14a_5_student7, sa14b_1_student7, sa14b_2_student7, sa14b_3_student7, sa14b_4_student7, sa14b_5_student7, sa14c_1_student7, sa14c_2_student7, sa14c_3_student7, sa14c_4_student7, sa14c_5_student7, sa14d_1_student7, sa14d_2_student7, sa14d_3_student7, sa14d_4_student7, sa14d_5_student7, sa14a_1_student8, sa14a_2_student8, sa14a_3_student8, sa14a_4_student8, sa14a_5_student8, sa14b_1_student8, sa14b_2_student8, sa14b_3_student8, sa14b_4_student8, sa14b_5_student8, sa14c_1_student8, sa14c_2_student8, sa14c_3_student8, sa14c_4_student8, sa14c_5_student8, sa14d_1_student8, sa14d_2_student8, sa14d_3_student8, sa14d_4_student8, sa14d_5_student8,
+                sa15a_1_student7, sa15a_2_student7, sa15a_3_student7, sa15a_4_student7, sa15a_5_student7, sa15b_1_student7, sa15b_2_student7, sa15b_3_student7, sa15b_4_student7, sa15b_5_student7, sa15c_1_student7, sa15c_2_student7, sa15c_3_student7, sa15c_4_student7, sa15c_5_student7, sa15a_1_student8, sa15a_2_student8, sa15a_3_student8, sa15a_4_student8, sa15a_5_student8, sa15b_1_student8, sa15b_2_student8, sa15b_3_student8, sa15b_4_student8, sa15b_5_student8, sa15c_1_student8, sa15c_2_student8, sa15c_3_student8, sa15c_4_student8, sa15c_5_student8,
+                sa16a_1_student7, sa16a_2_student7, sa16a_3_student7, sa16a_4_student7, sa16a_5_student7, sa16b_1_student7, sa16b_2_student7, sa16b_3_student7, sa16b_4_student7, sa16b_5_student7, sa16c_1_student7, sa16c_2_student7, sa16c_3_student7, sa16c_4_student7, sa16c_5_student7, sa16a_1_student8, sa16a_2_student8, sa16a_3_student8, sa16a_4_student8, sa16a_5_student8, sa16b_1_student8, sa16b_2_student8, sa16b_3_student8, sa16b_4_student8, sa16b_5_student8, sa16c_1_student8, sa16c_2_student8, sa16c_3_student8, sa16c_4_student8, sa16c_5_student8));
+        submissionRepo.saveAllAndFlush(Arrays.asList(submission13a_7, submission13a_8, submission13b_7, submission13b_8, submission13c_7, submission13c_8, submission13d_7, submission13d_8, submission14a_7, submission14a_8, submission14b_7, submission14b_8, submission14c_7, submission14c_8, submission14d_7, submission14d_8, submission15a_7, submission15a_8, submission15b_7, submission15b_8, submission15c_7, submission15c_8, submission16a_7, submission16a_8, submission16b_7, submission16b_8, submission16c_7, submission16c_8));
+        gradeRepo.saveAllAndFlush(Arrays.asList(grade13a_7, grade13b_7, grade13c_7, grade13d_7, grade14a_7, grade14b_7, grade14c_7, grade14d_7, grade15a_7, grade15b_7, grade15c_7, grade16a_7, grade16b_7, grade16c_7, grade13a_8, grade13b_8, grade13c_8, grade13d_8, grade14a_8, grade14b_8, grade14c_8, grade14d_8, grade15a_8, grade15b_8, grade15c_8, grade16a_8, grade16b_8, grade16c_8));
+        courseGradeRepo.saveAllAndFlush(Arrays.asList(courseGrade13a_7, courseGrade14a_7, courseGrade15a_7, courseGrade16a_7, courseGrade13a_8, courseGrade14a_8, courseGrade15a_8, courseGrade16a_8));
+        feedbackRepo.saveAllAndFlush(Arrays.asList(feedback13a_7, feedback13a_8, feedback13b_7, feedback13b_8, feedback13c_7, feedback13c_8, feedback13d_7, feedback13d_8, feedback14a_7, feedback14a_8, feedback14b_7, feedback14b_8, feedback14c_7, feedback14c_8, feedback14d_7, feedback14d_8, feedback15a_7, feedback15a_8, feedback15b_7, feedback15b_8, feedback15c_7, feedback15c_8, feedback16a_7, feedback16a_8, feedback16b_7, feedback16b_8, feedback16c_7, feedback16c_8));
     }
 }
