@@ -1,11 +1,10 @@
 package com.project.education_app.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.data.annotation.CreatedDate;
 
 import java.sql.Timestamp;
@@ -14,12 +13,14 @@ import java.util.Date;
 
 @Entity
 @NoArgsConstructor
-@Data
+@Getter
+@Setter
 public class Comment {
     @Id
     @GeneratedValue
     private Long id;
 
+    @Column(length = 700)
     private String content;
 
     @ManyToOne

@@ -2,7 +2,9 @@ package com.project.education_app.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.data.annotation.CreatedDate;
 
 import java.sql.Timestamp;
@@ -13,7 +15,8 @@ import java.util.List;
 
 @Entity
 @NoArgsConstructor
-@Data
+@Getter
+@Setter
 public class Submission {
     @Id
     @GeneratedValue
@@ -21,13 +24,13 @@ public class Submission {
 
     private String content;
 
-    @OneToMany(mappedBy = "submission", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "submission")
     private List<StudentAnswer> studentAnswers = new ArrayList<>();
 
     @OneToOne(mappedBy = "submission")
     private Grade grade;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     private Student student;
 
     @OneToOne(mappedBy = "submission")

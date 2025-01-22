@@ -2,11 +2,14 @@ package com.project.education_app.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
 @NoArgsConstructor
-@Data
+@Getter
+@Setter
 public class Lesson {
     @Id
     @GeneratedValue
@@ -14,6 +17,7 @@ public class Lesson {
 
     private String title;
 
+    @Column(length = 700)
     private String content;
 
     @ManyToOne

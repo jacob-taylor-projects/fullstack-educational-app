@@ -2,7 +2,9 @@ package com.project.education_app.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 import org.springframework.data.annotation.CreatedDate;
 
 import java.sql.Timestamp;
@@ -11,7 +13,8 @@ import java.util.Date;
 
 @Entity
 @NoArgsConstructor
-@Data
+@Getter
+@Setter
 public class Grade {
     @Id
     @GeneratedValue
@@ -22,13 +25,13 @@ public class Grade {
     @CreatedDate
     private Timestamp dateGraded=Timestamp.valueOf(LocalDateTime.now());
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     private Student student;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     private Faculty teacher;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.EAGER)
     private Course course;
 
     @OneToOne

@@ -98,6 +98,27 @@ public class Assignment1to4Seeder implements CommandLineRunner {
         //Course 1 Unit 1 Assignment
         // Creating the assignment
         Assignment assignment = createAssignment("Variables Assignment", faculty1, Date.from(LocalDate.of(2024, 12, 31).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+        Assignment assignment2 = createAssignment("Data Types Assignment", faculty1, Date.from(LocalDate.of(2025, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+        Assignment assignment3 = createAssignment("Control Structures Assignment", faculty1, Date.from(LocalDate.of(2025, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+        Assignment assignment4 = createAssignment("Functions Assignment", faculty1, Date.from(LocalDate.of(2025, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+        Assignment assignment5 = createAssignment("Modules Assignment", faculty1, Date.from(LocalDate.of(2025, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+        Assignment assignment6 = createAssignment("Libraries Assignment", faculty1, Date.from(LocalDate.of(2025, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+        Assignment assignment2_1 = createAssignment("Arrays Assignment", faculty2, Date.from(LocalDate.of(2025, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+        Assignment assignment2_2 = createAssignment("Linked Lists Assignment", faculty2, Date.from(LocalDate.of(2025, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+        Assignment assignment2_3 = createAssignment("Stacks Assignment", faculty2, Date.from(LocalDate.of(2025, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+        Assignment assignment2_4 = createAssignment("Queues Assignment", faculty2, Date.from(LocalDate.of(2025, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+        Assignment assignment2_5 = createAssignment("Trees Assignment", faculty2, Date.from(LocalDate.of(2025, 9, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+        Assignment assignment2_6 = createAssignment("Graphs Assignment", faculty2, Date.from(LocalDate.of(2025, 10, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+        Assignment assignment3_1 = createAssignment("Sorting Assignment", faculty3, Date.from(LocalDate.of(2025, 11, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus3, false);
+        Assignment assignment3_2 = createAssignment("Searching Assignment", faculty3, Date.from(LocalDate.of(2025, 12, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus3, false);
+        Assignment assignment3_3 = createAssignment("Graph Algorithms Assignment", faculty3, Date.from(LocalDate.of(2026, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus3, false);
+        Assignment assignment3_4 = createAssignment("Dynamic Programming Assignment", faculty3, Date.from(LocalDate.of(2026, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus3, false);
+        Assignment assignment4_1 = createAssignment("Relational Databases Assignment", faculty4, Date.from(LocalDate.of(2026, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus4, false);
+        Assignment assignment4_2 = createAssignment("SQL Assignment", faculty4, Date.from(LocalDate.of(2026, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus4, false);
+        Assignment assignment4_3 = createAssignment("Transactions Assignment", faculty4, Date.from(LocalDate.of(2026, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus4, false);
+        Assignment assignment4_4 = createAssignment("Database Design Assignment", faculty4, Date.from(LocalDate.of(2026, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus4, false);
+        assignmentRepo.saveAllAndFlush(Arrays.asList(assignment, assignment2, assignment3, assignment4, assignment5, assignment6, assignment2_1, assignment2_2, assignment2_3, assignment2_4, assignment2_5, assignment2_6, assignment3_1, assignment3_2, assignment3_3, assignment3_4, assignment4_1, assignment4_2, assignment4_3, assignment4_4));
+
         addStudentToAssignment(assignment, student1);
         addStudentToAssignment(assignment, student2);
 
@@ -129,7 +150,7 @@ public class Assignment1to4Seeder implements CommandLineRunner {
         //Course 1 Unit 2 Assignment
 
         // Creating the assignment with the due date specified inline
-        Assignment assignment2 = createAssignment("Data Types Assignment", faculty1, Date.from(LocalDate.of(2025, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+
         addStudentToAssignment(assignment2, student1);
         addStudentToAssignment(assignment2, student2);
 
@@ -159,7 +180,7 @@ public class Assignment1to4Seeder implements CommandLineRunner {
         System.out.println("Assignment for 'Data Types' unit created with 10 problem answers and due date " + Date.from(LocalDate.of(2025, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()));
 
         // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment3 = createAssignment("Control Structures Assignment", faculty1, Date.from(LocalDate.of(2025, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+
         addStudentToAssignment(assignment3, student1);
         addStudentToAssignment(assignment3, student2);
 
@@ -188,7 +209,7 @@ public class Assignment1to4Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Control Structures' unit created with 10 problem answers, due date, faculty, and syllabus.");
         // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment4 = createAssignment("Functions Assignment", faculty1, Date.from(LocalDate.of(2025, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+
         addStudentToAssignment(assignment4, student1);
         addStudentToAssignment(assignment4, student2);
 
@@ -213,7 +234,7 @@ public class Assignment1to4Seeder implements CommandLineRunner {
         addAssignmentToProblemAnswer(pa_1_4_5, assignment4);
         addProblemAnswerToAssignment(assignment4, pa_1_4_5);
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment5 = createAssignment("Modules Assignment", faculty1, Date.from(LocalDate.of(2025, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+
         addStudentToAssignment(assignment5, student1);
         addStudentToAssignment(assignment5, student2);
 
@@ -242,7 +263,7 @@ public class Assignment1to4Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Modules' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment6 = createAssignment("Libraries Assignment", faculty1, Date.from(LocalDate.of(2025, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus1, false);
+
         addStudentToAssignment(assignment6, student1);
         addStudentToAssignment(assignment6, student2);
 
@@ -272,7 +293,7 @@ public class Assignment1to4Seeder implements CommandLineRunner {
         System.out.println("Assignment for 'Libraries' unit created with 10 problem answers, due date, faculty, and syllabus.");
 
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment2_1 = createAssignment("Arrays Assignment", faculty2, Date.from(LocalDate.of(2025, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+
         addStudentToAssignment(assignment2_1, student1);
         addStudentToAssignment(assignment2_1, student2);
 
@@ -301,7 +322,7 @@ public class Assignment1to4Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Arrays' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment2_2 = createAssignment("Linked Lists Assignment", faculty2, Date.from(LocalDate.of(2025, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+
         addStudentToAssignment(assignment2_2, student1);
         addStudentToAssignment(assignment2_2, student2);
 
@@ -330,7 +351,7 @@ public class Assignment1to4Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Linked Lists' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment2_3 = createAssignment("Stacks Assignment", faculty2, Date.from(LocalDate.of(2025, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+
         addStudentToAssignment(assignment2_3, student1);
         addStudentToAssignment(assignment2_3, student2);
 
@@ -359,7 +380,7 @@ public class Assignment1to4Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Stacks' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment2_4 = createAssignment("Queues Assignment", faculty2, Date.from(LocalDate.of(2025, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+
         addStudentToAssignment(assignment2_4, student1);
         addStudentToAssignment(assignment2_4, student2);
 
@@ -388,7 +409,7 @@ public class Assignment1to4Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Queues' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment2_5 = createAssignment("Trees Assignment", faculty2, Date.from(LocalDate.of(2025, 9, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+
         addStudentToAssignment(assignment2_5, student1);
         addStudentToAssignment(assignment2_5, student2);
 
@@ -417,7 +438,7 @@ public class Assignment1to4Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Trees' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment2_6 = createAssignment("Graphs Assignment", faculty2, Date.from(LocalDate.of(2025, 10, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus2, false);
+
         addStudentToAssignment(assignment2_6, student1);
         addStudentToAssignment(assignment2_6, student2);
 
@@ -446,7 +467,7 @@ public class Assignment1to4Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Graphs' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment3_1 = createAssignment("Sorting Assignment", faculty3, Date.from(LocalDate.of(2025, 11, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus3, false);
+
         addStudentToAssignment(assignment3_1, student1);
         addStudentToAssignment(assignment3_1, student2);
 
@@ -475,7 +496,7 @@ public class Assignment1to4Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Sorting' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment3_2 = createAssignment("Searching Assignment", faculty3, Date.from(LocalDate.of(2025, 12, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus3, false);
+
         addStudentToAssignment(assignment3_2, student1);
         addStudentToAssignment(assignment3_2, student2);
 
@@ -504,7 +525,7 @@ public class Assignment1to4Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Searching' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment3_3 = createAssignment("Graph Algorithms Assignment", faculty3, Date.from(LocalDate.of(2026, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus3, false);
+
         addStudentToAssignment(assignment3_3, student1);
         addStudentToAssignment(assignment3_3, student2);
 
@@ -533,7 +554,7 @@ public class Assignment1to4Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Graph Algorithms' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment3_4 = createAssignment("Dynamic Programming Assignment", faculty3, Date.from(LocalDate.of(2026, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus3, false);
+
         addStudentToAssignment(assignment3_4, student1);
         addStudentToAssignment(assignment3_4, student2);
 
@@ -562,7 +583,7 @@ public class Assignment1to4Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Dynamic Programming' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment4_1 = createAssignment("Relational Databases Assignment", faculty4, Date.from(LocalDate.of(2026, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus4, false);
+
         addStudentToAssignment(assignment4_1, student1);
         addStudentToAssignment(assignment4_1, student2);
 
@@ -591,7 +612,7 @@ public class Assignment1to4Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Relational Databases' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment4_2 = createAssignment("SQL Assignment", faculty4, Date.from(LocalDate.of(2026, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus4, false);
+
         addStudentToAssignment(assignment4_2, student1);
         addStudentToAssignment(assignment4_2, student2);
 
@@ -620,7 +641,7 @@ public class Assignment1to4Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'SQL' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment4_3 = createAssignment("Transactions Assignment", faculty4, Date.from(LocalDate.of(2026, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus4, false);
+
         addStudentToAssignment(assignment4_3, student1);
         addStudentToAssignment(assignment4_3, student2);
 
@@ -649,7 +670,6 @@ public class Assignment1to4Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Transactions' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment4_4 = createAssignment("Database Design Assignment", faculty4, Date.from(LocalDate.of(2026, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus4, false);
         addStudentToAssignment(assignment4_4, student1);
         addStudentToAssignment(assignment4_4, student2);
 
@@ -674,725 +694,563 @@ public class Assignment1to4Seeder implements CommandLineRunner {
         addAssignmentToProblemAnswer(pa_4_4_5, assignment4_4);
         addProblemAnswerToAssignment(assignment4_4, pa_4_4_5);
 
+        problemAnswerRepo.saveAllAndFlush(Arrays.asList(pa1_1_1, pa1_1_2, pa1_1_3, pa1_1_4, pa1_1_5, pa_1_2_1, pa_1_2_2, pa_1_2_3, pa_1_2_4, pa_1_2_5, pa_1_3_1, pa_1_3_2, pa_1_3_3, pa_1_3_4, pa_1_3_5, pa_1_4_1, pa_1_4_2, pa_1_4_3, pa_1_4_4, pa_1_4_5, pa_1_5_1, pa_1_5_2, pa_1_5_3, pa_1_5_4, pa_1_5_5, pa_1_6_1, pa_1_6_2, pa_1_6_3, pa_1_6_4, pa_1_6_5, pa_2_1_1, pa_2_1_2, pa_2_1_3, pa_2_1_4, pa_2_1_5, pa_2_2_1, pa_2_2_2, pa_2_2_3, pa_2_2_4, pa_2_2_5, pa_2_3_1, pa_2_3_2, pa_2_3_3, pa_2_3_4, pa_2_3_5, pa_2_4_1, pa_2_4_2, pa_2_4_3, pa_2_4_4, pa_2_4_5, pa_2_5_1, pa_2_5_2, pa_2_5_3, pa_2_5_4, pa_2_5_5, pa_2_6_1, pa_2_6_2, pa_2_6_3, pa_2_6_4, pa_2_6_5, pa_3_1_1, pa_3_1_2, pa_3_1_3, pa_3_1_4, pa_3_1_5, pa_3_2_1, pa_3_2_2, pa_3_2_3, pa_3_2_4, pa_3_2_5, pa_3_3_1, pa_3_3_2, pa_3_3_3, pa_3_3_4, pa_3_3_5, pa_3_4_1, pa_3_4_2, pa_3_4_3, pa_3_4_4, pa_3_4_5, pa_4_1_1, pa_4_1_2, pa_4_1_3, pa_4_1_4, pa_4_1_5, pa_4_2_1, pa_4_2_2, pa_4_2_3, pa_4_2_4, pa_4_2_5, pa_4_3_1, pa_4_3_2, pa_4_3_3, pa_4_3_4, pa_4_3_5, pa_4_4_1, pa_4_4_2, pa_4_4_3, pa_4_4_4, pa_4_4_5));
 
         // Creating StudentAnswer instances for student1
         StudentAnswer sa1_1_1_student1 = createStudentAnswer(student1, pa1_1_1, "A variable in programming is a storage location identified by a name that holds data.");
-        addStudentAnswerToProblemAnswer(pa1_1_1, sa1_1_1_student1);
 
         StudentAnswer sa1_1_2_student1 = createStudentAnswer(student1, pa1_1_2, "x = 5");
-        addStudentAnswerToProblemAnswer(pa1_1_2, sa1_1_2_student1);
-
         StudentAnswer sa1_1_3_student1 = createStudentAnswer(student1, pa1_1_3, "Variables store and manipulate data.");
-        addStudentAnswerToProblemAnswer(pa1_1_3, sa1_1_3_student1);
-
         StudentAnswer sa1_1_4_student1 = createStudentAnswer(student1, pa1_1_4, "Reassign with a new value: x = 10.");
-        addStudentAnswerToProblemAnswer(pa1_1_4, sa1_1_4_student1);
-
         StudentAnswer sa1_1_5_student1 = createStudentAnswer(student1, pa1_1_5, "Start with a letter or underscore, case-sensitive.");
-        addStudentAnswerToProblemAnswer(pa1_1_5, sa1_1_5_student1);
-
 
 // Creating StudentAnswer instances for student2
         StudentAnswer sa1_1_1_student2 = createStudentAnswer(student2, pa1_1_1, "A variable holds data that can be changed.");
-        addStudentAnswerToProblemAnswer(pa1_1_1, sa1_1_1_student2);
-
         StudentAnswer sa1_1_2_student2 = createStudentAnswer(student2, pa1_1_2, "y = 10");
-        addStudentAnswerToProblemAnswer(pa1_1_2, sa1_1_2_student2);
-
         StudentAnswer sa1_1_3_student2 = createStudentAnswer(student2, pa1_1_3, "Variables are key for data manipulation.");
-        addStudentAnswerToProblemAnswer(pa1_1_3, sa1_1_3_student2);
-
         StudentAnswer sa1_1_4_student2 = createStudentAnswer(student2, pa1_1_4, "Reassign it, e.g., x = 20.");
-        addStudentAnswerToProblemAnswer(pa1_1_4, sa1_1_4_student2);
-
         StudentAnswer sa1_1_5_student2 = createStudentAnswer(student2, pa1_1_5, "Names must start with a letter or underscore.");
-        addStudentAnswerToProblemAnswer(pa1_1_5, sa1_1_5_student2);
-
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers.");
 // Creating StudentAnswer instances for student1
         StudentAnswer sa1_2_1_student1 = createStudentAnswer(student1, pa_1_2_1, "The primary data types in Python are integers, floats, strings, and booleans.");
-        addStudentAnswerToProblemAnswer(pa_1_2_1, sa1_2_1_student1);
-
         StudentAnswer sa1_2_2_student1 = createStudentAnswer(student1, pa_1_2_2, "An integer is defined by assigning a whole number, like x = 10.");
-        addStudentAnswerToProblemAnswer(pa_1_2_2, sa1_2_2_student1);
-
         StudentAnswer sa1_2_3_student1 = createStudentAnswer(student1, pa_1_2_3, "An integer is a whole number, a float includes a decimal point, like 3.14.");
-        addStudentAnswerToProblemAnswer(pa_1_2_3, sa1_2_3_student1);
-
         StudentAnswer sa1_2_4_student1 = createStudentAnswer(student1, pa_1_2_4, "Convert a string to an integer using int(), e.g., int(\"10\") converts \"10\" to 10.");
-        addStudentAnswerToProblemAnswer(pa_1_2_4, sa1_2_4_student1);
-
         StudentAnswer sa1_2_5_student1 = createStudentAnswer(student1, pa_1_2_5, "A boolean data type is True or False, used in conditionals.");
-        addStudentAnswerToProblemAnswer(pa_1_2_5, sa1_2_5_student1);
-
-
 // Creating StudentAnswer instances for student2
         StudentAnswer sa1_2_1_student2 = createStudentAnswer(student2, pa_1_2_1, "The main data types are integers, floats, strings, and booleans.");
-        addStudentAnswerToProblemAnswer(pa_1_2_1, sa1_2_1_student2);
-
         StudentAnswer sa1_2_2_student2 = createStudentAnswer(student2, pa_1_2_2, "Define an integer by assigning a whole number, like x = 20.");
-        addStudentAnswerToProblemAnswer(pa_1_2_2, sa1_2_2_student2);
-
         StudentAnswer sa1_2_3_student2 = createStudentAnswer(student2, pa_1_2_3, "Integers are whole numbers, floats have decimals, like 2.71.");
-        addStudentAnswerToProblemAnswer(pa_1_2_3, sa1_2_3_student2);
-
         StudentAnswer sa1_2_4_student2 = createStudentAnswer(student2, pa_1_2_4, "Use int() to convert strings to integers, like int(\"20\") converts \"20\" to 20.");
-        addStudentAnswerToProblemAnswer(pa_1_2_4, sa1_2_4_student2);
-
         StudentAnswer sa1_2_5_student2 = createStudentAnswer(student2, pa_1_2_5, "Boolean data types are True or False, used in conditionals.");
-        addStudentAnswerToProblemAnswer(pa_1_2_5, sa1_2_5_student2);
+
 
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment2.");
 // Creating StudentAnswer instances for student1
+        // Creating StudentAnswer instances for student1
         StudentAnswer sa1_3_1_student1 = createStudentAnswer(student1, pa_1_3_1, "Control structures include loops and conditionals to control flow.");
-        addStudentAnswerToProblemAnswer(pa_1_3_1, sa1_3_1_student1);
-
         StudentAnswer sa1_3_2_student1 = createStudentAnswer(student1, pa_1_3_2, "for i in range(5): print(i)");
-        addStudentAnswerToProblemAnswer(pa_1_3_2, sa1_3_2_student1);
-
         StudentAnswer sa1_3_3_student1 = createStudentAnswer(student1, pa_1_3_3, "For loops iterate over elements, while loops repeat as long as condition is true.");
-        addStudentAnswerToProblemAnswer(pa_1_3_3, sa1_3_3_student1);
-
         StudentAnswer sa1_3_4_student1 = createStudentAnswer(student1, pa_1_3_4, "x = 0; while x < 5: print(x); x += 1");
-        addStudentAnswerToProblemAnswer(pa_1_3_4, sa1_3_4_student1);
-
         StudentAnswer sa1_3_5_student1 = createStudentAnswer(student1, pa_1_3_5, "Conditional statements include if, elif, else for decision-making.");
-        addStudentAnswerToProblemAnswer(pa_1_3_5, sa1_3_5_student1);
-
 
 // Creating StudentAnswer instances for student2
         StudentAnswer sa1_3_1_student2 = createStudentAnswer(student2, pa_1_3_1, "Control structures are constructs like loops and conditionals.");
-        addStudentAnswerToProblemAnswer(pa_1_3_1, sa1_3_1_student2);
-
         StudentAnswer sa1_3_2_student2 = createStudentAnswer(student2, pa_1_3_2, "for i in range(3): print(i)");
-        addStudentAnswerToProblemAnswer(pa_1_3_2, sa1_3_2_student2);
-
         StudentAnswer sa1_3_3_student2 = createStudentAnswer(student2, pa_1_3_3, "For loops iterate over lists, while loops run while a condition is true.");
-        addStudentAnswerToProblemAnswer(pa_1_3_3, sa1_3_3_student2);
-
         StudentAnswer sa1_3_4_student2 = createStudentAnswer(student2, pa_1_3_4, "x = 0; while x < 3: print(x); x += 1");
-        addStudentAnswerToProblemAnswer(pa_1_3_4, sa1_3_4_student2);
-
         StudentAnswer sa1_3_5_student2 = createStudentAnswer(student2, pa_1_3_5, "Conditionals like if, elif, else allow decision-making in code.");
-        addStudentAnswerToProblemAnswer(pa_1_3_5, sa1_3_5_student2);
-
 
 // Output for confirmation
-        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment3.");
+        System.out.println("Student answers created for both student1 and student2 for all 10 problem answers in assignment3.");
+
 // Creating StudentAnswer instances for student1
         StudentAnswer sa1_4_1_student1 = createStudentAnswer(student1, pa_1_4_1, "A function is a block of code for a specific task, takes inputs, and returns output.");
-        addStudentAnswerToProblemAnswer(pa_1_4_1, sa1_4_1_student1);
-
         StudentAnswer sa1_4_2_student1 = createStudentAnswer(student1, pa_1_4_2, "def greet(): print('Hello, world!')");
-        addStudentAnswerToProblemAnswer(pa_1_4_2, sa1_4_2_student1);
-
         StudentAnswer sa1_4_3_student1 = createStudentAnswer(student1, pa_1_4_3, "Parameters are placeholders in function definitions for input values.");
-        addStudentAnswerToProblemAnswer(pa_1_4_3, sa1_4_3_student1);
-
         StudentAnswer sa1_4_4_student1 = createStudentAnswer(student1, pa_1_4_4, "Call a function using its name followed by parentheses, e.g., greet().");
-        addStudentAnswerToProblemAnswer(pa_1_4_4, sa1_4_4_student1);
-
         StudentAnswer sa1_4_5_student1 = createStudentAnswer(student1, pa_1_4_5, "Parameters are in definitions, arguments are actual values passed.");
-        addStudentAnswerToProblemAnswer(pa_1_4_5, sa1_4_5_student1);
-
 
 // Creating StudentAnswer instances for student2
         StudentAnswer sa1_4_1_student2 = createStudentAnswer(student2, pa_1_4_1, "A function is a block of code that takes inputs and returns an output.");
-        addStudentAnswerToProblemAnswer(pa_1_4_1, sa1_4_1_student2);
-
         StudentAnswer sa1_4_2_student2 = createStudentAnswer(student2, pa_1_4_2, "def greet(): print('Hello!')");
-        addStudentAnswerToProblemAnswer(pa_1_4_2, sa1_4_2_student2);
-
         StudentAnswer sa1_4_3_student2 = createStudentAnswer(student2, pa_1_4_3, "Parameters are placeholders for input values in function definitions.");
-        addStudentAnswerToProblemAnswer(pa_1_4_3, sa1_4_3_student2);
-
         StudentAnswer sa1_4_4_student2 = createStudentAnswer(student2, pa_1_4_4, "Call a function with its name followed by parentheses, e.g., greet().");
-        addStudentAnswerToProblemAnswer(pa_1_4_4, sa1_4_4_student2);
-
         StudentAnswer sa1_4_5_student2 = createStudentAnswer(student2, pa_1_4_5, "Parameters are in definitions, arguments are values passed to functions.");
-        addStudentAnswerToProblemAnswer(pa_1_4_5, sa1_4_5_student2);
 
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment4.");
 // Creating StudentAnswer instances for student1
+        // Creating StudentAnswer instances for student1
         StudentAnswer sa1_5_1_student1 = createStudentAnswer(student1, pa_1_5_1, "A module in Python is a file with code that defines functions, classes, and variables.");
-        addStudentAnswerToProblemAnswer(pa_1_5_1, sa1_5_1_student1);
-
         StudentAnswer sa1_5_2_student1 = createStudentAnswer(student1, pa_1_5_2, "Import a module using the import keyword, e.g., import math.");
-        addStudentAnswerToProblemAnswer(pa_1_5_2, sa1_5_2_student1);
-
         StudentAnswer sa1_5_3_student1 = createStudentAnswer(student1, pa_1_5_3, "Modules improve code organization, reuse, and maintainability.");
-        addStudentAnswerToProblemAnswer(pa_1_5_3, sa1_5_3_student1);
-
         StudentAnswer sa1_5_4_student1 = createStudentAnswer(student1, pa_1_5_4, "Access functions and variables using dot notation, e.g., math.sqrt(16).");
-        addStudentAnswerToProblemAnswer(pa_1_5_4, sa1_5_4_student1);
-
         StudentAnswer sa1_5_5_student1 = createStudentAnswer(student1, pa_1_5_5, "Import specific functions using from keyword, e.g., from math import sqrt.");
-        addStudentAnswerToProblemAnswer(pa_1_5_5, sa1_5_5_student1);
-
 
 // Creating StudentAnswer instances for student2
         StudentAnswer sa1_5_1_student2 = createStudentAnswer(student2, pa_1_5_1, "A module contains Python code for functions, classes, and variables.");
-        addStudentAnswerToProblemAnswer(pa_1_5_1, sa1_5_1_student2);
-
         StudentAnswer sa1_5_2_student2 = createStudentAnswer(student2, pa_1_5_2, "Use the import keyword to import a module, e.g., import math.");
-        addStudentAnswerToProblemAnswer(pa_1_5_2, sa1_5_2_student2);
-
         StudentAnswer sa1_5_3_student2 = createStudentAnswer(student2, pa_1_5_3, "Modules help organize, reuse, and maintain code.");
-        addStudentAnswerToProblemAnswer(pa_1_5_3, sa1_5_3_student2);
-
         StudentAnswer sa1_5_4_student2 = createStudentAnswer(student2, pa_1_5_4, "Access module functions using dot notation, e.g., math.sqrt(16).");
-        addStudentAnswerToProblemAnswer(pa_1_5_4, sa1_5_4_student2);
-
         StudentAnswer sa1_5_5_student2 = createStudentAnswer(student2, pa_1_5_5, "Import specific functions with from keyword, e.g., from math import sqrt.");
-        addStudentAnswerToProblemAnswer(pa_1_5_5, sa1_5_5_student2);
-
 
 // Output for confirmation
-        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment5.");
+        System.out.println("Student answers created for both student1 and student2 for all 10 problem answers in assignment5.");
+
 // Creating StudentAnswer instances for student1
         StudentAnswer sa1_6_1_student1 = createStudentAnswer(student1, pa_1_6_1, "A library is a collection of pre-written code for various tasks.");
-        addStudentAnswerToProblemAnswer(pa_1_6_1, sa1_6_1_student1);
-
         StudentAnswer sa1_6_2_student1 = createStudentAnswer(student1, pa_1_6_2, "Install a library using pip, e.g., pip install requests.");
-        addStudentAnswerToProblemAnswer(pa_1_6_2, sa1_6_2_student1);
-
         StudentAnswer sa1_6_3_student1 = createStudentAnswer(student1, pa_1_6_3, "A module is a single file, while a library is a collection of modules.");
-        addStudentAnswerToProblemAnswer(pa_1_6_3, sa1_6_3_student1);
-
         StudentAnswer sa1_6_4_student1 = createStudentAnswer(student1, pa_1_6_4, "Import a library using the import keyword, e.g., import requests.");
-        addStudentAnswerToProblemAnswer(pa_1_6_4, sa1_6_4_student1);
-
         StudentAnswer sa1_6_5_student1 = createStudentAnswer(student1, pa_1_6_5, "Popular libraries include NumPy, Pandas, Matplotlib, and requests.");
-        addStudentAnswerToProblemAnswer(pa_1_6_5, sa1_6_5_student1);
-
 
 // Creating StudentAnswer instances for student2
         StudentAnswer sa1_6_1_student2 = createStudentAnswer(student2, pa_1_6_1, "A library contains pre-written code for various functionalities.");
-        addStudentAnswerToProblemAnswer(pa_1_6_1, sa1_6_1_student2);
-
         StudentAnswer sa1_6_2_student2 = createStudentAnswer(student2, pa_1_6_2, "Use pip to install a library, e.g., pip install requests.");
-        addStudentAnswerToProblemAnswer(pa_1_6_2, sa1_6_2_student2);
-
         StudentAnswer sa1_6_3_student2 = createStudentAnswer(student2, pa_1_6_3, "Modules are single files, libraries are collections of modules.");
-        addStudentAnswerToProblemAnswer(pa_1_6_3, sa1_6_3_student2);
-
         StudentAnswer sa1_6_4_student2 = createStudentAnswer(student2, pa_1_6_4, "Import a library with the import keyword, e.g., import requests.");
-        addStudentAnswerToProblemAnswer(pa_1_6_4, sa1_6_4_student2);
-
         StudentAnswer sa1_6_5_student2 = createStudentAnswer(student2, pa_1_6_5, "Popular libraries include NumPy, Pandas, Matplotlib, and requests.");
-        addStudentAnswerToProblemAnswer(pa_1_6_5, sa1_6_5_student2);
-
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment6.");
 // Creating StudentAnswer instances for student1
+        // Creating StudentAnswer instances for student1
         StudentAnswer sa2_1_1_student1 = createStudentAnswer(student1, pa_2_1_1, "An array is a collection of elements stored in contiguous memory locations.");
-        addStudentAnswerToProblemAnswer(pa_2_1_1, sa2_1_1_student1);
-
         StudentAnswer sa2_1_2_student1 = createStudentAnswer(student1, pa_2_1_2, "In Python, use lists or the array module. Example: import array as arr; my_array = arr.array('i', [1, 2, 3, 4, 5]).");
-        addStudentAnswerToProblemAnswer(pa_2_1_2, sa2_1_2_student1);
-
         StudentAnswer sa2_1_3_student1 = createStudentAnswer(student1, pa_2_1_3, "Arrays allow efficient data storage and retrieval, and quick access using indices.");
-        addStudentAnswerToProblemAnswer(pa_2_1_3, sa2_1_3_student1);
-
         StudentAnswer sa2_1_4_student1 = createStudentAnswer(student1, pa_2_1_4, "Access an element using its index. Example: my_array[0] returns the first element.");
-        addStudentAnswerToProblemAnswer(pa_2_1_4, sa2_1_4_student1);
-
         StudentAnswer sa2_1_5_student1 = createStudentAnswer(student1, pa_2_1_5, "Update an element by assigning a new value to the desired index. Example: my_array[0] = 10.");
-        addStudentAnswerToProblemAnswer(pa_2_1_5, sa2_1_5_student1);
-
 
 // Creating StudentAnswer instances for student2
         StudentAnswer sa2_1_1_student2 = createStudentAnswer(student2, pa_2_1_1, "An array is a collection of elements stored contiguously in memory.");
-        addStudentAnswerToProblemAnswer(pa_2_1_1, sa2_1_1_student2);
-
         StudentAnswer sa2_1_2_student2 = createStudentAnswer(student2, pa_2_1_2, "In Python, use lists or the array module. Example: import array as arr; my_array = arr.array('i', [1, 2, 3, 4, 5]).");
-        addStudentAnswerToProblemAnswer(pa_2_1_2, sa2_1_2_student2);
-
         StudentAnswer sa2_1_3_student2 = createStudentAnswer(student2, pa_2_1_3, "Arrays are efficient for data storage and retrieval, providing quick access with indices.");
-        addStudentAnswerToProblemAnswer(pa_2_1_3, sa2_1_3_student2);
-
         StudentAnswer sa2_1_4_student2 = createStudentAnswer(student2, pa_2_1_4, "Access an element by its index. Example: my_array[0] returns the first element.");
-        addStudentAnswerToProblemAnswer(pa_2_1_4, sa2_1_4_student2);
-
         StudentAnswer sa2_1_5_student2 = createStudentAnswer(student2, pa_2_1_5, "Update an element by assigning a new value to the index. Example: my_array[0] = 10.");
-        addStudentAnswerToProblemAnswer(pa_2_1_5, sa2_1_5_student2);
-
 
 // Output for confirmation
-        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment2_1.");
+        System.out.println("Student answers created for both student1 and student2 for all 10 problem answers in assignment2_1.");
+
 // Creating StudentAnswer instances for student1
         StudentAnswer sa2_2_1_student1 = createStudentAnswer(student1, pa_2_2_1, "A linked list is a data structure with nodes that contain data and a reference to the next node.");
-        addStudentAnswerToProblemAnswer(pa_2_2_1, sa2_2_1_student1);
-
         StudentAnswer sa2_2_2_student1 = createStudentAnswer(student1, pa_2_2_2, "A node in a linked list has data and a reference to the next node. Example:\nclass Node:\n    def __init__(self, data):\n        self.data = data\n        self.next = None");
-        addStudentAnswerToProblemAnswer(pa_2_2_2, sa2_2_2_student1);
-
         StudentAnswer sa2_2_3_student1 = createStudentAnswer(student1, pa_2_2_3, "Linked lists allow efficient insertion and deletion, and use memory efficiently.");
-        addStudentAnswerToProblemAnswer(pa_2_2_3, sa2_2_3_student1);
-
         StudentAnswer sa2_2_4_student1 = createStudentAnswer(student1, pa_2_2_4, "To insert at the beginning, create a new node, set its reference to the current head, and update the head to this new node.");
-        addStudentAnswerToProblemAnswer(pa_2_2_4, sa2_2_4_student1);
-
         StudentAnswer sa2_2_5_student1 = createStudentAnswer(student1, pa_2_2_5, "A singly linked list has references to the next node only, while a doubly linked list has references to both the next and previous nodes.");
-        addStudentAnswerToProblemAnswer(pa_2_2_5, sa2_2_5_student1);
-
 
 // Creating StudentAnswer instances for student2
         StudentAnswer sa2_2_1_student2 = createStudentAnswer(student2, pa_2_2_1, "A linked list is a data structure with nodes containing data and a reference to the next node.");
-        addStudentAnswerToProblemAnswer(pa_2_2_1, sa2_2_1_student2);
-
         StudentAnswer sa2_2_2_student2 = createStudentAnswer(student2, pa_2_2_2, "A node has data and a reference to the next node. Example:\nclass Node:\n    def __init__(self, data):\n        self.data = data\n        self.next = None");
-        addStudentAnswerToProblemAnswer(pa_2_2_2, sa2_2_2_student2);
-
         StudentAnswer sa2_2_3_student2 = createStudentAnswer(student2, pa_2_2_3, "Linked lists are efficient for insertion and deletion, and use memory well.");
-        addStudentAnswerToProblemAnswer(pa_2_2_3, sa2_2_3_student2);
-
         StudentAnswer sa2_2_4_student2 = createStudentAnswer(student2, pa_2_2_4, "Insert at the beginning by creating a new node, setting its reference to the head, and updating the head.");
-        addStudentAnswerToProblemAnswer(pa_2_2_4, sa2_2_4_student2);
-
         StudentAnswer sa2_2_5_student2 = createStudentAnswer(student2, pa_2_2_5, "Singly linked lists have next node references, doubly linked lists have next and previous node references.");
-        addStudentAnswerToProblemAnswer(pa_2_2_5, sa2_2_5_student2);
-
 
 // Output for confirmation
-        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment2_2.");
+        System.out.println("Student answers created for both student1 and student2 for all 10 problem answers in assignment2_2.");
+
 // Creating StudentAnswer instances for student1
         StudentAnswer sa2_3_1_student1 = createStudentAnswer(student1, pa_2_3_1, "A stack is a linear data structure following the LIFO principle, where the last element added is the first one removed.");
-        addStudentAnswerToProblemAnswer(pa_2_3_1, sa2_3_1_student1);
-
         StudentAnswer sa2_3_2_student1 = createStudentAnswer(student1, pa_2_3_2, "Implement a stack using a list in Python. Example:\nstack = []\nstack.append(1)\nstack.append(2)\nstack.pop()");
-        addStudentAnswerToProblemAnswer(pa_2_3_2, sa2_3_2_student1);
-
         StudentAnswer sa2_3_3_student1 = createStudentAnswer(student1, pa_2_3_3, "Main operations are push (adding an element), pop (removing the top element), and peek (viewing the top element).");
-        addStudentAnswerToProblemAnswer(pa_2_3_3, sa2_3_3_student1);
-
         StudentAnswer sa2_3_4_student1 = createStudentAnswer(student1, pa_2_3_4, "Check if a stack is empty by verifying if its length is zero. Example:\nif len(stack) == 0: print(\"Stack is empty\")");
-        addStudentAnswerToProblemAnswer(pa_2_3_4, sa2_3_4_student1);
-
         StudentAnswer sa2_3_5_student1 = createStudentAnswer(student1, pa_2_3_5, "The peek operation returns the top element without removing it.");
-        addStudentAnswerToProblemAnswer(pa_2_3_5, sa2_3_5_student1);
-
 
 // Creating StudentAnswer instances for student2
         StudentAnswer sa2_3_1_student2 = createStudentAnswer(student2, pa_2_3_1, "A stack is a linear data structure that uses the LIFO principle, meaning the last element added is the first one to be removed.");
-        addStudentAnswerToProblemAnswer(pa_2_3_1, sa2_3_1_student2);
-
         StudentAnswer sa2_3_2_student2 = createStudentAnswer(student2, pa_2_3_2, "Implement a stack in Python using a list. Example:\nstack = []\nstack.append(1)\nstack.append(2)\nstack.pop()");
-        addStudentAnswerToProblemAnswer(pa_2_3_2, sa2_3_2_student2);
-
         StudentAnswer sa2_3_3_student2 = createStudentAnswer(student2, pa_2_3_3, "Main operations are push (adding an element), pop (removing the top element), and peek (viewing the top element without removing it).");
-        addStudentAnswerToProblemAnswer(pa_2_3_3, sa2_3_3_student2);
-
         StudentAnswer sa2_3_4_student2 = createStudentAnswer(student2, pa_2_3_4, "Check if a stack is empty by checking if its length is zero. Example:\nif len(stack) == 0: print(\"Stack is empty\")");
-        addStudentAnswerToProblemAnswer(pa_2_3_4, sa2_3_4_student2);
-
         StudentAnswer sa2_3_5_student2 = createStudentAnswer(student2, pa_2_3_5, "The peek operation returns the top element without removing it from the stack.");
-        addStudentAnswerToProblemAnswer(pa_2_3_5, sa2_3_5_student2);
 
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment2_3.");
 // Creating StudentAnswer instances for student1
+        // Creating StudentAnswer instances for student1
         StudentAnswer sa2_4_1_student1 = createStudentAnswer(student1, pa_2_4_1, "A queue is a linear data structure following the FIFO principle, where the first element added is the first one removed.");
-        addStudentAnswerToProblemAnswer(pa_2_4_1, sa2_4_1_student1);
-
         StudentAnswer sa2_4_2_student1 = createStudentAnswer(student1, pa_2_4_2, "Implement a queue using collections.deque in Python. Example:\nfrom collections import deque\nqueue = deque()\nqueue.append(1)\nqueue.append(2)\nqueue.popleft()");
-        addStudentAnswerToProblemAnswer(pa_2_4_2, sa2_4_2_student1);
-
         StudentAnswer sa2_4_3_student1 = createStudentAnswer(student1, pa_2_4_3, "Main operations are enqueue (adding an element), dequeue (removing the front element), and peek (viewing the front element).");
-        addStudentAnswerToProblemAnswer(pa_2_4_3, sa2_4_3_student1);
-
         StudentAnswer sa2_4_4_student1 = createStudentAnswer(student1, pa_2_4_4, "Check if a queue is empty by verifying if its length is zero. Example:\nif len(queue) == 0: print(\"Queue is empty\")");
-        addStudentAnswerToProblemAnswer(pa_2_4_4, sa2_4_4_student1);
-
         StudentAnswer sa2_4_5_student1 = createStudentAnswer(student1, pa_2_4_5, "The peek operation returns the front element without removing it.");
-        addStudentAnswerToProblemAnswer(pa_2_4_5, sa2_4_5_student1);
-
 
 // Creating StudentAnswer instances for student2
         StudentAnswer sa2_4_1_student2 = createStudentAnswer(student2, pa_2_4_1, "A queue is a linear data structure that uses the FIFO principle, meaning the first element added is the first one to be removed.");
-        addStudentAnswerToProblemAnswer(pa_2_4_1, sa2_4_1_student2);
-
         StudentAnswer sa2_4_2_student2 = createStudentAnswer(student2, pa_2_4_2, "Implement a queue in Python using collections.deque. Example:\nfrom collections import deque\nqueue = deque()\nqueue.append(1)\nqueue.append(2)\nqueue.popleft()");
-        addStudentAnswerToProblemAnswer(pa_2_4_2, sa2_4_2_student2);
-
         StudentAnswer sa2_4_3_student2 = createStudentAnswer(student2, pa_2_4_3, "Main operations are enqueue (adding an element), dequeue (removing the front element), and peek (viewing the front element without removing it).");
-        addStudentAnswerToProblemAnswer(pa_2_4_3, sa2_4_3_student2);
-
         StudentAnswer sa2_4_4_student2 = createStudentAnswer(student2, pa_2_4_4, "Check if a queue is empty by checking if its length is zero. Example:\nif len(queue) == 0: print(\"Queue is empty\")");
-        addStudentAnswerToProblemAnswer(pa_2_4_4, sa2_4_4_student2);
-
         StudentAnswer sa2_4_5_student2 = createStudentAnswer(student2, pa_2_4_5, "The peek operation returns the front element without removing it from the queue.");
-        addStudentAnswerToProblemAnswer(pa_2_4_5, sa2_4_5_student2);
-
 
 // Output for confirmation
-        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment2_4.");
+        System.out.println("Student answers created for both student1 and student2 for all 10 problem answers in assignment2_4.");
+
 // Creating StudentAnswer instances for student1
         StudentAnswer sa2_5_1_student1 = createStudentAnswer(student1, pa_2_5_1, "A tree is a hierarchical data structure with nodes connected by edges, each having a value and references to child nodes, with a single root node.");
-        addStudentAnswerToProblemAnswer(pa_2_5_1, sa2_5_1_student1);
-
         StudentAnswer sa2_5_2_student1 = createStudentAnswer(student1, pa_2_5_2, "A node in a tree contains a value and references to child nodes. Example:\nclass TreeNode {\n    public TreeNode(Object data) {\n        this.data = data;\n        this.children = new ArrayList<>();\n    }\n}");
-        addStudentAnswerToProblemAnswer(pa_2_5_2, sa2_5_2_student1);
-
         StudentAnswer sa2_5_3_student1 = createStudentAnswer(student1, pa_2_5_3, "Trees allow efficient data organization, making searching, insertion, and deletion faster, and represent hierarchical relationships naturally.");
-        addStudentAnswerToProblemAnswer(pa_2_5_3, sa2_5_3_student1);
-
         StudentAnswer sa2_5_4_student1 = createStudentAnswer(student1, pa_2_5_4, "Perform DFS by starting at the root and exploring branches before backtracking. Example:\ndef dfs(node):\n    if not node:\n        return\n    print(node.data)\n    for child in node.children:\n        dfs(child)");
-        addStudentAnswerToProblemAnswer(pa_2_5_4, sa2_5_4_student1);
-
         StudentAnswer sa2_5_5_student1 = createStudentAnswer(student1, pa_2_5_5, "A binary tree is a type of tree where each node has at most two child nodes: left and right.");
-        addStudentAnswerToProblemAnswer(pa_2_5_5, sa2_5_5_student1);
-
 
 // Creating StudentAnswer instances for student2
         StudentAnswer sa2_5_1_student2 = createStudentAnswer(student2, pa_2_5_1, "A tree is a hierarchical data structure with nodes connected by edges. Each node has a value and references to child nodes, with a single root.");
-        addStudentAnswerToProblemAnswer(pa_2_5_1, sa2_5_1_student2);
-
         StudentAnswer sa2_5_2_student2 = createStudentAnswer(student2, pa_2_5_2, "A node contains a value and references to child nodes. Example:\nclass TreeNode {\n    public TreeNode(Object data) {\n        this.data = data;\n        this.children = new ArrayList<>();\n    }\n}");
-        addStudentAnswerToProblemAnswer(pa_2_5_2, sa2_5_2_student2);
-
         StudentAnswer sa2_5_3_student2 = createStudentAnswer(student2, pa_2_5_3, "Trees allow efficient data organization and manipulation, making searching, insertion, and deletion faster, and represent hierarchical relationships naturally.");
-        addStudentAnswerToProblemAnswer(pa_2_5_3, sa2_5_3_student2);
-
         StudentAnswer sa2_5_4_student2 = createStudentAnswer(student2, pa_2_5_4, "Perform DFS by starting at the root and exploring branches before backtracking. Example:\ndef dfs(node):\n    if not node:\n        return\n    print(node.data)\n    for child in node.children:\n        dfs(child)");
-        addStudentAnswerToProblemAnswer(pa_2_5_4, sa2_5_4_student2);
-
         StudentAnswer sa2_5_5_student2 = createStudentAnswer(student2, pa_2_5_5, "A binary tree is a type of tree where each node has at most two child nodes: left and right.");
-        addStudentAnswerToProblemAnswer(pa_2_5_5, sa2_5_5_student2);
-
 
 // Output for confirmation
-        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment2_5.");
+        System.out.println("Student answers created for both student1 and student2 for all 10 problem answers in assignment2_5.");
+
 // Creating StudentAnswer instances for student1
         StudentAnswer sa2_6_1_student1 = createStudentAnswer(student1, pa_2_6_1, "A graph is a data structure with nodes (vertices) and edges that connect pairs of nodes, representing relationships.");
-        addStudentAnswerToProblemAnswer(pa_2_6_1, sa2_6_1_student1);
-
         StudentAnswer sa2_6_2_student1 = createStudentAnswer(student1, pa_2_6_2, "Represent a graph using an adjacency list, where each node has a list of adjacent nodes. Example:\nclass Graph {\n  public Graph() {\n    this.adj_list = new HashMap<>();\n  }\n}");
-        addStudentAnswerToProblemAnswer(pa_2_6_2, sa2_6_2_student1);
-
         StudentAnswer sa2_6_3_student1 = createStudentAnswer(student1, pa_2_6_3, "Graphs model real-world problems like social networks, transportation networks, and dependencies, efficiently finding shortest paths, detecting cycles, and traversing nodes.");
-        addStudentAnswerToProblemAnswer(pa_2_6_3, sa2_6_3_student1);
-
         StudentAnswer sa2_6_4_student1 = createStudentAnswer(student1, pa_2_6_4, "Perform DFS by starting at a node, exploring branches before backtracking. Example:\ndef dfs(graph, start, visited=None):\n    if visited is None:\n        visited = set()\n    visited.add(start)\n    print(start)\n    for next in graph[start] - visited:\n        dfs(graph, next, visited)");
-        addStudentAnswerToProblemAnswer(pa_2_6_4, sa2_6_4_student1);
-
         StudentAnswer sa2_6_5_student1 = createStudentAnswer(student1, pa_2_6_5, "A directed graph (digraph) has edges with directions, going from one node to another but not necessarily back.");
-        addStudentAnswerToProblemAnswer(pa_2_6_5, sa2_6_5_student1);
-
 
 // Creating StudentAnswer instances for student2
         StudentAnswer sa2_6_1_student2 = createStudentAnswer(student2, pa_2_6_1, "A graph is a data structure with nodes (vertices) and edges that connect pairs of nodes, representing relationships.");
-        addStudentAnswerToProblemAnswer(pa_2_6_1, sa2_6_1_student2);
-
         StudentAnswer sa2_6_2_student2 = createStudentAnswer(student2, pa_2_6_2, "Represent a graph using an adjacency list, where each node has a list of adjacent nodes. Example:\nclass Graph {\n  public Graph() {\n    this.adj_list = new HashMap<>();\n  }\n}");
-        addStudentAnswerToProblemAnswer(pa_2_6_2, sa2_6_2_student2);
-
         StudentAnswer sa2_6_3_student2 = createStudentAnswer(student2, pa_2_6_3, "Graphs model real-world problems like social networks, transportation networks, and dependencies, efficiently finding shortest paths, detecting cycles, and traversing nodes.");
-        addStudentAnswerToProblemAnswer(pa_2_6_3, sa2_6_3_student2);
-
         StudentAnswer sa2_6_4_student2 = createStudentAnswer(student2, pa_2_6_4, "Perform DFS by starting at a node, exploring branches before backtracking. Example:\ndef dfs(graph, start, visited=None):\n    if visited is None:\n        visited = set()\n    visited.add(start)\n    print(start)\n    for next in graph[start] - visited:\n        dfs(graph, next, visited)");
-        addStudentAnswerToProblemAnswer(pa_2_6_4, sa2_6_4_student2);
-
         StudentAnswer sa2_6_5_student2 = createStudentAnswer(student2, pa_2_6_5, "A directed graph (digraph) has edges with directions, going from one node to another but not necessarily back.");
-        addStudentAnswerToProblemAnswer(pa_2_6_5, sa2_6_5_student2);
-
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment2_6.");
 // Creating StudentAnswer instances for student1
+// Creating StudentAnswer instances for student1
         StudentAnswer sa3_1_1_student1 = createStudentAnswer(student1, pa_3_1_1, "Sorting is arranging data in a particular order, typically ascending or descending.");
-        addStudentAnswerToProblemAnswer(pa_3_1_1, sa3_1_1_student1);
-
         StudentAnswer sa3_1_2_student1 = createStudentAnswer(student1, pa_3_1_2, "Bubble sort steps through the list, compares adjacent elements, and swaps them if needed, until the list is sorted.");
-        addStudentAnswerToProblemAnswer(pa_3_1_2, sa3_1_2_student1);
-
         StudentAnswer sa3_1_3_student1 = createStudentAnswer(student1, pa_3_1_3, "The time complexity of bubble sort is O(n^2) in the worst and average cases.");
-        addStudentAnswerToProblemAnswer(pa_3_1_3, sa3_1_3_student1);
-
         StudentAnswer sa3_1_4_student1 = createStudentAnswer(student1, pa_3_1_4, "Merge sort divides the list, recursively sorts each half, and merges the sorted halves.");
-        addStudentAnswerToProblemAnswer(pa_3_1_4, sa3_1_4_student1);
-
         StudentAnswer sa3_1_5_student1 = createStudentAnswer(student1, pa_3_1_5, "The time complexity of merge sort is O(n log n) in all cases.");
-        addStudentAnswerToProblemAnswer(pa_3_1_5, sa3_1_5_student1);
-
 
 // Creating StudentAnswer instances for student2
         StudentAnswer sa3_1_1_student2 = createStudentAnswer(student2, pa_3_1_1, "Sorting arranges data in a particular order, usually ascending or descending.");
-        addStudentAnswerToProblemAnswer(pa_3_1_1, sa3_1_1_student2);
-
         StudentAnswer sa3_1_2_student2 = createStudentAnswer(student2, pa_3_1_2, "Bubble sort compares adjacent elements, swapping them if needed, until the list is sorted.");
-        addStudentAnswerToProblemAnswer(pa_3_1_2, sa3_1_2_student2);
-
         StudentAnswer sa3_1_3_student2 = createStudentAnswer(student2, pa_3_1_3, "Bubble sort has a time complexity of O(n^2) in the worst and average cases.");
-        addStudentAnswerToProblemAnswer(pa_3_1_3, sa3_1_3_student2);
-
         StudentAnswer sa3_1_4_student2 = createStudentAnswer(student2, pa_3_1_4, "Merge sort divides the list, sorts each half, and merges the sorted halves.");
-        addStudentAnswerToProblemAnswer(pa_3_1_4, sa3_1_4_student2);
-
         StudentAnswer sa3_1_5_student2 = createStudentAnswer(student2, pa_3_1_5, "Merge sort has a time complexity of O(n log n) in all cases.");
-        addStudentAnswerToProblemAnswer(pa_3_1_5, sa3_1_5_student2);
-
 
 // Output for confirmation
-        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment3_1.");
+        System.out.println("Student answers created for both student1 and student2 for all 10 problem answers in assignment3_1.");
+
 // Creating StudentAnswer instances for student1
         StudentAnswer sa3_2_1_student1 = createStudentAnswer(student1, pa_3_2_1, "Searching is the process of finding a specific element or value within a data structure.");
-        addStudentAnswerToProblemAnswer(pa_3_2_1, sa3_2_1_student1);
-
         StudentAnswer sa3_2_2_student1 = createStudentAnswer(student1, pa_3_2_2, "Linear search sequentially checks each element until the desired element is found or the list ends.");
-        addStudentAnswerToProblemAnswer(pa_3_2_2, sa3_2_2_student1);
-
         StudentAnswer sa3_2_3_student1 = createStudentAnswer(student1, pa_3_2_3, "The time complexity of linear search is O(n), where n is the number of elements in the list.");
-        addStudentAnswerToProblemAnswer(pa_3_2_3, sa3_2_3_student1);
-
         StudentAnswer sa3_2_4_student1 = createStudentAnswer(student1, pa_3_2_4, "Binary search divides the sorted list in half, compares the target value to the middle element, and narrows the search to the appropriate half.");
-        addStudentAnswerToProblemAnswer(pa_3_2_4, sa3_2_4_student1);
-
         StudentAnswer sa3_2_5_student1 = createStudentAnswer(student1, pa_3_2_5, "The time complexity of binary search is O(log n), where n is the number of elements in the sorted list.");
-        addStudentAnswerToProblemAnswer(pa_3_2_5, sa3_2_5_student1);
-
 
 // Creating StudentAnswer instances for student2
         StudentAnswer sa3_2_1_student2 = createStudentAnswer(student2, pa_3_2_1, "Searching is the process of finding a specific element or value within a data structure.");
-        addStudentAnswerToProblemAnswer(pa_3_2_1, sa3_2_1_student2);
-
         StudentAnswer sa3_2_2_student2 = createStudentAnswer(student2, pa_3_2_2, "Linear search checks each element sequentially until the desired element is found or the list ends.");
-        addStudentAnswerToProblemAnswer(pa_3_2_2, sa3_2_2_student2);
-
         StudentAnswer sa3_2_3_student2 = createStudentAnswer(student2, pa_3_2_3, "Linear search has a time complexity of O(n), where n is the number of elements in the list.");
-        addStudentAnswerToProblemAnswer(pa_3_2_3, sa3_2_3_student2);
-
         StudentAnswer sa3_2_4_student2 = createStudentAnswer(student2, pa_3_2_4, "Binary search works by dividing the sorted list in half, comparing the target value to the middle element, and narrowing the search accordingly.");
-        addStudentAnswerToProblemAnswer(pa_3_2_4, sa3_2_4_student2);
-
         StudentAnswer sa3_2_5_student2 = createStudentAnswer(student2, pa_3_2_5, "Binary search has a time complexity of O(log n), where n is the number of elements in the sorted list.");
-        addStudentAnswerToProblemAnswer(pa_3_2_5, sa3_2_5_student2);
-
 
 // Output for confirmation
-        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment3_2.");
+        System.out.println("Student answers created for both student1 and student2 for all 10 problem answers in assignment3_2.");
+
 // Creating StudentAnswer instances for student1
         StudentAnswer sa3_3_1_student1 = createStudentAnswer(student1, pa_3_3_1, "A graph algorithm is a procedure or formula used to solve problems related to graph theory, such as traversal, searching, and finding shortest paths.");
-        addStudentAnswerToProblemAnswer(pa_3_3_1, sa3_3_1_student1);
-
         StudentAnswer sa3_3_2_student1 = createStudentAnswer(student1, pa_3_3_2, "Depth-first search (DFS) explores a graph by going as deep as possible along each branch before backtracking. It uses a stack to keep track of the nodes to be visited.");
-        addStudentAnswerToProblemAnswer(pa_3_3_2, sa3_3_2_student1);
-
         StudentAnswer sa3_3_3_student1 = createStudentAnswer(student1, pa_3_3_3, "Breadth-first search (BFS) explores a graph by visiting all the neighbors of a node before moving on to the next level of neighbors. It uses a queue to keep track of the nodes to be visited.");
-        addStudentAnswerToProblemAnswer(pa_3_3_3, sa3_3_3_student1);
-
         StudentAnswer sa3_3_4_student1 = createStudentAnswer(student1, pa_3_3_4, "The time complexity of both DFS and BFS is O(V + E), where V is the number of vertices and E is the number of edges in the graph.");
-        addStudentAnswerToProblemAnswer(pa_3_3_4, sa3_3_4_student1);
-
         StudentAnswer sa3_3_5_student1 = createStudentAnswer(student1, pa_3_3_5, "Here is a Python implementation of DFS:\n```python\ndef dfs(graph, start, visited=None):\n    if visited is None:\n        visited = set()\n    visited.add(start)\n    print(start)\n    for next in graph[start] - visited:\n        dfs(graph, next, visited)\n    return visited\n```");
-        addStudentAnswerToProblemAnswer(pa_3_3_5, sa3_3_5_student1);
-
 
 // Creating StudentAnswer instances for student2
         StudentAnswer sa3_3_1_student2 = createStudentAnswer(student2, pa_3_3_1, "A graph algorithm is a procedure or formula used to solve problems related to graph theory, such as traversal, searching, and finding shortest paths.");
-        addStudentAnswerToProblemAnswer(pa_3_3_1, sa3_3_1_student2);
-
         StudentAnswer sa3_3_2_student2 = createStudentAnswer(student2, pa_3_3_2, "Depth-first search (DFS) explores a graph by going as deep as possible along each branch before backtracking. It uses a stack to keep track of the nodes to be visited.");
-        addStudentAnswerToProblemAnswer(pa_3_3_2, sa3_3_2_student2);
-
         StudentAnswer sa3_3_3_student2 = createStudentAnswer(student2, pa_3_3_3, "Breadth-first search (BFS) explores a graph by visiting all the neighbors of a node before moving on to the next level of neighbors. It uses a queue to keep track of the nodes to be visited.");
-        addStudentAnswerToProblemAnswer(pa_3_3_3, sa3_3_3_student2);
-
         StudentAnswer sa3_3_4_student2 = createStudentAnswer(student2, pa_3_3_4, "The time complexity of both DFS and BFS is O(V + E), where V is the number of vertices and E is the number of edges in the graph.");
-        addStudentAnswerToProblemAnswer(pa_3_3_4, sa3_3_4_student2);
-
         StudentAnswer sa3_3_5_student2 = createStudentAnswer(student2, pa_3_3_5, "Here is a Python implementation of DFS:\n```python\ndef dfs(graph, start, visited=None):\n    if visited is None:\n        visited = set()\n    visited.add(start)\n    print(start)\n    for next in graph[start] - visited:\n        dfs(graph, next, visited)\n    return visited\n```");
-        addStudentAnswerToProblemAnswer(pa_3_3_5, sa3_3_5_student2);
 
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment3_3.");
 // Creating StudentAnswer instances for student1
+        // Creating StudentAnswer instances for student1
         StudentAnswer sa3_4_1_student1 = createStudentAnswer(student1, pa_3_4_1, "Dynamic programming solves complex problems by breaking them into simpler subproblems and storing the results to avoid redundant calculations.");
-        addStudentAnswerToProblemAnswer(pa_3_4_1, sa3_4_1_student1);
-
         StudentAnswer sa3_4_2_student1 = createStudentAnswer(student1, pa_3_4_2, "The principle of optimality states that an optimal solution to a problem contains optimal solutions to its subproblems.");
-        addStudentAnswerToProblemAnswer(pa_3_4_2, sa3_4_2_student1);
-
         StudentAnswer sa3_4_3_student1 = createStudentAnswer(student1, pa_3_4_3, "Memoization stores the results of expensive function calls to avoid redundant calculations and improve efficiency.");
-        addStudentAnswerToProblemAnswer(pa_3_4_3, sa3_4_3_student1);
-
         StudentAnswer sa3_4_4_student1 = createStudentAnswer(student1, pa_3_4_4, "Top-down dynamic programming uses recursion and memoization, while bottom-up dynamic programming uses an iterative approach.");
-        addStudentAnswerToProblemAnswer(pa_3_4_4, sa3_4_4_student1);
-
         StudentAnswer sa3_4_5_student1 = createStudentAnswer(student1, pa_3_4_5, "Here is a Python implementation of dynamic programming for the Fibonacci sequence:\n```python\ndef fibonacci(n, memo={}):\n    if n in memo:\n        return memo[n]\n    if n <= 1:\n        return n\n    memo[n] = fibonacci(n-1, memo) + fibonacci(n-2, memo)\n    return memo[n]\n```");
-        addStudentAnswerToProblemAnswer(pa_3_4_5, sa3_4_5_student1);
-
 
 // Creating StudentAnswer instances for student2
         StudentAnswer sa3_4_1_student2 = createStudentAnswer(student2, pa_3_4_1, "Dynamic programming solves complex problems by breaking them into simpler subproblems and storing the results to avoid redundant calculations.");
-        addStudentAnswerToProblemAnswer(pa_3_4_1, sa3_4_1_student2);
-
         StudentAnswer sa3_4_2_student2 = createStudentAnswer(student2, pa_3_4_2, "The principle of optimality states that an optimal solution to a problem contains optimal solutions to its subproblems.");
-        addStudentAnswerToProblemAnswer(pa_3_4_2, sa3_4_2_student2);
-
         StudentAnswer sa3_4_3_student2 = createStudentAnswer(student2, pa_3_4_3, "Memoization stores the results of expensive function calls to avoid redundant calculations and improve efficiency.");
-        addStudentAnswerToProblemAnswer(pa_3_4_3, sa3_4_3_student2);
-
         StudentAnswer sa3_4_4_student2 = createStudentAnswer(student2, pa_3_4_4, "Top-down dynamic programming uses recursion and memoization, while bottom-up dynamic programming uses an iterative approach.");
-        addStudentAnswerToProblemAnswer(pa_3_4_4, sa3_4_4_student2);
-
         StudentAnswer sa3_4_5_student2 = createStudentAnswer(student2, pa_3_4_5, "Here is a Python implementation of dynamic programming for the Fibonacci sequence:\n```python\ndef fibonacci(n, memo={}):\n    if n in memo:\n        return memo[n]\n    if n <= 1:\n        return n\n    memo[n] = fibonacci(n-1, memo) + fibonacci(n-2, memo)\n    return memo[n]\n```");
-        addStudentAnswerToProblemAnswer(pa_3_4_5, sa3_4_5_student2);
-
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment3_4.");
 // Creating StudentAnswer instances for student1
+        // Creating StudentAnswer instances for student1
         StudentAnswer sa4_1_1_student1 = createStudentAnswer(student1, pa_4_1_1, "A relational database organizes data into tables with rows and columns, and uses keys to define relationships between tables.");
-        addStudentAnswerToProblemAnswer(pa_4_1_1, sa4_1_1_student1);
-
         StudentAnswer sa4_1_2_student1 = createStudentAnswer(student1, pa_4_1_2, "A primary key is a unique identifier for a row in a table, ensuring each row can be uniquely identified and retrieved.");
-        addStudentAnswerToProblemAnswer(pa_4_1_2, sa4_1_2_student1);
-
         StudentAnswer sa4_1_3_student1 = createStudentAnswer(student1, pa_4_1_3, "A foreign key is a column or set of columns in one table that references the primary key in another table, establishing a relationship between the tables.");
-        addStudentAnswerToProblemAnswer(pa_4_1_3, sa4_1_3_student1);
-
         StudentAnswer sa4_1_4_student1 = createStudentAnswer(student1, pa_4_1_4, "Normalization is the process of organizing data to reduce redundancy and improve data integrity by dividing tables into smaller, related tables and defining relationships.");
-        addStudentAnswerToProblemAnswer(pa_4_1_4, sa4_1_4_student1);
-
         StudentAnswer sa4_1_5_student1 = createStudentAnswer(student1, pa_4_1_5, "A relationship in a relational database is an association between tables established using keys like primary and foreign keys.");
-        addStudentAnswerToProblemAnswer(pa_4_1_5, sa4_1_5_student1);
-
 
 // Creating StudentAnswer instances for student2
         StudentAnswer sa4_1_1_student2 = createStudentAnswer(student2, pa_4_1_1, "A relational database organizes data into tables with rows and columns, and uses keys to define relationships between tables.");
-        addStudentAnswerToProblemAnswer(pa_4_1_1, sa4_1_1_student2);
-
         StudentAnswer sa4_1_2_student2 = createStudentAnswer(student2, pa_4_1_2, "A primary key is a unique identifier for a row in a table, ensuring each row can be uniquely identified and retrieved.");
-        addStudentAnswerToProblemAnswer(pa_4_1_2, sa4_1_2_student2);
-
         StudentAnswer sa4_1_3_student2 = createStudentAnswer(student2, pa_4_1_3, "A foreign key is a column or set of columns in one table that references the primary key in another table, establishing a relationship between the tables.");
-        addStudentAnswerToProblemAnswer(pa_4_1_3, sa4_1_3_student2);
-
         StudentAnswer sa4_1_4_student2 = createStudentAnswer(student2, pa_4_1_4, "Normalization is the process of organizing data to reduce redundancy and improve data integrity by dividing tables into smaller, related tables and defining relationships.");
-        addStudentAnswerToProblemAnswer(pa_4_1_4, sa4_1_4_student2);
-
         StudentAnswer sa4_1_5_student2 = createStudentAnswer(student2, pa_4_1_5, "A relationship in a relational database is an association between tables established using keys like primary and foreign keys.");
-        addStudentAnswerToProblemAnswer(pa_4_1_5, sa4_1_5_student2);
-
 
 // Output for confirmation
-        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment4_1.");
+        System.out.println("Student answers created for both student1 and student2 for all 10 problem answers in assignment4_1.");
+
 // Creating StudentAnswer instances for student1
         StudentAnswer sa4_2_1_student1 = createStudentAnswer(student1, pa_4_2_1, "SQL (Structured Query Language) is the standard language for querying and manipulating databases. It allows users to create, read, update, and delete data, as well as perform complex data operations.");
-        addStudentAnswerToProblemAnswer(pa_4_2_1, sa4_2_1_student1);
-
         StudentAnswer sa4_2_2_student1 = createStudentAnswer(student1, pa_4_2_2, "Here is a basic SQL query to select all records from a table:\n```sql\nSELECT * FROM table_name;\n```");
-        addStudentAnswerToProblemAnswer(pa_4_2_2, sa4_2_2_student1);
-
         StudentAnswer sa4_2_3_student1 = createStudentAnswer(student1, pa_4_2_3, "The WHERE clause is used to filter records based on specified conditions, allowing users to retrieve only the records that meet the given criteria.");
-        addStudentAnswerToProblemAnswer(pa_4_2_3, sa4_2_3_student1);
-
         StudentAnswer sa4_2_4_student1 = createStudentAnswer(student1, pa_4_2_4, "Here is an SQL query to update a record in a table:\n```sql\nUPDATE table_name\nSET column1 = value1, column2 = value2\nWHERE condition;\n```");
-        addStudentAnswerToProblemAnswer(pa_4_2_4, sa4_2_4_student1);
-
         StudentAnswer sa4_2_5_student1 = createStudentAnswer(student1, pa_4_2_5, "The INSERT INTO statement is used to add new records to a table, allowing users to insert data into specific columns.");
-        addStudentAnswerToProblemAnswer(pa_4_2_5, sa4_2_5_student1);
-
 
 // Creating StudentAnswer instances for student2
         StudentAnswer sa4_2_1_student2 = createStudentAnswer(student2, pa_4_2_1, "SQL (Structured Query Language) is the standard language for querying and manipulating databases. It allows users to create, read, update, and delete data, as well as perform complex data operations.");
-        addStudentAnswerToProblemAnswer(pa_4_2_1, sa4_2_1_student2);
-
         StudentAnswer sa4_2_2_student2 = createStudentAnswer(student2, pa_4_2_2, "Here is a basic SQL query to select all records from a table:\n```sql\nSELECT * FROM table_name;\n```");
-        addStudentAnswerToProblemAnswer(pa_4_2_2, sa4_2_2_student2);
-
         StudentAnswer sa4_2_3_student2 = createStudentAnswer(student2, pa_4_2_3, "The WHERE clause is used to filter records based on specified conditions, allowing users to retrieve only the records that meet the given criteria.");
-        addStudentAnswerToProblemAnswer(pa_4_2_3, sa4_2_3_student2);
-
         StudentAnswer sa4_2_4_student2 = createStudentAnswer(student2, pa_4_2_4, "Here is an SQL query to update a record in a table:\n```sql\nUPDATE table_name\nSET column1 = value1, column2 = value2\nWHERE condition;\n```");
-        addStudentAnswerToProblemAnswer(pa_4_2_4, sa4_2_4_student2);
-
         StudentAnswer sa4_2_5_student2 = createStudentAnswer(student2, pa_4_2_5, "The INSERT INTO statement is used to add new records to a table, allowing users to insert data into specific columns.");
-        addStudentAnswerToProblemAnswer(pa_4_2_5, sa4_2_5_student2);
-
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment4_2.");
 // Creating StudentAnswer instances for student1
+        // Creating StudentAnswer instances for student1
         StudentAnswer sa4_3_1_student1 = createStudentAnswer(student1, pa_4_3_1, "A database transaction is a sequence of one or more SQL operations executed as a single unit of work, ensuring data integrity and consistency.");
-        addStudentAnswerToProblemAnswer(pa_4_3_1, sa4_3_1_student1);
-
         StudentAnswer sa4_3_2_student1 = createStudentAnswer(student1, pa_4_3_2, "The ACID properties of a transaction are Atomicity, Consistency, Isolation, and Durability, ensuring that transactions are processed reliably.");
-        addStudentAnswerToProblemAnswer(pa_4_3_2, sa4_3_2_student1);
-
         StudentAnswer sa4_3_3_student1 = createStudentAnswer(student1, pa_4_3_3, "Atomicity ensures that all operations within a transaction are completed successfully or none are, rolling back the entire transaction if any operation fails.");
-        addStudentAnswerToProblemAnswer(pa_4_3_3, sa4_3_3_student1);
-
         StudentAnswer sa4_3_4_student1 = createStudentAnswer(student1, pa_4_3_4, "Consistency ensures that a transaction brings the database from one valid state to another, maintaining all predefined rules and constraints.");
-        addStudentAnswerToProblemAnswer(pa_4_3_4, sa4_3_4_student1);
-
         StudentAnswer sa4_3_5_student1 = createStudentAnswer(student1, pa_4_3_5, "Isolation ensures that the operations of one transaction are isolated from those of other transactions, preventing conflicts and ensuring data integrity.");
-        addStudentAnswerToProblemAnswer(pa_4_3_5, sa4_3_5_student1);
-
 
 // Creating StudentAnswer instances for student2
         StudentAnswer sa4_3_1_student2 = createStudentAnswer(student2, pa_4_3_1, "A database transaction is a sequence of one or more SQL operations executed as a single unit of work, ensuring data integrity and consistency.");
-        addStudentAnswerToProblemAnswer(pa_4_3_1, sa4_3_1_student2);
-
         StudentAnswer sa4_3_2_student2 = createStudentAnswer(student2, pa_4_3_2, "The ACID properties of a transaction are Atomicity, Consistency, Isolation, and Durability, ensuring that transactions are processed reliably.");
-        addStudentAnswerToProblemAnswer(pa_4_3_2, sa4_3_2_student2);
-
         StudentAnswer sa4_3_3_student2 = createStudentAnswer(student2, pa_4_3_3, "Atomicity ensures that all operations within a transaction are completed successfully or none are, rolling back the entire transaction if any operation fails.");
-        addStudentAnswerToProblemAnswer(pa_4_3_3, sa4_3_3_student2);
-
         StudentAnswer sa4_3_4_student2 = createStudentAnswer(student2, pa_4_3_4, "Consistency ensures that a transaction brings the database from one valid state to another, maintaining all predefined rules and constraints.");
-        addStudentAnswerToProblemAnswer(pa_4_3_4, sa4_3_4_student2);
-
         StudentAnswer sa4_3_5_student2 = createStudentAnswer(student2, pa_4_3_5, "Isolation ensures that the operations of one transaction are isolated from those of other transactions, preventing conflicts and ensuring data integrity.");
-        addStudentAnswerToProblemAnswer(pa_4_3_5, sa4_3_5_student2);
-
 
 // Output for confirmation
-        System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment4_3.");
+        System.out.println("Student answers created for both student1 and student2 for all 10 problem answers in assignment4_3.");
+
 // Creating StudentAnswer instances for student1
         StudentAnswer sa4_4_1_student1 = createStudentAnswer(student1, pa_4_4_1, "Database design is defining the structure, organization, and relationships of data within a database.");
-        addStudentAnswerToProblemAnswer(pa_4_4_1, sa4_4_1_student1);
-
         StudentAnswer sa4_4_2_student1 = createStudentAnswer(student1, pa_4_4_2, "Normalization is organizing data to reduce redundancy and improve data integrity.");
-        addStudentAnswerToProblemAnswer(pa_4_4_2, sa4_4_2_student1);
-
         StudentAnswer sa4_4_3_student1 = createStudentAnswer(student1, pa_4_4_3, "Normal forms are: 1NF, 2NF, 3NF, BCNF, and higher forms, each reducing redundancy and dependency.");
-        addStudentAnswerToProblemAnswer(pa_4_4_3, sa4_4_3_student1);
-
         StudentAnswer sa4_4_4_student1 = createStudentAnswer(student1, pa_4_4_4, "Denormalization combines normalized tables to reduce query complexity and improve performance.");
-        addStudentAnswerToProblemAnswer(pa_4_4_4, sa4_4_4_student1);
-
         StudentAnswer sa4_4_5_student1 = createStudentAnswer(student1, pa_4_4_5, "An ER diagram is a visual representation of database entities and relationships.");
-        addStudentAnswerToProblemAnswer(pa_4_4_5, sa4_4_5_student1);
-
 
 // Creating StudentAnswer instances for student2
         StudentAnswer sa4_4_1_student2 = createStudentAnswer(student2, pa_4_4_1, "Database design is defining the structure, organization, and relationships of data within a database.");
-        addStudentAnswerToProblemAnswer(pa_4_4_1, sa4_4_1_student2);
-
         StudentAnswer sa4_4_2_student2 = createStudentAnswer(student2, pa_4_4_2, "Normalization is organizing data to reduce redundancy and improve data integrity.");
-        addStudentAnswerToProblemAnswer(pa_4_4_2, sa4_4_2_student2);
-
         StudentAnswer sa4_4_3_student2 = createStudentAnswer(student2, pa_4_4_3, "Normal forms are: 1NF, 2NF, 3NF, BCNF, and higher forms, each reducing redundancy and dependency.");
-        addStudentAnswerToProblemAnswer(pa_4_4_3, sa4_4_3_student2);
-
         StudentAnswer sa4_4_4_student2 = createStudentAnswer(student2, pa_4_4_4, "Denormalization combines normalized tables to reduce query complexity and improve performance.");
-        addStudentAnswerToProblemAnswer(pa_4_4_4, sa4_4_4_student2);
-
         StudentAnswer sa4_4_5_student2 = createStudentAnswer(student2, pa_4_4_5, "An ER diagram is a visual representation of database entities and relationships.");
+
+        addStudentAnswerToProblemAnswer(pa_4_4_3, sa4_4_3_student2);
+        addStudentAnswerToProblemAnswer(pa_4_4_4, sa4_4_4_student2);
         addStudentAnswerToProblemAnswer(pa_4_4_5, sa4_4_5_student2);
 
+        studentAnswerRepo.saveAllAndFlush(Arrays.asList(sa1_1_1_student1, sa1_1_2_student1, sa1_1_3_student1, sa1_1_4_student1, sa1_1_5_student1, sa1_2_1_student1, sa1_2_2_student1, sa1_2_3_student1, sa1_2_4_student1, sa1_2_5_student1, sa1_3_1_student1, sa1_3_2_student1, sa1_3_3_student1, sa1_3_4_student1, sa1_3_5_student1, sa1_4_1_student1, sa1_4_2_student1, sa1_4_3_student1, sa1_4_4_student1, sa1_4_5_student1, sa1_5_1_student1, sa1_5_2_student1, sa1_5_3_student1, sa1_5_4_student1, sa1_5_5_student1, sa1_6_1_student1, sa1_6_2_student1, sa1_6_3_student1, sa1_6_4_student1, sa1_6_5_student1, sa1_1_1_student2, sa1_1_2_student2, sa1_1_3_student2, sa1_1_4_student2, sa1_1_5_student2, sa1_2_1_student2, sa1_2_2_student2, sa1_2_3_student2, sa1_2_4_student2, sa1_2_5_student2, sa1_3_1_student2, sa1_3_2_student2, sa1_3_3_student2, sa1_3_4_student2, sa1_3_5_student2, sa1_4_1_student2, sa1_4_2_student2, sa1_4_3_student2, sa1_4_4_student2, sa1_4_5_student2, sa1_5_1_student2, sa1_5_2_student2, sa1_5_3_student2, sa1_5_4_student2, sa1_5_5_student2, sa1_6_1_student2, sa1_6_2_student2, sa1_6_3_student2, sa1_6_4_student2, sa1_6_5_student2,
+                sa2_1_1_student1, sa2_1_2_student1, sa2_1_3_student1, sa2_1_4_student1, sa2_1_5_student1, sa2_2_1_student1, sa2_2_2_student1, sa2_2_3_student1, sa2_2_4_student1, sa2_2_5_student1, sa2_3_1_student1, sa2_3_2_student1, sa2_3_3_student1, sa2_3_4_student1, sa2_3_5_student1, sa2_4_1_student1, sa2_4_2_student1, sa2_4_3_student1, sa2_4_4_student1, sa2_4_5_student1, sa2_5_1_student1, sa2_5_2_student1, sa2_5_3_student1, sa2_5_4_student1, sa2_5_5_student1, sa2_6_1_student1, sa2_6_2_student1, sa2_6_3_student1, sa2_6_4_student1, sa2_6_5_student1, sa2_1_1_student2, sa2_1_2_student2, sa2_1_3_student2, sa2_1_4_student2, sa2_1_5_student2, sa2_2_1_student2, sa2_2_2_student2, sa2_2_3_student2, sa2_2_4_student2, sa2_2_5_student2, sa2_3_1_student2, sa2_3_2_student2, sa2_3_3_student2, sa2_3_4_student2, sa2_3_5_student2, sa2_4_1_student2, sa2_4_2_student2, sa2_4_3_student2, sa2_4_4_student2, sa2_4_5_student2, sa2_5_1_student2, sa2_5_2_student2, sa2_5_3_student2, sa2_5_4_student2, sa2_5_5_student2, sa2_6_1_student2, sa2_6_2_student2, sa2_6_3_student2, sa2_6_4_student2, sa2_6_5_student2,
+                sa3_1_1_student1, sa3_1_2_student1, sa3_1_3_student1, sa3_1_4_student1, sa3_1_5_student1, sa3_2_1_student1, sa3_2_2_student1, sa3_2_3_student1, sa3_2_4_student1, sa3_2_5_student1, sa3_3_1_student1, sa3_3_2_student1, sa3_3_3_student1, sa3_3_4_student1, sa3_3_5_student1, sa3_4_1_student1, sa3_4_2_student1, sa3_4_3_student1, sa3_4_4_student1, sa3_4_5_student1, sa3_1_1_student2, sa3_1_2_student2, sa3_1_3_student2, sa3_1_4_student2, sa3_1_5_student2, sa3_2_1_student2, sa3_2_2_student2, sa3_2_3_student2, sa3_2_4_student2, sa3_2_5_student2, sa3_3_1_student2, sa3_3_2_student2, sa3_3_3_student2, sa3_3_4_student2, sa3_3_5_student2, sa3_4_1_student2, sa3_4_2_student2, sa3_4_3_student2, sa3_4_4_student2, sa3_4_5_student2,
+                sa4_1_1_student1, sa4_1_2_student1, sa4_1_3_student1, sa4_1_4_student1, sa4_1_5_student1, sa4_2_1_student1, sa4_2_2_student1, sa4_2_3_student1, sa4_2_4_student1, sa4_2_5_student1, sa4_3_1_student1, sa4_3_2_student1, sa4_3_3_student1, sa4_3_4_student1, sa4_3_5_student1, sa4_4_1_student1, sa4_4_2_student1, sa4_4_3_student1, sa4_4_4_student1, sa4_4_5_student1, sa4_1_1_student2, sa4_1_2_student2, sa4_1_3_student2, sa4_1_4_student2, sa4_1_5_student2, sa4_2_1_student2, sa4_2_2_student2, sa4_2_3_student2, sa4_2_4_student2, sa4_2_5_student2, sa4_3_1_student2, sa4_3_2_student2, sa4_3_3_student2, sa4_3_4_student2, sa4_3_5_student2, sa4_4_1_student2, sa4_4_2_student2, sa4_4_3_student2, sa4_4_4_student2, sa4_4_5_student2));
 
+        addStudentAnswerToProblemAnswer(pa1_1_1, sa1_1_1_student1);
+        addStudentAnswerToProblemAnswer(pa1_1_2, sa1_1_2_student1);
+        addStudentAnswerToProblemAnswer(pa1_1_3, sa1_1_3_student1);
+        addStudentAnswerToProblemAnswer(pa1_1_4, sa1_1_4_student1);
+        addStudentAnswerToProblemAnswer(pa1_1_5, sa1_1_5_student1);
+        addStudentAnswerToProblemAnswer(pa1_1_1, sa1_1_1_student2);
+        addStudentAnswerToProblemAnswer(pa1_1_2, sa1_1_2_student2);
+        addStudentAnswerToProblemAnswer(pa1_1_3, sa1_1_3_student2);
+        addStudentAnswerToProblemAnswer(pa1_1_4, sa1_1_4_student2);
+        addStudentAnswerToProblemAnswer(pa1_1_5, sa1_1_5_student2);
+        addStudentAnswerToProblemAnswer(pa_1_2_1, sa1_2_1_student1);
+        addStudentAnswerToProblemAnswer(pa_1_2_2, sa1_2_2_student1);
+        addStudentAnswerToProblemAnswer(pa_1_2_3, sa1_2_3_student1);
+        addStudentAnswerToProblemAnswer(pa_1_2_4, sa1_2_4_student1);
+        addStudentAnswerToProblemAnswer(pa_1_2_5, sa1_2_5_student1);
+        addStudentAnswerToProblemAnswer(pa_1_2_1, sa1_2_1_student2);
+        addStudentAnswerToProblemAnswer(pa_1_2_2, sa1_2_2_student2);
+        addStudentAnswerToProblemAnswer(pa_1_2_3, sa1_2_3_student2);
+        addStudentAnswerToProblemAnswer(pa_1_2_4, sa1_2_4_student2);
+        addStudentAnswerToProblemAnswer(pa_1_2_5, sa1_2_5_student2);
+        // Grouping addStudentAnswerToProblemAnswer calls together
+
+// Adding answers for student1
+        addStudentAnswerToProblemAnswer(pa_1_3_1, sa1_3_1_student1);
+        addStudentAnswerToProblemAnswer(pa_1_3_2, sa1_3_2_student1);
+        addStudentAnswerToProblemAnswer(pa_1_3_3, sa1_3_3_student1);
+        addStudentAnswerToProblemAnswer(pa_1_3_4, sa1_3_4_student1);
+        addStudentAnswerToProblemAnswer(pa_1_3_5, sa1_3_5_student1);
+        addStudentAnswerToProblemAnswer(pa_1_4_1, sa1_4_1_student1);
+        addStudentAnswerToProblemAnswer(pa_1_4_2, sa1_4_2_student1);
+        addStudentAnswerToProblemAnswer(pa_1_4_3, sa1_4_3_student1);
+        addStudentAnswerToProblemAnswer(pa_1_4_4, sa1_4_4_student1);
+        addStudentAnswerToProblemAnswer(pa_1_4_5, sa1_4_5_student1);
+        addStudentAnswerToProblemAnswer(pa_1_5_1, sa1_5_1_student1);
+        addStudentAnswerToProblemAnswer(pa_1_5_2, sa1_5_2_student1);
+        addStudentAnswerToProblemAnswer(pa_1_5_3, sa1_5_3_student1);
+        addStudentAnswerToProblemAnswer(pa_1_5_4, sa1_5_4_student1);
+        addStudentAnswerToProblemAnswer(pa_1_5_5, sa1_5_5_student1);
+        addStudentAnswerToProblemAnswer(pa_1_6_1, sa1_6_1_student1);
+        addStudentAnswerToProblemAnswer(pa_1_6_2, sa1_6_2_student1);
+        addStudentAnswerToProblemAnswer(pa_1_6_3, sa1_6_3_student1);
+        addStudentAnswerToProblemAnswer(pa_1_6_4, sa1_6_4_student1);
+        addStudentAnswerToProblemAnswer(pa_1_6_5, sa1_6_5_student1);
+        addStudentAnswerToProblemAnswer(pa_2_1_1, sa2_1_1_student1);
+        addStudentAnswerToProblemAnswer(pa_2_1_2, sa2_1_2_student1);
+        addStudentAnswerToProblemAnswer(pa_2_1_3, sa2_1_3_student1);
+        addStudentAnswerToProblemAnswer(pa_2_1_4, sa2_1_4_student1);
+        addStudentAnswerToProblemAnswer(pa_2_1_5, sa2_1_5_student1);
+        addStudentAnswerToProblemAnswer(pa_2_2_1, sa2_2_1_student1);
+        addStudentAnswerToProblemAnswer(pa_2_2_2, sa2_2_2_student1);
+        addStudentAnswerToProblemAnswer(pa_2_2_3, sa2_2_3_student1);
+        addStudentAnswerToProblemAnswer(pa_2_2_4, sa2_2_4_student1);
+        addStudentAnswerToProblemAnswer(pa_2_2_5, sa2_2_5_student1);
+        addStudentAnswerToProblemAnswer(pa_2_3_1, sa2_3_1_student1);
+        addStudentAnswerToProblemAnswer(pa_2_3_2, sa2_3_2_student1);
+        addStudentAnswerToProblemAnswer(pa_2_3_3, sa2_3_3_student1);
+        addStudentAnswerToProblemAnswer(pa_2_3_4, sa2_3_4_student1);
+        addStudentAnswerToProblemAnswer(pa_2_3_5, sa2_3_5_student1);
+        addStudentAnswerToProblemAnswer(pa_2_4_1, sa2_4_1_student1);
+        addStudentAnswerToProblemAnswer(pa_2_4_2, sa2_4_2_student1);
+        addStudentAnswerToProblemAnswer(pa_2_4_3, sa2_4_3_student1);
+        addStudentAnswerToProblemAnswer(pa_2_4_4, sa2_4_4_student1);
+        addStudentAnswerToProblemAnswer(pa_2_4_5, sa2_4_5_student1);
+        addStudentAnswerToProblemAnswer(pa_2_5_1, sa2_5_1_student1);
+        addStudentAnswerToProblemAnswer(pa_2_5_2, sa2_5_2_student1);
+        addStudentAnswerToProblemAnswer(pa_2_5_3, sa2_5_3_student1);
+        addStudentAnswerToProblemAnswer(pa_2_5_4, sa2_5_4_student1);
+        addStudentAnswerToProblemAnswer(pa_2_5_5, sa2_5_5_student1);
+        addStudentAnswerToProblemAnswer(pa_2_6_1, sa2_6_1_student1);
+        addStudentAnswerToProblemAnswer(pa_2_6_2, sa2_6_2_student1);
+        addStudentAnswerToProblemAnswer(pa_2_6_3, sa2_6_3_student1);
+        addStudentAnswerToProblemAnswer(pa_2_6_4, sa2_6_4_student1);
+        addStudentAnswerToProblemAnswer(pa_2_6_5, sa2_6_5_student1);
+        addStudentAnswerToProblemAnswer(pa_3_1_1, sa3_1_1_student1);
+        addStudentAnswerToProblemAnswer(pa_3_1_2, sa3_1_2_student1);
+        addStudentAnswerToProblemAnswer(pa_3_1_3, sa3_1_3_student1);
+        addStudentAnswerToProblemAnswer(pa_3_1_4, sa3_1_4_student1);
+        addStudentAnswerToProblemAnswer(pa_3_1_5, sa3_1_5_student1);
+        addStudentAnswerToProblemAnswer(pa_3_2_1, sa3_2_1_student1);
+        addStudentAnswerToProblemAnswer(pa_3_2_2, sa3_2_2_student1);
+        addStudentAnswerToProblemAnswer(pa_3_2_3, sa3_2_3_student1);
+        addStudentAnswerToProblemAnswer(pa_3_2_4, sa3_2_4_student1);
+        addStudentAnswerToProblemAnswer(pa_3_2_5, sa3_2_5_student1);
+        addStudentAnswerToProblemAnswer(pa_3_3_1, sa3_3_1_student1);
+        addStudentAnswerToProblemAnswer(pa_3_3_2, sa3_3_2_student1);
+        addStudentAnswerToProblemAnswer(pa_3_3_3, sa3_3_3_student1);
+        addStudentAnswerToProblemAnswer(pa_3_3_4, sa3_3_4_student1);
+        addStudentAnswerToProblemAnswer(pa_3_3_5, sa3_3_5_student1);
+        addStudentAnswerToProblemAnswer(pa_3_4_1, sa3_4_1_student1);
+        addStudentAnswerToProblemAnswer(pa_3_4_2, sa3_4_2_student1);
+        addStudentAnswerToProblemAnswer(pa_3_4_3, sa3_4_3_student1);
+        addStudentAnswerToProblemAnswer(pa_3_4_4, sa3_4_4_student1);
+        addStudentAnswerToProblemAnswer(pa_3_4_5, sa3_4_5_student1);
+        addStudentAnswerToProblemAnswer(pa_4_1_1, sa4_1_1_student1);
+        addStudentAnswerToProblemAnswer(pa_4_1_2, sa4_1_2_student1);
+        addStudentAnswerToProblemAnswer(pa_4_1_3, sa4_1_3_student1);
+        addStudentAnswerToProblemAnswer(pa_4_1_4, sa4_1_4_student1);
+        addStudentAnswerToProblemAnswer(pa_4_1_5, sa4_1_5_student1);
+        addStudentAnswerToProblemAnswer(pa_4_2_1, sa4_2_1_student1);
+        addStudentAnswerToProblemAnswer(pa_4_2_2, sa4_2_2_student1);
+        addStudentAnswerToProblemAnswer(pa_4_2_3, sa4_2_3_student1);
+        addStudentAnswerToProblemAnswer(pa_4_2_4, sa4_2_4_student1);
+        addStudentAnswerToProblemAnswer(pa_4_2_5, sa4_2_5_student1);
+        addStudentAnswerToProblemAnswer(pa_4_3_1, sa4_3_1_student1);
+        addStudentAnswerToProblemAnswer(pa_4_3_2, sa4_3_2_student1);
+        addStudentAnswerToProblemAnswer(pa_4_3_3, sa4_3_3_student1);
+        addStudentAnswerToProblemAnswer(pa_4_3_4, sa4_3_4_student1);
+        addStudentAnswerToProblemAnswer(pa_4_3_5, sa4_3_5_student1);
+        addStudentAnswerToProblemAnswer(pa_4_4_1, sa4_4_1_student1);
+        addStudentAnswerToProblemAnswer(pa_4_4_2, sa4_4_2_student1);
+        addStudentAnswerToProblemAnswer(pa_4_4_3, sa4_4_3_student1);
+        addStudentAnswerToProblemAnswer(pa_4_4_4, sa4_4_4_student1);
+        addStudentAnswerToProblemAnswer(pa_4_4_5, sa4_4_5_student1);
+        // Grouping addStudentAnswerToProblemAnswer calls together for student2
+
+        addStudentAnswerToProblemAnswer(pa_1_3_1, sa1_3_1_student2);
+        addStudentAnswerToProblemAnswer(pa_1_3_2, sa1_3_2_student2);
+        addStudentAnswerToProblemAnswer(pa_1_3_3, sa1_3_3_student2);
+        addStudentAnswerToProblemAnswer(pa_1_3_4, sa1_3_4_student2);
+        addStudentAnswerToProblemAnswer(pa_1_3_5, sa1_3_5_student2);
+        addStudentAnswerToProblemAnswer(pa_1_4_1, sa1_4_1_student2);
+        addStudentAnswerToProblemAnswer(pa_1_4_2, sa1_4_2_student2);
+        addStudentAnswerToProblemAnswer(pa_1_4_3, sa1_4_3_student2);
+        addStudentAnswerToProblemAnswer(pa_1_4_4, sa1_4_4_student2);
+        addStudentAnswerToProblemAnswer(pa_1_4_5, sa1_4_5_student2);
+        addStudentAnswerToProblemAnswer(pa_1_5_1, sa1_5_1_student2);
+        addStudentAnswerToProblemAnswer(pa_1_5_2, sa1_5_2_student2);
+        addStudentAnswerToProblemAnswer(pa_1_5_3, sa1_5_3_student2);
+        addStudentAnswerToProblemAnswer(pa_1_5_4, sa1_5_4_student2);
+        addStudentAnswerToProblemAnswer(pa_1_5_5, sa1_5_5_student2);
+        addStudentAnswerToProblemAnswer(pa_1_6_1, sa1_6_1_student2);
+        addStudentAnswerToProblemAnswer(pa_1_6_2, sa1_6_2_student2);
+        addStudentAnswerToProblemAnswer(pa_1_6_3, sa1_6_3_student2);
+        addStudentAnswerToProblemAnswer(pa_1_6_4, sa1_6_4_student2);
+        addStudentAnswerToProblemAnswer(pa_1_6_5, sa1_6_5_student2);
+        addStudentAnswerToProblemAnswer(pa_2_1_1, sa2_1_1_student2);
+        addStudentAnswerToProblemAnswer(pa_2_1_2, sa2_1_2_student2);
+        addStudentAnswerToProblemAnswer(pa_2_1_3, sa2_1_3_student2);
+        addStudentAnswerToProblemAnswer(pa_2_1_4, sa2_1_4_student2);
+        addStudentAnswerToProblemAnswer(pa_2_1_5, sa2_1_5_student2);
+        addStudentAnswerToProblemAnswer(pa_2_2_1, sa2_2_1_student2);
+        addStudentAnswerToProblemAnswer(pa_2_2_2, sa2_2_2_student2);
+        addStudentAnswerToProblemAnswer(pa_2_2_3, sa2_2_3_student2);
+        addStudentAnswerToProblemAnswer(pa_2_2_4, sa2_2_4_student2);
+        addStudentAnswerToProblemAnswer(pa_2_2_5, sa2_2_5_student2);
+        addStudentAnswerToProblemAnswer(pa_2_3_1, sa2_3_1_student2);
+        addStudentAnswerToProblemAnswer(pa_2_3_2, sa2_3_2_student2);
+        addStudentAnswerToProblemAnswer(pa_2_3_3, sa2_3_3_student2);
+        addStudentAnswerToProblemAnswer(pa_2_3_4, sa2_3_4_student2);
+        addStudentAnswerToProblemAnswer(pa_2_3_5, sa2_3_5_student2);
+        addStudentAnswerToProblemAnswer(pa_2_4_1, sa2_4_1_student2);
+        addStudentAnswerToProblemAnswer(pa_2_4_2, sa2_4_2_student2);
+        addStudentAnswerToProblemAnswer(pa_2_4_3, sa2_4_3_student2);
+        addStudentAnswerToProblemAnswer(pa_2_4_4, sa2_4_4_student2);
+        addStudentAnswerToProblemAnswer(pa_2_4_5, sa2_4_5_student2);
+        addStudentAnswerToProblemAnswer(pa_2_5_1, sa2_5_1_student2);
+        addStudentAnswerToProblemAnswer(pa_2_5_2, sa2_5_2_student2);
+        addStudentAnswerToProblemAnswer(pa_2_5_3, sa2_5_3_student2);
+        addStudentAnswerToProblemAnswer(pa_2_5_4, sa2_5_4_student2);
+        addStudentAnswerToProblemAnswer(pa_2_5_5, sa2_5_5_student2);
+        addStudentAnswerToProblemAnswer(pa_2_6_1, sa2_6_1_student2);
+        addStudentAnswerToProblemAnswer(pa_2_6_2, sa2_6_2_student2);
+        addStudentAnswerToProblemAnswer(pa_2_6_3, sa2_6_3_student2);
+        addStudentAnswerToProblemAnswer(pa_2_6_4, sa2_6_4_student2);
+        addStudentAnswerToProblemAnswer(pa_2_6_5, sa2_6_5_student2);
+        addStudentAnswerToProblemAnswer(pa_3_1_1, sa3_1_1_student2);
+        addStudentAnswerToProblemAnswer(pa_3_1_2, sa3_1_2_student2);
+        addStudentAnswerToProblemAnswer(pa_3_1_3, sa3_1_3_student2);
+        addStudentAnswerToProblemAnswer(pa_3_1_4, sa3_1_4_student2);
+        addStudentAnswerToProblemAnswer(pa_3_1_5, sa3_1_5_student2);
+        addStudentAnswerToProblemAnswer(pa_3_2_1, sa3_2_1_student2);
+        addStudentAnswerToProblemAnswer(pa_3_2_2, sa3_2_2_student2);
+        addStudentAnswerToProblemAnswer(pa_3_2_3, sa3_2_3_student2);
+        addStudentAnswerToProblemAnswer(pa_3_2_4, sa3_2_4_student2);
+        addStudentAnswerToProblemAnswer(pa_3_2_5, sa3_2_5_student2);
+        addStudentAnswerToProblemAnswer(pa_3_3_1, sa3_3_1_student2);
+        addStudentAnswerToProblemAnswer(pa_3_3_2, sa3_3_2_student2);
+        addStudentAnswerToProblemAnswer(pa_3_3_3, sa3_3_3_student2);
+        addStudentAnswerToProblemAnswer(pa_3_3_4, sa3_3_4_student2);
+        addStudentAnswerToProblemAnswer(pa_3_3_5, sa3_3_5_student2);
+        addStudentAnswerToProblemAnswer(pa_3_4_1, sa3_4_1_student2);
+        addStudentAnswerToProblemAnswer(pa_3_4_2, sa3_4_2_student2);
+        addStudentAnswerToProblemAnswer(pa_3_4_3, sa3_4_3_student2);
+        addStudentAnswerToProblemAnswer(pa_3_4_4, sa3_4_4_student2);
+        addStudentAnswerToProblemAnswer(pa_3_4_5, sa3_4_5_student2);
+        addStudentAnswerToProblemAnswer(pa_4_1_1, sa4_1_1_student2);
+        addStudentAnswerToProblemAnswer(pa_4_1_2, sa4_1_2_student2);
+        addStudentAnswerToProblemAnswer(pa_4_1_3, sa4_1_3_student2);
+        addStudentAnswerToProblemAnswer(pa_4_1_4, sa4_1_4_student2);
+        addStudentAnswerToProblemAnswer(pa_4_1_5, sa4_1_5_student2);
+        addStudentAnswerToProblemAnswer(pa_4_2_1, sa4_2_1_student2);
+        addStudentAnswerToProblemAnswer(pa_4_2_2, sa4_2_2_student2);
+        addStudentAnswerToProblemAnswer(pa_4_2_3, sa4_2_3_student2);
+        addStudentAnswerToProblemAnswer(pa_4_2_4, sa4_2_4_student2);
+        addStudentAnswerToProblemAnswer(pa_4_2_5, sa4_2_5_student2);
+        addStudentAnswerToProblemAnswer(pa_4_3_1, sa4_3_1_student2);
+        addStudentAnswerToProblemAnswer(pa_4_3_2, sa4_3_2_student2);
+        addStudentAnswerToProblemAnswer(pa_4_3_3, sa4_3_3_student2);
+        addStudentAnswerToProblemAnswer(pa_4_3_4, sa4_3_4_student2);
+        addStudentAnswerToProblemAnswer(pa_4_3_5, sa4_3_5_student2);
+        addStudentAnswerToProblemAnswer(pa_4_4_1, sa4_4_1_student2);
+        addStudentAnswerToProblemAnswer(pa_4_4_2, sa4_4_2_student2);
+        addStudentAnswerToProblemAnswer(pa_4_4_3, sa4_4_3_student2);
+        addStudentAnswerToProblemAnswer(pa_4_4_4, sa4_4_4_student2);
+        addStudentAnswerToProblemAnswer(pa_4_4_5, sa4_4_5_student2);
         // Creating submission for student1 with student answers
         Submission submission1_1_1 = createSubmission("Submission from student1", student1, Arrays.asList(
                 sa1_1_1_student1, sa1_1_2_student1, sa1_1_3_student1, sa1_1_4_student1, sa1_1_5_student1
@@ -1776,6 +1634,7 @@ public class Assignment1to4Seeder implements CommandLineRunner {
         for (StudentAnswer studentAnswer : submission4_4_2.getStudentAnswers()) {
             addSubmissionToStudentAnswer(studentAnswer, submission4_4_2);
         }
+        submissionRepo.saveAllAndFlush(Arrays.asList(submission1_1_1, submission1_1_2, submission1_2_1, submission1_2_2, submission1_3_1, submission1_3_2, submission1_4_1, submission1_4_2, submission1_5_1, submission1_5_2, submission1_6_1, submission1_6_2, submission2_1_1, submission2_1_2, submission2_2_1, submission2_2_2, submission2_3_1, submission2_3_2, submission2_4_1, submission2_4_2, submission2_5_1, submission2_5_2, submission2_6_1, submission2_6_2, submission3_1_1, submission3_1_2, submission3_2_1, submission3_2_2, submission3_3_1, submission3_3_2, submission3_4_1, submission3_4_2, submission4_1_1, submission4_1_2, submission4_2_1, submission4_2_2, submission4_3_1, submission4_3_2, submission4_4_1, submission4_4_2));
 
 
         Grade grade1_1_1 = createGrade(85.2, student1, faculty1, course1, submission1_1_1);
@@ -1822,6 +1681,8 @@ public class Assignment1to4Seeder implements CommandLineRunner {
         Grade grade4_4_1 = createGrade(88.4, student1, faculty4, course4, submission4_4_1);
         Grade grade4_4_2 = createGrade(90.7, student2, faculty4, course4, submission4_4_2);
 
+        gradeRepo.saveAllAndFlush(Arrays.asList(grade1_1_1, grade1_2_1, grade1_3_1, grade1_4_1, grade1_5_1, grade1_6_1, grade2_1_1, grade2_2_1, grade2_3_1, grade2_4_1, grade2_5_1, grade2_6_1, grade3_1_1, grade3_2_1, grade3_3_1, grade3_4_1, grade4_1_1, grade4_2_1, grade4_3_1, grade4_4_1, grade1_1_2, grade1_2_2, grade1_3_2, grade1_4_2, grade1_5_2, grade1_6_2, grade2_1_2, grade2_2_2, grade2_3_2, grade2_4_2, grade2_5_2, grade2_6_2, grade3_1_2, grade3_2_2, grade3_3_2, grade3_4_2, grade4_1_2, grade4_2_2, grade4_3_2, grade4_4_2));
+
         CourseGrade courseGrade1_1_1 = createCourseGrade(student1, course1, 85.7, Arrays.asList(grade1_1_1, grade1_2_1, grade1_3_1, grade1_4_1, grade1_5_1, grade1_6_1));
         CourseGrade courseGrade1_1_2 = createCourseGrade(student2, course1, 86.13, Arrays.asList(grade1_1_2, grade1_2_2, grade1_3_2, grade1_4_2, grade1_5_2, grade1_6_2));
 
@@ -1833,6 +1694,8 @@ public class Assignment1to4Seeder implements CommandLineRunner {
 
         CourseGrade courseGrade4_1_1 = createCourseGrade(student1, course4, 87.575, Arrays.asList(grade4_1_1, grade4_2_1, grade4_3_1, grade4_4_1));
         CourseGrade courseGrade4_1_2 = createCourseGrade(student2, course4, 87.975, Arrays.asList(grade4_1_2, grade4_2_2, grade4_3_2, grade4_4_2));
+
+        courseGradeRepo.saveAllAndFlush(Arrays.asList(courseGrade1_1_1, courseGrade2_1_1, courseGrade3_1_1, courseGrade4_1_1, courseGrade1_1_2, courseGrade2_1_2, courseGrade3_1_2, courseGrade4_1_2));
 
         Feedback feedback1_1_1 = createFeedback("Great job on the submission!", submission1_1_1);
         Feedback feedback1_1_2 = createFeedback("Well done, keep it up!", submission1_1_2);
@@ -1893,6 +1756,8 @@ public class Assignment1to4Seeder implements CommandLineRunner {
 
         Feedback feedback4_4_1 = createFeedback("Great attention to detail, student1.", submission4_4_1);
         Feedback feedback4_4_2 = createFeedback("Strong effort, student2.", submission4_4_2);
+
+        feedbackRepo.saveAllAndFlush(Arrays.asList(feedback1_1_1, feedback1_1_2, feedback1_2_1, feedback1_2_2, feedback1_3_1, feedback1_3_2, feedback1_4_1, feedback1_4_2, feedback1_5_1, feedback1_5_2, feedback1_6_1, feedback1_6_2, feedback2_1_1, feedback2_1_2, feedback2_2_1, feedback2_2_2, feedback2_3_1, feedback2_3_2, feedback2_4_1, feedback2_4_2, feedback2_5_1, feedback2_5_2, feedback2_6_1, feedback2_6_2, feedback3_1_1, feedback3_1_2, feedback3_2_1, feedback3_2_2, feedback3_3_1, feedback3_3_2, feedback3_4_1, feedback3_4_2, feedback4_1_1, feedback4_1_2, feedback4_2_1, feedback4_2_2, feedback4_3_1, feedback4_3_2, feedback4_4_1, feedback4_4_2));
 
         course1.setGrades(Arrays.asList(grade1_1_1, grade1_1_2, grade1_2_1, grade1_2_2, grade1_3_1, grade1_3_2, grade1_4_1, grade1_4_2, grade1_5_1, grade1_5_2, grade1_6_1, grade1_6_2));
         course2.setGrades(Arrays.asList(grade2_1_1, grade2_1_2, grade2_2_1, grade2_2_2, grade2_3_1, grade2_3_2, grade2_4_1, grade2_4_2, grade2_5_1, grade2_5_2, grade2_6_1, grade2_6_2));
@@ -1998,8 +1863,7 @@ public class Assignment1to4Seeder implements CommandLineRunner {
     }
 
     public static void addStudentAnswerToProblemAnswer(ProblemAnswer problemAnswer, StudentAnswer studentAnswer) {
-        problemAnswer.setStudentAnswer(studentAnswer);
-        studentAnswer.setProblemAnswer(problemAnswer);
+        problemAnswer.addStudentAnswer(studentAnswer);  // Use the helper method
     }
 
     public static Assignment createAssignment(String title, Faculty teacher, Date dueDate, Syllabus syllabus, boolean completed) {

@@ -1,9 +1,7 @@
 package com.project.education_app.entities;
 
 import jakarta.persistence.*;
-import lombok.Data;
-import lombok.EqualsAndHashCode;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.ArrayList;
 import java.util.HashSet;
@@ -12,7 +10,8 @@ import java.util.Set;
 
 @Entity
 @NoArgsConstructor
-@Data
+@Getter
+@Setter
 public class Student {
     @Id
     @GeneratedValue
@@ -36,6 +35,9 @@ public class Student {
     @EqualsAndHashCode.Exclude
     private List<Attendance> attendances = new ArrayList<>();
 
+    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL)
+    private List<StudentAnswer> studentAnswers = new ArrayList<>();
+
     @ManyToMany
     @JoinTable(name = "student_guardian",
     joinColumns = @JoinColumn(name = "student_id"),
@@ -48,7 +50,7 @@ public class Student {
             inverseJoinColumns = @JoinColumn(name = "course_id"))
     private List<Course> courses = new ArrayList<>();
 
-    @OneToMany(mappedBy = "student",cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Grade> grades=new ArrayList<>();
 
     @OneToMany(mappedBy = "student",cascade = CascadeType.ALL)
@@ -60,7 +62,7 @@ public class Student {
     @OneToMany(mappedBy = "student",cascade = CascadeType.ALL)
     private List<Comment> comments=new ArrayList<>();
 
-    @OneToMany(mappedBy = "student",cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "student", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<Submission> submissions=new ArrayList<>();
 
     @ManyToMany

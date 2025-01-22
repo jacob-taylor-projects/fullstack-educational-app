@@ -32,6 +32,11 @@ public class Seeder implements CommandLineRunner {
     private final PostRepo postRepo;
     private final CommentRepo commentRepo;
     private final ScheduleRepo scheduleRepo;
+    private final SyllabusRepo syllabusRepo;
+    private final UnitRepo unitRepo;
+    private final CourseRepo courseRepo;
+    private final LessonRepo lessonRepo;
+    private final SemesterRepo semesterRepo;
 
 
     @Override
@@ -113,15 +118,179 @@ public class Seeder implements CommandLineRunner {
         // Computer Science Courses
 // Course 1: Introduction to Programming
         Syllabus syllabus1 = createSyllabus("Introduce students to programming fundamentals using Python.", "Variables, Data Types, Control Structures, Functions, Modules, and Libraries.", "Assignments (40%), Projects (30%), Tests (30%)");
+        Syllabus syllabus2 = createSyllabus("Understand and implement various data structures.", "Arrays, Linked Lists, Stacks, Queues, Trees, Graphs.", "Assignments (50%), Projects (20%), Tests (30%)");
+        Syllabus syllabus3 = createSyllabus("Explore the design and analysis of algorithms.", "Sorting, Searching, Graph Algorithms, Dynamic Programming.", "Assignments (40%), Projects (30%), Tests (30%)");
+        Syllabus syllabus4 = createSyllabus("Introduction to database concepts, SQL, and database design.", "Relational Databases, SQL, Transactions, Database Design.", "Assignments (40%), Projects (30%), Tests (30%)");
+        Syllabus syllabus5 = createSyllabus("Study the fundamental concepts of operating systems.", "Processes, Memory Management, File Systems, Scheduling.", "Assignments (40%), Projects (30%), Tests (30%)");
+        Syllabus syllabus6 = createSyllabus("Learn about the principles of computer networking.", "OSI Model, TCP/IP, Network Protocols, Routing, Switching.", "Assignments (40%), Projects (30%), Tests (30%)");
+        Syllabus syllabus7 = createSyllabus("Introduction to software development methodologies.", "Software Development Life Cycle, Agile, Waterfall, Project Management.", "Assignments (40%), Projects (30%), Tests (30%)");
+        Syllabus syllabus8 = createSyllabus("Learn to create dynamic websites.", "HTML, CSS, JavaScript, React, Backend Integration.", "Assignments (40%), Projects (30%), Tests (30%)");
+        Syllabus syllabus9 = createSyllabus(
+                "Explore the basics of artificial intelligence.",
+                "Machine Learning, Neural Networks, Natural Language Processing.",
+                "Assignments (40%), Projects (30%), Tests (30%)"
+        );
+        Syllabus syllabus10 = createSyllabus("Introduction to the principles of cybersecurity.", "Threat Analysis, Encryption, Network Security, Secure Coding.", "Assignments (40%), Projects (30%), Tests (30%)");
+        Syllabus syllabus11 = createSyllabus("Introduce students to differential and integral calculus.", "Limits, Derivatives, Integrals, Applications of Calculus.", "Assignments (40%), Projects (30%), Tests (30%)");
+        Syllabus syllabus12 = createSyllabus("Study of vector spaces, matrices, and linear transformations.", "Vectors, Matrices, Determinants, Eigenvalues, Eigenvectors.", "Assignments (40%), Projects (30%), Tests (30%)");
+        Syllabus syllabus13 = createSyllabus("Explore advanced calculus topics including sequences,series, and multivariable calculus.", "Sequences and Series, Techniques of integration, Multivariable Functions, Vector Calculus.", "Assignments (40%), Projects (30%), Tests (30%)");
+        Syllabus syllabus14 = createSyllabus("Study of mathematical structures that are fundamentally discrete.", "Logic, Set Theory, Graph Theory, Combinatorics.", "Assignments (40%), Projects (30%), Tests (30%)");
+        Syllabus syllabus15 = createSyllabus("Introduction to classical mechanics.", "Newton's Laws, Energy Principles, Motion.", "Assignments (40%), Projects (30%), Tests (30%)");
+        Syllabus syllabus16 = createSyllabus("Introduction to chemical principles.", "Atomic Structure, Chemical Bonding, Reactions.", "Assignments (40%), Projects (30%), Tests (30%)");
+        Syllabus syllabus17 = createSyllabus("Introduction to cellular biology, genetics, and evolution.", "Cell Structure, Genetics, Evolution, Ecology.", "Assignments (40%), Projects (30%), Tests (30%)");
+        Syllabus syllabus18 = createSyllabus("Overview of engineering disciplines and problem-solving techniques.", "Engineering Disciplines, Problem-Solving, Design Process.", "Assignments (40%), Projects (30%), Tests (30%)");
+        Syllabus syllabus19 = createSyllabus("Fundamentals of electrical circuits, signals, and systems.", "Circuit Analysis, Signal Processing, Systems Theory.", "Assignments (40%), Projects (30%), Tests (30%)");
+        Syllabus syllabus20 = createSyllabus("Introduction to the principles of mechanics and thermodynamics.", "Statics, Dynamics, Thermodynamics, Material Science.", "Assignments (40%), Projects (30%), Tests (30%)");
+        syllabusRepo.saveAllAndFlush(Arrays.asList(syllabus1, syllabus2, syllabus3, syllabus4, syllabus5, syllabus6, syllabus7, syllabus8, syllabus9, syllabus10, syllabus11, syllabus12, syllabus13, syllabus14, syllabus15, syllabus16, syllabus17, syllabus18, syllabus19, syllabus20));
 
-            Unit unit1a =  createUnit("Variables", "In this unit, students will be introduced to the concept of variables and their importance in programming. They will learn how to create and use variables to store and manipulate data. By the end of this unit, students will be able to declare variables and assign values to them, understand the concept of variable naming conventions, and demonstrate the use of variables in simple Python programs.");
-            Unit unit1b=   createUnit("Data Types", "This unit will cover the different data types available in Python, such as integers, floats, strings, and booleans. Students will learn how to identify and use these data types effectively. By the end of this unit, students will be able to perform operations on different data types, convert between data types, and apply data types appropriately in their programs.");
-            Unit unit1c=    createUnit("Control Structures", "In this unit, students will explore control structures, including loops (for and while) and conditional statements (if, elif, else). They will learn how to control the flow of their programs and make decisions based on conditions. By the end of this unit, students will be able to write programs that use loops to repeat actions and conditionals to execute code based on specific criteria.");
-            Unit unit1d=   createUnit("Functions", "This unit will focus on the creation and use of functions in Python. Students will learn how to define functions, pass parameters, and return values. By the end of this unit, students will be able to write reusable functions, understand the importance of functions in organizing code, and apply functions to solve problems effectively.");
-            Unit unit1e=    createUnit("Modules", "In this unit, students will be introduced to the concept of modules and how to import and use them in their Python programs. They will learn how to break down large programs into smaller, manageable pieces using modules. By the end of this unit, students will be able to create and import their own modules, use built-in Python modules, and understand the benefits of modular programming.");
-            Unit unit1f=    createUnit("Libraries", "This unit will cover the use of libraries in Python programming. Students will learn how to find, install, and use libraries to extend the functionality of their programs. By the end of this unit, students will be familiar with popular Python libraries, understand how to read library documentation, and integrate libraries into their own projects to simplify complex tasks.");
-                List<Unit> units1=Arrays.asList(unit1a,unit1b,unit1c,unit1d,unit1e,unit1f);
-        Course course1 = createCourse("Introduction to Programming", "Learn the basics of programming using Python.", "Computer Science", 4, syllabus1, units1);
+        Course course1 = createCourse("Introduction to Programming", "Learn the basics of programming using Python.", "Computer Science", 4, syllabus1);
+        Course course2 = createCourse("Data Structures", "An in-depth study of data structures such as arrays, linked lists, stacks, queues, and trees.", "Computer Science", 3, syllabus2);
+        Course course3 = createCourse("Algorithms", "Explore the design and analysis of algorithms, including sorting and searching algorithms.", "Computer Science", 3, syllabus3);
+        Course course4 = createCourse("Database Management Systems", "Introduction to database concepts, SQL, and database design.", "Computer Science", 3, syllabus4);
+        Course course5 = createCourse("Operating Systems", "Study the fundamental concepts of operating systems, including processes, memory management, and file systems.", "Computer Science", 3, syllabus5);
+        Course course6 = createCourse("Computer Networks", "Learn about the principles of computer networking, including the OSI model, TCP/IP, and network protocols.", "Computer Science", 3, syllabus6);
+        Course course7 = createCourse("Software Engineering", "Introduction to software development methodologies, project management, and software life cycle.", "Computer Science", 4, syllabus7);
+        Course course8 = createCourse("Web Development", "Learn to create dynamic websites using HTML, CSS, JavaScript, and frameworks such as React.", "Computer Science", 3, syllabus8);
+        Course course9 = createCourse("Artificial Intelligence", "Explore the basics of artificial intelligence, including machine learning, neural networks, and natural language processing.", "Computer Science", 4, syllabus9);
+        Course course10 = createCourse("Cybersecurity", "Introduction to the principles of cybersecurity, including threat analysis, encryption, and network security.", "Computer Science", 3, syllabus10);
+        Course course11 = createCourse("Calculus I", "Introduction to differential and integral calculus.", "Mathematics", 4, syllabus11);
+        Course course12 = createCourse("Linear Algebra", "Study of vector spaces, matrices, and linear transformations.", "Mathematics", 3, syllabus12);
+        Course course13 = createCourse("Calculus II", "Explore advanced calculus topics including sequences, series and multivariable calculus.", "Mathematics", 3, syllabus13);
+        Course course14 = createCourse("Discrete Mathematics", "Study of mathematical structures that are fundamentally discrete rather than continuous.", "Mathematics", 3, syllabus14);
+        Course course15 = createCourse("Physics I", "Introduction to classical mechanics, including Newton's laws and energy principles.", "Physics", 4, syllabus15);
+        Course course16 = createCourse("Chemistry I", "Introduction to chemical principles, including atomic structure and chemical bonding.", "Chemistry", 4, syllabus16);
+        Course course17 = createCourse("Biology I", "Introduction to cellular biology, genetics, and evolution.", "Biology", 4, syllabus17);
+        Course course18 = createCourse("Introduction to Engineering", "Overview of engineering disciplines and problem-solving techniques.", "Engineering", 3, syllabus18);
+        Course course19 = createCourse("Electrical Engineering Basics", "Fundamentals of electrical circuits, signals, and systems.", "Engineering", 4, syllabus19);
+        Course course20 = createCourse("Mechanical Engineering Principles", "Introduction to the principles of mechanics and thermodynamics.", "Engineering", 4, syllabus20);
+        courseRepo.saveAllAndFlush(Arrays.asList(course1, course2, course3, course4, course5, course6, course7, course8, course9, course10, course11, course12, course13, course14, course15, course16, course17, course18, course19, course20));
+
+        Unit unit1a = createUnit("Variables", "In this unit, students will be introduced to the concept of variables and their importance in programming. They will learn how to create and use variables to store and manipulate data. By the end of this unit, students will be able to declare variables and assign values to them, understand the concept of variable naming conventions, and demonstrate the use of variables in simple Python programs.");
+        Unit unit1b = createUnit("Data Types", "This unit will cover the different data types available in Python, such as integers, floats, strings, and booleans. Students will learn how to identify and use these data types effectively. By the end of this unit, students will be able to perform operations on different data types, convert between data types, and apply data types appropriately in their programs.");
+        Unit unit1c = createUnit("Control Structures", "In this unit, students will explore control structures, including loops (for and while) and conditional statements (if, elif, else). They will learn how to control the flow of their programs and make decisions based on conditions. By the end of this unit, students will be able to write programs that use loops to repeat actions and conditionals to execute code based on specific criteria.");
+        Unit unit1d = createUnit("Functions", "This unit will focus on the creation and use of functions in Python. Students will learn how to define functions, pass parameters, and return values. By the end of this unit, students will be able to write reusable functions, understand the importance of functions in organizing code, and apply functions to solve problems effectively.");
+        Unit unit1e = createUnit("Modules", "In this unit, students will be introduced to the concept of modules and how to import and use them in their Python programs. They will learn how to break down large programs into smaller, manageable pieces using modules. By the end of this unit, students will be able to create and import their own modules, use built-in Python modules, and understand the benefits of modular programming.");
+        Unit unit1f = createUnit("Libraries", "This unit will cover the use of libraries in Python programming. Students will learn how to find, install, and use libraries to extend the functionality of their programs. By the end of this unit, students will be familiar with popular Python libraries, understand how to read library documentation, and integrate libraries into their own projects to simplify complex tasks.");
+        List<Unit> units1 = Arrays.asList(unit1a, unit1b, unit1c, unit1d, unit1e, unit1f);
+        Unit unit2a = createUnit("Arrays", "In this unit, students will learn about arrays, a fundamental data structure...");
+        Unit unit2b = createUnit("Linked Lists", "This unit covers linked lists, a data structure consisting of nodes...");
+        Unit unit2c = createUnit("Stacks", "In this unit, students will explore stacks, a last-in, first-out (LIFO) data structure...");
+        Unit unit2d = createUnit("Queues", "This unit focuses on queues, a first-in, first-out (FIFO) data structure...");
+        Unit unit2e = createUnit("Trees", "In this unit, students will study trees, a hierarchical data structure...");
+        Unit unit2f = createUnit("Graphs", "This unit covers graphs, a versatile data structure used to represent relationships...");
+        List<Unit> units2 = Arrays.asList(unit2a, unit2b, unit2c, unit2d, unit2e, unit2f);
+        Unit unit3a = createUnit("Sorting", "In this unit, students will learn about various sorting algorithms, including bubble sort, merge sort, and quicksort. They will understand the principles behind each sorting method, analyze their efficiency, and implement these algorithms in Python.");
+        Unit unit3b = createUnit("Searching", "This unit covers different searching algorithms such as linear search and binary search. Students will learn how to implement these algorithms, analyze their time complexity, and apply them to solve real-world problems.");
+        Unit unit3c = createUnit("Graph Algorithms", "In this unit, students will explore algorithms used to traverse and manipulate graphs, including depth-first search (DFS) and breadth-first search (BFS). They will learn how to implement these algorithms and understand their applications in network analysis and other fields.");
+        Unit unit3d = createUnit("Dynamic Programming", "This unit focuses on dynamic programming, a method for solving complex problems by breaking them down into simpler subproblems. Students will learn the fundamentals of dynamic programming, implement classic algorithms such as the Fibonacci sequence and knapsack problem, and understand how to optimize their solutions.");
+        List<Unit> units3 = Arrays.asList(unit3a, unit3b, unit3c, unit3d);
+        Unit unit4a = createUnit("Relational Databases", "In this unit, students will learn about the foundational concepts of relational databases, including tables, keys, and relationships. Students will understand how relational databases organize data and how to design efficient database schemas.");
+        Unit unit4b = createUnit("SQL", "This unit covers the basics of Structured Query Language (SQL), the standard language for querying and manipulating databases. Students will learn how to write SQL queries to create, read, update, and delete data, as well as perform complex data operations.");
+        Unit unit4c = createUnit("Transactions", "In this unit, students will explore the concept of transactions, which ensure data integrity and consistency in databases. They will learn about ACID properties (Atomicity, Consistency, Isolation, Durability) and how to implement transactions in SQL.");
+        Unit unit4d = createUnit("Database Design", "This unit focuses on the principles and best practices of database design. Students will learn how to create normalized database schemas, design efficient database structures, and apply data modeling techniques to meet specific application requirements.");
+        List<Unit> units4 = Arrays.asList(unit4a, unit4b, unit4c, unit4d);
+        Unit unit5a = createUnit("Processes", "In this unit, students will learn about processes and process management in operating systems. They will understand how the OS handles process creation, scheduling, and termination, and explore inter-process communication and synchronization.");
+        Unit unit5b = createUnit("Memory Management", "This unit covers memory management techniques used by operating systems to allocate and manage memory resources. Students will learn about paging, segmentation, virtual memory, and memory allocation algorithms.");
+        Unit unit5c = createUnit("File Systems", "In this unit, students will explore file systems and how they are managed by the OS. They will learn about file organization, storage allocation, directory structures, and file access methods.");
+        Unit unit5d = createUnit("Scheduling", "This unit focuses on CPU scheduling algorithms and their role in managing process execution. Students will learn about different scheduling techniques, such as round-robin, priority scheduling, and multi-level queues, and analyze their performance and efficiency.");
+        List<Unit> units5 = Arrays.asList(unit5a, unit5b, unit5c, unit5d);
+        Unit unit6a = createUnit("OSI Model", "In this unit, students will learn about the OSI (Open Systems Interconnection) model, which standardizes the functions of a telecommunication or computing system irrespective of its underlying structure and technology. They will understand the seven layers of the OSI model and how data is transmitted across each layer.");
+        Unit unit6b = createUnit("TCP/IP", "This unit covers the TCP/IP (Transmission Control Protocol/Internet Protocol) model, the foundational protocol suite for the internet. Students will learn about its four layers, key protocols, and how TCP/IP enables reliable communication between networked devices.");
+        Unit unit6c = createUnit("Network Protocols", "In this unit, students will explore various network protocols that govern data exchange over networks. They will understand the roles of protocols such as HTTP, FTP, DNS, and DHCP, and how these protocols ensure secure and efficient communication.");
+        Unit unit6d = createUnit("Routing", "This unit focuses on routing, the process of selecting paths in a network along which to send data packets. Students will learn about different routing algorithms, protocols (e.g., OSPF, BGP), and the concepts of static and dynamic routing.");
+        Unit unit6e = createUnit("Switching", "In this unit, students will learn about switching, a technique used to forward data packets from one device to another within a network. They will explore different types of switches, switching methods (e.g., packet switching, circuit switching), and the role of switches in network design.");
+        List<Unit> units6 = Arrays.asList(unit6a, unit6b, unit6c, unit6d, unit6e);
+        Unit unit7a = createUnit("Software Development Life Cycle", "In this unit, students will learn about the Software Development Life Cycle (SDLC), a process for planning, creating, testing, and deploying an information system. They will explore different SDLC models, including iterative, incremental, and spiral models.");
+        Unit unit7b = createUnit("Agile", "This unit covers the Agile methodology, an iterative approach to software development that emphasizes flexibility and customer feedback. Students will learn about Agile principles, practices (e.g., Scrum, Kanban), and how to apply Agile techniques in software projects.");
+        Unit unit7c = createUnit("Waterfall", "In this unit, students will explore the Waterfall model, a linear and sequential approach to software development. They will understand the phases of the Waterfall model, including requirements analysis, system design, implementation, testing, deployment, and maintenance.");
+        Unit unit7d = createUnit("Project Management", "This unit focuses on project management techniques and tools used in software development. Students will learn about project planning, scheduling, resource management, risk management, and quality assurance, and how to manage a software project from inception to completion.");
+        List<Unit> units7 = Arrays.asList(unit7a, unit7b, unit7c, unit7d);
+        Unit unit8a = createUnit("HTML", "In this unit, students will learn the basics of HTML (HyperText Markup Language), the standard language for creating web pages. They will understand how to structure content using HTML tags and attributes, and build simple web pages.");
+        Unit unit8b = createUnit("CSS", "This unit covers CSS (Cascading Style Sheets), a language used to style HTML documents. Students will learn how to apply styles to web pages, including layout, colors, fonts, and responsiveness, to enhance the visual presentation of their web pages.");
+        Unit unit8c = createUnit("JavaScript", "In this unit, students will explore JavaScript, a programming language that allows them to create interactive and dynamic web content. They will learn how to write JavaScript code to manipulate the DOM (Document Object Model), handle events, and perform animations.");
+        Unit unit8d = createUnit("React", "This unit focuses on React, a popular JavaScript library for building user interfaces. Students will learn the core concepts of React, including components, state, and props, and how to create single-page applications with React.");
+        Unit unit8e = createUnit("Backend Integration", "In this unit, students will learn how to integrate front-end web applications with backend services. They will explore RESTful APIs, data fetching, and server-side rendering, and understand how to build full-stack web applications.");
+        List<Unit> units8 = Arrays.asList(unit8a, unit8b, unit8c, unit8d, unit8e);
+        Unit unit9a = createUnit("Machine Learning", "In this unit, students will learn about machine learning, a subset of AI that focuses on developing algorithms that enable computers to learn from and make predictions based on data. They will explore various machine learning techniques and tools.");
+        Unit unit9b = createUnit("Neural Networks", "This unit covers neural networks, a set of algorithms modeled after the human brain. Students will understand the basics of neural network architecture, backpropagation, and how to build and train neural networks for different tasks.");
+        Unit unit9c = createUnit("Natural Language Processing", "In this unit, students will explore natural language processing (NLP), a field of AI that enables computers to understand and generate human language. They will learn about text processing, sentiment analysis, and how to build NLP models using machine learning techniques.");
+        List<Unit> units9 = Arrays.asList(unit9a, unit9b, unit9c);
+        Unit unit10a = createUnit("Threat Analysis", "In this unit, students will learn about threat analysis, identifying potential security threats and vulnerabilities. They will understand how to assess risks and implement strategies to mitigate these threats.");
+        Unit unit10b = createUnit("Encryption", "This unit covers encryption, the process of converting information into a secure format. Students will learn about different encryption techniques, algorithms, and the importance of encryption in protecting sensitive data.");
+        Unit unit10c = createUnit("Network Security", "In this unit, students will explore network security, including measures to protect data during transmission across networks. They will understand firewalls, intrusion detection systems, and other tools used to safeguard networks.");
+        Unit unit10d = createUnit("Secure Coding", "This unit focuses on secure coding practices to prevent vulnerabilities in software. Students will learn about common security flaws, how to write secure code, and best practices for maintaining software security.");
+        List<Unit> units10 = Arrays.asList(unit10a, unit10b, unit10c, unit10d);
+        Unit unit11a = createUnit("Limits", "In this unit, students will learn about limits, the foundational concept of calculus. They will understand how to calculate limits and their importance in defining continuity and the behavior of functions.");
+        Unit unit11b = createUnit("Derivatives", "This unit covers derivatives, the measure of how a function changes as its input changes. Students will learn techniques of differentiation, applications of derivatives, and how to solve real-world problems using derivatives.");
+        Unit unit11c = createUnit("Integrals", "In this unit, students will explore integrals, the concept of accumulation of quantities. They will learn about techniques of integration, the Fundamental Theorem of Calculus, and applications of integrals in various fields.");
+        Unit unit11d = createUnit("Applications of Calculus", "This unit focuses on the practical applications of calculus in science, engineering, and economics. Students will understand how to apply calculus concepts to model and solve real-world problems.");
+        List<Unit> units11 = Arrays.asList(unit11a, unit11b, unit11c, unit11d);
+        Unit unit12a = createUnit("Vectors", "In this unit, students will learn about vectors, their properties, and operations. They will explore vector addition, scalar multiplication, dot product, and cross product, and understand their applications in various fields.");
+        Unit unit12b = createUnit("Matrices", "This unit covers matrices and their operations. Students will learn about matrix addition, multiplication, and inversion, as well as applications of matrices in solving linear equations and transformations.");
+        Unit unit12c = createUnit("Determinants", "In this unit, students will explore determinants, a scalar value that can be computed from the elements of a square matrix. They will understand the properties of determinants, how to calculate them, and their role in solving linear systems and finding matrix inverses.");
+        Unit unit12d = createUnit("Eigenvalues", "This unit focuses on eigenvalues, which are special numbers associated with a matrix. Students will learn how to calculate eigenvalues, understand their significance, and explore their applications in various mathematical and engineering problems.");
+        Unit unit12e = createUnit("Eigenvectors", "In this unit, students will study eigenvectors, which are vectors associated with eigenvalues that remain in the same direction under a linear transformation. They will learn how to find eigenvectors and understand their importance in matrix diagonalization and systems of linear equations.");
+        List<Unit> units12 = Arrays.asList(unit12a, unit12b, unit12c, unit12d, unit12e);
+        Unit unit13a = createUnit("Sequences and Series", "In this unit, students will learn about sequences and series, including convergence tests,power series, and Taylor series.They will understand how to analyze the behavior of sequences and series and apply these concepts to solve mathematical problems. ");
+        Unit unit13b = createUnit("Techniques of Integration", "This unit covers advanced integration techniques, such as integration by parts, partial fractions, trigonometric integrals, and improper integrals. Students will learn how to apply these techniques to evaluate complex integrals and solve real-world problems involving integration.");
+        Unit unit13c = createUnit("Multivariable Functions", "In this unit, students will explore functions of several variables, including partial derivatives, multiple integrals, and gradient vectors. They will understand how to analyze and visualize multivariable functions and apply these concepts to solve problems in various fields.");
+        Unit unit13d = createUnit("Vector Calculus", "This unit focuses on vector caluclus, the study of vector fields and their applications. Students will learn about line integrals, surface integrals, Green's Theorem, Stoke's Theorem, and the Divergence Theorem. They will understand how to apply these theorems to analyze and solve problems involving vector fields.");
+        List<Unit> units13 = Arrays.asList(unit13a, unit13b, unit13c, unit13d);
+        Unit unit14a = createUnit("Logic", "In this unit, students will learn about the fundamentals of logic, including propositional and predicate logic. They will understand how to form logical statements, use logical connectives, and apply logical reasoning in problem-solving.");
+        Unit unit14b = createUnit("Set Theory", "This unit covers set theory, the study of sets, which are collections of objects. Students will explore the concepts of subsets, unions, intersections, and Cartesian products, and apply these concepts to solve problems involving sets.");
+        Unit unit14c = createUnit("Graph Theory", "In this unit, students will explore graph theory, the study of graphs as mathematical structures used to model pairwise relations between objects. They will learn about different types of graphs, such as directed and undirected graphs, and apply algorithms for traversing and analyzing graphs.");
+        Unit unit14d = createUnit("Combinatorics", "This unit focuses on combinatorics, the study of counting, arrangement, and combination of objects. Students will learn about permutations, combinations, and the principles of counting, and apply these techniques to solve combinatorial problems.");
+        List<Unit> units14 = Arrays.asList(unit14a, unit14b, unit14c, unit14d);
+        Unit unit15a = createUnit("Newton's Laws", "In this unit, students will learn about Newton's laws of motion, which describe the relationship between the motion of an object and the forces acting on it. They will understand and apply these laws to solve problems in mechanics.");
+        Unit unit15b = createUnit("Energy Principles", "This unit covers the principles of energy, including kinetic and potential energy, work, and the conservation of energy. Students will learn how to calculate energy and work, and understand the concepts of power and efficiency.");
+        Unit unit15c = createUnit("Motion", "In this unit, students will explore the concepts of motion, including linear motion, projectile motion, and circular motion. They will learn about velocity, acceleration, and the equations of motion, and apply these concepts to analyze different types of motion.");
+        List<Unit> units15 = Arrays.asList(unit15a, unit15b, unit15c);
+        Unit unit16a = createUnit("Atomic Structure", "In this unit, students will learn about the structure of atoms, including subatomic particles (protons, neutrons, electrons), atomic number, mass number, and isotopes. They will understand how these components define elements and their properties.");
+        Unit unit16b = createUnit("Chemical Bonding", "This unit covers chemical bonding, the process by which atoms combine to form molecules and compounds. Students will explore different types of bonds, including ionic, covalent, and metallic bonds, and understand the principles that govern bond formation.");
+        Unit unit16c = createUnit("Reactions", "In this unit, students will study chemical reactions, including the reactants, products, and types of chemical reactions. They will learn about reaction rates, equilibrium, and the factors that influence chemical reactions.");
+        List<Unit> units16 = Arrays.asList(unit16a, unit16b, unit16c);
+        Unit unit17a = createUnit("Cell Structure", "In this unit, students will learn about the structure and function of cells, including the cell membrane, nucleus, organelles, and the differences between prokaryotic and eukaryotic cells.");
+        Unit unit17b = createUnit("Genetics", "This unit covers genetics, the study of heredity and the variation of inherited characteristics. Students will explore the principles of Mendelian genetics, the structure and function of DNA, and the processes of replication, transcription, and translation.");
+        Unit unit17c = createUnit("Evolution", "In this unit, students will explore the theory of evolution, natural selection, and the evidence supporting evolutionary change. They will understand how genetic variation and environmental factors contribute to the evolution of species.");
+        Unit unit17d = createUnit("Ecology", "This unit focuses on ecology, the study of interactions between organisms and their environment. Students will learn about ecosystems, food webs, energy flow, and the impact of human activities on the environment.");
+        List<Unit> units17 = Arrays.asList(unit17a, unit17b, unit17c, unit17d);
+        Unit unit18a = createUnit("Engineering Disciplines", "In this unit, students will learn about the various engineering disciplines, including civil, mechanical, electrical, and chemical engineering. They will explore the roles and responsibilities of engineers in each field and understand the diverse applications of engineering.");
+        Unit unit18b = createUnit("Problem-Solving", "This unit covers problem-solving techniques used in engineering. Students will learn about the engineering problem-solving process, including identifying problems, generating solutions, and selecting the best solution. They will apply these techniques to real-world engineering challenges.");
+        Unit unit18c = createUnit("Design Process", "In this unit, students will explore the engineering design process, a systematic approach to solving engineering problems. They will learn about the stages of the design process, including defining requirements, brainstorming, prototyping, testing, and iteration.");
+        List<Unit> units18 = Arrays.asList(unit18a, unit18b, unit18c);
+        Unit unit19a = createUnit("Circuit Analysis", "In this unit, students will learn about the principles of circuit analysis, including Ohm's law, Kirchhoff's laws, and techniques for analyzing DC and AC circuits. They will understand how to calculate voltage, current, and resistance in electrical circuits.");
+        Unit unit19b = createUnit("Signal Processing", "This unit covers the fundamentals of signal processing, including the analysis and manipulation of signals. Students will learn about Fourier transforms, filtering, and the applications of signal processing in communication systems and digital signal processing (DSP).");
+        Unit unit19c = createUnit("Systems Theory", "In this unit, students will explore systems theory, the study of systems and their behavior. They will learn about system modeling, feedback, and control systems, and understand how to apply these concepts to analyze and design electrical systems.");
+        List<Unit> units19 = Arrays.asList(unit19a, unit19b, unit19c);
+        Unit unit20a = createUnit("Statics", "In this unit, students will learn about statics, the branch of mechanics that deals with bodies at rest and forces in equilibrium. They will understand how to analyze force systems, calculate moments, and solve problems related to static equilibrium.");
+        Unit unit20b = createUnit("Dynamics", "This unit covers dynamics, the study of bodies in motion. Students will explore kinematics and kinetics, understand the principles of Newton's laws of motion, and learn how to analyze the motion of particles and rigid bodies.");
+        Unit unit20c = createUnit("Thermodynamics", "In this unit, students will explore the principles of thermodynamics, including the laws of thermodynamics, energy transfer, and the behavior of gases and liquids. They will understand how to apply these principles to solve engineering problems involving heat and work.");
+        Unit unit20d = createUnit("Material Science", "This unit focuses on material science, the study of the properties and behavior of materials. Students will learn about different types of materials, including metals, ceramics, polymers, and composites, and understand how to select materials for specific engineering applications.");
+        List<Unit> units20 = Arrays.asList(unit20a, unit20b, unit20c, unit20d);
+        unitRepo.saveAllAndFlush(Arrays.asList(unit1a, unit1b, unit1c, unit1d, unit1e, unit1f, unit2a, unit2b, unit2c, unit2d, unit2e, unit2f, unit3a, unit3b, unit3c, unit3d, unit4a, unit4b, unit4c, unit4d, unit5a, unit5b, unit5c, unit5d, unit6a, unit6b, unit6c, unit6d, unit6e, unit7a, unit7b, unit7c, unit7d, unit8a, unit8b, unit8c, unit8d, unit8e, unit9a, unit9b, unit9c, unit10a, unit10b, unit10c, unit10d, unit11a, unit11b, unit11c, unit11d, unit12a, unit12b, unit12c, unit12d, unit12e, unit13a, unit13b, unit13c, unit13d, unit14a, unit14b, unit14c, unit14d, unit15a, unit15b, unit15c, unit16a, unit16b, unit16c, unit17a, unit17b, unit17c, unit17d, unit18a, unit18b, unit18c, unit19a, unit19b, unit19c, unit20a, unit20b, unit20c, unit20d));
+
+        course1.setUnits(units1);
+        course2.setUnits(units2);
+        course3.setUnits(units3);
+        course4.setUnits(units4);
+        course5.setUnits(units5);
+        course6.setUnits(units6);
+        course7.setUnits(units7);
+        course8.setUnits(units8);
+        course9.setUnits(units9);
+        course10.setUnits(units10);
+        course11.setUnits(units11);
+        course12.setUnits(units12);
+        course13.setUnits(units13);
+        course14.setUnits(units14);
+        course15.setUnits(units15);
+        course16.setUnits(units16);
+        course17.setUnits(units17);
+        course18.setUnits(units18);
+        course19.setUnits(units19);
+        course20.setUnits(units20);
+
+
         Resource resource1a= createResource("Course 1 textbook resource","https://ocw.mit.edu/collections/introductory-programming/",syllabus1,course1);
         Resource resource1b=createResource("Course 1 video resource","https://m.youtube.com/watch?v=rfscVS0vtbw",syllabus1,course1);
             Lesson lesson1a=createLesson("Variables","Variables are fundamental in programming as they store data values.In Python, you can declare a variable simply by assigning it a value using the = symbol. For example, age=25. Variables can store different data types and remember to use meaningful names when naming them to make it more readable and maintainable.",faculty1,unit1a);
@@ -137,18 +306,6 @@ public class Seeder implements CommandLineRunner {
         createUnitDetails(unit1e, Arrays.asList(lesson1e), course1);
         createUnitDetails(unit1f, Arrays.asList(lesson1f), course1);
 
-
-        // Course 2: Data Structures
-        Syllabus syllabus2 = createSyllabus("Understand and implement various data structures.", "Arrays, Linked Lists, Stacks, Queues, Trees, Graphs.", "Assignments (50%), Projects (20%), Tests (30%)");
-
-          Unit unit2a=      createUnit("Arrays", "In this unit, students will learn about arrays, a fundamental data structure...");
-          Unit unit2b=      createUnit("Linked Lists", "This unit covers linked lists, a data structure consisting of nodes...");
-          Unit unit2c=      createUnit("Stacks", "In this unit, students will explore stacks, a last-in, first-out (LIFO) data structure...");
-          Unit unit2d=      createUnit("Queues", "This unit focuses on queues, a first-in, first-out (FIFO) data structure...");
-          Unit unit2e=      createUnit("Trees", "In this unit, students will study trees, a hierarchical data structure...");
-          Unit unit2f=      createUnit("Graphs", "This unit covers graphs, a versatile data structure used to represent relationships...");
-        List<Unit> units2=Arrays.asList(unit2a,unit2b,unit2c,unit2d,unit2e,unit2f);
-        Course course2 = createCourse("Data Structures", "An in-depth study of data structures such as arrays, linked lists, stacks, queues, and trees.", "Computer Science", 3, syllabus2, units2);
         Resource resource2a=createResource("Course 2 textbook resource","https://people.cs.vt.edu/shaffer/Book/",syllabus2,course2);
         Resource resource2b=createResource("Course 2 video resource","https://m.youtube.com/watch?v=RBSGKIAvoiM",syllabus2,course2);
           Lesson lesson2a=createLesson("Arrays","Arrays are fundamental data structures that store a collection of elements, all of the same type, in contiguous memory locations. This structure allows for efficient indexing, meaning you can quickly access any element using its index. For example, array=[1,2,3] creates an array of integers. Array are useful for tasks that reuqire constant-time access and traversal of elements,such as searching or sorting.",faculty2,unit2a);
@@ -165,15 +322,7 @@ public class Seeder implements CommandLineRunner {
         createUnitDetails(unit2f, Arrays.asList(lesson2f), course2);
 
 
-// Course 3: Algorithms
-        Syllabus syllabus3 = createSyllabus("Explore the design and analysis of algorithms.", "Sorting, Searching, Graph Algorithms, Dynamic Programming.", "Assignments (40%), Projects (30%), Tests (30%)");
 
-           Unit unit3a=     createUnit("Sorting", "In this unit, students will learn about various sorting algorithms, including bubble sort, merge sort, and quicksort. They will understand the principles behind each sorting method, analyze their efficiency, and implement these algorithms in Python.");
-           Unit unit3b=     createUnit("Searching", "This unit covers different searching algorithms such as linear search and binary search. Students will learn how to implement these algorithms, analyze their time complexity, and apply them to solve real-world problems.");
-           Unit unit3c=     createUnit("Graph Algorithms", "In this unit, students will explore algorithms used to traverse and manipulate graphs, including depth-first search (DFS) and breadth-first search (BFS). They will learn how to implement these algorithms and understand their applications in network analysis and other fields.");
-           Unit unit3d=     createUnit("Dynamic Programming", "This unit focuses on dynamic programming, a method for solving complex problems by breaking them down into simpler subproblems. Students will learn the fundamentals of dynamic programming, implement classic algorithms such as the Fibonacci sequence and knapsack problem, and understand how to optimize their solutions.");
-        List<Unit> units3=Arrays.asList(unit3a,unit3b,unit3c,unit3d);
-        Course course3 = createCourse("Algorithms", "Explore the design and analysis of algorithms, including sorting and searching algorithms.", "Computer Science", 3, syllabus3, units3);
         Resource resource3a=createResource("Course 3 textbook resource","httpsL//jeffe.cs.illinois.edu/teaching/algorithms/",syllabus3,course3);
         Resource resource3b=createResource("Course 3 video resource","https://m.youtube.com/watch?v=rL8X2mlNHPM",syllabus3,course3);
             Lesson lesson3a=createLesson("Sorting","Sorting algorithms arrange elements in a specific order(ascending or descending).There is bubble sort which repeatedly swaps adjacent elements if they're in the wrong order.Not efficient for large lists but is simple.Merge sort divides the lists in half,sorts them and then merges back together.More efficient and works with large data sets. Quick sort selects a 'pivot' element and partitions the other elements into 2 subarrays(less than or greater than). Complex to implement.",faculty3,unit3a);
@@ -185,18 +334,6 @@ public class Seeder implements CommandLineRunner {
         createUnitDetails(unit3c, Arrays.asList(lesson3c), course3);
         createUnitDetails(unit3d, Arrays.asList(lesson3d), course3);
 
-
-
-
-// Course 4: Database Management Systems
-        Syllabus syllabus4 = createSyllabus("Introduction to database concepts, SQL, and database design.", "Relational Databases, SQL, Transactions, Database Design.", "Assignments (40%), Projects (30%), Tests (30%)");
-
-            Unit unit4a=    createUnit("Relational Databases", "In this unit, students will learn about the foundational concepts of relational databases, including tables, keys, and relationships. Students will understand how relational databases organize data and how to design efficient database schemas.");
-            Unit unit4b=    createUnit("SQL", "This unit covers the basics of Structured Query Language (SQL), the standard language for querying and manipulating databases. Students will learn how to write SQL queries to create, read, update, and delete data, as well as perform complex data operations.");
-            Unit unit4c=    createUnit("Transactions", "In this unit, students will explore the concept of transactions, which ensure data integrity and consistency in databases. They will learn about ACID properties (Atomicity, Consistency, Isolation, Durability) and how to implement transactions in SQL.");
-            Unit unit4d=    createUnit("Database Design", "This unit focuses on the principles and best practices of database design. Students will learn how to create normalized database schemas, design efficient database structures, and apply data modeling techniques to meet specific application requirements.");
-                List<Unit> units4=Arrays.asList(unit4a,unit4b,unit4c,unit4d);
-        Course course4 = createCourse("Database Management Systems", "Introduction to database concepts, SQL, and database design.", "Computer Science", 3, syllabus4, units4);
         Resource resource4a=createResource("Course 4 textbook resource","https://open.umn.edu/opentextbooks/textbooks/database-design-2nd-edition",syllabus4,course4);
         Resource resource4b=createResource("Course 4 video resource","https://www.khanacademy.org/computing/computer-programming/sql",syllabus4,course4);
             Lesson lesson4a=createLesson("Relational Databases","Relational databases organize data into tables where each table consists of rows and columns. Each row or record ina atable represents a single data item, and each column or field represents a specific attribute of that data item. Keys(primary and foreign) are used to uniquely identify records and establish relationships between tables.",faculty4,unit4a);
@@ -208,16 +345,6 @@ public class Seeder implements CommandLineRunner {
         createUnitDetails(unit4c, Arrays.asList(lesson4c), course4);
         createUnitDetails(unit4d, Arrays.asList(lesson4d), course4);
 
-
-// Course 5: Operating Systems
-        Syllabus syllabus5 = createSyllabus("Study the fundamental concepts of operating systems.", "Processes, Memory Management, File Systems, Scheduling.", "Assignments (40%), Projects (30%), Tests (30%)");
-
-             Unit unit5a=   createUnit("Processes", "In this unit, students will learn about processes and process management in operating systems. They will understand how the OS handles process creation, scheduling, and termination, and explore inter-process communication and synchronization.");
-             Unit unit5b=   createUnit("Memory Management", "This unit covers memory management techniques used by operating systems to allocate and manage memory resources. Students will learn about paging, segmentation, virtual memory, and memory allocation algorithms.");
-             Unit unit5c=   createUnit("File Systems", "In this unit, students will explore file systems and how they are managed by the OS. They will learn about file organization, storage allocation, directory structures, and file access methods.");
-             Unit unit5d=   createUnit("Scheduling", "This unit focuses on CPU scheduling algorithms and their role in managing process execution. Students will learn about different scheduling techniques, such as round-robin, priority scheduling, and multi-level queues, and analyze their performance and efficiency.");
-                 List<Unit> units5=Arrays.asList(unit5a,unit5b,unit5c,unit5d);
-        Course course5 = createCourse("Operating Systems", "Study the fundamental concepts of operating systems, including processes, memory management, and file systems.", "Computer Science", 3, syllabus5, units5);
         Resource resource5a=createResource("Course 5 textbook resource","https://pages.cs.wisc.edu/~remzi/OSTEP/",syllabus5,course5);
         Resource resource5b=createResource("Course 5 video resource","https://m.youtube.com/watch?v=mXw9ruZaxzQ",syllabus5,course5);
             Lesson lesson5a=createLesson("Processes","Processes are the active entities that represenet the execution of a program. The OS handles process management by creating,scheduling, and terminating processes.It also manages inter-process communication(IPC) and synchronization to ensure process can interact and share resources effectively.",faculty5,unit5a);
@@ -229,16 +356,6 @@ public class Seeder implements CommandLineRunner {
         createUnitDetails(unit5c, Arrays.asList(lesson5c), course5);
         createUnitDetails(unit5d, Arrays.asList(lesson5d), course5);
 
-// Course 6: Computer Networks
-        Syllabus syllabus6 = createSyllabus("Learn about the principles of computer networking.", "OSI Model, TCP/IP, Network Protocols, Routing, Switching.", "Assignments (40%), Projects (30%), Tests (30%)");
-
-           Unit unit6a=     createUnit("OSI Model", "In this unit, students will learn about the OSI (Open Systems Interconnection) model, which standardizes the functions of a telecommunication or computing system irrespective of its underlying structure and technology. They will understand the seven layers of the OSI model and how data is transmitted across each layer.");
-           Unit unit6b=     createUnit("TCP/IP", "This unit covers the TCP/IP (Transmission Control Protocol/Internet Protocol) model, the foundational protocol suite for the internet. Students will learn about its four layers, key protocols, and how TCP/IP enables reliable communication between networked devices.");
-           Unit unit6c=     createUnit("Network Protocols", "In this unit, students will explore various network protocols that govern data exchange over networks. They will understand the roles of protocols such as HTTP, FTP, DNS, and DHCP, and how these protocols ensure secure and efficient communication.");
-           Unit unit6d=     createUnit("Routing", "This unit focuses on routing, the process of selecting paths in a network along which to send data packets. Students will learn about different routing algorithms, protocols (e.g., OSPF, BGP), and the concepts of static and dynamic routing.");
-           Unit unit6e=     createUnit("Switching", "In this unit, students will learn about switching, a technique used to forward data packets from one device to another within a network. They will explore different types of switches, switching methods (e.g., packet switching, circuit switching), and the role of switches in network design.");
-                 List<Unit> units6=Arrays.asList(unit6a,unit6b,unit6c,unit6d,unit6e);
-        Course course6 = createCourse("Computer Networks", "Learn about the principles of computer networking, including the OSI model, TCP/IP, and network protocols.", "Computer Science", 3, syllabus6, units6);
         Resource resource6a=createResource("Course 6 textbook resource","https://github.com/obonadventure/cnp3",syllabus6,course6);
         Resource resource6b=createResource("Course 6 video resource","https://www.networkacademy.io",syllabus6,course6);
             Lesson lesson6a=createLesson("OSI Model","The OSI(Open Systems Interconnection) model standardized networking functions into seven layers: Physical,Data Link,Network,Transport,Session,Presentation, and Application. Each layers serves a specific role in data transmission.",faculty1,unit6a);
@@ -252,17 +369,6 @@ public class Seeder implements CommandLineRunner {
         createUnitDetails(unit6d, Arrays.asList(lesson6d), course6);
         createUnitDetails(unit6e, Arrays.asList(lesson6e), course6);
 
-
-
-// Course 7: Software Engineering
-        Syllabus syllabus7 = createSyllabus("Introduction to software development methodologies.", "Software Development Life Cycle, Agile, Waterfall, Project Management.", "Assignments (40%), Projects (30%), Tests (30%)");
-
-              Unit unit7a=  createUnit("Software Development Life Cycle", "In this unit, students will learn about the Software Development Life Cycle (SDLC), a process for planning, creating, testing, and deploying an information system. They will explore different SDLC models, including iterative, incremental, and spiral models.");
-              Unit unit7b=  createUnit("Agile", "This unit covers the Agile methodology, an iterative approach to software development that emphasizes flexibility and customer feedback. Students will learn about Agile principles, practices (e.g., Scrum, Kanban), and how to apply Agile techniques in software projects.");
-              Unit unit7c=  createUnit("Waterfall", "In this unit, students will explore the Waterfall model, a linear and sequential approach to software development. They will understand the phases of the Waterfall model, including requirements analysis, system design, implementation, testing, deployment, and maintenance.");
-              Unit unit7d=  createUnit("Project Management", "This unit focuses on project management techniques and tools used in software development. Students will learn about project planning, scheduling, resource management, risk management, and quality assurance, and how to manage a software project from inception to completion.");
-                List<Unit> units7=Arrays.asList(unit7a,unit7b,unit7c,unit7d);
-        Course course7 = createCourse("Software Engineering", "Introduction to software development methodologies, project management, and software life cycle.", "Computer Science", 4, syllabus7, units7);
         Resource resource7a=createResource("Course 7 textbook resource","https://www.infobooks.org/pdfview/14012-introduction-to-software-engineering-pvpsit/",syllabus7,course7);
         Resource resource7b=createResource("Course 7 video resource","https://m.youtube.com/watch?v=zOjov-2OZ0E",syllabus7,course7);
               Lesson lesson7a=createLesson("Software Development Life Cycle","The Software Development Life Cycle(SDLC) is a prcoess used for planning, creating, testing and deploying an information system. It consists of several models,including:Iterative Model:Develops the system through repeated cycles(iterations and progressively enhances the system.Incremental Model:Divides the system into smaller segments,each of which is developed and delivered incrementally.Spiral Model:Combines iterative developement with systematics aspects fo the waterfall model,focusing on risk analysis and iterative refinement.",faculty2,unit7a);
@@ -274,19 +380,6 @@ public class Seeder implements CommandLineRunner {
         createUnitDetails(unit7c, Arrays.asList(lesson7c), course7);
         createUnitDetails(unit7d, Arrays.asList(lesson7d), course7);
 
-
-
-
-// Course 8: Web Development
-        Syllabus syllabus8 = createSyllabus("Learn to create dynamic websites.", "HTML, CSS, JavaScript, React, Backend Integration.", "Assignments (40%), Projects (30%), Tests (30%)");
-
-            Unit unit8a=    createUnit("HTML", "In this unit, students will learn the basics of HTML (HyperText Markup Language), the standard language for creating web pages. They will understand how to structure content using HTML tags and attributes, and build simple web pages.");
-            Unit unit8b=    createUnit("CSS", "This unit covers CSS (Cascading Style Sheets), a language used to style HTML documents. Students will learn how to apply styles to web pages, including layout, colors, fonts, and responsiveness, to enhance the visual presentation of their web pages.");
-            Unit unit8c=    createUnit("JavaScript", "In this unit, students will explore JavaScript, a programming language that allows them to create interactive and dynamic web content. They will learn how to write JavaScript code to manipulate the DOM (Document Object Model), handle events, and perform animations.");
-            Unit unit8d=    createUnit("React", "This unit focuses on React, a popular JavaScript library for building user interfaces. Students will learn the core concepts of React, including components, state, and props, and how to create single-page applications with React.");
-            Unit unit8e=    createUnit("Backend Integration", "In this unit, students will learn how to integrate front-end web applications with backend services. They will explore RESTful APIs, data fetching, and server-side rendering, and understand how to build full-stack web applications.");
-                    List<Unit> units8=Arrays.asList(unit8a,unit8b,unit8c,unit8d,unit8e);
-        Course course8 = createCourse("Web Development", "Learn to create dynamic websites using HTML, CSS, JavaScript, and frameworks such as React.", "Computer Science", 3, syllabus8, units8);
         Resource resource8a=createResource("Course 8 textbook resource","httpsL//eloquentjavascript.net",syllabus8,course8);
         Resource resource8b=createResource("Course 8 video resource","https://m.youtube.com/watch?v=nu_pCVPKzTk&pp=ygUbd2VilGRldmdmVs-b3BtZW50IGZ1bGwgY2n1cnNI",syllabus8,course8);
             Lesson lesson8a=createLesson("HTML","HTML(HyperText Markup Language) is the foundation of web development.It structures content on the web using tags and attributes.HTML provides the skeleton of a web page, allowing you to build simple and organized web content.",faculty3,unit8a);
@@ -300,18 +393,6 @@ public class Seeder implements CommandLineRunner {
         createUnitDetails(unit8d, Arrays.asList(lesson8d), course8);
         createUnitDetails(unit8e, Arrays.asList(lesson8e), course8);
 
-// Course 9: Artificial Intelligence
-        Syllabus syllabus9 = createSyllabus(
-                "Explore the basics of artificial intelligence.",
-                "Machine Learning, Neural Networks, Natural Language Processing.",
-                "Assignments (40%), Projects (30%), Tests (30%)"
-        );
-
-           Unit unit9a=     createUnit("Machine Learning", "In this unit, students will learn about machine learning, a subset of AI that focuses on developing algorithms that enable computers to learn from and make predictions based on data. They will explore various machine learning techniques and tools.");
-           Unit unit9b=     createUnit("Neural Networks", "This unit covers neural networks, a set of algorithms modeled after the human brain. Students will understand the basics of neural network architecture, backpropagation, and how to build and train neural networks for different tasks.");
-           Unit unit9c=     createUnit("Natural Language Processing", "In this unit, students will explore natural language processing (NLP), a field of AI that enables computers to understand and generate human language. They will learn about text processing, sentiment analysis, and how to build NLP models using machine learning techniques.");
-                    List<Unit> units9=Arrays.asList(unit9a,unit9b,unit9c);
-        Course course9 = createCourse("Artificial Intelligence", "Explore the basics of artificial intelligence, including machine learning, neural networks, and natural language processing.", "Computer Science", 4, syllabus9, units9);
         Resource resource9a=createResource("Course 9 textbook resource","http://neuralnetworksanddeeplearning.com",syllabus9,course9);
         Resource resource9b=createResource("Course 9 video resource","https://m.youtube.com/playlist?list=PLkDaE6sCZn6Ec-XTbcX1uRg2_u4xOEky0",syllabus9,course9);
             Lesson lesson9a=createLesson("Machine Learning","Machine Learning is the subset of AI that involves developing algorithms that enable computers to learn from and make predictions based on data.Key techniques include supervised learning, where models are trained on labeled data; unsupervised learning, which finds patterns in unlabeled data; and reinforcement learning, which learns optimal actions through trial and error.",faculty4,unit9a);
@@ -322,16 +403,8 @@ public class Seeder implements CommandLineRunner {
         createUnitDetails(unit9c, Arrays.asList(lesson9c), course9);
 
 
-// Create the Syllabus and Units for Course 10
-        Syllabus syllabus10 = createSyllabus("Introduction to the principles of cybersecurity.", "Threat Analysis, Encryption, Network Security, Secure Coding.", "Assignments (40%), Projects (30%), Tests (30%)");
-
-         Unit unit10a=       createUnit("Threat Analysis", "In this unit, students will learn about threat analysis, identifying potential security threats and vulnerabilities. They will understand how to assess risks and implement strategies to mitigate these threats.");
-         Unit unit10b=       createUnit("Encryption", "This unit covers encryption, the process of converting information into a secure format. Students will learn about different encryption techniques, algorithms, and the importance of encryption in protecting sensitive data.");
-         Unit unit10c=       createUnit("Network Security", "In this unit, students will explore network security, including measures to protect data during transmission across networks. They will understand firewalls, intrusion detection systems, and other tools used to safeguard networks.");
-         Unit unit10d=       createUnit("Secure Coding", "This unit focuses on secure coding practices to prevent vulnerabilities in software. Students will learn about common security flaws, how to write secure code, and best practices for maintaining software security.");
-            List<Unit> units10=Arrays.asList(unit10a,unit10b,unit10c,unit10d);
 // Create Course 10
-        Course course10 = createCourse("Cybersecurity", "Introduction to the principles of cybersecurity, including threat analysis, encryption, and network security.", "Computer Science", 3, syllabus10, units10);
+
         Resource resource10a=createResource("Course 10 textbook resource","https://www.infobooks.org/pdfview/cyber-security-wei-lu-yuqing-zhang-weiping-wen-hanbing-yan-chao-li-380/",syllabus10,course10);
         Resource resource10b=createResource("Course 10 video resource","https://m.youtube.com/watch?v=hXSFdwIOfnE",syllabus10,course10);
             Lesson lesson10a=createLesson("Threat Analysis","Threat analysis involves identifying potential security threats and vulneranilities within a system. This process includes assessing the likelihood and impact of different threats, understanding attack vectors, and implementing strategies to mitigate these risks. Key aspects of threat analysis include vulnerability scanning, risk assessment, and penetration testing.",faculty5,unit10a);
@@ -343,17 +416,6 @@ public class Seeder implements CommandLineRunner {
         createUnitDetails(unit10c, Arrays.asList(lesson10c), course10);
         createUnitDetails(unit10d, Arrays.asList(lesson10d), course10);
 
-// Mathematics Courses
-
-        // Course 11: Calculus I
-        Syllabus syllabus11 = createSyllabus("Introduce students to differential and integral calculus.", "Limits, Derivatives, Integrals, Applications of Calculus.", "Assignments (40%), Projects (30%), Tests (30%)");
-
-         Unit unit11a=       createUnit("Limits", "In this unit, students will learn about limits, the foundational concept of calculus. They will understand how to calculate limits and their importance in defining continuity and the behavior of functions.");
-         Unit unit11b=       createUnit("Derivatives", "This unit covers derivatives, the measure of how a function changes as its input changes. Students will learn techniques of differentiation, applications of derivatives, and how to solve real-world problems using derivatives.");
-         Unit unit11c=       createUnit("Integrals", "In this unit, students will explore integrals, the concept of accumulation of quantities. They will learn about techniques of integration, the Fundamental Theorem of Calculus, and applications of integrals in various fields.");
-         Unit unit11d=       createUnit("Applications of Calculus", "This unit focuses on the practical applications of calculus in science, engineering, and economics. Students will understand how to apply calculus concepts to model and solve real-world problems.");
-                List<Unit> units11=Arrays.asList(unit11a,unit11b,unit11c,unit11d);
-        Course course11 = createCourse("Calculus I", "Introduction to differential and integral calculus.", "Mathematics", 4, syllabus11, units11);
         Resource resource11a=createResource("Course 11 textbook resource","https://openstax.org/books/calculus-volume-1/pages/1-introduction",syllabus11,course11);
         Resource resource11b=createResource("Course 11 video resource","https:m.youtube.com/playlist?list=PLF797E961509B4EB5",syllabus11,course11);
             Lesson lesson11a=createLesson("Limits","Limits are the foundation of calculus.They describe the behavior of a function as its input approaches a certain value. Understanding limits helps in defining continuity and the behavior of functions near specific points.",faculty1,unit11a);
@@ -365,16 +427,6 @@ public class Seeder implements CommandLineRunner {
         createUnitDetails(unit11c, Arrays.asList(lesson11c), course11);
         createUnitDetails(unit11d, Arrays.asList(lesson11d), course11);
 
-// Course 12: Linear Algebra
-        Syllabus syllabus12 = createSyllabus("Study of vector spaces, matrices, and linear transformations.", "Vectors, Matrices, Determinants, Eigenvalues, Eigenvectors.", "Assignments (40%), Projects (30%), Tests (30%)");
-
-             Unit unit12a=   createUnit("Vectors", "In this unit, students will learn about vectors, their properties, and operations. They will explore vector addition, scalar multiplication, dot product, and cross product, and understand their applications in various fields.");
-             Unit unit12b=   createUnit("Matrices", "This unit covers matrices and their operations. Students will learn about matrix addition, multiplication, and inversion, as well as applications of matrices in solving linear equations and transformations.");
-             Unit unit12c=   createUnit("Determinants", "In this unit, students will explore determinants, a scalar value that can be computed from the elements of a square matrix. They will understand the properties of determinants, how to calculate them, and their role in solving linear systems and finding matrix inverses.");
-             Unit unit12d=   createUnit("Eigenvalues", "This unit focuses on eigenvalues, which are special numbers associated with a matrix. Students will learn how to calculate eigenvalues, understand their significance, and explore their applications in various mathematical and engineering problems.");
-             Unit unit12e=   createUnit("Eigenvectors", "In this unit, students will study eigenvectors, which are vectors associated with eigenvalues that remain in the same direction under a linear transformation. They will learn how to find eigenvectors and understand their importance in matrix diagonalization and systems of linear equations.");
-                List<Unit> units12=Arrays.asList(unit12a,unit12b,unit12c,unit12d,unit12e);
-        Course course12 = createCourse("Linear Algebra", "Study of vector spaces, matrices, and linear transformations.", "Mathematics", 3, syllabus12, units12);
         Resource resource12a=createResource("Course 12 textbook resource","https://linear.axler.net",syllabus12,course12);
         Resource resource12b=createResource("Course 12 video resource","https://m.youtube.com/playlist?list=PL221E2BBF13BECF6C",syllabus12,course12);
             Lesson lesson12a=createLesson("Vectors","Vectors are fundamental objects in linear algebra that represent quantities having both magnitude and direction. You can perform various operations on vectors like addition,scalar multiplication,dot product and cross product",faculty2,unit12b);
@@ -388,15 +440,6 @@ public class Seeder implements CommandLineRunner {
         createUnitDetails(unit12d, Arrays.asList(lesson12d), course12);
         createUnitDetails(unit12e, Arrays.asList(lesson12e), course12);
 
-// Course 13: Calculus II
-        Syllabus syllabus13 = createSyllabus("Explore advanced calculus topics including sequences,series, and multivariable calculus.", "Sequences and Series, Techniques of integration, Multivariable Functions, Vector Calculus.", "Assignments (40%), Projects (30%), Tests (30%)");
-
-          Unit unit13a=      createUnit("Sequences and Series", "In this unit, students will learn about sequences and series, including convergence tests,power series, and Taylor series.They will understand how to analyze the behavior of sequences and series and apply these concepts to solve mathematical problems. ");
-          Unit unit13b=      createUnit("Techniques of Integration", "This unit covers advanced integration techniques, such as integration by parts, partial fractions, trigonometric integrals, and improper integrals. Students will learn how to apply these techniques to evaluate complex integrals and solve real-world problems involving integration.");
-          Unit unit13c=      createUnit("Multivariable Functions", "In this unit, students will explore functions of several variables, including partial derivatives, multiple integrals, and gradient vectors. They will understand how to analyze and visualize multivariable functions and apply these concepts to solve problems in various fields.");
-          Unit unit13d=      createUnit("Vector Calculus", "This unit focuses on vector caluclus, the study of vector fields and their applications. Students will learn about line integrals, surface integrals, Green's Theorem, Stoke's Theorem, and the Divergence Theorem. They will understand how to apply these theorems to analyze and solve problems involving vector fields.");
-                List<Unit> units13=Arrays.asList(unit13a,unit13b,unit13c,unit13d);
-        Course course13 = createCourse("Calculus II", "Explore advanced calculus topics including sequences, series and multivariable calculus.", "Mathematics", 3, syllabus13, units13);
         Resource resource13a=createResource("Course 13 textbook resource","https://openstax.org/books/calculus-volume-2/pages/1-introduction",syllabus13,course13);
         Resource resource13b=createResource("Course 13 video resource","https://www.youtube.com/watch?v=h4Vhh7aFmWw",syllabus13,course13);
             Lesson lesson13a=createLesson("Sequences and Series","Sequences and series are essential concepts in calculus. A sequence is an order list of numbers, and a series is the sum of a sequence of terms.Key topics include convergence tests,which determine if a series converges or diverges, power series, which represent functions as infinite sums, and Taylor series, which approximate functions with polynomials.",faculty3,unit13a);
@@ -408,15 +451,6 @@ public class Seeder implements CommandLineRunner {
         createUnitDetails(unit13c, Arrays.asList(lesson13c), course13);
         createUnitDetails(unit13d, Arrays.asList(lesson13d), course13);
 
-// Course 14: Discrete Mathematics
-        Syllabus syllabus14 = createSyllabus("Study of mathematical structures that are fundamentally discrete.", "Logic, Set Theory, Graph Theory, Combinatorics.", "Assignments (40%), Projects (30%), Tests (30%)");
-
-        Unit unit14a=        createUnit("Logic", "In this unit, students will learn about the fundamentals of logic, including propositional and predicate logic. They will understand how to form logical statements, use logical connectives, and apply logical reasoning in problem-solving.");
-        Unit unit14b=        createUnit("Set Theory", "This unit covers set theory, the study of sets, which are collections of objects. Students will explore the concepts of subsets, unions, intersections, and Cartesian products, and apply these concepts to solve problems involving sets.");
-        Unit unit14c=        createUnit("Graph Theory", "In this unit, students will explore graph theory, the study of graphs as mathematical structures used to model pairwise relations between objects. They will learn about different types of graphs, such as directed and undirected graphs, and apply algorithms for traversing and analyzing graphs.");
-        Unit unit14d=        createUnit("Combinatorics", "This unit focuses on combinatorics, the study of counting, arrangement, and combination of objects. Students will learn about permutations, combinations, and the principles of counting, and apply these techniques to solve combinatorial problems.");
-            List<Unit> units14=Arrays.asList(unit14a,unit14b,unit14c,unit14d);
-        Course course14 = createCourse("Discrete Mathematics", "Study of mathematical structures that are fundamentally discrete rather than continuous.", "Mathematics", 3, syllabus14, units14);
         Resource resource14a=createResource("Course 14 textbook resource","https://cims.nyu.edu/~regev/teaching/discrete_math_fall_2005/dmbook.pdf",syllabus14,course14);
         Resource resource14b=createResource("Course 14 video resource","https://m.youtube.com/playlist?list=PLDDGPdw7e6Ag1EIznZ-m-qXu4XX3A0cIz",syllabus14,course14);
             Lesson lesson14a=createLesson("Logic","Logic is the foundation of mathematical reasoning.It includes propositional logic,where statements are either true or false, and predicate logic,which deals with predicates and quantifiers. Logical connectives like AND,OR, and NOT help form complex statements.",faculty4,unit14a);
@@ -428,14 +462,6 @@ public class Seeder implements CommandLineRunner {
         createUnitDetails(unit14c, Arrays.asList(lesson14c), course14);
         createUnitDetails(unit14d, Arrays.asList(lesson14d), course14);
 
-// Course 15: Physics I
-        Syllabus syllabus15 = createSyllabus("Introduction to classical mechanics.", "Newton's Laws, Energy Principles, Motion.", "Assignments (40%), Projects (30%), Tests (30%)");
-
-         Unit unit15a=       createUnit("Newton's Laws", "In this unit, students will learn about Newton's laws of motion, which describe the relationship between the motion of an object and the forces acting on it. They will understand and apply these laws to solve problems in mechanics.");
-         Unit unit15b=       createUnit("Energy Principles", "This unit covers the principles of energy, including kinetic and potential energy, work, and the conservation of energy. Students will learn how to calculate energy and work, and understand the concepts of power and efficiency.");
-         Unit unit15c=       createUnit("Motion", "In this unit, students will explore the concepts of motion, including linear motion, projectile motion, and circular motion. They will learn about velocity, acceleration, and the equations of motion, and apply these concepts to analyze different types of motion.");
-        List<Unit> units15=Arrays.asList(unit15a,unit15b,unit15c);
-        Course course15 = createCourse("Physics I", "Introduction to classical mechanics, including Newton's laws and energy principles.", "Physics", 4, syllabus15, units15);
         Resource resource15a=createResource("Course 15 textbook resource","https://openstax.org/books/university-physics-volume-1/pages/1-introduction",syllabus15,course15);
         Resource resource15b=createResource("Course 15 video resource","https://www.youtube.com/watch?v=wIq4CssPoO0&list=PLUl4u3cNGP60UlabZBeeqOuoLuj_KNphQ",syllabus15,course15);
             Lesson lesson15a=createLesson("Newton's Laws","First Law(Inertia): an object will remain at rest or in uniform motion unless acted upon by an external force. Second Law(F=ma):The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass.Third Law(Action-Reaction):For every action, there is an equal and opposite reaction",faculty5,unit15a);
@@ -445,14 +471,8 @@ public class Seeder implements CommandLineRunner {
         createUnitDetails(unit15b, Arrays.asList(lesson15b), course15);
         createUnitDetails(unit15c, Arrays.asList(lesson15c), course15);
 
-// Course 16: Chemistry I
-        Syllabus syllabus16 = createSyllabus("Introduction to chemical principles.", "Atomic Structure, Chemical Bonding, Reactions.", "Assignments (40%), Projects (30%), Tests (30%)");
 
-        Unit unit16a=        createUnit("Atomic Structure", "In this unit, students will learn about the structure of atoms, including subatomic particles (protons, neutrons, electrons), atomic number, mass number, and isotopes. They will understand how these components define elements and their properties.");
-        Unit unit16b=        createUnit("Chemical Bonding", "This unit covers chemical bonding, the process by which atoms combine to form molecules and compounds. Students will explore different types of bonds, including ionic, covalent, and metallic bonds, and understand the principles that govern bond formation.");
-        Unit unit16c=        createUnit("Reactions", "In this unit, students will study chemical reactions, including the reactants, products, and types of chemical reactions. They will learn about reaction rates, equilibrium, and the factors that influence chemical reactions.");
-            List<Unit> units16=Arrays.asList(unit16a,unit16b,unit16c);
-        Course course16 = createCourse("Chemistry I", "Introduction to chemical principles, including atomic structure and chemical bonding.", "Chemistry", 4, syllabus16, units16);
+
         Resource resource16a=createResource("Course 16 textbook resource","https://openstax.org/books/chemistry-atoms-first-2e/pages/1-introduction",syllabus16,course16);
         Resource resource16b=createResource("Course 16 video resource","https://m.youtube.com/playlist?list=PL8dPuuaLjXtPHzzYuWy6fYEaX9m-QQ8aGr",syllabus16,course16);
             Lesson lesson16a=createLesson("Atomic Structure","Atomic structure is the foundation of chemistry. Atoms consist of three main subatomic particles:protons,neutrons and electrons.The atomic number is the number of protons in an atom and defines the element.The mass number is the total number of protons and neutrons.Isotopes are atoms of the same element with different numbers of neutrons.",faculty1,unit16a);
@@ -463,15 +483,8 @@ public class Seeder implements CommandLineRunner {
         createUnitDetails(unit16c, Arrays.asList(lesson16c), course16);
 
 
-// Course 17: Biology I
-        Syllabus syllabus17 = createSyllabus("Introduction to cellular biology, genetics, and evolution.", "Cell Structure, Genetics, Evolution, Ecology.", "Assignments (40%), Projects (30%), Tests (30%)");
 
-        Unit unit17a=        createUnit("Cell Structure", "In this unit, students will learn about the structure and function of cells, including the cell membrane, nucleus, organelles, and the differences between prokaryotic and eukaryotic cells.");
-        Unit unit17b=        createUnit("Genetics", "This unit covers genetics, the study of heredity and the variation of inherited characteristics. Students will explore the principles of Mendelian genetics, the structure and function of DNA, and the processes of replication, transcription, and translation.");
-        Unit unit17c=        createUnit("Evolution", "In this unit, students will explore the theory of evolution, natural selection, and the evidence supporting evolutionary change. They will understand how genetic variation and environmental factors contribute to the evolution of species.");
-        Unit unit17d=        createUnit("Ecology", "This unit focuses on ecology, the study of interactions between organisms and their environment. Students will learn about ecosystems, food webs, energy flow, and the impact of human activities on the environment.");
-            List<Unit> units17=Arrays.asList(unit17a,unit17b,unit17c,unit17d);
-        Course course17 = createCourse("Biology I", "Introduction to cellular biology, genetics, and evolution.", "Biology", 4, syllabus17, units17);
+
         Resource resource17a=createResource("Course 17 textbook resource","https://openstax.org/books/biology-2e/pages/1-introduction",syllabus17,course17);
         Resource resource17b=createResource("Course 17 video resource","https://m.youtube.com/playlist?list=PL3EED4C1D684D3ADF",syllabus17,course17);
             Lesson lesson17a=createLesson("Cell Structure","The cell is the basic unit of life,comprising the cell membrane,nucleus, and various organelles.Prokaryotic cells lack a nucleus, whereas eukaryotic cells have a defined nucleus and organelles.THe cell membrane controls the movement of substances in and out of the cell,the nucleus contains genetic material, and organelles like mitochondria and ribosomes perform specific functions.",faculty2,unit17a);
@@ -483,14 +496,7 @@ public class Seeder implements CommandLineRunner {
         createUnitDetails(unit17c, Arrays.asList(lesson17c), course17);
         createUnitDetails(unit17d, Arrays.asList(lesson17d), course17);
 
-// Course 18: Introduction to Engineering
-        Syllabus syllabus18 = createSyllabus("Overview of engineering disciplines and problem-solving techniques.", "Engineering Disciplines, Problem-Solving, Design Process.", "Assignments (40%), Projects (30%), Tests (30%)");
 
-        Unit unit18a=        createUnit("Engineering Disciplines", "In this unit, students will learn about the various engineering disciplines, including civil, mechanical, electrical, and chemical engineering. They will explore the roles and responsibilities of engineers in each field and understand the diverse applications of engineering.");
-        Unit unit18b=        createUnit("Problem-Solving", "This unit covers problem-solving techniques used in engineering. Students will learn about the engineering problem-solving process, including identifying problems, generating solutions, and selecting the best solution. They will apply these techniques to real-world engineering challenges.");
-        Unit unit18c=        createUnit("Design Process", "In this unit, students will explore the engineering design process, a systematic approach to solving engineering problems. They will learn about the stages of the design process, including defining requirements, brainstorming, prototyping, testing, and iteration.");
-            List<Unit> units18=Arrays.asList(unit18a,unit18b,unit18c);
-        Course course18 = createCourse("Introduction to Engineering", "Overview of engineering disciplines and problem-solving techniques.", "Engineering", 3, syllabus18, units18);
         Resource resource18a=createResource("Course 18 textbook resource","https://archive.org/details/engineering-fundamentals-an-introduction-to-engineering",syllabus18,course18);
         Resource resource18b=createResource("Course 18 video resource","https://m.youtube.com/playlist?list=PLpe3qgeJLpB0AmyDNh4-UMClqLsao4-Va",syllabus18,course18);
             Lesson lesson18a=createLesson("Engineering Disciplines","Civil:infrastructure like bridges and roads.Mechanical:Design and maunfacturing of mechanical systems.Electrical:Study and application of electricity and electronics.Chemical:Production and use of chemicals and biochemical processes",faculty3,unit18a);
@@ -500,14 +506,7 @@ public class Seeder implements CommandLineRunner {
         createUnitDetails(unit18b, Arrays.asList(lesson18b), course18);
         createUnitDetails(unit18c, Arrays.asList(lesson18c), course18);
 
-// Course 19: Electrical Engineering Basics
-        Syllabus syllabus19 = createSyllabus("Fundamentals of electrical circuits, signals, and systems.", "Circuit Analysis, Signal Processing, Systems Theory.", "Assignments (40%), Projects (30%), Tests (30%)");
 
-        Unit unit19a=        createUnit("Circuit Analysis", "In this unit, students will learn about the principles of circuit analysis, including Ohm's law, Kirchhoff's laws, and techniques for analyzing DC and AC circuits. They will understand how to calculate voltage, current, and resistance in electrical circuits.");
-        Unit unit19b=        createUnit("Signal Processing", "This unit covers the fundamentals of signal processing, including the analysis and manipulation of signals. Students will learn about Fourier transforms, filtering, and the applications of signal processing in communication systems and digital signal processing (DSP).");
-        Unit unit19c=        createUnit("Systems Theory", "In this unit, students will explore systems theory, the study of systems and their behavior. They will learn about system modeling, feedback, and control systems, and understand how to apply these concepts to analyze and design electrical systems.");
-            List<Unit> units19=Arrays.asList(unit19a,unit19b,unit19c);
-        Course course19 = createCourse("Electrical Engineering Basics", "Fundamentals of electrical circuits, signals, and systems.", "Engineering", 4, syllabus19, units19);
         Resource resource19a=createResource("Course 19 textbook resource","https://www.ece.rice.edu/~dhj/courses/elec241/col10040.pdf",syllabus19,course19);
         Resource resource19b=createResource("Course 19 video resource","https://m.youtube.com/watch?v=Vd2UJiIPbag",syllabus19,course19);
             Lesson lesson19a=createLesson("Circuit Analysis","Circuit analysis involves understanding principles such as Ohm's law(V=IR) and Kirchhoff's laws. Techniques for analyzing both DC and AC circuits help in calculating voltage,current and resistance.",faculty4,unit19a);
@@ -518,16 +517,7 @@ public class Seeder implements CommandLineRunner {
         createUnitDetails(unit19c, Arrays.asList(lesson19c), course19);
 
 
-// Course 20: Mechanical Engineering Principles
-        Syllabus syllabus20 = createSyllabus("Introduction to the principles of mechanics and thermodynamics.", "Statics, Dynamics, Thermodynamics, Material Science.", "Assignments (40%), Projects (30%), Tests (30%)");
-
-        Unit unit20a=        createUnit("Statics", "In this unit, students will learn about statics, the branch of mechanics that deals with bodies at rest and forces in equilibrium. They will understand how to analyze force systems, calculate moments, and solve problems related to static equilibrium.");
-        Unit unit20b=        createUnit("Dynamics", "This unit covers dynamics, the study of bodies in motion. Students will explore kinematics and kinetics, understand the principles of Newton's laws of motion, and learn how to analyze the motion of particles and rigid bodies.");
-        Unit unit20c=        createUnit("Thermodynamics", "In this unit, students will explore the principles of thermodynamics, including the laws of thermodynamics, energy transfer, and the behavior of gases and liquids. They will understand how to apply these principles to solve engineering problems involving heat and work.");
-        Unit unit20d=        createUnit("Material Science", "This unit focuses on material science, the study of the properties and behavior of materials. Students will learn about different types of materials, including metals, ceramics, polymers, and composites, and understand how to select materials for specific engineering applications.");
-            List<Unit> units20=Arrays.asList(unit20a,unit20b,unit20c,unit20d);
-        Course course20 = createCourse("Mechanical Engineering Principles", "Introduction to the principles of mechanics and thermodynamics.", "Engineering", 4, syllabus20, units20);
-        Resource resource20a=createResource("Course 20 textbook resource","https://archive.org/details/mechanicalengine0000bird",syllabus20,course20);
+        Resource resource20a = createResource("Course 20 textbook resource", "https://archive.org/details/mechanicalengine0000bird", syllabus20, course20);
         Resource resource20b=createResource("Course 20 video resource","https://www.youtube.com/watch?v=-MbMBgcFudY&list=PLoHI_8mQtcTbDowiHrTbykKRL75Yvzs2B",syllabus20,course20);
             Lesson lesson20a=createLesson("Statics","Statics is the branch of mechanics that deals with bodies at rest and forces on equilibrium.",faculty5,unit20a);
             Lesson lesson20b=createLesson("Dynamics","Dynamics is the study of bodies in motion and the forces that cause this motion",faculty5,unit20b);
@@ -538,9 +528,11 @@ public class Seeder implements CommandLineRunner {
         createUnitDetails(unit20c, Arrays.asList(lesson20c), course20);
         createUnitDetails(unit20d, Arrays.asList(lesson20d), course20);
 
+
         //Semesters
         Semester fall2024 = createSemester("Fall", "2024");
         Semester spring2025 = createSemester("Spring", "2025");
+        semesterRepo.saveAllAndFlush(Arrays.asList(fall2024, spring2025));
 
         //Attendance
         LocalDate attendanceLocalDate1=LocalDate.of(2024,12,4);
@@ -688,6 +680,10 @@ public class Seeder implements CommandLineRunner {
         Discussion discussion20b = createDiscussion("Dynamics Discussion", "How do kinematics and kinetics help in understanding the motion of particles and rigid bodies, and what are the key applications of Newton's laws of motion in analyzing dynamics?", faculty5);
         Discussion discussion20c = createDiscussion("Thermodynamics Discussion", "How do the laws of thermodynamics and principles of energy transfer apply to the behavior of gases and liquids, and how can these principles be used to solve engineering problems involving heat and work?", faculty5);
         Discussion discussion20d = createDiscussion("Material Science Discussion", "How do the properties and behaviors of different materials (such as metals, ceramics, polymers, and composites) influence their selection for specific engineering applications, and what are some examples of these applications?", faculty5);
+
+        discussionRepo.saveAllAndFlush(Arrays.asList(discussion1a, discussion1b, discussion1c, discussion1d, discussion1e, discussion1f, discussion2a, discussion2b, discussion2c, discussion2d, discussion2e, discussion2f, discussion3a, discussion3b, discussion3c, discussion3d, discussion4a, discussion4b, discussion4c, discussion4d, discussion5a, discussion5b, discussion5c, discussion5d, discussion6a, discussion6b, discussion6c, discussion6d, discussion6e, discussion7a, discussion7b, discussion7c, discussion7d, discussion8a, discussion8b, discussion8c, discussion8d, discussion8e, discussion9a, discussion9b, discussion9c, discussion10a, discussion10b, discussion10c, discussion10d, discussion11a, discussion11b, discussion11c, discussion11d, discussion12a, discussion12b, discussion12c, discussion12d, discussion12e, discussion13a, discussion13b, discussion13c, discussion13d, discussion14a, discussion14b, discussion14c, discussion14d, discussion15a, discussion15b, discussion15c, discussion16a, discussion16b, discussion16c, discussion17a, discussion17b, discussion17c, discussion17d, discussion18a, discussion18b, discussion18c,
+                discussion19a, discussion19b, discussion19c, discussion20a, discussion20b, discussion20c, discussion20d
+        ));
 
         // Create Posts for Discussion 1a
         Post post1a1 = createPost("Variables are used to store data that can be manipulated throughout a program. For example, a variable can store a user’s input, which can then be processed and used to generate an output.", discussion1a, student1);
@@ -1017,6 +1013,12 @@ public class Seeder implements CommandLineRunner {
         Post post20d1 = createPost("The properties and behaviors of different materials influence their selection for specific engineering applications. Examples include using metals for strength, polymers for flexibility, and composites for lightweight structures.", discussion20d, student9);
         Post post20d2 = createPost("In my project, I selected materials based on their properties to design a durable and lightweight drone, enhancing its performance and longevity.", discussion20d, student10);
 
+        postRepo.saveAllAndFlush(Arrays.asList(
+                post1a1, post1a2, post1b1, post1b2, post1c1, post1c2, post1d1, post1d2, post1e1, post1e2, post1f1, post1f2, post2a1, post2a2, post2b1, post2b2, post2c1, post2c2, post2d1, post2d2, post2e1, post2e2, post2f1, post2f2, post3a1, post3a2, post3b1, post3b2, post3c1, post3c2, post3d1, post3d2, post4a1, post4a2, post4b1, post4b2, post4c1, post4c2, post4d1, post4d2, post5a1, post5a2, post5b1, post5b2, post5c1, post5c2, post5d1, post5d2,
+                post6a1, post6a2, post6b1, post6b2, post6c1, post6c2, post6d1, post6d2, post6e1, post6e2, post7a1, post7a2, post7b1, post7b2, post7c1, post7c2, post7d1, post7d2, post8a1, post8a2, post8b1, post8b2, post8c1, post8c2, post8d1, post8d2, post8e1, post8e2, post9a1, post9a2, post9b1, post9b2, post9c1, post9c2, post10a1, post10a2, post10b1, post10b2, post10c1, post10c2, post10d1, post10d2, post11a1, post11a2, post11b1, post11b2, post11c1, post11c2, post11d1, post11d2,
+                post12a1, post12a2, post12b1, post12b2, post12c1, post12c2, post12d1, post12d2, post12e1, post12e2, post13a1, post13a2, post13b1, post13b2, post13c1, post13c2, post13d1, post13d2, post14a1, post14a2, post14b1, post14b2, post14c1, post14c2, post14d1, post14d2, post15a1, post15a2, post15b1, post15b2, post15c1, post15c2, post16a1, post16a2, post16b1, post16b2, post16c1, post16c2, post17a1, post17a2, post17b1, post17b2, post17c1, post17c2, post17d1, post17d2, post18a1, post18a2, post18b1, post18b2, post18c1, post18c2, post19a1, post19a2, post19b1, post19b2, post19c1, post19c2, post20a1, post20a2, post20b1, post20b2, post20c1, post20c2, post20d1, post20d2
+        ));
+
         discussion1a.setPosts(Arrays.asList(post1a1, post1a2));
         discussion1b.setPosts(Arrays.asList(post1b1, post1b2));
         discussion1c.setPosts(Arrays.asList(post1c1, post1c2));
@@ -1301,6 +1303,8 @@ public class Seeder implements CommandLineRunner {
         Schedule scheduleStudent8 = createSchedule("Student 8's Fall Schedule", "List of courses for Student 8 in Fall 2024", student8, fall2024, course13, course14, course15, course16);
         Schedule scheduleStudent9 = createSchedule("Student 9's Fall Schedule", "List of courses for Student 9 in Fall 2024", student9, fall2024, course17, course18, course19, course20);
         Schedule scheduleStudent10 = createSchedule("Student 10's Fall Schedule", "List of courses for Student 10 in Fall 2024", student10, fall2024, course17, course18, course19, course20);
+        scheduleRepo.saveAllAndFlush(Arrays.asList(scheduleStudent1, scheduleStudent2, scheduleStudent3, scheduleStudent4, scheduleStudent5, scheduleStudent6, scheduleStudent7, scheduleStudent8, scheduleStudent9, scheduleStudent10));
+
 
         course1.setStudents(Arrays.asList(student1, student2));
         course2.setStudents(Arrays.asList(student1, student2));
@@ -1430,11 +1434,18 @@ public class Seeder implements CommandLineRunner {
         createStudentDetails(student9, Arrays.asList(attendance17, attendance18), Arrays.asList(guardian17, guardian18), Arrays.asList(course17, course18, course19, course20), Arrays.asList(post17a1, post17b1, post17c1, post17d1, post18a1, post18b1, post18c1, post19a1, post19b1, post19c1, post20a1, post20b1, post20c1, post20d1), new ArrayList<>(), Arrays.asList(scheduleStudent9));
         createStudentDetails(student10, Arrays.asList(attendance19, attendance20), Arrays.asList(guardian19, guardian20), Arrays.asList(course17, course18, course19, course20), Arrays.asList(post17a2, post17b2, post17c2, post17d2, post18a2, post18b2, post18c2, post19a2, post19b2, post19c2, post20a2, post20b2, post20c2, post20d2), Arrays.asList(comment17a1, comment17b1, comment17c1, comment17d1, comment18a1, comment18b1, comment18c1, comment19a1, comment19b1, comment19c1, comment20a1, comment20b1, comment20c1, comment20d1), Arrays.asList(scheduleStudent10));
 
-
-
+        facultyRepo.saveAllAndFlush(Arrays.asList(faculty1, faculty2, faculty3, faculty4, faculty5));
+        studentRepo.saveAllAndFlush(Arrays.asList(student1, student2, student3, student4, student5, student6, student7, student8, student9, student10));
+        guardianRepo.saveAllAndFlush(Arrays.asList(guardian1, guardian2, guardian3, guardian4, guardian5, guardian6, guardian7, guardian8, guardian9, guardian10, guardian11, guardian12, guardian13, guardian14, guardian15, guardian16, guardian17, guardian18, guardian19, guardian20));
+        announcementRepo.saveAllAndFlush(Arrays.asList(announcement1, announcement2, announcement3, announcement4, announcement5, announcement6, announcement7, announcement8));
+        syllabusRepo.saveAllAndFlush(Arrays.asList(syllabus1, syllabus2, syllabus3, syllabus4, syllabus5, syllabus6, syllabus7, syllabus8, syllabus9, syllabus10, syllabus11, syllabus12, syllabus13, syllabus14, syllabus15, syllabus16, syllabus17, syllabus18, syllabus19, syllabus20));
+        unitRepo.saveAllAndFlush(Arrays.asList(unit1a, unit1b, unit1c, unit1d, unit1e, unit1f, unit2a, unit2b, unit2c, unit2d, unit2e, unit2f, unit3a, unit3b, unit3c, unit3d, unit4a, unit4b, unit4c, unit4d, unit5a, unit5b, unit5c, unit5d, unit6a, unit6b, unit6c, unit6d, unit6e, unit7a, unit7b, unit7c, unit7d, unit8a, unit8b, unit8c, unit8d, unit8e, unit9a, unit9b, unit9c, unit10a, unit10b, unit10c, unit10d, unit11a, unit11b, unit11c, unit11d, unit12a, unit12b, unit12c, unit12d, unit12e, unit13a, unit13b, unit13c, unit13d, unit14a, unit14b, unit14c, unit14d, unit15a, unit15b, unit15c, unit16a, unit16b, unit16c, unit17a, unit17b, unit17c, unit17d, unit18a, unit18b, unit18c, unit19a, unit19b, unit19c, unit20a, unit20b, unit20c, unit20d));
+        courseRepo.saveAllAndFlush(Arrays.asList(course1, course2, course3, course4, course5, course6, course7, course8, course9, course10, course11, course12, course13, course14, course15, course16, course17, course18, course19, course20));
+        resourceRepo.saveAllAndFlush(Arrays.asList(resource1a, resource1b, resource2a, resource2b, resource3a, resource3b, resource4a, resource4b, resource5a, resource5b, resource6a, resource6b, resource7a, resource7b, resource8a, resource8b, resource9a, resource9b, resource10a, resource10b, resource11a, resource11b, resource12a, resource12b, resource13a, resource13b, resource14a, resource14b, resource15a, resource15b, resource16a, resource16b, resource17a, resource17b, resource18a, resource18b, resource19a, resource19b, resource20a, resource20b));
+        lessonRepo.saveAllAndFlush(Arrays.asList(lesson1a, lesson1b, lesson1c, lesson1d, lesson1e, lesson1f, lesson2a, lesson2b, lesson2c, lesson2d, lesson2e, lesson2f, lesson3a, lesson3b, lesson3c, lesson3d, lesson4a, lesson4b, lesson4c, lesson4d, lesson5a, lesson5b, lesson5c, lesson5d, lesson6a, lesson6b, lesson6c, lesson6d, lesson6d, lesson7a, lesson7b, lesson7c, lesson7d, lesson8a, lesson8b, lesson8c, lesson8d, lesson8e, lesson9a, lesson9b, lesson9c, lesson10a, lesson10b, lesson10c, lesson10d, lesson11a, lesson11b, lesson11c, lesson11d, lesson12a, lesson12b, lesson12c, lesson12d, lesson12e, lesson13a, lesson13b, lesson13c, lesson13d,
+                lesson14a, lesson14b, lesson14c, lesson14d, lesson15a, lesson15b, lesson15c, lesson16a, lesson16b, lesson16c, lesson17a, lesson17b, lesson17c, lesson17d, lesson18a, lesson18b, lesson18c, lesson19a, lesson19b, lesson19c, lesson20a, lesson20b, lesson20c, lesson20d));
 
         attendanceRepo.saveAllAndFlush(Arrays.asList(attendance1, attendance2, attendance3, attendance4, attendance5, attendance6, attendance7, attendance8, attendance9, attendance10, attendance11, attendance12, attendance13, attendance14, attendance15, attendance16, attendance17, attendance18, attendance19, attendance20));
-        resourceRepo.saveAllAndFlush(Arrays.asList(resource1a, resource1b, resource2a, resource2b, resource3a, resource3b, resource4a, resource4b, resource5a, resource5b, resource6a, resource6b, resource7a, resource7b, resource8a, resource8b, resource9a, resource9b, resource10a, resource10b, resource11a, resource11b, resource12a, resource12b, resource13a, resource13b, resource14a, resource14b, resource15a, resource15b, resource16a, resource16b, resource17a, resource17b, resource18a, resource18b, resource19a, resource19b, resource20a, resource20b));
         discussionRepo.saveAllAndFlush(Arrays.asList(discussion1a, discussion1b, discussion1c, discussion1d, discussion1e, discussion1f, discussion2a, discussion2b, discussion2c, discussion2d, discussion2e, discussion2f, discussion3a, discussion3b, discussion3c, discussion3d, discussion4a, discussion4b, discussion4c, discussion4d, discussion5a, discussion5b, discussion5c, discussion5d, discussion6a, discussion6b, discussion6c, discussion6d, discussion6e, discussion7a, discussion7b, discussion7c, discussion7d, discussion8a, discussion8b, discussion8c, discussion8d, discussion8e, discussion9a, discussion9b, discussion9c, discussion10a, discussion10b, discussion10c, discussion10d, discussion11a, discussion11b, discussion11c, discussion11d, discussion12a, discussion12b, discussion12c, discussion12d, discussion12e, discussion13a, discussion13b, discussion13c, discussion13d, discussion14a, discussion14b, discussion14c, discussion14d, discussion15a, discussion15b, discussion15c, discussion16a, discussion16b, discussion16c, discussion17a, discussion17b, discussion17c, discussion17d, discussion18a, discussion18b, discussion18c,
                 discussion19a, discussion19b, discussion19c, discussion20a, discussion20b, discussion20c, discussion20d
         ));
@@ -1447,8 +1458,8 @@ public class Seeder implements CommandLineRunner {
                 comment1a1, comment1b1, comment1c1, comment1d1, comment1e1, comment1f1, comment2a1, comment2b1, comment2c1, comment2d1, comment2e1, comment2f1, comment3a1, comment3b1, comment3c1, comment3d1, comment4a1, comment4b1, comment4c1, comment4d1, comment5a1, comment5b1, comment5c1, comment5d1, comment6a1, comment6b1, comment6c1, comment6d1, comment6e1, comment7a1, comment7b1, comment7c1, comment7d1, comment8a1, comment8b1, comment8c1, comment8d1, comment8e1, comment9a1, comment9b1, comment9c1, comment10a1, comment10b1, comment10c1, comment10d1,
                 comment11a1, comment11b1, comment11c1, comment11d1, comment12a1, comment12b1, comment12c1, comment12d1, comment12e1, comment13a1, comment13b1, comment13c1, comment13d1, comment14a1, comment14b1, comment14c1, comment14d1, comment15a1, comment15b1, comment15c1, comment16a1, comment16b1, comment16c1, comment17a1, comment17b1, comment17c1, comment17d1, comment18a1, comment18b1, comment18c1, comment19a1, comment19b1, comment19c1, comment20a1, comment20b1, comment20c1, comment20d1
         ));
+        semesterRepo.saveAllAndFlush(Arrays.asList(fall2024, spring2025));
         scheduleRepo.saveAllAndFlush(Arrays.asList(scheduleStudent1, scheduleStudent2, scheduleStudent3, scheduleStudent4, scheduleStudent5, scheduleStudent6, scheduleStudent7, scheduleStudent8, scheduleStudent9, scheduleStudent10));
-
 
     }
     public static Faculty createFaculty(String username, String password, String firstName, String lastName, String email, String phoneNumber, int age, String gender, String address, boolean isAdmin, boolean isTeacher, double salary) {
@@ -1532,14 +1543,13 @@ public class Seeder implements CommandLineRunner {
             return syllabus;
         }
 
-        public static Course createCourse(String name, String description, String subject, int credits, Syllabus syllabus, List<Unit> units) {
+    public static Course createCourse(String name, String description, String subject, int credits, Syllabus syllabus) {
             Course course = new Course();
             course.setName(name);
             course.setDescription(description);
             course.setSubject(subject);
             course.setCredits(credits);
             course.setSyllabus(syllabus);
-            course.setUnits(units);
             return course;
         }
 

@@ -21,7 +21,7 @@ public class ProblemAnswerDto {
     private ProjectDto project;
     private AssignmentDto assignment;
     private TestDto test;
-    private StudentAnswerDto studentAnswer; // Updated to match the new structure
+    private List<StudentAnswerDto> studentAnswer; // Updated to match the new structure
 
     // Constructors, getters, and setters
 }

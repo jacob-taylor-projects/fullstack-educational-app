@@ -2,24 +2,30 @@ package com.project.education_app.entities;
 
 import jakarta.persistence.*;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @NoArgsConstructor
-@Data
+@Getter
+@Setter
 public class ProblemAnswer {
     @Id
     @GeneratedValue
     private Long id;
 
+    @Column(length = 700)
     private String problemContent;
 
+    @Column(length = 700)
     private String answerContent;
 
-    @OneToOne(mappedBy = "problemAnswer")
-    private StudentAnswer studentAnswer;
+    @OneToMany(mappedBy = "problemAnswer", cascade = CascadeType.ALL)
+    private List<StudentAnswer> studentAnswers = new ArrayList<>();
 
     @OneToOne
     private Project project;
@@ -31,4 +37,8 @@ public class ProblemAnswer {
     private Test test;
 
     // Constructors, getters, and setters
+    public void addStudentAnswer(StudentAnswer studentAnswer) {
+        studentAnswers.add(studentAnswer);
+        studentAnswer.setProblemAnswer(this);
+    }
 }

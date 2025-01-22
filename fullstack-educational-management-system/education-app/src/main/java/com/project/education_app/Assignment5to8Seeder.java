@@ -95,6 +95,25 @@ public class Assignment5to8Seeder implements CommandLineRunner {
         System.out.println("Assignment for 'Database Design' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment5_1 = createAssignment("Processes Assignment", faculty5, Date.from(LocalDate.of(2026, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus5, false);
+        Assignment assignment5_2 = createAssignment("Memory Management Assignment", faculty5, Date.from(LocalDate.of(2026, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus5, false);
+        Assignment assignment5_3 = createAssignment("File Systems Assignment", faculty5, Date.from(LocalDate.of(2026, 9, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus5, false);
+        Assignment assignment5_4 = createAssignment("Scheduling Assignment", faculty5, Date.from(LocalDate.of(2026, 10, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus5, false);
+        Assignment assignment6_1 = createAssignment("OSI Model Assignment", faculty1, Date.from(LocalDate.of(2026, 11, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus6, false);
+        Assignment assignment6_2 = createAssignment("TCP/IP Assignment", faculty1, Date.from(LocalDate.of(2026, 12, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus6, false);
+        Assignment assignment6_3 = createAssignment("Network Protocols Assignment", faculty1, Date.from(LocalDate.of(2027, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus6, false);
+        Assignment assignment6_4 = createAssignment("Routing Assignment", faculty1, Date.from(LocalDate.of(2027, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus6, false);
+        Assignment assignment6_5 = createAssignment("Switching Assignment", faculty1, Date.from(LocalDate.of(2027, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus6, false);
+        Assignment assignment7_1 = createAssignment("Software Development Life Cycle Assignment", faculty2, Date.from(LocalDate.of(2027, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus7, false);
+        Assignment assignment7_2 = createAssignment("Agile Assignment", faculty2, Date.from(LocalDate.of(2027, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus7, false);
+        Assignment assignment7_3 = createAssignment("Waterfall Assignment", faculty2, Date.from(LocalDate.of(2027, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus7, false);
+        Assignment assignment7_4 = createAssignment("Project Management Assignment", faculty2, Date.from(LocalDate.of(2027, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus7, false);
+        Assignment assignment8_1 = createAssignment("HTML Assignment", faculty3, Date.from(LocalDate.of(2027, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus8, false);
+        Assignment assignment8_2 = createAssignment("CSS Assignment", faculty3, Date.from(LocalDate.of(2027, 9, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus8, false);
+        Assignment assignment8_3 = createAssignment("JavaScript Assignment", faculty3, Date.from(LocalDate.of(2027, 10, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus8, false);
+        Assignment assignment8_4 = createAssignment("React Assignment", faculty3, Date.from(LocalDate.of(2027, 11, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus8, false);
+        Assignment assignment8_5 = createAssignment("Backend Integration Assignment", faculty3, Date.from(LocalDate.of(2027, 12, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus8, false);
+        assignmentRepo.saveAllAndFlush(Arrays.asList(assignment5_1, assignment5_2, assignment5_3, assignment5_4, assignment6_1, assignment6_2, assignment6_3, assignment6_4, assignment6_5, assignment7_1, assignment7_2, assignment7_3, assignment7_4, assignment8_1, assignment8_2, assignment8_3, assignment8_4, assignment8_5));
+
         addStudentToAssignment(assignment5_1, student3);
         addStudentToAssignment(assignment5_1, student4);
 
@@ -123,7 +142,7 @@ public class Assignment5to8Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Processes' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment5_2 = createAssignment("Memory Management Assignment", faculty5, Date.from(LocalDate.of(2026, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus5, false);
+
         addStudentToAssignment(assignment5_2, student3);
         addStudentToAssignment(assignment5_2, student4);
 
@@ -152,7 +171,7 @@ public class Assignment5to8Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Memory Management' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment5_3 = createAssignment("File Systems Assignment", faculty5, Date.from(LocalDate.of(2026, 9, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus5, false);
+
         addStudentToAssignment(assignment5_3, student3);
         addStudentToAssignment(assignment5_3, student4);
 
@@ -181,7 +200,7 @@ public class Assignment5to8Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'File Systems' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment5_4 = createAssignment("Scheduling Assignment", faculty5, Date.from(LocalDate.of(2026, 10, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus5, false);
+
         addStudentToAssignment(assignment5_4, student3);
         addStudentToAssignment(assignment5_4, student4);
 
@@ -210,7 +229,7 @@ public class Assignment5to8Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Scheduling' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment6_1 = createAssignment("OSI Model Assignment", faculty1, Date.from(LocalDate.of(2026, 11, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus6, false);
+
         addStudentToAssignment(assignment6_1, student3);
         addStudentToAssignment(assignment6_1, student4);
 
@@ -239,7 +258,7 @@ public class Assignment5to8Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'OSI Model' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment6_2 = createAssignment("TCP/IP Assignment", faculty1, Date.from(LocalDate.of(2026, 12, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus6, false);
+
         addStudentToAssignment(assignment6_2, student3);
         addStudentToAssignment(assignment6_2, student4);
 
@@ -268,7 +287,7 @@ public class Assignment5to8Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'TCP/IP' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment6_3 = createAssignment("Network Protocols Assignment", faculty1, Date.from(LocalDate.of(2027, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus6, false);
+
         addStudentToAssignment(assignment6_3, student3);
         addStudentToAssignment(assignment6_3, student4);
 
@@ -297,7 +316,7 @@ public class Assignment5to8Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Network Protocols' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment6_4 = createAssignment("Routing Assignment", faculty1, Date.from(LocalDate.of(2027, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus6, false);
+
         addStudentToAssignment(assignment6_4, student3);
         addStudentToAssignment(assignment6_4, student4);
 
@@ -326,7 +345,7 @@ public class Assignment5to8Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Routing' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment6_5 = createAssignment("Switching Assignment", faculty1, Date.from(LocalDate.of(2027, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus6, false);
+
         addStudentToAssignment(assignment6_5, student3);
         addStudentToAssignment(assignment6_5, student4);
 
@@ -355,7 +374,7 @@ public class Assignment5to8Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Switching' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment7_1 = createAssignment("Software Development Life Cycle Assignment", faculty2, Date.from(LocalDate.of(2027, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus7, false);
+
         addStudentToAssignment(assignment7_1, student3);
         addStudentToAssignment(assignment7_1, student4);
 
@@ -384,7 +403,7 @@ public class Assignment5to8Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Software Development Life Cycle' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment7_2 = createAssignment("Agile Assignment", faculty2, Date.from(LocalDate.of(2027, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus7, false);
+
         addStudentToAssignment(assignment7_2, student3);
         addStudentToAssignment(assignment7_2, student4);
 
@@ -413,7 +432,7 @@ public class Assignment5to8Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Agile' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment7_3 = createAssignment("Waterfall Assignment", faculty2, Date.from(LocalDate.of(2027, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus7, false);
+
         addStudentToAssignment(assignment7_3, student3);
         addStudentToAssignment(assignment7_3, student4);
 
@@ -442,7 +461,7 @@ public class Assignment5to8Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Waterfall' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment7_4 = createAssignment("Project Management Assignment", faculty2, Date.from(LocalDate.of(2027, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus7, false);
+
         addStudentToAssignment(assignment7_4, student3);
         addStudentToAssignment(assignment7_4, student4);
 
@@ -471,7 +490,7 @@ public class Assignment5to8Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Project Management' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment8_1 = createAssignment("HTML Assignment", faculty3, Date.from(LocalDate.of(2027, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus8, false);
+
         addStudentToAssignment(assignment8_1, student3);
         addStudentToAssignment(assignment8_1, student4);
 
@@ -500,7 +519,7 @@ public class Assignment5to8Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'HTML' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment8_2 = createAssignment("CSS Assignment", faculty3, Date.from(LocalDate.of(2027, 9, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus8, false);
+
         addStudentToAssignment(assignment8_2, student3);
         addStudentToAssignment(assignment8_2, student4);
 
@@ -529,7 +548,7 @@ public class Assignment5to8Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'CSS' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment8_3 = createAssignment("JavaScript Assignment", faculty3, Date.from(LocalDate.of(2027, 10, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus8, false);
+
         addStudentToAssignment(assignment8_3, student3);
         addStudentToAssignment(assignment8_3, student4);
 
@@ -558,7 +577,7 @@ public class Assignment5to8Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'JavaScript' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment8_4 = createAssignment("React Assignment", faculty3, Date.from(LocalDate.of(2027, 11, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus8, false);
+
         addStudentToAssignment(assignment8_4, student3);
         addStudentToAssignment(assignment8_4, student4);
 
@@ -587,7 +606,6 @@ public class Assignment5to8Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'React' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment8_5 = createAssignment("Backend Integration Assignment", faculty3, Date.from(LocalDate.of(2027, 12, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus8, false);
         addStudentToAssignment(assignment8_5, student3);
         addStudentToAssignment(assignment8_5, student4);
 
@@ -615,648 +633,576 @@ public class Assignment5to8Seeder implements CommandLineRunner {
 
 // Output for confirmation
         System.out.println("Assignment for 'Backend Integration' unit created with 10 problem answers, due date, faculty, and syllabus.");
+        problemAnswerRepo.saveAllAndFlush(Arrays.asList(pa_5_1_1, pa_5_1_2, pa_5_1_3, pa_5_1_4, pa_5_1_5, pa_5_2_1, pa_5_2_2, pa_5_2_3, pa_5_2_4, pa_5_2_5, pa_5_3_1, pa_5_3_2, pa_5_3_3, pa_5_3_4, pa_5_3_5, pa_5_4_1, pa_5_4_2, pa_5_4_3, pa_5_4_4, pa_5_4_5, pa_6_1_1, pa_6_1_2, pa_6_1_3, pa_6_1_4, pa_6_1_5, pa_6_2_1, pa_6_2_2, pa_6_2_3, pa_6_2_4, pa_6_2_5, pa_6_3_1, pa_6_3_2, pa_6_3_3, pa_6_3_4, pa_6_3_5, pa_6_4_1, pa_6_4_2, pa_6_4_3, pa_6_4_4, pa_6_4_5, pa_6_5_1, pa_6_5_2, pa_6_5_3, pa_6_5_4, pa_6_5_5, pa_7_1_1, pa_7_1_2, pa_7_1_3, pa_7_1_4, pa_7_1_5, pa_7_2_1, pa_7_2_2, pa_7_2_3, pa_7_2_4, pa_7_2_5, pa_7_3_1, pa_7_3_2, pa_7_3_3, pa_7_3_4, pa_7_3_5, pa_7_4_1, pa_7_4_2, pa_7_4_3, pa_7_4_4, pa_7_4_5, pa_8_1_1, pa_8_1_2, pa_8_1_3, pa_8_1_4, pa_8_1_5, pa_8_2_1, pa_8_2_2, pa_8_2_3, pa_8_2_4, pa_8_2_5, pa_8_3_1, pa_8_3_2, pa_8_3_3, pa_8_3_4, pa_8_3_5, pa_8_4_1, pa_8_4_2, pa_8_4_3, pa_8_4_4, pa_8_4_5, pa_8_5_1, pa_8_5_2, pa_8_5_3, pa_8_5_4, pa_8_5_5));
 
 
         // Output for confirmation
         System.out.println("Student answers created and added for both student1 and student2 for all 10 problem answers in assignment4_4.");
 // Creating StudentAnswer instances for student3
-        StudentAnswer sa5_1_1_student3 = createStudentAnswer(student3, pa_5_1_1, "A process is an instance of a program being executed, including the program code, data, and other resources required for execution.");
-        addStudentAnswerToProblemAnswer(pa_5_1_1, sa5_1_1_student3);
-
-        StudentAnswer sa5_1_2_student3 = createStudentAnswer(student3, pa_5_1_2, "The OS handles process creation by assigning a unique PID, allocating memory, and setting up necessary resources for the new process.");
-        addStudentAnswerToProblemAnswer(pa_5_1_2, sa5_1_2_student3);
-
-        StudentAnswer sa5_1_3_student3 = createStudentAnswer(student3, pa_5_1_3, "Process scheduling is the method used by the OS to allocate CPU time to processes, determining the order of execution and duration.");
-        addStudentAnswerToProblemAnswer(pa_5_1_3, sa5_1_3_student3);
-
-        StudentAnswer sa5_1_4_student3 = createStudentAnswer(student3, pa_5_1_4, "Process termination is the act of ending a process's execution, occurring when a process completes its task or is terminated by the OS.");
-        addStudentAnswerToProblemAnswer(pa_5_1_4, sa5_1_4_student3);
-
-        StudentAnswer sa5_1_5_student3 = createStudentAnswer(student3, pa_5_1_5, "IPC allows processes to communicate and synchronize their actions through methods like message passing, shared memory, and semaphores.");
-        addStudentAnswerToProblemAnswer(pa_5_1_5, sa5_1_5_student3);
-
-        // Creating StudentAnswer instances for student4
-        StudentAnswer sa5_1_1_student4 = createStudentAnswer(student4, pa_5_1_1, "A process is an instance of a program being executed, including the program code, data, and other resources required for execution.");
-        addStudentAnswerToProblemAnswer(pa_5_1_1, sa5_1_1_student4);
-
-        StudentAnswer sa5_1_2_student4 = createStudentAnswer(student4, pa_5_1_2, "The OS handles process creation by assigning a unique PID, allocating memory, and setting up necessary resources for the new process.");
-        addStudentAnswerToProblemAnswer(pa_5_1_2, sa5_1_2_student4);
-
-        StudentAnswer sa5_1_3_student4 = createStudentAnswer(student4, pa_5_1_3, "Process scheduling is the method used by the OS to allocate CPU time to processes, determining the order of execution and duration.");
-        addStudentAnswerToProblemAnswer(pa_5_1_3, sa5_1_3_student4);
-
-        StudentAnswer sa5_1_4_student4 = createStudentAnswer(student4, pa_5_1_4, "Process termination is the act of ending a process's execution, occurring when a process completes its task or is terminated by the OS.");
-        addStudentAnswerToProblemAnswer(pa_5_1_4, sa5_1_4_student4);
-
-        StudentAnswer sa5_1_5_student4 = createStudentAnswer(student4, pa_5_1_5, "IPC allows processes to communicate and synchronize their actions through methods like message passing, shared memory, and semaphores.");
-        addStudentAnswerToProblemAnswer(pa_5_1_5, sa5_1_5_student4);
-
         // Creating StudentAnswer instances for student3
+        StudentAnswer sa5_1_1_student3 = createStudentAnswer(student3, pa_5_1_1, "A process is an instance of a program being executed, including the program code, data, and other resources required for execution.");
+        StudentAnswer sa5_1_2_student3 = createStudentAnswer(student3, pa_5_1_2, "The OS handles process creation by assigning a unique PID, allocating memory, and setting up necessary resources for the new process.");
+        StudentAnswer sa5_1_3_student3 = createStudentAnswer(student3, pa_5_1_3, "Process scheduling is the method used by the OS to allocate CPU time to processes, determining the order of execution and duration.");
+        StudentAnswer sa5_1_4_student3 = createStudentAnswer(student3, pa_5_1_4, "Process termination is the act of ending a process's execution, occurring when a process completes its task or is terminated by the OS.");
+        StudentAnswer sa5_1_5_student3 = createStudentAnswer(student3, pa_5_1_5, "IPC allows processes to communicate and synchronize their actions through methods like message passing, shared memory, and semaphores.");
+
+// Creating StudentAnswer instances for student4
+        StudentAnswer sa5_1_1_student4 = createStudentAnswer(student4, pa_5_1_1, "A process is an instance of a program being executed, including the program code, data, and other resources required for execution.");
+        StudentAnswer sa5_1_2_student4 = createStudentAnswer(student4, pa_5_1_2, "The OS handles process creation by assigning a unique PID, allocating memory, and setting up necessary resources for the new process.");
+        StudentAnswer sa5_1_3_student4 = createStudentAnswer(student4, pa_5_1_3, "Process scheduling is the method used by the OS to allocate CPU time to processes, determining the order of execution and duration.");
+        StudentAnswer sa5_1_4_student4 = createStudentAnswer(student4, pa_5_1_4, "Process termination is the act of ending a process's execution, occurring when a process completes its task or is terminated by the OS.");
+        StudentAnswer sa5_1_5_student4 = createStudentAnswer(student4, pa_5_1_5, "IPC allows processes to communicate and synchronize their actions through methods like message passing, shared memory, and semaphores.");
+
+// Creating StudentAnswer instances for student3
         StudentAnswer sa5_2_1_student3 = createStudentAnswer(student3, pa_5_2_1, "Memory management is how the OS allocates, tracks, and manages computer memory.");
-        addStudentAnswerToProblemAnswer(pa_5_2_1, sa5_2_1_student3);
-
         StudentAnswer sa5_2_2_student3 = createStudentAnswer(student3, pa_5_2_2, "Paging divides physical memory into fixed-sized blocks called pages.");
-        addStudentAnswerToProblemAnswer(pa_5_2_2, sa5_2_2_student3);
-
         StudentAnswer sa5_2_3_student3 = createStudentAnswer(student3, pa_5_2_3, "Segmentation divides memory into variable-sized segments based on logical divisions of a program.");
-        addStudentAnswerToProblemAnswer(pa_5_2_3, sa5_2_3_student3);
-
         StudentAnswer sa5_2_4_student3 = createStudentAnswer(student3, pa_5_2_4, "Virtual memory allows processes to execute that may not be entirely in physical memory by using disk space.");
-        addStudentAnswerToProblemAnswer(pa_5_2_4, sa5_2_4_student3);
-
         StudentAnswer sa5_2_5_student3 = createStudentAnswer(student3, pa_5_2_5, "The OS uses algorithms like first-fit, best-fit, and worst-fit to allocate memory blocks to processes efficiently.");
-        addStudentAnswerToProblemAnswer(pa_5_2_5, sa5_2_5_student3);
-
 
 // Creating StudentAnswer instances for student4
         StudentAnswer sa5_2_1_student4 = createStudentAnswer(student4, pa_5_2_1, "Memory management is how the OS allocates, tracks, and manages computer memory.");
-        addStudentAnswerToProblemAnswer(pa_5_2_1, sa5_2_1_student4);
-
         StudentAnswer sa5_2_2_student4 = createStudentAnswer(student4, pa_5_2_2, "Paging divides physical memory into fixed-sized blocks called pages.");
-        addStudentAnswerToProblemAnswer(pa_5_2_2, sa5_2_2_student4);
-
         StudentAnswer sa5_2_3_student4 = createStudentAnswer(student4, pa_5_2_3, "Segmentation divides memory into variable-sized segments based on logical divisions of a program.");
-        addStudentAnswerToProblemAnswer(pa_5_2_3, sa5_2_3_student4);
-
         StudentAnswer sa5_2_4_student4 = createStudentAnswer(student4, pa_5_2_4, "Virtual memory allows processes to execute that may not be entirely in physical memory by using disk space.");
-        addStudentAnswerToProblemAnswer(pa_5_2_4, sa5_2_4_student4);
-
         StudentAnswer sa5_2_5_student4 = createStudentAnswer(student4, pa_5_2_5, "The OS uses algorithms like first-fit, best-fit, and worst-fit to allocate memory blocks to processes efficiently.");
-        addStudentAnswerToProblemAnswer(pa_5_2_5, sa5_2_5_student4);
 
 
 // Output for confirmation
         System.out.println("Student answers created and added for student3 and student4 for all 10 problem answers in assignment5_2.");
 // Creating StudentAnswer instances for student3
+        // Creating StudentAnswer instances for student3
         StudentAnswer sa5_3_1_student3 = createStudentAnswer(student3, pa_5_3_1, "A file system is a method used by operating systems to store, organize, and manage files on storage devices.");
-        addStudentAnswerToProblemAnswer(pa_5_3_1, sa5_3_1_student3);
-
         StudentAnswer sa5_3_2_student3 = createStudentAnswer(student3, pa_5_3_2, "File organization refers to how files are logically arranged and stored on a storage device.");
-        addStudentAnswerToProblemAnswer(pa_5_3_2, sa5_3_2_student3);
-
         StudentAnswer sa5_3_3_student3 = createStudentAnswer(student3, pa_5_3_3, "Storage allocation is the process of assigning storage space to files and directories on a storage device.");
-        addStudentAnswerToProblemAnswer(pa_5_3_3, sa5_3_3_student3);
-
         StudentAnswer sa5_3_4_student3 = createStudentAnswer(student3, pa_5_3_4, "A directory structure is a hierarchical organization of files and directories on a storage device.");
-        addStudentAnswerToProblemAnswer(pa_5_3_4, sa5_3_4_student3);
-
         StudentAnswer sa5_3_5_student3 = createStudentAnswer(student3, pa_5_3_5, "File access methods define how data within a file is accessed, including sequential, direct, and indexed access.");
-        addStudentAnswerToProblemAnswer(pa_5_3_5, sa5_3_5_student3);
-
 
 // Creating StudentAnswer instances for student4
         StudentAnswer sa5_3_1_student4 = createStudentAnswer(student4, pa_5_3_1, "A file system is a method used by operating systems to store, organize, and manage files on storage devices.");
-        addStudentAnswerToProblemAnswer(pa_5_3_1, sa5_3_1_student4);
-
         StudentAnswer sa5_3_2_student4 = createStudentAnswer(student4, pa_5_3_2, "File organization refers to how files are logically arranged and stored on a storage device.");
-        addStudentAnswerToProblemAnswer(pa_5_3_2, sa5_3_2_student4);
-
         StudentAnswer sa5_3_3_student4 = createStudentAnswer(student4, pa_5_3_3, "Storage allocation is the process of assigning storage space to files and directories on a storage device.");
-        addStudentAnswerToProblemAnswer(pa_5_3_3, sa5_3_3_student4);
-
         StudentAnswer sa5_3_4_student4 = createStudentAnswer(student4, pa_5_3_4, "A directory structure is a hierarchical organization of files and directories on a storage device.");
-        addStudentAnswerToProblemAnswer(pa_5_3_4, sa5_3_4_student4);
-
         StudentAnswer sa5_3_5_student4 = createStudentAnswer(student4, pa_5_3_5, "File access methods define how data within a file is accessed, including sequential, direct, and indexed access.");
-        addStudentAnswerToProblemAnswer(pa_5_3_5, sa5_3_5_student4);
 
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment5_3.");
 // Creating StudentAnswer instances for student3
+        // Creating StudentAnswer instances for student3
         StudentAnswer sa5_4_1_student3 = createStudentAnswer(student3, pa_5_4_1, "CPU scheduling manages the execution of processes by allocating CPU time.");
-        addStudentAnswerToProblemAnswer(pa_5_4_1, sa5_4_1_student3);
-
         StudentAnswer sa5_4_2_student3 = createStudentAnswer(student3, pa_5_4_2, "Scheduling algorithms optimize CPU usage, improve performance, and ensure fairness among processes.");
-        addStudentAnswerToProblemAnswer(pa_5_4_2, sa5_4_2_student3);
-
         StudentAnswer sa5_4_3_student3 = createStudentAnswer(student3, pa_5_4_3, "Round-robin scheduling assigns a fixed time slice to each process in a circular order.");
-        addStudentAnswerToProblemAnswer(pa_5_4_3, sa5_4_3_student3);
-
         StudentAnswer sa5_4_4_student3 = createStudentAnswer(student3, pa_5_4_4, "Priority scheduling selects the process with the highest priority for execution.");
-        addStudentAnswerToProblemAnswer(pa_5_4_4, sa5_4_4_student3);
-
         StudentAnswer sa5_4_5_student3 = createStudentAnswer(student3, pa_5_4_5, "A multi-level queue divides processes into multiple queues based on priority or type.");
-        addStudentAnswerToProblemAnswer(pa_5_4_5, sa5_4_5_student3);
-
 
 // Creating StudentAnswer instances for student4
         StudentAnswer sa5_4_1_student4 = createStudentAnswer(student4, pa_5_4_1, "CPU scheduling manages the execution of processes by allocating CPU time.");
-        addStudentAnswerToProblemAnswer(pa_5_4_1, sa5_4_1_student4);
-
         StudentAnswer sa5_4_2_student4 = createStudentAnswer(student4, pa_5_4_2, "Scheduling algorithms optimize CPU usage, improve performance, and ensure fairness among processes.");
-        addStudentAnswerToProblemAnswer(pa_5_4_2, sa5_4_2_student4);
-
         StudentAnswer sa5_4_3_student4 = createStudentAnswer(student4, pa_5_4_3, "Round-robin scheduling assigns a fixed time slice to each process in a circular order.");
-        addStudentAnswerToProblemAnswer(pa_5_4_3, sa5_4_3_student4);
-
         StudentAnswer sa5_4_4_student4 = createStudentAnswer(student4, pa_5_4_4, "Priority scheduling selects the process with the highest priority for execution.");
-        addStudentAnswerToProblemAnswer(pa_5_4_4, sa5_4_4_student4);
-
         StudentAnswer sa5_4_5_student4 = createStudentAnswer(student4, pa_5_4_5, "A multi-level queue divides processes into multiple queues based on priority or type.");
-        addStudentAnswerToProblemAnswer(pa_5_4_5, sa5_4_5_student4);
-
 
 // Output for confirmation
-        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment5_4.");
+        System.out.println("Student answers created for both student3 and student4 for all 10 problem answers in assignment5_4.");
+
 // Creating StudentAnswer instances for student3
         StudentAnswer sa6_1_1_student3 = createStudentAnswer(student3, pa_6_1_1, "The OSI model standardizes the functions of a telecommunication or computing system in seven layers.");
-        addStudentAnswerToProblemAnswer(pa_6_1_1, sa6_1_1_student3);
-
         StudentAnswer sa6_1_2_student3 = createStudentAnswer(student3, pa_6_1_2, "The seven layers of the OSI model are: Physical, Data Link, Network, Transport, Session, Presentation, and Application.");
-        addStudentAnswerToProblemAnswer(pa_6_1_2, sa6_1_2_student3);
-
         StudentAnswer sa6_1_3_student3 = createStudentAnswer(student3, pa_6_1_3, "The Physical layer deals with the transmission and reception of raw bitstreams over a physical medium.");
-        addStudentAnswerToProblemAnswer(pa_6_1_3, sa6_1_3_student3);
-
         StudentAnswer sa6_1_4_student3 = createStudentAnswer(student3, pa_6_1_4, "The Data Link layer is responsible for node-to-node data transfer and error detection and correction.");
-        addStudentAnswerToProblemAnswer(pa_6_1_4, sa6_1_4_student3);
-
         StudentAnswer sa6_1_5_student3 = createStudentAnswer(student3, pa_6_1_5, "The Network layer handles routing and forwarding data packets across different networks.");
-        addStudentAnswerToProblemAnswer(pa_6_1_5, sa6_1_5_student3);
-
 
 // Creating StudentAnswer instances for student4
         StudentAnswer sa6_1_1_student4 = createStudentAnswer(student4, pa_6_1_1, "The OSI model standardizes the functions of a telecommunication or computing system in seven layers.");
-        addStudentAnswerToProblemAnswer(pa_6_1_1, sa6_1_1_student4);
-
         StudentAnswer sa6_1_2_student4 = createStudentAnswer(student4, pa_6_1_2, "The seven layers of the OSI model are: Physical, Data Link, Network, Transport, Session, Presentation, and Application.");
-        addStudentAnswerToProblemAnswer(pa_6_1_2, sa6_1_2_student4);
-
         StudentAnswer sa6_1_3_student4 = createStudentAnswer(student4, pa_6_1_3, "The Physical layer deals with the transmission and reception of raw bitstreams over a physical medium.");
-        addStudentAnswerToProblemAnswer(pa_6_1_3, sa6_1_3_student4);
-
         StudentAnswer sa6_1_4_student4 = createStudentAnswer(student4, pa_6_1_4, "The Data Link layer is responsible for node-to-node data transfer and error detection and correction.");
-        addStudentAnswerToProblemAnswer(pa_6_1_4, sa6_1_4_student4);
-
         StudentAnswer sa6_1_5_student4 = createStudentAnswer(student4, pa_6_1_5, "The Network layer handles routing and forwarding data packets across different networks.");
-        addStudentAnswerToProblemAnswer(pa_6_1_5, sa6_1_5_student4);
-
 
 // Output for confirmation
-        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment6_1.");
+        System.out.println("Student answers created for both student3 and student4 for all 10 problem answers in assignment6_1.");
+
 // Creating StudentAnswer instances for student3
         StudentAnswer sa6_2_1_student3 = createStudentAnswer(student3, pa_6_2_1, "The TCP/IP model is the foundational protocol suite for the internet, standardizing communication functions.");
-        addStudentAnswerToProblemAnswer(pa_6_2_1, sa6_2_1_student3);
-
         StudentAnswer sa6_2_2_student3 = createStudentAnswer(student3, pa_6_2_2, "The four layers of the TCP/IP model are: Network Interface, Internet, Transport, and Application.");
-        addStudentAnswerToProblemAnswer(pa_6_2_2, sa6_2_2_student3);
-
         StudentAnswer sa6_2_3_student3 = createStudentAnswer(student3, pa_6_2_3, "The Network Interface layer handles the physical transmission of data between devices, including protocols for data link and hardware addressing.");
-        addStudentAnswerToProblemAnswer(pa_6_2_3, sa6_2_3_student3);
-
         StudentAnswer sa6_2_4_student3 = createStudentAnswer(student3, pa_6_2_4, "The Internet layer manages routing and forwarding data packets across networks, including protocols like IP.");
-        addStudentAnswerToProblemAnswer(pa_6_2_4, sa6_2_4_student3);
-
         StudentAnswer sa6_2_5_student3 = createStudentAnswer(student3, pa_6_2_5, "The Transport layer is responsible for end-to-end communication and data transfer, ensuring reliability with protocols like TCP and UDP.");
-        addStudentAnswerToProblemAnswer(pa_6_2_5, sa6_2_5_student3);
-
 
 // Creating StudentAnswer instances for student4
         StudentAnswer sa6_2_1_student4 = createStudentAnswer(student4, pa_6_2_1, "The TCP/IP model is the foundational protocol suite for the internet, standardizing communication functions.");
-        addStudentAnswerToProblemAnswer(pa_6_2_1, sa6_2_1_student4);
-
         StudentAnswer sa6_2_2_student4 = createStudentAnswer(student4, pa_6_2_2, "The four layers of the TCP/IP model are: Network Interface, Internet, Transport, and Application.");
-        addStudentAnswerToProblemAnswer(pa_6_2_2, sa6_2_2_student4);
-
         StudentAnswer sa6_2_3_student4 = createStudentAnswer(student4, pa_6_2_3, "The Network Interface layer handles the physical transmission of data between devices, including protocols for data link and hardware addressing.");
-        addStudentAnswerToProblemAnswer(pa_6_2_3, sa6_2_3_student4);
-
         StudentAnswer sa6_2_4_student4 = createStudentAnswer(student4, pa_6_2_4, "The Internet layer manages routing and forwarding data packets across networks, including protocols like IP.");
-        addStudentAnswerToProblemAnswer(pa_6_2_4, sa6_2_4_student4);
-
         StudentAnswer sa6_2_5_student4 = createStudentAnswer(student4, pa_6_2_5, "The Transport layer is responsible for end-to-end communication and data transfer, ensuring reliability with protocols like TCP and UDP.");
-        addStudentAnswerToProblemAnswer(pa_6_2_5, sa6_2_5_student4);
 
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment6_2.");
 // Creating StudentAnswer instances for student3
+        // Creating StudentAnswer instances for student3
         StudentAnswer sa6_3_1_student3 = createStudentAnswer(student3, pa_6_3_1, "Network protocols are rules and standards that govern data exchange over networks.");
-        addStudentAnswerToProblemAnswer(pa_6_3_1, sa6_3_1_student3);
-
         StudentAnswer sa6_3_2_student3 = createStudentAnswer(student3, pa_6_3_2, "HTTP is a protocol for transferring web pages and other resources over the internet.");
-        addStudentAnswerToProblemAnswer(pa_6_3_2, sa6_3_2_student3);
-
         StudentAnswer sa6_3_3_student3 = createStudentAnswer(student3, pa_6_3_3, "FTP is a protocol for transferring files between clients and servers over a network.");
-        addStudentAnswerToProblemAnswer(pa_6_3_3, sa6_3_3_student3);
-
         StudentAnswer sa6_3_4_student3 = createStudentAnswer(student3, pa_6_3_4, "DNS translates human-readable domain names into IP addresses.");
-        addStudentAnswerToProblemAnswer(pa_6_3_4, sa6_3_4_student3);
-
         StudentAnswer sa6_3_5_student3 = createStudentAnswer(student3, pa_6_3_5, "DHCP automatically assigns IP addresses and other network configuration parameters to devices on a network.");
-        addStudentAnswerToProblemAnswer(pa_6_3_5, sa6_3_5_student3);
-
 
 // Creating StudentAnswer instances for student4
         StudentAnswer sa6_3_1_student4 = createStudentAnswer(student4, pa_6_3_1, "Network protocols are rules and standards that govern data exchange over networks.");
-        addStudentAnswerToProblemAnswer(pa_6_3_1, sa6_3_1_student4);
-
         StudentAnswer sa6_3_2_student4 = createStudentAnswer(student4, pa_6_3_2, "HTTP is a protocol for transferring web pages and other resources over the internet.");
-        addStudentAnswerToProblemAnswer(pa_6_3_2, sa6_3_2_student4);
-
         StudentAnswer sa6_3_3_student4 = createStudentAnswer(student4, pa_6_3_3, "FTP is a protocol for transferring files between clients and servers over a network.");
-        addStudentAnswerToProblemAnswer(pa_6_3_3, sa6_3_3_student4);
-
         StudentAnswer sa6_3_4_student4 = createStudentAnswer(student4, pa_6_3_4, "DNS translates human-readable domain names into IP addresses.");
-        addStudentAnswerToProblemAnswer(pa_6_3_4, sa6_3_4_student4);
-
         StudentAnswer sa6_3_5_student4 = createStudentAnswer(student4, pa_6_3_5, "DHCP automatically assigns IP addresses and other network configuration parameters to devices on a network.");
-        addStudentAnswerToProblemAnswer(pa_6_3_5, sa6_3_5_student4);
-
 
 // Output for confirmation
-        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment6_3.");
+        System.out.println("Student answers created for both student3 and student4 for all 10 problem answers in assignment6_3.");
+
 // Creating StudentAnswer instances for student3
         StudentAnswer sa6_4_1_student3 = createStudentAnswer(student3, pa_6_4_1, "Routing is the process of selecting paths in a network to send data packets.");
-        addStudentAnswerToProblemAnswer(pa_6_4_1, sa6_4_1_student3);
-
         StudentAnswer sa6_4_2_student3 = createStudentAnswer(student3, pa_6_4_2, "Routing algorithms determine the best path for data to travel across a network.");
-        addStudentAnswerToProblemAnswer(pa_6_4_2, sa6_4_2_student3);
-
         StudentAnswer sa6_4_3_student3 = createStudentAnswer(student3, pa_6_4_3, "OSPF is a link-state routing protocol that uses Dijkstra's algorithm to compute the shortest path.");
-        addStudentAnswerToProblemAnswer(pa_6_4_3, sa6_4_3_student3);
-
         StudentAnswer sa6_4_4_student3 = createStudentAnswer(student3, pa_6_4_4, "BGP is a path vector routing protocol that enables data routing between different autonomous systems on the internet.");
-        addStudentAnswerToProblemAnswer(pa_6_4_4, sa6_4_4_student3);
-
         StudentAnswer sa6_4_5_student3 = createStudentAnswer(student3, pa_6_4_5, "Static routing uses manually configured fixed routes, while dynamic routing adjusts routes based on network conditions.");
-        addStudentAnswerToProblemAnswer(pa_6_4_5, sa6_4_5_student3);
 
 // Creating StudentAnswer instances for student4
         StudentAnswer sa6_4_1_student4 = createStudentAnswer(student4, pa_6_4_1, "Routing is the process of selecting paths in a network to send data packets.");
-        addStudentAnswerToProblemAnswer(pa_6_4_1, sa6_4_1_student4);
-
         StudentAnswer sa6_4_2_student4 = createStudentAnswer(student4, pa_6_4_2, "Routing algorithms determine the best path for data to travel across a network.");
-        addStudentAnswerToProblemAnswer(pa_6_4_2, sa6_4_2_student4);
-
         StudentAnswer sa6_4_3_student4 = createStudentAnswer(student4, pa_6_4_3, "OSPF is a link-state routing protocol that uses Dijkstra's algorithm to compute the shortest path.");
-        addStudentAnswerToProblemAnswer(pa_6_4_3, sa6_4_3_student4);
-
         StudentAnswer sa6_4_4_student4 = createStudentAnswer(student4, pa_6_4_4, "BGP is a path vector routing protocol that enables data routing between different autonomous systems on the internet.");
-        addStudentAnswerToProblemAnswer(pa_6_4_4, sa6_4_4_student4);
-
         StudentAnswer sa6_4_5_student4 = createStudentAnswer(student4, pa_6_4_5, "Static routing uses manually configured fixed routes, while dynamic routing adjusts routes based on network conditions.");
-        addStudentAnswerToProblemAnswer(pa_6_4_5, sa6_4_5_student4);
 
 // Output for confirmation
-        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment6_4.");
+        System.out.println("Student answers created for both student3 and student4 for all 10 problem answers in assignment6_4.");
+
 // Creating StudentAnswer instances for student3
         StudentAnswer sa6_5_1_student3 = createStudentAnswer(student3, pa_6_5_1, "Switching forwards data packets between devices within a network.");
-        addStudentAnswerToProblemAnswer(pa_6_5_1, sa6_5_1_student3);
-
         StudentAnswer sa6_5_2_student3 = createStudentAnswer(student3, pa_6_5_2, "Types of switches: unmanaged, managed, and smart switches.");
-        addStudentAnswerToProblemAnswer(pa_6_5_2, sa6_5_2_student3);
-
         StudentAnswer sa6_5_3_student3 = createStudentAnswer(student3, pa_6_5_3, "Packet switching breaks data into smaller packets transmitted independently.");
-        addStudentAnswerToProblemAnswer(pa_6_5_3, sa6_5_3_student3);
-
         StudentAnswer sa6_5_4_student3 = createStudentAnswer(student3, pa_6_5_4, "Circuit switching establishes a dedicated communication path for data transmission.");
-        addStudentAnswerToProblemAnswer(pa_6_5_4, sa6_5_4_student3);
-
         StudentAnswer sa6_5_5_student3 = createStudentAnswer(student3, pa_6_5_5, "A VLAN groups devices on different physical LANs for enhanced segmentation and security.");
-        addStudentAnswerToProblemAnswer(pa_6_5_5, sa6_5_5_student3);
 
 // Creating StudentAnswer instances for student4
         StudentAnswer sa6_5_1_student4 = createStudentAnswer(student4, pa_6_5_1, "Switching forwards data packets between devices within a network.");
-        addStudentAnswerToProblemAnswer(pa_6_5_1, sa6_5_1_student4);
-
         StudentAnswer sa6_5_2_student4 = createStudentAnswer(student4, pa_6_5_2, "Types of switches: unmanaged, managed, and smart switches.");
-        addStudentAnswerToProblemAnswer(pa_6_5_2, sa6_5_2_student4);
-
         StudentAnswer sa6_5_3_student4 = createStudentAnswer(student4, pa_6_5_3, "Packet switching breaks data into smaller packets transmitted independently.");
-        addStudentAnswerToProblemAnswer(pa_6_5_3, sa6_5_3_student4);
-
         StudentAnswer sa6_5_4_student4 = createStudentAnswer(student4, pa_6_5_4, "Circuit switching establishes a dedicated communication path for data transmission.");
-        addStudentAnswerToProblemAnswer(pa_6_5_4, sa6_5_4_student4);
-
         StudentAnswer sa6_5_5_student4 = createStudentAnswer(student4, pa_6_5_5, "A VLAN groups devices on different physical LANs for enhanced segmentation and security.");
-        addStudentAnswerToProblemAnswer(pa_6_5_5, sa6_5_5_student4);
 
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment6_5.");
 // Creating StudentAnswer instances for student3
+        // Creating StudentAnswer instances for student3
         StudentAnswer sa7_1_1_student3 = createStudentAnswer(student3, pa_7_1_1, "The SDLC is a process for planning, creating, testing, and deploying an information system.");
-        addStudentAnswerToProblemAnswer(pa_7_1_1, sa7_1_1_student3);
-
         StudentAnswer sa7_1_2_student3 = createStudentAnswer(student3, pa_7_1_2, "The common phases of the SDLC include: requirements analysis, system design, implementation, testing, deployment, and maintenance.");
-        addStudentAnswerToProblemAnswer(pa_7_1_2, sa7_1_2_student3);
-
         StudentAnswer sa7_1_3_student3 = createStudentAnswer(student3, pa_7_1_3, "The iterative model divides the development process into small, repeating cycles, producing a working version in each iteration.");
-        addStudentAnswerToProblemAnswer(pa_7_1_3, sa7_1_3_student3);
-
         StudentAnswer sa7_1_4_student3 = createStudentAnswer(student3, pa_7_1_4, "The incremental model develops and delivers software in small increments, adding new functionality with each increment.");
-        addStudentAnswerToProblemAnswer(pa_7_1_4, sa7_1_4_student3);
-
         StudentAnswer sa7_1_5_student3 = createStudentAnswer(student3, pa_7_1_5, "The spiral model combines iterative development with risk assessment, allowing for continuous refinement and risk mitigation.");
-        addStudentAnswerToProblemAnswer(pa_7_1_5, sa7_1_5_student3);
-
 
 // Creating StudentAnswer instances for student4
         StudentAnswer sa7_1_1_student4 = createStudentAnswer(student4, pa_7_1_1, "The SDLC is a process for planning, creating, testing, and deploying an information system.");
-        addStudentAnswerToProblemAnswer(pa_7_1_1, sa7_1_1_student4);
-
         StudentAnswer sa7_1_2_student4 = createStudentAnswer(student4, pa_7_1_2, "The common phases of the SDLC include: requirements analysis, system design, implementation, testing, deployment, and maintenance.");
-        addStudentAnswerToProblemAnswer(pa_7_1_2, sa7_1_2_student4);
-
         StudentAnswer sa7_1_3_student4 = createStudentAnswer(student4, pa_7_1_3, "The iterative model divides the development process into small, repeating cycles, producing a working version in each iteration.");
-        addStudentAnswerToProblemAnswer(pa_7_1_3, sa7_1_3_student4);
-
         StudentAnswer sa7_1_4_student4 = createStudentAnswer(student4, pa_7_1_4, "The incremental model develops and delivers software in small increments, adding new functionality with each increment.");
-        addStudentAnswerToProblemAnswer(pa_7_1_4, sa7_1_4_student4);
-
         StudentAnswer sa7_1_5_student4 = createStudentAnswer(student4, pa_7_1_5, "The spiral model combines iterative development with risk assessment, allowing for continuous refinement and risk mitigation.");
-        addStudentAnswerToProblemAnswer(pa_7_1_5, sa7_1_5_student4);
-
 
 // Output for confirmation
-        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment7_1.");
+        System.out.println("Student answers created for both student3 and student4 for all 10 problem answers in assignment7_1.");
+
 // Creating StudentAnswer instances for student3
         StudentAnswer sa7_2_1_student3 = createStudentAnswer(student3, pa_7_2_1, "Agile is an iterative approach that emphasizes flexibility, collaboration, and customer feedback.");
-        addStudentAnswerToProblemAnswer(pa_7_2_1, sa7_2_1_student3);
-
         StudentAnswer sa7_2_2_student3 = createStudentAnswer(student3, pa_7_2_2, "Core principles of Agile: (1) Customer satisfaction, (2) Welcoming changes, (3) Frequent delivery, (4) Collaboration, (5) Motivated individuals, (6) Face-to-face communication, (7) Working software, (8) Sustainable development, (9) Technical excellence, (10) Simplicity, (11) Self-organizing teams, (12) Regular reflection.");
-        addStudentAnswerToProblemAnswer(pa_7_2_2, sa7_2_2_student3);
-
         StudentAnswer sa7_2_3_student3 = createStudentAnswer(student3, pa_7_2_3, "Scrum is an Agile framework with roles like Scrum Master and Product Owner, and ceremonies like Sprint Planning and Daily Stand-ups.");
-        addStudentAnswerToProblemAnswer(pa_7_2_3, sa7_2_3_student3);
-
         StudentAnswer sa7_2_4_student3 = createStudentAnswer(student3, pa_7_2_4, "Kanban focuses on visualizing work, limiting work in progress, and improving flow using a Kanban board.");
-        addStudentAnswerToProblemAnswer(pa_7_2_4, sa7_2_4_student3);
-
         StudentAnswer sa7_2_5_student3 = createStudentAnswer(student3, pa_7_2_5, "Agile handles changing requirements by embracing change and enabling teams to respond to new information and customer feedback.");
-        addStudentAnswerToProblemAnswer(pa_7_2_5, sa7_2_5_student3);
-
 
 // Creating StudentAnswer instances for student4
         StudentAnswer sa7_2_1_student4 = createStudentAnswer(student4, pa_7_2_1, "Agile is an iterative approach that emphasizes flexibility, collaboration, and customer feedback.");
-        addStudentAnswerToProblemAnswer(pa_7_2_1, sa7_2_1_student4);
-
         StudentAnswer sa7_2_2_student4 = createStudentAnswer(student4, pa_7_2_2, "Core principles of Agile: (1) Customer satisfaction, (2) Welcoming changes, (3) Frequent delivery, (4) Collaboration, (5) Motivated individuals, (6) Face-to-face communication, (7) Working software, (8) Sustainable development, (9) Technical excellence, (10) Simplicity, (11) Self-organizing teams, (12) Regular reflection.");
-        addStudentAnswerToProblemAnswer(pa_7_2_2, sa7_2_2_student4);
-
         StudentAnswer sa7_2_3_student4 = createStudentAnswer(student4, pa_7_2_3, "Scrum is an Agile framework with roles like Scrum Master and Product Owner, and ceremonies like Sprint Planning and Daily Stand-ups.");
-        addStudentAnswerToProblemAnswer(pa_7_2_3, sa7_2_3_student4);
-
         StudentAnswer sa7_2_4_student4 = createStudentAnswer(student4, pa_7_2_4, "Kanban focuses on visualizing work, limiting work in progress, and improving flow using a Kanban board.");
-        addStudentAnswerToProblemAnswer(pa_7_2_4, sa7_2_4_student4);
-
         StudentAnswer sa7_2_5_student4 = createStudentAnswer(student4, pa_7_2_5, "Agile handles changing requirements by embracing change and enabling teams to respond to new information and customer feedback.");
-        addStudentAnswerToProblemAnswer(pa_7_2_5, sa7_2_5_student4);
-
 
 // Output for confirmation
-        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment7_2.");
+        System.out.println("Student answers created for both student3 and student4 for all 10 problem answers in assignment7_2.");
+
 // Creating StudentAnswer instances for student3
         StudentAnswer sa7_3_1_student3 = createStudentAnswer(student3, pa_7_3_1, "The Waterfall model is a linear and sequential approach to software development.");
-        addStudentAnswerToProblemAnswer(pa_7_3_1, sa7_3_1_student3);
-
         StudentAnswer sa7_3_2_student3 = createStudentAnswer(student3, pa_7_3_2, "The phases of the Waterfall model include: requirements analysis, system design, implementation, testing, deployment, and maintenance.");
-        addStudentAnswerToProblemAnswer(pa_7_3_2, sa7_3_2_student3);
-
         StudentAnswer sa7_3_3_student3 = createStudentAnswer(student3, pa_7_3_3, "The purpose of the requirements analysis phase is to gather and define the functional and non-functional requirements.");
-        addStudentAnswerToProblemAnswer(pa_7_3_3, sa7_3_3_student3);
-
         StudentAnswer sa7_3_4_student3 = createStudentAnswer(student3, pa_7_3_4, "The purpose of the system design phase is to create a detailed design of the software based on the requirements specification.");
-        addStudentAnswerToProblemAnswer(pa_7_3_4, sa7_3_4_student3);
-
         StudentAnswer sa7_3_5_student3 = createStudentAnswer(student3, pa_7_3_5, "The purpose of the implementation phase is to develop the actual code for the software based on the design specifications.");
-        addStudentAnswerToProblemAnswer(pa_7_3_5, sa7_3_5_student3);
-
 
 // Creating StudentAnswer instances for student4
         StudentAnswer sa7_3_1_student4 = createStudentAnswer(student4, pa_7_3_1, "The Waterfall model is a linear and sequential approach to software development.");
-        addStudentAnswerToProblemAnswer(pa_7_3_1, sa7_3_1_student4);
-
         StudentAnswer sa7_3_2_student4 = createStudentAnswer(student4, pa_7_3_2, "The phases of the Waterfall model include: requirements analysis, system design, implementation, testing, deployment, and maintenance.");
-        addStudentAnswerToProblemAnswer(pa_7_3_2, sa7_3_2_student4);
-
         StudentAnswer sa7_3_3_student4 = createStudentAnswer(student4, pa_7_3_3, "The purpose of the requirements analysis phase is to gather and define the functional and non-functional requirements.");
-        addStudentAnswerToProblemAnswer(pa_7_3_3, sa7_3_3_student4);
-
         StudentAnswer sa7_3_4_student4 = createStudentAnswer(student4, pa_7_3_4, "The purpose of the system design phase is to create a detailed design of the software based on the requirements specification.");
-        addStudentAnswerToProblemAnswer(pa_7_3_4, sa7_3_4_student4);
-
         StudentAnswer sa7_3_5_student4 = createStudentAnswer(student4, pa_7_3_5, "The purpose of the implementation phase is to develop the actual code for the software based on the design specifications.");
-        addStudentAnswerToProblemAnswer(pa_7_3_5, sa7_3_5_student4);
-
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment7_3.");
 // Creating StudentAnswer instances for student3
+        // Creating StudentAnswer instances for student3
         StudentAnswer sa7_4_1_student3 = createStudentAnswer(student3, pa_7_4_1, "Project management involves planning, organizing, and managing resources to achieve specific goals and complete projects efficiently.");
-        addStudentAnswerToProblemAnswer(pa_7_4_1, sa7_4_1_student3);
-
         StudentAnswer sa7_4_2_student3 = createStudentAnswer(student3, pa_7_4_2, "Key phases: (1) Initiation, (2) Planning, (3) Execution, (4) Monitoring and Controlling, and (5) Closure.");
-        addStudentAnswerToProblemAnswer(pa_7_4_2, sa7_4_2_student3);
-
         StudentAnswer sa7_4_3_student3 = createStudentAnswer(student3, pa_7_4_3, "Project planning defines scope, objectives, deliverables, timelines, and resource requirements.");
-        addStudentAnswerToProblemAnswer(pa_7_4_3, sa7_4_3_student3);
-
         StudentAnswer sa7_4_4_student3 = createStudentAnswer(student3, pa_7_4_4, "Project scheduling creates a timeline for tasks and activities, determining dates, dependencies, milestones, and resource allocation.");
-        addStudentAnswerToProblemAnswer(pa_7_4_4, sa7_4_4_student3);
-
         StudentAnswer sa7_4_5_student3 = createStudentAnswer(student3, pa_7_4_5, "Resource management identifies, allocates, and manages resources needed for a project.");
-        addStudentAnswerToProblemAnswer(pa_7_4_5, sa7_4_5_student3);
-
 
 // Creating StudentAnswer instances for student4
         StudentAnswer sa7_4_1_student4 = createStudentAnswer(student4, pa_7_4_1, "Project management involves planning, organizing, and managing resources to achieve specific goals and complete projects efficiently.");
-        addStudentAnswerToProblemAnswer(pa_7_4_1, sa7_4_1_student4);
-
         StudentAnswer sa7_4_2_student4 = createStudentAnswer(student4, pa_7_4_2, "Key phases: (1) Initiation, (2) Planning, (3) Execution, (4) Monitoring and Controlling, and (5) Closure.");
-        addStudentAnswerToProblemAnswer(pa_7_4_2, sa7_4_2_student4);
-
         StudentAnswer sa7_4_3_student4 = createStudentAnswer(student4, pa_7_4_3, "Project planning defines scope, objectives, deliverables, timelines, and resource requirements.");
-        addStudentAnswerToProblemAnswer(pa_7_4_3, sa7_4_3_student4);
-
         StudentAnswer sa7_4_4_student4 = createStudentAnswer(student4, pa_7_4_4, "Project scheduling creates a timeline for tasks and activities, determining dates, dependencies, milestones, and resource allocation.");
-        addStudentAnswerToProblemAnswer(pa_7_4_4, sa7_4_4_student4);
-
         StudentAnswer sa7_4_5_student4 = createStudentAnswer(student4, pa_7_4_5, "Resource management identifies, allocates, and manages resources needed for a project.");
-        addStudentAnswerToProblemAnswer(pa_7_4_5, sa7_4_5_student4);
-
 
 // Output for confirmation
-        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment7_4.");
+        System.out.println("Student answers created for both student3 and student4 for all 10 problem answers in assignment7_4.");
+
 // Creating StudentAnswer instances for student3
         StudentAnswer sa8_1_1_student3 = createStudentAnswer(student3, pa_8_1_1, "HTML is the standard language for creating web pages, defining structure and content using tags and attributes.");
-        addStudentAnswerToProblemAnswer(pa_8_1_1, sa8_1_1_student3);
-
         StudentAnswer sa8_1_2_student3 = createStudentAnswer(student3, pa_8_1_2, "HTML tags are the building blocks of HTML, defining and structuring content within angle brackets.");
-        addStudentAnswerToProblemAnswer(pa_8_1_2, sa8_1_2_student3);
-
         StudentAnswer sa8_1_3_student3 = createStudentAnswer(student3, pa_8_1_3, "An HTML attribute provides additional information about an element, specified within the opening tag as name/value pairs.");
-        addStudentAnswerToProblemAnswer(pa_8_1_3, sa8_1_3_student3);
-
         StudentAnswer sa8_1_4_student3 = createStudentAnswer(student3, pa_8_1_4, "The <head> tag contains meta-information about the document, such as title, character set, and links to stylesheets or scripts.");
-        addStudentAnswerToProblemAnswer(pa_8_1_4, sa8_1_4_student3);
-
         StudentAnswer sa8_1_5_student3 = createStudentAnswer(student3, pa_8_1_5, "The <body> tag contains the content of the web page, such as text, images, links, and other elements.");
-        addStudentAnswerToProblemAnswer(pa_8_1_5, sa8_1_5_student3);
-
 
 // Creating StudentAnswer instances for student4
         StudentAnswer sa8_1_1_student4 = createStudentAnswer(student4, pa_8_1_1, "HTML is the standard language for creating web pages, defining structure and content using tags and attributes.");
-        addStudentAnswerToProblemAnswer(pa_8_1_1, sa8_1_1_student4);
-
         StudentAnswer sa8_1_2_student4 = createStudentAnswer(student4, pa_8_1_2, "HTML tags are the building blocks of HTML, defining and structuring content within angle brackets.");
-        addStudentAnswerToProblemAnswer(pa_8_1_2, sa8_1_2_student4);
-
         StudentAnswer sa8_1_3_student4 = createStudentAnswer(student4, pa_8_1_3, "An HTML attribute provides additional information about an element, specified within the opening tag as name/value pairs.");
-        addStudentAnswerToProblemAnswer(pa_8_1_3, sa8_1_3_student4);
-
         StudentAnswer sa8_1_4_student4 = createStudentAnswer(student4, pa_8_1_4, "The <head> tag contains meta-information about the document, such as title, character set, and links to stylesheets or scripts.");
-        addStudentAnswerToProblemAnswer(pa_8_1_4, sa8_1_4_student4);
-
         StudentAnswer sa8_1_5_student4 = createStudentAnswer(student4, pa_8_1_5, "The <body> tag contains the content of the web page, such as text, images, links, and other elements.");
-        addStudentAnswerToProblemAnswer(pa_8_1_5, sa8_1_5_student4);
-
 
 // Output for confirmation
-        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment8_1.");
+        System.out.println("Student answers created for both student3 and student4 for all 10 problem answers in assignment8_1.");
+
 // Creating StudentAnswer instances for student3
         StudentAnswer sa8_2_1_student3 = createStudentAnswer(student3, pa_8_2_1, "CSS is a language used to style HTML documents, controlling layout, colors, fonts, and visual presentation.");
-        addStudentAnswerToProblemAnswer(pa_8_2_1, sa8_2_1_student3);
-
         StudentAnswer sa8_2_2_student3 = createStudentAnswer(student3, pa_8_2_2, "To link a CSS file to an HTML document, use the <link> tag within the <head> section, e.g., <link rel=\"stylesheet\" href=\"styles.css\">.");
-        addStudentAnswerToProblemAnswer(pa_8_2_2, sa8_2_2_student3);
-
         StudentAnswer sa8_2_3_student3 = createStudentAnswer(student3, pa_8_2_3, "The CSS box model describes the rectangular boxes generated for elements, including the content, padding, border, and margin areas.");
-        addStudentAnswerToProblemAnswer(pa_8_2_3, sa8_2_3_student3);
-
         StudentAnswer sa8_2_4_student3 = createStudentAnswer(student3, pa_8_2_4, "Styles can be applied to HTML elements using selectors in a CSS file, e.g., p { color: blue; font-size: 16px; }.");
-        addStudentAnswerToProblemAnswer(pa_8_2_4, sa8_2_4_student3);
-
         StudentAnswer sa8_2_5_student3 = createStudentAnswer(student3, pa_8_2_5, "CSS selectors are patterns used to select and style specific elements on a web page, such as element, class, ID, and attribute selectors.");
-        addStudentAnswerToProblemAnswer(pa_8_2_5, sa8_2_5_student3);
 
 // Creating StudentAnswer instances for student4
         StudentAnswer sa8_2_1_student4 = createStudentAnswer(student4, pa_8_2_1, "CSS is a language used to style HTML documents, controlling layout, colors, fonts, and visual presentation.");
-        addStudentAnswerToProblemAnswer(pa_8_2_1, sa8_2_1_student4);
-
         StudentAnswer sa8_2_2_student4 = createStudentAnswer(student4, pa_8_2_2, "To link a CSS file to an HTML document, use the <link> tag within the <head> section, e.g., <link rel=\"stylesheet\" href=\"styles.css\">.");
-        addStudentAnswerToProblemAnswer(pa_8_2_2, sa8_2_2_student4);
-
         StudentAnswer sa8_2_3_student4 = createStudentAnswer(student4, pa_8_2_3, "The CSS box model describes the rectangular boxes generated for elements, including the content, padding, border, and margin areas.");
-        addStudentAnswerToProblemAnswer(pa_8_2_3, sa8_2_3_student4);
-
         StudentAnswer sa8_2_4_student4 = createStudentAnswer(student4, pa_8_2_4, "Styles can be applied to HTML elements using selectors in a CSS file, e.g., p { color: blue; font-size: 16px; }.");
-        addStudentAnswerToProblemAnswer(pa_8_2_4, sa8_2_4_student4);
-
         StudentAnswer sa8_2_5_student4 = createStudentAnswer(student4, pa_8_2_5, "CSS selectors are patterns used to select and style specific elements on a web page, such as element, class, ID, and attribute selectors.");
-        addStudentAnswerToProblemAnswer(pa_8_2_5, sa8_2_5_student4);
 
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment8_2.");
 // Creating StudentAnswer instances for student3
+        // Creating StudentAnswer instances for student3
         StudentAnswer sa8_3_1_student3 = createStudentAnswer(student3, pa_8_3_1, "JavaScript is a programming language for creating interactive and dynamic web content.");
-        addStudentAnswerToProblemAnswer(pa_8_3_1, sa8_3_1_student3);
-
         StudentAnswer sa8_3_2_student3 = createStudentAnswer(student3, pa_8_3_2, "To include JavaScript in an HTML document, use the <script> tag, e.g., <script src=\"script.js\"></script> for an external script.");
-        addStudentAnswerToProblemAnswer(pa_8_3_2, sa8_3_2_student3);
-
         StudentAnswer sa8_3_3_student3 = createStudentAnswer(student3, pa_8_3_3, "The DOM is a programming interface for HTML and XML documents, representing the structure as a tree of objects.");
-        addStudentAnswerToProblemAnswer(pa_8_3_3, sa8_3_3_student3);
-
         StudentAnswer sa8_3_4_student3 = createStudentAnswer(student3, pa_8_3_4, "Select an HTML element using methods like getElementById, getElementsByClassName, querySelector, e.g., document.getElementById('elementID');");
-        addStudentAnswerToProblemAnswer(pa_8_3_4, sa8_3_4_student3);
-
         StudentAnswer sa8_3_5_student3 = createStudentAnswer(student3, pa_8_3_5, "Handle events by adding event listeners to elements, e.g., document.getElementById('button').addEventListener('click', function() { alert('Button clicked!'); });");
-        addStudentAnswerToProblemAnswer(pa_8_3_5, sa8_3_5_student3);
-
 
 // Creating StudentAnswer instances for student4
         StudentAnswer sa8_3_1_student4 = createStudentAnswer(student4, pa_8_3_1, "JavaScript is a programming language for creating interactive and dynamic web content.");
-        addStudentAnswerToProblemAnswer(pa_8_3_1, sa8_3_1_student4);
-
         StudentAnswer sa8_3_2_student4 = createStudentAnswer(student4, pa_8_3_2, "To include JavaScript in an HTML document, use the <script> tag, e.g., <script src=\"script.js\"></script> for an external script.");
-        addStudentAnswerToProblemAnswer(pa_8_3_2, sa8_3_2_student4);
-
         StudentAnswer sa8_3_3_student4 = createStudentAnswer(student4, pa_8_3_3, "The DOM is a programming interface for HTML and XML documents, representing the structure as a tree of objects.");
-        addStudentAnswerToProblemAnswer(pa_8_3_3, sa8_3_3_student4);
-
         StudentAnswer sa8_3_4_student4 = createStudentAnswer(student4, pa_8_3_4, "Select an HTML element using methods like getElementById, getElementsByClassName, querySelector, e.g., document.getElementById('elementID');");
-        addStudentAnswerToProblemAnswer(pa_8_3_4, sa8_3_4_student4);
-
         StudentAnswer sa8_3_5_student4 = createStudentAnswer(student4, pa_8_3_5, "Handle events by adding event listeners to elements, e.g., document.getElementById('button').addEventListener('click', function() { alert('Button clicked!'); });");
-        addStudentAnswerToProblemAnswer(pa_8_3_5, sa8_3_5_student4);
-
 
 // Output for confirmation
-        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment8_3.");
+        System.out.println("Student answers created for both student3 and student4 for all 10 problem answers in assignment8_3.");
+
 // Creating StudentAnswer instances for student3
         StudentAnswer sa8_4_1_student3 = createStudentAnswer(student3, pa_8_4_1, "React is a popular JavaScript library for building user interfaces, allowing the creation of reusable UI components.");
-        addStudentAnswerToProblemAnswer(pa_8_4_1, sa8_4_1_student3);
-
         StudentAnswer sa8_4_2_student3 = createStudentAnswer(student3, pa_8_4_2, "React components are reusable pieces of UI in a React application, which can be functional or class-based.");
-        addStudentAnswerToProblemAnswer(pa_8_4_2, sa8_4_2_student3);
-
         StudentAnswer sa8_4_3_student3 = createStudentAnswer(student3, pa_8_4_3, "JSX is a syntax extension for JavaScript that allows developers to write HTML-like code within their JavaScript.");
-        addStudentAnswerToProblemAnswer(pa_8_4_3, sa8_4_3_student3);
-
         StudentAnswer sa8_4_4_student3 = createStudentAnswer(student3, pa_8_4_4, "State is an object that holds data that can change over time and affect the rendering of a component.");
-        addStudentAnswerToProblemAnswer(pa_8_4_4, sa8_4_4_student3);
-
         StudentAnswer sa8_4_5_student3 = createStudentAnswer(student3, pa_8_4_5, "Props are read-only properties that allow data to be passed from parent components to child components.");
-        addStudentAnswerToProblemAnswer(pa_8_4_5, sa8_4_5_student3);
-
 
 // Creating StudentAnswer instances for student4
         StudentAnswer sa8_4_1_student4 = createStudentAnswer(student4, pa_8_4_1, "React is a popular JavaScript library for building user interfaces, allowing the creation of reusable UI components.");
-        addStudentAnswerToProblemAnswer(pa_8_4_1, sa8_4_1_student4);
-
         StudentAnswer sa8_4_2_student4 = createStudentAnswer(student4, pa_8_4_2, "React components are reusable pieces of UI in a React application, which can be functional or class-based.");
-        addStudentAnswerToProblemAnswer(pa_8_4_2, sa8_4_2_student4);
-
         StudentAnswer sa8_4_3_student4 = createStudentAnswer(student4, pa_8_4_3, "JSX is a syntax extension for JavaScript that allows developers to write HTML-like code within their JavaScript.");
-        addStudentAnswerToProblemAnswer(pa_8_4_3, sa8_4_3_student4);
-
         StudentAnswer sa8_4_4_student4 = createStudentAnswer(student4, pa_8_4_4, "State is an object that holds data that can change over time and affect the rendering of a component.");
-        addStudentAnswerToProblemAnswer(pa_8_4_4, sa8_4_4_student4);
-
         StudentAnswer sa8_4_5_student4 = createStudentAnswer(student4, pa_8_4_5, "Props are read-only properties that allow data to be passed from parent components to child components.");
-        addStudentAnswerToProblemAnswer(pa_8_4_5, sa8_4_5_student4);
-
 
 // Output for confirmation
-        System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment8_4.");
+        System.out.println("Student answers created for both student3 and student4 for all 10 problem answers in assignment8_4.");
+
 // Creating StudentAnswer instances for student3
         StudentAnswer sa8_5_1_student3 = createStudentAnswer(student3, pa_8_5_1, "Backend integration connects front-end web applications with backend services for communication, data fetching, and server-side operations.");
-        addStudentAnswerToProblemAnswer(pa_8_5_1, sa8_5_1_student3);
-
         StudentAnswer sa8_5_2_student3 = createStudentAnswer(student3, pa_8_5_2, "A RESTful API uses standard HTTP methods to interact with resources and perform CRUD operations.");
-        addStudentAnswerToProblemAnswer(pa_8_5_2, sa8_5_2_student3);
-
         StudentAnswer sa8_5_3_student3 = createStudentAnswer(student3, pa_8_5_3, "Use JavaScript's Fetch API to fetch data from a RESTful API, e.g., fetch('https://api.example.com/data').then(response => response.json()).then(data => console.log(data));");
-        addStudentAnswerToProblemAnswer(pa_8_5_3, sa8_5_3_student3);
-
         StudentAnswer sa8_5_4_student3 = createStudentAnswer(student3, pa_8_5_4, "Server-side rendering (SSR) renders web pages on the server to improve initial load time and SEO.");
-        addStudentAnswerToProblemAnswer(pa_8_5_4, sa8_5_4_student3);
-
         StudentAnswer sa8_5_5_student3 = createStudentAnswer(student3, pa_8_5_5, "Client-side rendering (CSR) renders web pages in the browser; server-side rendering (SSR) renders web pages on the server for faster initial load times.");
-        addStudentAnswerToProblemAnswer(pa_8_5_5, sa8_5_5_student3);
-
 
 // Creating StudentAnswer instances for student4
         StudentAnswer sa8_5_1_student4 = createStudentAnswer(student4, pa_8_5_1, "Backend integration connects front-end web applications with backend services for communication, data fetching, and server-side operations.");
-        addStudentAnswerToProblemAnswer(pa_8_5_1, sa8_5_1_student4);
-
         StudentAnswer sa8_5_2_student4 = createStudentAnswer(student4, pa_8_5_2, "A RESTful API uses standard HTTP methods to interact with resources and perform CRUD operations.");
-        addStudentAnswerToProblemAnswer(pa_8_5_2, sa8_5_2_student4);
-
         StudentAnswer sa8_5_3_student4 = createStudentAnswer(student4, pa_8_5_3, "Use JavaScript's Fetch API to fetch data from a RESTful API, e.g., fetch('https://api.example.com/data').then(response => response.json()).then(data => console.log(data));");
-        addStudentAnswerToProblemAnswer(pa_8_5_3, sa8_5_3_student4);
-
         StudentAnswer sa8_5_4_student4 = createStudentAnswer(student4, pa_8_5_4, "Server-side rendering (SSR) renders web pages on the server to improve initial load time and SEO.");
-        addStudentAnswerToProblemAnswer(pa_8_5_4, sa8_5_4_student4);
-
         StudentAnswer sa8_5_5_student4 = createStudentAnswer(student4, pa_8_5_5, "Client-side rendering (CSR) renders web pages in the browser; server-side rendering (SSR) renders web pages on the server for faster initial load times.");
+
+        studentAnswerRepo.saveAllAndFlush(Arrays.asList(sa5_1_1_student3, sa5_1_2_student3, sa5_1_3_student3, sa5_1_4_student3, sa5_1_5_student3, sa5_2_1_student3, sa5_2_2_student3, sa5_2_3_student3, sa5_2_4_student3, sa5_2_5_student3, sa5_3_1_student3, sa5_3_2_student3, sa5_3_3_student3, sa5_3_4_student3, sa5_3_5_student3, sa5_4_1_student3, sa5_4_2_student3, sa5_4_3_student3, sa5_4_4_student3, sa5_4_5_student3, sa5_1_1_student4, sa5_1_2_student4, sa5_1_3_student4, sa5_1_4_student4, sa5_1_5_student4, sa5_2_1_student4, sa5_2_2_student4, sa5_2_3_student4, sa5_2_4_student4, sa5_2_5_student4, sa5_3_1_student4, sa5_3_2_student4, sa5_3_3_student4, sa5_3_4_student4, sa5_3_5_student4, sa5_4_1_student4, sa5_4_2_student4, sa5_4_3_student4, sa5_4_4_student4, sa5_4_5_student4,
+                sa6_1_1_student3, sa6_1_2_student3, sa6_1_3_student3, sa6_1_4_student3, sa6_1_5_student3, sa6_2_1_student3, sa6_2_2_student3, sa6_2_3_student3, sa6_2_4_student3, sa6_2_5_student3, sa6_3_1_student3, sa6_3_2_student3, sa6_3_3_student3, sa6_3_4_student3, sa6_3_5_student3, sa6_4_1_student3, sa6_4_2_student3, sa6_4_3_student3, sa6_4_4_student3, sa6_4_5_student3, sa6_5_1_student3, sa6_5_2_student3, sa6_5_3_student3, sa6_5_4_student3, sa6_5_5_student3, sa6_1_1_student4, sa6_1_2_student4, sa6_1_3_student4, sa6_1_4_student4, sa6_1_5_student4, sa6_2_1_student4, sa6_2_2_student4, sa6_2_3_student4, sa6_2_4_student4, sa6_2_5_student4, sa6_3_1_student4, sa6_3_2_student4, sa6_3_3_student4, sa6_3_4_student4, sa6_3_5_student4, sa6_4_1_student4, sa6_4_2_student4, sa6_4_3_student4, sa6_4_4_student4, sa6_4_5_student4, sa6_5_1_student4, sa6_5_2_student4, sa6_5_3_student4, sa6_5_4_student4, sa6_5_5_student4,
+                sa7_1_1_student3, sa7_1_2_student3, sa7_1_3_student3, sa7_1_4_student3, sa7_1_5_student3, sa7_2_1_student3, sa7_2_2_student3, sa7_2_3_student3, sa7_2_4_student3, sa7_2_5_student3, sa7_3_1_student3, sa7_3_2_student3, sa7_3_3_student3, sa7_3_4_student3, sa7_3_5_student3, sa7_4_1_student3, sa7_4_2_student3, sa7_4_3_student3, sa7_4_4_student3, sa7_4_5_student3, sa7_1_1_student4, sa7_1_2_student4, sa7_1_3_student4, sa7_1_4_student4, sa7_1_5_student4, sa7_2_1_student4, sa7_2_2_student4, sa7_2_3_student4, sa7_2_4_student4, sa7_2_5_student4, sa7_3_1_student4, sa7_3_2_student4, sa7_3_3_student4, sa7_3_4_student4, sa7_3_5_student4, sa7_4_1_student4, sa7_4_2_student4, sa7_4_3_student4, sa7_4_4_student4, sa7_4_5_student4,
+                sa8_1_1_student3, sa8_1_2_student3, sa8_1_3_student3, sa8_1_4_student3, sa8_1_5_student3, sa8_2_1_student3, sa8_2_2_student3, sa8_2_3_student3, sa8_2_4_student3, sa8_2_5_student3, sa8_3_1_student3, sa8_3_2_student3, sa8_3_3_student3, sa8_3_4_student3, sa8_3_5_student3, sa8_4_1_student3, sa8_4_2_student3, sa8_4_3_student3, sa8_4_4_student3, sa8_4_5_student3, sa8_5_1_student3, sa8_5_2_student3, sa8_5_3_student3, sa8_5_4_student3, sa8_5_5_student3, sa8_1_1_student4, sa8_1_2_student4, sa8_1_3_student4, sa8_1_4_student4, sa8_1_5_student4, sa8_2_1_student4, sa8_2_2_student4, sa8_2_3_student4, sa8_2_4_student4, sa8_2_5_student4, sa8_3_1_student4, sa8_3_2_student4, sa8_3_3_student4, sa8_3_4_student4, sa8_3_5_student4, sa8_4_1_student4, sa8_4_2_student4, sa8_4_3_student4, sa8_4_4_student4, sa8_4_5_student4, sa8_5_1_student4, sa8_5_2_student4, sa8_5_3_student4, sa8_5_4_student4, sa8_5_5_student4));
+
+        // Course 5
+// Unit 1
+        addStudentAnswerToProblemAnswer(pa_5_1_1, sa5_1_1_student3);
+        addStudentAnswerToProblemAnswer(pa_5_1_2, sa5_1_2_student3);
+        addStudentAnswerToProblemAnswer(pa_5_1_3, sa5_1_3_student3);
+        addStudentAnswerToProblemAnswer(pa_5_1_4, sa5_1_4_student3);
+        addStudentAnswerToProblemAnswer(pa_5_1_5, sa5_1_5_student3);
+
+// Unit 2
+        addStudentAnswerToProblemAnswer(pa_5_2_1, sa5_2_1_student3);
+        addStudentAnswerToProblemAnswer(pa_5_2_2, sa5_2_2_student3);
+        addStudentAnswerToProblemAnswer(pa_5_2_3, sa5_2_3_student3);
+        addStudentAnswerToProblemAnswer(pa_5_2_4, sa5_2_4_student3);
+        addStudentAnswerToProblemAnswer(pa_5_2_5, sa5_2_5_student3);
+
+// Unit 3
+        addStudentAnswerToProblemAnswer(pa_5_3_1, sa5_3_1_student3);
+        addStudentAnswerToProblemAnswer(pa_5_3_2, sa5_3_2_student3);
+        addStudentAnswerToProblemAnswer(pa_5_3_3, sa5_3_3_student3);
+        addStudentAnswerToProblemAnswer(pa_5_3_4, sa5_3_4_student3);
+        addStudentAnswerToProblemAnswer(pa_5_3_5, sa5_3_5_student3);
+
+// Unit 4
+        addStudentAnswerToProblemAnswer(pa_5_4_1, sa5_4_1_student3);
+        addStudentAnswerToProblemAnswer(pa_5_4_2, sa5_4_2_student3);
+        addStudentAnswerToProblemAnswer(pa_5_4_3, sa5_4_3_student3);
+        addStudentAnswerToProblemAnswer(pa_5_4_4, sa5_4_4_student3);
+        addStudentAnswerToProblemAnswer(pa_5_4_5, sa5_4_5_student3);
+
+// Course 6
+// Unit 1
+        addStudentAnswerToProblemAnswer(pa_6_1_1, sa6_1_1_student3);
+        addStudentAnswerToProblemAnswer(pa_6_1_2, sa6_1_2_student3);
+        addStudentAnswerToProblemAnswer(pa_6_1_3, sa6_1_3_student3);
+        addStudentAnswerToProblemAnswer(pa_6_1_4, sa6_1_4_student3);
+        addStudentAnswerToProblemAnswer(pa_6_1_5, sa6_1_5_student3);
+
+// Unit 2
+        addStudentAnswerToProblemAnswer(pa_6_2_1, sa6_2_1_student3);
+        addStudentAnswerToProblemAnswer(pa_6_2_2, sa6_2_2_student3);
+        addStudentAnswerToProblemAnswer(pa_6_2_3, sa6_2_3_student3);
+        addStudentAnswerToProblemAnswer(pa_6_2_4, sa6_2_4_student3);
+        addStudentAnswerToProblemAnswer(pa_6_2_5, sa6_2_5_student3);
+
+// Unit 3
+        addStudentAnswerToProblemAnswer(pa_6_3_1, sa6_3_1_student3);
+        addStudentAnswerToProblemAnswer(pa_6_3_2, sa6_3_2_student3);
+        addStudentAnswerToProblemAnswer(pa_6_3_3, sa6_3_3_student3);
+        addStudentAnswerToProblemAnswer(pa_6_3_4, sa6_3_4_student3);
+        addStudentAnswerToProblemAnswer(pa_6_3_5, sa6_3_5_student3);
+
+// Unit 4
+        addStudentAnswerToProblemAnswer(pa_6_4_1, sa6_4_1_student3);
+        addStudentAnswerToProblemAnswer(pa_6_4_2, sa6_4_2_student3);
+        addStudentAnswerToProblemAnswer(pa_6_4_3, sa6_4_3_student3);
+        addStudentAnswerToProblemAnswer(pa_6_4_4, sa6_4_4_student3);
+        addStudentAnswerToProblemAnswer(pa_6_4_5, sa6_4_5_student3);
+
+// Unit 5
+        addStudentAnswerToProblemAnswer(pa_6_5_1, sa6_5_1_student3);
+        addStudentAnswerToProblemAnswer(pa_6_5_2, sa6_5_2_student3);
+        addStudentAnswerToProblemAnswer(pa_6_5_3, sa6_5_3_student3);
+        addStudentAnswerToProblemAnswer(pa_6_5_4, sa6_5_4_student3);
+        addStudentAnswerToProblemAnswer(pa_6_5_5, sa6_5_5_student3);
+
+// Course 7
+// Unit 1
+        addStudentAnswerToProblemAnswer(pa_7_1_1, sa7_1_1_student3);
+        addStudentAnswerToProblemAnswer(pa_7_1_2, sa7_1_2_student3);
+        addStudentAnswerToProblemAnswer(pa_7_1_3, sa7_1_3_student3);
+        addStudentAnswerToProblemAnswer(pa_7_1_4, sa7_1_4_student3);
+        addStudentAnswerToProblemAnswer(pa_7_1_5, sa7_1_5_student3);
+
+// Unit 2
+        addStudentAnswerToProblemAnswer(pa_7_2_1, sa7_2_1_student3);
+        addStudentAnswerToProblemAnswer(pa_7_2_2, sa7_2_2_student3);
+        addStudentAnswerToProblemAnswer(pa_7_2_3, sa7_2_3_student3);
+        addStudentAnswerToProblemAnswer(pa_7_2_4, sa7_2_4_student3);
+        addStudentAnswerToProblemAnswer(pa_7_2_5, sa7_2_5_student3);
+
+// Unit 3
+        addStudentAnswerToProblemAnswer(pa_7_3_1, sa7_3_1_student3);
+        addStudentAnswerToProblemAnswer(pa_7_3_2, sa7_3_2_student3);
+        addStudentAnswerToProblemAnswer(pa_7_3_3, sa7_3_3_student3);
+        addStudentAnswerToProblemAnswer(pa_7_3_4, sa7_3_4_student3);
+        addStudentAnswerToProblemAnswer(pa_7_3_5, sa7_3_5_student3);
+
+// Unit 4
+        addStudentAnswerToProblemAnswer(pa_7_4_1, sa7_4_1_student3);
+        addStudentAnswerToProblemAnswer(pa_7_4_2, sa7_4_2_student3);
+        addStudentAnswerToProblemAnswer(pa_7_4_3, sa7_4_3_student3);
+        addStudentAnswerToProblemAnswer(pa_7_4_4, sa7_4_4_student3);
+        addStudentAnswerToProblemAnswer(pa_7_4_5, sa7_4_5_student3);
+
+// Course 8
+// Unit 1
+        addStudentAnswerToProblemAnswer(pa_8_1_1, sa8_1_1_student3);
+        addStudentAnswerToProblemAnswer(pa_8_1_2, sa8_1_2_student3);
+        addStudentAnswerToProblemAnswer(pa_8_1_3, sa8_1_3_student3);
+        addStudentAnswerToProblemAnswer(pa_8_1_4, sa8_1_4_student3);
+        addStudentAnswerToProblemAnswer(pa_8_1_5, sa8_1_5_student3);
+
+// Unit 2
+        addStudentAnswerToProblemAnswer(pa_8_2_1, sa8_2_1_student3);
+        addStudentAnswerToProblemAnswer(pa_8_2_2, sa8_2_2_student3);
+        addStudentAnswerToProblemAnswer(pa_8_2_3, sa8_2_3_student3);
+        addStudentAnswerToProblemAnswer(pa_8_2_4, sa8_2_4_student3);
+        addStudentAnswerToProblemAnswer(pa_8_2_5, sa8_2_5_student3);
+
+// Unit 3
+        addStudentAnswerToProblemAnswer(pa_8_3_1, sa8_3_1_student3);
+        addStudentAnswerToProblemAnswer(pa_8_3_2, sa8_3_2_student3);
+        addStudentAnswerToProblemAnswer(pa_8_3_3, sa8_3_3_student3);
+        addStudentAnswerToProblemAnswer(pa_8_3_4, sa8_3_4_student3);
+        addStudentAnswerToProblemAnswer(pa_8_3_5, sa8_3_5_student3);
+
+// Unit 4
+        addStudentAnswerToProblemAnswer(pa_8_4_1, sa8_4_1_student3);
+        addStudentAnswerToProblemAnswer(pa_8_4_2, sa8_4_2_student3);
+        addStudentAnswerToProblemAnswer(pa_8_4_3, sa8_4_3_student3);
+        addStudentAnswerToProblemAnswer(pa_8_4_4, sa8_4_4_student3);
+        addStudentAnswerToProblemAnswer(pa_8_4_5, sa8_4_5_student3);
+        addStudentAnswerToProblemAnswer(pa_8_5_1, sa8_5_1_student3);
+        addStudentAnswerToProblemAnswer(pa_8_5_2, sa8_5_2_student3);
+        addStudentAnswerToProblemAnswer(pa_8_5_3, sa8_5_3_student3);
+        addStudentAnswerToProblemAnswer(pa_8_5_4, sa8_5_4_student3);
+        addStudentAnswerToProblemAnswer(pa_8_5_5, sa8_5_5_student3);
+        // **Course 5**
+// Unit 1
+        addStudentAnswerToProblemAnswer(pa_5_1_1, sa5_1_1_student4);
+        addStudentAnswerToProblemAnswer(pa_5_1_2, sa5_1_2_student4);
+        addStudentAnswerToProblemAnswer(pa_5_1_3, sa5_1_3_student4);
+        addStudentAnswerToProblemAnswer(pa_5_1_4, sa5_1_4_student4);
+        addStudentAnswerToProblemAnswer(pa_5_1_5, sa5_1_5_student4);
+
+// Unit 2
+        addStudentAnswerToProblemAnswer(pa_5_2_1, sa5_2_1_student4);
+        addStudentAnswerToProblemAnswer(pa_5_2_2, sa5_2_2_student4);
+        addStudentAnswerToProblemAnswer(pa_5_2_3, sa5_2_3_student4);
+        addStudentAnswerToProblemAnswer(pa_5_2_4, sa5_2_4_student4);
+        addStudentAnswerToProblemAnswer(pa_5_2_5, sa5_2_5_student4);
+
+// Unit 3
+        addStudentAnswerToProblemAnswer(pa_5_3_1, sa5_3_1_student4);
+        addStudentAnswerToProblemAnswer(pa_5_3_2, sa5_3_2_student4);
+        addStudentAnswerToProblemAnswer(pa_5_3_3, sa5_3_3_student4);
+        addStudentAnswerToProblemAnswer(pa_5_3_4, sa5_3_4_student4);
+        addStudentAnswerToProblemAnswer(pa_5_3_5, sa5_3_5_student4);
+
+// Unit 4
+        addStudentAnswerToProblemAnswer(pa_5_4_1, sa5_4_1_student4);
+        addStudentAnswerToProblemAnswer(pa_5_4_2, sa5_4_2_student4);
+        addStudentAnswerToProblemAnswer(pa_5_4_3, sa5_4_3_student4);
+        addStudentAnswerToProblemAnswer(pa_5_4_4, sa5_4_4_student4);
+        addStudentAnswerToProblemAnswer(pa_5_4_5, sa5_4_5_student4);
+
+// **Course 6**
+// Unit 1
+        addStudentAnswerToProblemAnswer(pa_6_1_1, sa6_1_1_student4);
+        addStudentAnswerToProblemAnswer(pa_6_1_2, sa6_1_2_student4);
+        addStudentAnswerToProblemAnswer(pa_6_1_3, sa6_1_3_student4);
+        addStudentAnswerToProblemAnswer(pa_6_1_4, sa6_1_4_student4);
+        addStudentAnswerToProblemAnswer(pa_6_1_5, sa6_1_5_student4);
+
+// Unit 2
+        addStudentAnswerToProblemAnswer(pa_6_2_1, sa6_2_1_student4);
+        addStudentAnswerToProblemAnswer(pa_6_2_2, sa6_2_2_student4);
+        addStudentAnswerToProblemAnswer(pa_6_2_3, sa6_2_3_student4);
+        addStudentAnswerToProblemAnswer(pa_6_2_4, sa6_2_4_student4);
+        addStudentAnswerToProblemAnswer(pa_6_2_5, sa6_2_5_student4);
+
+// Unit 3
+        addStudentAnswerToProblemAnswer(pa_6_3_1, sa6_3_1_student4);
+        addStudentAnswerToProblemAnswer(pa_6_3_2, sa6_3_2_student4);
+        addStudentAnswerToProblemAnswer(pa_6_3_3, sa6_3_3_student4);
+        addStudentAnswerToProblemAnswer(pa_6_3_4, sa6_3_4_student4);
+        addStudentAnswerToProblemAnswer(pa_6_3_5, sa6_3_5_student4);
+
+// Unit 4
+        addStudentAnswerToProblemAnswer(pa_6_4_1, sa6_4_1_student4);
+        addStudentAnswerToProblemAnswer(pa_6_4_2, sa6_4_2_student4);
+        addStudentAnswerToProblemAnswer(pa_6_4_3, sa6_4_3_student4);
+        addStudentAnswerToProblemAnswer(pa_6_4_4, sa6_4_4_student4);
+        addStudentAnswerToProblemAnswer(pa_6_4_5, sa6_4_5_student4);
+
+// Unit 5
+        addStudentAnswerToProblemAnswer(pa_6_5_1, sa6_5_1_student4);
+        addStudentAnswerToProblemAnswer(pa_6_5_2, sa6_5_2_student4);
+        addStudentAnswerToProblemAnswer(pa_6_5_3, sa6_5_3_student4);
+        addStudentAnswerToProblemAnswer(pa_6_5_4, sa6_5_4_student4);
+        addStudentAnswerToProblemAnswer(pa_6_5_5, sa6_5_5_student4);
+
+// **Course 7**
+// Unit 1
+        addStudentAnswerToProblemAnswer(pa_7_1_1, sa7_1_1_student4);
+        addStudentAnswerToProblemAnswer(pa_7_1_2, sa7_1_2_student4);
+        addStudentAnswerToProblemAnswer(pa_7_1_3, sa7_1_3_student4);
+        addStudentAnswerToProblemAnswer(pa_7_1_4, sa7_1_4_student4);
+        addStudentAnswerToProblemAnswer(pa_7_1_5, sa7_1_5_student4);
+
+// Unit 2
+        addStudentAnswerToProblemAnswer(pa_7_2_1, sa7_2_1_student4);
+        addStudentAnswerToProblemAnswer(pa_7_2_2, sa7_2_2_student4);
+        addStudentAnswerToProblemAnswer(pa_7_2_3, sa7_2_3_student4);
+        addStudentAnswerToProblemAnswer(pa_7_2_4, sa7_2_4_student4);
+        addStudentAnswerToProblemAnswer(pa_7_2_5, sa7_2_5_student4);
+
+// Unit 3
+        addStudentAnswerToProblemAnswer(pa_7_3_1, sa7_3_1_student4);
+        addStudentAnswerToProblemAnswer(pa_7_3_2, sa7_3_2_student4);
+        addStudentAnswerToProblemAnswer(pa_7_3_3, sa7_3_3_student4);
+        addStudentAnswerToProblemAnswer(pa_7_3_4, sa7_3_4_student4);
+        addStudentAnswerToProblemAnswer(pa_7_3_5, sa7_3_5_student4);
+
+// Unit 4
+        addStudentAnswerToProblemAnswer(pa_7_4_1, sa7_4_1_student4);
+        addStudentAnswerToProblemAnswer(pa_7_4_2, sa7_4_2_student4);
+        addStudentAnswerToProblemAnswer(pa_7_4_3, sa7_4_3_student4);
+        addStudentAnswerToProblemAnswer(pa_7_4_4, sa7_4_4_student4);
+        addStudentAnswerToProblemAnswer(pa_7_4_5, sa7_4_5_student4);
+
+// **Course 8**
+// Unit 1
+        addStudentAnswerToProblemAnswer(pa_8_1_1, sa8_1_1_student4);
+        addStudentAnswerToProblemAnswer(pa_8_1_2, sa8_1_2_student4);
+        addStudentAnswerToProblemAnswer(pa_8_1_3, sa8_1_3_student4);
+        addStudentAnswerToProblemAnswer(pa_8_1_4, sa8_1_4_student4);
+        addStudentAnswerToProblemAnswer(pa_8_1_5, sa8_1_5_student4);
+
+// Unit 2
+        addStudentAnswerToProblemAnswer(pa_8_2_1, sa8_2_1_student4);
+        addStudentAnswerToProblemAnswer(pa_8_2_2, sa8_2_2_student4);
+        addStudentAnswerToProblemAnswer(pa_8_2_3, sa8_2_3_student4);
+        addStudentAnswerToProblemAnswer(pa_8_2_4, sa8_2_4_student4);
+        addStudentAnswerToProblemAnswer(pa_8_2_5, sa8_2_5_student4);
+
+// Unit 3
+        addStudentAnswerToProblemAnswer(pa_8_3_1, sa8_3_1_student4);
+        addStudentAnswerToProblemAnswer(pa_8_3_2, sa8_3_2_student4);
+        addStudentAnswerToProblemAnswer(pa_8_3_3, sa8_3_3_student4);
+        addStudentAnswerToProblemAnswer(pa_8_3_4, sa8_3_4_student4);
+        addStudentAnswerToProblemAnswer(pa_8_3_5, sa8_3_5_student4);
+
+// Unit 4
+        addStudentAnswerToProblemAnswer(pa_8_4_1, sa8_4_1_student4);
+        addStudentAnswerToProblemAnswer(pa_8_4_2, sa8_4_2_student4);
+        addStudentAnswerToProblemAnswer(pa_8_4_3, sa8_4_3_student4);
+        addStudentAnswerToProblemAnswer(pa_8_4_4, sa8_4_4_student4);
+        addStudentAnswerToProblemAnswer(pa_8_4_5, sa8_4_5_student4);
+        addStudentAnswerToProblemAnswer(pa_8_5_1, sa8_5_1_student4);
+        addStudentAnswerToProblemAnswer(pa_8_5_2, sa8_5_2_student4);
+        addStudentAnswerToProblemAnswer(pa_8_5_3, sa8_5_3_student4);
+        addStudentAnswerToProblemAnswer(pa_8_5_4, sa8_5_4_student4);
         addStudentAnswerToProblemAnswer(pa_8_5_5, sa8_5_5_student4);
-
-
 // Output for confirmation
         System.out.println("Student answers created and added for both student3 and student4 for all 10 problem answers in assignment8_5.");
 
@@ -1603,6 +1549,7 @@ public class Assignment5to8Seeder implements CommandLineRunner {
         for (StudentAnswer studentAnswer : submission8_5_4.getStudentAnswers()) {
             addSubmissionToStudentAnswer(studentAnswer, submission8_5_4);
         }
+        submissionRepo.saveAllAndFlush(Arrays.asList(submission5_1_3, submission5_1_4, submission5_2_3, submission5_2_4, submission5_3_3, submission5_3_4, submission5_4_3, submission5_4_4, submission6_1_3, submission6_1_4, submission6_2_3, submission6_2_4, submission6_3_3, submission6_3_4, submission6_4_3, submission6_4_4, submission6_5_3, submission6_5_4, submission7_1_3, submission7_1_4, submission7_2_3, submission7_2_4, submission7_3_3, submission7_3_4, submission7_4_3, submission7_4_4, submission8_1_3, submission8_1_4, submission8_2_3, submission8_2_4, submission8_3_3, submission8_3_4, submission8_4_3, submission8_4_4, submission8_5_3, submission8_5_4));
 
         Grade grade5_1_3 = createGrade(83.4, student3, faculty5, course5, submission5_1_3);
         Grade grade5_1_4 = createGrade(88.1, student4, faculty5, course5, submission5_1_4);
@@ -1643,6 +1590,7 @@ public class Assignment5to8Seeder implements CommandLineRunner {
         Grade grade8_4_4 = createGrade(87.7, student4, faculty3, course8, submission8_4_4);
         Grade grade8_5_3 = createGrade(83.8, student3, faculty3, course8, submission8_5_3);
         Grade grade8_5_4 = createGrade(88.3, student4, faculty3, course8, submission8_5_4);
+        gradeRepo.saveAllAndFlush(Arrays.asList(grade5_1_3, grade5_2_3, grade5_3_3, grade5_4_3, grade6_1_3, grade6_2_3, grade6_3_3, grade6_4_3, grade6_5_3, grade7_1_3, grade7_2_3, grade7_3_3, grade7_4_3, grade8_1_3, grade8_2_3, grade8_3_3, grade8_4_3, grade8_5_3, grade5_1_4, grade5_2_4, grade5_3_4, grade5_4_4, grade6_1_4, grade6_2_4, grade6_3_4, grade6_4_4, grade6_5_4, grade7_1_4, grade7_2_4, grade7_3_4, grade7_4_4, grade8_1_4, grade8_2_4, grade8_3_4, grade8_4_4, grade8_5_4));
 
         CourseGrade courseGrade5_1_3 = createCourseGrade(student3, course5, 85.875, Arrays.asList(grade5_1_3, grade5_2_3, grade5_3_3, grade5_4_3));
         CourseGrade courseGrade5_1_4 = createCourseGrade(student4, course5, 88.175, Arrays.asList(grade5_1_4, grade5_2_4, grade5_3_4, grade5_4_4));
@@ -1655,6 +1603,7 @@ public class Assignment5to8Seeder implements CommandLineRunner {
 
         CourseGrade courseGrade8_1_3 = createCourseGrade(student3, course8, 86.74, Arrays.asList(grade8_1_3, grade8_2_3, grade8_3_3, grade8_4_3, grade8_5_3));
         CourseGrade courseGrade8_1_4 = createCourseGrade(student4, course8, 86.32, Arrays.asList(grade8_1_4, grade8_2_4, grade8_3_4, grade8_4_4, grade8_5_4));
+        courseGradeRepo.saveAllAndFlush(Arrays.asList(courseGrade5_1_3, courseGrade6_1_3, courseGrade7_1_3, courseGrade8_1_3, courseGrade5_1_4, courseGrade6_1_4, courseGrade7_1_4, courseGrade8_1_4));
 
         Feedback feedback5_1_3 = createFeedback("Great work, student3!", submission5_1_3);
         Feedback feedback5_1_4 = createFeedback("Nice job, student4!", submission5_1_4);
@@ -1709,6 +1658,7 @@ public class Assignment5to8Seeder implements CommandLineRunner {
 
         Feedback feedback8_5_3 = createFeedback("Impressive work, student3!", submission8_5_3);
         Feedback feedback8_5_4 = createFeedback("Solid submission, student4.", submission8_5_4);
+        feedbackRepo.saveAllAndFlush(Arrays.asList(feedback5_1_3, feedback5_1_4, feedback5_2_3, feedback5_2_4, feedback5_3_3, feedback5_3_4, feedback5_4_3, feedback5_4_4, feedback6_1_3, feedback6_1_4, feedback6_2_3, feedback6_2_4, feedback6_3_3, feedback6_3_4, feedback6_4_3, feedback6_4_4, feedback6_5_3, feedback6_5_4, feedback7_1_3, feedback7_1_4, feedback7_2_3, feedback7_2_4, feedback7_3_3, feedback7_3_4, feedback7_4_3, feedback7_4_4, feedback8_1_3, feedback8_1_4, feedback8_2_3, feedback8_2_4, feedback8_3_3, feedback8_3_4, feedback8_4_3, feedback8_4_4, feedback8_5_3, feedback8_5_4));
 
 
         course5.setGrades(Arrays.asList(grade5_1_3, grade5_1_4, grade5_2_3, grade5_2_4, grade5_3_3, grade5_3_4, grade5_4_3, grade5_4_4));
