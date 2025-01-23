@@ -95,6 +95,21 @@ public class Assignment17to20Seeder implements CommandLineRunner {
         System.out.println("Assignment for 'Reactions' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment17_1 = createAssignment("Cell Structure Assignment", faculty2, Date.from(LocalDate.of(2029, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
+        Assignment assignment17_2 = createAssignment("Genetics Assignment", faculty2, Date.from(LocalDate.of(2029, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
+        Assignment assignment17_3 = createAssignment("Evolution Assignment", faculty2, Date.from(LocalDate.of(2029, 9, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
+        Assignment assignment17_4 = createAssignment("Ecology Assignment", faculty2, Date.from(LocalDate.of(2029, 10, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
+        Assignment assignment18_1 = createAssignment("Engineering Disciplines Assignment", faculty3, Date.from(LocalDate.of(2029, 11, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus18, false);
+        Assignment assignment18_2 = createAssignment("Problem-Solving Assignment", faculty3, Date.from(LocalDate.of(2029, 12, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus18, false);
+        Assignment assignment18_3 = createAssignment("Design Process Assignment", faculty3, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus18, false);
+        Assignment assignment19_1 = createAssignment("Circuit Analysis Assignment", faculty4, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus19, false);
+        Assignment assignment19_2 = createAssignment("Signal Processing Assignment", faculty4, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus19, false);
+        Assignment assignment19_3 = createAssignment("Systems Theory Assignment", faculty4, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus19, false);
+        Assignment assignment20_1 = createAssignment("Statics Assignment", faculty5, Date.from(LocalDate.of(2030, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
+        Assignment assignment20_2 = createAssignment("Dynamics Assignment", faculty5, Date.from(LocalDate.of(2030, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
+        Assignment assignment20_3 = createAssignment("Thermodynamics Assignment", faculty5, Date.from(LocalDate.of(2030, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
+        Assignment assignment20_4 = createAssignment("Material Science Assignment", faculty5, Date.from(LocalDate.of(2030, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
+        assignmentRepo.saveAllAndFlush(Arrays.asList(assignment17_1, assignment17_2, assignment17_3, assignment17_4, assignment18_1, assignment18_2, assignment18_3, assignment19_1, assignment19_2, assignment19_3, assignment20_1, assignment20_2, assignment20_3, assignment20_4));
+
         addStudentToAssignment(assignment17_1, student9);
         addStudentToAssignment(assignment17_1, student10);
 
@@ -123,7 +138,7 @@ public class Assignment17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Cell Structure' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment17_2 = createAssignment("Genetics Assignment", faculty2, Date.from(LocalDate.of(2029, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
+
         addStudentToAssignment(assignment17_2, student9);
         addStudentToAssignment(assignment17_2, student10);
 
@@ -152,7 +167,7 @@ public class Assignment17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Genetics' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment17_3 = createAssignment("Evolution Assignment", faculty2, Date.from(LocalDate.of(2029, 9, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
+
         addStudentToAssignment(assignment17_3, student9);
         addStudentToAssignment(assignment17_3, student10);
 
@@ -181,7 +196,7 @@ public class Assignment17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Evolution' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment17_4 = createAssignment("Ecology Assignment", faculty2, Date.from(LocalDate.of(2029, 10, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
+
         addStudentToAssignment(assignment17_4, student9);
         addStudentToAssignment(assignment17_4, student10);
 
@@ -210,7 +225,7 @@ public class Assignment17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Ecology' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment18_1 = createAssignment("Engineering Disciplines Assignment", faculty3, Date.from(LocalDate.of(2029, 11, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus18, false);
+
         addStudentToAssignment(assignment18_1, student9);
         addStudentToAssignment(assignment18_1, student10);
 
@@ -239,7 +254,7 @@ public class Assignment17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Engineering Disciplines' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment18_2 = createAssignment("Problem-Solving Assignment", faculty3, Date.from(LocalDate.of(2029, 12, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus18, false);
+
         addStudentToAssignment(assignment18_2, student9);
         addStudentToAssignment(assignment18_2, student10);
 
@@ -268,7 +283,7 @@ public class Assignment17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Problem-Solving' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment18_3 = createAssignment("Design Process Assignment", faculty3, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus18, false);
+
         addStudentToAssignment(assignment18_3, student9);
         addStudentToAssignment(assignment18_3, student10);
 
@@ -297,7 +312,7 @@ public class Assignment17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Design Process' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment19_1 = createAssignment("Circuit Analysis Assignment", faculty4, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus19, false);
+
         addStudentToAssignment(assignment19_1, student9);
         addStudentToAssignment(assignment19_1, student10);
 
@@ -326,7 +341,7 @@ public class Assignment17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Circuit Analysis' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment19_2 = createAssignment("Signal Processing Assignment", faculty4, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus19, false);
+
         addStudentToAssignment(assignment19_2, student9);
         addStudentToAssignment(assignment19_2, student10);
 
@@ -354,7 +369,7 @@ public class Assignment17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Signal Processing' unit created with  problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment19_3 = createAssignment("Systems Theory Assignment", faculty4, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus19, false);
+
         addStudentToAssignment(assignment19_3, student9);
         addStudentToAssignment(assignment19_3, student10);
 
@@ -383,7 +398,7 @@ public class Assignment17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Systems Theory' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment20_1 = createAssignment("Statics Assignment", faculty5, Date.from(LocalDate.of(2030, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
+
         addStudentToAssignment(assignment20_1, student9);
         addStudentToAssignment(assignment20_1, student10);
 
@@ -412,7 +427,7 @@ public class Assignment17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Statics' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment20_2 = createAssignment("Dynamics Assignment", faculty5, Date.from(LocalDate.of(2030, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
+
         addStudentToAssignment(assignment20_2, student9);
         addStudentToAssignment(assignment20_2, student10);
 
@@ -441,7 +456,7 @@ public class Assignment17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Dynamics' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment20_3 = createAssignment("Thermodynamics Assignment", faculty5, Date.from(LocalDate.of(2030, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
+
         addStudentToAssignment(assignment20_3, student9);
         addStudentToAssignment(assignment20_3, student10);
 
@@ -470,7 +485,6 @@ public class Assignment17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Thermodynamics' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment20_4 = createAssignment("Material Science Assignment", faculty5, Date.from(LocalDate.of(2030, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
         addStudentToAssignment(assignment20_4, student9);
         addStudentToAssignment(assignment20_4, student10);
 // Creating and adding problem answers to the assignment
@@ -493,6 +507,7 @@ public class Assignment17to20Seeder implements CommandLineRunner {
         ProblemAnswer pa_20_4_5 = createProblemAnswer("What are composites?", "Composites are materials made from two or more constituent materials with different properties. They combine the advantages of the individual materials to create a new material with enhanced performance. Examples include fiberglass, carbon fiber, and concrete.");
         addAssignmentToProblemAnswer(pa_20_4_5, assignment20_4);
         addProblemAnswerToAssignment(assignment20_4, pa_20_4_5);
+        problemAnswerRepo.saveAllAndFlush(Arrays.asList(pa_17_1_1, pa_17_1_2, pa_17_1_3, pa_17_1_4, pa_17_1_5, pa_17_2_1, pa_17_2_2, pa_17_2_3, pa_17_2_4, pa_17_2_5, pa_17_3_1, pa_17_3_2, pa_17_3_3, pa_17_3_4, pa_17_3_5, pa_17_4_1, pa_17_4_2, pa_17_4_3, pa_17_4_4, pa_17_4_5, pa_18_1_1, pa_18_1_2, pa_18_1_3, pa_18_1_4, pa_18_1_5, pa_18_2_1, pa_18_2_2, pa_18_2_3, pa_18_2_4, pa_18_2_5, pa_18_3_1, pa_18_3_2, pa_18_3_3, pa_18_3_4, pa_18_3_5, pa_19_1_1, pa_19_1_2, pa_19_1_3, pa_19_1_4, pa_19_1_5, pa_19_2_1, pa_19_2_2, pa_19_2_3, pa_19_2_4, pa_19_2_5, pa_19_3_1, pa_19_3_2, pa_19_3_3, pa_19_3_4, pa_19_3_5, pa_20_1_1, pa_20_1_2, pa_20_1_3, pa_20_1_4, pa_20_1_5, pa_20_2_1, pa_20_2_2, pa_20_2_3, pa_20_2_4, pa_20_2_5, pa_20_3_1, pa_20_3_2, pa_20_3_3, pa_20_3_4, pa_20_3_5, pa_20_4_1, pa_20_4_2, pa_20_4_3, pa_20_4_4, pa_20_4_5));
 
 
 // Output for confirmation
@@ -997,6 +1012,10 @@ public class Assignment17to20Seeder implements CommandLineRunner {
 
 // Output for confirmation
         System.out.println("Student answers created and added for student9 and student10 for all problem answers in assignment20_4.");
+        studentAnswerRepo.saveAllAndFlush(Arrays.asList(sa17_1_1_student9, sa17_1_2_student9, sa17_1_3_student9, sa17_1_4_student9, sa17_1_5_student9, sa17_2_1_student9, sa17_2_2_student9, sa17_2_3_student9, sa17_2_4_student9, sa17_2_5_student9, sa17_3_1_student9, sa17_3_2_student9, sa17_3_3_student9, sa17_3_4_student9, sa17_3_5_student9, sa17_4_1_student9, sa17_4_2_student9, sa17_4_3_student9, sa17_4_4_student9, sa17_4_5_student9, sa17_1_1_student10, sa17_1_2_student10, sa17_1_3_student10, sa17_1_4_student10, sa17_1_5_student10, sa17_2_1_student10, sa17_2_2_student10, sa17_2_3_student10, sa17_2_4_student10, sa17_2_5_student10, sa17_3_1_student10, sa17_3_2_student10, sa17_3_3_student10, sa17_3_4_student10, sa17_3_5_student10, sa17_4_1_student10, sa17_4_2_student10, sa17_4_3_student10, sa17_4_4_student10, sa17_4_5_student10
+                , sa18_1_1_student9, sa18_1_2_student9, sa18_1_3_student9, sa18_1_4_student9, sa18_1_5_student9, sa18_2_1_student9, sa18_2_2_student9, sa18_2_3_student9, sa18_2_4_student9, sa18_2_5_student9, sa18_3_1_student9, sa18_3_2_student9, sa18_3_3_student9, sa18_3_4_student9, sa18_3_5_student9, sa18_1_1_student10, sa18_1_2_student10, sa18_1_3_student10, sa18_1_4_student10, sa18_1_5_student10, sa18_2_1_student10, sa18_2_2_student10, sa18_2_3_student10, sa18_2_4_student10, sa18_2_5_student10, sa18_3_1_student10, sa18_3_2_student10, sa18_3_3_student10, sa18_3_4_student10, sa18_3_5_student10,
+                sa19_1_1_student9, sa19_1_2_student9, sa19_1_3_student9, sa19_1_4_student9, sa19_1_5_student9, sa19_2_1_student9, sa19_2_2_student9, sa19_2_3_student9, sa19_2_4_student9, sa19_2_5_student9, sa19_3_1_student9, sa19_3_2_student9, sa19_3_3_student9, sa19_3_4_student9, sa19_3_5_student9, sa19_1_1_student10, sa19_1_2_student10, sa19_1_3_student10, sa19_1_4_student10, sa19_1_5_student10, sa19_2_1_student10, sa19_2_2_student10, sa19_2_3_student10, sa19_2_4_student10, sa19_2_5_student10, sa19_3_1_student10, sa19_3_2_student10, sa19_3_3_student10, sa19_3_4_student10, sa19_3_5_student10,
+                sa20_1_1_student9, sa20_1_2_student9, sa20_1_3_student9, sa20_1_4_student9, sa20_1_5_student9, sa20_2_1_student9, sa20_2_2_student9, sa20_2_3_student9, sa20_2_4_student9, sa20_2_5_student9, sa20_3_1_student9, sa20_3_2_student9, sa20_3_3_student9, sa20_3_4_student9, sa20_3_5_student9, sa20_4_1_student9, sa20_4_2_student9, sa20_4_3_student9, sa20_4_4_student9, sa20_4_5_student9, sa20_1_1_student10, sa20_1_2_student10, sa20_1_3_student10, sa20_1_4_student10, sa20_1_5_student10, sa20_2_1_student10, sa20_2_2_student10, sa20_2_3_student10, sa20_2_4_student10, sa20_2_5_student10, sa20_3_1_student10, sa20_3_2_student10, sa20_3_3_student10, sa20_3_4_student10, sa20_3_5_student10, sa20_4_1_student10, sa20_4_2_student10, sa20_4_3_student10, sa20_4_4_student10, sa20_4_5_student10));
 
 
 // Creating submission for student9 with student answers for 17_1
@@ -1265,6 +1284,7 @@ public class Assignment17to20Seeder implements CommandLineRunner {
         for (StudentAnswer studentAnswer : submission20_4_10.getStudentAnswers()) {
             addSubmissionToStudentAnswer(studentAnswer, submission20_4_10);
         }
+        submissionRepo.saveAllAndFlush(Arrays.asList(submission17_1_9, submission17_1_10, submission17_2_9, submission17_2_10, submission17_3_9, submission17_3_10, submission17_4_9, submission17_4_10, submission18_1_9, submission18_1_10, submission18_2_9, submission18_2_10, submission18_3_9, submission18_3_10, submission19_1_9, submission19_1_10, submission19_2_9, submission19_2_10, submission19_3_9, submission19_3_10, submission20_1_9, submission20_1_10, submission20_2_9, submission20_2_10, submission20_3_9, submission20_3_10, submission20_4_9, submission20_4_10));
 
 
         Grade grade17_1_9 = createGrade(87.6, student9, faculty2, course17, submission17_1_9);
@@ -1298,6 +1318,7 @@ public class Assignment17to20Seeder implements CommandLineRunner {
         Grade grade20_3_10 = createGrade(88.3, student10, faculty5, course20, submission20_3_10);
         Grade grade20_4_9 = createGrade(87.7, student9, faculty5, course20, submission20_4_9);
         Grade grade20_4_10 = createGrade(85.8, student10, faculty5, course20, submission20_4_10);
+        gradeRepo.saveAllAndFlush(Arrays.asList(grade17_1_9, grade17_2_9, grade17_3_9, grade17_4_9, grade18_1_9, grade18_2_9, grade18_3_9, grade19_1_9, grade19_2_9, grade19_3_9, grade20_1_9, grade20_2_9, grade20_3_9, grade20_4_9, grade17_1_10, grade17_2_10, grade17_3_10, grade17_4_10, grade18_1_10, grade18_2_10, grade18_3_10, grade19_1_10, grade19_2_10, grade19_3_10, grade20_1_10, grade20_2_10, grade20_3_10, grade20_4_10));
 
         CourseGrade courseGrade17_1_9 = createCourseGrade(student9, course17, 87.775, Arrays.asList(grade17_1_9, grade17_2_9, grade17_3_9, grade17_4_9));
         CourseGrade courseGrade17_1_10 = createCourseGrade(student10, course17, 87.3, Arrays.asList(grade17_1_10, grade17_2_10, grade17_3_10, grade17_4_10));
@@ -1310,6 +1331,7 @@ public class Assignment17to20Seeder implements CommandLineRunner {
 
         CourseGrade courseGrade20_1_9 = createCourseGrade(student9, course20, 87.6, Arrays.asList(grade20_1_9, grade20_2_9, grade20_3_9, grade20_4_9));
         CourseGrade courseGrade20_1_10 = createCourseGrade(student10, course20, 87.5, Arrays.asList(grade20_1_10, grade20_2_10, grade20_3_10, grade20_4_10));
+        courseGradeRepo.saveAllAndFlush(Arrays.asList(courseGrade17_1_9, courseGrade18_1_9, courseGrade19_1_9, courseGrade20_1_9, courseGrade17_1_10, courseGrade18_1_10, courseGrade19_1_10, courseGrade20_1_10));
 
         Feedback feedback17_1_9 = createFeedback("Excellent work, student9!", submission17_1_9);
         Feedback feedback17_1_10 = createFeedback("Great effort, student10!", submission17_1_10);
@@ -1352,6 +1374,7 @@ public class Assignment17to20Seeder implements CommandLineRunner {
 
         Feedback feedback20_4_9 = createFeedback("Great effort, student9!", submission20_4_9);
         Feedback feedback20_4_10 = createFeedback("Well done, student10!", submission20_4_10);
+        feedbackRepo.saveAllAndFlush(Arrays.asList(feedback17_1_9, feedback17_1_10, feedback17_2_9, feedback17_2_10, feedback17_3_9, feedback17_3_10, feedback17_4_9, feedback17_4_10, feedback18_1_9, feedback18_1_10, feedback18_2_9, feedback18_2_10, feedback18_3_9, feedback18_3_10, feedback19_1_9, feedback19_1_10, feedback19_2_9, feedback19_2_10, feedback19_3_9, feedback19_3_10, feedback20_1_9, feedback20_1_10, feedback20_2_9, feedback20_2_10, feedback20_3_9, feedback20_3_10, feedback20_4_9, feedback20_4_10));
 
         course17.setGrades(Arrays.asList(grade17_1_9, grade17_1_10, grade17_2_9, grade17_2_10, grade17_3_9, grade17_3_10, grade17_4_9, grade17_4_10));
         course18.setGrades(Arrays.asList(grade18_1_9, grade18_1_10, grade18_2_9, grade18_2_10, grade18_3_9, grade18_3_10));

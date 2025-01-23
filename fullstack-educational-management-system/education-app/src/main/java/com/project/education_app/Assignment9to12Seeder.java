@@ -95,6 +95,23 @@ public class Assignment9to12Seeder implements CommandLineRunner {
 
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment9_1 = createAssignment("Machine Learning Assignment", faculty4, Date.from(LocalDate.of(2028, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus9, false);
+        Assignment assignment9_2 = createAssignment("Neural Networks Assignment", faculty4, Date.from(LocalDate.of(2028, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus9, false);
+        Assignment assignment9_3 = createAssignment("Natural Language Processing Assignment", faculty4, Date.from(LocalDate.of(2028, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus9, false);
+        Assignment assignment10_1 = createAssignment("Threat Analysis Assignment", faculty5, Date.from(LocalDate.of(2028, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+        Assignment assignment10_2 = createAssignment("Encryption Assignment", faculty5, Date.from(LocalDate.of(2028, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+        Assignment assignment10_3 = createAssignment("Network Security Assignment", faculty5, Date.from(LocalDate.of(2028, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+        Assignment assignment10_4 = createAssignment("Secure Coding Assignment", faculty5, Date.from(LocalDate.of(2028, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+        Assignment assignment11_1 = createAssignment("Limits Assignment", faculty1, Date.from(LocalDate.of(2028, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+        Assignment assignment11_2 = createAssignment("Derivatives Assignment", faculty1, Date.from(LocalDate.of(2028, 9, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+        Assignment assignment11_3 = createAssignment("Integrals Assignment", faculty1, Date.from(LocalDate.of(2028, 10, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+        Assignment assignment11_4 = createAssignment("Applications of Calculus Assignment", faculty1, Date.from(LocalDate.of(2028, 11, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+        Assignment assignment12_1 = createAssignment("Vectors Assignment", faculty2, Date.from(LocalDate.of(2028, 12, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+        Assignment assignment12_2 = createAssignment("Matrices Assignment", faculty2, Date.from(LocalDate.of(2029, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+        Assignment assignment12_3 = createAssignment("Determinants Assignment", faculty2, Date.from(LocalDate.of(2029, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+        Assignment assignment12_4 = createAssignment("Eigenvalues Assignment", faculty2, Date.from(LocalDate.of(2029, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+        Assignment assignment12_5 = createAssignment("Eigenvectors Assignment", faculty2, Date.from(LocalDate.of(2029, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+        assignmentRepo.saveAllAndFlush(Arrays.asList(assignment9_1, assignment9_2, assignment9_3, assignment10_1, assignment10_2, assignment10_3, assignment10_4, assignment11_1, assignment11_2, assignment11_3, assignment11_4, assignment12_1, assignment12_2, assignment12_3, assignment12_4, assignment12_5));
+
         addStudentToAssignment(assignment9_1, student5);
         addStudentToAssignment(assignment9_1, student6);
 
@@ -123,7 +140,7 @@ public class Assignment9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Machine Learning' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment9_2 = createAssignment("Neural Networks Assignment", faculty4, Date.from(LocalDate.of(2028, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus9, false);
+
         addStudentToAssignment(assignment9_2, student5);
         addStudentToAssignment(assignment9_2, student6);
 
@@ -152,7 +169,7 @@ public class Assignment9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Neural Networks' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment9_3 = createAssignment("Natural Language Processing Assignment", faculty4, Date.from(LocalDate.of(2028, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus9, false);
+
         addStudentToAssignment(assignment9_3, student5);
         addStudentToAssignment(assignment9_3, student6);
 
@@ -181,7 +198,7 @@ public class Assignment9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Natural Language Processing' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment10_1 = createAssignment("Threat Analysis Assignment", faculty5, Date.from(LocalDate.of(2028, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+
         addStudentToAssignment(assignment10_1, student5);
         addStudentToAssignment(assignment10_1, student6);
 
@@ -210,7 +227,7 @@ public class Assignment9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Threat Analysis' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment10_2 = createAssignment("Encryption Assignment", faculty5, Date.from(LocalDate.of(2028, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+
         addStudentToAssignment(assignment10_2, student5);
         addStudentToAssignment(assignment10_2, student6);
 
@@ -239,7 +256,7 @@ public class Assignment9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Encryption' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment10_3 = createAssignment("Network Security Assignment", faculty5, Date.from(LocalDate.of(2028, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+
         addStudentToAssignment(assignment10_3, student5);
         addStudentToAssignment(assignment10_3, student6);
 
@@ -268,7 +285,7 @@ public class Assignment9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Network Security' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment10_4 = createAssignment("Secure Coding Assignment", faculty5, Date.from(LocalDate.of(2028, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+
         addStudentToAssignment(assignment10_4, student5);
         addStudentToAssignment(assignment10_4, student6);
 
@@ -297,7 +314,7 @@ public class Assignment9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Secure Coding' unit created with  problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment11_1 = createAssignment("Limits Assignment", faculty1, Date.from(LocalDate.of(2028, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+
         addStudentToAssignment(assignment11_1, student5);
         addStudentToAssignment(assignment11_1, student6);
 
@@ -326,7 +343,7 @@ public class Assignment9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Limits' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment11_2 = createAssignment("Derivatives Assignment", faculty1, Date.from(LocalDate.of(2028, 9, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+
         addStudentToAssignment(assignment11_2, student5);
         addStudentToAssignment(assignment11_2, student6);
 
@@ -355,7 +372,7 @@ public class Assignment9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Derivatives' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment11_3 = createAssignment("Integrals Assignment", faculty1, Date.from(LocalDate.of(2028, 10, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+
         addStudentToAssignment(assignment11_3, student5);
         addStudentToAssignment(assignment11_3, student6);
 
@@ -383,7 +400,7 @@ public class Assignment9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Integrals' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment11_4 = createAssignment("Applications of Calculus Assignment", faculty1, Date.from(LocalDate.of(2028, 11, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+
         addStudentToAssignment(assignment11_4, student5);
         addStudentToAssignment(assignment11_4, student6);
 
@@ -411,7 +428,7 @@ public class Assignment9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Applications of Calculus' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment12_1 = createAssignment("Vectors Assignment", faculty2, Date.from(LocalDate.of(2028, 12, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+
         addStudentToAssignment(assignment12_1, student5);
         addStudentToAssignment(assignment12_1, student6);
 
@@ -439,7 +456,7 @@ public class Assignment9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Vectors' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment12_2 = createAssignment("Matrices Assignment", faculty2, Date.from(LocalDate.of(2029, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+
         addStudentToAssignment(assignment12_2, student5);
         addStudentToAssignment(assignment12_2, student6);
 
@@ -468,7 +485,7 @@ public class Assignment9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Matrices' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment12_3 = createAssignment("Determinants Assignment", faculty2, Date.from(LocalDate.of(2029, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+
         addStudentToAssignment(assignment12_3, student5);
         addStudentToAssignment(assignment12_3, student6);
 
@@ -497,7 +514,7 @@ public class Assignment9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Determinants' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment12_4 = createAssignment("Eigenvalues Assignment", faculty2, Date.from(LocalDate.of(2029, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+
         addStudentToAssignment(assignment12_4, student5);
         addStudentToAssignment(assignment12_4, student6);
 
@@ -525,7 +542,6 @@ public class Assignment9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Eigenvalues' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment12_5 = createAssignment("Eigenvectors Assignment", faculty2, Date.from(LocalDate.of(2029, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
         addStudentToAssignment(assignment12_5, student5);
         addStudentToAssignment(assignment12_5, student6);
 
@@ -552,576 +568,443 @@ public class Assignment9to12Seeder implements CommandLineRunner {
 
 // Output for confirmation
         System.out.println("Assignment for 'Eigenvectors' unit created with 10 problem answers, due date, faculty, and syllabus.");
+        problemAnswerRepo.saveAllAndFlush(Arrays.asList(pa_9_1_1, pa_9_1_2, pa_9_1_3, pa_9_1_4, pa_9_1_5, pa_9_2_1, pa_9_2_2, pa_9_2_3, pa_9_2_4, pa_9_2_5, pa_9_3_1, pa_9_3_2, pa_9_3_3, pa_9_3_4, pa_9_3_5, pa_10_1_1, pa_10_1_2, pa_10_1_3, pa_10_1_4, pa_10_1_5, pa_10_2_1, pa_10_2_2, pa_10_2_3, pa_10_2_4, pa_10_2_5, pa_10_3_1, pa_10_3_2, pa_10_3_3, pa_10_3_4, pa_10_3_5, pa_10_4_1, pa_10_4_2, pa_10_4_3, pa_10_4_4, pa_10_4_5, pa_11_1_1, pa_11_1_2, pa_11_1_3, pa_11_1_4, pa_11_1_5, pa_11_2_1, pa_11_2_2, pa_11_2_3, pa_11_2_4, pa_11_2_5, pa_11_3_1, pa_11_3_2, pa_11_3_3, pa_11_3_4, pa_11_3_5, pa_11_4_1, pa_11_4_2, pa_11_4_3, pa_11_4_4, pa_11_4_5, pa_12_1_1, pa_12_1_2, pa_12_1_3, pa_12_1_4, pa_12_1_5, pa_12_2_1, pa_12_2_2, pa_12_2_3, pa_12_2_4, pa_12_2_5, pa_12_3_1, pa_12_3_2, pa_12_3_3, pa_12_3_4, pa_12_3_5, pa_12_4_1, pa_12_4_2, pa_12_4_3, pa_12_4_4, pa_12_4_5, pa_12_5_1, pa_12_5_2, pa_12_5_3, pa_12_5_4, pa_12_5_5));
 
 
         // Creating StudentAnswer instances for student5
         StudentAnswer sa9_1_1_student5 = createStudentAnswer(student5, pa_9_1_1, "Machine learning is a subset of AI that focuses on developing algorithms that enable computers to learn from and make predictions based on data.");
-        addStudentAnswerToProblemAnswer(pa_9_1_1, sa9_1_1_student5);
-
         StudentAnswer sa9_1_2_student5 = createStudentAnswer(student5, pa_9_1_2, "Common machine learning techniques include supervised learning, unsupervised learning, reinforcement learning, and deep learning.");
-        addStudentAnswerToProblemAnswer(pa_9_1_2, sa9_1_2_student5);
-
         StudentAnswer sa9_1_3_student5 = createStudentAnswer(student5, pa_9_1_3, "Supervised learning is a technique where the model is trained on labeled data, learning to make predictions based on input-output pairs.");
-        addStudentAnswerToProblemAnswer(pa_9_1_3, sa9_1_3_student5);
-
         StudentAnswer sa9_1_4_student5 = createStudentAnswer(student5, pa_9_1_4, "Unsupervised learning is a technique where the model is trained on unlabeled data, learning to find patterns and relationships without explicit input-output pairs.");
-        addStudentAnswerToProblemAnswer(pa_9_1_4, sa9_1_4_student5);
-
         StudentAnswer sa9_1_5_student5 = createStudentAnswer(student5, pa_9_1_5, "Reinforcement learning is a technique where the model learns to make decisions by interacting with an environment and receiving rewards or penalties.");
-        addStudentAnswerToProblemAnswer(pa_9_1_5, sa9_1_5_student5);
 
 
 // Creating StudentAnswer instances for student6
         StudentAnswer sa9_1_1_student6 = createStudentAnswer(student6, pa_9_1_1, "Machine learning is a subset of AI that focuses on developing algorithms that enable computers to learn from and make predictions based on data.");
-        addStudentAnswerToProblemAnswer(pa_9_1_1, sa9_1_1_student6);
-
         StudentAnswer sa9_1_2_student6 = createStudentAnswer(student6, pa_9_1_2, "Common machine learning techniques include supervised learning, unsupervised learning, reinforcement learning, and deep learning.");
-        addStudentAnswerToProblemAnswer(pa_9_1_2, sa9_1_2_student6);
-
         StudentAnswer sa9_1_3_student6 = createStudentAnswer(student6, pa_9_1_3, "Supervised learning is a technique where the model is trained on labeled data, learning to make predictions based on input-output pairs.");
-        addStudentAnswerToProblemAnswer(pa_9_1_3, sa9_1_3_student6);
-
         StudentAnswer sa9_1_4_student6 = createStudentAnswer(student6, pa_9_1_4, "Unsupervised learning is a technique where the model is trained on unlabeled data, learning to find patterns and relationships without explicit input-output pairs.");
-        addStudentAnswerToProblemAnswer(pa_9_1_4, sa9_1_4_student6);
-
         StudentAnswer sa9_1_5_student6 = createStudentAnswer(student6, pa_9_1_5, "Reinforcement learning is a technique where the model learns to make decisions by interacting with an environment and receiving rewards or penalties.");
-        addStudentAnswerToProblemAnswer(pa_9_1_5, sa9_1_5_student6);
-
 
 // Creating StudentAnswer instances for student5
         StudentAnswer sa9_2_1_student5 = createStudentAnswer(student5, pa_9_2_1, "Neural networks are a set of algorithms modeled after the human brain, used to recognize patterns and make predictions based on data.");
-        addStudentAnswerToProblemAnswer(pa_9_2_1, sa9_2_1_student5);
-
         StudentAnswer sa9_2_2_student5 = createStudentAnswer(student5, pa_9_2_2, "The basic architecture of a neural network consists of an input layer, hidden layers, and an output layer, with interconnected nodes (neurons).");
-        addStudentAnswerToProblemAnswer(pa_9_2_2, sa9_2_2_student5);
-
         StudentAnswer sa9_2_3_student5 = createStudentAnswer(student5, pa_9_2_3, "Backpropagation is a training algorithm that minimizes error by adjusting the weights of the connections between neurons.");
-        addStudentAnswerToProblemAnswer(pa_9_2_3, sa9_2_3_student5);
-
         StudentAnswer sa9_2_4_student5 = createStudentAnswer(student5, pa_9_2_4, "An activation function introduces non-linearity into the model, with common functions including ReLU, sigmoid, and tanh.");
-        addStudentAnswerToProblemAnswer(pa_9_2_4, sa9_2_4_student5);
-
         StudentAnswer sa9_2_5_student5 = createStudentAnswer(student5, pa_9_2_5, "A feedforward neural network moves information in one direction, from the input layer to the output layer, without forming cycles.");
-        addStudentAnswerToProblemAnswer(pa_9_2_5, sa9_2_5_student5);
 
 
 // Creating StudentAnswer instances for student6
         StudentAnswer sa9_2_1_student6 = createStudentAnswer(student6, pa_9_2_1, "Neural networks are a set of algorithms modeled after the human brain, used to recognize patterns and make predictions based on data.");
-        addStudentAnswerToProblemAnswer(pa_9_2_1, sa9_2_1_student6);
-
         StudentAnswer sa9_2_2_student6 = createStudentAnswer(student6, pa_9_2_2, "The basic architecture of a neural network consists of an input layer, hidden layers, and an output layer, with interconnected nodes (neurons).");
-        addStudentAnswerToProblemAnswer(pa_9_2_2, sa9_2_2_student6);
-
         StudentAnswer sa9_2_3_student6 = createStudentAnswer(student6, pa_9_2_3, "Backpropagation is a training algorithm that minimizes error by adjusting the weights of the connections between neurons.");
-        addStudentAnswerToProblemAnswer(pa_9_2_3, sa9_2_3_student6);
-
         StudentAnswer sa9_2_4_student6 = createStudentAnswer(student6, pa_9_2_4, "An activation function introduces non-linearity into the model, with common functions including ReLU, sigmoid, and tanh.");
-        addStudentAnswerToProblemAnswer(pa_9_2_4, sa9_2_4_student6);
-
         StudentAnswer sa9_2_5_student6 = createStudentAnswer(student6, pa_9_2_5, "A feedforward neural network moves information in one direction, from the input layer to the output layer, without forming cycles.");
-        addStudentAnswerToProblemAnswer(pa_9_2_5, sa9_2_5_student6);
-
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment9_2.");
 // Creating StudentAnswer instances for student5
         StudentAnswer sa9_3_1_student5 = createStudentAnswer(student5, pa_9_3_1, "Natural language processing (NLP) is a field of AI that enables computers to understand, interpret, and generate human language.");
-        addStudentAnswerToProblemAnswer(pa_9_3_1, sa9_3_1_student5);
-
         StudentAnswer sa9_3_2_student5 = createStudentAnswer(student5, pa_9_3_2, "Common applications of NLP include language translation, sentiment analysis, chatbots, speech recognition, and text summarization.");
-        addStudentAnswerToProblemAnswer(pa_9_3_2, sa9_3_2_student5);
-
         StudentAnswer sa9_3_3_student5 = createStudentAnswer(student5, pa_9_3_3, "Tokenization is the process of breaking down a text into smaller units called tokens, which can be words, phrases, or sentences.");
-        addStudentAnswerToProblemAnswer(pa_9_3_3, sa9_3_3_student5);
-
         StudentAnswer sa9_3_4_student5 = createStudentAnswer(student5, pa_9_3_4, "Sentiment analysis is an NLP technique used to determine the emotional tone of a piece of text, classifying it as positive, negative, or neutral.");
-        addStudentAnswerToProblemAnswer(pa_9_3_4, sa9_3_4_student5);
-
         StudentAnswer sa9_3_5_student5 = createStudentAnswer(student5, pa_9_3_5, "Named entity recognition (NER) is an NLP technique used to identify and classify named entities in a text, such as names of people, organizations, and locations.");
-        addStudentAnswerToProblemAnswer(pa_9_3_5, sa9_3_5_student5);
-
 
 // Creating StudentAnswer instances for student6
         StudentAnswer sa9_3_1_student6 = createStudentAnswer(student6, pa_9_3_1, "Natural language processing (NLP) is a field of AI that enables computers to understand, interpret, and generate human language.");
-        addStudentAnswerToProblemAnswer(pa_9_3_1, sa9_3_1_student6);
-
         StudentAnswer sa9_3_2_student6 = createStudentAnswer(student6, pa_9_3_2, "Common applications of NLP include language translation, sentiment analysis, chatbots, speech recognition, and text summarization.");
-        addStudentAnswerToProblemAnswer(pa_9_3_2, sa9_3_2_student6);
-
         StudentAnswer sa9_3_3_student6 = createStudentAnswer(student6, pa_9_3_3, "Tokenization is the process of breaking down a text into smaller units called tokens, which can be words, phrases, or sentences.");
-        addStudentAnswerToProblemAnswer(pa_9_3_3, sa9_3_3_student6);
-
         StudentAnswer sa9_3_4_student6 = createStudentAnswer(student6, pa_9_3_4, "Sentiment analysis is an NLP technique used to determine the emotional tone of a piece of text, classifying it as positive, negative, or neutral.");
-        addStudentAnswerToProblemAnswer(pa_9_3_4, sa9_3_4_student6);
-
         StudentAnswer sa9_3_5_student6 = createStudentAnswer(student6, pa_9_3_5, "Named entity recognition (NER) is an NLP technique used to identify and classify named entities in a text, such as names of people, organizations, and locations.");
-        addStudentAnswerToProblemAnswer(pa_9_3_5, sa9_3_5_student6);
 
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment9_3.");
 // Creating StudentAnswer instances for student5
         StudentAnswer sa10_1_1_student5 = createStudentAnswer(student5, pa_10_1_1, "Threat analysis involves identifying potential security threats and vulnerabilities in a system.");
-        addStudentAnswerToProblemAnswer(pa_10_1_1, sa10_1_1_student5);
-
         StudentAnswer sa10_1_2_student5 = createStudentAnswer(student5, pa_10_1_2, "Key steps: (1) Identifying assets and resources, (2) Identifying potential threats, (3) Assessing vulnerabilities, (4) Evaluating risks, (5) Implementing mitigation strategies.");
-        addStudentAnswerToProblemAnswer(pa_10_1_2, sa10_1_2_student5);
-
         StudentAnswer sa10_1_3_student5 = createStudentAnswer(student5, pa_10_1_3, "Common security threats include malware, phishing attacks, denial-of-service (DoS) attacks, man-in-the-middle attacks, and insider threats.");
-        addStudentAnswerToProblemAnswer(pa_10_1_3, sa10_1_3_student5);
-
         StudentAnswer sa10_1_4_student5 = createStudentAnswer(student5, pa_10_1_4, "A vulnerability is a weakness or flaw in a system that can be exploited by a threat actor to gain unauthorized access or cause harm.");
-        addStudentAnswerToProblemAnswer(pa_10_1_4, sa10_1_4_student5);
-
         StudentAnswer sa10_1_5_student5 = createStudentAnswer(student5, pa_10_1_5, "Risk assessment evaluates the potential impact and likelihood of identified threats exploiting vulnerabilities.");
-        addStudentAnswerToProblemAnswer(pa_10_1_5, sa10_1_5_student5);
 
 
 // Creating StudentAnswer instances for student6
         StudentAnswer sa10_1_1_student6 = createStudentAnswer(student6, pa_10_1_1, "Threat analysis involves identifying potential security threats and vulnerabilities in a system.");
-        addStudentAnswerToProblemAnswer(pa_10_1_1, sa10_1_1_student6);
-
         StudentAnswer sa10_1_2_student6 = createStudentAnswer(student6, pa_10_1_2, "Key steps: (1) Identifying assets and resources, (2) Identifying potential threats, (3) Assessing vulnerabilities, (4) Evaluating risks, (5) Implementing mitigation strategies.");
-        addStudentAnswerToProblemAnswer(pa_10_1_2, sa10_1_2_student6);
-
         StudentAnswer sa10_1_3_student6 = createStudentAnswer(student6, pa_10_1_3, "Common security threats include malware, phishing attacks, denial-of-service (DoS) attacks, man-in-the-middle attacks, and insider threats.");
-        addStudentAnswerToProblemAnswer(pa_10_1_3, sa10_1_3_student6);
-
         StudentAnswer sa10_1_4_student6 = createStudentAnswer(student6, pa_10_1_4, "A vulnerability is a weakness or flaw in a system that can be exploited by a threat actor to gain unauthorized access or cause harm.");
-        addStudentAnswerToProblemAnswer(pa_10_1_4, sa10_1_4_student6);
-
         StudentAnswer sa10_1_5_student6 = createStudentAnswer(student6, pa_10_1_5, "Risk assessment evaluates the potential impact and likelihood of identified threats exploiting vulnerabilities.");
-        addStudentAnswerToProblemAnswer(pa_10_1_5, sa10_1_5_student6);
+
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment10_1.");
 // Creating StudentAnswer instances for student5
         StudentAnswer sa10_2_1_student5 = createStudentAnswer(student5, pa_10_2_1, "Encryption is the process of converting information into a secure format to prevent unauthorized access.");
-        addStudentAnswerToProblemAnswer(pa_10_2_1, sa10_2_1_student5);
-
         StudentAnswer sa10_2_2_student5 = createStudentAnswer(student5, pa_10_2_2, "The two main types of encryption are symmetric encryption and asymmetric encryption.");
-        addStudentAnswerToProblemAnswer(pa_10_2_2, sa10_2_2_student5);
-
         StudentAnswer sa10_2_3_student5 = createStudentAnswer(student5, pa_10_2_3, "A cryptographic algorithm is a mathematical formula used to encrypt and decrypt data, such as AES, RSA, and DES.");
-        addStudentAnswerToProblemAnswer(pa_10_2_3, sa10_2_3_student5);
-
         StudentAnswer sa10_2_4_student5 = createStudentAnswer(student5, pa_10_2_4, "Encryption is essential for protecting sensitive data from unauthorized access, ensuring confidentiality, and maintaining privacy.");
-        addStudentAnswerToProblemAnswer(pa_10_2_4, sa10_2_4_student5);
-
         StudentAnswer sa10_2_5_student5 = createStudentAnswer(student5, pa_10_2_5, "An encryption key is a piece of information used by a cryptographic algorithm to transform plaintext into ciphertext and vice versa.");
-        addStudentAnswerToProblemAnswer(pa_10_2_5, sa10_2_5_student5);
-
 
 // Creating StudentAnswer instances for student6
         StudentAnswer sa10_2_1_student6 = createStudentAnswer(student6, pa_10_2_1, "Encryption is the process of converting information into a secure format to prevent unauthorized access.");
-        addStudentAnswerToProblemAnswer(pa_10_2_1, sa10_2_1_student6);
-
         StudentAnswer sa10_2_2_student6 = createStudentAnswer(student6, pa_10_2_2, "The two main types of encryption are symmetric encryption and asymmetric encryption.");
-        addStudentAnswerToProblemAnswer(pa_10_2_2, sa10_2_2_student6);
-
         StudentAnswer sa10_2_3_student6 = createStudentAnswer(student6, pa_10_2_3, "A cryptographic algorithm is a mathematical formula used to encrypt and decrypt data, such as AES, RSA, and DES.");
-        addStudentAnswerToProblemAnswer(pa_10_2_3, sa10_2_3_student6);
-
         StudentAnswer sa10_2_4_student6 = createStudentAnswer(student6, pa_10_2_4, "Encryption is essential for protecting sensitive data from unauthorized access, ensuring confidentiality, and maintaining privacy.");
-        addStudentAnswerToProblemAnswer(pa_10_2_4, sa10_2_4_student6);
 
         StudentAnswer sa10_2_5_student6 = createStudentAnswer(student6, pa_10_2_5, "An encryption key is a piece of information used by a cryptographic algorithm to transform plaintext into ciphertext and vice versa.");
-        addStudentAnswerToProblemAnswer(pa_10_2_5, sa10_2_5_student6);
 
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment10_2.");
 // Creating StudentAnswer instances for student5
         StudentAnswer sa10_3_1_student5 = createStudentAnswer(student5, pa_10_3_1, "Network security involves measures to protect data during transmission across networks, ensuring confidentiality, integrity, and availability.");
-        addStudentAnswerToProblemAnswer(pa_10_3_1, sa10_3_1_student5);
-
         StudentAnswer sa10_3_2_student5 = createStudentAnswer(student5, pa_10_3_2, "A firewall is a network security device that monitors and controls network traffic, establishing a barrier between trusted and untrusted networks.");
-        addStudentAnswerToProblemAnswer(pa_10_3_2, sa10_3_2_student5);
-
         StudentAnswer sa10_3_3_student5 = createStudentAnswer(student5, pa_10_3_3, "An intrusion detection system (IDS) detects and responds to potential security breaches by monitoring network traffic for suspicious activity.");
-        addStudentAnswerToProblemAnswer(pa_10_3_3, sa10_3_3_student5);
-
         StudentAnswer sa10_3_4_student5 = createStudentAnswer(student5, pa_10_3_4, "An IDS alerts administrators to security threats, while an intrusion prevention system (IPS) actively blocks and prevents malicious traffic.");
-        addStudentAnswerToProblemAnswer(pa_10_3_4, sa10_3_4_student5);
-
         StudentAnswer sa10_3_5_student5 = createStudentAnswer(student5, pa_10_3_5, "Network segmentation divides a network into smaller segments to enhance security, contain breaches, and limit the spread of attacks.");
-        addStudentAnswerToProblemAnswer(pa_10_3_5, sa10_3_5_student5);
+
 
 // Creating StudentAnswer instances for student6
         StudentAnswer sa10_3_1_student6 = createStudentAnswer(student6, pa_10_3_1, "Network security involves measures to protect data during transmission across networks, ensuring confidentiality, integrity, and availability.");
-        addStudentAnswerToProblemAnswer(pa_10_3_1, sa10_3_1_student6);
-
         StudentAnswer sa10_3_2_student6 = createStudentAnswer(student6, pa_10_3_2, "A firewall is a network security device that monitors and controls network traffic, establishing a barrier between trusted and untrusted networks.");
-        addStudentAnswerToProblemAnswer(pa_10_3_2, sa10_3_2_student6);
-
         StudentAnswer sa10_3_3_student6 = createStudentAnswer(student6, pa_10_3_3, "An intrusion detection system (IDS) detects and responds to potential security breaches by monitoring network traffic for suspicious activity.");
-        addStudentAnswerToProblemAnswer(pa_10_3_3, sa10_3_3_student6);
-
         StudentAnswer sa10_3_4_student6 = createStudentAnswer(student6, pa_10_3_4, "An IDS alerts administrators to security threats, while an intrusion prevention system (IPS) actively blocks and prevents malicious traffic.");
-        addStudentAnswerToProblemAnswer(pa_10_3_4, sa10_3_4_student6);
-
         StudentAnswer sa10_3_5_student6 = createStudentAnswer(student6, pa_10_3_5, "Network segmentation divides a network into smaller segments to enhance security, contain breaches, and limit the spread of attacks.");
-        addStudentAnswerToProblemAnswer(pa_10_3_5, sa10_3_5_student6);
 
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment10_3.");
 // Creating StudentAnswer instances for student5
         StudentAnswer sa10_4_1_student5 = createStudentAnswer(student5, pa_10_4_1, "Secure coding involves writing software in a way that minimizes vulnerabilities and prevents security breaches.");
-        addStudentAnswerToProblemAnswer(pa_10_4_1, sa10_4_1_student5);
-
         StudentAnswer sa10_4_2_student5 = createStudentAnswer(student5, pa_10_4_2, "Common security flaws include buffer overflows, SQL injection, cross-site scripting (XSS), cross-site request forgery (CSRF), and improper error handling.");
-        addStudentAnswerToProblemAnswer(pa_10_4_2, sa10_4_2_student5);
-
         StudentAnswer sa10_4_3_student5 = createStudentAnswer(student5, pa_10_4_3, "SQL injection is an attack where an attacker inserts malicious SQL code into a query, allowing them to manipulate the database.");
-        addStudentAnswerToProblemAnswer(pa_10_4_3, sa10_4_3_student5);
-
         StudentAnswer sa10_4_4_student5 = createStudentAnswer(student5, pa_10_4_4, "Cross-site scripting (XSS) is a vulnerability where an attacker injects malicious scripts into web pages viewed by users.");
-        addStudentAnswerToProblemAnswer(pa_10_4_4, sa10_4_4_student5);
-
         StudentAnswer sa10_4_5_student5 = createStudentAnswer(student5, pa_10_4_5, "Cross-site request forgery (CSRF) is an attack where an attacker tricks a user into performing actions on a web application without their consent.");
-        addStudentAnswerToProblemAnswer(pa_10_4_5, sa10_4_5_student5);
 
 
 // Creating StudentAnswer instances for student6
         StudentAnswer sa10_4_1_student6 = createStudentAnswer(student6, pa_10_4_1, "Secure coding involves writing software in a way that minimizes vulnerabilities and prevents security breaches.");
-        addStudentAnswerToProblemAnswer(pa_10_4_1, sa10_4_1_student6);
-
         StudentAnswer sa10_4_2_student6 = createStudentAnswer(student6, pa_10_4_2, "Common security flaws include buffer overflows, SQL injection, cross-site scripting (XSS), cross-site request forgery (CSRF), and improper error handling.");
-        addStudentAnswerToProblemAnswer(pa_10_4_2, sa10_4_2_student6);
-
         StudentAnswer sa10_4_3_student6 = createStudentAnswer(student6, pa_10_4_3, "SQL injection is an attack where an attacker inserts malicious SQL code into a query, allowing them to manipulate the database.");
-        addStudentAnswerToProblemAnswer(pa_10_4_3, sa10_4_3_student6);
-
         StudentAnswer sa10_4_4_student6 = createStudentAnswer(student6, pa_10_4_4, "Cross-site scripting (XSS) is a vulnerability where an attacker injects malicious scripts into web pages viewed by users.");
-        addStudentAnswerToProblemAnswer(pa_10_4_4, sa10_4_4_student6);
-
         StudentAnswer sa10_4_5_student6 = createStudentAnswer(student6, pa_10_4_5, "Cross-site request forgery (CSRF) is an attack where an attacker tricks a user into performing actions on a web application without their consent.");
-        addStudentAnswerToProblemAnswer(pa_10_4_5, sa10_4_5_student6);
-
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment10_4.");
 // Creating StudentAnswer instances for student5
         StudentAnswer sa11_1_1_student5 = createStudentAnswer(student5, pa_11_1_1, "A limit is the value that a function approaches as the input approaches a certain value, foundational in defining continuity, derivatives, and integrals.");
-        addStudentAnswerToProblemAnswer(pa_11_1_1, sa11_1_1_student5);
-
         StudentAnswer sa11_1_2_student5 = createStudentAnswer(student5, pa_11_1_2, "To calculate the limit of a function as x approaches a value, substitute the value into the function or use algebraic manipulation and limit laws if undefined.");
-        addStudentAnswerToProblemAnswer(pa_11_1_2, sa11_1_2_student5);
-
         StudentAnswer sa11_1_3_student5 = createStudentAnswer(student5, pa_11_1_3, "One-sided limits approach a specific value from either the left (left-hand limit) or the right (right-hand limit), useful for points of discontinuity.");
-        addStudentAnswerToProblemAnswer(pa_11_1_3, sa11_1_3_student5);
-
         StudentAnswer sa11_1_4_student5 = createStudentAnswer(student5, pa_11_1_4, "The limit law of sums states that the limit of the sum of two functions is the sum of their limits, i.e., lim(x->c)[f(x) + g(x)] = L + M.");
-        addStudentAnswerToProblemAnswer(pa_11_1_4, sa11_1_4_student5);
-
         StudentAnswer sa11_1_5_student5 = createStudentAnswer(student5, pa_11_1_5, "The epsilon-delta definition states that for every ε > 0, there exists a δ > 0 such that if 0 < |x - c| < δ, then |f(x) - L| < ε.");
-        addStudentAnswerToProblemAnswer(pa_11_1_5, sa11_1_5_student5);
 
 
 // Creating StudentAnswer instances for student6
         StudentAnswer sa11_1_1_student6 = createStudentAnswer(student6, pa_11_1_1, "A limit is the value that a function approaches as the input approaches a certain value, foundational in defining continuity, derivatives, and integrals.");
-        addStudentAnswerToProblemAnswer(pa_11_1_1, sa11_1_1_student6);
-
         StudentAnswer sa11_1_2_student6 = createStudentAnswer(student6, pa_11_1_2, "To calculate the limit of a function as x approaches a value, substitute the value into the function or use algebraic manipulation and limit laws if undefined.");
-        addStudentAnswerToProblemAnswer(pa_11_1_2, sa11_1_2_student6);
-
         StudentAnswer sa11_1_3_student6 = createStudentAnswer(student6, pa_11_1_3, "One-sided limits approach a specific value from either the left (left-hand limit) or the right (right-hand limit), useful for points of discontinuity.");
-        addStudentAnswerToProblemAnswer(pa_11_1_3, sa11_1_3_student6);
-
         StudentAnswer sa11_1_4_student6 = createStudentAnswer(student6, pa_11_1_4, "The limit law of sums states that the limit of the sum of two functions is the sum of their limits, i.e., lim(x->c)[f(x) + g(x)] = L + M.");
-        addStudentAnswerToProblemAnswer(pa_11_1_4, sa11_1_4_student6);
-
         StudentAnswer sa11_1_5_student6 = createStudentAnswer(student6, pa_11_1_5, "The epsilon-delta definition states that for every ε > 0, there exists a δ > 0 such that if 0 < |x - c| < δ, then |f(x) - L| < ε.");
-        addStudentAnswerToProblemAnswer(pa_11_1_5, sa11_1_5_student6);
-
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment11_1.");
 // Creating StudentAnswer instances for student5
         StudentAnswer sa11_2_1_student5 = createStudentAnswer(student5, pa_11_2_1, "A derivative represents the rate at which a function changes as its input changes, determining the slope of a function at any given point.");
-        addStudentAnswerToProblemAnswer(pa_11_2_1, sa11_2_1_student5);
-
         StudentAnswer sa11_2_2_student5 = createStudentAnswer(student5, pa_11_2_2, "The derivative of a function is calculated using differentiation techniques, commonly the limit definition: f'(x) = lim(h->0)[f(x+h) - f(x)]/h.");
-        addStudentAnswerToProblemAnswer(pa_11_2_2, sa11_2_2_student5);
-
         StudentAnswer sa11_2_3_student5 = createStudentAnswer(student5, pa_11_2_3, "Common rules of differentiation include the power rule, product rule, quotient rule, and chain rule, simplifying the process for various functions.");
-        addStudentAnswerToProblemAnswer(pa_11_2_3, sa11_2_3_student5);
-
         StudentAnswer sa11_2_4_student5 = createStudentAnswer(student5, pa_11_2_4, "The power rule states that the derivative of x^n (where n is a constant) is n*x^(n-1), e.g., the derivative of x^3 is 3*x^2.");
-        addStudentAnswerToProblemAnswer(pa_11_2_4, sa11_2_4_student5);
-
         StudentAnswer sa11_2_5_student5 = createStudentAnswer(student5, pa_11_2_5, "The product rule is used for the derivative of the product of two functions: (uv)' = u'v + uv', where u and v are functions of x.");
-        addStudentAnswerToProblemAnswer(pa_11_2_5, sa11_2_5_student5);
 
 // Creating StudentAnswer instances for student6
         StudentAnswer sa11_2_1_student6 = createStudentAnswer(student6, pa_11_2_1, "A derivative represents the rate at which a function changes as its input changes, determining the slope of a function at any given point.");
-        addStudentAnswerToProblemAnswer(pa_11_2_1, sa11_2_1_student6);
-
         StudentAnswer sa11_2_2_student6 = createStudentAnswer(student6, pa_11_2_2, "The derivative of a function is calculated using differentiation techniques, commonly the limit definition: f'(x) = lim(h->0)[f(x+h) - f(x)]/h.");
-        addStudentAnswerToProblemAnswer(pa_11_2_2, sa11_2_2_student6);
-
         StudentAnswer sa11_2_3_student6 = createStudentAnswer(student6, pa_11_2_3, "Common rules of differentiation include the power rule, product rule, quotient rule, and chain rule, simplifying the process for various functions.");
-        addStudentAnswerToProblemAnswer(pa_11_2_3, sa11_2_3_student6);
-
         StudentAnswer sa11_2_4_student6 = createStudentAnswer(student6, pa_11_2_4, "The power rule states that the derivative of x^n (where n is a constant) is n*x^(n-1), e.g., the derivative of x^3 is 3*x^2.");
-        addStudentAnswerToProblemAnswer(pa_11_2_4, sa11_2_4_student6);
-
         StudentAnswer sa11_2_5_student6 = createStudentAnswer(student6, pa_11_2_5, "The product rule is used for the derivative of the product of two functions: (uv)' = u'v + uv', where u and v are functions of x.");
-        addStudentAnswerToProblemAnswer(pa_11_2_5, sa11_2_5_student6);
-
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment11_2.");
 // Creating StudentAnswer instances for student5
         StudentAnswer sa11_3_1_student5 = createStudentAnswer(student5, pa_11_3_1, "An integral represents the accumulation of quantities over a continuous interval and is used to calculate areas, volumes, and other related quantities.");
-        addStudentAnswerToProblemAnswer(pa_11_3_1, sa11_3_1_student5);
-
         StudentAnswer sa11_3_2_student5 = createStudentAnswer(student5, pa_11_3_2, "The Fundamental Theorem of Calculus links differentiation and integration, stating that if F is an antiderivative of f on [a, b], then the integral of f from a to b is F(b) - F(a).");
-        addStudentAnswerToProblemAnswer(pa_11_3_2, sa11_3_2_student5);
-
         StudentAnswer sa11_3_3_student5 = createStudentAnswer(student5, pa_11_3_3, "To calculate a definite integral, find the antiderivative of the integrand, evaluate it at the upper and lower limits, and subtract the lower limit value from the upper limit value.");
-        addStudentAnswerToProblemAnswer(pa_11_3_3, sa11_3_3_student5);
-
         StudentAnswer sa11_3_4_student5 = createStudentAnswer(student5, pa_11_3_4, "An indefinite integral represents the family of all antiderivatives of a function, expressed with the integral symbol and a constant of integration (C).");
-        addStudentAnswerToProblemAnswer(pa_11_3_4, sa11_3_4_student5);
-
         StudentAnswer sa11_3_5_student5 = createStudentAnswer(student5, pa_11_3_5, "Integration by substitution simplifies integration by changing the variable of integration, substituting a new variable and its differential.");
-        addStudentAnswerToProblemAnswer(pa_11_3_5, sa11_3_5_student5);
-
 
 // Creating StudentAnswer instances for student6
         StudentAnswer sa11_3_1_student6 = createStudentAnswer(student6, pa_11_3_1, "An integral represents the accumulation of quantities over a continuous interval and is used to calculate areas, volumes, and other related quantities.");
-        addStudentAnswerToProblemAnswer(pa_11_3_1, sa11_3_1_student6);
-
         StudentAnswer sa11_3_2_student6 = createStudentAnswer(student6, pa_11_3_2, "The Fundamental Theorem of Calculus links differentiation and integration, stating that if F is an antiderivative of f on [a, b], then the integral of f from a to b is F(b) - F(a).");
-        addStudentAnswerToProblemAnswer(pa_11_3_2, sa11_3_2_student6);
-
         StudentAnswer sa11_3_3_student6 = createStudentAnswer(student6, pa_11_3_3, "To calculate a definite integral, find the antiderivative of the integrand, evaluate it at the upper and lower limits, and subtract the lower limit value from the upper limit value.");
-        addStudentAnswerToProblemAnswer(pa_11_3_3, sa11_3_3_student6);
-
         StudentAnswer sa11_3_4_student6 = createStudentAnswer(student6, pa_11_3_4, "An indefinite integral represents the family of all antiderivatives of a function, expressed with the integral symbol and a constant of integration (C).");
-        addStudentAnswerToProblemAnswer(pa_11_3_4, sa11_3_4_student6);
-
         StudentAnswer sa11_3_5_student6 = createStudentAnswer(student6, pa_11_3_5, "Integration by substitution simplifies integration by changing the variable of integration, substituting a new variable and its differential.");
-        addStudentAnswerToProblemAnswer(pa_11_3_5, sa11_3_5_student6);
-
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment11_3.");
 // Creating StudentAnswer instances for student5
         StudentAnswer sa11_4_1_student5 = createStudentAnswer(student5, pa_11_4_1, "Calculus is used in physics to model and analyze physical systems, describing motion, forces, and energy through derivatives and integrals.");
-        addStudentAnswerToProblemAnswer(pa_11_4_1, sa11_4_1_student5);
-
         StudentAnswer sa11_4_2_student5 = createStudentAnswer(student5, pa_11_4_2, "Calculus in engineering is used for designing and analyzing systems, optimizing processes, and solving differential equations in fields like civil, mechanical, and electrical engineering.");
-        addStudentAnswerToProblemAnswer(pa_11_4_2, sa11_4_2_student5);
-
         StudentAnswer sa11_4_3_student5 = createStudentAnswer(student5, pa_11_4_3, "In economics, calculus models economic systems, optimizes production and consumption, and studies changes over time, calculating marginal cost, revenue, and profit.");
-        addStudentAnswerToProblemAnswer(pa_11_4_3, sa11_4_3_student5);
-
         StudentAnswer sa11_4_4_student5 = createStudentAnswer(student5, pa_11_4_4, "Calculus in biology models population dynamics, spread of diseases, and changes in biological systems, understanding growth rates and interactions between species.");
-        addStudentAnswerToProblemAnswer(pa_11_4_4, sa11_4_4_student5);
-
         StudentAnswer sa11_4_5_student5 = createStudentAnswer(student5, pa_11_4_5, "In computer science, calculus is used for algorithm analysis, computer graphics, machine learning, and simulations, optimizing algorithms and modeling continuous data.");
-        addStudentAnswerToProblemAnswer(pa_11_4_5, sa11_4_5_student5);
-
 
 // Creating StudentAnswer instances for student6
         StudentAnswer sa11_4_1_student6 = createStudentAnswer(student6, pa_11_4_1, "Calculus is used in physics to model and analyze physical systems, describing motion, forces, and energy through derivatives and integrals.");
-        addStudentAnswerToProblemAnswer(pa_11_4_1, sa11_4_1_student6);
-
         StudentAnswer sa11_4_2_student6 = createStudentAnswer(student6, pa_11_4_2, "Calculus in engineering is used for designing and analyzing systems, optimizing processes, and solving differential equations in fields like civil, mechanical, and electrical engineering.");
-        addStudentAnswerToProblemAnswer(pa_11_4_2, sa11_4_2_student6);
-
         StudentAnswer sa11_4_3_student6 = createStudentAnswer(student6, pa_11_4_3, "In economics, calculus models economic systems, optimizes production and consumption, and studies changes over time, calculating marginal cost, revenue, and profit.");
-        addStudentAnswerToProblemAnswer(pa_11_4_3, sa11_4_3_student6);
-
         StudentAnswer sa11_4_4_student6 = createStudentAnswer(student6, pa_11_4_4, "Calculus in biology models population dynamics, spread of diseases, and changes in biological systems, understanding growth rates and interactions between species.");
-        addStudentAnswerToProblemAnswer(pa_11_4_4, sa11_4_4_student6);
-
         StudentAnswer sa11_4_5_student6 = createStudentAnswer(student6, pa_11_4_5, "In computer science, calculus is used for algorithm analysis, computer graphics, machine learning, and simulations, optimizing algorithms and modeling continuous data.");
-        addStudentAnswerToProblemAnswer(pa_11_4_5, sa11_4_5_student6);
-
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment11_4.");
 // Creating StudentAnswer instances for student5
         StudentAnswer sa12_1_1_student5 = createStudentAnswer(student5, pa_12_1_1, "A vector is a quantity that has both magnitude and direction, represented by an arrow from one point to another in space.");
-        addStudentAnswerToProblemAnswer(pa_12_1_1, sa12_1_1_student5);
-
         StudentAnswer sa12_1_2_student5 = createStudentAnswer(student5, pa_12_1_2, "Vector addition is the process of adding two or more vectors by adding their corresponding components to get a resultant vector.");
-        addStudentAnswerToProblemAnswer(pa_12_1_2, sa12_1_2_student5);
-
         StudentAnswer sa12_1_3_student5 = createStudentAnswer(student5, pa_12_1_3, "Scalar multiplication involves multiplying a vector by a scalar (a real number), changing the magnitude but not the direction of the vector.");
-        addStudentAnswerToProblemAnswer(pa_12_1_3, sa12_1_3_student5);
-
         StudentAnswer sa12_1_4_student5 = createStudentAnswer(student5, pa_12_1_4, "The dot product (or scalar product) of two vectors is a measure of their alignment, calculated as the product of their magnitudes and the cosine of the angle between them.");
-        addStudentAnswerToProblemAnswer(pa_12_1_4, sa12_1_4_student5);
-
         StudentAnswer sa12_1_5_student5 = createStudentAnswer(student5, pa_12_1_5, "The cross product (or vector product) of two vectors is a vector perpendicular to both original vectors, calculated as the product of their magnitudes and the sine of the angle between them.");
-        addStudentAnswerToProblemAnswer(pa_12_1_5, sa12_1_5_student5);
-
 
 // Creating StudentAnswer instances for student6
         StudentAnswer sa12_1_1_student6 = createStudentAnswer(student6, pa_12_1_1, "A vector is a quantity that has both magnitude and direction, represented by an arrow from one point to another in space.");
-        addStudentAnswerToProblemAnswer(pa_12_1_1, sa12_1_1_student6);
-
         StudentAnswer sa12_1_2_student6 = createStudentAnswer(student6, pa_12_1_2, "Vector addition is the process of adding two or more vectors by adding their corresponding components to get a resultant vector.");
-        addStudentAnswerToProblemAnswer(pa_12_1_2, sa12_1_2_student6);
-
         StudentAnswer sa12_1_3_student6 = createStudentAnswer(student6, pa_12_1_3, "Scalar multiplication involves multiplying a vector by a scalar (a real number), changing the magnitude but not the direction of the vector.");
-        addStudentAnswerToProblemAnswer(pa_12_1_3, sa12_1_3_student6);
-
         StudentAnswer sa12_1_4_student6 = createStudentAnswer(student6, pa_12_1_4, "The dot product (or scalar product) of two vectors is a measure of their alignment, calculated as the product of their magnitudes and the cosine of the angle between them.");
-        addStudentAnswerToProblemAnswer(pa_12_1_4, sa12_1_4_student6);
-
         StudentAnswer sa12_1_5_student6 = createStudentAnswer(student6, pa_12_1_5, "The cross product (or vector product) of two vectors is a vector perpendicular to both original vectors, calculated as the product of their magnitudes and the sine of the angle between them.");
-        addStudentAnswerToProblemAnswer(pa_12_1_5, sa12_1_5_student6);
-
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment12_1.");
 // Creating StudentAnswer instances for student5
         StudentAnswer sa12_2_1_student5 = createStudentAnswer(student5, pa_12_2_1, "A matrix is a rectangular array of numbers arranged in rows and columns, used to represent and solve systems of linear equations.");
-        addStudentAnswerToProblemAnswer(pa_12_2_1, sa12_2_1_student5);
-
         StudentAnswer sa12_2_2_student5 = createStudentAnswer(student5, pa_12_2_2, "Matrix addition involves adding two matrices by adding their corresponding elements. The matrices must have the same dimensions.");
-        addStudentAnswerToProblemAnswer(pa_12_2_2, sa12_2_2_student5);
-
         StudentAnswer sa12_2_3_student5 = createStudentAnswer(student5, pa_12_2_3, "Matrix multiplication involves multiplying two matrices by taking the dot product of rows and columns. The number of columns in the first matrix must equal the number of rows in the second.");
-        addStudentAnswerToProblemAnswer(pa_12_2_3, sa12_2_3_student5);
-
         StudentAnswer sa12_2_4_student5 = createStudentAnswer(student5, pa_12_2_4, "The identity matrix is a square matrix with ones on the diagonal and zeros elsewhere, acting as the multiplicative identity in matrix multiplication.");
-        addStudentAnswerToProblemAnswer(pa_12_2_4, sa12_2_4_student5);
-
         StudentAnswer sa12_2_5_student5 = createStudentAnswer(student5, pa_12_2_5, "The inverse of a matrix is a matrix that, when multiplied by the original matrix, yields the identity matrix. Not all matrices have inverses.");
-        addStudentAnswerToProblemAnswer(pa_12_2_5, sa12_2_5_student5);
-
 
 // Creating StudentAnswer instances for student6
         StudentAnswer sa12_2_1_student6 = createStudentAnswer(student6, pa_12_2_1, "A matrix is a rectangular array of numbers arranged in rows and columns, used to represent and solve systems of linear equations.");
-        addStudentAnswerToProblemAnswer(pa_12_2_1, sa12_2_1_student6);
-
         StudentAnswer sa12_2_2_student6 = createStudentAnswer(student6, pa_12_2_2, "Matrix addition involves adding two matrices by adding their corresponding elements. The matrices must have the same dimensions.");
-        addStudentAnswerToProblemAnswer(pa_12_2_2, sa12_2_2_student6);
-
         StudentAnswer sa12_2_3_student6 = createStudentAnswer(student6, pa_12_2_3, "Matrix multiplication involves multiplying two matrices by taking the dot product of rows and columns. The number of columns in the first matrix must equal the number of rows in the second.");
-        addStudentAnswerToProblemAnswer(pa_12_2_3, sa12_2_3_student6);
-
         StudentAnswer sa12_2_4_student6 = createStudentAnswer(student6, pa_12_2_4, "The identity matrix is a square matrix with ones on the diagonal and zeros elsewhere, acting as the multiplicative identity in matrix multiplication.");
-        addStudentAnswerToProblemAnswer(pa_12_2_4, sa12_2_4_student6);
-
         StudentAnswer sa12_2_5_student6 = createStudentAnswer(student6, pa_12_2_5, "The inverse of a matrix is a matrix that, when multiplied by the original matrix, yields the identity matrix. Not all matrices have inverses.");
-        addStudentAnswerToProblemAnswer(pa_12_2_5, sa12_2_5_student6);
-
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment12_2.");
 // Creating StudentAnswer instances for student5
         StudentAnswer sa12_3_1_student5 = createStudentAnswer(student5, pa_12_3_1, "A determinant is a scalar value computed from the elements of a square matrix, providing important information about the matrix, such as whether it is invertible.");
-        addStudentAnswerToProblemAnswer(pa_12_3_1, sa12_3_1_student5);
-
         StudentAnswer sa12_3_2_student5 = createStudentAnswer(student5, pa_12_3_2, "The determinant of a 2x2 matrix [a b; c d] is calculated as ad - bc.");
-        addStudentAnswerToProblemAnswer(pa_12_3_2, sa12_3_2_student5);
-
         StudentAnswer sa12_3_3_student5 = createStudentAnswer(student5, pa_12_3_3, "Determinants help determine the invertibility of a matrix, solve systems of linear equations, and find the area or volume of geometric shapes.");
-        addStudentAnswerToProblemAnswer(pa_12_3_3, sa12_3_3_student5);
-
         StudentAnswer sa12_3_4_student5 = createStudentAnswer(student5, pa_12_3_4, "The determinant of a 3x3 matrix [a b c; d e f; g h i] is calculated using the formula: a(ei - fh) - b(di - fg) + c(dh - eg).");
-        addStudentAnswerToProblemAnswer(pa_12_3_4, sa12_3_4_student5);
-
         StudentAnswer sa12_3_5_student5 = createStudentAnswer(student5, pa_12_3_5, "Properties of determinants: (1) The determinant of the identity matrix is 1, (2) The determinant of a matrix product is the product of the determinants, (3) Swapping rows or columns changes the sign of the determinant, (4) The determinant of a triangular matrix is the product of its diagonal elements.");
-        addStudentAnswerToProblemAnswer(pa_12_3_5, sa12_3_5_student5);
-
 
 // Creating StudentAnswer instances for student6
         StudentAnswer sa12_3_1_student6 = createStudentAnswer(student6, pa_12_3_1, "A determinant is a scalar value computed from the elements of a square matrix, providing important information about the matrix, such as whether it is invertible.");
-        addStudentAnswerToProblemAnswer(pa_12_3_1, sa12_3_1_student6);
-
         StudentAnswer sa12_3_2_student6 = createStudentAnswer(student6, pa_12_3_2, "The determinant of a 2x2 matrix [a b; c d] is calculated as ad - bc.");
-        addStudentAnswerToProblemAnswer(pa_12_3_2, sa12_3_2_student6);
-
         StudentAnswer sa12_3_3_student6 = createStudentAnswer(student6, pa_12_3_3, "Determinants help determine the invertibility of a matrix, solve systems of linear equations, and find the area or volume of geometric shapes.");
-        addStudentAnswerToProblemAnswer(pa_12_3_3, sa12_3_3_student6);
-
         StudentAnswer sa12_3_4_student6 = createStudentAnswer(student6, pa_12_3_4, "The determinant of a 3x3 matrix [a b c; d e f; g h i] is calculated using the formula: a(ei - fh) - b(di - fg) + c(dh - eg).");
-        addStudentAnswerToProblemAnswer(pa_12_3_4, sa12_3_4_student6);
-
         StudentAnswer sa12_3_5_student6 = createStudentAnswer(student6, pa_12_3_5, "Properties of determinants: (1) The determinant of the identity matrix is 1, (2) The determinant of a matrix product is the product of the determinants, (3) Swapping rows or columns changes the sign of the determinant, (4) The determinant of a triangular matrix is the product of its diagonal elements.");
-        addStudentAnswerToProblemAnswer(pa_12_3_5, sa12_3_5_student6);
 
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment12_3.");
 // Creating StudentAnswer instances for student5
         StudentAnswer sa12_4_1_student5 = createStudentAnswer(student5, pa_12_4_1, "Eigenvalues are special numbers associated with a matrix that characterize the scaling factor by which the eigenvectors are stretched or compressed under a linear transformation.");
-        addStudentAnswerToProblemAnswer(pa_12_4_1, sa12_4_1_student5);
-
         StudentAnswer sa12_4_2_student5 = createStudentAnswer(student5, pa_12_4_2, "Eigenvalues are calculated by solving the characteristic equation, obtained by setting the determinant of (A - λI) equal to zero, where A is the matrix, λ is the eigenvalue, and I is the identity matrix.");
-        addStudentAnswerToProblemAnswer(pa_12_4_2, sa12_4_2_student5);
-
         StudentAnswer sa12_4_3_student5 = createStudentAnswer(student5, pa_12_4_3, "The characteristic equation of a matrix A is given by det(A - λI) = 0, where det denotes the determinant, λ represents the eigenvalue, and I is the identity matrix.");
-        addStudentAnswerToProblemAnswer(pa_12_4_3, sa12_4_3_student5);
-
         StudentAnswer sa12_4_4_student5 = createStudentAnswer(student5, pa_12_4_4, "Eigenvalues provide important information about a matrix's properties, such as invertibility, stability, and behavior under linear transformations, used in differential equations and matrix diagonalization.");
-        addStudentAnswerToProblemAnswer(pa_12_4_4, sa12_4_4_student5);
-
         StudentAnswer sa12_4_5_student5 = createStudentAnswer(student5, pa_12_4_5, "The determinant of a matrix is equal to the product of its eigenvalues, providing a way to calculate the determinant using eigenvalues and understanding matrix properties.");
-        addStudentAnswerToProblemAnswer(pa_12_4_5, sa12_4_5_student5);
-
 
 // Creating StudentAnswer instances for student6
         StudentAnswer sa12_4_1_student6 = createStudentAnswer(student6, pa_12_4_1, "Eigenvalues are special numbers associated with a matrix that characterize the scaling factor by which the eigenvectors are stretched or compressed under a linear transformation.");
-        addStudentAnswerToProblemAnswer(pa_12_4_1, sa12_4_1_student6);
-
         StudentAnswer sa12_4_2_student6 = createStudentAnswer(student6, pa_12_4_2, "Eigenvalues are calculated by solving the characteristic equation, obtained by setting the determinant of (A - λI) equal to zero, where A is the matrix, λ is the eigenvalue, and I is the identity matrix.");
-        addStudentAnswerToProblemAnswer(pa_12_4_2, sa12_4_2_student6);
-
         StudentAnswer sa12_4_3_student6 = createStudentAnswer(student6, pa_12_4_3, "The characteristic equation of a matrix A is given by det(A - λI) = 0, where det denotes the determinant, λ represents the eigenvalue, and I is the identity matrix.");
-        addStudentAnswerToProblemAnswer(pa_12_4_3, sa12_4_3_student6);
-
         StudentAnswer sa12_4_4_student6 = createStudentAnswer(student6, pa_12_4_4, "Eigenvalues provide important information about a matrix's properties, such as invertibility, stability, and behavior under linear transformations, used in differential equations and matrix diagonalization.");
-        addStudentAnswerToProblemAnswer(pa_12_4_4, sa12_4_4_student6);
-
         StudentAnswer sa12_4_5_student6 = createStudentAnswer(student6, pa_12_4_5, "The determinant of a matrix is equal to the product of its eigenvalues, providing a way to calculate the determinant using eigenvalues and understanding matrix properties.");
-        addStudentAnswerToProblemAnswer(pa_12_4_5, sa12_4_5_student6);
-
 
 // Output for confirmation
         System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment12_4.");
 // Creating StudentAnswer instances for student5
         StudentAnswer sa12_5_1_student5 = createStudentAnswer(student5, pa_12_5_1, "Eigenvectors are special vectors associated with a matrix that remain in the same direction under a linear transformation. They are scaled by their corresponding eigenvalues.");
-        addStudentAnswerToProblemAnswer(pa_12_5_1, sa12_5_1_student5);
-
         StudentAnswer sa12_5_2_student5 = createStudentAnswer(student5, pa_12_5_2, "Eigenvectors are found by solving the equation (A - λI)v = 0, where A is the matrix, λ is the eigenvalue, I is the identity matrix, and v is the eigenvector.");
-        addStudentAnswerToProblemAnswer(pa_12_5_2, sa12_5_2_student5);
-
         StudentAnswer sa12_5_3_student5 = createStudentAnswer(student5, pa_12_5_3, "Eigenvectors are vectors scaled by a factor (the eigenvalue) when a linear transformation is applied. The eigenvalue determines the amount of scaling, while the eigenvector determines the direction.");
-        addStudentAnswerToProblemAnswer(pa_12_5_3, sa12_5_3_student5);
-
         StudentAnswer sa12_5_4_student5 = createStudentAnswer(student5, pa_12_5_4, "Eigenvectors provide insight into the behavior of a linear transformation, representing directions that remain unchanged and helping to understand the transformation's effect on different system components.");
-        addStudentAnswerToProblemAnswer(pa_12_5_4, sa12_5_4_student5);
-
         StudentAnswer sa12_5_5_student5 = createStudentAnswer(student5, pa_12_5_5, "Matrix diagonalization involves expressing a matrix as a product of its eigenvectors and a diagonal matrix of its eigenvalues, simplifying matrix operations and solving systems of differential equations.");
-        addStudentAnswerToProblemAnswer(pa_12_5_5, sa12_5_5_student5);
-
 
 // Creating StudentAnswer instances for student6
         StudentAnswer sa12_5_1_student6 = createStudentAnswer(student6, pa_12_5_1, "Eigenvectors are special vectors associated with a matrix that remain in the same direction under a linear transformation. They are scaled by their corresponding eigenvalues.");
-        addStudentAnswerToProblemAnswer(pa_12_5_1, sa12_5_1_student6);
-
         StudentAnswer sa12_5_2_student6 = createStudentAnswer(student6, pa_12_5_2, "Eigenvectors are found by solving the equation (A - λI)v = 0, where A is the matrix, λ is the eigenvalue, I is the identity matrix, and v is the eigenvector.");
-        addStudentAnswerToProblemAnswer(pa_12_5_2, sa12_5_2_student6);
-
         StudentAnswer sa12_5_3_student6 = createStudentAnswer(student6, pa_12_5_3, "Eigenvectors are vectors scaled by a factor (the eigenvalue) when a linear transformation is applied. The eigenvalue determines the amount of scaling, while the eigenvector determines the direction.");
-        addStudentAnswerToProblemAnswer(pa_12_5_3, sa12_5_3_student6);
-
         StudentAnswer sa12_5_4_student6 = createStudentAnswer(student6, pa_12_5_4, "Eigenvectors provide insight into the behavior of a linear transformation, representing directions that remain unchanged and helping to understand the transformation's effect on different system components.");
-        addStudentAnswerToProblemAnswer(pa_12_5_4, sa12_5_4_student6);
-
         StudentAnswer sa12_5_5_student6 = createStudentAnswer(student6, pa_12_5_5, "Matrix diagonalization involves expressing a matrix as a product of its eigenvectors and a diagonal matrix of its eigenvalues, simplifying matrix operations and solving systems of differential equations.");
-        addStudentAnswerToProblemAnswer(pa_12_5_5, sa12_5_5_student6);
+        studentAnswerRepo.saveAllAndFlush(Arrays.asList(sa9_1_1_student5, sa9_1_2_student5, sa9_1_3_student5, sa9_1_4_student5, sa9_1_5_student5, sa9_2_1_student5, sa9_2_2_student5, sa9_2_3_student5, sa9_2_4_student5, sa9_2_5_student5, sa9_3_1_student5, sa9_3_2_student5, sa9_3_3_student5, sa9_3_4_student5, sa9_3_5_student5, sa9_1_1_student6, sa9_1_2_student6, sa9_1_3_student6, sa9_1_4_student6, sa9_1_5_student6, sa9_2_1_student6, sa9_2_2_student6, sa9_2_3_student6, sa9_2_4_student6, sa9_2_5_student6, sa9_3_1_student6, sa9_3_2_student6, sa9_3_3_student6, sa9_3_4_student6, sa9_3_5_student6,
+                sa10_1_1_student5, sa10_1_2_student5, sa10_1_3_student5, sa10_1_4_student5, sa10_1_5_student5, sa10_2_1_student5, sa10_2_2_student5, sa10_2_3_student5, sa10_2_4_student5, sa10_2_5_student5, sa10_3_1_student5, sa10_3_2_student5, sa10_3_3_student5, sa10_3_4_student5, sa10_3_5_student5, sa10_4_1_student5, sa10_4_2_student5, sa10_4_3_student5, sa10_4_4_student5, sa10_4_5_student5, sa10_1_1_student6, sa10_1_2_student6, sa10_1_3_student6, sa10_1_4_student6, sa10_1_5_student6, sa10_2_1_student6, sa10_2_2_student6, sa10_2_3_student6, sa10_2_4_student6, sa10_2_5_student6, sa10_3_1_student6, sa10_3_2_student6, sa10_3_3_student6, sa10_3_4_student6, sa10_3_5_student6, sa10_4_1_student6, sa10_4_2_student6, sa10_4_3_student6, sa10_4_4_student6, sa10_4_5_student6,
+                sa11_1_1_student5, sa11_1_2_student5, sa11_1_3_student5, sa11_1_4_student5, sa11_1_5_student5, sa11_2_1_student5, sa11_2_2_student5, sa11_2_3_student5, sa11_2_4_student5, sa11_2_5_student5, sa11_3_1_student5, sa11_3_2_student5, sa11_3_3_student5, sa11_3_4_student5, sa11_3_5_student5, sa11_4_1_student5, sa11_4_2_student5, sa11_4_3_student5, sa11_4_4_student5, sa11_4_5_student5, sa11_1_1_student6, sa11_1_2_student6, sa11_1_3_student6, sa11_1_4_student6, sa11_1_5_student6, sa11_2_1_student6, sa11_2_2_student6, sa11_2_3_student6, sa11_2_4_student6, sa11_2_5_student6, sa11_3_1_student6, sa11_3_2_student6, sa11_3_3_student6, sa11_3_4_student6, sa11_3_5_student6, sa11_4_1_student6, sa11_4_2_student6, sa11_4_3_student6, sa11_4_4_student6, sa11_4_5_student6,
+                sa12_1_1_student5, sa12_1_2_student5, sa12_1_3_student5, sa12_1_4_student5, sa12_1_5_student5, sa12_2_1_student5, sa12_2_2_student5, sa12_2_3_student5, sa12_2_4_student5, sa12_2_5_student5, sa12_3_1_student5, sa12_3_2_student5, sa12_3_3_student5, sa12_3_4_student5, sa12_3_5_student5, sa12_4_1_student5, sa12_4_2_student5, sa12_4_3_student5, sa12_4_4_student5, sa12_4_5_student5, sa12_5_1_student5, sa12_5_2_student5, sa12_5_3_student5, sa12_5_4_student5, sa12_5_5_student5, sa12_1_1_student6, sa12_1_2_student6, sa12_1_3_student6, sa12_1_4_student6, sa12_1_5_student6, sa12_2_1_student6, sa12_2_2_student6, sa12_2_3_student6, sa12_2_4_student6, sa12_2_5_student6, sa12_3_1_student6, sa12_3_2_student6, sa12_3_3_student6, sa12_3_4_student6, sa12_3_5_student6, sa12_4_1_student6, sa12_4_2_student6, sa12_4_3_student6, sa12_4_4_student6, sa12_4_5_student6, sa12_5_1_student6, sa12_5_2_student6, sa12_5_3_student6, sa12_5_4_student6, sa12_5_5_student6));
 
+        addStudentAnswerToProblemAnswer(pa_9_1_1, sa9_1_1_student5);
+        addStudentAnswerToProblemAnswer(pa_9_1_2, sa9_1_2_student5);
+        addStudentAnswerToProblemAnswer(pa_9_1_3, sa9_1_3_student5);
+        addStudentAnswerToProblemAnswer(pa_9_1_4, sa9_1_4_student5);
+        addStudentAnswerToProblemAnswer(pa_9_1_5, sa9_1_5_student5);
+        addStudentAnswerToProblemAnswer(pa_9_1_1, sa9_1_1_student6);
+        addStudentAnswerToProblemAnswer(pa_9_1_2, sa9_1_2_student6);
+        addStudentAnswerToProblemAnswer(pa_9_1_3, sa9_1_3_student6);
+        addStudentAnswerToProblemAnswer(pa_9_1_4, sa9_1_4_student6);
+        addStudentAnswerToProblemAnswer(pa_9_1_5, sa9_1_5_student6);
+        addStudentAnswerToProblemAnswer(pa_9_2_1, sa9_2_1_student5);
+        addStudentAnswerToProblemAnswer(pa_9_2_2, sa9_2_2_student5);
+        addStudentAnswerToProblemAnswer(pa_9_2_3, sa9_2_3_student5);
+        addStudentAnswerToProblemAnswer(pa_9_2_4, sa9_2_4_student5);
+        addStudentAnswerToProblemAnswer(pa_9_2_5, sa9_2_5_student5);
+        addStudentAnswerToProblemAnswer(pa_9_2_1, sa9_2_1_student5);
+        addStudentAnswerToProblemAnswer(pa_9_2_2, sa9_2_2_student6);
+        addStudentAnswerToProblemAnswer(pa_9_2_3, sa9_2_3_student6);
+        addStudentAnswerToProblemAnswer(pa_9_2_4, sa9_2_4_student6);
+        addStudentAnswerToProblemAnswer(pa_9_2_5, sa9_2_5_student6);
+        addStudentAnswerToProblemAnswer(pa_9_3_1, sa9_3_1_student5);
+        addStudentAnswerToProblemAnswer(pa_9_3_2, sa9_3_2_student5);
+        addStudentAnswerToProblemAnswer(pa_9_3_3, sa9_3_3_student5);
+        addStudentAnswerToProblemAnswer(pa_9_3_4, sa9_3_4_student5);
+        addStudentAnswerToProblemAnswer(pa_9_3_5, sa9_3_5_student5);
+        addStudentAnswerToProblemAnswer(pa_9_3_1, sa9_3_1_student6);
+        addStudentAnswerToProblemAnswer(pa_9_3_2, sa9_3_2_student6);
+        addStudentAnswerToProblemAnswer(pa_9_3_3, sa9_3_3_student6);
+        addStudentAnswerToProblemAnswer(pa_9_3_4, sa9_3_4_student6);
+        addStudentAnswerToProblemAnswer(pa_9_3_5, sa9_3_5_student6);
+        addStudentAnswerToProblemAnswer(pa_10_1_1, sa10_1_1_student5);
+        addStudentAnswerToProblemAnswer(pa_10_1_2, sa10_1_2_student5);
+        addStudentAnswerToProblemAnswer(pa_10_1_3, sa10_1_3_student5);
+        addStudentAnswerToProblemAnswer(pa_10_1_4, sa10_1_4_student5);
+        addStudentAnswerToProblemAnswer(pa_10_1_5, sa10_1_5_student5);
+        addStudentAnswerToProblemAnswer(pa_10_1_1, sa10_1_1_student6);
+        addStudentAnswerToProblemAnswer(pa_10_1_2, sa10_1_2_student6);
+        addStudentAnswerToProblemAnswer(pa_10_1_3, sa10_1_3_student6);
+        addStudentAnswerToProblemAnswer(pa_10_1_4, sa10_1_4_student6);
+        addStudentAnswerToProblemAnswer(pa_10_1_5, sa10_1_5_student6);
+        addStudentAnswerToProblemAnswer(pa_10_2_1, sa10_2_1_student5);
+        addStudentAnswerToProblemAnswer(pa_10_2_2, sa10_2_2_student5);
+        addStudentAnswerToProblemAnswer(pa_10_2_3, sa10_2_3_student5);
+        addStudentAnswerToProblemAnswer(pa_10_2_4, sa10_2_4_student5);
+        addStudentAnswerToProblemAnswer(pa_10_2_5, sa10_2_5_student5);
+        addStudentAnswerToProblemAnswer(pa_10_2_1, sa10_2_1_student6);
+        addStudentAnswerToProblemAnswer(pa_10_2_2, sa10_2_2_student6);
+        addStudentAnswerToProblemAnswer(pa_10_2_3, sa10_2_3_student6);
+        addStudentAnswerToProblemAnswer(pa_10_2_4, sa10_2_4_student6);
+        addStudentAnswerToProblemAnswer(pa_10_2_5, sa10_2_5_student6);
+        addStudentAnswerToProblemAnswer(pa_10_3_1, sa10_3_1_student5);
+        addStudentAnswerToProblemAnswer(pa_10_3_2, sa10_3_2_student5);
+        addStudentAnswerToProblemAnswer(pa_10_3_3, sa10_3_3_student5);
+        addStudentAnswerToProblemAnswer(pa_10_3_4, sa10_3_4_student5);
+        addStudentAnswerToProblemAnswer(pa_10_3_5, sa10_3_5_student5);
+        addStudentAnswerToProblemAnswer(pa_10_3_1, sa10_3_1_student6);
+        addStudentAnswerToProblemAnswer(pa_10_3_2, sa10_3_2_student6);
+        addStudentAnswerToProblemAnswer(pa_10_3_3, sa10_3_3_student6);
+        addStudentAnswerToProblemAnswer(pa_10_3_4, sa10_3_4_student6);
+        addStudentAnswerToProblemAnswer(pa_10_3_5, sa10_3_5_student6);
+        addStudentAnswerToProblemAnswer(pa_10_4_1, sa10_4_1_student5);
+        addStudentAnswerToProblemAnswer(pa_10_4_2, sa10_4_2_student5);
+        addStudentAnswerToProblemAnswer(pa_10_4_3, sa10_4_3_student5);
+        addStudentAnswerToProblemAnswer(pa_10_4_4, sa10_4_4_student5);
+        addStudentAnswerToProblemAnswer(pa_10_4_5, sa10_4_5_student5);
+        addStudentAnswerToProblemAnswer(pa_10_4_1, sa10_4_1_student6);
+        addStudentAnswerToProblemAnswer(pa_10_4_2, sa10_4_2_student6);
+        addStudentAnswerToProblemAnswer(pa_10_4_3, sa10_4_3_student6);
+        addStudentAnswerToProblemAnswer(pa_10_4_4, sa10_4_4_student6);
+        addStudentAnswerToProblemAnswer(pa_10_4_5, sa10_4_5_student6);
+        addStudentAnswerToProblemAnswer(pa_11_1_1, sa11_1_1_student5);
+        addStudentAnswerToProblemAnswer(pa_11_1_2, sa11_1_2_student5);
+        addStudentAnswerToProblemAnswer(pa_11_1_3, sa11_1_3_student5);
+        addStudentAnswerToProblemAnswer(pa_11_1_4, sa11_1_4_student5);
+        addStudentAnswerToProblemAnswer(pa_11_1_5, sa11_1_5_student5);
+        addStudentAnswerToProblemAnswer(pa_11_1_1, sa11_1_1_student6);
+        addStudentAnswerToProblemAnswer(pa_11_1_2, sa11_1_2_student6);
+        addStudentAnswerToProblemAnswer(pa_11_1_3, sa11_1_3_student6);
+        addStudentAnswerToProblemAnswer(pa_11_1_4, sa11_1_4_student6);
+        addStudentAnswerToProblemAnswer(pa_11_1_5, sa11_1_5_student6);
+
+        addStudentAnswerToProblemAnswer(pa_11_2_1, sa11_2_1_student5);
+        addStudentAnswerToProblemAnswer(pa_11_2_2, sa11_2_2_student5);
+        addStudentAnswerToProblemAnswer(pa_11_2_3, sa11_2_3_student5);
+        addStudentAnswerToProblemAnswer(pa_11_2_4, sa11_2_4_student5);
+        addStudentAnswerToProblemAnswer(pa_11_2_5, sa11_2_5_student5);
+        addStudentAnswerToProblemAnswer(pa_11_2_1, sa11_2_1_student6);
+        addStudentAnswerToProblemAnswer(pa_11_2_2, sa11_2_2_student6);
+        addStudentAnswerToProblemAnswer(pa_11_2_3, sa11_2_3_student6);
+        addStudentAnswerToProblemAnswer(pa_11_2_4, sa11_2_4_student6);
+        addStudentAnswerToProblemAnswer(pa_11_2_5, sa11_2_5_student6);
+
+        addStudentAnswerToProblemAnswer(pa_11_3_1, sa11_3_1_student5);
+        addStudentAnswerToProblemAnswer(pa_11_3_2, sa11_3_2_student5);
+        addStudentAnswerToProblemAnswer(pa_11_3_3, sa11_3_3_student5);
+        addStudentAnswerToProblemAnswer(pa_11_3_4, sa11_3_4_student5);
+        addStudentAnswerToProblemAnswer(pa_11_3_5, sa11_3_5_student5);
+        addStudentAnswerToProblemAnswer(pa_11_3_1, sa11_3_1_student6);
+        addStudentAnswerToProblemAnswer(pa_11_3_2, sa11_3_2_student6);
+        addStudentAnswerToProblemAnswer(pa_11_3_3, sa11_3_3_student6);
+        addStudentAnswerToProblemAnswer(pa_11_3_4, sa11_3_4_student6);
+        addStudentAnswerToProblemAnswer(pa_11_3_5, sa11_3_5_student6);
+
+        addStudentAnswerToProblemAnswer(pa_11_4_1, sa11_4_1_student5);
+        addStudentAnswerToProblemAnswer(pa_11_4_2, sa11_4_2_student5);
+        addStudentAnswerToProblemAnswer(pa_11_4_3, sa11_4_3_student5);
+        addStudentAnswerToProblemAnswer(pa_11_4_4, sa11_4_4_student5);
+        addStudentAnswerToProblemAnswer(pa_11_4_5, sa11_4_5_student5);
+        addStudentAnswerToProblemAnswer(pa_11_4_1, sa11_4_1_student6);
+        addStudentAnswerToProblemAnswer(pa_11_4_2, sa11_4_2_student6);
+        addStudentAnswerToProblemAnswer(pa_11_4_3, sa11_4_3_student6);
+        addStudentAnswerToProblemAnswer(pa_11_4_4, sa11_4_4_student6);
+        addStudentAnswerToProblemAnswer(pa_11_4_5, sa11_4_5_student6);
+
+        addStudentAnswerToProblemAnswer(pa_12_1_1, sa12_1_1_student5);
+        addStudentAnswerToProblemAnswer(pa_12_1_2, sa12_1_2_student5);
+        addStudentAnswerToProblemAnswer(pa_12_1_3, sa12_1_3_student5);
+        addStudentAnswerToProblemAnswer(pa_12_1_4, sa12_1_4_student5);
+        addStudentAnswerToProblemAnswer(pa_12_1_5, sa12_1_5_student5);
+        addStudentAnswerToProblemAnswer(pa_12_1_1, sa12_1_1_student6);
+        addStudentAnswerToProblemAnswer(pa_12_1_2, sa12_1_2_student6);
+        addStudentAnswerToProblemAnswer(pa_12_1_3, sa12_1_3_student6);
+        addStudentAnswerToProblemAnswer(pa_12_1_4, sa12_1_4_student6);
+        addStudentAnswerToProblemAnswer(pa_12_1_5, sa12_1_5_student6);
+
+        addStudentAnswerToProblemAnswer(pa_12_2_1, sa12_2_1_student5);
+        addStudentAnswerToProblemAnswer(pa_12_2_2, sa12_2_2_student5);
+        addStudentAnswerToProblemAnswer(pa_12_2_3, sa12_2_3_student5);
+        addStudentAnswerToProblemAnswer(pa_12_2_4, sa12_2_4_student5);
+        addStudentAnswerToProblemAnswer(pa_12_2_5, sa12_2_5_student5);
+        addStudentAnswerToProblemAnswer(pa_12_2_1, sa12_2_1_student6);
+        addStudentAnswerToProblemAnswer(pa_12_2_2, sa12_2_2_student6);
+        addStudentAnswerToProblemAnswer(pa_12_2_3, sa12_2_3_student6);
+        addStudentAnswerToProblemAnswer(pa_12_2_4, sa12_2_4_student6);
+        addStudentAnswerToProblemAnswer(pa_12_2_5, sa12_2_5_student6);
+
+        addStudentAnswerToProblemAnswer(pa_12_3_1, sa12_3_1_student5);
+        addStudentAnswerToProblemAnswer(pa_12_3_2, sa12_3_2_student5);
+        addStudentAnswerToProblemAnswer(pa_12_3_3, sa12_3_3_student5);
+        addStudentAnswerToProblemAnswer(pa_12_3_4, sa12_3_4_student5);
+        addStudentAnswerToProblemAnswer(pa_12_3_5, sa12_3_5_student5);
+        addStudentAnswerToProblemAnswer(pa_12_3_1, sa12_3_1_student6);
+        addStudentAnswerToProblemAnswer(pa_12_3_2, sa12_3_2_student6);
+        addStudentAnswerToProblemAnswer(pa_12_3_3, sa12_3_3_student6);
+        addStudentAnswerToProblemAnswer(pa_12_3_4, sa12_3_4_student6);
+        addStudentAnswerToProblemAnswer(pa_12_3_5, sa12_3_5_student6);
+        addStudentAnswerToProblemAnswer(pa_12_4_1, sa12_4_1_student5);
+        addStudentAnswerToProblemAnswer(pa_12_4_2, sa12_4_2_student5);
+        addStudentAnswerToProblemAnswer(pa_12_4_3, sa12_4_3_student5);
+        addStudentAnswerToProblemAnswer(pa_12_4_4, sa12_4_4_student5);
+        addStudentAnswerToProblemAnswer(pa_12_4_5, sa12_4_5_student5);
+        addStudentAnswerToProblemAnswer(pa_12_4_1, sa12_4_1_student6);
+        addStudentAnswerToProblemAnswer(pa_12_4_2, sa12_4_2_student6);
+        addStudentAnswerToProblemAnswer(pa_12_4_3, sa12_4_3_student6);
+        addStudentAnswerToProblemAnswer(pa_12_4_4, sa12_4_4_student6);
+        addStudentAnswerToProblemAnswer(pa_12_4_5, sa12_4_5_student6);
+        addStudentAnswerToProblemAnswer(pa_12_5_1, sa12_5_1_student5);
+        addStudentAnswerToProblemAnswer(pa_12_5_2, sa12_5_2_student5);
+        addStudentAnswerToProblemAnswer(pa_12_5_3, sa12_5_3_student5);
+        addStudentAnswerToProblemAnswer(pa_12_5_4, sa12_5_4_student5);
+        addStudentAnswerToProblemAnswer(pa_12_5_5, sa12_5_5_student5);
+        addStudentAnswerToProblemAnswer(pa_12_5_1, sa12_5_1_student6);
+        addStudentAnswerToProblemAnswer(pa_12_5_2, sa12_5_2_student6);
+        addStudentAnswerToProblemAnswer(pa_12_5_3, sa12_5_3_student6);
+        addStudentAnswerToProblemAnswer(pa_12_5_4, sa12_5_4_student6);
+        addStudentAnswerToProblemAnswer(pa_12_5_5, sa12_5_5_student6);
 
         // Creating submission for student5 with student answers for 9_1
         Submission submission9_1_5 = createSubmission("Submission from student5", student5, Arrays.asList(
@@ -1427,6 +1310,7 @@ public class Assignment9to12Seeder implements CommandLineRunner {
         for (StudentAnswer studentAnswer : submission12_5_6.getStudentAnswers()) {
             addSubmissionToStudentAnswer(studentAnswer, submission12_5_6);
         }
+        submissionRepo.saveAllAndFlush(Arrays.asList(submission9_1_5, submission9_1_6, submission9_2_5, submission9_2_6, submission9_3_5, submission9_3_6, submission10_1_5, submission10_1_6, submission10_2_5, submission10_2_6, submission10_3_5, submission10_3_6, submission10_4_5, submission10_4_6, submission11_1_5, submission11_1_6, submission11_2_5, submission11_2_6, submission11_3_5, submission11_3_6, submission11_4_5, submission11_4_6, submission12_1_5, submission12_1_6, submission12_2_5, submission12_2_6, submission12_3_5, submission12_3_6, submission12_4_5, submission12_4_6, submission12_5_5, submission12_5_6));
 
         Grade grade9_1_5 = createGrade(86.3, student5, faculty4, course9, submission9_1_5);
         Grade grade9_1_6 = createGrade(88.7, student6, faculty4, course9, submission9_1_6);
@@ -1463,6 +1347,8 @@ public class Assignment9to12Seeder implements CommandLineRunner {
         Grade grade12_4_6 = createGrade(90.1, student6, faculty2, course12, submission12_4_6);
         Grade grade12_5_5 = createGrade(88.2, student5, faculty2, course12, submission12_5_5);
         Grade grade12_5_6 = createGrade(86.9, student6, faculty2, course12, submission12_5_6);
+        gradeRepo.saveAllAndFlush(Arrays.asList(grade9_1_5, grade9_2_5, grade9_3_5, grade10_1_5, grade10_2_5, grade10_3_5, grade10_4_5, grade11_1_5, grade11_2_5, grade11_3_5, grade11_4_5, grade12_1_5, grade12_2_5, grade12_3_5, grade12_4_5, grade12_5_5, grade9_1_6, grade9_2_6, grade9_3_6, grade10_1_6, grade10_2_6, grade10_3_6, grade10_4_6, grade11_1_6, grade11_2_6, grade11_3_6, grade11_4_6, grade12_1_6, grade12_2_6, grade12_3_6, grade12_4_6, grade12_5_6));
+
 
         CourseGrade courseGrade9_1_5 = createCourseGrade(student5, course9, 87.2, Arrays.asList(grade9_1_5, grade9_2_5, grade9_3_5));
         CourseGrade courseGrade9_1_6 = createCourseGrade(student6, course9, 88.67, Arrays.asList(grade9_1_6, grade9_2_6, grade9_3_6));
@@ -1475,6 +1361,7 @@ public class Assignment9to12Seeder implements CommandLineRunner {
 
         CourseGrade courseGrade12_1_5 = createCourseGrade(student5, course12, 87.88, Arrays.asList(grade12_1_5, grade12_2_5, grade12_3_5, grade12_4_5, grade12_5_5));
         CourseGrade courseGrade12_1_6 = createCourseGrade(student6, course12, 87.56, Arrays.asList(grade12_1_6, grade12_2_6, grade12_3_6, grade12_4_6, grade12_5_6));
+        courseGradeRepo.saveAllAndFlush(Arrays.asList(courseGrade9_1_5, courseGrade10_1_5, courseGrade11_1_5, courseGrade12_1_5, courseGrade9_1_6, courseGrade10_1_6, courseGrade11_1_6, courseGrade12_1_6));
 
         Feedback feedback9_1_5 = createFeedback("Excellent work, student5!", submission9_1_5);
         Feedback feedback9_1_6 = createFeedback("Great effort, student6!", submission9_1_6);
@@ -1523,6 +1410,7 @@ public class Assignment9to12Seeder implements CommandLineRunner {
 
         Feedback feedback12_5_5 = createFeedback("Excellent submission, student5!", submission12_5_5);
         Feedback feedback12_5_6 = createFeedback("Nice work, student6!", submission12_5_6);
+        feedbackRepo.saveAllAndFlush(Arrays.asList(feedback9_1_5, feedback9_1_6, feedback9_2_5, feedback9_2_6, feedback9_3_5, feedback9_3_6, feedback10_1_5, feedback10_1_6, feedback10_2_5, feedback10_2_6, feedback10_3_5, feedback10_3_6, feedback10_4_5, feedback10_4_6, feedback11_1_5, feedback11_1_6, feedback11_2_5, feedback11_2_6, feedback11_3_5, feedback11_3_6, feedback11_4_5, feedback11_4_6, feedback12_1_5, feedback12_1_6, feedback12_2_5, feedback12_2_6, feedback12_3_5, feedback12_3_6, feedback12_4_5, feedback12_4_6, feedback12_5_5, feedback12_5_6));
 
 
         course9.setGrades(Arrays.asList(grade9_1_5, grade9_1_6, grade9_2_5, grade9_2_6, grade9_3_5, grade9_3_6));

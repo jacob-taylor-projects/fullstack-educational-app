@@ -93,6 +93,21 @@ public class Assignment13to16Seeder implements CommandLineRunner {
 
         // Creating the assignment with the due date specified inline and including the teacher and syllabus
         Assignment assignment13_1 = createAssignment("Sequences and Series Assignment", faculty3, Date.from(LocalDate.of(2029, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+        Assignment assignment13_2 = createAssignment("Techniques of Integration Assignment", faculty3, Date.from(LocalDate.of(2029, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+        Assignment assignment13_3 = createAssignment("Multivariable Functions Assignment", faculty3, Date.from(LocalDate.of(2029, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+        Assignment assignment13_4 = createAssignment("Vector Calculus Assignment", faculty3, Date.from(LocalDate.of(2029, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+        Assignment assignment14_1 = createAssignment("Logic Assignment", faculty4, Date.from(LocalDate.of(2029, 9, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+        Assignment assignment14_2 = createAssignment("Set Theory Assignment", faculty4, Date.from(LocalDate.of(2029, 10, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+        Assignment assignment14_3 = createAssignment("Graph Theory Assignment", faculty4, Date.from(LocalDate.of(2029, 11, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+        Assignment assignment14_4 = createAssignment("Combinatorics Assignment", faculty4, Date.from(LocalDate.of(2029, 12, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+        Assignment assignment15_1 = createAssignment("Newton's Laws Assignment", faculty5, Date.from(LocalDate.of(2029, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus15, false);
+        Assignment assignment15_2 = createAssignment("Energy Principles Assignment", faculty5, Date.from(LocalDate.of(2029, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus15, false);
+        Assignment assignment15_3 = createAssignment("Motion Assignment", faculty5, Date.from(LocalDate.of(2029, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus15, false);
+        Assignment assignment16_1 = createAssignment("Atomic Structure Assignment", faculty1, Date.from(LocalDate.of(2029, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus16, false);
+        Assignment assignment16_2 = createAssignment("Chemical Bonding Assignment", faculty1, Date.from(LocalDate.of(2029, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus16, false);
+        Assignment assignment16_3 = createAssignment("Reactions Assignment", faculty1, Date.from(LocalDate.of(2029, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus16, false);
+        assignmentRepo.saveAllAndFlush(Arrays.asList(assignment13_1, assignment13_2, assignment13_3, assignment13_4, assignment14_1, assignment14_2, assignment14_3, assignment14_4, assignment15_1, assignment15_2, assignment15_3, assignment16_1, assignment16_2, assignment16_3));
+
         addStudentToAssignment(assignment13_1, student7);
         addStudentToAssignment(assignment13_1, student8);
 
@@ -121,7 +136,7 @@ public class Assignment13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Sequences and Series' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment13_2 = createAssignment("Techniques of Integration Assignment", faculty3, Date.from(LocalDate.of(2029, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+
         addStudentToAssignment(assignment13_2, student7);
         addStudentToAssignment(assignment13_2, student8);
 
@@ -150,7 +165,7 @@ public class Assignment13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Techniques of Integration' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment13_3 = createAssignment("Multivariable Functions Assignment", faculty3, Date.from(LocalDate.of(2029, 7, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+
         addStudentToAssignment(assignment13_3, student7);
         addStudentToAssignment(assignment13_3, student8);
 
@@ -179,7 +194,7 @@ public class Assignment13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Multivariable Functions' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment13_4 = createAssignment("Vector Calculus Assignment", faculty3, Date.from(LocalDate.of(2029, 8, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+
         addStudentToAssignment(assignment13_4, student7);
         addStudentToAssignment(assignment13_4, student8);
 
@@ -208,7 +223,7 @@ public class Assignment13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Vector Calculus' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment14_1 = createAssignment("Logic Assignment", faculty4, Date.from(LocalDate.of(2029, 9, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+
         addStudentToAssignment(assignment14_1, student7);
         addStudentToAssignment(assignment14_1, student8);
 
@@ -237,7 +252,7 @@ public class Assignment13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Logic' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment14_2 = createAssignment("Set Theory Assignment", faculty4, Date.from(LocalDate.of(2029, 10, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+
         addStudentToAssignment(assignment14_2, student7);
         addStudentToAssignment(assignment14_2, student8);
 
@@ -266,7 +281,7 @@ public class Assignment13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Set Theory' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment14_3 = createAssignment("Graph Theory Assignment", faculty4, Date.from(LocalDate.of(2029, 11, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+
         addStudentToAssignment(assignment14_3, student7);
         addStudentToAssignment(assignment14_3, student8);
 
@@ -295,7 +310,7 @@ public class Assignment13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Graph Theory' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment14_4 = createAssignment("Combinatorics Assignment", faculty4, Date.from(LocalDate.of(2029, 12, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+
         addStudentToAssignment(assignment14_4, student7);
         addStudentToAssignment(assignment14_4, student8);
 
@@ -324,7 +339,7 @@ public class Assignment13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Combinatorics' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment15_1 = createAssignment("Newton's Laws Assignment", faculty5, Date.from(LocalDate.of(2029, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus15, false);
+
         addStudentToAssignment(assignment15_1, student7);
         addStudentToAssignment(assignment15_1, student8);
 
@@ -353,7 +368,7 @@ public class Assignment13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Newton's Laws' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment15_2 = createAssignment("Energy Principles Assignment", faculty5, Date.from(LocalDate.of(2029, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus15, false);
+
         addStudentToAssignment(assignment15_2, student7);
         addStudentToAssignment(assignment15_2, student8);
 
@@ -382,7 +397,7 @@ public class Assignment13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Energy Principles' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment15_3 = createAssignment("Motion Assignment", faculty5, Date.from(LocalDate.of(2029, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus15, false);
+
         addStudentToAssignment(assignment15_3, student7);
         addStudentToAssignment(assignment15_3, student8);
 
@@ -411,7 +426,7 @@ public class Assignment13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Motion' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment16_1 = createAssignment("Atomic Structure Assignment", faculty1, Date.from(LocalDate.of(2029, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus16, false);
+
         addStudentToAssignment(assignment16_1, student7);
         addStudentToAssignment(assignment16_1, student8);
 
@@ -440,7 +455,7 @@ public class Assignment13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Atomic Structure' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment16_2 = createAssignment("Chemical Bonding Assignment", faculty1, Date.from(LocalDate.of(2029, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus16, false);
+
         addStudentToAssignment(assignment16_2, student7);
         addStudentToAssignment(assignment16_2, student8);
 
@@ -469,7 +484,6 @@ public class Assignment13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Assignment for 'Chemical Bonding' unit created with 10 problem answers, due date, faculty, and syllabus.");
 // Creating the assignment with the due date specified inline and including the teacher and syllabus
-        Assignment assignment16_3 = createAssignment("Reactions Assignment", faculty1, Date.from(LocalDate.of(2029, 6, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus16, false);
         addStudentToAssignment(assignment16_3, student7);
         addStudentToAssignment(assignment16_3, student8);
 
@@ -493,505 +507,405 @@ public class Assignment13to16Seeder implements CommandLineRunner {
         ProblemAnswer pa_16_3_5 = createProblemAnswer("What is a synthesis reaction?", "A synthesis reaction, also known as a combination reaction, occurs when two or more reactants combine to form a single product. The general form is A + B → AB.");
         addAssignmentToProblemAnswer(pa_16_3_5, assignment16_3);
         addProblemAnswerToAssignment(assignment16_3, pa_16_3_5);
+        problemAnswerRepo.saveAllAndFlush(Arrays.asList(pa_13_1_1, pa_13_1_2, pa_13_1_3, pa_13_1_4, pa_13_1_5, pa_13_2_1, pa_13_2_2, pa_13_2_3, pa_13_2_4, pa_13_2_5, pa_13_3_1, pa_13_3_2, pa_13_3_3, pa_13_3_4, pa_13_3_5, pa_13_4_1, pa_13_4_2, pa_13_4_3, pa_13_4_4, pa_13_4_5, pa_14_1_1, pa_14_1_2, pa_14_1_3, pa_14_1_4, pa_14_1_5, pa_14_2_1, pa_14_2_2, pa_14_2_3, pa_14_2_4, pa_14_2_5, pa_14_3_1, pa_14_3_2, pa_14_3_3, pa_14_3_4, pa_14_3_5, pa_14_4_1, pa_14_4_2, pa_14_4_3, pa_14_4_4, pa_14_4_5, pa_15_1_1, pa_15_1_2, pa_15_1_3, pa_15_1_4, pa_15_1_5, pa_15_2_1, pa_15_2_2, pa_15_2_3, pa_15_2_4, pa_15_2_5, pa_15_3_1, pa_15_3_2, pa_15_3_3, pa_15_3_4, pa_15_3_5, pa_16_1_1, pa_16_1_2, pa_16_1_3, pa_16_1_4, pa_16_1_5, pa_16_2_1, pa_16_2_2, pa_16_2_3, pa_16_2_4, pa_16_2_5, pa_16_3_1, pa_16_3_2, pa_16_3_3, pa_16_3_4, pa_16_3_5));
 
 
         // Output for confirmation
         System.out.println("Student answers created and added for both student5 and student6 for all 10 problem answers in assignment12_5.");
 // Creating StudentAnswer instances for student7
+        // Creating StudentAnswer instances for student7
         StudentAnswer sa13_1_1_student7 = createStudentAnswer(student7, pa_13_1_1, "A sequence is an ordered list of numbers or terms that follow a specific pattern or rule, with each term identified by its position in the list.");
-        addStudentAnswerToProblemAnswer(pa_13_1_1, sa13_1_1_student7);
-
         StudentAnswer sa13_1_2_student7 = createStudentAnswer(student7, pa_13_1_2, "A series is the sum of the terms of a sequence, which can be finite with a fixed number of terms or infinite with an infinite number of terms.");
-        addStudentAnswerToProblemAnswer(pa_13_1_2, sa13_1_2_student7);
-
         StudentAnswer sa13_1_3_student7 = createStudentAnswer(student7, pa_13_1_3, "A convergent series is a series whose terms approach a specific value as the number of terms increases, meaning the sum of the series approaches a finite limit.");
-        addStudentAnswerToProblemAnswer(pa_13_1_3, sa13_1_3_student7);
-
         StudentAnswer sa13_1_4_student7 = createStudentAnswer(student7, pa_13_1_4, "A divergent series is a series whose terms do not approach a specific value as the number of terms increases, meaning the sum of the series does not converge to a finite limit.");
-        addStudentAnswerToProblemAnswer(pa_13_1_4, sa13_1_4_student7);
-
         StudentAnswer sa13_1_5_student7 = createStudentAnswer(student7, pa_13_1_5, "A power series is an infinite series of the form Σa_n(x-c)^n, where a_n are the coefficients, x is the variable, and c is the center of the series, used to represent functions in terms of Taylor or Maclaurin series expansions.");
-        addStudentAnswerToProblemAnswer(pa_13_1_5, sa13_1_5_student7);
-
 
 // Creating StudentAnswer instances for student8
         StudentAnswer sa13_1_1_student8 = createStudentAnswer(student8, pa_13_1_1, "A sequence is an ordered list of numbers or terms that follow a specific pattern or rule, with each term identified by its position in the list.");
-        addStudentAnswerToProblemAnswer(pa_13_1_1, sa13_1_1_student8);
-
         StudentAnswer sa13_1_2_student8 = createStudentAnswer(student8, pa_13_1_2, "A series is the sum of the terms of a sequence, which can be finite with a fixed number of terms or infinite with an infinite number of terms.");
-        addStudentAnswerToProblemAnswer(pa_13_1_2, sa13_1_2_student8);
-
         StudentAnswer sa13_1_3_student8 = createStudentAnswer(student8, pa_13_1_3, "A convergent series is a series whose terms approach a specific value as the number of terms increases, meaning the sum of the series approaches a finite limit.");
-        addStudentAnswerToProblemAnswer(pa_13_1_3, sa13_1_3_student8);
-
         StudentAnswer sa13_1_4_student8 = createStudentAnswer(student8, pa_13_1_4, "A divergent series is a series whose terms do not approach a specific value as the number of terms increases, meaning the sum of the series does not converge to a finite limit.");
-        addStudentAnswerToProblemAnswer(pa_13_1_4, sa13_1_4_student8);
-
         StudentAnswer sa13_1_5_student8 = createStudentAnswer(student8, pa_13_1_5, "A power series is an infinite series of the form Σa_n(x-c)^n, where a_n are the coefficients, x is the variable, and c is the center of the series, used to represent functions in terms of Taylor or Maclaurin series expansions.");
-        addStudentAnswerToProblemAnswer(pa_13_1_5, sa13_1_5_student8);
 
 // Creating StudentAnswer instances for student7
         StudentAnswer sa13_2_1_student7 = createStudentAnswer(student7, pa_13_2_1, "Integration by parts is a method used to integrate the product of two functions, based on the formula ∫u dv = uv - ∫v du, where u and v are functions of x.");
-        addStudentAnswerToProblemAnswer(pa_13_2_1, sa13_2_1_student7);
-
         StudentAnswer sa13_2_2_student7 = createStudentAnswer(student7, pa_13_2_2, "Partial fraction decomposition breaks down a complex rational function into simpler fractions that can be integrated individually, useful for integrating rational functions.");
-        addStudentAnswerToProblemAnswer(pa_13_2_2, sa13_2_2_student7);
-
         StudentAnswer sa13_2_3_student7 = createStudentAnswer(student7, pa_13_2_3, "Trigonometric integrals involve integrals of functions with trigonometric functions like sine, cosine, and tangent. Techniques include using trigonometric identities and substitution.");
-        addStudentAnswerToProblemAnswer(pa_13_2_3, sa13_2_3_student7);
-
         StudentAnswer sa13_2_4_student7 = createStudentAnswer(student7, pa_13_2_4, "Improper integrals have infinite limits of integration or integrands that approach infinity within the integration interval, evaluated by taking the limit of the integral as it approaches the problematic point.");
-        addStudentAnswerToProblemAnswer(pa_13_2_4, sa13_2_4_student7);
-
         StudentAnswer sa13_2_5_student7 = createStudentAnswer(student7, pa_13_2_5, "Trigonometric substitution simplifies integrals by substituting trigonometric functions for expressions with square roots, useful for integrals involving radicals.");
-        addStudentAnswerToProblemAnswer(pa_13_2_5, sa13_2_5_student7);
-
 
 // Creating StudentAnswer instances for student8
         StudentAnswer sa13_2_1_student8 = createStudentAnswer(student8, pa_13_2_1, "Integration by parts is a method used to integrate the product of two functions, based on the formula ∫u dv = uv - ∫v du, where u and v are functions of x.");
-        addStudentAnswerToProblemAnswer(pa_13_2_1, sa13_2_1_student8);
-
         StudentAnswer sa13_2_2_student8 = createStudentAnswer(student8, pa_13_2_2, "Partial fraction decomposition breaks down a complex rational function into simpler fractions that can be integrated individually, useful for integrating rational functions.");
-        addStudentAnswerToProblemAnswer(pa_13_2_2, sa13_2_2_student8);
-
         StudentAnswer sa13_2_3_student8 = createStudentAnswer(student8, pa_13_2_3, "Trigonometric integrals involve integrals of functions with trigonometric functions like sine, cosine, and tangent. Techniques include using trigonometric identities and substitution.");
-        addStudentAnswerToProblemAnswer(pa_13_2_3, sa13_2_3_student8);
-
         StudentAnswer sa13_2_4_student8 = createStudentAnswer(student8, pa_13_2_4, "Improper integrals have infinite limits of integration or integrands that approach infinity within the integration interval, evaluated by taking the limit of the integral as it approaches the problematic point.");
-        addStudentAnswerToProblemAnswer(pa_13_2_4, sa13_2_4_student8);
-
         StudentAnswer sa13_2_5_student8 = createStudentAnswer(student8, pa_13_2_5, "Trigonometric substitution simplifies integrals by substituting trigonometric functions for expressions with square roots, useful for integrals involving radicals.");
-        addStudentAnswerToProblemAnswer(pa_13_2_5, sa13_2_5_student8);
 
 
 // Output for confirmation
         System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment13_2.");
 // Creating StudentAnswer instances for student7
+        // Creating StudentAnswer instances for student7
         StudentAnswer sa13_3_1_student7 = createStudentAnswer(student7, pa_13_3_1, "Multivariable functions have more than one input variable and model relationships involving multiple quantities, often represented as f(x, y, z).");
-        addStudentAnswerToProblemAnswer(pa_13_3_1, sa13_3_1_student7);
-
         StudentAnswer sa13_3_2_student7 = createStudentAnswer(student7, pa_13_3_2, "A partial derivative is the derivative of a multivariable function with respect to one variable, while keeping the other variables constant, measuring how the function changes as that variable changes.");
-        addStudentAnswerToProblemAnswer(pa_13_3_2, sa13_3_2_student7);
-
         StudentAnswer sa13_3_3_student7 = createStudentAnswer(student7, pa_13_3_3, "The gradient of a multivariable function is a vector pointing in the direction of the steepest ascent, calculated by taking the partial derivatives with respect to each variable and combining them into a vector.");
-        addStudentAnswerToProblemAnswer(pa_13_3_3, sa13_3_3_student7);
-
         StudentAnswer sa13_3_4_student7 = createStudentAnswer(student7, pa_13_3_4, "A multiple integral involves more than one variable and is used to calculate volumes, areas, and other quantities in higher dimensions, such as double and triple integrals.");
-        addStudentAnswerToProblemAnswer(pa_13_3_4, sa13_3_4_student7);
-
         StudentAnswer sa13_3_5_student7 = createStudentAnswer(student7, pa_13_3_5, "The Jacobian matrix is a matrix of all first-order partial derivatives of a multivariable function, used to analyze the function's behavior and perform coordinate transformations.");
-        addStudentAnswerToProblemAnswer(pa_13_3_5, sa13_3_5_student7);
 
 // Creating StudentAnswer instances for student8
         StudentAnswer sa13_3_1_student8 = createStudentAnswer(student8, pa_13_3_1, "Multivariable functions have more than one input variable and model relationships involving multiple quantities, often represented as f(x, y, z).");
-        addStudentAnswerToProblemAnswer(pa_13_3_1, sa13_3_1_student8);
-
         StudentAnswer sa13_3_2_student8 = createStudentAnswer(student8, pa_13_3_2, "A partial derivative is the derivative of a multivariable function with respect to one variable, while keeping the other variables constant, measuring how the function changes as that variable changes.");
-        addStudentAnswerToProblemAnswer(pa_13_3_2, sa13_3_2_student8);
-
         StudentAnswer sa13_3_3_student8 = createStudentAnswer(student8, pa_13_3_3, "The gradient of a multivariable function is a vector pointing in the direction of the steepest ascent, calculated by taking the partial derivatives with respect to each variable and combining them into a vector.");
-        addStudentAnswerToProblemAnswer(pa_13_3_3, sa13_3_3_student8);
-
         StudentAnswer sa13_3_4_student8 = createStudentAnswer(student8, pa_13_3_4, "A multiple integral involves more than one variable and is used to calculate volumes, areas, and other quantities in higher dimensions, such as double and triple integrals.");
-        addStudentAnswerToProblemAnswer(pa_13_3_4, sa13_3_4_student8);
-
         StudentAnswer sa13_3_5_student8 = createStudentAnswer(student8, pa_13_3_5, "The Jacobian matrix is a matrix of all first-order partial derivatives of a multivariable function, used to analyze the function's behavior and perform coordinate transformations.");
-        addStudentAnswerToProblemAnswer(pa_13_3_5, sa13_3_5_student8);
-
 
 // Output for confirmation
-        System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment13_3.");
+        System.out.println("Student answers created for student7 and student8 for all problem answers in assignment13_3.");
+
 // Creating StudentAnswer instances for student7
         StudentAnswer sa13_4_1_student7 = createStudentAnswer(student7, pa_13_4_1, "Vector calculus is the study of vector fields and their applications, involving operations like differentiation and integration of vector functions to solve problems with vector fields.");
-        addStudentAnswerToProblemAnswer(pa_13_4_1, sa13_4_1_student7);
-
         StudentAnswer sa13_4_2_student7 = createStudentAnswer(student7, pa_13_4_2, "A line integral evaluates the sum of a function along a curve, used to calculate quantities like work done by a force field along a path and circulation in fluid dynamics.");
-        addStudentAnswerToProblemAnswer(pa_13_4_2, sa13_4_2_student7);
-
         StudentAnswer sa13_4_3_student7 = createStudentAnswer(student7, pa_13_4_3, "A surface integral evaluates the sum of a function over a surface, used to calculate quantities like flux through a surface and surface area in three-dimensional space.");
-        addStudentAnswerToProblemAnswer(pa_13_4_3, sa13_4_3_student7);
-
         StudentAnswer sa13_4_4_student7 = createStudentAnswer(student7, pa_13_4_4, "Green's Theorem relates the line integral around a simple, closed curve to the double integral over the enclosed region, converting between line integrals and double integrals to analyze two-dimensional vector fields.");
-        addStudentAnswerToProblemAnswer(pa_13_4_4, sa13_4_4_student7);
-
         StudentAnswer sa13_4_5_student7 = createStudentAnswer(student7, pa_13_4_5, "Stokes' Theorem relates the surface integral of the curl of a vector field over a surface to the line integral of the vector field around the surface's boundary, generalizing Green's Theorem to three dimensions.");
-        addStudentAnswerToProblemAnswer(pa_13_4_5, sa13_4_5_student7);
-
 
 // Creating StudentAnswer instances for student8
         StudentAnswer sa13_4_1_student8 = createStudentAnswer(student8, pa_13_4_1, "Vector calculus is the study of vector fields and their applications, involving operations like differentiation and integration of vector functions to solve problems with vector fields.");
-        addStudentAnswerToProblemAnswer(pa_13_4_1, sa13_4_1_student8);
-
         StudentAnswer sa13_4_2_student8 = createStudentAnswer(student8, pa_13_4_2, "A line integral evaluates the sum of a function along a curve, used to calculate quantities like work done by a force field along a path and circulation in fluid dynamics.");
-        addStudentAnswerToProblemAnswer(pa_13_4_2, sa13_4_2_student8);
-
         StudentAnswer sa13_4_3_student8 = createStudentAnswer(student8, pa_13_4_3, "A surface integral evaluates the sum of a function over a surface, used to calculate quantities like flux through a surface and surface area in three-dimensional space.");
-        addStudentAnswerToProblemAnswer(pa_13_4_3, sa13_4_3_student8);
-
         StudentAnswer sa13_4_4_student8 = createStudentAnswer(student8, pa_13_4_4, "Green's Theorem relates the line integral around a simple, closed curve to the double integral over the enclosed region, converting between line integrals and double integrals to analyze two-dimensional vector fields.");
-        addStudentAnswerToProblemAnswer(pa_13_4_4, sa13_4_4_student8);
-
         StudentAnswer sa13_4_5_student8 = createStudentAnswer(student8, pa_13_4_5, "Stokes' Theorem relates the surface integral of the curl of a vector field over a surface to the line integral of the vector field around the surface's boundary, generalizing Green's Theorem to three dimensions.");
-        addStudentAnswerToProblemAnswer(pa_13_4_5, sa13_4_5_student8);
+
+// Output for confirmation
+        System.out.println("Student answers created for student7 and student8 for all problem answers in assignment13_4.");
 
 
 // Output for confirmation
         System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment13_4.");
 // Creating StudentAnswer instances for student7
+        // Creating StudentAnswer instances for student7
         StudentAnswer sa14_1_1_student7 = createStudentAnswer(student7, pa_14_1_1, "Propositional logic deals with propositions, which are statements that can be true or false, and uses logical connectives like AND, OR, NOT, and IMPLIES to form complex statements.");
-        addStudentAnswerToProblemAnswer(pa_14_1_1, sa14_1_1_student7);
-
         StudentAnswer sa14_1_2_student7 = createStudentAnswer(student7, pa_14_1_2, "Predicate logic, or first-order logic, extends propositional logic by dealing with predicates, which are statements with variables, and uses quantifiers like FOR ALL and THERE EXISTS for more expressive statements.");
-        addStudentAnswerToProblemAnswer(pa_14_1_2, sa14_1_2_student7);
-
         StudentAnswer sa14_1_3_student7 = createStudentAnswer(student7, pa_14_1_3, "Logical connectives are symbols or words used to connect propositions and form complex logical statements. Common logical connectives include AND (∧), OR (∨), NOT (¬), IMPLIES (→), and IF AND ONLY IF (↔).");
-        addStudentAnswerToProblemAnswer(pa_14_1_3, sa14_1_3_student7);
-
         StudentAnswer sa14_1_4_student7 = createStudentAnswer(student7, pa_14_1_4, "A truth table determines the truth value of a logical expression based on all possible combinations of truth values for its components, useful for analyzing and verifying logical statements.");
-        addStudentAnswerToProblemAnswer(pa_14_1_4, sa14_1_4_student7);
-
         StudentAnswer sa14_1_5_student7 = createStudentAnswer(student7, pa_14_1_5, "A logical argument is a sequence of propositions leading to a conclusion. An argument is valid if the conclusion logically follows from the premises, and sound if the premises are true.");
-        addStudentAnswerToProblemAnswer(pa_14_1_5, sa14_1_5_student7);
-
 
 // Creating StudentAnswer instances for student8
         StudentAnswer sa14_1_1_student8 = createStudentAnswer(student8, pa_14_1_1, "Propositional logic deals with propositions, which are statements that can be true or false, and uses logical connectives like AND, OR, NOT, and IMPLIES to form complex statements.");
-        addStudentAnswerToProblemAnswer(pa_14_1_1, sa14_1_1_student8);
-
         StudentAnswer sa14_1_2_student8 = createStudentAnswer(student8, pa_14_1_2, "Predicate logic, or first-order logic, extends propositional logic by dealing with predicates, which are statements with variables, and uses quantifiers like FOR ALL and THERE EXISTS for more expressive statements.");
-        addStudentAnswerToProblemAnswer(pa_14_1_2, sa14_1_2_student8);
-
         StudentAnswer sa14_1_3_student8 = createStudentAnswer(student8, pa_14_1_3, "Logical connectives are symbols or words used to connect propositions and form complex logical statements. Common logical connectives include AND (∧), OR (∨), NOT (¬), IMPLIES (→), and IF AND ONLY IF (↔).");
-        addStudentAnswerToProblemAnswer(pa_14_1_3, sa14_1_3_student8);
-
         StudentAnswer sa14_1_4_student8 = createStudentAnswer(student8, pa_14_1_4, "A truth table determines the truth value of a logical expression based on all possible combinations of truth values for its components, useful for analyzing and verifying logical statements.");
-        addStudentAnswerToProblemAnswer(pa_14_1_4, sa14_1_4_student8);
-
         StudentAnswer sa14_1_5_student8 = createStudentAnswer(student8, pa_14_1_5, "A logical argument is a sequence of propositions leading to a conclusion. An argument is valid if the conclusion logically follows from the premises, and sound if the premises are true.");
-        addStudentAnswerToProblemAnswer(pa_14_1_5, sa14_1_5_student8);
 
 // Output for confirmation
-        System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment14_1.");
+        System.out.println("Student answers created for student7 and student8 for all problem answers in assignment14_1.");
+
 // Creating StudentAnswer instances for student7
         StudentAnswer sa14_2_1_student7 = createStudentAnswer(student7, pa_14_2_1, "A set is a collection of distinct objects, considered as an object in its own right, fundamental in mathematics and used to define various concepts.");
-        addStudentAnswerToProblemAnswer(pa_14_2_1, sa14_2_1_student7);
-
         StudentAnswer sa14_2_2_student7 = createStudentAnswer(student7, pa_14_2_2, "A subset is a set whose elements are all contained within another set. If A is a subset of B, every element of A is also an element of B.");
-        addStudentAnswerToProblemAnswer(pa_14_2_2, sa14_2_2_student7);
-
         StudentAnswer sa14_2_3_student7 = createStudentAnswer(student7, pa_14_2_3, "The union of two sets is a set containing all the elements of both sets. The union of sets A and B is denoted by A ∪ B and includes all elements in A, B, or both.");
-        addStudentAnswerToProblemAnswer(pa_14_2_3, sa14_2_3_student7);
-
         StudentAnswer sa14_2_4_student7 = createStudentAnswer(student7, pa_14_2_4, "The intersection of two sets is a set containing only the elements that are common to both sets. The intersection of sets A and B is denoted by A ∩ B and includes all elements in both A and B.");
-        addStudentAnswerToProblemAnswer(pa_14_2_4, sa14_2_4_student7);
-
         StudentAnswer sa14_2_5_student7 = createStudentAnswer(student7, pa_14_2_5, "The difference between two sets is a set containing the elements of one set that are not in the other. The difference of sets A and B is denoted by A - B and includes all elements in A but not in B.");
-        addStudentAnswerToProblemAnswer(pa_14_2_5, sa14_2_5_student7);
-
 
 // Creating StudentAnswer instances for student8
         StudentAnswer sa14_2_1_student8 = createStudentAnswer(student8, pa_14_2_1, "A set is a collection of distinct objects, considered as an object in its own right, fundamental in mathematics and used to define various concepts.");
-        addStudentAnswerToProblemAnswer(pa_14_2_1, sa14_2_1_student8);
-
         StudentAnswer sa14_2_2_student8 = createStudentAnswer(student8, pa_14_2_2, "A subset is a set whose elements are all contained within another set. If A is a subset of B, every element of A is also an element of B.");
-        addStudentAnswerToProblemAnswer(pa_14_2_2, sa14_2_2_student8);
-
         StudentAnswer sa14_2_3_student8 = createStudentAnswer(student8, pa_14_2_3, "The union of two sets is a set containing all the elements of both sets. The union of sets A and B is denoted by A ∪ B and includes all elements in A, B, or both.");
-        addStudentAnswerToProblemAnswer(pa_14_2_3, sa14_2_3_student8);
-
         StudentAnswer sa14_2_4_student8 = createStudentAnswer(student8, pa_14_2_4, "The intersection of two sets is a set containing only the elements that are common to both sets. The intersection of sets A and B is denoted by A ∩ B and includes all elements in both A and B.");
-        addStudentAnswerToProblemAnswer(pa_14_2_4, sa14_2_4_student8);
-
         StudentAnswer sa14_2_5_student8 = createStudentAnswer(student8, pa_14_2_5, "The difference between two sets is a set containing the elements of one set that are not in the other. The difference of sets A and B is denoted by A - B and includes all elements in A but not in B.");
-        addStudentAnswerToProblemAnswer(pa_14_2_5, sa14_2_5_student8);
 
 
 // Output for confirmation
         System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment14_2.");
 // Creating StudentAnswer instances for student7
+        // Creating StudentAnswer instances for student7
         StudentAnswer sa14_3_1_student7 = createStudentAnswer(student7, pa_14_3_1, "Graph theory is the study of graphs as mathematical structures used to model pairwise relations between objects, involving the analysis of vertices (nodes) and edges (connections) that form graphs.");
-        addStudentAnswerToProblemAnswer(pa_14_3_1, sa14_3_1_student7);
-
         StudentAnswer sa14_3_2_student7 = createStudentAnswer(student7, pa_14_3_2, "A directed graph (or digraph) is a graph in which edges have a direction, indicated by arrows, showing the relationship between two vertices, like a one-way street or hierarchy.");
-        addStudentAnswerToProblemAnswer(pa_14_3_2, sa14_3_2_student7);
-
         StudentAnswer sa14_3_3_student7 = createStudentAnswer(student7, pa_14_3_3, "An undirected graph is a graph in which edges do not have a direction. The connections between vertices are bidirectional, meaning there is no distinction between the two endpoints of an edge.");
-        addStudentAnswerToProblemAnswer(pa_14_3_3, sa14_3_3_student7);
-
         StudentAnswer sa14_3_4_student7 = createStudentAnswer(student7, pa_14_3_4, "A connected graph is a graph in which there is a path between any two vertices, meaning all vertices in the graph are reachable from any other vertex.");
-        addStudentAnswerToProblemAnswer(pa_14_3_4, sa14_3_4_student7);
-
         StudentAnswer sa14_3_5_student7 = createStudentAnswer(student7, pa_14_3_5, "A cycle in a graph is a path that starts and ends at the same vertex, with all edges and vertices being distinct except for the starting and ending vertex, important for analyzing graph structure and properties.");
-        addStudentAnswerToProblemAnswer(pa_14_3_5, sa14_3_5_student7);
-
 
 // Creating StudentAnswer instances for student8
         StudentAnswer sa14_3_1_student8 = createStudentAnswer(student8, pa_14_3_1, "Graph theory is the study of graphs as mathematical structures used to model pairwise relations between objects, involving the analysis of vertices (nodes) and edges (connections) that form graphs.");
-        addStudentAnswerToProblemAnswer(pa_14_3_1, sa14_3_1_student8);
-
         StudentAnswer sa14_3_2_student8 = createStudentAnswer(student8, pa_14_3_2, "A directed graph (or digraph) is a graph in which edges have a direction, indicated by arrows, showing the relationship between two vertices, like a one-way street or hierarchy.");
-        addStudentAnswerToProblemAnswer(pa_14_3_2, sa14_3_2_student8);
-
         StudentAnswer sa14_3_3_student8 = createStudentAnswer(student8, pa_14_3_3, "An undirected graph is a graph in which edges do not have a direction. The connections between vertices are bidirectional, meaning there is no distinction between the two endpoints of an edge.");
-        addStudentAnswerToProblemAnswer(pa_14_3_3, sa14_3_3_student8);
-
         StudentAnswer sa14_3_4_student8 = createStudentAnswer(student8, pa_14_3_4, "A connected graph is a graph in which there is a path between any two vertices, meaning all vertices in the graph are reachable from any other vertex.");
-        addStudentAnswerToProblemAnswer(pa_14_3_4, sa14_3_4_student8);
-
         StudentAnswer sa14_3_5_student8 = createStudentAnswer(student8, pa_14_3_5, "A cycle in a graph is a path that starts and ends at the same vertex, with all edges and vertices being distinct except for the starting and ending vertex, important for analyzing graph structure and properties.");
-        addStudentAnswerToProblemAnswer(pa_14_3_5, sa14_3_5_student8);
-
 
 // Output for confirmation
-        System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment14_3.");
+        System.out.println("Student answers created for student7 and student8 for all problem answers in assignment14_3.");
+
 // Creating StudentAnswer instances for student7
         StudentAnswer sa14_4_1_student7 = createStudentAnswer(student7, pa_14_4_1, "Combinatorics is the study of counting, arrangement, and combination of objects, dealing with problems related to enumeration and combination of discrete structures.");
-        addStudentAnswerToProblemAnswer(pa_14_4_1, sa14_4_1_student7);
-
         StudentAnswer sa14_4_2_student7 = createStudentAnswer(student7, pa_14_4_2, "Permutations are arrangements of objects in a specific order. The number of permutations of n distinct objects is given by n! (n factorial), the product of all positive integers up to n.");
-        addStudentAnswerToProblemAnswer(pa_14_4_2, sa14_4_2_student7);
-
         StudentAnswer sa14_4_3_student7 = createStudentAnswer(student7, pa_14_4_3, "Combinations are selections of objects without regard to order. The number of combinations of n objects taken r at a time is given by C(n, r) = n! / [r!(n-r)!], known as binomial coefficients.");
-        addStudentAnswerToProblemAnswer(pa_14_4_3, sa14_4_3_student7);
-
         StudentAnswer sa14_4_4_student7 = createStudentAnswer(student7, pa_14_4_4, "The principle of multiplication states that if there are m ways to do one thing and n ways to do another, there are m * n ways to do both, a fundamental rule in counting and combinatorics.");
-        addStudentAnswerToProblemAnswer(pa_14_4_4, sa14_4_4_student7);
-
         StudentAnswer sa14_4_5_student7 = createStudentAnswer(student7, pa_14_4_5, "The principle of addition states that if there are m ways to do one thing and n ways to do another, and the two events are mutually exclusive, there are m + n ways to do either, used to combine disjoint sets.");
-        addStudentAnswerToProblemAnswer(pa_14_4_5, sa14_4_5_student7);
-
 
 // Creating StudentAnswer instances for student8
         StudentAnswer sa14_4_1_student8 = createStudentAnswer(student8, pa_14_4_1, "Combinatorics is the study of counting, arrangement, and combination of objects, dealing with problems related to enumeration and combination of discrete structures.");
-        addStudentAnswerToProblemAnswer(pa_14_4_1, sa14_4_1_student8);
-
         StudentAnswer sa14_4_2_student8 = createStudentAnswer(student8, pa_14_4_2, "Permutations are arrangements of objects in a specific order. The number of permutations of n distinct objects is given by n! (n factorial), the product of all positive integers up to n.");
-        addStudentAnswerToProblemAnswer(pa_14_4_2, sa14_4_2_student8);
-
         StudentAnswer sa14_4_3_student8 = createStudentAnswer(student8, pa_14_4_3, "Combinations are selections of objects without regard to order. The number of combinations of n objects taken r at a time is given by C(n, r) = n! / [r!(n-r)!], known as binomial coefficients.");
-        addStudentAnswerToProblemAnswer(pa_14_4_3, sa14_4_3_student8);
-
         StudentAnswer sa14_4_4_student8 = createStudentAnswer(student8, pa_14_4_4, "The principle of multiplication states that if there are m ways to do one thing and n ways to do another, there are m * n ways to do both, a fundamental rule in counting and combinatorics.");
-        addStudentAnswerToProblemAnswer(pa_14_4_4, sa14_4_4_student8);
-
         StudentAnswer sa14_4_5_student8 = createStudentAnswer(student8, pa_14_4_5, "The principle of addition states that if there are m ways to do one thing and n ways to do another, and the two events are mutually exclusive, there are m + n ways to do either, used to combine disjoint sets.");
-        addStudentAnswerToProblemAnswer(pa_14_4_5, sa14_4_5_student8);
 
 // Output for confirmation
         System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment14_4.");
 // Creating StudentAnswer instances for student7
+        // Creating StudentAnswer instances for student7
         StudentAnswer sa15_1_1_student7 = createStudentAnswer(student7, pa_15_1_1, "Newton's First Law of Motion, also known as the law of inertia, states that an object will remain at rest or in uniform motion in a straight line unless acted upon by an external force.");
-        addStudentAnswerToProblemAnswer(pa_15_1_1, sa15_1_1_student7);
-
         StudentAnswer sa15_1_2_student7 = createStudentAnswer(student7, pa_15_1_2, "Newton's Second Law of Motion states that the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass. The law is mathematically expressed as F = ma, where F is the net force, m is the mass, and a is the acceleration.");
-        addStudentAnswerToProblemAnswer(pa_15_1_2, sa15_1_2_student7);
-
         StudentAnswer sa15_1_3_student7 = createStudentAnswer(student7, pa_15_1_3, "Newton's Third Law of Motion states that for every action, there is an equal and opposite reaction. This means that forces always occur in pairs; if one object exerts a force on another, the second object exerts an equal and opposite force on the first.");
-        addStudentAnswerToProblemAnswer(pa_15_1_3, sa15_1_3_student7);
-
         StudentAnswer sa15_1_4_student7 = createStudentAnswer(student7, pa_15_1_4, "Inertia is the property of an object that resists changes to its state of motion. An object with greater mass has greater inertia and requires more force to change its motion.");
-        addStudentAnswerToProblemAnswer(pa_15_1_4, sa15_1_4_student7);
-
         StudentAnswer sa15_1_5_student7 = createStudentAnswer(student7, pa_15_1_5, "The equation of motion for an object under constant acceleration is given by the kinematic equations: \n1. v = u + at \n2. s = ut + 0.5at^2 \n3. v^2 = u^2 + 2as \nwhere u is the initial velocity, v is the final velocity, a is the acceleration, t is the time, and s is the displacement.");
-        addStudentAnswerToProblemAnswer(pa_15_1_5, sa15_1_5_student7);
-
 
 // Creating StudentAnswer instances for student8
         StudentAnswer sa15_1_1_student8 = createStudentAnswer(student8, pa_15_1_1, "Newton's First Law of Motion, also known as the law of inertia, states that an object will remain at rest or in uniform motion in a straight line unless acted upon by an external force.");
-        addStudentAnswerToProblemAnswer(pa_15_1_1, sa15_1_1_student8);
-
         StudentAnswer sa15_1_2_student8 = createStudentAnswer(student8, pa_15_1_2, "Newton's Second Law of Motion states that the acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass. The law is mathematically expressed as F = ma, where F is the net force, m is the mass, and a is the acceleration.");
-        addStudentAnswerToProblemAnswer(pa_15_1_2, sa15_1_2_student8);
-
         StudentAnswer sa15_1_3_student8 = createStudentAnswer(student8, pa_15_1_3, "Newton's Third Law of Motion states that for every action, there is an equal and opposite reaction. This means that forces always occur in pairs; if one object exerts a force on another, the second object exerts an equal and opposite force on the first.");
-        addStudentAnswerToProblemAnswer(pa_15_1_3, sa15_1_3_student8);
-
         StudentAnswer sa15_1_4_student8 = createStudentAnswer(student8, pa_15_1_4, "Inertia is the property of an object that resists changes to its state of motion. An object with greater mass has greater inertia and requires more force to change its motion.");
-        addStudentAnswerToProblemAnswer(pa_15_1_4, sa15_1_4_student8);
-
         StudentAnswer sa15_1_5_student8 = createStudentAnswer(student8, pa_15_1_5, "The equation of motion for an object under constant acceleration is given by the kinematic equations: \n1. v = u + at \n2. s = ut + 0.5at^2 \n3. v^2 = u^2 + 2as \nwhere u is the initial velocity, v is the final velocity, a is the acceleration, t is the time, and s is the displacement.");
-        addStudentAnswerToProblemAnswer(pa_15_1_5, sa15_1_5_student8);
-
 
 // Output for confirmation
-        System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment15_1.");
+        System.out.println("Student answers created for student7 and student8 for all problem answers in assignment15_1.");
+
 // Creating StudentAnswer instances for student7
         StudentAnswer sa15_2_1_student7 = createStudentAnswer(student7, pa_15_2_1, "Kinetic energy is the energy possessed by an object due to its motion. It is calculated using the formula KE = 0.5 * m * v^2, where m is the mass of the object and v is its velocity.");
-        addStudentAnswerToProblemAnswer(pa_15_2_1, sa15_2_1_student7);
-
         StudentAnswer sa15_2_2_student7 = createStudentAnswer(student7, pa_15_2_2, "Potential energy is the energy stored in an object due to its position or configuration. Gravitational potential energy is calculated using the formula PE = mgh, where m is the mass, g is the acceleration due to gravity, and h is the height above a reference level.");
-        addStudentAnswerToProblemAnswer(pa_15_2_2, sa15_2_2_student7);
-
         StudentAnswer sa15_2_3_student7 = createStudentAnswer(student7, pa_15_2_3, "The work-energy principle states that the work done on an object is equal to the change in its kinetic energy. It is mathematically expressed as W = ΔKE, where W is the work done and ΔKE is the change in kinetic energy.");
-        addStudentAnswerToProblemAnswer(pa_15_2_3, sa15_2_3_student7);
-
         StudentAnswer sa15_2_4_student7 = createStudentAnswer(student7, pa_15_2_4, "The conservation of energy principle states that energy cannot be created or destroyed, only transferred or transformed from one form to another. The total energy of an isolated system remains constant over time.");
-        addStudentAnswerToProblemAnswer(pa_15_2_4, sa15_2_4_student7);
-
         StudentAnswer sa15_2_5_student7 = createStudentAnswer(student7, pa_15_2_5, "Mechanical energy is the sum of kinetic and potential energy in a system. It is the energy associated with the motion and position of an object. Mechanical energy can be conserved in the absence of non-conservative forces such as friction.");
-        addStudentAnswerToProblemAnswer(pa_15_2_5, sa15_2_5_student7);
-
 
 // Creating StudentAnswer instances for student8
         StudentAnswer sa15_2_1_student8 = createStudentAnswer(student8, pa_15_2_1, "Kinetic energy is the energy possessed by an object due to its motion. It is calculated using the formula KE = 0.5 * m * v^2, where m is the mass of the object and v is its velocity.");
-        addStudentAnswerToProblemAnswer(pa_15_2_1, sa15_2_1_student8);
-
         StudentAnswer sa15_2_2_student8 = createStudentAnswer(student8, pa_15_2_2, "Potential energy is the energy stored in an object due to its position or configuration. Gravitational potential energy is calculated using the formula PE = mgh, where m is the mass, g is the acceleration due to gravity, and h is the height above a reference level.");
-        addStudentAnswerToProblemAnswer(pa_15_2_2, sa15_2_2_student8);
-
         StudentAnswer sa15_2_3_student8 = createStudentAnswer(student8, pa_15_2_3, "The work-energy principle states that the work done on an object is equal to the change in its kinetic energy. It is mathematically expressed as W = ΔKE, where W is the work done and ΔKE is the change in kinetic energy.");
-        addStudentAnswerToProblemAnswer(pa_15_2_3, sa15_2_3_student8);
-
         StudentAnswer sa15_2_4_student8 = createStudentAnswer(student8, pa_15_2_4, "The conservation of energy principle states that energy cannot be created or destroyed, only transferred or transformed from one form to another. The total energy of an isolated system remains constant over time.");
-        addStudentAnswerToProblemAnswer(pa_15_2_4, sa15_2_4_student8);
-
         StudentAnswer sa15_2_5_student8 = createStudentAnswer(student8, pa_15_2_5, "Mechanical energy is the sum of kinetic and potential energy in a system. It is the energy associated with the motion and position of an object. Mechanical energy can be conserved in the absence of non-conservative forces such as friction.");
-        addStudentAnswerToProblemAnswer(pa_15_2_5, sa15_2_5_student8);
-
 
 // Output for confirmation
-        System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment15_2.");
-// Creating StudentAnswer instances for student7
+        System.out.println("Student answers created for student7 and student8 for all problem answers in assignment15_2.");
+
+        // Creating StudentAnswer instances for student7
         StudentAnswer sa15_3_1_student7 = createStudentAnswer(student7, pa_15_3_1, "Linear motion is the movement of an object along a straight path. It is described by parameters such as displacement, velocity, and acceleration.");
-        addStudentAnswerToProblemAnswer(pa_15_3_1, sa15_3_1_student7);
-
         StudentAnswer sa15_3_2_student7 = createStudentAnswer(student7, pa_15_3_2, "Projectile motion is the curved path an object follows when it is thrown or projected near the Earth's surface. It is influenced by gravity and initial velocity, and its motion can be analyzed using the equations of motion.");
-        addStudentAnswerToProblemAnswer(pa_15_3_2, sa15_3_2_student7);
-
         StudentAnswer sa15_3_3_student7 = createStudentAnswer(student7, pa_15_3_3, "Circular motion is the movement of an object along a circular path. It is characterized by parameters such as angular displacement, angular velocity, and centripetal acceleration.");
-        addStudentAnswerToProblemAnswer(pa_15_3_3, sa15_3_3_student7);
-
         StudentAnswer sa15_3_4_student7 = createStudentAnswer(student7, pa_15_3_4, "Velocity is a vector quantity that describes the rate of change of an object's displacement with respect to time. It has both magnitude and direction and is measured in meters per second (m/s).");
-        addStudentAnswerToProblemAnswer(pa_15_3_4, sa15_3_4_student7);
-
         StudentAnswer sa15_3_5_student7 = createStudentAnswer(student7, pa_15_3_5, "Acceleration is a vector quantity that describes the rate of change of an object's velocity with respect to time. It is measured in meters per second squared (m/s^2).");
-        addStudentAnswerToProblemAnswer(pa_15_3_5, sa15_3_5_student7);
-
 
 // Creating StudentAnswer instances for student8
         StudentAnswer sa15_3_1_student8 = createStudentAnswer(student8, pa_15_3_1, "Linear motion is the movement of an object along a straight path. It is described by parameters such as displacement, velocity, and acceleration.");
-        addStudentAnswerToProblemAnswer(pa_15_3_1, sa15_3_1_student8);
-
         StudentAnswer sa15_3_2_student8 = createStudentAnswer(student8, pa_15_3_2, "Projectile motion is the curved path an object follows when it is thrown or projected near the Earth's surface. It is influenced by gravity and initial velocity, and its motion can be analyzed using the equations of motion.");
-        addStudentAnswerToProblemAnswer(pa_15_3_2, sa15_3_2_student8);
-
         StudentAnswer sa15_3_3_student8 = createStudentAnswer(student8, pa_15_3_3, "Circular motion is the movement of an object along a circular path. It is characterized by parameters such as angular displacement, angular velocity, and centripetal acceleration.");
-        addStudentAnswerToProblemAnswer(pa_15_3_3, sa15_3_3_student8);
-
         StudentAnswer sa15_3_4_student8 = createStudentAnswer(student8, pa_15_3_4, "Velocity is a vector quantity that describes the rate of change of an object's displacement with respect to time. It has both magnitude and direction and is measured in meters per second (m/s).");
-        addStudentAnswerToProblemAnswer(pa_15_3_4, sa15_3_4_student8);
-
         StudentAnswer sa15_3_5_student8 = createStudentAnswer(student8, pa_15_3_5, "Acceleration is a vector quantity that describes the rate of change of an object's velocity with respect to time. It is measured in meters per second squared (m/s^2).");
-        addStudentAnswerToProblemAnswer(pa_15_3_5, sa15_3_5_student8);
 
 // Output for confirmation
         System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment15_3.");
 // Creating StudentAnswer instances for student7
+        // Creating StudentAnswer instances for student7
         StudentAnswer sa16_1_1_student7 = createStudentAnswer(student7, pa_16_1_1, "The main subatomic particles in an atom are protons, neutrons, and electrons. Protons and neutrons are located in the nucleus, while electrons orbit the nucleus in electron shells.");
-        addStudentAnswerToProblemAnswer(pa_16_1_1, sa16_1_1_student7);
-
         StudentAnswer sa16_1_2_student7 = createStudentAnswer(student7, pa_16_1_2, "The atomic number is the number of protons in the nucleus of an atom. It defines the element and its position in the periodic table. For example, the atomic number of hydrogen is 1, and the atomic number of carbon is 6.");
-        addStudentAnswerToProblemAnswer(pa_16_1_2, sa16_1_2_student7);
-
         StudentAnswer sa16_1_3_student7 = createStudentAnswer(student7, pa_16_1_3, "The mass number is the total number of protons and neutrons in the nucleus of an atom. It is used to distinguish between different isotopes of an element. For example, carbon-12 has a mass number of 12 (6 protons and 6 neutrons).");
-        addStudentAnswerToProblemAnswer(pa_16_1_3, sa16_1_3_student7);
-
         StudentAnswer sa16_1_4_student7 = createStudentAnswer(student7, pa_16_1_4, "Isotopes are atoms of the same element that have different numbers of neutrons and, therefore, different mass numbers. For example, carbon-12 and carbon-14 are isotopes of carbon.");
-        addStudentAnswerToProblemAnswer(pa_16_1_4, sa16_1_4_student7);
-
         StudentAnswer sa16_1_5_student7 = createStudentAnswer(student7, pa_16_1_5, "Electron configuration is the distribution of electrons in an atom's electron shells. It follows the Aufbau principle, Pauli exclusion principle, and Hund's rule. For example, the electron configuration of carbon is 1s^2 2s^2 2p^2.");
-        addStudentAnswerToProblemAnswer(pa_16_1_5, sa16_1_5_student7);
-
 
 // Creating StudentAnswer instances for student8
         StudentAnswer sa16_1_1_student8 = createStudentAnswer(student8, pa_16_1_1, "The main subatomic particles in an atom are protons, neutrons, and electrons. Protons and neutrons are located in the nucleus, while electrons orbit the nucleus in electron shells.");
-        addStudentAnswerToProblemAnswer(pa_16_1_1, sa16_1_1_student8);
-
         StudentAnswer sa16_1_2_student8 = createStudentAnswer(student8, pa_16_1_2, "The atomic number is the number of protons in the nucleus of an atom. It defines the element and its position in the periodic table. For example, the atomic number of hydrogen is 1, and the atomic number of carbon is 6.");
-        addStudentAnswerToProblemAnswer(pa_16_1_2, sa16_1_2_student8);
-
         StudentAnswer sa16_1_3_student8 = createStudentAnswer(student8, pa_16_1_3, "The mass number is the total number of protons and neutrons in the nucleus of an atom. It is used to distinguish between different isotopes of an element. For example, carbon-12 has a mass number of 12 (6 protons and 6 neutrons).");
-        addStudentAnswerToProblemAnswer(pa_16_1_3, sa16_1_3_student8);
-
         StudentAnswer sa16_1_4_student8 = createStudentAnswer(student8, pa_16_1_4, "Isotopes are atoms of the same element that have different numbers of neutrons and, therefore, different mass numbers. For example, carbon-12 and carbon-14 are isotopes of carbon.");
-        addStudentAnswerToProblemAnswer(pa_16_1_4, sa16_1_4_student8);
-
         StudentAnswer sa16_1_5_student8 = createStudentAnswer(student8, pa_16_1_5, "Electron configuration is the distribution of electrons in an atom's electron shells. It follows the Aufbau principle, Pauli exclusion principle, and Hund's rule. For example, the electron configuration of carbon is 1s^2 2s^2 2p^2.");
-        addStudentAnswerToProblemAnswer(pa_16_1_5, sa16_1_5_student8);
 
 // Output for confirmation
-        System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment16_1.");
+        System.out.println("Student answers created for student7 and student8 for all problem answers in assignment16_1.");
+
 // Creating StudentAnswer instances for student7
         StudentAnswer sa16_2_1_student7 = createStudentAnswer(student7, pa_16_2_1, "A chemical bond is a force of attraction that holds atoms together in a molecule or compound. It is formed by the sharing or transfer of electrons between atoms.");
-        addStudentAnswerToProblemAnswer(pa_16_2_1, sa16_2_1_student7);
-
         StudentAnswer sa16_2_2_student7 = createStudentAnswer(student7, pa_16_2_2, "An ionic bond is a type of chemical bond formed by the electrostatic attraction between oppositely charged ions. It occurs when one atom donates an electron to another, resulting in the formation of positive and negative ions.");
-        addStudentAnswerToProblemAnswer(pa_16_2_2, sa16_2_2_student7);
-
         StudentAnswer sa16_2_3_student7 = createStudentAnswer(student7, pa_16_2_3, "A covalent bond is a type of chemical bond formed by the sharing of electron pairs between atoms. It occurs when atoms have similar electronegativities and share electrons to achieve a stable electron configuration.");
-        addStudentAnswerToProblemAnswer(pa_16_2_3, sa16_2_3_student7);
-
         StudentAnswer sa16_2_4_student7 = createStudentAnswer(student7, pa_16_2_4, "A metallic bond is a type of chemical bond found in metals. It involves the attraction between positively charged metal ions and the sea of delocalized electrons that move freely throughout the metal lattice.");
-        addStudentAnswerToProblemAnswer(pa_16_2_4, sa16_2_4_student7);
-
         StudentAnswer sa16_2_5_student7 = createStudentAnswer(student7, pa_16_2_5, "Electronegativity is a measure of an atom's ability to attract and hold onto electrons in a chemical bond. It determines the type of bond formed between atoms. For example, fluorine has the highest electronegativity, while francium has the lowest.");
-        addStudentAnswerToProblemAnswer(pa_16_2_5, sa16_2_5_student7);
-
 
 // Creating StudentAnswer instances for student8
         StudentAnswer sa16_2_1_student8 = createStudentAnswer(student8, pa_16_2_1, "A chemical bond is a force of attraction that holds atoms together in a molecule or compound. It is formed by the sharing or transfer of electrons between atoms.");
-        addStudentAnswerToProblemAnswer(pa_16_2_1, sa16_2_1_student8);
-
         StudentAnswer sa16_2_2_student8 = createStudentAnswer(student8, pa_16_2_2, "An ionic bond is a type of chemical bond formed by the electrostatic attraction between oppositely charged ions. It occurs when one atom donates an electron to another, resulting in the formation of positive and negative ions.");
-        addStudentAnswerToProblemAnswer(pa_16_2_2, sa16_2_2_student8);
-
         StudentAnswer sa16_2_3_student8 = createStudentAnswer(student8, pa_16_2_3, "A covalent bond is a type of chemical bond formed by the sharing of electron pairs between atoms. It occurs when atoms have similar electronegativities and share electrons to achieve a stable electron configuration.");
-        addStudentAnswerToProblemAnswer(pa_16_2_3, sa16_2_3_student8);
-
         StudentAnswer sa16_2_4_student8 = createStudentAnswer(student8, pa_16_2_4, "A metallic bond is a type of chemical bond found in metals. It involves the attraction between positively charged metal ions and the sea of delocalized electrons that move freely throughout the metal lattice.");
-        addStudentAnswerToProblemAnswer(pa_16_2_4, sa16_2_4_student8);
-
         StudentAnswer sa16_2_5_student8 = createStudentAnswer(student8, pa_16_2_5, "Electronegativity is a measure of an atom's ability to attract and hold onto electrons in a chemical bond. It determines the type of bond formed between atoms. For example, fluorine has the highest electronegativity, while francium has the lowest.");
-        addStudentAnswerToProblemAnswer(pa_16_2_5, sa16_2_5_student8);
 
 
 // Output for confirmation
         System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment16_2.");
 // Creating StudentAnswer instances for student7
+        // Creating StudentAnswer instances for student7
         StudentAnswer sa16_3_1_student7 = createStudentAnswer(student7, pa_16_3_1, "A chemical reaction is a process in which substances (reactants) are transformed into different substances (products) through the breaking and forming of chemical bonds.");
-        addStudentAnswerToProblemAnswer(pa_16_3_1, sa16_3_1_student7);
-
         StudentAnswer sa16_3_2_student7 = createStudentAnswer(student7, pa_16_3_2, "Reactants are the starting substances in a chemical reaction, while products are the substances formed as a result of the reaction. The reactants undergo chemical changes to form the products.");
-        addStudentAnswerToProblemAnswer(pa_16_3_2, sa16_3_2_student7);
-
         StudentAnswer sa16_3_3_student7 = createStudentAnswer(student7, pa_16_3_3, "The law of conservation of mass states that mass is neither created nor destroyed in a chemical reaction. The total mass of the reactants is equal to the total mass of the products.");
-        addStudentAnswerToProblemAnswer(pa_16_3_3, sa16_3_3_student7);
-
         StudentAnswer sa16_3_4_student7 = createStudentAnswer(student7, pa_16_3_4, "Different types of chemical reactions include synthesis (combination), decomposition, single displacement, double displacement, combustion, and redox (oxidation-reduction) reactions.");
-        addStudentAnswerToProblemAnswer(pa_16_3_4, sa16_3_4_student7);
-
         StudentAnswer sa16_3_5_student7 = createStudentAnswer(student7, pa_16_3_5, "A synthesis reaction, also known as a combination reaction, occurs when two or more reactants combine to form a single product. The general form is A + B → AB.");
-        addStudentAnswerToProblemAnswer(pa_16_3_5, sa16_3_5_student7);
-
 
 // Creating StudentAnswer instances for student8
         StudentAnswer sa16_3_1_student8 = createStudentAnswer(student8, pa_16_3_1, "A chemical reaction is a process in which substances (reactants) are transformed into different substances (products) through the breaking and forming of chemical bonds.");
-        addStudentAnswerToProblemAnswer(pa_16_3_1, sa16_3_1_student8);
-
         StudentAnswer sa16_3_2_student8 = createStudentAnswer(student8, pa_16_3_2, "Reactants are the starting substances in a chemical reaction, while products are the substances formed as a result of the reaction. The reactants undergo chemical changes to form the products.");
-        addStudentAnswerToProblemAnswer(pa_16_3_2, sa16_3_2_student8);
-
         StudentAnswer sa16_3_3_student8 = createStudentAnswer(student8, pa_16_3_3, "The law of conservation of mass states that mass is neither created nor destroyed in a chemical reaction. The total mass of the reactants is equal to the total mass of the products.");
-        addStudentAnswerToProblemAnswer(pa_16_3_3, sa16_3_3_student8);
-
         StudentAnswer sa16_3_4_student8 = createStudentAnswer(student8, pa_16_3_4, "Different types of chemical reactions include synthesis (combination), decomposition, single displacement, double displacement, combustion, and redox (oxidation-reduction) reactions.");
-        addStudentAnswerToProblemAnswer(pa_16_3_4, sa16_3_4_student8);
-
         StudentAnswer sa16_3_5_student8 = createStudentAnswer(student8, pa_16_3_5, "A synthesis reaction, also known as a combination reaction, occurs when two or more reactants combine to form a single product. The general form is A + B → AB.");
-        addStudentAnswerToProblemAnswer(pa_16_3_5, sa16_3_5_student8);
 
 // Output for confirmation
         System.out.println("Student answers created and added for student7 and student8 for all problem answers in assignment16_3.");
+        studentAnswerRepo.saveAllAndFlush(Arrays.asList(sa13_1_2_student7, sa13_1_3_student7, sa13_1_4_student7, sa13_1_5_student7, sa13_2_1_student7, sa13_2_2_student7, sa13_2_3_student7, sa13_2_4_student7, sa13_2_5_student7, sa13_3_1_student7, sa13_3_2_student7, sa13_3_3_student7, sa13_3_4_student7, sa13_3_5_student7, sa13_4_1_student7, sa13_4_2_student7, sa13_4_3_student7, sa13_4_4_student7, sa13_4_5_student7, sa13_1_1_student8, sa13_1_2_student8, sa13_1_3_student8, sa13_1_4_student8, sa13_1_5_student8, sa13_2_1_student8, sa13_2_2_student8, sa13_2_3_student8, sa13_2_4_student8, sa13_2_5_student8, sa13_3_1_student8, sa13_3_2_student8, sa13_3_3_student8, sa13_3_4_student8, sa13_3_5_student8, sa13_4_1_student8, sa13_4_2_student8, sa13_4_3_student8, sa13_4_4_student8, sa13_4_5_student8,
+                sa14_1_1_student7, sa14_1_2_student7, sa14_1_3_student7, sa14_1_4_student7, sa14_1_5_student7, sa14_2_1_student7, sa14_2_2_student7, sa14_2_3_student7, sa14_2_4_student7, sa14_2_5_student7, sa14_3_1_student7, sa14_3_2_student7, sa14_3_3_student7, sa14_3_4_student7, sa14_3_5_student7, sa14_4_1_student7, sa14_4_2_student7, sa14_4_3_student7, sa14_4_4_student7, sa14_4_5_student7, sa14_1_1_student8, sa14_1_2_student8, sa14_1_3_student8, sa14_1_4_student8, sa14_1_5_student8, sa14_2_1_student8, sa14_2_2_student8, sa14_2_3_student8, sa14_2_4_student8, sa14_2_5_student8, sa14_3_1_student8, sa14_3_2_student8, sa14_3_3_student8, sa14_3_4_student8, sa14_3_5_student8, sa14_4_1_student8, sa14_4_2_student8, sa14_4_3_student8, sa14_4_4_student8, sa14_4_5_student8,
+                sa15_1_1_student7, sa15_1_2_student7, sa15_1_3_student7, sa15_1_4_student7, sa15_1_5_student7, sa15_2_1_student7, sa15_2_2_student7, sa15_2_3_student7, sa15_2_4_student7, sa15_2_5_student7, sa15_3_1_student7, sa15_3_2_student7, sa15_3_3_student7, sa15_3_4_student7, sa15_3_5_student7, sa15_1_1_student8, sa15_1_2_student8, sa15_1_3_student8, sa15_1_4_student8, sa15_1_5_student8, sa15_2_1_student8, sa15_2_2_student8, sa15_2_3_student8, sa15_2_4_student8, sa15_2_5_student8, sa15_3_1_student8, sa15_3_2_student8, sa15_3_3_student8, sa15_3_4_student8, sa15_3_5_student8,
+                sa16_1_1_student7, sa16_1_2_student7, sa16_1_3_student7, sa16_1_4_student7, sa16_1_5_student7, sa16_2_1_student7, sa16_2_2_student7, sa16_2_3_student7, sa16_2_4_student7, sa16_2_5_student7, sa16_3_1_student7, sa16_3_2_student7, sa16_3_3_student7, sa16_3_4_student7, sa16_3_5_student7, sa16_1_1_student8, sa16_1_2_student8, sa16_1_3_student8, sa16_1_4_student8, sa16_1_5_student8, sa16_2_1_student8, sa16_2_2_student8, sa16_2_3_student8, sa16_2_4_student8, sa16_2_5_student8, sa16_3_1_student8, sa16_3_2_student8, sa16_3_3_student8, sa16_3_4_student8, sa16_3_5_student8));
+// Assignment 13
+        addStudentAnswerToProblemAnswer(pa_13_1_1, sa13_1_1_student7);
+        addStudentAnswerToProblemAnswer(pa_13_1_2, sa13_1_2_student7);
+        addStudentAnswerToProblemAnswer(pa_13_1_3, sa13_1_3_student7);
+        addStudentAnswerToProblemAnswer(pa_13_1_4, sa13_1_4_student7);
+        addStudentAnswerToProblemAnswer(pa_13_1_5, sa13_1_5_student7);
+        addStudentAnswerToProblemAnswer(pa_13_2_1, sa13_2_1_student7);
+        addStudentAnswerToProblemAnswer(pa_13_2_2, sa13_2_2_student7);
+        addStudentAnswerToProblemAnswer(pa_13_2_3, sa13_2_3_student7);
+        addStudentAnswerToProblemAnswer(pa_13_2_4, sa13_2_4_student7);
+        addStudentAnswerToProblemAnswer(pa_13_2_5, sa13_2_5_student7);
+        addStudentAnswerToProblemAnswer(pa_13_3_1, sa13_3_1_student7);
+        addStudentAnswerToProblemAnswer(pa_13_3_2, sa13_3_2_student7);
+        addStudentAnswerToProblemAnswer(pa_13_3_3, sa13_3_3_student7);
+        addStudentAnswerToProblemAnswer(pa_13_3_4, sa13_3_4_student7);
+        addStudentAnswerToProblemAnswer(pa_13_3_5, sa13_3_5_student7);
+        addStudentAnswerToProblemAnswer(pa_13_4_1, sa13_4_1_student7);
+        addStudentAnswerToProblemAnswer(pa_13_4_2, sa13_4_2_student7);
+        addStudentAnswerToProblemAnswer(pa_13_4_3, sa13_4_3_student7);
+        addStudentAnswerToProblemAnswer(pa_13_4_4, sa13_4_4_student7);
+        addStudentAnswerToProblemAnswer(pa_13_4_5, sa13_4_5_student7);
+        // Assignment 14
+        addStudentAnswerToProblemAnswer(pa_14_1_1, sa14_1_1_student7);
+        addStudentAnswerToProblemAnswer(pa_14_1_2, sa14_1_2_student7);
+        addStudentAnswerToProblemAnswer(pa_14_1_3, sa14_1_3_student7);
+        addStudentAnswerToProblemAnswer(pa_14_1_4, sa14_1_4_student7);
+        addStudentAnswerToProblemAnswer(pa_14_1_5, sa14_1_5_student7);
+        addStudentAnswerToProblemAnswer(pa_14_2_1, sa14_2_1_student7);
+        addStudentAnswerToProblemAnswer(pa_14_2_2, sa14_2_2_student7);
+        addStudentAnswerToProblemAnswer(pa_14_2_3, sa14_2_3_student7);
+        addStudentAnswerToProblemAnswer(pa_14_2_4, sa14_2_4_student7);
+        addStudentAnswerToProblemAnswer(pa_14_2_5, sa14_2_5_student7);
+        addStudentAnswerToProblemAnswer(pa_14_3_1, sa14_3_1_student7);
+        addStudentAnswerToProblemAnswer(pa_14_3_2, sa14_3_2_student7);
+        addStudentAnswerToProblemAnswer(pa_14_3_3, sa14_3_3_student7);
+        addStudentAnswerToProblemAnswer(pa_14_3_4, sa14_3_4_student7);
+        addStudentAnswerToProblemAnswer(pa_14_3_5, sa14_3_5_student7);
+        addStudentAnswerToProblemAnswer(pa_14_4_1, sa14_4_1_student7);
+        addStudentAnswerToProblemAnswer(pa_14_4_2, sa14_4_2_student7);
+        addStudentAnswerToProblemAnswer(pa_14_4_3, sa14_4_3_student7);
+        addStudentAnswerToProblemAnswer(pa_14_4_4, sa14_4_4_student7);
+        addStudentAnswerToProblemAnswer(pa_14_4_5, sa14_4_5_student7);
+        // Assignment 15
+        addStudentAnswerToProblemAnswer(pa_15_1_1, sa15_1_1_student7);
+        addStudentAnswerToProblemAnswer(pa_15_1_2, sa15_1_2_student7);
+        addStudentAnswerToProblemAnswer(pa_15_1_3, sa15_1_3_student7);
+        addStudentAnswerToProblemAnswer(pa_15_1_4, sa15_1_4_student7);
+        addStudentAnswerToProblemAnswer(pa_15_1_5, sa15_1_5_student7);
+        addStudentAnswerToProblemAnswer(pa_15_2_1, sa15_2_1_student7);
+        addStudentAnswerToProblemAnswer(pa_15_2_2, sa15_2_2_student7);
+        addStudentAnswerToProblemAnswer(pa_15_2_3, sa15_2_3_student7);
+        addStudentAnswerToProblemAnswer(pa_15_2_4, sa15_2_4_student7);
+        addStudentAnswerToProblemAnswer(pa_15_2_5, sa15_2_5_student7);
+        addStudentAnswerToProblemAnswer(pa_15_3_1, sa15_3_1_student7);
+        addStudentAnswerToProblemAnswer(pa_15_3_2, sa15_3_2_student7);
+        addStudentAnswerToProblemAnswer(pa_15_3_3, sa15_3_3_student7);
+        addStudentAnswerToProblemAnswer(pa_15_3_4, sa15_3_4_student7);
+        addStudentAnswerToProblemAnswer(pa_15_3_5, sa15_3_5_student7);
+        // Assignment 16
+        addStudentAnswerToProblemAnswer(pa_16_1_1, sa16_1_1_student7);
+        addStudentAnswerToProblemAnswer(pa_16_1_2, sa16_1_2_student7);
+        addStudentAnswerToProblemAnswer(pa_16_1_3, sa16_1_3_student7);
+        addStudentAnswerToProblemAnswer(pa_16_1_4, sa16_1_4_student7);
+        addStudentAnswerToProblemAnswer(pa_16_1_5, sa16_1_5_student7);
+        addStudentAnswerToProblemAnswer(pa_16_2_1, sa16_2_1_student7);
+        addStudentAnswerToProblemAnswer(pa_16_2_2, sa16_2_2_student7);
+        addStudentAnswerToProblemAnswer(pa_16_2_3, sa16_2_3_student7);
+        addStudentAnswerToProblemAnswer(pa_16_2_4, sa16_2_4_student7);
+        addStudentAnswerToProblemAnswer(pa_16_2_5, sa16_2_5_student7);
+        addStudentAnswerToProblemAnswer(pa_16_3_1, sa16_3_1_student7);
+        addStudentAnswerToProblemAnswer(pa_16_3_2, sa16_3_2_student7);
+        addStudentAnswerToProblemAnswer(pa_16_3_3, sa16_3_3_student7);
+        addStudentAnswerToProblemAnswer(pa_16_3_4, sa16_3_4_student7);
+        addStudentAnswerToProblemAnswer(pa_16_3_5, sa16_3_5_student7);
+// Assignment 13
+        addStudentAnswerToProblemAnswer(pa_13_1_1, sa13_1_1_student8);
+        addStudentAnswerToProblemAnswer(pa_13_1_2, sa13_1_2_student8);
+        addStudentAnswerToProblemAnswer(pa_13_1_3, sa13_1_3_student8);
+        addStudentAnswerToProblemAnswer(pa_13_1_4, sa13_1_4_student8);
+        addStudentAnswerToProblemAnswer(pa_13_1_5, sa13_1_5_student8);
+        addStudentAnswerToProblemAnswer(pa_13_2_1, sa13_2_1_student8);
+        addStudentAnswerToProblemAnswer(pa_13_2_2, sa13_2_2_student8);
+        addStudentAnswerToProblemAnswer(pa_13_2_3, sa13_2_3_student8);
+        addStudentAnswerToProblemAnswer(pa_13_2_4, sa13_2_4_student8);
+        addStudentAnswerToProblemAnswer(pa_13_2_5, sa13_2_5_student8);
+        addStudentAnswerToProblemAnswer(pa_13_3_1, sa13_3_1_student8);
+        addStudentAnswerToProblemAnswer(pa_13_3_2, sa13_3_2_student8);
+        addStudentAnswerToProblemAnswer(pa_13_3_3, sa13_3_3_student8);
+        addStudentAnswerToProblemAnswer(pa_13_3_4, sa13_3_4_student8);
+        addStudentAnswerToProblemAnswer(pa_13_3_5, sa13_3_5_student8);
+        addStudentAnswerToProblemAnswer(pa_13_4_1, sa13_4_1_student8);
+        addStudentAnswerToProblemAnswer(pa_13_4_2, sa13_4_2_student8);
+        addStudentAnswerToProblemAnswer(pa_13_4_3, sa13_4_3_student8);
+        addStudentAnswerToProblemAnswer(pa_13_4_4, sa13_4_4_student8);
+        addStudentAnswerToProblemAnswer(pa_13_4_5, sa13_4_5_student8);
+        // Assignment 14
+        addStudentAnswerToProblemAnswer(pa_14_1_1, sa14_1_1_student8);
+        addStudentAnswerToProblemAnswer(pa_14_1_2, sa14_1_2_student8);
+        addStudentAnswerToProblemAnswer(pa_14_1_3, sa14_1_3_student8);
+        addStudentAnswerToProblemAnswer(pa_14_1_4, sa14_1_4_student8);
+        addStudentAnswerToProblemAnswer(pa_14_1_5, sa14_1_5_student8);
+        addStudentAnswerToProblemAnswer(pa_14_2_1, sa14_2_1_student8);
+        addStudentAnswerToProblemAnswer(pa_14_2_2, sa14_2_2_student8);
+        addStudentAnswerToProblemAnswer(pa_14_2_3, sa14_2_3_student8);
+        addStudentAnswerToProblemAnswer(pa_14_2_4, sa14_2_4_student8);
+        addStudentAnswerToProblemAnswer(pa_14_2_5, sa14_2_5_student8);
+        addStudentAnswerToProblemAnswer(pa_14_3_1, sa14_3_1_student8);
+        addStudentAnswerToProblemAnswer(pa_14_3_2, sa14_3_2_student8);
+        addStudentAnswerToProblemAnswer(pa_14_3_3, sa14_3_3_student8);
+        addStudentAnswerToProblemAnswer(pa_14_3_4, sa14_3_4_student8);
+        addStudentAnswerToProblemAnswer(pa_14_3_5, sa14_3_5_student8);
+        addStudentAnswerToProblemAnswer(pa_14_4_1, sa14_4_1_student8);
+        addStudentAnswerToProblemAnswer(pa_14_4_2, sa14_4_2_student8);
+        addStudentAnswerToProblemAnswer(pa_14_4_3, sa14_4_3_student8);
+        addStudentAnswerToProblemAnswer(pa_14_4_4, sa14_4_4_student8);
+        addStudentAnswerToProblemAnswer(pa_14_4_5, sa14_4_5_student8);
+        // Assignment 15
+        addStudentAnswerToProblemAnswer(pa_15_1_1, sa15_1_1_student8);
+        addStudentAnswerToProblemAnswer(pa_15_1_2, sa15_1_2_student8);
+        addStudentAnswerToProblemAnswer(pa_15_1_3, sa15_1_3_student8);
+        addStudentAnswerToProblemAnswer(pa_15_1_4, sa15_1_4_student8);
+        addStudentAnswerToProblemAnswer(pa_15_1_5, sa15_1_5_student8);
+        addStudentAnswerToProblemAnswer(pa_15_2_1, sa15_2_1_student8);
+        addStudentAnswerToProblemAnswer(pa_15_2_2, sa15_2_2_student8);
+        addStudentAnswerToProblemAnswer(pa_15_2_3, sa15_2_3_student8);
+        addStudentAnswerToProblemAnswer(pa_15_2_4, sa15_2_4_student8);
+        addStudentAnswerToProblemAnswer(pa_15_2_5, sa15_2_5_student8);
+        addStudentAnswerToProblemAnswer(pa_15_3_1, sa15_3_1_student8);
+        addStudentAnswerToProblemAnswer(pa_15_3_2, sa15_3_2_student8);
+        addStudentAnswerToProblemAnswer(pa_15_3_3, sa15_3_3_student8);
+        addStudentAnswerToProblemAnswer(pa_15_3_4, sa15_3_4_student8);
+        addStudentAnswerToProblemAnswer(pa_15_3_5, sa15_3_5_student8);
+        // Assignment 16
+        addStudentAnswerToProblemAnswer(pa_16_1_1, sa16_1_1_student8);
+        addStudentAnswerToProblemAnswer(pa_16_1_2, sa16_1_2_student8);
+        addStudentAnswerToProblemAnswer(pa_16_1_3, sa16_1_3_student8);
+        addStudentAnswerToProblemAnswer(pa_16_1_4, sa16_1_4_student8);
+        addStudentAnswerToProblemAnswer(pa_16_1_5, sa16_1_5_student8);
+        addStudentAnswerToProblemAnswer(pa_16_2_1, sa16_2_1_student8);
+        addStudentAnswerToProblemAnswer(pa_16_2_2, sa16_2_2_student8);
+        addStudentAnswerToProblemAnswer(pa_16_2_3, sa16_2_3_student8);
+        addStudentAnswerToProblemAnswer(pa_16_2_4, sa16_2_4_student8);
+        addStudentAnswerToProblemAnswer(pa_16_2_5, sa16_2_5_student8);
+        addStudentAnswerToProblemAnswer(pa_16_3_1, sa16_3_1_student8);
+        addStudentAnswerToProblemAnswer(pa_16_3_2, sa16_3_2_student8);
+        addStudentAnswerToProblemAnswer(pa_16_3_3, sa16_3_3_student8);
+        addStudentAnswerToProblemAnswer(pa_16_3_4, sa16_3_4_student8);
+        addStudentAnswerToProblemAnswer(pa_16_3_5, sa16_3_5_student8);
 
 
 // Creating submission for student7 with student answers for 13_1
@@ -1261,6 +1175,7 @@ public class Assignment13to16Seeder implements CommandLineRunner {
         for (StudentAnswer studentAnswer : submission16_3_8.getStudentAnswers()) {
             addSubmissionToStudentAnswer(studentAnswer, submission16_3_8);
         }
+        submissionRepo.saveAllAndFlush(Arrays.asList(submission13_1_7, submission13_1_8, submission13_2_7, submission13_2_8, submission13_3_7, submission13_3_8, submission13_4_7, submission13_4_8, submission14_1_7, submission14_1_8, submission14_2_7, submission14_2_8, submission14_3_7, submission14_3_8, submission14_4_7, submission14_4_8, submission15_1_7, submission15_1_8, submission15_2_7, submission15_2_8, submission15_3_7, submission15_3_8, submission16_1_7, submission16_1_8, submission16_2_7, submission16_2_8, submission16_3_7, submission16_3_8));
 
         Grade grade13_1_7 = createGrade(86.2, student7, faculty3, course13, submission13_1_7);
         Grade grade13_1_8 = createGrade(88.5, student8, faculty3, course13, submission13_1_8);
@@ -1293,6 +1208,7 @@ public class Assignment13to16Seeder implements CommandLineRunner {
         Grade grade16_2_8 = createGrade(86.7, student8, faculty1, course16, submission16_2_8);
         Grade grade16_3_7 = createGrade(84.9, student7, faculty1, course16, submission16_3_7);
         Grade grade16_3_8 = createGrade(87.5, student8, faculty1, course16, submission16_3_8);
+        gradeRepo.saveAllAndFlush(Arrays.asList(grade13_1_7, grade13_2_7, grade13_3_7, grade13_4_7, grade14_1_7, grade14_2_7, grade14_3_7, grade14_4_7, grade15_1_7, grade15_2_7, grade15_3_7, grade16_1_7, grade16_2_7, grade16_3_7, grade13_1_8, grade13_2_8, grade13_3_8, grade13_4_8, grade14_1_8, grade14_2_8, grade14_3_8, grade14_4_8, grade15_1_8, grade15_2_8, grade15_3_8, grade16_1_8, grade16_2_8, grade16_3_8));
 
         CourseGrade courseGrade13_1_7 = createCourseGrade(student7, course13, 87.25, Arrays.asList(grade13_1_7, grade13_2_7, grade13_3_7, grade13_4_7));
         CourseGrade courseGrade13_1_8 = createCourseGrade(student8, course13, 88.025, Arrays.asList(grade13_1_8, grade13_2_8, grade13_3_8, grade13_4_8));
@@ -1305,6 +1221,7 @@ public class Assignment13to16Seeder implements CommandLineRunner {
 
         CourseGrade courseGrade16_1_7 = createCourseGrade(student7, course16, 86.7667, Arrays.asList(grade16_1_7, grade16_2_7, grade16_3_7));
         CourseGrade courseGrade16_1_8 = createCourseGrade(student8, course16, 86.5333, Arrays.asList(grade16_1_8, grade16_2_8, grade16_3_8));
+        courseGradeRepo.saveAllAndFlush(Arrays.asList(courseGrade13_1_7, courseGrade14_1_7, courseGrade15_1_7, courseGrade16_1_7, courseGrade13_1_8, courseGrade14_1_8, courseGrade15_1_8, courseGrade16_1_8));
 
         Feedback feedback13_1_7 = createFeedback("Excellent work, student7!", submission13_1_7);
         Feedback feedback13_1_8 = createFeedback("Great effort, student8!", submission13_1_8);
@@ -1347,6 +1264,7 @@ public class Assignment13to16Seeder implements CommandLineRunner {
 
         Feedback feedback16_3_7 = createFeedback("Well done on the answers, student7.", submission16_3_7);
         Feedback feedback16_3_8 = createFeedback("Good work, student8!", submission16_3_8);
+        feedbackRepo.saveAllAndFlush(Arrays.asList(feedback13_1_7, feedback13_1_8, feedback13_2_7, feedback13_2_8, feedback13_3_7, feedback13_3_8, feedback13_4_7, feedback13_4_8, feedback14_1_7, feedback14_1_8, feedback14_2_7, feedback14_2_8, feedback14_3_7, feedback14_3_8, feedback14_4_7, feedback14_4_8, feedback15_1_7, feedback15_1_8, feedback15_2_7, feedback15_2_8, feedback15_3_7, feedback15_3_8, feedback16_1_7, feedback16_1_8, feedback16_2_7, feedback16_2_8, feedback16_3_7, feedback16_3_8));
 
         course13.setGrades(Arrays.asList(grade13_1_7, grade13_1_8, grade13_2_7, grade13_2_8, grade13_3_7, grade13_3_8, grade13_4_7, grade13_4_8));
         course14.setGrades(Arrays.asList(grade14_1_7, grade14_1_8, grade14_2_7, grade14_2_8, grade14_3_7, grade14_3_8, grade14_4_7, grade14_4_8));

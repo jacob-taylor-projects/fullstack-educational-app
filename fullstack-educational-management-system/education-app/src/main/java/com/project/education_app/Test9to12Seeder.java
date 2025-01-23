@@ -97,6 +97,23 @@ public class Test9to12Seeder implements CommandLineRunner {
 
         // Creating the test for Unit 1: Machine Learning
         Test test9a = createTest("Machine Learning Test", faculty4, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus9, false);
+        Test test9b = createTest("Neural Networks Test", faculty4, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus9, false);
+        Test test9c = createTest("Natural Language Processing Test", faculty4, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus9, false);
+        Test test10a = createTest("Threat Analysis Test", faculty5, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+        Test test10b = createTest("Encryption Test", faculty5, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+        Test test10c = createTest("Network Security Test", faculty5, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+        Test test10d = createTest("Secure Coding Test", faculty5, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+        Test test11a = createTest("Limits Test", faculty1, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+        Test test11b = createTest("Derivatives Test", faculty1, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+        Test test11c = createTest("Integrals Test", faculty1, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+        Test test11d = createTest("Applications of Calculus Test", faculty1, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+        Test test12a = createTest("Vectors Test", faculty2, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+        Test test12b = createTest("Matrices Test", faculty2, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+        Test test12c = createTest("Determinants Test", faculty2, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+        Test test12d = createTest("Eigenvalues Test", faculty2, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+        Test test12e = createTest("Eigenvectors Test", faculty2, Date.from(LocalDate.of(2030, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+        testRepo.saveAllAndFlush(Arrays.asList(test9a, test9b, test9c, test10a, test10b, test10c, test10d, test11a, test11b, test11c, test11d, test12a, test12b, test12c, test12d, test12e));
+
         addStudentToTest(test9a, student5);
         addStudentToTest(test9a, student6);
 
@@ -124,7 +141,7 @@ public class Test9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Machine Learning' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Neural Networks
-        Test test9b = createTest("Neural Networks Test", faculty4, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus9, false);
+
         addStudentToTest(test9b, student5);
         addStudentToTest(test9b, student6);
 
@@ -152,7 +169,7 @@ public class Test9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Neural Networks' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Natural Language Processing
-        Test test9c = createTest("Natural Language Processing Test", faculty4, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus9, false);
+
         addStudentToTest(test9c, student5);
         addStudentToTest(test9c, student6);
 
@@ -180,7 +197,7 @@ public class Test9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Natural Language Processing' unit created with 10 problem answers.");
 // Creating the test for Unit 1: Threat Analysis
-        Test test10a = createTest("Threat Analysis Test", faculty5, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+
         addStudentToTest(test10a, student5);
         addStudentToTest(test10a, student6);
 
@@ -208,7 +225,7 @@ public class Test9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Threat Analysis' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Encryption
-        Test test10b = createTest("Encryption Test", faculty5, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+
         addStudentToTest(test10b, student5);
         addStudentToTest(test10b, student6);
 
@@ -236,7 +253,7 @@ public class Test9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Encryption' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Network Security
-        Test test10c = createTest("Network Security Test", faculty5, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+
         addStudentToTest(test10c, student5);
         addStudentToTest(test10c, student6);
 
@@ -264,7 +281,7 @@ public class Test9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Network Security' unit created with 10 problem answers.");
 // Creating the test for Unit 4: Secure Coding
-        Test test10d = createTest("Secure Coding Test", faculty5, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus10, false);
+
         addStudentToTest(test10d, student5);
         addStudentToTest(test10d, student6);
 
@@ -293,7 +310,7 @@ public class Test9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Secure Coding' unit created with 10 problem answers.");
 // Creating the test for Unit 1: Limits
-        Test test11a = createTest("Limits Test", faculty1, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+
         addStudentToTest(test11a, student5);
         addStudentToTest(test11a, student6);
 
@@ -321,7 +338,7 @@ public class Test9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Limits' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Derivatives
-        Test test11b = createTest("Derivatives Test", faculty1, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+
         addStudentToTest(test11b, student5);
         addStudentToTest(test11b, student6);
 
@@ -349,7 +366,7 @@ public class Test9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Derivatives' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Integrals
-        Test test11c = createTest("Integrals Test", faculty1, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+
         addStudentToTest(test11c, student5);
         addStudentToTest(test11c, student6);
 
@@ -377,7 +394,7 @@ public class Test9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Integrals' unit created with 10 problem answers.");
 // Creating the test for Unit 4: Applications of Calculus
-        Test test11d = createTest("Applications of Calculus Test", faculty1, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus11, false);
+
         addStudentToTest(test11d, student5);
         addStudentToTest(test11d, student6);
 
@@ -406,7 +423,7 @@ public class Test9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Applications of Calculus' unit created with 10 problem answers.");
 // Creating the test for Unit 1: Vectors
-        Test test12a = createTest("Vectors Test", faculty2, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+
         addStudentToTest(test12a, student5);
         addStudentToTest(test12a, student6);
 
@@ -434,7 +451,7 @@ public class Test9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Vectors' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Matrices
-        Test test12b = createTest("Matrices Test", faculty2, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+
         addStudentToTest(test12b, student5);
         addStudentToTest(test12b, student6);
 
@@ -462,7 +479,7 @@ public class Test9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Matrices' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Determinants
-        Test test12c = createTest("Determinants Test", faculty2, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+
         addStudentToTest(test12c, student5);
         addStudentToTest(test12c, student6);
 
@@ -490,7 +507,7 @@ public class Test9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Determinants' unit created with 10 problem answers.");
 // Creating the test for Unit 4: Eigenvalues
-        Test test12d = createTest("Eigenvalues Test", faculty2, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
+
         addStudentToTest(test12d, student5);
         addStudentToTest(test12d, student6);
 
@@ -518,7 +535,6 @@ public class Test9to12Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Eigenvalues' unit created with 10 problem answers.");
 // Creating the test for Unit 5: Eigenvectors
-        Test test12e = createTest("Eigenvectors Test", faculty2, Date.from(LocalDate.of(2030, 5, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus12, false);
         addStudentToTest(test12e, student5);
         addStudentToTest(test12e, student6);
 
@@ -545,6 +561,7 @@ public class Test9to12Seeder implements CommandLineRunner {
 
 // Output for confirmation
         System.out.println("Test for 'Eigenvectors' unit created with 10 problem answers.");
+        problemAnswerRepo.saveAllAndFlush(Arrays.asList(pa9a_1, pa9a_2, pa9a_3, pa9a_4, pa9a_5, pa9b_1, pa9b_2, pa9b_3, pa9b_4, pa9b_5, pa9c_1, pa9c_2, pa9c_3, pa9c_4, pa9c_5, pa10a_1, pa10a_2, pa10a_3, pa10a_4, pa10a_5, pa10b_1, pa10b_2, pa10b_3, pa10b_4, pa10b_5, pa10c_1, pa10c_2, pa10c_3, pa10c_4, pa10c_5, pa10d_1, pa10d_2, pa10d_3, pa10d_4, pa10d_5, pa11a_1, pa11a_2, pa11a_3, pa11a_4, pa11a_5, pa11b_1, pa11b_2, pa11b_3, pa11b_4, pa11b_5, pa11c_1, pa11c_2, pa11c_3, pa11c_4, pa11c_5, pa11d_1, pa11d_2, pa11d_3, pa11d_4, pa11d_5, pa12a_1, pa12a_2, pa12a_3, pa12a_4, pa12a_5, pa12b_1, pa12b_2, pa12b_3, pa12b_4, pa12b_5, pa12c_1, pa12c_2, pa12c_3, pa12c_4, pa12c_5, pa12d_1, pa12d_2, pa12d_3, pa12d_4, pa12d_5, pa12e_1, pa12e_2, pa12e_3, pa12e_4, pa12e_5));
 
         // Creating StudentAnswer instances for student5
         StudentAnswer sa9a_1_student5 = createStudentAnswer(student5, pa9a_1, "Machine learning is a subset of artificial intelligence that involves developing algorithms that enable computers to learn from and make predictions based on data.");
@@ -1057,6 +1074,10 @@ public class Test9to12Seeder implements CommandLineRunner {
 
         StudentAnswer sa12e_5_student6 = createStudentAnswer(student6, pa12e_5, "Matrix diagonalization involves expressing a matrix A as PDP^(-1), where P is a matrix of eigenvectors, D is a diagonal matrix of eigenvalues, and P^(-1) is the inverse of P.");
         addStudentAnswerToProblemAnswer(pa12e_5, sa12e_5_student6);
+        studentAnswerRepo.saveAllAndFlush(Arrays.asList(sa9a_1_student5, sa9a_2_student5, sa9a_3_student5, sa9a_4_student5, sa9a_5_student5, sa9b_1_student5, sa9b_2_student5, sa9b_3_student5, sa9b_4_student5, sa9b_5_student5, sa9c_1_student5, sa9c_2_student5, sa9c_3_student5, sa9c_4_student5, sa9c_5_student5, sa9a_1_student6, sa9a_2_student6, sa9a_3_student6, sa9a_4_student6, sa9a_5_student6, sa9b_1_student6, sa9b_2_student6, sa9b_3_student6, sa9b_4_student6, sa9b_5_student6, sa9c_1_student6, sa9c_2_student6, sa9c_3_student6, sa9c_4_student6, sa9c_5_student6,
+                sa10a_1_student5, sa10a_2_student5, sa10a_3_student5, sa10a_4_student5, sa10a_5_student5, sa10b_1_student5, sa10b_2_student5, sa10b_3_student5, sa10b_4_student5, sa10b_5_student5, sa10c_1_student5, sa10c_2_student5, sa10c_3_student5, sa10c_4_student5, sa10c_5_student5, sa10d_1_student5, sa10d_2_student5, sa10d_3_student5, sa10d_4_student5, sa10d_5_student5, sa10a_1_student6, sa10a_2_student6, sa10a_3_student6, sa10a_4_student6, sa10a_5_student6, sa10b_1_student6, sa10b_2_student6, sa10b_3_student6, sa10b_4_student6, sa10b_5_student6, sa10c_1_student6, sa10c_2_student6, sa10c_3_student6, sa10c_4_student6, sa10c_5_student6, sa10d_1_student6, sa10d_2_student6, sa10d_3_student6, sa10d_4_student6, sa10d_5_student6,
+                sa11a_1_student5, sa11a_2_student5, sa11a_3_student5, sa11a_4_student5, sa11a_5_student5, sa11b_1_student5, sa11b_2_student5, sa11b_3_student5, sa11b_4_student5, sa11b_5_student5, sa11c_1_student5, sa11c_2_student5, sa11c_3_student5, sa11c_4_student5, sa11c_5_student5, sa11d_1_student5, sa11d_2_student5, sa11d_3_student5, sa11d_4_student5, sa11d_5_student5, sa11a_1_student6, sa11a_2_student6, sa11a_3_student6, sa11a_4_student6, sa11a_5_student6, sa11b_1_student6, sa11b_2_student6, sa11b_3_student6, sa11b_4_student6, sa11b_5_student6, sa11c_1_student6, sa11c_2_student6, sa11c_3_student6, sa11c_4_student6, sa11c_5_student6, sa11d_1_student6, sa11d_2_student6, sa11d_3_student6, sa11d_4_student6, sa11d_5_student6,
+                sa12a_1_student5, sa12a_2_student5, sa12a_3_student5, sa12a_4_student5, sa12a_5_student5, sa12b_1_student5, sa12b_2_student5, sa12b_3_student5, sa12b_4_student5, sa12b_5_student5, sa12c_1_student5, sa12c_2_student5, sa12c_3_student5, sa12c_4_student5, sa12c_5_student5, sa12d_1_student5, sa12d_2_student5, sa12d_3_student5, sa12d_4_student5, sa12d_5_student5, sa12e_1_student5, sa12e_2_student5, sa12e_3_student5, sa12e_4_student5, sa12e_5_student5, sa12a_1_student6, sa12a_2_student6, sa12a_3_student6, sa12a_4_student6, sa12a_5_student6, sa12b_1_student6, sa12b_2_student6, sa12b_3_student6, sa12b_4_student6, sa12b_5_student6, sa12c_1_student6, sa12c_2_student6, sa12c_3_student6, sa12c_4_student6, sa12c_5_student6, sa12d_1_student6, sa12d_2_student6, sa12d_3_student6, sa12d_4_student6, sa12d_5_student6, sa12e_1_student6, sa12e_2_student6, sa12e_3_student6, sa12e_4_student6, sa12e_5_student6));
 
 
         // Creating submission for student5 with student answers for 9a
@@ -1363,6 +1384,7 @@ public class Test9to12Seeder implements CommandLineRunner {
         for (StudentAnswer studentAnswer : submission12e_6.getStudentAnswers()) {
             addSubmissionToStudentAnswer(studentAnswer, submission12e_6);
         }
+        submissionRepo.saveAllAndFlush(Arrays.asList(submission9a_5, submission9a_6, submission9b_5, submission9b_6, submission9c_5, submission9c_6, submission10a_5, submission10a_6, submission10b_5, submission10b_6, submission10c_5, submission10c_6, submission10d_5, submission10d_6, submission11a_5, submission11a_6, submission11b_5, submission11b_6, submission11c_5, submission11c_6, submission11d_5, submission11d_6, submission12a_5, submission12a_6, submission12b_5, submission12b_6, submission12c_5, submission12c_6, submission12d_5, submission12d_6, submission12e_5, submission12e_6));
 
         Grade grade9a_5 = createGrade(86.7, student5, faculty4, course9, submission9a_5);
         Grade grade9a_6 = createGrade(88.5, student6, faculty4, course9, submission9a_6);
@@ -1399,6 +1421,7 @@ public class Test9to12Seeder implements CommandLineRunner {
         Grade grade12d_6 = createGrade(89.1, student6, faculty2, course12, submission12d_6);
         Grade grade12e_5 = createGrade(86.3, student5, faculty2, course12, submission12e_5);
         Grade grade12e_6 = createGrade(88.4, student6, faculty2, course12, submission12e_6);
+        gradeRepo.saveAllAndFlush(Arrays.asList(grade9a_5, grade9b_5, grade9c_5, grade10a_5, grade10b_5, grade10c_5, grade10d_5, grade11a_5, grade11b_5, grade11c_5, grade11d_5, grade12a_5, grade12b_5, grade12c_5, grade12d_5, grade12e_5, grade9a_6, grade9b_6, grade9c_6, grade10a_6, grade10b_6, grade10c_6, grade10d_6, grade11a_6, grade11b_6, grade11c_6, grade11d_6, grade12a_6, grade12b_6, grade12c_6, grade12d_6, grade12e_6));
 
         CourseGrade courseGrade9a_5 = createCourseGrade(student5, course9, 87.23, Arrays.asList(grade9a_5, grade9b_5, grade9c_5));
         CourseGrade courseGrade9a_6 = createCourseGrade(student6, course9, 88.17, Arrays.asList(grade9a_6, grade9b_6, grade9c_6));
@@ -1411,6 +1434,7 @@ public class Test9to12Seeder implements CommandLineRunner {
 
         CourseGrade courseGrade12a_5 = createCourseGrade(student5, course12, 87.58, Arrays.asList(grade12a_5, grade12b_5, grade12c_5, grade12d_5, grade12e_5));
         CourseGrade courseGrade12a_6 = createCourseGrade(student6, course12, 88.18, Arrays.asList(grade12a_6, grade12b_6, grade12c_6, grade12d_6, grade12e_6));
+        courseGradeRepo.saveAllAndFlush(Arrays.asList(courseGrade9a_5, courseGrade10a_5, courseGrade11a_5, courseGrade12a_5, courseGrade9a_6, courseGrade10a_6, courseGrade11a_6, courseGrade12a_6));
 
         Feedback feedback9a_5 = createFeedback("Excellent work, student5!", submission9a_5);
         Feedback feedback9a_6 = createFeedback("Great effort, student6!", submission9a_6);
@@ -1459,6 +1483,7 @@ public class Test9to12Seeder implements CommandLineRunner {
 
         Feedback feedback12e_5 = createFeedback("Impressive work, student5!", submission12e_5);
         Feedback feedback12e_6 = createFeedback("Solid submission, student6.", submission12e_6);
+        feedbackRepo.saveAllAndFlush(Arrays.asList(feedback9a_5, feedback9a_6, feedback9b_5, feedback9b_6, feedback9c_5, feedback9c_6, feedback10a_5, feedback10a_6, feedback10b_5, feedback10b_6, feedback10c_5, feedback10c_6, feedback10d_5, feedback10d_6, feedback11a_5, feedback11a_6, feedback11b_5, feedback11b_6, feedback11c_5, feedback11c_6, feedback11d_5, feedback11d_6, feedback12a_5, feedback12a_6, feedback12b_5, feedback12b_6, feedback12c_5, feedback12c_6, feedback12d_5, feedback12d_6, feedback12e_5, feedback12e_6));
 
         course9.setGrades(Arrays.asList(grade9a_5, grade9a_6, grade9b_5, grade9b_6, grade9c_5, grade9c_6));
         course10.setGrades(Arrays.asList(grade10a_5, grade10a_6, grade10b_5, grade10b_6, grade10c_5, grade10c_6, grade10d_5, grade10d_6));
