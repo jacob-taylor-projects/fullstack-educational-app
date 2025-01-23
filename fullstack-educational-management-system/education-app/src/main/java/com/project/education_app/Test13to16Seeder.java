@@ -96,6 +96,21 @@ public class Test13to16Seeder implements CommandLineRunner {
 
         // Creating the test for Unit 1: Sequences and Series
         Test test13a = createTest("Sequences and Series Test", faculty3, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+        Test test13b = createTest("Techniques of Integration Test", faculty3, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+        Test test13c = createTest("Multivariable Functions Test", faculty3, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+        Test test13d = createTest("Vector Calculus Test", faculty3, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+        Test test14a = createTest("Logic Test", faculty4, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+        Test test14b = createTest("Set Theory Test", faculty4, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+        Test test14c = createTest("Graph Theory Test", faculty4, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+        Test test14d = createTest("Combinatorics Test", faculty4, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+        Test test15a = createTest("Newton's Laws Test", faculty5, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus15, false);
+        Test test15b = createTest("Energy Principles Test", faculty5, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus15, false);
+        Test test15c = createTest("Motion Test", faculty5, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus15, false);
+        Test test16a = createTest("Atomic Structure Test", faculty1, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus16, false);
+        Test test16b = createTest("Chemical Bonding Test", faculty1, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus16, false);
+        Test test16c = createTest("Reactions Test", faculty1, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus16, false);
+        testRepo.saveAllAndFlush(Arrays.asList(test13a, test13b, test13c, test13d, test14a, test14b, test14c, test14d, test15a, test15b, test15c, test16a, test16b, test16c));
+
         addStudentToTest(test13a, student7);
         addStudentToTest(test13a, student8);
 
@@ -124,7 +139,7 @@ public class Test13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Sequences and Series' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Techniques of Integration
-        Test test13b = createTest("Techniques of Integration Test", faculty3, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+
         addStudentToTest(test13b, student7);
         addStudentToTest(test13b, student8);
 
@@ -152,7 +167,7 @@ public class Test13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Techniques of Integration' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Multivariable Functions
-        Test test13c = createTest("Multivariable Functions Test", faculty3, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+
         addStudentToTest(test13c, student7);
         addStudentToTest(test13c, student8);
 
@@ -180,7 +195,7 @@ public class Test13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Multivariable Functions' unit created with 10 problem answers.");
 // Creating the test for Unit 4: Vector Calculus
-        Test test13d = createTest("Vector Calculus Test", faculty3, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus13, false);
+
         addStudentToTest(test13d, student7);
         addStudentToTest(test13d, student8);
 
@@ -208,7 +223,7 @@ public class Test13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Vector Calculus' unit created with 10 problem answers.");
 // Creating the test for Unit 1: Logic
-        Test test14a = createTest("Logic Test", faculty4, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+
         addStudentToTest(test14a, student7);
         addStudentToTest(test14a, student8);
 
@@ -237,7 +252,7 @@ public class Test13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Logic' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Set Theory
-        Test test14b = createTest("Set Theory Test", faculty4, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+
         addStudentToTest(test14b, student7);
         addStudentToTest(test14b, student8);
 
@@ -265,7 +280,7 @@ public class Test13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Set Theory' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Graph Theory
-        Test test14c = createTest("Graph Theory Test", faculty4, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+
         addStudentToTest(test14c, student7);
         addStudentToTest(test14c, student8);
 
@@ -293,7 +308,7 @@ public class Test13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Graph Theory' unit created with 10 problem answers.");
 // Creating the test for Unit 4: Combinatorics
-        Test test14d = createTest("Combinatorics Test", faculty4, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus14, false);
+
         addStudentToTest(test14d, student7);
         addStudentToTest(test14d, student8);
 
@@ -321,7 +336,7 @@ public class Test13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Combinatorics' unit created with 10 problem answers.");
 // Creating the test for Unit 1: Newton's Laws
-        Test test15a = createTest("Newton's Laws Test", faculty5, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus15, false);
+
         addStudentToTest(test15a, student7);
         addStudentToTest(test15a, student8);
 
@@ -349,7 +364,7 @@ public class Test13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Newton's Laws' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Energy Principles
-        Test test15b = createTest("Energy Principles Test", faculty5, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus15, false);
+
         addStudentToTest(test15b, student7);
         addStudentToTest(test15b, student8);
 
@@ -377,7 +392,7 @@ public class Test13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Energy Principles' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Motion
-        Test test15c = createTest("Motion Test", faculty5, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus15, false);
+
         addStudentToTest(test15c, student7);
         addStudentToTest(test15c, student8);
 
@@ -405,7 +420,7 @@ public class Test13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Motion' unit created with 10 problem answers.");
 // Creating the test for Unit 1: Atomic Structure
-        Test test16a = createTest("Atomic Structure Test", faculty1, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus16, false);
+
         addStudentToTest(test16a, student7);
         addStudentToTest(test16a, student8);
 
@@ -433,7 +448,7 @@ public class Test13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Atomic Structure' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Chemical Bonding
-        Test test16b = createTest("Chemical Bonding Test", faculty1, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus16, false);
+
         addStudentToTest(test16b, student7);
         addStudentToTest(test16b, student8);
 
@@ -461,7 +476,6 @@ public class Test13to16Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Chemical Bonding' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Reactions
-        Test test16c = createTest("Reactions Test", faculty1, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus16, false);
         addStudentToTest(test16c, student7);
         addStudentToTest(test16c, student8);
 
@@ -485,6 +499,7 @@ public class Test13to16Seeder implements CommandLineRunner {
         ProblemAnswer pa16c_5 = createProblemAnswer("What is a single displacement reaction?", "A single displacement reaction, also known as a substitution reaction, is a type of chemical reaction in which one element replaces another in a compound. It is represented by the general equation: A + BC → AC + B.");
         addTestToProblemAnswer(pa16c_5, test16c);
         addProblemAnswerToTest(test16c, pa16c_5);
+        problemAnswerRepo.saveAllAndFlush(Arrays.asList(pa13a_1, pa13a_2, pa13a_3, pa13a_4, pa13a_5, pa13b_1, pa13b_2, pa13b_3, pa13b_4, pa13b_5, pa13c_1, pa13c_2, pa13c_3, pa13c_4, pa13c_5, pa13d_1, pa13d_2, pa13d_3, pa13d_4, pa13d_5, pa14a_1, pa14a_2, pa14a_3, pa14a_4, pa14a_5, pa14b_1, pa14b_2, pa14b_3, pa14b_4, pa14b_5, pa14c_1, pa14c_2, pa14c_3, pa14c_4, pa14c_5, pa14d_1, pa14d_2, pa14d_3, pa14d_4, pa14d_5, pa15a_1, pa15a_2, pa15a_3, pa15a_4, pa15a_5, pa15b_1, pa15b_2, pa15b_3, pa15b_4, pa15b_5, pa15c_1, pa15c_2, pa15c_3, pa15c_4, pa15c_5, pa16a_1, pa16a_2, pa16a_3, pa16a_4, pa16a_5, pa16b_1, pa16b_2, pa16b_3, pa16b_4, pa16b_5, pa16c_1, pa16c_2, pa16c_3, pa16c_4, pa16c_5));
 
         System.out.println("Test for 'Reactions' unit created with 10 problem answers.");
 
@@ -935,6 +950,10 @@ public class Test13to16Seeder implements CommandLineRunner {
 
         StudentAnswer sa16c_5_student8 = createStudentAnswer(student8, pa16c_5, "A single displacement reaction, also known as a substitution reaction, is a type of chemical reaction in which one element replaces another in a compound. It is represented by the general equation: A + BC → AC + B.");
         addStudentAnswerToProblemAnswer(pa16c_5, sa16c_5_student8);
+        studentAnswerRepo.saveAllAndFlush(Arrays.asList(sa13a_1_student7, sa13a_2_student7, sa13a_3_student7, sa13a_4_student7, sa13a_5_student7, sa13b_1_student7, sa13b_2_student7, sa13b_3_student7, sa13b_4_student7, sa13b_5_student7, sa13c_1_student7, sa13c_2_student7, sa13c_3_student7, sa13c_4_student7, sa13c_5_student7, sa13d_1_student7, sa13d_2_student7, sa13d_3_student7, sa13d_4_student7, sa13d_5_student7, sa13a_1_student8, sa13a_2_student8, sa13a_3_student8, sa13a_4_student8, sa13a_5_student8, sa13b_1_student8, sa13b_2_student8, sa13b_3_student8, sa13b_4_student8, sa13b_5_student8, sa13c_1_student8, sa13c_2_student8, sa13c_3_student8, sa13c_4_student8, sa13c_5_student8, sa13d_1_student8, sa13d_2_student8, sa13d_3_student8, sa13d_4_student8, sa13d_5_student8,
+                sa14a_1_student7, sa14a_2_student7, sa14a_3_student7, sa14a_4_student7, sa14a_5_student7, sa14b_1_student7, sa14b_2_student7, sa14b_3_student7, sa14b_4_student7, sa14b_5_student7, sa14c_1_student7, sa14c_2_student7, sa14c_3_student7, sa14c_4_student7, sa14c_5_student7, sa14d_1_student7, sa14d_2_student7, sa14d_3_student7, sa14d_4_student7, sa14d_5_student7, sa14a_1_student8, sa14a_2_student8, sa14a_3_student8, sa14a_4_student8, sa14a_5_student8, sa14b_1_student8, sa14b_2_student8, sa14b_3_student8, sa14b_4_student8, sa14b_5_student8, sa14c_1_student8, sa14c_2_student8, sa14c_3_student8, sa14c_4_student8, sa14c_5_student8, sa14d_1_student8, sa14d_2_student8, sa14d_3_student8, sa14d_4_student8, sa14d_5_student8,
+                sa15a_1_student7, sa15a_2_student7, sa15a_3_student7, sa15a_4_student7, sa15a_5_student7, sa15b_1_student7, sa15b_2_student7, sa15b_3_student7, sa15b_4_student7, sa15b_5_student7, sa15c_1_student7, sa15c_2_student7, sa15c_3_student7, sa15c_4_student7, sa15c_5_student7, sa15a_1_student8, sa15a_2_student8, sa15a_3_student8, sa15a_4_student8, sa15a_5_student8, sa15b_1_student8, sa15b_2_student8, sa15b_3_student8, sa15b_4_student8, sa15b_5_student8, sa15c_1_student8, sa15c_2_student8, sa15c_3_student8, sa15c_4_student8, sa15c_5_student8,
+                sa16a_1_student7, sa16a_2_student7, sa16a_3_student7, sa16a_4_student7, sa16a_5_student7, sa16b_1_student7, sa16b_2_student7, sa16b_3_student7, sa16b_4_student7, sa16b_5_student7, sa16c_1_student7, sa16c_2_student7, sa16c_3_student7, sa16c_4_student7, sa16c_5_student7, sa16a_1_student8, sa16a_2_student8, sa16a_3_student8, sa16a_4_student8, sa16a_5_student8, sa16b_1_student8, sa16b_2_student8, sa16b_3_student8, sa16b_4_student8, sa16b_5_student8, sa16c_1_student8, sa16c_2_student8, sa16c_3_student8, sa16c_4_student8, sa16c_5_student8));
 
 
         // Creating submission for student7 with student answers for 13a
@@ -1203,6 +1222,7 @@ public class Test13to16Seeder implements CommandLineRunner {
         for (StudentAnswer studentAnswer : submission16c_8.getStudentAnswers()) {
             addSubmissionToStudentAnswer(studentAnswer, submission16c_8);
         }
+        submissionRepo.saveAllAndFlush(Arrays.asList(submission13a_7, submission13a_8, submission13b_7, submission13b_8, submission13c_7, submission13c_8, submission13d_7, submission13d_8, submission14a_7, submission14a_8, submission14b_7, submission14b_8, submission14c_7, submission14c_8, submission14d_7, submission14d_8, submission15a_7, submission15a_8, submission15b_7, submission15b_8, submission15c_7, submission15c_8, submission16a_7, submission16a_8, submission16b_7, submission16b_8, submission16c_7, submission16c_8));
 
         Grade grade13a_7 = createGrade(87.6, student7, faculty3, course13, submission13a_7);
         Grade grade13a_8 = createGrade(88.3, student8, faculty3, course13, submission13a_8);
@@ -1235,6 +1255,7 @@ public class Test13to16Seeder implements CommandLineRunner {
         Grade grade16b_8 = createGrade(87.1, student8, faculty1, course16, submission16b_8);
         Grade grade16c_7 = createGrade(85.8, student7, faculty1, course16, submission16c_7);
         Grade grade16c_8 = createGrade(88.2, student8, faculty1, course16, submission16c_8);
+        gradeRepo.saveAllAndFlush(Arrays.asList(grade13a_7, grade13b_7, grade13c_7, grade13d_7, grade14a_7, grade14b_7, grade14c_7, grade14d_7, grade15a_7, grade15b_7, grade15c_7, grade16a_7, grade16b_7, grade16c_7, grade13a_8, grade13b_8, grade13c_8, grade13d_8, grade14a_8, grade14b_8, grade14c_8, grade14d_8, grade15a_8, grade15b_8, grade15c_8, grade16a_8, grade16b_8, grade16c_8));
 
         CourseGrade courseGrade13a_7 = createCourseGrade(student7, course13, 87.5, Arrays.asList(grade13a_7, grade13b_7, grade13c_7, grade13d_7));
         CourseGrade courseGrade13a_8 = createCourseGrade(student8, course13, 88.05, Arrays.asList(grade13a_8, grade13b_8, grade13c_8, grade13d_8));
@@ -1247,6 +1268,7 @@ public class Test13to16Seeder implements CommandLineRunner {
 
         CourseGrade courseGrade16a_7 = createCourseGrade(student7, course16, 87.433, Arrays.asList(grade16a_7, grade16b_7, grade16c_7));
         CourseGrade courseGrade16a_8 = createCourseGrade(student8, course16, 87.2, Arrays.asList(grade16a_8, grade16b_8, grade16c_8));
+        courseGradeRepo.saveAllAndFlush(Arrays.asList(courseGrade13a_7, courseGrade14a_7, courseGrade15a_7, courseGrade16a_7, courseGrade13a_8, courseGrade14a_8, courseGrade15a_8, courseGrade16a_8));
 
         Feedback feedback13a_7 = createFeedback("Excellent work, student7!", submission13a_7);
         Feedback feedback13a_8 = createFeedback("Great effort, student8!", submission13a_8);
@@ -1289,6 +1311,7 @@ public class Test13to16Seeder implements CommandLineRunner {
 
         Feedback feedback16c_7 = createFeedback("Good answers, student7.", submission16c_7);
         Feedback feedback16c_8 = createFeedback("Strong performance, student8.", submission16c_8);
+        feedbackRepo.saveAllAndFlush(Arrays.asList(feedback13a_7, feedback13a_8, feedback13b_7, feedback13b_8, feedback13c_7, feedback13c_8, feedback13d_7, feedback13d_8, feedback14a_7, feedback14a_8, feedback14b_7, feedback14b_8, feedback14c_7, feedback14c_8, feedback14d_7, feedback14d_8, feedback15a_7, feedback15a_8, feedback15b_7, feedback15b_8, feedback15c_7, feedback15c_8, feedback16a_7, feedback16a_8, feedback16b_7, feedback16b_8, feedback16c_7, feedback16c_8));
 
         course13.setGrades(Arrays.asList(grade13a_7, grade13a_8, grade13b_7, grade13b_8, grade13c_7, grade13c_8, grade13d_7, grade13d_8));
         course14.setGrades(Arrays.asList(grade14a_7, grade14a_8, grade14b_7, grade14b_8, grade14c_7, grade14c_8, grade14d_7, grade14d_8));

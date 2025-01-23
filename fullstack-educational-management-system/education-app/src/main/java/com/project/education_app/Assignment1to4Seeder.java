@@ -1856,6 +1856,7 @@ public class Assignment1to4Seeder implements CommandLineRunner {
 
     public static void addProjectToProblemAnswer(ProblemAnswer problemAnswer, Project project) {
         problemAnswer.setProject(project);
+        project.setProblemAnswer(problemAnswer);
     }
 
     public static void addTestToProblemAnswer(ProblemAnswer problemAnswer, Test test) {

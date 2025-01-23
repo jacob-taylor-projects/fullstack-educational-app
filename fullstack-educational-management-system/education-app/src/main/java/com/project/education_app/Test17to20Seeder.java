@@ -96,6 +96,21 @@ public class Test17to20Seeder implements CommandLineRunner {
 
         // Creating the test for Unit 1: Cell Structure
         Test test17a = createTest("Cell Structure Test", faculty2, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
+        Test test17b = createTest("Genetics Test", faculty2, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
+        Test test17c = createTest("Evolution Test", faculty2, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
+        Test test17d = createTest("Ecology Test", faculty2, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
+        Test test18a = createTest("Engineering Disciplines Test", faculty3, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus18, false);
+        Test test18b = createTest("Problem-Solving Test", faculty3, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus18, false);
+        Test test18c = createTest("Design Process Test", faculty3, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus18, false);
+        Test test19a = createTest("Circuit Analysis Test", faculty4, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus19, false);
+        Test test19b = createTest("Signal Processing Test", faculty4, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus19, false);
+        Test test19c = createTest("Systems Theory Test", faculty4, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus19, false);
+        Test test20a = createTest("Statics Test", faculty5, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
+        Test test20b = createTest("Dynamics Test", faculty5, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
+        Test test20c = createTest("Thermodynamics Test", faculty5, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
+        Test test20d = createTest("Material Science Test", faculty5, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
+        testRepo.saveAllAndFlush(Arrays.asList(test17a, test17b, test17c, test17d, test18a, test18b, test18c, test19a, test19b, test19c, test20a, test20b, test20c, test20d));
+
         addStudentToTest(test17a, student9);
         addStudentToTest(test17a, student10);
 
@@ -123,7 +138,7 @@ public class Test17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Cell Structure' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Genetics
-        Test test17b = createTest("Genetics Test", faculty2, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
+
         addStudentToTest(test17b, student9);
         addStudentToTest(test17b, student10);
 // Creating and adding problem answers to the test
@@ -150,7 +165,7 @@ public class Test17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Genetics' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Evolution
-        Test test17c = createTest("Evolution Test", faculty2, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
+
         addStudentToTest(test17c, student9);
         addStudentToTest(test17c, student10);
 
@@ -178,7 +193,7 @@ public class Test17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Evolution' unit created with 10 problem answers.");
 // Creating the test for Unit 4: Ecology
-        Test test17d = createTest("Ecology Test", faculty2, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus17, false);
+
         addStudentToTest(test17d, student9);
         addStudentToTest(test17d, student10);
 
@@ -206,7 +221,7 @@ public class Test17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Ecology' unit created with 10 problem answers.");
 // Creating the test for Unit 1: Engineering Disciplines
-        Test test18a = createTest("Engineering Disciplines Test", faculty3, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus18, false);
+
         addStudentToTest(test18a, student9);
         addStudentToTest(test18a, student10);
 
@@ -234,7 +249,7 @@ public class Test17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Engineering Disciplines' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Problem-Solving
-        Test test18b = createTest("Problem-Solving Test", faculty3, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus18, false);
+
         addStudentToTest(test18b, student9);
         addStudentToTest(test18b, student10);
 
@@ -262,7 +277,7 @@ public class Test17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Problem-Solving' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Design Process
-        Test test18c = createTest("Design Process Test", faculty3, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus18, false);
+
         addStudentToTest(test18c, student9);
         addStudentToTest(test18c, student10);
 
@@ -290,7 +305,7 @@ public class Test17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Design Process' unit created with 10 problem answers.");
 // Creating the test for Unit 1: Circuit Analysis
-        Test test19a = createTest("Circuit Analysis Test", faculty4, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus19, false);
+
         addStudentToTest(test19a, student9);
         addStudentToTest(test19a, student10);
 
@@ -318,7 +333,7 @@ public class Test17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Circuit Analysis' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Signal Processing
-        Test test19b = createTest("Signal Processing Test", faculty4, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus19, false);
+
         addStudentToTest(test19b, student9);
         addStudentToTest(test19b, student10);
 
@@ -346,7 +361,7 @@ public class Test17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Signal Processing' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Systems Theory
-        Test test19c = createTest("Systems Theory Test", faculty4, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus19, false);
+
         addStudentToTest(test19c, student9);
         addStudentToTest(test19c, student10);
 
@@ -374,7 +389,7 @@ public class Test17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Systems Theory' unit created with 10 problem answers.");
 // Creating the test for Unit 1: Statics
-        Test test20a = createTest("Statics Test", faculty5, Date.from(LocalDate.of(2030, 1, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
+
         addStudentToTest(test20a, student9);
         addStudentToTest(test20a, student10);
 
@@ -402,7 +417,7 @@ public class Test17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Statics' unit created with 10 problem answers.");
 // Creating the test for Unit 2: Dynamics
-        Test test20b = createTest("Dynamics Test", faculty5, Date.from(LocalDate.of(2030, 2, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
+
         addStudentToTest(test20b, student9);
         addStudentToTest(test20b, student10);
 
@@ -430,7 +445,7 @@ public class Test17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Dynamics' unit created with 10 problem answers.");
 // Creating the test for Unit 3: Thermodynamics
-        Test test20c = createTest("Thermodynamics Test", faculty5, Date.from(LocalDate.of(2030, 3, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
+
         addStudentToTest(test20c, student9);
         addStudentToTest(test20c, student10);
 
@@ -458,7 +473,6 @@ public class Test17to20Seeder implements CommandLineRunner {
 // Output for confirmation
         System.out.println("Test for 'Thermodynamics' unit created with 10 problem answers.");
 // Creating the test for Unit 4: Material Science
-        Test test20d = createTest("Material Science Test", faculty5, Date.from(LocalDate.of(2030, 4, 15).atStartOfDay(ZoneId.systemDefault()).toInstant()), syllabus20, false);
         addStudentToTest(test20d, student9);
         addStudentToTest(test20d, student10);
 
@@ -482,10 +496,11 @@ public class Test17to20Seeder implements CommandLineRunner {
         ProblemAnswer pa20d_5 = createProblemAnswer("What are polymers?", "Polymers are large molecules composed of repeating structural units. They can be natural or synthetic and have properties such as flexibility, elasticity, and low density. Polymers are used in a wide range of applications, including plastics, textiles, and medical devices.");
         addTestToProblemAnswer(pa20d_5, test20d);
         addProblemAnswerToTest(test20d, pa20d_5);
+        problemAnswerRepo.saveAllAndFlush(Arrays.asList(pa17a_1, pa17a_2, pa17a_3, pa17a_4, pa17a_5, pa17b_1, pa17b_2, pa17b_3, pa17b_4, pa17b_5, pa17c_1, pa17c_2, pa17c_3, pa17c_4, pa17c_5, pa17d_1, pa17d_2, pa17d_3, pa17d_4, pa17d_5, pa18a_1, pa18a_2, pa18a_3, pa18a_4, pa18a_5, pa18b_1, pa18b_2, pa18b_3, pa18b_4, pa18b_5, pa18c_1, pa18c_2, pa18c_3, pa18c_4, pa18c_5, pa19a_1, pa19a_2, pa19a_3, pa19a_4, pa19a_5, pa19b_1, pa19b_2, pa19b_3, pa19b_4, pa19b_5, pa19c_1, pa19c_2, pa19c_3, pa19c_4, pa19c_5, pa20a_1, pa20a_2, pa20a_3, pa20a_4, pa20a_5, pa20b_1, pa20b_2, pa20b_3, pa20b_4_new, pa20b_5, pa20c_1, pa20c_2, pa20c_3, pa20c_4, pa20c_5, pa20d_1, pa20d_2, pa20d_3, pa20d_4, pa20d_5));
 
 // Output for confirmation
         System.out.println("Test for 'Material Science' unit created with 10 problem answers.");
-
+        System.out.println("All of seeders loaded!");
 
         // Creating StudentAnswer instances for student9
         StudentAnswer sa17a_1_student9 = createStudentAnswer(student9, pa17a_1, "The main components of a cell include the cell membrane, nucleus, cytoplasm, and various organelles such as mitochondria, ribosomes, endoplasmic reticulum, Golgi apparatus, and lysosomes.");
@@ -934,6 +949,10 @@ public class Test17to20Seeder implements CommandLineRunner {
 
         StudentAnswer sa20d_5_student10 = createStudentAnswer(student10, pa20d_5, "Polymers are large molecules composed of repeating structural units. They can be natural or synthetic and have properties such as flexibility, elasticity, and low density. Polymers are used in a wide range of applications, including plastics, textiles, and medical devices.");
         addStudentAnswerToProblemAnswer(pa20d_5, sa20d_5_student10);
+        studentAnswerRepo.saveAllAndFlush(Arrays.asList(sa17a_1_student9, sa17a_2_student9, sa17a_3_student9, sa17a_4_student9, sa17a_5_student9, sa17b_1_student9, sa17b_2_student9, sa17b_3_student9, sa17b_4_student9, sa17b_5_student9, sa17c_1_student9, sa17c_2_student9, sa17c_3_student9, sa17c_4_student9, sa17c_5_student9, sa17d_1_student9, sa17d_2_student9, sa17d_3_student9, sa17d_4_student9, sa17d_5_student9, sa17a_1_student10, sa17a_2_student10, sa17a_3_student10, sa17a_4_student10, sa17a_5_student10, sa17b_1_student10, sa17b_2_student10, sa17b_3_student10, sa17b_4_student10, sa17b_5_student10, sa17c_1_student10, sa17c_2_student10, sa17c_3_student10, sa17c_4_student10, sa17c_5_student10, sa17d_1_student10, sa17d_2_student10, sa17d_3_student10, sa17d_4_student10, sa17d_5_student10,
+                sa18a_1_student9, sa18a_2_student9, sa18a_3_student9, sa18a_4_student9, sa18a_5_student9, sa18b_1_student9, sa18b_2_student9, sa18b_3_student9, sa18b_4_student9, sa18b_5_student9, sa18c_1_student9, sa18c_2_student9, sa18c_3_student9, sa18c_4_student9, sa18c_5_student9, sa18a_1_student10, sa18a_2_student10, sa18a_3_student10, sa18a_4_student10, sa18a_5_student10, sa18b_1_student10, sa18b_2_student10, sa18b_3_student10, sa18b_4_student10, sa18b_5_student10, sa18c_1_student10, sa18c_2_student10, sa18c_3_student10, sa18c_4_student10, sa18c_5_student10,
+                sa19a_1_student9, sa19a_2_student9, sa19a_3_student9, sa19a_4_student9, sa19a_5_student9, sa19b_1_student9, sa19b_2_student9, sa19b_3_student9, sa19b_4_student9, sa19b_5_student9, sa19c_1_student9, sa19c_2_student9, sa19c_3_student9, sa19c_4_student9, sa19c_5_student9, sa19a_1_student10, sa19a_2_student10, sa19a_3_student10, sa19a_4_student10, sa19a_5_student10, sa19b_1_student10, sa19b_2_student10, sa19b_3_student10, sa19b_4_student10, sa19b_5_student10, sa19c_1_student10, sa19c_2_student10, sa19c_3_student10, sa19c_4_student10, sa19c_5_student10,
+                sa20a_1_student9, sa20a_2_student9, sa20a_3_student9, sa20a_4_student9, sa20a_5_student9, sa20b_1_student9, sa20b_2_student9, sa20b_3_student9, sa20b_4_student9, sa20b_5_student9, sa20c_1_student9, sa20c_2_student9, sa20c_3_student9, sa20c_4_student9, sa20c_5_student9, sa20d_1_student9, sa20d_2_student9, sa20d_3_student9, sa20d_4_student9, sa20d_5_student9, sa20a_1_student10, sa20a_2_student10, sa20a_3_student10, sa20a_4_student10, sa20a_5_student10, sa20b_1_student10, sa20b_2_student10, sa20b_3_student10, sa20b_4_student10, sa20b_5_student10, sa20c_1_student10, sa20c_2_student10, sa20c_3_student10, sa20c_4_student10, sa20c_5_student10, sa20d_1_student10, sa20d_2_student10, sa20d_3_student10, sa20d_4_student10, sa20d_5_student10));
 
 // Creating submission for student9 with student answers for 17a
         Submission submission17a_9 = createSubmission("Submission from student9", student9, Arrays.asList(
@@ -1201,6 +1220,7 @@ public class Test17to20Seeder implements CommandLineRunner {
         for (StudentAnswer studentAnswer : submission20d_10.getStudentAnswers()) {
             addSubmissionToStudentAnswer(studentAnswer, submission20d_10);
         }
+        submissionRepo.saveAllAndFlush(Arrays.asList(submission17a_9, submission17a_10, submission17b_9, submission17b_10, submission17c_9, submission17c_10, submission17d_9, submission17d_10, submission18a_9, submission18a_10, submission18b_9, submission18b_10, submission18c_9, submission18c_10, submission19a_9, submission19a_10, submission19b_9, submission19b_10, submission19c_9, submission19c_10, submission20a_9, submission20a_10, submission20b_9, submission20b_10, submission20c_9, submission20c_10, submission20d_9, submission20d_10));
 
         Grade grade17a_9 = createGrade(87.4, student9, faculty2, course17, submission17a_9);
         Grade grade17a_10 = createGrade(89.1, student10, faculty2, course17, submission17a_10);
@@ -1233,6 +1253,7 @@ public class Test17to20Seeder implements CommandLineRunner {
         Grade grade20c_10 = createGrade(88.3, student10, faculty5, course20, submission20c_10);
         Grade grade20d_9 = createGrade(87.7, student9, faculty5, course20, submission20d_9);
         Grade grade20d_10 = createGrade(85.8, student10, faculty5, course20, submission20d_10);
+        gradeRepo.saveAllAndFlush(Arrays.asList(grade17a_9, grade17b_9, grade17c_9, grade17d_9, grade18a_9, grade18b_9, grade18c_9, grade19a_9, grade19b_9, grade19c_9, grade20a_9, grade20b_9, grade20c_9, grade20d_9, grade17a_10, grade17b_10, grade17c_10, grade17d_10, grade18a_10, grade18b_10, grade18c_10, grade19a_10, grade19b_10, grade19c_10, grade20a_10, grade20b_10, grade20c_10, grade20d_10));
 
         CourseGrade courseGrade17a_9 = createCourseGrade(student9, course17, 87.55, Arrays.asList(grade17a_9, grade17b_9, grade17c_9, grade17d_9));
         CourseGrade courseGrade17a_10 = createCourseGrade(student10, course17, 88.3, Arrays.asList(grade17a_10, grade17b_10, grade17c_10, grade17d_10));
@@ -1245,6 +1266,7 @@ public class Test17to20Seeder implements CommandLineRunner {
 
         CourseGrade courseGrade20a_9 = createCourseGrade(student9, course20, 87.6, Arrays.asList(grade20a_9, grade20b_9, grade20c_9, grade20d_9));
         CourseGrade courseGrade20a_10 = createCourseGrade(student10, course20, 87.5, Arrays.asList(grade20a_10, grade20b_10, grade20c_10, grade20d_10));
+        courseGradeRepo.saveAllAndFlush(Arrays.asList(courseGrade17a_9, courseGrade18a_9, courseGrade19a_9, courseGrade20a_9, courseGrade17a_10, courseGrade18a_10, courseGrade19a_10, courseGrade20a_10));
 
         Feedback feedback17a_9 = createFeedback("Excellent work, student9!", submission17a_9);
         Feedback feedback17a_10 = createFeedback("Great effort, student10!", submission17a_10);
@@ -1287,6 +1309,7 @@ public class Test17to20Seeder implements CommandLineRunner {
 
         Feedback feedback20d_9 = createFeedback("Great effort, student9!", submission20d_9);
         Feedback feedback20d_10 = createFeedback("Well done, student10!", submission20d_10);
+        feedbackRepo.saveAllAndFlush(Arrays.asList(feedback17a_9, feedback17a_10, feedback17b_9, feedback17b_10, feedback17c_9, feedback17c_10, feedback17d_9, feedback17d_10, feedback18a_9, feedback18a_10, feedback18b_9, feedback18b_10, feedback18c_9, feedback18c_10, feedback19a_9, feedback19a_10, feedback19b_9, feedback19b_10, feedback19c_9, feedback19c_10, feedback20a_9, feedback20a_10, feedback20b_9, feedback20b_10, feedback20c_9, feedback20c_10, feedback20d_9, feedback20d_10));
 
         course17.setGrades(Arrays.asList(grade17a_9, grade17a_10, grade17b_9, grade17b_10, grade17c_9, grade17c_10, grade17d_9, grade17d_10));
         course18.setGrades(Arrays.asList(grade18a_9, grade18a_10, grade18b_9, grade18b_10, grade18c_9, grade18c_10));
