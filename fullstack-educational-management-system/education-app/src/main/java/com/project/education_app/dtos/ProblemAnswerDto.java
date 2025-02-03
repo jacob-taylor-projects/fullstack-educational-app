@@ -18,10 +18,7 @@ public class ProblemAnswerDto {
     private Long id;
     private String problemContent;
     private String answerContent;
-    private ProjectDto project;
-    private AssignmentDto assignment;
-    private TestDto test;
-    private List<StudentAnswerDto> studentAnswer; // Updated to match the new structure
+    // Updated to match the new structure
 
     // Constructors, getters, and setters
 }

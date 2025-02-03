@@ -7,7 +7,7 @@ import org.mapstruct.factory.Mappers;
 
 import java.util.List;
 
-@Mapper(componentModel = "spring", uses = {AssignmentMapper.class, ProjectMapper.class, TestMapper.class, StudentAnswerMapper.class})
+@Mapper(componentModel = "spring", uses = {})
 public interface ProblemAnswerMapper {
     ProblemAnswerMapper INSTANCE = Mappers.getMapper(ProblemAnswerMapper.class);
 

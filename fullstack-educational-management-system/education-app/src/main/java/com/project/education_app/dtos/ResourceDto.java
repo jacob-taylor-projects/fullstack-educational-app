@@ -15,7 +15,5 @@ public class ResourceDto {
 
     private String url;
 
-    private SyllabusDto syllabus;
 
-    private CourseDto course;
 }

@@ -23,5 +23,4 @@ public class UnitDto {
 
     private List<LessonDto> lessons;
 
-    private CourseDto course;
 }

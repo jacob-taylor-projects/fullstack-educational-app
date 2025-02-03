@@ -8,6 +8,7 @@ import com.project.education_app.entities.Student;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 
@@ -17,5 +18,5 @@ public interface AttendanceRepo extends JpaRepository<Attendance,Long> {
 
     List<Attendance> findByStudentId(Long studentId);
 
-    List<Attendance> findByAttendanceDate(Date attendanceDate);
+    List<Attendance> findByAttendanceDate(LocalDate attendanceDate);
 }

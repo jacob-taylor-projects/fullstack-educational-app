@@ -13,7 +13,7 @@ public class AssignmentDto {
 
     private String title;
 
-    private List<ProblemAnswerDto> problemAnswer;
+    private List<ProblemAnswerDto> problemAnswers;
 
     private BasicFacultyDto teacher;
 
@@ -23,5 +23,4 @@ public class AssignmentDto {
 
     private boolean completed;
 
-    private SyllabusDto syllabusDto;
 }

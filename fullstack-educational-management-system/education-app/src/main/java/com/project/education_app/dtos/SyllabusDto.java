@@ -17,8 +17,6 @@ import java.util.Set;
 public class SyllabusDto {
     private Long id;
 
-    private CourseDto course;
-
     private String objectives;
 
     private String topics;

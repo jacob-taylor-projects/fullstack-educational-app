@@ -18,5 +18,4 @@ public class LessonDto {
 
     private BasicFacultyDto author;
 
-    private UnitDto unit;
 }

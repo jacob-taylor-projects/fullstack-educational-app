@@ -13,7 +13,7 @@ public class StudentAnswerDto {
     private ProblemAnswerDto problemAnswer; // Updated to include the DTO instead of ID
     private String answerContent;
     private Timestamp submissionDate;
-    private SubmissionDto submission; // Updated to include the DTO instead of ID
+    // Updated to include the DTO instead of ID
 
     // Constructors, getters, and setters
 }

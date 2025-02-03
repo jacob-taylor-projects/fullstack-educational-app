@@ -23,5 +23,4 @@ public class ProjectDto {
 
     private boolean completed;
 
-    private SyllabusDto syllabus;
 }

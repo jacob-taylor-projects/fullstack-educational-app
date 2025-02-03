@@ -7,7 +7,7 @@ import org.mapstruct.factory.Mappers;
 
 import java.util.List;
 
-@Mapper(componentModel = "spring", uses = { ProblemAnswerMapper.class,BasicFacultyMapper.class,BasicStudentMapper.class, SyllabusMapper.class})
+@Mapper(componentModel = "spring", uses = {ProblemAnswerMapper.class, BasicFacultyMapper.class, BasicStudentMapper.class})
 public interface AssignmentMapper {
     AssignmentMapper INSTANCE= Mappers.getMapper(AssignmentMapper.class);
     AssignmentDto entityToDto(Assignment assignment);

@@ -17,5 +17,5 @@ public class AttendanceDto {
 
     private BasicStudentDto student;
 
-    private CourseDto course;
+    private BasicCourseDto course;
 }
