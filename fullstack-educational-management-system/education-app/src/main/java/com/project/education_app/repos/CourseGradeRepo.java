@@ -17,5 +17,4 @@ public interface CourseGradeRepo extends JpaRepository<CourseGrade,Long> {
 
     List<CourseGrade> findByOverallGradeGreaterThan(double overallGrade);
 
-    List<CourseGrade> findByGrades(Grade grade);
 }

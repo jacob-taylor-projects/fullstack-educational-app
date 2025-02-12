@@ -3,6 +3,7 @@ package com.project.education_app.mappers;
 import com.project.education_app.dtos.BasicCourseDto;
 import com.project.education_app.dtos.CourseDto;
 import com.project.education_app.dtos.CourseGradeDto;
+import com.project.education_app.dtos.FullCourseDto;
 import com.project.education_app.entities.Course;
 import com.project.education_app.entities.CourseGrade;
 import org.mapstruct.Mapper;
@@ -24,4 +25,10 @@ public interface CourseMapper {
     List<BasicCourseDto> entitiesToBasicDtos(List<Course> courses);
 
     Course basicDtoToEntity(BasicCourseDto basicCourseDto);
+
+    FullCourseDto entityToFullDto(Course course);
+
+    List<FullCourseDto> entitiesToFullDtos(List<Course> courses);
+
+    Course fullDtoToEntity(FullCourseDto fullCourseDto);
 }
