@@ -10,8 +10,10 @@ import java.util.List;
 public interface SubmissionRepo extends JpaRepository<Submission, Long> {
     List<Submission> findByContentContaining(String content);
 
-    List<Submission> findByStudentAnswers_ProblemAnswer_Id(Long problemAnswerId);
-
     List<Submission> findByStudentId(Long studentId);
+
+    List<Submission> findByGradeId(Long gradeId);
+
+    List<Submission> findByFeedbackId(Long feedbackId);
 }
 

@@ -16,7 +16,7 @@ public interface FacultyRepo extends JpaRepository<Faculty,Long> {
 
     List<Faculty> findByGender(String gender);
 
-    Faculty findByProfileLastName(String lastName);
+    List<Faculty> findByProfileLastName(String lastName);
 
     List<Faculty> findByCredentialsUsername(String username);
 
