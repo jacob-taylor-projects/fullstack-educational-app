@@ -17,6 +17,6 @@ public interface StudentAnswerRepo extends JpaRepository<StudentAnswer, Long> {
 
     List<StudentAnswer> findBySubmissionId(Long submissionId);
 
-    List<StudentAnswer> findBySubmissionDateBetween(Timestamp startDate, Timestamp endDate);
+    List<StudentAnswer> findBySubmissionDate(Timestamp submissionDate);
 }
 

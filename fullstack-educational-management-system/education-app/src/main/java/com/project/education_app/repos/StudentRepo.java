@@ -12,9 +12,19 @@ public interface StudentRepo extends JpaRepository<Student,Long> {
 
     List<Student> findByCredentialsUsername(String username);
 
+    List<Student> findByCredentialsPassword(String password);
+
+    List<Student> findByProfileFirstName(String firstName);
+
+    List<Student> findByProfileEmailContaining(String email);
+
+    List<Student> findByProfilePhoneNumberContaining(String phoneNumber);
+
     List<Student> findByProfileLastName(String lastName);
 
     List<Student> findByAge(int age);
+
+    List<Student> findByAddress(String address);
 
     List<Student> findByAgeGreaterThan(int age);
 

@@ -12,7 +12,5 @@ public interface UnitRepo extends JpaRepository<Unit,Long> {
 
     List<Unit> findByDescriptionContaining(String description);
 
-    List<Unit> findByCourseId(Long courseId);
-
     List<Unit> findByLessonsId(Long lessonId);
 }

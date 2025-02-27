@@ -8,6 +8,12 @@ import java.util.List;
 
 @Repository
 public interface GuardianRepo extends JpaRepository<Guardian,Long> {
+    List<Guardian> findByProfileFirstName(String firstName);
+
+    List<Guardian> findByProfileEmail(String email);
+
+    List<Guardian> findByProfilePhoneNumber(String phoneNumber);
+
     List<Guardian> findByAge(int age);
 
     List<Guardian> findByGender(String gender);
@@ -17,4 +23,6 @@ public interface GuardianRepo extends JpaRepository<Guardian,Long> {
     List<Guardian> findByProfileLastName(String lastName);
 
     List<Guardian> findByCredentialsUsername(String username);
+
+    List<Guardian> findByAddress(String address);
 }
